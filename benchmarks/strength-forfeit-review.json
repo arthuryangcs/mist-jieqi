@@ -1,0 +1,339 @@
+{
+  "protocol": "精确重建失败前观察局面，使用各自源码快照、当前共用宿主与精简IPC，12次重放；监视主循环延迟和terminate同步耗时。不能复现原OS调度环境。",
+  "results": [
+    {
+      "name": "initial-candidate-pilot",
+      "seed": 1601,
+      "ply": 89,
+      "viewer": "b",
+      "originalForfeit": {
+        "winner": "r",
+        "text": "超时技术负",
+        "technicalForfeit": true,
+        "offender": "candidate"
+      },
+      "originalFailedRow": {
+        "ply": 90,
+        "side": "b",
+        "engine": "candidate",
+        "move": {
+          "from": 38,
+          "to": 41
+        },
+        "elapsedMs": 316,
+        "depth": 2,
+        "nodes": 8209,
+        "score": -844.9774245086674,
+        "fallback": false,
+        "deadlineStop": true,
+        "knownDark": 1
+      },
+      "runs": 12,
+      "maxMs": 250,
+      "over310": 0,
+      "rows": [
+        {
+          "repeat": 0,
+          "elapsedMs": 241,
+          "searchElapsedMs": 238,
+          "firstProgressMs": 66.57818400000002,
+          "hostPreparationMs": 0.5335060000000453,
+          "deadlineStop": false,
+          "depth": 2,
+          "synchronousTerminateMs": 0,
+          "eventLoopMaxMs": 11.116543
+        },
+        {
+          "repeat": 1,
+          "elapsedMs": 240,
+          "searchElapsedMs": 239,
+          "firstProgressMs": 31.23117400000001,
+          "hostPreparationMs": 0.18102100000010068,
+          "deadlineStop": false,
+          "depth": 2,
+          "synchronousTerminateMs": 0,
+          "eventLoopMaxMs": 12.148735
+        },
+        {
+          "repeat": 2,
+          "elapsedMs": 250,
+          "searchElapsedMs": 33,
+          "firstProgressMs": 35.90968099999998,
+          "hostPreparationMs": 0.21827399999995123,
+          "deadlineStop": true,
+          "depth": 1,
+          "synchronousTerminateMs": 0.1396589999999378,
+          "eventLoopMaxMs": 104.792063
+        },
+        {
+          "repeat": 3,
+          "elapsedMs": 242,
+          "searchElapsedMs": 238,
+          "firstProgressMs": 75.96891600000004,
+          "hostPreparationMs": 0.15687500000012733,
+          "deadlineStop": false,
+          "depth": 2,
+          "synchronousTerminateMs": 0,
+          "eventLoopMaxMs": 11.550719
+        },
+        {
+          "repeat": 4,
+          "elapsedMs": 239,
+          "searchElapsedMs": 238,
+          "firstProgressMs": 35.263582999999926,
+          "hostPreparationMs": 0.15851100000008955,
+          "deadlineStop": false,
+          "depth": 2,
+          "synchronousTerminateMs": 0,
+          "eventLoopMaxMs": 11.255807
+        },
+        {
+          "repeat": 5,
+          "elapsedMs": 239,
+          "searchElapsedMs": 238,
+          "firstProgressMs": 57.483905999999934,
+          "hostPreparationMs": 0.16074200000002747,
+          "deadlineStop": false,
+          "depth": 2,
+          "synchronousTerminateMs": 0,
+          "eventLoopMaxMs": 12.500991
+        },
+        {
+          "repeat": 6,
+          "elapsedMs": 239,
+          "searchElapsedMs": 238,
+          "firstProgressMs": 28.795405000000073,
+          "hostPreparationMs": 0.17596200000002682,
+          "deadlineStop": false,
+          "depth": 2,
+          "synchronousTerminateMs": 0,
+          "eventLoopMaxMs": 11.075583
+        },
+        {
+          "repeat": 7,
+          "elapsedMs": 239,
+          "searchElapsedMs": 238,
+          "firstProgressMs": 32.764656000000286,
+          "hostPreparationMs": 0.17523400000027323,
+          "deadlineStop": false,
+          "depth": 2,
+          "synchronousTerminateMs": 0,
+          "eventLoopMaxMs": 17.481727
+        },
+        {
+          "repeat": 8,
+          "elapsedMs": 239,
+          "searchElapsedMs": 239,
+          "firstProgressMs": 19.551262999999835,
+          "hostPreparationMs": 0.07251799999994546,
+          "deadlineStop": false,
+          "depth": 2,
+          "synchronousTerminateMs": 0,
+          "eventLoopMaxMs": 15.589375
+        },
+        {
+          "repeat": 9,
+          "elapsedMs": 239,
+          "searchElapsedMs": 238,
+          "firstProgressMs": 38.784380000000056,
+          "hostPreparationMs": 0.42075199999999313,
+          "deadlineStop": false,
+          "depth": 2,
+          "synchronousTerminateMs": 0,
+          "eventLoopMaxMs": 20.217855
+        },
+        {
+          "repeat": 10,
+          "elapsedMs": 239,
+          "searchElapsedMs": 238,
+          "firstProgressMs": 24.96108600000025,
+          "hostPreparationMs": 0.06835799999998926,
+          "deadlineStop": false,
+          "depth": 2,
+          "synchronousTerminateMs": 0,
+          "eventLoopMaxMs": 12.419071
+        },
+        {
+          "repeat": 11,
+          "elapsedMs": 239,
+          "searchElapsedMs": 238,
+          "firstProgressMs": 23.82485600000018,
+          "hostPreparationMs": 0.07596000000012282,
+          "deadlineStop": false,
+          "depth": 2,
+          "synchronousTerminateMs": 0,
+          "eventLoopMaxMs": 11.141119
+        }
+      ]
+    },
+    {
+      "name": "baseline-validation",
+      "seed": 1709,
+      "ply": 61,
+      "viewer": "b",
+      "originalForfeit": {
+        "winner": "r",
+        "text": "超时技术负",
+        "technicalForfeit": true,
+        "offender": "baseline"
+      },
+      "originalFailedRow": {
+        "ply": 62,
+        "side": "b",
+        "engine": "baseline",
+        "move": {
+          "from": 73,
+          "to": 77
+        },
+        "elapsedMs": 362,
+        "depth": 2,
+        "nodes": 17735,
+        "score": 69,
+        "searchElapsedMs": 156,
+        "hostPreparationMs": 0.15919799999937823,
+        "dispatchMs": 0.0659830000004149,
+        "firstProgressMs": 20.13093200000003,
+        "fallback": false,
+        "deadlineStop": true,
+        "knownDark": 1
+      },
+      "runs": 12,
+      "maxMs": 241,
+      "over310": 0,
+      "rows": [
+        {
+          "repeat": 0,
+          "elapsedMs": 241,
+          "searchElapsedMs": 238,
+          "firstProgressMs": 53.83808900000031,
+          "hostPreparationMs": 0.5979870000001029,
+          "deadlineStop": false,
+          "depth": 1,
+          "synchronousTerminateMs": 0,
+          "eventLoopMaxMs": 18.628607
+        },
+        {
+          "repeat": 1,
+          "elapsedMs": 239,
+          "searchElapsedMs": 238,
+          "firstProgressMs": 37.762690999999904,
+          "hostPreparationMs": 0.2456489999999576,
+          "deadlineStop": false,
+          "depth": 1,
+          "synchronousTerminateMs": 0,
+          "eventLoopMaxMs": 11.263999
+        },
+        {
+          "repeat": 2,
+          "elapsedMs": 241,
+          "searchElapsedMs": 238,
+          "firstProgressMs": 45.81976799999984,
+          "hostPreparationMs": 1.2657810000000609,
+          "deadlineStop": false,
+          "depth": 1,
+          "synchronousTerminateMs": 0,
+          "eventLoopMaxMs": 18.366463
+        },
+        {
+          "repeat": 3,
+          "elapsedMs": 240,
+          "searchElapsedMs": 239,
+          "firstProgressMs": 43.50798399999985,
+          "hostPreparationMs": 0.36995699999988574,
+          "deadlineStop": false,
+          "depth": 1,
+          "synchronousTerminateMs": 0,
+          "eventLoopMaxMs": 27.803647
+        },
+        {
+          "repeat": 4,
+          "elapsedMs": 239,
+          "searchElapsedMs": 238,
+          "firstProgressMs": 32.84652200000073,
+          "hostPreparationMs": 0.14834000000064407,
+          "deadlineStop": false,
+          "depth": 2,
+          "synchronousTerminateMs": 0,
+          "eventLoopMaxMs": 11.272191
+        },
+        {
+          "repeat": 5,
+          "elapsedMs": 239,
+          "searchElapsedMs": 238,
+          "firstProgressMs": 20.884143000000222,
+          "hostPreparationMs": 0.1158450000002631,
+          "deadlineStop": false,
+          "depth": 2,
+          "synchronousTerminateMs": 0,
+          "eventLoopMaxMs": 18.235391
+        },
+        {
+          "repeat": 6,
+          "elapsedMs": 239,
+          "searchElapsedMs": 238,
+          "firstProgressMs": 25.774867999999515,
+          "hostPreparationMs": 0.15296099999977741,
+          "deadlineStop": false,
+          "depth": 2,
+          "synchronousTerminateMs": 0,
+          "eventLoopMaxMs": 25.313279
+        },
+        {
+          "repeat": 7,
+          "elapsedMs": 239,
+          "searchElapsedMs": 238,
+          "firstProgressMs": 28.772398000000067,
+          "hostPreparationMs": 0.10391700000036508,
+          "deadlineStop": false,
+          "depth": 2,
+          "synchronousTerminateMs": 0,
+          "eventLoopMaxMs": 11.272191
+        },
+        {
+          "repeat": 8,
+          "elapsedMs": 239,
+          "searchElapsedMs": 238,
+          "firstProgressMs": 23.867536000000655,
+          "hostPreparationMs": 0.13506100000086008,
+          "deadlineStop": false,
+          "depth": 2,
+          "synchronousTerminateMs": 0,
+          "eventLoopMaxMs": 14.213119
+        },
+        {
+          "repeat": 9,
+          "elapsedMs": 239,
+          "searchElapsedMs": 238,
+          "firstProgressMs": 38.423383999999714,
+          "hostPreparationMs": 0.11790299999938725,
+          "deadlineStop": false,
+          "depth": 2,
+          "synchronousTerminateMs": 0,
+          "eventLoopMaxMs": 15.138815
+        },
+        {
+          "repeat": 10,
+          "elapsedMs": 239,
+          "searchElapsedMs": 239,
+          "firstProgressMs": 18.726447000000007,
+          "hostPreparationMs": 0.0980199999994511,
+          "deadlineStop": false,
+          "depth": 2,
+          "synchronousTerminateMs": 0,
+          "eventLoopMaxMs": 11.608063
+        },
+        {
+          "repeat": 11,
+          "elapsedMs": 239,
+          "searchElapsedMs": 238,
+          "firstProgressMs": 20.200861999999688,
+          "hostPreparationMs": 0.0990990000000238,
+          "deadlineStop": false,
+          "depth": 2,
+          "synchronousTerminateMs": 0,
+          "eventLoopMaxMs": 11.083775
+        }
+      ]
+    }
+  ]
+}

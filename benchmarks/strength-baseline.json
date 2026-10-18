@@ -1,0 +1,6 @@
+{
+  "commit": "3578f9b9a1a254728959decc1c1418a8126e9dc7",
+  "sourceSha256": "e329a36b9ab2a26bcabdba86cbe076ced79402b5f74d79f1ca9a672b4b60ac07",
+  "variant": "被吃暗子仅吃子方可见",
+  "note": "改进前引擎快照，仅调整engine.js导入相对路径；不含第三方源码。"
+}

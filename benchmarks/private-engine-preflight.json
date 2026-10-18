@@ -1,0 +1,454 @@
+{
+  "smoke": {
+    "viewer": "r",
+    "move": {
+      "from": 69,
+      "to": 60
+    },
+    "elapsedMs": 250,
+    "verificationMs": 0.3492439999999988,
+    "nativeBudgetMs": 249,
+    "legal": true
+  },
+  "engine": "brianhliou/pikafish-jieqi-wasm",
+  "commit": "bcc83f88ee18760e60903d1a3aaa61ef6f70f2c9",
+  "plies": 24,
+  "darkCaptures": 5,
+  "observations": 48,
+  "allBoardTurnPoolsAgree": true,
+  "protocol": "初始公开FEN + 每着6字符；第5字符为公开翻子或X，第6字符仅为观察方亲自吃到的暗俘身份或X。无隐藏布局和未知暗俘真身。",
+  "rows": [
+    {
+      "ply": 1,
+      "viewer": "r",
+      "actual": "xBxxkxxxx/9/1x5x1/x1x1x1x1x/9/9/X1X1X1X1X/7X1/9/XXXXKXXXX b R2A2C2P5N2B1r2a2c2p5n2b1 0 1",
+      "expected": "xBxxkxxxx/9/1x5x1/x1x1x1x1x/9/9/X1X1X1X1X/7X1/9/XXXXKXXXX b R2A2C2P5N2B1r2a2c2p5n2b1 0 1",
+      "knownDark": 1,
+      "unknownLoss": 0,
+      "token": "b2b9Bb"
+    },
+    {
+      "ply": 1,
+      "viewer": "b",
+      "actual": "xBxxkxxxx/9/1x5x1/x1x1x1x1x/9/9/X1X1X1X1X/7X1/9/XXXXKXXXX b R2A2C2P5N2B1r2a2c2p5n2b2 0 1",
+      "expected": "xBxxkxxxx/9/1x5x1/x1x1x1x1x/9/9/X1X1X1X1X/7X1/9/XXXXKXXXX b R2A2C2P5N2B1r2a2c2p5n2b2 0 1",
+      "knownDark": 0,
+      "unknownLoss": 1,
+      "token": "b2b9BX"
+    },
+    {
+      "ply": 2,
+      "viewer": "r",
+      "actual": "xBxxkxxxx/9/1x7/x1x1x1x1x/9/9/X1X1X1X1X/7X1/9/XXXXKXXaX w R2A2C2P5N2B1r2a1c2p5n2b1 0 2",
+      "expected": "xBxxkxxxx/9/1x7/x1x1x1x1x/9/9/X1X1X1X1X/7X1/9/XXXXKXXaX w R2A2C2P5N2B1r2a1c2p5n2b1 0 2",
+      "knownDark": 1,
+      "unknownLoss": 1,
+      "token": "h7h0aX"
+    },
+    {
+      "ply": 2,
+      "viewer": "b",
+      "actual": "xBxxkxxxx/9/1x7/x1x1x1x1x/9/9/X1X1X1X1X/7X1/9/XXXXKXXaX w R2A2C2P4N2B1r2a1c2p5n2b2 0 2",
+      "expected": "xBxxkxxxx/9/1x7/x1x1x1x1x/9/9/X1X1X1X1X/7X1/9/XXXXKXXaX w R2A2C2P4N2B1r2a1c2p5n2b2 0 2",
+      "knownDark": 1,
+      "unknownLoss": 1,
+      "token": "h7h0aP"
+    },
+    {
+      "ply": 3,
+      "viewer": "r",
+      "actual": "xBxxkxxxx/9/1x7/x1x1x1x1x/9/2P6/X3X1X1X/7X1/9/XXXXKXXaX b R2A2C2P4N2B1r2a1c2p5n2b1 0 2",
+      "expected": "xBxxkxxxx/9/1x7/x1x1x1x1x/9/2P6/X3X1X1X/7X1/9/XXXXKXXaX b R2A2C2P4N2B1r2a1c2p5n2b1 0 2",
+      "knownDark": 1,
+      "unknownLoss": 1,
+      "token": "c3c4PX"
+    },
+    {
+      "ply": 3,
+      "viewer": "b",
+      "actual": "xBxxkxxxx/9/1x7/x1x1x1x1x/9/2P6/X3X1X1X/7X1/9/XXXXKXXaX b R2A2C2P3N2B1r2a1c2p5n2b2 0 2",
+      "expected": "xBxxkxxxx/9/1x7/x1x1x1x1x/9/2P6/X3X1X1X/7X1/9/XXXXKXXaX b R2A2C2P3N2B1r2a1c2p5n2b2 0 2",
+      "knownDark": 1,
+      "unknownLoss": 1,
+      "token": "c3c4PX"
+    },
+    {
+      "ply": 4,
+      "viewer": "r",
+      "actual": "xB1xkxxxx/9/rx7/x1x1x1x1x/9/2P6/X3X1X1X/7X1/9/XXXXKXXaX w R2A2C2P4N2B1r1a1c2p5n2b1 0 3",
+      "expected": "xB1xkxxxx/9/rx7/x1x1x1x1x/9/2P6/X3X1X1X/7X1/9/XXXXKXXaX w R2A2C2P4N2B1r1a1c2p5n2b1 0 3",
+      "knownDark": 1,
+      "unknownLoss": 1,
+      "token": "c9a7rX"
+    },
+    {
+      "ply": 4,
+      "viewer": "b",
+      "actual": "xB1xkxxxx/9/rx7/x1x1x1x1x/9/2P6/X3X1X1X/7X1/9/XXXXKXXaX w R2A2C2P3N2B1r1a1c2p5n2b2 0 3",
+      "expected": "xB1xkxxxx/9/rx7/x1x1x1x1x/9/2P6/X3X1X1X/7X1/9/XXXXKXXaX w R2A2C2P3N2B1r1a1c2p5n2b2 0 3",
+      "knownDark": 1,
+      "unknownLoss": 1,
+      "token": "c9a7rX"
+    },
+    {
+      "ply": 5,
+      "viewer": "r",
+      "actual": "xB1xkxxxx/9/rx7/x1x1x1x1x/9/2P3A2/X3X3X/7X1/9/XXXXKXXaX b R2A1C2P4N2B1r1a1c2p5n2b1 0 3",
+      "expected": "xB1xkxxxx/9/rx7/x1x1x1x1x/9/2P3A2/X3X3X/7X1/9/XXXXKXXaX b R2A1C2P4N2B1r1a1c2p5n2b1 0 3",
+      "knownDark": 1,
+      "unknownLoss": 1,
+      "token": "g3g4AX"
+    },
+    {
+      "ply": 5,
+      "viewer": "b",
+      "actual": "xB1xkxxxx/9/rx7/x1x1x1x1x/9/2P3A2/X3X3X/7X1/9/XXXXKXXaX b R2A1C2P3N2B1r1a1c2p5n2b2 0 3",
+      "expected": "xB1xkxxxx/9/rx7/x1x1x1x1x/9/2P3A2/X3X3X/7X1/9/XXXXKXXaX b R2A1C2P3N2B1r1a1c2p5n2b2 0 3",
+      "knownDark": 1,
+      "unknownLoss": 1,
+      "token": "g3g4AX"
+    },
+    {
+      "ply": 6,
+      "viewer": "r",
+      "actual": "xB1xkx1xx/9/rx2p4/x1x1x1x1x/9/2P3A2/X3X3X/7X1/9/XXXXKXXaX w R2A1C2P4N2B1r1a1c2p4n2b1 0 4",
+      "expected": "xB1xkx1xx/9/rx2p4/x1x1x1x1x/9/2P3A2/X3X3X/7X1/9/XXXXKXXaX w R2A1C2P4N2B1r1a1c2p4n2b1 0 4",
+      "knownDark": 1,
+      "unknownLoss": 1,
+      "token": "g9e7pX"
+    },
+    {
+      "ply": 6,
+      "viewer": "b",
+      "actual": "xB1xkx1xx/9/rx2p4/x1x1x1x1x/9/2P3A2/X3X3X/7X1/9/XXXXKXXaX w R2A1C2P3N2B1r1a1c2p4n2b2 0 4",
+      "expected": "xB1xkx1xx/9/rx2p4/x1x1x1x1x/9/2P3A2/X3X3X/7X1/9/XXXXKXXaX w R2A1C2P3N2B1r1a1c2p4n2b2 0 4",
+      "knownDark": 1,
+      "unknownLoss": 1,
+      "token": "g9e7pX"
+    },
+    {
+      "ply": 7,
+      "viewer": "r",
+      "actual": "xB1xkx1xx/9/rx2p4/x1x1x1x1x/9/P1P3A2/4X3X/7X1/9/XXXXKXXaX b R2A1C2P3N2B1r1a1c2p4n2b1 0 4",
+      "expected": "xB1xkx1xx/9/rx2p4/x1x1x1x1x/9/P1P3A2/4X3X/7X1/9/XXXXKXXaX b R2A1C2P3N2B1r1a1c2p4n2b1 0 4",
+      "knownDark": 1,
+      "unknownLoss": 1,
+      "token": "a3a4PX"
+    },
+    {
+      "ply": 7,
+      "viewer": "b",
+      "actual": "xB1xkx1xx/9/rx2p4/x1x1x1x1x/9/P1P3A2/4X3X/7X1/9/XXXXKXXaX b R2A1C2P2N2B1r1a1c2p4n2b2 0 4",
+      "expected": "xB1xkx1xx/9/rx2p4/x1x1x1x1x/9/P1P3A2/4X3X/7X1/9/XXXXKXXaX b R2A1C2P2N2B1r1a1c2p4n2b2 0 4",
+      "knownDark": 1,
+      "unknownLoss": 1,
+      "token": "a3a4PX"
+    },
+    {
+      "ply": 8,
+      "viewer": "r",
+      "actual": "xB1xkx2x/5n3/rx2p4/x1x1x1x1x/9/P1P3A2/4X3X/7X1/9/XXXXKXXaX w R2A1C2P3N2B1r1a1c2p4n1b1 0 5",
+      "expected": "xB1xkx2x/5n3/rx2p4/x1x1x1x1x/9/P1P3A2/4X3X/7X1/9/XXXXKXXaX w R2A1C2P3N2B1r1a1c2p4n1b1 0 5",
+      "knownDark": 1,
+      "unknownLoss": 1,
+      "token": "h9f8nX"
+    },
+    {
+      "ply": 8,
+      "viewer": "b",
+      "actual": "xB1xkx2x/5n3/rx2p4/x1x1x1x1x/9/P1P3A2/4X3X/7X1/9/XXXXKXXaX w R2A1C2P2N2B1r1a1c2p4n1b2 0 5",
+      "expected": "xB1xkx2x/5n3/rx2p4/x1x1x1x1x/9/P1P3A2/4X3X/7X1/9/XXXXKXXaX w R2A1C2P2N2B1r1a1c2p4n1b2 0 5",
+      "knownDark": 1,
+      "unknownLoss": 1,
+      "token": "h9f8nX"
+    },
+    {
+      "ply": 9,
+      "viewer": "r",
+      "actual": "xB1xkx2x/5n3/rx2p4/x1x1x1x1x/9/P1P3A1P/4X4/7X1/9/XXXXKXXaX b R2A1C2P2N2B1r1a1c2p4n1b1 0 5",
+      "expected": "xB1xkx2x/5n3/rx2p4/x1x1x1x1x/9/P1P3A1P/4X4/7X1/9/XXXXKXXaX b R2A1C2P2N2B1r1a1c2p4n1b1 0 5",
+      "knownDark": 1,
+      "unknownLoss": 1,
+      "token": "i3i4PX"
+    },
+    {
+      "ply": 9,
+      "viewer": "b",
+      "actual": "xB1xkx2x/5n3/rx2p4/x1x1x1x1x/9/P1P3A1P/4X4/7X1/9/XXXXKXXaX b R2A1C2P1N2B1r1a1c2p4n1b2 0 5",
+      "expected": "xB1xkx2x/5n3/rx2p4/x1x1x1x1x/9/P1P3A1P/4X4/7X1/9/XXXXKXXaX b R2A1C2P1N2B1r1a1c2p4n1b2 0 5",
+      "knownDark": 1,
+      "unknownLoss": 1,
+      "token": "i3i4PX"
+    },
+    {
+      "ply": 10,
+      "viewer": "r",
+      "actual": "xB1xkx2x/9/rx2p2n1/x1x1x1x1x/9/P1P3A1P/4X4/7X1/9/XXXXKXXaX w R2A1C2P2N2B1r1a1c2p4n1b1 0 6",
+      "expected": "xB1xkx2x/9/rx2p2n1/x1x1x1x1x/9/P1P3A1P/4X4/7X1/9/XXXXKXXaX w R2A1C2P2N2B1r1a1c2p4n1b1 1 6",
+      "knownDark": 1,
+      "unknownLoss": 1,
+      "token": "f8h7XX"
+    },
+    {
+      "ply": 10,
+      "viewer": "b",
+      "actual": "xB1xkx2x/9/rx2p2n1/x1x1x1x1x/9/P1P3A1P/4X4/7X1/9/XXXXKXXaX w R2A1C2P1N2B1r1a1c2p4n1b2 0 6",
+      "expected": "xB1xkx2x/9/rx2p2n1/x1x1x1x1x/9/P1P3A1P/4X4/7X1/9/XXXXKXXaX w R2A1C2P1N2B1r1a1c2p4n1b2 1 6",
+      "knownDark": 1,
+      "unknownLoss": 1,
+      "token": "f8h7XX"
+    },
+    {
+      "ply": 11,
+      "viewer": "r",
+      "actual": "xB1xkx2x/9/rx2p2n1/x1x1x1x1x/9/P1P3A1P/4X4/6P2/9/XXXXKXXaX b R2A1C2P1N2B1r1a1c2p4n1b1 0 6",
+      "expected": "xB1xkx2x/9/rx2p2n1/x1x1x1x1x/9/P1P3A1P/4X4/6P2/9/XXXXKXXaX b R2A1C2P1N2B1r1a1c2p4n1b1 0 6",
+      "knownDark": 1,
+      "unknownLoss": 1,
+      "token": "h2g2PX"
+    },
+    {
+      "ply": 11,
+      "viewer": "b",
+      "actual": "xB1xkx2x/9/rx2p2n1/x1x1x1x1x/9/P1P3A1P/4X4/6P2/9/XXXXKXXaX b R2A1C2N2B1r1a1c2p4n1b2 0 6",
+      "expected": "xB1xkx2x/9/rx2p2n1/x1x1x1x1x/9/P1P3A1P/4X4/6P2/9/XXXXKXXaX b R2A1C2N2B1r1a1c2p4n1b2 0 6",
+      "knownDark": 1,
+      "unknownLoss": 1,
+      "token": "h2g2PX"
+    },
+    {
+      "ply": 12,
+      "viewer": "r",
+      "actual": "xB1xkx2x/9/r2pp2n1/x1x1x1x1x/9/P1P3A1P/4X4/6P2/9/XXXXKXXaX w R2A1C2P1N2B1r1a1c2p3n1b1 0 7",
+      "expected": "xB1xkx2x/9/r2pp2n1/x1x1x1x1x/9/P1P3A1P/4X4/6P2/9/XXXXKXXaX w R2A1C2P1N2B1r1a1c2p3n1b1 0 7",
+      "knownDark": 1,
+      "unknownLoss": 1,
+      "token": "b7d7pX"
+    },
+    {
+      "ply": 12,
+      "viewer": "b",
+      "actual": "xB1xkx2x/9/r2pp2n1/x1x1x1x1x/9/P1P3A1P/4X4/6P2/9/XXXXKXXaX w R2A1C2N2B1r1a1c2p3n1b2 0 7",
+      "expected": "xB1xkx2x/9/r2pp2n1/x1x1x1x1x/9/P1P3A1P/4X4/6P2/9/XXXXKXXaX w R2A1C2N2B1r1a1c2p3n1b2 0 7",
+      "knownDark": 1,
+      "unknownLoss": 1,
+      "token": "b7d7pX"
+    },
+    {
+      "ply": 13,
+      "viewer": "r",
+      "actual": "xB1xkx2x/9/r2pp2n1/x1x1x1x1x/9/P1P3A1P/R3X4/6P2/9/1XXXKXXaX b R1A1C2P1N2B1r1a1c2p3n1b1 0 7",
+      "expected": "xB1xkx2x/9/r2pp2n1/x1x1x1x1x/9/P1P3A1P/R3X4/6P2/9/1XXXKXXaX b R1A1C2P1N2B1r1a1c2p3n1b1 0 7",
+      "knownDark": 1,
+      "unknownLoss": 1,
+      "token": "a0a3RX"
+    },
+    {
+      "ply": 13,
+      "viewer": "b",
+      "actual": "xB1xkx2x/9/r2pp2n1/x1x1x1x1x/9/P1P3A1P/R3X4/6P2/9/1XXXKXXaX b R1A1C2N2B1r1a1c2p3n1b2 0 7",
+      "expected": "xB1xkx2x/9/r2pp2n1/x1x1x1x1x/9/P1P3A1P/R3X4/6P2/9/1XXXKXXaX b R1A1C2N2B1r1a1c2p3n1b2 0 7",
+      "knownDark": 1,
+      "unknownLoss": 1,
+      "token": "a0a3RX"
+    },
+    {
+      "ply": 14,
+      "viewer": "r",
+      "actual": "xB1xkx2x/9/r2pp4/x1x1x1x1x/8n/P1P3A1P/R3X4/6P2/9/1XXXKXXaX w R1A1C2P1N2B1r1a1c2p3n1b1 0 8",
+      "expected": "xB1xkx2x/9/r2pp4/x1x1x1x1x/8n/P1P3A1P/R3X4/6P2/9/1XXXKXXaX w R1A1C2P1N2B1r1a1c2p3n1b1 1 8",
+      "knownDark": 1,
+      "unknownLoss": 1,
+      "token": "h7i5XX"
+    },
+    {
+      "ply": 14,
+      "viewer": "b",
+      "actual": "xB1xkx2x/9/r2pp4/x1x1x1x1x/8n/P1P3A1P/R3X4/6P2/9/1XXXKXXaX w R1A1C2N2B1r1a1c2p3n1b2 0 8",
+      "expected": "xB1xkx2x/9/r2pp4/x1x1x1x1x/8n/P1P3A1P/R3X4/6P2/9/1XXXKXXaX w R1A1C2N2B1r1a1c2p3n1b2 1 8",
+      "knownDark": 1,
+      "unknownLoss": 1,
+      "token": "h7i5XX"
+    },
+    {
+      "ply": 15,
+      "viewer": "r",
+      "actual": "xB1xkx2x/9/r2pp4/x1x1x1x1x/8n/P1P1A1A1P/R8/6P2/9/1XXXKXXaX b R1C2P1N2B1r1a1c2p3n1b1 0 8",
+      "expected": "xB1xkx2x/9/r2pp4/x1x1x1x1x/8n/P1P1A1A1P/R8/6P2/9/1XXXKXXaX b R1C2P1N2B1r1a1c2p3n1b1 0 8",
+      "knownDark": 1,
+      "unknownLoss": 1,
+      "token": "e3e4AX"
+    },
+    {
+      "ply": 15,
+      "viewer": "b",
+      "actual": "xB1xkx2x/9/r2pp4/x1x1x1x1x/8n/P1P1A1A1P/R8/6P2/9/1XXXKXXaX b R1C2N2B1r1a1c2p3n1b2 0 8",
+      "expected": "xB1xkx2x/9/r2pp4/x1x1x1x1x/8n/P1P1A1A1P/R8/6P2/9/1XXXKXXaX b R1C2N2B1r1a1c2p3n1b2 0 8",
+      "knownDark": 1,
+      "unknownLoss": 1,
+      "token": "e3e4AX"
+    },
+    {
+      "ply": 16,
+      "viewer": "r",
+      "actual": "xB1xkx2x/9/r2pp4/x1x3x1x/4n3n/P1P1A1A1P/R8/6P2/9/1XXXKXXaX w R1C2P1N2B1r1a1c2p3b1 0 9",
+      "expected": "xB1xkx2x/9/r2pp4/x1x3x1x/4n3n/P1P1A1A1P/R8/6P2/9/1XXXKXXaX w R1C2P1N2B1r1a1c2p3b1 0 9",
+      "knownDark": 1,
+      "unknownLoss": 1,
+      "token": "e6e5nX"
+    },
+    {
+      "ply": 16,
+      "viewer": "b",
+      "actual": "xB1xkx2x/9/r2pp4/x1x3x1x/4n3n/P1P1A1A1P/R8/6P2/9/1XXXKXXaX w R1C2N2B1r1a1c2p3b2 0 9",
+      "expected": "xB1xkx2x/9/r2pp4/x1x3x1x/4n3n/P1P1A1A1P/R8/6P2/9/1XXXKXXaX w R1C2N2B1r1a1c2p3b2 0 9",
+      "knownDark": 1,
+      "unknownLoss": 1,
+      "token": "e6e5nX"
+    },
+    {
+      "ply": 17,
+      "viewer": "r",
+      "actual": "xB1xkx2x/9/r2pp4/x1x3x1x/4n3n/P1P1A1A1P/5R3/6P2/9/1XXXKXXaX b R1C2P1N2B1r1a1c2p3b1 0 9",
+      "expected": "xB1xkx2x/9/r2pp4/x1x3x1x/4n3n/P1P1A1A1P/5R3/6P2/9/1XXXKXXaX b R1C2P1N2B1r1a1c2p3b1 1 9",
+      "knownDark": 1,
+      "unknownLoss": 1,
+      "token": "a3f3XX"
+    },
+    {
+      "ply": 17,
+      "viewer": "b",
+      "actual": "xB1xkx2x/9/r2pp4/x1x3x1x/4n3n/P1P1A1A1P/5R3/6P2/9/1XXXKXXaX b R1C2N2B1r1a1c2p3b2 0 9",
+      "expected": "xB1xkx2x/9/r2pp4/x1x3x1x/4n3n/P1P1A1A1P/5R3/6P2/9/1XXXKXXaX b R1C2N2B1r1a1c2p3b2 1 9",
+      "knownDark": 1,
+      "unknownLoss": 1,
+      "token": "a3f3XX"
+    },
+    {
+      "ply": 18,
+      "viewer": "r",
+      "actual": "xB1xkx2x/9/r2pp4/x1x3x1x/8n/P1P1A1n1P/5R3/6P2/9/1XXXKXXaX w R1C2P1N2B1r1a1c2p3b1 0 10",
+      "expected": "xB1xkx2x/9/r2pp4/x1x3x1x/8n/P1P1A1n1P/5R3/6P2/9/1XXXKXXaX w R1C2P1N2B1r1a1c2p3b1 0 10",
+      "knownDark": 1,
+      "unknownLoss": 1,
+      "token": "e5g4XX"
+    },
+    {
+      "ply": 18,
+      "viewer": "b",
+      "actual": "xB1xkx2x/9/r2pp4/x1x3x1x/8n/P1P1A1n1P/5R3/6P2/9/1XXXKXXaX w R1C2N2B1r1a1c2p3b2 0 10",
+      "expected": "xB1xkx2x/9/r2pp4/x1x3x1x/8n/P1P1A1n1P/5R3/6P2/9/1XXXKXXaX w R1C2N2B1r1a1c2p3b2 0 10",
+      "knownDark": 1,
+      "unknownLoss": 1,
+      "token": "e5g4XX"
+    },
+    {
+      "ply": 19,
+      "viewer": "r",
+      "actual": "xB1xkR2x/9/r2pp4/x1x3x1x/8n/P1P1A1n1P/9/6P2/9/1XXXKXXaX b R1C2P1N2B1r1c2p3b1 0 10",
+      "expected": "xB1xkR2x/9/r2pp4/x1x3x1x/8n/P1P1A1n1P/9/6P2/9/1XXXKXXaX b R1C2P1N2B1r1c2p3b1 0 10",
+      "knownDark": 2,
+      "unknownLoss": 1,
+      "token": "f3f9Xa"
+    },
+    {
+      "ply": 19,
+      "viewer": "b",
+      "actual": "xB1xkR2x/9/r2pp4/x1x3x1x/8n/P1P1A1n1P/9/6P2/9/1XXXKXXaX b R1C2N2B1r1a1c2p3b2 0 10",
+      "expected": "xB1xkR2x/9/r2pp4/x1x3x1x/8n/P1P1A1n1P/9/6P2/9/1XXXKXXaX b R1C2N2B1r1a1c2p3b2 0 10",
+      "knownDark": 1,
+      "unknownLoss": 2,
+      "token": "f3f9XX"
+    },
+    {
+      "ply": 20,
+      "viewer": "r",
+      "actual": "xB1x1R2x/4k4/r2pp4/x1x3x1x/8n/P1P1A1n1P/9/6P2/9/1XXXKXXaX w R1C2P1N2B1r1c2p3b1 0 11",
+      "expected": "xB1x1R2x/4k4/r2pp4/x1x3x1x/8n/P1P1A1n1P/9/6P2/9/1XXXKXXaX w R1C2P1N2B1r1c2p3b1 1 11",
+      "knownDark": 2,
+      "unknownLoss": 1,
+      "token": "e9e8XX"
+    },
+    {
+      "ply": 20,
+      "viewer": "b",
+      "actual": "xB1x1R2x/4k4/r2pp4/x1x3x1x/8n/P1P1A1n1P/9/6P2/9/1XXXKXXaX w R1C2N2B1r1a1c2p3b2 0 11",
+      "expected": "xB1x1R2x/4k4/r2pp4/x1x3x1x/8n/P1P1A1n1P/9/6P2/9/1XXXKXXaX w R1C2N2B1r1a1c2p3b2 1 11",
+      "knownDark": 1,
+      "unknownLoss": 2,
+      "token": "e9e8XX"
+    },
+    {
+      "ply": 21,
+      "viewer": "r",
+      "actual": "xB1x4R/4k4/r2pp4/x1x3x1x/8n/P1P1A1n1P/9/6P2/9/1XXXKXXaX b R1C2P1N2B1r1c1p3b1 0 11",
+      "expected": "xB1x4R/4k4/r2pp4/x1x3x1x/8n/P1P1A1n1P/9/6P2/9/1XXXKXXaX b R1C2P1N2B1r1c1p3b1 0 11",
+      "knownDark": 3,
+      "unknownLoss": 1,
+      "token": "f9i9Xc"
+    },
+    {
+      "ply": 21,
+      "viewer": "b",
+      "actual": "xB1x4R/4k4/r2pp4/x1x3x1x/8n/P1P1A1n1P/9/6P2/9/1XXXKXXaX b R1C2N2B1r1a1c2p3b2 0 11",
+      "expected": "xB1x4R/4k4/r2pp4/x1x3x1x/8n/P1P1A1n1P/9/6P2/9/1XXXKXXaX b R1C2N2B1r1a1c2p3b2 0 11",
+      "knownDark": 1,
+      "unknownLoss": 3,
+      "token": "f9i9XX"
+    },
+    {
+      "ply": 22,
+      "viewer": "r",
+      "actual": "1p1x4R/4k4/r2pp4/x1x3x1x/8n/P1P1A1n1P/9/6P2/9/1XXXKXXaX w R1C2P1N2B1r1c1p2b1 0 12",
+      "expected": "1p1x4R/4k4/r2pp4/x1x3x1x/8n/P1P1A1n1P/9/6P2/9/1XXXKXXaX w R1C2P1N2B1r1c1p2b1 0 12",
+      "knownDark": 3,
+      "unknownLoss": 1,
+      "token": "a9b9pX"
+    },
+    {
+      "ply": 22,
+      "viewer": "b",
+      "actual": "1p1x4R/4k4/r2pp4/x1x3x1x/8n/P1P1A1n1P/9/6P2/9/1XXXKXXaX w R1C2N2B1r1a1c2p2b2 0 12",
+      "expected": "1p1x4R/4k4/r2pp4/x1x3x1x/8n/P1P1A1n1P/9/6P2/9/1XXXKXXaX w R1C2N2B1r1a1c2p2b2 0 12",
+      "knownDark": 1,
+      "unknownLoss": 3,
+      "token": "a9b9pX"
+    },
+    {
+      "ply": 23,
+      "viewer": "r",
+      "actual": "1p1R5/4k4/r2pp4/x1x3x1x/8n/P1P1A1n1P/9/6P2/9/1XXXKXXaX b R1C2P1N2B1r1c1p1b1 0 12",
+      "expected": "1p1R5/4k4/r2pp4/x1x3x1x/8n/P1P1A1n1P/9/6P2/9/1XXXKXXaX b R1C2P1N2B1r1c1p1b1 0 12",
+      "knownDark": 4,
+      "unknownLoss": 1,
+      "token": "i9d9Xp"
+    },
+    {
+      "ply": 23,
+      "viewer": "b",
+      "actual": "1p1R5/4k4/r2pp4/x1x3x1x/8n/P1P1A1n1P/9/6P2/9/1XXXKXXaX b R1C2N2B1r1a1c2p2b2 0 12",
+      "expected": "1p1R5/4k4/r2pp4/x1x3x1x/8n/P1P1A1n1P/9/6P2/9/1XXXKXXaX b R1C2N2B1r1a1c2p2b2 0 12",
+      "knownDark": 1,
+      "unknownLoss": 4,
+      "token": "i9d9XX"
+    },
+    {
+      "ply": 24,
+      "viewer": "r",
+      "actual": "1p1R5/4k4/2rpp4/x1x3x1x/8n/P1P1A1n1P/9/6P2/9/1XXXKXXaX w R1C2P1N2B1r1c1p1b1 0 13",
+      "expected": "1p1R5/4k4/2rpp4/x1x3x1x/8n/P1P1A1n1P/9/6P2/9/1XXXKXXaX w R1C2P1N2B1r1c1p1b1 1 13",
+      "knownDark": 4,
+      "unknownLoss": 1,
+      "token": "a7c7XX"
+    },
+    {
+      "ply": 24,
+      "viewer": "b",
+      "actual": "1p1R5/4k4/2rpp4/x1x3x1x/8n/P1P1A1n1P/9/6P2/9/1XXXKXXaX w R1C2N2B1r1a1c2p2b2 0 13",
+      "expected": "1p1R5/4k4/2rpp4/x1x3x1x/8n/P1P1A1n1P/9/6P2/9/1XXXKXXaX w R1C2N2B1r1a1c2p2b2 1 13",
+      "knownDark": 1,
+      "unknownLoss": 4,
+      "token": "a7c7XX"
+    }
+  ]
+}

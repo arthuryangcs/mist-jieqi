@@ -1,0 +1,34 @@
+{
+  "baselineCommit": "3578f9b9a1a254728959decc1c1418a8126e9dc7",
+  "candidateAiSha256": "b40f298d461503e146226d5bc17cd79aa6ed79c3d1bc91f022f621aaea68365b",
+  "measuredTransportHashes": {
+    "deadline-search.js": "13386f0a0c7dbb6a36e35256cd6dbac36055f8c147597acdfc73af2ea24c3666",
+    "worker.js": "142d5a89fa58b226c84dcb427b713941f337451687f0349ec96e6354388723c9",
+    "scripts/node-search-worker.js": "46bf185d0a96fe5d43a5b7ad64231bf9e6b21ad3d31618ad2c980e8efa088e3c",
+    "scripts/node-search-engine.js": "27a1594843492e0af2f0fb4b588a0ccb5207708110f7c85a242155fc1c12e469",
+    "scripts/external-engine.js": "6aba8c2768315c580a71143987665667c3d6d0bec21e0282c798c1d5c6268a74"
+  },
+  "currentTransportHashes": {
+    "deadline-search.js": "13386f0a0c7dbb6a36e35256cd6dbac36055f8c147597acdfc73af2ea24c3666",
+    "worker.js": "142d5a89fa58b226c84dcb427b713941f337451687f0349ec96e6354388723c9",
+    "scripts/node-search-worker.js": "46bf185d0a96fe5d43a5b7ad64231bf9e6b21ad3d31618ad2c980e8efa088e3c",
+    "scripts/node-search-engine.js": "27a1594843492e0af2f0fb4b588a0ccb5207708110f7c85a242155fc1c12e469",
+    "scripts/external-engine.js": "6aba8c2768315c580a71143987665667c3d6d0bec21e0282c798c1d5c6268a74"
+  },
+  "defaultFeatures": {
+    "captureKnowledge": true,
+    "inventoryOrdering": true,
+    "safety": true,
+    "checkExtensions": true,
+    "killers": true,
+    "activity": false,
+    "leaperActivity": false,
+    "slidingMobility": false
+  },
+  "unitTestsPassed": 77,
+  "browserFlowsPassed": 16,
+  "browserPassed": true,
+  "nativeCommit": "bcc83f88ee18760e60903d1a3aaa61ef6f70f2c9",
+  "nativeBinarySha256": "f32d3c6dfe4d6d90da7728d9cc2af68c3195a1cefb1bc28f3829f174c518dba1",
+  "policy": "先保留负面试验与技术负；无第三方替换、权重下载或新增运行来源。"
+}

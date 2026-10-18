@@ -1,0 +1,9 @@
+import fs from 'node:fs';import{monitorEventLoopDelay}from'node:perf_hooks';import{createHash}from'node:crypto';
+import{initial,move,publicState,positionKey}from'../engine.js';import{seeded}from'../ai.js';import{NodeSearchEngine}from'./node-search-engine.js';
+const phase=process.argv[2]||'before';if(!['before','after'].includes(phase))throw Error('phase: before/after');
+const g=JSON.parse(fs.readFileSync('benchmarks/strength-pilot.json')).games.find(g=>g.result.technicalForfeit);let s=initial(seeded(g.seed));s.positions=[positionKey(s)];for(const row of g.log.slice(0,-1))s=move(s,row.move);const view=publicState(s,s.turn);
+fs.writeFileSync('benchmarks/strength-timeout-position.json',JSON.stringify({seed:g.seed,ply:s.ply,viewer:s.turn,view},null,2)+'\n');
+const moduleUrl=phase==='before'?new URL('../benchmarks/strength-candidate-v1-ai.js',import.meta.url).href:new URL('../ai.js',import.meta.url).href;
+const e=new NodeSearchEngine({moduleUrl}),rows=[],loop=monitorEventLoopDelay({resolution:10});loop.enable();
+try{await e.ready();for(let i=0;i<12;i++){loop.reset();const r=await e.search(view,250);rows.push({repeat:i,elapsedMs:r.elapsedMs,searchElapsedMs:r.searchElapsedMs,hostPreparationMs:r.hostPreparationMs,dispatchMs:r.dispatchMs,firstProgressMs:r.firstProgressMs,depth:r.depth,nodes:r.nodes,deadlineStop:r.deadlineStop,fallback:r.fallbackUsed,eventLoopMaxMs:loop.max/1e6});}}finally{loop.disable();await e.close();}
+const result={sourceSha256:createHash('sha256').update(phase==='before'?fs.readFileSync('benchmarks/strength-candidate-v1-ai.js','utf8').replace("from '../engine.js'","from './engine.js'"):fs.readFileSync('ai.js')).digest('hex'),runs:rows.length,max:Math.max(...rows.map(r=>r.elapsedMs)),over310:rows.filter(r=>r.elapsedMs>310).length,rows};fs.writeFileSync(process.env.JIEQI_TIMING_OUTPUT||'benchmarks/strength-time-'+phase+'-replay.json',JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify(result));

@@ -2,12 +2,30 @@ import {spawn}from'node:child_process';import {remaining}from'../ai.js';
 export function coordinate(i){return String.fromCharCode(97+i%9)+(9-Math.floor(i/9));}
 export function parseMove(s){if(!/^[a-i][0-9][a-i][0-9]$/.test(s))return null;return {from:(9-Number(s[1]))*9+s.charCodeAt(0)-97,to:(9-Number(s[3]))*9+s.charCodeAt(2)-97};}
 export function fen(view){let rows=[];for(let y=0;y<10;y++){let line='',empty=0;for(let x=0;x<9;x++){let p=view.board[y*9+x];if(!p){empty++;continue;}if(empty){line+=empty;empty=0;}let c=p.hidden?'X':p.type;line+=p.side==='r'?c:c.toLowerCase();}if(empty)line+=empty;rows.push(line);}let pool='';for(let side of ['r','b'])for(let t of ['R','A','C','P','N','B']){let n=remaining(view,side).filter(x=>x===t).length;if(n)pool+=(side==='r'?t:t.toLowerCase())+n;}return rows.join('/')+' '+(view.turn==='r'?'w':'b')+' '+(pool||'-')+' '+view.quiet+' '+(Math.floor(view.ply/2)+1);}
+// Fixed-width tokens reset both optional UCI fields; X means no newly known identity.
+// Only the mover's reveal is public. A dark victim's identity goes solely to its captor.
+export function observationToken(before,m,after,viewer){
+ const p=before.board[m.from],q=before.board[m.to],letter=(type,side)=>side==='r'?type:type.toLowerCase();
+ const reveal=p.hidden?letter(after.board[m.to].type,p.side):'X';
+ const captured=q?.hidden&&p.side===viewer?letter(q.type,q.side):'X';
+ return coordinate(m.from)+coordinate(m.to)+reveal+captured;
+}
 export class ExternalEngine{
  constructor(){this.lines=[];this.waiters=[];this.p=spawn(process.env.JIEQI_ENGINE_PATH||'./external/Pikafish/src/PikaJieQi',[],{stdio:['pipe','pipe','pipe']});let buffer='';this.p.stdout.on('data',chunk=>{buffer+=chunk;let pieces=buffer.split('\n');buffer=pieces.pop();for(let line of pieces){this.lines.push(line);for(let waiter of [...this.waiters])if(waiter.match(line)){this.waiters.splice(this.waiters.indexOf(waiter),1);clearTimeout(waiter.timer);waiter.resolve(line);}}});this.p.stderr.on('data',chunk=>this.lines.push('stderr: '+chunk));this.p.on('error',e=>this.fail(e));this.p.on('exit',(code,signal)=>this.fail(Error('external process exit '+code+' '+signal)));}
  fail(e){for(let w of this.waiters){clearTimeout(w.timer);w.reject(e);}this.waiters=[];}
  send(text){if(!this.p.stdin.destroyed&&!this.p.killed)this.p.stdin.write(text+'\n');}
  wait(match,timeout=5000){return new Promise((resolve,reject)=>{let w={match,resolve,reject};w.timer=setTimeout(()=>{this.waiters.splice(this.waiters.indexOf(w),1);reject(Error('external response timeout'));},timeout);this.waiters.push(w);});}
  async init(){let ready=this.wait(x=>x==='uciok');this.send('uci');await ready;this.send('setoption name Threads value 1');this.send('setoption name Hash value 16');this.send('setoption name Move Overhead value 0');let ok=this.wait(x=>x==='readyok');this.send('isready');await ok;}
- async search(initialFen,moves,budget){let start=performance.now(),offset=this.lines.length;this.send('position fen '+initialFen+(moves.length?' moves '+moves.join(' '):''));let done=this.wait(x=>x.startsWith('bestmove '),budget+1000);this.send('go movetime '+budget);let stop=setTimeout(()=>this.send('stop'),budget+20);try{let line=await done;return {move:parseMove(line.split(' ')[1]),elapsedMs:Math.round(performance.now()-start),lines:this.lines.slice(offset),overBudget:performance.now()-start>budget+60};}finally{clearTimeout(stop);}}
+ async search(initialFen,moves,budget,expectedFen=null){
+  const start=performance.now(),offset=this.lines.length;
+  this.send('position fen '+initialFen+(moves.length?' moves '+moves.join(' '):''));
+  let verificationMs=0;
+  if(expectedFen){const pending=this.wait(x=>x.startsWith('Fen: '),budget+1000);this.send('d');const actual=(await pending).slice(5).trim();if(actual.split(' ').slice(0,3).join(' ')!==expectedFen.split(' ').slice(0,3).join(' '))throw Error('外部引擎观察局面/库存协议不一致');verificationMs=performance.now()-start;}
+  const nativeBudget=expectedFen?Math.max(1,budget-Math.ceil(performance.now()-start)):budget;
+  const done=this.wait(x=>x.startsWith('bestmove '),Math.max(1,budget+1000-(performance.now()-start)));
+  this.send('go movetime '+nativeBudget);
+  const stop=setTimeout(()=>this.send('stop'),Math.max(0,budget+20-(performance.now()-start)));
+  try{const line=await done;return {move:parseMove(line.split(' ')[1]),elapsedMs:Math.round(performance.now()-start),verificationMs,nativeBudgetMs:nativeBudget,lines:this.lines.slice(offset),overBudget:performance.now()-start>budget+60};}finally{clearTimeout(stop);}
+ }
  close(){this.send('quit');this.p.kill();}
 }

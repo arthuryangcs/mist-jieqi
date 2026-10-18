@@ -1,0 +1,2973 @@
+{
+  "sourceSha256": "b40f298d461503e146226d5bc17cd79aa6ed79c3d1bc91f022f621aaea68365b",
+  "variant": "被吃暗子仅吃子方可见",
+  "protocol": "固定6个观察局面，4样本、名义深度至多2；预热后3次轮换执行次序，取中位数；战术有独立穷举制胜集合。耗时仅搜索核心，不含线程传输。",
+  "rows": [
+    {
+      "repeat": 0,
+      "position": "初始全暗",
+      "variant": "baseline",
+      "features": null,
+      "depth": 2,
+      "nodes": 12939,
+      "elapsedMs": 166,
+      "move": {
+        "from": 64,
+        "to": 1
+      },
+      "score": 30.279347397330184,
+      "rootTableBytes": 8359,
+      "wireBytes": 1130
+    },
+    {
+      "repeat": 0,
+      "position": "初始全暗",
+      "variant": "inventory",
+      "features": {
+        "activity": false,
+        "safety": false,
+        "leaperActivity": false,
+        "checkExtensions": false,
+        "killers": false
+      },
+      "depth": 2,
+      "nodes": 17971,
+      "elapsedMs": 224,
+      "move": {
+        "from": 70,
+        "to": 7
+      },
+      "score": 44.97721975087859,
+      "rootTableBytes": 8372,
+      "wireBytes": 1128
+    },
+    {
+      "repeat": 0,
+      "position": "初始全暗",
+      "variant": "forcing",
+      "features": {
+        "activity": false,
+        "safety": false,
+        "leaperActivity": false
+      },
+      "depth": 2,
+      "nodes": 17971,
+      "elapsedMs": 241,
+      "move": {
+        "from": 70,
+        "to": 7
+      },
+      "score": 44.97721975087859,
+      "rootTableBytes": 8372,
+      "wireBytes": 1128
+    },
+    {
+      "repeat": 0,
+      "position": "初始全暗",
+      "variant": "default",
+      "features": null,
+      "depth": 2,
+      "nodes": 17980,
+      "elapsedMs": 231,
+      "move": {
+        "from": 70,
+        "to": 7
+      },
+      "score": 44.97721975087859,
+      "rootTableBytes": 8367,
+      "wireBytes": 1126
+    },
+    {
+      "repeat": 0,
+      "position": "初始全暗",
+      "variant": "leaper",
+      "features": {
+        "leaperActivity": true
+      },
+      "depth": 2,
+      "nodes": 17959,
+      "elapsedMs": 208,
+      "move": {
+        "from": 70,
+        "to": 7
+      },
+      "score": 44.97721975087859,
+      "rootTableBytes": 8366,
+      "wireBytes": 1127
+    },
+    {
+      "repeat": 0,
+      "position": "初始全暗",
+      "variant": "full",
+      "features": {
+        "activity": true
+      },
+      "depth": 2,
+      "nodes": 18176,
+      "elapsedMs": 218,
+      "move": {
+        "from": 70,
+        "to": 7
+      },
+      "score": 77.37377266725063,
+      "rootTableBytes": 8360,
+      "wireBytes": 1124
+    },
+    {
+      "repeat": 0,
+      "position": "初始全暗",
+      "variant": "ray",
+      "features": {
+        "activity": true,
+        "slidingMobility": true
+      },
+      "depth": 2,
+      "nodes": 18171,
+      "elapsedMs": 216,
+      "move": {
+        "from": 70,
+        "to": 7
+      },
+      "score": 78.0069979180819,
+      "rootTableBytes": 8364,
+      "wireBytes": 1124
+    },
+    {
+      "repeat": 0,
+      "position": "可达中局 2111 / 20步",
+      "variant": "baseline",
+      "features": null,
+      "depth": 2,
+      "nodes": 4318,
+      "elapsedMs": 96,
+      "move": {
+        "from": 63,
+        "to": 74
+      },
+      "score": -55.99999999999993,
+      "rootTableBytes": 4870,
+      "wireBytes": 1066
+    },
+    {
+      "repeat": 0,
+      "position": "可达中局 2111 / 20步",
+      "variant": "inventory",
+      "features": {
+        "activity": false,
+        "safety": false,
+        "leaperActivity": false,
+        "checkExtensions": false,
+        "killers": false
+      },
+      "depth": 2,
+      "nodes": 4366,
+      "elapsedMs": 58,
+      "move": {
+        "from": 63,
+        "to": 74
+      },
+      "score": -55.99999999999993,
+      "rootTableBytes": 4904,
+      "wireBytes": 1065
+    },
+    {
+      "repeat": 0,
+      "position": "可达中局 2111 / 20步",
+      "variant": "forcing",
+      "features": {
+        "activity": false,
+        "safety": false,
+        "leaperActivity": false
+      },
+      "depth": 2,
+      "nodes": 4366,
+      "elapsedMs": 59,
+      "move": {
+        "from": 63,
+        "to": 74
+      },
+      "score": -55.99999999999993,
+      "rootTableBytes": 4904,
+      "wireBytes": 1065
+    },
+    {
+      "repeat": 0,
+      "position": "可达中局 2111 / 20步",
+      "variant": "default",
+      "features": null,
+      "depth": 2,
+      "nodes": 4369,
+      "elapsedMs": 58,
+      "move": {
+        "from": 63,
+        "to": 74
+      },
+      "score": -55.99999999999993,
+      "rootTableBytes": 4904,
+      "wireBytes": 1065
+    },
+    {
+      "repeat": 0,
+      "position": "可达中局 2111 / 20步",
+      "variant": "leaper",
+      "features": {
+        "leaperActivity": true
+      },
+      "depth": 2,
+      "nodes": 4380,
+      "elapsedMs": 59,
+      "move": {
+        "from": 63,
+        "to": 74
+      },
+      "score": -62.000000000000085,
+      "rootTableBytes": 4910,
+      "wireBytes": 1065
+    },
+    {
+      "repeat": 0,
+      "position": "可达中局 2111 / 20步",
+      "variant": "full",
+      "features": {
+        "activity": true
+      },
+      "depth": 2,
+      "nodes": 4381,
+      "elapsedMs": 74,
+      "move": {
+        "from": 63,
+        "to": 74
+      },
+      "score": -21.874948905031033,
+      "rootTableBytes": 5031,
+      "wireBytes": 1135
+    },
+    {
+      "repeat": 0,
+      "position": "可达中局 2111 / 20步",
+      "variant": "ray",
+      "features": {
+        "activity": true,
+        "slidingMobility": true
+      },
+      "depth": 2,
+      "nodes": 4378,
+      "elapsedMs": 68,
+      "move": {
+        "from": 63,
+        "to": 74
+      },
+      "score": -44.49981743562166,
+      "rootTableBytes": 5025,
+      "wireBytes": 1130
+    },
+    {
+      "repeat": 0,
+      "position": "可达中局 2111 / 44步",
+      "variant": "baseline",
+      "features": null,
+      "depth": 2,
+      "nodes": 11874,
+      "elapsedMs": 143,
+      "move": {
+        "from": 63,
+        "to": 46
+      },
+      "score": 1046.9994144651957,
+      "rootTableBytes": 4806,
+      "wireBytes": 1086
+    },
+    {
+      "repeat": 0,
+      "position": "可达中局 2111 / 44步",
+      "variant": "inventory",
+      "features": {
+        "activity": false,
+        "safety": false,
+        "leaperActivity": false,
+        "checkExtensions": false,
+        "killers": false
+      },
+      "depth": 2,
+      "nodes": 11759,
+      "elapsedMs": 135,
+      "move": {
+        "from": 63,
+        "to": 46
+      },
+      "score": 1046.9994144651957,
+      "rootTableBytes": 4829,
+      "wireBytes": 1085
+    },
+    {
+      "repeat": 0,
+      "position": "可达中局 2111 / 44步",
+      "variant": "forcing",
+      "features": {
+        "activity": false,
+        "safety": false,
+        "leaperActivity": false
+      },
+      "depth": 2,
+      "nodes": 11759,
+      "elapsedMs": 178,
+      "move": {
+        "from": 63,
+        "to": 46
+      },
+      "score": 1046.9994144651957,
+      "rootTableBytes": 4829,
+      "wireBytes": 1085
+    },
+    {
+      "repeat": 0,
+      "position": "可达中局 2111 / 44步",
+      "variant": "default",
+      "features": null,
+      "depth": 2,
+      "nodes": 11751,
+      "elapsedMs": 169,
+      "move": {
+        "from": 63,
+        "to": 46
+      },
+      "score": 1048.9994137628325,
+      "rootTableBytes": 4828,
+      "wireBytes": 1083
+    },
+    {
+      "repeat": 0,
+      "position": "可达中局 2111 / 44步",
+      "variant": "leaper",
+      "features": {
+        "leaperActivity": true
+      },
+      "depth": 2,
+      "nodes": 12401,
+      "elapsedMs": 292,
+      "move": {
+        "from": 63,
+        "to": 46
+      },
+      "score": 1048.990620270459,
+      "rootTableBytes": 4792,
+      "wireBytes": 1080
+    },
+    {
+      "repeat": 0,
+      "position": "可达中局 2111 / 44步",
+      "variant": "full",
+      "features": {
+        "activity": true
+      },
+      "depth": 2,
+      "nodes": 11678,
+      "elapsedMs": 184,
+      "move": {
+        "from": 63,
+        "to": 46
+      },
+      "score": 1057.857713448956,
+      "rootTableBytes": 4862,
+      "wireBytes": 1110
+    },
+    {
+      "repeat": 0,
+      "position": "可达中局 2111 / 44步",
+      "variant": "ray",
+      "features": {
+        "activity": true,
+        "slidingMobility": true
+      },
+      "depth": 2,
+      "nodes": 10976,
+      "elapsedMs": 171,
+      "move": {
+        "from": 63,
+        "to": 46
+      },
+      "score": 1053.548062180841,
+      "rootTableBytes": 4871,
+      "wireBytes": 1117
+    },
+    {
+      "repeat": 0,
+      "position": "可达中局 2221 / 20步",
+      "variant": "baseline",
+      "features": null,
+      "depth": 2,
+      "nodes": 5857,
+      "elapsedMs": 93,
+      "move": {
+        "from": 19,
+        "to": 26
+      },
+      "score": -176.84073837400913,
+      "rootTableBytes": 5312,
+      "wireBytes": 1138
+    },
+    {
+      "repeat": 0,
+      "position": "可达中局 2221 / 20步",
+      "variant": "inventory",
+      "features": {
+        "activity": false,
+        "safety": false,
+        "leaperActivity": false,
+        "checkExtensions": false,
+        "killers": false
+      },
+      "depth": 2,
+      "nodes": 5778,
+      "elapsedMs": 70,
+      "move": {
+        "from": 19,
+        "to": 26
+      },
+      "score": -176.84073837400913,
+      "rootTableBytes": 5310,
+      "wireBytes": 1137
+    },
+    {
+      "repeat": 0,
+      "position": "可达中局 2221 / 20步",
+      "variant": "forcing",
+      "features": {
+        "activity": false,
+        "safety": false,
+        "leaperActivity": false
+      },
+      "depth": 2,
+      "nodes": 5778,
+      "elapsedMs": 67,
+      "move": {
+        "from": 19,
+        "to": 26
+      },
+      "score": -176.84073837400913,
+      "rootTableBytes": 5310,
+      "wireBytes": 1137
+    },
+    {
+      "repeat": 0,
+      "position": "可达中局 2221 / 20步",
+      "variant": "default",
+      "features": null,
+      "depth": 2,
+      "nodes": 5820,
+      "elapsedMs": 70,
+      "move": {
+        "from": 19,
+        "to": 26
+      },
+      "score": -179.3067301993089,
+      "rootTableBytes": 5309,
+      "wireBytes": 1137
+    },
+    {
+      "repeat": 0,
+      "position": "可达中局 2221 / 20步",
+      "variant": "leaper",
+      "features": {
+        "leaperActivity": true
+      },
+      "depth": 2,
+      "nodes": 5827,
+      "elapsedMs": 72,
+      "move": {
+        "from": 19,
+        "to": 26
+      },
+      "score": -188.30133327334278,
+      "rootTableBytes": 5294,
+      "wireBytes": 1137
+    },
+    {
+      "repeat": 0,
+      "position": "可达中局 2221 / 20步",
+      "variant": "full",
+      "features": {
+        "activity": true
+      },
+      "depth": 2,
+      "nodes": 6256,
+      "elapsedMs": 87,
+      "move": {
+        "from": 19,
+        "to": 26
+      },
+      "score": -162.69812456409815,
+      "rootTableBytes": 5318,
+      "wireBytes": 1137
+    },
+    {
+      "repeat": 0,
+      "position": "可达中局 2221 / 20步",
+      "variant": "ray",
+      "features": {
+        "activity": true,
+        "slidingMobility": true
+      },
+      "depth": 2,
+      "nodes": 6078,
+      "elapsedMs": 85,
+      "move": {
+        "from": 19,
+        "to": 26
+      },
+      "score": -162.39934083342624,
+      "rootTableBytes": 5293,
+      "wireBytes": 1135
+    },
+    {
+      "repeat": 0,
+      "position": "可达中局 2221 / 44步",
+      "variant": "baseline",
+      "features": null,
+      "depth": 2,
+      "nodes": 17220,
+      "elapsedMs": 201,
+      "move": {
+        "from": 26,
+        "to": 22
+      },
+      "score": -201.1250789142633,
+      "rootTableBytes": 6190,
+      "wireBytes": 1137
+    },
+    {
+      "repeat": 0,
+      "position": "可达中局 2221 / 44步",
+      "variant": "inventory",
+      "features": {
+        "activity": false,
+        "safety": false,
+        "leaperActivity": false,
+        "checkExtensions": false,
+        "killers": false
+      },
+      "depth": 2,
+      "nodes": 24224,
+      "elapsedMs": 284,
+      "move": {
+        "from": 26,
+        "to": 22
+      },
+      "score": -11.762031577331571,
+      "rootTableBytes": 6228,
+      "wireBytes": 1132
+    },
+    {
+      "repeat": 0,
+      "position": "可达中局 2221 / 44步",
+      "variant": "forcing",
+      "features": {
+        "activity": false,
+        "safety": false,
+        "leaperActivity": false
+      },
+      "depth": 2,
+      "nodes": 24444,
+      "elapsedMs": 327,
+      "move": {
+        "from": 26,
+        "to": 22
+      },
+      "score": -295.0975047764133,
+      "rootTableBytes": 6228,
+      "wireBytes": 1132
+    },
+    {
+      "repeat": 0,
+      "position": "可达中局 2221 / 44步",
+      "variant": "default",
+      "features": null,
+      "depth": 2,
+      "nodes": 24326,
+      "elapsedMs": 317,
+      "move": {
+        "from": 26,
+        "to": 22
+      },
+      "score": -302.2108787011097,
+      "rootTableBytes": 6242,
+      "wireBytes": 1137
+    },
+    {
+      "repeat": 0,
+      "position": "可达中局 2221 / 44步",
+      "variant": "leaper",
+      "features": {
+        "leaperActivity": true
+      },
+      "depth": 2,
+      "nodes": 24335,
+      "elapsedMs": 321,
+      "move": {
+        "from": 26,
+        "to": 22
+      },
+      "score": -308.2439688272324,
+      "rootTableBytes": 6234,
+      "wireBytes": 1132
+    },
+    {
+      "repeat": 0,
+      "position": "可达中局 2221 / 44步",
+      "variant": "full",
+      "features": {
+        "activity": true
+      },
+      "depth": 2,
+      "nodes": 24545,
+      "elapsedMs": 373,
+      "move": {
+        "from": 26,
+        "to": 22
+      },
+      "score": -329.50947410901205,
+      "rootTableBytes": 6238,
+      "wireBytes": 1140
+    },
+    {
+      "repeat": 0,
+      "position": "可达中局 2221 / 44步",
+      "variant": "ray",
+      "features": {
+        "activity": true,
+        "slidingMobility": true
+      },
+      "depth": 2,
+      "nodes": 24918,
+      "elapsedMs": 381,
+      "move": {
+        "from": 26,
+        "to": 22
+      },
+      "score": -332.2270617571125,
+      "rootTableBytes": 6236,
+      "wireBytes": 1134
+    },
+    {
+      "repeat": 0,
+      "position": "原超时前的黑方观察局面",
+      "variant": "baseline",
+      "features": null,
+      "depth": 2,
+      "nodes": 3860,
+      "elapsedMs": 57,
+      "move": {
+        "from": 3,
+        "to": 11
+      },
+      "score": -859,
+      "rootTableBytes": 3532,
+      "wireBytes": 951
+    },
+    {
+      "repeat": 0,
+      "position": "原超时前的黑方观察局面",
+      "variant": "inventory",
+      "features": {
+        "activity": false,
+        "safety": false,
+        "leaperActivity": false,
+        "checkExtensions": false,
+        "killers": false
+      },
+      "depth": 2,
+      "nodes": 3863,
+      "elapsedMs": 40,
+      "move": {
+        "from": 3,
+        "to": 11
+      },
+      "score": -859,
+      "rootTableBytes": 3532,
+      "wireBytes": 951
+    },
+    {
+      "repeat": 0,
+      "position": "原超时前的黑方观察局面",
+      "variant": "forcing",
+      "features": {
+        "activity": false,
+        "safety": false,
+        "leaperActivity": false
+      },
+      "depth": 2,
+      "nodes": 3863,
+      "elapsedMs": 38,
+      "move": {
+        "from": 3,
+        "to": 11
+      },
+      "score": -859,
+      "rootTableBytes": 3532,
+      "wireBytes": 951
+    },
+    {
+      "repeat": 0,
+      "position": "原超时前的黑方观察局面",
+      "variant": "default",
+      "features": null,
+      "depth": 2,
+      "nodes": 3939,
+      "elapsedMs": 39,
+      "move": {
+        "from": 38,
+        "to": 39
+      },
+      "score": -854.9999433109174,
+      "rootTableBytes": 3925,
+      "wireBytes": 1134
+    },
+    {
+      "repeat": 0,
+      "position": "原超时前的黑方观察局面",
+      "variant": "leaper",
+      "features": {
+        "leaperActivity": true
+      },
+      "depth": 2,
+      "nodes": 3939,
+      "elapsedMs": 45,
+      "move": {
+        "from": 38,
+        "to": 39
+      },
+      "score": -854.9999433109174,
+      "rootTableBytes": 3925,
+      "wireBytes": 1134
+    },
+    {
+      "repeat": 0,
+      "position": "原超时前的黑方观察局面",
+      "variant": "full",
+      "features": {
+        "activity": true
+      },
+      "depth": 2,
+      "nodes": 3945,
+      "elapsedMs": 44,
+      "move": {
+        "from": 3,
+        "to": 11
+      },
+      "score": -855.4968098918292,
+      "rootTableBytes": 3925,
+      "wireBytes": 1107
+    },
+    {
+      "repeat": 0,
+      "position": "原超时前的黑方观察局面",
+      "variant": "ray",
+      "features": {
+        "activity": true,
+        "slidingMobility": true
+      },
+      "depth": 2,
+      "nodes": 4050,
+      "elapsedMs": 52,
+      "move": {
+        "from": 38,
+        "to": 41
+      },
+      "score": -844.4981425560203,
+      "rootTableBytes": 3958,
+      "wireBytes": 1139
+    },
+    {
+      "repeat": 1,
+      "position": "初始全暗",
+      "variant": "inventory",
+      "features": {
+        "activity": false,
+        "safety": false,
+        "leaperActivity": false,
+        "checkExtensions": false,
+        "killers": false
+      },
+      "depth": 2,
+      "nodes": 17971,
+      "elapsedMs": 233,
+      "move": {
+        "from": 70,
+        "to": 7
+      },
+      "score": 44.97721975087859,
+      "rootTableBytes": 8372,
+      "wireBytes": 1128
+    },
+    {
+      "repeat": 1,
+      "position": "初始全暗",
+      "variant": "forcing",
+      "features": {
+        "activity": false,
+        "safety": false,
+        "leaperActivity": false
+      },
+      "depth": 2,
+      "nodes": 17971,
+      "elapsedMs": 203,
+      "move": {
+        "from": 70,
+        "to": 7
+      },
+      "score": 44.97721975087859,
+      "rootTableBytes": 8372,
+      "wireBytes": 1128
+    },
+    {
+      "repeat": 1,
+      "position": "初始全暗",
+      "variant": "default",
+      "features": null,
+      "depth": 2,
+      "nodes": 17980,
+      "elapsedMs": 211,
+      "move": {
+        "from": 70,
+        "to": 7
+      },
+      "score": 44.97721975087859,
+      "rootTableBytes": 8367,
+      "wireBytes": 1126
+    },
+    {
+      "repeat": 1,
+      "position": "初始全暗",
+      "variant": "leaper",
+      "features": {
+        "leaperActivity": true
+      },
+      "depth": 2,
+      "nodes": 17959,
+      "elapsedMs": 208,
+      "move": {
+        "from": 70,
+        "to": 7
+      },
+      "score": 44.97721975087859,
+      "rootTableBytes": 8366,
+      "wireBytes": 1127
+    },
+    {
+      "repeat": 1,
+      "position": "初始全暗",
+      "variant": "full",
+      "features": {
+        "activity": true
+      },
+      "depth": 2,
+      "nodes": 18176,
+      "elapsedMs": 233,
+      "move": {
+        "from": 70,
+        "to": 7
+      },
+      "score": 77.37377266725063,
+      "rootTableBytes": 8360,
+      "wireBytes": 1124
+    },
+    {
+      "repeat": 1,
+      "position": "初始全暗",
+      "variant": "ray",
+      "features": {
+        "activity": true,
+        "slidingMobility": true
+      },
+      "depth": 2,
+      "nodes": 18171,
+      "elapsedMs": 223,
+      "move": {
+        "from": 70,
+        "to": 7
+      },
+      "score": 78.0069979180819,
+      "rootTableBytes": 8364,
+      "wireBytes": 1124
+    },
+    {
+      "repeat": 1,
+      "position": "初始全暗",
+      "variant": "baseline",
+      "features": null,
+      "depth": 2,
+      "nodes": 12939,
+      "elapsedMs": 189,
+      "move": {
+        "from": 64,
+        "to": 1
+      },
+      "score": 30.279347397330184,
+      "rootTableBytes": 8359,
+      "wireBytes": 1130
+    },
+    {
+      "repeat": 1,
+      "position": "可达中局 2111 / 20步",
+      "variant": "inventory",
+      "features": {
+        "activity": false,
+        "safety": false,
+        "leaperActivity": false,
+        "checkExtensions": false,
+        "killers": false
+      },
+      "depth": 2,
+      "nodes": 4366,
+      "elapsedMs": 141,
+      "move": {
+        "from": 63,
+        "to": 74
+      },
+      "score": -55.99999999999993,
+      "rootTableBytes": 4905,
+      "wireBytes": 1066
+    },
+    {
+      "repeat": 1,
+      "position": "可达中局 2111 / 20步",
+      "variant": "forcing",
+      "features": {
+        "activity": false,
+        "safety": false,
+        "leaperActivity": false
+      },
+      "depth": 2,
+      "nodes": 4366,
+      "elapsedMs": 65,
+      "move": {
+        "from": 63,
+        "to": 74
+      },
+      "score": -55.99999999999993,
+      "rootTableBytes": 4904,
+      "wireBytes": 1065
+    },
+    {
+      "repeat": 1,
+      "position": "可达中局 2111 / 20步",
+      "variant": "default",
+      "features": null,
+      "depth": 2,
+      "nodes": 4369,
+      "elapsedMs": 56,
+      "move": {
+        "from": 63,
+        "to": 74
+      },
+      "score": -55.99999999999993,
+      "rootTableBytes": 4904,
+      "wireBytes": 1065
+    },
+    {
+      "repeat": 1,
+      "position": "可达中局 2111 / 20步",
+      "variant": "leaper",
+      "features": {
+        "leaperActivity": true
+      },
+      "depth": 2,
+      "nodes": 4380,
+      "elapsedMs": 70,
+      "move": {
+        "from": 63,
+        "to": 74
+      },
+      "score": -62.000000000000085,
+      "rootTableBytes": 4910,
+      "wireBytes": 1065
+    },
+    {
+      "repeat": 1,
+      "position": "可达中局 2111 / 20步",
+      "variant": "full",
+      "features": {
+        "activity": true
+      },
+      "depth": 2,
+      "nodes": 4381,
+      "elapsedMs": 74,
+      "move": {
+        "from": 63,
+        "to": 74
+      },
+      "score": -21.874948905031033,
+      "rootTableBytes": 5031,
+      "wireBytes": 1135
+    },
+    {
+      "repeat": 1,
+      "position": "可达中局 2111 / 20步",
+      "variant": "ray",
+      "features": {
+        "activity": true,
+        "slidingMobility": true
+      },
+      "depth": 2,
+      "nodes": 4378,
+      "elapsedMs": 130,
+      "move": {
+        "from": 63,
+        "to": 74
+      },
+      "score": -44.49981743562166,
+      "rootTableBytes": 5026,
+      "wireBytes": 1131
+    },
+    {
+      "repeat": 1,
+      "position": "可达中局 2111 / 20步",
+      "variant": "baseline",
+      "features": null,
+      "depth": 2,
+      "nodes": 4318,
+      "elapsedMs": 65,
+      "move": {
+        "from": 63,
+        "to": 74
+      },
+      "score": -55.99999999999993,
+      "rootTableBytes": 4870,
+      "wireBytes": 1066
+    },
+    {
+      "repeat": 1,
+      "position": "可达中局 2111 / 44步",
+      "variant": "inventory",
+      "features": {
+        "activity": false,
+        "safety": false,
+        "leaperActivity": false,
+        "checkExtensions": false,
+        "killers": false
+      },
+      "depth": 2,
+      "nodes": 11759,
+      "elapsedMs": 154,
+      "move": {
+        "from": 63,
+        "to": 46
+      },
+      "score": 1046.9994144651957,
+      "rootTableBytes": 4829,
+      "wireBytes": 1085
+    },
+    {
+      "repeat": 1,
+      "position": "可达中局 2111 / 44步",
+      "variant": "forcing",
+      "features": {
+        "activity": false,
+        "safety": false,
+        "leaperActivity": false
+      },
+      "depth": 2,
+      "nodes": 11759,
+      "elapsedMs": 143,
+      "move": {
+        "from": 63,
+        "to": 46
+      },
+      "score": 1046.9994144651957,
+      "rootTableBytes": 4829,
+      "wireBytes": 1085
+    },
+    {
+      "repeat": 1,
+      "position": "可达中局 2111 / 44步",
+      "variant": "default",
+      "features": null,
+      "depth": 2,
+      "nodes": 11751,
+      "elapsedMs": 150,
+      "move": {
+        "from": 63,
+        "to": 46
+      },
+      "score": 1048.9994137628325,
+      "rootTableBytes": 4828,
+      "wireBytes": 1083
+    },
+    {
+      "repeat": 1,
+      "position": "可达中局 2111 / 44步",
+      "variant": "leaper",
+      "features": {
+        "leaperActivity": true
+      },
+      "depth": 2,
+      "nodes": 12401,
+      "elapsedMs": 172,
+      "move": {
+        "from": 63,
+        "to": 46
+      },
+      "score": 1048.990620270459,
+      "rootTableBytes": 4792,
+      "wireBytes": 1080
+    },
+    {
+      "repeat": 1,
+      "position": "可达中局 2111 / 44步",
+      "variant": "full",
+      "features": {
+        "activity": true
+      },
+      "depth": 2,
+      "nodes": 11678,
+      "elapsedMs": 184,
+      "move": {
+        "from": 63,
+        "to": 46
+      },
+      "score": 1057.857713448956,
+      "rootTableBytes": 4862,
+      "wireBytes": 1110
+    },
+    {
+      "repeat": 1,
+      "position": "可达中局 2111 / 44步",
+      "variant": "ray",
+      "features": {
+        "activity": true,
+        "slidingMobility": true
+      },
+      "depth": 2,
+      "nodes": 10976,
+      "elapsedMs": 186,
+      "move": {
+        "from": 63,
+        "to": 46
+      },
+      "score": 1053.548062180841,
+      "rootTableBytes": 4871,
+      "wireBytes": 1117
+    },
+    {
+      "repeat": 1,
+      "position": "可达中局 2111 / 44步",
+      "variant": "baseline",
+      "features": null,
+      "depth": 2,
+      "nodes": 11874,
+      "elapsedMs": 143,
+      "move": {
+        "from": 63,
+        "to": 46
+      },
+      "score": 1046.9994144651957,
+      "rootTableBytes": 4806,
+      "wireBytes": 1086
+    },
+    {
+      "repeat": 1,
+      "position": "可达中局 2221 / 20步",
+      "variant": "inventory",
+      "features": {
+        "activity": false,
+        "safety": false,
+        "leaperActivity": false,
+        "checkExtensions": false,
+        "killers": false
+      },
+      "depth": 2,
+      "nodes": 5778,
+      "elapsedMs": 116,
+      "move": {
+        "from": 19,
+        "to": 26
+      },
+      "score": -176.84073837400913,
+      "rootTableBytes": 5311,
+      "wireBytes": 1138
+    },
+    {
+      "repeat": 1,
+      "position": "可达中局 2221 / 20步",
+      "variant": "forcing",
+      "features": {
+        "activity": false,
+        "safety": false,
+        "leaperActivity": false
+      },
+      "depth": 2,
+      "nodes": 5778,
+      "elapsedMs": 69,
+      "move": {
+        "from": 19,
+        "to": 26
+      },
+      "score": -176.84073837400913,
+      "rootTableBytes": 5310,
+      "wireBytes": 1137
+    },
+    {
+      "repeat": 1,
+      "position": "可达中局 2221 / 20步",
+      "variant": "default",
+      "features": null,
+      "depth": 2,
+      "nodes": 5820,
+      "elapsedMs": 69,
+      "move": {
+        "from": 19,
+        "to": 26
+      },
+      "score": -179.3067301993089,
+      "rootTableBytes": 5309,
+      "wireBytes": 1137
+    },
+    {
+      "repeat": 1,
+      "position": "可达中局 2221 / 20步",
+      "variant": "leaper",
+      "features": {
+        "leaperActivity": true
+      },
+      "depth": 2,
+      "nodes": 5827,
+      "elapsedMs": 101,
+      "move": {
+        "from": 19,
+        "to": 26
+      },
+      "score": -188.30133327334278,
+      "rootTableBytes": 5295,
+      "wireBytes": 1138
+    },
+    {
+      "repeat": 1,
+      "position": "可达中局 2221 / 20步",
+      "variant": "full",
+      "features": {
+        "activity": true
+      },
+      "depth": 2,
+      "nodes": 6256,
+      "elapsedMs": 91,
+      "move": {
+        "from": 19,
+        "to": 26
+      },
+      "score": -162.69812456409815,
+      "rootTableBytes": 5318,
+      "wireBytes": 1137
+    },
+    {
+      "repeat": 1,
+      "position": "可达中局 2221 / 20步",
+      "variant": "ray",
+      "features": {
+        "activity": true,
+        "slidingMobility": true
+      },
+      "depth": 2,
+      "nodes": 6078,
+      "elapsedMs": 87,
+      "move": {
+        "from": 19,
+        "to": 26
+      },
+      "score": -162.39934083342624,
+      "rootTableBytes": 5293,
+      "wireBytes": 1135
+    },
+    {
+      "repeat": 1,
+      "position": "可达中局 2221 / 20步",
+      "variant": "baseline",
+      "features": null,
+      "depth": 2,
+      "nodes": 5857,
+      "elapsedMs": 69,
+      "move": {
+        "from": 19,
+        "to": 26
+      },
+      "score": -176.84073837400913,
+      "rootTableBytes": 5312,
+      "wireBytes": 1138
+    },
+    {
+      "repeat": 1,
+      "position": "可达中局 2221 / 44步",
+      "variant": "inventory",
+      "features": {
+        "activity": false,
+        "safety": false,
+        "leaperActivity": false,
+        "checkExtensions": false,
+        "killers": false
+      },
+      "depth": 2,
+      "nodes": 24224,
+      "elapsedMs": 288,
+      "move": {
+        "from": 26,
+        "to": 22
+      },
+      "score": -11.762031577331571,
+      "rootTableBytes": 6228,
+      "wireBytes": 1132
+    },
+    {
+      "repeat": 1,
+      "position": "可达中局 2221 / 44步",
+      "variant": "forcing",
+      "features": {
+        "activity": false,
+        "safety": false,
+        "leaperActivity": false
+      },
+      "depth": 2,
+      "nodes": 24444,
+      "elapsedMs": 384,
+      "move": {
+        "from": 26,
+        "to": 22
+      },
+      "score": -295.0975047764133,
+      "rootTableBytes": 6228,
+      "wireBytes": 1132
+    },
+    {
+      "repeat": 1,
+      "position": "可达中局 2221 / 44步",
+      "variant": "default",
+      "features": null,
+      "depth": 2,
+      "nodes": 24326,
+      "elapsedMs": 309,
+      "move": {
+        "from": 26,
+        "to": 22
+      },
+      "score": -302.2108787011097,
+      "rootTableBytes": 6242,
+      "wireBytes": 1137
+    },
+    {
+      "repeat": 1,
+      "position": "可达中局 2221 / 44步",
+      "variant": "leaper",
+      "features": {
+        "leaperActivity": true
+      },
+      "depth": 2,
+      "nodes": 24335,
+      "elapsedMs": 364,
+      "move": {
+        "from": 26,
+        "to": 22
+      },
+      "score": -308.2439688272324,
+      "rootTableBytes": 6234,
+      "wireBytes": 1132
+    },
+    {
+      "repeat": 1,
+      "position": "可达中局 2221 / 44步",
+      "variant": "full",
+      "features": {
+        "activity": true
+      },
+      "depth": 2,
+      "nodes": 24545,
+      "elapsedMs": 382,
+      "move": {
+        "from": 26,
+        "to": 22
+      },
+      "score": -329.50947410901205,
+      "rootTableBytes": 6238,
+      "wireBytes": 1140
+    },
+    {
+      "repeat": 1,
+      "position": "可达中局 2221 / 44步",
+      "variant": "ray",
+      "features": {
+        "activity": true,
+        "slidingMobility": true
+      },
+      "depth": 2,
+      "nodes": 24918,
+      "elapsedMs": 395,
+      "move": {
+        "from": 26,
+        "to": 22
+      },
+      "score": -332.2270617571125,
+      "rootTableBytes": 6236,
+      "wireBytes": 1134
+    },
+    {
+      "repeat": 1,
+      "position": "可达中局 2221 / 44步",
+      "variant": "baseline",
+      "features": null,
+      "depth": 2,
+      "nodes": 17220,
+      "elapsedMs": 370,
+      "move": {
+        "from": 26,
+        "to": 22
+      },
+      "score": -201.1250789142633,
+      "rootTableBytes": 6190,
+      "wireBytes": 1137
+    },
+    {
+      "repeat": 1,
+      "position": "原超时前的黑方观察局面",
+      "variant": "inventory",
+      "features": {
+        "activity": false,
+        "safety": false,
+        "leaperActivity": false,
+        "checkExtensions": false,
+        "killers": false
+      },
+      "depth": 2,
+      "nodes": 3863,
+      "elapsedMs": 59,
+      "move": {
+        "from": 3,
+        "to": 11
+      },
+      "score": -859,
+      "rootTableBytes": 3532,
+      "wireBytes": 951
+    },
+    {
+      "repeat": 1,
+      "position": "原超时前的黑方观察局面",
+      "variant": "forcing",
+      "features": {
+        "activity": false,
+        "safety": false,
+        "leaperActivity": false
+      },
+      "depth": 2,
+      "nodes": 3863,
+      "elapsedMs": 88,
+      "move": {
+        "from": 3,
+        "to": 11
+      },
+      "score": -859,
+      "rootTableBytes": 3532,
+      "wireBytes": 951
+    },
+    {
+      "repeat": 1,
+      "position": "原超时前的黑方观察局面",
+      "variant": "default",
+      "features": null,
+      "depth": 2,
+      "nodes": 3939,
+      "elapsedMs": 104,
+      "move": {
+        "from": 38,
+        "to": 39
+      },
+      "score": -854.9999433109174,
+      "rootTableBytes": 3926,
+      "wireBytes": 1135
+    },
+    {
+      "repeat": 1,
+      "position": "原超时前的黑方观察局面",
+      "variant": "leaper",
+      "features": {
+        "leaperActivity": true
+      },
+      "depth": 2,
+      "nodes": 3939,
+      "elapsedMs": 107,
+      "move": {
+        "from": 38,
+        "to": 39
+      },
+      "score": -854.9999433109174,
+      "rootTableBytes": 3926,
+      "wireBytes": 1135
+    },
+    {
+      "repeat": 1,
+      "position": "原超时前的黑方观察局面",
+      "variant": "full",
+      "features": {
+        "activity": true
+      },
+      "depth": 2,
+      "nodes": 3945,
+      "elapsedMs": 118,
+      "move": {
+        "from": 3,
+        "to": 11
+      },
+      "score": -855.4968098918292,
+      "rootTableBytes": 3926,
+      "wireBytes": 1108
+    },
+    {
+      "repeat": 1,
+      "position": "原超时前的黑方观察局面",
+      "variant": "ray",
+      "features": {
+        "activity": true,
+        "slidingMobility": true
+      },
+      "depth": 2,
+      "nodes": 4050,
+      "elapsedMs": 141,
+      "move": {
+        "from": 38,
+        "to": 41
+      },
+      "score": -844.4981425560203,
+      "rootTableBytes": 3959,
+      "wireBytes": 1140
+    },
+    {
+      "repeat": 1,
+      "position": "原超时前的黑方观察局面",
+      "variant": "baseline",
+      "features": null,
+      "depth": 2,
+      "nodes": 3860,
+      "elapsedMs": 92,
+      "move": {
+        "from": 3,
+        "to": 11
+      },
+      "score": -859,
+      "rootTableBytes": 3532,
+      "wireBytes": 951
+    },
+    {
+      "repeat": 2,
+      "position": "初始全暗",
+      "variant": "forcing",
+      "features": {
+        "activity": false,
+        "safety": false,
+        "leaperActivity": false
+      },
+      "depth": 2,
+      "nodes": 17971,
+      "elapsedMs": 277,
+      "move": {
+        "from": 70,
+        "to": 7
+      },
+      "score": 44.97721975087859,
+      "rootTableBytes": 8372,
+      "wireBytes": 1128
+    },
+    {
+      "repeat": 2,
+      "position": "初始全暗",
+      "variant": "default",
+      "features": null,
+      "depth": 2,
+      "nodes": 17980,
+      "elapsedMs": 210,
+      "move": {
+        "from": 70,
+        "to": 7
+      },
+      "score": 44.97721975087859,
+      "rootTableBytes": 8367,
+      "wireBytes": 1126
+    },
+    {
+      "repeat": 2,
+      "position": "初始全暗",
+      "variant": "leaper",
+      "features": {
+        "leaperActivity": true
+      },
+      "depth": 2,
+      "nodes": 17959,
+      "elapsedMs": 215,
+      "move": {
+        "from": 70,
+        "to": 7
+      },
+      "score": 44.97721975087859,
+      "rootTableBytes": 8366,
+      "wireBytes": 1127
+    },
+    {
+      "repeat": 2,
+      "position": "初始全暗",
+      "variant": "full",
+      "features": {
+        "activity": true
+      },
+      "depth": 2,
+      "nodes": 18176,
+      "elapsedMs": 208,
+      "move": {
+        "from": 70,
+        "to": 7
+      },
+      "score": 77.37377266725063,
+      "rootTableBytes": 8360,
+      "wireBytes": 1124
+    },
+    {
+      "repeat": 2,
+      "position": "初始全暗",
+      "variant": "ray",
+      "features": {
+        "activity": true,
+        "slidingMobility": true
+      },
+      "depth": 2,
+      "nodes": 18171,
+      "elapsedMs": 228,
+      "move": {
+        "from": 70,
+        "to": 7
+      },
+      "score": 78.0069979180819,
+      "rootTableBytes": 8364,
+      "wireBytes": 1124
+    },
+    {
+      "repeat": 2,
+      "position": "初始全暗",
+      "variant": "baseline",
+      "features": null,
+      "depth": 2,
+      "nodes": 12939,
+      "elapsedMs": 147,
+      "move": {
+        "from": 64,
+        "to": 1
+      },
+      "score": 30.279347397330184,
+      "rootTableBytes": 8359,
+      "wireBytes": 1130
+    },
+    {
+      "repeat": 2,
+      "position": "初始全暗",
+      "variant": "inventory",
+      "features": {
+        "activity": false,
+        "safety": false,
+        "leaperActivity": false,
+        "checkExtensions": false,
+        "killers": false
+      },
+      "depth": 2,
+      "nodes": 17971,
+      "elapsedMs": 211,
+      "move": {
+        "from": 70,
+        "to": 7
+      },
+      "score": 44.97721975087859,
+      "rootTableBytes": 8372,
+      "wireBytes": 1128
+    },
+    {
+      "repeat": 2,
+      "position": "可达中局 2111 / 20步",
+      "variant": "forcing",
+      "features": {
+        "activity": false,
+        "safety": false,
+        "leaperActivity": false
+      },
+      "depth": 2,
+      "nodes": 4366,
+      "elapsedMs": 54,
+      "move": {
+        "from": 63,
+        "to": 74
+      },
+      "score": -55.99999999999993,
+      "rootTableBytes": 4904,
+      "wireBytes": 1065
+    },
+    {
+      "repeat": 2,
+      "position": "可达中局 2111 / 20步",
+      "variant": "default",
+      "features": null,
+      "depth": 2,
+      "nodes": 4369,
+      "elapsedMs": 56,
+      "move": {
+        "from": 63,
+        "to": 74
+      },
+      "score": -55.99999999999993,
+      "rootTableBytes": 4904,
+      "wireBytes": 1065
+    },
+    {
+      "repeat": 2,
+      "position": "可达中局 2111 / 20步",
+      "variant": "leaper",
+      "features": {
+        "leaperActivity": true
+      },
+      "depth": 2,
+      "nodes": 4380,
+      "elapsedMs": 66,
+      "move": {
+        "from": 63,
+        "to": 74
+      },
+      "score": -62.000000000000085,
+      "rootTableBytes": 4910,
+      "wireBytes": 1065
+    },
+    {
+      "repeat": 2,
+      "position": "可达中局 2111 / 20步",
+      "variant": "full",
+      "features": {
+        "activity": true
+      },
+      "depth": 2,
+      "nodes": 4381,
+      "elapsedMs": 69,
+      "move": {
+        "from": 63,
+        "to": 74
+      },
+      "score": -21.874948905031033,
+      "rootTableBytes": 5031,
+      "wireBytes": 1135
+    },
+    {
+      "repeat": 2,
+      "position": "可达中局 2111 / 20步",
+      "variant": "ray",
+      "features": {
+        "activity": true,
+        "slidingMobility": true
+      },
+      "depth": 2,
+      "nodes": 4378,
+      "elapsedMs": 66,
+      "move": {
+        "from": 63,
+        "to": 74
+      },
+      "score": -44.49981743562166,
+      "rootTableBytes": 5025,
+      "wireBytes": 1130
+    },
+    {
+      "repeat": 2,
+      "position": "可达中局 2111 / 20步",
+      "variant": "baseline",
+      "features": null,
+      "depth": 2,
+      "nodes": 4318,
+      "elapsedMs": 48,
+      "move": {
+        "from": 63,
+        "to": 74
+      },
+      "score": -55.99999999999993,
+      "rootTableBytes": 4870,
+      "wireBytes": 1066
+    },
+    {
+      "repeat": 2,
+      "position": "可达中局 2111 / 20步",
+      "variant": "inventory",
+      "features": {
+        "activity": false,
+        "safety": false,
+        "leaperActivity": false,
+        "checkExtensions": false,
+        "killers": false
+      },
+      "depth": 2,
+      "nodes": 4366,
+      "elapsedMs": 55,
+      "move": {
+        "from": 63,
+        "to": 74
+      },
+      "score": -55.99999999999993,
+      "rootTableBytes": 4904,
+      "wireBytes": 1065
+    },
+    {
+      "repeat": 2,
+      "position": "可达中局 2111 / 44步",
+      "variant": "forcing",
+      "features": {
+        "activity": false,
+        "safety": false,
+        "leaperActivity": false
+      },
+      "depth": 2,
+      "nodes": 11759,
+      "elapsedMs": 138,
+      "move": {
+        "from": 63,
+        "to": 46
+      },
+      "score": 1046.9994144651957,
+      "rootTableBytes": 4829,
+      "wireBytes": 1085
+    },
+    {
+      "repeat": 2,
+      "position": "可达中局 2111 / 44步",
+      "variant": "default",
+      "features": null,
+      "depth": 2,
+      "nodes": 11751,
+      "elapsedMs": 161,
+      "move": {
+        "from": 63,
+        "to": 46
+      },
+      "score": 1048.9994137628325,
+      "rootTableBytes": 4828,
+      "wireBytes": 1083
+    },
+    {
+      "repeat": 2,
+      "position": "可达中局 2111 / 44步",
+      "variant": "leaper",
+      "features": {
+        "leaperActivity": true
+      },
+      "depth": 2,
+      "nodes": 12401,
+      "elapsedMs": 171,
+      "move": {
+        "from": 63,
+        "to": 46
+      },
+      "score": 1048.990620270459,
+      "rootTableBytes": 4792,
+      "wireBytes": 1080
+    },
+    {
+      "repeat": 2,
+      "position": "可达中局 2111 / 44步",
+      "variant": "full",
+      "features": {
+        "activity": true
+      },
+      "depth": 2,
+      "nodes": 11678,
+      "elapsedMs": 188,
+      "move": {
+        "from": 63,
+        "to": 46
+      },
+      "score": 1057.857713448956,
+      "rootTableBytes": 4862,
+      "wireBytes": 1110
+    },
+    {
+      "repeat": 2,
+      "position": "可达中局 2111 / 44步",
+      "variant": "ray",
+      "features": {
+        "activity": true,
+        "slidingMobility": true
+      },
+      "depth": 2,
+      "nodes": 10976,
+      "elapsedMs": 175,
+      "move": {
+        "from": 63,
+        "to": 46
+      },
+      "score": 1053.548062180841,
+      "rootTableBytes": 4871,
+      "wireBytes": 1117
+    },
+    {
+      "repeat": 2,
+      "position": "可达中局 2111 / 44步",
+      "variant": "baseline",
+      "features": null,
+      "depth": 2,
+      "nodes": 11874,
+      "elapsedMs": 134,
+      "move": {
+        "from": 63,
+        "to": 46
+      },
+      "score": 1046.9994144651957,
+      "rootTableBytes": 4806,
+      "wireBytes": 1086
+    },
+    {
+      "repeat": 2,
+      "position": "可达中局 2111 / 44步",
+      "variant": "inventory",
+      "features": {
+        "activity": false,
+        "safety": false,
+        "leaperActivity": false,
+        "checkExtensions": false,
+        "killers": false
+      },
+      "depth": 2,
+      "nodes": 11759,
+      "elapsedMs": 138,
+      "move": {
+        "from": 63,
+        "to": 46
+      },
+      "score": 1046.9994144651957,
+      "rootTableBytes": 4829,
+      "wireBytes": 1085
+    },
+    {
+      "repeat": 2,
+      "position": "可达中局 2221 / 20步",
+      "variant": "forcing",
+      "features": {
+        "activity": false,
+        "safety": false,
+        "leaperActivity": false
+      },
+      "depth": 2,
+      "nodes": 5778,
+      "elapsedMs": 67,
+      "move": {
+        "from": 19,
+        "to": 26
+      },
+      "score": -176.84073837400913,
+      "rootTableBytes": 5310,
+      "wireBytes": 1137
+    },
+    {
+      "repeat": 2,
+      "position": "可达中局 2221 / 20步",
+      "variant": "default",
+      "features": null,
+      "depth": 2,
+      "nodes": 5820,
+      "elapsedMs": 66,
+      "move": {
+        "from": 19,
+        "to": 26
+      },
+      "score": -179.3067301993089,
+      "rootTableBytes": 5309,
+      "wireBytes": 1137
+    },
+    {
+      "repeat": 2,
+      "position": "可达中局 2221 / 20步",
+      "variant": "leaper",
+      "features": {
+        "leaperActivity": true
+      },
+      "depth": 2,
+      "nodes": 5827,
+      "elapsedMs": 71,
+      "move": {
+        "from": 19,
+        "to": 26
+      },
+      "score": -188.30133327334278,
+      "rootTableBytes": 5294,
+      "wireBytes": 1137
+    },
+    {
+      "repeat": 2,
+      "position": "可达中局 2221 / 20步",
+      "variant": "full",
+      "features": {
+        "activity": true
+      },
+      "depth": 2,
+      "nodes": 6256,
+      "elapsedMs": 107,
+      "move": {
+        "from": 19,
+        "to": 26
+      },
+      "score": -162.69812456409815,
+      "rootTableBytes": 5319,
+      "wireBytes": 1138
+    },
+    {
+      "repeat": 2,
+      "position": "可达中局 2221 / 20步",
+      "variant": "ray",
+      "features": {
+        "activity": true,
+        "slidingMobility": true
+      },
+      "depth": 2,
+      "nodes": 6078,
+      "elapsedMs": 81,
+      "move": {
+        "from": 19,
+        "to": 26
+      },
+      "score": -162.39934083342624,
+      "rootTableBytes": 5293,
+      "wireBytes": 1135
+    },
+    {
+      "repeat": 2,
+      "position": "可达中局 2221 / 20步",
+      "variant": "baseline",
+      "features": null,
+      "depth": 2,
+      "nodes": 5857,
+      "elapsedMs": 64,
+      "move": {
+        "from": 19,
+        "to": 26
+      },
+      "score": -176.84073837400913,
+      "rootTableBytes": 5312,
+      "wireBytes": 1138
+    },
+    {
+      "repeat": 2,
+      "position": "可达中局 2221 / 20步",
+      "variant": "inventory",
+      "features": {
+        "activity": false,
+        "safety": false,
+        "leaperActivity": false,
+        "checkExtensions": false,
+        "killers": false
+      },
+      "depth": 2,
+      "nodes": 5778,
+      "elapsedMs": 70,
+      "move": {
+        "from": 19,
+        "to": 26
+      },
+      "score": -176.84073837400913,
+      "rootTableBytes": 5310,
+      "wireBytes": 1137
+    },
+    {
+      "repeat": 2,
+      "position": "可达中局 2221 / 44步",
+      "variant": "forcing",
+      "features": {
+        "activity": false,
+        "safety": false,
+        "leaperActivity": false
+      },
+      "depth": 2,
+      "nodes": 24444,
+      "elapsedMs": 291,
+      "move": {
+        "from": 26,
+        "to": 22
+      },
+      "score": -295.0975047764133,
+      "rootTableBytes": 6228,
+      "wireBytes": 1132
+    },
+    {
+      "repeat": 2,
+      "position": "可达中局 2221 / 44步",
+      "variant": "default",
+      "features": null,
+      "depth": 2,
+      "nodes": 24326,
+      "elapsedMs": 299,
+      "move": {
+        "from": 26,
+        "to": 22
+      },
+      "score": -302.2108787011097,
+      "rootTableBytes": 6242,
+      "wireBytes": 1137
+    },
+    {
+      "repeat": 2,
+      "position": "可达中局 2221 / 44步",
+      "variant": "leaper",
+      "features": {
+        "leaperActivity": true
+      },
+      "depth": 2,
+      "nodes": 24335,
+      "elapsedMs": 327,
+      "move": {
+        "from": 26,
+        "to": 22
+      },
+      "score": -308.2439688272324,
+      "rootTableBytes": 6234,
+      "wireBytes": 1132
+    },
+    {
+      "repeat": 2,
+      "position": "可达中局 2221 / 44步",
+      "variant": "full",
+      "features": {
+        "activity": true
+      },
+      "depth": 2,
+      "nodes": 24545,
+      "elapsedMs": 371,
+      "move": {
+        "from": 26,
+        "to": 22
+      },
+      "score": -329.50947410901205,
+      "rootTableBytes": 6238,
+      "wireBytes": 1140
+    },
+    {
+      "repeat": 2,
+      "position": "可达中局 2221 / 44步",
+      "variant": "ray",
+      "features": {
+        "activity": true,
+        "slidingMobility": true
+      },
+      "depth": 2,
+      "nodes": 24918,
+      "elapsedMs": 373,
+      "move": {
+        "from": 26,
+        "to": 22
+      },
+      "score": -332.2270617571125,
+      "rootTableBytes": 6236,
+      "wireBytes": 1134
+    },
+    {
+      "repeat": 2,
+      "position": "可达中局 2221 / 44步",
+      "variant": "baseline",
+      "features": null,
+      "depth": 2,
+      "nodes": 17220,
+      "elapsedMs": 202,
+      "move": {
+        "from": 26,
+        "to": 22
+      },
+      "score": -201.1250789142633,
+      "rootTableBytes": 6190,
+      "wireBytes": 1137
+    },
+    {
+      "repeat": 2,
+      "position": "可达中局 2221 / 44步",
+      "variant": "inventory",
+      "features": {
+        "activity": false,
+        "safety": false,
+        "leaperActivity": false,
+        "checkExtensions": false,
+        "killers": false
+      },
+      "depth": 2,
+      "nodes": 24224,
+      "elapsedMs": 291,
+      "move": {
+        "from": 26,
+        "to": 22
+      },
+      "score": -11.762031577331571,
+      "rootTableBytes": 6228,
+      "wireBytes": 1132
+    },
+    {
+      "repeat": 2,
+      "position": "原超时前的黑方观察局面",
+      "variant": "forcing",
+      "features": {
+        "activity": false,
+        "safety": false,
+        "leaperActivity": false
+      },
+      "depth": 2,
+      "nodes": 3863,
+      "elapsedMs": 39,
+      "move": {
+        "from": 3,
+        "to": 11
+      },
+      "score": -859,
+      "rootTableBytes": 3532,
+      "wireBytes": 951
+    },
+    {
+      "repeat": 2,
+      "position": "原超时前的黑方观察局面",
+      "variant": "default",
+      "features": null,
+      "depth": 2,
+      "nodes": 3939,
+      "elapsedMs": 37,
+      "move": {
+        "from": 38,
+        "to": 39
+      },
+      "score": -854.9999433109174,
+      "rootTableBytes": 3925,
+      "wireBytes": 1134
+    },
+    {
+      "repeat": 2,
+      "position": "原超时前的黑方观察局面",
+      "variant": "leaper",
+      "features": {
+        "leaperActivity": true
+      },
+      "depth": 2,
+      "nodes": 3939,
+      "elapsedMs": 38,
+      "move": {
+        "from": 38,
+        "to": 39
+      },
+      "score": -854.9999433109174,
+      "rootTableBytes": 3925,
+      "wireBytes": 1134
+    },
+    {
+      "repeat": 2,
+      "position": "原超时前的黑方观察局面",
+      "variant": "full",
+      "features": {
+        "activity": true
+      },
+      "depth": 2,
+      "nodes": 3945,
+      "elapsedMs": 50,
+      "move": {
+        "from": 3,
+        "to": 11
+      },
+      "score": -855.4968098918292,
+      "rootTableBytes": 3925,
+      "wireBytes": 1107
+    },
+    {
+      "repeat": 2,
+      "position": "原超时前的黑方观察局面",
+      "variant": "ray",
+      "features": {
+        "activity": true,
+        "slidingMobility": true
+      },
+      "depth": 2,
+      "nodes": 4050,
+      "elapsedMs": 47,
+      "move": {
+        "from": 38,
+        "to": 41
+      },
+      "score": -844.4981425560203,
+      "rootTableBytes": 3958,
+      "wireBytes": 1139
+    },
+    {
+      "repeat": 2,
+      "position": "原超时前的黑方观察局面",
+      "variant": "baseline",
+      "features": null,
+      "depth": 2,
+      "nodes": 3860,
+      "elapsedMs": 39,
+      "move": {
+        "from": 3,
+        "to": 11
+      },
+      "score": -859,
+      "rootTableBytes": 3532,
+      "wireBytes": 951
+    },
+    {
+      "repeat": 2,
+      "position": "原超时前的黑方观察局面",
+      "variant": "inventory",
+      "features": {
+        "activity": false,
+        "safety": false,
+        "leaperActivity": false,
+        "checkExtensions": false,
+        "killers": false
+      },
+      "depth": 2,
+      "nodes": 3863,
+      "elapsedMs": 43,
+      "move": {
+        "from": 3,
+        "to": 11
+      },
+      "score": -859,
+      "rootTableBytes": 3532,
+      "wireBytes": 951
+    }
+  ],
+  "tactics": [
+    {
+      "position": "可证三层强制制胜 0",
+      "variant": "baseline",
+      "depth": 2,
+      "nodes": 182,
+      "elapsedMs": 5,
+      "mateFound": false,
+      "oracleMove": false,
+      "move": {
+        "from": 49,
+        "to": 40
+      }
+    },
+    {
+      "position": "可证三层强制制胜 0",
+      "variant": "inventory",
+      "depth": 2,
+      "nodes": 182,
+      "elapsedMs": 5,
+      "mateFound": false,
+      "oracleMove": false,
+      "move": {
+        "from": 49,
+        "to": 40
+      }
+    },
+    {
+      "position": "可证三层强制制胜 0",
+      "variant": "forcing",
+      "depth": 2,
+      "nodes": 361,
+      "elapsedMs": 6,
+      "mateFound": true,
+      "oracleMove": true,
+      "move": {
+        "from": 19,
+        "to": 22
+      }
+    },
+    {
+      "position": "可证三层强制制胜 0",
+      "variant": "default",
+      "depth": 2,
+      "nodes": 402,
+      "elapsedMs": 6,
+      "mateFound": true,
+      "oracleMove": true,
+      "move": {
+        "from": 19,
+        "to": 22
+      }
+    },
+    {
+      "position": "可证三层强制制胜 0",
+      "variant": "leaper",
+      "depth": 2,
+      "nodes": 402,
+      "elapsedMs": 6,
+      "mateFound": true,
+      "oracleMove": true,
+      "move": {
+        "from": 19,
+        "to": 22
+      }
+    },
+    {
+      "position": "可证三层强制制胜 0",
+      "variant": "full",
+      "depth": 2,
+      "nodes": 401,
+      "elapsedMs": 8,
+      "mateFound": true,
+      "oracleMove": true,
+      "move": {
+        "from": 19,
+        "to": 22
+      }
+    },
+    {
+      "position": "可证三层强制制胜 0",
+      "variant": "ray",
+      "depth": 2,
+      "nodes": 393,
+      "elapsedMs": 8,
+      "mateFound": true,
+      "oracleMove": true,
+      "move": {
+        "from": 19,
+        "to": 22
+      }
+    },
+    {
+      "position": "可证三层强制制胜 1",
+      "variant": "baseline",
+      "depth": 2,
+      "nodes": 182,
+      "elapsedMs": 4,
+      "mateFound": false,
+      "oracleMove": false,
+      "move": {
+        "from": 49,
+        "to": 40
+      }
+    },
+    {
+      "position": "可证三层强制制胜 1",
+      "variant": "inventory",
+      "depth": 2,
+      "nodes": 182,
+      "elapsedMs": 4,
+      "mateFound": false,
+      "oracleMove": false,
+      "move": {
+        "from": 49,
+        "to": 40
+      }
+    },
+    {
+      "position": "可证三层强制制胜 1",
+      "variant": "forcing",
+      "depth": 2,
+      "nodes": 366,
+      "elapsedMs": 6,
+      "mateFound": true,
+      "oracleMove": true,
+      "move": {
+        "from": 33,
+        "to": 31
+      }
+    },
+    {
+      "position": "可证三层强制制胜 1",
+      "variant": "default",
+      "depth": 2,
+      "nodes": 405,
+      "elapsedMs": 6,
+      "mateFound": true,
+      "oracleMove": true,
+      "move": {
+        "from": 33,
+        "to": 31
+      }
+    },
+    {
+      "position": "可证三层强制制胜 1",
+      "variant": "leaper",
+      "depth": 2,
+      "nodes": 405,
+      "elapsedMs": 9,
+      "mateFound": true,
+      "oracleMove": true,
+      "move": {
+        "from": 33,
+        "to": 31
+      }
+    },
+    {
+      "position": "可证三层强制制胜 1",
+      "variant": "full",
+      "depth": 2,
+      "nodes": 407,
+      "elapsedMs": 6,
+      "mateFound": true,
+      "oracleMove": true,
+      "move": {
+        "from": 33,
+        "to": 31
+      }
+    },
+    {
+      "position": "可证三层强制制胜 1",
+      "variant": "ray",
+      "depth": 2,
+      "nodes": 397,
+      "elapsedMs": 6,
+      "mateFound": true,
+      "oracleMove": true,
+      "move": {
+        "from": 33,
+        "to": 31
+      }
+    },
+    {
+      "position": "可证三层强制制胜 2",
+      "variant": "baseline",
+      "depth": 2,
+      "nodes": 134,
+      "elapsedMs": 3,
+      "mateFound": false,
+      "oracleMove": false,
+      "move": {
+        "from": 49,
+        "to": 40
+      }
+    },
+    {
+      "position": "可证三层强制制胜 2",
+      "variant": "inventory",
+      "depth": 2,
+      "nodes": 134,
+      "elapsedMs": 3,
+      "mateFound": false,
+      "oracleMove": false,
+      "move": {
+        "from": 49,
+        "to": 40
+      }
+    },
+    {
+      "position": "可证三层强制制胜 2",
+      "variant": "forcing",
+      "depth": 2,
+      "nodes": 348,
+      "elapsedMs": 5,
+      "mateFound": true,
+      "oracleMove": true,
+      "move": {
+        "from": 39,
+        "to": 40
+      }
+    },
+    {
+      "position": "可证三层强制制胜 2",
+      "variant": "default",
+      "depth": 2,
+      "nodes": 376,
+      "elapsedMs": 8,
+      "mateFound": true,
+      "oracleMove": true,
+      "move": {
+        "from": 39,
+        "to": 40
+      }
+    },
+    {
+      "position": "可证三层强制制胜 2",
+      "variant": "leaper",
+      "depth": 2,
+      "nodes": 376,
+      "elapsedMs": 10,
+      "mateFound": true,
+      "oracleMove": true,
+      "move": {
+        "from": 39,
+        "to": 40
+      }
+    },
+    {
+      "position": "可证三层强制制胜 2",
+      "variant": "full",
+      "depth": 2,
+      "nodes": 379,
+      "elapsedMs": 7,
+      "mateFound": true,
+      "oracleMove": true,
+      "move": {
+        "from": 39,
+        "to": 40
+      }
+    },
+    {
+      "position": "可证三层强制制胜 2",
+      "variant": "ray",
+      "depth": 2,
+      "nodes": 373,
+      "elapsedMs": 6,
+      "mateFound": true,
+      "oracleMove": true,
+      "move": {
+        "from": 39,
+        "to": 40
+      }
+    },
+    {
+      "position": "可证三层强制制胜 3",
+      "variant": "baseline",
+      "depth": 2,
+      "nodes": 162,
+      "elapsedMs": 4,
+      "mateFound": false,
+      "oracleMove": false,
+      "move": {
+        "from": 49,
+        "to": 40
+      }
+    },
+    {
+      "position": "可证三层强制制胜 3",
+      "variant": "inventory",
+      "depth": 2,
+      "nodes": 162,
+      "elapsedMs": 5,
+      "mateFound": false,
+      "oracleMove": false,
+      "move": {
+        "from": 49,
+        "to": 40
+      }
+    },
+    {
+      "position": "可证三层强制制胜 3",
+      "variant": "forcing",
+      "depth": 2,
+      "nodes": 322,
+      "elapsedMs": 5,
+      "mateFound": true,
+      "oracleMove": true,
+      "move": {
+        "from": 19,
+        "to": 22
+      }
+    },
+    {
+      "position": "可证三层强制制胜 3",
+      "variant": "default",
+      "depth": 2,
+      "nodes": 359,
+      "elapsedMs": 5,
+      "mateFound": true,
+      "oracleMove": true,
+      "move": {
+        "from": 19,
+        "to": 22
+      }
+    },
+    {
+      "position": "可证三层强制制胜 3",
+      "variant": "leaper",
+      "depth": 2,
+      "nodes": 359,
+      "elapsedMs": 6,
+      "mateFound": true,
+      "oracleMove": true,
+      "move": {
+        "from": 19,
+        "to": 22
+      }
+    },
+    {
+      "position": "可证三层强制制胜 3",
+      "variant": "full",
+      "depth": 2,
+      "nodes": 359,
+      "elapsedMs": 6,
+      "mateFound": true,
+      "oracleMove": true,
+      "move": {
+        "from": 19,
+        "to": 22
+      }
+    },
+    {
+      "position": "可证三层强制制胜 3",
+      "variant": "ray",
+      "depth": 2,
+      "nodes": 353,
+      "elapsedMs": 6,
+      "mateFound": true,
+      "oracleMove": true,
+      "move": {
+        "from": 19,
+        "to": 22
+      }
+    }
+  ],
+  "timed": [
+    {
+      "position": "初始全暗",
+      "variant": "baseline",
+      "depth": 1,
+      "nodes": 20848,
+      "elapsedMs": 238,
+      "move": {
+        "from": 64,
+        "to": 1
+      }
+    },
+    {
+      "position": "初始全暗",
+      "variant": "inventory",
+      "depth": 1,
+      "nodes": 19376,
+      "elapsedMs": 225,
+      "move": {
+        "from": 70,
+        "to": 7
+      }
+    },
+    {
+      "position": "初始全暗",
+      "variant": "forcing",
+      "depth": 1,
+      "nodes": 19480,
+      "elapsedMs": 226,
+      "move": {
+        "from": 70,
+        "to": 7
+      }
+    },
+    {
+      "position": "初始全暗",
+      "variant": "default",
+      "depth": 1,
+      "nodes": 19152,
+      "elapsedMs": 225,
+      "move": {
+        "from": 70,
+        "to": 7
+      }
+    },
+    {
+      "position": "初始全暗",
+      "variant": "leaper",
+      "depth": 1,
+      "nodes": 18192,
+      "elapsedMs": 225,
+      "move": {
+        "from": 70,
+        "to": 7
+      }
+    },
+    {
+      "position": "初始全暗",
+      "variant": "full",
+      "depth": 1,
+      "nodes": 18696,
+      "elapsedMs": 225,
+      "move": {
+        "from": 70,
+        "to": 7
+      }
+    },
+    {
+      "position": "初始全暗",
+      "variant": "ray",
+      "depth": 1,
+      "nodes": 18592,
+      "elapsedMs": 225,
+      "move": {
+        "from": 70,
+        "to": 7
+      }
+    },
+    {
+      "position": "可达中局 2111 / 44步",
+      "variant": "baseline",
+      "depth": 1,
+      "nodes": 20496,
+      "elapsedMs": 238,
+      "move": {
+        "from": 63,
+        "to": 46
+      }
+    },
+    {
+      "position": "可达中局 2111 / 44步",
+      "variant": "inventory",
+      "depth": 1,
+      "nodes": 18704,
+      "elapsedMs": 225,
+      "move": {
+        "from": 63,
+        "to": 46
+      }
+    },
+    {
+      "position": "可达中局 2111 / 44步",
+      "variant": "forcing",
+      "depth": 1,
+      "nodes": 18480,
+      "elapsedMs": 225,
+      "move": {
+        "from": 63,
+        "to": 46
+      }
+    },
+    {
+      "position": "可达中局 2111 / 44步",
+      "variant": "default",
+      "depth": 1,
+      "nodes": 18976,
+      "elapsedMs": 225,
+      "move": {
+        "from": 63,
+        "to": 46
+      }
+    },
+    {
+      "position": "可达中局 2111 / 44步",
+      "variant": "leaper",
+      "depth": 1,
+      "nodes": 15288,
+      "elapsedMs": 225,
+      "move": {
+        "from": 63,
+        "to": 46
+      }
+    },
+    {
+      "position": "可达中局 2111 / 44步",
+      "variant": "full",
+      "depth": 1,
+      "nodes": 10880,
+      "elapsedMs": 225,
+      "move": {
+        "from": 63,
+        "to": 46
+      }
+    },
+    {
+      "position": "可达中局 2111 / 44步",
+      "variant": "ray",
+      "depth": 1,
+      "nodes": 12760,
+      "elapsedMs": 225,
+      "move": {
+        "from": 63,
+        "to": 46
+      }
+    },
+    {
+      "position": "原超时前的黑方观察局面",
+      "variant": "baseline",
+      "depth": 2,
+      "nodes": 24528,
+      "elapsedMs": 238,
+      "move": {
+        "from": 3,
+        "to": 11
+      }
+    },
+    {
+      "position": "原超时前的黑方观察局面",
+      "variant": "inventory",
+      "depth": 2,
+      "nodes": 22888,
+      "elapsedMs": 225,
+      "move": {
+        "from": 3,
+        "to": 11
+      }
+    },
+    {
+      "position": "原超时前的黑方观察局面",
+      "variant": "forcing",
+      "depth": 2,
+      "nodes": 23168,
+      "elapsedMs": 225,
+      "move": {
+        "from": 3,
+        "to": 11
+      }
+    },
+    {
+      "position": "原超时前的黑方观察局面",
+      "variant": "default",
+      "depth": 2,
+      "nodes": 20960,
+      "elapsedMs": 225,
+      "move": {
+        "from": 38,
+        "to": 39
+      }
+    },
+    {
+      "position": "原超时前的黑方观察局面",
+      "variant": "leaper",
+      "depth": 2,
+      "nodes": 19472,
+      "elapsedMs": 225,
+      "move": {
+        "from": 38,
+        "to": 39
+      }
+    },
+    {
+      "position": "原超时前的黑方观察局面",
+      "variant": "full",
+      "depth": 2,
+      "nodes": 17560,
+      "elapsedMs": 225,
+      "move": {
+        "from": 3,
+        "to": 11
+      }
+    },
+    {
+      "position": "原超时前的黑方观察局面",
+      "variant": "ray",
+      "depth": 2,
+      "nodes": 18912,
+      "elapsedMs": 225,
+      "move": {
+        "from": 38,
+        "to": 41
+      }
+    }
+  ],
+  "summary": {
+    "baseline": {
+      "medianMs": 115.0,
+      "meanNodesPerPosition": 9344.666666666666,
+      "rootPayloadReductionPct": 80.31993710121262,
+      "matesAtNominalDepth2": 0
+    },
+    "inventory": {
+      "medianMs": 136.5,
+      "meanNodesPerPosition": 11326.833333333334,
+      "rootPayloadReductionPct": 80.41134566499542,
+      "matesAtNominalDepth2": 0
+    },
+    "forcing": {
+      "medianMs": 113.0,
+      "meanNodesPerPosition": 11363.5,
+      "rootPayloadReductionPct": 80.41296156744536,
+      "matesAtNominalDepth2": 4
+    },
+    "default": {
+      "medianMs": 127.0,
+      "meanNodesPerPosition": 11364.166666666666,
+      "rootPayloadReductionPct": 80.09749220658023,
+      "matesAtNominalDepth2": 4
+    },
+    "leaper": {
+      "medianMs": 139.0,
+      "meanNodesPerPosition": 11473.5,
+      "rootPayloadReductionPct": 80.085516829911,
+      "matesAtNominalDepth2": 4
+    },
+    "full": {
+      "medianMs": 151.0,
+      "meanNodesPerPosition": 11496.833333333334,
+      "rootPayloadReductionPct": 79.98004031461208,
+      "matesAtNominalDepth2": 4
+    },
+    "ray": {
+      "medianMs": 156.0,
+      "meanNodesPerPosition": 11428.5,
+      "rootPayloadReductionPct": 79.91070987623836,
+      "matesAtNominalDepth2": 4
+    }
+  },
+  "summaryMethod": "18 core runs per variant (6 positions x 3 repeats); even-N median is the arithmetic mean of the two central values. Mixed-position median is descriptive, not a speedup guarantee."
+}

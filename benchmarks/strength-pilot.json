@@ -1,0 +1,3527 @@
+{
+  "variant": "被吃暗子仅吃子方可见；红先；本项目将死/困毙及和棋裁判",
+  "budgetMs": 250,
+  "graceMs": 60,
+  "samples": 8,
+  "seeds": [
+    1601
+  ],
+  "sourceHashes": {
+    "baseline": "7ebe865025de9603fefa9157b5d72b3caf1b7301ef988d7fa58e43309771cbc3",
+    "candidate": "7efe9f61cd4bb10d2ce14d797f8302f7a32f211374e1ade2984ff2649708f915"
+  },
+  "timing": "相同宿主时限控制器与独立Node线程。初始化排除在每步计时外，公开视角构造后派发至收到合法着法的全部时间均计入；超时、非法或异常均判负且计入总成绩。",
+  "games": [
+    {
+      "seed": 1601,
+      "candidateSide": "r",
+      "plies": 102,
+      "result": {
+        "winner": null,
+        "text": "和棋（重复局面／步数上限）"
+      },
+      "log": [
+        {
+          "ply": 1,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 64,
+            "to": 1
+          },
+          "elapsedMs": 243,
+          "depth": 1,
+          "nodes": 13712,
+          "score": 35.38706084728431,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": "P",
+          "capture": "dark"
+        },
+        {
+          "ply": 2,
+          "side": "b",
+          "engine": "baseline",
+          "move": {
+            "from": 0,
+            "to": 1
+          },
+          "elapsedMs": 241,
+          "depth": 1,
+          "nodes": 16656,
+          "score": -275.9801413921921,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": "C",
+          "capture": "P"
+        },
+        {
+          "ply": 3,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 70,
+            "to": 68
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 17712,
+          "score": 12.061512991199411,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 1,
+          "reveal": "C",
+          "capture": null
+        },
+        {
+          "ply": 4,
+          "side": "b",
+          "engine": "baseline",
+          "move": {
+            "from": 25,
+            "to": 79
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 19872,
+          "score": -153.08360242224893,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": "R",
+          "capture": null
+        },
+        {
+          "ply": 5,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 84,
+            "to": 76
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 18544,
+          "score": -1.062465886899606,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 1,
+          "reveal": "P",
+          "capture": null
+        },
+        {
+          "ply": 6,
+          "side": "b",
+          "engine": "baseline",
+          "move": {
+            "from": 19,
+            "to": 73
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 17056,
+          "score": -128.58891599064614,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": "C",
+          "capture": null
+        },
+        {
+          "ply": 7,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 60,
+            "to": 51
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 15184,
+          "score": -13.873973877653631,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 1,
+          "reveal": "N",
+          "capture": null
+        },
+        {
+          "ply": 8,
+          "side": "b",
+          "engine": "baseline",
+          "move": {
+            "from": 29,
+            "to": 38
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 14336,
+          "score": -131.47998876546745,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": "N",
+          "capture": null
+        },
+        {
+          "ply": 9,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 56,
+            "to": 47
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 9120,
+          "score": -13.624346482159671,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 1,
+          "reveal": "P",
+          "capture": null
+        },
+        {
+          "ply": 10,
+          "side": "b",
+          "engine": "baseline",
+          "move": {
+            "from": 38,
+            "to": 21
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 9040,
+          "score": -178.3636363636615,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 11,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 58,
+            "to": 49
+          },
+          "elapsedMs": 240,
+          "depth": 1,
+          "nodes": 4144,
+          "score": 12.185432893116497,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 1,
+          "reveal": "P",
+          "capture": null
+        },
+        {
+          "ply": 12,
+          "side": "b",
+          "engine": "baseline",
+          "move": {
+            "from": 27,
+            "to": 36
+          },
+          "elapsedMs": 240,
+          "depth": 1,
+          "nodes": 1936,
+          "score": -196.55359816604152,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": "P",
+          "capture": null
+        },
+        {
+          "ply": 13,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 54,
+            "to": 45
+          },
+          "elapsedMs": 241,
+          "depth": 0,
+          "nodes": 4432,
+          "score": 0,
+          "fallback": true,
+          "deadlineStop": false,
+          "knownDark": 1,
+          "reveal": "R",
+          "capture": null
+        },
+        {
+          "ply": 14,
+          "side": "b",
+          "engine": "baseline",
+          "move": {
+            "from": 36,
+            "to": 45
+          },
+          "elapsedMs": 240,
+          "depth": 1,
+          "nodes": 8784,
+          "score": 755.0000000000002,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": "R"
+        },
+        {
+          "ply": 15,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 62,
+            "to": 53
+          },
+          "elapsedMs": 240,
+          "depth": 1,
+          "nodes": 7696,
+          "score": -924.1193144613951,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 1,
+          "reveal": "B",
+          "capture": null
+        },
+        {
+          "ply": 16,
+          "side": "b",
+          "engine": "baseline",
+          "move": {
+            "from": 33,
+            "to": 42
+          },
+          "elapsedMs": 240,
+          "depth": 1,
+          "nodes": 8256,
+          "score": 778.1233068866112,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": "A",
+          "capture": null
+        },
+        {
+          "ply": 17,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 68,
+            "to": 64
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 9360,
+          "score": -940.9999999999816,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 1,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 18,
+          "side": "b",
+          "engine": "baseline",
+          "move": {
+            "from": 73,
+            "to": 75
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 17040,
+          "score": 765.4444444444631,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 19,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 87,
+            "to": 67
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 13632,
+          "score": -933.1458553304034,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 1,
+          "reveal": "A",
+          "capture": null
+        },
+        {
+          "ply": 20,
+          "side": "b",
+          "engine": "baseline",
+          "move": {
+            "from": 1,
+            "to": 46
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 16496,
+          "score": 765.4444444444971,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 21,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 67,
+            "to": 75
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 14784,
+          "score": -605.4988352327391,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 1,
+          "reveal": null,
+          "capture": "C"
+        },
+        {
+          "ply": 22,
+          "side": "b",
+          "engine": "baseline",
+          "move": {
+            "from": 46,
+            "to": 49
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 16784,
+          "score": 459.4444444444965,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": "P"
+        },
+        {
+          "ply": 23,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 64,
+            "to": 67
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 13696,
+          "score": -630.842888319639,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 1,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 24,
+          "side": "b",
+          "engine": "baseline",
+          "move": {
+            "from": 45,
+            "to": 46
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 18288,
+          "score": 459.4444444444965,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 25,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 51,
+            "to": 68
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 12080,
+          "score": -626.5000000000148,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 1,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 26,
+          "side": "b",
+          "engine": "baseline",
+          "move": {
+            "from": 79,
+            "to": 52
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 16208,
+          "score": 415.4444444444963,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 27,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 68,
+            "to": 49
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 16688,
+          "score": -538.8312914988983,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 1,
+          "reveal": null,
+          "capture": "C"
+        },
+        {
+          "ply": 28,
+          "side": "b",
+          "engine": "baseline",
+          "move": {
+            "from": 52,
+            "to": 49
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 22960,
+          "score": 415.4444444444963,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": "N"
+        },
+        {
+          "ply": 29,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 53,
+            "to": 33
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 16816,
+          "score": -587.4166666666864,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 1,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 30,
+          "side": "b",
+          "engine": "baseline",
+          "move": {
+            "from": 49,
+            "to": 58
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 23920,
+          "score": 360.5536490354388,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 31,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 67,
+            "to": 71
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 16144,
+          "score": -611.1160969831885,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 1,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 32,
+          "side": "b",
+          "engine": "baseline",
+          "move": {
+            "from": 8,
+            "to": 26
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 20128,
+          "score": 326.35744685868,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": "B",
+          "capture": null
+        },
+        {
+          "ply": 33,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 76,
+            "to": 67
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 16352,
+          "score": -586.416666666701,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 1,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 34,
+          "side": "b",
+          "engine": "baseline",
+          "move": {
+            "from": 58,
+            "to": 59
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 20400,
+          "score": 374.69600842850895,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 35,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 71,
+            "to": 70
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 15824,
+          "score": -614.0558829518977,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 1,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 36,
+          "side": "b",
+          "engine": "baseline",
+          "move": {
+            "from": 59,
+            "to": 68
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 20224,
+          "score": 357.2497909538734,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 37,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 70,
+            "to": 61
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 16336,
+          "score": -590.1566850255848,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 1,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 38,
+          "side": "b",
+          "engine": "baseline",
+          "move": {
+            "from": 68,
+            "to": 70
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 20080,
+          "score": 337.49406147517595,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 39,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 61,
+            "to": 58
+          },
+          "elapsedMs": 240,
+          "depth": 1,
+          "nodes": 12928,
+          "score": -415.28376151442967,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 1,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 40,
+          "side": "b",
+          "engine": "baseline",
+          "move": {
+            "from": 21,
+            "to": 40
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 17472,
+          "score": 333.9374938195864,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 41,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 58,
+            "to": 31
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 15856,
+          "score": -418.8890131433854,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 1,
+          "reveal": null,
+          "capture": "dark"
+        },
+        {
+          "ply": 42,
+          "side": "b",
+          "engine": "baseline",
+          "move": {
+            "from": 40,
+            "to": 33
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 20000,
+          "score": 202.4469206231296,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": "B"
+        },
+        {
+          "ply": 43,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 47,
+            "to": 38
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 17152,
+          "score": 136.24999999998542,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 2,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 44,
+          "side": "b",
+          "engine": "baseline",
+          "move": {
+            "from": 33,
+            "to": 14
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 20624,
+          "score": 286.49421065154564,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 45,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 31,
+            "to": 58
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 18800,
+          "score": 114.4718585456223,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 2,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 46,
+          "side": "b",
+          "engine": "baseline",
+          "move": {
+            "from": 42,
+            "to": 50
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 21136,
+          "score": 285.24411987023115,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 47,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 58,
+            "to": 54
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 17184,
+          "score": 138.24999999998525,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 2,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 48,
+          "side": "b",
+          "engine": "baseline",
+          "move": {
+            "from": 26,
+            "to": 42
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 16656,
+          "score": 292.62256775350306,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 49,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 88,
+            "to": 77
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 15776,
+          "score": 154.70249505810634,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 2,
+          "reveal": "N",
+          "capture": null
+        },
+        {
+          "ply": 50,
+          "side": "b",
+          "engine": "baseline",
+          "move": {
+            "from": 70,
+            "to": 68
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 20576,
+          "score": 263.52161559047966,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 51,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 77,
+            "to": 66
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 18032,
+          "score": 175.24999999999963,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 2,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 52,
+          "side": "b",
+          "engine": "baseline",
+          "move": {
+            "from": 50,
+            "to": 58
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 23344,
+          "score": 282.2459802358882,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 53,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 66,
+            "to": 49
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 18048,
+          "score": 166.7500000000001,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 2,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 54,
+          "side": "b",
+          "engine": "baseline",
+          "move": {
+            "from": 46,
+            "to": 55
+          },
+          "elapsedMs": 238,
+          "depth": 2,
+          "nodes": 24288,
+          "score": 227.2088305093792,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 55,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 49,
+            "to": 42
+          },
+          "elapsedMs": 238,
+          "depth": 1,
+          "nodes": 15968,
+          "score": 205.4888837635745,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 2,
+          "reveal": null,
+          "capture": "B"
+        },
+        {
+          "ply": 56,
+          "side": "b",
+          "engine": "baseline",
+          "move": {
+            "from": 55,
+            "to": 54
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 23584,
+          "score": 247.93343353166034,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": "C"
+        },
+        {
+          "ply": 57,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 89,
+            "to": 35
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 17024,
+          "score": 161.68072181714578,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 2,
+          "reveal": "C",
+          "capture": "dark"
+        },
+        {
+          "ply": 58,
+          "side": "b",
+          "engine": "baseline",
+          "move": {
+            "from": 58,
+            "to": 50
+          },
+          "elapsedMs": 238,
+          "depth": 2,
+          "nodes": 22960,
+          "score": 268.49999999999994,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 59,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 42,
+            "to": 23
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 5264,
+          "score": 65.4999999999998,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 3,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 60,
+          "side": "b",
+          "engine": "baseline",
+          "move": {
+            "from": 50,
+            "to": 60
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 19184,
+          "score": 267.2491464749552,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 61,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 23,
+            "to": 40
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 18464,
+          "score": 35.3084497811498,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 3,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 62,
+          "side": "b",
+          "engine": "baseline",
+          "move": {
+            "from": 60,
+            "to": 50
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 20672,
+          "score": 268.9996774216825,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 63,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 40,
+            "to": 23
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 16992,
+          "score": 65.4999999999998,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 3,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 64,
+          "side": "b",
+          "engine": "baseline",
+          "move": {
+            "from": 50,
+            "to": 60
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 22416,
+          "score": 267.2491464749552,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 65,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 23,
+            "to": 40
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 19840,
+          "score": 35.3084497811498,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 3,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 66,
+          "side": "b",
+          "engine": "baseline",
+          "move": {
+            "from": 60,
+            "to": 50
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 21440,
+          "score": 268.9996774216825,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 67,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 40,
+            "to": 57
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 18576,
+          "score": 51.50000000000016,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 3,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 68,
+          "side": "b",
+          "engine": "baseline",
+          "move": {
+            "from": 68,
+            "to": 71
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 21520,
+          "score": 258.74838069160006,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 69,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 35,
+            "to": 29
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 17008,
+          "score": 167.39324970261953,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 3,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 70,
+          "side": "b",
+          "engine": "baseline",
+          "move": {
+            "from": 5,
+            "to": 13
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 21312,
+          "score": 74.06136248779114,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": "B",
+          "capture": null
+        },
+        {
+          "ply": 71,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 29,
+            "to": 11
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 17088,
+          "score": 202.395550757642,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 3,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 72,
+          "side": "b",
+          "engine": "baseline",
+          "move": {
+            "from": 71,
+            "to": 62
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 18976,
+          "score": 22.46383908407818,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 73,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 57,
+            "to": 50
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 18352,
+          "score": 256.77213179459676,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 3,
+          "reveal": null,
+          "capture": "A"
+        },
+        {
+          "ply": 74,
+          "side": "b",
+          "engine": "baseline",
+          "move": {
+            "from": 62,
+            "to": 59
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 11312,
+          "score": 19.714285714275174,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 75,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 11,
+            "to": 14
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 15904,
+          "score": 221.99999999999994,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 3,
+          "reveal": null,
+          "capture": "N"
+        },
+        {
+          "ply": 76,
+          "side": "b",
+          "engine": "baseline",
+          "move": {
+            "from": 59,
+            "to": 50
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 18992,
+          "score": 23.714285714275505,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": "N"
+        },
+        {
+          "ply": 77,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 14,
+            "to": 16
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 9120,
+          "score": 220.50000000000023,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 3,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 78,
+          "side": "b",
+          "engine": "baseline",
+          "move": {
+            "from": 50,
+            "to": 52
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 11824,
+          "score": 19.714285714275174,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 79,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 16,
+            "to": 17
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 8592,
+          "score": 211.07515428675262,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 3,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 80,
+          "side": "b",
+          "engine": "baseline",
+          "move": {
+            "from": 52,
+            "to": 16
+          },
+          "elapsedMs": 247,
+          "depth": 2,
+          "nodes": 8432,
+          "score": 22.339105682702773,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 81,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 17,
+            "to": 8
+          },
+          "elapsedMs": 251,
+          "depth": 2,
+          "nodes": 6836,
+          "score": 388.54545570964837,
+          "fallback": false,
+          "deadlineStop": true,
+          "knownDark": 3,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 82,
+          "side": "b",
+          "engine": "baseline",
+          "move": {
+            "from": 16,
+            "to": 15
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 6800,
+          "score": -203.75374730790347,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 83,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 81,
+            "to": 54
+          },
+          "elapsedMs": 250,
+          "depth": 1,
+          "nodes": 443,
+          "score": 459.8416119576913,
+          "fallback": false,
+          "deadlineStop": true,
+          "knownDark": 3,
+          "reveal": "P",
+          "capture": "P"
+        },
+        {
+          "ply": 84,
+          "side": "b",
+          "engine": "baseline",
+          "move": {
+            "from": 2,
+            "to": 18
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 7488,
+          "score": -211.76558250332113,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": "P",
+          "capture": null
+        },
+        {
+          "ply": 85,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 83,
+            "to": 63
+          },
+          "elapsedMs": 241,
+          "depth": 2,
+          "nodes": 7968,
+          "score": 442.16225416719885,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 3,
+          "reveal": "R",
+          "capture": null
+        },
+        {
+          "ply": 86,
+          "side": "b",
+          "engine": "baseline",
+          "move": {
+            "from": 15,
+            "to": 87
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 18368,
+          "score": -291.0000000000001,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 87,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 67,
+            "to": 58
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 13968,
+          "score": 464.1666666666569,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 3,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 88,
+          "side": "b",
+          "engine": "baseline",
+          "move": {
+            "from": 18,
+            "to": 27
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 20672,
+          "score": -291.0000000000001,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 89,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 63,
+            "to": 70
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 16288,
+          "score": 484.6654694311783,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 3,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 90,
+          "side": "b",
+          "engine": "baseline",
+          "move": {
+            "from": 4,
+            "to": 5
+          },
+          "elapsedMs": 238,
+          "depth": 2,
+          "nodes": 21232,
+          "score": -393,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 91,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 70,
+            "to": 7
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 15648,
+          "score": 522.6828820547177,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 3,
+          "reveal": null,
+          "capture": "dark"
+        },
+        {
+          "ply": 92,
+          "side": "b",
+          "engine": "baseline",
+          "move": {
+            "from": 87,
+            "to": 86
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 20960,
+          "score": -393,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": "dark"
+        },
+        {
+          "ply": 93,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 85,
+            "to": 76
+          },
+          "elapsedMs": 239,
+          "depth": 4,
+          "nodes": 15088,
+          "score": 0,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 4,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 94,
+          "side": "b",
+          "engine": "baseline",
+          "move": {
+            "from": 86,
+            "to": 77
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 21824,
+          "score": -394.9999999999999,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 1,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 95,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 76,
+            "to": 67
+          },
+          "elapsedMs": 239,
+          "depth": 3,
+          "nodes": 14880,
+          "score": 0,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 4,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 96,
+          "side": "b",
+          "engine": "baseline",
+          "move": {
+            "from": 77,
+            "to": 68
+          },
+          "elapsedMs": 238,
+          "depth": 2,
+          "nodes": 21968,
+          "score": -397,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 1,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 97,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 67,
+            "to": 76
+          },
+          "elapsedMs": 240,
+          "depth": 4,
+          "nodes": 14928,
+          "score": 0,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 4,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 98,
+          "side": "b",
+          "engine": "baseline",
+          "move": {
+            "from": 68,
+            "to": 77
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 21696,
+          "score": -394.9999999999999,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 1,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 99,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 76,
+            "to": 67
+          },
+          "elapsedMs": 239,
+          "depth": 4,
+          "nodes": 17344,
+          "score": 0,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 4,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 100,
+          "side": "b",
+          "engine": "baseline",
+          "move": {
+            "from": 77,
+            "to": 68
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 22992,
+          "score": -397,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 1,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 101,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 67,
+            "to": 76
+          },
+          "elapsedMs": 239,
+          "depth": 4,
+          "nodes": 14928,
+          "score": 0,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 4,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 102,
+          "side": "b",
+          "engine": "baseline",
+          "move": {
+            "from": 68,
+            "to": 77
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 22064,
+          "score": 0,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 1,
+          "reveal": null,
+          "capture": null
+        }
+      ]
+    },
+    {
+      "seed": 1601,
+      "candidateSide": "b",
+      "plies": 90,
+      "result": {
+        "winner": "r",
+        "text": "超时技术负",
+        "technicalForfeit": true,
+        "offender": "candidate"
+      },
+      "log": [
+        {
+          "ply": 1,
+          "side": "r",
+          "engine": "baseline",
+          "move": {
+            "from": 64,
+            "to": 1
+          },
+          "elapsedMs": 241,
+          "depth": 1,
+          "nodes": 15360,
+          "score": 66.6208499774435,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": "P",
+          "capture": "dark"
+        },
+        {
+          "ply": 2,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 0,
+            "to": 1
+          },
+          "elapsedMs": 241,
+          "depth": 1,
+          "nodes": 12320,
+          "score": -268.1518561336958,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": "C",
+          "capture": "P"
+        },
+        {
+          "ply": 3,
+          "side": "r",
+          "engine": "baseline",
+          "move": {
+            "from": 88,
+            "to": 69
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 14928,
+          "score": 8.999496556373824,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 1,
+          "reveal": "N",
+          "capture": null
+        },
+        {
+          "ply": 4,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 7,
+            "to": 24
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 13840,
+          "score": -190.4118245730135,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": "P",
+          "capture": null
+        },
+        {
+          "ply": 5,
+          "side": "r",
+          "engine": "baseline",
+          "move": {
+            "from": 70,
+            "to": 34
+          },
+          "elapsedMs": 240,
+          "depth": 2,
+          "nodes": 14240,
+          "score": 48.02904175847403,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 1,
+          "reveal": "C",
+          "capture": null
+        },
+        {
+          "ply": 6,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 19,
+            "to": 64
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 14880,
+          "score": -362.79731061762266,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": "C",
+          "capture": null
+        },
+        {
+          "ply": 7,
+          "side": "r",
+          "engine": "baseline",
+          "move": {
+            "from": 34,
+            "to": 31
+          },
+          "elapsedMs": 240,
+          "depth": 1,
+          "nodes": 15808,
+          "score": 338.36363636370527,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 1,
+          "reveal": null,
+          "capture": "dark"
+        },
+        {
+          "ply": 8,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 29,
+            "to": 38
+          },
+          "elapsedMs": 241,
+          "depth": 1,
+          "nodes": 16384,
+          "score": -490.6172506599594,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": "N",
+          "capture": null
+        },
+        {
+          "ply": 9,
+          "side": "r",
+          "engine": "baseline",
+          "move": {
+            "from": 31,
+            "to": 40
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 17520,
+          "score": 809.5031270600831,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 2,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 10,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 25,
+            "to": 79
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 15376,
+          "score": -399.49059031506124,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": "R",
+          "capture": null
+        },
+        {
+          "ply": 11,
+          "side": "r",
+          "engine": "baseline",
+          "move": {
+            "from": 56,
+            "to": 47
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 19376,
+          "score": 868.2554393885296,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 2,
+          "reveal": "P",
+          "capture": null
+        },
+        {
+          "ply": 12,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 38,
+            "to": 21
+          },
+          "elapsedMs": 240,
+          "depth": 1,
+          "nodes": 13280,
+          "score": -339.5000000000208,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 13,
+          "side": "r",
+          "engine": "baseline",
+          "move": {
+            "from": 40,
+            "to": 49
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 18096,
+          "score": 867.9443418680846,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 2,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 14,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 35,
+            "to": 44
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 10896,
+          "score": -306.17905347503637,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": "P",
+          "capture": null
+        },
+        {
+          "ply": 15,
+          "side": "r",
+          "engine": "baseline",
+          "move": {
+            "from": 54,
+            "to": 45
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 18496,
+          "score": 851.3210070957417,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 2,
+          "reveal": "R",
+          "capture": null
+        },
+        {
+          "ply": 16,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 21,
+            "to": 10
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 13584,
+          "score": -389.8333333333138,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 17,
+          "side": "r",
+          "engine": "baseline",
+          "move": {
+            "from": 47,
+            "to": 38
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 14704,
+          "score": 925.0000000000294,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 2,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 18,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 33,
+            "to": 42
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 12672,
+          "score": -406.75654125761474,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": "A",
+          "capture": null
+        },
+        {
+          "ply": 19,
+          "side": "r",
+          "engine": "baseline",
+          "move": {
+            "from": 60,
+            "to": 51
+          },
+          "elapsedMs": 241,
+          "depth": 1,
+          "nodes": 6432,
+          "score": 940.2992878221545,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 2,
+          "reveal": "N",
+          "capture": null
+        },
+        {
+          "ply": 20,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 1,
+            "to": 0
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 7968,
+          "score": -467.99999999999994,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 21,
+          "side": "r",
+          "engine": "baseline",
+          "move": {
+            "from": 51,
+            "to": 40
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 12960,
+          "score": 925.2454477963735,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 2,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 22,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 5,
+            "to": 13
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 7952,
+          "score": -482.82303698211774,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": "B",
+          "capture": null
+        },
+        {
+          "ply": 23,
+          "side": "r",
+          "engine": "baseline",
+          "move": {
+            "from": 40,
+            "to": 21
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 14752,
+          "score": 946.7371561783391,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 2,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 24,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 4,
+            "to": 5
+          },
+          "elapsedMs": 239,
+          "depth": 3,
+          "nodes": 10960,
+          "score": -483.0017712842322,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 25,
+          "side": "r",
+          "engine": "baseline",
+          "move": {
+            "from": 21,
+            "to": 10
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 13728,
+          "score": 918.0310692553418,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 2,
+          "reveal": null,
+          "capture": "N"
+        },
+        {
+          "ply": 26,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 0,
+            "to": 45
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 14288,
+          "score": -466.6163633774826,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": "R"
+        },
+        {
+          "ply": 27,
+          "side": "r",
+          "engine": "baseline",
+          "move": {
+            "from": 81,
+            "to": 45
+          },
+          "elapsedMs": 241,
+          "depth": 1,
+          "nodes": 17936,
+          "score": 922.964106338587,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 2,
+          "reveal": "P",
+          "capture": "C"
+        },
+        {
+          "ply": 28,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 79,
+            "to": 78
+          },
+          "elapsedMs": 244,
+          "depth": 1,
+          "nodes": 14816,
+          "score": -496.9285714285653,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 29,
+          "side": "r",
+          "engine": "baseline",
+          "move": {
+            "from": 69,
+            "to": 76
+          },
+          "elapsedMs": 240,
+          "depth": 1,
+          "nodes": 15056,
+          "score": 960.9999999999998,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 2,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 30,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 78,
+            "to": 77
+          },
+          "elapsedMs": 240,
+          "depth": 1,
+          "nodes": 10752,
+          "score": -491.4285714285653,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 31,
+          "side": "r",
+          "engine": "baseline",
+          "move": {
+            "from": 87,
+            "to": 71
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 16192,
+          "score": 967.6939330479064,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 2,
+          "reveal": "A",
+          "capture": null
+        },
+        {
+          "ply": 32,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 13,
+            "to": 33
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 12912,
+          "score": -571.41323428713,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 33,
+          "side": "r",
+          "engine": "baseline",
+          "move": {
+            "from": 49,
+            "to": 40
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 16336,
+          "score": 960.9999999999784,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 2,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 34,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 42,
+            "to": 32
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 10928,
+          "score": -512.4285714285442,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 35,
+          "side": "r",
+          "engine": "baseline",
+          "move": {
+            "from": 40,
+            "to": 31
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 16352,
+          "score": 960.9999999999784,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 2,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 36,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 6,
+            "to": 22
+          },
+          "elapsedMs": 238,
+          "depth": 1,
+          "nodes": 13088,
+          "score": -619.7163050805714,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": "N",
+          "capture": null
+        },
+        {
+          "ply": 37,
+          "side": "r",
+          "engine": "baseline",
+          "move": {
+            "from": 10,
+            "to": 27
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 16736,
+          "score": 1098.9999999999786,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 2,
+          "reveal": null,
+          "capture": "dark"
+        },
+        {
+          "ply": 38,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 8,
+            "to": 35
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 14176,
+          "score": -634.7410639258629,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": "B",
+          "capture": null
+        },
+        {
+          "ply": 39,
+          "side": "r",
+          "engine": "baseline",
+          "move": {
+            "from": 45,
+            "to": 36
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 14976,
+          "score": 1095.9999999999793,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 3,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 40,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 35,
+            "to": 51
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 7600,
+          "score": -756.6666666666506,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 41,
+          "side": "r",
+          "engine": "baseline",
+          "move": {
+            "from": 31,
+            "to": 30
+          },
+          "elapsedMs": 242,
+          "depth": 1,
+          "nodes": 8320,
+          "score": 1091.9999999999786,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 3,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 42,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 3,
+            "to": 13
+          },
+          "elapsedMs": 241,
+          "depth": 1,
+          "nodes": 9760,
+          "score": -692.9293593861591,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": "A",
+          "capture": null
+        },
+        {
+          "ply": 43,
+          "side": "r",
+          "engine": "baseline",
+          "move": {
+            "from": 83,
+            "to": 63
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 16688,
+          "score": 1101.675514274716,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 3,
+          "reveal": "R",
+          "capture": null
+        },
+        {
+          "ply": 44,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 64,
+            "to": 67
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 12992,
+          "score": -804.5833333333624,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 45,
+          "side": "r",
+          "engine": "baseline",
+          "move": {
+            "from": 76,
+            "to": 83
+          },
+          "elapsedMs": 240,
+          "depth": 2,
+          "nodes": 18480,
+          "score": 1076.000000000019,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 3,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 46,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 32,
+            "to": 40
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 11056,
+          "score": -789.0833333333622,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 47,
+          "side": "r",
+          "engine": "baseline",
+          "move": {
+            "from": 30,
+            "to": 31
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 16096,
+          "score": 1080.0000000000189,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 3,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 48,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 22,
+            "to": 11
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 13008,
+          "score": -781.5833333333622,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 49,
+          "side": "r",
+          "engine": "baseline",
+          "move": {
+            "from": 38,
+            "to": 29
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 19280,
+          "score": 1100.0000000000186,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 3,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 50,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 2,
+            "to": 18
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 13424,
+          "score": -723.8327283352781,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": "P",
+          "capture": null
+        },
+        {
+          "ply": 51,
+          "side": "r",
+          "engine": "baseline",
+          "move": {
+            "from": 29,
+            "to": 20
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 20784,
+          "score": 1088.0000000000196,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 3,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 52,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 51,
+            "to": 31
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 12688,
+          "score": -990.2500000000192,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": "C"
+        },
+        {
+          "ply": 53,
+          "side": "r",
+          "engine": "baseline",
+          "move": {
+            "from": 20,
+            "to": 11
+          },
+          "elapsedMs": 245,
+          "depth": 1,
+          "nodes": 19104,
+          "score": 855.0000000000196,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 3,
+          "reveal": null,
+          "capture": "N"
+        },
+        {
+          "ply": 54,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 18,
+            "to": 27
+          },
+          "elapsedMs": 242,
+          "depth": 1,
+          "nodes": 13840,
+          "score": -813.5000000000192,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": "N"
+        },
+        {
+          "ply": 55,
+          "side": "r",
+          "engine": "baseline",
+          "move": {
+            "from": 63,
+            "to": 67
+          },
+          "elapsedMs": 241,
+          "depth": 1,
+          "nodes": 16352,
+          "score": 855.0000000000196,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 3,
+          "reveal": null,
+          "capture": "C"
+        },
+        {
+          "ply": 56,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 31,
+            "to": 11
+          },
+          "elapsedMs": 241,
+          "depth": 1,
+          "nodes": 14640,
+          "score": -798.5000000000192,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": "P"
+        },
+        {
+          "ply": 57,
+          "side": "r",
+          "engine": "baseline",
+          "move": {
+            "from": 67,
+            "to": 65
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 14944,
+          "score": 855.0000000000196,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 3,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 58,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 13,
+            "to": 3
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 15200,
+          "score": -815.5000000000193,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 59,
+          "side": "r",
+          "engine": "baseline",
+          "move": {
+            "from": 83,
+            "to": 66
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 17328,
+          "score": 859.0000000000194,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 3,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 60,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 77,
+            "to": 78
+          },
+          "elapsedMs": 238,
+          "depth": 1,
+          "nodes": 16304,
+          "score": -832.5000000000193,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 61,
+          "side": "r",
+          "engine": "baseline",
+          "move": {
+            "from": 66,
+            "to": 59
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 20144,
+          "score": 863.0000000000196,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 3,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 62,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 78,
+            "to": 60
+          },
+          "elapsedMs": 238,
+          "depth": 2,
+          "nodes": 15488,
+          "score": -827.5000000000194,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 63,
+          "side": "r",
+          "engine": "baseline",
+          "move": {
+            "from": 65,
+            "to": 68
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 22464,
+          "score": 860.0000000000198,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 3,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 64,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 40,
+            "to": 32
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 17616,
+          "score": -788.0000000000191,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 65,
+          "side": "r",
+          "engine": "baseline",
+          "move": {
+            "from": 36,
+            "to": 27
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 23056,
+          "score": 804.0000000000197,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 3,
+          "reveal": null,
+          "capture": "P"
+        },
+        {
+          "ply": 66,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 60,
+            "to": 62
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 16240,
+          "score": -745.5143338142528,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 0,
+          "reveal": null,
+          "capture": "dark"
+        },
+        {
+          "ply": 67,
+          "side": "r",
+          "engine": "baseline",
+          "move": {
+            "from": 71,
+            "to": 79
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 20400,
+          "score": 827.8193776384727,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 3,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 68,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 62,
+            "to": 61
+          },
+          "elapsedMs": 238,
+          "depth": 2,
+          "nodes": 16928,
+          "score": -793.328987470791,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 1,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 69,
+          "side": "r",
+          "engine": "baseline",
+          "move": {
+            "from": 79,
+            "to": 69
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 28672,
+          "score": 809.4837913073109,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 3,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 70,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 61,
+            "to": 43
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 23008,
+          "score": -806.2288282692374,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 1,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 71,
+          "side": "r",
+          "engine": "baseline",
+          "move": {
+            "from": 27,
+            "to": 18
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 20512,
+          "score": 820.3333333333482,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 3,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 72,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 11,
+            "to": 31
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 18128,
+          "score": -802.8399358260029,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 1,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 73,
+          "side": "r",
+          "engine": "baseline",
+          "move": {
+            "from": 59,
+            "to": 42
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 22736,
+          "score": 992.6163319536987,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 3,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 74,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 43,
+            "to": 42
+          },
+          "elapsedMs": 238,
+          "depth": 2,
+          "nodes": 19488,
+          "score": -786.5833333333287,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 1,
+          "reveal": null,
+          "capture": "N"
+        },
+        {
+          "ply": 75,
+          "side": "r",
+          "engine": "baseline",
+          "move": {
+            "from": 68,
+            "to": 32
+          },
+          "elapsedMs": 238,
+          "depth": 1,
+          "nodes": 23376,
+          "score": 818.2272734190987,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 3,
+          "reveal": null,
+          "capture": "A"
+        },
+        {
+          "ply": 76,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 5,
+            "to": 4
+          },
+          "elapsedMs": 238,
+          "depth": 3,
+          "nodes": 17232,
+          "score": -790.1170092659391,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 1,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 77,
+          "side": "r",
+          "engine": "baseline",
+          "move": {
+            "from": 32,
+            "to": 31
+          },
+          "elapsedMs": 239,
+          "depth": 1,
+          "nodes": 24288,
+          "score": 818.2272734190987,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 3,
+          "reveal": null,
+          "capture": "B"
+        },
+        {
+          "ply": 78,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 33,
+            "to": 13
+          },
+          "elapsedMs": 239,
+          "depth": 3,
+          "nodes": 21168,
+          "score": -796.740675144195,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 1,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 79,
+          "side": "r",
+          "engine": "baseline",
+          "move": {
+            "from": 69,
+            "to": 59
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 26752,
+          "score": 810.820699594247,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 3,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 80,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 42,
+            "to": 41
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 21920,
+          "score": -797.6147234771227,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 1,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 81,
+          "side": "r",
+          "engine": "baseline",
+          "move": {
+            "from": 59,
+            "to": 49
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 24672,
+          "score": 814.3333333333471,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 3,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 82,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 41,
+            "to": 36
+          },
+          "elapsedMs": 238,
+          "depth": 2,
+          "nodes": 22560,
+          "score": -798.7167768725818,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 1,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 83,
+          "side": "r",
+          "engine": "baseline",
+          "move": {
+            "from": 31,
+            "to": 22
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 24928,
+          "score": 806.3274711575443,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 3,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 84,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 24,
+            "to": 33
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 19680,
+          "score": -809.0290074751878,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 1,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 85,
+          "side": "r",
+          "engine": "baseline",
+          "move": {
+            "from": 86,
+            "to": 76
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 25488,
+          "score": 813.2612608573311,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 3,
+          "reveal": "B",
+          "capture": null
+        },
+        {
+          "ply": 86,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 36,
+            "to": 37
+          },
+          "elapsedMs": 238,
+          "depth": 2,
+          "nodes": 19536,
+          "score": -823.0742865024915,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 1,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 87,
+          "side": "r",
+          "engine": "baseline",
+          "move": {
+            "from": 82,
+            "to": 65
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 26928,
+          "score": 814.7575673430994,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 3,
+          "reveal": "A",
+          "capture": null
+        },
+        {
+          "ply": 88,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 37,
+            "to": 38
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 24000,
+          "score": -818.3124839199801,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 1,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 89,
+          "side": "r",
+          "engine": "baseline",
+          "move": {
+            "from": 49,
+            "to": 57
+          },
+          "elapsedMs": 239,
+          "depth": 2,
+          "nodes": 25536,
+          "score": 806.6509742064554,
+          "fallback": false,
+          "deadlineStop": false,
+          "knownDark": 3,
+          "reveal": null,
+          "capture": null
+        },
+        {
+          "ply": 90,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 38,
+            "to": 41
+          },
+          "elapsedMs": 316,
+          "depth": 2,
+          "nodes": 8209,
+          "score": -844.9774245086674,
+          "fallback": false,
+          "deadlineStop": true,
+          "knownDark": 1
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "games": 2,
+    "wins": 0,
+    "draws": 1,
+    "losses": 1,
+    "scoreRate": 0.25,
+    "winRateWilson95": [
+      0,
+      0.6576280471103807
+    ],
+    "technicalForfeits": 1,
+    "timing": {
+      "candidate": {
+        "moves": 96,
+        "fallbacks": 1,
+        "deadlineStops": 3,
+        "p50": 239,
+        "p95": 242,
+        "max": 316,
+        "meanDepth": 1.5
+      },
+      "baseline": {
+        "moves": 96,
+        "fallbacks": 0,
+        "deadlineStops": 0,
+        "p50": 239,
+        "p95": 241,
+        "max": 247,
+        "meanDepth": 1.5520833333333333
+      }
+    },
+    "note": "固定少量布局换色相关，不能推出长期胜率/Elo；所有技术负均纳入结果，未排除不利局。"
+  }
+}
