@@ -1,0 +1,13 @@
+{
+  "name": "mist-jieqi",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "start": "python3 -m http.server 8765 --bind 127.0.0.1",
+    "benchmark": "node scripts/benchmark.js",
+    "test:browser": "node scripts/browser-check.js",
+    "benchmark:compare": "node scripts/compare-search.js",
+    "benchmark:matches": "node scripts/match-review.js"
+  }
+}

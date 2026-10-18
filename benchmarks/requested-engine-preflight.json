@@ -1,0 +1,108 @@
+{
+  "engine": "./external/pikafish-jieqi-wasm/src/PikaJieQi",
+  "plies": 20,
+  "hiddenCaptures": 5,
+  "publicPositionAndPoolsAgree": true,
+  "comparisons": [
+    {
+      "ply": 1,
+      "actual": "xBxxkxxxx/9/1x5x1/x1x1x1x1x/9/9/X1X1X1X1X/7X1/9/XXXXKXXXX b R2A2C2P5N2B1r2a2c2p5n2b2 0 1",
+      "expected": "xBxxkxxxx/9/1x5x1/x1x1x1x1x/9/9/X1X1X1X1X/7X1/9/XXXXKXXXX b R2A2C2P5N2B1r2a2c2p5n2b2 0 1"
+    },
+    {
+      "ply": 2,
+      "actual": "xBxxkxxxx/9/1x7/x1x1x1x1x/9/9/X1X1X1X1X/7X1/9/XXXXKXXaX w R2A2C2P5N2B1r2a1c2p5n2b2 0 2",
+      "expected": "xBxxkxxxx/9/1x7/x1x1x1x1x/9/9/X1X1X1X1X/7X1/9/XXXXKXXaX w R2A2C2P5N2B1r2a1c2p5n2b2 0 2"
+    },
+    {
+      "ply": 3,
+      "actual": "xBxxkxxxx/9/1x7/x1x1x1x1x/9/9/X1X1X1X1X/7X1/4P4/XXXXK1XaX b R2A2C2P4N2B1r2a1c2p5n2b2 0 2",
+      "expected": "xBxxkxxxx/9/1x7/x1x1x1x1x/9/9/X1X1X1X1X/7X1/4P4/XXXXK1XaX b R2A2C2P4N2B1r2a1c2p5n2b2 0 2"
+    },
+    {
+      "ply": 4,
+      "actual": "1Bxxkxxxx/9/rx7/x1x1x1x1x/9/9/X1X1X1X1X/7X1/4P4/XXXXK1XaX w R2A2C2P4N2B1r1a1c2p5n2b2 0 3",
+      "expected": "1Bxxkxxxx/9/rx7/x1x1x1x1x/9/9/X1X1X1X1X/7X1/4P4/XXXXK1XaX w R2A2C2P4N2B1r1a1c2p5n2b2 0 3"
+    },
+    {
+      "ply": 5,
+      "actual": "1Bxxkxxxx/9/rx7/x1x1x1x1x/9/9/X1X1X1X1X/P8/4P4/XXXXK1XaX b R2A2C2P3N2B1r1a1c2p5n2b2 0 3",
+      "expected": "1Bxxkxxxx/9/rx7/x1x1x1x1x/9/9/X1X1X1X1X/P8/4P4/XXXXK1XaX b R2A2C2P3N2B1r1a1c2p5n2b2 0 3"
+    },
+    {
+      "ply": 6,
+      "actual": "1Bxxkxxxx/9/r8/x1x1x1x1x/1r7/9/X1X1X1X1X/P8/4P4/XXXXK1XaX w R2A2C2P3N2B1a1c2p5n2b2 0 4",
+      "expected": "1Bxxkxxxx/9/r8/x1x1x1x1x/1r7/9/X1X1X1X1X/P8/4P4/XXXXK1XaX w R2A2C2P3N2B1a1c2p5n2b2 0 4"
+    },
+    {
+      "ply": 7,
+      "actual": "1Bxxkxxxx/9/r8/x1x1x1x1x/1r7/N8/2X1X1X1X/P8/4P4/XXXXK1XaX b R2A2C2P3N1B1a1c2p5n2b2 0 4",
+      "expected": "1Bxxkxxxx/9/r8/x1x1x1x1x/1r7/N8/2X1X1X1X/P8/4P4/XXXXK1XaX b R2A2C2P3N1B1a1c2p5n2b2 0 4"
+    },
+    {
+      "ply": 8,
+      "actual": "1Bxxkxxxx/9/r8/x1x1x1x1x/9/N8/2X1X1X1X/P8/4P4/XrXXK1XaX w R2A2C2P3N1B1a1c2p5n2b2 0 5",
+      "expected": "1Bxxkxxxx/9/r8/x1x1x1x1x/9/N8/2X1X1X1X/P8/4P4/XrXXK1XaX w R2A2C2P3N1B1a1c2p5n2b2 0 5"
+    },
+    {
+      "ply": 9,
+      "actual": "1Bxxkxxxx/9/r8/x1x1x1x1x/9/N8/2X1X1X1X/P8/4P3A/XrXXK1Xa1 b R2A1C2P3N1B1a1c2p5n2b2 0 5",
+      "expected": "1Bxxkxxxx/9/r8/x1x1x1x1x/9/N8/2X1X1X1X/P8/4P3A/XrXXK1Xa1 b R2A1C2P3N1B1a1c2p5n2b2 0 5"
+    },
+    {
+      "ply": 10,
+      "actual": "1Bxxkxxxx/9/r8/x1x1x1x1x/9/N8/2X1X1X1X/P8/4P3A/X1rXK1Xa1 w R2A1C2P3N1B1a1c2p5n2b2 0 6",
+      "expected": "1Bxxkxxxx/9/r8/x1x1x1x1x/9/N8/2X1X1X1X/P8/4P3A/X1rXK1Xa1 w R2A1C2P3N1B1a1c2p5n2b2 0 6"
+    },
+    {
+      "ply": 11,
+      "actual": "1Bxxkxxxx/9/r8/x1x1x1x1x/9/N5P2/2X1X3X/P8/4P3A/X1rXK1Xa1 b R2A1C2P2N1B1a1c2p5n2b2 0 6",
+      "expected": "1Bxxkxxxx/9/r8/x1x1x1x1x/9/N5P2/2X1X3X/P8/4P3A/X1rXK1Xa1 b R2A1C2P2N1B1a1c2p5n2b2 0 6"
+    },
+    {
+      "ply": 12,
+      "actual": "1Bxxkxxxx/9/r8/x1x1x1x1x/9/N5P2/2X1X3X/P8/4P3A/X2rK1Xa1 w R2A1C2P2N1B1a1c2p5n2b2 0 7",
+      "expected": "1Bxxkxxxx/9/r8/x1x1x1x1x/9/N5P2/2X1X3X/P8/4P3A/X2rK1Xa1 w R2A1C2P2N1B1a1c2p5n2b2 0 7"
+    },
+    {
+      "ply": 13,
+      "actual": "1Bxxkxxxx/9/r8/x1x1x1x1x/9/N5P2/2X1X3X/P8/4P3A/3CK1Xa1 b R2A1C1P2N1B1a1c2p5n2b2 0 7",
+      "expected": "1Bxxkxxxx/9/r8/x1x1x1x1x/9/N5P2/2X1X3X/P8/4P3A/3CK1Xa1 b R2A1C1P2N1B1a1c2p5n2b2 0 7"
+    },
+    {
+      "ply": 14,
+      "actual": "1B1xkxxxx/9/r3p4/x1x1x1x1x/9/N5P2/2X1X3X/P8/4P3A/3CK1Xa1 w R2A1C1P2N1B1a1c2p4n2b2 0 8",
+      "expected": "1B1xkxxxx/9/r3p4/x1x1x1x1x/9/N5P2/2X1X3X/P8/4P3A/3CK1Xa1 w R2A1C1P2N1B1a1c2p4n2b2 0 8"
+    },
+    {
+      "ply": 15,
+      "actual": "1B1xkxxxx/9/r3p4/x1x1x1x1x/9/N5P2/2X1X3X/P3R4/4P3A/3CK2a1 b R1A1C1P2N1B1a1c2p4n2b2 0 8",
+      "expected": "1B1xkxxxx/9/r3p4/x1x1x1x1x/9/N5P2/2X1X3X/P3R4/4P3A/3CK2a1 b R1A1C1P2N1B1a1c2p4n2b2 0 8"
+    },
+    {
+      "ply": 16,
+      "actual": "1B1xkxxxx/9/r3p4/2x1x1x1x/n8/N5P2/2X1X3X/P3R4/4P3A/3CK2a1 w R1A1C1P2N1B1a1c2p4n1b2 0 9",
+      "expected": "1B1xkxxxx/9/r3p4/2x1x1x1x/n8/N5P2/2X1X3X/P3R4/4P3A/3CK2a1 w R1A1C1P2N1B1a1c2p4n1b2 0 9"
+    },
+    {
+      "ply": 17,
+      "actual": "1B1xkxxxx/9/r3p4/2x1x1x1x/n8/N5P2/2X1X3X/P3R2A1/4P4/3CK2a1 b R1A1C1P2N1B1a1c2p4n1b2 0 9",
+      "expected": "1B1xkxxxx/9/r3p4/2x1x1x1x/n8/N5P2/2X1X3X/P3R2A1/4P4/3CK2a1 b R1A1C1P2N1B1a1c2p4n1b2 1 9"
+    },
+    {
+      "ply": 18,
+      "actual": "1B1xkxxxx/9/r3p4/2x1x1x1x/n8/N5P2/2X1X3X/P3R2A1/4P3a/3CK4 w R1A1C1P2N1B1a1c2p4n1b2 0 10",
+      "expected": "1B1xkxxxx/9/r3p4/2x1x1x1x/n8/N5P2/2X1X3X/P3R2A1/4P3a/3CK4 w R1A1C1P2N1B1a1c2p4n1b2 2 10"
+    },
+    {
+      "ply": 19,
+      "actual": "1B1xkxxxx/9/r3p4/2x1x1x1x/n8/N5P2/2X1X3X/P3R2A1/4P3a/3C1K3 b R1A1C1P2N1B1a1c2p4n1b2 0 10",
+      "expected": "1B1xkxxxx/9/r3p4/2x1x1x1x/n8/N5P2/2X1X3X/P3R2A1/4P3a/3C1K3 b R1A1C1P2N1B1a1c2p4n1b2 3 10"
+    },
+    {
+      "ply": 20,
+      "actual": "1B2kxxxx/4p4/r3p4/2x1x1x1x/n8/N5P2/2X1X3X/P3R2A1/4P3a/3C1K3 w R1A1C1P2N1B1a1c2p3n1b2 0 11",
+      "expected": "1B2kxxxx/4p4/r3p4/2x1x1x1x/n8/N5P2/2X1X3X/P3R2A1/4P3a/3C1K3 w R1A1C1P2N1B1a1c2p3n1b2 0 11"
+    }
+  ]
+}

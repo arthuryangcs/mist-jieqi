@@ -1,0 +1,288 @@
+[
+  {
+    "position": "初始全暗",
+    "budget": 150,
+    "seed": 11,
+    "move": {
+      "from": 54,
+      "to": 45
+    },
+    "score": 0,
+    "depth": 0,
+    "nodes": 1280,
+    "samples": 4,
+    "elapsedMs": 162,
+    "firstResultMs": null
+  },
+  {
+    "position": "初始全暗",
+    "budget": 150,
+    "seed": 22,
+    "move": {
+      "from": 54,
+      "to": 45
+    },
+    "score": 0,
+    "depth": 0,
+    "nodes": 1152,
+    "samples": 4,
+    "elapsedMs": 156,
+    "firstResultMs": null
+  },
+  {
+    "position": "初始全暗",
+    "budget": 150,
+    "seed": 33,
+    "move": {
+      "from": 88,
+      "to": 71
+    },
+    "score": 104,
+    "depth": 1,
+    "nodes": 2176,
+    "samples": 4,
+    "elapsedMs": 155,
+    "firstResultMs": 86,
+    "spread": 302.0761493398643
+  },
+  {
+    "position": "初始全暗",
+    "budget": 500,
+    "seed": 11,
+    "move": {
+      "from": 64,
+      "to": 1
+    },
+    "score": 165.75,
+    "depth": 1,
+    "nodes": 6912,
+    "samples": 4,
+    "elapsedMs": 507,
+    "firstResultMs": 93,
+    "spread": 229.82207792116057
+  },
+  {
+    "position": "初始全暗",
+    "budget": 500,
+    "seed": 22,
+    "move": {
+      "from": 87,
+      "to": 67
+    },
+    "score": 36.5,
+    "depth": 1,
+    "nodes": 6272,
+    "samples": 4,
+    "elapsedMs": 501,
+    "firstResultMs": 89,
+    "spread": 311.3940429744924
+  },
+  {
+    "position": "初始全暗",
+    "budget": 500,
+    "seed": 33,
+    "move": {
+      "from": 88,
+      "to": 71
+    },
+    "score": 104,
+    "depth": 1,
+    "nodes": 5632,
+    "samples": 4,
+    "elapsedMs": 500,
+    "firstResultMs": 89,
+    "spread": 302.0761493398643
+  },
+  {
+    "position": "初始全暗",
+    "budget": 1500,
+    "seed": 11,
+    "move": {
+      "from": 64,
+      "to": 1
+    },
+    "score": 80.25,
+    "depth": 2,
+    "nodes": 20480,
+    "samples": 4,
+    "elapsedMs": 1506,
+    "firstResultMs": 95,
+    "spread": 257.86854693816383
+  },
+  {
+    "position": "初始全暗",
+    "budget": 1500,
+    "seed": 22,
+    "move": {
+      "from": 64,
+      "to": 1
+    },
+    "score": -181,
+    "depth": 2,
+    "nodes": 20736,
+    "samples": 4,
+    "elapsedMs": 1508,
+    "firstResultMs": 125,
+    "spread": 192.12756179163884
+  },
+  {
+    "position": "初始全暗",
+    "budget": 1500,
+    "seed": 33,
+    "move": {
+      "from": 56,
+      "to": 47
+    },
+    "score": -177.75,
+    "depth": 2,
+    "nodes": 22400,
+    "samples": 4,
+    "elapsedMs": 1503,
+    "firstResultMs": 75,
+    "spread": 341.1351455068797
+  },
+  {
+    "position": "固定种子36手中局",
+    "budget": 150,
+    "seed": 11,
+    "move": {
+      "from": 60,
+      "to": 51
+    },
+    "score": -634.5,
+    "depth": 1,
+    "nodes": 2560,
+    "samples": 4,
+    "elapsedMs": 155,
+    "firstResultMs": 55,
+    "spread": 122.72224737186
+  },
+  {
+    "position": "固定种子36手中局",
+    "budget": 150,
+    "seed": 22,
+    "move": {
+      "from": 60,
+      "to": 51
+    },
+    "score": -515,
+    "depth": 1,
+    "nodes": 2944,
+    "samples": 4,
+    "elapsedMs": 156,
+    "firstResultMs": 41,
+    "spread": 269
+  },
+  {
+    "position": "固定种子36手中局",
+    "budget": 150,
+    "seed": 33,
+    "move": {
+      "from": 60,
+      "to": 51
+    },
+    "score": -507.5,
+    "depth": 1,
+    "nodes": 2560,
+    "samples": 4,
+    "elapsedMs": 152,
+    "firstResultMs": 42,
+    "spread": 267.66536944476024
+  },
+  {
+    "position": "固定种子36手中局",
+    "budget": 500,
+    "seed": 11,
+    "move": {
+      "from": 60,
+      "to": 51
+    },
+    "score": -634.75,
+    "depth": 2,
+    "nodes": 9728,
+    "samples": 4,
+    "elapsedMs": 503,
+    "firstResultMs": 42,
+    "spread": 60.80039062374517
+  },
+  {
+    "position": "固定种子36手中局",
+    "budget": 500,
+    "seed": 22,
+    "move": {
+      "from": 60,
+      "to": 51
+    },
+    "score": -591.25,
+    "depth": 2,
+    "nodes": 8832,
+    "samples": 4,
+    "elapsedMs": 500,
+    "firstResultMs": 37,
+    "spread": 247.00139169648418
+  },
+  {
+    "position": "固定种子36手中局",
+    "budget": 500,
+    "seed": 33,
+    "move": {
+      "from": 60,
+      "to": 51
+    },
+    "score": -644.75,
+    "depth": 2,
+    "nodes": 9472,
+    "samples": 4,
+    "elapsedMs": 500,
+    "firstResultMs": 55,
+    "spread": 251.61018957903912
+  },
+  {
+    "position": "固定种子36手中局",
+    "budget": 1500,
+    "seed": 11,
+    "move": {
+      "from": 60,
+      "to": 51
+    },
+    "score": -634.75,
+    "depth": 2,
+    "nodes": 27136,
+    "samples": 4,
+    "elapsedMs": 1506,
+    "firstResultMs": 39,
+    "spread": 60.80039062374517
+  },
+  {
+    "position": "固定种子36手中局",
+    "budget": 1500,
+    "seed": 22,
+    "move": {
+      "from": 60,
+      "to": 51
+    },
+    "score": -591.25,
+    "depth": 2,
+    "nodes": 30080,
+    "samples": 4,
+    "elapsedMs": 1502,
+    "firstResultMs": 35,
+    "spread": 247.00139169648418
+  },
+  {
+    "position": "固定种子36手中局",
+    "budget": 1500,
+    "seed": 33,
+    "move": {
+      "from": 60,
+      "to": 51
+    },
+    "score": -644.75,
+    "depth": 2,
+    "nodes": 28928,
+    "samples": 4,
+    "elapsedMs": 1505,
+    "firstResultMs": 37,
+    "spread": 251.61018957903912
+  }
+]

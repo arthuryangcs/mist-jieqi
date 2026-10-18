@@ -1,0 +1,53 @@
+{
+  "runtime": "v25.6.0",
+  "tactics": [
+    {
+      "test": "一步制胜（将死或困毙）",
+      "searchPass": true,
+      "greedyPass": false,
+      "depth": 1,
+      "nodes": 39,
+      "elapsedMs": 4,
+      "move": {
+        "from": 12,
+        "to": 21
+      }
+    },
+    {
+      "test": "吃无保护车",
+      "searchPass": true,
+      "greedyPass": true,
+      "depth": 4,
+      "nodes": 3679,
+      "elapsedMs": 108,
+      "move": {
+        "from": 81,
+        "to": 63
+      }
+    },
+    {
+      "test": "拒绝吃兵丢车",
+      "searchPass": true,
+      "greedyPass": false,
+      "depth": 4,
+      "nodes": 3937,
+      "elapsedMs": 107,
+      "move": {
+        "from": 49,
+        "to": 40
+      }
+    }
+  ],
+  "selfPlay": {
+    "plies": 24,
+    "allMovesLegal": true,
+    "depthRange": [
+      1,
+      1
+    ],
+    "nodes": 61312,
+    "elapsedMs": 4945,
+    "result": null
+  },
+  "note": "微型战术回归和合法性基准，不是棋力评级或统计胜率。"
+}

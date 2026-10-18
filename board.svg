@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1000"><g stroke="#9b835b" stroke-width="1.5" fill="none">
+<path d="M70 72.5H830"/>
+<path d="M70 167.5H830"/>
+<path d="M70 262.5H830"/>
+<path d="M70 357.5H830"/>
+<path d="M70 452.5H830"/>
+<path d="M70 547.5H830"/>
+<path d="M70 642.5H830"/>
+<path d="M70 737.5H830"/>
+<path d="M70 832.5H830"/>
+<path d="M70 927.5H830"/>
+<path d="M70 72.5V452.5 M70 547.5V927.5"/>
+<path d="M165 72.5V452.5 M165 547.5V927.5"/>
+<path d="M260 72.5V452.5 M260 547.5V927.5"/>
+<path d="M355 72.5V452.5 M355 547.5V927.5"/>
+<path d="M450 72.5V452.5 M450 547.5V927.5"/>
+<path d="M545 72.5V452.5 M545 547.5V927.5"/>
+<path d="M640 72.5V452.5 M640 547.5V927.5"/>
+<path d="M735 72.5V452.5 M735 547.5V927.5"/>
+<path d="M830 72.5V452.5 M830 547.5V927.5"/>
+<path d="M70 452.5V547.5 M830 452.5V547.5 M355 72.5L545 262.5 M545 72.5L355 262.5 M355 737.5L545 927.5 M545 737.5L355 927.5"/></g><g fill="#937c59" font-family="serif" font-size="35" text-anchor="middle"><text x="260" y="512">楚 河</text><text x="640" y="512">汉 界</text></g></svg>

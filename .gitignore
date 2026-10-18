@@ -1,0 +1,36 @@
+# Independent comparison engines stay local; no third-party source or binaries.
+/external/
+/benchmarks/requested-engine-audit.diff
+
+# Local profiling/build/test logs and browser profiles.
+*.log
+*.cpuprofile
+*.heapprofile
+*.heapsnapshot
+*.trace
+playwright-report/
+test-results/
+browser-profile*/
+.cache/
+node_modules/
+coverage/
+dist/
+*.o
+*.a
+*.dylib
+*.so
+*.exe
+*.wasm
+*.nnue
+
+# Credentials, editor/OS state and local environment.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.DS_Store
+.vscode/
+.idea/
+.agents/
+.codex/

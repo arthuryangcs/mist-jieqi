@@ -1,0 +1,94 @@
+{
+  "startedAt": "2026-10-18T18:28:58.628Z",
+  "browser": "155.0.8059.80",
+  "baseURL": "http://127.0.0.1:8765/",
+  "tests": [
+    {
+      "name": "首屏棋盘、30枚留白暗子、红先及可访问标签",
+      "passed": true
+    },
+    {
+      "name": "合法红棋翻子、真实Worker回应、思考中重复点击被忽略",
+      "passed": true
+    },
+    {
+      "name": "电脑回应后悔棋恢复整轮",
+      "passed": true
+    },
+    {
+      "name": "AI思考中悔棋取消真实Worker，无旧着落回",
+      "passed": true
+    },
+    {
+      "name": "AI思考中重新开局，不受旧结果污染",
+      "passed": true
+    },
+    {
+      "name": "编辑副本完成真实搜索：推荐5着、评分、胜率、深度、样本、节点",
+      "passed": true,
+      "report": "红方 +55 分\n\n红方启发式胜率约 52% · 深度 2 · 8 个假设局面 · 33,934 节点 · 1001ms · 胜/负样本 0/0\n\n暗炮 2列8行 → 2列1行：55 ± 259 分\n暗炮 8列8行 → 8列1行：43 ± 224 分\n暗马 2列10行 → 3列8行：4 ± 40 分\n暗马 2列10行 → 1列8行：-6 ± 42 分\n暗马 8列10行 → 7列8行：-30 ± 112 分"
+    },
+    {
+      "name": "重复相同预算分析复用完整结果，不重启计算线程",
+      "passed": true,
+      "elapsedMs": 30
+    },
+    {
+      "name": "手动摆子、已知吃子与剩余库存交叉校验、全明分析",
+      "passed": true
+    },
+    {
+      "name": "双方电脑连续落子至少4步；思考中暂停保留棋盘且没有旧结果落回",
+      "passed": true
+    },
+    {
+      "name": "自动模式单步观战仅推进一步，随后仍暂停",
+      "passed": true
+    },
+    {
+      "name": "自动模式思考中悔棋撤回一步，重开保留观战模式并停止旧线程",
+      "passed": true
+    },
+    {
+      "name": "390px移动视口无横向溢出，棋子圆形且棋盘9:10",
+      "passed": true
+    },
+    {
+      "name": "浏览器故障注入：丢弃最终消息仍在时限返回最后完整合法迭代",
+      "passed": true,
+      "elapsedMs": 1086
+    },
+    {
+      "name": "浏览器故障注入：没有进度时按时落合法保底棋，无卡死",
+      "passed": true,
+      "elapsedMs": 1252
+    }
+  ],
+  "consoleErrors": [],
+  "pageErrors": [],
+  "httpErrors": [],
+  "workers": [
+    "http://127.0.0.1:8765/worker.js",
+    "http://127.0.0.1:8765/worker.js",
+    "http://127.0.0.1:8765/worker.js",
+    "http://127.0.0.1:8765/worker.js",
+    "http://127.0.0.1:8765/worker.js",
+    "http://127.0.0.1:8765/worker.js",
+    "http://127.0.0.1:8765/worker.js",
+    "http://127.0.0.1:8765/worker.js",
+    "http://127.0.0.1:8765/worker.js",
+    "http://127.0.0.1:8765/worker.js",
+    "http://127.0.0.1:8765/worker.js",
+    "http://127.0.0.1:8765/worker.js"
+  ],
+  "screenshots": [
+    "01-desktop.png",
+    "02-ai-reply.png",
+    "03-analysis.png",
+    "05-auto-play.png",
+    "04-mobile.png",
+    "06-deadline-fallback.png"
+  ],
+  "passed": true,
+  "finishedAt": "2026-10-18T18:29:19.811Z"
+}

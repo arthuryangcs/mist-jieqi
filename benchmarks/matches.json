@@ -1,0 +1,4249 @@
+{
+  "budgetMs": 150,
+  "games": [
+    {
+      "seed": 211,
+      "newSide": "r",
+      "budgetMs": 150,
+      "result": {
+        "winner": null,
+        "text": "和棋（重复局面／步数上限）"
+      },
+      "plies": 104,
+      "log": [
+        {
+          "ply": 1,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211000,
+          "budgetMs": 150,
+          "move": {
+            "from": 54,
+            "to": 45
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 2048,
+          "samples": 8,
+          "elapsedMs": 154,
+          "firstResultMs": null,
+          "reveal": "C",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 2,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211001,
+          "budgetMs": 150,
+          "move": {
+            "from": 0,
+            "to": 9
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 1024,
+          "samples": 4,
+          "elapsedMs": 150,
+          "firstResultMs": null,
+          "reveal": "N",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 3,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211002,
+          "budgetMs": 150,
+          "move": {
+            "from": 45,
+            "to": 46
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 2304,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": null,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 4,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211003,
+          "budgetMs": 150,
+          "move": {
+            "from": 1,
+            "to": 20
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 1152,
+          "samples": 4,
+          "elapsedMs": 174,
+          "firstResultMs": null,
+          "reveal": "P",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 5,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211004,
+          "budgetMs": 150,
+          "move": {
+            "from": 46,
+            "to": 47
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 5760,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": null,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 6,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211005,
+          "budgetMs": 150,
+          "move": {
+            "from": 2,
+            "to": 18
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 768,
+          "samples": 4,
+          "elapsedMs": 168,
+          "firstResultMs": null,
+          "reveal": "R",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 7,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211006,
+          "budgetMs": 150,
+          "move": {
+            "from": 47,
+            "to": 48
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 3200,
+          "samples": 8,
+          "elapsedMs": 152,
+          "firstResultMs": null,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 8,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211007,
+          "budgetMs": 150,
+          "move": {
+            "from": 3,
+            "to": 13
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 1152,
+          "samples": 4,
+          "elapsedMs": 153,
+          "firstResultMs": null,
+          "reveal": "A",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 9,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211008,
+          "budgetMs": 150,
+          "move": {
+            "from": 48,
+            "to": 51
+          },
+          "score": -20.0000000000292,
+          "winRate": 49.16674381858685,
+          "depth": 1,
+          "nodes": 7424,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 132,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 10,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211009,
+          "budgetMs": 150,
+          "move": {
+            "from": 4,
+            "to": 3
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 1792,
+          "samples": 4,
+          "elapsedMs": 157,
+          "firstResultMs": null,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 11,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211010,
+          "budgetMs": 150,
+          "move": {
+            "from": 51,
+            "to": 6
+          },
+          "score": 630.9789996253429,
+          "winRate": 74.10881007329367,
+          "depth": 1,
+          "nodes": 6656,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 143,
+          "reveal": null,
+          "capture": "unknown",
+          "flags": []
+        },
+        {
+          "ply": 12,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211011,
+          "budgetMs": 150,
+          "move": {
+            "from": 3,
+            "to": 12
+          },
+          "score": -404.75,
+          "winRate": null,
+          "depth": 2,
+          "nodes": 896,
+          "samples": 4,
+          "elapsedMs": 153,
+          "firstResultMs": 9,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 13,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211012,
+          "budgetMs": 150,
+          "move": {
+            "from": 6,
+            "to": 15
+          },
+          "score": 472.0320320368634,
+          "winRate": 68.71266289259003,
+          "depth": 1,
+          "nodes": 7168,
+          "samples": 8,
+          "elapsedMs": 152,
+          "firstResultMs": 124,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 14,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211013,
+          "budgetMs": 150,
+          "move": {
+            "from": 7,
+            "to": 14
+          },
+          "score": -434.5,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 1664,
+          "samples": 4,
+          "elapsedMs": 155,
+          "firstResultMs": 56,
+          "reveal": "N",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 15,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211014,
+          "budgetMs": 150,
+          "move": {
+            "from": 64,
+            "to": 66
+          },
+          "score": 213.73068624422183,
+          "winRate": 58.81245652684528,
+          "depth": 1,
+          "nodes": 7040,
+          "samples": 8,
+          "elapsedMs": 153,
+          "firstResultMs": 74,
+          "reveal": "P",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 16,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211015,
+          "budgetMs": 150,
+          "move": {
+            "from": 25,
+            "to": 88
+          },
+          "score": 263.5,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 1920,
+          "samples": 4,
+          "elapsedMs": 150,
+          "firstResultMs": 107,
+          "reveal": "C",
+          "capture": "unknown",
+          "flags": []
+        },
+        {
+          "ply": 17,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211016,
+          "budgetMs": 150,
+          "move": {
+            "from": 89,
+            "to": 88
+          },
+          "score": 380.53222531374934,
+          "winRate": 65.34458026445424,
+          "depth": 1,
+          "nodes": 6272,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 70,
+          "reveal": "A",
+          "capture": "C",
+          "flags": [
+            "公开大子被吃（需区分交换/弃子）"
+          ]
+        },
+        {
+          "ply": 18,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211017,
+          "budgetMs": 150,
+          "move": {
+            "from": 19,
+            "to": 73
+          },
+          "score": 313.25,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2432,
+          "samples": 4,
+          "elapsedMs": 163,
+          "firstResultMs": 50,
+          "reveal": "B",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 19,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211018,
+          "budgetMs": 150,
+          "move": {
+            "from": 70,
+            "to": 16
+          },
+          "score": 428.2214851970216,
+          "winRate": 67.12187547518577,
+          "depth": 1,
+          "nodes": 10240,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 14,
+          "reveal": "P",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 20,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211019,
+          "budgetMs": 150,
+          "move": {
+            "from": 31,
+            "to": 40
+          },
+          "score": 349.5,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2304,
+          "samples": 4,
+          "elapsedMs": 150,
+          "firstResultMs": 23,
+          "reveal": "P",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 21,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211020,
+          "budgetMs": 150,
+          "move": {
+            "from": 87,
+            "to": 67
+          },
+          "score": 473.77055728753305,
+          "winRate": 68.7749215019768,
+          "depth": 1,
+          "nodes": 12416,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 9,
+          "reveal": "P",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 22,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211021,
+          "budgetMs": 150,
+          "move": {
+            "from": 35,
+            "to": 44
+          },
+          "score": 176.5,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2432,
+          "samples": 4,
+          "elapsedMs": 155,
+          "firstResultMs": 59,
+          "reveal": "P",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 23,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211022,
+          "budgetMs": 150,
+          "move": {
+            "from": 86,
+            "to": 76
+          },
+          "score": 451.63169435708386,
+          "winRate": 67.97709735962437,
+          "depth": 1,
+          "nodes": 6912,
+          "samples": 8,
+          "elapsedMs": 161,
+          "firstResultMs": 10,
+          "reveal": "R",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 24,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211023,
+          "budgetMs": 150,
+          "move": {
+            "from": 29,
+            "to": 38
+          },
+          "score": -528.5,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 3072,
+          "samples": 4,
+          "elapsedMs": 154,
+          "firstResultMs": 43,
+          "reveal": "R",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 25,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211024,
+          "budgetMs": 150,
+          "move": {
+            "from": 15,
+            "to": 24
+          },
+          "score": 373.2222222222479,
+          "winRate": 65.06816989604863,
+          "depth": 1,
+          "nodes": 6400,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 72,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 26,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211025,
+          "budgetMs": 150,
+          "move": {
+            "from": 20,
+            "to": 29
+          },
+          "score": 44.5,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 1536,
+          "samples": 4,
+          "elapsedMs": 192,
+          "firstResultMs": 64,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 27,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211026,
+          "budgetMs": 150,
+          "move": {
+            "from": 76,
+            "to": 73
+          },
+          "score": 114.81180565168536,
+          "winRate": 54.76928145152614,
+          "depth": 1,
+          "nodes": 9216,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 47,
+          "reveal": null,
+          "capture": "B",
+          "flags": []
+        },
+        {
+          "ply": 28,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211027,
+          "budgetMs": 150,
+          "move": {
+            "from": 18,
+            "to": 24
+          },
+          "score": 286,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 1920,
+          "samples": 4,
+          "elapsedMs": 157,
+          "firstResultMs": 50,
+          "reveal": null,
+          "capture": "C",
+          "flags": [
+            "公开大子被吃（需区分交换/弃子）"
+          ]
+        },
+        {
+          "ply": 29,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211028,
+          "budgetMs": 150,
+          "move": {
+            "from": 73,
+            "to": 10
+          },
+          "score": 443.7195803782448,
+          "winRate": 67.6893647701422,
+          "depth": 1,
+          "nodes": 8704,
+          "samples": 8,
+          "elapsedMs": 152,
+          "firstResultMs": 25,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 30,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211029,
+          "budgetMs": 150,
+          "move": {
+            "from": 12,
+            "to": 3
+          },
+          "score": 140.5,
+          "winRate": null,
+          "depth": 2,
+          "nodes": 1664,
+          "samples": 4,
+          "elapsedMs": 164,
+          "firstResultMs": 8,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 31,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211030,
+          "budgetMs": 150,
+          "move": {
+            "from": 10,
+            "to": 1
+          },
+          "score": 254.2696227179479,
+          "winRate": 60.43880625705091,
+          "depth": 1,
+          "nodes": 2816,
+          "samples": 8,
+          "elapsedMs": 160,
+          "firstResultMs": 108,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 32,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211031,
+          "budgetMs": 150,
+          "move": {
+            "from": 3,
+            "to": 12
+          },
+          "score": 215,
+          "winRate": null,
+          "depth": 2,
+          "nodes": 1280,
+          "samples": 4,
+          "elapsedMs": 157,
+          "firstResultMs": 7,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 33,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211032,
+          "budgetMs": 150,
+          "move": {
+            "from": 1,
+            "to": 10
+          },
+          "score": 452.57801276965756,
+          "winRate": 68.01142043081187,
+          "depth": 1,
+          "nodes": 6144,
+          "samples": 8,
+          "elapsedMs": 157,
+          "firstResultMs": 56,
+          "reveal": null,
+          "capture": null,
+          "flags": [
+            "局面重复"
+          ]
+        },
+        {
+          "ply": 34,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211033,
+          "budgetMs": 150,
+          "move": {
+            "from": 12,
+            "to": 3
+          },
+          "score": -115.5,
+          "winRate": null,
+          "depth": 2,
+          "nodes": 1536,
+          "samples": 4,
+          "elapsedMs": 156,
+          "firstResultMs": 11,
+          "reveal": null,
+          "capture": null,
+          "flags": [
+            "局面重复"
+          ]
+        },
+        {
+          "ply": 35,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211034,
+          "budgetMs": 150,
+          "move": {
+            "from": 10,
+            "to": 1
+          },
+          "score": 254.26962271794764,
+          "winRate": 60.438806257050906,
+          "depth": 1,
+          "nodes": 6656,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 51,
+          "reveal": null,
+          "capture": null,
+          "flags": [
+            "局面重复"
+          ]
+        },
+        {
+          "ply": 36,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211035,
+          "budgetMs": 150,
+          "move": {
+            "from": 3,
+            "to": 12
+          },
+          "score": 135.5,
+          "winRate": null,
+          "depth": 2,
+          "nodes": 1792,
+          "samples": 4,
+          "elapsedMs": 187,
+          "firstResultMs": 4,
+          "reveal": null,
+          "capture": null,
+          "flags": [
+            "局面重复"
+          ]
+        },
+        {
+          "ply": 37,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211036,
+          "budgetMs": 150,
+          "move": {
+            "from": 1,
+            "to": 0
+          },
+          "score": 127.22222222224826,
+          "winRate": 55.28115414233935,
+          "depth": 1,
+          "nodes": 9344,
+          "samples": 8,
+          "elapsedMs": 152,
+          "firstResultMs": 39,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 38,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211037,
+          "budgetMs": 150,
+          "move": {
+            "from": 9,
+            "to": 20
+          },
+          "score": 181.5,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 1920,
+          "samples": 4,
+          "elapsedMs": 154,
+          "firstResultMs": 132,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 39,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211038,
+          "budgetMs": 150,
+          "move": {
+            "from": 81,
+            "to": 27
+          },
+          "score": 2.3733121319675137,
+          "winRate": 50.09888787656421,
+          "depth": 1,
+          "nodes": 7168,
+          "samples": 8,
+          "elapsedMs": 152,
+          "firstResultMs": 35,
+          "reveal": "B",
+          "capture": "unknown",
+          "flags": []
+        },
+        {
+          "ply": 40,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211039,
+          "budgetMs": 150,
+          "move": {
+            "from": 38,
+            "to": 56
+          },
+          "score": 515,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2304,
+          "samples": 4,
+          "elapsedMs": 151,
+          "firstResultMs": 50,
+          "reveal": null,
+          "capture": "unknown",
+          "flags": []
+        },
+        {
+          "ply": 41,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211040,
+          "budgetMs": 150,
+          "move": {
+            "from": 83,
+            "to": 63
+          },
+          "score": -133.44238742942184,
+          "winRate": 44.46270623752523,
+          "depth": 1,
+          "nodes": 8320,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 69,
+          "reveal": "N",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 42,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211041,
+          "budgetMs": 150,
+          "move": {
+            "from": 56,
+            "to": 83
+          },
+          "score": 429,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 1792,
+          "samples": 4,
+          "elapsedMs": 155,
+          "firstResultMs": 52,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 43,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211042,
+          "budgetMs": 150,
+          "move": {
+            "from": 27,
+            "to": 11
+          },
+          "score": -21.571428571449076,
+          "winRate": 49.101287278472924,
+          "depth": 1,
+          "nodes": 7808,
+          "samples": 8,
+          "elapsedMs": 161,
+          "firstResultMs": 90,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 44,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211043,
+          "budgetMs": 150,
+          "move": {
+            "from": 29,
+            "to": 38
+          },
+          "score": 441,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 1792,
+          "samples": 4,
+          "elapsedMs": 157,
+          "firstResultMs": 83,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 45,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211044,
+          "budgetMs": 150,
+          "move": {
+            "from": 0,
+            "to": 1
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 3456,
+          "samples": 8,
+          "elapsedMs": 153,
+          "firstResultMs": null,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 46,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211045,
+          "budgetMs": 150,
+          "move": {
+            "from": 38,
+            "to": 47
+          },
+          "score": 488,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 1536,
+          "samples": 4,
+          "elapsedMs": 154,
+          "firstResultMs": 67,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 47,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211046,
+          "budgetMs": 150,
+          "move": {
+            "from": 60,
+            "to": 51
+          },
+          "score": -40.81929832120649,
+          "winRate": 48.29985159644753,
+          "depth": 1,
+          "nodes": 4352,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 128,
+          "reveal": "R",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 48,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211047,
+          "budgetMs": 150,
+          "move": {
+            "from": 8,
+            "to": 7
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 1664,
+          "samples": 4,
+          "elapsedMs": 158,
+          "firstResultMs": null,
+          "reveal": "P",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 49,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211048,
+          "budgetMs": 150,
+          "move": {
+            "from": 1,
+            "to": 2
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 6528,
+          "samples": 8,
+          "elapsedMs": 262,
+          "firstResultMs": null,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 50,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211049,
+          "budgetMs": 150,
+          "move": {
+            "from": 7,
+            "to": 16
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 1664,
+          "samples": 4,
+          "elapsedMs": 156,
+          "firstResultMs": null,
+          "reveal": null,
+          "capture": "P",
+          "flags": []
+        },
+        {
+          "ply": 51,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211050,
+          "budgetMs": 150,
+          "move": {
+            "from": 66,
+            "to": 57
+          },
+          "score": -74.33333333331396,
+          "winRate": 46.90673317209023,
+          "depth": 1,
+          "nodes": 9216,
+          "samples": 8,
+          "elapsedMs": 153,
+          "firstResultMs": 70,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 52,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211051,
+          "budgetMs": 150,
+          "move": {
+            "from": 16,
+            "to": 25
+          },
+          "score": -57,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2432,
+          "samples": 4,
+          "elapsedMs": 157,
+          "firstResultMs": 90,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 53,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211052,
+          "budgetMs": 150,
+          "move": {
+            "from": 57,
+            "to": 48
+          },
+          "score": -74.33333333331396,
+          "winRate": 46.90673317209023,
+          "depth": 1,
+          "nodes": 5376,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 135,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 54,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211053,
+          "budgetMs": 150,
+          "move": {
+            "from": 25,
+            "to": 34
+          },
+          "score": -57,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2432,
+          "samples": 4,
+          "elapsedMs": 158,
+          "firstResultMs": 68,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 55,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211054,
+          "budgetMs": 150,
+          "move": {
+            "from": 2,
+            "to": 4
+          },
+          "score": -86.33333333331407,
+          "winRate": 46.40897136599014,
+          "depth": 1,
+          "nodes": 6656,
+          "samples": 8,
+          "elapsedMs": 152,
+          "firstResultMs": 134,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 56,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211055,
+          "budgetMs": 150,
+          "move": {
+            "from": 34,
+            "to": 43
+          },
+          "score": -45,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 3584,
+          "samples": 4,
+          "elapsedMs": 151,
+          "firstResultMs": 74,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 57,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211056,
+          "budgetMs": 150,
+          "move": {
+            "from": 4,
+            "to": 2
+          },
+          "score": -98.33333333331407,
+          "winRate": 45.91192401370972,
+          "depth": 1,
+          "nodes": 7808,
+          "samples": 8,
+          "elapsedMs": 153,
+          "firstResultMs": 112,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 58,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211057,
+          "budgetMs": 150,
+          "move": {
+            "from": 12,
+            "to": 21
+          },
+          "score": -45,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2944,
+          "samples": 4,
+          "elapsedMs": 153,
+          "firstResultMs": 67,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 59,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211058,
+          "budgetMs": 150,
+          "move": {
+            "from": 2,
+            "to": 4
+          },
+          "score": -98.33333333331407,
+          "winRate": 45.91192401370972,
+          "depth": 1,
+          "nodes": 10368,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 71,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 60,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211059,
+          "budgetMs": 150,
+          "move": {
+            "from": 14,
+            "to": 31
+          },
+          "score": -41,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2688,
+          "samples": 4,
+          "elapsedMs": 153,
+          "firstResultMs": 90,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 61,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211060,
+          "budgetMs": 150,
+          "move": {
+            "from": 4,
+            "to": 2
+          },
+          "score": -102.33333333331423,
+          "winRate": 45.746417224670665,
+          "depth": 1,
+          "nodes": 10112,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 90,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 62,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211061,
+          "budgetMs": 150,
+          "move": {
+            "from": 24,
+            "to": 15
+          },
+          "score": -43,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2176,
+          "samples": 4,
+          "elapsedMs": 150,
+          "firstResultMs": 88,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 63,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211062,
+          "budgetMs": 150,
+          "move": {
+            "from": 2,
+            "to": 4
+          },
+          "score": -100.33333333331387,
+          "winRate": 45.82915911415948,
+          "depth": 1,
+          "nodes": 8448,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 99,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 64,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211063,
+          "budgetMs": 150,
+          "move": {
+            "from": 33,
+            "to": 42
+          },
+          "score": -38,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2304,
+          "samples": 4,
+          "elapsedMs": 154,
+          "firstResultMs": 113,
+          "reveal": "P",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 65,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211064,
+          "budgetMs": 150,
+          "move": {
+            "from": 4,
+            "to": 5
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 3456,
+          "samples": 8,
+          "elapsedMs": 161,
+          "firstResultMs": null,
+          "reveal": null,
+          "capture": "unknown",
+          "flags": []
+        },
+        {
+          "ply": 66,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211065,
+          "budgetMs": 150,
+          "move": {
+            "from": 42,
+            "to": 51
+          },
+          "score": 410,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 1792,
+          "samples": 4,
+          "elapsedMs": 155,
+          "firstResultMs": 117,
+          "reveal": null,
+          "capture": "R",
+          "flags": [
+            "公开大子被吃（需区分交换/弃子）"
+          ]
+        },
+        {
+          "ply": 67,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211066,
+          "budgetMs": 150,
+          "move": {
+            "from": 5,
+            "to": 32
+          },
+          "score": -729.3333333333142,
+          "winRate": 22.871953583543416,
+          "depth": 1,
+          "nodes": 11520,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 54,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 68,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211067,
+          "budgetMs": 150,
+          "move": {
+            "from": 31,
+            "to": 14
+          },
+          "score": 412,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 1664,
+          "samples": 4,
+          "elapsedMs": 163,
+          "firstResultMs": 121,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 69,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211068,
+          "budgetMs": 150,
+          "move": {
+            "from": 11,
+            "to": 27
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 1664,
+          "samples": 8,
+          "elapsedMs": 170,
+          "firstResultMs": null,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 70,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211069,
+          "budgetMs": 150,
+          "move": {
+            "from": 13,
+            "to": 3
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 640,
+          "samples": 4,
+          "elapsedMs": 156,
+          "firstResultMs": null,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 71,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211070,
+          "budgetMs": 150,
+          "move": {
+            "from": 27,
+            "to": 11
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 3456,
+          "samples": 8,
+          "elapsedMs": 153,
+          "firstResultMs": null,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 72,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211071,
+          "budgetMs": 150,
+          "move": {
+            "from": 3,
+            "to": 11
+          },
+          "score": 622,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 1024,
+          "samples": 4,
+          "elapsedMs": 159,
+          "firstResultMs": 139,
+          "reveal": null,
+          "capture": "B",
+          "flags": []
+        },
+        {
+          "ply": 73,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211072,
+          "budgetMs": 150,
+          "move": {
+            "from": 32,
+            "to": 33
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 3584,
+          "samples": 8,
+          "elapsedMs": 153,
+          "firstResultMs": null,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 74,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211073,
+          "budgetMs": 150,
+          "move": {
+            "from": 11,
+            "to": 1
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 1152,
+          "samples": 4,
+          "elapsedMs": 156,
+          "firstResultMs": null,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 75,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211074,
+          "budgetMs": 150,
+          "move": {
+            "from": 33,
+            "to": 15
+          },
+          "score": -29.3333333333142,
+          "winRate": 48.77802115810807,
+          "depth": 1,
+          "nodes": 4992,
+          "samples": 8,
+          "elapsedMs": 201,
+          "firstResultMs": 71,
+          "reveal": null,
+          "capture": "R",
+          "flags": [
+            "公开大子被吃（需区分交换/弃子）"
+          ]
+        },
+        {
+          "ply": 76,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211075,
+          "budgetMs": 150,
+          "move": {
+            "from": 44,
+            "to": 53
+          },
+          "score": -329,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2560,
+          "samples": 4,
+          "elapsedMs": 165,
+          "firstResultMs": 71,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 77,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211076,
+          "budgetMs": 150,
+          "move": {
+            "from": 15,
+            "to": 24
+          },
+          "score": 287.00000000001455,
+          "winRate": 61.73542385473477,
+          "depth": 1,
+          "nodes": 10752,
+          "samples": 8,
+          "elapsedMs": 152,
+          "firstResultMs": 64,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 78,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211077,
+          "budgetMs": 150,
+          "move": {
+            "from": 21,
+            "to": 12
+          },
+          "score": -469.5,
+          "winRate": null,
+          "depth": 3,
+          "nodes": 3328,
+          "samples": 4,
+          "elapsedMs": 156,
+          "firstResultMs": 3,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 79,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211078,
+          "budgetMs": 150,
+          "move": {
+            "from": 24,
+            "to": 20
+          },
+          "score": 88.00000000001435,
+          "winRate": 53.66010793535967,
+          "depth": 1,
+          "nodes": 9472,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 83,
+          "reveal": null,
+          "capture": "N",
+          "flags": [
+            "公开大子被吃（需区分交换/弃子）"
+          ]
+        },
+        {
+          "ply": 80,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211079,
+          "budgetMs": 150,
+          "move": {
+            "from": 53,
+            "to": 62
+          },
+          "score": -323,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 3712,
+          "samples": 4,
+          "elapsedMs": 153,
+          "firstResultMs": 45,
+          "reveal": null,
+          "capture": "unknown",
+          "flags": []
+        },
+        {
+          "ply": 81,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211080,
+          "budgetMs": 150,
+          "move": {
+            "from": 48,
+            "to": 39
+          },
+          "score": 135.00000000001484,
+          "winRate": 55.6013890544626,
+          "depth": 1,
+          "nodes": 13568,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 41,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 82,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211081,
+          "budgetMs": 150,
+          "move": {
+            "from": 43,
+            "to": 52
+          },
+          "score": -323,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 3712,
+          "samples": 4,
+          "elapsedMs": 153,
+          "firstResultMs": 33,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 83,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211082,
+          "budgetMs": 150,
+          "move": {
+            "from": 39,
+            "to": 30
+          },
+          "score": 100.0000000000146,
+          "winRate": 54.15704832168059,
+          "depth": 1,
+          "nodes": 12288,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 34,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 84,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211083,
+          "budgetMs": 150,
+          "move": {
+            "from": 51,
+            "to": 60
+          },
+          "score": -323,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 4352,
+          "samples": 4,
+          "elapsedMs": 153,
+          "firstResultMs": 17,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 85,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211084,
+          "budgetMs": 150,
+          "move": {
+            "from": 20,
+            "to": 2
+          },
+          "score": 92.00000000001454,
+          "winRate": 53.82584045560191,
+          "depth": 1,
+          "nodes": 14336,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 30,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 86,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211085,
+          "budgetMs": 150,
+          "move": {
+            "from": 1,
+            "to": 9
+          },
+          "score": -327,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 3840,
+          "samples": 4,
+          "elapsedMs": 152,
+          "firstResultMs": 28,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 87,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211086,
+          "budgetMs": 150,
+          "move": {
+            "from": 2,
+            "to": 11
+          },
+          "score": 524.0000000000148,
+          "winRate": 70.54388216398732,
+          "depth": 1,
+          "nodes": 9472,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 40,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 88,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211087,
+          "budgetMs": 150,
+          "move": {
+            "from": 12,
+            "to": 3
+          },
+          "score": -759,
+          "winRate": null,
+          "depth": 3,
+          "nodes": 3328,
+          "samples": 4,
+          "elapsedMs": 157,
+          "firstResultMs": 4,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 89,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211088,
+          "budgetMs": 150,
+          "move": {
+            "from": 11,
+            "to": 14
+          },
+          "score": 524.0000000000148,
+          "winRate": 70.54388216398732,
+          "depth": 1,
+          "nodes": 8448,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 60,
+          "reveal": null,
+          "capture": "N",
+          "flags": [
+            "公开大子被吃（需区分交换/弃子）"
+          ]
+        },
+        {
+          "ply": 90,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211089,
+          "budgetMs": 150,
+          "move": {
+            "from": 9,
+            "to": 1
+          },
+          "score": -771,
+          "winRate": null,
+          "depth": 2,
+          "nodes": 4608,
+          "samples": 4,
+          "elapsedMs": 154,
+          "firstResultMs": 19,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 91,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211090,
+          "budgetMs": 150,
+          "move": {
+            "from": 14,
+            "to": 5
+          },
+          "score": 736.0000000000146,
+          "winRate": 77.32346305333922,
+          "depth": 1,
+          "nodes": 12672,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 42,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 92,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211091,
+          "budgetMs": 150,
+          "move": {
+            "from": 3,
+            "to": 12
+          },
+          "score": -958.5,
+          "winRate": null,
+          "depth": 3,
+          "nodes": 4224,
+          "samples": 4,
+          "elapsedMs": 154,
+          "firstResultMs": 1,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 93,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211092,
+          "budgetMs": 150,
+          "move": {
+            "from": 5,
+            "to": 1
+          },
+          "score": 736.0000000000146,
+          "winRate": 77.32346305333922,
+          "depth": 1,
+          "nodes": 13184,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 36,
+          "reveal": null,
+          "capture": "A",
+          "flags": []
+        },
+        {
+          "ply": 94,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211093,
+          "budgetMs": 150,
+          "move": {
+            "from": 47,
+            "to": 56
+          },
+          "score": -959,
+          "winRate": null,
+          "depth": 2,
+          "nodes": 4352,
+          "samples": 4,
+          "elapsedMs": 151,
+          "firstResultMs": 7,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 95,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211094,
+          "budgetMs": 150,
+          "move": {
+            "from": 1,
+            "to": 2
+          },
+          "score": 724.0000000000147,
+          "winRate": 76.97086227841623,
+          "depth": 1,
+          "nodes": 13824,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 34,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 96,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211095,
+          "budgetMs": 150,
+          "move": {
+            "from": 60,
+            "to": 59
+          },
+          "score": -957,
+          "winRate": null,
+          "depth": 2,
+          "nodes": 4608,
+          "samples": 4,
+          "elapsedMs": 151,
+          "firstResultMs": 24,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 97,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211096,
+          "budgetMs": 150,
+          "move": {
+            "from": 2,
+            "to": 11
+          },
+          "score": 929.0000000000146,
+          "winRate": 82.46728830217967,
+          "depth": 1,
+          "nodes": 11648,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 65,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 98,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211097,
+          "budgetMs": 150,
+          "move": {
+            "from": 12,
+            "to": 3
+          },
+          "score": -1164,
+          "winRate": null,
+          "depth": 3,
+          "nodes": 4736,
+          "samples": 4,
+          "elapsedMs": 154,
+          "firstResultMs": 3,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 99,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211098,
+          "budgetMs": 150,
+          "move": {
+            "from": 11,
+            "to": 2
+          },
+          "score": 929.0000000000146,
+          "winRate": 82.46728830217967,
+          "depth": 1,
+          "nodes": 7808,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 82,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 100,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211099,
+          "budgetMs": 150,
+          "move": {
+            "from": 3,
+            "to": 12
+          },
+          "score": -1164,
+          "winRate": null,
+          "depth": 3,
+          "nodes": 4224,
+          "samples": 4,
+          "elapsedMs": 153,
+          "firstResultMs": 9,
+          "reveal": null,
+          "capture": null,
+          "flags": [
+            "局面重复"
+          ]
+        },
+        {
+          "ply": 101,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211100,
+          "budgetMs": 150,
+          "move": {
+            "from": 2,
+            "to": 11
+          },
+          "score": 929.0000000000146,
+          "winRate": 82.46728830217967,
+          "depth": 1,
+          "nodes": 10752,
+          "samples": 8,
+          "elapsedMs": 152,
+          "firstResultMs": 64,
+          "reveal": null,
+          "capture": null,
+          "flags": [
+            "局面重复"
+          ]
+        },
+        {
+          "ply": 102,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211101,
+          "budgetMs": 150,
+          "move": {
+            "from": 12,
+            "to": 3
+          },
+          "score": -1164,
+          "winRate": null,
+          "depth": 3,
+          "nodes": 3712,
+          "samples": 4,
+          "elapsedMs": 203,
+          "firstResultMs": 7,
+          "reveal": null,
+          "capture": null,
+          "flags": [
+            "局面重复"
+          ]
+        },
+        {
+          "ply": 103,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211102,
+          "budgetMs": 150,
+          "move": {
+            "from": 11,
+            "to": 2
+          },
+          "score": 929.0000000000146,
+          "winRate": 82.46728830217967,
+          "depth": 1,
+          "nodes": 9728,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 69,
+          "reveal": null,
+          "capture": null,
+          "flags": [
+            "局面重复"
+          ]
+        },
+        {
+          "ply": 104,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211103,
+          "budgetMs": 150,
+          "move": {
+            "from": 3,
+            "to": 12
+          },
+          "score": -1164,
+          "winRate": null,
+          "depth": 3,
+          "nodes": 4608,
+          "samples": 4,
+          "elapsedMs": 151,
+          "firstResultMs": 7,
+          "reveal": null,
+          "capture": null,
+          "flags": [
+            "局面重复"
+          ]
+        }
+      ]
+    },
+    {
+      "seed": 211,
+      "newSide": "b",
+      "budgetMs": 150,
+      "result": {
+        "winner": "b",
+        "text": "将死"
+      },
+      "plies": 24,
+      "log": [
+        {
+          "ply": 1,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 211000,
+          "budgetMs": 150,
+          "move": {
+            "from": 64,
+            "to": 1
+          },
+          "score": 113.5,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 1536,
+          "samples": 4,
+          "elapsedMs": 153,
+          "firstResultMs": 138,
+          "reveal": "P",
+          "capture": "unknown",
+          "flags": []
+        },
+        {
+          "ply": 2,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 211001,
+          "budgetMs": 150,
+          "move": {
+            "from": 0,
+            "to": 1
+          },
+          "score": -299.87557859783846,
+          "winRate": 37.75894025211702,
+          "depth": 1,
+          "nodes": 11520,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 75,
+          "reveal": "N",
+          "capture": "P",
+          "flags": []
+        },
+        {
+          "ply": 3,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 211002,
+          "budgetMs": 150,
+          "move": {
+            "from": 56,
+            "to": 47
+          },
+          "score": 90,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2176,
+          "samples": 4,
+          "elapsedMs": 157,
+          "firstResultMs": 26,
+          "reveal": "P",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 4,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 211003,
+          "budgetMs": 150,
+          "move": {
+            "from": 25,
+            "to": 61
+          },
+          "score": -227.72922558237352,
+          "winRate": 40.62357475037933,
+          "depth": 1,
+          "nodes": 11904,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 17,
+          "reveal": "C",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 5,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 211004,
+          "budgetMs": 150,
+          "move": {
+            "from": 58,
+            "to": 49
+          },
+          "score": -262,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2304,
+          "samples": 4,
+          "elapsedMs": 160,
+          "firstResultMs": 40,
+          "reveal": "A",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 6,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 211005,
+          "budgetMs": 150,
+          "move": {
+            "from": 7,
+            "to": 24
+          },
+          "score": -229.77689530614003,
+          "winRate": 40.54128202013684,
+          "depth": 1,
+          "nodes": 10496,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 16,
+          "reveal": "N",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 7,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 211006,
+          "budgetMs": 150,
+          "move": {
+            "from": 86,
+            "to": 76
+          },
+          "score": -471.5,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 1792,
+          "samples": 4,
+          "elapsedMs": 158,
+          "firstResultMs": 55,
+          "reveal": "R",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 8,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 211007,
+          "budgetMs": 150,
+          "move": {
+            "from": 31,
+            "to": 40
+          },
+          "score": -187.6479487603024,
+          "winRate": 42.24444714989538,
+          "depth": 1,
+          "nodes": 8832,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 13,
+          "reveal": "P",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 9,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 211008,
+          "budgetMs": 150,
+          "move": {
+            "from": 47,
+            "to": 38
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 1664,
+          "samples": 4,
+          "elapsedMs": 153,
+          "firstResultMs": null,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 10,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 211009,
+          "budgetMs": 150,
+          "move": {
+            "from": 29,
+            "to": 38
+          },
+          "score": -10.494937411828065,
+          "winRate": 49.56272209005491,
+          "depth": 1,
+          "nodes": 7552,
+          "samples": 8,
+          "elapsedMs": 152,
+          "firstResultMs": 142,
+          "reveal": "R",
+          "capture": "P",
+          "flags": []
+        },
+        {
+          "ply": 11,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 211010,
+          "budgetMs": 150,
+          "move": {
+            "from": 49,
+            "to": 39
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 1664,
+          "samples": 4,
+          "elapsedMs": 162,
+          "firstResultMs": null,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 12,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 211011,
+          "budgetMs": 150,
+          "move": {
+            "from": 1,
+            "to": 20
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 7296,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": null,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 13,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 211012,
+          "budgetMs": 150,
+          "move": {
+            "from": 39,
+            "to": 29
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 1408,
+          "samples": 4,
+          "elapsedMs": 151,
+          "firstResultMs": null,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 14,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 211013,
+          "budgetMs": 150,
+          "move": {
+            "from": 2,
+            "to": 18
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 8320,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": null,
+          "reveal": "R",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 15,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 211014,
+          "budgetMs": 150,
+          "move": {
+            "from": 29,
+            "to": 19
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 2048,
+          "samples": 4,
+          "elapsedMs": 159,
+          "firstResultMs": null,
+          "reveal": null,
+          "capture": "unknown",
+          "flags": []
+        },
+        {
+          "ply": 16,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 211015,
+          "budgetMs": 150,
+          "move": {
+            "from": 3,
+            "to": 13
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 6656,
+          "samples": 8,
+          "elapsedMs": 156,
+          "firstResultMs": null,
+          "reveal": "A",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 17,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 211016,
+          "budgetMs": 150,
+          "move": {
+            "from": 19,
+            "to": 9
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 768,
+          "samples": 4,
+          "elapsedMs": 158,
+          "firstResultMs": null,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 18,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 211017,
+          "budgetMs": 150,
+          "move": {
+            "from": 38,
+            "to": 83
+          },
+          "score": 261.2727272727737,
+          "winRate": 60.71754085479514,
+          "depth": 1,
+          "nodes": 7680,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 72,
+          "reveal": null,
+          "capture": "unknown",
+          "flags": []
+        },
+        {
+          "ply": 19,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 211018,
+          "budgetMs": 150,
+          "move": {
+            "from": 9,
+            "to": 1
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 1664,
+          "samples": 4,
+          "elapsedMs": 150,
+          "firstResultMs": null,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 20,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 211019,
+          "budgetMs": 150,
+          "move": {
+            "from": 4,
+            "to": 3
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 6528,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": null,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 21,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 211020,
+          "budgetMs": 150,
+          "move": {
+            "from": 1,
+            "to": 9
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 1792,
+          "samples": 4,
+          "elapsedMs": 160,
+          "firstResultMs": null,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 22,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 211021,
+          "budgetMs": 150,
+          "move": {
+            "from": 61,
+            "to": 88
+          },
+          "score": 3594.878728264789,
+          "winRate": 100,
+          "depth": 1,
+          "nodes": 7296,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 122,
+          "reveal": null,
+          "capture": "unknown",
+          "flags": [
+            "漏掉公开可证的一步制胜",
+            "同方评分变化超过900分"
+          ]
+        },
+        {
+          "ply": 23,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 211022,
+          "budgetMs": 150,
+          "move": {
+            "from": 87,
+            "to": 67
+          },
+          "score": -98998,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 86,
+          "samples": 4,
+          "elapsedMs": 10,
+          "firstResultMs": 10,
+          "reveal": "P",
+          "capture": null,
+          "flags": [
+            "同方评分变化超过900分"
+          ]
+        },
+        {
+          "ply": 24,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 211023,
+          "budgetMs": 150,
+          "move": {
+            "from": 83,
+            "to": 84
+          },
+          "score": 3594.878728264789,
+          "winRate": 100,
+          "depth": 1,
+          "nodes": 7808,
+          "samples": 8,
+          "elapsedMs": 153,
+          "firstResultMs": 38,
+          "reveal": null,
+          "capture": "unknown",
+          "flags": []
+        }
+      ]
+    },
+    {
+      "seed": 419,
+      "newSide": "r",
+      "budgetMs": 150,
+      "result": {
+        "winner": "r",
+        "text": "将死"
+      },
+      "plies": 25,
+      "log": [
+        {
+          "ply": 1,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 419000,
+          "budgetMs": 150,
+          "move": {
+            "from": 70,
+            "to": 7
+          },
+          "score": 66.32631654838751,
+          "winRate": 52.76078570776475,
+          "depth": 1,
+          "nodes": 9344,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 63,
+          "reveal": "P",
+          "capture": "unknown",
+          "flags": []
+        },
+        {
+          "ply": 2,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 419001,
+          "budgetMs": 150,
+          "move": {
+            "from": 19,
+            "to": 82
+          },
+          "score": -300.25,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 1920,
+          "samples": 4,
+          "elapsedMs": 151,
+          "firstResultMs": 128,
+          "reveal": "R",
+          "capture": "unknown",
+          "flags": []
+        },
+        {
+          "ply": 3,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 419002,
+          "budgetMs": 150,
+          "move": {
+            "from": 81,
+            "to": 82
+          },
+          "score": 736.2602100806314,
+          "winRate": 77.33106648117862,
+          "depth": 1,
+          "nodes": 9856,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 68,
+          "reveal": "B",
+          "capture": "R",
+          "flags": [
+            "公开大子被吃（需区分交换/弃子）"
+          ]
+        },
+        {
+          "ply": 4,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 419003,
+          "budgetMs": 150,
+          "move": {
+            "from": 8,
+            "to": 7
+          },
+          "score": 201.5,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2432,
+          "samples": 4,
+          "elapsedMs": 152,
+          "firstResultMs": 40,
+          "reveal": "C",
+          "capture": "P",
+          "flags": []
+        },
+        {
+          "ply": 5,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 419004,
+          "budgetMs": 150,
+          "move": {
+            "from": 64,
+            "to": 10
+          },
+          "score": 752.5165222387259,
+          "winRate": 77.8025053418722,
+          "depth": 1,
+          "nodes": 13312,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 8,
+          "reveal": "A",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 6,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 419005,
+          "budgetMs": 150,
+          "move": {
+            "from": 33,
+            "to": 42
+          },
+          "score": 417,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 3072,
+          "samples": 4,
+          "elapsedMs": 150,
+          "firstResultMs": 28,
+          "reveal": "A",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 7,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 419006,
+          "budgetMs": 150,
+          "move": {
+            "from": 10,
+            "to": 0
+          },
+          "score": 979.0000000000672,
+          "winRate": 83.63978274969102,
+          "depth": 1,
+          "nodes": 12800,
+          "samples": 8,
+          "elapsedMs": 153,
+          "firstResultMs": 8,
+          "reveal": null,
+          "capture": "unknown",
+          "flags": []
+        },
+        {
+          "ply": 8,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 419007,
+          "budgetMs": 150,
+          "move": {
+            "from": 35,
+            "to": 44
+          },
+          "score": 185,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 3200,
+          "samples": 4,
+          "elapsedMs": 152,
+          "firstResultMs": 6,
+          "reveal": "N",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 9,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 419008,
+          "budgetMs": 150,
+          "move": {
+            "from": 62,
+            "to": 53
+          },
+          "score": 910.7578018183058,
+          "winRate": 82.02334115921283,
+          "depth": 2,
+          "nodes": 12032,
+          "samples": 8,
+          "elapsedMs": 152,
+          "firstResultMs": 5,
+          "reveal": "R",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 10,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 419009,
+          "budgetMs": 150,
+          "move": {
+            "from": 44,
+            "to": 33
+          },
+          "score": -562,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2688,
+          "samples": 4,
+          "elapsedMs": 151,
+          "firstResultMs": 34,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 11,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 419010,
+          "budgetMs": 150,
+          "move": {
+            "from": 60,
+            "to": 51
+          },
+          "score": 1025.395686397888,
+          "winRate": 84.67056015126501,
+          "depth": 1,
+          "nodes": 12032,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 19,
+          "reveal": "R",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 12,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 419011,
+          "budgetMs": 150,
+          "move": {
+            "from": 27,
+            "to": 36
+          },
+          "score": -1030,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2176,
+          "samples": 4,
+          "elapsedMs": 155,
+          "firstResultMs": 45,
+          "reveal": "P",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 13,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 419012,
+          "budgetMs": 150,
+          "move": {
+            "from": 51,
+            "to": 42
+          },
+          "score": 1261.9999999999993,
+          "winRate": 89.12267392514384,
+          "depth": 1,
+          "nodes": 9088,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 23,
+          "reveal": null,
+          "capture": "A",
+          "flags": []
+        },
+        {
+          "ply": 14,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 419013,
+          "budgetMs": 150,
+          "move": {
+            "from": 31,
+            "to": 40
+          },
+          "score": -1680,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2432,
+          "samples": 4,
+          "elapsedMs": 155,
+          "firstResultMs": 64,
+          "reveal": "P",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 15,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 419014,
+          "budgetMs": 150,
+          "move": {
+            "from": 42,
+            "to": 33
+          },
+          "score": 1684.6666666666843,
+          "winRate": 94.30946763152497,
+          "depth": 1,
+          "nodes": 11392,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 33,
+          "reveal": null,
+          "capture": "N",
+          "flags": [
+            "公开大子被吃（需区分交换/弃子）"
+          ]
+        },
+        {
+          "ply": 16,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 419015,
+          "budgetMs": 150,
+          "move": {
+            "from": 7,
+            "to": 88
+          },
+          "score": -2249.5,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2560,
+          "samples": 4,
+          "elapsedMs": 153,
+          "firstResultMs": 58,
+          "reveal": null,
+          "capture": "unknown",
+          "flags": []
+        },
+        {
+          "ply": 17,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 419016,
+          "budgetMs": 150,
+          "move": {
+            "from": 89,
+            "to": 88
+          },
+          "score": 1891.0855545803468,
+          "winRate": 95.8979952428106,
+          "depth": 1,
+          "nodes": 10624,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 77,
+          "reveal": "B",
+          "capture": "C",
+          "flags": [
+            "公开大子被吃（需区分交换/弃子）"
+          ]
+        },
+        {
+          "ply": 18,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 419017,
+          "budgetMs": 150,
+          "move": {
+            "from": 6,
+            "to": 22
+          },
+          "score": -2346,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 4096,
+          "samples": 4,
+          "elapsedMs": 152,
+          "firstResultMs": 25,
+          "reveal": "N",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 19,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 419018,
+          "budgetMs": 150,
+          "move": {
+            "from": 33,
+            "to": 42
+          },
+          "score": 1760.904839142804,
+          "winRate": 94.95421409838485,
+          "depth": 2,
+          "nodes": 12672,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 19,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 20,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 419019,
+          "budgetMs": 150,
+          "move": {
+            "from": 2,
+            "to": 18
+          },
+          "score": -1913.5,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 3840,
+          "samples": 4,
+          "elapsedMs": 152,
+          "firstResultMs": 27,
+          "reveal": "P",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 21,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 419020,
+          "budgetMs": 150,
+          "move": {
+            "from": 42,
+            "to": 40
+          },
+          "score": 2005.4603174603574,
+          "winRate": 96.58561973005416,
+          "depth": 1,
+          "nodes": 9984,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 12,
+          "reveal": null,
+          "capture": "P",
+          "flags": []
+        },
+        {
+          "ply": 22,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 419021,
+          "budgetMs": 150,
+          "move": {
+            "from": 5,
+            "to": 13
+          },
+          "score": -2403,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 3584,
+          "samples": 4,
+          "elapsedMs": 154,
+          "firstResultMs": 38,
+          "reveal": "B",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 23,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 419022,
+          "budgetMs": 150,
+          "move": {
+            "from": 53,
+            "to": 8
+          },
+          "score": 3594.878728264789,
+          "winRate": 100,
+          "depth": 1,
+          "nodes": 13312,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 13,
+          "reveal": null,
+          "capture": null,
+          "flags": [
+            "同方评分变化超过900分"
+          ]
+        },
+        {
+          "ply": 24,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 419023,
+          "budgetMs": 150,
+          "move": {
+            "from": 25,
+            "to": 7
+          },
+          "score": -98998,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 16,
+          "samples": 4,
+          "elapsedMs": 1,
+          "firstResultMs": 1,
+          "reveal": "A",
+          "capture": null,
+          "flags": [
+            "同方评分变化超过900分"
+          ]
+        },
+        {
+          "ply": 25,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 419024,
+          "budgetMs": 150,
+          "move": {
+            "from": 8,
+            "to": 7
+          },
+          "score": 3594.878728264789,
+          "winRate": 100,
+          "depth": 1,
+          "nodes": 12672,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 8,
+          "reveal": null,
+          "capture": "A",
+          "flags": []
+        }
+      ]
+    },
+    {
+      "seed": 419,
+      "newSide": "b",
+      "budgetMs": 150,
+      "result": {
+        "winner": null,
+        "text": "和棋（重复局面／步数上限）"
+      },
+      "plies": 44,
+      "log": [
+        {
+          "ply": 1,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419000,
+          "budgetMs": 150,
+          "move": {
+            "from": 82,
+            "to": 65
+          },
+          "score": 87,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 1792,
+          "samples": 4,
+          "elapsedMs": 159,
+          "firstResultMs": 109,
+          "reveal": "N",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 2,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 419001,
+          "budgetMs": 150,
+          "move": {
+            "from": 25,
+            "to": 88
+          },
+          "score": -20.15772192081998,
+          "winRate": 49.16017391146285,
+          "depth": 1,
+          "nodes": 8832,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 36,
+          "reveal": "A",
+          "capture": "unknown",
+          "flags": []
+        },
+        {
+          "ply": 3,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419002,
+          "budgetMs": 150,
+          "move": {
+            "from": 89,
+            "to": 88
+          },
+          "score": 164,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 1536,
+          "samples": 4,
+          "elapsedMs": 151,
+          "firstResultMs": 22,
+          "reveal": "B",
+          "capture": "A",
+          "flags": []
+        },
+        {
+          "ply": 4,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 419003,
+          "budgetMs": 150,
+          "move": {
+            "from": 19,
+            "to": 22
+          },
+          "score": 125.26144096825391,
+          "winRate": 55.20035250580182,
+          "depth": 1,
+          "nodes": 11392,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 9,
+          "reveal": "R",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 5,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419004,
+          "budgetMs": 150,
+          "move": {
+            "from": 83,
+            "to": 67
+          },
+          "score": -129,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 1536,
+          "samples": 4,
+          "elapsedMs": 153,
+          "firstResultMs": 7,
+          "reveal": "C",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 6,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 419005,
+          "budgetMs": 150,
+          "move": {
+            "from": 31,
+            "to": 40
+          },
+          "score": 117.55706191305421,
+          "winRate": 54.88260147452962,
+          "depth": 1,
+          "nodes": 11136,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 13,
+          "reveal": "P",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 7,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419006,
+          "budgetMs": 150,
+          "move": {
+            "from": 70,
+            "to": 16
+          },
+          "score": -158,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2048,
+          "samples": 4,
+          "elapsedMs": 158,
+          "firstResultMs": 21,
+          "reveal": "P",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 8,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 419007,
+          "budgetMs": 150,
+          "move": {
+            "from": 27,
+            "to": 36
+          },
+          "score": -16.73777050606277,
+          "winRate": 49.30263811906736,
+          "depth": 1,
+          "nodes": 10624,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 29,
+          "reveal": "P",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 9,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419008,
+          "budgetMs": 150,
+          "move": {
+            "from": 86,
+            "to": 76
+          },
+          "score": -91,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2304,
+          "samples": 4,
+          "elapsedMs": 151,
+          "firstResultMs": 15,
+          "reveal": "A",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 10,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 419009,
+          "budgetMs": 150,
+          "move": {
+            "from": 33,
+            "to": 42
+          },
+          "score": 12.466592912949611,
+          "winRate": 50.51942268480267,
+          "depth": 1,
+          "nodes": 10880,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 26,
+          "reveal": "A",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 11,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419010,
+          "budgetMs": 150,
+          "move": {
+            "from": 56,
+            "to": 47
+          },
+          "score": -110,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 1792,
+          "samples": 4,
+          "elapsedMs": 157,
+          "firstResultMs": 21,
+          "reveal": "P",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 12,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 419011,
+          "budgetMs": 150,
+          "move": {
+            "from": 35,
+            "to": 44
+          },
+          "score": -18.17705217957581,
+          "winRate": 49.2426807467796,
+          "depth": 1,
+          "nodes": 6656,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 73,
+          "reveal": "N",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 13,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419012,
+          "budgetMs": 150,
+          "move": {
+            "from": 16,
+            "to": 7
+          },
+          "score": -242.5,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 1664,
+          "samples": 4,
+          "elapsedMs": 150,
+          "firstResultMs": 26,
+          "reveal": null,
+          "capture": "unknown",
+          "flags": []
+        },
+        {
+          "ply": 14,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 419013,
+          "budgetMs": 150,
+          "move": {
+            "from": 8,
+            "to": 7
+          },
+          "score": -18.30562967920269,
+          "winRate": 49.237324588730985,
+          "depth": 1,
+          "nodes": 9856,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 45,
+          "reveal": "C",
+          "capture": "P",
+          "flags": []
+        },
+        {
+          "ply": 15,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419014,
+          "budgetMs": 150,
+          "move": {
+            "from": 62,
+            "to": 53
+          },
+          "score": -220,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 1536,
+          "samples": 4,
+          "elapsedMs": 154,
+          "firstResultMs": 22,
+          "reveal": "R",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 16,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 419015,
+          "budgetMs": 150,
+          "move": {
+            "from": 44,
+            "to": 33
+          },
+          "score": -67.99999999999979,
+          "winRate": 47.16969549241713,
+          "depth": 1,
+          "nodes": 6272,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 49,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 17,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419016,
+          "budgetMs": 150,
+          "move": {
+            "from": 87,
+            "to": 71
+          },
+          "score": 295,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 1920,
+          "samples": 4,
+          "elapsedMs": 152,
+          "firstResultMs": 27,
+          "reveal": "P",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 18,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 419017,
+          "budgetMs": 150,
+          "move": {
+            "from": 0,
+            "to": 27
+          },
+          "score": -47.94317241194455,
+          "winRate": 48.00343002061627,
+          "depth": 1,
+          "nodes": 9216,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 39,
+          "reveal": "P",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 19,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419018,
+          "budgetMs": 150,
+          "move": {
+            "from": 64,
+            "to": 10
+          },
+          "score": 189.5,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 1664,
+          "samples": 4,
+          "elapsedMs": 154,
+          "firstResultMs": 27,
+          "reveal": "A",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 20,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 419019,
+          "budgetMs": 150,
+          "move": {
+            "from": 7,
+            "to": 70
+          },
+          "score": -33.619047619082245,
+          "winRate": 48.59957272342177,
+          "depth": 1,
+          "nodes": 7808,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 48,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 21,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419020,
+          "budgetMs": 150,
+          "move": {
+            "from": 10,
+            "to": 0
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 768,
+          "samples": 4,
+          "elapsedMs": 162,
+          "firstResultMs": null,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 22,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 419021,
+          "budgetMs": 150,
+          "move": {
+            "from": 70,
+            "to": 65
+          },
+          "score": 400.3809523809175,
+          "winRate": 66.08986763883534,
+          "depth": 1,
+          "nodes": 4864,
+          "samples": 8,
+          "elapsedMs": 152,
+          "firstResultMs": 38,
+          "reveal": null,
+          "capture": "N",
+          "flags": [
+            "公开大子被吃（需区分交换/弃子）"
+          ]
+        },
+        {
+          "ply": 23,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419022,
+          "budgetMs": 150,
+          "move": {
+            "from": 71,
+            "to": 62
+          },
+          "score": -486,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2176,
+          "samples": 4,
+          "elapsedMs": 151,
+          "firstResultMs": 34,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 24,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 419023,
+          "budgetMs": 150,
+          "move": {
+            "from": 2,
+            "to": 18
+          },
+          "score": 406.8386951240504,
+          "winRate": 66.33065752321409,
+          "depth": 1,
+          "nodes": 10368,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 33,
+          "reveal": "P",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 25,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419024,
+          "budgetMs": 150,
+          "move": {
+            "from": 81,
+            "to": 63
+          },
+          "score": -21.5,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2432,
+          "samples": 4,
+          "elapsedMs": 153,
+          "firstResultMs": 15,
+          "reveal": "B",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 26,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 419025,
+          "budgetMs": 150,
+          "move": {
+            "from": 6,
+            "to": 26
+          },
+          "score": 415.8588375353839,
+          "winRate": 66.66557514659863,
+          "depth": 1,
+          "nodes": 11136,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 24,
+          "reveal": "N",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 27,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419026,
+          "budgetMs": 150,
+          "move": {
+            "from": 53,
+            "to": 35
+          },
+          "score": -498,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2560,
+          "samples": 4,
+          "elapsedMs": 157,
+          "firstResultMs": 19,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 28,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 419027,
+          "budgetMs": 150,
+          "move": {
+            "from": 33,
+            "to": 14
+          },
+          "score": 413.9999999999999,
+          "winRate": 66.59669267518203,
+          "depth": 1,
+          "nodes": 11136,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 57,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 29,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419028,
+          "budgetMs": 150,
+          "move": {
+            "from": 58,
+            "to": 49
+          },
+          "score": -274.25,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2048,
+          "samples": 4,
+          "elapsedMs": 155,
+          "firstResultMs": 23,
+          "reveal": "P",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 30,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 419029,
+          "budgetMs": 150,
+          "move": {
+            "from": 1,
+            "to": 20
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 1792,
+          "samples": 8,
+          "elapsedMs": 168,
+          "firstResultMs": null,
+          "reveal": "P",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 31,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419030,
+          "budgetMs": 150,
+          "move": {
+            "from": 60,
+            "to": 51
+          },
+          "score": -207,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 1024,
+          "samples": 4,
+          "elapsedMs": 157,
+          "firstResultMs": 124,
+          "reveal": "R",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 32,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 419031,
+          "budgetMs": 150,
+          "move": {
+            "from": 3,
+            "to": 13
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 3712,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": null,
+          "reveal": "C",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 33,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419032,
+          "budgetMs": 150,
+          "move": {
+            "from": 51,
+            "to": 42
+          },
+          "score": 174,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 1391,
+          "samples": 4,
+          "elapsedMs": 153,
+          "firstResultMs": 153,
+          "reveal": null,
+          "capture": "A",
+          "flags": []
+        },
+        {
+          "ply": 34,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 419033,
+          "budgetMs": 150,
+          "move": {
+            "from": 4,
+            "to": 3
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 4608,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": null,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 35,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419034,
+          "budgetMs": 150,
+          "move": {
+            "from": 62,
+            "to": 53
+          },
+          "score": 186,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2560,
+          "samples": 4,
+          "elapsedMs": 151,
+          "firstResultMs": 76,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 36,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 419035,
+          "budgetMs": 150,
+          "move": {
+            "from": 22,
+            "to": 25
+          },
+          "score": 40.66666666665717,
+          "winRate": 51.69379607688204,
+          "depth": 1,
+          "nodes": 10624,
+          "samples": 8,
+          "elapsedMs": 152,
+          "firstResultMs": 59,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 37,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419036,
+          "budgetMs": 150,
+          "move": {
+            "from": 0,
+            "to": 10
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 1408,
+          "samples": 4,
+          "elapsedMs": 157,
+          "firstResultMs": null,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 38,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 419037,
+          "budgetMs": 150,
+          "move": {
+            "from": 3,
+            "to": 4
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 9088,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": null,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 39,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419038,
+          "budgetMs": 150,
+          "move": {
+            "from": 10,
+            "to": 0
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 1920,
+          "samples": 4,
+          "elapsedMs": 150,
+          "firstResultMs": null,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 40,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 419039,
+          "budgetMs": 150,
+          "move": {
+            "from": 4,
+            "to": 3
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 8832,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": null,
+          "reveal": null,
+          "capture": null,
+          "flags": [
+            "局面重复"
+          ]
+        },
+        {
+          "ply": 41,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419040,
+          "budgetMs": 150,
+          "move": {
+            "from": 0,
+            "to": 10
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 1920,
+          "samples": 4,
+          "elapsedMs": 150,
+          "firstResultMs": null,
+          "reveal": null,
+          "capture": null,
+          "flags": [
+            "局面重复"
+          ]
+        },
+        {
+          "ply": 42,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 419041,
+          "budgetMs": 150,
+          "move": {
+            "from": 3,
+            "to": 4
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 8832,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": null,
+          "reveal": null,
+          "capture": null,
+          "flags": [
+            "局面重复"
+          ]
+        },
+        {
+          "ply": 43,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419042,
+          "budgetMs": 150,
+          "move": {
+            "from": 10,
+            "to": 0
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 1792,
+          "samples": 4,
+          "elapsedMs": 156,
+          "firstResultMs": null,
+          "reveal": null,
+          "capture": null,
+          "flags": [
+            "局面重复"
+          ]
+        },
+        {
+          "ply": 44,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 419043,
+          "budgetMs": 150,
+          "move": {
+            "from": 4,
+            "to": 3
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 8960,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": null,
+          "reveal": null,
+          "capture": null,
+          "flags": [
+            "局面重复"
+          ]
+        }
+      ]
+    }
+  ],
+  "suspectCount": 28,
+  "note": "固定真实布子和逐步采样种子；限时截断会受硬件影响，4局不构成棋力评级。"
+}

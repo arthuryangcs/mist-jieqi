@@ -1,0 +1,19 @@
+{
+  "repository": "https://github.com/brianhliou/pikafish-jieqi-wasm",
+  "commit": "bcc83f88ee18760e60903d1a3aaa61ef6f70f2c9",
+  "license": "GPL-3.0-or-later; upstream Copying.txt (see THIRD_PARTY_NOTICES.md)",
+  "userApprovedLocalBuildAndExecution": true,
+  "sourceAudit": "5 source files reviewed; local-only diff is not distributed",
+  "changedSourceFiles": [
+    "main.cpp",
+    "misc.h",
+    "search.cpp",
+    "uci.cpp",
+    "uci.h"
+  ],
+  "binarySha256": "f32d3c6dfe4d6d90da7728d9cc2af68c3195a1cefb1bc28f3829f174c518dba1",
+  "buildLog": "local-only; excluded from repository",
+  "preflight": "benchmarks/requested-engine-preflight.json",
+  "results": "benchmarks/requested-engine-matches.json",
+  "distribution": "metadata only; upstream source and executable excluded"
+}

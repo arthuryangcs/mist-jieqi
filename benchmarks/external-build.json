@@ -1,0 +1,17 @@
+{
+  "repository": "https://github.com/official-pikafish/Pikafish",
+  "branch": "jieqi_old",
+  "commit": "23b9466c981f0f3a1133f92de1a6f86406c4eccc",
+  "binarySha256": "69e8bf35952829ee0f71e53f4c075630ddea4c5785a6c7ab242ce4b05c6457f6",
+  "license": "GPL-3.0-or-later; upstream Copying.txt and AUTHORS (see THIRD_PARTY_NOTICES.md)",
+  "command": "make -C external/Pikafish/src -j2 build ARCH=x86-64 COMP=clang EXTRACXXFLAGS='-isystem <macOS-SDK>/usr/include/c++/v1'",
+  "network": "only official public source downloaded; no prebuilt third-party binary",
+  "preflight": {
+    "plies": 20,
+    "unknownCaptures": 5,
+    "publicBoardTurnInventoryAgreed": true
+  },
+  "appIntegration": "none; standalone comparison executable only",
+  "commandNote": "Historical macOS build command; SDK installation path redacted. Follow upstream build instructions on other platforms.",
+  "distribution": "metadata only; upstream source and executable excluded"
+}

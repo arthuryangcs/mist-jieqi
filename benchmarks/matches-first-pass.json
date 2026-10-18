@@ -1,0 +1,5171 @@
+{
+  "budgetMs": 150,
+  "games": [
+    {
+      "seed": 211,
+      "newSide": "r",
+      "budgetMs": 150,
+      "result": {
+        "winner": null,
+        "text": "和棋（重复局面／步数上限）"
+      },
+      "plies": 58,
+      "log": [
+        {
+          "ply": 1,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211000,
+          "budgetMs": 150,
+          "move": {
+            "from": 70,
+            "to": 7
+          },
+          "score": -53.90520081481847,
+          "winRate": 47.755459512969814,
+          "depth": 1,
+          "nodes": 11904,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 72,
+          "reveal": "P",
+          "capture": "unknown",
+          "flags": []
+        },
+        {
+          "ply": 2,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211001,
+          "budgetMs": 150,
+          "move": {
+            "from": 8,
+            "to": 7
+          },
+          "score": -253.5,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2432,
+          "samples": 4,
+          "elapsedMs": 158,
+          "firstResultMs": 114,
+          "reveal": "P",
+          "capture": "P",
+          "flags": []
+        },
+        {
+          "ply": 3,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211002,
+          "budgetMs": 150,
+          "move": {
+            "from": 64,
+            "to": 67
+          },
+          "score": 246.51706295987668,
+          "winRate": 60.12944974995102,
+          "depth": 1,
+          "nodes": 13824,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 17,
+          "reveal": "P",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 4,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211003,
+          "budgetMs": 150,
+          "move": {
+            "from": 27,
+            "to": 36
+          },
+          "score": 197,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2432,
+          "samples": 4,
+          "elapsedMs": 156,
+          "firstResultMs": 7,
+          "reveal": "C",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 5,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211004,
+          "budgetMs": 150,
+          "move": {
+            "from": 58,
+            "to": 49
+          },
+          "score": 51.357523526686705,
+          "winRate": 52.138591246625786,
+          "depth": 2,
+          "nodes": 12288,
+          "samples": 8,
+          "elapsedMs": 152,
+          "firstResultMs": 11,
+          "reveal": "A",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 6,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211005,
+          "budgetMs": 150,
+          "move": {
+            "from": 36,
+            "to": 81
+          },
+          "score": 548,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2432,
+          "samples": 4,
+          "elapsedMs": 153,
+          "firstResultMs": 14,
+          "reveal": null,
+          "capture": "unknown",
+          "flags": []
+        },
+        {
+          "ply": 7,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211006,
+          "budgetMs": 150,
+          "move": {
+            "from": 82,
+            "to": 65
+          },
+          "score": -403.41754694382774,
+          "winRate": 33.79680220283679,
+          "depth": 2,
+          "nodes": 14720,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 31,
+          "reveal": "B",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 8,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211007,
+          "budgetMs": 150,
+          "move": {
+            "from": 3,
+            "to": 13
+          },
+          "score": 1000.75,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2688,
+          "samples": 4,
+          "elapsedMs": 152,
+          "firstResultMs": 34,
+          "reveal": "A",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 9,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211008,
+          "budgetMs": 150,
+          "move": {
+            "from": 65,
+            "to": 81
+          },
+          "score": -105.22702511605769,
+          "winRate": 45.62674410688071,
+          "depth": 2,
+          "nodes": 16768,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 12,
+          "reveal": null,
+          "capture": "C",
+          "flags": [
+            "公开大子被吃（需区分交换/弃子）"
+          ]
+        },
+        {
+          "ply": 10,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211009,
+          "budgetMs": 150,
+          "move": {
+            "from": 0,
+            "to": 54
+          },
+          "score": 596.75,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2944,
+          "samples": 4,
+          "elapsedMs": 153,
+          "firstResultMs": 8,
+          "reveal": "N",
+          "capture": "unknown",
+          "flags": []
+        },
+        {
+          "ply": 11,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211010,
+          "budgetMs": 150,
+          "move": {
+            "from": 60,
+            "to": 51
+          },
+          "score": -104.8686941821942,
+          "winRate": 45.64156072881914,
+          "depth": 2,
+          "nodes": 14720,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 2,
+          "reveal": "R",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 12,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211011,
+          "budgetMs": 150,
+          "move": {
+            "from": 25,
+            "to": 24
+          },
+          "score": 55,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2688,
+          "samples": 4,
+          "elapsedMs": 154,
+          "firstResultMs": 37,
+          "reveal": "C",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 13,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211012,
+          "budgetMs": 150,
+          "move": {
+            "from": 51,
+            "to": 33
+          },
+          "score": 453,
+          "winRate": 68.02671966986485,
+          "depth": 2,
+          "nodes": 14976,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 10,
+          "reveal": null,
+          "capture": "unknown",
+          "flags": []
+        },
+        {
+          "ply": 14,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211013,
+          "budgetMs": 150,
+          "move": {
+            "from": 24,
+            "to": 87
+          },
+          "score": -382,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 3200,
+          "samples": 4,
+          "elapsedMs": 153,
+          "firstResultMs": 41,
+          "reveal": null,
+          "capture": "unknown",
+          "flags": []
+        },
+        {
+          "ply": 15,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211014,
+          "budgetMs": 150,
+          "move": {
+            "from": 33,
+            "to": 87
+          },
+          "score": 408.09990702248734,
+          "winRate": 66.37758600781814,
+          "depth": 3,
+          "nodes": 14464,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 5,
+          "reveal": null,
+          "capture": "C",
+          "flags": [
+            "公开大子被吃（需区分交换/弃子）"
+          ]
+        },
+        {
+          "ply": 16,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211015,
+          "budgetMs": 150,
+          "move": {
+            "from": 19,
+            "to": 82
+          },
+          "score": -398.5,
+          "winRate": null,
+          "depth": 2,
+          "nodes": 4349,
+          "samples": 4,
+          "elapsedMs": 154,
+          "firstResultMs": 15,
+          "reveal": "B",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 17,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211016,
+          "budgetMs": 150,
+          "move": {
+            "from": 87,
+            "to": 6
+          },
+          "score": 709.5658905658725,
+          "winRate": 76.5416731402043,
+          "depth": 2,
+          "nodes": 15360,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 2,
+          "reveal": null,
+          "capture": "unknown",
+          "flags": []
+        },
+        {
+          "ply": 18,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211017,
+          "budgetMs": 150,
+          "move": {
+            "from": 1,
+            "to": 20
+          },
+          "score": -808,
+          "winRate": null,
+          "depth": 2,
+          "nodes": 4736,
+          "samples": 4,
+          "elapsedMs": 151,
+          "firstResultMs": 11,
+          "reveal": "P",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 19,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211018,
+          "budgetMs": 150,
+          "move": {
+            "from": 6,
+            "to": 33
+          },
+          "score": 975.3174202190581,
+          "winRate": 83.55562403013612,
+          "depth": 2,
+          "nodes": 15872,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 4,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 20,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211019,
+          "budgetMs": 150,
+          "move": {
+            "from": 29,
+            "to": 38
+          },
+          "score": -1012,
+          "winRate": null,
+          "depth": 2,
+          "nodes": 4480,
+          "samples": 4,
+          "elapsedMs": 153,
+          "firstResultMs": 11,
+          "reveal": "R",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 21,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211020,
+          "budgetMs": 150,
+          "move": {
+            "from": 83,
+            "to": 63
+          },
+          "score": 621.7705617736042,
+          "winRate": 73.81324173653773,
+          "depth": 2,
+          "nodes": 16384,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 11,
+          "reveal": "N",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 22,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211021,
+          "budgetMs": 150,
+          "move": {
+            "from": 31,
+            "to": 40
+          },
+          "score": -777,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 4224,
+          "samples": 4,
+          "elapsedMs": 150,
+          "firstResultMs": 26,
+          "reveal": "P",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 23,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211022,
+          "budgetMs": 150,
+          "move": {
+            "from": 33,
+            "to": 35
+          },
+          "score": 805.6666666666576,
+          "winRate": 79.29463748468063,
+          "depth": 1,
+          "nodes": 18944,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 25,
+          "reveal": null,
+          "capture": "unknown",
+          "flags": []
+        },
+        {
+          "ply": 24,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211023,
+          "budgetMs": 150,
+          "move": {
+            "from": 2,
+            "to": 22
+          },
+          "score": -772,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 3968,
+          "samples": 4,
+          "elapsedMs": 154,
+          "firstResultMs": 14,
+          "reveal": "R",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 25,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211024,
+          "budgetMs": 150,
+          "move": {
+            "from": 35,
+            "to": 44
+          },
+          "score": 598.0000000000002,
+          "winRate": 73.04027009726298,
+          "depth": 2,
+          "nodes": 18688,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 17,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 26,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211025,
+          "budgetMs": 150,
+          "move": {
+            "from": 38,
+            "to": 37
+          },
+          "score": -480,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 4096,
+          "samples": 4,
+          "elapsedMs": 152,
+          "firstResultMs": 28,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 27,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211026,
+          "budgetMs": 150,
+          "move": {
+            "from": 49,
+            "to": 57
+          },
+          "score": 585.9999999999998,
+          "winRate": 72.64463096789666,
+          "depth": 2,
+          "nodes": 16512,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 14,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 28,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211027,
+          "budgetMs": 150,
+          "move": {
+            "from": 7,
+            "to": 16
+          },
+          "score": -468,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 3968,
+          "samples": 4,
+          "elapsedMs": 150,
+          "firstResultMs": 27,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 29,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211028,
+          "budgetMs": 150,
+          "move": {
+            "from": 62,
+            "to": 53
+          },
+          "score": 595.2982624381515,
+          "winRate": 72.95150956688084,
+          "depth": 2,
+          "nodes": 17536,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 4,
+          "reveal": "C",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 30,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211029,
+          "budgetMs": 150,
+          "move": {
+            "from": 16,
+            "to": 25
+          },
+          "score": -578,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 3456,
+          "samples": 4,
+          "elapsedMs": 160,
+          "firstResultMs": 32,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 31,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211030,
+          "budgetMs": 150,
+          "move": {
+            "from": 53,
+            "to": 50
+          },
+          "score": 621,
+          "winRate": 73.78841011916349,
+          "depth": 2,
+          "nodes": 17024,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 8,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 32,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211031,
+          "budgetMs": 150,
+          "move": {
+            "from": 20,
+            "to": 29
+          },
+          "score": -578,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 3840,
+          "samples": 4,
+          "elapsedMs": 155,
+          "firstResultMs": 35,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 33,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211032,
+          "budgetMs": 150,
+          "move": {
+            "from": 89,
+            "to": 53
+          },
+          "score": 636.4583022024966,
+          "winRate": 74.28364884851118,
+          "depth": 1,
+          "nodes": 19328,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 6,
+          "reveal": "A",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 34,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211033,
+          "budgetMs": 150,
+          "move": {
+            "from": 25,
+            "to": 34
+          },
+          "score": -446,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 3712,
+          "samples": 4,
+          "elapsedMs": 155,
+          "firstResultMs": 38,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 35,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211034,
+          "budgetMs": 150,
+          "move": {
+            "from": 67,
+            "to": 58
+          },
+          "score": 576.0000000000003,
+          "winRate": 72.312180512439,
+          "depth": 1,
+          "nodes": 18176,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 6,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 36,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211035,
+          "budgetMs": 150,
+          "move": {
+            "from": 29,
+            "to": 38
+          },
+          "score": -446,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 3584,
+          "samples": 4,
+          "elapsedMs": 151,
+          "firstResultMs": 40,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 37,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211036,
+          "budgetMs": 150,
+          "move": {
+            "from": 44,
+            "to": 8
+          },
+          "score": 571.9999999999998,
+          "winRate": 72.17850439377067,
+          "depth": 1,
+          "nodes": 18816,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 9,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 38,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211037,
+          "budgetMs": 150,
+          "move": {
+            "from": 82,
+            "to": 66
+          },
+          "score": -454,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 4224,
+          "samples": 4,
+          "elapsedMs": 156,
+          "firstResultMs": 36,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 39,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211038,
+          "budgetMs": 150,
+          "move": {
+            "from": 84,
+            "to": 76
+          },
+          "score": 600.1869367339484,
+          "winRate": 73.11198308744538,
+          "depth": 2,
+          "nodes": 17152,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 28,
+          "reveal": "P",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 40,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211039,
+          "budgetMs": 150,
+          "move": {
+            "from": 37,
+            "to": 73
+          },
+          "score": -238,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 4096,
+          "samples": 4,
+          "elapsedMs": 152,
+          "firstResultMs": 21,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 41,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211040,
+          "budgetMs": 150,
+          "move": {
+            "from": 8,
+            "to": 7
+          },
+          "score": 466.00000000000483,
+          "winRate": 68.49612600299827,
+          "depth": 1,
+          "nodes": 17024,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 15,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 42,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211041,
+          "budgetMs": 150,
+          "move": {
+            "from": 22,
+            "to": 31
+          },
+          "score": -236,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 3712,
+          "samples": 4,
+          "elapsedMs": 150,
+          "firstResultMs": 38,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 43,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211042,
+          "budgetMs": 150,
+          "move": {
+            "from": 7,
+            "to": 8
+          },
+          "score": 464.00000000000506,
+          "winRate": 68.42415191748641,
+          "depth": 1,
+          "nodes": 5888,
+          "samples": 8,
+          "elapsedMs": 180,
+          "firstResultMs": 18,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 44,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211043,
+          "budgetMs": 150,
+          "move": {
+            "from": 54,
+            "to": 37
+          },
+          "score": -232,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2944,
+          "samples": 4,
+          "elapsedMs": 154,
+          "firstResultMs": 54,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 45,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211044,
+          "budgetMs": 150,
+          "move": {
+            "from": 88,
+            "to": 69
+          },
+          "score": 482.20190491186855,
+          "winRate": 69.07589480212923,
+          "depth": 1,
+          "nodes": 16512,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 28,
+          "reveal": "N",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 46,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211045,
+          "budgetMs": 150,
+          "move": {
+            "from": 37,
+            "to": 20
+          },
+          "score": -328,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2944,
+          "samples": 4,
+          "elapsedMs": 155,
+          "firstResultMs": 32,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 47,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211046,
+          "budgetMs": 150,
+          "move": {
+            "from": 8,
+            "to": 7
+          },
+          "score": 498.00000000000017,
+          "winRate": 69.63549298238341,
+          "depth": 1,
+          "nodes": 13312,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 22,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 48,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211047,
+          "budgetMs": 150,
+          "move": {
+            "from": 20,
+            "to": 39
+          },
+          "score": -324,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 3072,
+          "samples": 4,
+          "elapsedMs": 156,
+          "firstResultMs": 45,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 49,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211048,
+          "budgetMs": 150,
+          "move": {
+            "from": 7,
+            "to": 8
+          },
+          "score": 494.00000000000006,
+          "winRate": 69.49434557753679,
+          "depth": 1,
+          "nodes": 14080,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 48,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 50,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211049,
+          "budgetMs": 150,
+          "move": {
+            "from": 39,
+            "to": 22
+          },
+          "score": -320,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 3328,
+          "samples": 4,
+          "elapsedMs": 153,
+          "firstResultMs": 37,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 51,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211050,
+          "budgetMs": 150,
+          "move": {
+            "from": 8,
+            "to": 7
+          },
+          "score": 489.99999999999994,
+          "winRate": 69.3528308197921,
+          "depth": 1,
+          "nodes": 17408,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 16,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 52,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211051,
+          "budgetMs": 150,
+          "move": {
+            "from": 4,
+            "to": 3
+          },
+          "score": -320,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 4096,
+          "samples": 4,
+          "elapsedMs": 154,
+          "firstResultMs": 34,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 53,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211052,
+          "budgetMs": 150,
+          "move": {
+            "from": 7,
+            "to": 8
+          },
+          "score": 489.99999999999994,
+          "winRate": 69.3528308197921,
+          "depth": 1,
+          "nodes": 16768,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 18,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 54,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211053,
+          "budgetMs": 150,
+          "move": {
+            "from": 3,
+            "to": 4
+          },
+          "score": -320,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 4352,
+          "samples": 4,
+          "elapsedMs": 152,
+          "firstResultMs": 22,
+          "reveal": null,
+          "capture": null,
+          "flags": [
+            "局面重复"
+          ]
+        },
+        {
+          "ply": 55,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211054,
+          "budgetMs": 150,
+          "move": {
+            "from": 8,
+            "to": 7
+          },
+          "score": 489.99999999999994,
+          "winRate": 69.3528308197921,
+          "depth": 1,
+          "nodes": 15360,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 15,
+          "reveal": null,
+          "capture": null,
+          "flags": [
+            "局面重复"
+          ]
+        },
+        {
+          "ply": 56,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211055,
+          "budgetMs": 150,
+          "move": {
+            "from": 4,
+            "to": 3
+          },
+          "score": -320,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 3584,
+          "samples": 4,
+          "elapsedMs": 155,
+          "firstResultMs": 36,
+          "reveal": null,
+          "capture": null,
+          "flags": [
+            "局面重复"
+          ]
+        },
+        {
+          "ply": 57,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 211056,
+          "budgetMs": 150,
+          "move": {
+            "from": 7,
+            "to": 8
+          },
+          "score": 489.99999999999994,
+          "winRate": 69.3528308197921,
+          "depth": 1,
+          "nodes": 16512,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 20,
+          "reveal": null,
+          "capture": null,
+          "flags": [
+            "局面重复"
+          ]
+        },
+        {
+          "ply": 58,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 211057,
+          "budgetMs": 150,
+          "move": {
+            "from": 3,
+            "to": 4
+          },
+          "score": -320,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 3584,
+          "samples": 4,
+          "elapsedMs": 152,
+          "firstResultMs": 23,
+          "reveal": null,
+          "capture": null,
+          "flags": [
+            "局面重复"
+          ]
+        }
+      ]
+    },
+    {
+      "seed": 211,
+      "newSide": "b",
+      "budgetMs": 150,
+      "result": {
+        "winner": null,
+        "text": "和棋（重复局面／步数上限）"
+      },
+      "plies": 73,
+      "log": [
+        {
+          "ply": 1,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 211000,
+          "budgetMs": 150,
+          "move": {
+            "from": 64,
+            "to": 1
+          },
+          "score": 113.5,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2304,
+          "samples": 4,
+          "elapsedMs": 155,
+          "firstResultMs": 89,
+          "reveal": "P",
+          "capture": "unknown",
+          "flags": []
+        },
+        {
+          "ply": 2,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 211001,
+          "budgetMs": 150,
+          "move": {
+            "from": 0,
+            "to": 1
+          },
+          "score": -299.87557859783846,
+          "winRate": 37.75894025211702,
+          "depth": 1,
+          "nodes": 14080,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 59,
+          "reveal": "N",
+          "capture": "P",
+          "flags": []
+        },
+        {
+          "ply": 3,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 211002,
+          "budgetMs": 150,
+          "move": {
+            "from": 56,
+            "to": 47
+          },
+          "score": 90,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2560,
+          "samples": 4,
+          "elapsedMs": 156,
+          "firstResultMs": 25,
+          "reveal": "P",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 4,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 211003,
+          "budgetMs": 150,
+          "move": {
+            "from": 25,
+            "to": 61
+          },
+          "score": -227.72922558237352,
+          "winRate": 40.62357475037933,
+          "depth": 1,
+          "nodes": 14976,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 10,
+          "reveal": "C",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 5,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 211004,
+          "budgetMs": 150,
+          "move": {
+            "from": 58,
+            "to": 49
+          },
+          "score": -262,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2432,
+          "samples": 4,
+          "elapsedMs": 157,
+          "firstResultMs": 42,
+          "reveal": "A",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 6,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 211005,
+          "budgetMs": 150,
+          "move": {
+            "from": 7,
+            "to": 24
+          },
+          "score": -229.77689530614003,
+          "winRate": 40.54128202013684,
+          "depth": 1,
+          "nodes": 15488,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 14,
+          "reveal": "N",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 7,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 211006,
+          "budgetMs": 150,
+          "move": {
+            "from": 86,
+            "to": 76
+          },
+          "score": -471.5,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2304,
+          "samples": 4,
+          "elapsedMs": 154,
+          "firstResultMs": 43,
+          "reveal": "R",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 8,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 211007,
+          "budgetMs": 150,
+          "move": {
+            "from": 31,
+            "to": 40
+          },
+          "score": -187.6479487603024,
+          "winRate": 42.24444714989538,
+          "depth": 1,
+          "nodes": 14464,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 6,
+          "reveal": "P",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 9,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 211008,
+          "budgetMs": 150,
+          "move": {
+            "from": 49,
+            "to": 39
+          },
+          "score": 83,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2176,
+          "samples": 4,
+          "elapsedMs": 158,
+          "firstResultMs": 123,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 10,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 211009,
+          "budgetMs": 150,
+          "move": {
+            "from": 61,
+            "to": 88
+          },
+          "score": -331.7853089495603,
+          "winRate": 36.51743427162538,
+          "depth": 1,
+          "nodes": 11008,
+          "samples": 8,
+          "elapsedMs": 152,
+          "firstResultMs": 147,
+          "reveal": null,
+          "capture": "unknown",
+          "flags": []
+        },
+        {
+          "ply": 11,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 211010,
+          "budgetMs": 150,
+          "move": {
+            "from": 89,
+            "to": 88
+          },
+          "score": 6.5,
+          "winRate": null,
+          "depth": 2,
+          "nodes": 2304,
+          "samples": 4,
+          "elapsedMs": 150,
+          "firstResultMs": 8,
+          "reveal": "A",
+          "capture": "C",
+          "flags": [
+            "公开大子被吃（需区分交换/弃子）"
+          ]
+        },
+        {
+          "ply": 12,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 211011,
+          "budgetMs": 150,
+          "move": {
+            "from": 19,
+            "to": 55
+          },
+          "score": -505.7283440926359,
+          "winRate": 30.09284489843069,
+          "depth": 1,
+          "nodes": 15488,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 80,
+          "reveal": "B",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 13,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 211012,
+          "budgetMs": 150,
+          "move": {
+            "from": 54,
+            "to": 45
+          },
+          "score": 591,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2560,
+          "samples": 4,
+          "elapsedMs": 154,
+          "firstResultMs": 21,
+          "reveal": "C",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 14,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 211013,
+          "budgetMs": 150,
+          "move": {
+            "from": 27,
+            "to": 36
+          },
+          "score": -536.8735540490949,
+          "winRate": 29.01224826192762,
+          "depth": 1,
+          "nodes": 12928,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 62,
+          "reveal": "C",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 15,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 211014,
+          "budgetMs": 150,
+          "move": {
+            "from": 45,
+            "to": 46
+          },
+          "score": 260,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2432,
+          "samples": 4,
+          "elapsedMs": 155,
+          "firstResultMs": 88,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 16,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 211015,
+          "budgetMs": 150,
+          "move": {
+            "from": 36,
+            "to": 38
+          },
+          "score": -703.4377908761882,
+          "winRate": 23.64221116749108,
+          "depth": 1,
+          "nodes": 14848,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 60,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 17,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 211016,
+          "budgetMs": 150,
+          "move": {
+            "from": 47,
+            "to": 38
+          },
+          "score": 425.25,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2432,
+          "samples": 4,
+          "elapsedMs": 158,
+          "firstResultMs": 66,
+          "reveal": null,
+          "capture": "C",
+          "flags": [
+            "公开大子被吃（需区分交换/弃子）"
+          ]
+        },
+        {
+          "ply": 18,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 211017,
+          "budgetMs": 150,
+          "move": {
+            "from": 29,
+            "to": 38
+          },
+          "score": -679.1744163924546,
+          "winRate": 24.3800057844471,
+          "depth": 1,
+          "nodes": 14336,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 111,
+          "reveal": "R",
+          "capture": "P",
+          "flags": []
+        },
+        {
+          "ply": 19,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 211018,
+          "budgetMs": 150,
+          "move": {
+            "from": 39,
+            "to": 29
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 2048,
+          "samples": 4,
+          "elapsedMs": 153,
+          "firstResultMs": null,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 20,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 211019,
+          "budgetMs": 150,
+          "move": {
+            "from": 38,
+            "to": 83
+          },
+          "score": -312.30567126085845,
+          "winRate": 37.273311446520566,
+          "depth": 1,
+          "nodes": 11776,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 71,
+          "reveal": null,
+          "capture": "unknown",
+          "flags": []
+        },
+        {
+          "ply": 21,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 211020,
+          "budgetMs": 150,
+          "move": {
+            "from": 29,
+            "to": 19
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 2560,
+          "samples": 4,
+          "elapsedMs": 158,
+          "firstResultMs": null,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 22,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 211021,
+          "budgetMs": 150,
+          "move": {
+            "from": 1,
+            "to": 20
+          },
+          "score": -308.3107458122343,
+          "winRate": 37.429113912090514,
+          "depth": 1,
+          "nodes": 14592,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 86,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 23,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 211022,
+          "budgetMs": 150,
+          "move": {
+            "from": 60,
+            "to": 51
+          },
+          "score": -89.5,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2304,
+          "samples": 4,
+          "elapsedMs": 157,
+          "firstResultMs": 109,
+          "reveal": "R",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 24,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 211023,
+          "budgetMs": 150,
+          "move": {
+            "from": 40,
+            "to": 49
+          },
+          "score": -549.5,
+          "winRate": 28.580764150381395,
+          "depth": 1,
+          "nodes": 13568,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 71,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 25,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 211024,
+          "budgetMs": 150,
+          "move": {
+            "from": 51,
+            "to": 33
+          },
+          "score": 497,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2432,
+          "samples": 4,
+          "elapsedMs": 152,
+          "firstResultMs": 147,
+          "reveal": null,
+          "capture": "unknown",
+          "flags": []
+        },
+        {
+          "ply": 26,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 211025,
+          "budgetMs": 150,
+          "move": {
+            "from": 20,
+            "to": 31
+          },
+          "score": -752.5000000000001,
+          "winRate": 22.19797023257268,
+          "depth": 1,
+          "nodes": 15104,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 67,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 27,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 211026,
+          "budgetMs": 150,
+          "move": {
+            "from": 76,
+            "to": 49
+          },
+          "score": 700,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2560,
+          "samples": 4,
+          "elapsedMs": 152,
+          "firstResultMs": 118,
+          "reveal": null,
+          "capture": "P",
+          "flags": []
+        },
+        {
+          "ply": 28,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 211027,
+          "budgetMs": 150,
+          "move": {
+            "from": 2,
+            "to": 22
+          },
+          "score": -737.9541389957659,
+          "winRate": 22.619480392446253,
+          "depth": 1,
+          "nodes": 11136,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 101,
+          "reveal": "R",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 29,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 211028,
+          "budgetMs": 150,
+          "move": {
+            "from": 19,
+            "to": 9
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 1920,
+          "samples": 4,
+          "elapsedMs": 161,
+          "firstResultMs": null,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 30,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 211029,
+          "budgetMs": 150,
+          "move": {
+            "from": 35,
+            "to": 44
+          },
+          "score": -533.48244194391,
+          "winRate": 29.1287869194357,
+          "depth": 1,
+          "nodes": 11776,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 81,
+          "reveal": "P",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 31,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 211030,
+          "budgetMs": 150,
+          "move": {
+            "from": 9,
+            "to": 1
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 1920,
+          "samples": 4,
+          "elapsedMs": 158,
+          "firstResultMs": null,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 32,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 211031,
+          "budgetMs": 150,
+          "move": {
+            "from": 8,
+            "to": 35
+          },
+          "score": -509.99866288819294,
+          "winRate": 29.94333250090964,
+          "depth": 1,
+          "nodes": 13568,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 74,
+          "reveal": "P",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 33,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 211032,
+          "budgetMs": 150,
+          "move": {
+            "from": 1,
+            "to": 9
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 2048,
+          "samples": 4,
+          "elapsedMs": 154,
+          "firstResultMs": null,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 34,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 211033,
+          "budgetMs": 150,
+          "move": {
+            "from": 6,
+            "to": 26
+          },
+          "score": -504.94400450758894,
+          "winRate": 30.12035237360523,
+          "depth": 1,
+          "nodes": 14208,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 68,
+          "reveal": "A",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 35,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 211034,
+          "budgetMs": 150,
+          "move": {
+            "from": 9,
+            "to": 1
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 2176,
+          "samples": 4,
+          "elapsedMs": 151,
+          "firstResultMs": null,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 36,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 211035,
+          "budgetMs": 150,
+          "move": {
+            "from": 3,
+            "to": 13
+          },
+          "score": -485.7608708035827,
+          "winRate": 30.79754305038542,
+          "depth": 1,
+          "nodes": 14592,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 83,
+          "reveal": "A",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 37,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 211036,
+          "budgetMs": 150,
+          "move": {
+            "from": 1,
+            "to": 9
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 2304,
+          "samples": 4,
+          "elapsedMs": 152,
+          "firstResultMs": null,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 38,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 211037,
+          "budgetMs": 150,
+          "move": {
+            "from": 4,
+            "to": 3
+          },
+          "score": -458.6666666666716,
+          "winRate": 31.768210793345425,
+          "depth": 1,
+          "nodes": 14592,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 41,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 39,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 211038,
+          "budgetMs": 150,
+          "move": {
+            "from": 70,
+            "to": 67
+          },
+          "score": 830,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2304,
+          "samples": 4,
+          "elapsedMs": 154,
+          "firstResultMs": 149,
+          "reveal": "P",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 40,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 211039,
+          "budgetMs": 150,
+          "move": {
+            "from": 83,
+            "to": 84
+          },
+          "score": -165.5238095238187,
+          "winRate": 43.14658502473955,
+          "depth": 1,
+          "nodes": 15104,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 37,
+          "reveal": null,
+          "capture": "unknown",
+          "flags": []
+        },
+        {
+          "ply": 41,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 211040,
+          "budgetMs": 150,
+          "move": {
+            "from": 85,
+            "to": 76
+          },
+          "score": 196,
+          "winRate": null,
+          "depth": 2,
+          "nodes": 2944,
+          "samples": 4,
+          "elapsedMs": 156,
+          "firstResultMs": 2,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 42,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 211041,
+          "budgetMs": 150,
+          "move": {
+            "from": 3,
+            "to": 4
+          },
+          "score": -165.5238095238187,
+          "winRate": 43.14658502473955,
+          "depth": 1,
+          "nodes": 17152,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 37,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 43,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 211042,
+          "budgetMs": 150,
+          "move": {
+            "from": 67,
+            "to": 58
+          },
+          "score": 208,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2688,
+          "samples": 4,
+          "elapsedMs": 150,
+          "firstResultMs": 73,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 44,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 211043,
+          "budgetMs": 150,
+          "move": {
+            "from": 4,
+            "to": 3
+          },
+          "score": -177.52380952381858,
+          "winRate": 42.656666737270484,
+          "depth": 1,
+          "nodes": 16768,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 37,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 45,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 211044,
+          "budgetMs": 150,
+          "move": {
+            "from": 81,
+            "to": 27
+          },
+          "score": 263.75,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2944,
+          "samples": 4,
+          "elapsedMs": 156,
+          "firstResultMs": 77,
+          "reveal": "B",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 46,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 211045,
+          "budgetMs": 150,
+          "move": {
+            "from": 3,
+            "to": 4
+          },
+          "score": -144.66666666667658,
+          "winRate": 44.00125530602681,
+          "depth": 1,
+          "nodes": 16768,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 36,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 47,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 211046,
+          "budgetMs": 150,
+          "move": {
+            "from": 49,
+            "to": 40
+          },
+          "score": 90,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2944,
+          "samples": 4,
+          "elapsedMs": 153,
+          "firstResultMs": 63,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 48,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 211047,
+          "budgetMs": 150,
+          "move": {
+            "from": 4,
+            "to": 3
+          },
+          "score": -146.66666666667663,
+          "winRate": 43.919137966689945,
+          "depth": 1,
+          "nodes": 15232,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 46,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 49,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 211048,
+          "budgetMs": 150,
+          "move": {
+            "from": 58,
+            "to": 49
+          },
+          "score": 102,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2944,
+          "samples": 4,
+          "elapsedMs": 152,
+          "firstResultMs": 91,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 50,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 211049,
+          "budgetMs": 150,
+          "move": {
+            "from": 3,
+            "to": 4
+          },
+          "score": -158.6666666666765,
+          "winRate": 43.42714808737247,
+          "depth": 1,
+          "nodes": 17792,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 43,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 51,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 211050,
+          "budgetMs": 150,
+          "move": {
+            "from": 9,
+            "to": 1
+          },
+          "score": 102,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 3328,
+          "samples": 4,
+          "elapsedMs": 155,
+          "firstResultMs": 69,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 52,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 211051,
+          "budgetMs": 150,
+          "move": {
+            "from": 4,
+            "to": 3
+          },
+          "score": -158.6666666666765,
+          "winRate": 43.42714808737247,
+          "depth": 1,
+          "nodes": 16896,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 51,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 53,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 211052,
+          "budgetMs": 150,
+          "move": {
+            "from": 1,
+            "to": 9
+          },
+          "score": 102,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 3584,
+          "samples": 4,
+          "elapsedMs": 153,
+          "firstResultMs": 56,
+          "reveal": null,
+          "capture": null,
+          "flags": [
+            "局面重复"
+          ]
+        },
+        {
+          "ply": 54,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 211053,
+          "budgetMs": 150,
+          "move": {
+            "from": 3,
+            "to": 4
+          },
+          "score": -158.6666666666765,
+          "winRate": 43.42714808737247,
+          "depth": 1,
+          "nodes": 15488,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 52,
+          "reveal": null,
+          "capture": null,
+          "flags": [
+            "局面重复"
+          ]
+        },
+        {
+          "ply": 55,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 211054,
+          "budgetMs": 150,
+          "move": {
+            "from": 82,
+            "to": 65
+          },
+          "score": 150.5,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2816,
+          "samples": 4,
+          "elapsedMs": 152,
+          "firstResultMs": 76,
+          "reveal": "B",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 56,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 211055,
+          "budgetMs": 150,
+          "move": {
+            "from": 4,
+            "to": 3
+          },
+          "score": -112.66666666667165,
+          "winRate": 45.31930112580916,
+          "depth": 1,
+          "nodes": 18304,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 41,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 57,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 211056,
+          "budgetMs": 150,
+          "move": {
+            "from": 46,
+            "to": 47
+          },
+          "score": -14,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2048,
+          "samples": 4,
+          "elapsedMs": 150,
+          "firstResultMs": 76,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 58,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 211057,
+          "budgetMs": 150,
+          "move": {
+            "from": 3,
+            "to": 4
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 3968,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": null,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 59,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 211058,
+          "budgetMs": 150,
+          "move": {
+            "from": 9,
+            "to": 1
+          },
+          "score": -14,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 1408,
+          "samples": 4,
+          "elapsedMs": 158,
+          "firstResultMs": 136,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 60,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 211059,
+          "budgetMs": 150,
+          "move": {
+            "from": 4,
+            "to": 3
+          },
+          "score": -116.66666666667166,
+          "winRate": 45.15414720267211,
+          "depth": 1,
+          "nodes": 11648,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 72,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 61,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 211060,
+          "budgetMs": 150,
+          "move": {
+            "from": 1,
+            "to": 9
+          },
+          "score": -14,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2688,
+          "samples": 4,
+          "elapsedMs": 150,
+          "firstResultMs": 62,
+          "reveal": null,
+          "capture": null,
+          "flags": [
+            "局面重复"
+          ]
+        },
+        {
+          "ply": 62,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 211061,
+          "budgetMs": 150,
+          "move": {
+            "from": 3,
+            "to": 4
+          },
+          "score": -116.66666666667166,
+          "winRate": 45.15414720267211,
+          "depth": 1,
+          "nodes": 14720,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 47,
+          "reveal": null,
+          "capture": null,
+          "flags": [
+            "局面重复"
+          ]
+        },
+        {
+          "ply": 63,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 211062,
+          "budgetMs": 150,
+          "move": {
+            "from": 87,
+            "to": 71
+          },
+          "score": 33,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2688,
+          "samples": 4,
+          "elapsedMs": 153,
+          "firstResultMs": 64,
+          "reveal": "P",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 64,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 211063,
+          "budgetMs": 150,
+          "move": {
+            "from": 84,
+            "to": 88
+          },
+          "score": 213.33333333332845,
+          "winRate": 58.79641352293808,
+          "depth": 1,
+          "nodes": 16640,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 40,
+          "reveal": null,
+          "capture": "A",
+          "flags": []
+        },
+        {
+          "ply": 65,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 211064,
+          "budgetMs": 150,
+          "move": {
+            "from": 47,
+            "to": 48
+          },
+          "score": -416,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2944,
+          "samples": 4,
+          "elapsedMs": 153,
+          "firstResultMs": 31,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 66,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 211065,
+          "budgetMs": 150,
+          "move": {
+            "from": 4,
+            "to": 3
+          },
+          "score": 209.33333333332862,
+          "winRate": 58.63481114610054,
+          "depth": 1,
+          "nodes": 17920,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 39,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 67,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 211066,
+          "budgetMs": 150,
+          "move": {
+            "from": 9,
+            "to": 1
+          },
+          "score": -416,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2304,
+          "samples": 4,
+          "elapsedMs": 151,
+          "firstResultMs": 36,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 68,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 211067,
+          "budgetMs": 150,
+          "move": {
+            "from": 3,
+            "to": 4
+          },
+          "score": 209.33333333332862,
+          "winRate": 58.63481114610054,
+          "depth": 1,
+          "nodes": 10368,
+          "samples": 8,
+          "elapsedMs": 282,
+          "firstResultMs": 49,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 69,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 211068,
+          "budgetMs": 150,
+          "move": {
+            "from": 1,
+            "to": 9
+          },
+          "score": -416,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 1792,
+          "samples": 4,
+          "elapsedMs": 160,
+          "firstResultMs": 87,
+          "reveal": null,
+          "capture": null,
+          "flags": [
+            "局面重复"
+          ]
+        },
+        {
+          "ply": 70,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 211069,
+          "budgetMs": 150,
+          "move": {
+            "from": 4,
+            "to": 3
+          },
+          "score": 209.33333333332862,
+          "winRate": 58.63481114610054,
+          "depth": 1,
+          "nodes": 14080,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 56,
+          "reveal": null,
+          "capture": null,
+          "flags": [
+            "局面重复"
+          ]
+        },
+        {
+          "ply": 71,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 211070,
+          "budgetMs": 150,
+          "move": {
+            "from": 9,
+            "to": 1
+          },
+          "score": -416,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2560,
+          "samples": 4,
+          "elapsedMs": 153,
+          "firstResultMs": 51,
+          "reveal": null,
+          "capture": null,
+          "flags": [
+            "局面重复"
+          ]
+        },
+        {
+          "ply": 72,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 211071,
+          "budgetMs": 150,
+          "move": {
+            "from": 3,
+            "to": 4
+          },
+          "score": 209.33333333332862,
+          "winRate": 58.63481114610054,
+          "depth": 1,
+          "nodes": 13056,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 51,
+          "reveal": null,
+          "capture": null,
+          "flags": [
+            "局面重复"
+          ]
+        },
+        {
+          "ply": 73,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 211072,
+          "budgetMs": 150,
+          "move": {
+            "from": 1,
+            "to": 9
+          },
+          "score": -416,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2688,
+          "samples": 4,
+          "elapsedMs": 156,
+          "firstResultMs": 44,
+          "reveal": null,
+          "capture": null,
+          "flags": [
+            "局面重复"
+          ]
+        }
+      ]
+    },
+    {
+      "seed": 419,
+      "newSide": "r",
+      "budgetMs": 150,
+      "result": {
+        "winner": null,
+        "text": "和棋（重复局面／步数上限）"
+      },
+      "plies": 50,
+      "log": [
+        {
+          "ply": 1,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 419000,
+          "budgetMs": 150,
+          "move": {
+            "from": 70,
+            "to": 7
+          },
+          "score": 66.32631654838751,
+          "winRate": 52.76078570776475,
+          "depth": 1,
+          "nodes": 6656,
+          "samples": 8,
+          "elapsedMs": 183,
+          "firstResultMs": 49,
+          "reveal": "P",
+          "capture": "unknown",
+          "flags": []
+        },
+        {
+          "ply": 2,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 419001,
+          "budgetMs": 150,
+          "move": {
+            "from": 19,
+            "to": 82
+          },
+          "score": -300.25,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 1664,
+          "samples": 4,
+          "elapsedMs": 151,
+          "firstResultMs": 149,
+          "reveal": "R",
+          "capture": "unknown",
+          "flags": []
+        },
+        {
+          "ply": 3,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 419002,
+          "budgetMs": 150,
+          "move": {
+            "from": 81,
+            "to": 82
+          },
+          "score": 736.2602100806314,
+          "winRate": 77.33106648117862,
+          "depth": 1,
+          "nodes": 13440,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 40,
+          "reveal": "B",
+          "capture": "R",
+          "flags": [
+            "公开大子被吃（需区分交换/弃子）"
+          ]
+        },
+        {
+          "ply": 4,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 419003,
+          "budgetMs": 150,
+          "move": {
+            "from": 8,
+            "to": 7
+          },
+          "score": 201.5,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2432,
+          "samples": 4,
+          "elapsedMs": 151,
+          "firstResultMs": 39,
+          "reveal": "C",
+          "capture": "P",
+          "flags": []
+        },
+        {
+          "ply": 5,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 419004,
+          "budgetMs": 150,
+          "move": {
+            "from": 64,
+            "to": 10
+          },
+          "score": 684.8252195749192,
+          "winRate": 75.79320683473682,
+          "depth": 2,
+          "nodes": 16000,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 8,
+          "reveal": "A",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 6,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 419005,
+          "budgetMs": 150,
+          "move": {
+            "from": 33,
+            "to": 42
+          },
+          "score": 417,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2688,
+          "samples": 4,
+          "elapsedMs": 166,
+          "firstResultMs": 28,
+          "reveal": "A",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 7,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 419006,
+          "budgetMs": 150,
+          "move": {
+            "from": 10,
+            "to": 0
+          },
+          "score": 979.0000000000672,
+          "winRate": 83.63978274969102,
+          "depth": 1,
+          "nodes": 7168,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 59,
+          "reveal": null,
+          "capture": "unknown",
+          "flags": []
+        },
+        {
+          "ply": 8,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 419007,
+          "budgetMs": 150,
+          "move": {
+            "from": 35,
+            "to": 44
+          },
+          "score": 185,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2304,
+          "samples": 4,
+          "elapsedMs": 155,
+          "firstResultMs": 11,
+          "reveal": "N",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 9,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 419008,
+          "budgetMs": 150,
+          "move": {
+            "from": 62,
+            "to": 53
+          },
+          "score": 910.7578018183058,
+          "winRate": 82.02334115921283,
+          "depth": 2,
+          "nodes": 10624,
+          "samples": 8,
+          "elapsedMs": 152,
+          "firstResultMs": 7,
+          "reveal": "R",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 10,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 419009,
+          "budgetMs": 150,
+          "move": {
+            "from": 44,
+            "to": 33
+          },
+          "score": -562,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 1152,
+          "samples": 4,
+          "elapsedMs": 165,
+          "firstResultMs": 67,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 11,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 419010,
+          "budgetMs": 150,
+          "move": {
+            "from": 60,
+            "to": 51
+          },
+          "score": 1025.395686397888,
+          "winRate": 84.67056015126501,
+          "depth": 1,
+          "nodes": 9472,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 15,
+          "reveal": "R",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 12,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 419011,
+          "budgetMs": 150,
+          "move": {
+            "from": 27,
+            "to": 36
+          },
+          "score": -1030,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2048,
+          "samples": 4,
+          "elapsedMs": 159,
+          "firstResultMs": 55,
+          "reveal": "P",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 13,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 419012,
+          "budgetMs": 150,
+          "move": {
+            "from": 51,
+            "to": 42
+          },
+          "score": 1261.9999999999993,
+          "winRate": 89.12267392514384,
+          "depth": 1,
+          "nodes": 15104,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 13,
+          "reveal": null,
+          "capture": "A",
+          "flags": []
+        },
+        {
+          "ply": 14,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 419013,
+          "budgetMs": 150,
+          "move": {
+            "from": 31,
+            "to": 40
+          },
+          "score": -1680,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2816,
+          "samples": 4,
+          "elapsedMs": 155,
+          "firstResultMs": 57,
+          "reveal": "P",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 15,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 419014,
+          "budgetMs": 150,
+          "move": {
+            "from": 42,
+            "to": 33
+          },
+          "score": 1684.6666666666843,
+          "winRate": 94.30946763152497,
+          "depth": 1,
+          "nodes": 5248,
+          "samples": 8,
+          "elapsedMs": 184,
+          "firstResultMs": 42,
+          "reveal": null,
+          "capture": "N",
+          "flags": [
+            "公开大子被吃（需区分交换/弃子）"
+          ]
+        },
+        {
+          "ply": 16,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 419015,
+          "budgetMs": 150,
+          "move": {
+            "from": 1,
+            "to": 20
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 512,
+          "samples": 4,
+          "elapsedMs": 250,
+          "firstResultMs": null,
+          "reveal": "P",
+          "capture": null,
+          "flags": [
+            "同方评分变化超过900分"
+          ]
+        },
+        {
+          "ply": 17,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 419016,
+          "budgetMs": 150,
+          "move": {
+            "from": 33,
+            "to": 6
+          },
+          "score": 2042.5000000000027,
+          "winRate": 96.78345004567124,
+          "depth": 1,
+          "nodes": 3968,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 116,
+          "reveal": null,
+          "capture": "unknown",
+          "flags": []
+        },
+        {
+          "ply": 18,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 419017,
+          "budgetMs": 150,
+          "move": {
+            "from": 7,
+            "to": 16
+          },
+          "score": -2660,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2432,
+          "samples": 4,
+          "elapsedMs": 151,
+          "firstResultMs": 52,
+          "reveal": null,
+          "capture": null,
+          "flags": [
+            "同方评分变化超过900分"
+          ]
+        },
+        {
+          "ply": 19,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 419018,
+          "budgetMs": 150,
+          "move": {
+            "from": 56,
+            "to": 47
+          },
+          "score": 2063.4775169396917,
+          "winRate": 96.89052910839324,
+          "depth": 1,
+          "nodes": 12416,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 26,
+          "reveal": "P",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 20,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 419019,
+          "budgetMs": 150,
+          "move": {
+            "from": 25,
+            "to": 22
+          },
+          "score": -2248.5,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2048,
+          "samples": 4,
+          "elapsedMs": 156,
+          "firstResultMs": 65,
+          "reveal": "A",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 21,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 419020,
+          "budgetMs": 150,
+          "move": {
+            "from": 88,
+            "to": 69
+          },
+          "score": 2139.0494742201686,
+          "winRate": 97.24839060168676,
+          "depth": 1,
+          "nodes": 13568,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 8,
+          "reveal": "C",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 22,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 419021,
+          "budgetMs": 150,
+          "move": {
+            "from": 3,
+            "to": 13
+          },
+          "score": -2578,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2944,
+          "samples": 4,
+          "elapsedMs": 153,
+          "firstResultMs": 45,
+          "reveal": "C",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 23,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 419022,
+          "budgetMs": 150,
+          "move": {
+            "from": 83,
+            "to": 67
+          },
+          "score": 2100.3898570403458,
+          "winRate": 97.07062512816738,
+          "depth": 1,
+          "nodes": 11520,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 7,
+          "reveal": "C",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 24,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 419023,
+          "budgetMs": 150,
+          "move": {
+            "from": 16,
+            "to": 14
+          },
+          "score": -2730,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2176,
+          "samples": 4,
+          "elapsedMs": 155,
+          "firstResultMs": 108,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 25,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 419024,
+          "budgetMs": 150,
+          "move": {
+            "from": 89,
+            "to": 62
+          },
+          "score": 2140.9614217578255,
+          "winRate": 97.2569047297013,
+          "depth": 1,
+          "nodes": 11648,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 26,
+          "reveal": "B",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 26,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 419025,
+          "budgetMs": 150,
+          "move": {
+            "from": 2,
+            "to": 18
+          },
+          "score": -2330,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2304,
+          "samples": 4,
+          "elapsedMs": 154,
+          "firstResultMs": 66,
+          "reveal": "P",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 27,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 419026,
+          "budgetMs": 150,
+          "move": {
+            "from": 87,
+            "to": 71
+          },
+          "score": 2240.1903875248126,
+          "winRate": 97.66527200365759,
+          "depth": 1,
+          "nodes": 12672,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 25,
+          "reveal": "P",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 28,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 419027,
+          "budgetMs": 150,
+          "move": {
+            "from": 18,
+            "to": 27
+          },
+          "score": -2598,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2432,
+          "samples": 4,
+          "elapsedMs": 151,
+          "firstResultMs": 70,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 29,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 419028,
+          "budgetMs": 150,
+          "move": {
+            "from": 86,
+            "to": 76
+          },
+          "score": 2232.084329116926,
+          "winRate": 97.63426684043236,
+          "depth": 1,
+          "nodes": 11776,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 21,
+          "reveal": "A",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 30,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 419029,
+          "budgetMs": 150,
+          "move": {
+            "from": 22,
+            "to": 12
+          },
+          "score": -2478,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2560,
+          "samples": 4,
+          "elapsedMs": 151,
+          "firstResultMs": 59,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 31,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 419030,
+          "budgetMs": 150,
+          "move": {
+            "from": 53,
+            "to": 8
+          },
+          "score": 2213.0000000000064,
+          "winRate": 97.55967575811188,
+          "depth": 1,
+          "nodes": 13696,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 30,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 32,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 419031,
+          "budgetMs": 150,
+          "move": {
+            "from": 13,
+            "to": 58
+          },
+          "score": -2950,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 3840,
+          "samples": 4,
+          "elapsedMs": 153,
+          "firstResultMs": 34,
+          "reveal": null,
+          "capture": "unknown",
+          "flags": []
+        },
+        {
+          "ply": 33,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 419032,
+          "budgetMs": 150,
+          "move": {
+            "from": 6,
+            "to": 5
+          },
+          "score": 2318.0000000000027,
+          "winRate": 97.94339537987246,
+          "depth": 1,
+          "nodes": 13952,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 4,
+          "reveal": null,
+          "capture": "unknown",
+          "flags": []
+        },
+        {
+          "ply": 34,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 419033,
+          "budgetMs": 150,
+          "move": {
+            "from": 4,
+            "to": 13
+          },
+          "score": -2936,
+          "winRate": null,
+          "depth": 3,
+          "nodes": 3200,
+          "samples": 4,
+          "elapsedMs": 151,
+          "firstResultMs": 1,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 35,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 419034,
+          "budgetMs": 150,
+          "move": {
+            "from": 69,
+            "to": 15
+          },
+          "score": 2765.9999999999977,
+          "winRate": 99.01462444767687,
+          "depth": 1,
+          "nodes": 13312,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 8,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 36,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 419035,
+          "budgetMs": 150,
+          "move": {
+            "from": 14,
+            "to": 77
+          },
+          "score": -2936,
+          "winRate": null,
+          "depth": 2,
+          "nodes": 2944,
+          "samples": 4,
+          "elapsedMs": 154,
+          "firstResultMs": 6,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 37,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 419036,
+          "budgetMs": 150,
+          "move": {
+            "from": 5,
+            "to": 77
+          },
+          "score": 2765.9999999999977,
+          "winRate": 99.01462444767687,
+          "depth": 1,
+          "nodes": 14208,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 6,
+          "reveal": null,
+          "capture": "C",
+          "flags": [
+            "公开大子被吃（需区分交换/弃子）"
+          ]
+        },
+        {
+          "ply": 38,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 419037,
+          "budgetMs": 150,
+          "move": {
+            "from": 40,
+            "to": 49
+          },
+          "score": -2905,
+          "winRate": null,
+          "depth": 2,
+          "nodes": 3456,
+          "samples": 4,
+          "elapsedMs": 157,
+          "firstResultMs": 7,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 39,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 419038,
+          "budgetMs": 150,
+          "move": {
+            "from": 62,
+            "to": 42
+          },
+          "score": 3076.9999999999823,
+          "winRate": 99.41084860132385,
+          "depth": 2,
+          "nodes": 13184,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 7,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 40,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 419039,
+          "budgetMs": 150,
+          "move": {
+            "from": 12,
+            "to": 22
+          },
+          "score": -3135,
+          "winRate": null,
+          "depth": 2,
+          "nodes": 3072,
+          "samples": 4,
+          "elapsedMs": 150,
+          "firstResultMs": 8,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 41,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 419040,
+          "budgetMs": 150,
+          "move": {
+            "from": 42,
+            "to": 58
+          },
+          "score": 2965.000000000006,
+          "winRate": 99.29079721406102,
+          "depth": 1,
+          "nodes": 14464,
+          "samples": 8,
+          "elapsedMs": 152,
+          "firstResultMs": 13,
+          "reveal": null,
+          "capture": "C",
+          "flags": [
+            "公开大子被吃（需区分交换/弃子）"
+          ]
+        },
+        {
+          "ply": 42,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 419041,
+          "budgetMs": 150,
+          "move": {
+            "from": 49,
+            "to": 58
+          },
+          "score": -3131,
+          "winRate": null,
+          "depth": 2,
+          "nodes": 3712,
+          "samples": 4,
+          "elapsedMs": 155,
+          "firstResultMs": 15,
+          "reveal": null,
+          "capture": "B",
+          "flags": []
+        },
+        {
+          "ply": 43,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 419042,
+          "budgetMs": 150,
+          "move": {
+            "from": 67,
+            "to": 68
+          },
+          "score": 2949.0000000000005,
+          "winRate": 99.27177029841037,
+          "depth": 2,
+          "nodes": 13312,
+          "samples": 8,
+          "elapsedMs": 152,
+          "firstResultMs": 13,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 44,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 419043,
+          "budgetMs": 150,
+          "move": {
+            "from": 58,
+            "to": 59
+          },
+          "score": -3135,
+          "winRate": null,
+          "depth": 2,
+          "nodes": 4096,
+          "samples": 4,
+          "elapsedMs": 153,
+          "firstResultMs": 4,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 45,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 419044,
+          "budgetMs": 150,
+          "move": {
+            "from": 68,
+            "to": 67
+          },
+          "score": 2965.000000000006,
+          "winRate": 99.29079721406102,
+          "depth": 2,
+          "nodes": 14080,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 17,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 46,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 419045,
+          "budgetMs": 150,
+          "move": {
+            "from": 59,
+            "to": 58
+          },
+          "score": -3131,
+          "winRate": null,
+          "depth": 2,
+          "nodes": 3584,
+          "samples": 4,
+          "elapsedMs": 154,
+          "firstResultMs": 5,
+          "reveal": null,
+          "capture": null,
+          "flags": [
+            "局面重复"
+          ]
+        },
+        {
+          "ply": 47,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 419046,
+          "budgetMs": 150,
+          "move": {
+            "from": 67,
+            "to": 68
+          },
+          "score": 2949.0000000000005,
+          "winRate": 99.27177029841037,
+          "depth": 2,
+          "nodes": 12672,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 14,
+          "reveal": null,
+          "capture": null,
+          "flags": [
+            "局面重复"
+          ]
+        },
+        {
+          "ply": 48,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 419047,
+          "budgetMs": 150,
+          "move": {
+            "from": 58,
+            "to": 59
+          },
+          "score": -3135,
+          "winRate": null,
+          "depth": 2,
+          "nodes": 4096,
+          "samples": 4,
+          "elapsedMs": 156,
+          "firstResultMs": 4,
+          "reveal": null,
+          "capture": null,
+          "flags": [
+            "局面重复"
+          ]
+        },
+        {
+          "ply": 49,
+          "side": "r",
+          "engine": "new",
+          "decisionSeed": 419048,
+          "budgetMs": 150,
+          "move": {
+            "from": 68,
+            "to": 67
+          },
+          "score": 2965.000000000006,
+          "winRate": 99.29079721406102,
+          "depth": 2,
+          "nodes": 13312,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 18,
+          "reveal": null,
+          "capture": null,
+          "flags": [
+            "局面重复"
+          ]
+        },
+        {
+          "ply": 50,
+          "side": "b",
+          "engine": "old",
+          "decisionSeed": 419049,
+          "budgetMs": 150,
+          "move": {
+            "from": 59,
+            "to": 58
+          },
+          "score": -3131,
+          "winRate": null,
+          "depth": 2,
+          "nodes": 3840,
+          "samples": 4,
+          "elapsedMs": 156,
+          "firstResultMs": 5,
+          "reveal": null,
+          "capture": null,
+          "flags": [
+            "局面重复"
+          ]
+        }
+      ]
+    },
+    {
+      "seed": 419,
+      "newSide": "b",
+      "budgetMs": 150,
+      "result": {
+        "winner": "r",
+        "text": "将死"
+      },
+      "plies": 59,
+      "log": [
+        {
+          "ply": 1,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419000,
+          "budgetMs": 150,
+          "move": {
+            "from": 82,
+            "to": 65
+          },
+          "score": 87,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 1664,
+          "samples": 4,
+          "elapsedMs": 160,
+          "firstResultMs": 127,
+          "reveal": "N",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 2,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 419001,
+          "budgetMs": 150,
+          "move": {
+            "from": 25,
+            "to": 88
+          },
+          "score": -20.15772192081998,
+          "winRate": 49.16017391146285,
+          "depth": 1,
+          "nodes": 13696,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 25,
+          "reveal": "A",
+          "capture": "unknown",
+          "flags": []
+        },
+        {
+          "ply": 3,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419002,
+          "budgetMs": 150,
+          "move": {
+            "from": 89,
+            "to": 88
+          },
+          "score": 164,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2048,
+          "samples": 4,
+          "elapsedMs": 153,
+          "firstResultMs": 15,
+          "reveal": "B",
+          "capture": "A",
+          "flags": []
+        },
+        {
+          "ply": 4,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 419003,
+          "budgetMs": 150,
+          "move": {
+            "from": 19,
+            "to": 22
+          },
+          "score": 125.26144096825391,
+          "winRate": 55.20035250580182,
+          "depth": 1,
+          "nodes": 11904,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 7,
+          "reveal": "R",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 5,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419004,
+          "budgetMs": 150,
+          "move": {
+            "from": 83,
+            "to": 67
+          },
+          "score": -129,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 1920,
+          "samples": 4,
+          "elapsedMs": 159,
+          "firstResultMs": 10,
+          "reveal": "C",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 6,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 419005,
+          "budgetMs": 150,
+          "move": {
+            "from": 31,
+            "to": 40
+          },
+          "score": 117.55706191305421,
+          "winRate": 54.88260147452962,
+          "depth": 1,
+          "nodes": 13184,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 9,
+          "reveal": "P",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 7,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419006,
+          "budgetMs": 150,
+          "move": {
+            "from": 70,
+            "to": 16
+          },
+          "score": -158,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2048,
+          "samples": 4,
+          "elapsedMs": 152,
+          "firstResultMs": 16,
+          "reveal": "P",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 8,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 419007,
+          "budgetMs": 150,
+          "move": {
+            "from": 27,
+            "to": 36
+          },
+          "score": -16.73777050606277,
+          "winRate": 49.30263811906736,
+          "depth": 1,
+          "nodes": 10368,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 30,
+          "reveal": "P",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 9,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419008,
+          "budgetMs": 150,
+          "move": {
+            "from": 86,
+            "to": 76
+          },
+          "score": -91,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2560,
+          "samples": 4,
+          "elapsedMs": 156,
+          "firstResultMs": 17,
+          "reveal": "A",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 10,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 419009,
+          "budgetMs": 150,
+          "move": {
+            "from": 33,
+            "to": 42
+          },
+          "score": 12.466592912949611,
+          "winRate": 50.51942268480267,
+          "depth": 1,
+          "nodes": 9856,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 27,
+          "reveal": "A",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 11,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419010,
+          "budgetMs": 150,
+          "move": {
+            "from": 56,
+            "to": 47
+          },
+          "score": -110,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 1664,
+          "samples": 4,
+          "elapsedMs": 156,
+          "firstResultMs": 17,
+          "reveal": "P",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 12,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 419011,
+          "budgetMs": 150,
+          "move": {
+            "from": 35,
+            "to": 44
+          },
+          "score": -18.17705217957581,
+          "winRate": 49.2426807467796,
+          "depth": 1,
+          "nodes": 13440,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 27,
+          "reveal": "N",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 13,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419012,
+          "budgetMs": 150,
+          "move": {
+            "from": 16,
+            "to": 7
+          },
+          "score": -242.5,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 1024,
+          "samples": 4,
+          "elapsedMs": 218,
+          "firstResultMs": 24,
+          "reveal": null,
+          "capture": "unknown",
+          "flags": []
+        },
+        {
+          "ply": 14,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 419013,
+          "budgetMs": 150,
+          "move": {
+            "from": 8,
+            "to": 7
+          },
+          "score": -18.30562967920269,
+          "winRate": 49.237324588730985,
+          "depth": 1,
+          "nodes": 5632,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 94,
+          "reveal": "C",
+          "capture": "P",
+          "flags": []
+        },
+        {
+          "ply": 15,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419014,
+          "budgetMs": 150,
+          "move": {
+            "from": 62,
+            "to": 53
+          },
+          "score": -220,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 1152,
+          "samples": 4,
+          "elapsedMs": 155,
+          "firstResultMs": 36,
+          "reveal": "R",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 16,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 419015,
+          "budgetMs": 150,
+          "move": {
+            "from": 44,
+            "to": 33
+          },
+          "score": -67.99999999999979,
+          "winRate": 47.16969549241713,
+          "depth": 1,
+          "nodes": 12416,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 27,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 17,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419016,
+          "budgetMs": 150,
+          "move": {
+            "from": 87,
+            "to": 71
+          },
+          "score": 295,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 1664,
+          "samples": 4,
+          "elapsedMs": 157,
+          "firstResultMs": 38,
+          "reveal": "P",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 18,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 419017,
+          "budgetMs": 150,
+          "move": {
+            "from": 0,
+            "to": 27
+          },
+          "score": -47.94317241194455,
+          "winRate": 48.00343002061627,
+          "depth": 1,
+          "nodes": 12672,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 22,
+          "reveal": "P",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 19,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419018,
+          "budgetMs": 150,
+          "move": {
+            "from": 64,
+            "to": 10
+          },
+          "score": 189.5,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 1920,
+          "samples": 4,
+          "elapsedMs": 162,
+          "firstResultMs": 27,
+          "reveal": "A",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 20,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 419019,
+          "budgetMs": 150,
+          "move": {
+            "from": 7,
+            "to": 70
+          },
+          "score": -33.619047619082245,
+          "winRate": 48.59957272342177,
+          "depth": 1,
+          "nodes": 11008,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 31,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 21,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419020,
+          "budgetMs": 150,
+          "move": {
+            "from": 81,
+            "to": 83
+          },
+          "score": 101,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 1280,
+          "samples": 4,
+          "elapsedMs": 156,
+          "firstResultMs": 125,
+          "reveal": "B",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 22,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 419021,
+          "budgetMs": 150,
+          "move": {
+            "from": 70,
+            "to": 65
+          },
+          "score": 87.42857142856495,
+          "winRate": 53.636425172469174,
+          "depth": 1,
+          "nodes": 11520,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 45,
+          "reveal": null,
+          "capture": "N",
+          "flags": [
+            "公开大子被吃（需区分交换/弃子）"
+          ]
+        },
+        {
+          "ply": 23,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419022,
+          "budgetMs": 150,
+          "move": {
+            "from": 10,
+            "to": 0
+          },
+          "score": 0,
+          "winRate": null,
+          "depth": 0,
+          "nodes": 512,
+          "samples": 4,
+          "elapsedMs": 151,
+          "firstResultMs": null,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 24,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 419023,
+          "budgetMs": 150,
+          "move": {
+            "from": 2,
+            "to": 18
+          },
+          "score": 450.11435150041393,
+          "winRate": 67.92202254563051,
+          "depth": 1,
+          "nodes": 6272,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 25,
+          "reveal": "P",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 25,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419024,
+          "budgetMs": 150,
+          "move": {
+            "from": 60,
+            "to": 51
+          },
+          "score": -338.5,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 896,
+          "samples": 4,
+          "elapsedMs": 158,
+          "firstResultMs": 118,
+          "reveal": "R",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 26,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 419025,
+          "budgetMs": 150,
+          "move": {
+            "from": 22,
+            "to": 25
+          },
+          "score": 283.16666666665685,
+          "winRate": 61.58438769373929,
+          "depth": 1,
+          "nodes": 7808,
+          "samples": 8,
+          "elapsedMs": 153,
+          "firstResultMs": 47,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 27,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419026,
+          "budgetMs": 150,
+          "move": {
+            "from": 88,
+            "to": 68
+          },
+          "score": 156,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 1306,
+          "samples": 4,
+          "elapsedMs": 153,
+          "firstResultMs": 153,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 28,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 419027,
+          "budgetMs": 150,
+          "move": {
+            "from": 25,
+            "to": 43
+          },
+          "score": 287.16666666665685,
+          "winRate": 61.74198552919973,
+          "depth": 1,
+          "nodes": 9984,
+          "samples": 8,
+          "elapsedMs": 152,
+          "firstResultMs": 41,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 29,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419028,
+          "budgetMs": 150,
+          "move": {
+            "from": 71,
+            "to": 62
+          },
+          "score": 164,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 1920,
+          "samples": 4,
+          "elapsedMs": 152,
+          "firstResultMs": 57,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 30,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 419029,
+          "budgetMs": 150,
+          "move": {
+            "from": 1,
+            "to": 20
+          },
+          "score": 290.07628660906227,
+          "winRate": 61.856468254750276,
+          "depth": 1,
+          "nodes": 12416,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 33,
+          "reveal": "P",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 31,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419030,
+          "budgetMs": 150,
+          "move": {
+            "from": 58,
+            "to": 49
+          },
+          "score": 381.5,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2816,
+          "samples": 4,
+          "elapsedMs": 152,
+          "firstResultMs": 37,
+          "reveal": "P",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 32,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 419031,
+          "budgetMs": 150,
+          "move": {
+            "from": 5,
+            "to": 13
+          },
+          "score": 111.15355522975894,
+          "winRate": 54.61819773096626,
+          "depth": 1,
+          "nodes": 13568,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 65,
+          "reveal": "B",
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 33,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419032,
+          "budgetMs": 150,
+          "move": {
+            "from": 67,
+            "to": 40
+          },
+          "score": 475,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 3200,
+          "samples": 4,
+          "elapsedMs": 150,
+          "firstResultMs": 66,
+          "reveal": null,
+          "capture": "P",
+          "flags": []
+        },
+        {
+          "ply": 34,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 419033,
+          "budgetMs": 150,
+          "move": {
+            "from": 33,
+            "to": 40
+          },
+          "score": 61.95682229615956,
+          "winRate": 52.57924281656182,
+          "depth": 3,
+          "nodes": 12288,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 2,
+          "reveal": null,
+          "capture": "C",
+          "flags": [
+            "公开大子被吃（需区分交换/弃子）"
+          ]
+        },
+        {
+          "ply": 35,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419034,
+          "budgetMs": 150,
+          "move": {
+            "from": 49,
+            "to": 40
+          },
+          "score": 475,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 3328,
+          "samples": 4,
+          "elapsedMs": 152,
+          "firstResultMs": 26,
+          "reveal": null,
+          "capture": "N",
+          "flags": [
+            "公开大子被吃（需区分交换/弃子）"
+          ]
+        },
+        {
+          "ply": 36,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 419035,
+          "budgetMs": 150,
+          "move": {
+            "from": 4,
+            "to": 5
+          },
+          "score": 14.6666666666569,
+          "winRate": 50.61108068311634,
+          "depth": 2,
+          "nodes": 8448,
+          "samples": 8,
+          "elapsedMs": 152,
+          "firstResultMs": 10,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 37,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419036,
+          "budgetMs": 150,
+          "move": {
+            "from": 40,
+            "to": 31
+          },
+          "score": 487,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2048,
+          "samples": 4,
+          "elapsedMs": 156,
+          "firstResultMs": 60,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 38,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 419037,
+          "budgetMs": 150,
+          "move": {
+            "from": 5,
+            "to": 4
+          },
+          "score": 14.6666666666569,
+          "winRate": 50.61108068311634,
+          "depth": 1,
+          "nodes": 8320,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 11,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 39,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419038,
+          "budgetMs": 150,
+          "move": {
+            "from": 53,
+            "to": 8
+          },
+          "score": 497,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 1536,
+          "samples": 4,
+          "elapsedMs": 170,
+          "firstResultMs": 35,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 40,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 419039,
+          "budgetMs": 150,
+          "move": {
+            "from": 65,
+            "to": 67
+          },
+          "score": -455.3333333333431,
+          "winRate": 31.88875490536867,
+          "depth": 2,
+          "nodes": 7808,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 23,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 41,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419040,
+          "budgetMs": 150,
+          "move": {
+            "from": 83,
+            "to": 67
+          },
+          "score": 1617,
+          "winRate": null,
+          "depth": 2,
+          "nodes": 1920,
+          "samples": 4,
+          "elapsedMs": 151,
+          "firstResultMs": 2,
+          "reveal": null,
+          "capture": "C",
+          "flags": [
+            "公开大子被吃（需区分交换/弃子）",
+            "同方评分变化超过900分"
+          ]
+        },
+        {
+          "ply": 42,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 419041,
+          "budgetMs": 150,
+          "move": {
+            "from": 43,
+            "to": 88
+          },
+          "score": -1363.333333333343,
+          "winRate": 9.344978225593886,
+          "depth": 2,
+          "nodes": 8576,
+          "samples": 8,
+          "elapsedMs": 153,
+          "firstResultMs": 11,
+          "reveal": null,
+          "capture": null,
+          "flags": [
+            "同方评分变化超过900分"
+          ]
+        },
+        {
+          "ply": 43,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419042,
+          "budgetMs": 150,
+          "move": {
+            "from": 68,
+            "to": 88
+          },
+          "score": 2525,
+          "winRate": null,
+          "depth": 3,
+          "nodes": 2304,
+          "samples": 4,
+          "elapsedMs": 151,
+          "firstResultMs": 3,
+          "reveal": null,
+          "capture": "R",
+          "flags": [
+            "公开大子被吃（需区分交换/弃子）",
+            "同方评分变化超过900分"
+          ]
+        },
+        {
+          "ply": 44,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 419043,
+          "budgetMs": 150,
+          "move": {
+            "from": 4,
+            "to": 5
+          },
+          "score": -2353.333333333343,
+          "winRate": 1.9412737397763529,
+          "depth": 2,
+          "nodes": 9344,
+          "samples": 8,
+          "elapsedMs": 153,
+          "firstResultMs": 7,
+          "reveal": null,
+          "capture": null,
+          "flags": [
+            "同方评分变化超过900分"
+          ]
+        },
+        {
+          "ply": 45,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419044,
+          "budgetMs": 150,
+          "move": {
+            "from": 8,
+            "to": 6
+          },
+          "score": 2525,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 3328,
+          "samples": 4,
+          "elapsedMs": 152,
+          "firstResultMs": 7,
+          "reveal": null,
+          "capture": "unknown",
+          "flags": []
+        },
+        {
+          "ply": 46,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 419045,
+          "budgetMs": 150,
+          "move": {
+            "from": 5,
+            "to": 14
+          },
+          "score": -2356.311769237905,
+          "winRate": 1.9318467225836626,
+          "depth": 3,
+          "nodes": 8832,
+          "samples": 8,
+          "elapsedMs": 152,
+          "firstResultMs": 2,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 47,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419046,
+          "budgetMs": 150,
+          "move": {
+            "from": 6,
+            "to": 3
+          },
+          "score": 2525,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 1536,
+          "samples": 4,
+          "elapsedMs": 162,
+          "firstResultMs": 22,
+          "reveal": null,
+          "capture": "unknown",
+          "flags": []
+        },
+        {
+          "ply": 48,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 419047,
+          "budgetMs": 150,
+          "move": {
+            "from": 36,
+            "to": 45
+          },
+          "score": -2520.308245680521,
+          "winRate": 1.4766555640330865,
+          "depth": 2,
+          "nodes": 6528,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 6,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 49,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419048,
+          "budgetMs": 150,
+          "move": {
+            "from": 54,
+            "to": 45
+          },
+          "score": 2731.5,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 1280,
+          "samples": 4,
+          "elapsedMs": 168,
+          "firstResultMs": 46,
+          "reveal": "P",
+          "capture": "P",
+          "flags": []
+        },
+        {
+          "ply": 50,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 419049,
+          "budgetMs": 150,
+          "move": {
+            "from": 27,
+            "to": 36
+          },
+          "score": -2644,
+          "winRate": 1.2048818655773852,
+          "depth": 2,
+          "nodes": 4736,
+          "samples": 8,
+          "elapsedMs": 154,
+          "firstResultMs": 5,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 51,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419050,
+          "budgetMs": 150,
+          "move": {
+            "from": 45,
+            "to": 36
+          },
+          "score": 2704,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2048,
+          "samples": 4,
+          "elapsedMs": 157,
+          "firstResultMs": 48,
+          "reveal": null,
+          "capture": "P",
+          "flags": []
+        },
+        {
+          "ply": 52,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 419051,
+          "budgetMs": 150,
+          "move": {
+            "from": 18,
+            "to": 27
+          },
+          "score": -2790,
+          "winRate": 0.9471043581946108,
+          "depth": 2,
+          "nodes": 9728,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 4,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 53,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419052,
+          "budgetMs": 150,
+          "move": {
+            "from": 36,
+            "to": 27
+          },
+          "score": 2850,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 2432,
+          "samples": 4,
+          "elapsedMs": 155,
+          "firstResultMs": 26,
+          "reveal": null,
+          "capture": "P",
+          "flags": []
+        },
+        {
+          "ply": 54,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 419053,
+          "budgetMs": 150,
+          "move": {
+            "from": 13,
+            "to": 33
+          },
+          "score": -3002,
+          "winRate": 0.667072713527815,
+          "depth": 2,
+          "nodes": 11136,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 3,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 55,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419054,
+          "budgetMs": 150,
+          "move": {
+            "from": 51,
+            "to": 42
+          },
+          "score": 3062,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 4352,
+          "samples": 4,
+          "elapsedMs": 152,
+          "firstResultMs": 9,
+          "reveal": null,
+          "capture": "A",
+          "flags": []
+        },
+        {
+          "ply": 56,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 419055,
+          "budgetMs": 150,
+          "move": {
+            "from": 33,
+            "to": 49
+          },
+          "score": -3026.6529441148778,
+          "winRate": 0.6403912934202364,
+          "depth": 3,
+          "nodes": 14336,
+          "samples": 8,
+          "elapsedMs": 151,
+          "firstResultMs": 2,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 57,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419056,
+          "budgetMs": 150,
+          "move": {
+            "from": 42,
+            "to": 15
+          },
+          "score": 3068,
+          "winRate": null,
+          "depth": 2,
+          "nodes": 4992,
+          "samples": 4,
+          "elapsedMs": 152,
+          "firstResultMs": 5,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 58,
+          "side": "b",
+          "engine": "new",
+          "decisionSeed": 419057,
+          "budgetMs": 150,
+          "move": {
+            "from": 14,
+            "to": 23
+          },
+          "score": -3594.878728264789,
+          "winRate": 0,
+          "depth": 3,
+          "nodes": 13952,
+          "samples": 8,
+          "elapsedMs": 150,
+          "firstResultMs": 1,
+          "reveal": null,
+          "capture": null,
+          "flags": []
+        },
+        {
+          "ply": 59,
+          "side": "r",
+          "engine": "old",
+          "decisionSeed": 419058,
+          "budgetMs": 150,
+          "move": {
+            "from": 3,
+            "to": 5
+          },
+          "score": 98999,
+          "winRate": null,
+          "depth": 1,
+          "nodes": 220,
+          "samples": 4,
+          "elapsedMs": 4,
+          "firstResultMs": 4,
+          "reveal": null,
+          "capture": null,
+          "flags": [
+            "同方评分变化超过900分"
+          ]
+        }
+      ]
+    }
+  ],
+  "suspectCount": 37,
+  "note": "固定真实布子和逐步采样种子；限时截断会受硬件影响，4局不构成棋力评级。"
+}
