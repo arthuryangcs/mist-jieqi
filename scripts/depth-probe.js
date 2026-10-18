@@ -1,0 +1,9 @@
+import fs from'node:fs';import{createHash}from'node:crypto';
+import {fileURLToPath} from 'node:url';
+const root=fileURLToPath(new URL('..',import.meta.url)).replace(/\/$/,'');
+const{initial,publicState,inCheck,legalMoves}=await import(root+'/engine.js');const{seeded}=await import(root+'/ai.js');const{NodeSearchEngine}=await import(root+'/scripts/node-search-engine.js');
+const board=Array(90).fill(null),put=(i,side,type)=>board[i]={side,type,role:type,hidden:false};for(const [i,s,t]of[[85,'r','K'],[4,'b','K'],[49,'r','P'],[72,'r','R'],[65,'r','N'],[83,'r','B'],[17,'b','R'],[24,'b','N'],[40,'b','P'],[6,'b','B']])put(i,s,t);
+const ending={board,turn:'r',captured:[],ply:0,quiet:0,positions:[],result:null};if(inCheck(board,'b'))throw Error('invalid ending');
+const mid=JSON.parse(fs.readFileSync(root+'/benchmarks/strength-positions.json'))[1].view;
+const positions=[{name:'开局全暗',view:publicState(initial(seeded(17)),'r')},{name:'可达中局seed2111第20步',view:mid},{name:'全明10子残局',view:publicState(ending,'r')}];
+const rows=[],engine=new NodeSearchEngine();try{await engine.ready();for(const p of positions)for(const budget of[1000,2000,6000,15000]){const r=await engine.search(p.view,budget);const row={position:p.name,budgetMs:budget,depth:r.depth,samples:r.samples,nodes:r.nodes,elapsedMs:r.elapsedMs,searchElapsedMs:r.searchElapsedMs,deadlineStop:r.deadlineStop||false,fallback:r.fallbackUsed||false,move:r.move};rows.push(row);fs.writeFileSync(process.env.JIEQI_DEPTH_OUTPUT||root+'/benchmarks/depth-replay.json',JSON.stringify({aiSha256:createHash('sha256').update(fs.readFileSync(root+'/ai.js')).digest('hex'),protocol:'默认8样本；全明自动1样本；同一宿主控制器。depth是最后完整主搜索层数，不含qsearch/应将延伸；未记录最后未完成轮次的具体层数。每位置预算仅1次，不作深度保证。',positions,rows},null,2)+'\n');console.log(JSON.stringify(row));}}finally{await engine.close();}

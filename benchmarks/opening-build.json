@@ -1,0 +1,27 @@
+{
+  "baselineCommit": "3a46d42e01611b09921f014d7c74a5bc3b90a80c",
+  "sourceHashes": {
+    "ai.js": "66bca44c185829ab7a42d5432fc8323c2937fed2be475ced46a654a7a2e1c18e",
+    "worker.js": "142d5a89fa58b226c84dcb427b713941f337451687f0349ec96e6354388723c9",
+    "scripts/node-search-worker.js": "46bf185d0a96fe5d43a5b7ad64231bf9e6b21ad3d31618ad2c980e8efa088e3c",
+    "scripts/node-search-engine.js": "27a1594843492e0af2f0fb4b588a0ccb5207708110f7c85a242155fc1c12e469",
+    "deadline-search.js": "13386f0a0c7dbb6a36e35256cd6dbac36055f8c147597acdfc73af2ea24c3666"
+  },
+  "defaultFeatures": {
+    "revealOrdering": true,
+    "mobility": false
+  },
+  "semantics": "只增加通用根访问排序；不按兵位、首手或开局专门加分。活动度估值试验默认关闭。",
+  "evidence": [
+    "benchmarks/opening-final.json",
+    "benchmarks/opening-higher-budget.json",
+    "benchmarks/opening-validation.json",
+    "benchmarks/opening-branches.json",
+    "benchmarks/depth-current.json",
+    "benchmarks/depth-incomplete.json"
+  ],
+  "unitTestsPassed": 82,
+  "browserFlowsPassed": 16,
+  "browserPassed": true,
+  "publication": "本地验证提交；尚未push。"
+}

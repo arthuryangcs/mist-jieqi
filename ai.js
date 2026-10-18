@@ -13,12 +13,24 @@ function means(s){return ['r','b'].map(side=>{let pool=remaining(s,side);return 
 const jumps=Array.from({length:90},(_,i)=>{const x=i%9,y=(i/9)|0,make=(steps)=>steps.flatMap(([dx,dy])=>{let u=x+dx,v=y+dy;if(u<0||u>8||v<0||v>9)return [];return [[v*9+u,Math.abs(dx)+Math.abs(dy)===3?(y+(Math.abs(dy)===2?Math.sign(dy):0))*9+x+(Math.abs(dx)===2?Math.sign(dx):0):(y+dy/2)*9+x+dx/2]];});return {N:make([[1,2],[2,1],[-1,2],[-2,1],[1,-2],[2,-1],[-1,-2],[-2,-1]]),B:make([[2,2],[2,-2],[-2,2],[-2,-2]]),A:make([[1,1],[1,-1],[-1,1],[-1,-1]])};});
 const rayDirections=[[1,0],[-1,0],[0,1],[0,-1]];
 function mobility(board,p,i,fullSliding=false){
- if(p.type==='N'||p.type==='B'||p.type==='A'){let n=0;for(const [to,block] of jumps[i][p.type])if((p.type==='A'||!board[block])&&board[to]?.side!==p.side)n++;return n;}
+ if(p.type==='P'){const x=i%9,y=(i/9)|0,forward=p.side==='r'?-1:1;let n=0;const v=y+forward;if(v>=0&&v<10&&board[v*9+x]?.side!==p.side)n++;if(p.side==='r'?y<=4:y>=5)for(const u of [x-1,x+1])if(u>=0&&u<9&&board[y*9+u]?.side!==p.side)n++;return n;}
+ if(p.type==='N'||p.type==='B'||p.type==='A'){let n=0;for(const [to,block] of jumps[i][p.type]){const u=to%9,v=(to/9)|0,allowed=!p.hidden||(p.type==='A'?u>=3&&u<=5&&(p.side==='r'?v>=7:v<=2):p.type!=='B'||(p.side==='r'?v>=5:v<=4));if(allowed&&(p.type==='A'||!board[block])&&board[to]?.side!==p.side)n++;}return n;}
  if(p.type!=='R'&&p.type!=='C')return 0;
  let n=0,x=i%9,y=(i/9)|0;
  if(!fullSliding){for(const [dx,dy] of rayDirections){const u=x+dx,v=y+dy;if(u<0||u>8||v<0||v>9)continue;const q=board[v*9+u];if(p.type==='R'?q?.side!==p.side:!q)n++;}return n;}
  for(const [dx,dy] of rayDirections){let screen=false;for(let u=x+dx,v=y+dy;u>=0&&u<9&&v>=0&&v<10;u+=dx,v+=dy){const q=board[v*9+u];if(p.type==='R'){if(q?.side!==p.side)n++;if(q)break;}else if(!screen){if(q)screen=true;else n++;}else if(q){if(q.side!==p.side)n+=2;break;}}}
  return n;
+}
+// A move-ordering estimate only: average over the observer's remaining identities.
+// It values options gained at the destination minus the public role's options used
+// up by revealing. No original-square, pawn-role, opening or first-move preference.
+export function revealOrderingValue(view,m){
+ const p=view.board[m.from];if(!p?.hidden)return 0;
+ const pool=remaining(view,p.side);if(!pool.length)return 0;
+ const before=mobility(view.board,{...p,type:p.role},m.from,true),board=[...view.board];
+ board[m.from]=null;let after=0;
+ for(const type of pool){const revealed={side:p.side,type,hidden:false};board[m.to]=revealed;after+=mobility(board,revealed,m.to,true);}
+ return 3*(after/pool.length-before);
 }
 function simpleEvaluate(s,side,pools){
  const config=s._config||{},safety=config.safety!==false,leapers=config.leaperActivity===true;let val=0,phase=0,kings=s._kings;
@@ -31,6 +43,9 @@ function simpleEvaluate(s,side,pools){
    if(safety&&(p.type==='A'||p.type==='B')){const king=kings[p.side];if(king!==undefined&&Math.abs(x-king%9)+Math.abs(y-((king/9)|0))<=2)bonus+=phase*8;}
    if(leapers&&p.type==='N')bonus+=(mobility(s.board,p,i)-4)*3;
   }
+  // The same mobility value applies to every non-king: a dark piece retains its
+  // public role's one-move options; after revealing, its actual movement replaces them.
+  if(config.mobility&&(p.hidden||p.type!=='K'))bonus+=Math.min(14,mobility(s.board,p.hidden?{...p,type:p.role}:p,i,true))*3;
   val+=(p.side===side?1:-1)*((p.hidden?(pool[0]?pool[1]/pool[0]:0):values[p.type])+bonus);
  }
  return val;
@@ -66,9 +81,10 @@ const probability=v=>v>98000?1:v< -98000?0:1/(1+Math.exp(-v/600));
 // Terminal outcomes are probabilities, not 99,000 points of imaginary material.
 export function summarizeScores(scores,uncertain){let winRate=scores.reduce((a,v)=>a+probability(v),0)/scores.length;let finite=scores.map(v=>Math.max(-3600,Math.min(3600,v))),mean=finite.reduce((a,b)=>a+b,0)/finite.length;return {score:uncertain?600*Math.log(Math.max(.0025,winRate)/Math.max(.0025,1-winRate)):scores[0],spread:Math.sqrt(finite.reduce((a,v)=>a+(v-mean)**2,0)/finite.length),heuristicWinRate:winRate*100,sampleWins:scores.filter(v=>v>98000).length,sampleLosses:scores.filter(v=>v< -98000).length};}
 export function analyze(view,{timeMs=1800,rng,seed,maxDepth=8,samples=8,nodeLimit=Infinity,onProgress=()=>{},features={}}={}){
-const config={captureKnowledge:true,inventoryOrdering:true,activity:false,safety:true,leaperActivity:false,slidingMobility:false,checkExtensions:true,killers:true,...features};
+const config={captureKnowledge:true,inventoryOrdering:true,activity:false,safety:true,leaperActivity:false,slidingMobility:false,mobility:false,revealOrdering:true,checkExtensions:true,killers:true,...features};
 const start=performance.now(),deadline=start+Math.max(0,timeMs-Math.min(35,timeMs*.10));let nodes=0;const root=legalMoves(view);if(!root.length)return {move:null,candidates:[],score:-99999,heuristicWinRate:0,depth:0,samples:0,nodes:0,elapsedMs:0,terminal:true};
-const rootContext={...view,_pools:means(view),_config:config};if(config.inventoryOrdering)root.sort((a,b)=>priority(rootContext,b)-priority(rootContext,a));
+const rootContext={...view,_pools:means(view),_config:config},revealOrder=new Map(config.revealOrdering?root.map(m=>[m.from*90+m.to,revealOrderingValue(view,m)]):[]);
+if(config.inventoryOrdering||config.revealOrdering){const rank=m=>(config.inventoryOrdering?priority(rootContext,m):0)+(revealOrder.get(m.from*90+m.to)||0);root.sort((a,b)=>rank(b)-rank(a));}
 const uncertain=view.board.some(p=>p?.hidden);rng??=seeded(seed??hashText(visibleKey(view)));let worlds=balancedSamples(view,uncertain?samples:1,rng),tables=new WeakMap(),history=new Uint32Array(16200),killers=[];
 for(let s of worlds){s._h1=0;s._h2=0;s._config=config;s._viewer=config.captureKnowledge?(view.viewer??null):null;s._pools=means(s);s._population=0;s._kings={};s.board.forEach((p,i)=>{xor(s,p,i);if(p){if(!p.hidden&&p.type==='K')s._kings[p.side]=i;else s._population++;}});s._path=new Set([searchKey(s)]);s._cycles=0;tables.set(s,new Map());}
 function tick(){nodes++;if(nodes>nodeLimit||((nodes&7)===0&&performance.now()>deadline))throw TIMEOUT;}

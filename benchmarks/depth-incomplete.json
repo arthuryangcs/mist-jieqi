@@ -1,0 +1,39 @@
+{
+  "sourceSha256": "66bca44c185829ab7a42d5432fc8323c2937fed2be475ced46a654a7a2e1c18e",
+  "protocol": "仅对既有TIMEOUT catch增加记录变量；模块在内存生成，不覆盖生产源码。每类局面额外1次1秒探针；其余预算没有中断轮次观测，不据此回填。",
+  "rows": [
+    {
+      "position": "开局全暗",
+      "budgetMs": 1000,
+      "depth": 2,
+      "interruptedDepth": 3,
+      "samples": 8,
+      "nodes": 69872,
+      "elapsedMs": 969,
+      "deadlineStop": false,
+      "fallback": false
+    },
+    {
+      "position": "可达中局seed2111第20步",
+      "budgetMs": 1000,
+      "depth": 3,
+      "interruptedDepth": 4,
+      "samples": 8,
+      "nodes": 69808,
+      "elapsedMs": 966,
+      "deadlineStop": false,
+      "fallback": false
+    },
+    {
+      "position": "全明10子残局",
+      "budgetMs": 1000,
+      "depth": 4,
+      "interruptedDepth": 5,
+      "samples": 1,
+      "nodes": 81264,
+      "elapsedMs": 967,
+      "deadlineStop": false,
+      "fallback": false
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "commit": "bcc83f88ee18760e60903d1a3aaa61ef6f70f2c9",
+  "binarySha256": "f32d3c6dfe4d6d90da7728d9cc2af68c3195a1cefb1bc28f3829f174c518dba1",
+  "staticInspection": {
+    "wholeDarkPiecesReset": true,
+    "initializeWhiteThenBlack": true,
+    "note": "代码路径静态确认不等于已经证明每一实战分数的误差来源。没有修改或重编译该外部引擎。"
+  },
+  "protocol": "固定6个可达公开局面，各自旋转180度并交换红黑和私人库存；直接FEN eval，记录white视角分数之和。不是搜索对赛，也不据此否定既有对局合法性或把其余评估项当真值。",
+  "rows": [
+    {
+      "seed": 5003,
+      "ply": 8,
+      "pair": [
+        {
+          "fen": "x1xxk2xx/4n4/b3p2x1/x1x1x1x1x/9/2A6/Xp2X1X1X/4C2X1/4K4/XXXX1XXXX w R2A1C1P5N2B2r2a2c2p3n1b1 0 5",
+          "finalLine": "Final evaluation       +5.16 (white side) [with scaled NNUE, optimism, ...]",
+          "whiteScore": 5.16,
+          "threatLine": "|    Threats |  0.65  1.61 | -0.91  5.43 |  1.56 -3.82 |"
+        },
+        {
+          "fen": "xxxx1xxxx/4k4/1x2c4/x1x1x2Px/6a2/9/X1X1X1X1X/1X2P3B/4N4/XX2KXX1X b R2A2C2P3N1B1r2a1c1p5n2b2 0 5",
+          "finalLine": "Final evaluation       -3.18 (white side) [with scaled NNUE, optimism, ...]",
+          "whiteScore": -3.18,
+          "threatLine": "|    Threats | -1.61  7.06 |  0.65  1.61 | -2.26  5.45 |"
+        }
+      ],
+      "whiteScoreSum": 1.98
+    },
+    {
+      "seed": 5003,
+      "ply": 16,
+      "pair": [
+        {
+          "fen": "x1xxk2xx/9/b3p1n2/x1x1x1x1x/c8/8P/XA2X1X2/B3C2XP/4K4/XX1X1XX1X w R2A1C1P3N2B1r2a2c1p3n1b1 1 9",
+          "finalLine": "Final evaluation       +6.51 (white side) [with scaled NNUE, optimism, ...]",
+          "whiteScore": 6.51,
+          "threatLine": "|    Threats | -0.78  2.74 | -0.45  0.75 | -0.33  1.99 |"
+        },
+        {
+          "fen": "x1xx1x1xx/4k4/px2c3b/2x1x2ax/p8/8C/X1X1X1X1X/2N1P3B/9/XX2KXX1X b R2A2C1P3N1B1r2a1c1p3n2b1 1 9",
+          "finalLine": "Final evaluation       -3.65 (white side) [with scaled NNUE, optimism, ...]",
+          "whiteScore": -3.65,
+          "threatLine": "|    Threats | -0.20  1.55 | -0.78  2.74 |  0.58 -1.19 |"
+        }
+      ],
+      "whiteScoreSum": 2.86
+    },
+    {
+      "seed": 5003,
+      "ply": 24,
+      "pair": [
+        {
+          "fen": "1bxxk2xx/4n4/b3p4/x1x1x1x1x/9/4P3P/XA4XP1/B2cC3P/4K4/XX1X1XX1X w R2A1C1P1N2B1r2a2c1p3n1 2 13",
+          "finalLine": "Final evaluation       +9.36 (white side) [with scaled NNUE, optimism, ...]",
+          "whiteScore": 9.36,
+          "threatLine": "|    Threats | -0.10  0.77 | -0.97  0.36 |  0.87  0.41 |"
+        },
+        {
+          "fen": "x1xx1x1xx/4k4/p3cC2b/1px4ax/p3p4/9/X1X1X1X1X/4P3B/4N4/XX2KXXB1 b R2A2C1P3N1r2a1c1p1n2b1 2 13",
+          "finalLine": "Final evaluation       -6.73 (white side) [with scaled NNUE, optimism, ...]",
+          "whiteScore": -6.73,
+          "threatLine": "|    Threats | -0.10  0.77 | -0.10  0.77 |  0.00  0.00 |"
+        }
+      ],
+      "whiteScoreSum": 2.629999999999999
+    },
+    {
+      "seed": 5021,
+      "ply": 8,
+      "pair": [
+        {
+          "fen": "xpxxkxxxx/9/2p2p3/x3x1x1x/2p6/9/X1X1X1X1X/5C1X1/1P7/1NXXKXXXX w R2A2C1P4N1B2r2a2c2p1n2b2 0 5",
+          "finalLine": "Final evaluation       +4.69 (white side) [with scaled NNUE, optimism, ...]",
+          "whiteScore": 4.69,
+          "threatLine": "|    Threats | -0.10  0.77 | -0.10  0.77 |  0.00  0.00 |"
+        },
+        {
+          "fen": "xxxxkxxn1/7p1/1x1c5/x1x1x1x1x/9/6P2/X1X1X3X/3P2P2/9/XXXXKXXPX b R2A2C2P1N2B2r2a2c1p4n1b2 0 5",
+          "finalLine": "Final evaluation       -0.72 (white side) [with scaled NNUE, optimism, ...]",
+          "whiteScore": -0.72,
+          "threatLine": "|    Threats | -0.10  0.77 | -0.72  1.16 |  0.62 -0.38 |"
+        }
+      ],
+      "whiteScoreSum": 3.9700000000000006
+    },
+    {
+      "seed": 5021,
+      "ply": 16,
+      "pair": [
+        {
+          "fen": "xp1xkx1x1/8c/2p1cp2r/x3x1x2/2p1R3b/9/X1X3X1X/6C1R/1P7/1NXXKXXXX w A2C1P4N1B2r1a2p1n2b1 0 9",
+          "finalLine": "Final evaluation       +4.65 (white side) [with scaled NNUE, optimism, ...]",
+          "whiteScore": 4.65,
+          "threatLine": "|    Threats |  1.40  2.42 |  1.85  0.27 | -0.45  2.15 |"
+        },
+        {
+          "fen": "xxxxkxxn1/7p1/r1c6/x1x3x1x/9/B3r1P2/2X1X3X/R2PC1P2/C8/1X1XKX1PX b R1A2P1N2B1a2c1p4n1b2 0 9",
+          "finalLine": "Final evaluation       -0.52 (white side) [with scaled NNUE, optimism, ...]",
+          "whiteScore": -0.52,
+          "threatLine": "|    Threats |  2.23 -0.31 |  0.79  2.80 |  1.45 -3.11 |"
+        }
+      ],
+      "whiteScoreSum": 4.130000000000001
+    },
+    {
+      "seed": 5021,
+      "ply": 24,
+      "pair": [
+        {
+          "fen": "xp1xkx1x1/5c3/2p1cr3/x3xpx2/2p1R3b/9/X1X3X1X/1C6R/1P3K3/1NXX1XXXX w A2C1P4N1B2r1a2p1n2b1 8 13",
+          "finalLine": "Final evaluation       +4.64 (white side) [with scaled NNUE, optimism, ...]",
+          "whiteScore": 4.64,
+          "threatLine": "|    Threats |  3.29  2.96 |  1.75  1.04 |  1.54  1.92 |"
+        },
+        {
+          "fen": "xxxx1xxn1/3k3p1/r6c1/x1x3x1x/9/B3r1P2/2XPX3X/3RC1P2/3C5/1X1XKX1PX b R1A2P1N2B1a2c1p4n1b2 8 13",
+          "finalLine": "Final evaluation       -0.52 (white side) [with scaled NNUE, optimism, ...]",
+          "whiteScore": -0.52,
+          "threatLine": "|    Threats |  2.13  0.46 |  2.67  3.35 | -0.54 -2.89 |"
+        }
+      ],
+      "whiteScoreSum": 4.119999999999999
+    }
+  ]
+}

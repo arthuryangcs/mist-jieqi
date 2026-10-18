@@ -1,0 +1,846 @@
+{
+  "aiSha256": "66bca44c185829ab7a42d5432fc8323c2937fed2be475ced46a654a7a2e1c18e",
+  "protocol": "默认8样本；全明自动1样本；同一宿主控制器。depth是最后完整主搜索层数，不含qsearch/应将延伸；未记录最后未完成轮次的具体层数。每位置预算仅1次，不作深度保证。",
+  "positions": [
+    {
+      "name": "开局全暗",
+      "view": {
+        "board": [
+          {
+            "side": "b",
+            "role": "R",
+            "hidden": true
+          },
+          {
+            "side": "b",
+            "role": "N",
+            "hidden": true
+          },
+          {
+            "side": "b",
+            "role": "B",
+            "hidden": true
+          },
+          {
+            "side": "b",
+            "role": "A",
+            "hidden": true
+          },
+          {
+            "side": "b",
+            "role": "K",
+            "hidden": false,
+            "type": "K"
+          },
+          {
+            "side": "b",
+            "role": "A",
+            "hidden": true
+          },
+          {
+            "side": "b",
+            "role": "B",
+            "hidden": true
+          },
+          {
+            "side": "b",
+            "role": "N",
+            "hidden": true
+          },
+          {
+            "side": "b",
+            "role": "R",
+            "hidden": true
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "b",
+            "role": "C",
+            "hidden": true
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "b",
+            "role": "C",
+            "hidden": true
+          },
+          null,
+          {
+            "side": "b",
+            "role": "P",
+            "hidden": true
+          },
+          null,
+          {
+            "side": "b",
+            "role": "P",
+            "hidden": true
+          },
+          null,
+          {
+            "side": "b",
+            "role": "P",
+            "hidden": true
+          },
+          null,
+          {
+            "side": "b",
+            "role": "P",
+            "hidden": true
+          },
+          null,
+          {
+            "side": "b",
+            "role": "P",
+            "hidden": true
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "r",
+            "role": "P",
+            "hidden": true
+          },
+          null,
+          {
+            "side": "r",
+            "role": "P",
+            "hidden": true
+          },
+          null,
+          {
+            "side": "r",
+            "role": "P",
+            "hidden": true
+          },
+          null,
+          {
+            "side": "r",
+            "role": "P",
+            "hidden": true
+          },
+          null,
+          {
+            "side": "r",
+            "role": "P",
+            "hidden": true
+          },
+          null,
+          {
+            "side": "r",
+            "role": "C",
+            "hidden": true
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "r",
+            "role": "C",
+            "hidden": true
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "r",
+            "role": "R",
+            "hidden": true
+          },
+          {
+            "side": "r",
+            "role": "N",
+            "hidden": true
+          },
+          {
+            "side": "r",
+            "role": "B",
+            "hidden": true
+          },
+          {
+            "side": "r",
+            "role": "A",
+            "hidden": true
+          },
+          {
+            "side": "r",
+            "role": "K",
+            "hidden": false,
+            "type": "K"
+          },
+          {
+            "side": "r",
+            "role": "A",
+            "hidden": true
+          },
+          {
+            "side": "r",
+            "role": "B",
+            "hidden": true
+          },
+          {
+            "side": "r",
+            "role": "N",
+            "hidden": true
+          },
+          {
+            "side": "r",
+            "role": "R",
+            "hidden": true
+          }
+        ],
+        "turn": "r",
+        "captured": [],
+        "ply": 0,
+        "quiet": 0,
+        "result": null,
+        "positions": [],
+        "viewer": "r"
+      }
+    },
+    {
+      "name": "可达中局seed2111第20步",
+      "view": {
+        "board": [
+          {
+            "side": "b",
+            "role": "R",
+            "hidden": true
+          },
+          null,
+          {
+            "side": "b",
+            "role": "B",
+            "hidden": true
+          },
+          {
+            "side": "b",
+            "role": "A",
+            "hidden": true
+          },
+          {
+            "side": "b",
+            "role": "K",
+            "hidden": false,
+            "type": "K"
+          },
+          {
+            "side": "b",
+            "role": "A",
+            "hidden": true
+          },
+          {
+            "side": "b",
+            "role": "B",
+            "hidden": true
+          },
+          {
+            "side": "b",
+            "role": "N",
+            "hidden": false,
+            "type": "N"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "b",
+            "role": "R",
+            "hidden": false,
+            "type": "B"
+          },
+          {
+            "side": "b",
+            "role": "N",
+            "hidden": false,
+            "type": "A"
+          },
+          {
+            "side": "b",
+            "role": "C",
+            "hidden": false,
+            "type": "R"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "b",
+            "role": "P",
+            "hidden": true
+          },
+          null,
+          {
+            "side": "b",
+            "role": "P",
+            "hidden": true
+          },
+          null,
+          {
+            "side": "b",
+            "role": "P",
+            "hidden": true
+          },
+          {
+            "side": "b",
+            "role": "C",
+            "hidden": false,
+            "type": "C"
+          },
+          {
+            "side": "b",
+            "role": "P",
+            "hidden": true
+          },
+          {
+            "side": "b",
+            "role": "P",
+            "hidden": false,
+            "type": "P"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "r",
+            "role": "P",
+            "hidden": false,
+            "type": "A"
+          },
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "r",
+            "role": "P",
+            "hidden": true
+          },
+          {
+            "side": "r",
+            "role": "C",
+            "hidden": false,
+            "type": "C"
+          },
+          {
+            "side": "r",
+            "role": "P",
+            "hidden": true
+          },
+          null,
+          null,
+          null,
+          {
+            "side": "r",
+            "role": "P",
+            "hidden": true
+          },
+          null,
+          {
+            "side": "r",
+            "role": "P",
+            "hidden": true
+          },
+          {
+            "side": "r",
+            "role": "B",
+            "hidden": false,
+            "type": "N"
+          },
+          null,
+          null,
+          null,
+          {
+            "side": "r",
+            "role": "B",
+            "hidden": false,
+            "type": "P"
+          },
+          null,
+          null,
+          null,
+          {
+            "side": "r",
+            "role": "N",
+            "hidden": false,
+            "type": "N"
+          },
+          {
+            "side": "r",
+            "role": "R",
+            "hidden": false,
+            "type": "R"
+          },
+          null,
+          null,
+          {
+            "side": "r",
+            "role": "N",
+            "hidden": false,
+            "type": "P"
+          },
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "r",
+            "role": "R",
+            "hidden": false,
+            "type": "B"
+          },
+          null,
+          null,
+          null,
+          {
+            "side": "r",
+            "role": "A",
+            "hidden": true
+          },
+          {
+            "side": "r",
+            "role": "K",
+            "hidden": false,
+            "type": "K"
+          },
+          {
+            "side": "r",
+            "role": "A",
+            "hidden": true
+          },
+          null,
+          {
+            "side": "r",
+            "role": "C",
+            "hidden": false,
+            "type": "A"
+          },
+          null
+        ],
+        "turn": "r",
+        "captured": [],
+        "ply": 20,
+        "quiet": 0,
+        "result": null,
+        "positions": [
+          "[\"b\",[{\"side\":\"b\",\"role\":\"R\",\"hidden\":true},{\"side\":\"b\",\"role\":\"N\",\"hidden\":true},{\"side\":\"b\",\"role\":\"B\",\"hidden\":true},{\"side\":\"b\",\"role\":\"A\",\"hidden\":true},{\"side\":\"b\",\"role\":\"K\",\"hidden\":false,\"type\":\"K\"},{\"side\":\"b\",\"role\":\"A\",\"hidden\":true},{\"side\":\"b\",\"role\":\"B\",\"hidden\":true},{\"side\":\"b\",\"role\":\"N\",\"hidden\":true},{\"side\":\"b\",\"role\":\"R\",\"hidden\":true},null,null,null,null,null,null,null,null,null,null,{\"side\":\"b\",\"role\":\"C\",\"hidden\":true},null,null,null,null,null,{\"side\":\"b\",\"role\":\"C\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,null,null,null,null,null,null,null,null,null,null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":false,\"type\":\"A\"},null,null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"C\",\"hidden\":true},null,null,null,null,null,{\"side\":\"r\",\"role\":\"C\",\"hidden\":true},null,null,null,null,null,null,null,null,null,null,{\"side\":\"r\",\"role\":\"R\",\"hidden\":true},{\"side\":\"r\",\"role\":\"N\",\"hidden\":true},{\"side\":\"r\",\"role\":\"B\",\"hidden\":true},{\"side\":\"r\",\"role\":\"A\",\"hidden\":true},{\"side\":\"r\",\"role\":\"K\",\"hidden\":false,\"type\":\"K\"},{\"side\":\"r\",\"role\":\"A\",\"hidden\":true},{\"side\":\"r\",\"role\":\"B\",\"hidden\":true},{\"side\":\"r\",\"role\":\"N\",\"hidden\":true},{\"side\":\"r\",\"role\":\"R\",\"hidden\":true}]]",
+          "[\"r\",[{\"side\":\"b\",\"role\":\"R\",\"hidden\":true},{\"side\":\"b\",\"role\":\"N\",\"hidden\":true},{\"side\":\"b\",\"role\":\"B\",\"hidden\":true},{\"side\":\"b\",\"role\":\"A\",\"hidden\":true},{\"side\":\"b\",\"role\":\"K\",\"hidden\":false,\"type\":\"K\"},{\"side\":\"b\",\"role\":\"A\",\"hidden\":true},{\"side\":\"b\",\"role\":\"B\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"R\",\"hidden\":true},null,null,null,null,null,null,null,null,null,null,{\"side\":\"b\",\"role\":\"C\",\"hidden\":true},null,null,null,null,{\"side\":\"b\",\"role\":\"N\",\"hidden\":false,\"type\":\"N\"},{\"side\":\"b\",\"role\":\"C\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,null,null,null,null,null,null,null,null,null,null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":false,\"type\":\"A\"},null,null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"C\",\"hidden\":true},null,null,null,null,null,{\"side\":\"r\",\"role\":\"C\",\"hidden\":true},null,null,null,null,null,null,null,null,null,null,{\"side\":\"r\",\"role\":\"R\",\"hidden\":true},{\"side\":\"r\",\"role\":\"N\",\"hidden\":true},{\"side\":\"r\",\"role\":\"B\",\"hidden\":true},{\"side\":\"r\",\"role\":\"A\",\"hidden\":true},{\"side\":\"r\",\"role\":\"K\",\"hidden\":false,\"type\":\"K\"},{\"side\":\"r\",\"role\":\"A\",\"hidden\":true},{\"side\":\"r\",\"role\":\"B\",\"hidden\":true},{\"side\":\"r\",\"role\":\"N\",\"hidden\":true},{\"side\":\"r\",\"role\":\"R\",\"hidden\":true}]]",
+          "[\"b\",[{\"side\":\"b\",\"role\":\"R\",\"hidden\":true},{\"side\":\"b\",\"role\":\"N\",\"hidden\":true},{\"side\":\"b\",\"role\":\"B\",\"hidden\":true},{\"side\":\"b\",\"role\":\"A\",\"hidden\":true},{\"side\":\"b\",\"role\":\"K\",\"hidden\":false,\"type\":\"K\"},{\"side\":\"b\",\"role\":\"A\",\"hidden\":true},{\"side\":\"b\",\"role\":\"B\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"R\",\"hidden\":true},null,null,null,null,null,null,null,null,null,null,{\"side\":\"b\",\"role\":\"C\",\"hidden\":true},null,null,null,null,{\"side\":\"b\",\"role\":\"N\",\"hidden\":false,\"type\":\"N\"},{\"side\":\"b\",\"role\":\"C\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,null,null,null,null,null,null,null,null,null,null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":false,\"type\":\"A\"},null,null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},{\"side\":\"r\",\"role\":\"B\",\"hidden\":false,\"type\":\"N\"},{\"side\":\"r\",\"role\":\"C\",\"hidden\":true},null,null,null,null,null,{\"side\":\"r\",\"role\":\"C\",\"hidden\":true},null,null,null,null,null,null,null,null,null,null,{\"side\":\"r\",\"role\":\"R\",\"hidden\":true},{\"side\":\"r\",\"role\":\"N\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"A\",\"hidden\":true},{\"side\":\"r\",\"role\":\"K\",\"hidden\":false,\"type\":\"K\"},{\"side\":\"r\",\"role\":\"A\",\"hidden\":true},{\"side\":\"r\",\"role\":\"B\",\"hidden\":true},{\"side\":\"r\",\"role\":\"N\",\"hidden\":true},{\"side\":\"r\",\"role\":\"R\",\"hidden\":true}]]",
+          "[\"r\",[{\"side\":\"b\",\"role\":\"R\",\"hidden\":true},{\"side\":\"b\",\"role\":\"N\",\"hidden\":true},{\"side\":\"b\",\"role\":\"B\",\"hidden\":true},{\"side\":\"b\",\"role\":\"A\",\"hidden\":true},{\"side\":\"b\",\"role\":\"K\",\"hidden\":false,\"type\":\"K\"},{\"side\":\"b\",\"role\":\"A\",\"hidden\":true},{\"side\":\"b\",\"role\":\"B\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"R\",\"hidden\":true},null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{\"side\":\"b\",\"role\":\"N\",\"hidden\":false,\"type\":\"N\"},{\"side\":\"b\",\"role\":\"C\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},{\"side\":\"b\",\"role\":\"C\",\"hidden\":false,\"type\":\"R\"},{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,null,null,null,null,null,null,null,null,null,null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":false,\"type\":\"A\"},null,null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},{\"side\":\"r\",\"role\":\"B\",\"hidden\":false,\"type\":\"N\"},{\"side\":\"r\",\"role\":\"C\",\"hidden\":true},null,null,null,null,null,{\"side\":\"r\",\"role\":\"C\",\"hidden\":true},null,null,null,null,null,null,null,null,null,null,{\"side\":\"r\",\"role\":\"R\",\"hidden\":true},{\"side\":\"r\",\"role\":\"N\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"A\",\"hidden\":true},{\"side\":\"r\",\"role\":\"K\",\"hidden\":false,\"type\":\"K\"},{\"side\":\"r\",\"role\":\"A\",\"hidden\":true},{\"side\":\"r\",\"role\":\"B\",\"hidden\":true},{\"side\":\"r\",\"role\":\"N\",\"hidden\":true},{\"side\":\"r\",\"role\":\"R\",\"hidden\":true}]]",
+          "[\"b\",[{\"side\":\"b\",\"role\":\"R\",\"hidden\":true},{\"side\":\"b\",\"role\":\"N\",\"hidden\":true},{\"side\":\"b\",\"role\":\"B\",\"hidden\":true},{\"side\":\"b\",\"role\":\"A\",\"hidden\":true},{\"side\":\"b\",\"role\":\"K\",\"hidden\":false,\"type\":\"K\"},{\"side\":\"b\",\"role\":\"A\",\"hidden\":true},{\"side\":\"b\",\"role\":\"B\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"R\",\"hidden\":true},null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{\"side\":\"b\",\"role\":\"N\",\"hidden\":false,\"type\":\"N\"},{\"side\":\"b\",\"role\":\"C\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},{\"side\":\"b\",\"role\":\"C\",\"hidden\":false,\"type\":\"R\"},{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,null,null,null,null,null,null,null,null,null,null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":false,\"type\":\"A\"},null,null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},{\"side\":\"r\",\"role\":\"B\",\"hidden\":false,\"type\":\"N\"},{\"side\":\"r\",\"role\":\"C\",\"hidden\":true},null,null,null,null,null,{\"side\":\"r\",\"role\":\"C\",\"hidden\":true},{\"side\":\"r\",\"role\":\"N\",\"hidden\":false,\"type\":\"N\"},null,null,null,null,null,null,null,null,null,{\"side\":\"r\",\"role\":\"R\",\"hidden\":true},{\"side\":\"r\",\"role\":\"N\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"A\",\"hidden\":true},{\"side\":\"r\",\"role\":\"K\",\"hidden\":false,\"type\":\"K\"},{\"side\":\"r\",\"role\":\"A\",\"hidden\":true},{\"side\":\"r\",\"role\":\"B\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"R\",\"hidden\":true}]]",
+          "[\"r\",[{\"side\":\"b\",\"role\":\"R\",\"hidden\":true},{\"side\":\"b\",\"role\":\"N\",\"hidden\":true},{\"side\":\"b\",\"role\":\"B\",\"hidden\":true},{\"side\":\"b\",\"role\":\"A\",\"hidden\":true},{\"side\":\"b\",\"role\":\"K\",\"hidden\":false,\"type\":\"K\"},{\"side\":\"b\",\"role\":\"A\",\"hidden\":true},{\"side\":\"b\",\"role\":\"B\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"R\",\"hidden\":true},null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{\"side\":\"b\",\"role\":\"N\",\"hidden\":false,\"type\":\"N\"},null,{\"side\":\"b\",\"role\":\"C\",\"hidden\":false,\"type\":\"C\"},{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},{\"side\":\"b\",\"role\":\"C\",\"hidden\":false,\"type\":\"R\"},{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,null,null,null,null,null,null,null,null,null,null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":false,\"type\":\"A\"},null,null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},{\"side\":\"r\",\"role\":\"B\",\"hidden\":false,\"type\":\"N\"},{\"side\":\"r\",\"role\":\"C\",\"hidden\":true},null,null,null,null,null,{\"side\":\"r\",\"role\":\"C\",\"hidden\":true},{\"side\":\"r\",\"role\":\"N\",\"hidden\":false,\"type\":\"N\"},null,null,null,null,null,null,null,null,null,{\"side\":\"r\",\"role\":\"R\",\"hidden\":true},{\"side\":\"r\",\"role\":\"N\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"A\",\"hidden\":true},{\"side\":\"r\",\"role\":\"K\",\"hidden\":false,\"type\":\"K\"},{\"side\":\"r\",\"role\":\"A\",\"hidden\":true},{\"side\":\"r\",\"role\":\"B\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"R\",\"hidden\":true}]]",
+          "[\"b\",[{\"side\":\"b\",\"role\":\"R\",\"hidden\":true},{\"side\":\"b\",\"role\":\"N\",\"hidden\":true},{\"side\":\"b\",\"role\":\"B\",\"hidden\":true},{\"side\":\"b\",\"role\":\"A\",\"hidden\":true},{\"side\":\"b\",\"role\":\"K\",\"hidden\":false,\"type\":\"K\"},{\"side\":\"b\",\"role\":\"A\",\"hidden\":true},{\"side\":\"b\",\"role\":\"B\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"R\",\"hidden\":true},null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{\"side\":\"b\",\"role\":\"N\",\"hidden\":false,\"type\":\"N\"},null,{\"side\":\"b\",\"role\":\"C\",\"hidden\":false,\"type\":\"C\"},{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},{\"side\":\"b\",\"role\":\"C\",\"hidden\":false,\"type\":\"R\"},{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,null,null,null,null,null,null,null,null,null,null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":false,\"type\":\"A\"},null,null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},{\"side\":\"r\",\"role\":\"B\",\"hidden\":false,\"type\":\"N\"},{\"side\":\"r\",\"role\":\"C\",\"hidden\":true},null,null,null,null,null,{\"side\":\"r\",\"role\":\"C\",\"hidden\":true},{\"side\":\"r\",\"role\":\"N\",\"hidden\":false,\"type\":\"N\"},null,null,null,{\"side\":\"r\",\"role\":\"N\",\"hidden\":false,\"type\":\"P\"},null,null,null,null,null,{\"side\":\"r\",\"role\":\"R\",\"hidden\":true},null,null,{\"side\":\"r\",\"role\":\"A\",\"hidden\":true},{\"side\":\"r\",\"role\":\"K\",\"hidden\":false,\"type\":\"K\"},{\"side\":\"r\",\"role\":\"A\",\"hidden\":true},{\"side\":\"r\",\"role\":\"B\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"R\",\"hidden\":true}]]",
+          "[\"r\",[{\"side\":\"b\",\"role\":\"R\",\"hidden\":true},{\"side\":\"b\",\"role\":\"N\",\"hidden\":true},{\"side\":\"b\",\"role\":\"B\",\"hidden\":true},{\"side\":\"b\",\"role\":\"A\",\"hidden\":true},{\"side\":\"b\",\"role\":\"K\",\"hidden\":false,\"type\":\"K\"},{\"side\":\"b\",\"role\":\"A\",\"hidden\":true},{\"side\":\"b\",\"role\":\"B\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"R\",\"hidden\":true},null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{\"side\":\"b\",\"role\":\"N\",\"hidden\":false,\"type\":\"N\"},{\"side\":\"b\",\"role\":\"C\",\"hidden\":false,\"type\":\"C\"},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},{\"side\":\"b\",\"role\":\"C\",\"hidden\":false,\"type\":\"R\"},{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,null,null,null,null,null,null,null,null,null,null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":false,\"type\":\"A\"},null,null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},{\"side\":\"r\",\"role\":\"B\",\"hidden\":false,\"type\":\"N\"},{\"side\":\"r\",\"role\":\"C\",\"hidden\":true},null,null,null,null,null,{\"side\":\"r\",\"role\":\"C\",\"hidden\":true},{\"side\":\"r\",\"role\":\"N\",\"hidden\":false,\"type\":\"N\"},null,null,null,{\"side\":\"r\",\"role\":\"N\",\"hidden\":false,\"type\":\"P\"},null,null,null,null,null,{\"side\":\"r\",\"role\":\"R\",\"hidden\":true},null,null,{\"side\":\"r\",\"role\":\"A\",\"hidden\":true},{\"side\":\"r\",\"role\":\"K\",\"hidden\":false,\"type\":\"K\"},{\"side\":\"r\",\"role\":\"A\",\"hidden\":true},{\"side\":\"r\",\"role\":\"B\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"R\",\"hidden\":true}]]",
+          "[\"b\",[{\"side\":\"b\",\"role\":\"R\",\"hidden\":true},{\"side\":\"b\",\"role\":\"N\",\"hidden\":true},{\"side\":\"b\",\"role\":\"B\",\"hidden\":true},{\"side\":\"b\",\"role\":\"A\",\"hidden\":true},{\"side\":\"b\",\"role\":\"K\",\"hidden\":false,\"type\":\"K\"},{\"side\":\"b\",\"role\":\"A\",\"hidden\":true},{\"side\":\"b\",\"role\":\"B\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"R\",\"hidden\":true},null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{\"side\":\"b\",\"role\":\"N\",\"hidden\":false,\"type\":\"N\"},{\"side\":\"b\",\"role\":\"C\",\"hidden\":false,\"type\":\"C\"},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},{\"side\":\"b\",\"role\":\"C\",\"hidden\":false,\"type\":\"R\"},{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,null,null,null,null,null,null,null,null,null,null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":false,\"type\":\"A\"},null,null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},{\"side\":\"r\",\"role\":\"B\",\"hidden\":false,\"type\":\"N\"},{\"side\":\"r\",\"role\":\"C\",\"hidden\":true},null,null,null,null,null,{\"side\":\"r\",\"role\":\"C\",\"hidden\":true},{\"side\":\"r\",\"role\":\"N\",\"hidden\":false,\"type\":\"N\"},{\"side\":\"r\",\"role\":\"R\",\"hidden\":false,\"type\":\"R\"},null,null,{\"side\":\"r\",\"role\":\"N\",\"hidden\":false,\"type\":\"P\"},null,null,null,null,null,null,null,null,{\"side\":\"r\",\"role\":\"A\",\"hidden\":true},{\"side\":\"r\",\"role\":\"K\",\"hidden\":false,\"type\":\"K\"},{\"side\":\"r\",\"role\":\"A\",\"hidden\":true},{\"side\":\"r\",\"role\":\"B\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"R\",\"hidden\":true}]]",
+          "[\"r\",[{\"side\":\"b\",\"role\":\"R\",\"hidden\":true},{\"side\":\"b\",\"role\":\"N\",\"hidden\":true},{\"side\":\"b\",\"role\":\"B\",\"hidden\":true},{\"side\":\"b\",\"role\":\"A\",\"hidden\":true},{\"side\":\"b\",\"role\":\"K\",\"hidden\":false,\"type\":\"K\"},{\"side\":\"b\",\"role\":\"A\",\"hidden\":true},{\"side\":\"b\",\"role\":\"B\",\"hidden\":true},{\"side\":\"b\",\"role\":\"N\",\"hidden\":false,\"type\":\"N\"},{\"side\":\"b\",\"role\":\"R\",\"hidden\":true},null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{\"side\":\"b\",\"role\":\"C\",\"hidden\":false,\"type\":\"C\"},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},{\"side\":\"b\",\"role\":\"C\",\"hidden\":false,\"type\":\"R\"},{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,null,null,null,null,null,null,null,null,null,null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":false,\"type\":\"A\"},null,null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},{\"side\":\"r\",\"role\":\"B\",\"hidden\":false,\"type\":\"N\"},{\"side\":\"r\",\"role\":\"C\",\"hidden\":true},null,null,null,null,null,{\"side\":\"r\",\"role\":\"C\",\"hidden\":true},{\"side\":\"r\",\"role\":\"N\",\"hidden\":false,\"type\":\"N\"},{\"side\":\"r\",\"role\":\"R\",\"hidden\":false,\"type\":\"R\"},null,null,{\"side\":\"r\",\"role\":\"N\",\"hidden\":false,\"type\":\"P\"},null,null,null,null,null,null,null,null,{\"side\":\"r\",\"role\":\"A\",\"hidden\":true},{\"side\":\"r\",\"role\":\"K\",\"hidden\":false,\"type\":\"K\"},{\"side\":\"r\",\"role\":\"A\",\"hidden\":true},{\"side\":\"r\",\"role\":\"B\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"R\",\"hidden\":true}]]",
+          "[\"b\",[{\"side\":\"b\",\"role\":\"R\",\"hidden\":true},{\"side\":\"b\",\"role\":\"N\",\"hidden\":true},{\"side\":\"b\",\"role\":\"B\",\"hidden\":true},{\"side\":\"b\",\"role\":\"A\",\"hidden\":true},{\"side\":\"b\",\"role\":\"K\",\"hidden\":false,\"type\":\"K\"},{\"side\":\"b\",\"role\":\"A\",\"hidden\":true},{\"side\":\"b\",\"role\":\"B\",\"hidden\":true},{\"side\":\"b\",\"role\":\"N\",\"hidden\":false,\"type\":\"N\"},{\"side\":\"b\",\"role\":\"R\",\"hidden\":true},null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{\"side\":\"b\",\"role\":\"C\",\"hidden\":false,\"type\":\"C\"},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},{\"side\":\"b\",\"role\":\"C\",\"hidden\":false,\"type\":\"R\"},{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,null,null,null,null,null,null,null,null,null,null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":false,\"type\":\"A\"},null,null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},{\"side\":\"r\",\"role\":\"B\",\"hidden\":false,\"type\":\"N\"},{\"side\":\"r\",\"role\":\"C\",\"hidden\":true},null,null,null,null,null,null,{\"side\":\"r\",\"role\":\"N\",\"hidden\":false,\"type\":\"N\"},{\"side\":\"r\",\"role\":\"R\",\"hidden\":false,\"type\":\"R\"},null,null,{\"side\":\"r\",\"role\":\"N\",\"hidden\":false,\"type\":\"P\"},null,null,null,null,null,null,null,null,{\"side\":\"r\",\"role\":\"A\",\"hidden\":true},{\"side\":\"r\",\"role\":\"K\",\"hidden\":false,\"type\":\"K\"},{\"side\":\"r\",\"role\":\"A\",\"hidden\":true},{\"side\":\"r\",\"role\":\"B\",\"hidden\":true},{\"side\":\"r\",\"role\":\"C\",\"hidden\":false,\"type\":\"A\"},{\"side\":\"r\",\"role\":\"R\",\"hidden\":true}]]",
+          "[\"r\",[{\"side\":\"b\",\"role\":\"R\",\"hidden\":true},{\"side\":\"b\",\"role\":\"N\",\"hidden\":true},{\"side\":\"b\",\"role\":\"B\",\"hidden\":true},{\"side\":\"b\",\"role\":\"A\",\"hidden\":true},{\"side\":\"b\",\"role\":\"K\",\"hidden\":false,\"type\":\"K\"},{\"side\":\"b\",\"role\":\"A\",\"hidden\":true},{\"side\":\"b\",\"role\":\"B\",\"hidden\":true},{\"side\":\"b\",\"role\":\"N\",\"hidden\":false,\"type\":\"N\"},{\"side\":\"b\",\"role\":\"R\",\"hidden\":true},null,null,null,null,null,null,null,null,null,null,{\"side\":\"b\",\"role\":\"C\",\"hidden\":false,\"type\":\"R\"},null,null,null,null,null,{\"side\":\"b\",\"role\":\"C\",\"hidden\":false,\"type\":\"C\"},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,null,null,null,null,null,null,null,null,null,null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":false,\"type\":\"A\"},null,null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},{\"side\":\"r\",\"role\":\"B\",\"hidden\":false,\"type\":\"N\"},{\"side\":\"r\",\"role\":\"C\",\"hidden\":true},null,null,null,null,null,null,{\"side\":\"r\",\"role\":\"N\",\"hidden\":false,\"type\":\"N\"},{\"side\":\"r\",\"role\":\"R\",\"hidden\":false,\"type\":\"R\"},null,null,{\"side\":\"r\",\"role\":\"N\",\"hidden\":false,\"type\":\"P\"},null,null,null,null,null,null,null,null,{\"side\":\"r\",\"role\":\"A\",\"hidden\":true},{\"side\":\"r\",\"role\":\"K\",\"hidden\":false,\"type\":\"K\"},{\"side\":\"r\",\"role\":\"A\",\"hidden\":true},{\"side\":\"r\",\"role\":\"B\",\"hidden\":true},{\"side\":\"r\",\"role\":\"C\",\"hidden\":false,\"type\":\"A\"},{\"side\":\"r\",\"role\":\"R\",\"hidden\":true}]]",
+          "[\"b\",[{\"side\":\"b\",\"role\":\"R\",\"hidden\":true},{\"side\":\"b\",\"role\":\"N\",\"hidden\":true},{\"side\":\"b\",\"role\":\"B\",\"hidden\":true},{\"side\":\"b\",\"role\":\"A\",\"hidden\":true},{\"side\":\"b\",\"role\":\"K\",\"hidden\":false,\"type\":\"K\"},{\"side\":\"b\",\"role\":\"A\",\"hidden\":true},{\"side\":\"b\",\"role\":\"B\",\"hidden\":true},{\"side\":\"b\",\"role\":\"N\",\"hidden\":false,\"type\":\"N\"},{\"side\":\"b\",\"role\":\"R\",\"hidden\":true},null,null,null,null,null,null,null,null,null,null,{\"side\":\"b\",\"role\":\"C\",\"hidden\":false,\"type\":\"R\"},null,null,null,null,null,{\"side\":\"b\",\"role\":\"C\",\"hidden\":false,\"type\":\"C\"},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,null,null,null,null,null,null,null,null,null,{\"side\":\"r\",\"role\":\"C\",\"hidden\":false,\"type\":\"C\"},null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":false,\"type\":\"A\"},null,null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},{\"side\":\"r\",\"role\":\"B\",\"hidden\":false,\"type\":\"N\"},null,null,null,null,null,null,null,{\"side\":\"r\",\"role\":\"N\",\"hidden\":false,\"type\":\"N\"},{\"side\":\"r\",\"role\":\"R\",\"hidden\":false,\"type\":\"R\"},null,null,{\"side\":\"r\",\"role\":\"N\",\"hidden\":false,\"type\":\"P\"},null,null,null,null,null,null,null,null,{\"side\":\"r\",\"role\":\"A\",\"hidden\":true},{\"side\":\"r\",\"role\":\"K\",\"hidden\":false,\"type\":\"K\"},{\"side\":\"r\",\"role\":\"A\",\"hidden\":true},{\"side\":\"r\",\"role\":\"B\",\"hidden\":true},{\"side\":\"r\",\"role\":\"C\",\"hidden\":false,\"type\":\"A\"},{\"side\":\"r\",\"role\":\"R\",\"hidden\":true}]]",
+          "[\"r\",[{\"side\":\"b\",\"role\":\"R\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"B\",\"hidden\":true},{\"side\":\"b\",\"role\":\"A\",\"hidden\":true},{\"side\":\"b\",\"role\":\"K\",\"hidden\":false,\"type\":\"K\"},{\"side\":\"b\",\"role\":\"A\",\"hidden\":true},{\"side\":\"b\",\"role\":\"B\",\"hidden\":true},{\"side\":\"b\",\"role\":\"N\",\"hidden\":false,\"type\":\"N\"},{\"side\":\"b\",\"role\":\"R\",\"hidden\":true},null,null,null,null,null,null,null,null,null,{\"side\":\"b\",\"role\":\"N\",\"hidden\":false,\"type\":\"A\"},{\"side\":\"b\",\"role\":\"C\",\"hidden\":false,\"type\":\"R\"},null,null,null,null,null,{\"side\":\"b\",\"role\":\"C\",\"hidden\":false,\"type\":\"C\"},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,null,null,null,null,null,null,null,null,null,{\"side\":\"r\",\"role\":\"C\",\"hidden\":false,\"type\":\"C\"},null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":false,\"type\":\"A\"},null,null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},{\"side\":\"r\",\"role\":\"B\",\"hidden\":false,\"type\":\"N\"},null,null,null,null,null,null,null,{\"side\":\"r\",\"role\":\"N\",\"hidden\":false,\"type\":\"N\"},{\"side\":\"r\",\"role\":\"R\",\"hidden\":false,\"type\":\"R\"},null,null,{\"side\":\"r\",\"role\":\"N\",\"hidden\":false,\"type\":\"P\"},null,null,null,null,null,null,null,null,{\"side\":\"r\",\"role\":\"A\",\"hidden\":true},{\"side\":\"r\",\"role\":\"K\",\"hidden\":false,\"type\":\"K\"},{\"side\":\"r\",\"role\":\"A\",\"hidden\":true},{\"side\":\"r\",\"role\":\"B\",\"hidden\":true},{\"side\":\"r\",\"role\":\"C\",\"hidden\":false,\"type\":\"A\"},{\"side\":\"r\",\"role\":\"R\",\"hidden\":true}]]",
+          "[\"b\",[{\"side\":\"b\",\"role\":\"R\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"B\",\"hidden\":true},{\"side\":\"b\",\"role\":\"A\",\"hidden\":true},{\"side\":\"b\",\"role\":\"K\",\"hidden\":false,\"type\":\"K\"},{\"side\":\"b\",\"role\":\"A\",\"hidden\":true},{\"side\":\"b\",\"role\":\"B\",\"hidden\":true},{\"side\":\"b\",\"role\":\"N\",\"hidden\":false,\"type\":\"N\"},{\"side\":\"b\",\"role\":\"R\",\"hidden\":true},null,null,null,null,null,null,null,null,null,{\"side\":\"b\",\"role\":\"N\",\"hidden\":false,\"type\":\"A\"},{\"side\":\"b\",\"role\":\"C\",\"hidden\":false,\"type\":\"R\"},null,null,null,null,null,{\"side\":\"b\",\"role\":\"C\",\"hidden\":false,\"type\":\"C\"},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,null,null,null,null,null,null,null,null,null,{\"side\":\"r\",\"role\":\"C\",\"hidden\":false,\"type\":\"C\"},null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":false,\"type\":\"A\"},null,null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},{\"side\":\"r\",\"role\":\"B\",\"hidden\":false,\"type\":\"N\"},null,null,null,{\"side\":\"r\",\"role\":\"B\",\"hidden\":false,\"type\":\"P\"},null,null,null,{\"side\":\"r\",\"role\":\"N\",\"hidden\":false,\"type\":\"N\"},{\"side\":\"r\",\"role\":\"R\",\"hidden\":false,\"type\":\"R\"},null,null,{\"side\":\"r\",\"role\":\"N\",\"hidden\":false,\"type\":\"P\"},null,null,null,null,null,null,null,null,{\"side\":\"r\",\"role\":\"A\",\"hidden\":true},{\"side\":\"r\",\"role\":\"K\",\"hidden\":false,\"type\":\"K\"},{\"side\":\"r\",\"role\":\"A\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"C\",\"hidden\":false,\"type\":\"A\"},{\"side\":\"r\",\"role\":\"R\",\"hidden\":true}]]",
+          "[\"r\",[{\"side\":\"b\",\"role\":\"R\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"B\",\"hidden\":true},{\"side\":\"b\",\"role\":\"A\",\"hidden\":true},{\"side\":\"b\",\"role\":\"K\",\"hidden\":false,\"type\":\"K\"},{\"side\":\"b\",\"role\":\"A\",\"hidden\":true},{\"side\":\"b\",\"role\":\"B\",\"hidden\":true},{\"side\":\"b\",\"role\":\"N\",\"hidden\":false,\"type\":\"N\"},{\"side\":\"b\",\"role\":\"R\",\"hidden\":true},null,null,null,null,null,null,null,null,null,{\"side\":\"b\",\"role\":\"N\",\"hidden\":false,\"type\":\"A\"},{\"side\":\"b\",\"role\":\"C\",\"hidden\":false,\"type\":\"R\"},null,null,null,null,null,null,null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},{\"side\":\"b\",\"role\":\"C\",\"hidden\":false,\"type\":\"C\"},{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,null,null,null,null,null,null,null,null,null,{\"side\":\"r\",\"role\":\"C\",\"hidden\":false,\"type\":\"C\"},null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":false,\"type\":\"A\"},null,null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},{\"side\":\"r\",\"role\":\"B\",\"hidden\":false,\"type\":\"N\"},null,null,null,{\"side\":\"r\",\"role\":\"B\",\"hidden\":false,\"type\":\"P\"},null,null,null,{\"side\":\"r\",\"role\":\"N\",\"hidden\":false,\"type\":\"N\"},{\"side\":\"r\",\"role\":\"R\",\"hidden\":false,\"type\":\"R\"},null,null,{\"side\":\"r\",\"role\":\"N\",\"hidden\":false,\"type\":\"P\"},null,null,null,null,null,null,null,null,{\"side\":\"r\",\"role\":\"A\",\"hidden\":true},{\"side\":\"r\",\"role\":\"K\",\"hidden\":false,\"type\":\"K\"},{\"side\":\"r\",\"role\":\"A\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"C\",\"hidden\":false,\"type\":\"A\"},{\"side\":\"r\",\"role\":\"R\",\"hidden\":true}]]",
+          "[\"b\",[{\"side\":\"b\",\"role\":\"R\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"B\",\"hidden\":true},{\"side\":\"b\",\"role\":\"A\",\"hidden\":true},{\"side\":\"b\",\"role\":\"K\",\"hidden\":false,\"type\":\"K\"},{\"side\":\"b\",\"role\":\"A\",\"hidden\":true},{\"side\":\"b\",\"role\":\"B\",\"hidden\":true},{\"side\":\"b\",\"role\":\"N\",\"hidden\":false,\"type\":\"N\"},{\"side\":\"b\",\"role\":\"R\",\"hidden\":true},null,null,null,null,null,null,null,null,null,{\"side\":\"b\",\"role\":\"N\",\"hidden\":false,\"type\":\"A\"},{\"side\":\"b\",\"role\":\"C\",\"hidden\":false,\"type\":\"R\"},null,null,null,null,null,null,null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},{\"side\":\"b\",\"role\":\"C\",\"hidden\":false,\"type\":\"C\"},{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,null,null,null,null,null,null,null,null,null,{\"side\":\"r\",\"role\":\"C\",\"hidden\":false,\"type\":\"C\"},null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":false,\"type\":\"A\"},null,null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},{\"side\":\"r\",\"role\":\"B\",\"hidden\":false,\"type\":\"N\"},null,null,null,{\"side\":\"r\",\"role\":\"B\",\"hidden\":false,\"type\":\"P\"},null,null,null,{\"side\":\"r\",\"role\":\"N\",\"hidden\":false,\"type\":\"N\"},{\"side\":\"r\",\"role\":\"R\",\"hidden\":false,\"type\":\"R\"},null,null,{\"side\":\"r\",\"role\":\"N\",\"hidden\":false,\"type\":\"P\"},null,null,null,null,{\"side\":\"r\",\"role\":\"R\",\"hidden\":false,\"type\":\"B\"},null,null,null,{\"side\":\"r\",\"role\":\"A\",\"hidden\":true},{\"side\":\"r\",\"role\":\"K\",\"hidden\":false,\"type\":\"K\"},{\"side\":\"r\",\"role\":\"A\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"C\",\"hidden\":false,\"type\":\"A\"},null]]",
+          "[\"r\",[{\"side\":\"b\",\"role\":\"R\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"B\",\"hidden\":true},{\"side\":\"b\",\"role\":\"A\",\"hidden\":true},{\"side\":\"b\",\"role\":\"K\",\"hidden\":false,\"type\":\"K\"},{\"side\":\"b\",\"role\":\"A\",\"hidden\":true},{\"side\":\"b\",\"role\":\"B\",\"hidden\":true},{\"side\":\"b\",\"role\":\"N\",\"hidden\":false,\"type\":\"N\"},null,null,null,null,null,null,null,null,null,{\"side\":\"b\",\"role\":\"R\",\"hidden\":false,\"type\":\"B\"},{\"side\":\"b\",\"role\":\"N\",\"hidden\":false,\"type\":\"A\"},{\"side\":\"b\",\"role\":\"C\",\"hidden\":false,\"type\":\"R\"},null,null,null,null,null,null,null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},{\"side\":\"b\",\"role\":\"C\",\"hidden\":false,\"type\":\"C\"},{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,null,null,null,null,null,null,null,null,null,{\"side\":\"r\",\"role\":\"C\",\"hidden\":false,\"type\":\"C\"},null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":false,\"type\":\"A\"},null,null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},{\"side\":\"r\",\"role\":\"B\",\"hidden\":false,\"type\":\"N\"},null,null,null,{\"side\":\"r\",\"role\":\"B\",\"hidden\":false,\"type\":\"P\"},null,null,null,{\"side\":\"r\",\"role\":\"N\",\"hidden\":false,\"type\":\"N\"},{\"side\":\"r\",\"role\":\"R\",\"hidden\":false,\"type\":\"R\"},null,null,{\"side\":\"r\",\"role\":\"N\",\"hidden\":false,\"type\":\"P\"},null,null,null,null,{\"side\":\"r\",\"role\":\"R\",\"hidden\":false,\"type\":\"B\"},null,null,null,{\"side\":\"r\",\"role\":\"A\",\"hidden\":true},{\"side\":\"r\",\"role\":\"K\",\"hidden\":false,\"type\":\"K\"},{\"side\":\"r\",\"role\":\"A\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"C\",\"hidden\":false,\"type\":\"A\"},null]]",
+          "[\"b\",[{\"side\":\"b\",\"role\":\"R\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"B\",\"hidden\":true},{\"side\":\"b\",\"role\":\"A\",\"hidden\":true},{\"side\":\"b\",\"role\":\"K\",\"hidden\":false,\"type\":\"K\"},{\"side\":\"b\",\"role\":\"A\",\"hidden\":true},{\"side\":\"b\",\"role\":\"B\",\"hidden\":true},{\"side\":\"b\",\"role\":\"N\",\"hidden\":false,\"type\":\"N\"},null,null,null,null,null,null,null,null,null,{\"side\":\"b\",\"role\":\"R\",\"hidden\":false,\"type\":\"B\"},{\"side\":\"b\",\"role\":\"N\",\"hidden\":false,\"type\":\"A\"},{\"side\":\"b\",\"role\":\"C\",\"hidden\":false,\"type\":\"R\"},null,null,null,null,null,null,null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},{\"side\":\"b\",\"role\":\"C\",\"hidden\":false,\"type\":\"C\"},{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,null,null,null,null,null,null,null,null,null,null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":false,\"type\":\"A\"},null,null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},{\"side\":\"r\",\"role\":\"C\",\"hidden\":false,\"type\":\"C\"},{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},{\"side\":\"r\",\"role\":\"B\",\"hidden\":false,\"type\":\"N\"},null,null,null,{\"side\":\"r\",\"role\":\"B\",\"hidden\":false,\"type\":\"P\"},null,null,null,{\"side\":\"r\",\"role\":\"N\",\"hidden\":false,\"type\":\"N\"},{\"side\":\"r\",\"role\":\"R\",\"hidden\":false,\"type\":\"R\"},null,null,{\"side\":\"r\",\"role\":\"N\",\"hidden\":false,\"type\":\"P\"},null,null,null,null,{\"side\":\"r\",\"role\":\"R\",\"hidden\":false,\"type\":\"B\"},null,null,null,{\"side\":\"r\",\"role\":\"A\",\"hidden\":true},{\"side\":\"r\",\"role\":\"K\",\"hidden\":false,\"type\":\"K\"},{\"side\":\"r\",\"role\":\"A\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"C\",\"hidden\":false,\"type\":\"A\"},null]]",
+          "[\"r\",[{\"side\":\"b\",\"role\":\"R\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"B\",\"hidden\":true},{\"side\":\"b\",\"role\":\"A\",\"hidden\":true},{\"side\":\"b\",\"role\":\"K\",\"hidden\":false,\"type\":\"K\"},{\"side\":\"b\",\"role\":\"A\",\"hidden\":true},{\"side\":\"b\",\"role\":\"B\",\"hidden\":true},{\"side\":\"b\",\"role\":\"N\",\"hidden\":false,\"type\":\"N\"},null,null,null,null,null,null,null,null,null,{\"side\":\"b\",\"role\":\"R\",\"hidden\":false,\"type\":\"B\"},{\"side\":\"b\",\"role\":\"N\",\"hidden\":false,\"type\":\"A\"},{\"side\":\"b\",\"role\":\"C\",\"hidden\":false,\"type\":\"R\"},null,null,null,null,null,null,null,null,null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},{\"side\":\"b\",\"role\":\"C\",\"hidden\":false,\"type\":\"C\"},{\"side\":\"b\",\"role\":\"P\",\"hidden\":true},{\"side\":\"b\",\"role\":\"P\",\"hidden\":false,\"type\":\"P\"},null,null,null,null,null,null,null,null,null,null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":false,\"type\":\"A\"},null,null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},{\"side\":\"r\",\"role\":\"C\",\"hidden\":false,\"type\":\"C\"},{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,null,null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"P\",\"hidden\":true},{\"side\":\"r\",\"role\":\"B\",\"hidden\":false,\"type\":\"N\"},null,null,null,{\"side\":\"r\",\"role\":\"B\",\"hidden\":false,\"type\":\"P\"},null,null,null,{\"side\":\"r\",\"role\":\"N\",\"hidden\":false,\"type\":\"N\"},{\"side\":\"r\",\"role\":\"R\",\"hidden\":false,\"type\":\"R\"},null,null,{\"side\":\"r\",\"role\":\"N\",\"hidden\":false,\"type\":\"P\"},null,null,null,null,{\"side\":\"r\",\"role\":\"R\",\"hidden\":false,\"type\":\"B\"},null,null,null,{\"side\":\"r\",\"role\":\"A\",\"hidden\":true},{\"side\":\"r\",\"role\":\"K\",\"hidden\":false,\"type\":\"K\"},{\"side\":\"r\",\"role\":\"A\",\"hidden\":true},null,{\"side\":\"r\",\"role\":\"C\",\"hidden\":false,\"type\":\"A\"},null]]"
+        ],
+        "viewer": "r"
+      }
+    },
+    {
+      "name": "全明10子残局",
+      "view": {
+        "board": [
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "b",
+            "role": "K",
+            "hidden": false,
+            "type": "K"
+          },
+          null,
+          {
+            "side": "b",
+            "role": "B",
+            "hidden": false,
+            "type": "B"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "b",
+            "role": "R",
+            "hidden": false,
+            "type": "R"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "b",
+            "role": "N",
+            "hidden": false,
+            "type": "N"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "b",
+            "role": "P",
+            "hidden": false,
+            "type": "P"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "r",
+            "role": "P",
+            "hidden": false,
+            "type": "P"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "r",
+            "role": "N",
+            "hidden": false,
+            "type": "N"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "r",
+            "role": "R",
+            "hidden": false,
+            "type": "R"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "r",
+            "role": "B",
+            "hidden": false,
+            "type": "B"
+          },
+          null,
+          {
+            "side": "r",
+            "role": "K",
+            "hidden": false,
+            "type": "K"
+          },
+          null,
+          null,
+          null,
+          null
+        ],
+        "turn": "r",
+        "captured": [],
+        "ply": 0,
+        "quiet": 0,
+        "positions": [],
+        "result": null,
+        "viewer": "r"
+      }
+    }
+  ],
+  "rows": [
+    {
+      "position": "开局全暗",
+      "budgetMs": 1000,
+      "depth": 2,
+      "samples": 8,
+      "nodes": 67512,
+      "elapsedMs": 968,
+      "searchElapsedMs": 965,
+      "deadlineStop": false,
+      "fallback": false,
+      "move": {
+        "from": 64,
+        "to": 1
+      }
+    },
+    {
+      "position": "开局全暗",
+      "budgetMs": 2000,
+      "depth": 2,
+      "samples": 8,
+      "nodes": 137816,
+      "elapsedMs": 1966,
+      "searchElapsedMs": 1965,
+      "deadlineStop": false,
+      "fallback": false,
+      "move": {
+        "from": 64,
+        "to": 1
+      }
+    },
+    {
+      "position": "开局全暗",
+      "budgetMs": 6000,
+      "depth": 3,
+      "samples": 8,
+      "nodes": 455832,
+      "elapsedMs": 5966,
+      "searchElapsedMs": 5965,
+      "deadlineStop": false,
+      "fallback": false,
+      "move": {
+        "from": 64,
+        "to": 1
+      }
+    },
+    {
+      "position": "开局全暗",
+      "budgetMs": 15000,
+      "depth": 3,
+      "samples": 8,
+      "nodes": 995088,
+      "elapsedMs": 14967,
+      "searchElapsedMs": 14965,
+      "deadlineStop": false,
+      "fallback": false,
+      "move": {
+        "from": 64,
+        "to": 1
+      }
+    },
+    {
+      "position": "可达中局seed2111第20步",
+      "budgetMs": 1000,
+      "depth": 3,
+      "samples": 8,
+      "nodes": 70360,
+      "elapsedMs": 966,
+      "searchElapsedMs": 965,
+      "deadlineStop": false,
+      "fallback": false,
+      "move": {
+        "from": 72,
+        "to": 73
+      }
+    },
+    {
+      "position": "可达中局seed2111第20步",
+      "budgetMs": 2000,
+      "depth": 3,
+      "samples": 8,
+      "nodes": 142832,
+      "elapsedMs": 1968,
+      "searchElapsedMs": 1965,
+      "deadlineStop": false,
+      "fallback": false,
+      "move": {
+        "from": 72,
+        "to": 73
+      }
+    },
+    {
+      "position": "可达中局seed2111第20步",
+      "budgetMs": 6000,
+      "depth": 3,
+      "samples": 8,
+      "nodes": 344848,
+      "elapsedMs": 5966,
+      "searchElapsedMs": 5965,
+      "deadlineStop": false,
+      "fallback": false,
+      "move": {
+        "from": 72,
+        "to": 73
+      }
+    },
+    {
+      "position": "可达中局seed2111第20步",
+      "budgetMs": 15000,
+      "depth": 4,
+      "samples": 8,
+      "nodes": 992904,
+      "elapsedMs": 14966,
+      "searchElapsedMs": 14965,
+      "deadlineStop": false,
+      "fallback": false,
+      "move": {
+        "from": 63,
+        "to": 74
+      }
+    },
+    {
+      "position": "全明10子残局",
+      "budgetMs": 1000,
+      "depth": 4,
+      "samples": 1,
+      "nodes": 70064,
+      "elapsedMs": 969,
+      "searchElapsedMs": 965,
+      "deadlineStop": false,
+      "fallback": false,
+      "move": {
+        "from": 72,
+        "to": 0
+      }
+    },
+    {
+      "position": "全明10子残局",
+      "budgetMs": 2000,
+      "depth": 5,
+      "samples": 1,
+      "nodes": 147968,
+      "elapsedMs": 1966,
+      "searchElapsedMs": 1965,
+      "deadlineStop": false,
+      "fallback": false,
+      "move": {
+        "from": 72,
+        "to": 0
+      }
+    },
+    {
+      "position": "全明10子残局",
+      "budgetMs": 6000,
+      "depth": 5,
+      "samples": 1,
+      "nodes": 469352,
+      "elapsedMs": 5967,
+      "searchElapsedMs": 5965,
+      "deadlineStop": false,
+      "fallback": false,
+      "move": {
+        "from": 72,
+        "to": 0
+      }
+    },
+    {
+      "position": "全明10子残局",
+      "budgetMs": 15000,
+      "depth": 6,
+      "samples": 1,
+      "nodes": 1013672,
+      "elapsedMs": 14967,
+      "searchElapsedMs": 14965,
+      "deadlineStop": false,
+      "fallback": false,
+      "move": {
+        "from": 72,
+        "to": 0
+      }
+    }
+  ]
+}
