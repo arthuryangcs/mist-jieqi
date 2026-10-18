@@ -8,12 +8,12 @@ export function validatePosition(board,turn,knownCaptured={r:'',b:''},inventory=
   if(kings.length!==1)errors.push(label+'方必须恰有一枚将帅');
   for(let {i} of kings){let x=i%9,y=Math.floor(i/9);if(x<3||x>5||(side==='r'?y<7:y>2))errors.push('将帅必须在己方九宫');}
   let known=(knownCaptured[side]||'').toUpperCase().replace(/[\s,，]/g,'');
-  if(/[^RNBCAP]/.test(known))errors.push('已知被吃棋子仅接受 R车 N马 B象 A士 C炮 P兵');
+  if(/[^RNBCAP]/.test(known))errors.push('已知离盘身份仅接受 R车 N马 B象 A士 C炮 P兵');
   let alive=count(pieces.filter(p=>!p.hidden&&p.type!=='K').map(p=>p.type));
   if(inventory[side]?.trim()){
    let parsed=parseInventory(inventory[side]);if(parsed.error)errors.push(label+'方'+parsed.error);else{
     let inferred='';for(let t of Object.keys(total)){let dead=total[t]-alive[t]-parsed.counts[t];if(dead<0)errors.push(label+'方未知库存与盘上明子超过初始数量');else inferred+=t.repeat(dead);}
-    if(known&&JSON.stringify(count(known))!==JSON.stringify(count(inferred)))errors.push(label+'方未知库存与已知被吃明子不一致');
+    if(known&&JSON.stringify(count(known))!==JSON.stringify(count(inferred)))errors.push(label+'方未知库存与已知离盘身份不一致');
     known=inferred;
    }
   }

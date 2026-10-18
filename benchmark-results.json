@@ -7,7 +7,7 @@
       "greedyPass": false,
       "depth": 1,
       "nodes": 39,
-      "elapsedMs": 4,
+      "elapsedMs": 11,
       "move": {
         "from": 12,
         "to": 21
@@ -18,8 +18,8 @@
       "searchPass": true,
       "greedyPass": true,
       "depth": 4,
-      "nodes": 3679,
-      "elapsedMs": 108,
+      "nodes": 3292,
+      "elapsedMs": 89,
       "move": {
         "from": 81,
         "to": 63
@@ -30,8 +30,8 @@
       "searchPass": true,
       "greedyPass": false,
       "depth": 4,
-      "nodes": 3937,
-      "elapsedMs": 107,
+      "nodes": 4874,
+      "elapsedMs": 89,
       "move": {
         "from": 49,
         "to": 40
@@ -43,11 +43,12 @@
     "allMovesLegal": true,
     "depthRange": [
       1,
-      1
+      3
     ],
-    "nodes": 61312,
-    "elapsedMs": 4945,
+    "nodes": 212320,
+    "elapsedMs": 4594,
     "result": null
   },
-  "note": "微型战术回归和合法性基准，不是棋力评级或统计胜率。"
+  "note": "微型战术回归和合法性基准，不是棋力评级或统计胜率。",
+  "variant": "被吃暗子仅吃子方可见"
 }
