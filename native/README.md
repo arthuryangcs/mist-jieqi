@@ -12,6 +12,8 @@
 
 当前在 `a156673` 上采用最多4个搜索线程并行处理固定8个采样布局。每个布局有独立的排序历史、killer、走法缓冲和置换表，汇总顺序固定；全明1样本与显式固定节点上限使用原串行路径。服务输出 `maxThreads` 能力和每次结果的 `threads`，进度及最终响应均报告实际搜索线程数。CPU占用增加，搜索完整层和信息隔离条件不变。完整对照、未采用的窄窗口/置换表实验和限制见 [NATIVE_PARALLEL_REPORT.md](../NATIVE_PARALLEL_REPORT.md)。
 
+后续受控静态将军实验没有接入生产核心：两方案由 `forcing-variants.mjs` 从冻结原版生成，独立规则/战术及ASan/UBSan通过，但完整方案对原版8局为2胜3和3负，未达启用门槛。基准、复现步骤、失败记录和网页仍使用原版的说明见 [QUIET_CHECK_EXPERIMENT.md](../QUIET_CHECK_EXPERIMENT.md)；实验二进制只写 `.cache/quiet/`，不覆盖 `.cache/native/mist-core`。
+
 以下保留离线性能及一致性复现方式；旧测量见 [NATIVE_SEARCH_REPORT.md](../NATIVE_SEARCH_REPORT.md)。
 
 需要 Node.js 20+ 和本机已有的 C++17 编译器；不需要 npm 依赖。

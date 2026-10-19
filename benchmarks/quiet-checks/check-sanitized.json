@@ -1,0 +1,3278 @@
+{
+  "startedAt": "2026-10-19T14:31:42.955Z",
+  "sanitize": true,
+  "builds": [
+    {
+      "name": "baseline",
+      "sourceSha256": "eb1c25bbd4209321bbd0a881128bce0de784d300d2aed8abe6c189167ac38698",
+      "binarySha256": "be26cc85ea7eeeed32189ecfaf488b7740741b800b8ccef1e4ae64fb3b0d033b",
+      "flags": [
+        "-std=c++17",
+        "-ffp-contract=off",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-isystem",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1",
+        "-O1",
+        "-g",
+        "-fsanitize=address,undefined",
+        "-fno-omit-frame-pointer",
+        "-DMIST_VERIFY_RESTORE"
+      ],
+      "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+      "sanitize": true,
+      "warnings": ""
+    },
+    {
+      "name": "qbright",
+      "sourceSha256": "af615161b304df4f7132ac40e9b3fcdb43a91bcadc4050f7d183d2eca0bd4586",
+      "binarySha256": "5036be2eb07cedfa1e5e3d45e212f4acf412d04331d04dcfb52262597c1862e3",
+      "flags": [
+        "-std=c++17",
+        "-ffp-contract=off",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-isystem",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1",
+        "-O1",
+        "-g",
+        "-fsanitize=address,undefined",
+        "-fno-omit-frame-pointer",
+        "-DMIST_VERIFY_RESTORE"
+      ],
+      "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+      "sanitize": true,
+      "warnings": ""
+    },
+    {
+      "name": "qall",
+      "sourceSha256": "f94c8408db3bf66ecc914455c66d6353d37a7024b2956185f83f5a77f1753ec8",
+      "binarySha256": "2bf96d32136a49b713e29af74abbc61759bb38e6a29e578e75dd94d72e5bf5c9",
+      "flags": [
+        "-std=c++17",
+        "-ffp-contract=off",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-isystem",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1",
+        "-O1",
+        "-g",
+        "-fsanitize=address,undefined",
+        "-fno-omit-frame-pointer",
+        "-DMIST_VERIFY_RESTORE"
+      ],
+      "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+      "sanitize": true,
+      "warnings": ""
+    }
+  ],
+  "cases": [
+    {
+      "name": "rook-quiet-mate",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "rook-quiet-mate",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "rook-quiet-mate",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "rook-quiet-mate",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "rook-quiet-mate",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "rook-quiet-mate",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "rook-discovered",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "rook-discovered",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "rook-discovered",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "rook-discovered",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "rook-discovered",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "rook-discovered",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "cannon-screen",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "cannon-screen",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "cannon-screen",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "cannon-screen",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "cannon-screen",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "cannon-screen",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "cannon-screen-removal",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "cannon-screen-removal",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "cannon-screen-removal",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "cannon-screen-removal",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "cannon-screen-removal",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "cannon-screen-removal",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "horse-leg",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "horse-leg",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "horse-leg",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "horse-leg",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "horse-leg",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "horse-leg",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "elephant-eye",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "elephant-eye",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "elephant-eye",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "elephant-eye",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "elephant-eye",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "elephant-eye",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "revealed-advisor",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "revealed-advisor",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "revealed-advisor",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "revealed-advisor",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "revealed-advisor",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "revealed-advisor",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reveal-rook",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reveal-rook",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reveal-rook",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reveal-rook",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reveal-rook",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reveal-rook",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reveal-cannon",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reveal-cannon",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reveal-cannon",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reveal-cannon",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reveal-cannon",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reveal-cannon",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "counter-check-own-king",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "counter-check-own-king",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "counter-check-own-king",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "counter-check-own-king",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "counter-check-own-king",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "counter-check-own-king",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "flying-kings-blocker",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "flying-kings-blocker",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "flying-kings-blocker",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "flying-kings-blocker",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "flying-kings-blocker",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "flying-kings-blocker",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "enemy-already-checked",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "enemy-already-checked",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "enemy-already-checked",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "enemy-already-checked",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "enemy-already-checked",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "enemy-already-checked",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "quiet-mate-color-swapped",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "quiet-mate-color-swapped",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "quiet-mate-color-swapped",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "quiet-mate-color-swapped",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "quiet-mate-color-swapped",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "quiet-mate-color-swapped",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/0",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/0",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/0",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/0",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/0",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/0",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/8",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/8",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/8",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/8",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/8",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/8",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/16",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/16",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/16",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/16",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/16",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/16",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/24",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/24",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/24",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/24",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/24",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/24",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/32",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/32",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/32",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/32",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/32",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/32",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/40",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/40",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/40",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/40",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/40",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/40",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/48",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/48",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/48",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/48",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/48",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/48",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/56",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/56",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/56",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/56",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/56",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/56",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/64",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/64",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/64",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/64",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/64",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/64",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/72",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/72",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/72",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/72",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/72",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/72",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/80",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/80",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/80",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/80",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/80",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9301/80",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/0",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/0",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/0",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/0",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/0",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/0",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/8",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/8",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/8",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/8",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/8",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/8",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/16",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/16",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/16",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/16",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/16",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/16",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/24",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/24",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/24",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/24",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/24",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/24",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/32",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/32",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/32",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/32",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/32",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/32",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/40",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/40",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/40",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/40",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/40",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/40",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/48",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/48",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/48",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/48",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/48",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/48",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/56",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/56",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/56",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/56",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/56",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/56",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/64",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/64",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/64",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/64",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/64",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/64",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/72",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/72",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/72",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/72",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/72",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/72",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/80",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/80",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/80",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/80",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/80",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9311/80",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/0",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/0",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/0",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/0",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/0",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/0",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/8",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/8",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/8",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/8",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/8",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/8",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/16",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/16",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/16",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/16",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/16",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/16",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/24",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/24",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/24",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/24",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/24",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/24",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/32",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/32",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/32",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/32",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/32",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/32",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/40",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/40",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/40",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/40",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/40",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/40",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/48",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/48",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/48",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/48",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/48",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/48",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/56",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/56",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/56",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/56",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/56",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/56",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/64",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/64",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/64",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/64",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/64",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/64",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/72",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/72",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/72",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/72",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/72",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/72",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/80",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/80",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/80",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/80",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/80",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9323/80",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/0",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/0",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/0",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/0",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/0",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/0",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/8",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/8",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/8",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/8",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/8",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/8",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/16",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/16",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/16",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/16",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/16",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/16",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/24",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/24",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/24",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/24",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/24",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/24",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/32",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/32",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/32",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/32",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/32",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/32",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/40",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/40",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/40",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/40",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/40",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/40",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/48",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/48",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/48",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/48",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/48",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/48",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/56",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/56",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/56",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/56",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/56",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/56",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/64",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/64",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/64",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/64",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/64",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/64",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/72",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/72",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/72",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/72",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/72",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/72",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/80",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/80",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/80",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/80",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/80",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9341/80",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/0",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/0",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/0",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/0",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/0",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/0",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/8",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/8",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/8",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/8",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/8",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/8",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/16",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/16",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/16",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/16",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/16",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/16",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/24",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/24",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/24",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/24",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/24",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/24",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/32",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/32",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/32",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/32",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/32",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/32",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/40",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/40",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/40",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/40",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/40",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/40",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/48",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/48",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/48",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/48",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/48",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/48",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/56",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/56",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/56",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/56",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/56",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/56",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/64",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/64",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/64",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/64",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/64",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/64",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/72",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/72",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/72",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/72",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/72",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/72",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/80",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/80",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/80",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/80",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/80",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9371/80",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/0",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/0",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/0",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/0",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/0",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/0",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/8",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/8",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/8",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/8",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/8",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/8",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/16",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/16",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/16",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/16",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/16",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/16",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/24",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/24",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/24",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/24",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/24",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/24",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/32",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/32",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/32",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/32",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/32",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/32",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/40",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/40",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/40",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/40",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/40",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/40",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/48",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/48",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/48",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/48",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/48",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/48",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/56",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/56",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/56",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/56",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/56",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/56",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/64",
+      "viewer": "r",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/64",
+      "viewer": "r",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/64",
+      "viewer": "b",
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/64",
+      "viewer": "b",
+      "variant": "qall",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/64",
+      "viewer": null,
+      "variant": "qbright",
+      "passed": true
+    },
+    {
+      "name": "reachable/9391/64",
+      "viewer": null,
+      "variant": "qall",
+      "passed": true
+    }
+  ],
+  "tactics": [
+    {
+      "name": "可证三层强制制胜 0",
+      "variant": "baseline",
+      "depth": 2,
+      "requestedDepth": 2,
+      "winning": true,
+      "move": {
+        "from": 19,
+        "to": 22
+      },
+      "nodes": 402
+    },
+    {
+      "name": "可证三层强制制胜 0",
+      "variant": "qbright",
+      "depth": 2,
+      "requestedDepth": 2,
+      "winning": true,
+      "move": {
+        "from": 19,
+        "to": 22
+      },
+      "nodes": 1736
+    },
+    {
+      "name": "可证三层强制制胜 0",
+      "variant": "qall",
+      "depth": 2,
+      "requestedDepth": 2,
+      "winning": true,
+      "move": {
+        "from": 19,
+        "to": 22
+      },
+      "nodes": 1736
+    },
+    {
+      "name": "可证三层强制制胜 0",
+      "variant": "baseline",
+      "depth": 2,
+      "requestedDepth": 3,
+      "winning": true,
+      "move": {
+        "from": 19,
+        "to": 22
+      },
+      "nodes": 402
+    },
+    {
+      "name": "可证三层强制制胜 0",
+      "variant": "qbright",
+      "depth": 2,
+      "requestedDepth": 3,
+      "winning": true,
+      "move": {
+        "from": 19,
+        "to": 22
+      },
+      "nodes": 1736
+    },
+    {
+      "name": "可证三层强制制胜 0",
+      "variant": "qall",
+      "depth": 2,
+      "requestedDepth": 3,
+      "winning": true,
+      "move": {
+        "from": 19,
+        "to": 22
+      },
+      "nodes": 1736
+    },
+    {
+      "name": "可证三层强制制胜 1",
+      "variant": "baseline",
+      "depth": 2,
+      "requestedDepth": 2,
+      "winning": true,
+      "move": {
+        "from": 33,
+        "to": 31
+      },
+      "nodes": 405
+    },
+    {
+      "name": "可证三层强制制胜 1",
+      "variant": "qbright",
+      "depth": 2,
+      "requestedDepth": 2,
+      "winning": true,
+      "move": {
+        "from": 33,
+        "to": 31
+      },
+      "nodes": 1564
+    },
+    {
+      "name": "可证三层强制制胜 1",
+      "variant": "qall",
+      "depth": 2,
+      "requestedDepth": 2,
+      "winning": true,
+      "move": {
+        "from": 33,
+        "to": 31
+      },
+      "nodes": 1564
+    },
+    {
+      "name": "可证三层强制制胜 1",
+      "variant": "baseline",
+      "depth": 2,
+      "requestedDepth": 3,
+      "winning": true,
+      "move": {
+        "from": 33,
+        "to": 31
+      },
+      "nodes": 405
+    },
+    {
+      "name": "可证三层强制制胜 1",
+      "variant": "qbright",
+      "depth": 2,
+      "requestedDepth": 3,
+      "winning": true,
+      "move": {
+        "from": 33,
+        "to": 31
+      },
+      "nodes": 1564
+    },
+    {
+      "name": "可证三层强制制胜 1",
+      "variant": "qall",
+      "depth": 2,
+      "requestedDepth": 3,
+      "winning": true,
+      "move": {
+        "from": 33,
+        "to": 31
+      },
+      "nodes": 1564
+    },
+    {
+      "name": "可证三层强制制胜 2",
+      "variant": "baseline",
+      "depth": 2,
+      "requestedDepth": 2,
+      "winning": true,
+      "move": {
+        "from": 39,
+        "to": 40
+      },
+      "nodes": 376
+    },
+    {
+      "name": "可证三层强制制胜 2",
+      "variant": "qbright",
+      "depth": 2,
+      "requestedDepth": 2,
+      "winning": true,
+      "move": {
+        "from": 39,
+        "to": 40
+      },
+      "nodes": 1121
+    },
+    {
+      "name": "可证三层强制制胜 2",
+      "variant": "qall",
+      "depth": 2,
+      "requestedDepth": 2,
+      "winning": true,
+      "move": {
+        "from": 39,
+        "to": 40
+      },
+      "nodes": 1121
+    },
+    {
+      "name": "可证三层强制制胜 2",
+      "variant": "baseline",
+      "depth": 2,
+      "requestedDepth": 3,
+      "winning": true,
+      "move": {
+        "from": 39,
+        "to": 40
+      },
+      "nodes": 376
+    },
+    {
+      "name": "可证三层强制制胜 2",
+      "variant": "qbright",
+      "depth": 2,
+      "requestedDepth": 3,
+      "winning": true,
+      "move": {
+        "from": 39,
+        "to": 40
+      },
+      "nodes": 1121
+    },
+    {
+      "name": "可证三层强制制胜 2",
+      "variant": "qall",
+      "depth": 2,
+      "requestedDepth": 3,
+      "winning": true,
+      "move": {
+        "from": 39,
+        "to": 40
+      },
+      "nodes": 1121
+    },
+    {
+      "name": "可证三层强制制胜 3",
+      "variant": "baseline",
+      "depth": 2,
+      "requestedDepth": 2,
+      "winning": true,
+      "move": {
+        "from": 19,
+        "to": 22
+      },
+      "nodes": 359
+    },
+    {
+      "name": "可证三层强制制胜 3",
+      "variant": "qbright",
+      "depth": 2,
+      "requestedDepth": 2,
+      "winning": true,
+      "move": {
+        "from": 19,
+        "to": 22
+      },
+      "nodes": 1380
+    },
+    {
+      "name": "可证三层强制制胜 3",
+      "variant": "qall",
+      "depth": 2,
+      "requestedDepth": 2,
+      "winning": true,
+      "move": {
+        "from": 19,
+        "to": 22
+      },
+      "nodes": 1380
+    },
+    {
+      "name": "可证三层强制制胜 3",
+      "variant": "baseline",
+      "depth": 2,
+      "requestedDepth": 3,
+      "winning": true,
+      "move": {
+        "from": 19,
+        "to": 22
+      },
+      "nodes": 359
+    },
+    {
+      "name": "可证三层强制制胜 3",
+      "variant": "qbright",
+      "depth": 2,
+      "requestedDepth": 3,
+      "winning": true,
+      "move": {
+        "from": 19,
+        "to": 22
+      },
+      "nodes": 1380
+    },
+    {
+      "name": "可证三层强制制胜 3",
+      "variant": "qall",
+      "depth": 2,
+      "requestedDepth": 3,
+      "winning": true,
+      "move": {
+        "from": 19,
+        "to": 22
+      },
+      "nodes": 1380
+    },
+    {
+      "name": "rook-quiet-mate",
+      "reflect": false,
+      "variant": "baseline",
+      "depth": 1,
+      "immediateQuietMate": true,
+      "move": {
+        "from": 18,
+        "to": 0
+      }
+    },
+    {
+      "name": "rook-quiet-mate",
+      "reflect": false,
+      "variant": "qbright",
+      "depth": 1,
+      "immediateQuietMate": true,
+      "move": {
+        "from": 18,
+        "to": 0
+      }
+    },
+    {
+      "name": "rook-quiet-mate",
+      "reflect": false,
+      "variant": "qall",
+      "depth": 1,
+      "immediateQuietMate": true,
+      "move": {
+        "from": 18,
+        "to": 0
+      }
+    },
+    {
+      "name": "rook-quiet-mate",
+      "reflect": true,
+      "variant": "baseline",
+      "depth": 1,
+      "immediateQuietMate": true,
+      "move": {
+        "from": 26,
+        "to": 8
+      }
+    },
+    {
+      "name": "rook-quiet-mate",
+      "reflect": true,
+      "variant": "qbright",
+      "depth": 1,
+      "immediateQuietMate": true,
+      "move": {
+        "from": 26,
+        "to": 8
+      }
+    },
+    {
+      "name": "rook-quiet-mate",
+      "reflect": true,
+      "variant": "qall",
+      "depth": 1,
+      "immediateQuietMate": true,
+      "move": {
+        "from": 26,
+        "to": 8
+      }
+    },
+    {
+      "name": "quiet-mate-color-swapped",
+      "reflect": false,
+      "variant": "baseline",
+      "depth": 1,
+      "immediateQuietMate": true,
+      "move": {
+        "from": 71,
+        "to": 89
+      }
+    },
+    {
+      "name": "quiet-mate-color-swapped",
+      "reflect": false,
+      "variant": "qbright",
+      "depth": 1,
+      "immediateQuietMate": true,
+      "move": {
+        "from": 71,
+        "to": 89
+      }
+    },
+    {
+      "name": "quiet-mate-color-swapped",
+      "reflect": false,
+      "variant": "qall",
+      "depth": 1,
+      "immediateQuietMate": true,
+      "move": {
+        "from": 71,
+        "to": 89
+      }
+    },
+    {
+      "name": "quiet-mate-color-swapped",
+      "reflect": true,
+      "variant": "baseline",
+      "depth": 1,
+      "immediateQuietMate": true,
+      "move": {
+        "from": 63,
+        "to": 81
+      }
+    },
+    {
+      "name": "quiet-mate-color-swapped",
+      "reflect": true,
+      "variant": "qbright",
+      "depth": 1,
+      "immediateQuietMate": true,
+      "move": {
+        "from": 63,
+        "to": 81
+      }
+    },
+    {
+      "name": "quiet-mate-color-swapped",
+      "reflect": true,
+      "variant": "qall",
+      "depth": 1,
+      "immediateQuietMate": true,
+      "move": {
+        "from": 63,
+        "to": 81
+      }
+    }
+  ],
+  "checks": 801,
+  "transitions": 14322,
+  "passed": true,
+  "informationIsolation": true,
+  "stderr": {
+    "baseline": "",
+    "qbright": "",
+    "qall": ""
+  },
+  "finishedAt": "2026-10-19T14:32:17.694Z"
+}

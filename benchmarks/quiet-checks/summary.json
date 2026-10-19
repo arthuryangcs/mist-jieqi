@@ -1,0 +1,955 @@
+{
+  "passed": true,
+  "generatedAt": "2026-10-19T14:40:35.261Z",
+  "productionUnchanged": true,
+  "productionSourceSha256": "eb1c25bbd4209321bbd0a881128bce0de784d300d2aed8abe6c189167ac38698",
+  "builds": [
+    {
+      "name": "baseline",
+      "sourceSha256": "eb1c25bbd4209321bbd0a881128bce0de784d300d2aed8abe6c189167ac38698",
+      "binarySha256": "c23e37685129cb0c7bced73089cc9176a56b804dd77048111dcb523b238ba7ab",
+      "flags": [
+        "-std=c++17",
+        "-O3",
+        "-DNDEBUG",
+        "-ffp-contract=off",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-isystem",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+      ],
+      "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+      "sanitize": false,
+      "warnings": ""
+    },
+    {
+      "name": "qbright",
+      "sourceSha256": "af615161b304df4f7132ac40e9b3fcdb43a91bcadc4050f7d183d2eca0bd4586",
+      "binarySha256": "7aab4d63896c404635ff17a0f0c6839acc958e616e7e90f2ddb206a6fc45f1cd",
+      "flags": [
+        "-std=c++17",
+        "-O3",
+        "-DNDEBUG",
+        "-ffp-contract=off",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-isystem",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+      ],
+      "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+      "sanitize": false,
+      "warnings": ""
+    },
+    {
+      "name": "qall",
+      "sourceSha256": "f94c8408db3bf66ecc914455c66d6353d37a7024b2956185f83f5a77f1753ec8",
+      "binarySha256": "7eed81e70702b963434e776392fd1b710d7837c067afb4dd689a36f239e1d239",
+      "flags": [
+        "-std=c++17",
+        "-O3",
+        "-DNDEBUG",
+        "-ffp-contract=off",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-isystem",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+      ],
+      "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+      "sanitize": false,
+      "warnings": ""
+    }
+  ],
+  "fixed": [
+    {
+      "position": "初始全暗",
+      "depth": 3,
+      "mediansMs": {
+        "baseline": 79.489996,
+        "qbright": 85.055009,
+        "qall": 95.846956
+      },
+      "relativeQall": 1.205773818380869
+    },
+    {
+      "position": "可达中局 2111 / 20步",
+      "depth": 3,
+      "mediansMs": {
+        "baseline": 26.591261,
+        "qbright": 28.457077,
+        "qall": 30.240022
+      },
+      "relativeQall": 1.1372165464435853
+    },
+    {
+      "position": "可达中局 2111 / 44步",
+      "depth": 3,
+      "mediansMs": {
+        "baseline": 31.888315,
+        "qbright": 48.708756,
+        "qall": 53.154974
+      },
+      "relativeQall": 1.6669107163548782
+    },
+    {
+      "position": "可达中局 2221 / 44步",
+      "depth": 3,
+      "mediansMs": {
+        "baseline": 71.008819,
+        "qbright": 81.725676,
+        "qall": 83.56087
+      },
+      "relativeQall": 1.1767674941897004
+    },
+    {
+      "position": "全明10子残局",
+      "depth": 4,
+      "mediansMs": {
+        "baseline": 25.579927,
+        "qbright": 36.209171,
+        "qall": 38.843753
+      },
+      "relativeQall": 1.518524779214577
+    },
+    {
+      "position": "4003/r/49",
+      "depth": 5,
+      "mediansMs": {
+        "baseline": 286.954455,
+        "qbright": 359.423405,
+        "qall": 354.338094
+      },
+      "relativeQall": 1.2348234635353545
+    },
+    {
+      "position": "4057/r/31",
+      "depth": 4,
+      "mediansMs": {
+        "baseline": 256.127838,
+        "qbright": 344.346258,
+        "qall": 334.554774
+      },
+      "relativeQall": 1.3062023113629688
+    },
+    {
+      "position": "4001/b/70",
+      "depth": 5,
+      "mediansMs": {
+        "baseline": 889.220992,
+        "qbright": 1520.581749,
+        "qall": 1540.832506
+      },
+      "relativeQall": 1.7327891714909043
+    }
+  ],
+  "timed": [
+    {
+      "position": "初始全暗",
+      "budget": 1000,
+      "variants": {
+        "baseline": {
+          "completeDepths": [
+            4,
+            4,
+            4
+          ],
+          "medianWallMs": 985.300973999998,
+          "moves": [
+            {
+              "from": 88,
+              "to": 69
+            },
+            {
+              "from": 88,
+              "to": 69
+            },
+            {
+              "from": 88,
+              "to": 69
+            }
+          ],
+          "allNodes": [
+            2551772,
+            2591867,
+            2522514
+          ]
+        },
+        "qbright": {
+          "completeDepths": [
+            4,
+            4,
+            4
+          ],
+          "medianWallMs": 979.7932360000123,
+          "moves": [
+            {
+              "from": 88,
+              "to": 69
+            },
+            {
+              "from": 88,
+              "to": 69
+            },
+            {
+              "from": 88,
+              "to": 69
+            }
+          ],
+          "allNodes": [
+            2280849,
+            1891598,
+            2306863
+          ]
+        },
+        "qall": {
+          "completeDepths": [
+            4,
+            4,
+            4
+          ],
+          "medianWallMs": 978.5145770000017,
+          "moves": [
+            {
+              "from": 88,
+              "to": 69
+            },
+            {
+              "from": 88,
+              "to": 69
+            },
+            {
+              "from": 88,
+              "to": 69
+            }
+          ],
+          "allNodes": [
+            2070245,
+            2163636,
+            2150804
+          ]
+        }
+      }
+    },
+    {
+      "position": "初始全暗",
+      "budget": 6000,
+      "variants": {
+        "baseline": {
+          "completeDepths": [
+            5
+          ],
+          "medianWallMs": 6120.42224,
+          "moves": [
+            {
+              "from": 88,
+              "to": 69
+            }
+          ],
+          "allNodes": [
+            16570812
+          ]
+        },
+        "qbright": {
+          "completeDepths": [
+            5
+          ],
+          "medianWallMs": 6116.159339999998,
+          "moves": [
+            {
+              "from": 88,
+              "to": 69
+            }
+          ],
+          "allNodes": [
+            15602087
+          ]
+        },
+        "qall": {
+          "completeDepths": [
+            5
+          ],
+          "medianWallMs": 6121.736036000002,
+          "moves": [
+            {
+              "from": 88,
+              "to": 69
+            }
+          ],
+          "allNodes": [
+            13736714
+          ]
+        }
+      }
+    },
+    {
+      "position": "可达中局 2111 / 44步",
+      "budget": 1000,
+      "variants": {
+        "baseline": {
+          "completeDepths": [
+            5,
+            5,
+            5
+          ],
+          "medianWallMs": 1014.5808930000057,
+          "moves": [
+            {
+              "from": 63,
+              "to": 46
+            },
+            {
+              "from": 63,
+              "to": 46
+            },
+            {
+              "from": 63,
+              "to": 46
+            }
+          ],
+          "allNodes": [
+            3955951,
+            3481691,
+            3524931
+          ]
+        },
+        "qbright": {
+          "completeDepths": [
+            5,
+            5,
+            5
+          ],
+          "medianWallMs": 1005.7495449999988,
+          "moves": [
+            {
+              "from": 63,
+              "to": 46
+            },
+            {
+              "from": 63,
+              "to": 46
+            },
+            {
+              "from": 63,
+              "to": 46
+            }
+          ],
+          "allNodes": [
+            3093741,
+            2972724,
+            3122821
+          ]
+        },
+        "qall": {
+          "completeDepths": [
+            5,
+            5,
+            5
+          ],
+          "medianWallMs": 1004.4849669999967,
+          "moves": [
+            {
+              "from": 63,
+              "to": 46
+            },
+            {
+              "from": 63,
+              "to": 46
+            },
+            {
+              "from": 63,
+              "to": 46
+            }
+          ],
+          "allNodes": [
+            3014407,
+            2944500,
+            3109573
+          ]
+        }
+      }
+    },
+    {
+      "position": "可达中局 2111 / 44步",
+      "budget": 6000,
+      "variants": {
+        "baseline": {
+          "completeDepths": [
+            6
+          ],
+          "medianWallMs": 6126.369229999997,
+          "moves": [
+            {
+              "from": 63,
+              "to": 46
+            }
+          ],
+          "allNodes": [
+            22742861
+          ]
+        },
+        "qbright": {
+          "completeDepths": [
+            6
+          ],
+          "medianWallMs": 6109.998395999995,
+          "moves": [
+            {
+              "from": 63,
+              "to": 46
+            }
+          ],
+          "allNodes": [
+            20339430
+          ]
+        },
+        "qall": {
+          "completeDepths": [
+            6
+          ],
+          "medianWallMs": 6173.908125999995,
+          "moves": [
+            {
+              "from": 63,
+              "to": 46
+            }
+          ],
+          "allNodes": [
+            19250287
+          ]
+        }
+      }
+    },
+    {
+      "position": "全明10子残局",
+      "budget": 1000,
+      "variants": {
+        "baseline": {
+          "completeDepths": [
+            6,
+            6,
+            6
+          ],
+          "medianWallMs": 983.0229739999922,
+          "moves": [
+            {
+              "from": 72,
+              "to": 0
+            },
+            {
+              "from": 72,
+              "to": 0
+            },
+            {
+              "from": 72,
+              "to": 0
+            }
+          ],
+          "allNodes": [
+            1288960,
+            1203200,
+            843248
+          ]
+        },
+        "qbright": {
+          "completeDepths": [
+            6,
+            6,
+            6
+          ],
+          "medianWallMs": 980.642995000002,
+          "moves": [
+            {
+              "from": 72,
+              "to": 0
+            },
+            {
+              "from": 72,
+              "to": 0
+            },
+            {
+              "from": 72,
+              "to": 0
+            }
+          ],
+          "allNodes": [
+            989352,
+            1050448,
+            956584
+          ]
+        },
+        "qall": {
+          "completeDepths": [
+            6,
+            6,
+            6
+          ],
+          "medianWallMs": 977.2636429999984,
+          "moves": [
+            {
+              "from": 72,
+              "to": 0
+            },
+            {
+              "from": 72,
+              "to": 0
+            },
+            {
+              "from": 72,
+              "to": 0
+            }
+          ],
+          "allNodes": [
+            1075384,
+            1049608,
+            1007656
+          ]
+        }
+      }
+    },
+    {
+      "position": "全明10子残局",
+      "budget": 6000,
+      "variants": {
+        "baseline": {
+          "completeDepths": [
+            7
+          ],
+          "medianWallMs": 5978.216465000005,
+          "moves": [
+            {
+              "from": 72,
+              "to": 0
+            }
+          ],
+          "allNodes": [
+            7800552
+          ]
+        },
+        "qbright": {
+          "completeDepths": [
+            7
+          ],
+          "medianWallMs": 5984.984119000001,
+          "moves": [
+            {
+              "from": 72,
+              "to": 0
+            }
+          ],
+          "allNodes": [
+            6600408
+          ]
+        },
+        "qall": {
+          "completeDepths": [
+            7
+          ],
+          "medianWallMs": 5977.302455000012,
+          "moves": [
+            {
+              "from": 72,
+              "to": 0
+            }
+          ],
+          "allNodes": [
+            6701832
+          ]
+        }
+      }
+    },
+    {
+      "position": "4003/r/49",
+      "budget": 1000,
+      "variants": {
+        "baseline": {
+          "completeDepths": [
+            5,
+            5,
+            5
+          ],
+          "medianWallMs": 1004.9963320000097,
+          "moves": [
+            {
+              "from": 6,
+              "to": 3
+            },
+            {
+              "from": 6,
+              "to": 3
+            },
+            {
+              "from": 6,
+              "to": 3
+            }
+          ],
+          "allNodes": [
+            3508054,
+            3676879,
+            3567458
+          ]
+        },
+        "qbright": {
+          "completeDepths": [
+            5,
+            5,
+            5
+          ],
+          "medianWallMs": 997.3385649999982,
+          "moves": [
+            {
+              "from": 6,
+              "to": 15
+            },
+            {
+              "from": 6,
+              "to": 15
+            },
+            {
+              "from": 6,
+              "to": 15
+            }
+          ],
+          "allNodes": [
+            2982575,
+            2943662,
+            3059580
+          ]
+        },
+        "qall": {
+          "completeDepths": [
+            5,
+            5,
+            5
+          ],
+          "medianWallMs": 997.5096499999927,
+          "moves": [
+            {
+              "from": 6,
+              "to": 15
+            },
+            {
+              "from": 6,
+              "to": 15
+            },
+            {
+              "from": 6,
+              "to": 15
+            }
+          ],
+          "allNodes": [
+            3023822,
+            2927352,
+            2945680
+          ]
+        }
+      }
+    },
+    {
+      "position": "4057/r/31",
+      "budget": 1000,
+      "variants": {
+        "baseline": {
+          "completeDepths": [
+            4,
+            4,
+            4
+          ],
+          "medianWallMs": 1008.0005719999972,
+          "moves": [
+            {
+              "from": 65,
+              "to": 58
+            },
+            {
+              "from": 65,
+              "to": 58
+            },
+            {
+              "from": 65,
+              "to": 58
+            }
+          ],
+          "allNodes": [
+            3295022,
+            3287238,
+            3279814
+          ]
+        },
+        "qbright": {
+          "completeDepths": [
+            4,
+            4,
+            4
+          ],
+          "medianWallMs": 992.7121920000063,
+          "moves": [
+            {
+              "from": 86,
+              "to": 76
+            },
+            {
+              "from": 86,
+              "to": 76
+            },
+            {
+              "from": 86,
+              "to": 76
+            }
+          ],
+          "allNodes": [
+            2816277,
+            2479186,
+            2617269
+          ]
+        },
+        "qall": {
+          "completeDepths": [
+            4,
+            4,
+            4
+          ],
+          "medianWallMs": 991.8464889999887,
+          "moves": [
+            {
+              "from": 86,
+              "to": 76
+            },
+            {
+              "from": 86,
+              "to": 76
+            },
+            {
+              "from": 86,
+              "to": 76
+            }
+          ],
+          "allNodes": [
+            2777439,
+            2874345,
+            2774967
+          ]
+        }
+      }
+    },
+    {
+      "position": "4001/b/70",
+      "budget": 1000,
+      "variants": {
+        "baseline": {
+          "completeDepths": [
+            5,
+            5,
+            5
+          ],
+          "medianWallMs": 1011.4029320000045,
+          "moves": [
+            {
+              "from": 20,
+              "to": 65
+            },
+            {
+              "from": 20,
+              "to": 65
+            },
+            {
+              "from": 20,
+              "to": 65
+            }
+          ],
+          "allNodes": [
+            2973613,
+            2876434,
+            2814162
+          ]
+        },
+        "qbright": {
+          "completeDepths": [
+            4,
+            4,
+            4
+          ],
+          "medianWallMs": 991.9105689999997,
+          "moves": [
+            {
+              "from": 42,
+              "to": 51
+            },
+            {
+              "from": 42,
+              "to": 51
+            },
+            {
+              "from": 42,
+              "to": 51
+            }
+          ],
+          "allNodes": [
+            2590144,
+            2444510,
+            2532479
+          ]
+        },
+        "qall": {
+          "completeDepths": [
+            4,
+            4,
+            4
+          ],
+          "medianWallMs": 997.4670900000056,
+          "moves": [
+            {
+              "from": 42,
+              "to": 51
+            },
+            {
+              "from": 42,
+              "to": 51
+            },
+            {
+              "from": 42,
+              "to": 51
+            }
+          ],
+          "allNodes": [
+            2558342,
+            2708611,
+            2643724
+          ]
+        }
+      }
+    }
+  ],
+  "match": {
+    "games": [
+      {
+        "seed": 9511,
+        "trialSide": "r",
+        "plies": 85,
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      {
+        "seed": 9511,
+        "trialSide": "b",
+        "plies": 32,
+        "status": "draw",
+        "winner": null,
+        "reason": "threefold-public-position",
+        "technicalForfeit": false
+      },
+      {
+        "seed": 9533,
+        "trialSide": "r",
+        "plies": 56,
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      {
+        "seed": 9533,
+        "trialSide": "b",
+        "plies": 45,
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      {
+        "seed": 9551,
+        "trialSide": "r",
+        "plies": 132,
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      {
+        "seed": 9551,
+        "trialSide": "b",
+        "plies": 60,
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      {
+        "seed": 9571,
+        "trialSide": "r",
+        "plies": 58,
+        "status": "draw",
+        "winner": null,
+        "reason": "threefold-public-position",
+        "technicalForfeit": false
+      },
+      {
+        "seed": 9571,
+        "trialSide": "b",
+        "plies": 88,
+        "status": "draw",
+        "winner": null,
+        "reason": "threefold-public-position",
+        "technicalForfeit": false
+      }
+    ],
+    "wins": 2,
+    "draws": 3,
+    "losses": 3,
+    "unresolved": 0,
+    "scoreRate": 0.4375,
+    "technical": [],
+    "gameCount": 8,
+    "points": 3.5,
+    "passesMatchGate": false,
+    "played": 556,
+    "darkCaptures": 60,
+    "timing": {
+      "baseline": {
+        "attempts": 278,
+        "medianMs": 377.4664760000014,
+        "p95Ms": 388.01608100000885,
+        "maxMs": 426.70339499998954,
+        "overGrace": 0,
+        "deadlineStops": 1,
+        "fallbacks": 0
+      },
+      "trial": {
+        "attempts": 278,
+        "medianMs": 374.26595599998836,
+        "p95Ms": 381.37207299999136,
+        "maxMs": 443.73112100000435,
+        "overGrace": 0,
+        "deadlineStops": 1,
+        "fallbacks": 0
+      }
+    }
+  },
+  "checks": {
+    "ruleViewVariants": 462,
+    "quietChecksCompared": 801,
+    "transitions": 14322,
+    "tacticalSearches": 36,
+    "informationIsolation": true,
+    "sanitizerPassed": true
+  },
+  "artifacts": {
+    "assessment": "bd782b5f716c315c123f0d73564e6bf92edce00aef9aecc9bbe3a0d88e5e006c",
+    "matches": "e5e7c70e14fb551d9304c6b154678776239f0cfb5a02a359161d52df963dc68b",
+    "match-verification": "15f80fc70672038fe4948f2b9b973522099e318050aad53e7cc1aa8e330e2865",
+    "check": "1086d6b0b19e5276e8ed2259fc659b04d4a61fb0061f06a7e0a391f6e3f7bd6f",
+    "check-sanitized": "ab0376d853f73cadb8680feaff3e29f332b25b13b11f689a712610beb05602b8",
+    "diagnostic": "3f398d0040129ececc0f42dde2cdadcced06bfc41967186824569554b8533edc",
+    "check-initial": "c44e4c1518c96c78be38831e86e6f43fa5048adee7fa812675d439347e067bf3",
+    "check-stalemate-criterion": "2fda35139c37c7f921cb194bc1190d42353fc6fa5341d2302f7aa92d5e79efa9"
+  },
+  "limits": [
+    "Four paired layouts at400ms; small correlated sample, not Elo or population win rate.",
+    "Fixed-depth timing repeated3 times;6s repeated once. Native SEARCH timing is distinct from end-to-end match STREAM timing.",
+    "Initial check-only win criterion wrongly excluded Xiangqi stalemates; failed attempts preserved and final predicate follows referee rules.",
+    "No broader evaluation changes were mixed into the trial."
+  ]
+}

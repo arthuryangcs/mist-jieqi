@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "verifiedAt": "2026-10-19T14:36:05.252Z",
+  "matchSha256": "e5e7c70e14fb551d9304c6b154678776239f0cfb5a02a359161d52df963dc68b",
+  "games": 8,
+  "played": 556,
+  "darkCaptures": 60,
+  "summary": {
+    "games": 8,
+    "wins": 2,
+    "draws": 3,
+    "losses": 3,
+    "unresolved": 0,
+    "scoreRate": 0.4375,
+    "technical": []
+  }
+}

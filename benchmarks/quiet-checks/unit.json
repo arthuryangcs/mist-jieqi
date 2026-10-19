@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "command": "npm test",
+  "runtime": "v25.6.0",
+  "tests": 86,
+  "pass": 86,
+  "fail": 0,
+  "durationMs": 6771.900639,
+  "checkedAt": "2026-10-19T14:36:57.879Z"
+}

@@ -1,0 +1,642 @@
+{
+  "build": {
+    "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+    "flags": [
+      "-std=c++17",
+      "-O3",
+      "-DNDEBUG",
+      "-ffp-contract=off",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-isystem",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+    ],
+    "threads": 4,
+    "independentWorldSearch": true,
+    "architecture": "x64",
+    "sourceSha256": "eb1c25bbd4209321bbd0a881128bce0de784d300d2aed8abe6c189167ac38698",
+    "binarySha256": "26381fefa3f8f11da4d7ce5c8a5ef0dc479f009660883766540d2b8d050f038b",
+    "sanitize": false,
+    "compilerWarnings": ""
+  },
+  "ruleCases": [
+    {
+      "name": "初始全暗",
+      "viewer": "r",
+      "legalMoves": 44,
+      "passed": true
+    },
+    {
+      "name": "初始全暗",
+      "viewer": "b",
+      "legalMoves": 44,
+      "passed": true
+    },
+    {
+      "name": "初始全暗",
+      "viewer": null,
+      "legalMoves": 44,
+      "passed": true
+    },
+    {
+      "name": "蹩马腿",
+      "viewer": "r",
+      "legalMoves": 8,
+      "passed": true
+    },
+    {
+      "name": "蹩马腿",
+      "viewer": "b",
+      "legalMoves": 8,
+      "passed": true
+    },
+    {
+      "name": "蹩马腿",
+      "viewer": null,
+      "legalMoves": 8,
+      "passed": true
+    },
+    {
+      "name": "塞象眼",
+      "viewer": "r",
+      "legalMoves": 8,
+      "passed": true
+    },
+    {
+      "name": "塞象眼",
+      "viewer": "b",
+      "legalMoves": 8,
+      "passed": true
+    },
+    {
+      "name": "塞象眼",
+      "viewer": null,
+      "legalMoves": 8,
+      "passed": true
+    },
+    {
+      "name": "炮隔一子",
+      "viewer": "r",
+      "legalMoves": 18,
+      "passed": true
+    },
+    {
+      "name": "炮隔一子",
+      "viewer": "b",
+      "legalMoves": 18,
+      "passed": true
+    },
+    {
+      "name": "炮隔一子",
+      "viewer": null,
+      "legalMoves": 18,
+      "passed": true
+    },
+    {
+      "name": "将帅照面",
+      "viewer": "r",
+      "legalMoves": 3,
+      "passed": true
+    },
+    {
+      "name": "将帅照面",
+      "viewer": "b",
+      "legalMoves": 3,
+      "passed": true
+    },
+    {
+      "name": "将帅照面",
+      "viewer": null,
+      "legalMoves": 3,
+      "passed": true
+    },
+    {
+      "name": "困毙",
+      "viewer": "r",
+      "legalMoves": 0,
+      "passed": true
+    },
+    {
+      "name": "困毙",
+      "viewer": "b",
+      "legalMoves": 0,
+      "passed": true
+    },
+    {
+      "name": "困毙",
+      "viewer": null,
+      "legalMoves": 0,
+      "passed": true
+    },
+    {
+      "name": "将死",
+      "viewer": "r",
+      "legalMoves": 0,
+      "passed": true
+    },
+    {
+      "name": "将死",
+      "viewer": "b",
+      "legalMoves": 0,
+      "passed": true
+    },
+    {
+      "name": "将死",
+      "viewer": null,
+      "legalMoves": 0,
+      "passed": true
+    },
+    {
+      "name": "私人暗俘第1步",
+      "viewer": "r",
+      "legalMoves": 44,
+      "passed": true
+    },
+    {
+      "name": "私人暗俘第1步",
+      "viewer": "b",
+      "legalMoves": 44,
+      "passed": true
+    },
+    {
+      "name": "私人暗俘第1步",
+      "viewer": null,
+      "legalMoves": 44,
+      "passed": true
+    },
+    {
+      "name": "私人暗俘第2步",
+      "viewer": "r",
+      "legalMoves": 36,
+      "passed": true
+    },
+    {
+      "name": "私人暗俘第2步",
+      "viewer": "b",
+      "legalMoves": 36,
+      "passed": true
+    },
+    {
+      "name": "私人暗俘第2步",
+      "viewer": null,
+      "legalMoves": 36,
+      "passed": true
+    },
+    {
+      "name": "可达7013/8",
+      "viewer": "r",
+      "legalMoves": 44,
+      "passed": true
+    },
+    {
+      "name": "可达7013/8",
+      "viewer": "b",
+      "legalMoves": 44,
+      "passed": true
+    },
+    {
+      "name": "可达7013/8",
+      "viewer": null,
+      "legalMoves": 44,
+      "passed": true
+    },
+    {
+      "name": "可达7013/16",
+      "viewer": "r",
+      "legalMoves": 36,
+      "passed": true
+    },
+    {
+      "name": "可达7013/16",
+      "viewer": "b",
+      "legalMoves": 36,
+      "passed": true
+    },
+    {
+      "name": "可达7013/16",
+      "viewer": null,
+      "legalMoves": 36,
+      "passed": true
+    },
+    {
+      "name": "可达7013/24",
+      "viewer": "r",
+      "legalMoves": 38,
+      "passed": true
+    },
+    {
+      "name": "可达7013/24",
+      "viewer": "b",
+      "legalMoves": 38,
+      "passed": true
+    },
+    {
+      "name": "可达7013/24",
+      "viewer": null,
+      "legalMoves": 38,
+      "passed": true
+    },
+    {
+      "name": "可达7013/32",
+      "viewer": "r",
+      "legalMoves": 38,
+      "passed": true
+    },
+    {
+      "name": "可达7013/32",
+      "viewer": "b",
+      "legalMoves": 38,
+      "passed": true
+    },
+    {
+      "name": "可达7013/32",
+      "viewer": null,
+      "legalMoves": 38,
+      "passed": true
+    },
+    {
+      "name": "可达7013/40",
+      "viewer": "r",
+      "legalMoves": 37,
+      "passed": true
+    },
+    {
+      "name": "可达7013/40",
+      "viewer": "b",
+      "legalMoves": 37,
+      "passed": true
+    },
+    {
+      "name": "可达7013/40",
+      "viewer": null,
+      "legalMoves": 37,
+      "passed": true
+    },
+    {
+      "name": "可达7027/8",
+      "viewer": "r",
+      "legalMoves": 31,
+      "passed": true
+    },
+    {
+      "name": "可达7027/8",
+      "viewer": "b",
+      "legalMoves": 31,
+      "passed": true
+    },
+    {
+      "name": "可达7027/8",
+      "viewer": null,
+      "legalMoves": 31,
+      "passed": true
+    },
+    {
+      "name": "可达7027/16",
+      "viewer": "r",
+      "legalMoves": 45,
+      "passed": true
+    },
+    {
+      "name": "可达7027/16",
+      "viewer": "b",
+      "legalMoves": 45,
+      "passed": true
+    },
+    {
+      "name": "可达7027/16",
+      "viewer": null,
+      "legalMoves": 45,
+      "passed": true
+    },
+    {
+      "name": "可达7027/24",
+      "viewer": "r",
+      "legalMoves": 37,
+      "passed": true
+    },
+    {
+      "name": "可达7027/24",
+      "viewer": "b",
+      "legalMoves": 37,
+      "passed": true
+    },
+    {
+      "name": "可达7027/24",
+      "viewer": null,
+      "legalMoves": 37,
+      "passed": true
+    },
+    {
+      "name": "可达7027/32",
+      "viewer": "r",
+      "legalMoves": 47,
+      "passed": true
+    },
+    {
+      "name": "可达7027/32",
+      "viewer": "b",
+      "legalMoves": 47,
+      "passed": true
+    },
+    {
+      "name": "可达7027/32",
+      "viewer": null,
+      "legalMoves": 47,
+      "passed": true
+    },
+    {
+      "name": "可达7027/40",
+      "viewer": "r",
+      "legalMoves": 55,
+      "passed": true
+    },
+    {
+      "name": "可达7027/40",
+      "viewer": "b",
+      "legalMoves": 55,
+      "passed": true
+    },
+    {
+      "name": "可达7027/40",
+      "viewer": null,
+      "legalMoves": 55,
+      "passed": true
+    },
+    {
+      "name": "可达7043/8",
+      "viewer": "r",
+      "legalMoves": 22,
+      "passed": true
+    },
+    {
+      "name": "可达7043/8",
+      "viewer": "b",
+      "legalMoves": 22,
+      "passed": true
+    },
+    {
+      "name": "可达7043/8",
+      "viewer": null,
+      "legalMoves": 22,
+      "passed": true
+    },
+    {
+      "name": "可达7043/16",
+      "viewer": "r",
+      "legalMoves": 26,
+      "passed": true
+    },
+    {
+      "name": "可达7043/16",
+      "viewer": "b",
+      "legalMoves": 26,
+      "passed": true
+    },
+    {
+      "name": "可达7043/16",
+      "viewer": null,
+      "legalMoves": 26,
+      "passed": true
+    },
+    {
+      "name": "可达7043/24",
+      "viewer": "r",
+      "legalMoves": 35,
+      "passed": true
+    },
+    {
+      "name": "可达7043/24",
+      "viewer": "b",
+      "legalMoves": 35,
+      "passed": true
+    },
+    {
+      "name": "可达7043/24",
+      "viewer": null,
+      "legalMoves": 35,
+      "passed": true
+    },
+    {
+      "name": "可达7043/32",
+      "viewer": "r",
+      "legalMoves": 34,
+      "passed": true
+    },
+    {
+      "name": "可达7043/32",
+      "viewer": "b",
+      "legalMoves": 34,
+      "passed": true
+    },
+    {
+      "name": "可达7043/32",
+      "viewer": null,
+      "legalMoves": 34,
+      "passed": true
+    },
+    {
+      "name": "可达7043/40",
+      "viewer": "r",
+      "legalMoves": 38,
+      "passed": true
+    },
+    {
+      "name": "可达7043/40",
+      "viewer": "b",
+      "legalMoves": 38,
+      "passed": true
+    },
+    {
+      "name": "可达7043/40",
+      "viewer": null,
+      "legalMoves": 38,
+      "passed": true
+    }
+  ],
+  "searchCases": [
+    {
+      "name": "初始/6101",
+      "depth": 3,
+      "samples": 8,
+      "nodes": 217728,
+      "nativeNodes": 211308,
+      "threads": 4,
+      "nodesEqual": false,
+      "candidates": 44,
+      "maxDifference": 1.7053025658242404e-13,
+      "passed": true
+    },
+    {
+      "name": "初始/6143",
+      "depth": 3,
+      "samples": 8,
+      "nodes": 222803,
+      "nativeNodes": 201173,
+      "threads": 4,
+      "nodesEqual": false,
+      "candidates": 44,
+      "maxDifference": 8.526512829121202e-14,
+      "passed": true
+    },
+    {
+      "name": "初始/6181",
+      "depth": 3,
+      "samples": 8,
+      "nodes": 234231,
+      "nativeNodes": 227520,
+      "threads": 4,
+      "nodesEqual": false,
+      "candidates": 44,
+      "maxDifference": 1.9895196601282805e-13,
+      "passed": true
+    },
+    {
+      "name": "可证三层强制制胜 0",
+      "depth": 2,
+      "samples": 1,
+      "nodes": 402,
+      "nativeNodes": 402,
+      "threads": 1,
+      "nodesEqual": true,
+      "candidates": 38,
+      "maxDifference": 0,
+      "passed": true
+    },
+    {
+      "name": "可证三层强制制胜 1",
+      "depth": 2,
+      "samples": 1,
+      "nodes": 405,
+      "nativeNodes": 405,
+      "threads": 1,
+      "nodesEqual": true,
+      "candidates": 38,
+      "maxDifference": 0,
+      "passed": true
+    },
+    {
+      "name": "可证三层强制制胜 2",
+      "depth": 2,
+      "samples": 1,
+      "nodes": 376,
+      "nativeNodes": 376,
+      "threads": 1,
+      "nodesEqual": true,
+      "candidates": 32,
+      "maxDifference": 0,
+      "passed": true
+    },
+    {
+      "name": "可证三层强制制胜 3",
+      "depth": 2,
+      "samples": 1,
+      "nodes": 359,
+      "nativeNodes": 359,
+      "threads": 1,
+      "nodesEqual": true,
+      "candidates": 34,
+      "maxDifference": 0,
+      "passed": true
+    },
+    {
+      "name": "困毙",
+      "depth": 0,
+      "samples": 0,
+      "nodes": 0,
+      "nativeNodes": 0,
+      "nodesEqual": true,
+      "candidates": 0,
+      "maxDifference": 0,
+      "passed": true
+    },
+    {
+      "name": "将死",
+      "depth": 0,
+      "samples": 0,
+      "nodes": 0,
+      "nativeNodes": 0,
+      "nodesEqual": true,
+      "candidates": 0,
+      "maxDifference": 0,
+      "passed": true
+    },
+    {
+      "name": "私人暗俘第2步",
+      "depth": 2,
+      "samples": 4,
+      "nodes": 11059,
+      "nativeNodes": 11059,
+      "threads": 4,
+      "nodesEqual": true,
+      "candidates": 36,
+      "maxDifference": 2.5579538487363607e-13,
+      "passed": true
+    },
+    {
+      "name": "可达中局 2111 / 20步",
+      "depth": 3,
+      "samples": 4,
+      "nodes": 34805,
+      "nativeNodes": 35372,
+      "threads": 4,
+      "nodesEqual": false,
+      "candidates": 25,
+      "maxDifference": 3.410605131648481e-13,
+      "passed": true
+    },
+    {
+      "name": "可达中局 2111 / 44步",
+      "depth": 3,
+      "samples": 4,
+      "nodes": 54337,
+      "nativeNodes": 55280,
+      "threads": 4,
+      "nodesEqual": false,
+      "candidates": 23,
+      "maxDifference": 1.4210854715202004e-13,
+      "passed": true
+    },
+    {
+      "name": "可达中局 2221 / 44步",
+      "depth": 3,
+      "samples": 4,
+      "nodes": 90805,
+      "nativeNodes": 87979,
+      "threads": 4,
+      "nodesEqual": false,
+      "candidates": 31,
+      "maxDifference": 3.552713678800501e-15,
+      "passed": true
+    },
+    {
+      "name": "根和棋规则",
+      "depth": 2,
+      "samples": 1,
+      "nodes": 0,
+      "nativeNodes": 0,
+      "threads": 1,
+      "nodesEqual": true,
+      "candidates": 38,
+      "maxDifference": 0,
+      "passed": true
+    },
+    {
+      "name": "固定节点中断1000",
+      "depth": 0,
+      "nodes": 1001,
+      "passed": true
+    },
+    {
+      "name": "固定节点中断10000",
+      "depth": 1,
+      "nodes": 10001,
+      "passed": true
+    }
+  ],
+  "transitionCount": 2172,
+  "passed": true,
+  "truncatedInputRejected": true,
+  "elapsedMs": 9765.013453000001,
+  "runtimeStderr": ""
+}

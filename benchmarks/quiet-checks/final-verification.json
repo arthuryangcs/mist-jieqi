@@ -1,0 +1,68 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-19T14:41:36.114Z",
+  "adopted": "production baseline bb7b7f5",
+  "quietCheckPrototypeEnabled": false,
+  "serviceURL": "http://127.0.0.1:8766/",
+  "service": {
+    "engine": "cpp-native",
+    "sourceSha256": "eb1c25bbd4209321bbd0a881128bce0de784d300d2aed8abe6c189167ac38698",
+    "binarySha256": "26381fefa3f8f11da4d7ce5c8a5ef0dc479f009660883766540d2b8d050f038b",
+    "maxThreads": 4,
+    "independentWorldSearch": true,
+    "transport": "loopback-http",
+    "protocol": 2,
+    "active": 0,
+    "completed": 22,
+    "aborted": 8
+  },
+  "matchSummary": {
+    "games": 8,
+    "wins": 2,
+    "draws": 3,
+    "losses": 3,
+    "unresolved": 0,
+    "scoreRate": 0.4375,
+    "technical": []
+  },
+  "productionCoreUnchanged": true,
+  "unitTests": 86,
+  "prototypeRuleViewVariants": 462,
+  "prototypeTacticalSearches": 36,
+  "sanitizerPassed": true,
+  "browserTests": 9,
+  "browserErrors": 0,
+  "unresolved": [
+    "First production service fault-injection attempt returned depth0 before receiving stub progress; identical retry passed6/6. Root cause not located; initial failure retained."
+  ],
+  "sourceHashes": {
+    "native/search.cpp": "eb1c25bbd4209321bbd0a881128bce0de784d300d2aed8abe6c189167ac38698",
+    "ai.js": "66bca44c185829ab7a42d5432fc8323c2937fed2be475ced46a654a7a2e1c18e",
+    "engine.js": "7f427f6e00e286a48335f7c7a7e74270d2a4349d7ea2aabcad0821122a17cb49",
+    "native/forcing-variants.mjs": "62d9b8d3ce1a3dcdb7960ce286f94ecb9009f7f2e96933ac6741e767eb6168b0",
+    "native/forcing-assessment.mjs": "fbaff82482e92546f9d20e896de2f2a1721fbc6c42f84d996a2f6491a82971f2",
+    "native/forcing-check.mjs": "e4296f6a81a6fb3cd1d11f380e8ea221859b987081c49a8dc363df152d6ccd00",
+    "native/forcing-match.mjs": "e82da4e1980d8309ae6caa4ef21cf492eb19e057842fc90edbd542e092c35de5",
+    "native/forcing-match-verify.mjs": "749c9dfe00a57590ba22c1c6c71064ac563a1beec9b37fde4fb786505194b562",
+    "native/forcing-summary.mjs": "e4574f9f2677904a56a55beb96a37ffd31afe178a4e53e754a74f66499292405",
+    "QUIET_CHECK_EXPERIMENT.md": "c52640a533e28aabed56bf1997287c70e70c78286f10f61e7c70a239bb54c6c1"
+  },
+  "artifactHashes": {
+    "benchmarks/quiet-checks/assessment.json": "bd782b5f716c315c123f0d73564e6bf92edce00aef9aecc9bbe3a0d88e5e006c",
+    "benchmarks/quiet-checks/baseline-build.json": "6bf793c558f2c8ae5b843342ad5618da7dcb28b8ca77b49855c7c409921087b7",
+    "benchmarks/quiet-checks/check-initial.json": "c44e4c1518c96c78be38831e86e6f43fa5048adee7fa812675d439347e067bf3",
+    "benchmarks/quiet-checks/check-sanitized.json": "ab0376d853f73cadb8680feaff3e29f332b25b13b11f689a712610beb05602b8",
+    "benchmarks/quiet-checks/check-stalemate-criterion.json": "2fda35139c37c7f921cb194bc1190d42353fc6fa5341d2302f7aa92d5e79efa9",
+    "benchmarks/quiet-checks/check.json": "1086d6b0b19e5276e8ed2259fc659b04d4a61fb0061f06a7e0a391f6e3f7bd6f",
+    "benchmarks/quiet-checks/diagnostic.json": "3f398d0040129ececc0f42dde2cdadcced06bfc41967186824569554b8533edc",
+    "benchmarks/quiet-checks/match-verification.json": "15f80fc70672038fe4948f2b9b973522099e318050aad53e7cc1aa8e330e2865",
+    "benchmarks/quiet-checks/matches.json": "e5e7c70e14fb551d9304c6b154678776239f0cfb5a02a359161d52df963dc68b",
+    "benchmarks/quiet-checks/production-native.json": "85cd7f7bc67f17a799c3e0ba00b7ecc1f1d66da5a76484351f84a657b72cddfb",
+    "benchmarks/quiet-checks/production-service-retry.json": "7a7ddb91cee7df797dd90233ec36d091a4d49b797412473a7e7b4615be3215e8",
+    "benchmarks/quiet-checks/production-service.json": "c6dde0615ada6a2efbabffe9b88e311f22371869043dd953fb20393c2b47dc06",
+    "benchmarks/quiet-checks/production-status.json": "0503704e34e354d13533b7017adc068459a2cc05a0f353cfe8fee7a435df1421",
+    "benchmarks/quiet-checks/summary.json": "ccd34c202bd1007a6d7dbc1e3152c298f3648277768714205fdcff55858591ce",
+    "benchmarks/quiet-checks/unit.json": "84b8c0b8d7d93f354fe808b28f165a3c851b3ee3ca6b4caf3fab57b5593d2d8c",
+    "benchmarks/quiet-checks/browser/results.json": "6fdd995292e337269a9f8fea5d4846c0bdafac60ac48ac9536b10104a0fc95c5"
+  }
+}
