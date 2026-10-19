@@ -1,0 +1,2091 @@
+{
+  "records": [
+    {
+      "file": "6101-s15-d5.json",
+      "seed": 6101,
+      "samples": 15,
+      "requestedDepth": 5,
+      "completedTarget": true,
+      "final": {
+        "depth": 5,
+        "nodes": 15662873,
+        "elapsedMs": 43956.02561,
+        "wallMs": 44219.881833,
+        "interruptedDepth": 0
+      },
+      "priorComparisons": []
+    },
+    {
+      "file": "6101-s8-d6.json",
+      "seed": 6101,
+      "samples": 8,
+      "requestedDepth": 6,
+      "completedTarget": true,
+      "final": {
+        "depth": 6,
+        "nodes": 52342260,
+        "elapsedMs": 139541.965743,
+        "wallMs": 139726.22644099998,
+        "interruptedDepth": 0
+      },
+      "priorComparisons": [
+        {
+          "file": "benchmarks/deep-opening-6101-s8-fast.json",
+          "depth": 1,
+          "nodesEqual": true,
+          "candidates": 44,
+          "maxDifference": 2.8421709430404007e-13
+        },
+        {
+          "file": "benchmarks/deep-opening-6101-s8-fast.json",
+          "depth": 2,
+          "nodesEqual": true,
+          "candidates": 44,
+          "maxDifference": 8.526512829121202e-14
+        },
+        {
+          "file": "benchmarks/deep-opening-6101-s8-fast.json",
+          "depth": 3,
+          "nodesEqual": true,
+          "candidates": 44,
+          "maxDifference": 1.7053025658242404e-13
+        },
+        {
+          "file": "benchmarks/deep-opening-6101-s8-fast.json",
+          "depth": 4,
+          "nodesEqual": true,
+          "candidates": 44,
+          "maxDifference": 2.913225216616411e-13
+        },
+        {
+          "file": "benchmarks/deep-opening-6101-s8-fast.json",
+          "depth": 5,
+          "nodesEqual": true,
+          "candidates": 44,
+          "maxDifference": 2.2737367544323206e-13
+        }
+      ]
+    },
+    {
+      "file": "6143-s15-d5.json",
+      "seed": 6143,
+      "samples": 15,
+      "requestedDepth": 5,
+      "completedTarget": true,
+      "final": {
+        "depth": 5,
+        "nodes": 15466178,
+        "elapsedMs": 43774.3485,
+        "wallMs": 44017.321742,
+        "interruptedDepth": 0
+      },
+      "priorComparisons": []
+    },
+    {
+      "file": "6143-s8-d6.json",
+      "seed": 6143,
+      "samples": 8,
+      "requestedDepth": 6,
+      "completedTarget": true,
+      "final": {
+        "depth": 6,
+        "nodes": 48337497,
+        "elapsedMs": 125428.33826,
+        "wallMs": 125600.256922,
+        "interruptedDepth": 0
+      },
+      "priorComparisons": [
+        {
+          "file": "benchmarks/deep-opening-6143-s8-fast.json",
+          "depth": 1,
+          "nodesEqual": true,
+          "candidates": 44,
+          "maxDifference": 2.1316282072803006e-13
+        },
+        {
+          "file": "benchmarks/deep-opening-6143-s8-fast.json",
+          "depth": 2,
+          "nodesEqual": true,
+          "candidates": 44,
+          "maxDifference": 2.1316282072803006e-13
+        },
+        {
+          "file": "benchmarks/deep-opening-6143-s8-fast.json",
+          "depth": 3,
+          "nodesEqual": true,
+          "candidates": 44,
+          "maxDifference": 8.526512829121202e-14
+        },
+        {
+          "file": "benchmarks/deep-opening-6143-s8-fast.json",
+          "depth": 4,
+          "nodesEqual": true,
+          "candidates": 44,
+          "maxDifference": 2.662869924563438e-13
+        },
+        {
+          "file": "benchmarks/deep-opening-6143-s8-fast.json",
+          "depth": 5,
+          "nodesEqual": true,
+          "candidates": 44,
+          "maxDifference": 1.4210854715202004e-14
+        }
+      ]
+    },
+    {
+      "file": "6181-s8-d6.json",
+      "seed": 6181,
+      "samples": 8,
+      "requestedDepth": 6,
+      "completedTarget": true,
+      "final": {
+        "depth": 6,
+        "nodes": 47908503,
+        "elapsedMs": 124416.683131,
+        "wallMs": 124583.21031200001,
+        "interruptedDepth": 0
+      },
+      "priorComparisons": []
+    },
+    {
+      "file": "6229-s8-d5.json",
+      "seed": 6229,
+      "samples": 8,
+      "requestedDepth": 5,
+      "completedTarget": true,
+      "final": {
+        "depth": 5,
+        "nodes": 8107746,
+        "elapsedMs": 23012.449407,
+        "wallMs": 23149.242196000003,
+        "interruptedDepth": 0
+      },
+      "priorComparisons": []
+    }
+  ],
+  "totalCoreSearchMs": 500129.810651,
+  "rows": [
+    {
+      "file": "6101-s15-d5.json",
+      "seed": 6101,
+      "samples": 15,
+      "depth": 4,
+      "elapsedMs": 7966.474712,
+      "iterationMs": 6628.324697,
+      "nodes": 2999799,
+      "iterationNodes": 2543476,
+      "best": {
+        "from": 64,
+        "to": 1,
+        "role": "C",
+        "score": 86.39318023913769
+      },
+      "bestNonPawn": {
+        "from": 64,
+        "to": 1,
+        "score": 86.39318023913769
+      },
+      "bestPawnAdvantage": -94.11644157015569,
+      "pawns": [
+        {
+          "from": 60,
+          "to": 51,
+          "score": -7.723261331017989,
+          "spread": 188.18798814645132,
+          "heuristicWinRate": 49.67820188778332,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 6,
+          "rankMin": 6,
+          "rankMax": 6,
+          "gapToBest": 94.11644157015569,
+          "gapToBestNonPawn": 94.11644157015569
+        },
+        {
+          "from": 62,
+          "to": 53,
+          "score": -16.222887071380754,
+          "spread": 239.44444463814617,
+          "heuristicWinRate": 49.324087549309844,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 8,
+          "rankMin": 8,
+          "rankMax": 8,
+          "gapToBest": 102.61606731051845,
+          "gapToBestNonPawn": 102.61606731051845
+        },
+        {
+          "from": 56,
+          "to": 47,
+          "score": -45.91829127092278,
+          "spread": 227.4819122524076,
+          "heuristicWinRate": 48.0876711349475,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 11,
+          "rankMin": 11,
+          "rankMax": 11,
+          "gapToBest": 132.31147151006047,
+          "gapToBestNonPawn": 132.31147151006047
+        },
+        {
+          "from": 58,
+          "to": 49,
+          "score": -48.13663272568996,
+          "spread": 168.2593948100628,
+          "heuristicWinRate": 47.99538207924349,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 12,
+          "rankMin": 12,
+          "rankMax": 12,
+          "gapToBest": 134.52981296482764,
+          "gapToBestNonPawn": 134.52981296482764
+        },
+        {
+          "from": 54,
+          "to": 45,
+          "score": -56.30665156278308,
+          "spread": 232.01097986794446,
+          "heuristicWinRate": 47.65560980881242,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 13,
+          "rankMin": 13,
+          "rankMax": 13,
+          "gapToBest": 142.69983180192077,
+          "gapToBestNonPawn": 142.69983180192077
+        }
+      ]
+    },
+    {
+      "file": "6101-s15-d5.json",
+      "seed": 6101,
+      "samples": 15,
+      "depth": 5,
+      "elapsedMs": 43955.856204,
+      "iterationMs": 35989.381492,
+      "nodes": 15662873,
+      "iterationNodes": 12663074,
+      "best": {
+        "from": 70,
+        "to": 7,
+        "role": "C",
+        "score": 103.91142174799253
+      },
+      "bestNonPawn": {
+        "from": 70,
+        "to": 7,
+        "score": 103.91142174799253
+      },
+      "bestPawnAdvantage": -117.28668347832092,
+      "pawns": [
+        {
+          "from": 62,
+          "to": 53,
+          "score": -13.375261730328397,
+          "spread": 208.65486343376716,
+          "heuristicWinRate": 49.442720505484715,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 5,
+          "rankMin": 5,
+          "rankMax": 5,
+          "gapToBest": 117.28668347832092,
+          "gapToBestNonPawn": 117.28668347832092
+        },
+        {
+          "from": 60,
+          "to": 51,
+          "score": -18.180446113136007,
+          "spread": 185.66591397520526,
+          "heuristicWinRate": 49.2425393653295,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 6,
+          "rankMin": 6,
+          "rankMax": 6,
+          "gapToBest": 122.09186786112855,
+          "gapToBestNonPawn": 122.09186786112855
+        },
+        {
+          "from": 54,
+          "to": 45,
+          "score": -22.431876358178943,
+          "spread": 229.50543721722056,
+          "heuristicWinRate": 49.065447338255645,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 8,
+          "rankMin": 8,
+          "rankMax": 8,
+          "gapToBest": 126.34329810617147,
+          "gapToBestNonPawn": 126.34329810617147
+        },
+        {
+          "from": 56,
+          "to": 47,
+          "score": -46.406312303793925,
+          "spread": 202.91067921680502,
+          "heuristicWinRate": 48.06736698707597,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 12,
+          "rankMin": 12,
+          "rankMax": 12,
+          "gapToBest": 150.31773405178646,
+          "gapToBestNonPawn": 150.31773405178646
+        },
+        {
+          "from": 58,
+          "to": 49,
+          "score": -91.26990082529883,
+          "spread": 160.96590795367888,
+          "heuristicWinRate": 46.20440363923258,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 14,
+          "rankMin": 14,
+          "rankMax": 14,
+          "gapToBest": 195.18132257329137,
+          "gapToBestNonPawn": 195.18132257329137
+        }
+      ]
+    },
+    {
+      "file": "6101-s8-d6.json",
+      "seed": 6101,
+      "samples": 8,
+      "depth": 4,
+      "elapsedMs": 4279.082735,
+      "iterationMs": 3693.095123,
+      "nodes": 1632360,
+      "iterationNodes": 1414632,
+      "best": {
+        "from": 88,
+        "to": 69,
+        "role": "N",
+        "score": 70.13252771576597
+      },
+      "bestNonPawn": {
+        "from": 88,
+        "to": 69,
+        "score": 70.13252771576597
+      },
+      "bestPawnAdvantage": -52.410720049887,
+      "pawns": [
+        {
+          "from": 60,
+          "to": 51,
+          "score": 17.721807665878977,
+          "spread": 208.86161319096024,
+          "heuristicWinRate": 50.73835497538073,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 3,
+          "rankMin": 3,
+          "rankMax": 3,
+          "gapToBest": 52.410720049887,
+          "gapToBestNonPawn": 52.410720049887
+        },
+        {
+          "from": 62,
+          "to": 53,
+          "score": 3.6728333964869897,
+          "spread": 292.04430636453145,
+          "heuristicWinRate": 50.15303424698659,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 4,
+          "rankMin": 4,
+          "rankMax": 4,
+          "gapToBest": 66.45969431927898,
+          "gapToBestNonPawn": 66.45969431927898
+        },
+        {
+          "from": 56,
+          "to": 47,
+          "score": -49.5820540955626,
+          "spread": 254.85119826440516,
+          "heuristicWinRate": 47.935255928447866,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 11,
+          "rankMin": 11,
+          "rankMax": 11,
+          "gapToBest": 119.71458181132857,
+          "gapToBestNonPawn": 119.71458181132857
+        },
+        {
+          "from": 58,
+          "to": 49,
+          "score": -51.095649450037335,
+          "spread": 208.2329352698472,
+          "heuristicWinRate": 47.872300313055796,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 12,
+          "rankMin": 12,
+          "rankMax": 12,
+          "gapToBest": 121.22817716580332,
+          "gapToBestNonPawn": 121.22817716580332
+        },
+        {
+          "from": 54,
+          "to": 45,
+          "score": -85.28129480306575,
+          "spread": 269.9693570176855,
+          "heuristicWinRate": 46.45258293043266,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 13,
+          "rankMin": 13,
+          "rankMax": 13,
+          "gapToBest": 155.41382251883172,
+          "gapToBestNonPawn": 155.41382251883172
+        }
+      ]
+    },
+    {
+      "file": "6101-s8-d6.json",
+      "seed": 6101,
+      "samples": 8,
+      "depth": 5,
+      "elapsedMs": 22304.549552,
+      "iterationMs": 18025.466817,
+      "nodes": 7765366,
+      "iterationNodes": 6133006,
+      "best": {
+        "from": 88,
+        "to": 69,
+        "role": "N",
+        "score": 31.460322756646715
+      },
+      "bestNonPawn": {
+        "from": 88,
+        "to": 69,
+        "score": 31.460322756646715
+      },
+      "bestPawnAdvantage": -35.011098703515415,
+      "pawns": [
+        {
+          "from": 60,
+          "to": 51,
+          "score": -3.550775946868703,
+          "spread": 201.83866850314746,
+          "heuristicWinRate": 49.852051434004515,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 3,
+          "rankMin": 3,
+          "rankMax": 3,
+          "gapToBest": 35.011098703515415,
+          "gapToBestNonPawn": 35.011098703515415
+        },
+        {
+          "from": 54,
+          "to": 45,
+          "score": -12.74822979707908,
+          "spread": 269.58880706426567,
+          "heuristicWinRate": 49.46884374027568,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 4,
+          "rankMin": 4,
+          "rankMax": 4,
+          "gapToBest": 44.208552553725795,
+          "gapToBestNonPawn": 44.208552553725795
+        },
+        {
+          "from": 62,
+          "to": 53,
+          "score": -21.20137927318717,
+          "spread": 258.54455178574636,
+          "heuristicWinRate": 49.11670110279594,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 5,
+          "rankMin": 5,
+          "rankMax": 5,
+          "gapToBest": 52.66170202983389,
+          "gapToBestNonPawn": 52.66170202983389
+        },
+        {
+          "from": 58,
+          "to": 49,
+          "score": -63.88157093295954,
+          "spread": 179.5480500099955,
+          "heuristicWinRate": 47.34077941580664,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 11,
+          "rankMin": 11,
+          "rankMax": 11,
+          "gapToBest": 95.34189368960625,
+          "gapToBestNonPawn": 95.34189368960625
+        },
+        {
+          "from": 56,
+          "to": 47,
+          "score": -85.43399337767383,
+          "spread": 206.57977744111642,
+          "heuristicWinRate": 46.44625257341747,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 13,
+          "rankMin": 13,
+          "rankMax": 13,
+          "gapToBest": 116.89431613432055,
+          "gapToBestNonPawn": 116.89431613432055
+        }
+      ]
+    },
+    {
+      "file": "6101-s8-d6.json",
+      "seed": 6101,
+      "samples": 8,
+      "depth": 6,
+      "elapsedMs": 139541.795187,
+      "iterationMs": 117237.24563500001,
+      "nodes": 52342260,
+      "iterationNodes": 44576894,
+      "best": {
+        "from": 60,
+        "to": 51,
+        "role": "P",
+        "score": 76.77717442504269
+      },
+      "bestNonPawn": {
+        "from": 88,
+        "to": 69,
+        "score": 74.38317271638672
+      },
+      "bestPawnAdvantage": 2.3940017086559635,
+      "pawns": [
+        {
+          "from": 60,
+          "to": 51,
+          "score": 76.77717442504269,
+          "spread": 200.63833925661942,
+          "heuristicWinRate": 53.19469089794142,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 1,
+          "rankMin": 1,
+          "rankMax": 1,
+          "gapToBest": 0,
+          "gapToBestNonPawn": -2.3940017086559635
+        },
+        {
+          "from": 54,
+          "to": 45,
+          "score": 15.640601268192418,
+          "spread": 290.216643214853,
+          "heuristicWinRate": 50.651654818703506,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 6,
+          "rankMin": 6,
+          "rankMax": 6,
+          "gapToBest": 61.13657315685027,
+          "gapToBestNonPawn": 58.742571448194305
+        },
+        {
+          "from": 56,
+          "to": 47,
+          "score": -0.36972194427054916,
+          "spread": 232.23618938838493,
+          "heuristicWinRate": 49.98459491947618,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 9,
+          "rankMin": 9,
+          "rankMax": 9,
+          "gapToBest": 77.14689636931324,
+          "gapToBestNonPawn": 74.75289466065728
+        },
+        {
+          "from": 58,
+          "to": 49,
+          "score": -3.8205471032686042,
+          "spread": 183.64950936278854,
+          "heuristicWinRate": 49.84081107523703,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 10,
+          "rankMin": 10,
+          "rankMax": 10,
+          "gapToBest": 80.5977215283113,
+          "gapToBestNonPawn": 78.20371981965533
+        },
+        {
+          "from": 62,
+          "to": 53,
+          "score": -9.014618508626032,
+          "spread": 281.6817797566453,
+          "heuristicWinRate": 49.62439796088224,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 11,
+          "rankMin": 11,
+          "rankMax": 11,
+          "gapToBest": 85.79179293366872,
+          "gapToBestNonPawn": 83.39779122501275
+        }
+      ]
+    },
+    {
+      "file": "6143-s15-d5.json",
+      "seed": 6143,
+      "samples": 15,
+      "depth": 4,
+      "elapsedMs": 9604.382091,
+      "iterationMs": 8201.131464999999,
+      "nodes": 3430215,
+      "iterationNodes": 2971208,
+      "best": {
+        "from": 64,
+        "to": 1,
+        "role": "C",
+        "score": 101.8934246702051
+      },
+      "bestNonPawn": {
+        "from": 64,
+        "to": 1,
+        "score": 101.8934246702051
+      },
+      "bestPawnAdvantage": -96.33546035747813,
+      "pawns": [
+        {
+          "from": 58,
+          "to": 49,
+          "score": 5.5579643127269875,
+          "spread": 199.318835317565,
+          "heuristicWinRate": 50.231580190408565,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 3,
+          "rankMin": 3,
+          "rankMax": 3,
+          "gapToBest": 96.33546035747813,
+          "gapToBestNonPawn": 96.33546035747813
+        },
+        {
+          "from": 56,
+          "to": 47,
+          "score": -13.173769874395276,
+          "spread": 196.81846175674073,
+          "heuristicWinRate": 49.4511149721896,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 8,
+          "rankMin": 8,
+          "rankMax": 8,
+          "gapToBest": 115.06719454460038,
+          "gapToBestNonPawn": 115.06719454460038
+        },
+        {
+          "from": 60,
+          "to": 51,
+          "score": -13.691830895121425,
+          "spread": 162.48046230596054,
+          "heuristicWinRate": 49.429531801267224,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 9,
+          "rankMin": 9,
+          "rankMax": 9,
+          "gapToBest": 115.58525556532653,
+          "gapToBestNonPawn": 115.58525556532653
+        },
+        {
+          "from": 62,
+          "to": 53,
+          "score": -37.87907313828222,
+          "spread": 165.8028858797178,
+          "heuristicWinRate": 48.42222928433346,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 11,
+          "rankMin": 11,
+          "rankMax": 11,
+          "gapToBest": 139.77249780848734,
+          "gapToBestNonPawn": 139.77249780848734
+        },
+        {
+          "from": 54,
+          "to": 45,
+          "score": -41.53235843682766,
+          "spread": 159.35562947893376,
+          "heuristicWinRate": 48.2701757131203,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 12,
+          "rankMin": 12,
+          "rankMax": 12,
+          "gapToBest": 143.42578310703277,
+          "gapToBestNonPawn": 143.42578310703277
+        }
+      ]
+    },
+    {
+      "file": "6143-s15-d5.json",
+      "seed": 6143,
+      "samples": 15,
+      "depth": 5,
+      "elapsedMs": 43774.178,
+      "iterationMs": 34169.795909,
+      "nodes": 15466178,
+      "iterationNodes": 12035963,
+      "best": {
+        "from": 64,
+        "to": 1,
+        "role": "C",
+        "score": 109.56384102190093
+      },
+      "bestNonPawn": {
+        "from": 64,
+        "to": 1,
+        "score": 109.56384102190093
+      },
+      "bestPawnAdvantage": -116.79722631938782,
+      "pawns": [
+        {
+          "from": 56,
+          "to": 47,
+          "score": -7.233385297486892,
+          "spread": 172.66612969823075,
+          "heuristicWinRate": 49.6986125961955,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 4,
+          "rankMin": 4,
+          "rankMax": 4,
+          "gapToBest": 116.79722631938782,
+          "gapToBestNonPawn": 116.79722631938782
+        },
+        {
+          "from": 58,
+          "to": 49,
+          "score": -10.118524806175087,
+          "spread": 184.98959865488564,
+          "heuristicWinRate": 49.578404791554895,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 5,
+          "rankMin": 5,
+          "rankMax": 5,
+          "gapToBest": 119.68236582807602,
+          "gapToBestNonPawn": 119.68236582807602
+        },
+        {
+          "from": 60,
+          "to": 51,
+          "score": -30.56332314059287,
+          "spread": 160.26470920741244,
+          "heuristicWinRate": 48.72680349477045,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 10,
+          "rankMin": 10,
+          "rankMax": 10,
+          "gapToBest": 140.12716416249378,
+          "gapToBestNonPawn": 140.12716416249378
+        },
+        {
+          "from": 62,
+          "to": 53,
+          "score": -33.22597703976276,
+          "spread": 159.06722318473265,
+          "heuristicWinRate": 48.61593796563903,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 11,
+          "rankMin": 11,
+          "rankMax": 11,
+          "gapToBest": 142.78981806166368,
+          "gapToBestNonPawn": 142.78981806166368
+        },
+        {
+          "from": 54,
+          "to": 45,
+          "score": -47.30021142958217,
+          "spread": 177.7974037698236,
+          "heuristicWinRate": 48.03017791410006,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 13,
+          "rankMin": 13,
+          "rankMax": 13,
+          "gapToBest": 156.8640524514831,
+          "gapToBestNonPawn": 156.8640524514831
+        }
+      ]
+    },
+    {
+      "file": "6143-s8-d6.json",
+      "seed": 6143,
+      "samples": 8,
+      "depth": 4,
+      "elapsedMs": 4598.23492,
+      "iterationMs": 3980.96425,
+      "nodes": 1806834,
+      "iterationNodes": 1584031,
+      "best": {
+        "from": 64,
+        "to": 1,
+        "role": "C",
+        "score": 303.23552042959125
+      },
+      "bestNonPawn": {
+        "from": 64,
+        "to": 1,
+        "score": 303.23552042959125
+      },
+      "bestPawnAdvantage": -200.93075077801,
+      "pawns": [
+        {
+          "from": 56,
+          "to": 47,
+          "score": 102.30476965158124,
+          "spread": 183.96079038870351,
+          "heuristicWinRate": 54.252401232893675,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 3,
+          "rankMin": 3,
+          "rankMax": 3,
+          "gapToBest": 200.93075077801,
+          "gapToBestNonPawn": 200.93075077801
+        },
+        {
+          "from": 58,
+          "to": 49,
+          "score": 72.85313435640573,
+          "spread": 165.49355532357626,
+          "heuristicWinRate": 53.031823262680746,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 6,
+          "rankMin": 6,
+          "rankMax": 6,
+          "gapToBest": 230.3823860731855,
+          "gapToBestNonPawn": 230.3823860731855
+        },
+        {
+          "from": 54,
+          "to": 45,
+          "score": 55.03942610972586,
+          "spread": 62.56049299628624,
+          "heuristicWinRate": 52.29170262277365,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 10,
+          "rankMin": 10,
+          "rankMax": 10,
+          "gapToBest": 248.19609431986538,
+          "gapToBestNonPawn": 248.19609431986538
+        },
+        {
+          "from": 62,
+          "to": 53,
+          "score": 48.834682661128866,
+          "spread": 93.20304198275498,
+          "heuristicWinRate": 52.03365590241925,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 11,
+          "rankMin": 11,
+          "rankMax": 11,
+          "gapToBest": 254.4008377684624,
+          "gapToBestNonPawn": 254.4008377684624
+        },
+        {
+          "from": 60,
+          "to": 51,
+          "score": 37.40412260704557,
+          "spread": 112.93044695592927,
+          "heuristicWinRate": 51.55800056969806,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 13,
+          "rankMin": 13,
+          "rankMax": 13,
+          "gapToBest": 265.8313978225457,
+          "gapToBestNonPawn": 265.8313978225457
+        }
+      ]
+    },
+    {
+      "file": "6143-s8-d6.json",
+      "seed": 6143,
+      "samples": 8,
+      "depth": 5,
+      "elapsedMs": 19811.101505,
+      "iterationMs": 15212.866585,
+      "nodes": 7219818,
+      "iterationNodes": 5412984,
+      "best": {
+        "from": 64,
+        "to": 1,
+        "role": "C",
+        "score": 314.0641097346985
+      },
+      "bestNonPawn": {
+        "from": 64,
+        "to": 1,
+        "score": 314.0641097346985
+      },
+      "bestPawnAdvantage": -205.39912444425957,
+      "pawns": [
+        {
+          "from": 56,
+          "to": 47,
+          "score": 108.66498529043892,
+          "spread": 138.2487168355797,
+          "heuristicWinRate": 54.515372361838885,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 3,
+          "rankMin": 3,
+          "rankMax": 3,
+          "gapToBest": 205.39912444425957,
+          "gapToBestNonPawn": 205.39912444425957
+        },
+        {
+          "from": 58,
+          "to": 49,
+          "score": 56.908937031152504,
+          "spread": 152.01214140329125,
+          "heuristicWinRate": 52.36942965666606,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 8,
+          "rankMin": 8,
+          "rankMax": 8,
+          "gapToBest": 257.155172703546,
+          "gapToBestNonPawn": 257.155172703546
+        },
+        {
+          "from": 62,
+          "to": 53,
+          "score": 47.56925750289287,
+          "spread": 81.08766358687959,
+          "heuristicWinRate": 51.981014840697426,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 10,
+          "rankMin": 10,
+          "rankMax": 10,
+          "gapToBest": 266.4948522318056,
+          "gapToBestNonPawn": 266.4948522318056
+        },
+        {
+          "from": 54,
+          "to": 45,
+          "score": 35.721607007740836,
+          "spread": 124.50451484464918,
+          "heuristicWinRate": 51.487960806979,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 11,
+          "rankMin": 11,
+          "rankMax": 11,
+          "gapToBest": 278.34250272695766,
+          "gapToBestNonPawn": 278.34250272695766
+        },
+        {
+          "from": 60,
+          "to": 51,
+          "score": 30.73297115788952,
+          "spread": 103.12187046979817,
+          "heuristicWinRate": 51.280260563732895,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 13,
+          "rankMin": 13,
+          "rankMax": 13,
+          "gapToBest": 283.331138576809,
+          "gapToBestNonPawn": 283.331138576809
+        }
+      ]
+    },
+    {
+      "file": "6143-s8-d6.json",
+      "seed": 6143,
+      "samples": 8,
+      "depth": 6,
+      "elapsedMs": 125428.159178,
+      "iterationMs": 105617.057673,
+      "nodes": 48337497,
+      "iterationNodes": 41117679,
+      "best": {
+        "from": 64,
+        "to": 1,
+        "role": "C",
+        "score": 329.0184134164273
+      },
+      "bestNonPawn": {
+        "from": 64,
+        "to": 1,
+        "score": 329.0184134164273
+      },
+      "bestPawnAdvantage": -164.5933413974353,
+      "pawns": [
+        {
+          "from": 56,
+          "to": 47,
+          "score": 164.42507201899198,
+          "spread": 153.6721550885121,
+          "heuristicWinRate": 56.80848873559289,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 3,
+          "rankMin": 3,
+          "rankMax": 3,
+          "gapToBest": 164.5933413974353,
+          "gapToBestNonPawn": 164.5933413974353
+        },
+        {
+          "from": 62,
+          "to": 53,
+          "score": 133.14927857660578,
+          "spread": 131.23011118657405,
+          "heuristicWinRate": 55.52523035407467,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 5,
+          "rankMin": 5,
+          "rankMax": 5,
+          "gapToBest": 195.8691348398215,
+          "gapToBestNonPawn": 195.8691348398215
+        },
+        {
+          "from": 58,
+          "to": 49,
+          "score": 126.30773130513124,
+          "spread": 167.30237544819795,
+          "heuristicWinRate": 55.24347242315375,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 7,
+          "rankMin": 7,
+          "rankMax": 7,
+          "gapToBest": 202.71068211129602,
+          "gapToBestNonPawn": 202.71068211129602
+        },
+        {
+          "from": 54,
+          "to": 45,
+          "score": 84.07914443362398,
+          "spread": 106.14450269608005,
+          "heuristicWinRate": 53.49757607940908,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 11,
+          "rankMin": 11,
+          "rankMax": 11,
+          "gapToBest": 244.9392689828033,
+          "gapToBestNonPawn": 244.9392689828033
+        },
+        {
+          "from": 60,
+          "to": 51,
+          "score": 70.27162360376288,
+          "spread": 115.79004952082845,
+          "heuristicWinRate": 52.92464198415677,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 14,
+          "rankMin": 14,
+          "rankMax": 14,
+          "gapToBest": 258.7467898126644,
+          "gapToBestNonPawn": 258.7467898126644
+        }
+      ]
+    },
+    {
+      "file": "6181-s8-d6.json",
+      "seed": 6181,
+      "samples": 8,
+      "depth": 4,
+      "elapsedMs": 4354.311439,
+      "iterationMs": 3759.770785,
+      "nodes": 1661074,
+      "iterationNodes": 1426843,
+      "best": {
+        "from": 70,
+        "to": 7,
+        "role": "C",
+        "score": 302.06192636349647
+      },
+      "bestNonPawn": {
+        "from": 70,
+        "to": 7,
+        "score": 302.06192636349647
+      },
+      "bestPawnAdvantage": -162.49970379903735,
+      "pawns": [
+        {
+          "from": 54,
+          "to": 45,
+          "score": 139.56222256445912,
+          "spread": 219.82815031337586,
+          "heuristicWinRate": 55.78901514018124,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 4,
+          "rankMin": 4,
+          "rankMax": 4,
+          "gapToBest": 162.49970379903735,
+          "gapToBestNonPawn": 162.49970379903735
+        },
+        {
+          "from": 56,
+          "to": 47,
+          "score": 114.54127394069172,
+          "spread": 184.8670557692892,
+          "heuristicWinRate": 54.758111615671226,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 8,
+          "rankMin": 8,
+          "rankMax": 8,
+          "gapToBest": 187.52065242280474,
+          "gapToBestNonPawn": 187.52065242280474
+        },
+        {
+          "from": 58,
+          "to": 49,
+          "score": 89.78652735618256,
+          "spread": 244.41575780173875,
+          "heuristicWinRate": 53.7341395688115,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 9,
+          "rankMin": 9,
+          "rankMax": 9,
+          "gapToBest": 212.27539900731392,
+          "gapToBestNonPawn": 212.27539900731392
+        },
+        {
+          "from": 62,
+          "to": 53,
+          "score": 68.63358022643483,
+          "spread": 264.6687651856036,
+          "heuristicWinRate": 52.856618305251246,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 11,
+          "rankMin": 11,
+          "rankMax": 11,
+          "gapToBest": 233.42834613706162,
+          "gapToBestNonPawn": 233.42834613706162
+        },
+        {
+          "from": 60,
+          "to": 51,
+          "score": 35.7156295279982,
+          "spread": 213.5923028613459,
+          "heuristicWinRate": 51.4877119658579,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 14,
+          "rankMin": 14,
+          "rankMax": 14,
+          "gapToBest": 266.34629683549826,
+          "gapToBestNonPawn": 266.34629683549826
+        }
+      ]
+    },
+    {
+      "file": "6181-s8-d6.json",
+      "seed": 6181,
+      "samples": 8,
+      "depth": 5,
+      "elapsedMs": 20207.887184,
+      "iterationMs": 15853.575744999998,
+      "nodes": 7366035,
+      "iterationNodes": 5704961,
+      "best": {
+        "from": 70,
+        "to": 7,
+        "role": "C",
+        "score": 265.85531626157854
+      },
+      "bestNonPawn": {
+        "from": 70,
+        "to": 7,
+        "score": 265.85531626157854
+      },
+      "bestPawnAdvantage": -122.22794195767617,
+      "pawns": [
+        {
+          "from": 56,
+          "to": 47,
+          "score": 143.62737430390237,
+          "spread": 144.9126171476383,
+          "heuristicWinRate": 55.95605973542873,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 4,
+          "rankMin": 4,
+          "rankMax": 4,
+          "gapToBest": 122.22794195767617,
+          "gapToBestNonPawn": 122.22794195767617
+        },
+        {
+          "from": 54,
+          "to": 45,
+          "score": 88.38646901062204,
+          "spread": 207.16536206268412,
+          "heuristicWinRate": 53.67612414450045,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 7,
+          "rankMin": 7,
+          "rankMax": 7,
+          "gapToBest": 177.46884725095651,
+          "gapToBestNonPawn": 177.46884725095651
+        },
+        {
+          "from": 58,
+          "to": 49,
+          "score": 50.370769872501874,
+          "spread": 295.8814323206209,
+          "heuristicWinRate": 52.09755029332167,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 11,
+          "rankMin": 11,
+          "rankMax": 11,
+          "gapToBest": 215.48454638907666,
+          "gapToBestNonPawn": 215.48454638907666
+        },
+        {
+          "from": 62,
+          "to": 53,
+          "score": 38.34772536116327,
+          "spread": 247.7772631814293,
+          "heuristicWinRate": 51.59727820615079,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 12,
+          "rankMin": 12,
+          "rankMax": 12,
+          "gapToBest": 227.50759090041527,
+          "gapToBestNonPawn": 227.50759090041527
+        },
+        {
+          "from": 60,
+          "to": 51,
+          "score": 27.381936094602505,
+          "spread": 201.45012149404204,
+          "heuristicWinRate": 51.140716030456666,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 13,
+          "rankMin": 13,
+          "rankMax": 13,
+          "gapToBest": 238.47338016697603,
+          "gapToBestNonPawn": 238.47338016697603
+        }
+      ]
+    },
+    {
+      "file": "6181-s8-d6.json",
+      "seed": 6181,
+      "samples": 8,
+      "depth": 6,
+      "elapsedMs": 124416.513123,
+      "iterationMs": 104208.62593899999,
+      "nodes": 47908503,
+      "iterationNodes": 40542468,
+      "best": {
+        "from": 70,
+        "to": 7,
+        "role": "C",
+        "score": 312.06004226198564
+      },
+      "bestNonPawn": {
+        "from": 70,
+        "to": 7,
+        "score": 312.06004226198564
+      },
+      "bestPawnAdvantage": -117.67896571278175,
+      "pawns": [
+        {
+          "from": 56,
+          "to": 47,
+          "score": 194.3810765492039,
+          "spread": 153.1895718502663,
+          "heuristicWinRate": 58.02910908591683,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 3,
+          "rankMin": 3,
+          "rankMax": 3,
+          "gapToBest": 117.67896571278175,
+          "gapToBestNonPawn": 117.67896571278175
+        },
+        {
+          "from": 54,
+          "to": 45,
+          "score": 147.7060456002696,
+          "spread": 223.94706471352868,
+          "heuristicWinRate": 56.123524434319236,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 6,
+          "rankMin": 6,
+          "rankMax": 6,
+          "gapToBest": 164.35399666171605,
+          "gapToBestNonPawn": 164.35399666171605
+        },
+        {
+          "from": 58,
+          "to": 49,
+          "score": 104.70826323190941,
+          "spread": 322.7632634493622,
+          "heuristicWinRate": 54.35180536340138,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 11,
+          "rankMin": 11,
+          "rankMax": 11,
+          "gapToBest": 207.35177903007622,
+          "gapToBestNonPawn": 207.35177903007622
+        },
+        {
+          "from": 60,
+          "to": 51,
+          "score": 103.07982019784097,
+          "spread": 238.2046974135968,
+          "heuristicWinRate": 54.28445965397858,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 12,
+          "rankMin": 12,
+          "rankMax": 12,
+          "gapToBest": 208.98022206414467,
+          "gapToBestNonPawn": 208.98022206414467
+        },
+        {
+          "from": 62,
+          "to": 53,
+          "score": 94.88462016407452,
+          "spread": 274.98546239827965,
+          "heuristicWinRate": 53.94530705250139,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 13,
+          "rankMin": 13,
+          "rankMax": 13,
+          "gapToBest": 217.1754220979111,
+          "gapToBestNonPawn": 217.1754220979111
+        }
+      ]
+    },
+    {
+      "file": "6229-s8-d5.json",
+      "seed": 6229,
+      "samples": 8,
+      "depth": 4,
+      "elapsedMs": 4280.169882,
+      "iterationMs": 3607.030967,
+      "nodes": 1622159,
+      "iterationNodes": 1379942,
+      "best": {
+        "from": 70,
+        "to": 7,
+        "role": "C",
+        "score": 137.4951280580527
+      },
+      "bestNonPawn": {
+        "from": 70,
+        "to": 7,
+        "score": 137.4951280580527
+      },
+      "bestPawnAdvantage": -153.97594626416586,
+      "pawns": [
+        {
+          "from": 56,
+          "to": 47,
+          "score": -16.48081820611315,
+          "spread": 163.5581559609289,
+          "heuristicWinRate": 49.313342414046545,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 5,
+          "rankMin": 5,
+          "rankMax": 5,
+          "gapToBest": 153.97594626416586,
+          "gapToBestNonPawn": 153.97594626416586
+        },
+        {
+          "from": 62,
+          "to": 53,
+          "score": -19.528183703864997,
+          "spread": 155.51196646887396,
+          "heuristicWinRate": 49.18639749886734,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 7,
+          "rankMin": 7,
+          "rankMax": 7,
+          "gapToBest": 157.02331176191768,
+          "gapToBestNonPawn": 157.02331176191768
+        },
+        {
+          "from": 58,
+          "to": 49,
+          "score": -32.599943997420596,
+          "spread": 137.22328320769026,
+          "heuristicWinRate": 48.642003062344294,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 9,
+          "rankMin": 9,
+          "rankMax": 9,
+          "gapToBest": 170.09507205547328,
+          "gapToBestNonPawn": 170.09507205547328
+        },
+        {
+          "from": 60,
+          "to": 51,
+          "score": -49.02138754930561,
+          "spread": 156.6514040183214,
+          "heuristicWinRate": 47.95857764588263,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 13,
+          "rankMin": 13,
+          "rankMax": 13,
+          "gapToBest": 186.51651560735831,
+          "gapToBestNonPawn": 186.51651560735831
+        },
+        {
+          "from": 54,
+          "to": 45,
+          "score": -93.2415936359026,
+          "spread": 132.18543743358993,
+          "heuristicWinRate": 46.122733453848056,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 25,
+          "rankMin": 25,
+          "rankMax": 25,
+          "gapToBest": 230.7367216939553,
+          "gapToBestNonPawn": 230.7367216939553
+        }
+      ]
+    },
+    {
+      "file": "6229-s8-d5.json",
+      "seed": 6229,
+      "samples": 8,
+      "depth": 5,
+      "elapsedMs": 23012.276946,
+      "iterationMs": 18732.107064000003,
+      "nodes": 8107746,
+      "iterationNodes": 6485587,
+      "best": {
+        "from": 70,
+        "to": 7,
+        "role": "C",
+        "score": 112.01009701211208
+      },
+      "bestNonPawn": {
+        "from": 70,
+        "to": 7,
+        "score": 112.01009701211208
+      },
+      "bestPawnAdvantage": -108.96087539003621,
+      "pawns": [
+        {
+          "from": 58,
+          "to": 49,
+          "score": 3.049221622075881,
+          "spread": 128.28388830765545,
+          "heuristicWinRate": 50.127050627474276,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 5,
+          "rankMin": 5,
+          "rankMax": 5,
+          "gapToBest": 108.96087539003621,
+          "gapToBestNonPawn": 108.96087539003621
+        },
+        {
+          "from": 62,
+          "to": 53,
+          "score": -17.961203660225845,
+          "spread": 160.59128504754224,
+          "heuristicWinRate": 49.251672396217224,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 7,
+          "rankMin": 7,
+          "rankMax": 7,
+          "gapToBest": 129.97130067233792,
+          "gapToBestNonPawn": 129.97130067233792
+        },
+        {
+          "from": 56,
+          "to": 47,
+          "score": -28.96890644177882,
+          "spread": 218.70921677250655,
+          "heuristicWinRate": 48.793196654521836,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 8,
+          "rankMin": 8,
+          "rankMax": 8,
+          "gapToBest": 140.9790034538909,
+          "gapToBestNonPawn": 140.9790034538909
+        },
+        {
+          "from": 60,
+          "to": 51,
+          "score": -68.00814243390475,
+          "spread": 128.96571105099054,
+          "heuristicWinRate": 47.169357311567204,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 14,
+          "rankMin": 14,
+          "rankMax": 14,
+          "gapToBest": 180.01823944601682,
+          "gapToBestNonPawn": 180.01823944601682
+        },
+        {
+          "from": 54,
+          "to": 45,
+          "score": -122.75651340783698,
+          "spread": 144.50009130835653,
+          "heuristicWinRate": 44.90291270522889,
+          "sampleWins": 0,
+          "sampleLosses": 0,
+          "repetitionCount": 0,
+          "role": "P",
+          "rank": 30,
+          "rankMin": 30,
+          "rankMax": 30,
+          "gapToBest": 234.76661041994907,
+          "gapToBestNonPawn": 234.76661041994907
+        }
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "kind": "depth",
+      "seed": 6101,
+      "samples": 15,
+      "depths": [
+        4,
+        5
+      ],
+      "identicalBestMoveAndScore": false,
+      "sameBestMove": false,
+      "spearman": 0.9558844256518675,
+      "bestPawnAdvantages": [
+        -94.11644157015569,
+        -117.28668347832092
+      ]
+    },
+    {
+      "kind": "depth",
+      "seed": 6101,
+      "samples": 8,
+      "depths": [
+        4,
+        5
+      ],
+      "identicalBestMoveAndScore": false,
+      "sameBestMove": true,
+      "spearman": 0.7792811839323467,
+      "bestPawnAdvantages": [
+        -52.410720049887,
+        -35.011098703515415
+      ]
+    },
+    {
+      "kind": "depth",
+      "seed": 6101,
+      "samples": 8,
+      "depths": [
+        5,
+        6
+      ],
+      "identicalBestMoveAndScore": false,
+      "sameBestMove": false,
+      "spearman": 0.923185341789993,
+      "bestPawnAdvantages": [
+        -35.011098703515415,
+        2.3940017086559635
+      ]
+    },
+    {
+      "kind": "depth",
+      "seed": 6143,
+      "samples": 15,
+      "depths": [
+        4,
+        5
+      ],
+      "identicalBestMoveAndScore": false,
+      "sameBestMove": true,
+      "spearman": 0.9715292459478506,
+      "bestPawnAdvantages": [
+        -96.33546035747813,
+        -116.79722631938782
+      ]
+    },
+    {
+      "kind": "depth",
+      "seed": 6143,
+      "samples": 8,
+      "depths": [
+        4,
+        5
+      ],
+      "identicalBestMoveAndScore": false,
+      "sameBestMove": true,
+      "spearman": 0.9106733858150339,
+      "bestPawnAdvantages": [
+        -200.93075077801,
+        -205.39912444425957
+      ]
+    },
+    {
+      "kind": "depth",
+      "seed": 6143,
+      "samples": 8,
+      "depths": [
+        5,
+        6
+      ],
+      "identicalBestMoveAndScore": false,
+      "sameBestMove": true,
+      "spearman": 0.9203664552501761,
+      "bestPawnAdvantages": [
+        -205.39912444425957,
+        -164.5933413974353
+      ]
+    },
+    {
+      "kind": "depth",
+      "seed": 6181,
+      "samples": 8,
+      "depths": [
+        4,
+        5
+      ],
+      "identicalBestMoveAndScore": false,
+      "sameBestMove": true,
+      "spearman": 0.9110641296687808,
+      "bestPawnAdvantages": [
+        -162.49970379903735,
+        -122.22794195767617
+      ]
+    },
+    {
+      "kind": "depth",
+      "seed": 6181,
+      "samples": 8,
+      "depths": [
+        5,
+        6
+      ],
+      "identicalBestMoveAndScore": false,
+      "sameBestMove": true,
+      "spearman": 0.951092318534179,
+      "bestPawnAdvantages": [
+        -122.22794195767617,
+        -117.67896571278175
+      ]
+    },
+    {
+      "kind": "depth",
+      "seed": 6229,
+      "samples": 8,
+      "depths": [
+        4,
+        5
+      ],
+      "identicalBestMoveAndScore": false,
+      "sameBestMove": true,
+      "spearman": 0.9538743442970503,
+      "bestPawnAdvantages": [
+        -153.97594626416586,
+        -108.96087539003621
+      ]
+    },
+    {
+      "kind": "samples",
+      "seed": 6101,
+      "samples": [
+        15,
+        8
+      ],
+      "depth": 4,
+      "smallerSampleIsPrefix": true,
+      "sameBestMove": false,
+      "spearman": 0.814799154334038,
+      "bestPawnAdvantages": [
+        -94.11644157015569,
+        -52.410720049887
+      ]
+    },
+    {
+      "kind": "samples",
+      "seed": 6101,
+      "samples": [
+        15,
+        8
+      ],
+      "depth": 5,
+      "smallerSampleIsPrefix": true,
+      "sameBestMove": false,
+      "spearman": 0.7883016208597604,
+      "bestPawnAdvantages": [
+        -117.28668347832092,
+        -35.011098703515415
+      ]
+    },
+    {
+      "kind": "seed",
+      "seeds": [
+        6101,
+        6143
+      ],
+      "samples": 15,
+      "depth": 5,
+      "sameBestMove": false,
+      "spearman": 0.8779422128259338,
+      "bestPawnAdvantages": [
+        -117.28668347832092,
+        -116.79722631938782
+      ]
+    },
+    {
+      "kind": "seed",
+      "seeds": [
+        6101,
+        6143
+      ],
+      "samples": 8,
+      "depth": 5,
+      "sameBestMove": false,
+      "spearman": 0.7355884425651867,
+      "bestPawnAdvantages": [
+        -35.011098703515415,
+        -205.39912444425957
+      ]
+    },
+    {
+      "kind": "seed",
+      "seeds": [
+        6101,
+        6143
+      ],
+      "samples": 8,
+      "depth": 6,
+      "sameBestMove": false,
+      "spearman": 0.7024665257223397,
+      "bestPawnAdvantages": [
+        2.3940017086559635,
+        -164.5933413974353
+      ]
+    },
+    {
+      "kind": "seed",
+      "seeds": [
+        6101,
+        6181
+      ],
+      "samples": 8,
+      "depth": 5,
+      "sameBestMove": false,
+      "spearman": 0.7384073291050035,
+      "bestPawnAdvantages": [
+        -35.011098703515415,
+        -122.22794195767617
+      ]
+    },
+    {
+      "kind": "seed",
+      "seeds": [
+        6101,
+        6181
+      ],
+      "samples": 8,
+      "depth": 6,
+      "sameBestMove": false,
+      "spearman": 0.8142353770260747,
+      "bestPawnAdvantages": [
+        2.3940017086559635,
+        -117.67896571278175
+      ]
+    },
+    {
+      "kind": "seed",
+      "seeds": [
+        6101,
+        6229
+      ],
+      "samples": 8,
+      "depth": 5,
+      "sameBestMove": false,
+      "spearman": 0.7766032417195208,
+      "bestPawnAdvantages": [
+        -35.011098703515415,
+        -108.96087539003621
+      ]
+    },
+    {
+      "kind": "samples",
+      "seed": 6143,
+      "samples": [
+        15,
+        8
+      ],
+      "depth": 4,
+      "smallerSampleIsPrefix": true,
+      "sameBestMove": true,
+      "spearman": 0.9330843234941223,
+      "bestPawnAdvantages": [
+        -96.33546035747813,
+        -200.93075077801
+      ]
+    },
+    {
+      "kind": "samples",
+      "seed": 6143,
+      "samples": [
+        15,
+        8
+      ],
+      "depth": 5,
+      "smallerSampleIsPrefix": true,
+      "sameBestMove": true,
+      "spearman": 0.9403805496828752,
+      "bestPawnAdvantages": [
+        -116.79722631938782,
+        -205.39912444425957
+      ]
+    },
+    {
+      "kind": "seed",
+      "seeds": [
+        6143,
+        6181
+      ],
+      "samples": 8,
+      "depth": 5,
+      "sameBestMove": false,
+      "spearman": 0.9257223396758281,
+      "bestPawnAdvantages": [
+        -205.39912444425957,
+        -122.22794195767617
+      ]
+    },
+    {
+      "kind": "seed",
+      "seeds": [
+        6143,
+        6181
+      ],
+      "samples": 8,
+      "depth": 6,
+      "sameBestMove": false,
+      "spearman": 0.8466525722339676,
+      "bestPawnAdvantages": [
+        -164.5933413974353,
+        -117.67896571278175
+      ]
+    },
+    {
+      "kind": "seed",
+      "seeds": [
+        6143,
+        6229
+      ],
+      "samples": 8,
+      "depth": 5,
+      "sameBestMove": false,
+      "spearman": 0.7512332628611699,
+      "bestPawnAdvantages": [
+        -205.39912444425957,
+        -108.96087539003621
+      ]
+    },
+    {
+      "kind": "seed",
+      "seeds": [
+        6181,
+        6229
+      ],
+      "samples": 8,
+      "depth": 5,
+      "sameBestMove": true,
+      "spearman": 0.7058491895701198,
+      "bestPawnAdvantages": [
+        -122.22794195767617,
+        -108.96087539003621
+      ]
+    }
+  ],
+  "scoreCaveat": "Complete frozen-engine full-window sampled heuristic rankings; no certified true-game/minimax bounds. rankMin/rankMax cover numerical ties only, not score uncertainty.",
+  "allRoundsCompleteRoot": true
+}

@@ -1,0 +1,93 @@
+{
+  "baselineCommit": "13cd1a648b247e6e2123fb3fbcae61d45798c6af",
+  "frozenSourceHashes": {
+    "native/search.cpp": "9e65d6d86bf60cde9e0e63973464a913f1a164e7f0193ec02152eddb94207e9e",
+    "native/bridge.mjs": "a0c2a84c72acaeeaf7b0709f06fefc01f97924387274a649a90d270e06df4816",
+    "engine.js": "7f427f6e00e286a48335f7c7a7e74270d2a4349d7ea2aabcad0821122a17cb49",
+    "ai.js": "66bca44c185829ab7a42d5432fc8323c2937fed2be475ced46a654a7a2e1c18e",
+    "app.js": "8be707442188d8ea44e0ca9b3725962edd8a61befb949550ce5beec9cdda97e0",
+    "worker.js": "fdacb906f65b1423dbe5ed62e7389f5f0a4f31cc8e918764f76fd8a29576c523",
+    "deadline-search.js": "20a1c2467443425638f2b9d439856888d62c78aa17b3b9e65d7fb79c3cb0d5df",
+    "index.html": "be07fab71fcc192bf184449c1b234f9e137b9e6b56798bfda4768935ba3bcba9",
+    "native/server.mjs": "0704c82e71b826dd97ef3e38a542b3d6f87963b195a7561449cdb56cb2a77b32"
+  },
+  "experimentAndDocHashes": {
+    "native/opening-depth.mjs": "7f68f592612072bb4c4c44283de983ca807036bf95bbff9332b110cfdc0dcb8f",
+    "native/opening-summary.mjs": "3f72a837d0ddb5f63cbba2b04f946e45df9054f7ef59e1100b14745bc32e1d6f",
+    "native/opening-verify.mjs": "cf680b3e05b2bd5286e44917323d55403cfe94d60af24711e7d945e229db4b94",
+    "OPENING_SIX_PLY_REPORT.md": "dbb329e3ccd422a223435dc6a474a9d73b488b5bf80342eab771f7286e78fabd",
+    "OPENING_DEPTH_STAGE.md": "146b13f3bfb5102e6ad387abff1c3482a8c3c066755055fa2674c7dde5c00b10",
+    "README.md": "b47d6b85476e6fd236eb3f86c8252589e412532c241fb6db4031029f2302cb94"
+  },
+  "evidenceHashes": {
+    "benchmarks/opening-depth-cpp/6101-s15-d5.json": "d401398f33e1a6e6c5f12a91b940a2b5a3bee294b59e49a38463fecf9d07957a",
+    "benchmarks/opening-depth-cpp/6101-s8-d6.json": "1dfa9e175c0e6c241e4644b37fbec7fdb129fdecb2b5fce436247f50f9b67a7b",
+    "benchmarks/opening-depth-cpp/6143-s15-d5.json": "f914725fcda8eeda418578806e83b7e55943b8b7b14486a68c73773d18dff11e",
+    "benchmarks/opening-depth-cpp/6143-s8-d6.json": "2bb7bf0fb63bc9dfcb3368ed40157466d9f0557151ecab62c0b3b61f90cae047",
+    "benchmarks/opening-depth-cpp/6181-s8-d6.json": "eb38e46032230fe070e3b137600c0e8ff3156d920b16dd3726efccdf97864afa",
+    "benchmarks/opening-depth-cpp/6229-s8-d5.json": "2af336483741fc0a22404cbee4ff757dafeb8ebc1d98b6aad2fa92c986d61ed3",
+    "benchmarks/opening-depth-cpp/all-root-scores.csv": "c5d4a3fef47fc5cc81541052f2395aba023c37335e87479bbecf7d4dd95b5b09",
+    "benchmarks/opening-depth-cpp/protocol.json": "f3b5ae1e18bac83651cee3873479f9d5cf39d94539e4c4982176cc7e66cd4414",
+    "benchmarks/opening-depth-cpp/service-check.json": "d6a119d1fc73fb714a2e29fdd033e2dfb66125b514616f4e5d5cfba1de686679",
+    "benchmarks/opening-depth-cpp/summary.json": "a8ad53b50976bed2e32eedf8ad7183b9ed2c39dee6bb7ad4fc6147cf6673d559",
+    "benchmarks/opening-depth-cpp/verification.json": "dab305b1c22306b6cf87cbdfe7bad62b53b3dc49b96829f3dc2983287efc5f69"
+  },
+  "completedTargets": [
+    {
+      "seed": 6101,
+      "samples": 15,
+      "depth": 5,
+      "elapsedMs": 43956.02561,
+      "nodes": 15662873
+    },
+    {
+      "seed": 6101,
+      "samples": 8,
+      "depth": 6,
+      "elapsedMs": 139541.965743,
+      "nodes": 52342260
+    },
+    {
+      "seed": 6143,
+      "samples": 15,
+      "depth": 5,
+      "elapsedMs": 43774.3485,
+      "nodes": 15466178
+    },
+    {
+      "seed": 6143,
+      "samples": 8,
+      "depth": 6,
+      "elapsedMs": 125428.33826,
+      "nodes": 48337497
+    },
+    {
+      "seed": 6181,
+      "samples": 8,
+      "depth": 6,
+      "elapsedMs": 124416.683131,
+      "nodes": 47908503
+    },
+    {
+      "seed": 6229,
+      "samples": 8,
+      "depth": 5,
+      "elapsedMs": 23012.449407,
+      "nodes": 8107746
+    }
+  ],
+  "totalCoreSearchMs": 500129.810651,
+  "limitMs": 600000,
+  "sevenPly": {
+    "attempted": false,
+    "reason": "Observed 5->6 growth suggests about 13-15 minutes, above 300-second request cap; a projection, not a measured lower bound"
+  },
+  "fifteenSampleSixPly": {
+    "attempted": false,
+    "reason": "Estimated about 275-277 seconds each; about100 seconds left in total budget after planned runs"
+  },
+  "scoreBoundsCertified": false,
+  "serviceAvailable": true,
+  "publication": "local only, no GitHub push",
+  "createdAt": "2026-10-19T11:14:36.272Z"
+}

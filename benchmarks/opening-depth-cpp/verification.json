@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "records": 6,
+  "completedRounds": 33,
+  "rootRows": 1452,
+  "allRootMoves": 44,
+  "priorRoundsCompared": 10,
+  "completedSixPlySeeds": [
+    6101,
+    6143,
+    6181
+  ],
+  "fifteenSampleCompleteMarginal": true,
+  "nestedEightSamplePrefix": true,
+  "frozenProductionSources": true,
+  "rootFullWindow": true,
+  "gameValueBoundsCertified": false,
+  "totalCoreSearchMs": 500129.810651
+}

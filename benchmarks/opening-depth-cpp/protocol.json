@@ -1,0 +1,55 @@
+{
+  "frozenCommit": "13cd1a6",
+  "sourceSha256": "9e65d6d86bf60cde9e0e63973464a913f1a164e7f0193ec02152eddb94207e9e",
+  "sourceAudit": {
+    "rootWindow": "(-Infinity,+Infinity) for EACH root move and EACH sampled world",
+    "rootCallAnchor": "v=-s.search(w,depth-1,-inf,inf,1);",
+    "rootBestAlphaShared": false,
+    "allRootMovesRequired": 44,
+    "iterationEmittedOnlyAfterFullRoot": true,
+    "internalSearch": "PVS/null windows, alpha-beta, bound-tagged transposition entries, path cycle approximation, qsearch and check extensions retained",
+    "trueGameBoundsCertified": false,
+    "strictUniformDepthMinimaxCertified": false,
+    "scoreMeaning": "Nonlinear aggregate of per-sampled-world frozen-engine heuristic search returns; no game-theoretic confidence interval or certified exact bound is supplied",
+    "rankIntervalsMeaning": "Only numerical score ties within 1e-7, not uncertainty intervals"
+  },
+  "plan": {
+    "searchComputeCapMs": 600000,
+    "perRequestCapMs": 180000,
+    "priority": [
+      {
+        "seed": 6101,
+        "samples": 8,
+        "depth": 6
+      },
+      {
+        "seed": 6143,
+        "samples": 8,
+        "depth": 6
+      },
+      {
+        "seed": 6181,
+        "samples": 8,
+        "depth": 6
+      },
+      {
+        "seed": 6101,
+        "samples": 15,
+        "depth": 5
+      },
+      {
+        "seed": 6143,
+        "samples": 15,
+        "depth": 5
+      },
+      {
+        "seed": 6229,
+        "samples": 8,
+        "depth": 5
+      }
+    ],
+    "budgetAdaptation": "Sequential searches only; allocate by actual compute cost, preserve room for sample-count probes. No selection based on whether pawn wins. A request may end at last completed iteration if its finite budget expires.",
+    "sevenPly": "Attempt only if observed six-ply cost and growth imply <=300s and fit remaining total compute cap; otherwise explicitly skip with estimate."
+  },
+  "createdAt": "2026-10-19T11:01:01.401Z"
+}
