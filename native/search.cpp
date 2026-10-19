@@ -117,10 +117,18 @@ Destinations candidates(const Board& b,int f,bool captures) {
     else {for(auto d:rays)add(x+d[0],y+d[1]);for(int i=0;i<90;i++)if(b[i].side!=p.side&&b[i].type==K){if(std::find(out.begin(),out.end(),i)==out.end())out.push_back(i);break;}}
     return out;
 }
-void legalInto(Board& b,int side,bool captures,bool first,int king,std::vector<Move>& out) {
+void legalInto(Board& b,int side,bool captures,bool first,int king,std::vector<Move>& out,int checked=-1) {
     if(king==-2)king=kingAt(b,side);out.clear();
+    const bool noCheck=king>=0&&!(checked<0?inCheck(b,side,king):checked);
+    const int kx=king%9,ky=king/9;
     for(int f=0;f<90;f++)if(b[f].side==side)for(int t:candidates(b,f,captures)) {
-        if(!pseudo(b,f,t))continue;Piece p=b[f],q=b[t];b[t]=p;b[f]=Piece{};
+        if(b[t].side==side)continue;const int role=b[f].effective();if(role!=R&&role!=C&&!pseudo(b,f,t))continue;Piece p=b[f],q=b[t];
+        const int fx=f%9,fy=f/9,tx=t%9,ty=t/9;
+        // Removing a ray blocker or a horse/elephant blocker can expose check;
+        // adding a ray blocker can create a cannon screen. Keep the full test there.
+        const bool sensitive=fx==kx||fy==ky||tx==kx||ty==ky||(std::abs(fx-kx)==1&&std::abs(fy-ky)==1);
+        if(noCheck&&!(!p.hidden&&p.type==K)&&!sensitive){out.push_back({f,t});if(first)return;continue;}
+        b[t]=p;b[f]=Piece{};
         bool safe=!inCheck(b,side,!p.hidden&&p.type==K?t:king);b[f]=p;b[t]=q;
         if(safe) {out.push_back({f,t});if(first)return;}
     }
@@ -146,7 +154,7 @@ struct Entry {int depth,flag;double score;Move best;}; // exact=0, lower=1, uppe
 struct State {
     Board board;int turn=0,viewer=-1,kings[2]={-1,-1},population=0,poolCount[2]={0,0},poolValue[2]={0,0};
     uint32_t h1=0,h2=0;uint64_t cycles=0;
-    std::unordered_set<Key,KeyHash> path;
+    std::vector<Key> path;
     std::unordered_map<Key,Entry,KeyHash> table;
     Key key(int ext=-1)const{return {h1,h2,turn,poolCount[0],poolValue[0],poolCount[1],poolValue[1],ext};}
 };
@@ -158,7 +166,7 @@ State stateOf(const Board& b,const std::vector<Piece>& captured,int turn,int vie
     State s;s.board=b;s.turn=turn;s.viewer=viewer;
     for(int side:{0,1}){auto pool=remaining(b,captured,side);s.poolCount[side]=int(pool.size());for(int t:pool)s.poolValue[side]+=value[t];}
     for(int i=0;i<90;i++){Piece p=b[i];if(!p.live())continue;xorPiece(s,p,i);if(!p.hidden&&p.type==K)s.kings[p.side]=i;else s.population++;}
-    s.path.insert(s.key());return s;
+    s.path.reserve(128);s.path.push_back(s.key());return s;
 }
 double evaluate(const State& s,int side) {
     double total=0,phase=std::min(1.0,s.population/24.0);
@@ -246,16 +254,16 @@ struct Search {
     double elapsed() const {return std::chrono::duration<double,std::milli>(std::chrono::steady_clock::now()-start).count();}
     void tick(){nodes++;if((nodeLimit&&nodes>nodeLimit)||((nodes&7)==0&&elapsed()>limit))throw Timeout{};}
     double search(State& s,int depth,double alpha,double beta,int ply,int qleft=3,int extensions=2) {
-        tick();Key path=s.key();if(s.path.find(path)!=s.path.end()){s.cycles++;return 0;}
-        s.path.insert(path);
-        try{double v=node(s,depth,alpha,beta,ply,qleft,extensions);s.path.erase(path);return v;}catch(...){s.path.erase(path);throw;}
+        tick();Key path=s.key();if(std::find(s.path.begin(),s.path.end(),path)!=s.path.end()){s.cycles++;return 0;}
+        s.path.push_back(path);
+        try{double v=node(s,depth,alpha,beta,ply,qleft,extensions);s.path.pop_back();return v;}catch(...){s.path.pop_back();throw;}
     }
     double node(State& s,int depth,double alpha,double beta,int ply,int qleft,int extensions) {
         bool check=inCheck(s.board,s.turn,s.kings[s.turn]);if(check&&depth>0&&extensions>0){depth++;extensions--;}
         uint64_t cycleStart=s.cycles;Key key=s.key(extensions);Entry entry{};bool hasEntry=false,hasKey=depth>0;double originalAlpha=alpha;
         if(hasKey){auto i=s.table.find(key);if(i!=s.table.end()){entry=i->second;hasEntry=true;if(entry.depth>=depth){double v=entry.score;if(v>98000)v-=ply;else if(v< -98000)v+=ply;if(entry.flag==0)return v;if(entry.flag==1)alpha=std::max(alpha,v);else beta=std::min(beta,v);if(alpha>=beta)return v;}}}
-        bool quiet=depth<=0&&!check;auto& moves=moveBuffers.at(ply);legalInto(s.board,s.turn,quiet,false,s.kings[s.turn],moves);
-        if(moves.empty()){if(!quiet)return -mate+ply;auto& probe=probeBuffers.at(ply);legalInto(s.board,s.turn,false,true,s.kings[s.turn],probe);if(probe.empty())return -mate+ply;}
+        bool quiet=depth<=0&&!check;auto& moves=moveBuffers.at(ply);legalInto(s.board,s.turn,quiet,false,s.kings[s.turn],moves,check);
+        if(moves.empty()){if(!quiet)return -mate+ply;auto& probe=probeBuffers.at(ply);legalInto(s.board,s.turn,false,true,s.kings[s.turn],probe,check);if(probe.empty())return -mate+ply;}
         if(quiet){double stand=evaluate(s,s.turn);if(stand>=beta)return stand;alpha=std::max(alpha,stand);if(qleft<=0||moves.empty())return alpha;}
         if(depth<=-6)return evaluate(s,s.turn)-(check?180:0);
         int hbase=s.turn==0?0:8100;
