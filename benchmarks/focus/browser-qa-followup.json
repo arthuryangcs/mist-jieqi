@@ -1,0 +1,37 @@
+{
+  "checkedAt": "2026-10-19T19:52:51Z",
+  "requestedWorkflow": "Supported Chrome browser automation on the user's Mac",
+  "targets": ["http://127.0.0.1:8767/", "http://127.0.0.1:8766/"],
+  "outcome": "blocked",
+  "passed": false,
+  "attempts": [
+    {
+      "tool": "mcp__cua_repl.js",
+      "call": "await cua.getState();",
+      "observedBrowsers": [
+        {"name": "ChatGPT in-app browser", "type": "iab", "tabs": []},
+        {"name": "Codex MCP Apps", "type": "mcpapps", "tabs": []}
+      ],
+      "chromeAvailableInInventory": false
+    },
+    {
+      "tool": "mcp__cua_repl.js",
+      "call": "await cua.createBrowserTab(\"chrome\", \"http://127.0.0.1:8767/\", { sessionName: \"♟️ 揭棋页面 QA\" });",
+      "result": "Browser is not available: chrome"
+    }
+  ],
+  "newRealBrowserChecksCompleted": [],
+  "notVerifiedInThisFollowup": [
+    "Experimental8767 rendered depth and candidate coverage labels",
+    "Experimental8767 manual analysis, cancel, repeated start and human-versus-AI move flow",
+    "Default8766 rendering and equivalent interaction regression"
+  ],
+  "priorEvidenceOnly": ["ui-controller.json", "service-both.json", "pages-status.json"],
+  "interpretation": "Chrome is unavailable through the supported browser tool in this task. This does not establish whether Chrome is installed on the Mac, whether either server is unreachable, or whether either page has a rendering bug. Prior HTTP and simulated-DOM results are not real-browser QA.",
+  "fallbackAttempted": false,
+  "securitySettingsChanged": false,
+  "algorithmOrProductionChanged": false,
+  "newMatchesRun": false,
+  "remotePushPerformed": false,
+  "nextRequirement": "Make Chrome available through the supported browser workflow, then run the requested QA. No alternative automation was used after the earlier browser URL-policy restriction."
+}
