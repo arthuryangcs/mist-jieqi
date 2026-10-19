@@ -4,13 +4,16 @@
   "type": "module",
   "scripts": {
     "test": "node --test",
-    "start": "python3 -m http.server 8765 --bind 127.0.0.1",
+    "start": "node native/server.mjs",
     "benchmark": "node scripts/benchmark.js",
     "test:browser": "node scripts/browser-check.js",
     "benchmark:compare": "node scripts/compare-search.js",
     "benchmark:matches": "node scripts/match-review.js",
     "build:native": "node native/build.mjs",
     "test:native": "node native/check.mjs",
-    "benchmark:native": "node native/benchmark.mjs"
+    "benchmark:native": "node native/benchmark.mjs",
+    "start:js": "python3 -m http.server 8765 --bind 127.0.0.1",
+    "test:cpp-ui": "node --test native/service-check.mjs",
+    "test:browser:cpp": "node scripts/browser-native-check.mjs"
   }
 }

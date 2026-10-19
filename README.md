@@ -1,18 +1,21 @@
 # 雾里见招 · Mist Jieqi
 
-独立的本地浏览器程序，默认 JavaScript + HTML/CSS，棋盘、规则引擎和搜索代码均在本目录；另有可选离线 C++ 搜索原型。没有 npm 运行依赖、账号、外部 CDN 或联网分析。未修改其他项目。
+独立的本地浏览器揭棋程序，默认使用 **C++17 搜索核心 + Node.js 本机服务 + HTML/CSS/JavaScript 界面**。支持人机对战、局面分析和机器自动对战；JavaScript Worker 可在界面中明确选择为回退。没有 npm 运行依赖、账号、外部 CDN 或联网分析。
 
 ## 启动
 
-需要 Python 3；Node.js 20+ 仅用于测试。
+需要 Node.js 20+ 和已有的 C++17 编译器（默认 `clang++`，可通过 `CXX` 指定 `g++` 等编译器）。已在本机 macOS / Apple Clang 17 验证；不自动安装工具或下载依赖。
 
 ```sh
-git clone https://github.com/arthuryangcs/mist-jieqi.git
-cd mist-jieqi
-python3 -m http.server 8765 --bind 127.0.0.1
+# 在这份代码的项目目录中执行
+npm start
 ```
 
-启动后，在运行服务器的同一台电脑上打开 [本地揭棋页面](http://127.0.0.1:8765/)。该地址不是在线演示地址。也可以执行 `npm start`。用 Ctrl+C 停止服务器。直接双击 HTML 的 `file://` 地址不能可靠启动 ES 模块和 Worker，请使用 HTTP 地址。服务器仅绑定本机，无公开发布。
+本轮更新尚未推送GitHub，请直接使用当前本地代码目录。启动时会校验源码及二进制哈希，需要时自动编译本项目核心到 `.cache/native/`。然后在同一台电脑打开 [C++ 本机揭棋页面](http://127.0.0.1:8766/)，默认选择“C++ · 本机服务”。界面完成搜索后会显示“C++ 核心已确认”和版本摘要；服务出错会明确停止，不会暗中切换搜索实现。
+
+服务仅绑定 `127.0.0.1:8766`，无公开发布；可用 `PORT` 指定其他本机端口。用 Ctrl+C 停止。浏览器不能直接执行原生 C++，因此必须保持这个本机服务运行；本版不是 WASM。原有8765静态服务不提供 C++ API，请使用上面的新地址。
+
+无编译器时可用 `npm run start:js` 启动原静态版（需要 Python 3），在 [JavaScript 静态页面](http://127.0.0.1:8765/) **手动选择“JavaScript · 明确回退”**。也可在 C++ 服务页面直接切换为 JavaScript。直接双击 HTML 的 `file://` 地址不能可靠启动 ES 模块、Worker 或本机接口，请使用 HTTP 地址。
 
 ## 使用
 
@@ -39,7 +42,9 @@ python3 -m http.server 8765 --bind 127.0.0.1
 
 ## AI 实现与限制
 
-新增[原生C++搜索对照](NATIVE_SEARCH_REPORT.md)：5次轮换、相同完整搜索树的核心速度约为Node JavaScript的3.29～3.98倍，含每次协议通信为3.25～3.85倍。默认网页仍使用JS，尚未接入原型或测试浏览器WASM；这不是胜率提升结论。源码与复现步骤见 [native/README.md](native/README.md)。
+当前 [C++ 可用版接入与实测](CPP_ENGINE_REPORT.md)：默认网页调用本机 C++ 核心，逐层显示完整结果，支持取消及超时终止。Chrome 两次轮换的开局实测：1秒预算 JS 完整2层、C++完整3层；6秒预算 JS完整3层、C++完整4层。完整数据和环境均保留，不代表所有局面/机器的保证。
+
+此前[离线原生C++对照](NATIVE_SEARCH_REPORT.md)的3.29～3.98倍是Node与原生核心同树基准，不能当作浏览器速度或WASM速度。当前源码与复现步骤见 [native/README.md](native/README.md)。
 
 最新[搜索提速与深度实验](SEARCH_SPEED_DEPTH_REPORT.md)：同一完整3层搜索树提速约1.45倍，默认15秒初始局面实测由完整3层到4层；离线两个独立8样本种子均完成5层，6层在4分钟上限未完成。未改估值或增加开局奖励，尚未得到兵位首着稳定更优的结论，也没有新的胜率提升结论。
 
@@ -49,11 +54,11 @@ python3 -m http.server 8765 --bind 127.0.0.1
 
 历史独立宿主计时保护与指定引擎8局重赛见 [TIME_CONTROL_REPORT.md](TIME_CONTROL_REPORT.md)：8局全部正常结束、技术超时0；当时版本0胜8负。旧超时记录保留，没有排除技术负来改善成绩。**该历史对赛采用“双方不看暗俘”变体，不与上述当前规则成绩合并。**
 
-JavaScript + Web Worker。视角快照在工作线程边界删除盘上暗子和本方被吃暗子的真身；身份池减去盘上明子、公开被吃明子，以及本方吃到的敌方暗子。对当前观察者未知的被吃暗子作为离盘潜变量保留在池中，不计为盘上子力。分析缓存与采样种子包含信息视角，避免两方私人信息混用。默认按当前可见信息固定种子、8个平衡无放回样本，迭代加深、PVS/α–β、增量哈希、置换表和吃子/应将搜索；各根候选共用样本。完整分析缓存包含可见盘面、库存、行棋方、裁定历史和思考预算。
+JavaScript 维护真实对局、公开观察和无放回采样，C++ 负责默认搜索的规则、估值、迭代加深与剪枝；也可明确选择 JavaScript Worker。快照在搜索边界删除盘上暗子和本方被吃暗子的真身，本机接口也拒绝含这些真身的输入；身份池减去盘上明子、公开被吃明子，以及本方吃到的敌方暗子。对当前观察者未知的被吃暗子作为离盘潜变量保留在池中，不计为盘上子力。分析缓存与采样种子包含信息视角，避免两方私人信息混用。默认按当前可见信息固定种子、8个平衡无放回样本，迭代加深、PVS/α–β、增量哈希、置换表和吃子/应将搜索；各根候选共用样本。完整分析缓存包含可见盘面、库存、行棋方、裁定历史、思考预算和引擎选项。
 
 全明局面100分约一兵，有暗子时先平均各样本的启发式效用再换算综合分，避免直接混合将杀与子力分。±为有限分尺度的样本标准差，不是置信区间。启发式胜率没有训练或对局校准；样本胜局不等于所有未知布局都获胜。搜索仍有视野和策略融合限制，不保证最优。
 
-默认增加观察者暗俘库存的搜索内更新、库存均值吃子排序、killer排序、每条路径最多2次应将延伸和轻量将帅安全项。更昂贵的活动度估值保留为消融选项，默认关闭。Worker仅传前五候选，减少线程通信；提前返回余量用于控制墙钟，不能保证系统暂停时的硬实时。既有4个双车强制将杀局面在名义2层加应将延伸下通过，不能据此推断专业棋力。
+默认增加观察者暗俘库存的搜索内更新、库存均值吃子排序、killer排序、每条路径最多2次应将延伸和轻量将帅安全项。更昂贵的活动度估值保留为消融选项，默认关闭。两种网页接口均只传前五候选；C++先在进程内完成所有根候选与样本，再推送完整层，减少通信；提前返回余量用于控制墙钟，不能保证系统暂停时的硬实时。既有4个双车强制将杀局面在名义2层加应将延伸下通过，不能据此推断专业棋力。
 
 本轮诊断、性能前后数据、实战复盘、官方分支及用户指定PikaJieQi的独立对照见 [OPTIMIZATION_REPORT.md](OPTIMIZATION_REPORT.md)。网页仍是无外部依赖的本地程序，尚未把外部引擎接入网页。本仓库不分发独立对照使用的第三方源码、二进制或权重；来源、固定版本和许可见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
 
@@ -64,7 +69,7 @@ npm test
 node scripts/benchmark.js
 ```
 
-本机 Node v25.6.0：**85项测试通过，0失败**，包含马腿、象眼、炮架、将军、将帅照面、翻子、暗子被吃、悔棋/重开、编辑器合法性、公开身份隔离、搜索库存恢复、协议隔离、通用揭子排序对称性与同先验、规则快路径独立核对、同搜索树等价与战术回归。
+本机 Node v25.6.0：**86项测试通过，0失败**，包含马腿、象眼、炮架、将军、将帅照面、翻子、暗子被吃、悔棋/重开、编辑器合法性、公开身份隔离、搜索库存恢复、协议隔离、通用揭子排序对称性与同先验、规则快路径独立核对、同搜索树等价与战术回归。
 
 `tests/ui.test.js` 是最小 DOM / Worker 替身下的交互状态测试，覆盖连续重复点击、思考中悔棋/重开、过期结果丢弃、分析结果呈现和编辑非法局面；**不等同于真实浏览器端到端验证**。
 
@@ -72,7 +77,9 @@ node scripts/benchmark.js
 
 已补完真实浏览器验证：使用本机官方 Chrome 155.0.8059.80、现有 Playwright Core、独立临时资料目录与保留的 Chrome 沙箱执行，未安装新依赖或修改系统安全设置。16项端到端流程全部通过：首屏90格/30暗子、合法走子揭子与真实 Worker 回应、重复点击、电脑回应后悔棋、思考中悔棋/重开、编辑副本分析、手动摆子与未知池校验、390px移动视口，以及连续机器对战、单步、暂停、思考中悔棋/重开。新增两项使用脚本对手固定合法吃子序列，验证暗俘显示、Worker信息隔离和观战视角；其余流程使用真实Worker。控制台错误、页面异常和HTTP错误均为0。发现并修复了窄屏暗子文字撑高棋子的布局问题，重跑中验证圆形棋子和9:10棋盘。
 
-截图见 [桌面棋盘](browser-evidence/01-desktop.png)、[AI回应](browser-evidence/02-ai-reply.png)、[分析](browser-evidence/03-analysis.png)、[移动视口](browser-evidence/04-mobile.png)、[自动对战](browser-evidence/05-auto-play.png)、[暗俘视角](browser-evidence/07-capture-visibility.png)，完整记录为 [浏览器验证结果](browser-evidence/results.json)。可复跑 `npm run test:browser`：脚本优先使用本项目 `playwright-core`，也可通过 `PLAYWRIGHT_CORE_PATH` 指向已安装模块；可先 `npm install --save-dev playwright-core`，通过 `CHROME_PATH` 设置官方 Chrome 可执行文件路径，通过 `JIEQI_URL` 设置测试地址。浏览器必须可在当前执行权限中启动；本机沙箱权限内启动被终止后，经允许的权限审核启动成功，没有关闭浏览器沙箱。
+本次 C++ 接入另有6组服务检查、72个规则/视角检查、2172次走子/撤销、16组核心一致性搜索，以及9组真实Chrome流程和16次端到端测量；原有16项真实浏览器回归在明确选择JavaScript后通过。详见 [C++接入报告](CPP_ENGINE_REPORT.md)、[C++浏览器结果](browser-evidence-cpp/results.json) 和 [JS兼容回归](browser-evidence-js-regression/results.json)。
+
+以下为此前静态版的历史截图及记录。截图见 [桌面棋盘](browser-evidence/01-desktop.png)、[AI回应](browser-evidence/02-ai-reply.png)、[分析](browser-evidence/03-analysis.png)、[移动视口](browser-evidence/04-mobile.png)、[自动对战](browser-evidence/05-auto-play.png)、[暗俘视角](browser-evidence/07-capture-visibility.png)，完整记录为 [浏览器验证结果](browser-evidence/results.json)。可复跑 `npm run test:browser`：脚本优先使用本项目 `playwright-core`，也可通过 `PLAYWRIGHT_CORE_PATH` 指向已安装模块；可先 `npm install --save-dev playwright-core`，通过 `CHROME_PATH` 设置官方 Chrome 可执行文件路径，通过 `JIEQI_URL` 设置测试地址。浏览器必须可在当前执行权限中启动；本机沙箱权限内启动被终止后，经允许的权限审核启动成功，没有关闭浏览器沙箱。
 
 服务持续性：服务器是前台进程；关闭终端或重启电脑后需重新启动。源码与验证材料保存在项目目录，页面内对局仅存在内存中，刷新不会保存棋局。
 
@@ -80,11 +87,12 @@ node scripts/benchmark.js
 
 - `index.html` / `style.css` / `board.svg`：中文界面和棋盘。
 - `engine.js`：真实状态、公开状态、合法着法和胜负、撤回。
-- `ai.js` / `worker.js`：独立搜索与 Worker 接口。
+- `native/search.cpp` / `native/server.mjs` / `native-client.js`：C++ 搜索、本机HTTP流服务与网页取消适配。
+- `ai.js` / `worker.js`：无放回采样、JavaScript 参考搜索及明确回退。
 - `editor.js` / `app.js`：编辑校验、交互与搜索生命周期。
 - `tests/`：规则、战术和交互状态回归。
 - `scripts/benchmark.js` / `benchmark-results.json`：可复现微型基准及一次实测结果。
 
 ## 项目沿革与许可
 
-当前版本以独立的本地浏览器程序替换旧版 C++/Electron 实现。提交历史从当前浏览器版本的全新初始提交开始，之后正常记录维护变更；旧版提交已移除。沿用仓库既有 [GPLv3 许可证](LICENSE)，第三方来源与未分发组件见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)，替换记录见 [PROJECT_HISTORY.md](PROJECT_HISTORY.md)。
+当前版本以独立的本地浏览器程序替换旧版 C++/Electron 实现；本轮新 C++ 搜索由独立源码实现，通过本机服务接入浏览器，不依赖 Electron。提交历史从当前浏览器版本的全新初始提交开始，之后正常记录维护变更；旧版提交已移除。沿用仓库既有 [GPLv3 许可证](LICENSE)，第三方来源与未分发组件见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)，替换记录见 [PROJECT_HISTORY.md](PROJECT_HISTORY.md)。

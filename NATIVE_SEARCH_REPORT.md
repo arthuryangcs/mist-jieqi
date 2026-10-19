@@ -1,5 +1,7 @@
 # C++ 原生搜索核心对照
 
+> 这是 `2080ff5` 离线原型阶段的历史记录。当前已可通过本机服务在浏览器使用C++，启动和最新实测见 [CPP_ENGINE_REPORT.md](CPP_ENGINE_REPORT.md)；下文“当前网页”等表述指当时版本。
+
 已实现可复现的 C++17 原型。最终5次轮换测试中，相对 `aa7644c` 的同一 JavaScript 搜索树，**原生核心速度为3.29～3.98倍；计入每次编码、IPC和结果解析后为3.25～3.85倍**。这是 Node JavaScript 与本机原生进程的成绩，当前网页仍使用原有 JavaScript Worker，尚未接入原型，也没有浏览器 WASM 成绩。
 
 没有减少样本、漏算首着、修改估值、剪枝或首着奖励；本轮没有据此宣称提升棋力、胜率或得出首兵最优。源码、输入、编译参数和原始测量均保留，验证索引见 [native-build.json](benchmarks/native-build.json)。本轮仅本地提交，不 push GitHub。

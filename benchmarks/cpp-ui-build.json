@@ -1,0 +1,78 @@
+{
+  "baselineCommit": "2080ff5",
+  "baselineFullCommit": "2080ff5449cb6ddb92b634a21effb62b8ce5cd38",
+  "implementation": "C++17 native process via loopback HTTP; browser UI; no WASM",
+  "sourceHashes": {
+    "native/search.cpp": "9e65d6d86bf60cde9e0e63973464a913f1a164e7f0193ec02152eddb94207e9e",
+    "native/server.mjs": "0704c82e71b826dd97ef3e38a542b3d6f87963b195a7561449cdb56cb2a77b32",
+    "native/bridge.mjs": "a0c2a84c72acaeeaf7b0709f06fefc01f97924387274a649a90d270e06df4816",
+    "native/build.mjs": "b8d6154cd0e91271c32c206c2260222be39627e134f9a19c20219cfd058b5a75",
+    "native/service-check.mjs": "39a428e9cd2f5ab6b71fe701d3b44308e1024fbbd8413e84756da337d66de12e",
+    "native-client.js": "08438f8c349bf1ddbf46b98b87dbdb2fcf4d3f772d8a03b08c5220e791494c50",
+    "ai.js": "66bca44c185829ab7a42d5432fc8323c2937fed2be475ced46a654a7a2e1c18e",
+    "engine.js": "7f427f6e00e286a48335f7c7a7e74270d2a4349d7ea2aabcad0821122a17cb49",
+    "worker.js": "fdacb906f65b1423dbe5ed62e7389f5f0a4f31cc8e918764f76fd8a29576c523",
+    "app.js": "8be707442188d8ea44e0ca9b3725962edd8a61befb949550ce5beec9cdda97e0",
+    "deadline-search.js": "20a1c2467443425638f2b9d439856888d62c78aa17b3b9e65d7fb79c3cb0d5df",
+    "index.html": "be07fab71fcc192bf184449c1b234f9e137b9e6b56798bfda4768935ba3bcba9",
+    "package.json": "11d133d841eb202c5cc8ea09617b261f7f9e53dc6f40e8d2e03223083ae6e8cb",
+    "tests/ui.test.js": "eba15f52559cc2e0ee2499128cc8e1b44a7003281c075232f9d5a8328b2c8613",
+    "scripts/browser-native-check.mjs": "ef2e2dc41d33cc9380798208aaf363db1cb61e2945f8aa83a50d4db397d4b99c",
+    "scripts/browser-check.js": "5dba444ae573e21b56b0992f4094ac2e5d126d950a5e68e318788f4d50bd5904"
+  },
+  "evidenceHashes": {
+    "benchmarks/cpp-core-check.json": "6ab147a1f65ade658587aefa2eb65315c92dba7b2446d2d399c23273f0a2150d",
+    "benchmarks/cpp-core-sanitized.json": "9cd0cfa90222936d5a66773fbc59ffa371e639c58fdad8ebf2513a2725777469",
+    "benchmarks/cpp-service.json": "74e76657bd7dc169fc216525119682c9d0d777467ccfe90ee88e232c69dfcfd0",
+    "benchmarks/cpp-final-smoke.json": "b5cf65401b98c1ab3c0c917d570ddbd904f96e5b8ff5e125d744968f14c42795",
+    "browser-evidence-cpp/results.json": "149a2dd2810b495aeb12b5cf6f2bcd812f3c284116f757064a80d8f30e5c6e68",
+    "browser-evidence-js-regression/results.json": "cad6f58bd032265d6c710fc2105b37eefe14b38be0e7be92faa8da65ed8309cb"
+  },
+  "build": {
+    "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+    "flags": [
+      "-std=c++17",
+      "-O3",
+      "-DNDEBUG",
+      "-ffp-contract=off",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-isystem",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+    ],
+    "threads": 1,
+    "architecture": "x64",
+    "sourceSha256": "9e65d6d86bf60cde9e0e63973464a913f1a164e7f0193ec02152eddb94207e9e",
+    "binarySha256": "a6e957bd05e2d26584bcd32551cbaa52522f74278b3a50b9f2c5f8f0739107a7",
+    "sanitize": false,
+    "compilerWarnings": ""
+  },
+  "verification": {
+    "jsTests": {
+      "passed": 86,
+      "failed": 0
+    },
+    "coreRules": 72,
+    "transitions": 2172,
+    "coreSearchCases": 16,
+    "asanUbsanPassed": true,
+    "serviceGroups": 6,
+    "cppBrowserGroups": 9,
+    "cppBrowserTimings": 16,
+    "jsBrowserGroups": 16
+  },
+  "service": {
+    "address": "127.0.0.1",
+    "port": 8766,
+    "maxConcurrentSearches": 2,
+    "threadsPerSearch": 1
+  },
+  "wasm": {
+    "available": false,
+    "installed": false,
+    "performanceMeasured": false
+  },
+  "publication": "local only; no GitHub push",
+  "privacy": "Failure-stack workspace prefixes relativized; numerical measurements unchanged"
+}

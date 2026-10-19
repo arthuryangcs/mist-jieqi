@@ -1,0 +1,491 @@
+{
+  "startedAt": "2026-10-19T10:42:32.918Z",
+  "browser": "155.0.8059.80",
+  "cpu": "Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz",
+  "architecture": "x64",
+  "baseURL": "http://127.0.0.1:8766/",
+  "tests": [
+    {
+      "name": "默认C++人机对战、实际核心确认、重复点击、对手分析不外泄",
+      "passed": true
+    },
+    {
+      "name": "C++思考中悔棋，终止子进程，无迟到落子",
+      "passed": true
+    },
+    {
+      "name": "C++思考中重开取消进程并恢复30暗子",
+      "passed": true
+    },
+    {
+      "name": "流式完整层、五候选、分析缓存按引擎隔离、明确JavaScript回退",
+      "passed": true
+    },
+    {
+      "name": "C++双方自动对战至少4手、暂停、单步、双方私人观察隔离",
+      "passed": true
+    },
+    {
+      "name": "C++自动对战思考中悔棋/重开，停止循环及子进程",
+      "passed": true
+    },
+    {
+      "name": "故障注入：C++服务出错明确停止，无暗中切换或落子",
+      "passed": true
+    },
+    {
+      "name": "移动视口引擎选择与棋盘无横向溢出",
+      "passed": true
+    },
+    {
+      "name": "真实浏览器开局/中局/残局端到端计时：两次轮换、同公开输入/预算/样本",
+      "passed": true
+    }
+  ],
+  "timings": [
+    {
+      "position": "开局",
+      "repeat": 0,
+      "engine": "cpp",
+      "budgetMs": 1000,
+      "depth": 3,
+      "samples": 8,
+      "nodes": 329696,
+      "seed": 1075149473,
+      "move": {
+        "from": 64,
+        "to": 1
+      },
+      "score": 55.931441828546596,
+      "sourceSha256": "9e65d6d86bf60cde9e0e63973464a913f1a164e7f0193ec02152eddb94207e9e",
+      "observationSha256": "af147cbf21007e455b1face0ced553e3c119f24c0b0237d90173296486023a9a",
+      "engineVerified": true,
+      "firstProgressMs": 28.600000023841858,
+      "endToEndMs": 960.8999999761581,
+      "coreMs": 939.485148,
+      "completeDepths": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "position": "开局",
+      "repeat": 0,
+      "engine": "js",
+      "budgetMs": 1000,
+      "depth": 2,
+      "samples": 8,
+      "nodes": 112832,
+      "seed": 1075149473,
+      "move": {
+        "from": 64,
+        "to": 1
+      },
+      "score": 32.59487964945759,
+      "sourceSha256": null,
+      "observationSha256": "af147cbf21007e455b1face0ced553e3c119f24c0b0237d90173296486023a9a",
+      "engineVerified": true,
+      "firstProgressMs": 64.10000002384186,
+      "endToEndMs": 981.1000000238419,
+      "coreMs": 965,
+      "completeDepths": [
+        1,
+        2
+      ]
+    },
+    {
+      "position": "开局",
+      "repeat": 0,
+      "engine": "cpp",
+      "budgetMs": 6000,
+      "depth": 4,
+      "samples": 8,
+      "nodes": 2083224,
+      "seed": 1075149473,
+      "move": {
+        "from": 64,
+        "to": 1
+      },
+      "score": 77.10421607459259,
+      "sourceSha256": "9e65d6d86bf60cde9e0e63973464a913f1a164e7f0193ec02152eddb94207e9e",
+      "observationSha256": "af147cbf21007e455b1face0ced553e3c119f24c0b0237d90173296486023a9a",
+      "engineVerified": true,
+      "firstProgressMs": 25.5,
+      "endToEndMs": 5968.5,
+      "coreMs": 5941.893273,
+      "completeDepths": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "position": "开局",
+      "repeat": 0,
+      "engine": "js",
+      "budgetMs": 6000,
+      "depth": 3,
+      "samples": 8,
+      "nodes": 739088,
+      "seed": 1075149473,
+      "move": {
+        "from": 64,
+        "to": 1
+      },
+      "score": 55.931441828546596,
+      "sourceSha256": null,
+      "observationSha256": "af147cbf21007e455b1face0ced553e3c119f24c0b0237d90173296486023a9a",
+      "engineVerified": true,
+      "firstProgressMs": 64,
+      "endToEndMs": 5982,
+      "coreMs": 5965,
+      "completeDepths": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "position": "中局2111/20",
+      "repeat": 0,
+      "engine": "js",
+      "budgetMs": 1000,
+      "depth": 3,
+      "samples": 8,
+      "nodes": 108608,
+      "seed": 2341239257,
+      "move": {
+        "from": 72,
+        "to": 73
+      },
+      "score": -95.70843380438411,
+      "sourceSha256": null,
+      "observationSha256": "4ef777f8a89cc54361cfdf85116e1bf94915bf6daee136ba698728639ec0d8fd",
+      "engineVerified": true,
+      "firstProgressMs": 43.69999998807907,
+      "endToEndMs": 987,
+      "coreMs": 965,
+      "completeDepths": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "position": "中局2111/20",
+      "repeat": 0,
+      "engine": "cpp",
+      "budgetMs": 1000,
+      "depth": 3,
+      "samples": 8,
+      "nodes": 385328,
+      "seed": 2341239257,
+      "move": {
+        "from": 72,
+        "to": 73
+      },
+      "score": -95.70843380438411,
+      "sourceSha256": "9e65d6d86bf60cde9e0e63973464a913f1a164e7f0193ec02152eddb94207e9e",
+      "observationSha256": "4ef777f8a89cc54361cfdf85116e1bf94915bf6daee136ba698728639ec0d8fd",
+      "engineVerified": true,
+      "firstProgressMs": 19.899999976158142,
+      "endToEndMs": 959,
+      "coreMs": 939.759134,
+      "completeDepths": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "position": "全明10子残局",
+      "repeat": 0,
+      "engine": "cpp",
+      "budgetMs": 1000,
+      "depth": 6,
+      "samples": 1,
+      "nodes": 500376,
+      "seed": 4205803717,
+      "move": {
+        "from": 72,
+        "to": 0
+      },
+      "score": 205,
+      "sourceSha256": "9e65d6d86bf60cde9e0e63973464a913f1a164e7f0193ec02152eddb94207e9e",
+      "observationSha256": "87aeb1c9697983cd2407ffecb722c61548ca26f375861924b820c51dac3e2f35",
+      "engineVerified": true,
+      "firstProgressMs": 23.600000023841858,
+      "endToEndMs": 962.2000000476837,
+      "coreMs": 937.906688,
+      "completeDepths": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "position": "全明10子残局",
+      "repeat": 0,
+      "engine": "js",
+      "budgetMs": 1000,
+      "depth": 5,
+      "samples": 1,
+      "nodes": 134408,
+      "seed": 4205803717,
+      "move": {
+        "from": 72,
+        "to": 0
+      },
+      "score": 213,
+      "sourceSha256": null,
+      "observationSha256": "87aeb1c9697983cd2407ffecb722c61548ca26f375861924b820c51dac3e2f35",
+      "engineVerified": true,
+      "firstProgressMs": 27.899999976158142,
+      "endToEndMs": 982.7999999523163,
+      "coreMs": 965,
+      "completeDepths": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "position": "开局",
+      "repeat": 1,
+      "engine": "js",
+      "budgetMs": 1000,
+      "depth": 2,
+      "samples": 8,
+      "nodes": 113456,
+      "seed": 1075149473,
+      "move": {
+        "from": 64,
+        "to": 1
+      },
+      "score": 32.59487964945759,
+      "sourceSha256": null,
+      "observationSha256": "af147cbf21007e455b1face0ced553e3c119f24c0b0237d90173296486023a9a",
+      "engineVerified": true,
+      "firstProgressMs": 71.89999997615814,
+      "endToEndMs": 988.5,
+      "coreMs": 965,
+      "completeDepths": [
+        1,
+        2
+      ]
+    },
+    {
+      "position": "开局",
+      "repeat": 1,
+      "engine": "cpp",
+      "budgetMs": 1000,
+      "depth": 3,
+      "samples": 8,
+      "nodes": 343456,
+      "seed": 1075149473,
+      "move": {
+        "from": 64,
+        "to": 1
+      },
+      "score": 55.931441828546596,
+      "sourceSha256": "9e65d6d86bf60cde9e0e63973464a913f1a164e7f0193ec02152eddb94207e9e",
+      "observationSha256": "af147cbf21007e455b1face0ced553e3c119f24c0b0237d90173296486023a9a",
+      "engineVerified": true,
+      "firstProgressMs": 23.5,
+      "endToEndMs": 959.3000000119209,
+      "coreMs": 942.388296,
+      "completeDepths": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "position": "开局",
+      "repeat": 1,
+      "engine": "js",
+      "budgetMs": 6000,
+      "depth": 3,
+      "samples": 8,
+      "nodes": 719056,
+      "seed": 1075149473,
+      "move": {
+        "from": 64,
+        "to": 1
+      },
+      "score": 55.931441828546596,
+      "sourceSha256": null,
+      "observationSha256": "af147cbf21007e455b1face0ced553e3c119f24c0b0237d90173296486023a9a",
+      "engineVerified": true,
+      "firstProgressMs": 85,
+      "endToEndMs": 5988.199999988079,
+      "coreMs": 5965,
+      "completeDepths": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "position": "开局",
+      "repeat": 1,
+      "engine": "cpp",
+      "budgetMs": 6000,
+      "depth": 4,
+      "samples": 8,
+      "nodes": 2150704,
+      "seed": 1075149473,
+      "move": {
+        "from": 64,
+        "to": 1
+      },
+      "score": 77.10421607459259,
+      "sourceSha256": "9e65d6d86bf60cde9e0e63973464a913f1a164e7f0193ec02152eddb94207e9e",
+      "observationSha256": "af147cbf21007e455b1face0ced553e3c119f24c0b0237d90173296486023a9a",
+      "engineVerified": true,
+      "firstProgressMs": 24.19999998807907,
+      "endToEndMs": 5968.699999988079,
+      "coreMs": 5941.615934,
+      "completeDepths": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "position": "中局2111/20",
+      "repeat": 1,
+      "engine": "cpp",
+      "budgetMs": 1000,
+      "depth": 3,
+      "samples": 8,
+      "nodes": 360160,
+      "seed": 2341239257,
+      "move": {
+        "from": 72,
+        "to": 73
+      },
+      "score": -95.70843380438411,
+      "sourceSha256": "9e65d6d86bf60cde9e0e63973464a913f1a164e7f0193ec02152eddb94207e9e",
+      "observationSha256": "4ef777f8a89cc54361cfdf85116e1bf94915bf6daee136ba698728639ec0d8fd",
+      "engineVerified": true,
+      "firstProgressMs": 20.5,
+      "endToEndMs": 958.6999999880791,
+      "coreMs": 939.603084,
+      "completeDepths": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "position": "中局2111/20",
+      "repeat": 1,
+      "engine": "js",
+      "budgetMs": 1000,
+      "depth": 3,
+      "samples": 8,
+      "nodes": 112184,
+      "seed": 2341239257,
+      "move": {
+        "from": 72,
+        "to": 73
+      },
+      "score": -95.70843380438411,
+      "sourceSha256": null,
+      "observationSha256": "4ef777f8a89cc54361cfdf85116e1bf94915bf6daee136ba698728639ec0d8fd",
+      "engineVerified": true,
+      "firstProgressMs": 37.30000001192093,
+      "endToEndMs": 981.5,
+      "coreMs": 965,
+      "completeDepths": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "position": "全明10子残局",
+      "repeat": 1,
+      "engine": "js",
+      "budgetMs": 1000,
+      "depth": 5,
+      "samples": 1,
+      "nodes": 137144,
+      "seed": 4205803717,
+      "move": {
+        "from": 72,
+        "to": 0
+      },
+      "score": 213,
+      "sourceSha256": null,
+      "observationSha256": "87aeb1c9697983cd2407ffecb722c61548ca26f375861924b820c51dac3e2f35",
+      "engineVerified": true,
+      "firstProgressMs": 34.59999996423721,
+      "endToEndMs": 989.1999999880791,
+      "coreMs": 965,
+      "completeDepths": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "position": "全明10子残局",
+      "repeat": 1,
+      "engine": "cpp",
+      "budgetMs": 1000,
+      "depth": 6,
+      "samples": 1,
+      "nodes": 521888,
+      "seed": 4205803717,
+      "move": {
+        "from": 72,
+        "to": 0
+      },
+      "score": 205,
+      "sourceSha256": "9e65d6d86bf60cde9e0e63973464a913f1a164e7f0193ec02152eddb94207e9e",
+      "observationSha256": "87aeb1c9697983cd2407ffecb722c61548ca26f375861924b820c51dac3e2f35",
+      "engineVerified": true,
+      "firstProgressMs": 14.699999988079071,
+      "endToEndMs": 960.5999999642372,
+      "coreMs": 940.472449,
+      "completeDepths": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  ],
+  "errors": [],
+  "passed": true,
+  "service": {
+    "engine": "cpp-native",
+    "sourceSha256": "9e65d6d86bf60cde9e0e63973464a913f1a164e7f0193ec02152eddb94207e9e",
+    "binarySha256": "a6e957bd05e2d26584bcd32551cbaa52522f74278b3a50b9f2c5f8f0739107a7",
+    "threads": 1,
+    "transport": "loopback-http",
+    "protocol": 2,
+    "active": 0,
+    "completed": 0,
+    "aborted": 0
+  },
+  "responsiveness": {
+    "frameMs": 14.400000035762787,
+    "undoClickMs": 42
+  },
+  "finishedAt": "2026-10-19T10:43:30.410Z"
+}

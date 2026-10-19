@@ -10,7 +10,7 @@ export function startTimedSearch({worker,id,view,timeMs,onProgress=()=>{},onComp
   function finish(result,deadlineStop=false) {
     if(finished)return;finished=true;clearTimer(timer);
     const accepted=valid(result)?result:(latest||fallback);
-    onComplete({...accepted,searchElapsedMs:accepted.elapsedMs??0,hostPreparationMs,dispatchMs,firstProgressMs,elapsedMs:Math.round(clock()-started),deadlineStop,fallbackUsed:!accepted.depth&&!accepted.terminal});
+    onComplete({...accepted,engine:accepted.engine??worker.engine??'javascript',engineVerified:accepted.engineVerified??false,searchElapsedMs:accepted.elapsedMs??0,hostPreparationMs,dispatchMs,firstProgressMs,elapsedMs:Math.round(clock()-started),deadlineStop,fallbackUsed:!accepted.depth&&!accepted.terminal});
   }
   worker.onmessage=({data})=>{
     if(finished||data.id!==id)return;

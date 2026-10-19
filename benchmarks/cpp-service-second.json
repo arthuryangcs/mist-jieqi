@@ -1,0 +1,87 @@
+{
+  "build": {
+    "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+    "flags": [
+      "-std=c++17",
+      "-O3",
+      "-DNDEBUG",
+      "-ffp-contract=off",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-isystem",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+    ],
+    "threads": 1,
+    "architecture": "x64",
+    "sourceSha256": "9e65d6d86bf60cde9e0e63973464a913f1a164e7f0193ec02152eddb94207e9e",
+    "binarySha256": "a6e957bd05e2d26584bcd32551cbaa52522f74278b3a50b9f2c5f8f0739107a7",
+    "sanitize": false,
+    "compilerWarnings": ""
+  },
+  "tests": [
+    {
+      "name": "HTTP边界与公开信息验证",
+      "passed": true
+    },
+    {
+      "name": "STREAM与完整参考搜索逐着对齐",
+      "passed": true
+    },
+    {
+      "name": "实际HTTP流与核心证明",
+      "passed": true
+    },
+    {
+      "name": "取消/竞态/限流与子进程退出",
+      "passed": true
+    },
+    {
+      "name": "浏览器适配器无静默回退",
+      "passed": true
+    },
+    {
+      "name": "故障注入：服务硬时限",
+      "passed": false,
+      "error": "Expected values to be strictly equal:\n\n0 !== 1\n"
+    }
+  ],
+  "streamComparisons": [
+    {
+      "name": "开局",
+      "depth": 3,
+      "samples": 8,
+      "nodes": 251696,
+      "nodesEqual": true,
+      "candidates": 44,
+      "maxDifference": 2.842170943040401e-14
+    },
+    {
+      "name": "中局",
+      "depth": 3,
+      "samples": 8,
+      "nodes": 67190,
+      "nodesEqual": true,
+      "candidates": 25,
+      "maxDifference": 1.1368683772161603e-13
+    },
+    {
+      "name": "全明残局",
+      "depth": 3,
+      "samples": 1,
+      "nodes": 2636,
+      "nodesEqual": true,
+      "candidates": 21,
+      "maxDifference": 0
+    }
+  ],
+  "passed": false,
+  "httpTiming": {
+    "elapsedMs": 1162.5332509999998,
+    "depth": 3,
+    "nodes": 417696,
+    "firstProgressMs": 25.46027099999992,
+    "serviceElapsedMs": 1158.1688240000003,
+    "initializationMs": 7.77969099999973
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "engine": {
+    "engine": "cpp-native",
+    "sourceSha256": "9e65d6d86bf60cde9e0e63973464a913f1a164e7f0193ec02152eddb94207e9e",
+    "binarySha256": "a6e957bd05e2d26584bcd32551cbaa52522f74278b3a50b9f2c5f8f0739107a7",
+    "threads": 1,
+    "transport": "loopback-http",
+    "protocol": 2,
+    "active": 0,
+    "completed": 1,
+    "aborted": 0
+  },
+  "progressDepths": [
+    1,
+    2,
+    3
+  ],
+  "final": {
+    "depth": 3,
+    "nodes": 358288,
+    "samples": 8,
+    "sourceSha256": "9e65d6d86bf60cde9e0e63973464a913f1a164e7f0193ec02152eddb94207e9e"
+  },
+  "unsupportedConfigurationStatus": 400,
+  "searchAndPostChecksMs": 1041.094296
+}

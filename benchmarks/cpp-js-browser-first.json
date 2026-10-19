@@ -1,0 +1,89 @@
+{
+  "startedAt": "2026-10-19T10:44:09.474Z",
+  "browser": "155.0.8059.80",
+  "baseURL": "http://127.0.0.1:8766/",
+  "tests": [
+    {
+      "name": "首屏棋盘、30枚留白暗子、红先及可访问标签",
+      "passed": true
+    },
+    {
+      "name": "合法红棋翻子、真实Worker回应、思考中重复点击被忽略",
+      "passed": true
+    },
+    {
+      "name": "电脑回应后悔棋恢复整轮",
+      "passed": true
+    },
+    {
+      "name": "AI思考中悔棋取消真实Worker，无旧着落回",
+      "passed": true
+    },
+    {
+      "name": "AI思考中重新开局，不受旧结果污染",
+      "passed": true
+    },
+    {
+      "name": "编辑副本完成真实搜索：推荐5着、评分、胜率、深度、样本、节点",
+      "passed": true,
+      "report": "红方 +33 分\n\n红方启发式胜率约 51% · 深度 2 · 8 个假设局面 · 113,496 节点 · 983ms · 胜/负样本 0/0 · JavaScript\n\n暗炮 2列8行 → 2列1行：33 ± 356 分\n暗炮 8列8行 → 8列1行：-13 ± 422 分\n暗马 2列10行 → 3列8行：-46 ± 94 分\n暗马 2列10行 → 1列8行：-49 ± 96 分\n暗兵 7列7行 → 7列6行：-70 ± 178 分"
+    },
+    {
+      "name": "重复相同预算分析复用完整结果，不重启计算线程",
+      "passed": true,
+      "elapsedMs": 29
+    },
+    {
+      "name": "手动摆子、已知吃子与剩余库存交叉校验、全明分析",
+      "passed": true
+    },
+    {
+      "name": "双方电脑连续落子至少4步；思考中暂停保留棋盘且没有旧结果落回",
+      "passed": true
+    },
+    {
+      "name": "自动模式单步观战仅推进一步，随后仍暂停",
+      "passed": true
+    },
+    {
+      "name": "自动模式思考中悔棋撤回一步，重开保留观战模式并停止旧线程",
+      "passed": true
+    },
+    {
+      "name": "390px移动视口无横向溢出，棋子圆形且棋盘9:10",
+      "passed": true
+    },
+    {
+      "name": "脚本对手：人机暗俘仅吃子方可见，Worker不收到本方被吃暗子真身",
+      "passed": true
+    }
+  ],
+  "consoleErrors": [],
+  "pageErrors": [],
+  "httpErrors": [],
+  "workers": [
+    "http://127.0.0.1:8766/worker.js",
+    "http://127.0.0.1:8766/worker.js",
+    "http://127.0.0.1:8766/worker.js",
+    "http://127.0.0.1:8766/worker.js",
+    "http://127.0.0.1:8766/worker.js",
+    "http://127.0.0.1:8766/worker.js",
+    "http://127.0.0.1:8766/worker.js",
+    "http://127.0.0.1:8766/worker.js",
+    "http://127.0.0.1:8766/worker.js",
+    "http://127.0.0.1:8766/worker.js",
+    "http://127.0.0.1:8766/worker.js",
+    "http://127.0.0.1:8766/worker.js"
+  ],
+  "screenshots": [
+    "01-desktop.png",
+    "02-ai-reply.png",
+    "03-analysis.png",
+    "05-auto-play.png",
+    "04-mobile.png",
+    "failure.png"
+  ],
+  "passed": false,
+  "failure": "AssertionError [ERR_ASSERTION]: The input did not match the regular expression /红暗子（身份未知）/. Input:\n\n'黑馬（暗俘，仅吃子方可见） · 红兵'\n\n    at file://scripts/browser-check.js:50:8",
+  "finishedAt": "2026-10-19T10:44:32.600Z"
+}

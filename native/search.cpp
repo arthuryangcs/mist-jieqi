@@ -221,7 +221,7 @@ Piece readPiece() {
 bool read(Packet& p) {
     if(!(std::cin>>p.mode))return false;int captured,worlds,metadata;
     if(!(std::cin>>p.depth>>p.budget>>p.nodeLimit>>p.turn>>p.viewer>>captured>>worlds>>metadata))throw std::runtime_error("truncated header");
-    if((p.mode!="SEARCH"&&p.mode!="VERIFY")||p.depth<0||p.depth>8||!std::isfinite(p.budget)||p.budget<0||p.budget>300000||p.turn<0||p.turn>1||p.viewer< -1||p.viewer>1||captured<0||captured>32||worlds<1||worlds>30||metadata<0||metadata>8100)throw std::runtime_error("header out of range");
+    if((p.mode!="SEARCH"&&p.mode!="STREAM"&&p.mode!="VERIFY")||p.depth<0||p.depth>8||!std::isfinite(p.budget)||p.budget<0||p.budget>300000||p.turn<0||p.turn>1||p.viewer< -1||p.viewer>1||captured<0||captured>32||worlds<1||worlds>30||metadata<0||metadata>8100)throw std::runtime_error("header out of range");
     for(auto& v:p.view)v=readPiece();for(int i=0;i<captured;i++)p.captured.push_back(readPiece());
     p.worlds.resize(worlds);for(auto& w:p.worlds)for(auto& v:w){v=readPiece();if(v.live()&&(v.type<0||(v.hidden&&v.role<0)))throw std::runtime_error("incomplete sample");}
     for(int i=0;i<metadata;i++){int f,t,count,draw;if(!(std::cin>>f>>t>>count>>draw))throw std::runtime_error("truncated root metadata");if(f<0||f>=90||t<0||t>=90||count<0||draw<0||draw>1)throw std::runtime_error("root metadata out of range");p.repetitions[f*90+t]=count;p.draws[f*90+t]=draw;}
@@ -288,6 +288,11 @@ void run(const Packet& p) {
         catch(const Timeout&){interrupted=depth;break;}
         std::stable_sort(rows.begin(),rows.end(),[](const Row& a,const Row& b){return a.score>b.score;});
         iterations.push_back({depth,s.nodes,s.elapsed(),rows});
+        // Only a fully evaluated root round is streamed. Search order/tree stays identical.
+        if(p.mode=="STREAM") {
+            std::cout<<"{\"progress\":true,\"result\":{\"depth\":"<<depth<<",\"nodes\":"<<s.nodes<<",\"samples\":"<<p.worlds.size()<<",\"elapsedMs\":"<<iterations.back().elapsed<<",\"score\":"<<rows[0].score<<",\"move\":";writeMove(rows[0].move);
+            std::cout<<",\"allCandidates\":";writeRows(rows);std::cout<<"}}\n"<<std::flush;
+        }
         if((!uncertain&&std::abs(rows[0].score)>98000)||s.elapsed()>s.limit)break;
         std::array<int,8100> rank{};for(size_t i=0;i<rows.size();i++)rank[rows[i].move.index()]=int(i);
         std::stable_sort(root.begin(),root.end(),[&](Move a,Move b){return rank[a.index()]<rank[b.index()];});
@@ -295,7 +300,7 @@ void run(const Packet& p) {
     double elapsed=s.elapsed();const Iteration* last=iterations.empty()?nullptr:&iterations.back();
     std::cout<<"{\"depth\":"<<(last?last->depth:0)<<",\"nodes\":"<<s.nodes<<",\"samples\":"<<p.worlds.size()<<",\"elapsedMs\":"<<elapsed<<",\"interruptedDepth\":"<<interrupted<<",\"score\":"<<(last?last->rows[0].score:0)<<",\"move\":";writeMove(last?last->rows[0].move:fallback);
     std::cout<<",\"allCandidates\":";writeRows(last?last->rows:std::vector<Row>{});std::cout<<",\"iterations\":[";
-    for(size_t i=0;i<iterations.size();i++){if(i)std::cout<<',';const auto& r=iterations[i];std::cout<<"{\"depth\":"<<r.depth<<",\"nodes\":"<<r.nodes<<",\"elapsedMs\":"<<r.elapsed<<",\"allCandidates\":";writeRows(r.rows);std::cout<<'}';}
+    if(p.mode!="STREAM")for(size_t i=0;i<iterations.size();i++){if(i)std::cout<<',';const auto& r=iterations[i];std::cout<<"{\"depth\":"<<r.depth<<",\"nodes\":"<<r.nodes<<",\"elapsedMs\":"<<r.elapsed<<",\"allCandidates\":";writeRows(r.rows);std::cout<<'}';}
     std::cout<<"]}\n";
 }
 void verify(const Packet& p) {
@@ -307,7 +312,7 @@ void verify(const Packet& p) {
 }
 } // namespace mist
 int main() {
-    using namespace mist;std::ios::sync_with_stdio(false);std::cin.tie(nullptr);std::cout<<std::setprecision(17);initialize();std::cout<<"{\"ready\":true,\"protocol\":1,\"threads\":1}\n"<<std::flush;
+    using namespace mist;std::ios::sync_with_stdio(false);std::cin.tie(nullptr);std::cout<<std::setprecision(17);initialize();std::cout<<"{\"ready\":true,\"protocol\":2,\"streaming\":true,\"threads\":1}\n"<<std::flush;
     try {Packet packet;while(read(packet)){if(packet.mode=="VERIFY")verify(packet);else run(packet);std::cout<<std::flush;packet=Packet{};}}
     catch(const std::exception& error){std::cerr<<"native error: "<<error.what()<<'\n';return 2;}
 }
