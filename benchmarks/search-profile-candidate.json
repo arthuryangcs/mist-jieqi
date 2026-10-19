@@ -1,0 +1,207 @@
+{
+  "protocol": "Node --cpu-prof；seed6101/8样本/完整3层。递归同函数inclusive仅计最外层，包含启动成本；不同函数的inclusive不可相加。采样剖析不作为等深度计时对照。",
+  "runtime": "v25.6.0",
+  "totalUs": 2258235,
+  "topSelf": [
+    {
+      "name": "candidates",
+      "file": "engine.js",
+      "selfUs": 321434,
+      "inclusiveUs": 439709,
+      "selfPct": 14.233859629312272,
+      "inclusivePct": 19.47135705539946
+    },
+    {
+      "name": "inCheck",
+      "file": "engine.js",
+      "selfUs": 294015,
+      "inclusiveUs": 336955,
+      "selfPct": 13.019681299776153,
+      "inclusivePct": 14.921166309086521
+    },
+    {
+      "name": "legalMoves",
+      "file": "engine.js",
+      "selfUs": 276509,
+      "inclusiveUs": 1025166,
+      "selfPct": 12.244474113632991,
+      "inclusivePct": 45.39678111445443
+    },
+    {
+      "name": "searchNode",
+      "file": "ai.js",
+      "selfUs": 200320,
+      "inclusiveUs": 2023610,
+      "selfPct": 8.870644552050607,
+      "inclusivePct": 89.61024871193653
+    },
+    {
+      "name": "simpleEvaluate",
+      "file": "ai.js",
+      "selfUs": 172647,
+      "inclusiveUs": 172647,
+      "selfPct": 7.645218500288943,
+      "inclusivePct": 7.645218500288943
+    },
+    {
+      "name": "search",
+      "file": "ai.js",
+      "selfUs": 127305,
+      "inclusiveUs": 2025136,
+      "selfPct": 5.637367235916545,
+      "inclusivePct": 89.67782361003172
+    },
+    {
+      "name": "(garbage collector)",
+      "file": "",
+      "selfUs": 119331,
+      "inclusiveUs": 119331,
+      "selfPct": 5.2842596098280294,
+      "inclusivePct": 5.2842596098280294
+    },
+    {
+      "name": "order",
+      "file": "ai.js",
+      "selfUs": 117378,
+      "inclusiveUs": 191004,
+      "selfPct": 5.197776139330052,
+      "inclusivePct": 8.45810998412477
+    },
+    {
+      "name": "pseudo",
+      "file": "engine.js",
+      "selfUs": 113862,
+      "inclusiveUs": 113862,
+      "selfPct": 5.042079323011112,
+      "inclusivePct": 5.042079323011112
+    },
+    {
+      "name": "(anonymous)",
+      "file": "engine.js",
+      "selfUs": 112336,
+      "inclusiveUs": 113465,
+      "selfPct": 4.974504424915919,
+      "inclusivePct": 5.02449922173733
+    },
+    {
+      "name": "(anonymous)",
+      "file": "ai.js",
+      "selfUs": 72706,
+      "inclusiveUs": 249211,
+      "selfPct": 3.2195940635053484,
+      "inclusivePct": 11.035653950983843
+    },
+    {
+      "name": "add",
+      "file": "engine.js",
+      "selfUs": 50366,
+      "inclusiveUs": 50366,
+      "selfPct": 2.2303258961091297,
+      "inclusivePct": 2.2303258961091297
+    },
+    {
+      "name": "compileForInternalLoader",
+      "file": "realm",
+      "selfUs": 47598,
+      "inclusiveUs": 60147,
+      "selfPct": 2.1077522932732866,
+      "inclusivePct": 2.6634517665344837
+    },
+    {
+      "name": "priority",
+      "file": "ai.js",
+      "selfUs": 36685,
+      "inclusiveUs": 53718,
+      "selfPct": 1.6244987789136205,
+      "inclusivePct": 2.378760403589529
+    },
+    {
+      "name": "code",
+      "file": "ai.js",
+      "selfUs": 24951,
+      "inclusiveUs": 24951,
+      "selfPct": 1.104889437990289,
+      "inclusivePct": 1.104889437990289
+    },
+    {
+      "name": "push",
+      "file": "ai.js",
+      "selfUs": 21959,
+      "inclusiveUs": 58414,
+      "selfPct": 0.9723965840579036,
+      "inclusivePct": 2.586710417649182
+    },
+    {
+      "name": "evaluate",
+      "file": "ai.js",
+      "selfUs": 19073,
+      "inclusiveUs": 191720,
+      "selfPct": 0.8445976614479892,
+      "inclusivePct": 8.489816161736933
+    },
+    {
+      "name": "orderingValue",
+      "file": "ai.js",
+      "selfUs": 17033,
+      "inclusiveUs": 17033,
+      "selfPct": 0.7542616246759084,
+      "inclusivePct": 0.7542616246759084
+    },
+    {
+      "name": "pop",
+      "file": "ai.js",
+      "selfUs": 15108,
+      "inclusiveUs": 15108,
+      "selfPct": 0.6690180605649988,
+      "inclusivePct": 0.6690180605649988
+    },
+    {
+      "name": "searchKey",
+      "file": "ai.js",
+      "selfUs": 12035,
+      "inclusiveUs": 12035,
+      "selfPct": 0.5329383345843103,
+      "inclusivePct": 0.5329383345843103
+    },
+    {
+      "name": "xor",
+      "file": "ai.js",
+      "selfUs": 11504,
+      "inclusiveUs": 36455,
+      "selfPct": 0.5094243956009893,
+      "inclusivePct": 1.6143138335912781
+    },
+    {
+      "name": "(program)",
+      "file": "",
+      "selfUs": 5945,
+      "inclusiveUs": 5945,
+      "selfPct": 0.263258695397069,
+      "inclusivePct": 0.263258695397069
+    },
+    {
+      "name": "now",
+      "file": "performance",
+      "selfUs": 5898,
+      "inclusiveUs": 5898,
+      "selfPct": 0.26117742396163374,
+      "inclusivePct": 0.26117742396163374
+    },
+    {
+      "name": "save",
+      "file": "ai.js",
+      "selfUs": 5234,
+      "inclusiveUs": 5234,
+      "selfPct": 0.23177392963974078,
+      "inclusivePct": 0.23177392963974078
+    },
+    {
+      "name": "internalBinding",
+      "file": "realm",
+      "selfUs": 4221,
+      "inclusiveUs": 4221,
+      "selfPct": 0.18691588785046728,
+      "inclusivePct": 0.18691588785046728
+    }
+  ]
+}

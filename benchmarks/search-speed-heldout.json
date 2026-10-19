@@ -1,0 +1,6375 @@
+{
+  "baselineCommit": "5c71c95a78bddbd4754ea9b17a0be1b7a6132c22",
+  "runtime": "v25.6.0",
+  "architecture": "x64",
+  "cpu": "Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz",
+  "sourceHashes": {
+    "ai.js": "66bca44c185829ab7a42d5432fc8323c2937fed2be475ced46a654a7a2e1c18e",
+    "engine.js": "7f427f6e00e286a48335f7c7a7e74270d2a4349d7ea2aabcad0821122a17cb49",
+    "benchmarks/search-speed-baseline-ai.js": "4b0b10b03f92102afee7a51fdb424dd229404f94c621459256556f71bfe12ab3",
+    "benchmarks/search-speed-baseline-engine.js": "0fd066f674be683c6278fd4c5464dee4e2706b0a1e61cd15af74d50dad9ee961"
+  },
+  "depth": 3,
+  "repeats": 3,
+  "protocol": "同机顺序执行，预热后轮换先后；相同局面/种子/样本/完整深度。逐着根分与节点数核对，不使用CPU profiler计时。NPS为全部节点（含静态搜索）除核心耗时。",
+  "rows": [
+    {
+      "repeat": 0,
+      "position": "初始全暗",
+      "name": "baseline",
+      "seed": 6101,
+      "samples": 8,
+      "depth": 3,
+      "elapsedMs": 3052,
+      "nodes": 217728,
+      "nps": 71339.4495412844,
+      "move": {
+        "from": 88,
+        "to": 69
+      },
+      "rootScores": [
+        {
+          "from": 54,
+          "to": 45,
+          "score": -109.12346699537838,
+          "spread": 264.23191278393375,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 56,
+          "to": 47,
+          "score": -127.45787147892626,
+          "spread": 243.05912314469728,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 58,
+          "to": 49,
+          "score": -95.80572480332653,
+          "spread": 231.49617569597237,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 60,
+          "to": 51,
+          "score": -59.371314457801695,
+          "spread": 236.25822160373042,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 62,
+          "to": 53,
+          "score": -68.96801977341431,
+          "spread": 285.970113434015,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 1,
+          "score": -98.45130435126751,
+          "spread": 360.65144688561526,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 28,
+          "score": -112.61525069306677,
+          "spread": 171.89290708769923,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 37,
+          "score": -193.39155252532206,
+          "spread": 114.19307992076882,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 46,
+          "score": -212.39349120055272,
+          "spread": 83.68462445876044,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 55,
+          "score": -293.6338687330398,
+          "spread": 49.35264268000079,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 63,
+          "score": -133.7544552388863,
+          "spread": 56.6372529786339,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 65,
+          "score": -147.86040044677435,
+          "spread": 48.6497240745768,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 66,
+          "score": -144.2747157344645,
+          "spread": 67.05566490555083,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 67,
+          "score": -139.07407545513317,
+          "spread": 70.26170668827697,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 68,
+          "score": -144.18344927918548,
+          "spread": 66.94873444391614,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 69,
+          "score": -151.09410823993528,
+          "spread": 69.9689167832979,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 73,
+          "score": -273.11014613054505,
+          "spread": 50.39368342992774,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 7,
+          "score": -93.52455902630571,
+          "spread": 459.0818426287634,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 34,
+          "score": -160.24138146241197,
+          "spread": 107.93034509088606,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 43,
+          "score": -136.11580774919486,
+          "spread": 134.4081602542095,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 52,
+          "score": -176.83522122173576,
+          "spread": 102.66868855599527,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 61,
+          "score": -213.46660807331668,
+          "spread": 99.19820025222808,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 65,
+          "score": -128.37166003347195,
+          "spread": 66.30031582652495,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 66,
+          "score": -141.07943848273706,
+          "spread": 58.57861911567124,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 67,
+          "score": -142.47219746688313,
+          "spread": 46.16703237113727,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 68,
+          "score": -141.46315861215967,
+          "spread": 58.788646328448294,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 69,
+          "score": -176.31281705764678,
+          "spread": 48.59255140873079,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 71,
+          "score": -174.05755718388176,
+          "spread": 49.075216241121645,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 79,
+          "score": -195.9572100652157,
+          "spread": 112.03146288947266,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 81,
+          "to": 63,
+          "score": -245.57264293331212,
+          "spread": 236.2532641554992,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 81,
+          "to": 72,
+          "score": -248.96370830106798,
+          "spread": 248.0905783959231,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 82,
+          "to": 63,
+          "score": -71.20603521912034,
+          "spread": 202.52007858365351,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 82,
+          "to": 65,
+          "score": -80.28321330941581,
+          "spread": 206.99761211388693,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 83,
+          "to": 63,
+          "score": -158.89324907329853,
+          "spread": 272.52532702634943,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 83,
+          "to": 67,
+          "score": -115.60343595098489,
+          "spread": 287.03301780442814,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 84,
+          "to": 76,
+          "score": -177.9629207730108,
+          "spread": 259.19721670226744,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 85,
+          "to": 76,
+          "score": -210.79195812680797,
+          "spread": 162.80066116926474,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 86,
+          "to": 76,
+          "score": -230.6701234116599,
+          "spread": 81.72564683548151,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 87,
+          "to": 67,
+          "score": -212.90230286734692,
+          "spread": 79.92747931773884,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 87,
+          "to": 71,
+          "score": -217.9134625721567,
+          "spread": 78.23940044241326,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 88,
+          "to": 69,
+          "score": -40.6358338040809,
+          "spread": 247.37418433253035,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 88,
+          "to": 71,
+          "score": -58.624736899382306,
+          "spread": 249.16926060022914,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 89,
+          "to": 71,
+          "score": -247.49713366104544,
+          "spread": 285.74696035362354,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 89,
+          "to": 80,
+          "score": -276.4214887888772,
+          "spread": 253.68299662644486,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        }
+      ]
+    },
+    {
+      "repeat": 0,
+      "position": "初始全暗",
+      "name": "candidate",
+      "seed": 6101,
+      "samples": 8,
+      "depth": 3,
+      "elapsedMs": 1926,
+      "nodes": 217728,
+      "nps": 113046.72897196261,
+      "move": {
+        "from": 88,
+        "to": 69
+      },
+      "rootScores": [
+        {
+          "from": 54,
+          "to": 45,
+          "score": -109.12346699537838,
+          "spread": 264.23191278393375,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 56,
+          "to": 47,
+          "score": -127.45787147892626,
+          "spread": 243.05912314469728,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 58,
+          "to": 49,
+          "score": -95.80572480332653,
+          "spread": 231.49617569597237,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 60,
+          "to": 51,
+          "score": -59.371314457801695,
+          "spread": 236.25822160373042,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 62,
+          "to": 53,
+          "score": -68.96801977341431,
+          "spread": 285.970113434015,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 1,
+          "score": -98.45130435126751,
+          "spread": 360.65144688561526,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 28,
+          "score": -112.61525069306677,
+          "spread": 171.89290708769923,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 37,
+          "score": -193.39155252532206,
+          "spread": 114.19307992076882,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 46,
+          "score": -212.39349120055272,
+          "spread": 83.68462445876044,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 55,
+          "score": -293.6338687330398,
+          "spread": 49.35264268000079,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 63,
+          "score": -133.7544552388863,
+          "spread": 56.6372529786339,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 65,
+          "score": -147.86040044677435,
+          "spread": 48.6497240745768,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 66,
+          "score": -144.2747157344645,
+          "spread": 67.05566490555083,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 67,
+          "score": -139.07407545513317,
+          "spread": 70.26170668827697,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 68,
+          "score": -144.18344927918548,
+          "spread": 66.94873444391614,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 69,
+          "score": -151.09410823993528,
+          "spread": 69.9689167832979,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 73,
+          "score": -273.11014613054505,
+          "spread": 50.39368342992774,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 7,
+          "score": -93.52455902630571,
+          "spread": 459.0818426287634,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 34,
+          "score": -160.24138146241197,
+          "spread": 107.93034509088606,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 43,
+          "score": -136.11580774919486,
+          "spread": 134.4081602542095,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 52,
+          "score": -176.83522122173576,
+          "spread": 102.66868855599527,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 61,
+          "score": -213.46660807331668,
+          "spread": 99.19820025222808,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 65,
+          "score": -128.37166003347195,
+          "spread": 66.30031582652495,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 66,
+          "score": -141.07943848273706,
+          "spread": 58.57861911567124,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 67,
+          "score": -142.47219746688313,
+          "spread": 46.16703237113727,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 68,
+          "score": -141.46315861215967,
+          "spread": 58.788646328448294,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 69,
+          "score": -176.31281705764678,
+          "spread": 48.59255140873079,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 71,
+          "score": -174.05755718388176,
+          "spread": 49.075216241121645,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 79,
+          "score": -195.9572100652157,
+          "spread": 112.03146288947266,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 81,
+          "to": 63,
+          "score": -245.57264293331212,
+          "spread": 236.2532641554992,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 81,
+          "to": 72,
+          "score": -248.96370830106798,
+          "spread": 248.0905783959231,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 82,
+          "to": 63,
+          "score": -71.20603521912034,
+          "spread": 202.52007858365351,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 82,
+          "to": 65,
+          "score": -80.28321330941581,
+          "spread": 206.99761211388693,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 83,
+          "to": 63,
+          "score": -158.89324907329853,
+          "spread": 272.52532702634943,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 83,
+          "to": 67,
+          "score": -115.60343595098489,
+          "spread": 287.03301780442814,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 84,
+          "to": 76,
+          "score": -177.9629207730108,
+          "spread": 259.19721670226744,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 85,
+          "to": 76,
+          "score": -210.79195812680797,
+          "spread": 162.80066116926474,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 86,
+          "to": 76,
+          "score": -230.6701234116599,
+          "spread": 81.72564683548151,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 87,
+          "to": 67,
+          "score": -212.90230286734692,
+          "spread": 79.92747931773884,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 87,
+          "to": 71,
+          "score": -217.9134625721567,
+          "spread": 78.23940044241326,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 88,
+          "to": 69,
+          "score": -40.6358338040809,
+          "spread": 247.37418433253035,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 88,
+          "to": 71,
+          "score": -58.624736899382306,
+          "spread": 249.16926060022914,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 89,
+          "to": 71,
+          "score": -247.49713366104544,
+          "spread": 285.74696035362354,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 89,
+          "to": 80,
+          "score": -276.4214887888772,
+          "spread": 253.68299662644486,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        }
+      ]
+    },
+    {
+      "repeat": 0,
+      "position": "可达中局 2111 / 20步",
+      "name": "candidate",
+      "seed": 6203,
+      "samples": 4,
+      "depth": 3,
+      "elapsedMs": 345,
+      "nodes": 34023,
+      "nps": 98617.39130434782,
+      "move": {
+        "from": 55,
+        "to": 73
+      },
+      "rootScores": [
+        {
+          "from": 49,
+          "to": 39,
+          "score": -389.106585938341,
+          "spread": 242.5458719500253,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 49,
+          "to": 41,
+          "score": -469.9564779272751,
+          "spread": 161.73183823848242,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 49,
+          "to": 57,
+          "score": -561.8257955037677,
+          "spread": 89.5582910734679,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 49,
+          "to": 59,
+          "score": -561.8257955037677,
+          "spread": 89.5582910734679,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 54,
+          "to": 45,
+          "score": -332.72163370882623,
+          "spread": 102.51920551779006,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 55,
+          "to": 28,
+          "score": -434.9290193664735,
+          "spread": 15.588457268119896,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 55,
+          "to": 37,
+          "score": -436.9287259236852,
+          "spread": 15.588457268119896,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 55,
+          "to": 46,
+          "score": -464.4979280454109,
+          "spread": 2.598076211353316,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 55,
+          "to": 64,
+          "score": -470.99906541142997,
+          "spread": 1.7320508075688772,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 55,
+          "to": 73,
+          "score": -128.77515160970404,
+          "spread": 91.16331499018334,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 55,
+          "to": 82,
+          "score": -446.92726403720707,
+          "spread": 15.588457268119896,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 56,
+          "to": 47,
+          "score": -321.16433694624453,
+          "spread": 189.71755322056424,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 60,
+          "to": 51,
+          "score": -518.1564343808604,
+          "spread": 78.6396051617798,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 62,
+          "to": 53,
+          "score": -327.31874830248614,
+          "spread": 184.26814700321472,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 63,
+          "to": 74,
+          "score": -192.35098901927014,
+          "spread": 68.84039511798974,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 67,
+          "to": 58,
+          "score": -551.9987382281001,
+          "spread": 87.53106591376573,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 71,
+          "to": 78,
+          "score": -553.8616389673934,
+          "spread": 89.5582910734679,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 72,
+          "to": 73,
+          "score": -158.29545608818245,
+          "spread": 87.04596486914242,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 72,
+          "to": 74,
+          "score": -559.1767486192599,
+          "spread": 91.99558413315283,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 72,
+          "to": 81,
+          "score": -563.8168674309516,
+          "spread": 89.5582910734679,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 75,
+          "to": 66,
+          "score": -549.8796391073724,
+          "spread": 89.5582910734679,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 84,
+          "to": 76,
+          "score": -513.3905013369753,
+          "spread": 94.53438527858528,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 85,
+          "to": 76,
+          "score": -569.7901622450836,
+          "spread": 89.5582910734679,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 86,
+          "to": 76,
+          "score": -551.5675165194173,
+          "spread": 94.01429412594662,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 88,
+          "to": 78,
+          "score": -561.8257955037677,
+          "spread": 89.5582910734679,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        }
+      ]
+    },
+    {
+      "repeat": 0,
+      "position": "可达中局 2111 / 20步",
+      "name": "baseline",
+      "seed": 6203,
+      "samples": 4,
+      "depth": 3,
+      "elapsedMs": 445,
+      "nodes": 34023,
+      "nps": 76456.17977528089,
+      "move": {
+        "from": 55,
+        "to": 73
+      },
+      "rootScores": [
+        {
+          "from": 49,
+          "to": 39,
+          "score": -389.106585938341,
+          "spread": 242.5458719500253,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 49,
+          "to": 41,
+          "score": -469.9564779272751,
+          "spread": 161.73183823848242,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 49,
+          "to": 57,
+          "score": -561.8257955037677,
+          "spread": 89.5582910734679,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 49,
+          "to": 59,
+          "score": -561.8257955037677,
+          "spread": 89.5582910734679,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 54,
+          "to": 45,
+          "score": -332.72163370882623,
+          "spread": 102.51920551779006,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 55,
+          "to": 28,
+          "score": -434.9290193664735,
+          "spread": 15.588457268119896,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 55,
+          "to": 37,
+          "score": -436.9287259236852,
+          "spread": 15.588457268119896,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 55,
+          "to": 46,
+          "score": -464.4979280454109,
+          "spread": 2.598076211353316,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 55,
+          "to": 64,
+          "score": -470.99906541142997,
+          "spread": 1.7320508075688772,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 55,
+          "to": 73,
+          "score": -128.77515160970404,
+          "spread": 91.16331499018334,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 55,
+          "to": 82,
+          "score": -446.92726403720707,
+          "spread": 15.588457268119896,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 56,
+          "to": 47,
+          "score": -321.16433694624453,
+          "spread": 189.71755322056424,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 60,
+          "to": 51,
+          "score": -518.1564343808604,
+          "spread": 78.6396051617798,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 62,
+          "to": 53,
+          "score": -327.31874830248614,
+          "spread": 184.26814700321472,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 63,
+          "to": 74,
+          "score": -192.35098901927014,
+          "spread": 68.84039511798974,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 67,
+          "to": 58,
+          "score": -551.9987382281001,
+          "spread": 87.53106591376573,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 71,
+          "to": 78,
+          "score": -553.8616389673934,
+          "spread": 89.5582910734679,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 72,
+          "to": 73,
+          "score": -158.29545608818245,
+          "spread": 87.04596486914242,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 72,
+          "to": 74,
+          "score": -559.1767486192599,
+          "spread": 91.99558413315283,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 72,
+          "to": 81,
+          "score": -563.8168674309516,
+          "spread": 89.5582910734679,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 75,
+          "to": 66,
+          "score": -549.8796391073724,
+          "spread": 89.5582910734679,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 84,
+          "to": 76,
+          "score": -513.3905013369753,
+          "spread": 94.53438527858528,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 85,
+          "to": 76,
+          "score": -569.7901622450836,
+          "spread": 89.5582910734679,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 86,
+          "to": 76,
+          "score": -551.5675165194173,
+          "spread": 94.01429412594662,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 88,
+          "to": 78,
+          "score": -561.8257955037677,
+          "spread": 89.5582910734679,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        }
+      ]
+    },
+    {
+      "repeat": 0,
+      "position": "可达中局 2111 / 44步",
+      "name": "baseline",
+      "seed": 6203,
+      "samples": 4,
+      "depth": 3,
+      "elapsedMs": 649,
+      "nodes": 51046,
+      "nps": 78653.31278890601,
+      "move": {
+        "from": 63,
+        "to": 46
+      },
+      "rootScores": [
+        {
+          "from": 25,
+          "to": 15,
+          "score": -33.95234061744206,
+          "spread": 45.13867521316947,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 25,
+          "to": 17,
+          "score": 25.66666666667176,
+          "spread": 0,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 25,
+          "to": 33,
+          "score": -57.481560160557436,
+          "spread": 21.5,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 25,
+          "to": 35,
+          "score": 146.71280804855957,
+          "spread": 133.74042021767391,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 45,
+          "to": 36,
+          "score": 25.36658929274597,
+          "spread": 64.73600234799798,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 51,
+          "to": 42,
+          "score": 20.803788309084123,
+          "spread": 44.95460673464452,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 56,
+          "to": 47,
+          "score": -279.09964977196313,
+          "spread": 161.5214769001324,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 62,
+          "to": 53,
+          "score": 21.499644563815895,
+          "spread": 4.9749371855331,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 63,
+          "to": 46,
+          "score": 961.0112352863322,
+          "spread": 115.8112688817457,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 63,
+          "to": 74,
+          "score": -37.89621566005698,
+          "spread": 54.886246000250374,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 66,
+          "to": 57,
+          "score": -14.147143113707749,
+          "spread": 44.95460673464452,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 67,
+          "to": 58,
+          "score": -14.147143113707749,
+          "spread": 44.95460673464452,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 71,
+          "to": 60,
+          "score": -14.148703906346501,
+          "spread": 42.87481778386807,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 72,
+          "to": 73,
+          "score": -697.7565896858353,
+          "spread": 99.20433458271872,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 72,
+          "to": 74,
+          "score": -30.465417498851732,
+          "spread": 40.721615881494685,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 72,
+          "to": 75,
+          "score": -30.465417498851732,
+          "spread": 40.721615881494685,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 72,
+          "to": 81,
+          "score": -27.627423440492954,
+          "spread": 45.51007214525751,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 78,
+          "to": 68,
+          "score": -33.964064838531655,
+          "spread": 39.185456485793296,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 78,
+          "to": 70,
+          "score": -28.964551542694213,
+          "spread": 42.053537306628556,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 78,
+          "to": 88,
+          "score": -26.130322773022314,
+          "spread": 44.954606734645864,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 80,
+          "to": 60,
+          "score": -26.130322773023703,
+          "spread": 44.95460673464452,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 86,
+          "to": 77,
+          "score": -32.455425420017214,
+          "spread": 44.58979703923441,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 86,
+          "to": 85,
+          "score": 17.499913290682315,
+          "spread": 2.598076211353316,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        }
+      ]
+    },
+    {
+      "repeat": 0,
+      "position": "可达中局 2111 / 44步",
+      "name": "candidate",
+      "seed": 6203,
+      "samples": 4,
+      "depth": 3,
+      "elapsedMs": 543,
+      "nodes": 51046,
+      "nps": 94007.3664825046,
+      "move": {
+        "from": 63,
+        "to": 46
+      },
+      "rootScores": [
+        {
+          "from": 25,
+          "to": 15,
+          "score": -33.95234061744206,
+          "spread": 45.13867521316947,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 25,
+          "to": 17,
+          "score": 25.66666666667176,
+          "spread": 0,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 25,
+          "to": 33,
+          "score": -57.481560160557436,
+          "spread": 21.5,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 25,
+          "to": 35,
+          "score": 146.71280804855957,
+          "spread": 133.74042021767391,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 45,
+          "to": 36,
+          "score": 25.36658929274597,
+          "spread": 64.73600234799798,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 51,
+          "to": 42,
+          "score": 20.803788309084123,
+          "spread": 44.95460673464452,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 56,
+          "to": 47,
+          "score": -279.09964977196313,
+          "spread": 161.5214769001324,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 62,
+          "to": 53,
+          "score": 21.499644563815895,
+          "spread": 4.9749371855331,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 63,
+          "to": 46,
+          "score": 961.0112352863322,
+          "spread": 115.8112688817457,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 63,
+          "to": 74,
+          "score": -37.89621566005698,
+          "spread": 54.886246000250374,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 66,
+          "to": 57,
+          "score": -14.147143113707749,
+          "spread": 44.95460673464452,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 67,
+          "to": 58,
+          "score": -14.147143113707749,
+          "spread": 44.95460673464452,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 71,
+          "to": 60,
+          "score": -14.148703906346501,
+          "spread": 42.87481778386807,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 72,
+          "to": 73,
+          "score": -697.7565896858353,
+          "spread": 99.20433458271872,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 72,
+          "to": 74,
+          "score": -30.465417498851732,
+          "spread": 40.721615881494685,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 72,
+          "to": 75,
+          "score": -30.465417498851732,
+          "spread": 40.721615881494685,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 72,
+          "to": 81,
+          "score": -27.627423440492954,
+          "spread": 45.51007214525751,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 78,
+          "to": 68,
+          "score": -33.964064838531655,
+          "spread": 39.185456485793296,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 78,
+          "to": 70,
+          "score": -28.964551542694213,
+          "spread": 42.053537306628556,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 78,
+          "to": 88,
+          "score": -26.130322773022314,
+          "spread": 44.954606734645864,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 80,
+          "to": 60,
+          "score": -26.130322773023703,
+          "spread": 44.95460673464452,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 86,
+          "to": 77,
+          "score": -32.455425420017214,
+          "spread": 44.58979703923441,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 86,
+          "to": 85,
+          "score": 17.499913290682315,
+          "spread": 2.598076211353316,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        }
+      ]
+    },
+    {
+      "repeat": 0,
+      "position": "可达中局 2221 / 44步",
+      "name": "candidate",
+      "seed": 6203,
+      "samples": 4,
+      "depth": 3,
+      "elapsedMs": 1144,
+      "nodes": 114163,
+      "nps": 99792.83216783217,
+      "move": {
+        "from": 26,
+        "to": 22
+      },
+      "rootScores": [
+        {
+          "from": 26,
+          "to": 8,
+          "score": -864.8962027963287,
+          "spread": 1281.589581015175,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 26,
+          "to": 17,
+          "score": -1043.3952757249997,
+          "spread": 174.66783953168903,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 26,
+          "to": 22,
+          "score": -294.19640743425,
+          "spread": 116.43151897622334,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 26,
+          "to": 25,
+          "score": -1013.7927827950327,
+          "spread": 1211.9915743885663,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 26,
+          "to": 35,
+          "score": -1142.9152356013103,
+          "spread": 1154.411162430626,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 26,
+          "to": 44,
+          "score": -1177.2477479172367,
+          "spread": 1139.7907306704212,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 26,
+          "to": 53,
+          "score": -1184.5467116566913,
+          "spread": 1135.4303393672174,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 51,
+          "to": 31,
+          "score": -627.3041487552167,
+          "spread": 1402.4853608861663,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 51,
+          "to": 35,
+          "score": -1189.5901796438475,
+          "spread": 1130.703443780802,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 51,
+          "to": 71,
+          "score": -1171.6775155406729,
+          "spread": 1138.8234059765368,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 55,
+          "to": 46,
+          "score": -884.8866473555838,
+          "spread": 1271.1212979753927,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 58,
+          "to": 49,
+          "score": -1110.141760422785,
+          "spread": 1166.901199640408,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 62,
+          "to": 53,
+          "score": -835.0864685055628,
+          "spread": 1296.1650352525,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 65,
+          "to": 56,
+          "score": -937.9884906192939,
+          "spread": 1246.2657192812212,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 67,
+          "to": 47,
+          "score": -949.1566114435145,
+          "spread": 1241.0699992569073,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 67,
+          "to": 83,
+          "score": -942.019637493042,
+          "spread": 1244.38948663368,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 67,
+          "to": 87,
+          "score": -949.1566114435145,
+          "spread": 1241.0699992569073,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 81,
+          "to": 27,
+          "score": -943.9809405656849,
+          "spread": 1248.5266066448073,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 81,
+          "to": 36,
+          "score": -1275.20356545709,
+          "spread": 1092.9604420004323,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 81,
+          "to": 45,
+          "score": -925.0678545354115,
+          "spread": 1254.7052774788713,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 81,
+          "to": 54,
+          "score": -868.620488139583,
+          "spread": 1278.9640854787287,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 81,
+          "to": 63,
+          "score": -926.4166127556712,
+          "spread": 1254.0410679080642,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 81,
+          "to": 72,
+          "score": -927.0901542979855,
+          "spread": 1253.7097284991178,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 81,
+          "to": 82,
+          "score": -1259.3743070435103,
+          "spread": 1099.9056525195454,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 81,
+          "to": 83,
+          "score": -985.566942850383,
+          "spread": 1225.228244042717,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 84,
+          "to": 75,
+          "score": -949.1566114435115,
+          "spread": 1241.0699992569087,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 88,
+          "to": 69,
+          "score": -482.36235472763843,
+          "spread": 55.689616027884774,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 88,
+          "to": 71,
+          "score": -952.8827391802276,
+          "spread": 1239.33809338784,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 88,
+          "to": 77,
+          "score": -784.7613656323014,
+          "spread": 115.89398891515894,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 89,
+          "to": 71,
+          "score": -1040.9132043417537,
+          "spread": 1199.1521628726791,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 89,
+          "to": 80,
+          "score": -1044.3572151753424,
+          "spread": 1197.6303309962655,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        }
+      ]
+    },
+    {
+      "repeat": 0,
+      "position": "可达中局 2221 / 44步",
+      "name": "baseline",
+      "seed": 6203,
+      "samples": 4,
+      "depth": 3,
+      "elapsedMs": 1328,
+      "nodes": 114163,
+      "nps": 85966.11445783133,
+      "move": {
+        "from": 26,
+        "to": 22
+      },
+      "rootScores": [
+        {
+          "from": 26,
+          "to": 8,
+          "score": -864.8962027963287,
+          "spread": 1281.589581015175,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 26,
+          "to": 17,
+          "score": -1043.3952757249997,
+          "spread": 174.66783953168903,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 26,
+          "to": 22,
+          "score": -294.19640743425,
+          "spread": 116.43151897622334,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 26,
+          "to": 25,
+          "score": -1013.7927827950327,
+          "spread": 1211.9915743885663,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 26,
+          "to": 35,
+          "score": -1142.9152356013103,
+          "spread": 1154.411162430626,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 26,
+          "to": 44,
+          "score": -1177.2477479172367,
+          "spread": 1139.7907306704212,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 26,
+          "to": 53,
+          "score": -1184.5467116566913,
+          "spread": 1135.4303393672174,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 51,
+          "to": 31,
+          "score": -627.3041487552167,
+          "spread": 1402.4853608861663,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 51,
+          "to": 35,
+          "score": -1189.5901796438475,
+          "spread": 1130.703443780802,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 51,
+          "to": 71,
+          "score": -1171.6775155406729,
+          "spread": 1138.8234059765368,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 55,
+          "to": 46,
+          "score": -884.8866473555838,
+          "spread": 1271.1212979753927,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 58,
+          "to": 49,
+          "score": -1110.141760422785,
+          "spread": 1166.901199640408,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 62,
+          "to": 53,
+          "score": -835.0864685055628,
+          "spread": 1296.1650352525,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 65,
+          "to": 56,
+          "score": -937.9884906192939,
+          "spread": 1246.2657192812212,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 67,
+          "to": 47,
+          "score": -949.1566114435145,
+          "spread": 1241.0699992569073,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 67,
+          "to": 83,
+          "score": -942.019637493042,
+          "spread": 1244.38948663368,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 67,
+          "to": 87,
+          "score": -949.1566114435145,
+          "spread": 1241.0699992569073,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 81,
+          "to": 27,
+          "score": -943.9809405656849,
+          "spread": 1248.5266066448073,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 81,
+          "to": 36,
+          "score": -1275.20356545709,
+          "spread": 1092.9604420004323,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 81,
+          "to": 45,
+          "score": -925.0678545354115,
+          "spread": 1254.7052774788713,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 81,
+          "to": 54,
+          "score": -868.620488139583,
+          "spread": 1278.9640854787287,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 81,
+          "to": 63,
+          "score": -926.4166127556712,
+          "spread": 1254.0410679080642,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 81,
+          "to": 72,
+          "score": -927.0901542979855,
+          "spread": 1253.7097284991178,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 81,
+          "to": 82,
+          "score": -1259.3743070435103,
+          "spread": 1099.9056525195454,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 81,
+          "to": 83,
+          "score": -985.566942850383,
+          "spread": 1225.228244042717,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 84,
+          "to": 75,
+          "score": -949.1566114435115,
+          "spread": 1241.0699992569087,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 88,
+          "to": 69,
+          "score": -482.36235472763843,
+          "spread": 55.689616027884774,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 88,
+          "to": 71,
+          "score": -952.8827391802276,
+          "spread": 1239.33809338784,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 88,
+          "to": 77,
+          "score": -784.7613656323014,
+          "spread": 115.89398891515894,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 89,
+          "to": 71,
+          "score": -1040.9132043417537,
+          "spread": 1199.1521628726791,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 89,
+          "to": 80,
+          "score": -1044.3572151753424,
+          "spread": 1197.6303309962655,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        }
+      ]
+    },
+    {
+      "repeat": 1,
+      "position": "初始全暗",
+      "name": "candidate",
+      "seed": 6101,
+      "samples": 8,
+      "depth": 3,
+      "elapsedMs": 1957,
+      "nodes": 217728,
+      "nps": 111256.00408788963,
+      "move": {
+        "from": 88,
+        "to": 69
+      },
+      "rootScores": [
+        {
+          "from": 54,
+          "to": 45,
+          "score": -109.12346699537838,
+          "spread": 264.23191278393375,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 56,
+          "to": 47,
+          "score": -127.45787147892626,
+          "spread": 243.05912314469728,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 58,
+          "to": 49,
+          "score": -95.80572480332653,
+          "spread": 231.49617569597237,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 60,
+          "to": 51,
+          "score": -59.371314457801695,
+          "spread": 236.25822160373042,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 62,
+          "to": 53,
+          "score": -68.96801977341431,
+          "spread": 285.970113434015,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 1,
+          "score": -98.45130435126751,
+          "spread": 360.65144688561526,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 28,
+          "score": -112.61525069306677,
+          "spread": 171.89290708769923,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 37,
+          "score": -193.39155252532206,
+          "spread": 114.19307992076882,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 46,
+          "score": -212.39349120055272,
+          "spread": 83.68462445876044,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 55,
+          "score": -293.6338687330398,
+          "spread": 49.35264268000079,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 63,
+          "score": -133.7544552388863,
+          "spread": 56.6372529786339,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 65,
+          "score": -147.86040044677435,
+          "spread": 48.6497240745768,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 66,
+          "score": -144.2747157344645,
+          "spread": 67.05566490555083,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 67,
+          "score": -139.07407545513317,
+          "spread": 70.26170668827697,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 68,
+          "score": -144.18344927918548,
+          "spread": 66.94873444391614,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 69,
+          "score": -151.09410823993528,
+          "spread": 69.9689167832979,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 73,
+          "score": -273.11014613054505,
+          "spread": 50.39368342992774,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 7,
+          "score": -93.52455902630571,
+          "spread": 459.0818426287634,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 34,
+          "score": -160.24138146241197,
+          "spread": 107.93034509088606,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 43,
+          "score": -136.11580774919486,
+          "spread": 134.4081602542095,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 52,
+          "score": -176.83522122173576,
+          "spread": 102.66868855599527,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 61,
+          "score": -213.46660807331668,
+          "spread": 99.19820025222808,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 65,
+          "score": -128.37166003347195,
+          "spread": 66.30031582652495,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 66,
+          "score": -141.07943848273706,
+          "spread": 58.57861911567124,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 67,
+          "score": -142.47219746688313,
+          "spread": 46.16703237113727,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 68,
+          "score": -141.46315861215967,
+          "spread": 58.788646328448294,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 69,
+          "score": -176.31281705764678,
+          "spread": 48.59255140873079,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 71,
+          "score": -174.05755718388176,
+          "spread": 49.075216241121645,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 79,
+          "score": -195.9572100652157,
+          "spread": 112.03146288947266,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 81,
+          "to": 63,
+          "score": -245.57264293331212,
+          "spread": 236.2532641554992,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 81,
+          "to": 72,
+          "score": -248.96370830106798,
+          "spread": 248.0905783959231,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 82,
+          "to": 63,
+          "score": -71.20603521912034,
+          "spread": 202.52007858365351,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 82,
+          "to": 65,
+          "score": -80.28321330941581,
+          "spread": 206.99761211388693,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 83,
+          "to": 63,
+          "score": -158.89324907329853,
+          "spread": 272.52532702634943,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 83,
+          "to": 67,
+          "score": -115.60343595098489,
+          "spread": 287.03301780442814,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 84,
+          "to": 76,
+          "score": -177.9629207730108,
+          "spread": 259.19721670226744,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 85,
+          "to": 76,
+          "score": -210.79195812680797,
+          "spread": 162.80066116926474,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 86,
+          "to": 76,
+          "score": -230.6701234116599,
+          "spread": 81.72564683548151,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 87,
+          "to": 67,
+          "score": -212.90230286734692,
+          "spread": 79.92747931773884,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 87,
+          "to": 71,
+          "score": -217.9134625721567,
+          "spread": 78.23940044241326,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 88,
+          "to": 69,
+          "score": -40.6358338040809,
+          "spread": 247.37418433253035,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 88,
+          "to": 71,
+          "score": -58.624736899382306,
+          "spread": 249.16926060022914,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 89,
+          "to": 71,
+          "score": -247.49713366104544,
+          "spread": 285.74696035362354,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 89,
+          "to": 80,
+          "score": -276.4214887888772,
+          "spread": 253.68299662644486,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        }
+      ]
+    },
+    {
+      "repeat": 1,
+      "position": "初始全暗",
+      "name": "baseline",
+      "seed": 6101,
+      "samples": 8,
+      "depth": 3,
+      "elapsedMs": 2882,
+      "nodes": 217728,
+      "nps": 75547.53643303261,
+      "move": {
+        "from": 88,
+        "to": 69
+      },
+      "rootScores": [
+        {
+          "from": 54,
+          "to": 45,
+          "score": -109.12346699537838,
+          "spread": 264.23191278393375,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 56,
+          "to": 47,
+          "score": -127.45787147892626,
+          "spread": 243.05912314469728,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 58,
+          "to": 49,
+          "score": -95.80572480332653,
+          "spread": 231.49617569597237,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 60,
+          "to": 51,
+          "score": -59.371314457801695,
+          "spread": 236.25822160373042,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 62,
+          "to": 53,
+          "score": -68.96801977341431,
+          "spread": 285.970113434015,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 1,
+          "score": -98.45130435126751,
+          "spread": 360.65144688561526,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 28,
+          "score": -112.61525069306677,
+          "spread": 171.89290708769923,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 37,
+          "score": -193.39155252532206,
+          "spread": 114.19307992076882,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 46,
+          "score": -212.39349120055272,
+          "spread": 83.68462445876044,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 55,
+          "score": -293.6338687330398,
+          "spread": 49.35264268000079,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 63,
+          "score": -133.7544552388863,
+          "spread": 56.6372529786339,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 65,
+          "score": -147.86040044677435,
+          "spread": 48.6497240745768,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 66,
+          "score": -144.2747157344645,
+          "spread": 67.05566490555083,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 67,
+          "score": -139.07407545513317,
+          "spread": 70.26170668827697,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 68,
+          "score": -144.18344927918548,
+          "spread": 66.94873444391614,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 69,
+          "score": -151.09410823993528,
+          "spread": 69.9689167832979,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 73,
+          "score": -273.11014613054505,
+          "spread": 50.39368342992774,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 7,
+          "score": -93.52455902630571,
+          "spread": 459.0818426287634,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 34,
+          "score": -160.24138146241197,
+          "spread": 107.93034509088606,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 43,
+          "score": -136.11580774919486,
+          "spread": 134.4081602542095,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 52,
+          "score": -176.83522122173576,
+          "spread": 102.66868855599527,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 61,
+          "score": -213.46660807331668,
+          "spread": 99.19820025222808,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 65,
+          "score": -128.37166003347195,
+          "spread": 66.30031582652495,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 66,
+          "score": -141.07943848273706,
+          "spread": 58.57861911567124,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 67,
+          "score": -142.47219746688313,
+          "spread": 46.16703237113727,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 68,
+          "score": -141.46315861215967,
+          "spread": 58.788646328448294,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 69,
+          "score": -176.31281705764678,
+          "spread": 48.59255140873079,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 71,
+          "score": -174.05755718388176,
+          "spread": 49.075216241121645,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 79,
+          "score": -195.9572100652157,
+          "spread": 112.03146288947266,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 81,
+          "to": 63,
+          "score": -245.57264293331212,
+          "spread": 236.2532641554992,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 81,
+          "to": 72,
+          "score": -248.96370830106798,
+          "spread": 248.0905783959231,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 82,
+          "to": 63,
+          "score": -71.20603521912034,
+          "spread": 202.52007858365351,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 82,
+          "to": 65,
+          "score": -80.28321330941581,
+          "spread": 206.99761211388693,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 83,
+          "to": 63,
+          "score": -158.89324907329853,
+          "spread": 272.52532702634943,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 83,
+          "to": 67,
+          "score": -115.60343595098489,
+          "spread": 287.03301780442814,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 84,
+          "to": 76,
+          "score": -177.9629207730108,
+          "spread": 259.19721670226744,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 85,
+          "to": 76,
+          "score": -210.79195812680797,
+          "spread": 162.80066116926474,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 86,
+          "to": 76,
+          "score": -230.6701234116599,
+          "spread": 81.72564683548151,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 87,
+          "to": 67,
+          "score": -212.90230286734692,
+          "spread": 79.92747931773884,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 87,
+          "to": 71,
+          "score": -217.9134625721567,
+          "spread": 78.23940044241326,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 88,
+          "to": 69,
+          "score": -40.6358338040809,
+          "spread": 247.37418433253035,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 88,
+          "to": 71,
+          "score": -58.624736899382306,
+          "spread": 249.16926060022914,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 89,
+          "to": 71,
+          "score": -247.49713366104544,
+          "spread": 285.74696035362354,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 89,
+          "to": 80,
+          "score": -276.4214887888772,
+          "spread": 253.68299662644486,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        }
+      ]
+    },
+    {
+      "repeat": 1,
+      "position": "可达中局 2111 / 20步",
+      "name": "baseline",
+      "seed": 6203,
+      "samples": 4,
+      "depth": 3,
+      "elapsedMs": 427,
+      "nodes": 34023,
+      "nps": 79679.1569086651,
+      "move": {
+        "from": 55,
+        "to": 73
+      },
+      "rootScores": [
+        {
+          "from": 49,
+          "to": 39,
+          "score": -389.106585938341,
+          "spread": 242.5458719500253,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 49,
+          "to": 41,
+          "score": -469.9564779272751,
+          "spread": 161.73183823848242,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 49,
+          "to": 57,
+          "score": -561.8257955037677,
+          "spread": 89.5582910734679,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 49,
+          "to": 59,
+          "score": -561.8257955037677,
+          "spread": 89.5582910734679,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 54,
+          "to": 45,
+          "score": -332.72163370882623,
+          "spread": 102.51920551779006,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 55,
+          "to": 28,
+          "score": -434.9290193664735,
+          "spread": 15.588457268119896,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 55,
+          "to": 37,
+          "score": -436.9287259236852,
+          "spread": 15.588457268119896,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 55,
+          "to": 46,
+          "score": -464.4979280454109,
+          "spread": 2.598076211353316,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 55,
+          "to": 64,
+          "score": -470.99906541142997,
+          "spread": 1.7320508075688772,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 55,
+          "to": 73,
+          "score": -128.77515160970404,
+          "spread": 91.16331499018334,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 55,
+          "to": 82,
+          "score": -446.92726403720707,
+          "spread": 15.588457268119896,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 56,
+          "to": 47,
+          "score": -321.16433694624453,
+          "spread": 189.71755322056424,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 60,
+          "to": 51,
+          "score": -518.1564343808604,
+          "spread": 78.6396051617798,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 62,
+          "to": 53,
+          "score": -327.31874830248614,
+          "spread": 184.26814700321472,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 63,
+          "to": 74,
+          "score": -192.35098901927014,
+          "spread": 68.84039511798974,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 67,
+          "to": 58,
+          "score": -551.9987382281001,
+          "spread": 87.53106591376573,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 71,
+          "to": 78,
+          "score": -553.8616389673934,
+          "spread": 89.5582910734679,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 72,
+          "to": 73,
+          "score": -158.29545608818245,
+          "spread": 87.04596486914242,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 72,
+          "to": 74,
+          "score": -559.1767486192599,
+          "spread": 91.99558413315283,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 72,
+          "to": 81,
+          "score": -563.8168674309516,
+          "spread": 89.5582910734679,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 75,
+          "to": 66,
+          "score": -549.8796391073724,
+          "spread": 89.5582910734679,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 84,
+          "to": 76,
+          "score": -513.3905013369753,
+          "spread": 94.53438527858528,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 85,
+          "to": 76,
+          "score": -569.7901622450836,
+          "spread": 89.5582910734679,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 86,
+          "to": 76,
+          "score": -551.5675165194173,
+          "spread": 94.01429412594662,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 88,
+          "to": 78,
+          "score": -561.8257955037677,
+          "spread": 89.5582910734679,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        }
+      ]
+    },
+    {
+      "repeat": 1,
+      "position": "可达中局 2111 / 20步",
+      "name": "candidate",
+      "seed": 6203,
+      "samples": 4,
+      "depth": 3,
+      "elapsedMs": 344,
+      "nodes": 34023,
+      "nps": 98904.06976744186,
+      "move": {
+        "from": 55,
+        "to": 73
+      },
+      "rootScores": [
+        {
+          "from": 49,
+          "to": 39,
+          "score": -389.106585938341,
+          "spread": 242.5458719500253,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 49,
+          "to": 41,
+          "score": -469.9564779272751,
+          "spread": 161.73183823848242,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 49,
+          "to": 57,
+          "score": -561.8257955037677,
+          "spread": 89.5582910734679,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 49,
+          "to": 59,
+          "score": -561.8257955037677,
+          "spread": 89.5582910734679,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 54,
+          "to": 45,
+          "score": -332.72163370882623,
+          "spread": 102.51920551779006,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 55,
+          "to": 28,
+          "score": -434.9290193664735,
+          "spread": 15.588457268119896,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 55,
+          "to": 37,
+          "score": -436.9287259236852,
+          "spread": 15.588457268119896,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 55,
+          "to": 46,
+          "score": -464.4979280454109,
+          "spread": 2.598076211353316,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 55,
+          "to": 64,
+          "score": -470.99906541142997,
+          "spread": 1.7320508075688772,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 55,
+          "to": 73,
+          "score": -128.77515160970404,
+          "spread": 91.16331499018334,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 55,
+          "to": 82,
+          "score": -446.92726403720707,
+          "spread": 15.588457268119896,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 56,
+          "to": 47,
+          "score": -321.16433694624453,
+          "spread": 189.71755322056424,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 60,
+          "to": 51,
+          "score": -518.1564343808604,
+          "spread": 78.6396051617798,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 62,
+          "to": 53,
+          "score": -327.31874830248614,
+          "spread": 184.26814700321472,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 63,
+          "to": 74,
+          "score": -192.35098901927014,
+          "spread": 68.84039511798974,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 67,
+          "to": 58,
+          "score": -551.9987382281001,
+          "spread": 87.53106591376573,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 71,
+          "to": 78,
+          "score": -553.8616389673934,
+          "spread": 89.5582910734679,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 72,
+          "to": 73,
+          "score": -158.29545608818245,
+          "spread": 87.04596486914242,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 72,
+          "to": 74,
+          "score": -559.1767486192599,
+          "spread": 91.99558413315283,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 72,
+          "to": 81,
+          "score": -563.8168674309516,
+          "spread": 89.5582910734679,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 75,
+          "to": 66,
+          "score": -549.8796391073724,
+          "spread": 89.5582910734679,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 84,
+          "to": 76,
+          "score": -513.3905013369753,
+          "spread": 94.53438527858528,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 85,
+          "to": 76,
+          "score": -569.7901622450836,
+          "spread": 89.5582910734679,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 86,
+          "to": 76,
+          "score": -551.5675165194173,
+          "spread": 94.01429412594662,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 88,
+          "to": 78,
+          "score": -561.8257955037677,
+          "spread": 89.5582910734679,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        }
+      ]
+    },
+    {
+      "repeat": 1,
+      "position": "可达中局 2111 / 44步",
+      "name": "candidate",
+      "seed": 6203,
+      "samples": 4,
+      "depth": 3,
+      "elapsedMs": 460,
+      "nodes": 51046,
+      "nps": 110969.56521739131,
+      "move": {
+        "from": 63,
+        "to": 46
+      },
+      "rootScores": [
+        {
+          "from": 25,
+          "to": 15,
+          "score": -33.95234061744206,
+          "spread": 45.13867521316947,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 25,
+          "to": 17,
+          "score": 25.66666666667176,
+          "spread": 0,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 25,
+          "to": 33,
+          "score": -57.481560160557436,
+          "spread": 21.5,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 25,
+          "to": 35,
+          "score": 146.71280804855957,
+          "spread": 133.74042021767391,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 45,
+          "to": 36,
+          "score": 25.36658929274597,
+          "spread": 64.73600234799798,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 51,
+          "to": 42,
+          "score": 20.803788309084123,
+          "spread": 44.95460673464452,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 56,
+          "to": 47,
+          "score": -279.09964977196313,
+          "spread": 161.5214769001324,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 62,
+          "to": 53,
+          "score": 21.499644563815895,
+          "spread": 4.9749371855331,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 63,
+          "to": 46,
+          "score": 961.0112352863322,
+          "spread": 115.8112688817457,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 63,
+          "to": 74,
+          "score": -37.89621566005698,
+          "spread": 54.886246000250374,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 66,
+          "to": 57,
+          "score": -14.147143113707749,
+          "spread": 44.95460673464452,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 67,
+          "to": 58,
+          "score": -14.147143113707749,
+          "spread": 44.95460673464452,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 71,
+          "to": 60,
+          "score": -14.148703906346501,
+          "spread": 42.87481778386807,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 72,
+          "to": 73,
+          "score": -697.7565896858353,
+          "spread": 99.20433458271872,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 72,
+          "to": 74,
+          "score": -30.465417498851732,
+          "spread": 40.721615881494685,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 72,
+          "to": 75,
+          "score": -30.465417498851732,
+          "spread": 40.721615881494685,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 72,
+          "to": 81,
+          "score": -27.627423440492954,
+          "spread": 45.51007214525751,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 78,
+          "to": 68,
+          "score": -33.964064838531655,
+          "spread": 39.185456485793296,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 78,
+          "to": 70,
+          "score": -28.964551542694213,
+          "spread": 42.053537306628556,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 78,
+          "to": 88,
+          "score": -26.130322773022314,
+          "spread": 44.954606734645864,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 80,
+          "to": 60,
+          "score": -26.130322773023703,
+          "spread": 44.95460673464452,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 86,
+          "to": 77,
+          "score": -32.455425420017214,
+          "spread": 44.58979703923441,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 86,
+          "to": 85,
+          "score": 17.499913290682315,
+          "spread": 2.598076211353316,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        }
+      ]
+    },
+    {
+      "repeat": 1,
+      "position": "可达中局 2111 / 44步",
+      "name": "baseline",
+      "seed": 6203,
+      "samples": 4,
+      "depth": 3,
+      "elapsedMs": 638,
+      "nodes": 51046,
+      "nps": 80009.40438871473,
+      "move": {
+        "from": 63,
+        "to": 46
+      },
+      "rootScores": [
+        {
+          "from": 25,
+          "to": 15,
+          "score": -33.95234061744206,
+          "spread": 45.13867521316947,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 25,
+          "to": 17,
+          "score": 25.66666666667176,
+          "spread": 0,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 25,
+          "to": 33,
+          "score": -57.481560160557436,
+          "spread": 21.5,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 25,
+          "to": 35,
+          "score": 146.71280804855957,
+          "spread": 133.74042021767391,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 45,
+          "to": 36,
+          "score": 25.36658929274597,
+          "spread": 64.73600234799798,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 51,
+          "to": 42,
+          "score": 20.803788309084123,
+          "spread": 44.95460673464452,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 56,
+          "to": 47,
+          "score": -279.09964977196313,
+          "spread": 161.5214769001324,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 62,
+          "to": 53,
+          "score": 21.499644563815895,
+          "spread": 4.9749371855331,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 63,
+          "to": 46,
+          "score": 961.0112352863322,
+          "spread": 115.8112688817457,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 63,
+          "to": 74,
+          "score": -37.89621566005698,
+          "spread": 54.886246000250374,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 66,
+          "to": 57,
+          "score": -14.147143113707749,
+          "spread": 44.95460673464452,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 67,
+          "to": 58,
+          "score": -14.147143113707749,
+          "spread": 44.95460673464452,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 71,
+          "to": 60,
+          "score": -14.148703906346501,
+          "spread": 42.87481778386807,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 72,
+          "to": 73,
+          "score": -697.7565896858353,
+          "spread": 99.20433458271872,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 72,
+          "to": 74,
+          "score": -30.465417498851732,
+          "spread": 40.721615881494685,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 72,
+          "to": 75,
+          "score": -30.465417498851732,
+          "spread": 40.721615881494685,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 72,
+          "to": 81,
+          "score": -27.627423440492954,
+          "spread": 45.51007214525751,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 78,
+          "to": 68,
+          "score": -33.964064838531655,
+          "spread": 39.185456485793296,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 78,
+          "to": 70,
+          "score": -28.964551542694213,
+          "spread": 42.053537306628556,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 78,
+          "to": 88,
+          "score": -26.130322773022314,
+          "spread": 44.954606734645864,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 80,
+          "to": 60,
+          "score": -26.130322773023703,
+          "spread": 44.95460673464452,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 86,
+          "to": 77,
+          "score": -32.455425420017214,
+          "spread": 44.58979703923441,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 86,
+          "to": 85,
+          "score": 17.499913290682315,
+          "spread": 2.598076211353316,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        }
+      ]
+    },
+    {
+      "repeat": 1,
+      "position": "可达中局 2221 / 44步",
+      "name": "baseline",
+      "seed": 6203,
+      "samples": 4,
+      "depth": 3,
+      "elapsedMs": 1201,
+      "nodes": 114163,
+      "nps": 95056.61948376353,
+      "move": {
+        "from": 26,
+        "to": 22
+      },
+      "rootScores": [
+        {
+          "from": 26,
+          "to": 8,
+          "score": -864.8962027963287,
+          "spread": 1281.589581015175,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 26,
+          "to": 17,
+          "score": -1043.3952757249997,
+          "spread": 174.66783953168903,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 26,
+          "to": 22,
+          "score": -294.19640743425,
+          "spread": 116.43151897622334,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 26,
+          "to": 25,
+          "score": -1013.7927827950327,
+          "spread": 1211.9915743885663,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 26,
+          "to": 35,
+          "score": -1142.9152356013103,
+          "spread": 1154.411162430626,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 26,
+          "to": 44,
+          "score": -1177.2477479172367,
+          "spread": 1139.7907306704212,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 26,
+          "to": 53,
+          "score": -1184.5467116566913,
+          "spread": 1135.4303393672174,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 51,
+          "to": 31,
+          "score": -627.3041487552167,
+          "spread": 1402.4853608861663,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 51,
+          "to": 35,
+          "score": -1189.5901796438475,
+          "spread": 1130.703443780802,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 51,
+          "to": 71,
+          "score": -1171.6775155406729,
+          "spread": 1138.8234059765368,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 55,
+          "to": 46,
+          "score": -884.8866473555838,
+          "spread": 1271.1212979753927,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 58,
+          "to": 49,
+          "score": -1110.141760422785,
+          "spread": 1166.901199640408,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 62,
+          "to": 53,
+          "score": -835.0864685055628,
+          "spread": 1296.1650352525,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 65,
+          "to": 56,
+          "score": -937.9884906192939,
+          "spread": 1246.2657192812212,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 67,
+          "to": 47,
+          "score": -949.1566114435145,
+          "spread": 1241.0699992569073,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 67,
+          "to": 83,
+          "score": -942.019637493042,
+          "spread": 1244.38948663368,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 67,
+          "to": 87,
+          "score": -949.1566114435145,
+          "spread": 1241.0699992569073,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 81,
+          "to": 27,
+          "score": -943.9809405656849,
+          "spread": 1248.5266066448073,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 81,
+          "to": 36,
+          "score": -1275.20356545709,
+          "spread": 1092.9604420004323,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 81,
+          "to": 45,
+          "score": -925.0678545354115,
+          "spread": 1254.7052774788713,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 81,
+          "to": 54,
+          "score": -868.620488139583,
+          "spread": 1278.9640854787287,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 81,
+          "to": 63,
+          "score": -926.4166127556712,
+          "spread": 1254.0410679080642,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 81,
+          "to": 72,
+          "score": -927.0901542979855,
+          "spread": 1253.7097284991178,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 81,
+          "to": 82,
+          "score": -1259.3743070435103,
+          "spread": 1099.9056525195454,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 81,
+          "to": 83,
+          "score": -985.566942850383,
+          "spread": 1225.228244042717,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 84,
+          "to": 75,
+          "score": -949.1566114435115,
+          "spread": 1241.0699992569087,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 88,
+          "to": 69,
+          "score": -482.36235472763843,
+          "spread": 55.689616027884774,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 88,
+          "to": 71,
+          "score": -952.8827391802276,
+          "spread": 1239.33809338784,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 88,
+          "to": 77,
+          "score": -784.7613656323014,
+          "spread": 115.89398891515894,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 89,
+          "to": 71,
+          "score": -1040.9132043417537,
+          "spread": 1199.1521628726791,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 89,
+          "to": 80,
+          "score": -1044.3572151753424,
+          "spread": 1197.6303309962655,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        }
+      ]
+    },
+    {
+      "repeat": 1,
+      "position": "可达中局 2221 / 44步",
+      "name": "candidate",
+      "seed": 6203,
+      "samples": 4,
+      "depth": 3,
+      "elapsedMs": 882,
+      "nodes": 114163,
+      "nps": 129436.50793650794,
+      "move": {
+        "from": 26,
+        "to": 22
+      },
+      "rootScores": [
+        {
+          "from": 26,
+          "to": 8,
+          "score": -864.8962027963287,
+          "spread": 1281.589581015175,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 26,
+          "to": 17,
+          "score": -1043.3952757249997,
+          "spread": 174.66783953168903,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 26,
+          "to": 22,
+          "score": -294.19640743425,
+          "spread": 116.43151897622334,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 26,
+          "to": 25,
+          "score": -1013.7927827950327,
+          "spread": 1211.9915743885663,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 26,
+          "to": 35,
+          "score": -1142.9152356013103,
+          "spread": 1154.411162430626,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 26,
+          "to": 44,
+          "score": -1177.2477479172367,
+          "spread": 1139.7907306704212,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 26,
+          "to": 53,
+          "score": -1184.5467116566913,
+          "spread": 1135.4303393672174,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 51,
+          "to": 31,
+          "score": -627.3041487552167,
+          "spread": 1402.4853608861663,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 51,
+          "to": 35,
+          "score": -1189.5901796438475,
+          "spread": 1130.703443780802,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 51,
+          "to": 71,
+          "score": -1171.6775155406729,
+          "spread": 1138.8234059765368,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 55,
+          "to": 46,
+          "score": -884.8866473555838,
+          "spread": 1271.1212979753927,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 58,
+          "to": 49,
+          "score": -1110.141760422785,
+          "spread": 1166.901199640408,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 62,
+          "to": 53,
+          "score": -835.0864685055628,
+          "spread": 1296.1650352525,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 65,
+          "to": 56,
+          "score": -937.9884906192939,
+          "spread": 1246.2657192812212,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 67,
+          "to": 47,
+          "score": -949.1566114435145,
+          "spread": 1241.0699992569073,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 67,
+          "to": 83,
+          "score": -942.019637493042,
+          "spread": 1244.38948663368,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 67,
+          "to": 87,
+          "score": -949.1566114435145,
+          "spread": 1241.0699992569073,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 81,
+          "to": 27,
+          "score": -943.9809405656849,
+          "spread": 1248.5266066448073,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 81,
+          "to": 36,
+          "score": -1275.20356545709,
+          "spread": 1092.9604420004323,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 81,
+          "to": 45,
+          "score": -925.0678545354115,
+          "spread": 1254.7052774788713,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 81,
+          "to": 54,
+          "score": -868.620488139583,
+          "spread": 1278.9640854787287,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 81,
+          "to": 63,
+          "score": -926.4166127556712,
+          "spread": 1254.0410679080642,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 81,
+          "to": 72,
+          "score": -927.0901542979855,
+          "spread": 1253.7097284991178,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 81,
+          "to": 82,
+          "score": -1259.3743070435103,
+          "spread": 1099.9056525195454,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 81,
+          "to": 83,
+          "score": -985.566942850383,
+          "spread": 1225.228244042717,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 84,
+          "to": 75,
+          "score": -949.1566114435115,
+          "spread": 1241.0699992569087,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 88,
+          "to": 69,
+          "score": -482.36235472763843,
+          "spread": 55.689616027884774,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 88,
+          "to": 71,
+          "score": -952.8827391802276,
+          "spread": 1239.33809338784,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 88,
+          "to": 77,
+          "score": -784.7613656323014,
+          "spread": 115.89398891515894,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 89,
+          "to": 71,
+          "score": -1040.9132043417537,
+          "spread": 1199.1521628726791,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 89,
+          "to": 80,
+          "score": -1044.3572151753424,
+          "spread": 1197.6303309962655,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        }
+      ]
+    },
+    {
+      "repeat": 2,
+      "position": "初始全暗",
+      "name": "baseline",
+      "seed": 6101,
+      "samples": 8,
+      "depth": 3,
+      "elapsedMs": 2874,
+      "nodes": 217728,
+      "nps": 75757.82881002087,
+      "move": {
+        "from": 88,
+        "to": 69
+      },
+      "rootScores": [
+        {
+          "from": 54,
+          "to": 45,
+          "score": -109.12346699537838,
+          "spread": 264.23191278393375,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 56,
+          "to": 47,
+          "score": -127.45787147892626,
+          "spread": 243.05912314469728,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 58,
+          "to": 49,
+          "score": -95.80572480332653,
+          "spread": 231.49617569597237,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 60,
+          "to": 51,
+          "score": -59.371314457801695,
+          "spread": 236.25822160373042,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 62,
+          "to": 53,
+          "score": -68.96801977341431,
+          "spread": 285.970113434015,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 1,
+          "score": -98.45130435126751,
+          "spread": 360.65144688561526,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 28,
+          "score": -112.61525069306677,
+          "spread": 171.89290708769923,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 37,
+          "score": -193.39155252532206,
+          "spread": 114.19307992076882,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 46,
+          "score": -212.39349120055272,
+          "spread": 83.68462445876044,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 55,
+          "score": -293.6338687330398,
+          "spread": 49.35264268000079,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 63,
+          "score": -133.7544552388863,
+          "spread": 56.6372529786339,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 65,
+          "score": -147.86040044677435,
+          "spread": 48.6497240745768,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 66,
+          "score": -144.2747157344645,
+          "spread": 67.05566490555083,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 67,
+          "score": -139.07407545513317,
+          "spread": 70.26170668827697,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 68,
+          "score": -144.18344927918548,
+          "spread": 66.94873444391614,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 69,
+          "score": -151.09410823993528,
+          "spread": 69.9689167832979,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 73,
+          "score": -273.11014613054505,
+          "spread": 50.39368342992774,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 7,
+          "score": -93.52455902630571,
+          "spread": 459.0818426287634,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 34,
+          "score": -160.24138146241197,
+          "spread": 107.93034509088606,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 43,
+          "score": -136.11580774919486,
+          "spread": 134.4081602542095,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 52,
+          "score": -176.83522122173576,
+          "spread": 102.66868855599527,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 61,
+          "score": -213.46660807331668,
+          "spread": 99.19820025222808,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 65,
+          "score": -128.37166003347195,
+          "spread": 66.30031582652495,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 66,
+          "score": -141.07943848273706,
+          "spread": 58.57861911567124,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 67,
+          "score": -142.47219746688313,
+          "spread": 46.16703237113727,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 68,
+          "score": -141.46315861215967,
+          "spread": 58.788646328448294,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 69,
+          "score": -176.31281705764678,
+          "spread": 48.59255140873079,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 71,
+          "score": -174.05755718388176,
+          "spread": 49.075216241121645,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 79,
+          "score": -195.9572100652157,
+          "spread": 112.03146288947266,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 81,
+          "to": 63,
+          "score": -245.57264293331212,
+          "spread": 236.2532641554992,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 81,
+          "to": 72,
+          "score": -248.96370830106798,
+          "spread": 248.0905783959231,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 82,
+          "to": 63,
+          "score": -71.20603521912034,
+          "spread": 202.52007858365351,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 82,
+          "to": 65,
+          "score": -80.28321330941581,
+          "spread": 206.99761211388693,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 83,
+          "to": 63,
+          "score": -158.89324907329853,
+          "spread": 272.52532702634943,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 83,
+          "to": 67,
+          "score": -115.60343595098489,
+          "spread": 287.03301780442814,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 84,
+          "to": 76,
+          "score": -177.9629207730108,
+          "spread": 259.19721670226744,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 85,
+          "to": 76,
+          "score": -210.79195812680797,
+          "spread": 162.80066116926474,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 86,
+          "to": 76,
+          "score": -230.6701234116599,
+          "spread": 81.72564683548151,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 87,
+          "to": 67,
+          "score": -212.90230286734692,
+          "spread": 79.92747931773884,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 87,
+          "to": 71,
+          "score": -217.9134625721567,
+          "spread": 78.23940044241326,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 88,
+          "to": 69,
+          "score": -40.6358338040809,
+          "spread": 247.37418433253035,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 88,
+          "to": 71,
+          "score": -58.624736899382306,
+          "spread": 249.16926060022914,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 89,
+          "to": 71,
+          "score": -247.49713366104544,
+          "spread": 285.74696035362354,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 89,
+          "to": 80,
+          "score": -276.4214887888772,
+          "spread": 253.68299662644486,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        }
+      ]
+    },
+    {
+      "repeat": 2,
+      "position": "初始全暗",
+      "name": "candidate",
+      "seed": 6101,
+      "samples": 8,
+      "depth": 3,
+      "elapsedMs": 1956,
+      "nodes": 217728,
+      "nps": 111312.88343558281,
+      "move": {
+        "from": 88,
+        "to": 69
+      },
+      "rootScores": [
+        {
+          "from": 54,
+          "to": 45,
+          "score": -109.12346699537838,
+          "spread": 264.23191278393375,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 56,
+          "to": 47,
+          "score": -127.45787147892626,
+          "spread": 243.05912314469728,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 58,
+          "to": 49,
+          "score": -95.80572480332653,
+          "spread": 231.49617569597237,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 60,
+          "to": 51,
+          "score": -59.371314457801695,
+          "spread": 236.25822160373042,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 62,
+          "to": 53,
+          "score": -68.96801977341431,
+          "spread": 285.970113434015,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 1,
+          "score": -98.45130435126751,
+          "spread": 360.65144688561526,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 28,
+          "score": -112.61525069306677,
+          "spread": 171.89290708769923,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 37,
+          "score": -193.39155252532206,
+          "spread": 114.19307992076882,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 46,
+          "score": -212.39349120055272,
+          "spread": 83.68462445876044,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 55,
+          "score": -293.6338687330398,
+          "spread": 49.35264268000079,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 63,
+          "score": -133.7544552388863,
+          "spread": 56.6372529786339,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 65,
+          "score": -147.86040044677435,
+          "spread": 48.6497240745768,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 66,
+          "score": -144.2747157344645,
+          "spread": 67.05566490555083,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 67,
+          "score": -139.07407545513317,
+          "spread": 70.26170668827697,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 68,
+          "score": -144.18344927918548,
+          "spread": 66.94873444391614,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 69,
+          "score": -151.09410823993528,
+          "spread": 69.9689167832979,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 64,
+          "to": 73,
+          "score": -273.11014613054505,
+          "spread": 50.39368342992774,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 7,
+          "score": -93.52455902630571,
+          "spread": 459.0818426287634,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 34,
+          "score": -160.24138146241197,
+          "spread": 107.93034509088606,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 43,
+          "score": -136.11580774919486,
+          "spread": 134.4081602542095,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 52,
+          "score": -176.83522122173576,
+          "spread": 102.66868855599527,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 61,
+          "score": -213.46660807331668,
+          "spread": 99.19820025222808,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 65,
+          "score": -128.37166003347195,
+          "spread": 66.30031582652495,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 66,
+          "score": -141.07943848273706,
+          "spread": 58.57861911567124,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 67,
+          "score": -142.47219746688313,
+          "spread": 46.16703237113727,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 68,
+          "score": -141.46315861215967,
+          "spread": 58.788646328448294,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 69,
+          "score": -176.31281705764678,
+          "spread": 48.59255140873079,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 71,
+          "score": -174.05755718388176,
+          "spread": 49.075216241121645,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 70,
+          "to": 79,
+          "score": -195.9572100652157,
+          "spread": 112.03146288947266,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 81,
+          "to": 63,
+          "score": -245.57264293331212,
+          "spread": 236.2532641554992,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 81,
+          "to": 72,
+          "score": -248.96370830106798,
+          "spread": 248.0905783959231,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 82,
+          "to": 63,
+          "score": -71.20603521912034,
+          "spread": 202.52007858365351,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 82,
+          "to": 65,
+          "score": -80.28321330941581,
+          "spread": 206.99761211388693,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 83,
+          "to": 63,
+          "score": -158.89324907329853,
+          "spread": 272.52532702634943,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 83,
+          "to": 67,
+          "score": -115.60343595098489,
+          "spread": 287.03301780442814,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 84,
+          "to": 76,
+          "score": -177.9629207730108,
+          "spread": 259.19721670226744,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 85,
+          "to": 76,
+          "score": -210.79195812680797,
+          "spread": 162.80066116926474,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 86,
+          "to": 76,
+          "score": -230.6701234116599,
+          "spread": 81.72564683548151,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 87,
+          "to": 67,
+          "score": -212.90230286734692,
+          "spread": 79.92747931773884,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 87,
+          "to": 71,
+          "score": -217.9134625721567,
+          "spread": 78.23940044241326,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 88,
+          "to": 69,
+          "score": -40.6358338040809,
+          "spread": 247.37418433253035,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 88,
+          "to": 71,
+          "score": -58.624736899382306,
+          "spread": 249.16926060022914,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 89,
+          "to": 71,
+          "score": -247.49713366104544,
+          "spread": 285.74696035362354,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 89,
+          "to": 80,
+          "score": -276.4214887888772,
+          "spread": 253.68299662644486,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        }
+      ]
+    },
+    {
+      "repeat": 2,
+      "position": "可达中局 2111 / 20步",
+      "name": "candidate",
+      "seed": 6203,
+      "samples": 4,
+      "depth": 3,
+      "elapsedMs": 332,
+      "nodes": 34023,
+      "nps": 102478.9156626506,
+      "move": {
+        "from": 55,
+        "to": 73
+      },
+      "rootScores": [
+        {
+          "from": 49,
+          "to": 39,
+          "score": -389.106585938341,
+          "spread": 242.5458719500253,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 49,
+          "to": 41,
+          "score": -469.9564779272751,
+          "spread": 161.73183823848242,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 49,
+          "to": 57,
+          "score": -561.8257955037677,
+          "spread": 89.5582910734679,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 49,
+          "to": 59,
+          "score": -561.8257955037677,
+          "spread": 89.5582910734679,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 54,
+          "to": 45,
+          "score": -332.72163370882623,
+          "spread": 102.51920551779006,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 55,
+          "to": 28,
+          "score": -434.9290193664735,
+          "spread": 15.588457268119896,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 55,
+          "to": 37,
+          "score": -436.9287259236852,
+          "spread": 15.588457268119896,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 55,
+          "to": 46,
+          "score": -464.4979280454109,
+          "spread": 2.598076211353316,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 55,
+          "to": 64,
+          "score": -470.99906541142997,
+          "spread": 1.7320508075688772,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 55,
+          "to": 73,
+          "score": -128.77515160970404,
+          "spread": 91.16331499018334,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 55,
+          "to": 82,
+          "score": -446.92726403720707,
+          "spread": 15.588457268119896,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 56,
+          "to": 47,
+          "score": -321.16433694624453,
+          "spread": 189.71755322056424,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 60,
+          "to": 51,
+          "score": -518.1564343808604,
+          "spread": 78.6396051617798,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 62,
+          "to": 53,
+          "score": -327.31874830248614,
+          "spread": 184.26814700321472,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 63,
+          "to": 74,
+          "score": -192.35098901927014,
+          "spread": 68.84039511798974,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 67,
+          "to": 58,
+          "score": -551.9987382281001,
+          "spread": 87.53106591376573,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 71,
+          "to": 78,
+          "score": -553.8616389673934,
+          "spread": 89.5582910734679,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 72,
+          "to": 73,
+          "score": -158.29545608818245,
+          "spread": 87.04596486914242,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 72,
+          "to": 74,
+          "score": -559.1767486192599,
+          "spread": 91.99558413315283,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 72,
+          "to": 81,
+          "score": -563.8168674309516,
+          "spread": 89.5582910734679,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 75,
+          "to": 66,
+          "score": -549.8796391073724,
+          "spread": 89.5582910734679,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 84,
+          "to": 76,
+          "score": -513.3905013369753,
+          "spread": 94.53438527858528,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 85,
+          "to": 76,
+          "score": -569.7901622450836,
+          "spread": 89.5582910734679,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 86,
+          "to": 76,
+          "score": -551.5675165194173,
+          "spread": 94.01429412594662,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 88,
+          "to": 78,
+          "score": -561.8257955037677,
+          "spread": 89.5582910734679,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        }
+      ]
+    },
+    {
+      "repeat": 2,
+      "position": "可达中局 2111 / 20步",
+      "name": "baseline",
+      "seed": 6203,
+      "samples": 4,
+      "depth": 3,
+      "elapsedMs": 447,
+      "nodes": 34023,
+      "nps": 76114.09395973154,
+      "move": {
+        "from": 55,
+        "to": 73
+      },
+      "rootScores": [
+        {
+          "from": 49,
+          "to": 39,
+          "score": -389.106585938341,
+          "spread": 242.5458719500253,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 49,
+          "to": 41,
+          "score": -469.9564779272751,
+          "spread": 161.73183823848242,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 49,
+          "to": 57,
+          "score": -561.8257955037677,
+          "spread": 89.5582910734679,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 49,
+          "to": 59,
+          "score": -561.8257955037677,
+          "spread": 89.5582910734679,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 54,
+          "to": 45,
+          "score": -332.72163370882623,
+          "spread": 102.51920551779006,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 55,
+          "to": 28,
+          "score": -434.9290193664735,
+          "spread": 15.588457268119896,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 55,
+          "to": 37,
+          "score": -436.9287259236852,
+          "spread": 15.588457268119896,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 55,
+          "to": 46,
+          "score": -464.4979280454109,
+          "spread": 2.598076211353316,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 55,
+          "to": 64,
+          "score": -470.99906541142997,
+          "spread": 1.7320508075688772,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 55,
+          "to": 73,
+          "score": -128.77515160970404,
+          "spread": 91.16331499018334,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 55,
+          "to": 82,
+          "score": -446.92726403720707,
+          "spread": 15.588457268119896,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 56,
+          "to": 47,
+          "score": -321.16433694624453,
+          "spread": 189.71755322056424,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 60,
+          "to": 51,
+          "score": -518.1564343808604,
+          "spread": 78.6396051617798,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 62,
+          "to": 53,
+          "score": -327.31874830248614,
+          "spread": 184.26814700321472,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 63,
+          "to": 74,
+          "score": -192.35098901927014,
+          "spread": 68.84039511798974,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 67,
+          "to": 58,
+          "score": -551.9987382281001,
+          "spread": 87.53106591376573,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 71,
+          "to": 78,
+          "score": -553.8616389673934,
+          "spread": 89.5582910734679,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 72,
+          "to": 73,
+          "score": -158.29545608818245,
+          "spread": 87.04596486914242,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 72,
+          "to": 74,
+          "score": -559.1767486192599,
+          "spread": 91.99558413315283,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 72,
+          "to": 81,
+          "score": -563.8168674309516,
+          "spread": 89.5582910734679,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 75,
+          "to": 66,
+          "score": -549.8796391073724,
+          "spread": 89.5582910734679,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 84,
+          "to": 76,
+          "score": -513.3905013369753,
+          "spread": 94.53438527858528,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 85,
+          "to": 76,
+          "score": -569.7901622450836,
+          "spread": 89.5582910734679,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 86,
+          "to": 76,
+          "score": -551.5675165194173,
+          "spread": 94.01429412594662,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 88,
+          "to": 78,
+          "score": -561.8257955037677,
+          "spread": 89.5582910734679,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        }
+      ]
+    },
+    {
+      "repeat": 2,
+      "position": "可达中局 2111 / 44步",
+      "name": "baseline",
+      "seed": 6203,
+      "samples": 4,
+      "depth": 3,
+      "elapsedMs": 621,
+      "nodes": 51046,
+      "nps": 82199.67793880837,
+      "move": {
+        "from": 63,
+        "to": 46
+      },
+      "rootScores": [
+        {
+          "from": 25,
+          "to": 15,
+          "score": -33.95234061744206,
+          "spread": 45.13867521316947,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 25,
+          "to": 17,
+          "score": 25.66666666667176,
+          "spread": 0,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 25,
+          "to": 33,
+          "score": -57.481560160557436,
+          "spread": 21.5,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 25,
+          "to": 35,
+          "score": 146.71280804855957,
+          "spread": 133.74042021767391,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 45,
+          "to": 36,
+          "score": 25.36658929274597,
+          "spread": 64.73600234799798,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 51,
+          "to": 42,
+          "score": 20.803788309084123,
+          "spread": 44.95460673464452,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 56,
+          "to": 47,
+          "score": -279.09964977196313,
+          "spread": 161.5214769001324,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 62,
+          "to": 53,
+          "score": 21.499644563815895,
+          "spread": 4.9749371855331,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 63,
+          "to": 46,
+          "score": 961.0112352863322,
+          "spread": 115.8112688817457,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 63,
+          "to": 74,
+          "score": -37.89621566005698,
+          "spread": 54.886246000250374,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 66,
+          "to": 57,
+          "score": -14.147143113707749,
+          "spread": 44.95460673464452,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 67,
+          "to": 58,
+          "score": -14.147143113707749,
+          "spread": 44.95460673464452,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 71,
+          "to": 60,
+          "score": -14.148703906346501,
+          "spread": 42.87481778386807,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 72,
+          "to": 73,
+          "score": -697.7565896858353,
+          "spread": 99.20433458271872,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 72,
+          "to": 74,
+          "score": -30.465417498851732,
+          "spread": 40.721615881494685,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 72,
+          "to": 75,
+          "score": -30.465417498851732,
+          "spread": 40.721615881494685,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 72,
+          "to": 81,
+          "score": -27.627423440492954,
+          "spread": 45.51007214525751,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 78,
+          "to": 68,
+          "score": -33.964064838531655,
+          "spread": 39.185456485793296,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 78,
+          "to": 70,
+          "score": -28.964551542694213,
+          "spread": 42.053537306628556,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 78,
+          "to": 88,
+          "score": -26.130322773022314,
+          "spread": 44.954606734645864,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 80,
+          "to": 60,
+          "score": -26.130322773023703,
+          "spread": 44.95460673464452,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 86,
+          "to": 77,
+          "score": -32.455425420017214,
+          "spread": 44.58979703923441,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 86,
+          "to": 85,
+          "score": 17.499913290682315,
+          "spread": 2.598076211353316,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        }
+      ]
+    },
+    {
+      "repeat": 2,
+      "position": "可达中局 2111 / 44步",
+      "name": "candidate",
+      "seed": 6203,
+      "samples": 4,
+      "depth": 3,
+      "elapsedMs": 442,
+      "nodes": 51046,
+      "nps": 115488.68778280543,
+      "move": {
+        "from": 63,
+        "to": 46
+      },
+      "rootScores": [
+        {
+          "from": 25,
+          "to": 15,
+          "score": -33.95234061744206,
+          "spread": 45.13867521316947,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 25,
+          "to": 17,
+          "score": 25.66666666667176,
+          "spread": 0,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 25,
+          "to": 33,
+          "score": -57.481560160557436,
+          "spread": 21.5,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 25,
+          "to": 35,
+          "score": 146.71280804855957,
+          "spread": 133.74042021767391,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 45,
+          "to": 36,
+          "score": 25.36658929274597,
+          "spread": 64.73600234799798,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 51,
+          "to": 42,
+          "score": 20.803788309084123,
+          "spread": 44.95460673464452,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 56,
+          "to": 47,
+          "score": -279.09964977196313,
+          "spread": 161.5214769001324,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 62,
+          "to": 53,
+          "score": 21.499644563815895,
+          "spread": 4.9749371855331,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 63,
+          "to": 46,
+          "score": 961.0112352863322,
+          "spread": 115.8112688817457,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 63,
+          "to": 74,
+          "score": -37.89621566005698,
+          "spread": 54.886246000250374,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 66,
+          "to": 57,
+          "score": -14.147143113707749,
+          "spread": 44.95460673464452,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 67,
+          "to": 58,
+          "score": -14.147143113707749,
+          "spread": 44.95460673464452,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 71,
+          "to": 60,
+          "score": -14.148703906346501,
+          "spread": 42.87481778386807,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 72,
+          "to": 73,
+          "score": -697.7565896858353,
+          "spread": 99.20433458271872,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 72,
+          "to": 74,
+          "score": -30.465417498851732,
+          "spread": 40.721615881494685,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 72,
+          "to": 75,
+          "score": -30.465417498851732,
+          "spread": 40.721615881494685,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 72,
+          "to": 81,
+          "score": -27.627423440492954,
+          "spread": 45.51007214525751,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 78,
+          "to": 68,
+          "score": -33.964064838531655,
+          "spread": 39.185456485793296,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 78,
+          "to": 70,
+          "score": -28.964551542694213,
+          "spread": 42.053537306628556,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 78,
+          "to": 88,
+          "score": -26.130322773022314,
+          "spread": 44.954606734645864,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 80,
+          "to": 60,
+          "score": -26.130322773023703,
+          "spread": 44.95460673464452,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 86,
+          "to": 77,
+          "score": -32.455425420017214,
+          "spread": 44.58979703923441,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 86,
+          "to": 85,
+          "score": 17.499913290682315,
+          "spread": 2.598076211353316,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        }
+      ]
+    },
+    {
+      "repeat": 2,
+      "position": "可达中局 2221 / 44步",
+      "name": "candidate",
+      "seed": 6203,
+      "samples": 4,
+      "depth": 3,
+      "elapsedMs": 883,
+      "nodes": 114163,
+      "nps": 129289.9207248018,
+      "move": {
+        "from": 26,
+        "to": 22
+      },
+      "rootScores": [
+        {
+          "from": 26,
+          "to": 8,
+          "score": -864.8962027963287,
+          "spread": 1281.589581015175,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 26,
+          "to": 17,
+          "score": -1043.3952757249997,
+          "spread": 174.66783953168903,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 26,
+          "to": 22,
+          "score": -294.19640743425,
+          "spread": 116.43151897622334,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 26,
+          "to": 25,
+          "score": -1013.7927827950327,
+          "spread": 1211.9915743885663,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 26,
+          "to": 35,
+          "score": -1142.9152356013103,
+          "spread": 1154.411162430626,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 26,
+          "to": 44,
+          "score": -1177.2477479172367,
+          "spread": 1139.7907306704212,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 26,
+          "to": 53,
+          "score": -1184.5467116566913,
+          "spread": 1135.4303393672174,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 51,
+          "to": 31,
+          "score": -627.3041487552167,
+          "spread": 1402.4853608861663,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 51,
+          "to": 35,
+          "score": -1189.5901796438475,
+          "spread": 1130.703443780802,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 51,
+          "to": 71,
+          "score": -1171.6775155406729,
+          "spread": 1138.8234059765368,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 55,
+          "to": 46,
+          "score": -884.8866473555838,
+          "spread": 1271.1212979753927,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 58,
+          "to": 49,
+          "score": -1110.141760422785,
+          "spread": 1166.901199640408,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 62,
+          "to": 53,
+          "score": -835.0864685055628,
+          "spread": 1296.1650352525,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 65,
+          "to": 56,
+          "score": -937.9884906192939,
+          "spread": 1246.2657192812212,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 67,
+          "to": 47,
+          "score": -949.1566114435145,
+          "spread": 1241.0699992569073,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 67,
+          "to": 83,
+          "score": -942.019637493042,
+          "spread": 1244.38948663368,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 67,
+          "to": 87,
+          "score": -949.1566114435145,
+          "spread": 1241.0699992569073,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 81,
+          "to": 27,
+          "score": -943.9809405656849,
+          "spread": 1248.5266066448073,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 81,
+          "to": 36,
+          "score": -1275.20356545709,
+          "spread": 1092.9604420004323,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 81,
+          "to": 45,
+          "score": -925.0678545354115,
+          "spread": 1254.7052774788713,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 81,
+          "to": 54,
+          "score": -868.620488139583,
+          "spread": 1278.9640854787287,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 81,
+          "to": 63,
+          "score": -926.4166127556712,
+          "spread": 1254.0410679080642,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 81,
+          "to": 72,
+          "score": -927.0901542979855,
+          "spread": 1253.7097284991178,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 81,
+          "to": 82,
+          "score": -1259.3743070435103,
+          "spread": 1099.9056525195454,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 81,
+          "to": 83,
+          "score": -985.566942850383,
+          "spread": 1225.228244042717,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 84,
+          "to": 75,
+          "score": -949.1566114435115,
+          "spread": 1241.0699992569087,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 88,
+          "to": 69,
+          "score": -482.36235472763843,
+          "spread": 55.689616027884774,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 88,
+          "to": 71,
+          "score": -952.8827391802276,
+          "spread": 1239.33809338784,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 88,
+          "to": 77,
+          "score": -784.7613656323014,
+          "spread": 115.89398891515894,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 89,
+          "to": 71,
+          "score": -1040.9132043417537,
+          "spread": 1199.1521628726791,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 89,
+          "to": 80,
+          "score": -1044.3572151753424,
+          "spread": 1197.6303309962655,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        }
+      ]
+    },
+    {
+      "repeat": 2,
+      "position": "可达中局 2221 / 44步",
+      "name": "baseline",
+      "seed": 6203,
+      "samples": 4,
+      "depth": 3,
+      "elapsedMs": 1287,
+      "nodes": 114163,
+      "nps": 88704.73970473971,
+      "move": {
+        "from": 26,
+        "to": 22
+      },
+      "rootScores": [
+        {
+          "from": 26,
+          "to": 8,
+          "score": -864.8962027963287,
+          "spread": 1281.589581015175,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 26,
+          "to": 17,
+          "score": -1043.3952757249997,
+          "spread": 174.66783953168903,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 26,
+          "to": 22,
+          "score": -294.19640743425,
+          "spread": 116.43151897622334,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 26,
+          "to": 25,
+          "score": -1013.7927827950327,
+          "spread": 1211.9915743885663,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 26,
+          "to": 35,
+          "score": -1142.9152356013103,
+          "spread": 1154.411162430626,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 26,
+          "to": 44,
+          "score": -1177.2477479172367,
+          "spread": 1139.7907306704212,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 26,
+          "to": 53,
+          "score": -1184.5467116566913,
+          "spread": 1135.4303393672174,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 51,
+          "to": 31,
+          "score": -627.3041487552167,
+          "spread": 1402.4853608861663,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 51,
+          "to": 35,
+          "score": -1189.5901796438475,
+          "spread": 1130.703443780802,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 51,
+          "to": 71,
+          "score": -1171.6775155406729,
+          "spread": 1138.8234059765368,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 55,
+          "to": 46,
+          "score": -884.8866473555838,
+          "spread": 1271.1212979753927,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 58,
+          "to": 49,
+          "score": -1110.141760422785,
+          "spread": 1166.901199640408,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 62,
+          "to": 53,
+          "score": -835.0864685055628,
+          "spread": 1296.1650352525,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 65,
+          "to": 56,
+          "score": -937.9884906192939,
+          "spread": 1246.2657192812212,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 67,
+          "to": 47,
+          "score": -949.1566114435145,
+          "spread": 1241.0699992569073,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 67,
+          "to": 83,
+          "score": -942.019637493042,
+          "spread": 1244.38948663368,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 67,
+          "to": 87,
+          "score": -949.1566114435145,
+          "spread": 1241.0699992569073,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 81,
+          "to": 27,
+          "score": -943.9809405656849,
+          "spread": 1248.5266066448073,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 81,
+          "to": 36,
+          "score": -1275.20356545709,
+          "spread": 1092.9604420004323,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 81,
+          "to": 45,
+          "score": -925.0678545354115,
+          "spread": 1254.7052774788713,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 81,
+          "to": 54,
+          "score": -868.620488139583,
+          "spread": 1278.9640854787287,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 81,
+          "to": 63,
+          "score": -926.4166127556712,
+          "spread": 1254.0410679080642,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 81,
+          "to": 72,
+          "score": -927.0901542979855,
+          "spread": 1253.7097284991178,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 81,
+          "to": 82,
+          "score": -1259.3743070435103,
+          "spread": 1099.9056525195454,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 81,
+          "to": 83,
+          "score": -985.566942850383,
+          "spread": 1225.228244042717,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 84,
+          "to": 75,
+          "score": -949.1566114435115,
+          "spread": 1241.0699992569087,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 88,
+          "to": 69,
+          "score": -482.36235472763843,
+          "spread": 55.689616027884774,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 88,
+          "to": 71,
+          "score": -952.8827391802276,
+          "spread": 1239.33809338784,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 88,
+          "to": 77,
+          "score": -784.7613656323014,
+          "spread": 115.89398891515894,
+          "sampleWins": 0,
+          "sampleLosses": 0
+        },
+        {
+          "from": 89,
+          "to": 71,
+          "score": -1040.9132043417537,
+          "spread": 1199.1521628726791,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        },
+        {
+          "from": 89,
+          "to": 80,
+          "score": -1044.3572151753424,
+          "spread": 1197.6303309962655,
+          "sampleWins": 0,
+          "sampleLosses": 1
+        }
+      ]
+    }
+  ],
+  "summary": [
+    {
+      "position": "初始全暗",
+      "baselineMedianMs": 2882,
+      "candidateMedianMs": 1956,
+      "speedup": 1.4734151329243355,
+      "timeReductionPct": 32.13046495489243,
+      "baselineMedianNps": 75547.53643303261,
+      "candidateMedianNps": 111312.88343558281,
+      "identicalNodes": true,
+      "identicalRootScores": true
+    },
+    {
+      "position": "可达中局 2111 / 20步",
+      "baselineMedianMs": 445,
+      "candidateMedianMs": 344,
+      "speedup": 1.2936046511627908,
+      "timeReductionPct": 22.696629213483142,
+      "baselineMedianNps": 76456.17977528089,
+      "candidateMedianNps": 98904.06976744186,
+      "identicalNodes": true,
+      "identicalRootScores": true
+    },
+    {
+      "position": "可达中局 2111 / 44步",
+      "baselineMedianMs": 638,
+      "candidateMedianMs": 460,
+      "speedup": 1.3869565217391304,
+      "timeReductionPct": 27.89968652037618,
+      "baselineMedianNps": 80009.40438871473,
+      "candidateMedianNps": 110969.56521739131,
+      "identicalNodes": true,
+      "identicalRootScores": true
+    },
+    {
+      "position": "可达中局 2221 / 44步",
+      "baselineMedianMs": 1287,
+      "candidateMedianMs": 883,
+      "speedup": 1.4575311438278595,
+      "timeReductionPct": 31.390831390831387,
+      "baselineMedianNps": 88704.73970473971,
+      "candidateMedianNps": 129289.9207248018,
+      "identicalNodes": true,
+      "identicalRootScores": true
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "protocol": "相同公开初始局面、默认可见信息哈希种子和8样本、共同宿主时限控制器；每版本预热500ms，排除线程初始化，按预算轮换版本先后。各档每版本1次，只记录最后完整深度，不保证重复时层数相同。",
+  "runtime": "v25.6.0",
+  "sourceHashes": {
+    "ai.js": "66bca44c185829ab7a42d5432fc8323c2937fed2be475ced46a654a7a2e1c18e",
+    "engine.js": "7f427f6e00e286a48335f7c7a7e74270d2a4349d7ea2aabcad0821122a17cb49",
+    "benchmarks/search-speed-baseline-ai.js": "4b0b10b03f92102afee7a51fdb424dd229404f94c621459256556f71bfe12ab3",
+    "benchmarks/search-speed-baseline-engine.js": "0fd066f674be683c6278fd4c5464dee4e2706b0a1e61cd15af74d50dad9ee961"
+  },
+  "rows": [
+    {
+      "name": "baseline",
+      "budgetMs": 2000,
+      "depth": 2,
+      "samples": 8,
+      "seed": 1075149473,
+      "nodes": 145488,
+      "elapsedMs": 1966,
+      "searchElapsedMs": 1965,
+      "move": {
+        "from": 64,
+        "to": 1
+      },
+      "deadlineStop": false,
+      "fallback": false
+    },
+    {
+      "name": "candidate",
+      "budgetMs": 2000,
+      "depth": 2,
+      "samples": 8,
+      "seed": 1075149473,
+      "nodes": 211536,
+      "elapsedMs": 1966,
+      "searchElapsedMs": 1965,
+      "move": {
+        "from": 64,
+        "to": 1
+      },
+      "deadlineStop": false,
+      "fallback": false
+    },
+    {
+      "name": "candidate",
+      "budgetMs": 15000,
+      "depth": 4,
+      "samples": 8,
+      "seed": 1075149473,
+      "nodes": 1815360,
+      "elapsedMs": 14966,
+      "searchElapsedMs": 14965,
+      "move": {
+        "from": 64,
+        "to": 1
+      },
+      "deadlineStop": false,
+      "fallback": false
+    },
+    {
+      "name": "baseline",
+      "budgetMs": 15000,
+      "depth": 3,
+      "samples": 8,
+      "seed": 1075149473,
+      "nodes": 1237744,
+      "elapsedMs": 14966,
+      "searchElapsedMs": 14965,
+      "move": {
+        "from": 64,
+        "to": 1
+      },
+      "deadlineStop": false,
+      "fallback": false
+    }
+  ]
+}

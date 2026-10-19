@@ -1,0 +1,30 @@
+export const TYPES=['R','R','N','N','B','B','A','A','C','C','P','P','P','P','P'];
+export const names={r:{K:'帅',R:'车',N:'马',B:'相',A:'仕',C:'炮',P:'兵'},b:{K:'将',R:'車',N:'馬',B:'象',A:'士',C:'砲',P:'卒'}};
+const copy=x=>structuredClone(x);
+export function shuffle(a,rng=Math.random){a=[...a];for(let i=a.length-1;i>0;i--){let j=Math.floor(rng()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+export function initial(rng=Math.random){let board=Array(90).fill(null);for(let side of ['r','b']){let pool=shuffle(TYPES,rng),y=side==='r'?9:0;const put=(x,y,role)=>{board[y*9+x]={side,role,type:role==='K'?'K':pool.pop(),hidden:role!=='K'};};['R','N','B','A','K','A','B','N','R'].forEach((t,x)=>put(x,y,t));[1,7].forEach(x=>put(x,side==='r'?7:2,'C'));[0,2,4,6,8].forEach(x=>put(x,side==='r'?6:3,'P'));}return {board,turn:'r',captured:[],ply:0,quiet:0,result:null,positions:[]};}
+// A null viewer gets shared facts only. Each player additionally knows their own dark captures.
+export function publicState(s,viewer=s.viewer??null){
+ if(![null,'r','b'].includes(viewer))throw Error('无效信息视角');
+ return {...copy(s),viewer,
+  board:s.board.map(p=>p?{side:p.side,role:p.role,hidden:p.hidden,...(!p.hidden?{type:p.type}:{})}:null),
+  captured:s.captured.map(p=>{
+   if(!p.hidden&&!p.wasHidden)return {...p};
+   const captor=p.capturedBy,visible=viewer!==null&&captor===viewer&&!!p.type;
+   return {side:p.side,hidden:!visible,...(captor?{capturedBy:captor}:{}),...(visible?{type:p.type,wasHidden:true}:{})};
+  })};
+}
+export const other=s=>s==='r'?'b':'r';
+const palace=(x,y,s)=>x>=3&&x<=5&&(s==='r'?y>=7:y<=2);
+export function pseudo(board,from,to){let p=board[from],q=board[to];if(!p||from===to||to<0||to>=90||q?.side===p.side)return false;let x=from%9,y=Math.floor(from/9),u=to%9,v=Math.floor(to/9),dx=u-x,dy=v-y,ax=Math.abs(dx),ay=Math.abs(dy),t=p.hidden?p.role:p.type;
+let count=0;if(dx===0||dy===0){let step=dx===0?Math.sign(dy)*9:Math.sign(dx);for(let i=from+step;i!==to;i+=step)if(board[i])count++;}
+switch(t){case 'K':return ax+ay===1&&palace(u,v,p.side)||q?.type==='K'&&dx===0&&count===0;case 'A':return ax===1&&ay===1&&(!p.hidden||palace(u,v,p.side));case 'B':return ax===2&&ay===2&&!board[(y+dy/2)*9+x+dx/2]&&(!p.hidden||(p.side==='r'?v>=5:v<=4));case 'N':return ax*ay===2&&!board[(y+(ay===2?Math.sign(dy):0))*9+x+(ax===2?Math.sign(dx):0)];case 'R':return (dx===0||dy===0)&&count===0;case 'C':return (dx===0||dy===0)&&count===(q?1:0);case 'P':return dx===0&&dy===(p.side==='r'?-1:1)||ay===0&&ax===1&&(p.side==='r'?y<=4:y>=5);default:return false;}}
+export function inCheck(board,side,knownKing){let k=knownKing??board.findIndex(p=>p?.side===side&&!p.hidden&&p.type==='K');if(k<0)return true;let x=k%9,y=Math.floor(k/9);const threat=(u,v)=>{if(u<0||u>8||v<0||v>9)return false;let f=v*9+u,p=board[f];return p&&p.side!==side&&pseudo(board,f,k);};
+// Only the first two occupied squares on a ray can be a rook/general or cannon threat.
+for(let [dx,dy] of [[1,0],[-1,0],[0,1],[0,-1]]){let count=0;for(let u=x+dx,v=y+dy;u>=0&&u<9&&v>=0&&v<10;u+=dx,v+=dy){if(board[v*9+u]){if(threat(u,v))return true;if(++count===2)break;}}}
+for(let [dx,dy] of [[1,2],[2,1],[-1,2],[-2,1],[1,-2],[2,-1],[-1,-2],[-2,-1],[1,1],[1,-1],[-1,1],[-1,-1],[2,2],[2,-2],[-2,2],[-2,-2]])if(threat(x+dx,y+dy))return true;return false;}
+export function legalMoves(s,side=s.turn,{capturesOnly=false,stopAfterOne=false}={}){let out=[],b=s.board,king=b.findIndex(p=>p?.side===side&&!p.hidden&&p.type==='K');for(let f=0;f<90;f++){let p=b[f];if(p?.side!==side)continue;for(let t of candidates(b,f)){if(capturesOnly&&!b[t])continue;if(!pseudo(b,f,t))continue;let q=b[t];b[t]=p;b[f]=null;let safe=!inCheck(b,side,!p.hidden&&p.type==='K'?t:king);b[f]=p;b[t]=q;if(safe){out.push({from:f,to:t});if(stopAfterOne)return out;}}}return out;}
+function candidates(b,f){let p=b[f],t=p.hidden?p.role:p.type,x=f%9,y=Math.floor(f/9),out=[];const add=(u,v)=>{if(u>=0&&u<9&&v>=0&&v<10)out.push(v*9+u);};if(t==='R'||t==='C'){for(let [dx,dy] of [[1,0],[-1,0],[0,1],[0,-1]]){let screen=false;for(let u=x+dx,v=y+dy;u>=0&&u<9&&v>=0&&v<10;u+=dx,v+=dy){let q=b[v*9+u];if(t==='R'){add(u,v);if(q)break;}else if(!screen){if(q)screen=true;else add(u,v);}else if(q){add(u,v);break;}}}}else if(t==='N'){for(let [dx,dy] of [[1,2],[2,1],[-1,2],[-2,1],[1,-2],[2,-1],[-1,-2],[-2,-1]])add(x+dx,y+dy);}else if(t==='A'||t==='B'){let d=t==='A'?1:2;for(let dx of [-d,d])for(let dy of [-d,d])add(x+dx,y+dy);}else if(t==='P'){add(x,y+(p.side==='r'?-1:1));add(x+1,y);add(x-1,y);}else{for(let [dx,dy] of [[1,0],[-1,0],[0,1],[0,-1]])add(x+dx,y+dy);let k=b.findIndex(q=>q?.side!==p.side&&q?.type==='K');if(k>=0&&!out.includes(k))out.push(k);}return out;}
+export function positionKey(s){return JSON.stringify([s.turn,publicState(s).board]);}
+export function move(s,m,finish=true){let n=copy(s),p=n.board[m.from],q=n.board[m.to];if(!p)throw Error('空起点');if(q)n.captured.push(q.hidden?{side:q.side,hidden:true,type:q.type,capturedBy:p.side}:{...q,capturedBy:p.side});n.quiet=q||p.hidden?0:n.quiet+1;p.hidden=false;n.board[m.to]=p;n.board[m.from]=null;n.turn=other(s.turn);n.ply++;if(finish){if(!legalMoves(n).length)n.result={winner:s.turn,text:inCheck(n.board,n.turn)?'将死':'困毙'};let key=positionKey(n);n.positions.push(key);if(!n.result&&(n.quiet>=120||n.positions.filter(k=>k===key).length>=3||n.ply>=400))n.result={winner:null,text:'和棋（重复局面／步数上限）'};}return n;}
+export class Game{constructor(){this.reset();}reset(){this.state=initial();this.state.positions=[positionKey(this.state)];this.history=[];}play(m){if(this.state.result||!legalMoves(this.state).some(x=>x.from===m.from&&x.to===m.to))return false;this.history.push(copy(this.state));this.state=move(this.state,m);return true;}undo(single=false){if(!this.history.length)return false;do{this.state=this.history.pop();}while(!single&&this.state.turn!=='r'&&this.history.length);return true;}}

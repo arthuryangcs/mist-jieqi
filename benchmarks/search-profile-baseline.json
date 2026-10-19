@@ -1,0 +1,207 @@
+{
+  "protocol": "Node --cpu-prof；seed6101/8样本/完整3层。递归同函数inclusive仅计最外层，包含启动成本；不同函数的inclusive不可相加。采样剖析不作为等深度计时对照。",
+  "runtime": "v25.6.0",
+  "totalUs": 3176380,
+  "topSelf": [
+    {
+      "name": "inCheck",
+      "file": "search-speed-baseline-engine.js",
+      "selfUs": 646828,
+      "inclusiveUs": 888802,
+      "selfPct": 20.36368444581568,
+      "inclusivePct": 27.981601697529893
+    },
+    {
+      "name": "legalMoves",
+      "file": "search-speed-baseline-engine.js",
+      "selfUs": 358803,
+      "inclusiveUs": 1615682,
+      "selfPct": 11.295972144390785,
+      "inclusivePct": 50.86551357205372
+    },
+    {
+      "name": "candidates",
+      "file": "search-speed-baseline-engine.js",
+      "selfUs": 290450,
+      "inclusiveUs": 411857,
+      "selfPct": 9.144057071257217,
+      "inclusivePct": 12.966238296425491
+    },
+    {
+      "name": "searchNode",
+      "file": "search-speed-baseline-ai.js",
+      "selfUs": 256227,
+      "inclusiveUs": 2818872,
+      "selfPct": 8.066635604052411,
+      "inclusivePct": 88.74479753681864
+    },
+    {
+      "name": "(garbage collector)",
+      "file": "",
+      "selfUs": 217022,
+      "inclusiveUs": 217022,
+      "selfPct": 6.832368923113734,
+      "inclusivePct": 6.832368923113734
+    },
+    {
+      "name": "simpleEvaluate",
+      "file": "search-speed-baseline-ai.js",
+      "selfUs": 198311,
+      "inclusiveUs": 198311,
+      "selfPct": 6.243302123801309,
+      "inclusivePct": 6.243302123801309
+    },
+    {
+      "name": "pseudo",
+      "file": "search-speed-baseline-engine.js",
+      "selfUs": 198250,
+      "inclusiveUs": 199803,
+      "selfPct": 6.241381698663258,
+      "inclusivePct": 6.290273833735259
+    },
+    {
+      "name": "(anonymous)",
+      "file": "search-speed-baseline-engine.js",
+      "selfUs": 166014,
+      "inclusiveUs": 166014,
+      "selfPct": 5.22651571915199,
+      "inclusivePct": 5.22651571915199
+    },
+    {
+      "name": "search",
+      "file": "search-speed-baseline-ai.js",
+      "selfUs": 146721,
+      "inclusiveUs": 2822934,
+      "selfPct": 4.619126175079808,
+      "inclusivePct": 88.8726789615852
+    },
+    {
+      "name": "threat",
+      "file": "search-speed-baseline-engine.js",
+      "selfUs": 127428,
+      "inclusiveUs": 201569,
+      "selfPct": 4.011736631007625,
+      "inclusivePct": 6.3458717156007785
+    },
+    {
+      "name": "order",
+      "file": "search-speed-baseline-ai.js",
+      "selfUs": 119190,
+      "inclusiveUs": 200014,
+      "selfPct": 3.752384790232907,
+      "inclusivePct": 6.2969166157701535
+    },
+    {
+      "name": "(anonymous)",
+      "file": "search-speed-baseline-ai.js",
+      "selfUs": 71680,
+      "inclusiveUs": 245339,
+      "selfPct": 2.2566569491055857,
+      "inclusivePct": 7.723855458100101
+    },
+    {
+      "name": "compileForInternalLoader",
+      "file": "realm",
+      "selfUs": 51853,
+      "inclusiveUs": 71233,
+      "selfPct": 1.6324558144806351,
+      "inclusivePct": 2.242584325552988
+    },
+    {
+      "name": "add",
+      "file": "search-speed-baseline-engine.js",
+      "selfUs": 44699,
+      "inclusiveUs": 44699,
+      "selfPct": 1.4072308728804488,
+      "inclusivePct": 1.4072308728804488
+    },
+    {
+      "name": "priority",
+      "file": "search-speed-baseline-ai.js",
+      "selfUs": 37932,
+      "inclusiveUs": 53192,
+      "selfPct": 1.1941896120741222,
+      "inclusivePct": 1.6746107203798035
+    },
+    {
+      "name": "evaluate",
+      "file": "search-speed-baseline-ai.js",
+      "selfUs": 31299,
+      "inclusiveUs": 229610,
+      "selfPct": 0.9853669900956434,
+      "inclusivePct": 7.228669113896951
+    },
+    {
+      "name": "code",
+      "file": "search-speed-baseline-ai.js",
+      "selfUs": 30373,
+      "inclusiveUs": 30373,
+      "selfPct": 0.9562143068524547,
+      "inclusivePct": 0.9562143068524547
+    },
+    {
+      "name": "push",
+      "file": "search-speed-baseline-ai.js",
+      "selfUs": 25226,
+      "inclusiveUs": 78991,
+      "selfPct": 0.7941745005320522,
+      "inclusivePct": 2.4868246242578027
+    },
+    {
+      "name": "xor",
+      "file": "search-speed-baseline-ai.js",
+      "selfUs": 20534,
+      "inclusiveUs": 50907,
+      "selfPct": 0.6464591767987458,
+      "inclusivePct": 1.6026734836512004
+    },
+    {
+      "name": "searchKey",
+      "file": "search-speed-baseline-ai.js",
+      "selfUs": 15438,
+      "inclusiveUs": 15438,
+      "selfPct": 0.48602497182327054,
+      "inclusivePct": 0.48602497182327054
+    },
+    {
+      "name": "orderingValue",
+      "file": "search-speed-baseline-ai.js",
+      "selfUs": 15260,
+      "inclusiveUs": 15260,
+      "selfPct": 0.4804211083056813,
+      "inclusivePct": 0.4804211083056813
+    },
+    {
+      "name": "pop",
+      "file": "search-speed-baseline-ai.js",
+      "selfUs": 10957,
+      "inclusiveUs": 10957,
+      "selfPct": 0.3449524301248591,
+      "inclusivePct": 0.3449524301248591
+    },
+    {
+      "name": "(program)",
+      "file": "",
+      "selfUs": 10398,
+      "inclusiveUs": 10398,
+      "selfPct": 0.327353780089284,
+      "inclusivePct": 0.327353780089284
+    },
+    {
+      "name": "tick",
+      "file": "search-speed-baseline-ai.js",
+      "selfUs": 6094,
+      "inclusiveUs": 12020,
+      "selfPct": 0.19185361952914953,
+      "inclusivePct": 0.37841819933383286
+    },
+    {
+      "name": "(idle)",
+      "file": "",
+      "selfUs": 5563,
+      "inclusiveUs": 5563,
+      "selfPct": 0.17513647611431882,
+      "inclusivePct": 0.17513647611431882
+    }
+  ]
+}

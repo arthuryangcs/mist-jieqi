@@ -1,0 +1,15 @@
+import fs from'node:fs';import{createHash}from'node:crypto';import os from'node:os';
+import{initial,publicState}from'../engine.js';import{analyze,seeded}from'../ai.js';import{analyze as baseline}from'../benchmarks/search-speed-baseline-ai.js';
+const output=process.env.JIEQI_SPEED_OUTPUT||'benchmarks/search-speed-replay.json';
+const depth=Number(process.env.JIEQI_SPEED_DEPTH||3),repeats=Number(process.env.JIEQI_SPEED_REPEATS||5);
+const positions=[{name:'初始全暗',seed:6101,samples:8,view:publicState(initial(seeded(17)),'r')}];
+if(process.env.JIEQI_SPEED_MIDGAMES==='1')positions.push(...JSON.parse(fs.readFileSync('benchmarks/strength-positions.json')).filter((_,i)=>[1,2,4].includes(i)).map(p=>({...p,seed:6203,samples:4})));
+const sha=p=>createHash('sha256').update(fs.readFileSync(p)).digest('hex'),scores=r=>r.allCandidates.map(m=>({from:m.from,to:m.to,score:m.score,spread:m.spread,sampleWins:m.sampleWins,sampleLosses:m.sampleLosses})).sort((a,b)=>a.from-b.from||a.to-b.to);
+const record={baselineCommit:'5c71c95a78bddbd4754ea9b17a0be1b7a6132c22',runtime:process.version,architecture:process.arch,cpu:os.cpus()[0].model,sourceHashes:Object.fromEntries(['ai.js','engine.js','benchmarks/search-speed-baseline-ai.js','benchmarks/search-speed-baseline-engine.js'].map(p=>[p,sha(p)])),depth,repeats,protocol:'同机顺序执行，预热后轮换先后；相同局面/种子/样本/完整深度。逐着根分与节点数核对，不使用CPU profiler计时。NPS为全部节点（含静态搜索）除核心耗时。',rows:[]};
+for(const fn of [baseline,analyze])fn(positions[0].view,{seed:6101,samples:2,maxDepth:2,timeMs:100000});
+for(let repeat=0;repeat<repeats;repeat++)for(const [i,p]of positions.entries()){
+ const rows=[];for(const name of (repeat+i)%2?['candidate','baseline']:['baseline','candidate']){const r=(name==='baseline'?baseline:analyze)(p.view,{seed:p.seed,samples:p.samples,maxDepth:depth,timeMs:120000});if(r.depth!==depth)throw Error('未完成固定深度，拒绝宣称等价提速');rows.push({repeat,position:p.name,name,seed:p.seed,samples:p.samples,depth:r.depth,elapsedMs:r.elapsedMs,nodes:r.nodes,nps:r.nodes*1000/Math.max(1,r.elapsedMs),move:r.move,rootScores:scores(r)});}
+ if(rows[0].nodes!==rows[1].nodes||JSON.stringify(rows[0].rootScores)!==JSON.stringify(rows[1].rootScores))throw Error('搜索树或评分改变，不能标作等价速度优化');record.rows.push(...rows);fs.writeFileSync(output,JSON.stringify(record,null,2)+'\n');console.log(JSON.stringify(rows.map(({rootScores,...r})=>r)));
+}
+const median=xs=>{xs.sort((a,b)=>a-b);return(xs[(xs.length-1)>>1]+xs[xs.length>>1])/2;};
+record.summary=positions.map(p=>{const xs=record.rows.filter(x=>x.position===p.name),a=xs.filter(x=>x.name==='baseline'),b=xs.filter(x=>x.name==='candidate'),before=median(a.map(x=>x.elapsedMs)),after=median(b.map(x=>x.elapsedMs));return {position:p.name,baselineMedianMs:before,candidateMedianMs:after,speedup:before/after,timeReductionPct:100*(1-after/before),baselineMedianNps:median(a.map(x=>x.nps)),candidateMedianNps:median(b.map(x=>x.nps)),identicalNodes:true,identicalRootScores:true};});fs.writeFileSync(output,JSON.stringify(record,null,2)+'\n');console.log(JSON.stringify(record.summary));

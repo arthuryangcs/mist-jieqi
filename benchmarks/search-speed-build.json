@@ -1,0 +1,41 @@
+{
+  "baselineCommit": "5c71c95a78bddbd4754ea9b17a0be1b7a6132c22",
+  "sourceHashes": {
+    "ai.js": "66bca44c185829ab7a42d5432fc8323c2937fed2be475ced46a654a7a2e1c18e",
+    "engine.js": "7f427f6e00e286a48335f7c7a7e74270d2a4349d7ea2aabcad0821122a17cb49",
+    "worker.js": "142d5a89fa58b226c84dcb427b713941f337451687f0349ec96e6354388723c9",
+    "deadline-search.js": "13386f0a0c7dbb6a36e35256cd6dbac36055f8c147597acdfc73af2ea24c3666",
+    "scripts/node-search-engine.js": "27a1594843492e0af2f0fb4b588a0ccb5207708110f7c85a242155fc1c12e469",
+    "scripts/node-search-worker.js": "46bf185d0a96fe5d43a5b7ad64231bf9e6b21ad3d31618ad2c980e8efa088e3c",
+    "benchmarks/search-speed-baseline-ai.js": "4b0b10b03f92102afee7a51fdb424dd229404f94c621459256556f71bfe12ab3",
+    "benchmarks/search-speed-baseline-engine.js": "0fd066f674be683c6278fd4c5464dee4e2706b0a1e61cd15af74d50dad9ee961"
+  },
+  "evidence": {
+    "benchmarks/search-profile-baseline.json": "c55598d815950d5273044dee30c6925969b2a62d3b575c0f853a393e191d1ddf",
+    "benchmarks/search-profile-candidate.json": "4e3359d5d7ab3bccd93cf865bc96ab9c0e2ace1fd3fdee2da7f864b33d1dfec9",
+    "benchmarks/search-speed-opening.json": "40c8f01a748f0af150ab1ba93575635a5fb0505e0b2d4bfa25286a3eb10fbde6",
+    "benchmarks/search-speed-heldout.json": "9b3eeb77e8cd6cfa0dc637c7f0f9e689f6eaa70dc15b34a7789516d8bd9cdcd2",
+    "benchmarks/search-time-budget.json": "b9126e4e56ab8466ff5cfc77fcfb8ef1226e3c0c7ae6b7399f1103db4d68ec3c",
+    "benchmarks/deep-opening-6101-s8.json": "bb68d0c590e70761b89aa7396be8691ee26cadf6dbdd341315ae410b489afc24",
+    "benchmarks/deep-opening-6101-s8-fast.json": "26b491e270369a3e804a6f1038e4a3c3badacb77d215fcee6ce8a0ffc8901d2c",
+    "benchmarks/deep-opening-6143-s8-fast.json": "6f7f0c0c9995eec318386e18993e5c8209dcf697f3f0b9101894ebc3ddfab35b"
+  },
+  "verification": {
+    "unitTestsPassed": 85,
+    "browserFlowsPassed": 16,
+    "browserPassed": true,
+    "equalOpeningDepths": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "equalNodesAndAllRootScores": true,
+    "allRootMoves": 44,
+    "samples": 8,
+    "highestCompleteDepth": 5,
+    "sixthDepthComplete": false
+  },
+  "policy": "只优化等价规则计算；未改估值/样本/剪枝/网页预算；只本地提交，不push。"
+}
