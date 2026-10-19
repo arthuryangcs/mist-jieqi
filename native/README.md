@@ -14,6 +14,8 @@
 
 后续受控静态将军实验没有接入生产核心：两方案由 `forcing-variants.mjs` 从冻结原版生成，独立规则/战术及ASan/UBSan通过，但完整方案对原版8局为2胜3和3负，未达启用门槛。基准、复现步骤、失败记录和网页仍使用原版的说明见 [QUIET_CHECK_EXPERIMENT.md](../QUIET_CHECK_EXPERIMENT.md)；实验二进制只写 `.cache/quiet/`，不覆盖 `.cache/native/mist-core`。
 
+最新默认仅修复表满后已有键不能更新的问题，C++与JS同步调整，表仍限制9万项、按采样世界和请求隔离。窄窗和请求内线程池经独立对照未采用，quiet-check保持关闭。完整候选/逐世界审计、JS/C++满表7层同节点、新Pika8局、时限故障调查与7组服务回归见 [TT_CACHE_REPORT.md](../TT_CACHE_REPORT.md)。历史冻结脚本的源码哈希限制保留，不把新核心冒充旧版。
+
 以下保留离线性能及一致性复现方式；旧测量见 [NATIVE_SEARCH_REPORT.md](../NATIVE_SEARCH_REPORT.md)。
 
 需要 Node.js 20+ 和本机已有的 C++17 编译器；不需要 npm 依赖。

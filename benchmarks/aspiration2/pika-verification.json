@@ -1,0 +1,272 @@
+{
+  "passed": true,
+  "partial": false,
+  "faultCounts": {
+    "wallClockTimeout": 0,
+    "illegalMove": 0,
+    "processCrash": 0,
+    "protocolOrResponseFailure": 0,
+    "setupFailure": 0,
+    "unresolved": 0
+  },
+  "verifiedAt": "2026-10-19T15:48:33.978Z",
+  "summary": {
+    "overall": {
+      "games": 8,
+      "wins": 1,
+      "draws": 1,
+      "losses": 6,
+      "unresolved": 0,
+      "winRate": 0.125,
+      "scoreRate": 0.1875
+    },
+    "red": {
+      "games": 4,
+      "wins": 0,
+      "draws": 1,
+      "losses": 3,
+      "unresolved": 0,
+      "winRate": 0,
+      "scoreRate": 0.125
+    },
+    "black": {
+      "games": 4,
+      "wins": 1,
+      "draws": 0,
+      "losses": 3,
+      "unresolved": 0,
+      "winRate": 0.25,
+      "scoreRate": 0.25
+    }
+  },
+  "timing": {
+    "candidate": {
+      "moves": 249,
+      "medianMs": 1001.0626389999816,
+      "p95Ms": 1003.8316990000021,
+      "maxMs": 1019.4412080000038,
+      "overGrace": 0,
+      "hostStops": 159,
+      "fallbacks": 0,
+      "depthRange": [
+        1,
+        8
+      ]
+    },
+    "pika": {
+      "moves": 251,
+      "medianMs": 998.6578489999956,
+      "p95Ms": 999.671247000002,
+      "maxMs": 1004.4662910000188,
+      "overGrace": 0,
+      "hostStops": 0,
+      "fallbacks": 0,
+      "depthRange": [
+        7,
+        245
+      ]
+    }
+  },
+  "legalPlies": 500,
+  "darkCaptures": 54,
+  "privateKnownAcrossViews": 1138,
+  "pairs": [
+    {
+      "seed": 11003,
+      "results": [
+        {
+          "candidateSide": "r",
+          "status": "decided",
+          "winner": "b",
+          "reason": "将死",
+          "technicalForfeit": false
+        },
+        {
+          "candidateSide": "b",
+          "status": "decided",
+          "winner": "r",
+          "reason": "困毙",
+          "technicalForfeit": false
+        }
+      ],
+      "score": 0
+    },
+    {
+      "seed": 11027,
+      "results": [
+        {
+          "candidateSide": "r",
+          "status": "draw",
+          "winner": null,
+          "reason": "threefold-public-position",
+          "technicalForfeit": false
+        },
+        {
+          "candidateSide": "b",
+          "status": "decided",
+          "winner": "b",
+          "reason": "将死",
+          "technicalForfeit": false
+        }
+      ],
+      "score": 1.5
+    },
+    {
+      "seed": 11047,
+      "results": [
+        {
+          "candidateSide": "r",
+          "status": "decided",
+          "winner": "b",
+          "reason": "将死",
+          "technicalForfeit": false
+        },
+        {
+          "candidateSide": "b",
+          "status": "decided",
+          "winner": "r",
+          "reason": "将死",
+          "technicalForfeit": false
+        }
+      ],
+      "score": 0
+    },
+    {
+      "seed": 11057,
+      "results": [
+        {
+          "candidateSide": "r",
+          "status": "decided",
+          "winner": "b",
+          "reason": "将死",
+          "technicalForfeit": false
+        },
+        {
+          "candidateSide": "b",
+          "status": "decided",
+          "winner": "r",
+          "reason": "将死",
+          "technicalForfeit": false
+        }
+      ],
+      "score": 0
+    }
+  ],
+  "checks": [
+    {
+      "seed": 11003,
+      "candidateSide": "r",
+      "plies": 38,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "valid": true
+    },
+    {
+      "seed": 11003,
+      "candidateSide": "b",
+      "plies": 111,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "困毙",
+        "technicalForfeit": false
+      },
+      "valid": true
+    },
+    {
+      "seed": 11027,
+      "candidateSide": "r",
+      "plies": 67,
+      "result": {
+        "status": "draw",
+        "winner": null,
+        "reason": "threefold-public-position",
+        "technicalForfeit": false
+      },
+      "valid": true
+    },
+    {
+      "seed": 11027,
+      "candidateSide": "b",
+      "plies": 56,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "valid": true
+    },
+    {
+      "seed": 11047,
+      "candidateSide": "r",
+      "plies": 74,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "valid": true
+    },
+    {
+      "seed": 11047,
+      "candidateSide": "b",
+      "plies": 33,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "valid": true
+    },
+    {
+      "seed": 11057,
+      "candidateSide": "r",
+      "plies": 62,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "valid": true
+    },
+    {
+      "seed": 11057,
+      "candidateSide": "b",
+      "plies": 59,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "valid": true
+    }
+  ],
+  "sourceHashes": {
+    "native/aspiration2-match.mjs": "29bc6b91e819e13c382fe9e2874e97c3451e507dd53f79c505e30437eccd6f2a",
+    "native/aspiration2-variants.mjs": "69bfcdb880628f5461e3e15bd26bdb98b9f01863c118cdd93a4ac8082e045ed5",
+    "native/bridge.mjs": "a0c2a84c72acaeeaf7b0709f06fefc01f97924387274a649a90d270e06df4816",
+    "scripts/native-match-engine.mjs": "13ac0a59a5d4c1d6b32c2f1e249143ad4ffc699050deb7be4643f6c79709a605",
+    "scripts/external-engine.js": "6aba8c2768315c580a71143987665667c3d6d0bec21e0282c798c1d5c6268a74",
+    "engine.js": "7f427f6e00e286a48335f7c7a7e74270d2a4349d7ea2aabcad0821122a17cb49",
+    "ai.js": "1c36be499adb397ec55c15a687644c409c4fbfbfb9de5002943e9a3d4e4714be",
+    "benchmarks/aspiration2/candidate.cpp": "73de0d5768fbedd97d46305891a0513f95c7a856aa5aba8edff8a92e2d1798d0",
+    "benchmarks/aspiration2/baseline.cpp": "eb1c25bbd4209321bbd0a881128bce0de784d300d2aed8abe6c189167ac38698"
+  },
+  "evidenceHashes": {
+    "pika-matches.json": "b34e0dbd6c94480db452238784db1c124b27e3d48d29eb193df399c08adf0684",
+    "lookup.json": "623e101dbcbe9a2c397f67bb3200a9b3f78fdec29778dac9baba38d3255ed004",
+    "lookupsaturated.json": "9d690853e9835daaefe54bc2b39b35151835adc35f117e03729af340b6f55201",
+    "lookupbudgets.json": "e917c54114c5c64a2613056f67ad89b8f29f225d54b2238f5cea03fc23da01f3",
+    "watchdog.json": "68e85898f0a49ae0e525e08595ea9f1386348d98763606ca8d556759ba24a6e2"
+  },
+  "uncertainty": "Only4 paired fixed layouts at one budget. Pair outcomes correlated; no independent-game binomial interval or Elo estimate. No changes/exclusions for the known opponent color-evaluation asymmetry."
+}

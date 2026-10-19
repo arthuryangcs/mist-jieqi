@@ -1,0 +1,63 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';import {createHash} from 'node:crypto';
+import {sourceOf} from './aspiration2-variants.mjs';
+const dir='benchmarks/aspiration2',read=n=>JSON.parse(fs.readFileSync(`${dir}/${n}.json`));
+const hash=p=>createHash('sha256').update(fs.readFileSync(p)).digest('hex');
+const med=a=>a.slice().sort((x,y)=>x-y)[Math.floor(a.length/2)],num=n=>n.toFixed(2);
+const fixed=read('lookup'),full=read('lookupsaturated'),budgets=read('lookupbudgets'),games=read('pika-matches'),verified=read('pika-verification'),watch=read('watchdog');
+const build=JSON.parse(fs.readFileSync('.cache/native/build.json'));
+assert.equal(fs.readFileSync('native/search.cpp','utf8'),sourceOf('refreshLookup'));assert.equal(hash('native/search.cpp'),build.sourceSha256);
+assert.equal(hash('.cache/native/mist-core'),build.binarySha256);assert.equal(verified.evidenceHashes['pika-matches.json'],hash(`${dir}/pika-matches.json`));assert.equal(games.games.length,8);
+for(const name of ['screen','deep','audit','cap','saturated','pool','pooldeep','poolaudit','final','finalsaturated','finalbudgets','lookup','lookupsaturated','lookupbudgets','check-refreshLookup-release','check-refreshLookup-asan','check-refreshLookup-tsan','check-bothFast-asan','production-native','production-sanitized','production-deep-reference','production-service','unit','watchdog','browser/results','pika-verification'])assert(read(name).passed,name);
+const performance=[];
+for(const [kind,d] of [['ordinary',fixed],['full',full]])for(const p of [...new Set(d.rows.map(r=>r.position))]){
+ const rows=d.rows.filter(r=>r.position===p),baselineMs=med(rows.map(r=>r.results.baseline.elapsedMs)),candidateMs=med(rows.map(r=>r.results.refreshLookup.elapsedMs));
+ performance.push({kind,position:p,depth:rows[0].depth,baselineMs,candidateMs,ratio:candidateMs/baselineMs,baselineNodes:rows[0].results.baseline.nodes,candidateNodes:rows[0].results.refreshLookup.nodes});
+}
+const summary={passed:true,generatedAt:new Date().toISOString(),baselineCommit:'93f617e',adopted:'refreshLookup only',quietChecks:false,aspiration:false,requestWorkerPool:false,
+ build,performance,equalBudgets:budgets.rows.map(r=>({position:r.position,budget:r.budget,baselineDepth:r.results.baseline.depth,candidateDepth:r.results.refreshLookup.depth})),
+ match:verified.summary,technical:verified.faultCounts,timing:verified.timing,legalPlies:verified.legalPlies,darkCaptures:verified.darkCaptures,
+ tests:{unit:86,nativeRuleViews:72,nativeTransitions:2172,nativeSearches:16,prototypeRuleViews:read('check-refreshLookup-release').rules.length,asan:true,tsan:true,serviceGroups:7,browserGroups:9,watchdogTrials:8},
+ limits:['Four paired new layouts against one fixed Pika HCE build; no causal delta from prior20 different layouts, no Elo or superiority claim.','1s/6s benchmark complete depths stayed equal; fixed-depth speed is not evidence of higher practical strength.','Historical first watchdog failure was not reproduced; cold-readiness timing and controlled delayed cases do not prove its exact cause.','Existing sampling, cycle approximation, simple evaluation and no cross-move cache remain unchanged.']};
+fs.writeFileSync(`${dir}/summary.json`,JSON.stringify(summary,null,2)+'\n');
+const total=verified.summary.overall,board=games.games.map(g=>`| ${g.seed} | ${g.candidateSide==='r'?'红':'黑'} | ${g.finalState.ply} | ${g.result.status==='draw'?'和':g.result.status==='unresolved'?'未决':g.result.winner===g.candidateSide?'胜':'负'} | ${g.result.reason} |`);
+const ordinary=performance.filter(r=>r.kind==='ordinary').map(r=>`| ${r.position} | ${r.depth} | ${num(r.baselineMs)} | ${num(r.candidateMs)} | ${num(r.ratio)} |`);
+const saturated=performance.filter(r=>r.kind==='full').map(r=>`| ${r.position} | ${r.depth} | ${num(r.baselineMs)} | ${num(r.candidateMs)} | ${r.baselineNodes} → ${r.candidateNodes} |`);
+const timing=Object.entries(verified.timing).map(([n,t])=>`| ${n} | ${t.moves} | ${num(t.medianMs)} | ${num(t.p95Ms)} | ${num(t.maxMs)} | ${t.overGrace} |`);
+const lines=[
+'# 满表缓存更新与窄窗独立实验', '',
+'本轮以93f617e保留的默认核心为基线，最终仅采用置换表达到9万项后继续更新已有键的修复，C++与JS同步修改。quiet-check、aspiration窄窗、请求内线程池都没有启用。网页继续使用相同预算、8采样、最多4线程与最大主深度8；没有改估值、规则、开局或引入激进剪枝。', '',
+`新布局Pika对赛8局：**${total.wins}胜${total.draws}和${total.losses}负，得分率${num(total.scoreRate*100)}%**，未决${total.unresolved}局。这个结果不能证明已经超过Pika，也不能与不同布局的旧20局直接相减得出提升幅度。`, '',
+'## 缓存问题及采用配置', '',
+'原版只在table.size小于90000时写表。达到上限后，已有键的深层结果也不能更新，后续根着与迭代只能重复使用陈旧条目。新条件先检查容量；满时才查找键，允许覆盖已有条目，仍禁止新增键。保存深度、上下界标记、杀棋距离、循环保护等逻辑保持原样。', '',
+'每个采样世界仍有独立状态、库存、路径和表；请求结束就销毁，不跨步、跨世界或跨私人信息复用。键继续包含两份棋盘哈希、行棋方、双方未知库存数量与价值、将军延伸额度。没有增加缓存容量或默认内存预算。', '',
+`生产源码SHA-256：${build.sourceSha256}；生产二进制：${build.binarySha256}。最终源码由生成器refreshLookup得到，实际Pika比赛与网页使用同一生产二进制。基线源、基线JS及构建参数保存在benchmarks/aspiration2/。`, '',
+'## 同深度对照及收益', '',
+'各实现顺序轮换，先预热，再各运行3次。以下为核心搜索时间中位数ms；包含样本初始化和搜索，不含进程启动、IPC与HTTP。表未满时节点相同，差异多处接近运行波动；不能将每个浅层变化都归因为缓存修复。', '',
+'| 局面 | 完整层 | 原版ms | 修复版ms | 修复/原版 |','|---|---:|---:|---:|---:|',...ordinary,'',
+'另做容量确实耗尽的逐世界分数审计。两处均3次重复，所有完整层、全部根候选、每个采样世界原始分数一致；表项数始终不超过90000。以下含双方相同的诊断输出结构，不能当成浏览器端到端耗时。','',
+'| 满表局面 | 完整层 | 原版ms | 修复版ms | 节点 |','|---|---:|---:|---:|---|',...saturated,'',
+'固定1秒、6秒预算分别比较开局、中局2111/44与全明残局：三个局面完整层数均与基线持平，分别为4/5、5/6、6/7层。所有共同完成层的完整候选评分一致。普通SEARCH会输出全部迭代并销毁缓存，其墙钟另有记录，不能把核心预算冒充HTTP硬截止。', '',
+'## 没有采用的方案', '',
+'逐根着、逐世界保存上一迭代的准确分数，用200分窄窗从主深度4开始搜索；失败向对应方向扩窗，三次失败后恢复全窗，同深度重搜。仅严格落在窗口内的结果进入聚合，边界值不当准确分；固定节点上限关闭窄窗。全部已测完整层、根候选及逐世界评分对照通过，包括扩窗及全窗回退案例。', '',
+'窄窗在浅层开局约有10%收益，但部分中局变慢，更深层的收益不稳定；不采用。另独立比较两种使用hasEntry的缓存写法，再比较仅满表时查找的最终写法，所有旧数据均保留，没有覆盖为最好的一次耗时。', '',
+'请求内线程池保留同一世界分工，和原版同节点同分，但深层没有稳定提速，故弃用；它只做了release对照，不冒称已完成生产级sanitizer验证。最终候选仍是原std::async路径，没有混入线程池。', '',
+'## 正确性、信息与集成', '',
+'正常及ASan/UBSan生产构建各通过72个规则视角、2172次走子撤回、16个搜索/中断对照。候选专项正常、ASan/UBSan、TSan均通过42个新规则视角，以及完整候选、固定节点中断、0/5/25/100ms截止、同进程恢复、红黑私人暗俘上下文切换与实际暗布局改变不影响公开输入等检查；stderr为空。窄窗组合的ASan检查另有保留。', '',
+'生产JS与C++另对全明满表残局完成7层：30个根候选同分、同节点1816113，评分最大差约1.8e-15。这是实现对照，不是穷尽所有棋局的正确性证明。86项单元测试、7组本机服务测试和真实Chrome155的9组流程全部通过；浏览器含重复点击、思考中悔棋/重开、自动对战、双方信息隔离和移动视口，另有12条1秒端到端计时记录。', '',
+'新专项脚本初版误把Native包装器添加的独立wallMs也当相等字段；失败记录保留在check-refreshLookup-release-initial.json。最终明确比较全部sides和transitions，所有棋盘/规则字段仍逐项检查，没有放宽分数容差。', '',
+'## 上轮故障注入调查', '',
+'仅在内存副本插入分段时间戳，生产server.mjs未改；3个新编译测试进程的冷启动就绪为338～647ms，热启动约4.2～5.8ms，本轮没有复现旧失败。额外1.5秒就绪延迟与进度延迟控制均正确触发1200ms截止、合法0层保底、清理活动请求并结束进程。8次诊断均通过。历史首败没有这些分段数据，仍不能断言同一原因或归咎于某个macOS子系统。', '',
+'原故障注入意在验证已有进度后卡死，却隐含要求新编译映像必在截止前启动。因此测试先正常运行一次ready-probe，探针时间单独记录并置于测试步钟之外；实际HTTP请求仍把就绪算在1200ms内，原depth1和1800ms断言保持。新增第7组专门验证未就绪时depth0、不可冒称核心确认、合法保底与进程退出。没有放宽生产时限或更改安全设置。', '',
+'## 固定Pika的8局新对赛', '',
+'赛前冻结11003、11027、11047、11057四个新布局，每布局双方换色。只运行此前获准的bcc83f88 HCE构建，二进制SHA-256 f32d3c6dfe4d6d90da7728d9cc2af68c3195a1cefb1bc28f3829f174c518dba1，未重编译第三方、换权重或修其已知颜色估值偏差。', '',
+'双方4线程，每步1000ms目标及相同60ms裁判宽限。Pika Hash64MiB，Move Overhead0；本版每世界9万表项、8样本，全明1样本1线程，并非严格等内存。初始化在步钟外；投影、采样、局面核对、IPC、搜索、停止及进程回收计入墙钟。比赛期间本代理没有并跑性能/浏览器测试。', '',
+'只把当前行棋方过滤观察交给搜索；真实布局/种子仅裁判使用，被吃暗子仅吃子方知道。Pika每手重放后的棋盘、行棋方和库存与当前观察核对。三次公开局面重复或120闲步和棋；400步上限单列未决，不按分数提前认输。', '',
+'| 布局 | 新版阵营 | 实际手数 | 新版结果 | 终局 |','|---|---|---:|---|---|',...board,'',
+'| 引擎 | 尝试 | 墙钟中位ms | p95ms | 最大ms | 超过1060ms |','|---|---:|---:|---:|---:|---:|',...timing,'',
+`技术统计：${JSON.stringify(verified.faultCounts)}。独立回放核对${verified.legalPlies}手和${verified.darkCaptures}次暗俘，重建全部观察哈希、专属token、翻子/吃子和终局。原始棋谱、环境、核验与时间在本目录pika-matches.json及pika-verification.json。`, '',
+'仅4对相关布局，不计算独立伯努利置信区间或稳定Elo。本批与旧20局布局不同，没有同时对相同布局跑旧版，不能据分数差推断本次修复的因果棋力提升。Pika的深度与本版所有根着/所有世界完整主深度口径不同；宿主中止时节点可能只来自最后完整进度，不横向计算NPS。', '',
+'## 保存与运行', '',
+'默认仅保留最小缓存修复；更复杂的估值、跨步缓存与剪枝留待独立迭代。源码、全部失败尝试、原始结果及截图保留本地Git，不自动推送。网页为 http://127.0.0.1:8766/；停止后在项目根运行npm start。', '',
+'复跑会覆盖同名测量，正式记录请先另存。所有代码均使用已有工具，不安装依赖；实验编译沿用冻结macOS参数。比赛freeze拒绝覆盖既有记录，run只继续未完成局。', '',
+'```sh','node native/aspiration2-benchmark.mjs lookup','node native/aspiration2-benchmark.mjs lookupsaturated','node native/aspiration2-benchmark.mjs lookupbudgets','node native/aspiration2-check.mjs --variant=refreshLookup --asan','node native/aspiration2-check.mjs --variant=refreshLookup --tsan','node native/watchdog-diagnosis.mjs','JIEQI_ENGINE_PATH=./external/pikafish-jieqi-wasm/src/PikaJieQi node native/aspiration2-match.mjs run','node native/aspiration2-match-verify.mjs','node native/aspiration2-report.mjs','```',''];
+fs.writeFileSync('TT_CACHE_REPORT.md',lines.join('\n'));console.log(JSON.stringify({passed:true,adopted:summary.adopted,match:summary.match,technical:summary.technical}));

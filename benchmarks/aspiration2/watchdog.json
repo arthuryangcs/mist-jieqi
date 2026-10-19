@@ -1,0 +1,1112 @@
+{
+  "startedAt": "2026-10-19T15:30:52.711Z",
+  "originalServiceSha256": "ac5cbbfac91b5e16db8b1b121b82600c56eb57a9f7ad5c697f5162e38c458d90",
+  "instrumentedServiceSha256": "f4eeee38ce30506ca6ec25fb0ed8d8d4cf2214e5cf4279258f425fd4fd133b7c",
+  "rows": [
+    {
+      "caseIndex": 0,
+      "repeat": 0,
+      "warm": false,
+      "readyDelay": 0,
+      "progressDelay": 0,
+      "events": [
+        {
+          "event": "before-fixture",
+          "ms": 34.4463659999999
+        },
+        {
+          "event": "after-fixture",
+          "ms": 37.278084000000035
+        },
+        {
+          "event": "constructed",
+          "ms": 40.609980999999834
+        },
+        {
+          "event": "spawn",
+          "ms": 41.64284199999997
+        },
+        {
+          "event": "stdout",
+          "ms": 684.6519669999998,
+          "bytes": 60,
+          "prefix": "{\"ready\":true,\"protocol\":2,\"streaming\":true,\"buildNonce\":0}\n"
+        },
+        {
+          "event": "ready",
+          "ms": 684.7197259999998,
+          "finished": false,
+          "initializationMs": 647.1652180000001
+        },
+        {
+          "event": "send",
+          "ms": 684.729347
+        },
+        {
+          "event": "progress",
+          "ms": 686.441041,
+          "depth": 1
+        },
+        {
+          "event": "stdout",
+          "ms": 686.987055,
+          "bytes": 171,
+          "prefix": "{\"progress\":true,\"result\":{\"depth\":1,\"nodes\":1,\"samples\":8,\"elapsedMs\":1"
+        },
+        {
+          "event": "deadline",
+          "ms": 1229.7885449999999
+        },
+        {
+          "event": "cleanup",
+          "ms": 1230.7780039999998
+        },
+        {
+          "event": "exit",
+          "ms": 1234.2617449999998,
+          "code": null,
+          "signal": "SIGTERM"
+        }
+      ],
+      "endToEndMs": 1232.5231049999998,
+      "response": [
+        {
+          "progress": true,
+          "result": {
+            "depth": 1,
+            "nodes": 1,
+            "samples": 8,
+            "elapsedMs": 1,
+            "move": {
+              "from": 54,
+              "to": 45
+            },
+            "score": 0,
+            "wallMs": 1.5625969999996414,
+            "from": 54,
+            "to": 45,
+            "spread": 0,
+            "candidates": [
+              {
+                "from": 54,
+                "to": 45,
+                "score": 0,
+                "spread": 0
+              }
+            ],
+            "uncertain": true,
+            "scoreKind": "expected-utility",
+            "seed": 1075149473,
+            "engine": "cpp-native",
+            "sourceSha256": "eb1c25bbd4209321bbd0a881128bce0de784d300d2aed8abe6c189167ac38698",
+            "binarySha256": "26381fefa3f8f11da4d7ce5c8a5ef0dc479f009660883766540d2b8d050f038b",
+            "maxThreads": 4,
+            "independentWorldSearch": true,
+            "transport": "loopback-http",
+            "protocol": 2,
+            "threads": 1,
+            "engineVerified": true,
+            "serviceElapsedMs": 657.265539,
+            "preparationMs": 11.295487000000094,
+            "initializationMs": 647.1652180000001
+          }
+        },
+        {
+          "result": {
+            "depth": 1,
+            "nodes": 1,
+            "samples": 8,
+            "elapsedMs": 1,
+            "move": {
+              "from": 54,
+              "to": 45
+            },
+            "score": 0,
+            "wallMs": 1.5625969999996414,
+            "from": 54,
+            "to": 45,
+            "spread": 0,
+            "candidates": [
+              {
+                "from": 54,
+                "to": 45,
+                "score": 0,
+                "spread": 0
+              }
+            ],
+            "uncertain": true,
+            "scoreKind": "expected-utility",
+            "seed": 1075149473,
+            "engine": "cpp-native",
+            "sourceSha256": "eb1c25bbd4209321bbd0a881128bce0de784d300d2aed8abe6c189167ac38698",
+            "binarySha256": "26381fefa3f8f11da4d7ce5c8a5ef0dc479f009660883766540d2b8d050f038b",
+            "maxThreads": 4,
+            "independentWorldSearch": true,
+            "transport": "loopback-http",
+            "protocol": 2,
+            "threads": 1,
+            "engineVerified": true,
+            "serviceElapsedMs": 657.265539,
+            "preparationMs": 11.295487000000094,
+            "initializationMs": 647.1652180000001,
+            "deadlineStop": true
+          }
+        }
+      ],
+      "active": 0,
+      "maxHeartbeatGapMs": 27.185322000000042,
+      "processExited": true,
+      "passed": true
+    },
+    {
+      "caseIndex": 0,
+      "repeat": 0,
+      "warm": true,
+      "readyDelay": 0,
+      "progressDelay": 0,
+      "events": [
+        {
+          "event": "before-fixture",
+          "ms": 7.058463000000302
+        },
+        {
+          "event": "after-fixture",
+          "ms": 8.46796200000017
+        },
+        {
+          "event": "constructed",
+          "ms": 10.605824000000212
+        },
+        {
+          "event": "spawn",
+          "ms": 10.80822900000021
+        },
+        {
+          "event": "stdout",
+          "ms": 14.287224000000151,
+          "bytes": 60,
+          "prefix": "{\"ready\":true,\"protocol\":2,\"streaming\":true,\"buildNonce\":0}\n"
+        },
+        {
+          "event": "ready",
+          "ms": 14.337687000000187,
+          "finished": false,
+          "initializationMs": 5.7820449999999255
+        },
+        {
+          "event": "send",
+          "ms": 14.34289600000011
+        },
+        {
+          "event": "progress",
+          "ms": 15.41309500000034,
+          "depth": 1
+        },
+        {
+          "event": "stdout",
+          "ms": 15.585245000000214,
+          "bytes": 171,
+          "prefix": "{\"progress\":true,\"result\":{\"depth\":1,\"nodes\":1,\"samples\":8,\"elapsedMs\":1"
+        },
+        {
+          "event": "deadline",
+          "ms": 1206.0172810000004
+        },
+        {
+          "event": "cleanup",
+          "ms": 1206.4147090000001
+        },
+        {
+          "event": "exit",
+          "ms": 1207.166295,
+          "code": null,
+          "signal": "SIGTERM"
+        }
+      ],
+      "endToEndMs": 1206.8366620000002,
+      "response": [
+        {
+          "progress": true,
+          "result": {
+            "depth": 1,
+            "nodes": 1,
+            "samples": 8,
+            "elapsedMs": 1,
+            "move": {
+              "from": 54,
+              "to": 45
+            },
+            "score": 0,
+            "wallMs": 1.0290059999997538,
+            "from": 54,
+            "to": 45,
+            "spread": 0,
+            "candidates": [
+              {
+                "from": 54,
+                "to": 45,
+                "score": 0,
+                "spread": 0
+              }
+            ],
+            "uncertain": true,
+            "scoreKind": "expected-utility",
+            "seed": 1075149473,
+            "engine": "cpp-native",
+            "sourceSha256": "eb1c25bbd4209321bbd0a881128bce0de784d300d2aed8abe6c189167ac38698",
+            "binarySha256": "26381fefa3f8f11da4d7ce5c8a5ef0dc479f009660883766540d2b8d050f038b",
+            "maxThreads": 4,
+            "independentWorldSearch": true,
+            "transport": "loopback-http",
+            "protocol": 2,
+            "threads": 1,
+            "engineVerified": true,
+            "serviceElapsedMs": 9.087864000000081,
+            "preparationMs": 4.261136999999962,
+            "initializationMs": 5.7820449999999255
+          }
+        },
+        {
+          "result": {
+            "depth": 1,
+            "nodes": 1,
+            "samples": 8,
+            "elapsedMs": 1,
+            "move": {
+              "from": 54,
+              "to": 45
+            },
+            "score": 0,
+            "wallMs": 1.0290059999997538,
+            "from": 54,
+            "to": 45,
+            "spread": 0,
+            "candidates": [
+              {
+                "from": 54,
+                "to": 45,
+                "score": 0,
+                "spread": 0
+              }
+            ],
+            "uncertain": true,
+            "scoreKind": "expected-utility",
+            "seed": 1075149473,
+            "engine": "cpp-native",
+            "sourceSha256": "eb1c25bbd4209321bbd0a881128bce0de784d300d2aed8abe6c189167ac38698",
+            "binarySha256": "26381fefa3f8f11da4d7ce5c8a5ef0dc479f009660883766540d2b8d050f038b",
+            "maxThreads": 4,
+            "independentWorldSearch": true,
+            "transport": "loopback-http",
+            "protocol": 2,
+            "threads": 1,
+            "engineVerified": true,
+            "serviceElapsedMs": 9.087864000000081,
+            "preparationMs": 4.261136999999962,
+            "initializationMs": 5.7820449999999255,
+            "deadlineStop": true
+          }
+        }
+      ],
+      "active": 0,
+      "maxHeartbeatGapMs": 22.10667199999989,
+      "processExited": true,
+      "passed": true
+    },
+    {
+      "caseIndex": 0,
+      "repeat": 1,
+      "warm": false,
+      "readyDelay": 0,
+      "progressDelay": 0,
+      "events": [
+        {
+          "event": "before-fixture",
+          "ms": 3.2658289999999397
+        },
+        {
+          "event": "after-fixture",
+          "ms": 4.606471999999485
+        },
+        {
+          "event": "constructed",
+          "ms": 6.550046999999722
+        },
+        {
+          "event": "spawn",
+          "ms": 6.7559510000000955
+        },
+        {
+          "event": "stdout",
+          "ms": 342.7297440000002,
+          "bytes": 60,
+          "prefix": "{\"ready\":true,\"protocol\":2,\"streaming\":true,\"buildNonce\":1}\n"
+        },
+        {
+          "event": "ready",
+          "ms": 342.7717699999994,
+          "finished": false,
+          "initializationMs": 338.091367
+        },
+        {
+          "event": "send",
+          "ms": 342.77735699999994
+        },
+        {
+          "event": "progress",
+          "ms": 343.6644349999997,
+          "depth": 1
+        },
+        {
+          "event": "stdout",
+          "ms": 343.7366750000001,
+          "bytes": 171,
+          "prefix": "{\"progress\":true,\"result\":{\"depth\":1,\"nodes\":1,\"samples\":8,\"elapsedMs\":1"
+        },
+        {
+          "event": "deadline",
+          "ms": 1203.4310260000002
+        },
+        {
+          "event": "cleanup",
+          "ms": 1203.7963869999994
+        },
+        {
+          "event": "exit",
+          "ms": 1204.5121479999998,
+          "code": null,
+          "signal": "SIGTERM"
+        }
+      ],
+      "endToEndMs": 1204.219553,
+      "response": [
+        {
+          "progress": true,
+          "result": {
+            "depth": 1,
+            "nodes": 1,
+            "samples": 8,
+            "elapsedMs": 1,
+            "move": {
+              "from": 54,
+              "to": 45
+            },
+            "score": 0,
+            "wallMs": 0.8734299999996438,
+            "from": 54,
+            "to": 45,
+            "spread": 0,
+            "candidates": [
+              {
+                "from": 54,
+                "to": 45,
+                "score": 0,
+                "spread": 0
+              }
+            ],
+            "uncertain": true,
+            "scoreKind": "expected-utility",
+            "seed": 1075149473,
+            "engine": "cpp-native",
+            "sourceSha256": "eb1c25bbd4209321bbd0a881128bce0de784d300d2aed8abe6c189167ac38698",
+            "binarySha256": "26381fefa3f8f11da4d7ce5c8a5ef0dc479f009660883766540d2b8d050f038b",
+            "maxThreads": 4,
+            "independentWorldSearch": true,
+            "transport": "loopback-http",
+            "protocol": 2,
+            "threads": 1,
+            "engineVerified": true,
+            "serviceElapsedMs": 340.9613220000001,
+            "preparationMs": 3.84222200000022,
+            "initializationMs": 338.091367
+          }
+        },
+        {
+          "result": {
+            "depth": 1,
+            "nodes": 1,
+            "samples": 8,
+            "elapsedMs": 1,
+            "move": {
+              "from": 54,
+              "to": 45
+            },
+            "score": 0,
+            "wallMs": 0.8734299999996438,
+            "from": 54,
+            "to": 45,
+            "spread": 0,
+            "candidates": [
+              {
+                "from": 54,
+                "to": 45,
+                "score": 0,
+                "spread": 0
+              }
+            ],
+            "uncertain": true,
+            "scoreKind": "expected-utility",
+            "seed": 1075149473,
+            "engine": "cpp-native",
+            "sourceSha256": "eb1c25bbd4209321bbd0a881128bce0de784d300d2aed8abe6c189167ac38698",
+            "binarySha256": "26381fefa3f8f11da4d7ce5c8a5ef0dc479f009660883766540d2b8d050f038b",
+            "maxThreads": 4,
+            "independentWorldSearch": true,
+            "transport": "loopback-http",
+            "protocol": 2,
+            "threads": 1,
+            "engineVerified": true,
+            "serviceElapsedMs": 340.9613220000001,
+            "preparationMs": 3.84222200000022,
+            "initializationMs": 338.091367,
+            "deadlineStop": true
+          }
+        }
+      ],
+      "active": 0,
+      "maxHeartbeatGapMs": 22.31062699999984,
+      "processExited": true,
+      "passed": true
+    },
+    {
+      "caseIndex": 0,
+      "repeat": 1,
+      "warm": true,
+      "readyDelay": 0,
+      "progressDelay": 0,
+      "events": [
+        {
+          "event": "before-fixture",
+          "ms": 2.6708260000004884
+        },
+        {
+          "event": "after-fixture",
+          "ms": 3.8306979999997566
+        },
+        {
+          "event": "constructed",
+          "ms": 5.6607819999999265
+        },
+        {
+          "event": "spawn",
+          "ms": 5.813355000000229
+        },
+        {
+          "event": "stdout",
+          "ms": 8.333526999999776,
+          "bytes": 60,
+          "prefix": "{\"ready\":true,\"protocol\":2,\"streaming\":true,\"buildNonce\":1}\n"
+        },
+        {
+          "event": "ready",
+          "ms": 8.389704999999594,
+          "finished": false,
+          "initializationMs": 4.471073000000615
+        },
+        {
+          "event": "send",
+          "ms": 8.394500999999764
+        },
+        {
+          "event": "progress",
+          "ms": 9.441077999999834,
+          "depth": 1
+        },
+        {
+          "event": "stdout",
+          "ms": 9.54309000000012,
+          "bytes": 171,
+          "prefix": "{\"progress\":true,\"result\":{\"depth\":1,\"nodes\":1,\"samples\":8,\"elapsedMs\":1"
+        },
+        {
+          "event": "deadline",
+          "ms": 1202.3083699999997
+        },
+        {
+          "event": "cleanup",
+          "ms": 1202.661771
+        },
+        {
+          "event": "exit",
+          "ms": 1203.3238680000004,
+          "code": null,
+          "signal": "SIGTERM"
+        }
+      ],
+      "endToEndMs": 1203.061487,
+      "response": [
+        {
+          "progress": true,
+          "result": {
+            "depth": 1,
+            "nodes": 1,
+            "samples": 8,
+            "elapsedMs": 1,
+            "move": {
+              "from": 54,
+              "to": 45
+            },
+            "score": 0,
+            "wallMs": 1.03326399999969,
+            "from": 54,
+            "to": 45,
+            "spread": 0,
+            "candidates": [
+              {
+                "from": 54,
+                "to": 45,
+                "score": 0,
+                "spread": 0
+              }
+            ],
+            "uncertain": true,
+            "scoreKind": "expected-utility",
+            "seed": 1075149473,
+            "engine": "cpp-native",
+            "sourceSha256": "eb1c25bbd4209321bbd0a881128bce0de784d300d2aed8abe6c189167ac38698",
+            "binarySha256": "26381fefa3f8f11da4d7ce5c8a5ef0dc479f009660883766540d2b8d050f038b",
+            "maxThreads": 4,
+            "independentWorldSearch": true,
+            "transport": "loopback-http",
+            "protocol": 2,
+            "threads": 1,
+            "engineVerified": true,
+            "serviceElapsedMs": 7.253746999999748,
+            "preparationMs": 3.4689109999999346,
+            "initializationMs": 4.471073000000615
+          }
+        },
+        {
+          "result": {
+            "depth": 1,
+            "nodes": 1,
+            "samples": 8,
+            "elapsedMs": 1,
+            "move": {
+              "from": 54,
+              "to": 45
+            },
+            "score": 0,
+            "wallMs": 1.03326399999969,
+            "from": 54,
+            "to": 45,
+            "spread": 0,
+            "candidates": [
+              {
+                "from": 54,
+                "to": 45,
+                "score": 0,
+                "spread": 0
+              }
+            ],
+            "uncertain": true,
+            "scoreKind": "expected-utility",
+            "seed": 1075149473,
+            "engine": "cpp-native",
+            "sourceSha256": "eb1c25bbd4209321bbd0a881128bce0de784d300d2aed8abe6c189167ac38698",
+            "binarySha256": "26381fefa3f8f11da4d7ce5c8a5ef0dc479f009660883766540d2b8d050f038b",
+            "maxThreads": 4,
+            "independentWorldSearch": true,
+            "transport": "loopback-http",
+            "protocol": 2,
+            "threads": 1,
+            "engineVerified": true,
+            "serviceElapsedMs": 7.253746999999748,
+            "preparationMs": 3.4689109999999346,
+            "initializationMs": 4.471073000000615,
+            "deadlineStop": true
+          }
+        }
+      ],
+      "active": 0,
+      "maxHeartbeatGapMs": 22.455855999999585,
+      "processExited": true,
+      "passed": true
+    },
+    {
+      "caseIndex": 0,
+      "repeat": 2,
+      "warm": false,
+      "readyDelay": 0,
+      "progressDelay": 0,
+      "events": [
+        {
+          "event": "before-fixture",
+          "ms": 2.6420469999993657
+        },
+        {
+          "event": "after-fixture",
+          "ms": 3.719057000000248
+        },
+        {
+          "event": "constructed",
+          "ms": 5.522780999999668
+        },
+        {
+          "event": "spawn",
+          "ms": 5.666164999998728
+        },
+        {
+          "event": "stdout",
+          "ms": 400.94860100000005,
+          "bytes": 60,
+          "prefix": "{\"ready\":true,\"protocol\":2,\"streaming\":true,\"buildNonce\":2}\n"
+        },
+        {
+          "event": "ready",
+          "ms": 400.9895059999999,
+          "finished": false,
+          "initializationMs": 397.199313000001
+        },
+        {
+          "event": "send",
+          "ms": 400.9952709999998
+        },
+        {
+          "event": "progress",
+          "ms": 401.8617699999995,
+          "depth": 1
+        },
+        {
+          "event": "stdout",
+          "ms": 401.9453909999993,
+          "bytes": 171,
+          "prefix": "{\"progress\":true,\"result\":{\"depth\":1,\"nodes\":1,\"samples\":8,\"elapsedMs\":1"
+        },
+        {
+          "event": "deadline",
+          "ms": 1200.923682999999
+        },
+        {
+          "event": "cleanup",
+          "ms": 1201.170974999999
+        },
+        {
+          "event": "exit",
+          "ms": 1202.4425439999995,
+          "code": null,
+          "signal": "SIGTERM"
+        }
+      ],
+      "endToEndMs": 1201.5673239999996,
+      "response": [
+        {
+          "progress": true,
+          "result": {
+            "depth": 1,
+            "nodes": 1,
+            "samples": 8,
+            "elapsedMs": 1,
+            "move": {
+              "from": 54,
+              "to": 45
+            },
+            "score": 0,
+            "wallMs": 0.8527890000004845,
+            "from": 54,
+            "to": 45,
+            "spread": 0,
+            "candidates": [
+              {
+                "from": 54,
+                "to": 45,
+                "score": 0,
+                "spread": 0
+              }
+            ],
+            "uncertain": true,
+            "scoreKind": "expected-utility",
+            "seed": 1075149473,
+            "engine": "cpp-native",
+            "sourceSha256": "eb1c25bbd4209321bbd0a881128bce0de784d300d2aed8abe6c189167ac38698",
+            "binarySha256": "26381fefa3f8f11da4d7ce5c8a5ef0dc479f009660883766540d2b8d050f038b",
+            "maxThreads": 4,
+            "independentWorldSearch": true,
+            "transport": "loopback-http",
+            "protocol": 2,
+            "threads": 1,
+            "engineVerified": true,
+            "serviceElapsedMs": 399.6882289999994,
+            "preparationMs": 3.3483459999988554,
+            "initializationMs": 397.199313000001
+          }
+        },
+        {
+          "result": {
+            "depth": 1,
+            "nodes": 1,
+            "samples": 8,
+            "elapsedMs": 1,
+            "move": {
+              "from": 54,
+              "to": 45
+            },
+            "score": 0,
+            "wallMs": 0.8527890000004845,
+            "from": 54,
+            "to": 45,
+            "spread": 0,
+            "candidates": [
+              {
+                "from": 54,
+                "to": 45,
+                "score": 0,
+                "spread": 0
+              }
+            ],
+            "uncertain": true,
+            "scoreKind": "expected-utility",
+            "seed": 1075149473,
+            "engine": "cpp-native",
+            "sourceSha256": "eb1c25bbd4209321bbd0a881128bce0de784d300d2aed8abe6c189167ac38698",
+            "binarySha256": "26381fefa3f8f11da4d7ce5c8a5ef0dc479f009660883766540d2b8d050f038b",
+            "maxThreads": 4,
+            "independentWorldSearch": true,
+            "transport": "loopback-http",
+            "protocol": 2,
+            "threads": 1,
+            "engineVerified": true,
+            "serviceElapsedMs": 399.6882289999994,
+            "preparationMs": 3.3483459999988554,
+            "initializationMs": 397.199313000001,
+            "deadlineStop": true
+          }
+        }
+      ],
+      "active": 0,
+      "maxHeartbeatGapMs": 22.728173999999854,
+      "processExited": true,
+      "passed": true
+    },
+    {
+      "caseIndex": 0,
+      "repeat": 2,
+      "warm": true,
+      "readyDelay": 0,
+      "progressDelay": 0,
+      "events": [
+        {
+          "event": "before-fixture",
+          "ms": 2.1536589999996067
+        },
+        {
+          "event": "after-fixture",
+          "ms": 3.0005380000002333
+        },
+        {
+          "event": "constructed",
+          "ms": 4.684785999999804
+        },
+        {
+          "event": "spawn",
+          "ms": 4.818068000000494
+        },
+        {
+          "event": "stdout",
+          "ms": 7.188444999999774,
+          "bytes": 60,
+          "prefix": "{\"ready\":true,\"protocol\":2,\"streaming\":true,\"buildNonce\":2}\n"
+        },
+        {
+          "event": "ready",
+          "ms": 7.218650999999227,
+          "finished": false,
+          "initializationMs": 4.168792999998914
+        },
+        {
+          "event": "send",
+          "ms": 7.2234559999997145
+        },
+        {
+          "event": "progress",
+          "ms": 8.05544000000009,
+          "depth": 1
+        },
+        {
+          "event": "stdout",
+          "ms": 8.113939999999275,
+          "bytes": 171,
+          "prefix": "{\"progress\":true,\"result\":{\"depth\":1,\"nodes\":1,\"samples\":8,\"elapsedMs\":1"
+        },
+        {
+          "event": "deadline",
+          "ms": 1201.4266279999993
+        },
+        {
+          "event": "cleanup",
+          "ms": 1201.6335899999995
+        },
+        {
+          "event": "exit",
+          "ms": 1202.2150509999992,
+          "code": null,
+          "signal": "SIGTERM"
+        }
+      ],
+      "endToEndMs": 1201.9866220000004,
+      "response": [
+        {
+          "progress": true,
+          "result": {
+            "depth": 1,
+            "nodes": 1,
+            "samples": 8,
+            "elapsedMs": 1,
+            "move": {
+              "from": 54,
+              "to": 45
+            },
+            "score": 0,
+            "wallMs": 0.8174990000006801,
+            "from": 54,
+            "to": 45,
+            "spread": 0,
+            "candidates": [
+              {
+                "from": 54,
+                "to": 45,
+                "score": 0,
+                "spread": 0
+              }
+            ],
+            "uncertain": true,
+            "scoreKind": "expected-utility",
+            "seed": 1075149473,
+            "engine": "cpp-native",
+            "sourceSha256": "eb1c25bbd4209321bbd0a881128bce0de784d300d2aed8abe6c189167ac38698",
+            "binarySha256": "26381fefa3f8f11da4d7ce5c8a5ef0dc479f009660883766540d2b8d050f038b",
+            "maxThreads": 4,
+            "independentWorldSearch": true,
+            "transport": "loopback-http",
+            "protocol": 2,
+            "threads": 1,
+            "engineVerified": true,
+            "serviceElapsedMs": 6.3090400000000955,
+            "preparationMs": 2.9306630000010045,
+            "initializationMs": 4.168792999998914
+          }
+        },
+        {
+          "result": {
+            "depth": 1,
+            "nodes": 1,
+            "samples": 8,
+            "elapsedMs": 1,
+            "move": {
+              "from": 54,
+              "to": 45
+            },
+            "score": 0,
+            "wallMs": 0.8174990000006801,
+            "from": 54,
+            "to": 45,
+            "spread": 0,
+            "candidates": [
+              {
+                "from": 54,
+                "to": 45,
+                "score": 0,
+                "spread": 0
+              }
+            ],
+            "uncertain": true,
+            "scoreKind": "expected-utility",
+            "seed": 1075149473,
+            "engine": "cpp-native",
+            "sourceSha256": "eb1c25bbd4209321bbd0a881128bce0de784d300d2aed8abe6c189167ac38698",
+            "binarySha256": "26381fefa3f8f11da4d7ce5c8a5ef0dc479f009660883766540d2b8d050f038b",
+            "maxThreads": 4,
+            "independentWorldSearch": true,
+            "transport": "loopback-http",
+            "protocol": 2,
+            "threads": 1,
+            "engineVerified": true,
+            "serviceElapsedMs": 6.3090400000000955,
+            "preparationMs": 2.9306630000010045,
+            "initializationMs": 4.168792999998914,
+            "deadlineStop": true
+          }
+        }
+      ],
+      "active": 0,
+      "maxHeartbeatGapMs": 22.119384999999966,
+      "processExited": true,
+      "passed": true
+    },
+    {
+      "caseIndex": 1,
+      "repeat": 0,
+      "warm": false,
+      "readyDelay": 1500,
+      "progressDelay": 0,
+      "events": [
+        {
+          "event": "before-fixture",
+          "ms": 2.6627360000002227
+        },
+        {
+          "event": "after-fixture",
+          "ms": 3.949312999999165
+        },
+        {
+          "event": "constructed",
+          "ms": 6.538022999999157
+        },
+        {
+          "event": "spawn",
+          "ms": 6.732089999999516
+        },
+        {
+          "event": "deadline",
+          "ms": 1201.8166810000002
+        },
+        {
+          "event": "cleanup",
+          "ms": 1202.6989539999995
+        },
+        {
+          "event": "exit",
+          "ms": 1204.2185649999992,
+          "code": null,
+          "signal": "SIGTERM"
+        }
+      ],
+      "endToEndMs": 1203.6124369999998,
+      "response": [
+        {
+          "result": {
+            "move": {
+              "from": 54,
+              "to": 45
+            },
+            "depth": 0,
+            "nodes": 0,
+            "samples": 0,
+            "score": 0,
+            "elapsedMs": 0,
+            "candidates": [],
+            "uncertain": true,
+            "scoreKind": "expected-utility",
+            "seed": 1075149473,
+            "engine": "cpp-native",
+            "sourceSha256": "eb1c25bbd4209321bbd0a881128bce0de784d300d2aed8abe6c189167ac38698",
+            "binarySha256": "26381fefa3f8f11da4d7ce5c8a5ef0dc479f009660883766540d2b8d050f038b",
+            "maxThreads": 4,
+            "independentWorldSearch": true,
+            "transport": "loopback-http",
+            "protocol": 2,
+            "threads": 1,
+            "engineVerified": false,
+            "serviceElapsedMs": 1200.1290959999988,
+            "preparationMs": 4.343200999999681,
+            "initializationMs": null,
+            "deadlineStop": true
+          }
+        }
+      ],
+      "active": 0,
+      "maxHeartbeatGapMs": 22.173730000000432,
+      "processExited": true,
+      "passed": true
+    },
+    {
+      "caseIndex": 2,
+      "repeat": 0,
+      "warm": false,
+      "readyDelay": 0,
+      "progressDelay": 1500,
+      "events": [
+        {
+          "event": "before-fixture",
+          "ms": 3.4211259999992762
+        },
+        {
+          "event": "after-fixture",
+          "ms": 4.662444999999934
+        },
+        {
+          "event": "constructed",
+          "ms": 6.659698999999819
+        },
+        {
+          "event": "spawn",
+          "ms": 6.8585409999996045
+        },
+        {
+          "event": "stdout",
+          "ms": 317.61331900000005,
+          "bytes": 62,
+          "prefix": "{\"ready\":true,\"protocol\":2,\"streaming\":true,\"buildNonce\":200}\n"
+        },
+        {
+          "event": "ready",
+          "ms": 317.68425000000025,
+          "finished": false,
+          "initializationMs": 312.9242059999997
+        },
+        {
+          "event": "send",
+          "ms": 317.69174999999996
+        },
+        {
+          "event": "deadline",
+          "ms": 1205.0059739999997
+        },
+        {
+          "event": "cleanup",
+          "ms": 1205.3559850000001
+        },
+        {
+          "event": "exit",
+          "ms": 1206.1822789999987,
+          "code": null,
+          "signal": "SIGTERM"
+        }
+      ],
+      "endToEndMs": 1205.8316649999997,
+      "response": [
+        {
+          "result": {
+            "move": {
+              "from": 54,
+              "to": 45
+            },
+            "depth": 0,
+            "nodes": 0,
+            "samples": 0,
+            "score": 0,
+            "elapsedMs": 0,
+            "candidates": [],
+            "uncertain": true,
+            "scoreKind": "expected-utility",
+            "seed": 1075149473,
+            "engine": "cpp-native",
+            "sourceSha256": "eb1c25bbd4209321bbd0a881128bce0de784d300d2aed8abe6c189167ac38698",
+            "binarySha256": "26381fefa3f8f11da4d7ce5c8a5ef0dc479f009660883766540d2b8d050f038b",
+            "maxThreads": 4,
+            "independentWorldSearch": true,
+            "transport": "loopback-http",
+            "protocol": 2,
+            "threads": 1,
+            "engineVerified": false,
+            "serviceElapsedMs": 1202.3006409999998,
+            "preparationMs": 3.788649999998597,
+            "initializationMs": 312.9242059999997,
+            "deadlineStop": true
+          }
+        }
+      ],
+      "active": 0,
+      "maxHeartbeatGapMs": 22.215565999998944,
+      "processExited": true,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "limits": [
+    "This cannot reconstruct the unrecorded first failure from the previous round.",
+    "Cold/warm observations identify intervals, not macOS security subsystem root causes.",
+    "Instrumentation is only in memory; production source and1200ms deadline unchanged."
+  ],
+  "finishedAt": "2026-10-19T15:31:07.960Z"
+}

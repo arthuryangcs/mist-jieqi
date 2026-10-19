@@ -1,0 +1,455 @@
+{
+  "startedAt": "2026-10-19T15:38:59.515Z",
+  "scope": "full",
+  "onlyBudget": 1000,
+  "timingDefinition": "postMessage to observed UI idle, includes readiness polling; last engine event is recorded separately",
+  "browser": "155.0.8059.80",
+  "cpu": "Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz",
+  "architecture": "x64",
+  "baseURL": "http://127.0.0.1:8766/",
+  "tests": [
+    {
+      "name": "默认C++人机对战、实际核心确认、重复点击、对手分析不外泄",
+      "passed": true
+    },
+    {
+      "name": "C++思考中悔棋，终止子进程，无迟到落子",
+      "passed": true
+    },
+    {
+      "name": "C++思考中重开取消进程并恢复30暗子",
+      "passed": true
+    },
+    {
+      "name": "流式完整层、五候选、分析缓存按引擎隔离、明确JavaScript回退",
+      "passed": true
+    },
+    {
+      "name": "C++双方自动对战至少4手、暂停、单步、双方私人观察隔离",
+      "passed": true
+    },
+    {
+      "name": "C++自动对战思考中悔棋/重开，停止循环及子进程",
+      "passed": true
+    },
+    {
+      "name": "故障注入：C++服务出错明确停止，无暗中切换或落子",
+      "passed": true
+    },
+    {
+      "name": "移动视口引擎选择与棋盘无横向溢出",
+      "passed": true
+    },
+    {
+      "name": "真实浏览器端到端计时：两次轮换、同公开输入/预算/样本",
+      "passed": true
+    }
+  ],
+  "timings": [
+    {
+      "position": "开局",
+      "repeat": 0,
+      "engine": "cpp",
+      "budgetMs": 1000,
+      "depth": 4,
+      "samples": 8,
+      "nodes": 2790130,
+      "threads": 4,
+      "seed": 1075149473,
+      "move": {
+        "from": 64,
+        "to": 1
+      },
+      "score": 77.10421607459259,
+      "sourceSha256": "73de0d5768fbedd97d46305891a0513f95c7a856aa5aba8edff8a92e2d1798d0",
+      "observationSha256": "af147cbf21007e455b1face0ced553e3c119f24c0b0237d90173296486023a9a",
+      "engineVerified": true,
+      "firstProgressMs": 23.100000023841858,
+      "endToEndMs": 982.3000000119209,
+      "lastEngineEventMs": 976.6000000238419,
+      "finalEventReceived": true,
+      "hostDeadlineStop": false,
+      "coreMs": 941.280535,
+      "coreTimingKind": "final-response",
+      "completeDepths": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "position": "开局",
+      "repeat": 0,
+      "engine": "js",
+      "budgetMs": 1000,
+      "depth": 2,
+      "samples": 8,
+      "nodes": 122800,
+      "threads": 1,
+      "seed": 1075149473,
+      "move": {
+        "from": 64,
+        "to": 1
+      },
+      "score": 32.59487964945759,
+      "sourceSha256": null,
+      "observationSha256": "af147cbf21007e455b1face0ced553e3c119f24c0b0237d90173296486023a9a",
+      "engineVerified": true,
+      "firstProgressMs": 62.60000002384186,
+      "endToEndMs": 997.7000000476837,
+      "lastEngineEventMs": 981,
+      "finalEventReceived": true,
+      "hostDeadlineStop": false,
+      "coreMs": 965,
+      "coreTimingKind": "final-response",
+      "completeDepths": [
+        1,
+        2
+      ]
+    },
+    {
+      "position": "中局2111/20",
+      "repeat": 0,
+      "engine": "js",
+      "budgetMs": 1000,
+      "depth": 3,
+      "samples": 8,
+      "nodes": 105456,
+      "threads": 1,
+      "seed": 2341239257,
+      "move": {
+        "from": 72,
+        "to": 73
+      },
+      "score": -95.70843380438411,
+      "sourceSha256": null,
+      "observationSha256": "4ef777f8a89cc54361cfdf85116e1bf94915bf6daee136ba698728639ec0d8fd",
+      "engineVerified": true,
+      "firstProgressMs": 47.09999996423721,
+      "endToEndMs": 999.3999999761581,
+      "lastEngineEventMs": 989.0999999642372,
+      "finalEventReceived": true,
+      "hostDeadlineStop": false,
+      "coreMs": 965,
+      "coreTimingKind": "final-response",
+      "completeDepths": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "position": "中局2111/20",
+      "repeat": 0,
+      "engine": "cpp",
+      "budgetMs": 1000,
+      "depth": 5,
+      "samples": 8,
+      "nodes": 2871652,
+      "threads": 4,
+      "seed": 2341239257,
+      "move": {
+        "from": 72,
+        "to": 73
+      },
+      "score": -117.85930262619662,
+      "sourceSha256": "73de0d5768fbedd97d46305891a0513f95c7a856aa5aba8edff8a92e2d1798d0",
+      "observationSha256": "4ef777f8a89cc54361cfdf85116e1bf94915bf6daee136ba698728639ec0d8fd",
+      "engineVerified": true,
+      "firstProgressMs": 20.80000001192093,
+      "endToEndMs": 1014.1999999880791,
+      "lastEngineEventMs": 996.5,
+      "finalEventReceived": true,
+      "hostDeadlineStop": false,
+      "coreMs": 940.095995,
+      "coreTimingKind": "final-response",
+      "completeDepths": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "position": "全明10子残局",
+      "repeat": 0,
+      "engine": "cpp",
+      "budgetMs": 1000,
+      "depth": 6,
+      "samples": 1,
+      "nodes": 1003576,
+      "threads": 1,
+      "seed": 4205803717,
+      "move": {
+        "from": 72,
+        "to": 0
+      },
+      "score": 205,
+      "sourceSha256": "73de0d5768fbedd97d46305891a0513f95c7a856aa5aba8edff8a92e2d1798d0",
+      "observationSha256": "87aeb1c9697983cd2407ffecb722c61548ca26f375861924b820c51dac3e2f35",
+      "engineVerified": true,
+      "firstProgressMs": 24,
+      "endToEndMs": 981.3000000119209,
+      "lastEngineEventMs": 966.8000000119209,
+      "finalEventReceived": true,
+      "hostDeadlineStop": false,
+      "coreMs": 938.965861,
+      "coreTimingKind": "final-response",
+      "completeDepths": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "position": "全明10子残局",
+      "repeat": 0,
+      "engine": "js",
+      "budgetMs": 1000,
+      "depth": 5,
+      "samples": 1,
+      "nodes": 139184,
+      "threads": 1,
+      "seed": 4205803717,
+      "move": {
+        "from": 72,
+        "to": 0
+      },
+      "score": 213,
+      "sourceSha256": null,
+      "observationSha256": "87aeb1c9697983cd2407ffecb722c61548ca26f375861924b820c51dac3e2f35",
+      "engineVerified": true,
+      "firstProgressMs": 26.900000035762787,
+      "endToEndMs": 993.8000000119209,
+      "lastEngineEventMs": 982.2000000476837,
+      "finalEventReceived": true,
+      "hostDeadlineStop": false,
+      "coreMs": 965,
+      "coreTimingKind": "final-response",
+      "completeDepths": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "position": "开局",
+      "repeat": 1,
+      "engine": "js",
+      "budgetMs": 1000,
+      "depth": 2,
+      "samples": 8,
+      "nodes": 116640,
+      "threads": 1,
+      "seed": 1075149473,
+      "move": {
+        "from": 64,
+        "to": 1
+      },
+      "score": 32.59487964945759,
+      "sourceSha256": null,
+      "observationSha256": "af147cbf21007e455b1face0ced553e3c119f24c0b0237d90173296486023a9a",
+      "engineVerified": true,
+      "firstProgressMs": 70.19999998807907,
+      "endToEndMs": 996.5,
+      "lastEngineEventMs": 987.3999999761581,
+      "finalEventReceived": true,
+      "hostDeadlineStop": false,
+      "coreMs": 965,
+      "coreTimingKind": "final-response",
+      "completeDepths": [
+        1,
+        2
+      ]
+    },
+    {
+      "position": "开局",
+      "repeat": 1,
+      "engine": "cpp",
+      "budgetMs": 1000,
+      "depth": 4,
+      "samples": 8,
+      "nodes": 2909296,
+      "threads": 4,
+      "seed": 1075149473,
+      "move": {
+        "from": 64,
+        "to": 1
+      },
+      "score": 77.10421607459259,
+      "sourceSha256": "73de0d5768fbedd97d46305891a0513f95c7a856aa5aba8edff8a92e2d1798d0",
+      "observationSha256": "af147cbf21007e455b1face0ced553e3c119f24c0b0237d90173296486023a9a",
+      "engineVerified": true,
+      "firstProgressMs": 20.600000023841858,
+      "endToEndMs": 996.9000000357628,
+      "lastEngineEventMs": 984,
+      "finalEventReceived": true,
+      "hostDeadlineStop": false,
+      "coreMs": 942.012549,
+      "coreTimingKind": "final-response",
+      "completeDepths": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "position": "中局2111/20",
+      "repeat": 1,
+      "engine": "cpp",
+      "budgetMs": 1000,
+      "depth": 5,
+      "samples": 8,
+      "nodes": 3050368,
+      "threads": 4,
+      "seed": 2341239257,
+      "move": {
+        "from": 72,
+        "to": 73
+      },
+      "score": -117.85930262619662,
+      "sourceSha256": "73de0d5768fbedd97d46305891a0513f95c7a856aa5aba8edff8a92e2d1798d0",
+      "observationSha256": "4ef777f8a89cc54361cfdf85116e1bf94915bf6daee136ba698728639ec0d8fd",
+      "engineVerified": true,
+      "firstProgressMs": 24.5,
+      "endToEndMs": 1016.3999999761581,
+      "lastEngineEventMs": 997.0999999642372,
+      "finalEventReceived": true,
+      "hostDeadlineStop": false,
+      "coreMs": 939.185253,
+      "coreTimingKind": "final-response",
+      "completeDepths": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "position": "中局2111/20",
+      "repeat": 1,
+      "engine": "js",
+      "budgetMs": 1000,
+      "depth": 3,
+      "samples": 8,
+      "nodes": 115688,
+      "threads": 1,
+      "seed": 2341239257,
+      "move": {
+        "from": 72,
+        "to": 73
+      },
+      "score": -95.70843380438411,
+      "sourceSha256": null,
+      "observationSha256": "4ef777f8a89cc54361cfdf85116e1bf94915bf6daee136ba698728639ec0d8fd",
+      "engineVerified": true,
+      "firstProgressMs": 39.30000001192093,
+      "endToEndMs": 998.3000000119209,
+      "lastEngineEventMs": 982.2000000476837,
+      "finalEventReceived": true,
+      "hostDeadlineStop": false,
+      "coreMs": 965,
+      "coreTimingKind": "final-response",
+      "completeDepths": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "position": "全明10子残局",
+      "repeat": 1,
+      "engine": "js",
+      "budgetMs": 1000,
+      "depth": 5,
+      "samples": 1,
+      "nodes": 139464,
+      "threads": 1,
+      "seed": 4205803717,
+      "move": {
+        "from": 72,
+        "to": 0
+      },
+      "score": 213,
+      "sourceSha256": null,
+      "observationSha256": "87aeb1c9697983cd2407ffecb722c61548ca26f375861924b820c51dac3e2f35",
+      "engineVerified": true,
+      "firstProgressMs": 32.30000001192093,
+      "endToEndMs": 997.7000000476837,
+      "lastEngineEventMs": 986.9000000357628,
+      "finalEventReceived": true,
+      "hostDeadlineStop": false,
+      "coreMs": 965,
+      "coreTimingKind": "final-response",
+      "completeDepths": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "position": "全明10子残局",
+      "repeat": 1,
+      "engine": "cpp",
+      "budgetMs": 1000,
+      "depth": 6,
+      "samples": 1,
+      "nodes": 1041328,
+      "threads": 1,
+      "seed": 4205803717,
+      "move": {
+        "from": 72,
+        "to": 0
+      },
+      "score": 205,
+      "sourceSha256": "73de0d5768fbedd97d46305891a0513f95c7a856aa5aba8edff8a92e2d1798d0",
+      "observationSha256": "87aeb1c9697983cd2407ffecb722c61548ca26f375861924b820c51dac3e2f35",
+      "engineVerified": true,
+      "firstProgressMs": 14.699999988079071,
+      "endToEndMs": 980.1999999880791,
+      "lastEngineEventMs": 966.1999999880791,
+      "finalEventReceived": true,
+      "hostDeadlineStop": false,
+      "coreMs": 940.063998,
+      "coreTimingKind": "final-response",
+      "completeDepths": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  ],
+  "errors": [],
+  "passed": true,
+  "service": {
+    "engine": "cpp-native",
+    "sourceSha256": "73de0d5768fbedd97d46305891a0513f95c7a856aa5aba8edff8a92e2d1798d0",
+    "binarySha256": "2304327e3cb91987780ab453fa98db5e17383d32c4c39009649092ee9f14c49b",
+    "maxThreads": 4,
+    "independentWorldSearch": true,
+    "transport": "loopback-http",
+    "protocol": 2,
+    "active": 0,
+    "completed": 0,
+    "aborted": 0
+  },
+  "responsiveness": {
+    "frameMs": 14.199999988079071,
+    "undoClickMs": 57
+  },
+  "finishedAt": "2026-10-19T15:39:32.068Z"
+}

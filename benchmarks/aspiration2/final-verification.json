@@ -1,0 +1,118 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-19T15:49:36.494Z",
+  "adopted": "capacity-bounded existing-key TT update in C++ and JS",
+  "disabled": [
+    "quiet-check",
+    "aspiration",
+    "request worker pool"
+  ],
+  "service": {
+    "engine": "cpp-native",
+    "sourceSha256": "73de0d5768fbedd97d46305891a0513f95c7a856aa5aba8edff8a92e2d1798d0",
+    "binarySha256": "2304327e3cb91987780ab453fa98db5e17383d32c4c39009649092ee9f14c49b",
+    "maxThreads": 4,
+    "independentWorldSearch": true,
+    "transport": "loopback-http",
+    "protocol": 2,
+    "active": 0,
+    "completed": 14,
+    "aborted": 4
+  },
+  "match": {
+    "overall": {
+      "games": 8,
+      "wins": 1,
+      "draws": 1,
+      "losses": 6,
+      "unresolved": 0,
+      "winRate": 0.125,
+      "scoreRate": 0.1875
+    },
+    "red": {
+      "games": 4,
+      "wins": 0,
+      "draws": 1,
+      "losses": 3,
+      "unresolved": 0,
+      "winRate": 0,
+      "scoreRate": 0.125
+    },
+    "black": {
+      "games": 4,
+      "wins": 1,
+      "draws": 0,
+      "losses": 3,
+      "unresolved": 0,
+      "winRate": 0.25,
+      "scoreRate": 0.25
+    }
+  },
+  "technical": {
+    "wallClockTimeout": 0,
+    "illegalMove": 0,
+    "processCrash": 0,
+    "protocolOrResponseFailure": 0,
+    "setupFailure": 0,
+    "unresolved": 0
+  },
+  "sourceHashes": {
+    "native/search.cpp": "73de0d5768fbedd97d46305891a0513f95c7a856aa5aba8edff8a92e2d1798d0",
+    "ai.js": "1c36be499adb397ec55c15a687644c409c4fbfbfb9de5002943e9a3d4e4714be",
+    "native/service-check.mjs": "d8f93ce01e201951cff9efeff01a5503ecfed8d079289a83dde3b24f20f6e574",
+    "native/aspiration2-variants.mjs": "69bfcdb880628f5461e3e15bd26bdb98b9f01863c118cdd93a4ac8082e045ed5",
+    "native/aspiration2-benchmark.mjs": "4f08794431a764025aedb97a4597f85164eb39eac136cba44e688410ce73f105",
+    "native/aspiration2-check.mjs": "bb04ddb34f82c89972c30060f8a1ff5954a2df93a61c7c9d8c8710e6cc1dc481",
+    "native/aspiration2-match.mjs": "29bc6b91e819e13c382fe9e2874e97c3451e507dd53f79c505e30437eccd6f2a",
+    "native/aspiration2-match-verify.mjs": "6b07627a3f69d1aefa33f3cc1bd7401c90b0507e623a654fa238a1ee7bfca4de",
+    "native/aspiration2-report.mjs": "3fa3133cb3eadf22fd72fb8447654fe36cd09d2585d6391f7dadee7599c96349",
+    "native/watchdog-diagnosis.mjs": "df4801657d1a687970bc5018a2048860b13419c5b4eef25272bf2bbc9a60dbe1",
+    "README.md": "63e2515c302b03bd1f7a61f91d291483d6603fd66b3aada52ebc07a9657c56a4",
+    "native/README.md": "54a85f6e34d40cbc1ac34b2fe9884f327f848330584fb1846bca622140d4fdd6",
+    "TT_CACHE_REPORT.md": "f5c459ae375bfae9c762e430907b7d2002021601db1357a8e8c374ad44c80b06"
+  },
+  "artifactHashes": {
+    "benchmarks/aspiration2/audit.json": "7d44af62aeec972c12a5b8389558e05303555efe696f0f850af105b340701af5",
+    "benchmarks/aspiration2/baseline-ai.js": "66bca44c185829ab7a42d5432fc8323c2937fed2be475ced46a654a7a2e1c18e",
+    "benchmarks/aspiration2/baseline-build.json": "6bf793c558f2c8ae5b843342ad5618da7dcb28b8ca77b49855c7c409921087b7",
+    "benchmarks/aspiration2/baseline.cpp": "eb1c25bbd4209321bbd0a881128bce0de784d300d2aed8abe6c189167ac38698",
+    "benchmarks/aspiration2/browser/01-cpp-game.png": "b5d3ecd08455f65da4a4114924407c9f2a9651dfd3ac9724dc0e6a85fc396270",
+    "benchmarks/aspiration2/browser/02-cpp-analysis.png": "b39fcbdd08d9c3553c372d102fbd07e592ec23756e434afa91346a8341c6f2f6",
+    "benchmarks/aspiration2/browser/03-cpp-mobile.png": "63cd1f8e46290bdab98a8ead5afb5c1d688edd4420a490e57313a3a4124f5808",
+    "benchmarks/aspiration2/browser/results.json": "4aba3785182c4abdc9381f889084a79d251b55cfbe7e27550fc5d9b862f74e28",
+    "benchmarks/aspiration2/candidate.cpp": "73de0d5768fbedd97d46305891a0513f95c7a856aa5aba8edff8a92e2d1798d0",
+    "benchmarks/aspiration2/cap.json": "4d0b3c4acd7b4e5688201bc687cdb519e879297ad5f9de9aaf4f68b317e2d8cf",
+    "benchmarks/aspiration2/check-bothFast-asan.json": "364474fa513afa12e32cef65f4075de1ea578680bf202acdbff0fca91bbef69b",
+    "benchmarks/aspiration2/check-refreshLookup-asan.json": "27c9c184ffeed868a80544308bb0d1c3b9583fbc23ce807c2e2002c4796b774f",
+    "benchmarks/aspiration2/check-refreshLookup-release-initial.json": "d5dd5df2469d9e9b2210036f55491e72dee9321e32f34f5399c3b340b6efdf89",
+    "benchmarks/aspiration2/check-refreshLookup-release.json": "eee6770ffbc7202d52e8b5c95d1fe6d3de9892646babe5a223d162e16baf04d7",
+    "benchmarks/aspiration2/check-refreshLookup-tsan.json": "a7cdf6f7c0616ff70a5e2097f396d0e775462facaa1e1417a794183cb6ba7c5d",
+    "benchmarks/aspiration2/deep.json": "1a312996fdf32ecdbcee9f5bf914156332fe7d1cf128cb0e7411a4e57ecc18e5",
+    "benchmarks/aspiration2/environment.json": "264fa8aa730866955cf5616414cd1bd49ff421736308e8fdb5e67e04743465b9",
+    "benchmarks/aspiration2/final.json": "0b3569f851b593f1febece175b75ce769eabb162dbab38f2f191661aa248b245",
+    "benchmarks/aspiration2/finalbudgets.json": "d9a352a4f1d81fcbec983f84ce81db024a64476589bfd4e006e37bbde8ef0a14",
+    "benchmarks/aspiration2/finalsaturated.json": "7c07a497df8aab16dd9d59ec17b9c9327465c243a84a1c5bb98f19186d877a8a",
+    "benchmarks/aspiration2/lookup.json": "623e101dbcbe9a2c397f67bb3200a9b3f78fdec29778dac9baba38d3255ed004",
+    "benchmarks/aspiration2/lookupbudgets.json": "e917c54114c5c64a2613056f67ad89b8f29f225d54b2238f5cea03fc23da01f3",
+    "benchmarks/aspiration2/lookupsaturated.json": "9d690853e9835daaefe54bc2b39b35151835adc35f117e03729af340b6f55201",
+    "benchmarks/aspiration2/pika-matches.json": "b34e0dbd6c94480db452238784db1c124b27e3d48d29eb193df399c08adf0684",
+    "benchmarks/aspiration2/pika-verification.json": "409301f4d4da0ebe3d3fc2d826a6cab505fd75ef83ddab43dac6ea112c0d46ed",
+    "benchmarks/aspiration2/pool.json": "6a774ba9d8f7ece54c3e535153531da776dcd619521736ea0c8c54f5efcb99ba",
+    "benchmarks/aspiration2/poolaudit.json": "20fc54d5b43d16b530cd0b4b0060cea2b319d9b75be6338689573a10cca98d17",
+    "benchmarks/aspiration2/pooldeep.json": "8279d560c974d9e22c324bd5dc2ab025e7abf74541e455e9d2a0aca18e6ccba8",
+    "benchmarks/aspiration2/production-deep-reference.json": "c573a787feb20c22748c134c352bc57ed5d9121748518c330acdc79ac84e00ec",
+    "benchmarks/aspiration2/production-native.json": "ee0cabb5d14e1a13a192f57ee96cd4f8d882fe1fc4db2890a0e96da3111791a6",
+    "benchmarks/aspiration2/production-sanitized.json": "f68bc747c2fb6f046c9ecbb4202244d3fdc5e144fd3e1d74777b37723ab77e63",
+    "benchmarks/aspiration2/production-service.json": "565beef0c63accf06d6a017b03df5c1ac1911872f04e509bf6738cdfb73f5fa1",
+    "benchmarks/aspiration2/production-status.json": "5cb40ca225daeb55c92d74ab8aa85ce2806a214d1fef0e24e5d1a3a85959cacc",
+    "benchmarks/aspiration2/saturated.json": "18b14a65ad26750a471c7f383fc5ef670336a20b2e1047c212c7fccba4c1535c",
+    "benchmarks/aspiration2/screen.json": "1b6003dbef00bd5a6524ac1b4cd70ab96f4d2d433070f7f5e8b09fd4a860b47c",
+    "benchmarks/aspiration2/summary.json": "f0a8c6dc84f97c0cbec95c1cfdf14888d6f7d90a2bacb34cab82b59f1448544d",
+    "benchmarks/aspiration2/unit.json": "705fe07ddabc1955ab6a88d8438ccb23b00c97ad2e89e0125628972b6d7b3b42",
+    "benchmarks/aspiration2/watchdog.json": "68e85898f0a49ae0e525e08595ea9f1386348d98763606ca8d556759ba24a6e2"
+  },
+  "remaining": [
+    "No evidence of exceeding PikaJieQi or a causal win-rate improvement over the prior different-layout baseline.",
+    "The exact cause of the previous first watchdog failure remains unconfirmed; startup intervals and both timeout cases are now tested."
+  ]
+}

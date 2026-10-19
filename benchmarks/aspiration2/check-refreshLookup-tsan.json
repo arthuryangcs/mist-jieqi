@@ -1,0 +1,331 @@
+{
+  "kind": "tsan",
+  "variant": "refreshLookup",
+  "startedAt": "2026-10-19T15:28:50.125Z",
+  "builds": [
+    {
+      "name": "baseline",
+      "audit": true,
+      "cap": 90000,
+      "sanitizer": "thread",
+      "sourceSha256": "64b08d978c95774a1264fdc9586db274d0527edba76f70ffc34024ff9c2e6adc",
+      "binarySha256": "adbd8936fa8a06fbf9bf9dfc23dea731986cc75c8e33ff8a16ebfca3b04e802d",
+      "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+      "flags": [
+        "-std=c++17",
+        "-ffp-contract=off",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-isystem",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1",
+        "-O1",
+        "-g",
+        "-fsanitize=thread",
+        "-fno-omit-frame-pointer",
+        "-DMIST_VERIFY_RESTORE"
+      ],
+      "warnings": ""
+    },
+    {
+      "name": "refreshLookup",
+      "audit": true,
+      "cap": 90000,
+      "sanitizer": "thread",
+      "sourceSha256": "4aaafef4d7f4118dcb729a84cade65b1c474c78d12d5749788f37161a73ec23c",
+      "binarySha256": "368a83248eac8a0a5880559f4cd57db5643aedb004c6042972a833a35152a607",
+      "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+      "flags": [
+        "-std=c++17",
+        "-ffp-contract=off",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-isystem",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1",
+        "-O1",
+        "-g",
+        "-fsanitize=thread",
+        "-fno-omit-frame-pointer",
+        "-DMIST_VERIFY_RESTORE"
+      ],
+      "warnings": ""
+    }
+  ],
+  "rules": [
+    {
+      "name": "10007/0/r",
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "10007/0/b",
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "10007/0/null",
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "10007/8/r",
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "10007/8/b",
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "10007/8/null",
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "10007/16/r",
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "10007/16/b",
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "10007/16/null",
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "10007/24/r",
+      "transitions": 41,
+      "passed": true
+    },
+    {
+      "name": "10007/24/b",
+      "transitions": 41,
+      "passed": true
+    },
+    {
+      "name": "10007/24/null",
+      "transitions": 41,
+      "passed": true
+    },
+    {
+      "name": "10009/0/r",
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "10009/0/b",
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "10009/0/null",
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "10009/8/r",
+      "transitions": 33,
+      "passed": true
+    },
+    {
+      "name": "10009/8/b",
+      "transitions": 33,
+      "passed": true
+    },
+    {
+      "name": "10009/8/null",
+      "transitions": 33,
+      "passed": true
+    },
+    {
+      "name": "10009/16/r",
+      "transitions": 26,
+      "passed": true
+    },
+    {
+      "name": "10009/16/b",
+      "transitions": 26,
+      "passed": true
+    },
+    {
+      "name": "10009/16/null",
+      "transitions": 26,
+      "passed": true
+    },
+    {
+      "name": "10009/24/r",
+      "transitions": 39,
+      "passed": true
+    },
+    {
+      "name": "10009/24/b",
+      "transitions": 39,
+      "passed": true
+    },
+    {
+      "name": "10009/24/null",
+      "transitions": 39,
+      "passed": true
+    },
+    {
+      "name": "10009/32/r",
+      "transitions": 36,
+      "passed": true
+    },
+    {
+      "name": "10009/32/b",
+      "transitions": 36,
+      "passed": true
+    },
+    {
+      "name": "10009/32/null",
+      "transitions": 36,
+      "passed": true
+    },
+    {
+      "name": "10037/0/r",
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "10037/0/b",
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "10037/0/null",
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "10037/8/r",
+      "transitions": 23,
+      "passed": true
+    },
+    {
+      "name": "10037/8/b",
+      "transitions": 23,
+      "passed": true
+    },
+    {
+      "name": "10037/8/null",
+      "transitions": 23,
+      "passed": true
+    },
+    {
+      "name": "10037/16/r",
+      "transitions": 26,
+      "passed": true
+    },
+    {
+      "name": "10037/16/b",
+      "transitions": 26,
+      "passed": true
+    },
+    {
+      "name": "10037/16/null",
+      "transitions": 26,
+      "passed": true
+    },
+    {
+      "name": "10037/24/r",
+      "transitions": 30,
+      "passed": true
+    },
+    {
+      "name": "10037/24/b",
+      "transitions": 30,
+      "passed": true
+    },
+    {
+      "name": "10037/24/null",
+      "transitions": 30,
+      "passed": true
+    },
+    {
+      "name": "10037/32/r",
+      "transitions": 30,
+      "passed": true
+    },
+    {
+      "name": "10037/32/b",
+      "transitions": 30,
+      "passed": true
+    },
+    {
+      "name": "10037/32/null",
+      "transitions": 30,
+      "passed": true
+    }
+  ],
+  "searches": [
+    {
+      "name": "初始全暗",
+      "depth": 4,
+      "nodes": 1666160,
+      "passed": true
+    },
+    {
+      "name": "可达中局 2111 / 44步",
+      "depth": 4,
+      "nodes": 546046,
+      "passed": true
+    },
+    {
+      "name": "全明10子残局",
+      "depth": 5,
+      "nodes": 117642,
+      "passed": true
+    },
+    {
+      "nodeLimit": 1000,
+      "depth": 0,
+      "nodes": 1001,
+      "passed": true
+    },
+    {
+      "nodeLimit": 10000,
+      "depth": 1,
+      "nodes": 10001,
+      "passed": true
+    },
+    {
+      "budget": 0,
+      "depth": 0,
+      "interruptedDepth": 1,
+      "passed": true
+    },
+    {
+      "budget": 5,
+      "depth": 0,
+      "interruptedDepth": 1,
+      "passed": true
+    },
+    {
+      "budget": 25,
+      "depth": 1,
+      "interruptedDepth": 2,
+      "passed": true
+    },
+    {
+      "budget": 100,
+      "depth": 1,
+      "interruptedDepth": 2,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "informationIsolation": true,
+  "sameProcessRecovery": true,
+  "stderr": {
+    "baseline": "",
+    "bothFast": ""
+  },
+  "finishedAt": "2026-10-19T15:29:30.093Z"
+}

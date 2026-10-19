@@ -275,7 +275,7 @@ struct Search {
         std::stable_sort(scored.begin(),scored.end(),[](const ScoredMove& a,const ScoredMove& b){return a.score>b.score;});
         for(size_t i=0;i<moves.size();i++)moves[i]=scored[i].move;
         Move best;bool first=true;
-        auto save=[&](double score,int flag,Move m){if(hasKey&&cycleStart==s.cycles&&s.table.size()<90000)s.table[key]={depth,flag,score>98000?score+ply:score< -98000?score-ply:score,m};};
+        auto save=[&](double score,int flag,Move m){if(hasKey&&cycleStart==s.cycles&&(s.table.size()<90000||s.table.find(key)!=s.table.end()))s.table[key]={depth,flag,score>98000?score+ply:score< -98000?score-ply:score,m};};
         for(Move m:moves) {
             bool capture=s.board[m.to].live();Undo old=push(s,m);double v;
             try {

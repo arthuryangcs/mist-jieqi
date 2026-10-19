@@ -71,8 +71,9 @@ test('独立服务时限在模拟核心阻塞时保留完整轮次并杀进程',
  fs.writeFileSync(source,`#include <iostream>
 #include <string>
 #include <chrono>
-int main(){
+int main(int argc,char**){
  std::cout<<R"({"ready":true,"protocol":2,"streaming":true})"<<std::endl;
+ if(argc>1)return 0;
  std::string request;std::getline(std::cin,request);
  std::cout<<R"({"progress":true,"result":{"depth":1,"nodes":1,"samples":8,"elapsedMs":1,"move":{"from":54,"to":45},"score":0,"allCandidates":[{"from":54,"to":45,"score":0,"spread":0}]}})"<<std::endl;
  const auto end=std::chrono::steady_clock::now()+std::chrono::seconds(5);
@@ -81,9 +82,33 @@ int main(){
 `);
  let stalled;try{
   const compiled=spawnSync(process.env.CXX||'clang++',[...built.flags,source,'-o',stub],{encoding:'utf8'});assert.equal(compiled.status,0,compiled.stderr);
+  // Isolate a stall after progress from first execution of a new native image.
+  // The production service still counts readiness inside its unchanged clock.
+  const probeBegin=performance.now(),probe=spawnSync(stub,['--ready-probe'],{input:'',encoding:'utf8',timeout:10000});
+  assert.equal(probe.status,0);assert.equal(probe.stderr,'');assert.equal(JSON.parse(probe.stdout).ready,true);const imageProbeMs=performance.now()-probeBegin;
   stalled=createLocalServer({executable:stub,buildInfo:built});const input=payload(1200),addr=await stalled.listen(0),begin=performance.now(),response=await fetch(`http://127.0.0.1:${addr.port}/api/search`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(input)}),rows=[];let child,exit;
   for await(const item of messages(response)){rows.push(item);if(item.progress&&!child){child=stalled.active.get(input.token).process;exit=once(child,'exit');}}
   assert(rows.at(-1).result.deadlineStop);assert.equal(rows.at(-1).result.depth,1);assert(performance.now()-begin<1800);assert.equal(stalled.active.size,0);assert(child);await exit;assert(child.exitCode!==null||child.signalCode!==null);
-  evidence.watchdog={injected:true,mock:'compiled-local-cpp',elapsedMs:performance.now()-begin,depth:1,initializationMs:rows[0].result.initializationMs,processExited:true};
+  evidence.watchdog={injected:true,mock:'compiled-local-cpp',imageProbeMs,elapsedMs:performance.now()-begin,depth:1,initializationMs:rows[0].result.initializationMs,processExited:true};
  }finally{if(stalled)await stalled.close();for(const file of[stub,source])fs.rmSync(file,{force:true});}
+}));
+test('核心未就绪时硬截止返回合法保底并清理进程',()=>checked('故障注入：就绪前截止',async()=>{
+ const stub=path.resolve('.cache/native/unready-core-test'),source=stub+'.cpp';
+ fs.writeFileSync(source,`#include <iostream>
+#include <chrono>
+int main(){const auto end=std::chrono::steady_clock::now()+std::chrono::seconds(2);
+while(std::chrono::steady_clock::now()<end){};
+std::cout<<R"({"ready":true,"protocol":2,"streaming":true})"<<std::endl;}
+`);
+ let stalled;try{
+  const compiled=spawnSync(process.env.CXX||'clang++',[...built.flags,source,'-o',stub],{encoding:'utf8'});assert.equal(compiled.status,0,compiled.stderr);
+  stalled=createLocalServer({executable:stub,buildInfo:built});const input=payload(1200),addr=await stalled.listen(0),begin=performance.now();
+  const response=await fetch(`http://127.0.0.1:${addr.port}/api/search`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(input)});
+  const child=stalled.active.get(input.token).process,exit=once(child,'exit'),rows=[];
+  for await(const item of messages(response))rows.push(item);
+  const result=rows.at(-1).result;assert(result.deadlineStop);assert.equal(result.depth,0);assert.equal(result.engineVerified,false);
+  assert(legalMoves(view).some(m=>m.from===result.move.from&&m.to===result.move.to));assert(rows.every(r=>!r.progress));
+  assert(performance.now()-begin<1800);assert.equal(stalled.active.size,0);await exit;assert(child.exitCode!==null||child.signalCode!==null);
+  evidence.unreadyWatchdog={elapsedMs:performance.now()-begin,depth:0,processExited:true};
+ }finally{if(stalled)await stalled.close();for(const f of [stub,source])fs.rmSync(f,{force:true});}
 }));

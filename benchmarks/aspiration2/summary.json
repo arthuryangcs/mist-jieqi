@@ -1,0 +1,225 @@
+{
+  "passed": true,
+  "generatedAt": "2026-10-19T15:48:34.366Z",
+  "baselineCommit": "93f617e",
+  "adopted": "refreshLookup only",
+  "quietChecks": false,
+  "aspiration": false,
+  "requestWorkerPool": false,
+  "build": {
+    "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+    "flags": [
+      "-std=c++17",
+      "-O3",
+      "-DNDEBUG",
+      "-ffp-contract=off",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-isystem",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+    ],
+    "threads": 4,
+    "independentWorldSearch": true,
+    "architecture": "x64",
+    "sourceSha256": "73de0d5768fbedd97d46305891a0513f95c7a856aa5aba8edff8a92e2d1798d0",
+    "binarySha256": "2304327e3cb91987780ab453fa98db5e17383d32c4c39009649092ee9f14c49b",
+    "sanitize": false,
+    "compilerWarnings": ""
+  },
+  "performance": [
+    {
+      "kind": "ordinary",
+      "position": "初始全暗",
+      "depth": 5,
+      "baselineMs": 2775.542767,
+      "candidateMs": 2756.301773,
+      "ratio": 0.9930676643758595,
+      "baselineNodes": 7390955,
+      "candidateNodes": 7390955
+    },
+    {
+      "kind": "ordinary",
+      "position": "可达中局 2111 / 20步",
+      "depth": 5,
+      "baselineMs": 611.518691,
+      "candidateMs": 605.154423,
+      "ratio": 0.9895926844204995,
+      "baselineNodes": 2052867,
+      "candidateNodes": 2052867
+    },
+    {
+      "kind": "ordinary",
+      "position": "可达中局 2111 / 44步",
+      "depth": 5,
+      "baselineMs": 602.420675,
+      "candidateMs": 625.103245,
+      "ratio": 1.0376523763896384,
+      "baselineNodes": 2350637,
+      "candidateNodes": 2350637
+    },
+    {
+      "kind": "ordinary",
+      "position": "可达中局 2221 / 44步",
+      "depth": 5,
+      "baselineMs": 963.052934,
+      "candidateMs": 974.515413,
+      "ratio": 1.0119022315340351,
+      "baselineNodes": 2957082,
+      "candidateNodes": 2957082
+    },
+    {
+      "kind": "ordinary",
+      "position": "全明10子残局",
+      "depth": 6,
+      "baselineMs": 352.972764,
+      "candidateMs": 348.047184,
+      "ratio": 0.9860454389053089,
+      "baselineNodes": 469708,
+      "candidateNodes": 469708
+    },
+    {
+      "kind": "full",
+      "position": "可达中局 2111 / 44步",
+      "depth": 6,
+      "baselineMs": 3183.965994,
+      "candidateMs": 3045.941177,
+      "ratio": 0.9566500341837508,
+      "baselineNodes": 12738632,
+      "candidateNodes": 12489949
+    },
+    {
+      "kind": "full",
+      "position": "全明10子残局",
+      "depth": 7,
+      "baselineMs": 1942.502384,
+      "candidateMs": 1464.944203,
+      "ratio": 0.7541531042980693,
+      "baselineNodes": 2325319,
+      "candidateNodes": 1816113
+    }
+  ],
+  "equalBudgets": [
+    {
+      "position": "初始全暗",
+      "budget": 1000,
+      "baselineDepth": 4,
+      "candidateDepth": 4
+    },
+    {
+      "position": "初始全暗",
+      "budget": 6000,
+      "baselineDepth": 5,
+      "candidateDepth": 5
+    },
+    {
+      "position": "可达中局 2111 / 44步",
+      "budget": 1000,
+      "baselineDepth": 5,
+      "candidateDepth": 5
+    },
+    {
+      "position": "可达中局 2111 / 44步",
+      "budget": 6000,
+      "baselineDepth": 6,
+      "candidateDepth": 6
+    },
+    {
+      "position": "全明10子残局",
+      "budget": 1000,
+      "baselineDepth": 6,
+      "candidateDepth": 6
+    },
+    {
+      "position": "全明10子残局",
+      "budget": 6000,
+      "baselineDepth": 7,
+      "candidateDepth": 7
+    }
+  ],
+  "match": {
+    "overall": {
+      "games": 8,
+      "wins": 1,
+      "draws": 1,
+      "losses": 6,
+      "unresolved": 0,
+      "winRate": 0.125,
+      "scoreRate": 0.1875
+    },
+    "red": {
+      "games": 4,
+      "wins": 0,
+      "draws": 1,
+      "losses": 3,
+      "unresolved": 0,
+      "winRate": 0,
+      "scoreRate": 0.125
+    },
+    "black": {
+      "games": 4,
+      "wins": 1,
+      "draws": 0,
+      "losses": 3,
+      "unresolved": 0,
+      "winRate": 0.25,
+      "scoreRate": 0.25
+    }
+  },
+  "technical": {
+    "wallClockTimeout": 0,
+    "illegalMove": 0,
+    "processCrash": 0,
+    "protocolOrResponseFailure": 0,
+    "setupFailure": 0,
+    "unresolved": 0
+  },
+  "timing": {
+    "candidate": {
+      "moves": 249,
+      "medianMs": 1001.0626389999816,
+      "p95Ms": 1003.8316990000021,
+      "maxMs": 1019.4412080000038,
+      "overGrace": 0,
+      "hostStops": 159,
+      "fallbacks": 0,
+      "depthRange": [
+        1,
+        8
+      ]
+    },
+    "pika": {
+      "moves": 251,
+      "medianMs": 998.6578489999956,
+      "p95Ms": 999.671247000002,
+      "maxMs": 1004.4662910000188,
+      "overGrace": 0,
+      "hostStops": 0,
+      "fallbacks": 0,
+      "depthRange": [
+        7,
+        245
+      ]
+    }
+  },
+  "legalPlies": 500,
+  "darkCaptures": 54,
+  "tests": {
+    "unit": 86,
+    "nativeRuleViews": 72,
+    "nativeTransitions": 2172,
+    "nativeSearches": 16,
+    "prototypeRuleViews": 42,
+    "asan": true,
+    "tsan": true,
+    "serviceGroups": 7,
+    "browserGroups": 9,
+    "watchdogTrials": 8
+  },
+  "limits": [
+    "Four paired new layouts against one fixed Pika HCE build; no causal delta from prior20 different layouts, no Elo or superiority claim.",
+    "1s/6s benchmark complete depths stayed equal; fixed-depth speed is not evidence of higher practical strength.",
+    "Historical first watchdog failure was not reproduced; cold-readiness timing and controlled delayed cases do not prove its exact cause.",
+    "Existing sampling, cycle approximation, simple evaluation and no cross-move cache remain unchanged."
+  ]
+}

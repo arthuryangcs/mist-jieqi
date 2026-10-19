@@ -1,0 +1,1 @@
+{"engine":"cpp-native","sourceSha256":"73de0d5768fbedd97d46305891a0513f95c7a856aa5aba8edff8a92e2d1798d0","binarySha256":"2304327e3cb91987780ab453fa98db5e17383d32c4c39009649092ee9f14c49b","maxThreads":4,"independentWorldSearch":true,"transport":"loopback-http","protocol":2,"active":0,"completed":14,"aborted":4}
