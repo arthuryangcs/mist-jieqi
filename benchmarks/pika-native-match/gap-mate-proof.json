@@ -1,0 +1,57 @@
+{
+  "passed": true,
+  "previousRestrictedPolicyIncomplete": true,
+  "protocol": "Independent exhaustive legal defender replies, bounded5 plies after the original capture, in the SAME8 hypothetical worlds sampled only from original public information. All attacker legal replies included; known mating moves tried first. An initial restricted-policy assertion failed because it omitted responses such as king captures; not treated as proof of escape. Not actual hidden layout and not a proof over every possible world.",
+  "seed": 4003,
+  "ply": 49,
+  "rows": [
+    {
+      "worldHash": "b8f79bcdc355d68beb30bafae0008f38a9b198d383d270f8ee9d94ae5766896e",
+      "forcedBlackWinWithin5PliesAfterCapture": true,
+      "terminalRequiresCheckmate": true,
+      "nodes": 245
+    },
+    {
+      "worldHash": "72b21004181e65fc1d26aeb0daef0b2151cddd61816de2e86fffb460f3ab93d6",
+      "forcedBlackWinWithin5PliesAfterCapture": true,
+      "terminalRequiresCheckmate": true,
+      "nodes": 245
+    },
+    {
+      "worldHash": "b4813dd06a1325cc8659786d8a0db929b861109453ec87bb5ed3d330b8424f1c",
+      "forcedBlackWinWithin5PliesAfterCapture": true,
+      "terminalRequiresCheckmate": true,
+      "nodes": 245
+    },
+    {
+      "worldHash": "a0ec1028adfa61ff11f5e223575e7367b64bc5dd9993de7532dd2fe89d4a9c09",
+      "forcedBlackWinWithin5PliesAfterCapture": true,
+      "terminalRequiresCheckmate": true,
+      "nodes": 245
+    },
+    {
+      "worldHash": "0054f0c0ed44ec02d07ead468e2ec44d281c0bd1dd6b15d514de4c35404f41ba",
+      "forcedBlackWinWithin5PliesAfterCapture": true,
+      "terminalRequiresCheckmate": true,
+      "nodes": 245
+    },
+    {
+      "worldHash": "aa4948505fd64e44a0c8d476c5cbb8292cccf22b85bc53ff95a05820a3fa6c92",
+      "forcedBlackWinWithin5PliesAfterCapture": true,
+      "terminalRequiresCheckmate": true,
+      "nodes": 245
+    },
+    {
+      "worldHash": "14bc6d1b39be65f3b344422a1758ce681b3924a87d564359f9dee0bf6fd3fec9",
+      "forcedBlackWinWithin5PliesAfterCapture": true,
+      "terminalRequiresCheckmate": true,
+      "nodes": 245
+    },
+    {
+      "worldHash": "30375ff37c8e96e417175e4813488bc4e2f42194bde7c93b384f6495df6dbc23",
+      "forcedBlackWinWithin5PliesAfterCapture": true,
+      "terminalRequiresCheckmate": true,
+      "nodes": 245
+    }
+  ]
+}

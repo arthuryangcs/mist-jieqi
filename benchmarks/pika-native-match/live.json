@@ -1,0 +1,37 @@
+{
+  "seed": 4057,
+  "candidateSide": "b",
+  "plies": 45,
+  "at": "2026-10-19T13:49:26.943Z",
+  "last": {
+    "ply": 45,
+    "side": "r",
+    "engine": "pika",
+    "move": {
+      "from": 24,
+      "to": 14
+    },
+    "elapsedMs": 5.8090119999833405,
+    "reportedElapsedMs": 6,
+    "projectionMs": 0.11994699999922886,
+    "verificationMs": 0.34439699997892603,
+    "nativeBudgetMs": 998,
+    "depth": null,
+    "nodes": null,
+    "score": null,
+    "threads": 4,
+    "deadlineStop": false,
+    "fallbackUsed": false,
+    "viewSha256": "00ec6696083dc96a526f3626945f27e24540e0c23304661279a25484eac38704",
+    "visibleFen": "1P1xkaR2/4c4/4R1A2/9/1A4p2/8p/3p2X2/2b6/4P4/3K1X1P1 w C1P2N1B2p1 3 23",
+    "knownDarkCaptures": 2,
+    "pikaInfo": [
+      "info depth 245 seldepth 2 multipv 1 score mate 1 nodes 32348 nps 5391333 hashfull 0 tbhits 0 time 6 pv g7f8"
+    ],
+    "revealed": null,
+    "captured": null,
+    "pikaToken": "g7f8XX",
+    "positionAfterSha256": "d48045b46ea964495634b2809d5ce555531879da9e83bac3a39ed5b1e285d512"
+  },
+  "completedGames": 19
+}

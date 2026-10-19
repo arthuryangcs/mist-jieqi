@@ -1,0 +1,534 @@
+{
+  "passed": true,
+  "partial": false,
+  "faultCounts": {
+    "wallClockTimeout": 1,
+    "illegalMove": 0,
+    "processCrash": 0,
+    "protocolOrResponseFailure": 0,
+    "setupFailure": 0,
+    "unresolved": 0
+  },
+  "verifiedAt": "2026-10-19T13:49:38.259Z",
+  "summary": {
+    "overall": {
+      "games": 20,
+      "wins": 0,
+      "draws": 6,
+      "losses": 14,
+      "unresolved": 0,
+      "winRate": 0,
+      "scoreRate": 0.15
+    },
+    "red": {
+      "games": 10,
+      "wins": 0,
+      "draws": 4,
+      "losses": 6,
+      "unresolved": 0,
+      "winRate": 0,
+      "scoreRate": 0.2
+    },
+    "black": {
+      "games": 10,
+      "wins": 0,
+      "draws": 2,
+      "losses": 8,
+      "unresolved": 0,
+      "winRate": 0,
+      "scoreRate": 0.1
+    }
+  },
+  "timing": {
+    "candidate": {
+      "moves": 585,
+      "medianMs": 1001.3384679999981,
+      "p95Ms": 1003.6701260000118,
+      "maxMs": 1069.8125540000037,
+      "overGrace": 1,
+      "hostStops": 419,
+      "fallbacks": 0,
+      "depthRange": [
+        2,
+        8
+      ]
+    },
+    "pika": {
+      "moves": 590,
+      "medianMs": 998.6806399999987,
+      "p95Ms": 999.6894560000219,
+      "maxMs": 1041.081984000004,
+      "overGrace": 0,
+      "hostStops": 0,
+      "fallbacks": 0,
+      "depthRange": [
+        5,
+        245
+      ]
+    }
+  },
+  "legalPlies": 1174,
+  "darkCaptures": 126,
+  "privateKnownAcrossViews": 2771,
+  "pairs": [
+    {
+      "seed": 4001,
+      "results": [
+        {
+          "candidateSide": "r",
+          "status": "decided",
+          "winner": "b",
+          "reason": "将死",
+          "technicalForfeit": false
+        },
+        {
+          "candidateSide": "b",
+          "status": "decided",
+          "winner": "r",
+          "reason": "将死",
+          "technicalForfeit": false
+        }
+      ],
+      "score": 0
+    },
+    {
+      "seed": 4003,
+      "results": [
+        {
+          "candidateSide": "r",
+          "status": "decided",
+          "winner": "b",
+          "reason": "将死",
+          "technicalForfeit": false
+        },
+        {
+          "candidateSide": "b",
+          "status": "decided",
+          "winner": "r",
+          "reason": "将死",
+          "technicalForfeit": false
+        }
+      ],
+      "score": 0
+    },
+    {
+      "seed": 4007,
+      "results": [
+        {
+          "candidateSide": "r",
+          "status": "draw",
+          "winner": null,
+          "reason": "threefold-public-position",
+          "technicalForfeit": false
+        },
+        {
+          "candidateSide": "b",
+          "status": "decided",
+          "winner": "r",
+          "reason": "technical-timeout",
+          "technicalForfeit": true,
+          "offender": "candidate"
+        }
+      ],
+      "score": 0.5
+    },
+    {
+      "seed": 4013,
+      "results": [
+        {
+          "candidateSide": "r",
+          "status": "decided",
+          "winner": "b",
+          "reason": "将死",
+          "technicalForfeit": false
+        },
+        {
+          "candidateSide": "b",
+          "status": "draw",
+          "winner": null,
+          "reason": "threefold-public-position",
+          "technicalForfeit": false
+        }
+      ],
+      "score": 0.5
+    },
+    {
+      "seed": 4019,
+      "results": [
+        {
+          "candidateSide": "r",
+          "status": "draw",
+          "winner": null,
+          "reason": "threefold-public-position",
+          "technicalForfeit": false
+        },
+        {
+          "candidateSide": "b",
+          "status": "decided",
+          "winner": "r",
+          "reason": "将死",
+          "technicalForfeit": false
+        }
+      ],
+      "score": 0.5
+    },
+    {
+      "seed": 4021,
+      "results": [
+        {
+          "candidateSide": "r",
+          "status": "draw",
+          "winner": null,
+          "reason": "threefold-public-position",
+          "technicalForfeit": false
+        },
+        {
+          "candidateSide": "b",
+          "status": "draw",
+          "winner": null,
+          "reason": "threefold-public-position",
+          "technicalForfeit": false
+        }
+      ],
+      "score": 1
+    },
+    {
+      "seed": 4027,
+      "results": [
+        {
+          "candidateSide": "r",
+          "status": "decided",
+          "winner": "b",
+          "reason": "将死",
+          "technicalForfeit": false
+        },
+        {
+          "candidateSide": "b",
+          "status": "decided",
+          "winner": "r",
+          "reason": "将死",
+          "technicalForfeit": false
+        }
+      ],
+      "score": 0
+    },
+    {
+      "seed": 4049,
+      "results": [
+        {
+          "candidateSide": "r",
+          "status": "decided",
+          "winner": "b",
+          "reason": "将死",
+          "technicalForfeit": false
+        },
+        {
+          "candidateSide": "b",
+          "status": "decided",
+          "winner": "r",
+          "reason": "将死",
+          "technicalForfeit": false
+        }
+      ],
+      "score": 0
+    },
+    {
+      "seed": 4051,
+      "results": [
+        {
+          "candidateSide": "r",
+          "status": "draw",
+          "winner": null,
+          "reason": "threefold-public-position",
+          "technicalForfeit": false
+        },
+        {
+          "candidateSide": "b",
+          "status": "decided",
+          "winner": "r",
+          "reason": "将死",
+          "technicalForfeit": false
+        }
+      ],
+      "score": 0.5
+    },
+    {
+      "seed": 4057,
+      "results": [
+        {
+          "candidateSide": "r",
+          "status": "decided",
+          "winner": "b",
+          "reason": "将死",
+          "technicalForfeit": false
+        },
+        {
+          "candidateSide": "b",
+          "status": "decided",
+          "winner": "r",
+          "reason": "将死",
+          "technicalForfeit": false
+        }
+      ],
+      "score": 0
+    }
+  ],
+  "checks": [
+    {
+      "seed": 4001,
+      "candidateSide": "r",
+      "plies": 58,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "valid": true
+    },
+    {
+      "seed": 4001,
+      "candidateSide": "b",
+      "plies": 91,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "valid": true
+    },
+    {
+      "seed": 4003,
+      "candidateSide": "r",
+      "plies": 54,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "valid": true
+    },
+    {
+      "seed": 4003,
+      "candidateSide": "b",
+      "plies": 27,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "valid": true
+    },
+    {
+      "seed": 4007,
+      "candidateSide": "r",
+      "plies": 49,
+      "result": {
+        "status": "draw",
+        "winner": null,
+        "reason": "threefold-public-position",
+        "technicalForfeit": false
+      },
+      "valid": true
+    },
+    {
+      "seed": 4007,
+      "candidateSide": "b",
+      "plies": 18,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "technical-timeout",
+        "technicalForfeit": true,
+        "offender": "candidate"
+      },
+      "valid": true
+    },
+    {
+      "seed": 4013,
+      "candidateSide": "r",
+      "plies": 66,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "valid": true
+    },
+    {
+      "seed": 4013,
+      "candidateSide": "b",
+      "plies": 80,
+      "result": {
+        "status": "draw",
+        "winner": null,
+        "reason": "threefold-public-position",
+        "technicalForfeit": false
+      },
+      "valid": true
+    },
+    {
+      "seed": 4019,
+      "candidateSide": "r",
+      "plies": 39,
+      "result": {
+        "status": "draw",
+        "winner": null,
+        "reason": "threefold-public-position",
+        "technicalForfeit": false
+      },
+      "valid": true
+    },
+    {
+      "seed": 4019,
+      "candidateSide": "b",
+      "plies": 67,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "valid": true
+    },
+    {
+      "seed": 4021,
+      "candidateSide": "r",
+      "plies": 116,
+      "result": {
+        "status": "draw",
+        "winner": null,
+        "reason": "threefold-public-position",
+        "technicalForfeit": false
+      },
+      "valid": true
+    },
+    {
+      "seed": 4021,
+      "candidateSide": "b",
+      "plies": 46,
+      "result": {
+        "status": "draw",
+        "winner": null,
+        "reason": "threefold-public-position",
+        "technicalForfeit": false
+      },
+      "valid": true
+    },
+    {
+      "seed": 4027,
+      "candidateSide": "r",
+      "plies": 44,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "valid": true
+    },
+    {
+      "seed": 4027,
+      "candidateSide": "b",
+      "plies": 37,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "valid": true
+    },
+    {
+      "seed": 4049,
+      "candidateSide": "r",
+      "plies": 84,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "valid": true
+    },
+    {
+      "seed": 4049,
+      "candidateSide": "b",
+      "plies": 71,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "valid": true
+    },
+    {
+      "seed": 4051,
+      "candidateSide": "r",
+      "plies": 68,
+      "result": {
+        "status": "draw",
+        "winner": null,
+        "reason": "threefold-public-position",
+        "technicalForfeit": false
+      },
+      "valid": true
+    },
+    {
+      "seed": 4051,
+      "candidateSide": "b",
+      "plies": 57,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "valid": true
+    },
+    {
+      "seed": 4057,
+      "candidateSide": "r",
+      "plies": 58,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "valid": true
+    },
+    {
+      "seed": 4057,
+      "candidateSide": "b",
+      "plies": 45,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "valid": true
+    }
+  ],
+  "sourceHashes": {
+    "native/search.cpp": "eb1c25bbd4209321bbd0a881128bce0de784d300d2aed8abe6c189167ac38698",
+    "native/bridge.mjs": "a0c2a84c72acaeeaf7b0709f06fefc01f97924387274a649a90d270e06df4816",
+    "engine.js": "7f427f6e00e286a48335f7c7a7e74270d2a4349d7ea2aabcad0821122a17cb49",
+    "ai.js": "66bca44c185829ab7a42d5432fc8323c2937fed2be475ced46a654a7a2e1c18e",
+    "scripts/external-engine.js": "6aba8c2768315c580a71143987665667c3d6d0bec21e0282c798c1d5c6268a74",
+    "scripts/native-match-engine.mjs": "13ac0a59a5d4c1d6b32c2f1e249143ad4ffc699050deb7be4643f6c79709a605",
+    "scripts/native-pika-match.mjs": "3737a2e4826f370ed0c89f09d794c0d52e9ba94b7a60b2e8260f0047073c8ba4"
+  },
+  "evidenceHashes": {
+    "matches.json": "14108c0606dc43d6424dba5bee8c4cb3cf702051911d26053c2aa92a15475b2b",
+    "smoke.json": "dfe4e085d7f999a9307e8bac0a9e0f598eccac324ee9866d871964038fc78f7a",
+    "environment.json": "4fa3eeed07c5130cc12cb5653834175b67f6016d52c989d537f36ed05f73794d"
+  },
+  "uncertainty": "Only10 paired fixed layouts at one budget. Pair outcomes correlated; no independent-game binomial interval or Elo estimate. No changes/exclusions for the known opponent color-evaluation asymmetry."
+}

@@ -1,0 +1,102 @@
+{
+  "passed": true,
+  "protocol": "Same8 hypothetical worlds from original public view; after the recorded5-ply line, legal non-capture mate is absent from captures-only frontier. This tests the concrete horizon path, not a modified engine or actual hidden-layout oracle.",
+  "rows": [
+    {
+      "worldHash": "b8f79bcdc355d68beb30bafae0008f38a9b198d383d270f8ee9d94ae5766896e",
+      "afterPlies": 5,
+      "sideToMove": "b",
+      "inCheck": false,
+      "winningMove": "f9f0",
+      "isCapture": false,
+      "legal": true,
+      "inCapturesOnly": false,
+      "opponentLegalMovesAfter": 0,
+      "opponentInCheckAfter": true
+    },
+    {
+      "worldHash": "72b21004181e65fc1d26aeb0daef0b2151cddd61816de2e86fffb460f3ab93d6",
+      "afterPlies": 5,
+      "sideToMove": "b",
+      "inCheck": false,
+      "winningMove": "f9f0",
+      "isCapture": false,
+      "legal": true,
+      "inCapturesOnly": false,
+      "opponentLegalMovesAfter": 0,
+      "opponentInCheckAfter": true
+    },
+    {
+      "worldHash": "b4813dd06a1325cc8659786d8a0db929b861109453ec87bb5ed3d330b8424f1c",
+      "afterPlies": 5,
+      "sideToMove": "b",
+      "inCheck": false,
+      "winningMove": "f9f0",
+      "isCapture": false,
+      "legal": true,
+      "inCapturesOnly": false,
+      "opponentLegalMovesAfter": 0,
+      "opponentInCheckAfter": true
+    },
+    {
+      "worldHash": "a0ec1028adfa61ff11f5e223575e7367b64bc5dd9993de7532dd2fe89d4a9c09",
+      "afterPlies": 5,
+      "sideToMove": "b",
+      "inCheck": false,
+      "winningMove": "f9f0",
+      "isCapture": false,
+      "legal": true,
+      "inCapturesOnly": false,
+      "opponentLegalMovesAfter": 0,
+      "opponentInCheckAfter": true
+    },
+    {
+      "worldHash": "0054f0c0ed44ec02d07ead468e2ec44d281c0bd1dd6b15d514de4c35404f41ba",
+      "afterPlies": 5,
+      "sideToMove": "b",
+      "inCheck": false,
+      "winningMove": "f9f0",
+      "isCapture": false,
+      "legal": true,
+      "inCapturesOnly": false,
+      "opponentLegalMovesAfter": 0,
+      "opponentInCheckAfter": true
+    },
+    {
+      "worldHash": "aa4948505fd64e44a0c8d476c5cbb8292cccf22b85bc53ff95a05820a3fa6c92",
+      "afterPlies": 5,
+      "sideToMove": "b",
+      "inCheck": false,
+      "winningMove": "f9f0",
+      "isCapture": false,
+      "legal": true,
+      "inCapturesOnly": false,
+      "opponentLegalMovesAfter": 0,
+      "opponentInCheckAfter": true
+    },
+    {
+      "worldHash": "14bc6d1b39be65f3b344422a1758ce681b3924a87d564359f9dee0bf6fd3fec9",
+      "afterPlies": 5,
+      "sideToMove": "b",
+      "inCheck": false,
+      "winningMove": "f9f0",
+      "isCapture": false,
+      "legal": true,
+      "inCapturesOnly": false,
+      "opponentLegalMovesAfter": 0,
+      "opponentInCheckAfter": true
+    },
+    {
+      "worldHash": "30375ff37c8e96e417175e4813488bc4e2f42194bde7c93b384f6495df6dbc23",
+      "afterPlies": 5,
+      "sideToMove": "b",
+      "inCheck": false,
+      "winningMove": "f9f0",
+      "isCapture": false,
+      "legal": true,
+      "inCapturesOnly": false,
+      "opponentLegalMovesAfter": 0,
+      "opponentInCheckAfter": true
+    }
+  ]
+}

@@ -1,0 +1,705 @@
+{
+  "startedAt": "2026-10-19T13:27:29.963Z",
+  "passed": true,
+  "build": {
+    "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+    "flags": [
+      "-std=c++17",
+      "-O3",
+      "-DNDEBUG",
+      "-ffp-contract=off",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-isystem",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+    ],
+    "threads": 4,
+    "independentWorldSearch": true,
+    "architecture": "x64",
+    "sourceSha256": "eb1c25bbd4209321bbd0a881128bce0de784d300d2aed8abe6c189167ac38698",
+    "binarySha256": "26381fefa3f8f11da4d7ce5c8a5ef0dc479f009660883766540d2b8d050f038b",
+    "sanitize": false,
+    "compilerWarnings": ""
+  },
+  "opponent": {
+    "commit": "bcc83f88ee18760e60903d1a3aaa61ef6f70f2c9",
+    "binarySha256": "f32d3c6dfe4d6d90da7728d9cc2af68c3195a1cefb1bc28f3829f174c518dba1",
+    "threads": 4,
+    "hashMiB": 64
+  },
+  "protocol": [
+    {
+      "ply": 1,
+      "viewer": "r",
+      "token": "b2b9Bb",
+      "darkCapture": true,
+      "knownCaptures": 1,
+      "actual": "xBxxkxxxx/9/1x5x1/x1x1x1x1x/9/9/X1X1X1X1X/7X1/9/XXXXKXXXX b R2A2C2P5N2B1r2a2c2p5n2b1 0 1",
+      "expected": "xBxxkxxxx/9/1x5x1/x1x1x1x1x/9/9/X1X1X1X1X/7X1/9/XXXXKXXXX b R2A2C2P5N2B1r2a2c2p5n2b1 0 1",
+      "legalCount": 44
+    },
+    {
+      "ply": 1,
+      "viewer": "b",
+      "token": "b2b9BX",
+      "darkCapture": true,
+      "knownCaptures": 0,
+      "actual": "xBxxkxxxx/9/1x5x1/x1x1x1x1x/9/9/X1X1X1X1X/7X1/9/XXXXKXXXX b R2A2C2P5N2B1r2a2c2p5n2b2 0 1",
+      "expected": "xBxxkxxxx/9/1x5x1/x1x1x1x1x/9/9/X1X1X1X1X/7X1/9/XXXXKXXXX b R2A2C2P5N2B1r2a2c2p5n2b2 0 1",
+      "legalCount": 44
+    },
+    {
+      "ply": 2,
+      "viewer": "r",
+      "token": "h7h0aX",
+      "darkCapture": true,
+      "knownCaptures": 1,
+      "actual": "xBxxkxxxx/9/1x7/x1x1x1x1x/9/9/X1X1X1X1X/7X1/9/XXXXKXXaX w R2A2C2P5N2B1r2a1c2p5n2b1 0 2",
+      "expected": "xBxxkxxxx/9/1x7/x1x1x1x1x/9/9/X1X1X1X1X/7X1/9/XXXXKXXaX w R2A2C2P5N2B1r2a1c2p5n2b1 0 2",
+      "legalCount": 35
+    },
+    {
+      "ply": 2,
+      "viewer": "b",
+      "token": "h7h0aP",
+      "darkCapture": true,
+      "knownCaptures": 1,
+      "actual": "xBxxkxxxx/9/1x7/x1x1x1x1x/9/9/X1X1X1X1X/7X1/9/XXXXKXXaX w R2A2C2P4N2B1r2a1c2p5n2b2 0 2",
+      "expected": "xBxxkxxxx/9/1x7/x1x1x1x1x/9/9/X1X1X1X1X/7X1/9/XXXXKXXaX w R2A2C2P4N2B1r2a1c2p5n2b2 0 2",
+      "legalCount": 35
+    },
+    {
+      "ply": 3,
+      "viewer": "r",
+      "token": "c3c4PX",
+      "darkCapture": false,
+      "knownCaptures": 1,
+      "actual": "xBxxkxxxx/9/1x7/x1x1x1x1x/9/2P6/X3X1X1X/7X1/9/XXXXKXXaX b R2A2C2P4N2B1r2a1c2p5n2b1 0 2",
+      "expected": "xBxxkxxxx/9/1x7/x1x1x1x1x/9/2P6/X3X1X1X/7X1/9/XXXXKXXaX b R2A2C2P4N2B1r2a1c2p5n2b1 0 2",
+      "legalCount": 36
+    },
+    {
+      "ply": 3,
+      "viewer": "b",
+      "token": "c3c4PX",
+      "darkCapture": false,
+      "knownCaptures": 1,
+      "actual": "xBxxkxxxx/9/1x7/x1x1x1x1x/9/2P6/X3X1X1X/7X1/9/XXXXKXXaX b R2A2C2P3N2B1r2a1c2p5n2b2 0 2",
+      "expected": "xBxxkxxxx/9/1x7/x1x1x1x1x/9/2P6/X3X1X1X/7X1/9/XXXXKXXaX b R2A2C2P3N2B1r2a1c2p5n2b2 0 2",
+      "legalCount": 36
+    },
+    {
+      "ply": 4,
+      "viewer": "r",
+      "token": "c9a7rX",
+      "darkCapture": false,
+      "knownCaptures": 1,
+      "actual": "xB1xkxxxx/9/rx7/x1x1x1x1x/9/2P6/X3X1X1X/7X1/9/XXXXKXXaX w R2A2C2P4N2B1r1a1c2p5n2b1 0 3",
+      "expected": "xB1xkxxxx/9/rx7/x1x1x1x1x/9/2P6/X3X1X1X/7X1/9/XXXXKXXaX w R2A2C2P4N2B1r1a1c2p5n2b1 0 3",
+      "legalCount": 35
+    },
+    {
+      "ply": 4,
+      "viewer": "b",
+      "token": "c9a7rX",
+      "darkCapture": false,
+      "knownCaptures": 1,
+      "actual": "xB1xkxxxx/9/rx7/x1x1x1x1x/9/2P6/X3X1X1X/7X1/9/XXXXKXXaX w R2A2C2P3N2B1r1a1c2p5n2b2 0 3",
+      "expected": "xB1xkxxxx/9/rx7/x1x1x1x1x/9/2P6/X3X1X1X/7X1/9/XXXXKXXaX w R2A2C2P3N2B1r1a1c2p5n2b2 0 3",
+      "legalCount": 35
+    },
+    {
+      "ply": 5,
+      "viewer": "r",
+      "token": "g3g4AX",
+      "darkCapture": false,
+      "knownCaptures": 1,
+      "actual": "xB1xkxxxx/9/rx7/x1x1x1x1x/9/2P3A2/X3X3X/7X1/9/XXXXKXXaX b R2A1C2P4N2B1r1a1c2p5n2b1 0 3",
+      "expected": "xB1xkxxxx/9/rx7/x1x1x1x1x/9/2P3A2/X3X3X/7X1/9/XXXXKXXaX b R2A1C2P4N2B1r1a1c2p5n2b1 0 3",
+      "legalCount": 33
+    },
+    {
+      "ply": 5,
+      "viewer": "b",
+      "token": "g3g4AX",
+      "darkCapture": false,
+      "knownCaptures": 1,
+      "actual": "xB1xkxxxx/9/rx7/x1x1x1x1x/9/2P3A2/X3X3X/7X1/9/XXXXKXXaX b R2A1C2P3N2B1r1a1c2p5n2b2 0 3",
+      "expected": "xB1xkxxxx/9/rx7/x1x1x1x1x/9/2P3A2/X3X3X/7X1/9/XXXXKXXaX b R2A1C2P3N2B1r1a1c2p5n2b2 0 3",
+      "legalCount": 33
+    },
+    {
+      "ply": 6,
+      "viewer": "r",
+      "token": "g9e7pX",
+      "darkCapture": false,
+      "knownCaptures": 1,
+      "actual": "xB1xkx1xx/9/rx2p4/x1x1x1x1x/9/2P3A2/X3X3X/7X1/9/XXXXKXXaX w R2A1C2P4N2B1r1a1c2p4n2b1 0 4",
+      "expected": "xB1xkx1xx/9/rx2p4/x1x1x1x1x/9/2P3A2/X3X3X/7X1/9/XXXXKXXaX w R2A1C2P4N2B1r1a1c2p4n2b1 0 4",
+      "legalCount": 38
+    },
+    {
+      "ply": 6,
+      "viewer": "b",
+      "token": "g9e7pX",
+      "darkCapture": false,
+      "knownCaptures": 1,
+      "actual": "xB1xkx1xx/9/rx2p4/x1x1x1x1x/9/2P3A2/X3X3X/7X1/9/XXXXKXXaX w R2A1C2P3N2B1r1a1c2p4n2b2 0 4",
+      "expected": "xB1xkx1xx/9/rx2p4/x1x1x1x1x/9/2P3A2/X3X3X/7X1/9/XXXXKXXaX w R2A1C2P3N2B1r1a1c2p4n2b2 0 4",
+      "legalCount": 38
+    },
+    {
+      "ply": 7,
+      "viewer": "r",
+      "token": "a3a4PX",
+      "darkCapture": false,
+      "knownCaptures": 1,
+      "actual": "xB1xkx1xx/9/rx2p4/x1x1x1x1x/9/P1P3A2/4X3X/7X1/9/XXXXKXXaX b R2A1C2P3N2B1r1a1c2p4n2b1 0 4",
+      "expected": "xB1xkx1xx/9/rx2p4/x1x1x1x1x/9/P1P3A2/4X3X/7X1/9/XXXXKXXaX b R2A1C2P3N2B1r1a1c2p4n2b1 0 4",
+      "legalCount": 27
+    },
+    {
+      "ply": 7,
+      "viewer": "b",
+      "token": "a3a4PX",
+      "darkCapture": false,
+      "knownCaptures": 1,
+      "actual": "xB1xkx1xx/9/rx2p4/x1x1x1x1x/9/P1P3A2/4X3X/7X1/9/XXXXKXXaX b R2A1C2P2N2B1r1a1c2p4n2b2 0 4",
+      "expected": "xB1xkx1xx/9/rx2p4/x1x1x1x1x/9/P1P3A2/4X3X/7X1/9/XXXXKXXaX b R2A1C2P2N2B1r1a1c2p4n2b2 0 4",
+      "legalCount": 27
+    },
+    {
+      "ply": 8,
+      "viewer": "r",
+      "token": "h9f8nX",
+      "darkCapture": false,
+      "knownCaptures": 1,
+      "actual": "xB1xkx2x/5n3/rx2p4/x1x1x1x1x/9/P1P3A2/4X3X/7X1/9/XXXXKXXaX w R2A1C2P3N2B1r1a1c2p4n1b1 0 5",
+      "expected": "xB1xkx2x/5n3/rx2p4/x1x1x1x1x/9/P1P3A2/4X3X/7X1/9/XXXXKXXaX w R2A1C2P3N2B1r1a1c2p4n1b1 0 5",
+      "legalCount": 40
+    },
+    {
+      "ply": 8,
+      "viewer": "b",
+      "token": "h9f8nX",
+      "darkCapture": false,
+      "knownCaptures": 1,
+      "actual": "xB1xkx2x/5n3/rx2p4/x1x1x1x1x/9/P1P3A2/4X3X/7X1/9/XXXXKXXaX w R2A1C2P2N2B1r1a1c2p4n1b2 0 5",
+      "expected": "xB1xkx2x/5n3/rx2p4/x1x1x1x1x/9/P1P3A2/4X3X/7X1/9/XXXXKXXaX w R2A1C2P2N2B1r1a1c2p4n1b2 0 5",
+      "legalCount": 40
+    },
+    {
+      "ply": 9,
+      "viewer": "r",
+      "token": "i3i4PX",
+      "darkCapture": false,
+      "knownCaptures": 1,
+      "actual": "xB1xkx2x/5n3/rx2p4/x1x1x1x1x/9/P1P3A1P/4X4/7X1/9/XXXXKXXaX b R2A1C2P2N2B1r1a1c2p4n1b1 0 5",
+      "expected": "xB1xkx2x/5n3/rx2p4/x1x1x1x1x/9/P1P3A1P/4X4/7X1/9/XXXXKXXaX b R2A1C2P2N2B1r1a1c2p4n1b1 0 5",
+      "legalCount": 29
+    },
+    {
+      "ply": 9,
+      "viewer": "b",
+      "token": "i3i4PX",
+      "darkCapture": false,
+      "knownCaptures": 1,
+      "actual": "xB1xkx2x/5n3/rx2p4/x1x1x1x1x/9/P1P3A1P/4X4/7X1/9/XXXXKXXaX b R2A1C2P1N2B1r1a1c2p4n1b2 0 5",
+      "expected": "xB1xkx2x/5n3/rx2p4/x1x1x1x1x/9/P1P3A1P/4X4/7X1/9/XXXXKXXaX b R2A1C2P1N2B1r1a1c2p4n1b2 0 5",
+      "legalCount": 29
+    },
+    {
+      "ply": 10,
+      "viewer": "r",
+      "token": "f8h7XX",
+      "darkCapture": false,
+      "knownCaptures": 1,
+      "actual": "xB1xkx2x/9/rx2p2n1/x1x1x1x1x/9/P1P3A1P/4X4/7X1/9/XXXXKXXaX w R2A1C2P2N2B1r1a1c2p4n1b1 0 6",
+      "expected": "xB1xkx2x/9/rx2p2n1/x1x1x1x1x/9/P1P3A1P/4X4/7X1/9/XXXXKXXaX w R2A1C2P2N2B1r1a1c2p4n1b1 1 6",
+      "legalCount": 38
+    },
+    {
+      "ply": 10,
+      "viewer": "b",
+      "token": "f8h7XX",
+      "darkCapture": false,
+      "knownCaptures": 1,
+      "actual": "xB1xkx2x/9/rx2p2n1/x1x1x1x1x/9/P1P3A1P/4X4/7X1/9/XXXXKXXaX w R2A1C2P1N2B1r1a1c2p4n1b2 0 6",
+      "expected": "xB1xkx2x/9/rx2p2n1/x1x1x1x1x/9/P1P3A1P/4X4/7X1/9/XXXXKXXaX w R2A1C2P1N2B1r1a1c2p4n1b2 1 6",
+      "legalCount": 38
+    },
+    {
+      "ply": 11,
+      "viewer": "r",
+      "token": "h2g2PX",
+      "darkCapture": false,
+      "knownCaptures": 1,
+      "actual": "xB1xkx2x/9/rx2p2n1/x1x1x1x1x/9/P1P3A1P/4X4/6P2/9/XXXXKXXaX b R2A1C2P1N2B1r1a1c2p4n1b1 0 6",
+      "expected": "xB1xkx2x/9/rx2p2n1/x1x1x1x1x/9/P1P3A1P/4X4/6P2/9/XXXXKXXaX b R2A1C2P1N2B1r1a1c2p4n1b1 0 6",
+      "legalCount": 31
+    },
+    {
+      "ply": 11,
+      "viewer": "b",
+      "token": "h2g2PX",
+      "darkCapture": false,
+      "knownCaptures": 1,
+      "actual": "xB1xkx2x/9/rx2p2n1/x1x1x1x1x/9/P1P3A1P/4X4/6P2/9/XXXXKXXaX b R2A1C2N2B1r1a1c2p4n1b2 0 6",
+      "expected": "xB1xkx2x/9/rx2p2n1/x1x1x1x1x/9/P1P3A1P/4X4/6P2/9/XXXXKXXaX b R2A1C2N2B1r1a1c2p4n1b2 0 6",
+      "legalCount": 31
+    },
+    {
+      "ply": 12,
+      "viewer": "r",
+      "token": "b7d7pX",
+      "darkCapture": false,
+      "knownCaptures": 1,
+      "actual": "xB1xkx2x/9/r2pp2n1/x1x1x1x1x/9/P1P3A1P/4X4/6P2/9/XXXXKXXaX w R2A1C2P1N2B1r1a1c2p3n1b1 0 7",
+      "expected": "xB1xkx2x/9/r2pp2n1/x1x1x1x1x/9/P1P3A1P/4X4/6P2/9/XXXXKXXaX w R2A1C2P1N2B1r1a1c2p3n1b1 0 7",
+      "legalCount": 26
+    },
+    {
+      "ply": 12,
+      "viewer": "b",
+      "token": "b7d7pX",
+      "darkCapture": false,
+      "knownCaptures": 1,
+      "actual": "xB1xkx2x/9/r2pp2n1/x1x1x1x1x/9/P1P3A1P/4X4/6P2/9/XXXXKXXaX w R2A1C2N2B1r1a1c2p3n1b2 0 7",
+      "expected": "xB1xkx2x/9/r2pp2n1/x1x1x1x1x/9/P1P3A1P/4X4/6P2/9/XXXXKXXaX w R2A1C2N2B1r1a1c2p3n1b2 0 7",
+      "legalCount": 26
+    },
+    {
+      "ply": 13,
+      "viewer": "r",
+      "token": "a0a3RX",
+      "darkCapture": false,
+      "knownCaptures": 1,
+      "actual": "xB1xkx2x/9/r2pp2n1/x1x1x1x1x/9/P1P3A1P/R3X4/6P2/9/1XXXKXXaX b R1A1C2P1N2B1r1a1c2p3n1b1 0 7",
+      "expected": "xB1xkx2x/9/r2pp2n1/x1x1x1x1x/9/P1P3A1P/R3X4/6P2/9/1XXXKXXaX b R1A1C2P1N2B1r1a1c2p3n1b1 0 7",
+      "legalCount": 25
+    },
+    {
+      "ply": 13,
+      "viewer": "b",
+      "token": "a0a3RX",
+      "darkCapture": false,
+      "knownCaptures": 1,
+      "actual": "xB1xkx2x/9/r2pp2n1/x1x1x1x1x/9/P1P3A1P/R3X4/6P2/9/1XXXKXXaX b R1A1C2N2B1r1a1c2p3n1b2 0 7",
+      "expected": "xB1xkx2x/9/r2pp2n1/x1x1x1x1x/9/P1P3A1P/R3X4/6P2/9/1XXXKXXaX b R1A1C2N2B1r1a1c2p3n1b2 0 7",
+      "legalCount": 25
+    },
+    {
+      "ply": 14,
+      "viewer": "r",
+      "token": "h7i5XX",
+      "darkCapture": false,
+      "knownCaptures": 1,
+      "actual": "xB1xkx2x/9/r2pp4/x1x1x1x1x/8n/P1P3A1P/R3X4/6P2/9/1XXXKXXaX w R1A1C2P1N2B1r1a1c2p3n1b1 0 8",
+      "expected": "xB1xkx2x/9/r2pp4/x1x1x1x1x/8n/P1P3A1P/R3X4/6P2/9/1XXXKXXaX w R1A1C2P1N2B1r1a1c2p3n1b1 1 8",
+      "legalCount": 29
+    },
+    {
+      "ply": 14,
+      "viewer": "b",
+      "token": "h7i5XX",
+      "darkCapture": false,
+      "knownCaptures": 1,
+      "actual": "xB1xkx2x/9/r2pp4/x1x1x1x1x/8n/P1P3A1P/R3X4/6P2/9/1XXXKXXaX w R1A1C2N2B1r1a1c2p3n1b2 0 8",
+      "expected": "xB1xkx2x/9/r2pp4/x1x1x1x1x/8n/P1P3A1P/R3X4/6P2/9/1XXXKXXaX w R1A1C2N2B1r1a1c2p3n1b2 1 8",
+      "legalCount": 29
+    },
+    {
+      "ply": 15,
+      "viewer": "r",
+      "token": "e3e4AX",
+      "darkCapture": false,
+      "knownCaptures": 1,
+      "actual": "xB1xkx2x/9/r2pp4/x1x1x1x1x/8n/P1P1A1A1P/R8/6P2/9/1XXXKXXaX b R1C2P1N2B1r1a1c2p3n1b1 0 8",
+      "expected": "xB1xkx2x/9/r2pp4/x1x1x1x1x/8n/P1P1A1A1P/R8/6P2/9/1XXXKXXaX b R1C2P1N2B1r1a1c2p3n1b1 0 8",
+      "legalCount": 20
+    },
+    {
+      "ply": 15,
+      "viewer": "b",
+      "token": "e3e4AX",
+      "darkCapture": false,
+      "knownCaptures": 1,
+      "actual": "xB1xkx2x/9/r2pp4/x1x1x1x1x/8n/P1P1A1A1P/R8/6P2/9/1XXXKXXaX b R1C2N2B1r1a1c2p3n1b2 0 8",
+      "expected": "xB1xkx2x/9/r2pp4/x1x1x1x1x/8n/P1P1A1A1P/R8/6P2/9/1XXXKXXaX b R1C2N2B1r1a1c2p3n1b2 0 8",
+      "legalCount": 20
+    },
+    {
+      "ply": 16,
+      "viewer": "r",
+      "token": "e6e5nX",
+      "darkCapture": false,
+      "knownCaptures": 1,
+      "actual": "xB1xkx2x/9/r2pp4/x1x3x1x/4n3n/P1P1A1A1P/R8/6P2/9/1XXXKXXaX w R1C2P1N2B1r1a1c2p3b1 0 9",
+      "expected": "xB1xkx2x/9/r2pp4/x1x3x1x/4n3n/P1P1A1A1P/R8/6P2/9/1XXXKXXaX w R1C2P1N2B1r1a1c2p3b1 0 9",
+      "legalCount": 37
+    },
+    {
+      "ply": 16,
+      "viewer": "b",
+      "token": "e6e5nX",
+      "darkCapture": false,
+      "knownCaptures": 1,
+      "actual": "xB1xkx2x/9/r2pp4/x1x3x1x/4n3n/P1P1A1A1P/R8/6P2/9/1XXXKXXaX w R1C2N2B1r1a1c2p3b2 0 9",
+      "expected": "xB1xkx2x/9/r2pp4/x1x3x1x/4n3n/P1P1A1A1P/R8/6P2/9/1XXXKXXaX w R1C2N2B1r1a1c2p3b2 0 9",
+      "legalCount": 37
+    },
+    {
+      "ply": 17,
+      "viewer": "r",
+      "token": "a3f3XX",
+      "darkCapture": false,
+      "knownCaptures": 1,
+      "actual": "xB1xkx2x/9/r2pp4/x1x3x1x/4n3n/P1P1A1A1P/5R3/6P2/9/1XXXKXXaX b R1C2P1N2B1r1a1c2p3b1 0 9",
+      "expected": "xB1xkx2x/9/r2pp4/x1x3x1x/4n3n/P1P1A1A1P/5R3/6P2/9/1XXXKXXaX b R1C2P1N2B1r1a1c2p3b1 1 9",
+      "legalCount": 23
+    },
+    {
+      "ply": 17,
+      "viewer": "b",
+      "token": "a3f3XX",
+      "darkCapture": false,
+      "knownCaptures": 1,
+      "actual": "xB1xkx2x/9/r2pp4/x1x3x1x/4n3n/P1P1A1A1P/5R3/6P2/9/1XXXKXXaX b R1C2N2B1r1a1c2p3b2 0 9",
+      "expected": "xB1xkx2x/9/r2pp4/x1x3x1x/4n3n/P1P1A1A1P/5R3/6P2/9/1XXXKXXaX b R1C2N2B1r1a1c2p3b2 1 9",
+      "legalCount": 23
+    },
+    {
+      "ply": 18,
+      "viewer": "r",
+      "token": "e5g4XX",
+      "darkCapture": false,
+      "knownCaptures": 1,
+      "actual": "xB1xkx2x/9/r2pp4/x1x3x1x/8n/P1P1A1n1P/5R3/6P2/9/1XXXKXXaX w R1C2P1N2B1r1a1c2p3b1 0 10",
+      "expected": "xB1xkx2x/9/r2pp4/x1x3x1x/8n/P1P1A1n1P/5R3/6P2/9/1XXXKXXaX w R1C2P1N2B1r1a1c2p3b1 0 10",
+      "legalCount": 37
+    },
+    {
+      "ply": 18,
+      "viewer": "b",
+      "token": "e5g4XX",
+      "darkCapture": false,
+      "knownCaptures": 1,
+      "actual": "xB1xkx2x/9/r2pp4/x1x3x1x/8n/P1P1A1n1P/5R3/6P2/9/1XXXKXXaX w R1C2N2B1r1a1c2p3b2 0 10",
+      "expected": "xB1xkx2x/9/r2pp4/x1x3x1x/8n/P1P1A1n1P/5R3/6P2/9/1XXXKXXaX w R1C2N2B1r1a1c2p3b2 0 10",
+      "legalCount": 37
+    },
+    {
+      "ply": 19,
+      "viewer": "r",
+      "token": "f3f9Xa",
+      "darkCapture": true,
+      "knownCaptures": 2,
+      "actual": "xB1xkR2x/9/r2pp4/x1x3x1x/8n/P1P1A1n1P/9/6P2/9/1XXXKXXaX b R1C2P1N2B1r1c2p3b1 0 10",
+      "expected": "xB1xkR2x/9/r2pp4/x1x3x1x/8n/P1P1A1n1P/9/6P2/9/1XXXKXXaX b R1C2P1N2B1r1c2p3b1 0 10",
+      "legalCount": 3
+    },
+    {
+      "ply": 19,
+      "viewer": "b",
+      "token": "f3f9XX",
+      "darkCapture": true,
+      "knownCaptures": 1,
+      "actual": "xB1xkR2x/9/r2pp4/x1x3x1x/8n/P1P1A1n1P/9/6P2/9/1XXXKXXaX b R1C2N2B1r1a1c2p3b2 0 10",
+      "expected": "xB1xkR2x/9/r2pp4/x1x3x1x/8n/P1P1A1n1P/9/6P2/9/1XXXKXXaX b R1C2N2B1r1a1c2p3b2 0 10",
+      "legalCount": 3
+    },
+    {
+      "ply": 20,
+      "viewer": "r",
+      "token": "e9e8XX",
+      "darkCapture": false,
+      "knownCaptures": 2,
+      "actual": "xB1x1R2x/4k4/r2pp4/x1x3x1x/8n/P1P1A1n1P/9/6P2/9/1XXXKXXaX w R1C2P1N2B1r1c2p3b1 0 11",
+      "expected": "xB1x1R2x/4k4/r2pp4/x1x3x1x/8n/P1P1A1n1P/9/6P2/9/1XXXKXXaX w R1C2P1N2B1r1c2p3b1 1 11",
+      "legalCount": 35
+    },
+    {
+      "ply": 20,
+      "viewer": "b",
+      "token": "e9e8XX",
+      "darkCapture": false,
+      "knownCaptures": 1,
+      "actual": "xB1x1R2x/4k4/r2pp4/x1x3x1x/8n/P1P1A1n1P/9/6P2/9/1XXXKXXaX w R1C2N2B1r1a1c2p3b2 0 11",
+      "expected": "xB1x1R2x/4k4/r2pp4/x1x3x1x/8n/P1P1A1n1P/9/6P2/9/1XXXKXXaX w R1C2N2B1r1a1c2p3b2 1 11",
+      "legalCount": 35
+    },
+    {
+      "ply": 21,
+      "viewer": "r",
+      "token": "f9i9Xc",
+      "darkCapture": true,
+      "knownCaptures": 3,
+      "actual": "xB1x4R/4k4/r2pp4/x1x3x1x/8n/P1P1A1n1P/9/6P2/9/1XXXKXXaX b R1C2P1N2B1r1c1p3b1 0 11",
+      "expected": "xB1x4R/4k4/r2pp4/x1x3x1x/8n/P1P1A1n1P/9/6P2/9/1XXXKXXaX b R1C2P1N2B1r1c1p3b1 0 11",
+      "legalCount": 21
+    },
+    {
+      "ply": 21,
+      "viewer": "b",
+      "token": "f9i9XX",
+      "darkCapture": true,
+      "knownCaptures": 1,
+      "actual": "xB1x4R/4k4/r2pp4/x1x3x1x/8n/P1P1A1n1P/9/6P2/9/1XXXKXXaX b R1C2N2B1r1a1c2p3b2 0 11",
+      "expected": "xB1x4R/4k4/r2pp4/x1x3x1x/8n/P1P1A1n1P/9/6P2/9/1XXXKXXaX b R1C2N2B1r1a1c2p3b2 0 11",
+      "legalCount": 21
+    },
+    {
+      "ply": 22,
+      "viewer": "r",
+      "token": "a9b9pX",
+      "darkCapture": false,
+      "knownCaptures": 3,
+      "actual": "1p1x4R/4k4/r2pp4/x1x3x1x/8n/P1P1A1n1P/9/6P2/9/1XXXKXXaX w R1C2P1N2B1r1c1p2b1 0 12",
+      "expected": "1p1x4R/4k4/r2pp4/x1x3x1x/8n/P1P1A1n1P/9/6P2/9/1XXXKXXaX w R1C2P1N2B1r1c1p2b1 0 12",
+      "legalCount": 29
+    },
+    {
+      "ply": 22,
+      "viewer": "b",
+      "token": "a9b9pX",
+      "darkCapture": false,
+      "knownCaptures": 1,
+      "actual": "1p1x4R/4k4/r2pp4/x1x3x1x/8n/P1P1A1n1P/9/6P2/9/1XXXKXXaX w R1C2N2B1r1a1c2p2b2 0 12",
+      "expected": "1p1x4R/4k4/r2pp4/x1x3x1x/8n/P1P1A1n1P/9/6P2/9/1XXXKXXaX w R1C2N2B1r1a1c2p2b2 0 12",
+      "legalCount": 29
+    },
+    {
+      "ply": 23,
+      "viewer": "r",
+      "token": "i9d9Xp",
+      "darkCapture": true,
+      "knownCaptures": 4,
+      "actual": "1p1R5/4k4/r2pp4/x1x3x1x/8n/P1P1A1n1P/9/6P2/9/1XXXKXXaX b R1C2P1N2B1r1c1p1b1 0 12",
+      "expected": "1p1R5/4k4/r2pp4/x1x3x1x/8n/P1P1A1n1P/9/6P2/9/1XXXKXXaX b R1C2P1N2B1r1c1p1b1 0 12",
+      "legalCount": 20
+    },
+    {
+      "ply": 23,
+      "viewer": "b",
+      "token": "i9d9XX",
+      "darkCapture": true,
+      "knownCaptures": 1,
+      "actual": "1p1R5/4k4/r2pp4/x1x3x1x/8n/P1P1A1n1P/9/6P2/9/1XXXKXXaX b R1C2N2B1r1a1c2p2b2 0 12",
+      "expected": "1p1R5/4k4/r2pp4/x1x3x1x/8n/P1P1A1n1P/9/6P2/9/1XXXKXXaX b R1C2N2B1r1a1c2p2b2 0 12",
+      "legalCount": 20
+    },
+    {
+      "ply": 24,
+      "viewer": "r",
+      "token": "a7c7XX",
+      "darkCapture": false,
+      "knownCaptures": 4,
+      "actual": "1p1R5/4k4/2rpp4/x1x3x1x/8n/P1P1A1n1P/9/6P2/9/1XXXKXXaX w R1C2P1N2B1r1c1p1b1 0 13",
+      "expected": "1p1R5/4k4/2rpp4/x1x3x1x/8n/P1P1A1n1P/9/6P2/9/1XXXKXXaX w R1C2P1N2B1r1c1p1b1 1 13",
+      "legalCount": 30
+    },
+    {
+      "ply": 24,
+      "viewer": "b",
+      "token": "a7c7XX",
+      "darkCapture": false,
+      "knownCaptures": 1,
+      "actual": "1p1R5/4k4/2rpp4/x1x3x1x/8n/P1P1A1n1P/9/6P2/9/1XXXKXXaX w R1C2N2B1r1a1c2p2b2 0 13",
+      "expected": "1p1R5/4k4/2rpp4/x1x3x1x/8n/P1P1A1n1P/9/6P2/9/1XXXKXXaX w R1C2N2B1r1a1c2p2b2 1 13",
+      "legalCount": 30
+    }
+  ],
+  "geometry": [
+    {
+      "name": "马腿",
+      "fen": "4k4/9/9/9/9/4P4/9/4P4/4N4/4K4 w - 0 1",
+      "legal": [
+        "e0d0",
+        "e0f0",
+        "e1c0",
+        "e1c2",
+        "e1g0",
+        "e1g2",
+        "e2e3",
+        "e4e5"
+      ]
+    },
+    {
+      "name": "象眼",
+      "fen": "4k4/9/9/9/9/4P4/3P5/4B4/9/4K4 w - 0 1",
+      "legal": [
+        "d3d4",
+        "e0d0",
+        "e0e1",
+        "e0f0",
+        "e2c0",
+        "e2g0",
+        "e2g4",
+        "e4e5"
+      ]
+    },
+    {
+      "name": "炮隔子",
+      "fen": "1r2k4/9/9/1p7/9/4P4/9/1C7/9/4K4 w - 0 1",
+      "legal": [
+        "b2a2",
+        "b2b0",
+        "b2b1",
+        "b2b3",
+        "b2b4",
+        "b2b5",
+        "b2b9",
+        "b2c2",
+        "b2d2",
+        "b2e2",
+        "b2f2",
+        "b2g2",
+        "b2h2",
+        "b2i2",
+        "e0d0",
+        "e0e1",
+        "e0f0",
+        "e4e5"
+      ]
+    },
+    {
+      "name": "明士过河",
+      "fen": "4k4/9/9/4A4/9/4P4/9/9/9/4K4 w - 0 1",
+      "legal": [
+        "e0d0",
+        "e0e1",
+        "e0f0",
+        "e4e5",
+        "e6d5",
+        "e6d7",
+        "e6f5",
+        "e6f7"
+      ]
+    },
+    {
+      "name": "明象过河",
+      "fen": "4k4/9/9/4B4/9/4P4/9/9/9/4K4 w - 0 1",
+      "legal": [
+        "e0d0",
+        "e0e1",
+        "e0f0",
+        "e4e5",
+        "e6c4",
+        "e6c8",
+        "e6g4",
+        "e6g8"
+      ]
+    },
+    {
+      "name": "暗象角色",
+      "fen": "4k4/9/9/9/9/4P4/9/9/9/4K1X2 w R1 0 1",
+      "legal": [
+        "e0d0",
+        "e0e1",
+        "e0f0",
+        "e4e5",
+        "g0e2",
+        "g0i2"
+      ]
+    },
+    {
+      "name": "暗士角色",
+      "fen": "4k4/9/9/9/9/4P4/9/9/9/4KX3 w C1 0 1",
+      "legal": [
+        "e0d0",
+        "e0e1",
+        "e4e5",
+        "f0e1"
+      ]
+    },
+    {
+      "name": "将军",
+      "fen": "4k4/9/9/9/9/4P4/9/9/4r4/4K4 w - 0 1",
+      "legal": [
+        "e0d0",
+        "e0e1",
+        "e0f0"
+      ]
+    },
+    {
+      "name": "照面唯一挡子",
+      "fen": "4k4/9/9/9/9/4P4/9/9/9/4K4 w - 0 1",
+      "legal": [
+        "e0d0",
+        "e0e1",
+        "e0f0",
+        "e4e5"
+      ]
+    }
+  ],
+  "timings": [
+    {
+      "engine": "candidate",
+      "budgetMs": 100,
+      "elapsedMs": 97.28963699999997,
+      "depth": 2,
+      "nodes": 216002,
+      "threads": 4,
+      "deadlineStop": false,
+      "fallbackUsed": false
+    },
+    {
+      "engine": "pika",
+      "budgetMs": 100,
+      "elapsedMs": 99,
+      "verificationMs": 0.22847799999999552,
+      "nativeBudgetMs": 99,
+      "move": {
+        "from": 56,
+        "to": 47
+      },
+      "info": [
+        "info depth 2 seldepth 3 multipv 1 score cp 287 nodes 508734 nps 5087340 hashfull 30 tbhits 0 time 100 pv c3c4 h7h0 c4e6"
+      ]
+    },
+    {
+      "engine": "candidate",
+      "budgetMs": 1000,
+      "elapsedMs": 993.4513849999998,
+      "depth": 4,
+      "nodes": 2902544,
+      "threads": 4,
+      "deadlineStop": false,
+      "fallbackUsed": false
+    },
+    {
+      "engine": "pika",
+      "budgetMs": 1000,
+      "elapsedMs": 999,
+      "verificationMs": 0.4763279999999668,
+      "nativeBudgetMs": 999,
+      "move": {
+        "from": 82,
+        "to": 65
+      },
+      "info": [
+        "info depth 8 seldepth 4 multipv 1 score cp 231 nodes 6085725 nps 6085725 hashfull 475 tbhits 0 time 1000 pv b0c2 g9e7"
+      ]
+    }
+  ],
+  "uciOptions": [
+    "option name Debug Log File type string default ",
+    "option name Threads type spin default 1 min 1 max 1024",
+    "option name Hash type spin default 16 min 1 max 33554432",
+    "option name Clear Hash type button",
+    "option name Ponder type check default false",
+    "option name MultiPV type spin default 1 min 1 max 500",
+    "option name Move Overhead type spin default 10 min 0 max 5000",
+    "option name Slow Mover type spin default 100 min 10 max 1000",
+    "option name nodestime type spin default 0 min 0 max 10000",
+    "option name UCI_AnalyseMode type check default false",
+    "option name UCI_ShowWDL type check default false",
+    "option name EvalFile type string default pikafish.nnue"
+  ],
+  "initializations": {
+    "pikaMs": 362.47102,
+    "candidateMs": 6.075035999999955
+  },
+  "finishedAt": "2026-10-19T13:27:32.634Z"
+}

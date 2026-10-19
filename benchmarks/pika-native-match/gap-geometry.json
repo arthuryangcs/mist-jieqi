@@ -1,0 +1,2015 @@
+{
+  "rows": [
+    {
+      "seed": 4003,
+      "side": "r",
+      "ply": 49,
+      "protocol": "Geometry uses the original public board and two already-known mover identities. Captured hidden identity is omitted; only the before static score is authoritative if such capture occurs.",
+      "stages": [
+        {
+          "stage": "before",
+          "inCheck": false,
+          "kingSquare": "e0",
+          "kingLegalMoves": [
+            "e0f0"
+          ],
+          "legalMoves": [
+            "g9h9",
+            "g9i9",
+            "g9f9",
+            "g9e9",
+            "g9d9",
+            "g9g8",
+            "g9g7",
+            "g9g6",
+            "g9g5",
+            "a3a4",
+            "g3g4",
+            "i3i4",
+            "a0b0",
+            "a0a1",
+            "a0a2",
+            "c0a2",
+            "e0f0"
+          ],
+          "staticScore": 184.58333333334303,
+          "publicBoard": [
+            null,
+            null,
+            null,
+            {
+              "side": "b",
+              "role": "A",
+              "hidden": true
+            },
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "R",
+              "hidden": false,
+              "type": "R"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "b",
+              "role": "K",
+              "hidden": false,
+              "type": "K"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "b",
+              "role": "C",
+              "hidden": false,
+              "type": "P"
+            },
+            null,
+            null,
+            {
+              "side": "b",
+              "role": "B",
+              "hidden": false,
+              "type": "P"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "b",
+              "role": "R",
+              "hidden": false,
+              "type": "C"
+            },
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "b",
+              "role": "R",
+              "hidden": false,
+              "type": "P"
+            },
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "b",
+              "role": "P",
+              "hidden": false,
+              "type": "R"
+            },
+            {
+              "side": "b",
+              "role": "P",
+              "hidden": false,
+              "type": "P"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "P",
+              "hidden": true
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "N",
+              "hidden": false,
+              "type": "P"
+            },
+            null,
+            {
+              "side": "r",
+              "role": "P",
+              "hidden": true
+            },
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "B",
+              "hidden": false,
+              "type": "A"
+            },
+            {
+              "side": "b",
+              "role": "P",
+              "hidden": false,
+              "type": "A"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "A",
+              "hidden": false,
+              "type": "N"
+            },
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "R",
+              "hidden": true
+            },
+            null,
+            {
+              "side": "r",
+              "role": "B",
+              "hidden": true
+            },
+            {
+              "side": "r",
+              "role": "A",
+              "hidden": true
+            },
+            {
+              "side": "r",
+              "role": "K",
+              "hidden": false,
+              "type": "K"
+            },
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "stage": "after-ply-49",
+          "inCheck": false,
+          "kingSquare": "e0",
+          "kingLegalMoves": [
+            "e0f0"
+          ],
+          "legalMoves": [
+            "d9e9",
+            "d9f9",
+            "d9g9",
+            "d9h9",
+            "d9i9",
+            "d9c9",
+            "d9b9",
+            "d9a9",
+            "d9d8",
+            "d9d7",
+            "d9d6",
+            "d9d5",
+            "d9d4",
+            "d9d3",
+            "d9d2",
+            "d9d1",
+            "a3a4",
+            "g3g4",
+            "i3i4",
+            "a0b0",
+            "a0a1",
+            "a0a2",
+            "c0a2",
+            "e0f0"
+          ],
+          "staticScore": null,
+          "publicBoard": [
+            null,
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "R",
+              "hidden": false,
+              "type": "R"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "b",
+              "role": "K",
+              "hidden": false,
+              "type": "K"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "b",
+              "role": "C",
+              "hidden": false,
+              "type": "P"
+            },
+            null,
+            null,
+            {
+              "side": "b",
+              "role": "B",
+              "hidden": false,
+              "type": "P"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "b",
+              "role": "R",
+              "hidden": false,
+              "type": "C"
+            },
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "b",
+              "role": "R",
+              "hidden": false,
+              "type": "P"
+            },
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "b",
+              "role": "P",
+              "hidden": false,
+              "type": "R"
+            },
+            {
+              "side": "b",
+              "role": "P",
+              "hidden": false,
+              "type": "P"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "P",
+              "hidden": true
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "N",
+              "hidden": false,
+              "type": "P"
+            },
+            null,
+            {
+              "side": "r",
+              "role": "P",
+              "hidden": true
+            },
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "B",
+              "hidden": false,
+              "type": "A"
+            },
+            {
+              "side": "b",
+              "role": "P",
+              "hidden": false,
+              "type": "A"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "A",
+              "hidden": false,
+              "type": "N"
+            },
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "R",
+              "hidden": true
+            },
+            null,
+            {
+              "side": "r",
+              "role": "B",
+              "hidden": true
+            },
+            {
+              "side": "r",
+              "role": "A",
+              "hidden": true
+            },
+            {
+              "side": "r",
+              "role": "K",
+              "hidden": false,
+              "type": "K"
+            },
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "stage": "after-ply-50",
+          "inCheck": false,
+          "kingSquare": "e0",
+          "kingLegalMoves": [],
+          "legalMoves": [
+            "d9e9",
+            "d9f9",
+            "d9g9",
+            "d9h9",
+            "d9i9",
+            "d9c9",
+            "d9b9",
+            "d9a9",
+            "d9d8",
+            "d9d7",
+            "d9d6",
+            "d9d5",
+            "d9d4",
+            "d9d3",
+            "d9d2",
+            "d9d1",
+            "a3a4",
+            "g3g4",
+            "i3i4",
+            "a0b0",
+            "a0a1",
+            "a0a2",
+            "c0a2"
+          ],
+          "staticScore": null,
+          "publicBoard": [
+            null,
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "R",
+              "hidden": false,
+              "type": "R"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "b",
+              "role": "K",
+              "hidden": false,
+              "type": "K"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "b",
+              "role": "C",
+              "hidden": false,
+              "type": "P"
+            },
+            null,
+            null,
+            {
+              "side": "b",
+              "role": "B",
+              "hidden": false,
+              "type": "P"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "b",
+              "role": "R",
+              "hidden": false,
+              "type": "C"
+            },
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "b",
+              "role": "R",
+              "hidden": false,
+              "type": "P"
+            },
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "b",
+              "role": "P",
+              "hidden": false,
+              "type": "R"
+            },
+            {
+              "side": "b",
+              "role": "P",
+              "hidden": false,
+              "type": "P"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "P",
+              "hidden": true
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "N",
+              "hidden": false,
+              "type": "P"
+            },
+            null,
+            {
+              "side": "r",
+              "role": "P",
+              "hidden": true
+            },
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "B",
+              "hidden": false,
+              "type": "A"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "A",
+              "hidden": false,
+              "type": "N"
+            },
+            null,
+            {
+              "side": "b",
+              "role": "P",
+              "hidden": false,
+              "type": "A"
+            },
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "R",
+              "hidden": true
+            },
+            null,
+            {
+              "side": "r",
+              "role": "B",
+              "hidden": true
+            },
+            {
+              "side": "r",
+              "role": "A",
+              "hidden": true
+            },
+            {
+              "side": "r",
+              "role": "K",
+              "hidden": false,
+              "type": "K"
+            },
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "seed": 4057,
+      "side": "r",
+      "ply": 31,
+      "protocol": "Geometry uses the original public board and two already-known mover identities. Captured hidden identity is omitted; only the before static score is authoritative if such capture occurs.",
+      "stages": [
+        {
+          "stage": "before",
+          "inCheck": false,
+          "kingSquare": "e0",
+          "kingLegalMoves": [],
+          "legalMoves": [
+            "i6g8",
+            "i6g4",
+            "c5c6",
+            "c5d5",
+            "c5b5",
+            "a3a4",
+            "i3i4",
+            "c2e1",
+            "c2b0",
+            "c2a1",
+            "c2e3",
+            "a0b0",
+            "a0a1",
+            "a0a2",
+            "c0a2",
+            "d0e1",
+            "f0e1",
+            "h0i2",
+            "h0g2",
+            "h0f1",
+            "i0i1",
+            "i0i2"
+          ],
+          "staticScore": 803,
+          "redKnight": null,
+          "blackKnightOnF5": null,
+          "publicBoard": [
+            null,
+            {
+              "side": "b",
+              "role": "R",
+              "hidden": false,
+              "type": "B"
+            },
+            null,
+            {
+              "side": "b",
+              "role": "A",
+              "hidden": true
+            },
+            {
+              "side": "b",
+              "role": "K",
+              "hidden": false,
+              "type": "K"
+            },
+            {
+              "side": "b",
+              "role": "A",
+              "hidden": true
+            },
+            null,
+            {
+              "side": "b",
+              "role": "R",
+              "hidden": false,
+              "type": "A"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "b",
+              "role": "C",
+              "hidden": false,
+              "type": "C"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "b",
+              "role": "B",
+              "hidden": false,
+              "type": "N"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "P",
+              "hidden": false,
+              "type": "B"
+            },
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "P",
+              "hidden": false,
+              "type": "P"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "P",
+              "hidden": false,
+              "type": "B"
+            },
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "P",
+              "hidden": true
+            },
+            null,
+            {
+              "side": "b",
+              "role": "P",
+              "hidden": false,
+              "type": "B"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "P",
+              "hidden": true
+            },
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "N",
+              "hidden": false,
+              "type": "N"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "b",
+              "role": "C",
+              "hidden": false,
+              "type": "R"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "R",
+              "hidden": true
+            },
+            null,
+            {
+              "side": "r",
+              "role": "B",
+              "hidden": true
+            },
+            {
+              "side": "r",
+              "role": "A",
+              "hidden": true
+            },
+            {
+              "side": "r",
+              "role": "K",
+              "hidden": false,
+              "type": "K"
+            },
+            {
+              "side": "r",
+              "role": "A",
+              "hidden": true
+            },
+            null,
+            {
+              "side": "r",
+              "role": "N",
+              "hidden": true
+            },
+            {
+              "side": "r",
+              "role": "R",
+              "hidden": true
+            }
+          ]
+        },
+        {
+          "stage": "after-ply-31",
+          "inCheck": false,
+          "kingSquare": "e0",
+          "kingLegalMoves": [],
+          "legalMoves": [
+            "i6g8",
+            "i6g4",
+            "c5c6",
+            "c5d5",
+            "c5b5",
+            "e4c6",
+            "e4c2",
+            "e4g6",
+            "e4g2",
+            "a3a4",
+            "e3f1",
+            "e3g2",
+            "e3d1",
+            "e3c2",
+            "e3g4",
+            "e3c4",
+            "i3i4",
+            "a0b0",
+            "a0a1",
+            "a0a2",
+            "c0a2",
+            "d0e1",
+            "f0e1",
+            "h0i2",
+            "h0g2",
+            "h0f1",
+            "i0i1",
+            "i0i2"
+          ],
+          "staticScore": 811,
+          "redKnight": {
+            "side": "r",
+            "role": "N",
+            "hidden": false,
+            "type": "N"
+          },
+          "blackKnightOnF5": null,
+          "publicBoard": [
+            null,
+            {
+              "side": "b",
+              "role": "R",
+              "hidden": false,
+              "type": "B"
+            },
+            null,
+            {
+              "side": "b",
+              "role": "A",
+              "hidden": true
+            },
+            {
+              "side": "b",
+              "role": "K",
+              "hidden": false,
+              "type": "K"
+            },
+            {
+              "side": "b",
+              "role": "A",
+              "hidden": true
+            },
+            null,
+            {
+              "side": "b",
+              "role": "R",
+              "hidden": false,
+              "type": "A"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "b",
+              "role": "C",
+              "hidden": false,
+              "type": "C"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "b",
+              "role": "B",
+              "hidden": false,
+              "type": "N"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "P",
+              "hidden": false,
+              "type": "B"
+            },
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "P",
+              "hidden": false,
+              "type": "P"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "P",
+              "hidden": false,
+              "type": "B"
+            },
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "P",
+              "hidden": true
+            },
+            null,
+            {
+              "side": "b",
+              "role": "P",
+              "hidden": false,
+              "type": "B"
+            },
+            null,
+            {
+              "side": "r",
+              "role": "N",
+              "hidden": false,
+              "type": "N"
+            },
+            null,
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "P",
+              "hidden": true
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "b",
+              "role": "C",
+              "hidden": false,
+              "type": "R"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "R",
+              "hidden": true
+            },
+            null,
+            {
+              "side": "r",
+              "role": "B",
+              "hidden": true
+            },
+            {
+              "side": "r",
+              "role": "A",
+              "hidden": true
+            },
+            {
+              "side": "r",
+              "role": "K",
+              "hidden": false,
+              "type": "K"
+            },
+            {
+              "side": "r",
+              "role": "A",
+              "hidden": true
+            },
+            null,
+            {
+              "side": "r",
+              "role": "N",
+              "hidden": true
+            },
+            {
+              "side": "r",
+              "role": "R",
+              "hidden": true
+            }
+          ]
+        },
+        {
+          "stage": "after-ply-32",
+          "inCheck": false,
+          "kingSquare": "e0",
+          "kingLegalMoves": [],
+          "legalMoves": [
+            "i6g8",
+            "i6g4",
+            "c5c6",
+            "c5d5",
+            "c5b5",
+            "a3a4",
+            "i3i4",
+            "a0b0",
+            "a0a1",
+            "a0a2",
+            "c0a2",
+            "d0e1",
+            "f0e1",
+            "h0i2",
+            "h0g2",
+            "h0f1",
+            "i0i1",
+            "i0i2"
+          ],
+          "staticScore": 815,
+          "redKnight": {
+            "side": "r",
+            "role": "N",
+            "hidden": false,
+            "type": "N"
+          },
+          "blackKnightOnF5": {
+            "side": "b",
+            "role": "B",
+            "hidden": false,
+            "type": "N"
+          },
+          "publicBoard": [
+            null,
+            {
+              "side": "b",
+              "role": "R",
+              "hidden": false,
+              "type": "B"
+            },
+            null,
+            {
+              "side": "b",
+              "role": "A",
+              "hidden": true
+            },
+            {
+              "side": "b",
+              "role": "K",
+              "hidden": false,
+              "type": "K"
+            },
+            {
+              "side": "b",
+              "role": "A",
+              "hidden": true
+            },
+            null,
+            {
+              "side": "b",
+              "role": "R",
+              "hidden": false,
+              "type": "A"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "b",
+              "role": "C",
+              "hidden": false,
+              "type": "C"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "P",
+              "hidden": false,
+              "type": "B"
+            },
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "P",
+              "hidden": false,
+              "type": "P"
+            },
+            null,
+            null,
+            {
+              "side": "b",
+              "role": "B",
+              "hidden": false,
+              "type": "N"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "P",
+              "hidden": false,
+              "type": "B"
+            },
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "P",
+              "hidden": true
+            },
+            null,
+            {
+              "side": "b",
+              "role": "P",
+              "hidden": false,
+              "type": "B"
+            },
+            null,
+            {
+              "side": "r",
+              "role": "N",
+              "hidden": false,
+              "type": "N"
+            },
+            null,
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "P",
+              "hidden": true
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "b",
+              "role": "C",
+              "hidden": false,
+              "type": "R"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "R",
+              "hidden": true
+            },
+            null,
+            {
+              "side": "r",
+              "role": "B",
+              "hidden": true
+            },
+            {
+              "side": "r",
+              "role": "A",
+              "hidden": true
+            },
+            {
+              "side": "r",
+              "role": "K",
+              "hidden": false,
+              "type": "K"
+            },
+            {
+              "side": "r",
+              "role": "A",
+              "hidden": true
+            },
+            null,
+            {
+              "side": "r",
+              "role": "N",
+              "hidden": true
+            },
+            {
+              "side": "r",
+              "role": "R",
+              "hidden": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "seed": 4001,
+      "side": "b",
+      "ply": 70,
+      "protocol": "Geometry uses the original public board and two already-known mover identities. Captured hidden identity is omitted; only the before static score is authoritative if such capture occurs.",
+      "stages": [
+        {
+          "stage": "before",
+          "inCheck": false,
+          "kingSquare": "e8",
+          "kingLegalMoves": [],
+          "legalMoves": [
+            "b9d8",
+            "b9a7",
+            "e9d9",
+            "e9c9",
+            "i9h9",
+            "i9g9",
+            "i9i8",
+            "c7b7",
+            "c7a7",
+            "c7c6",
+            "c7c5",
+            "c7c4",
+            "c7c3",
+            "c7c2",
+            "c7c1",
+            "c7c0",
+            "c7c8",
+            "c7c9",
+            "e7d8",
+            "e7d6",
+            "e7f8",
+            "e7f6",
+            "i7i6",
+            "g5g4",
+            "i4i3",
+            "i4h4",
+            "g1e3",
+            "g1i3"
+          ],
+          "staticScore": 1313,
+          "publicBoard": [
+            null,
+            {
+              "side": "b",
+              "role": "N",
+              "hidden": true
+            },
+            null,
+            null,
+            {
+              "side": "b",
+              "role": "A",
+              "hidden": false,
+              "type": "R"
+            },
+            {
+              "side": "b",
+              "role": "A",
+              "hidden": true
+            },
+            null,
+            null,
+            {
+              "side": "b",
+              "role": "R",
+              "hidden": true
+            },
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "b",
+              "role": "K",
+              "hidden": false,
+              "type": "K"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "b",
+              "role": "R",
+              "hidden": false,
+              "type": "C"
+            },
+            {
+              "side": "r",
+              "role": "R",
+              "hidden": false,
+              "type": "R"
+            },
+            {
+              "side": "b",
+              "role": "B",
+              "hidden": false,
+              "type": "A"
+            },
+            null,
+            null,
+            null,
+            {
+              "side": "b",
+              "role": "B",
+              "hidden": false,
+              "type": "P"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "P",
+              "hidden": false,
+              "type": "A"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "P",
+              "hidden": false,
+              "type": "P"
+            },
+            null,
+            {
+              "side": "b",
+              "role": "P",
+              "hidden": false,
+              "type": "P"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "b",
+              "role": "P",
+              "hidden": false,
+              "type": "P"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "B",
+              "hidden": false,
+              "type": "B"
+            },
+            {
+              "side": "r",
+              "role": "C",
+              "hidden": false,
+              "type": "P"
+            },
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "A",
+              "hidden": false,
+              "type": "P"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "A",
+              "hidden": false,
+              "type": "C"
+            },
+            null,
+            {
+              "side": "b",
+              "role": "P",
+              "hidden": false,
+              "type": "B"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "K",
+              "hidden": false,
+              "type": "K"
+            },
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "stage": "after-ply-70",
+          "inCheck": false,
+          "kingSquare": "e8",
+          "kingLegalMoves": [],
+          "legalMoves": [
+            "b9c7",
+            "b9d8",
+            "b9a7",
+            "e9d9",
+            "e9c9",
+            "i9h9",
+            "i9g9",
+            "i9i8",
+            "e7d8",
+            "e7d6",
+            "e7f8",
+            "e7f6",
+            "i7i6",
+            "g5g4",
+            "i4i3",
+            "i4h4",
+            "c2d2",
+            "c2a2",
+            "c2c1",
+            "c2c0",
+            "c2c3",
+            "c2c4",
+            "c2c5",
+            "c2c6",
+            "c2c7",
+            "c2c8",
+            "c2c9",
+            "g1e3",
+            "g1i3"
+          ],
+          "staticScore": 1313,
+          "publicBoard": [
+            null,
+            {
+              "side": "b",
+              "role": "N",
+              "hidden": true
+            },
+            null,
+            null,
+            {
+              "side": "b",
+              "role": "A",
+              "hidden": false,
+              "type": "R"
+            },
+            {
+              "side": "b",
+              "role": "A",
+              "hidden": true
+            },
+            null,
+            null,
+            {
+              "side": "b",
+              "role": "R",
+              "hidden": true
+            },
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "b",
+              "role": "K",
+              "hidden": false,
+              "type": "K"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "R",
+              "hidden": false,
+              "type": "R"
+            },
+            {
+              "side": "b",
+              "role": "B",
+              "hidden": false,
+              "type": "A"
+            },
+            null,
+            null,
+            null,
+            {
+              "side": "b",
+              "role": "B",
+              "hidden": false,
+              "type": "P"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "P",
+              "hidden": false,
+              "type": "A"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "P",
+              "hidden": false,
+              "type": "P"
+            },
+            null,
+            {
+              "side": "b",
+              "role": "P",
+              "hidden": false,
+              "type": "P"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "b",
+              "role": "P",
+              "hidden": false,
+              "type": "P"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "B",
+              "hidden": false,
+              "type": "B"
+            },
+            {
+              "side": "r",
+              "role": "C",
+              "hidden": false,
+              "type": "P"
+            },
+            {
+              "side": "b",
+              "role": "R",
+              "hidden": false,
+              "type": "C"
+            },
+            null,
+            {
+              "side": "r",
+              "role": "A",
+              "hidden": false,
+              "type": "P"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "A",
+              "hidden": false,
+              "type": "C"
+            },
+            null,
+            {
+              "side": "b",
+              "role": "P",
+              "hidden": false,
+              "type": "B"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "K",
+              "hidden": false,
+              "type": "K"
+            },
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "stage": "after-ply-71",
+          "inCheck": false,
+          "kingSquare": "e8",
+          "kingLegalMoves": [],
+          "legalMoves": [
+            "b9c7",
+            "b9d8",
+            "b9a7",
+            "e9d9",
+            "e9c9",
+            "i9h9",
+            "i9g9",
+            "i9i8",
+            "e7d8",
+            "e7d6",
+            "e7f8",
+            "e7f6",
+            "i7i6",
+            "g5g4",
+            "i4i3",
+            "i4h4",
+            "c2d2",
+            "c2a2",
+            "c2c1",
+            "c2c0",
+            "c2c3",
+            "c2c4",
+            "c2c5",
+            "c2c6",
+            "c2c7",
+            "c2c8",
+            "c2c9",
+            "g1e3",
+            "g1i3"
+          ],
+          "staticScore": 1301,
+          "publicBoard": [
+            null,
+            {
+              "side": "b",
+              "role": "N",
+              "hidden": true
+            },
+            null,
+            null,
+            {
+              "side": "b",
+              "role": "A",
+              "hidden": false,
+              "type": "R"
+            },
+            {
+              "side": "b",
+              "role": "A",
+              "hidden": true
+            },
+            null,
+            null,
+            {
+              "side": "b",
+              "role": "R",
+              "hidden": true
+            },
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "b",
+              "role": "K",
+              "hidden": false,
+              "type": "K"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "R",
+              "hidden": false,
+              "type": "R"
+            },
+            {
+              "side": "b",
+              "role": "B",
+              "hidden": false,
+              "type": "A"
+            },
+            null,
+            null,
+            null,
+            {
+              "side": "b",
+              "role": "B",
+              "hidden": false,
+              "type": "P"
+            },
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "P",
+              "hidden": false,
+              "type": "P"
+            },
+            null,
+            {
+              "side": "r",
+              "role": "P",
+              "hidden": false,
+              "type": "A"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "b",
+              "role": "P",
+              "hidden": false,
+              "type": "P"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "b",
+              "role": "P",
+              "hidden": false,
+              "type": "P"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "B",
+              "hidden": false,
+              "type": "B"
+            },
+            {
+              "side": "r",
+              "role": "C",
+              "hidden": false,
+              "type": "P"
+            },
+            {
+              "side": "b",
+              "role": "R",
+              "hidden": false,
+              "type": "C"
+            },
+            null,
+            {
+              "side": "r",
+              "role": "A",
+              "hidden": false,
+              "type": "P"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "A",
+              "hidden": false,
+              "type": "C"
+            },
+            null,
+            {
+              "side": "b",
+              "role": "P",
+              "hidden": false,
+              "type": "B"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "side": "r",
+              "role": "K",
+              "hidden": false,
+              "type": "K"
+            },
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    }
+  ]
+}

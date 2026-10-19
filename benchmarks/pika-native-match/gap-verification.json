@@ -1,0 +1,75 @@
+{
+  "passed": true,
+  "verifiedAt": "2026-10-19T14:08:23.363Z",
+  "coreUnchanged": true,
+  "competitionUnchanged": true,
+  "summary": {
+    "overall": {
+      "games": 20,
+      "wins": 0,
+      "draws": 6,
+      "losses": 14,
+      "unresolved": 0,
+      "winRate": 0,
+      "scoreRate": 0.15
+    },
+    "red": {
+      "games": 10,
+      "wins": 0,
+      "draws": 4,
+      "losses": 6,
+      "unresolved": 0,
+      "winRate": 0,
+      "scoreRate": 0.2
+    },
+    "black": {
+      "games": 10,
+      "wins": 0,
+      "draws": 2,
+      "losses": 8,
+      "unresolved": 0,
+      "winRate": 0,
+      "scoreRate": 0.1
+    }
+  },
+  "caseCount": 7,
+  "searchCount": 23,
+  "independentMateWorlds": 8,
+  "sourceHashes": {
+    "scripts/native-match-engine.mjs": "13ac0a59a5d4c1d6b32c2f1e249143ad4ffc699050deb7be4643f6c79709a605",
+    "scripts/native-pika-match.mjs": "3737a2e4826f370ed0c89f09d794c0d52e9ba94b7a60b2e8260f0047073c8ba4",
+    "scripts/native-pika-verify.mjs": "a4eb727e5590a479ae672ff3295b4691360f83535e1d63817c61d2b8254795d3",
+    "scripts/native-pika-report.mjs": "0ca46b6f1de7db80bb8b2f227ab4b65563921585667d38f4fc4329b587f6f006",
+    "scripts/native-gap-diagnosis.mjs": "56ea460e8db251eabea5a06846506ce0b11911dd9d3bb8c2661f3fc3597e2258",
+    "scripts/native-gap-geometry.mjs": "f5f849ec8335a0fe58aa8711651427d755012af87b7a704ed70cdc6e2fae7285",
+    "scripts/native-gap-mate-check.mjs": "6dc905264441b488269f64ccb6676bbb18e22479ca4a299e1e35b4ecbb141db8",
+    "scripts/native-gap-qleaf.mjs": "bbd858e4050bc752f77bc78fdd701b501b08fe8da3854b16b61c8322e6669b77",
+    "scripts/native-gap-timing.mjs": "f23c594da8ec50663d13e300d23ac69bcd2089b31efe571b164a3267d0efbb54",
+    "scripts/native-gap-verify.mjs": "687c1bab2818b38ece1fee43fb0c2f331780377731afbc9ebb3af191a780109c",
+    "native/search.cpp": "eb1c25bbd4209321bbd0a881128bce0de784d300d2aed8abe6c189167ac38698",
+    "engine.js": "7f427f6e00e286a48335f7c7a7e74270d2a4349d7ea2aabcad0821122a17cb49",
+    "ai.js": "66bca44c185829ab7a42d5432fc8323c2937fed2be475ced46a654a7a2e1c18e"
+  },
+  "artifactHashes": {
+    "benchmarks/pika-native-match/environment.json": "4fa3eeed07c5130cc12cb5653834175b67f6016d52c989d537f36ed05f73794d",
+    "benchmarks/pika-native-match/gap-counterfactuals.json": "1d6e5fa551838834aad678bee342afbee678c125dd8d12e114a597bf1f9fd657",
+    "benchmarks/pika-native-match/gap-geometry.json": "9bdbd57245e685d27aaef94f90e47ad638e418133ebcd9c33745183344bf75ee",
+    "benchmarks/pika-native-match/gap-information.json": "f982627f948e8bb6361721fd4c4828560df17c02ca01d22fbb12a39a74b32a3d",
+    "benchmarks/pika-native-match/gap-mate-proof.json": "6869f3769199679fe5c9aa0fb09ca063ee6b2ce5f90375c660b427a20e634940",
+    "benchmarks/pika-native-match/gap-qleaf.json": "9797d89e2c35f05593d86e635fe2109ad90d9d1f591dcd958f6c5bf95f74dd0d",
+    "benchmarks/pika-native-match/gap-timing.json": "f4285378a4a83834535a81f3e69a8aa41823b2941325353525ef03eb5cf9db90",
+    "benchmarks/pika-native-match/live.json": "2e2b8e7e1e69abda8c79aa052c75f00e606164e46f6a00d5d5c3ce135c096e84",
+    "benchmarks/pika-native-match/matches.json": "14108c0606dc43d6424dba5bee8c4cb3cf702051911d26053c2aa92a15475b2b",
+    "benchmarks/pika-native-match/report-hashes.json": "eb11e0ea7518df258c9ba8bb4384490270fb55ecf3a765ef57b53ba84aaab757",
+    "benchmarks/pika-native-match/smoke.json": "dfe4e085d7f999a9307e8bac0a9e0f598eccac324ee9866d871964038fc78f7a",
+    "benchmarks/pika-native-match/verification-partial.json": "c654bae23c8318b1fadf2a25fed10e34d2f7d5e053c848c191a15373e8cb474e",
+    "benchmarks/pika-native-match/verification.json": "d269429dfc5d19be7c52c8e5ec14c0a66c5a6f180c8770b493c65d68a77154c7"
+  },
+  "analysisReportSha256": "8d9a3eced05ba62d4dcd205e32c432daeebfa4fd40fc1bb5cee46952d8d9c684",
+  "matchReportSha256": "57136ebee5aec1ed3847f96574959752fb9b099b4743174a57485b2ff0e16ed7",
+  "limits": [
+    "Selected diagnostic positions, not full-game solved optimality.",
+    "No new match outcomes for alternative recommendations.",
+    "Six timestamp replays do not identify the original timeout cause."
+  ]
+}

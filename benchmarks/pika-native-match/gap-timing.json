@@ -1,0 +1,99 @@
+{
+  "originalObservedMs": 1069.8125540000037,
+  "originalResult": {
+    "status": "decided",
+    "winner": "r",
+    "reason": "technical-timeout",
+    "technicalForfeit": true,
+    "offender": "candidate"
+  },
+  "viewSha256": "9da61d745ffa4161c02ca1b14a92a36499668045a0b3c1309f6dacccc94423ee",
+  "protocol": "Timestamp-only instrumentation of an in-memory adapter copy; frozen engine and original20-game data unchanged.6 fresh ready processes, same visible input,1000ms budget. New traces cannot establish the cause of the original uninstrumented long tail.",
+  "rows": [
+    {
+      "repeat": 0,
+      "initializationMs": 6.766725000000008,
+      "readyMs": 998.378905,
+      "totalReturnMs": 998.4012250000001,
+      "afterDecisionMs": 0.02232000000003609,
+      "depth": 6,
+      "nodes": 2966906,
+      "deadlineStop": false,
+      "move": {
+        "from": 4,
+        "to": 13
+      }
+    },
+    {
+      "repeat": 1,
+      "initializationMs": 5.198900000000094,
+      "readyMs": 992.827865,
+      "totalReturnMs": 992.8341509999998,
+      "afterDecisionMs": 0.006285999999818159,
+      "depth": 6,
+      "nodes": 2647130,
+      "deadlineStop": false,
+      "move": {
+        "from": 4,
+        "to": 13
+      }
+    },
+    {
+      "repeat": 2,
+      "initializationMs": 4.91538300000002,
+      "readyMs": 993.3732300000001,
+      "totalReturnMs": 993.386031,
+      "afterDecisionMs": 0.012800999999853957,
+      "depth": 6,
+      "nodes": 2915642,
+      "deadlineStop": false,
+      "move": {
+        "from": 4,
+        "to": 13
+      }
+    },
+    {
+      "repeat": 3,
+      "initializationMs": 4.921752000000197,
+      "readyMs": 994.057789,
+      "totalReturnMs": 994.0644120000002,
+      "afterDecisionMs": 0.006623000000217871,
+      "depth": 6,
+      "nodes": 2948826,
+      "deadlineStop": false,
+      "move": {
+        "from": 4,
+        "to": 13
+      }
+    },
+    {
+      "repeat": 4,
+      "initializationMs": 4.725276000000122,
+      "readyMs": 987.814899,
+      "totalReturnMs": 987.8266020000001,
+      "afterDecisionMs": 0.01170300000012503,
+      "depth": 6,
+      "nodes": 2345538,
+      "deadlineStop": false,
+      "move": {
+        "from": 4,
+        "to": 13
+      }
+    },
+    {
+      "repeat": 5,
+      "initializationMs": 4.740523999999823,
+      "readyMs": 995.9978350000001,
+      "totalReturnMs": 996.0047100000002,
+      "afterDecisionMs": 0.00687500000003638,
+      "depth": 6,
+      "nodes": 2932794,
+      "deadlineStop": false,
+      "move": {
+        "from": 4,
+        "to": 13
+      }
+    }
+  ],
+  "reproducedOver1060": 0
+}
