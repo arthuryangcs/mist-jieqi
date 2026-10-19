@@ -1,0 +1,44 @@
+{
+  "checkedAt": "2026-10-19T19:48:32.034Z",
+  "results": [
+    {
+      "url": "http://127.0.0.1:8766/",
+      "status": 200,
+      "pageStatus": 200,
+      "body": {
+        "engine": "cpp-native",
+        "sourceSha256": "73de0d5768fbedd97d46305891a0513f95c7a856aa5aba8edff8a92e2d1798d0",
+        "binarySha256": "2304327e3cb91987780ab453fa98db5e17383d32c4c39009649092ee9f14c49b",
+        "maxThreads": 4,
+        "independentWorldSearch": true,
+        "transport": "loopback-http",
+        "protocol": 2,
+        "active": 0,
+        "completed": 93,
+        "aborted": 64
+      },
+      "experimentalLabel": false
+    },
+    {
+      "url": "http://127.0.0.1:8767/",
+      "status": 200,
+      "pageStatus": 200,
+      "body": {
+        "engine": "cpp-native",
+        "sourceSha256": "5ed2d46d6521a7b5219213eb2ad5a522892232d62288883dc3b65d17d5ce8f0c",
+        "binarySha256": "3483e2296af04f4198e2f6fdda96e97ba47775e495339f1518858762adb200a3",
+        "maxThreads": 4,
+        "independentWorldSearch": true,
+        "transport": "loopback-http",
+        "protocol": 2,
+        "focusedPlay": true,
+        "rootBudget": true,
+        "criticalTactics": true,
+        "active": 0,
+        "completed": 0,
+        "aborted": 0
+      },
+      "experimentalLabel": true
+    }
+  ]
+}

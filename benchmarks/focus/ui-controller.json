@@ -1,0 +1,20 @@
+{
+  "startedAt": "2026-10-19T19:07:01.840Z",
+  "environment": "Node simulated DOM, real NativeWorker NDJSON parser; no browser rendering",
+  "checks": [
+    {
+      "name": "repeat clicks, reset, late focused response, public-only input",
+      "passed": true
+    },
+    {
+      "name": "coverage label, undo, play/analysis purposes and isolated analysis cache",
+      "passed": true
+    },
+    {
+      "name": "mixed-depth metadata rejected, no move/no silent JS fallback",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "finishedAt": "2026-10-19T19:07:02.045Z"
+}

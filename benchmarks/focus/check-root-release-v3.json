@@ -1,0 +1,646 @@
+{
+  "stage": "root",
+  "kind": "release",
+  "startedAt": "2026-10-19T18:41:40.927Z",
+  "builds": [
+    {
+      "name": "baseline",
+      "audit": true,
+      "sanitizer": null,
+      "binary": "/Users/yangyemeng/Documents/Codex/2026-10-19/task/.cache/focus/baseline-audit",
+      "sourceSha256": "3c87b1074272d8932ce60bf6558cd4e189e5b3b616c4b4ca8ebcaba6226a4e8f",
+      "binarySha256": "68ca065eab781fb2b56a4484a4ed477c0dde08db6ff5d677c41faad86cb5d299",
+      "flags": [
+        "-std=c++17",
+        "-O3",
+        "-DNDEBUG",
+        "-ffp-contract=off",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-isystem",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+      ],
+      "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+      "warnings": ""
+    },
+    {
+      "name": "root",
+      "audit": true,
+      "sanitizer": null,
+      "binary": "/Users/yangyemeng/Documents/Codex/2026-10-19/task/.cache/focus/root-audit",
+      "sourceSha256": "a5614ddf2d9d287cedd3c534869fb0ba42e0c07082cf2c206da35c5fa989b75f",
+      "binarySha256": "153c3c54465d03d1b2426456b5eab5521adc6ca862a7c63638014b0d203da352",
+      "flags": [
+        "-std=c++17",
+        "-O3",
+        "-DNDEBUG",
+        "-ffp-contract=off",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-isystem",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+      ],
+      "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+      "warnings": ""
+    }
+  ],
+  "rules": [
+    {
+      "name": "cannon-screen",
+      "viewer": "r",
+      "criticalRoot": true,
+      "transitions": 20,
+      "passed": true
+    },
+    {
+      "name": "cannon-screen",
+      "viewer": "b",
+      "criticalRoot": true,
+      "transitions": 20,
+      "passed": true
+    },
+    {
+      "name": "cannon-screen",
+      "viewer": null,
+      "criticalRoot": true,
+      "transitions": 20,
+      "passed": true
+    },
+    {
+      "name": "horse-leg",
+      "viewer": "r",
+      "criticalRoot": true,
+      "transitions": 13,
+      "passed": true
+    },
+    {
+      "name": "horse-leg",
+      "viewer": "b",
+      "criticalRoot": true,
+      "transitions": 13,
+      "passed": true
+    },
+    {
+      "name": "horse-leg",
+      "viewer": null,
+      "criticalRoot": true,
+      "transitions": 13,
+      "passed": true
+    },
+    {
+      "name": "elephant-eye",
+      "viewer": "r",
+      "criticalRoot": false,
+      "transitions": 13,
+      "passed": true
+    },
+    {
+      "name": "elephant-eye",
+      "viewer": "b",
+      "criticalRoot": false,
+      "transitions": 13,
+      "passed": true
+    },
+    {
+      "name": "elephant-eye",
+      "viewer": null,
+      "criticalRoot": false,
+      "transitions": 13,
+      "passed": true
+    },
+    {
+      "name": "revealed-advisor",
+      "viewer": "r",
+      "criticalRoot": false,
+      "transitions": 8,
+      "passed": true
+    },
+    {
+      "name": "revealed-advisor",
+      "viewer": "b",
+      "criticalRoot": false,
+      "transitions": 8,
+      "passed": true
+    },
+    {
+      "name": "revealed-advisor",
+      "viewer": null,
+      "criticalRoot": false,
+      "transitions": 8,
+      "passed": true
+    },
+    {
+      "name": "sampled-reveal-rook",
+      "viewer": "r",
+      "criticalRoot": true,
+      "transitions": 12,
+      "passed": true
+    },
+    {
+      "name": "sampled-reveal-rook",
+      "viewer": "b",
+      "criticalRoot": true,
+      "transitions": 12,
+      "passed": true
+    },
+    {
+      "name": "sampled-reveal-rook",
+      "viewer": null,
+      "criticalRoot": true,
+      "transitions": 12,
+      "passed": true
+    },
+    {
+      "name": "sampled-reveal-cannon",
+      "viewer": "r",
+      "criticalRoot": true,
+      "transitions": 13,
+      "passed": true
+    },
+    {
+      "name": "sampled-reveal-cannon",
+      "viewer": "b",
+      "criticalRoot": true,
+      "transitions": 13,
+      "passed": true
+    },
+    {
+      "name": "sampled-reveal-cannon",
+      "viewer": null,
+      "criticalRoot": true,
+      "transitions": 13,
+      "passed": true
+    },
+    {
+      "name": "counter-check",
+      "viewer": "r",
+      "criticalRoot": true,
+      "transitions": 4,
+      "passed": true
+    },
+    {
+      "name": "counter-check",
+      "viewer": "b",
+      "criticalRoot": true,
+      "transitions": 4,
+      "passed": true
+    },
+    {
+      "name": "counter-check",
+      "viewer": null,
+      "criticalRoot": true,
+      "transitions": 4,
+      "passed": true
+    },
+    {
+      "name": "15013/0",
+      "viewer": "r",
+      "criticalRoot": false,
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "15013/0",
+      "viewer": "b",
+      "criticalRoot": false,
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "15013/0",
+      "viewer": null,
+      "criticalRoot": false,
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "15013/12",
+      "viewer": "r",
+      "criticalRoot": false,
+      "transitions": 41,
+      "passed": true
+    },
+    {
+      "name": "15013/12",
+      "viewer": "b",
+      "criticalRoot": false,
+      "transitions": 41,
+      "passed": true
+    },
+    {
+      "name": "15013/12",
+      "viewer": null,
+      "criticalRoot": false,
+      "transitions": 41,
+      "passed": true
+    },
+    {
+      "name": "15013/24",
+      "viewer": "r",
+      "criticalRoot": false,
+      "transitions": 36,
+      "passed": true
+    },
+    {
+      "name": "15013/24",
+      "viewer": "b",
+      "criticalRoot": false,
+      "transitions": 36,
+      "passed": true
+    },
+    {
+      "name": "15013/24",
+      "viewer": null,
+      "criticalRoot": false,
+      "transitions": 36,
+      "passed": true
+    },
+    {
+      "name": "15013/36",
+      "viewer": "r",
+      "criticalRoot": false,
+      "transitions": 27,
+      "passed": true
+    },
+    {
+      "name": "15013/36",
+      "viewer": "b",
+      "criticalRoot": false,
+      "transitions": 27,
+      "passed": true
+    },
+    {
+      "name": "15013/36",
+      "viewer": null,
+      "criticalRoot": false,
+      "transitions": 27,
+      "passed": true
+    },
+    {
+      "name": "15013/48",
+      "viewer": "r",
+      "criticalRoot": false,
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "15013/48",
+      "viewer": "b",
+      "criticalRoot": false,
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "15013/48",
+      "viewer": null,
+      "criticalRoot": false,
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "15017/0",
+      "viewer": "r",
+      "criticalRoot": false,
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "15017/0",
+      "viewer": "b",
+      "criticalRoot": false,
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "15017/0",
+      "viewer": null,
+      "criticalRoot": false,
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "15017/12",
+      "viewer": "r",
+      "criticalRoot": true,
+      "transitions": 25,
+      "passed": true
+    },
+    {
+      "name": "15017/12",
+      "viewer": "b",
+      "criticalRoot": true,
+      "transitions": 25,
+      "passed": true
+    },
+    {
+      "name": "15017/12",
+      "viewer": null,
+      "criticalRoot": true,
+      "transitions": 25,
+      "passed": true
+    },
+    {
+      "name": "15017/24",
+      "viewer": "r",
+      "criticalRoot": true,
+      "transitions": 30,
+      "passed": true
+    },
+    {
+      "name": "15017/24",
+      "viewer": "b",
+      "criticalRoot": true,
+      "transitions": 30,
+      "passed": true
+    },
+    {
+      "name": "15017/24",
+      "viewer": null,
+      "criticalRoot": true,
+      "transitions": 30,
+      "passed": true
+    },
+    {
+      "name": "15017/36",
+      "viewer": "r",
+      "criticalRoot": true,
+      "transitions": 24,
+      "passed": true
+    },
+    {
+      "name": "15017/36",
+      "viewer": "b",
+      "criticalRoot": true,
+      "transitions": 24,
+      "passed": true
+    },
+    {
+      "name": "15017/36",
+      "viewer": null,
+      "criticalRoot": true,
+      "transitions": 24,
+      "passed": true
+    },
+    {
+      "name": "15017/48",
+      "viewer": "r",
+      "criticalRoot": false,
+      "transitions": 32,
+      "passed": true
+    },
+    {
+      "name": "15017/48",
+      "viewer": "b",
+      "criticalRoot": false,
+      "transitions": 32,
+      "passed": true
+    },
+    {
+      "name": "15017/48",
+      "viewer": null,
+      "criticalRoot": false,
+      "transitions": 32,
+      "passed": true
+    },
+    {
+      "name": "15031/0",
+      "viewer": "r",
+      "criticalRoot": false,
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "15031/0",
+      "viewer": "b",
+      "criticalRoot": false,
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "15031/0",
+      "viewer": null,
+      "criticalRoot": false,
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "15031/12",
+      "viewer": "r",
+      "criticalRoot": false,
+      "transitions": 22,
+      "passed": true
+    },
+    {
+      "name": "15031/12",
+      "viewer": "b",
+      "criticalRoot": false,
+      "transitions": 22,
+      "passed": true
+    },
+    {
+      "name": "15031/12",
+      "viewer": null,
+      "criticalRoot": false,
+      "transitions": 22,
+      "passed": true
+    },
+    {
+      "name": "15031/24",
+      "viewer": "r",
+      "criticalRoot": false,
+      "transitions": 29,
+      "passed": true
+    },
+    {
+      "name": "15031/24",
+      "viewer": "b",
+      "criticalRoot": false,
+      "transitions": 29,
+      "passed": true
+    },
+    {
+      "name": "15031/24",
+      "viewer": null,
+      "criticalRoot": false,
+      "transitions": 29,
+      "passed": true
+    },
+    {
+      "name": "15031/36",
+      "viewer": "r",
+      "criticalRoot": true,
+      "transitions": 28,
+      "passed": true
+    },
+    {
+      "name": "15031/36",
+      "viewer": "b",
+      "criticalRoot": true,
+      "transitions": 28,
+      "passed": true
+    },
+    {
+      "name": "15031/36",
+      "viewer": null,
+      "criticalRoot": true,
+      "transitions": 28,
+      "passed": true
+    },
+    {
+      "name": "15031/48",
+      "viewer": "r",
+      "criticalRoot": true,
+      "transitions": 25,
+      "passed": true
+    },
+    {
+      "name": "15031/48",
+      "viewer": "b",
+      "criticalRoot": true,
+      "transitions": 25,
+      "passed": true
+    },
+    {
+      "name": "15031/48",
+      "viewer": null,
+      "criticalRoot": true,
+      "transitions": 25,
+      "passed": true
+    }
+  ],
+  "searches": [
+    {
+      "name": "初始全暗",
+      "fullDepth": 4,
+      "depth": 4,
+      "fullRootDepth": 3,
+      "compared": 13,
+      "total": 44,
+      "reintroduced": 3,
+      "quietChecks": 0,
+      "passed": true
+    },
+    {
+      "name": "可达中局 2111 / 20步",
+      "fullDepth": 4,
+      "depth": 4,
+      "fullRootDepth": 3,
+      "compared": 11,
+      "total": 25,
+      "reintroduced": 3,
+      "quietChecks": 0,
+      "passed": true
+    },
+    {
+      "name": "可达中局 2111 / 44步",
+      "fullDepth": 4,
+      "depth": 4,
+      "fullRootDepth": 3,
+      "compared": 9,
+      "total": 23,
+      "reintroduced": 3,
+      "quietChecks": 0,
+      "passed": true
+    },
+    {
+      "name": "可达中局 2221 / 44步",
+      "fullDepth": 4,
+      "depth": 4,
+      "fullRootDepth": 3,
+      "compared": 14,
+      "total": 31,
+      "reintroduced": 3,
+      "quietChecks": 0,
+      "passed": true
+    },
+    {
+      "name": "全明10子残局",
+      "fullDepth": 5,
+      "depth": 5,
+      "fullRootDepth": 3,
+      "compared": 12,
+      "total": 30,
+      "reintroduced": 6,
+      "quietChecks": 0,
+      "passed": true
+    },
+    {
+      "nodeLimit": 1000,
+      "depth": 0,
+      "compared": 0,
+      "passed": true
+    },
+    {
+      "nodeLimit": 10000,
+      "depth": 1,
+      "compared": 44,
+      "passed": true
+    },
+    {
+      "nodeLimit": 300000,
+      "depth": 4,
+      "compared": 2,
+      "passed": true
+    },
+    {
+      "nodeLimit": 600000,
+      "depth": 4,
+      "compared": 10,
+      "passed": true
+    },
+    {
+      "budget": 0,
+      "depth": 0,
+      "interruptedDepth": 1,
+      "cohortComplete": true,
+      "compared": 0,
+      "progress": 0,
+      "passed": true
+    },
+    {
+      "budget": 5,
+      "depth": 1,
+      "interruptedDepth": 2,
+      "cohortComplete": true,
+      "compared": 44,
+      "progress": 1,
+      "passed": true
+    },
+    {
+      "budget": 25,
+      "depth": 3,
+      "interruptedDepth": 3,
+      "cohortComplete": false,
+      "compared": 4,
+      "progress": 5,
+      "passed": true
+    },
+    {
+      "budget": 100,
+      "depth": 4,
+      "interruptedDepth": 4,
+      "cohortComplete": false,
+      "compared": 4,
+      "progress": 11,
+      "passed": true
+    },
+    {
+      "budget": 500,
+      "depth": 5,
+      "interruptedDepth": 5,
+      "cohortComplete": false,
+      "compared": 5,
+      "progress": 17,
+      "passed": true
+    }
+  ],
+  "passed": false,
+  "error": "AssertionError [ERR_ASSERTION]: Deep reintroduced roots must retain exact per-world scores\n+ actual - expected\n... Skipped lines\n\n  {\n    from: 83,\n+   heuristicWinRate: 46.745945538257416,\n-   heuristicWinRate: 46.71555901596396,\n    repetitionCount: 0,\n    sampleLosses: 0,\n    sampleScores: [\n      0,\n+     -198.33333333332848,\n-     -204.33333333332848,\n      0,\n      0,\n      -142.33333333332848,\n      -126,\n      0,\n...\n    sampleWins: 0,\n+   score: -78.20784977897439,\n+   spread: 80.86421231504768,\n-   score: -78.94025752086272,\n-   spread: 81.9913613335765,\n    to: 63\n  }\n\n    at file:///Users/yangyemeng/Documents/Codex/2026-10-19/task/native/focus-check.mjs:52:201\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)",
+  "stderr": {
+    "baseline": "",
+    "root": ""
+  },
+  "finishedAt": "2026-10-19T18:42:01.659Z"
+}

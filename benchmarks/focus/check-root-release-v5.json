@@ -1,0 +1,713 @@
+{
+  "stage": "root",
+  "kind": "release",
+  "startedAt": "2026-10-19T18:46:18.853Z",
+  "builds": [
+    {
+      "name": "baseline",
+      "audit": true,
+      "sanitizer": null,
+      "binary": "/Users/yangyemeng/Documents/Codex/2026-10-19/task/.cache/focus/baseline-audit",
+      "sourceSha256": "a63f909840dc9757abb7263166e8f1638a7d9eabd482c9127102b94437bdc37a",
+      "binarySha256": "4a82f4e49aee9d330f9f3639f67d47a14adbae605553ff98c4e8bdbfed6091ba",
+      "flags": [
+        "-std=c++17",
+        "-O3",
+        "-DNDEBUG",
+        "-ffp-contract=off",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-isystem",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+      ],
+      "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+      "warnings": ""
+    },
+    {
+      "name": "root",
+      "audit": true,
+      "sanitizer": null,
+      "binary": "/Users/yangyemeng/Documents/Codex/2026-10-19/task/.cache/focus/root-audit",
+      "sourceSha256": "c4a3e924103912af7969b3dca375ca31416740791a4488102a574124fc3dd181",
+      "binarySha256": "d011ce9cd466f118ec0632e763a379cf3d2f67b6f6bbcaaca7168da9dcc46335",
+      "flags": [
+        "-std=c++17",
+        "-O3",
+        "-DNDEBUG",
+        "-ffp-contract=off",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-isystem",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+      ],
+      "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+      "warnings": ""
+    },
+    {
+      "name": "fullCanonical",
+      "audit": true,
+      "sanitizer": null,
+      "binary": "/Users/yangyemeng/Documents/Codex/2026-10-19/task/.cache/focus/fullCanonical-audit",
+      "sourceSha256": "84aaca2e527bb804b314574777c7cb8900b4df09a74dc09f2177803838dae67b",
+      "binarySha256": "1b64e89cf7b5575efb08f518b4d76f25a04836c070d98382eabb22c127a6ae13",
+      "flags": [
+        "-std=c++17",
+        "-O3",
+        "-DNDEBUG",
+        "-ffp-contract=off",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-isystem",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+      ],
+      "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+      "warnings": ""
+    }
+  ],
+  "rules": [
+    {
+      "name": "cannon-screen",
+      "viewer": "r",
+      "criticalRoot": true,
+      "transitions": 20,
+      "passed": true
+    },
+    {
+      "name": "cannon-screen",
+      "viewer": "b",
+      "criticalRoot": true,
+      "transitions": 20,
+      "passed": true
+    },
+    {
+      "name": "cannon-screen",
+      "viewer": null,
+      "criticalRoot": true,
+      "transitions": 20,
+      "passed": true
+    },
+    {
+      "name": "horse-leg",
+      "viewer": "r",
+      "criticalRoot": true,
+      "transitions": 13,
+      "passed": true
+    },
+    {
+      "name": "horse-leg",
+      "viewer": "b",
+      "criticalRoot": true,
+      "transitions": 13,
+      "passed": true
+    },
+    {
+      "name": "horse-leg",
+      "viewer": null,
+      "criticalRoot": true,
+      "transitions": 13,
+      "passed": true
+    },
+    {
+      "name": "elephant-eye",
+      "viewer": "r",
+      "criticalRoot": false,
+      "transitions": 13,
+      "passed": true
+    },
+    {
+      "name": "elephant-eye",
+      "viewer": "b",
+      "criticalRoot": false,
+      "transitions": 13,
+      "passed": true
+    },
+    {
+      "name": "elephant-eye",
+      "viewer": null,
+      "criticalRoot": false,
+      "transitions": 13,
+      "passed": true
+    },
+    {
+      "name": "revealed-advisor",
+      "viewer": "r",
+      "criticalRoot": false,
+      "transitions": 8,
+      "passed": true
+    },
+    {
+      "name": "revealed-advisor",
+      "viewer": "b",
+      "criticalRoot": false,
+      "transitions": 8,
+      "passed": true
+    },
+    {
+      "name": "revealed-advisor",
+      "viewer": null,
+      "criticalRoot": false,
+      "transitions": 8,
+      "passed": true
+    },
+    {
+      "name": "sampled-reveal-rook",
+      "viewer": "r",
+      "criticalRoot": true,
+      "transitions": 12,
+      "passed": true
+    },
+    {
+      "name": "sampled-reveal-rook",
+      "viewer": "b",
+      "criticalRoot": true,
+      "transitions": 12,
+      "passed": true
+    },
+    {
+      "name": "sampled-reveal-rook",
+      "viewer": null,
+      "criticalRoot": true,
+      "transitions": 12,
+      "passed": true
+    },
+    {
+      "name": "sampled-reveal-cannon",
+      "viewer": "r",
+      "criticalRoot": true,
+      "transitions": 13,
+      "passed": true
+    },
+    {
+      "name": "sampled-reveal-cannon",
+      "viewer": "b",
+      "criticalRoot": true,
+      "transitions": 13,
+      "passed": true
+    },
+    {
+      "name": "sampled-reveal-cannon",
+      "viewer": null,
+      "criticalRoot": true,
+      "transitions": 13,
+      "passed": true
+    },
+    {
+      "name": "counter-check",
+      "viewer": "r",
+      "criticalRoot": true,
+      "transitions": 4,
+      "passed": true
+    },
+    {
+      "name": "counter-check",
+      "viewer": "b",
+      "criticalRoot": true,
+      "transitions": 4,
+      "passed": true
+    },
+    {
+      "name": "counter-check",
+      "viewer": null,
+      "criticalRoot": true,
+      "transitions": 4,
+      "passed": true
+    },
+    {
+      "name": "15013/0",
+      "viewer": "r",
+      "criticalRoot": false,
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "15013/0",
+      "viewer": "b",
+      "criticalRoot": false,
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "15013/0",
+      "viewer": null,
+      "criticalRoot": false,
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "15013/12",
+      "viewer": "r",
+      "criticalRoot": false,
+      "transitions": 41,
+      "passed": true
+    },
+    {
+      "name": "15013/12",
+      "viewer": "b",
+      "criticalRoot": false,
+      "transitions": 41,
+      "passed": true
+    },
+    {
+      "name": "15013/12",
+      "viewer": null,
+      "criticalRoot": false,
+      "transitions": 41,
+      "passed": true
+    },
+    {
+      "name": "15013/24",
+      "viewer": "r",
+      "criticalRoot": false,
+      "transitions": 36,
+      "passed": true
+    },
+    {
+      "name": "15013/24",
+      "viewer": "b",
+      "criticalRoot": false,
+      "transitions": 36,
+      "passed": true
+    },
+    {
+      "name": "15013/24",
+      "viewer": null,
+      "criticalRoot": false,
+      "transitions": 36,
+      "passed": true
+    },
+    {
+      "name": "15013/36",
+      "viewer": "r",
+      "criticalRoot": false,
+      "transitions": 27,
+      "passed": true
+    },
+    {
+      "name": "15013/36",
+      "viewer": "b",
+      "criticalRoot": false,
+      "transitions": 27,
+      "passed": true
+    },
+    {
+      "name": "15013/36",
+      "viewer": null,
+      "criticalRoot": false,
+      "transitions": 27,
+      "passed": true
+    },
+    {
+      "name": "15013/48",
+      "viewer": "r",
+      "criticalRoot": false,
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "15013/48",
+      "viewer": "b",
+      "criticalRoot": false,
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "15013/48",
+      "viewer": null,
+      "criticalRoot": false,
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "15017/0",
+      "viewer": "r",
+      "criticalRoot": false,
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "15017/0",
+      "viewer": "b",
+      "criticalRoot": false,
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "15017/0",
+      "viewer": null,
+      "criticalRoot": false,
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "15017/12",
+      "viewer": "r",
+      "criticalRoot": true,
+      "transitions": 25,
+      "passed": true
+    },
+    {
+      "name": "15017/12",
+      "viewer": "b",
+      "criticalRoot": true,
+      "transitions": 25,
+      "passed": true
+    },
+    {
+      "name": "15017/12",
+      "viewer": null,
+      "criticalRoot": true,
+      "transitions": 25,
+      "passed": true
+    },
+    {
+      "name": "15017/24",
+      "viewer": "r",
+      "criticalRoot": true,
+      "transitions": 30,
+      "passed": true
+    },
+    {
+      "name": "15017/24",
+      "viewer": "b",
+      "criticalRoot": true,
+      "transitions": 30,
+      "passed": true
+    },
+    {
+      "name": "15017/24",
+      "viewer": null,
+      "criticalRoot": true,
+      "transitions": 30,
+      "passed": true
+    },
+    {
+      "name": "15017/36",
+      "viewer": "r",
+      "criticalRoot": true,
+      "transitions": 24,
+      "passed": true
+    },
+    {
+      "name": "15017/36",
+      "viewer": "b",
+      "criticalRoot": true,
+      "transitions": 24,
+      "passed": true
+    },
+    {
+      "name": "15017/36",
+      "viewer": null,
+      "criticalRoot": true,
+      "transitions": 24,
+      "passed": true
+    },
+    {
+      "name": "15017/48",
+      "viewer": "r",
+      "criticalRoot": false,
+      "transitions": 32,
+      "passed": true
+    },
+    {
+      "name": "15017/48",
+      "viewer": "b",
+      "criticalRoot": false,
+      "transitions": 32,
+      "passed": true
+    },
+    {
+      "name": "15017/48",
+      "viewer": null,
+      "criticalRoot": false,
+      "transitions": 32,
+      "passed": true
+    },
+    {
+      "name": "15031/0",
+      "viewer": "r",
+      "criticalRoot": false,
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "15031/0",
+      "viewer": "b",
+      "criticalRoot": false,
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "15031/0",
+      "viewer": null,
+      "criticalRoot": false,
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "15031/12",
+      "viewer": "r",
+      "criticalRoot": false,
+      "transitions": 22,
+      "passed": true
+    },
+    {
+      "name": "15031/12",
+      "viewer": "b",
+      "criticalRoot": false,
+      "transitions": 22,
+      "passed": true
+    },
+    {
+      "name": "15031/12",
+      "viewer": null,
+      "criticalRoot": false,
+      "transitions": 22,
+      "passed": true
+    },
+    {
+      "name": "15031/24",
+      "viewer": "r",
+      "criticalRoot": false,
+      "transitions": 29,
+      "passed": true
+    },
+    {
+      "name": "15031/24",
+      "viewer": "b",
+      "criticalRoot": false,
+      "transitions": 29,
+      "passed": true
+    },
+    {
+      "name": "15031/24",
+      "viewer": null,
+      "criticalRoot": false,
+      "transitions": 29,
+      "passed": true
+    },
+    {
+      "name": "15031/36",
+      "viewer": "r",
+      "criticalRoot": true,
+      "transitions": 28,
+      "passed": true
+    },
+    {
+      "name": "15031/36",
+      "viewer": "b",
+      "criticalRoot": true,
+      "transitions": 28,
+      "passed": true
+    },
+    {
+      "name": "15031/36",
+      "viewer": null,
+      "criticalRoot": true,
+      "transitions": 28,
+      "passed": true
+    },
+    {
+      "name": "15031/48",
+      "viewer": "r",
+      "criticalRoot": true,
+      "transitions": 25,
+      "passed": true
+    },
+    {
+      "name": "15031/48",
+      "viewer": "b",
+      "criticalRoot": true,
+      "transitions": 25,
+      "passed": true
+    },
+    {
+      "name": "15031/48",
+      "viewer": null,
+      "criticalRoot": true,
+      "transitions": 25,
+      "passed": true
+    }
+  ],
+  "searches": [
+    {
+      "name": "初始全暗",
+      "fullDepth": 4,
+      "depth": 4,
+      "fullRootDepth": 3,
+      "compared": 13,
+      "total": 44,
+      "reintroduced": 3,
+      "quietChecks": 0,
+      "passed": true
+    },
+    {
+      "name": "可达中局 2111 / 20步",
+      "fullDepth": 4,
+      "depth": 4,
+      "fullRootDepth": 3,
+      "compared": 11,
+      "total": 25,
+      "reintroduced": 3,
+      "quietChecks": 0,
+      "passed": true
+    },
+    {
+      "name": "可达中局 2111 / 44步",
+      "fullDepth": 4,
+      "depth": 4,
+      "fullRootDepth": 3,
+      "compared": 9,
+      "total": 23,
+      "reintroduced": 3,
+      "quietChecks": 0,
+      "passed": true
+    },
+    {
+      "name": "可达中局 2221 / 44步",
+      "fullDepth": 4,
+      "depth": 4,
+      "fullRootDepth": 3,
+      "compared": 14,
+      "total": 31,
+      "reintroduced": 3,
+      "quietChecks": 0,
+      "passed": true
+    },
+    {
+      "name": "全明10子残局",
+      "fullDepth": 5,
+      "depth": 5,
+      "fullRootDepth": 3,
+      "compared": 12,
+      "total": 30,
+      "reintroduced": 6,
+      "quietChecks": 0,
+      "passed": true
+    },
+    {
+      "nodeLimit": 1000,
+      "depth": 0,
+      "compared": 0,
+      "passed": true
+    },
+    {
+      "nodeLimit": 10000,
+      "depth": 1,
+      "compared": 44,
+      "passed": true
+    },
+    {
+      "nodeLimit": 300000,
+      "depth": 3,
+      "compared": 44,
+      "passed": true
+    },
+    {
+      "nodeLimit": 600000,
+      "depth": 4,
+      "compared": 7,
+      "passed": true
+    },
+    {
+      "budget": 0,
+      "depth": 0,
+      "interruptedDepth": 1,
+      "cohortComplete": true,
+      "compared": 0,
+      "progress": 0,
+      "passed": true
+    },
+    {
+      "budget": 5,
+      "depth": 0,
+      "interruptedDepth": 1,
+      "cohortComplete": true,
+      "compared": 0,
+      "progress": 0,
+      "passed": true
+    },
+    {
+      "budget": 25,
+      "depth": 2,
+      "interruptedDepth": 3,
+      "cohortComplete": true,
+      "compared": 44,
+      "progress": 2,
+      "passed": true
+    },
+    {
+      "budget": 100,
+      "depth": 3,
+      "interruptedDepth": 4,
+      "cohortComplete": true,
+      "compared": 13,
+      "progress": 8,
+      "passed": true
+    },
+    {
+      "budget": 500,
+      "depth": 4,
+      "interruptedDepth": 5,
+      "cohortComplete": true,
+      "compared": 14,
+      "progress": 14,
+      "passed": true
+    },
+    {
+      "name": "old49-collapse-or-tactics",
+      "depth": 6,
+      "compared": 17,
+      "total": 17,
+      "expanded": 2,
+      "checks": 0,
+      "passed": true
+    },
+    {
+      "name": "可证三层强制制胜 0",
+      "independentThreePlyWin": true,
+      "move": {
+        "from": 19,
+        "to": 22
+      },
+      "passed": true
+    },
+    {
+      "name": "可证三层强制制胜 1",
+      "independentThreePlyWin": true,
+      "move": {
+        "from": 33,
+        "to": 31
+      },
+      "passed": true
+    },
+    {
+      "name": "可证三层强制制胜 2",
+      "independentThreePlyWin": true,
+      "move": {
+        "from": 39,
+        "to": 40
+      },
+      "passed": true
+    },
+    {
+      "name": "可证三层强制制胜 3",
+      "independentThreePlyWin": true,
+      "move": {
+        "from": 19,
+        "to": 22
+      },
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "informationIsolation": true,
+  "stderr": {
+    "baseline": "",
+    "root": "",
+    "fullCanonical": ""
+  },
+  "finishedAt": "2026-10-19T18:46:30.517Z"
+}

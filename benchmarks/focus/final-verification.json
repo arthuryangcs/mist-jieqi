@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-19T19:50:53.394Z",
+  "productionUnchanged": [
+    "native/search.cpp",
+    "ai.js",
+    "app.js",
+    "native-client.js",
+    "native/server.mjs",
+    "native/build.mjs",
+    "deadline-search.js",
+    "engine.js"
+  ],
+  "syntaxModules": 14,
+  "localLinks": 59,
+  "summarySha256": "7f530bbdeba5b81d9ab6471e643f7e230a064025e6d8ca9d8dfa66a89381dc65",
+  "sourceAndDocumentHashes": {
+    "native/focus-benchmark.mjs": "e1fc8e400e62e259caa2bdac34d05fc39ade553c7ba4c3f7dd67f52a1683e039",
+    "native/focus-check.mjs": "df1f27ba3bcd0cf362991198776499caa51c3b0c3161bd247db8a1db55d18ae9",
+    "native/focus-engine.mjs": "2fe6ae599224c44bca6be6f4750ee6c654901a1befbb308f12aa8f0a887f84b9",
+    "native/focus-loss-review.mjs": "8f2fa2820bba90d433f3a68a5f4e1fb64284b0f292699b71953792739b01d035",
+    "native/focus-match-verify.mjs": "aac9a262666eb03123470db195fc3390dd273d5bdc02df621917e411170a1bfe",
+    "native/focus-match.mjs": "266192f8f7fa4764e183cf1271ab2c0bf0fd47972d463056f92b5db20745db28",
+    "native/focus-pika-verify.mjs": "3f5116f8bf392671a1733a96f49596969d5fb3e5789bb8bce1de5b4e2f19d7f9",
+    "native/focus-pika.mjs": "4ed35d70f23fbfa7c3c33efa1336d13c3335e902c64901dc013921e5c10d6558",
+    "native/focus-preview.mjs": "369ad8af45e2b9d75e5f0fc78899aec338e2890b9487e16580390e6a386e255c",
+    "native/focus-report.mjs": "6cc2d607769f3832a7748264030b7bb5d273d4d360cbfe0a4fd4e7a870b9a87b",
+    "native/focus-service-check.mjs": "3996f8e5ac83b86c5ac082adeac0583702622d0e0ee5375fb3294c1cd4f68007",
+    "native/focus-ui-check.mjs": "808104c9dcc15326b14c4ea1a41d2e9022c4c4dfcd1597458758eb47ad0ab98c",
+    "native/focus-variants.mjs": "16d0de3a164a88cc36a9c0f78c55ffed0216ea7511858fee20967c45c8030f39",
+    "native/focus-web.mjs": "20f5f3f14404f8251e382f378eef07e8ce0c8643e8408a13d9869d1bedf96220",
+    "native/focus-policy.inc": "2dc70404bcede263ada103b18456a968ea35c8ba0c572fc8885cbad66157d5d9",
+    "native/focus-tactics.inc": "866317be8e31e74d5bf3c3b0ede572b3bfc648e43c1b465f5f8d6d5d65613ff0",
+    "FOCUS_SEARCH_REPORT.md": "df5f172b413b57664e03f6aa4c2a853edbb2c4f3d7e3ee6fae81c1153abba170",
+    "README.md": "fd94316322a23d71ca2e1c1d4b50612a65ff8074834138edf86f4ad18c609882",
+    "native/README.md": "84cae0673196e743ca15c770925a65a65dab2abf9ab51b542c11db8d0fe5d825",
+    "benchmarks/focus/summary.json": "7f530bbdeba5b81d9ab6471e643f7e230a064025e6d8ca9d8dfa66a89381dc65"
+  },
+  "gates": {
+    "rootScreen": false,
+    "tacticalScreen": false,
+    "combinedScreen": false,
+    "confirmationPlayed": false
+  },
+  "decision": "Keep original default. All three400ms screens failed their predeclared promotion gate. Pika1000ms results are exploratory direct controls, not a replacement for failed own-baseline gates."
+}

@@ -1,0 +1,260 @@
+{
+  "variant": "both",
+  "startedAt": "2026-10-19T19:30:56.577Z",
+  "checks": [
+    {
+      "name": "loopback status and experimental assets",
+      "passed": true
+    },
+    {
+      "name": "purpose, real-hidden identity, cross-origin and raw HTTP foreign-host rejection",
+      "passed": true
+    },
+    {
+      "name": "analysis real C++ stream",
+      "elapsedMs": 977.915221,
+      "frames": 5,
+      "last": {
+        "depth": 4,
+        "nodes": 2962877,
+        "samples": 8,
+        "elapsedMs": 941.657279,
+        "interruptedDepth": 5,
+        "score": 77.10421607459259,
+        "move": {
+          "from": 64,
+          "to": 1
+        },
+        "threads": 4,
+        "wallMs": 967.2262539999999,
+        "from": 64,
+        "to": 1,
+        "spread": 362.62043794912995,
+        "heuristicWinRate": 53.2082617666332,
+        "sampleWins": 0,
+        "sampleLosses": 0,
+        "repetitionCount": 0,
+        "candidates": [
+          {
+            "from": 64,
+            "to": 1,
+            "score": 77.10421607459259,
+            "spread": 362.62043794912995,
+            "heuristicWinRate": 53.2082617666332,
+            "sampleWins": 0,
+            "sampleLosses": 0,
+            "repetitionCount": 0
+          },
+          {
+            "from": 70,
+            "to": 7,
+            "score": 21.598940529772456,
+            "spread": 423.57927295149335,
+            "heuristicWinRate": 50.89985868230171,
+            "sampleWins": 0,
+            "sampleLosses": 0,
+            "repetitionCount": 0
+          },
+          {
+            "from": 60,
+            "to": 51,
+            "score": -10.26295643930859,
+            "spread": 193.97624017365678,
+            "heuristicWinRate": 49.57238724083774,
+            "sampleWins": 0,
+            "sampleLosses": 0,
+            "repetitionCount": 0
+          },
+          {
+            "from": 82,
+            "to": 63,
+            "score": -12.283264684975869,
+            "spread": 162.45810362874505,
+            "heuristicWinRate": 49.48821517905968,
+            "sampleWins": 0,
+            "sampleLosses": 0,
+            "repetitionCount": 0
+          },
+          {
+            "from": 82,
+            "to": 65,
+            "score": -16.16280595642649,
+            "spread": 161.12128694075545,
+            "heuristicWinRate": 49.32659047331629,
+            "sampleWins": 0,
+            "sampleLosses": 0,
+            "repetitionCount": 0
+          }
+        ],
+        "uncertain": true,
+        "scoreKind": "expected-utility",
+        "seed": 1075149473,
+        "engine": "cpp-native",
+        "sourceSha256": "5ed2d46d6521a7b5219213eb2ad5a522892232d62288883dc3b65d17d5ce8f0c",
+        "binarySha256": "3483e2296af04f4198e2f6fdda96e97ba47775e495339f1518858762adb200a3",
+        "maxThreads": 4,
+        "independentWorldSearch": true,
+        "transport": "loopback-http",
+        "protocol": 2,
+        "focusedPlay": true,
+        "rootBudget": true,
+        "criticalTactics": true,
+        "engineVerified": true,
+        "serviceElapsedMs": 975.9777290000001,
+        "preparationMs": 5.170321000000001,
+        "initializationMs": 5.172698000000025
+      },
+      "passed": true
+    },
+    {
+      "name": "play real C++ stream",
+      "elapsedMs": 958.248961,
+      "frames": 12,
+      "last": {
+        "depth": 5,
+        "nodes": 2469084,
+        "samples": 8,
+        "elapsedMs": 943.327081,
+        "interruptedDepth": 5,
+        "score": 80.56962666942415,
+        "move": {
+          "from": 64,
+          "to": 1
+        },
+        "threads": 4,
+        "rootCount": 44,
+        "comparedCount": 7,
+        "plannedCount": 13,
+        "cohortComplete": false,
+        "fullRootDepth": 3,
+        "searchScope": "focused-root",
+        "criticalRoot": false,
+        "tacticalSearch": false,
+        "quietChecksSearched": 0,
+        "reintroducedCount": 6,
+        "collapseExpansions": 0,
+        "comparisonDepth": 5,
+        "wallMs": 949.5193880000002,
+        "from": 64,
+        "to": 1,
+        "spread": 376.042340746927,
+        "heuristicWinRate": 53.35203234660384,
+        "sampleWins": 0,
+        "sampleLosses": 0,
+        "repetitionCount": 0,
+        "candidates": [
+          {
+            "from": 64,
+            "to": 1,
+            "score": 80.56962666942415,
+            "spread": 376.042340746927,
+            "heuristicWinRate": 53.35203234660384,
+            "sampleWins": 0,
+            "sampleLosses": 0,
+            "repetitionCount": 0
+          },
+          {
+            "from": 70,
+            "to": 7,
+            "score": 27.5369158696183,
+            "spread": 429.64499280807087,
+            "heuristicWinRate": 51.147170140949505,
+            "sampleWins": 0,
+            "sampleLosses": 0,
+            "repetitionCount": 0
+          },
+          {
+            "from": 82,
+            "to": 63,
+            "score": -23.01542778799105,
+            "spread": 197.47181033685064,
+            "heuristicWinRate": 49.04114141264076,
+            "sampleWins": 0,
+            "sampleLosses": 0,
+            "repetitionCount": 0
+          },
+          {
+            "from": 60,
+            "to": 51,
+            "score": -44.03701472931467,
+            "spread": 186.84779972055966,
+            "heuristicWinRate": 48.165947623011185,
+            "sampleWins": 0,
+            "sampleLosses": 0,
+            "repetitionCount": 0
+          },
+          {
+            "from": 62,
+            "to": 53,
+            "score": -71.66130305167034,
+            "spread": 177.09781569581213,
+            "heuristicWinRate": 47.017656751008104,
+            "sampleWins": 0,
+            "sampleLosses": 0,
+            "repetitionCount": 0
+          }
+        ],
+        "uncertain": true,
+        "scoreKind": "expected-utility",
+        "seed": 1075149473,
+        "engine": "cpp-native",
+        "sourceSha256": "5ed2d46d6521a7b5219213eb2ad5a522892232d62288883dc3b65d17d5ce8f0c",
+        "binarySha256": "3483e2296af04f4198e2f6fdda96e97ba47775e495339f1518858762adb200a3",
+        "maxThreads": 4,
+        "independentWorldSearch": true,
+        "transport": "loopback-http",
+        "protocol": 2,
+        "focusedPlay": true,
+        "rootBudget": true,
+        "criticalTactics": true,
+        "engineVerified": true,
+        "serviceElapsedMs": 956.4605330000002,
+        "preparationMs": 3.547011999999995,
+        "initializationMs": 5.08215099999984
+      },
+      "passed": true
+    },
+    {
+      "name": "duplicate search rejected and cancellation cleans active process",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "build": {
+    "name": "both",
+    "audit": false,
+    "sanitizer": null,
+    "binary": "/Users/yangyemeng/Documents/Codex/2026-10-19/task/.cache/focus/both",
+    "sourceSha256": "5ed2d46d6521a7b5219213eb2ad5a522892232d62288883dc3b65d17d5ce8f0c",
+    "binarySha256": "3483e2296af04f4198e2f6fdda96e97ba47775e495339f1518858762adb200a3",
+    "flags": [
+      "-std=c++17",
+      "-O3",
+      "-DNDEBUG",
+      "-ffp-contract=off",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-isystem",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+    ],
+    "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+    "warnings": ""
+  },
+  "warmInitializationMs": 6.6117729999999995,
+  "binding": {
+    "address": "127.0.0.1",
+    "family": "IPv4",
+    "port": 53754
+  },
+  "fetchHostControl": {
+    "status": 200,
+    "sentHost": "127.0.0.1:53754"
+  },
+  "previewFiles": {
+    "index.html": "188fdbdc77ff8080fe03e90c799f55e6aa279fb2f662a5370f4d121b45f3a318",
+    "app.js": "d776beebb1458b318595efeb2f71da317262c3cf2e901246b914f4d925699a96",
+    "native-client.js": "b7ffb519f301caea148075b5c0ccdf7975cc3dfb0b843303254ae794471ebd80"
+  },
+  "finishedAt": "2026-10-19T19:30:58.639Z"
+}

@@ -1,0 +1,98 @@
+{
+  "passed": true,
+  "verifiedAt": "2026-10-19T19:47:20.468Z",
+  "variant": "both",
+  "matchSha256": "ae340b1db6cf605de1d7fa9de6903f7bf1bfbcbfa0b27d565326babe12c97ff8",
+  "played": 809,
+  "darkCaptures": 115,
+  "focusedMoves": 185,
+  "summaries": {
+    "baseline": {
+      "games": 8,
+      "wins": 2,
+      "draws": 0,
+      "losses": 6,
+      "unresolved": 0,
+      "scoreRate": 0.25
+    },
+    "trial": {
+      "games": 8,
+      "wins": 3,
+      "draws": 1,
+      "losses": 4,
+      "unresolved": 0,
+      "scoreRate": 0.4375
+    }
+  },
+  "timing": {
+    "baseline": {
+      "candidate": {
+        "attempts": 184,
+        "medianMs": 1000.641998499992,
+        "p95Ms": 1003.4366500000469,
+        "maxMs": 1005.0014560000272,
+        "hostStops": 109,
+        "fallbacks": 0,
+        "overGrace": 0
+      },
+      "pika": {
+        "attempts": 186,
+        "medianMs": 998.6107830000474,
+        "p95Ms": 999.4914690000005,
+        "maxMs": 1049.3214369999769,
+        "hostStops": 0,
+        "fallbacks": 0,
+        "overGrace": 0
+      }
+    },
+    "trial": {
+      "candidate": {
+        "attempts": 219,
+        "medianMs": 971.011943000005,
+        "p95Ms": 980.4550739999977,
+        "maxMs": 1003.470169999986,
+        "hostStops": 3,
+        "fallbacks": 0,
+        "overGrace": 0
+      },
+      "pika": {
+        "attempts": 220,
+        "medianMs": 998.4855369999823,
+        "p95Ms": 999.5381400000188,
+        "maxMs": 1040.7251479999977,
+        "hostStops": 0,
+        "fallbacks": 0,
+        "overGrace": 0
+      }
+    }
+  },
+  "pairs": [
+    {
+      "seed": 17011,
+      "baseline": 0,
+      "trial": 0
+    },
+    {
+      "seed": 17021,
+      "baseline": 1,
+      "trial": 1.5
+    },
+    {
+      "seed": 17027,
+      "baseline": 1,
+      "trial": 2
+    },
+    {
+      "seed": 17033,
+      "baseline": 0,
+      "trial": 0
+    }
+  ],
+  "faults": {
+    "timeouts": 0,
+    "illegalMoves": 0,
+    "protocolOrProcess": 0,
+    "unresolved": 0
+  },
+  "limitation": "Four correlated layout pairs per implementation, one target build with known color asymmetry. No stable Elo or claim of exceeding Pika; all technical results retained."
+}

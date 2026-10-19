@@ -1,0 +1,17 @@
+{
+  "stoppedAt": "2026-10-19T18:51:27.272Z",
+  "matchSha256": "5cf99dced49b1df353ea4d56489ff7360a5538e8c3027b8212f27d4ed951bef2",
+  "completedGames": 5,
+  "summary": {
+    "games": 5,
+    "wins": 2,
+    "draws": 1,
+    "losses": 2,
+    "unresolved": 0,
+    "scoreRate": 0.5,
+    "technical": []
+  },
+  "administrativeStop": true,
+  "reason": "Disabled-feature isomorphic prototype control, not byte-identical production baseline. Stop, retain every completed game and partial live snapshot; do not use for promotion. Formal games use unchanged production binary and new root layout seeds.",
+  "sourceSnapshotsVerified": true
+}

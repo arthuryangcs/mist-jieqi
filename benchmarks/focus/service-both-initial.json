@@ -1,0 +1,40 @@
+{
+  "variant": "both",
+  "startedAt": "2026-10-19T19:30:11.580Z",
+  "checks": [
+    {
+      "name": "loopback status and experimental assets",
+      "passed": true
+    }
+  ],
+  "passed": false,
+  "build": {
+    "name": "both",
+    "audit": false,
+    "sanitizer": null,
+    "binary": "/Users/yangyemeng/Documents/Codex/2026-10-19/task/.cache/focus/both",
+    "sourceSha256": "5ed2d46d6521a7b5219213eb2ad5a522892232d62288883dc3b65d17d5ce8f0c",
+    "binarySha256": "3483e2296af04f4198e2f6fdda96e97ba47775e495339f1518858762adb200a3",
+    "flags": [
+      "-std=c++17",
+      "-O3",
+      "-DNDEBUG",
+      "-ffp-contract=off",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-isystem",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+    ],
+    "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+    "warnings": ""
+  },
+  "warmInitializationMs": 6.668250999999998,
+  "binding": {
+    "address": "127.0.0.1",
+    "family": "IPv4",
+    "port": 53743
+  },
+  "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n200 !== 403\n\n    at file:///Users/yangyemeng/Documents/Codex/2026-10-19/task/native/focus-service-check.mjs:13:402\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)",
+  "finishedAt": "2026-10-19T19:30:11.750Z"
+}
