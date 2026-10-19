@@ -1,0 +1,94 @@
+{
+  "build": {
+    "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+    "flags": [
+      "-std=c++17",
+      "-O3",
+      "-DNDEBUG",
+      "-ffp-contract=off",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-isystem",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+    ],
+    "threads": 1,
+    "architecture": "x64",
+    "sourceSha256": "d539a5ee025e232c6929a48dd753c4c0045180a5d7e9fea0fc6432fcbfc5cb55",
+    "binarySha256": "bc8f662c08db59af2695275bf4c17b75dece1d647684cf562e7f07f3163db3a6",
+    "sanitize": false,
+    "compilerWarnings": ""
+  },
+  "tests": [
+    {
+      "name": "HTTP边界与公开信息验证",
+      "passed": true
+    },
+    {
+      "name": "STREAM与完整参考搜索逐着对齐",
+      "passed": true
+    },
+    {
+      "name": "实际HTTP流与核心证明",
+      "passed": true
+    },
+    {
+      "name": "取消/竞态/限流与子进程退出",
+      "passed": true
+    },
+    {
+      "name": "浏览器适配器无静默回退",
+      "passed": true
+    },
+    {
+      "name": "故障注入：服务硬时限",
+      "passed": true
+    }
+  ],
+  "streamComparisons": [
+    {
+      "name": "开局",
+      "depth": 3,
+      "samples": 8,
+      "nodes": 251696,
+      "nodesEqual": true,
+      "candidates": 44,
+      "maxDifference": 2.842170943040401e-14
+    },
+    {
+      "name": "中局",
+      "depth": 3,
+      "samples": 8,
+      "nodes": 67190,
+      "nodesEqual": true,
+      "candidates": 25,
+      "maxDifference": 1.1368683772161603e-13
+    },
+    {
+      "name": "全明残局",
+      "depth": 3,
+      "samples": 1,
+      "nodes": 2636,
+      "nodesEqual": true,
+      "candidates": 21,
+      "maxDifference": 0
+    }
+  ],
+  "passed": true,
+  "httpTiming": {
+    "elapsedMs": 1161.9230790000001,
+    "depth": 3,
+    "nodes": 885936,
+    "firstProgressMs": 15.68881300000021,
+    "serviceElapsedMs": 1158.3175250000004,
+    "initializationMs": 5.064274999999725
+  },
+  "watchdog": {
+    "injected": true,
+    "mock": "compiled-local-cpp",
+    "elapsedMs": 1203.2790050000003,
+    "depth": 1,
+    "initializationMs": 721.9562889999997,
+    "processExited": true
+  }
+}

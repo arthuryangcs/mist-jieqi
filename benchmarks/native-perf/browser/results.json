@@ -1,0 +1,158 @@
+{
+  "startedAt": "2026-10-19T12:04:29.071Z",
+  "scope": "timings-only",
+  "onlyBudget": 15000,
+  "timingDefinition": "postMessage to observed UI idle, includes readiness polling; last engine event is recorded separately",
+  "browser": "155.0.8059.80",
+  "cpu": "Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz",
+  "architecture": "x64",
+  "baseURL": "http://127.0.0.1:8766/",
+  "tests": [
+    {
+      "name": "真实浏览器端到端计时：两次轮换、同公开输入/预算/样本",
+      "passed": true
+    }
+  ],
+  "timings": [
+    {
+      "position": "开局",
+      "repeat": 0,
+      "engine": "cpp",
+      "budgetMs": 15000,
+      "depth": 5,
+      "samples": 8,
+      "nodes": 8072489,
+      "seed": 1075149473,
+      "move": {
+        "from": 64,
+        "to": 1
+      },
+      "score": 80.56962666942415,
+      "sourceSha256": "d539a5ee025e232c6929a48dd753c4c0045180a5d7e9fea0fc6432fcbfc5cb55",
+      "observationSha256": "af147cbf21007e455b1face0ced553e3c119f24c0b0237d90173296486023a9a",
+      "engineVerified": true,
+      "firstProgressMs": 21.5,
+      "endToEndMs": 15012.900000035763,
+      "lastEngineEventMs": 11761.300000011921,
+      "finalEventReceived": false,
+      "hostDeadlineStop": true,
+      "coreMs": 11745.839465,
+      "coreTimingKind": "last-completed-progress",
+      "completeDepths": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "position": "开局",
+      "repeat": 0,
+      "engine": "js",
+      "budgetMs": 15000,
+      "depth": 4,
+      "samples": 8,
+      "nodes": 1804744,
+      "seed": 1075149473,
+      "move": {
+        "from": 64,
+        "to": 1
+      },
+      "score": 77.10421607459259,
+      "sourceSha256": null,
+      "observationSha256": "af147cbf21007e455b1face0ced553e3c119f24c0b0237d90173296486023a9a",
+      "engineVerified": true,
+      "firstProgressMs": 65.5,
+      "endToEndMs": 14997.400000035763,
+      "lastEngineEventMs": 14982,
+      "finalEventReceived": true,
+      "hostDeadlineStop": false,
+      "coreMs": 14965,
+      "coreTimingKind": "final-response",
+      "completeDepths": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "position": "开局",
+      "repeat": 1,
+      "engine": "js",
+      "budgetMs": 15000,
+      "depth": 4,
+      "samples": 8,
+      "nodes": 1886776,
+      "seed": 1075149473,
+      "move": {
+        "from": 64,
+        "to": 1
+      },
+      "score": 77.10421607459259,
+      "sourceSha256": null,
+      "observationSha256": "af147cbf21007e455b1face0ced553e3c119f24c0b0237d90173296486023a9a",
+      "engineVerified": true,
+      "firstProgressMs": 76.89999997615814,
+      "endToEndMs": 14998.5,
+      "lastEngineEventMs": 14989.399999976158,
+      "finalEventReceived": true,
+      "hostDeadlineStop": false,
+      "coreMs": 14965,
+      "coreTimingKind": "final-response",
+      "completeDepths": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "position": "开局",
+      "repeat": 1,
+      "engine": "cpp",
+      "budgetMs": 15000,
+      "depth": 5,
+      "samples": 8,
+      "nodes": 8072489,
+      "seed": 1075149473,
+      "move": {
+        "from": 64,
+        "to": 1
+      },
+      "score": 80.56962666942415,
+      "sourceSha256": "d539a5ee025e232c6929a48dd753c4c0045180a5d7e9fea0fc6432fcbfc5cb55",
+      "observationSha256": "af147cbf21007e455b1face0ced553e3c119f24c0b0237d90173296486023a9a",
+      "engineVerified": true,
+      "firstProgressMs": 18.700000047683716,
+      "endToEndMs": 15014.5,
+      "lastEngineEventMs": 11367.900000035763,
+      "finalEventReceived": false,
+      "hostDeadlineStop": true,
+      "coreMs": 11353.390537,
+      "coreTimingKind": "last-completed-progress",
+      "completeDepths": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  ],
+  "errors": [],
+  "passed": true,
+  "service": {
+    "engine": "cpp-native",
+    "sourceSha256": "d539a5ee025e232c6929a48dd753c4c0045180a5d7e9fea0fc6432fcbfc5cb55",
+    "binarySha256": "bc8f662c08db59af2695275bf4c17b75dece1d647684cf562e7f07f3163db3a6",
+    "threads": 1,
+    "transport": "loopback-http",
+    "protocol": 2,
+    "active": 0,
+    "completed": 16,
+    "aborted": 5
+  },
+  "finishedAt": "2026-10-19T12:05:34.306Z"
+}

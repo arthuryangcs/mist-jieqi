@@ -94,8 +94,13 @@ bool inCheck(const Board& b,int side,int k=-2) {
         else if(!b[a.block].live()&&(!p.hidden||(p.side==0?y>=5:y<=4)))return true;
     }return false;
 }
-std::vector<int> candidates(const Board& b,int f,bool captures) {
-    std::vector<int> out;out.reserve(20);Piece p=b[f];int t=p.effective(),x=f%9,y=f/9;
+struct Destinations {
+    std::array<int,90> data;size_t count=0;
+    void push_back(int square){if(count>=data.size())throw std::logic_error("destination capacity exceeded");data[count++]=square;}
+    int* begin(){return data.data();}int* end(){return data.data()+count;}
+};
+Destinations candidates(const Board& b,int f,bool captures) {
+    Destinations out;Piece p=b[f];int t=p.effective(),x=f%9,y=f/9;
     auto add=[&](int u,int v){if(inside(u,v)&&(!captures||b[v*9+u].live()))out.push_back(v*9+u);};
     if(t==R||t==C)for(auto d:rays) {
         bool screen=false;
@@ -112,13 +117,16 @@ std::vector<int> candidates(const Board& b,int f,bool captures) {
     else {for(auto d:rays)add(x+d[0],y+d[1]);for(int i=0;i<90;i++)if(b[i].side!=p.side&&b[i].type==K){if(std::find(out.begin(),out.end(),i)==out.end())out.push_back(i);break;}}
     return out;
 }
-std::vector<Move> legal(Board& b,int side,bool captures=false,bool first=false,int king=-2) {
-    if(king==-2)king=kingAt(b,side);std::vector<Move> out;out.reserve(48);
+void legalInto(Board& b,int side,bool captures,bool first,int king,std::vector<Move>& out) {
+    if(king==-2)king=kingAt(b,side);out.clear();
     for(int f=0;f<90;f++)if(b[f].side==side)for(int t:candidates(b,f,captures)) {
         if(!pseudo(b,f,t))continue;Piece p=b[f],q=b[t];b[t]=p;b[f]=Piece{};
         bool safe=!inCheck(b,side,!p.hidden&&p.type==K?t:king);b[f]=p;b[t]=q;
-        if(safe) {out.push_back({f,t});if(first)return out;}
-    }return out;
+        if(safe) {out.push_back({f,t});if(first)return;}
+    }
+}
+std::vector<Move> legal(Board& b,int side,bool captures=false,bool first=false,int king=-2) {
+    std::vector<Move> out;out.reserve(48);legalInto(b,side,captures,first,king,out);return out;
 }
 std::vector<int> remaining(const Board& b,const std::vector<Piece>& captured,int side) {
     std::vector<int> bag={R,R,N,N,B,B,A,A,C,C,P,P,P,P,P};
@@ -229,7 +237,10 @@ bool read(Packet& p) {
 }
 struct Timeout {};
 struct Iteration {int depth=0;uint64_t nodes=0;double elapsed=0;std::vector<Row> rows;};
+struct ScoredMove {Move move;double score;};
 struct Search {
+    std::array<std::vector<Move>,128> moveBuffers,probeBuffers;
+    std::array<std::vector<ScoredMove>,128> scoreBuffers;
     std::vector<State> worlds;std::array<uint32_t,16200> history{};std::array<std::vector<Move>,128> killers;
     uint64_t nodes=0,nodeLimit=0;double limit=0;std::chrono::steady_clock::time_point start;
     double elapsed() const {return std::chrono::duration<double,std::milli>(std::chrono::steady_clock::now()-start).count();}
@@ -243,13 +254,16 @@ struct Search {
         bool check=inCheck(s.board,s.turn,s.kings[s.turn]);if(check&&depth>0&&extensions>0){depth++;extensions--;}
         uint64_t cycleStart=s.cycles;Key key=s.key(extensions);Entry entry{};bool hasEntry=false,hasKey=depth>0;double originalAlpha=alpha;
         if(hasKey){auto i=s.table.find(key);if(i!=s.table.end()){entry=i->second;hasEntry=true;if(entry.depth>=depth){double v=entry.score;if(v>98000)v-=ply;else if(v< -98000)v+=ply;if(entry.flag==0)return v;if(entry.flag==1)alpha=std::max(alpha,v);else beta=std::min(beta,v);if(alpha>=beta)return v;}}}
-        bool quiet=depth<=0&&!check;auto moves=legal(s.board,s.turn,quiet,false,s.kings[s.turn]);
-        if(moves.empty()&&(!quiet||legal(s.board,s.turn,false,true,s.kings[s.turn]).empty()))return -mate+ply;
+        bool quiet=depth<=0&&!check;auto& moves=moveBuffers.at(ply);legalInto(s.board,s.turn,quiet,false,s.kings[s.turn],moves);
+        if(moves.empty()){if(!quiet)return -mate+ply;auto& probe=probeBuffers.at(ply);legalInto(s.board,s.turn,false,true,s.kings[s.turn],probe);if(probe.empty())return -mate+ply;}
         if(quiet){double stand=evaluate(s,s.turn);if(stand>=beta)return stand;alpha=std::max(alpha,stand);if(qleft<=0||moves.empty())return alpha;}
         if(depth<=-6)return evaluate(s,s.turn)-(check?180:0);
         int hbase=s.turn==0?0:8100;
         auto order=[&](Move m){if(hasEntry&&entry.best==m)return 10000000.0;double v=priority(s,m);if(!s.board[m.to].live()){v+=history[hbase+m.index()];const auto& ks=killers.at(ply);if(std::find(ks.begin(),ks.end(),m)!=ks.end())v+=3000;}return v;};
-        std::stable_sort(moves.begin(),moves.end(),[&](Move a,Move b){return order(a)>order(b);});
+        auto& scored=scoreBuffers.at(ply);scored.clear();scored.reserve(moves.size());
+        for(Move m:moves)scored.push_back({m,order(m)});
+        std::stable_sort(scored.begin(),scored.end(),[](const ScoredMove& a,const ScoredMove& b){return a.score>b.score;});
+        for(size_t i=0;i<moves.size();i++)moves[i]=scored[i].move;
         Move best;bool first=true;
         auto save=[&](double score,int flag,Move m){if(hasKey&&cycleStart==s.cycles&&s.table.size()<90000)s.table[key]={depth,flag,score>98000?score+ply:score< -98000?score-ply:score,m};};
         for(Move m:moves) {

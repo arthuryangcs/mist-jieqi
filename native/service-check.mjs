@@ -2,6 +2,7 @@ import test from 'node:test';import assert from 'node:assert/strict';
 import fs from 'node:fs';import path from 'node:path';
 import {createHash} from 'node:crypto';
 import {once} from 'node:events';
+import {spawnSync} from 'node:child_process';
 import http from 'node:http';
 import {createLocalServer,ensureBuild,validateRequest} from './server.mjs';
 import {Native,fixture,javascript,compare,observationSeed} from './bridge.mjs';
@@ -64,6 +65,25 @@ test('浏览器适配器验证C++身份、传递进度、取消不回调',()=>ch
  const stop=new NativeWorker({fetcher});let callbacks=0;stop.onerror=()=>callbacks++;stop.onmessage=()=>callbacks++;stop.postMessage({id:8,view,timeMs:15000});stop.terminate();await new Promise(r=>setTimeout(r,100));assert.equal(callbacks,0);
 }));
 test('独立服务时限在模拟核心阻塞时保留完整轮次并杀进程',()=>checked('故障注入：服务硬时限',async()=>{
- const stub=path.resolve('.cache/native/stalled-core-test.mjs');fs.writeFileSync(stub,'#!/usr/bin/env node\nimport fs from "node:fs";fs.writeSync(1,JSON.stringify({ready:true,protocol:2,streaming:true})+"\\n");process.stdin.once("data",()=>{fs.writeSync(1,JSON.stringify({progress:true,result:{depth:1,nodes:1,samples:8,elapsedMs:1,move:{from:54,to:45},score:0,allCandidates:[{from:54,to:45,score:0,spread:0}]}})+"\\n");const end=performance.now()+5000;while(performance.now()<end){}});\n',{mode:0o755});
- const stalled=createLocalServer({executable:stub,buildInfo:built});try{const addr=await stalled.listen(0),begin=performance.now(),response=await fetch(`http://127.0.0.1:${addr.port}/api/search`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload(1200))}),rows=[];for await(const item of messages(response))rows.push(item);assert(rows.at(-1).result.deadlineStop);assert.equal(rows.at(-1).result.depth,1);assert(performance.now()-begin<1800);assert.equal(stalled.active.size,0);evidence.watchdog={injected:true,elapsedMs:performance.now()-begin,depth:1};}finally{await stalled.close();fs.unlinkSync(stub);}
+ // A native stub avoids conflating cold Node/shebang startup with blocking search.
+ // Compilation occurs before the unchanged 1200ms service deadline starts.
+ const stub=path.resolve('.cache/native/stalled-core-test'),source=stub+'.cpp';
+ fs.writeFileSync(source,`#include <iostream>
+#include <string>
+#include <chrono>
+int main(){
+ std::cout<<R"({"ready":true,"protocol":2,"streaming":true})"<<std::endl;
+ std::string request;std::getline(std::cin,request);
+ std::cout<<R"({"progress":true,"result":{"depth":1,"nodes":1,"samples":8,"elapsedMs":1,"move":{"from":54,"to":45},"score":0,"allCandidates":[{"from":54,"to":45,"score":0,"spread":0}]}})"<<std::endl;
+ const auto end=std::chrono::steady_clock::now()+std::chrono::seconds(5);
+ while(std::chrono::steady_clock::now()<end){}
+}
+`);
+ let stalled;try{
+  const compiled=spawnSync(process.env.CXX||'clang++',[...built.flags,source,'-o',stub],{encoding:'utf8'});assert.equal(compiled.status,0,compiled.stderr);
+  stalled=createLocalServer({executable:stub,buildInfo:built});const input=payload(1200),addr=await stalled.listen(0),begin=performance.now(),response=await fetch(`http://127.0.0.1:${addr.port}/api/search`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(input)}),rows=[];let child,exit;
+  for await(const item of messages(response)){rows.push(item);if(item.progress&&!child){child=stalled.active.get(input.token).process;exit=once(child,'exit');}}
+  assert(rows.at(-1).result.deadlineStop);assert.equal(rows.at(-1).result.depth,1);assert(performance.now()-begin<1800);assert.equal(stalled.active.size,0);assert(child);await exit;assert(child.exitCode!==null||child.signalCode!==null);
+  evidence.watchdog={injected:true,mock:'compiled-local-cpp',elapsedMs:performance.now()-begin,depth:1,initializationMs:rows[0].result.initializationMs,processExited:true};
+ }finally{if(stalled)await stalled.close();for(const file of[stub,source])fs.rmSync(file,{force:true});}
 }));

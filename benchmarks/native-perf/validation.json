@@ -1,0 +1,58 @@
+{
+  "completedAt": "2026-10-19T12:06:21.347Z",
+  "adoptedVariant": "both",
+  "sourceSha256": "d539a5ee025e232c6929a48dd753c4c0045180a5d7e9fea0fc6432fcbfc5cb55",
+  "sourceHashes": {
+    "native/search.cpp": "d539a5ee025e232c6929a48dd753c4c0045180a5d7e9fea0fc6432fcbfc5cb55",
+    "native/perf-variants.mjs": "63577a6744536dd2b34e5c14d7765497b398be7c28aa791f8a878b84ed7a5c9c",
+    "native/perf-benchmark.mjs": "c7a221d76ec26598d8e2bf370dbb80cdf2f7182404cbf8f850419bf4b321e77d",
+    "native/service-check.mjs": "53c249ec0fda24b5588ee8d9872590bbd6f08ae8ba5588646117c8985698a3c0",
+    "scripts/browser-native-check.mjs": "4e6a196bdc26bea5de49307d0d0fd7614aff0b9a8275da085d306c2e8d770e3e",
+    "native/bridge.mjs": "a0c2a84c72acaeeaf7b0709f06fefc01f97924387274a649a90d270e06df4816",
+    "native/server.mjs": "0704c82e71b826dd97ef3e38a542b3d6f87963b195a7561449cdb56cb2a77b32",
+    "native-client.js": "08438f8c349bf1ddbf46b98b87dbdb2fcf4d3f772d8a03b08c5220e791494c50",
+    "ai.js": "66bca44c185829ab7a42d5432fc8323c2937fed2be475ced46a654a7a2e1c18e",
+    "engine.js": "7f427f6e00e286a48335f7c7a7e74270d2a4349d7ea2aabcad0821122a17cb49",
+    "app.js": "8be707442188d8ea44e0ca9b3725962edd8a61befb949550ce5beec9cdda97e0",
+    "deadline-search.js": "20a1c2467443425638f2b9d439856888d62c78aa17b3b9e65d7fb79c3cb0d5df"
+  },
+  "artifactHashes": {
+    "baseline-build.json": "ba7c16c92a8e0490f18b6f073bcded009e040f17be86cfb8b2f96e589a34919c",
+    "baseline.cpp": "9e65d6d86bf60cde9e0e63973464a913f1a164e7f0193ec02152eddb94207e9e",
+    "browser-first-event-timing/01-cpp-game.png": "7cd2d18ced3ecd17c11b984de63c3bf03097b1dcb39d2fa6182be2d156956dc3",
+    "browser-first-event-timing/02-cpp-analysis.png": "1f29735e79eb8a18ffee847d8a616a7019334fd79185584a2c8ee62df0478d7b",
+    "browser-first-event-timing/03-cpp-mobile.png": "63cd1f8e46290bdab98a8ead5afb5c1d688edd4420a490e57313a3a4124f5808",
+    "browser-first-event-timing/results.json": "937f3c3a6deab14975ed30f4978b6b42e004ea8b5a769c7dedfd6fc772510f9a",
+    "browser/results.json": "d5cb864bba0753fd281705778865ca87c6a6c311e019ea1ac13ba883a9e40fa0",
+    "budgets.json": "3e762f022cbe22098fbf15ba316ec93ea59be451f5d638492a9cc1689f59a9ed",
+    "fixed.json": "ae7facccb5edafd2051e80334384bb1f4b9a0183626c479df0958c3691b28690",
+    "mock-startup.json": "df349eecb7a1181f096ebfdc1217dad0a1e989dd8df806138b19119ccfee4545",
+    "native-check.json": "6c731b0d16f6ce04e70480077b4ac4fd583e8c6386b90af9f6afd187d277e8de",
+    "native-sanitized-check.json": "65d90db840717547254604388960f065e5f43bea462f0783807b516faad2e7ce",
+    "profile.json": "56849a03154cf393743c7b5d0a0885144d3f2b93946b4fd035a8ff667839b58e",
+    "service-check-first.json": "7348b9ac85b28648163f055403980b30745a1da1d68a2c1e41e75ba981235ec8",
+    "service-check.json": "752578ebc3407b07eed33721a42858e186f6f5507eaf952157e25e7abb131a41",
+    "tt.json": "b17a1b878c29c25c2834bf5a4ff966d737fa7b1a7c2187db022c1210f13ac194",
+    "unit-tests.txt": "50533ddfcb5898d4116359fcefe2db72c62e94315480d0cc2c49d5a334479040"
+  },
+  "summary": {
+    "fixedDepthRuns": 100,
+    "unchangedNodeCountsAndCandidateScores": true,
+    "budgetRuns": 18,
+    "sharedCompletedDepthChecks": 9,
+    "unitTests": 86,
+    "ruleViews": 72,
+    "transitions": 2172,
+    "searchCases": 16,
+    "sanitizersPassed": true,
+    "serviceGroups": 6,
+    "browserFunctionalGroups": 8,
+    "correctedBrowserBudgetMeasurements": 4
+  },
+  "knownIssues": [
+    "First service fault injection used a cold Node stub; preserved failure and startup probe, replaced only the test stub with project-compiled C++.",
+    "First browser timing used last engine event; preserved original records, corrected UI completion timing and reran affected 15s cases.",
+    "TT refresh experiment never filled the table; not adopted."
+  ],
+  "pushedToGithub": false
+}

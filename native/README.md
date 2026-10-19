@@ -6,6 +6,8 @@
 
 服务测试：`npm run test:cpp-ui`；浏览器测试：`npm run test:browser:cpp`（使用已有Chrome/Playwright，配置同主README）。HTTP只接受公开观察，不接受实际暗布局。
 
+当前核心增加单次走法预评分、逐层走法/评分缓冲复用和单子落点栈数组，保持稳定排序与原搜索语义。冻结 `b200995` 的四变体消融、剖析、等时预算及验证见 [NATIVE_PERFORMANCE_REPORT.md](../NATIVE_PERFORMANCE_REPORT.md)。用 `node native/perf-benchmark.mjs fixed` 重跑；脚本会重写该模式的结果文件，先另存正式记录。历史深层脚本若固定旧源码哈希而拒绝执行，应保留其冻结条件，不把新核心冒充旧基线。
+
 以下保留离线性能及一致性复现方式；旧测量见 [NATIVE_SEARCH_REPORT.md](../NATIVE_SEARCH_REPORT.md)。
 
 需要 Node.js 20+ 和本机已有的 C++17 编译器；不需要 npm 依赖。

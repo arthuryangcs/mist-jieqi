@@ -1,0 +1,17 @@
+{
+  "node": "v25.6.0",
+  "rows": [
+    {
+      "repeat": 0,
+      "initializationMs": 2020.1866870000001
+    },
+    {
+      "repeat": 1,
+      "initializationMs": 158.44695599999977
+    },
+    {
+      "repeat": 2,
+      "initializationMs": 154.4091169999997
+    }
+  ]
+}
