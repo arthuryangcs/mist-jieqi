@@ -1,0 +1,79 @@
+{
+  "kind": "sanitized",
+  "build": {
+    "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+    "flags": [
+      "-std=c++17",
+      "-O1",
+      "-g",
+      "-fsanitize=address,undefined",
+      "-fno-omit-frame-pointer",
+      "-DMIST_VERIFY_RESTORE",
+      "-ffp-contract=off",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-isystem",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+    ],
+    "threads": 4,
+    "independentWorldSearch": true,
+    "architecture": "x64",
+    "sourceSha256": "eb1c25bbd4209321bbd0a881128bce0de784d300d2aed8abe6c189167ac38698",
+    "binarySha256": "ed5e6b051fc0f86047253d8c202525e108e0b77d4e53f167e1d10244978c843c",
+    "sanitize": true,
+    "compilerWarnings": ""
+  },
+  "referenceSha256": "5bf15c749f44f798e3ad08903af5fbe6ff50703bfb6858db2c014aaa478e088c",
+  "checks": [
+    {
+      "budgetMs": 0,
+      "depth": 0,
+      "nodes": 0,
+      "elapsedMs": 2.101509,
+      "completeRoots": 0,
+      "interruptedDepth": 1
+    },
+    {
+      "budgetMs": 5,
+      "depth": 0,
+      "nodes": 848,
+      "elapsedMs": 4.908864,
+      "completeRoots": 0,
+      "interruptedDepth": 1
+    },
+    {
+      "budgetMs": 25,
+      "depth": 1,
+      "nodes": 4859,
+      "elapsedMs": 25.964695,
+      "completeRoots": 44,
+      "interruptedDepth": 2
+    },
+    {
+      "budgetMs": 100,
+      "depth": 2,
+      "nodes": 39938,
+      "elapsedMs": 90.704345,
+      "completeRoots": 44,
+      "interruptedDepth": 3
+    },
+    {
+      "name": "同进程超时后再次搜索",
+      "depth": 2,
+      "nodes": 30118
+    }
+  ],
+  "passed": true,
+  "stderr": "",
+  "finishedAt": "2026-10-19T13:10:49.081Z",
+  "testedBinarySha256": "ed5e6b051fc0f86047253d8c202525e108e0b77d4e53f167e1d10244978c843c",
+  "runtimeCapabilities": {
+    "ready": true,
+    "protocol": 2,
+    "streaming": true,
+    "threads": 4,
+    "independentWorldSearch": true
+  },
+  "capabilityProbeAt": "2026-10-19T13:16:13.091Z"
+}

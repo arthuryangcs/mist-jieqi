@@ -1,0 +1,123 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-19T13:16:31.689Z",
+  "baselineCommit": "a156673",
+  "sourceSha256": "eb1c25bbd4209321bbd0a881128bce0de784d300d2aed8abe6c189167ac38698",
+  "binarySha256": "26381fefa3f8f11da4d7ce5c8a5ef0dc479f009660883766540d2b8d050f038b",
+  "checks": [
+    {
+      "file": "pilot.json",
+      "passed": true
+    },
+    {
+      "file": "screen.json",
+      "passed": true
+    },
+    {
+      "file": "deep.json",
+      "passed": true
+    },
+    {
+      "file": "ray-pilot.json",
+      "passed": true
+    },
+    {
+      "file": "parallel.json",
+      "passed": true
+    },
+    {
+      "file": "parallel-fixed.json",
+      "passed": true
+    },
+    {
+      "file": "parallel-deep.json",
+      "passed": true
+    },
+    {
+      "file": "parallel-budgets.json",
+      "passed": true
+    },
+    {
+      "file": "native-check.json",
+      "passed": true
+    },
+    {
+      "file": "native-sanitized.json",
+      "passed": true
+    },
+    {
+      "file": "parallel-check-release.json",
+      "passed": true
+    },
+    {
+      "file": "parallel-check-sanitized.json",
+      "passed": true
+    },
+    {
+      "file": "parallel-check-tsan.json",
+      "passed": true
+    },
+    {
+      "file": "cpp-service.json",
+      "passed": true
+    },
+    {
+      "file": "browser/results.json",
+      "passed": true
+    }
+  ],
+  "sourceHashes": {
+    "native/search.cpp": "eb1c25bbd4209321bbd0a881128bce0de784d300d2aed8abe6c189167ac38698",
+    "native/build.mjs": "d0d5194b56052835eb13f1f46f8fd40826b57b7f5189472b092f42ffbecb03eb",
+    "native/server.mjs": "ac5cbbfac91b5e16db8b1b121b82600c56eb57a9f7ad5c697f5162e38c458d90",
+    "native/check.mjs": "534c0c7be3e0f158d868175c4c998bb6c30b2226d21a4fc76d51cdcfb9821885",
+    "native/service-check.mjs": "39674fdaf6d34530a7b30d056485aff2a837e092a755ac7c3755d9086b1aaa29",
+    "native/parallel-check.mjs": "4c4b92982fe8c63ec2680251453830ac61fdb96d8d64b0f077d1cfdd54dff027",
+    "native/parallel-validation.mjs": "01fddc8be602a73657fa427aea1127e08ec30ece5cd28f1160f450dad3490ebc",
+    "native/window-variants.mjs": "33838ff8ca85faf4316817c1e52dc24eb0a99555304861fea324cc28ca26689d",
+    "native/window-benchmark.mjs": "091d38d037d5169f5937f14696d2b26caaa4ea2a5da27b43ce391f47af73f34e",
+    "scripts/browser-native-check.mjs": "78670cb109e75b2832636f6a268234e0d5dd0ce67f16c775d9963d9a6eb201d9",
+    "ai.js": "66bca44c185829ab7a42d5432fc8323c2937fed2be475ced46a654a7a2e1c18e",
+    "engine.js": "7f427f6e00e286a48335f7c7a7e74270d2a4349d7ea2aabcad0821122a17cb49",
+    "README.md": "f6c723e3b525f5f8baa28c64a990af7792e741a6c7fd2bb90782ea9045d64565",
+    "native/README.md": "b0f31c47b03298eb440aaf9f27e48d586e7c98e4d86e68937019d395281b8ca0",
+    "NATIVE_PARALLEL_REPORT.md": "3a437d0ae15a549009b06ce79559e211443178ed5abf6072fdbbd2810a688190"
+  },
+  "artifactHashes": {
+    "benchmarks/native-windows/baseline-build.json": "ce70c4d3a5796c1e188478f1c9ed087c904348f3f541a0be0b08dae21509d889",
+    "benchmarks/native-windows/baseline.cpp": "1bc5e0185ab172858c538ac6cff207f25ec903537464acbea0288190096192ba",
+    "benchmarks/native-windows/browser/01-cpp-game.png": "da5d1a93337c6f6180de7697759c7d98e27585b9beb33e1a96f886ea531dde17",
+    "benchmarks/native-windows/browser/02-cpp-analysis.png": "294188f1eaececb50efa9cd6949b0f638be10565126b17defd22dc48625e9f4b",
+    "benchmarks/native-windows/browser/03-cpp-mobile.png": "63cd1f8e46290bdab98a8ead5afb5c1d688edd4420a490e57313a3a4124f5808",
+    "benchmarks/native-windows/browser/results.json": "e54d3df242fa4ae63af9faf1f1164f753adb019174c7771bc041d0eea7cd9ab2",
+    "benchmarks/native-windows/cpp-service.json": "2f6c6294db283bea7953c9f1f79c93258f27bd1bbc3388130365d08249c2d94e",
+    "benchmarks/native-windows/deep.json": "999d770d3ab9aa9a9a0c9d3f95f5406ec04840eba4696c2ea9acec2ce16e819b",
+    "benchmarks/native-windows/native-check.json": "1e2b34a53a6fbaf517e404e044e627629c076ec56c63d3164128b899c1224111",
+    "benchmarks/native-windows/native-sanitized.json": "66a1777620041c4ca28d89e138e39c52d7f151071ff8787895d374ed3234984e",
+    "benchmarks/native-windows/parallel-budgets.json": "cd92193238b26a04a97eb2a42e42ca044922b74c2bb701993bceaf197b0a6c6f",
+    "benchmarks/native-windows/parallel-check-release.json": "6d89e9df61bba6a8ec6a8e24fbbc8c0ccb43be81fe627390276a8e1cb7194a8d",
+    "benchmarks/native-windows/parallel-check-sanitized.json": "a4f23cf97691380a1a2119b7b486d13ef13f7006fc7bfbfbc4953a5c1a277329",
+    "benchmarks/native-windows/parallel-check-tsan.json": "b0748b571c9c9ab8083b9ca64cf6736d091f378a2f5e74e5e7192a6694995e1a",
+    "benchmarks/native-windows/parallel-deep.json": "5bf15c749f44f798e3ad08903af5fbe6ff50703bfb6858db2c014aaa478e088c",
+    "benchmarks/native-windows/parallel-fixed.json": "2a0e3f4bf8ae605553d2b547fa097b54c41119e63f788ac5734f4cb86a5d22d4",
+    "benchmarks/native-windows/parallel.json": "03de51dbe08bb6fe199dbbf8db5918c39f7e423e86d56ab85b3390e76ef99b1f",
+    "benchmarks/native-windows/pilot.json": "7d9b42c21ba24ae814fbd2f9ebef01e8ce87fd923b2f901d99ab1b5b7fe17881",
+    "benchmarks/native-windows/ray-pilot.json": "1007a8aae6cef5cc7bfc7f2cffcccd379b3a7cf1751761ae87c7397454f9741b",
+    "benchmarks/native-windows/screen.json": "cf213e795fcc71a7dabb013c2952006b763b0fed45556c0f1043e1d34828e6f3",
+    "benchmarks/native-windows/unit-test.txt": "45ed1a69d8274a39bd2ac5b7f9e574bdbb653acd15de184ba90717b12832d022"
+  },
+  "testCounts": {
+    "unit": 86,
+    "ruleViews": 72,
+    "transitions": 2172,
+    "searchCases": 16,
+    "serviceGroups": 6,
+    "browserGroups": 9
+  },
+  "limitations": [
+    "Performance figures are this machine only; CPU use increases.",
+    "No new match results or Elo measurement.",
+    "TSan covers the recorded interruption/recovery cases, not every path.",
+    "Benchmark prototypes and the final integration have separate source/binary hashes; final deep results were compared."
+  ]
+}

@@ -14,7 +14,7 @@ const sha=p=>createHash('sha256').update(fs.readFileSync(p)).digest('hex');
 const result={baselineCommit:'aa7644cbed3ef635e9f0424e00241e42d96d98f2',runtime:process.version,architecture:process.arch,cpu:os.cpus()[0].model,build:buildInfo,repeats,sourceHashes:Object.fromEntries(['ai.js','engine.js','native/search.cpp','native/bridge.mjs'].map(p=>[p,sha(p)])),protocol:'预热后轮换执行顺序；两实现共用导出的完全相同无放回样本。核对所有候选评分、推荐、完整深度和节点；C++ core不含协议解析/序列化，wall含每次编码/IPC/解析；进程启动不含在稳态时间内。语言与数据结构变化合并计量，搜索树不变。',positions:positions.map(p=>({name:p.name,depth:p.depth,fixture:p.f})),rows:[],budgets:[]};
 const persist=()=>fs.writeFileSync(output,JSON.stringify(result,null,2)+'\n');persist();
 try{
- await native.ready;result.nativeInitializationMs=native.initializationMs;
+ await native.ready;if(native.capabilities.independentWorldSearch)throw Error('此脚本要求历史单线程同树核心；当前核心按布局独立排序。请使用 node native/window-benchmark.mjs parallel-fixed 做冻结基线对照。');result.nativeInitializationMs=native.initializationMs;
  for(const p of positions){await javascript(p.f,{depth:2});await native.request(p.f,{depth:2});}
  for(let repeat=0;repeat<repeats;repeat++)for(const [i,p]of positions.entries()){
   const pair={};for(const language of(repeat+i)%2?['cpp','javascript']:['javascript','cpp'])pair[language]=language==='cpp'?await native.request(p.f,{depth:p.depth}):await javascript(p.f,{depth:p.depth});

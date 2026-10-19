@@ -20,7 +20,7 @@ async function checked(name,fn){try{await fn();evidence.tests.push({name,passed:
 
 test('HTTP边界与公开信息验证',()=>checked('HTTP边界与公开信息验证',async()=>{
  assert.equal(service.server.address().address,'127.0.0.1');
- const status=await(await fetch(base+'/api/status')).json();assert.equal(status.engine,'cpp-native');assert.equal(status.sourceSha256,built.sourceSha256);
+ const status=await(await fetch(base+'/api/status')).json();assert.equal(status.engine,'cpp-native');assert.equal(status.sourceSha256,built.sourceSha256);assert.equal(status.maxThreads,built.threads);assert.equal(status.independentWorldSearch,true);
  for(const url of['/.git/config','/native/server.mjs','/benchmarks/native-build.json'])assert.equal((await fetch(base+url)).status,404);
  assert.equal((await fetch(base+'/api/status',{headers:{Origin:'https://example.com'}})).status,403);
  const foreignHost=await new Promise((resolve,reject)=>{http.get(base+'/api/status',{headers:{Host:'evil.example'}},r=>{r.resume();resolve(r.statusCode);}).on('error',reject);});assert.equal(foreignHost,403);
@@ -34,21 +34,21 @@ test('HTTP边界与公开信息验证',()=>checked('HTTP边界与公开信息验
  for(const side of['r','b']){const p={...payload(),view:publicState(s,side)};assert.equal(validateRequest(p).view.captured.filter(x=>x.wasHidden).length,1);const unknown=p.view.captured.find(x=>x.hidden);unknown.type='N';assert.throws(()=>validateRequest(p),/真实暗子/);}
  assert.equal(service.active.size,0);
 }));
-test('STREAM与完整参考搜索在开局、中局、残局逐着同分同节点',()=>checked('STREAM与完整参考搜索逐着对齐',async()=>{
+test('STREAM与参考搜索逐层同分并记录两种节点数',()=>checked('STREAM与完整参考搜索逐着对齐',async()=>{
  const mid=JSON.parse(fs.readFileSync('benchmarks/strength-positions.json'))[1].view;
  const ending={...initial(),board:Array(90).fill(null),captured:[]};for(const[i,side,type]of[[85,'r','K'],[4,'b','K'],[49,'r','P'],[72,'r','R'],[17,'b','R']])ending.board[i]={side,type,role:type,hidden:false};
  const native=new Native();try{for(const [name,v,samples]of[['开局',view,8],['中局',mid,8],['全明残局',publicState(ending,'r'),1]]){
   const f=fixture(v,{seed:observationSeed(v),samples}),progress=[],b=await native.request(f,{mode:'STREAM',depth:3,budget:60000,onProgress:r=>progress.push(r)}),a=await javascript(f,{depth:3});
-  assert.equal(b.depth,3);assert.equal(progress.length,3);assert.equal(b.iterations.length,0);const aligned=compare(a,b);
-  for(let i=0;i<progress.length;i++){assert.equal(progress[i].depth,i+1);assert.equal(progress[i].allCandidates.length,legalMoves(v).length);const expected=a.iterations[i],top=expected.allCandidates[0];compare({...expected,samples:f.samples,score:top.score,move:{from:top.from,to:top.to}},progress[i]);}
-  evidence.streamComparisons.push({name,depth:b.depth,samples:f.samples,nodes:b.nodes,...aligned});
+  assert.equal(b.depth,3);assert.equal(progress.length,3);assert.equal(b.iterations.length,0);const options={requireNodes:!(native.capabilities.independentWorldSearch&&samples>1)},aligned=compare(a,b,options);assert.equal(b.threads,samples>1?4:1);
+  for(let i=0;i<progress.length;i++){assert.equal(progress[i].depth,i+1);assert.equal(progress[i].allCandidates.length,legalMoves(v).length);const expected=a.iterations[i],top=expected.allCandidates[0];compare({...expected,samples:f.samples,score:top.score,move:{from:top.from,to:top.to}},progress[i],options);assert.equal(progress[i].threads,b.threads);}
+  evidence.streamComparisons.push({name,depth:b.depth,samples:f.samples,nodes:b.nodes,javascriptNodes:a.nodes,threads:b.threads,...aligned});
  }}finally{await native.close();assert.equal(native.stderr,'');}
 }));
 test('实际HTTP流只传五候选，标记核心且逐层返回完整结果',()=>checked('实际HTTP流与核心证明',async()=>{
  const input=payload(1200),events=[];const start=performance.now();for await(const item of messages(await post(input)))events.push(item);
- assert(events.some(x=>x.progress));const r=events.at(-1).result;assert.equal(r.engine,'cpp-native');assert(r.engineVerified);assert.equal(r.sourceSha256,built.sourceSha256);assert.equal(r.candidates.length,5);assert(!('allCandidates'in r));assert(!('iterations'in r));assert.equal(r.samples,8);assert(r.depth>=1);assert(legalMoves(view).some(m=>m.from===r.move.from&&m.to===r.move.to));
+ assert(events.some(x=>x.progress));const r=events.at(-1).result;assert.equal(r.engine,'cpp-native');assert(r.engineVerified);assert.equal(r.sourceSha256,built.sourceSha256);assert.equal(r.candidates.length,5);assert(!('allCandidates'in r));assert(!('iterations'in r));assert.equal(r.samples,8);assert.equal(r.threads,4);assert.equal(r.maxThreads,4);assert.equal(r.independentWorldSearch,true);assert(r.depth>=1);assert(legalMoves(view).some(m=>m.from===r.move.from&&m.to===r.move.to));
  assert(events.filter(x=>x.progress).every((x,i)=>x.result.depth===i+1));
- evidence.httpTiming={elapsedMs:performance.now()-start,depth:r.depth,nodes:r.nodes,firstProgressMs:events[0].result.serviceElapsedMs,serviceElapsedMs:r.serviceElapsedMs,initializationMs:r.initializationMs};await waitFor(()=>service.active.size===0);
+ evidence.httpTiming={elapsedMs:performance.now()-start,depth:r.depth,nodes:r.nodes,threads:r.threads,firstProgressMs:events[0].result.serviceElapsedMs,serviceElapsedMs:r.serviceElapsedMs,initializationMs:r.initializationMs};await waitFor(()=>service.active.size===0);
 }));
 test('取消、先取消后到达及限流不会遗留C++子进程',()=>checked('取消/竞态/限流与子进程退出',async()=>{
  const input=payload(15000),response=await post(input);let process;

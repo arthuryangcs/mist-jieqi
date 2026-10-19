@@ -1,0 +1,20 @@
+{
+  "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+  "flags": [
+    "-std=c++17",
+    "-O3",
+    "-DNDEBUG",
+    "-ffp-contract=off",
+    "-Wall",
+    "-Wextra",
+    "-Wpedantic",
+    "-isystem",
+    "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+  ],
+  "threads": 1,
+  "architecture": "x64",
+  "sourceSha256": "1bc5e0185ab172858c538ac6cff207f25ec903537464acbea0288190096192ba",
+  "binarySha256": "0f2d77c888203df4c65332a2b61c1bae76a6b84c6b4e5987fad7ce2646ad0370",
+  "sanitize": false,
+  "compilerWarnings": ""
+}

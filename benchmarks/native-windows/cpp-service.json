@@ -1,0 +1,102 @@
+{
+  "build": {
+    "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+    "flags": [
+      "-std=c++17",
+      "-O3",
+      "-DNDEBUG",
+      "-ffp-contract=off",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-isystem",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+    ],
+    "threads": 4,
+    "independentWorldSearch": true,
+    "architecture": "x64",
+    "sourceSha256": "eb1c25bbd4209321bbd0a881128bce0de784d300d2aed8abe6c189167ac38698",
+    "binarySha256": "26381fefa3f8f11da4d7ce5c8a5ef0dc479f009660883766540d2b8d050f038b",
+    "sanitize": false,
+    "compilerWarnings": ""
+  },
+  "tests": [
+    {
+      "name": "HTTP边界与公开信息验证",
+      "passed": true
+    },
+    {
+      "name": "STREAM与完整参考搜索逐着对齐",
+      "passed": true
+    },
+    {
+      "name": "实际HTTP流与核心证明",
+      "passed": true
+    },
+    {
+      "name": "取消/竞态/限流与子进程退出",
+      "passed": true
+    },
+    {
+      "name": "浏览器适配器无静默回退",
+      "passed": true
+    },
+    {
+      "name": "故障注入：服务硬时限",
+      "passed": true
+    }
+  ],
+  "streamComparisons": [
+    {
+      "name": "开局",
+      "depth": 3,
+      "samples": 8,
+      "nodes": 241176,
+      "javascriptNodes": 251696,
+      "threads": 4,
+      "nodesEqual": false,
+      "candidates": 44,
+      "maxDifference": 2.842170943040401e-14
+    },
+    {
+      "name": "中局",
+      "depth": 3,
+      "samples": 8,
+      "nodes": 69317,
+      "javascriptNodes": 67190,
+      "threads": 4,
+      "nodesEqual": false,
+      "candidates": 25,
+      "maxDifference": 1.1368683772161603e-13
+    },
+    {
+      "name": "全明残局",
+      "depth": 3,
+      "samples": 1,
+      "nodes": 2636,
+      "javascriptNodes": 2636,
+      "threads": 1,
+      "nodesEqual": true,
+      "candidates": 21,
+      "maxDifference": 0
+    }
+  ],
+  "passed": true,
+  "httpTiming": {
+    "elapsedMs": 1184.4923870000002,
+    "depth": 4,
+    "nodes": 3334111,
+    "threads": 4,
+    "firstProgressMs": 17.52734099999998,
+    "serviceElapsedMs": 1180.6129880000003,
+    "initializationMs": 5.928947000000335
+  },
+  "watchdog": {
+    "injected": true,
+    "mock": "compiled-local-cpp",
+    "elapsedMs": 1203.2955870000005,
+    "depth": 1,
+    "initializationMs": 290.6320050000004,
+    "processExited": true
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "kind": "release",
+  "build": {
+    "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+    "flags": [
+      "-std=c++17",
+      "-O3",
+      "-DNDEBUG",
+      "-ffp-contract=off",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-isystem",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+    ],
+    "threads": 4,
+    "independentWorldSearch": true,
+    "architecture": "x64",
+    "sourceSha256": "eb1c25bbd4209321bbd0a881128bce0de784d300d2aed8abe6c189167ac38698",
+    "binarySha256": "26381fefa3f8f11da4d7ce5c8a5ef0dc479f009660883766540d2b8d050f038b",
+    "sanitize": false,
+    "compilerWarnings": ""
+  },
+  "referenceSha256": "5bf15c749f44f798e3ad08903af5fbe6ff50703bfb6858db2c014aaa478e088c",
+  "checks": [
+    {
+      "position": "初始全暗",
+      "depth": 5,
+      "nodes": 7390955,
+      "nodesEqual": true,
+      "candidates": 44,
+      "maxDifference": 0
+    },
+    {
+      "position": "可达中局 2111 / 20步",
+      "depth": 5,
+      "nodes": 2052867,
+      "nodesEqual": true,
+      "candidates": 25,
+      "maxDifference": 0
+    },
+    {
+      "position": "可达中局 2111 / 44步",
+      "depth": 5,
+      "nodes": 2350637,
+      "nodesEqual": true,
+      "candidates": 23,
+      "maxDifference": 0
+    },
+    {
+      "position": "可达中局 2221 / 44步",
+      "depth": 5,
+      "nodes": 2957082,
+      "nodesEqual": true,
+      "candidates": 31,
+      "maxDifference": 0
+    },
+    {
+      "position": "全明10子残局",
+      "depth": 6,
+      "nodes": 469708,
+      "nodesEqual": true,
+      "candidates": 30,
+      "maxDifference": 0
+    },
+    {
+      "budgetMs": 0,
+      "depth": 0,
+      "nodes": 0,
+      "elapsedMs": 0.299002,
+      "completeRoots": 0,
+      "interruptedDepth": 1
+    },
+    {
+      "budgetMs": 5,
+      "depth": 0,
+      "nodes": 2915,
+      "elapsedMs": 4.63477,
+      "completeRoots": 0,
+      "interruptedDepth": 1
+    },
+    {
+      "budgetMs": 25,
+      "depth": 2,
+      "nodes": 45964,
+      "elapsedMs": 22.681722,
+      "completeRoots": 44,
+      "interruptedDepth": 3
+    },
+    {
+      "budgetMs": 100,
+      "depth": 3,
+      "nodes": 246420,
+      "elapsedMs": 90.137994,
+      "completeRoots": 44,
+      "interruptedDepth": 4
+    },
+    {
+      "name": "同进程超时后再次搜索",
+      "depth": 2,
+      "nodes": 30118
+    }
+  ],
+  "passed": true,
+  "stderr": "",
+  "finishedAt": "2026-10-19T13:10:53.206Z",
+  "testedBinarySha256": "26381fefa3f8f11da4d7ce5c8a5ef0dc479f009660883766540d2b8d050f038b",
+  "runtimeCapabilities": {
+    "ready": true,
+    "protocol": 2,
+    "streaming": true,
+    "threads": 4,
+    "independentWorldSearch": true
+  },
+  "capabilityProbeAt": "2026-10-19T13:16:12.986Z"
+}

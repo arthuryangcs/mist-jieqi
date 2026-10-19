@@ -10,6 +10,8 @@
 
 新一轮在 `46f83ad` 上增加射线/保守将军检查快路径与循环路径栈，消融和安全条件见 [NATIVE_MOVEGEN_REPORT.md](../NATIVE_MOVEGEN_REPORT.md)。`node native/movegen-benchmark.mjs fixed` 重跑四变体；`guards` 逐着与旧检查复核并对照独立JS规则，`budgets` 测相同1/6/15秒预算。脚本默认覆盖相应模式的JSON，先另存正式记录。
 
+当前在 `a156673` 上采用最多4个搜索线程并行处理固定8个采样布局。每个布局有独立的排序历史、killer、走法缓冲和置换表，汇总顺序固定；全明1样本与显式固定节点上限使用原串行路径。服务输出 `maxThreads` 能力和每次结果的 `threads`，进度及最终响应均报告实际搜索线程数。CPU占用增加，搜索完整层和信息隔离条件不变。完整对照、未采用的窄窗口/置换表实验和限制见 [NATIVE_PARALLEL_REPORT.md](../NATIVE_PARALLEL_REPORT.md)。
+
 以下保留离线性能及一致性复现方式；旧测量见 [NATIVE_SEARCH_REPORT.md](../NATIVE_SEARCH_REPORT.md)。
 
 需要 Node.js 20+ 和本机已有的 C++17 编译器；不需要 npm 依赖。
@@ -18,13 +20,15 @@
 npm run build:native
 npm run test:native
 JIEQI_NATIVE_SANITIZE=1 npm run test:native
-npm run benchmark:native
-node native/deep-check.mjs
+node native/parallel-check.mjs
+node native/window-benchmark.mjs parallel-fixed
+node native/window-benchmark.mjs parallel-deep
+node native/window-benchmark.mjs parallel-budgets
 ```
 
 编译结果位于被 Git 忽略的 `.cache/native/`。`CXX` 可指定编译器可执行文件路径。macOS 构建脚本读取已有 SDK 路径，若 SDK 内存在 libc++ 头文件就通过本次编译的 `-isystem` 参数引用；不安装工具、不修改全局环境。发布前应核对编译器 Target 和 Node 架构；本轮二者均为 x86-64。
 
-默认优化参数：`-std=c++17 -O3 -DNDEBUG -ffp-contract=off`，未启用 fast-math，单线程。Sanitizer 构建改用 `-O1 -g -fsanitize=address,undefined`，其耗时不计入性能报告。
+默认优化参数：`-std=c++17 -O3 -DNDEBUG -ffp-contract=off`，未启用 fast-math，最多4个搜索线程；非macOS额外传入 `-pthread`。Sanitizer 构建改用 `-O1 -g -fsanitize=address,undefined`，同时启用样本状态完整撤回守卫，其耗时不计入性能报告。
 
 ## 输入与语义边界
 
@@ -41,7 +45,7 @@ node native/deep-check.mjs
 
 `cppCoreMs` 是原生搜索函数时间，含根生成、排序、样本状态初始化和迭代搜索，不含文本输入解析、JSON输出及缓存销毁。`cppWallMs` 从 Node 请求编码到完整响应解析，包含每次编码/IPC/解析；进程启动独立记录。JavaScript 时间是同进程参考 `analyze()` 的完整调用，包括固定样本克隆和进度结果保存。
 
-固定预算使用两种核心相同的提前返回预留量和检查频率；不是浏览器硬实时承诺。只报告最后完整根轮次，未完成的候选不会混入排名。完整深度对照必须逐着评分在 `1e-7` 容差内、推荐相同、节点数完全相同，否则脚本报错，不发布等价提速。
+固定预算使用两种核心相同的提前返回预留量和检查频率；不是浏览器硬实时承诺。只报告最后完整根轮次，未完成的候选不会混入排名。完整深度对照必须逐着评分在 `1e-7` 容差内、推荐相同、节点数完全相同，否则旧同树脚本报错，不发布等价提速。新并行版本的历史排序按布局隔离，不能与原参考强求同节点；规则/搜索检查仍核对全部候选评分和推荐，并记录双方节点数。`parallel-fixed` 另以相同布局分工的1线程/4线程版本逐层核对全部评分、候选顺序和节点完全相同，区分硬件并行与排序变化。旧 `benchmark:native` / `deep-check.mjs` 明确拒绝当前多核核心，须使用冻结旧版复现历史数据。
 
 ## 输出与重跑
 

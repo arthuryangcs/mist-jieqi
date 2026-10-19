@@ -1,0 +1,94 @@
+{
+  "kind": "tsan",
+  "build": {
+    "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+    "flags": [
+      "-std=c++17",
+      "-O3",
+      "-DNDEBUG",
+      "-ffp-contract=off",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-isystem",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+    ],
+    "threads": 4,
+    "independentWorldSearch": true,
+    "architecture": "x64",
+    "sourceSha256": "eb1c25bbd4209321bbd0a881128bce0de784d300d2aed8abe6c189167ac38698",
+    "binarySha256": "26381fefa3f8f11da4d7ce5c8a5ef0dc479f009660883766540d2b8d050f038b",
+    "sanitize": false,
+    "compilerWarnings": ""
+  },
+  "referenceSha256": "5bf15c749f44f798e3ad08903af5fbe6ff50703bfb6858db2c014aaa478e088c",
+  "checks": [
+    {
+      "budgetMs": 0,
+      "depth": 0,
+      "nodes": 0,
+      "elapsedMs": 1.957856,
+      "completeRoots": 0,
+      "interruptedDepth": 1
+    },
+    {
+      "budgetMs": 5,
+      "depth": 0,
+      "nodes": 563,
+      "elapsedMs": 4.840806,
+      "completeRoots": 0,
+      "interruptedDepth": 1
+    },
+    {
+      "budgetMs": 25,
+      "depth": 1,
+      "nodes": 4663,
+      "elapsedMs": 22.855471,
+      "completeRoots": 44,
+      "interruptedDepth": 2
+    },
+    {
+      "budgetMs": 100,
+      "depth": 1,
+      "nodes": 25542,
+      "elapsedMs": 90.376304,
+      "completeRoots": 44,
+      "interruptedDepth": 2
+    },
+    {
+      "name": "同进程超时后再次搜索",
+      "depth": 2,
+      "nodes": 30118
+    }
+  ],
+  "passed": true,
+  "instrumentation": {
+    "flags": [
+      "-std=c++17",
+      "-ffp-contract=off",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-isystem",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1",
+      "-O1",
+      "-g",
+      "-fsanitize=thread",
+      "-fno-omit-frame-pointer",
+      "-DMIST_VERIFY_RESTORE"
+    ],
+    "status": 0,
+    "diagnostics": ""
+  },
+  "stderr": "",
+  "finishedAt": "2026-10-19T13:11:00.779Z",
+  "testedBinarySha256": "d4df9e2c25f41e740adfe56aa7160efa73fb7b00b5e59404d1a644bbd6815b47",
+  "runtimeCapabilities": {
+    "ready": true,
+    "protocol": 2,
+    "streaming": true,
+    "threads": 4,
+    "independentWorldSearch": true
+  },
+  "capabilityProbeAt": "2026-10-19T13:16:13.424Z"
+}

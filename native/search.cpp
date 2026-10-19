@@ -13,6 +13,8 @@
 #include <unordered_map>
 #include <unordered_set>
 #include <vector>
+#include <future>
+#include <exception>
 
 namespace mist {
 enum Type { K, R, N, B, C, A, P };
@@ -304,24 +306,48 @@ void run(const Packet& p) {
     bool uncertain=false;for(auto q:p.view)uncertain|=q.live()&&q.hidden;
     for(const Board& b:p.worlds)s.worlds.push_back(stateOf(b,p.captured,p.turn,p.viewer));
     std::vector<Iteration> iterations;int interrupted=0;Move fallback=root[0];
+    const bool parallel=p.nodeLimit==0&&s.worlds.size()>1;
+    const size_t lanes=parallel?std::min(size_t(4),s.worlds.size()):1;
+    std::vector<Search> workers(parallel?s.worlds.size():0);
+    for(auto& worker:workers){worker.start=s.start;worker.limit=s.limit;}
+    auto parallelScores=[&](Move m,int childDepth) {
+        std::vector<double> scores(s.worlds.size());std::vector<std::future<void>> tasks;
+        for(size_t lane=0;lane<lanes;lane++)tasks.push_back(std::async(std::launch::async,[&,lane]{
+            for(size_t world=lane;world<s.worlds.size();world+=lanes){
+                State& w=s.worlds[world];if(workers[world].elapsed()>workers[world].limit)throw Timeout{};Undo old=push(w,m);
+                try{scores[world]=-workers[world].search(w,childDepth,-inf,inf,1);}catch(...){pop(w,m,old);throw;}
+                pop(w,m,old);
+            }
+        }));
+        std::exception_ptr error;for(auto& task:tasks)try{task.get();}catch(...){if(!error)error=std::current_exception();}
+        s.nodes=0;for(const auto& worker:workers)s.nodes+=worker.nodes;
+        if(error)std::rethrow_exception(error);return scores;
+    };
     for(int depth=1;depth<=p.depth;depth++) {
         std::vector<Row> rows;
-        try {for(Move m:root){Row row;if(p.draws[m.index()]){row=summarize(m,{0},uncertain);row.draw=true;}else{std::vector<double> scores;for(State& w:s.worlds){if(s.elapsed()>s.limit)throw Timeout{};Undo old=push(w,m);double v;try{v=-s.search(w,depth-1,-inf,inf,1);}catch(...){pop(w,m,old);throw;}pop(w,m,old);scores.push_back(v);}row=summarize(m,scores,uncertain);}row.repetitions=p.repetitions[m.index()];rows.push_back(row);}}
+        try {for(Move m:root){Row row;if(p.draws[m.index()]){row=summarize(m,{0},uncertain);row.draw=true;}else{std::vector<double> scores;if(parallel){scores=parallelScores(m,depth-1);}else for(State& w:s.worlds){if(s.elapsed()>s.limit)throw Timeout{};Undo old=push(w,m);double v;try{v=-s.search(w,depth-1,-inf,inf,1);}catch(...){pop(w,m,old);throw;}pop(w,m,old);scores.push_back(v);}row=summarize(m,scores,uncertain);}row.repetitions=p.repetitions[m.index()];rows.push_back(row);}}
         catch(const Timeout&){interrupted=depth;break;}
         std::stable_sort(rows.begin(),rows.end(),[](const Row& a,const Row& b){return a.score>b.score;});
         iterations.push_back({depth,s.nodes,s.elapsed(),rows});
-        // Only a fully evaluated root round is streamed. Search order/tree stays identical.
+        // Stream only after every root move has completed in every sampled world.
         if(p.mode=="STREAM") {
-            std::cout<<"{\"progress\":true,\"result\":{\"depth\":"<<depth<<",\"nodes\":"<<s.nodes<<",\"samples\":"<<p.worlds.size()<<",\"elapsedMs\":"<<iterations.back().elapsed<<",\"score\":"<<rows[0].score<<",\"move\":";writeMove(rows[0].move);
+            std::cout<<"{\"progress\":true,\"result\":{\"depth\":"<<depth<<",\"nodes\":"<<s.nodes<<",\"samples\":"<<p.worlds.size()<<",\"elapsedMs\":"<<iterations.back().elapsed<<",\"threads\":"<<lanes<<",\"score\":"<<rows[0].score<<",\"move\":";writeMove(rows[0].move);
             std::cout<<",\"allCandidates\":";writeRows(rows);std::cout<<"}}\n"<<std::flush;
         }
         if((!uncertain&&std::abs(rows[0].score)>98000)||s.elapsed()>s.limit)break;
         std::array<int,8100> rank{};for(size_t i=0;i<rows.size();i++)rank[rows[i].move.index()]=int(i);
         std::stable_sort(root.begin(),root.end(),[&](Move a,Move b){return rank[a.index()]<rank[b.index()];});
     }
+    #ifdef MIST_VERIFY_RESTORE
+    // Check every sampled state after normal return and after timeout unwinding.
+    for(size_t i=0;i<s.worlds.size();i++) {
+        const State expected=stateOf(p.worlds[i],p.captured,p.turn,p.viewer);const State& w=s.worlds[i];
+        if(!(w.board==expected.board&&w.key()==expected.key()&&w.path==expected.path&&w.population==expected.population&&w.kings[0]==expected.kings[0]&&w.kings[1]==expected.kings[1]))throw std::runtime_error("sample state not restored");
+    }
+#endif
     double elapsed=s.elapsed();const Iteration* last=iterations.empty()?nullptr:&iterations.back();
     std::cout<<"{\"depth\":"<<(last?last->depth:0)<<",\"nodes\":"<<s.nodes<<",\"samples\":"<<p.worlds.size()<<",\"elapsedMs\":"<<elapsed<<",\"interruptedDepth\":"<<interrupted<<",\"score\":"<<(last?last->rows[0].score:0)<<",\"move\":";writeMove(last?last->rows[0].move:fallback);
-    std::cout<<",\"allCandidates\":";writeRows(last?last->rows:std::vector<Row>{});std::cout<<",\"iterations\":[";
+    std::cout<<",\"threads\":"<<lanes;std::cout<<",\"allCandidates\":";writeRows(last?last->rows:std::vector<Row>{});std::cout<<",\"iterations\":[";
     if(p.mode!="STREAM")for(size_t i=0;i<iterations.size();i++){if(i)std::cout<<',';const auto& r=iterations[i];std::cout<<"{\"depth\":"<<r.depth<<",\"nodes\":"<<r.nodes<<",\"elapsedMs\":"<<r.elapsed<<",\"allCandidates\":";writeRows(r.rows);std::cout<<'}';}
     std::cout<<"]}\n";
 }
@@ -334,7 +360,7 @@ void verify(const Packet& p) {
 }
 } // namespace mist
 int main() {
-    using namespace mist;std::ios::sync_with_stdio(false);std::cin.tie(nullptr);std::cout<<std::setprecision(17);initialize();std::cout<<"{\"ready\":true,\"protocol\":2,\"streaming\":true,\"threads\":1}\n"<<std::flush;
+    using namespace mist;std::ios::sync_with_stdio(false);std::cin.tie(nullptr);std::cout<<std::setprecision(17);initialize();std::cout<<"{\"ready\":true,\"protocol\":2,\"streaming\":true,\"threads\":4,\"independentWorldSearch\":true}\n"<<std::flush;
     try {Packet packet;while(read(packet)){if(packet.mode=="VERIFY")verify(packet);else run(packet);std::cout<<std::flush;packet=Packet{};}}
     catch(const std::exception& error){std::cerr<<"native error: "<<error.what()<<'\n';return 2;}
 }

@@ -44,7 +44,7 @@ async function readJSON(req){let size=0,parts=[];for await(const part of req){si
 
 export function createLocalServer({executable=binary,buildInfo=JSON.parse(fs.readFileSync(manifestPath)),maxSearches=2}={}){
  const active=new Map(),cancelled=new Map();let completed=0,aborted=0;
- const info={engine:'cpp-native',sourceSha256:buildInfo.sourceSha256,binarySha256:buildInfo.binarySha256,threads:1,transport:'loopback-http',protocol:2};
+ const info={engine:'cpp-native',sourceSha256:buildInfo.sourceSha256,binarySha256:buildInfo.binarySha256,maxThreads:buildInfo.threads||1,independentWorldSearch:buildInfo.independentWorldSearch===true,transport:'loopback-http',protocol:2};
  function cancel(token){const job=active.get(token);if(job){aborted++;job.cancel();}else{cancelled.set(token,Date.now()+3000);if(cancelled.size>100)cancelled.delete(cancelled.keys().next().value);}}
  const server=http.createServer(async(req,res)=>{
   res.setHeader('Cache-Control','no-store');res.setHeader('X-Content-Type-Options','nosniff');
@@ -68,7 +68,7 @@ export function createLocalServer({executable=binary,buildInfo=JSON.parse(fs.rea
     const f=fixture(input.view,{seed:observationSeed(input.view),samples:8}),native=new Native({binary:executable});
     let finished=false,timer,latest=null;
     const prepareMs=performance.now()-started;
-    const wire=r=>{const top=r.allCandidates?.[0]||{};return{...r,...top,move:r.move??(top.from!==undefined?{from:top.from,to:top.to}:null),allCandidates:undefined,iterations:undefined,candidates:(r.allCandidates||[]).slice(0,5),uncertain:input.view.board.some(p=>p?.hidden),scoreKind:input.view.board.some(p=>p?.hidden)?'expected-utility':'material',seed:f.seed,...info,engineVerified:true,serviceElapsedMs:performance.now()-started,preparationMs:prepareMs,initializationMs:native.initializationMs??null};};
+    const wire=r=>{const top=r.allCandidates?.[0]||{};return{...r,...top,move:r.move??(top.from!==undefined?{from:top.from,to:top.to}:null),allCandidates:undefined,iterations:undefined,candidates:(r.allCandidates||[]).slice(0,5),uncertain:input.view.board.some(p=>p?.hidden),scoreKind:input.view.board.some(p=>p?.hidden)?'expected-utility':'material',seed:f.seed,...info,threads:r.threads??1,engineVerified:true,serviceElapsedMs:performance.now()-started,preparationMs:prepareMs,initializationMs:native.initializationMs??null};};
     const send=value=>{if(!res.destroyed&&!res.writableEnded)res.write(JSON.stringify(value)+'\n');};
     const cleanup=()=>{clearTimeout(timer);active.delete(input.token);native.stop();};
     const stop=()=>{if(finished)return;finished=true;cleanup();if(!res.writableEnded)res.end();};
@@ -98,5 +98,5 @@ export function createLocalServer({executable=binary,buildInfo=JSON.parse(fs.rea
 }
 export function ensureBuild(){let info;try{info=JSON.parse(fs.readFileSync(manifestPath));if(info.sourceSha256===hash(path.join(root,'native/search.cpp'))&&info.binarySha256===hash(binary))return info;}catch{}console.log('编译本项目 C++ 搜索核心（不下载依赖）…');const {binary:_,...built}=build();return built;}
 if(process.argv[1]===fileURLToPath(import.meta.url)){
- try{const port=Number(process.env.PORT||8766);if(!Number.isInteger(port)||port<1024||port>65535)throw Error('PORT须为1024至65535');const service=createLocalServer({buildInfo:ensureBuild()});await service.listen(port);console.log(`揭棋 C++ 本机版：http://127.0.0.1:${port}/\n核心 ${service.info.sourceSha256.slice(0,12)} · 单线程 · Ctrl+C停止`);for(const signal of['SIGINT','SIGTERM'])process.once(signal,async()=>{await service.close();process.exit(0);});}catch(error){console.error('启动失败：'+error.message);process.exitCode=1;}
+ try{const port=Number(process.env.PORT||8766);if(!Number.isInteger(port)||port<1024||port>65535)throw Error('PORT须为1024至65535');const service=createLocalServer({buildInfo:ensureBuild()});await service.listen(port);console.log(`揭棋 C++ 本机版：http://127.0.0.1:${port}/\n核心 ${service.info.sourceSha256.slice(0,12)} · 最多${service.info.maxThreads}线程 · Ctrl+C停止`);for(const signal of['SIGINT','SIGTERM'])process.once(signal,async()=>{await service.close();process.exit(0);});}catch(error){console.error('启动失败：'+error.message);process.exitCode=1;}
 }

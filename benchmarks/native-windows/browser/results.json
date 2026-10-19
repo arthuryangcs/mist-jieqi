@@ -1,0 +1,199 @@
+{
+  "startedAt": "2026-10-19T13:12:07.337Z",
+  "scope": "full",
+  "onlyBudget": 15000,
+  "timingDefinition": "postMessage to observed UI idle, includes readiness polling; last engine event is recorded separately",
+  "browser": "155.0.8059.80",
+  "cpu": "Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz",
+  "architecture": "x64",
+  "baseURL": "http://127.0.0.1:8766/",
+  "tests": [
+    {
+      "name": "默认C++人机对战、实际核心确认、重复点击、对手分析不外泄",
+      "passed": true
+    },
+    {
+      "name": "C++思考中悔棋，终止子进程，无迟到落子",
+      "passed": true
+    },
+    {
+      "name": "C++思考中重开取消进程并恢复30暗子",
+      "passed": true
+    },
+    {
+      "name": "流式完整层、五候选、分析缓存按引擎隔离、明确JavaScript回退",
+      "passed": true
+    },
+    {
+      "name": "C++双方自动对战至少4手、暂停、单步、双方私人观察隔离",
+      "passed": true
+    },
+    {
+      "name": "C++自动对战思考中悔棋/重开，停止循环及子进程",
+      "passed": true
+    },
+    {
+      "name": "故障注入：C++服务出错明确停止，无暗中切换或落子",
+      "passed": true
+    },
+    {
+      "name": "移动视口引擎选择与棋盘无横向溢出",
+      "passed": true
+    },
+    {
+      "name": "真实浏览器端到端计时：两次轮换、同公开输入/预算/样本",
+      "passed": true
+    }
+  ],
+  "timings": [
+    {
+      "position": "开局",
+      "repeat": 0,
+      "engine": "cpp",
+      "budgetMs": 15000,
+      "depth": 5,
+      "samples": 8,
+      "nodes": 7407105,
+      "threads": 4,
+      "seed": 1075149473,
+      "move": {
+        "from": 64,
+        "to": 1
+      },
+      "score": 80.56962666942415,
+      "sourceSha256": "eb1c25bbd4209321bbd0a881128bce0de784d300d2aed8abe6c189167ac38698",
+      "observationSha256": "af147cbf21007e455b1face0ced553e3c119f24c0b0237d90173296486023a9a",
+      "engineVerified": true,
+      "firstProgressMs": 22.30000001192093,
+      "endToEndMs": 15014.400000035763,
+      "lastEngineEventMs": 2893.900000035763,
+      "finalEventReceived": false,
+      "hostDeadlineStop": true,
+      "coreMs": 2879.233129,
+      "coreTimingKind": "last-completed-progress",
+      "completeDepths": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "position": "开局",
+      "repeat": 0,
+      "engine": "js",
+      "budgetMs": 15000,
+      "depth": 4,
+      "samples": 8,
+      "nodes": 1878928,
+      "threads": 1,
+      "seed": 1075149473,
+      "move": {
+        "from": 64,
+        "to": 1
+      },
+      "score": 77.10421607459259,
+      "sourceSha256": null,
+      "observationSha256": "af147cbf21007e455b1face0ced553e3c119f24c0b0237d90173296486023a9a",
+      "engineVerified": true,
+      "firstProgressMs": 71.19999998807907,
+      "endToEndMs": 14996.900000035763,
+      "lastEngineEventMs": 14982.800000011921,
+      "finalEventReceived": true,
+      "hostDeadlineStop": false,
+      "coreMs": 14965,
+      "coreTimingKind": "final-response",
+      "completeDepths": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "position": "开局",
+      "repeat": 1,
+      "engine": "js",
+      "budgetMs": 15000,
+      "depth": 4,
+      "samples": 8,
+      "nodes": 1882344,
+      "threads": 1,
+      "seed": 1075149473,
+      "move": {
+        "from": 64,
+        "to": 1
+      },
+      "score": 77.10421607459259,
+      "sourceSha256": null,
+      "observationSha256": "af147cbf21007e455b1face0ced553e3c119f24c0b0237d90173296486023a9a",
+      "engineVerified": true,
+      "firstProgressMs": 74.10000002384186,
+      "endToEndMs": 14998.200000047684,
+      "lastEngineEventMs": 14988.200000047684,
+      "finalEventReceived": true,
+      "hostDeadlineStop": false,
+      "coreMs": 14965,
+      "coreTimingKind": "final-response",
+      "completeDepths": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "position": "开局",
+      "repeat": 1,
+      "engine": "cpp",
+      "budgetMs": 15000,
+      "depth": 5,
+      "samples": 8,
+      "nodes": 7407105,
+      "threads": 4,
+      "seed": 1075149473,
+      "move": {
+        "from": 64,
+        "to": 1
+      },
+      "score": 80.56962666942415,
+      "sourceSha256": "eb1c25bbd4209321bbd0a881128bce0de784d300d2aed8abe6c189167ac38698",
+      "observationSha256": "af147cbf21007e455b1face0ced553e3c119f24c0b0237d90173296486023a9a",
+      "engineVerified": true,
+      "firstProgressMs": 20,
+      "endToEndMs": 15016.199999988079,
+      "lastEngineEventMs": 2703.300000011921,
+      "finalEventReceived": false,
+      "hostDeadlineStop": true,
+      "coreMs": 2688.785519,
+      "coreTimingKind": "last-completed-progress",
+      "completeDepths": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  ],
+  "errors": [],
+  "passed": true,
+  "service": {
+    "engine": "cpp-native",
+    "sourceSha256": "eb1c25bbd4209321bbd0a881128bce0de784d300d2aed8abe6c189167ac38698",
+    "binarySha256": "26381fefa3f8f11da4d7ce5c8a5ef0dc479f009660883766540d2b8d050f038b",
+    "maxThreads": 4,
+    "independentWorldSearch": true,
+    "transport": "loopback-http",
+    "protocol": 2,
+    "active": 0,
+    "completed": 0,
+    "aborted": 0
+  },
+  "responsiveness": {
+    "frameMs": 13.699999988079071,
+    "undoClickMs": 45
+  },
+  "finishedAt": "2026-10-19T13:13:24.827Z"
+}
