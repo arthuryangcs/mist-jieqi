@@ -8,6 +8,9 @@
     "benchmark": "node scripts/benchmark.js",
     "test:browser": "node scripts/browser-check.js",
     "benchmark:compare": "node scripts/compare-search.js",
-    "benchmark:matches": "node scripts/match-review.js"
+    "benchmark:matches": "node scripts/match-review.js",
+    "build:native": "node native/build.mjs",
+    "test:native": "node native/check.mjs",
+    "benchmark:native": "node native/benchmark.mjs"
   }
 }

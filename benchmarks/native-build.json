@@ -1,0 +1,66 @@
+{
+  "baselineCommit": "aa7644cbed3ef635e9f0424e00241e42d96d98f2",
+  "sourceHashes": {
+    "ai.js": "66bca44c185829ab7a42d5432fc8323c2937fed2be475ced46a654a7a2e1c18e",
+    "engine.js": "7f427f6e00e286a48335f7c7a7e74270d2a4349d7ea2aabcad0821122a17cb49",
+    "worker.js": "142d5a89fa58b226c84dcb427b713941f337451687f0349ec96e6354388723c9",
+    "app.js": "3798da578dd7ae8f7548ef81b0ed09af8991db7d5cf95f9a9274e28af8ba42a8",
+    "native/search.cpp": "0887fdd954067512be178361b8f586ec125124e28584e812bbed66b23a24f7e3",
+    "native/build.mjs": "b8d6154cd0e91271c32c206c2260222be39627e134f9a19c20219cfd058b5a75",
+    "native/bridge.mjs": "251f611fdfc1e03ea1731952b42b41436588739f2b29b8c79aebd9fe5481d82a",
+    "native/check.mjs": "5c5724f5dfe5718211d063b4521cb622c22d2177f6f1d0871de0df46425aed44",
+    "native/benchmark.mjs": "a306bac864644b38ac2d185c55aa1a81dcb69ff9f37d06cf0590b90db33406c0",
+    "native/deep-check.mjs": "2623d67eb780fe84eb6477a2c1019d841bacbe74e13454dfa4077ec92036f90f"
+  },
+  "evidence": {
+    "benchmarks/native-check.json": "d2a3035165f52acbd05085a0ab3e16b99b7791a28b78f995d977063cd5da2de8",
+    "benchmarks/native-check-sanitized.json": "380c24120c42eaef54a5340166c5bb16e42a02ce539f95246a141a7d5e9b58cb",
+    "benchmarks/native-benchmark.json": "daac59bec782d24bed790547213a10ee80162743b36e47ffee270aefd7aa10de",
+    "benchmarks/native-deep.json": "0d256bfd578493c0739931f5b33be78bdc68fc332303847f9a096fb751b44572",
+    "benchmarks/native-prototype-pilot.json": "a11eeab81166dfac05b4e57603b9f2f70ccfae91afec7480657e7ca0ecf2a80a"
+  },
+  "compiler": {
+    "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+    "flags": [
+      "-std=c++17",
+      "-O3",
+      "-DNDEBUG",
+      "-ffp-contract=off",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-isystem",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+    ],
+    "threads": 1,
+    "architecture": "x64",
+    "sourceSha256": "0887fdd954067512be178361b8f586ec125124e28584e812bbed66b23a24f7e3",
+    "binarySha256": "7caa26ab6f1ddf56532875107ef9f8cf7a14b6531feb372db5e053e5d6603cf1",
+    "sanitize": false,
+    "compilerWarnings": ""
+  },
+  "verification": {
+    "rules": 72,
+    "transitions": 2172,
+    "searchCases": 16,
+    "sanitizerPassed": true,
+    "runtimeStderr": "",
+    "benchmarkPairs": 25,
+    "deepCompleteDepth": 5,
+    "deepNodes": 7765366,
+    "equalRootScoresWithin": 1e-7,
+    "equalNodesAndMoves": true,
+    "existingJavascriptTestsPassed": 85,
+    "productionJavascriptUnchanged": true
+  },
+  "wasm": {
+    "tested": false,
+    "toolchainFound": false,
+    "probes": [
+      "PATH: emcc, em++, wasm-ld",
+      "common Emscripten and WASI SDK directories"
+    ],
+    "installedTools": false
+  },
+  "publication": "本地源码/数据提交，无GitHub push，无网页引擎替换，无二进制分发"
+}
