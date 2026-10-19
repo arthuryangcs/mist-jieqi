@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "verifiedAt": "2026-10-19T18:20:08.205Z",
+  "sources": 17,
+  "artifacts": 22,
+  "localReportLinks": 16,
+  "summarySha256": "67451cc6eda5edccc35f21306eda71993015cd2770706931333f6380cff6d3e4",
+  "documentHashes": {
+    "DEFENSE_EVAL_EXPERIMENT.md": "1ed913ad4604d4c32fc4d76fb9a0ce343106957d8efb672d4496f6eeb617a7f6",
+    "README.md": "84a4d7fa69c80b3884dad64a979c0df6fbb99e67ec72fe82bff37f2849379977",
+    "native/README.md": "b37188446ef2f96b3f70366cf00c740d0cec7f05123b871c5bd2a803df910bbe"
+  },
+  "defaultUnchanged": true,
+  "productionSourceSha256": "73de0d5768fbedd97d46305891a0513f95c7a856aa5aba8edff8a92e2d1798d0",
+  "productionBinarySha256": "2304327e3cb91987780ab453fa98db5e17383d32c4c39009649092ee9f14c49b",
+  "decision": "Rejected for default; preserve experiment only",
+  "summary": {
+    "games": 8,
+    "wins": 3,
+    "draws": 3,
+    "losses": 2,
+    "unresolved": 0,
+    "scoreRate": 0.5625,
+    "technical": [
+      {
+        "seed": 13007,
+        "trialSide": "r",
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": true,
+        "offender": "baseline",
+        "reason": "technical-timeout"
+      }
+    ]
+  },
+  "normalGames": {
+    "games": 7,
+    "wins": 2,
+    "draws": 3,
+    "losses": 2,
+    "scoreRate": 0.5
+  }
+}

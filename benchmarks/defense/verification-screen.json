@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "verifiedAt": "2026-10-19T18:18:43.517Z",
+  "matchSha256": "2d4022bfe3890c1cb3c8643323b011b6db6b99659657d3f3dc8867072422a368",
+  "games": 8,
+  "played": 462,
+  "darkCaptures": 55,
+  "summary": {
+    "games": 8,
+    "wins": 3,
+    "draws": 3,
+    "losses": 2,
+    "unresolved": 0,
+    "scoreRate": 0.5625,
+    "technical": [
+      {
+        "seed": 13007,
+        "trialSide": "r",
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": true,
+        "offender": "baseline",
+        "reason": "technical-timeout"
+      }
+    ]
+  }
+}

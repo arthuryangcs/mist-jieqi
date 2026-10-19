@@ -1,0 +1,165 @@
+{
+  "startedAt": "2026-10-19T18:15:52.835Z",
+  "original": {
+    "seed": 13007,
+    "trialSide": "r",
+    "result": {
+      "status": "decided",
+      "winner": "r",
+      "technicalForfeit": true,
+      "offender": "baseline",
+      "reason": "technical-timeout"
+    },
+    "row": {
+      "ply": 30,
+      "engine": "baseline",
+      "side": "b",
+      "move": {
+        "from": 38,
+        "to": 57
+      },
+      "elapsedMs": 509.4126479999977,
+      "depth": 4,
+      "nodes": 653854,
+      "score": -234.27252668901804,
+      "threads": 4,
+      "deadlineStop": true,
+      "fallbackUsed": false,
+      "viewSha256": "b196fdf0e23031721e49c904d88388ba00c79c3a68697a80efd33e5e91a0d034"
+    }
+  },
+  "viewSha256": "b196fdf0e23031721e49c904d88388ba00c79c3a68697a80efd33e5e91a0d034",
+  "adapterSha256": "13ac0a59a5d4c1d6b32c2f1e249143ad4ffc699050deb7be4643f6c79709a605",
+  "instrumentedAdapterSha256": "b58a5626f14b72313da706f00ac05ffe36fdd8951afe58b0c9d718ca5364f6db",
+  "build": {
+    "name": "baseline",
+    "audit": false,
+    "sanitizer": null,
+    "binary": "/Users/yangyemeng/Documents/Codex/2026-10-19/task/.cache/defense/baseline",
+    "sourceSha256": "73de0d5768fbedd97d46305891a0513f95c7a856aa5aba8edff8a92e2d1798d0",
+    "binarySha256": "1664a8abb08177bf069168447ddb07dbc4b7249820c1fa09a28d529e272cbd08",
+    "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+    "flags": [
+      "-std=c++17",
+      "-O3",
+      "-DNDEBUG",
+      "-ffp-contract=off",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-isystem",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+    ],
+    "warnings": ""
+  },
+  "budgetMs": 400,
+  "graceMs": 60,
+  "rows": [
+    {
+      "repeat": 0,
+      "elapsedMs": 376.229814,
+      "depth": 4,
+      "deadlineStop": false,
+      "fallbackUsed": false,
+      "firstProgressMs": 25.264646999999997,
+      "searchElapsedMs": 350.907397,
+      "segments": {
+        "timerAt": null,
+        "resolvedAt": 375.898323,
+        "reapedAt": null
+      },
+      "initializations": [
+        7.628777999999983
+      ]
+    },
+    {
+      "repeat": 1,
+      "elapsedMs": 373.996632,
+      "depth": 4,
+      "deadlineStop": false,
+      "fallbackUsed": false,
+      "firstProgressMs": 14.033629999999903,
+      "searchElapsedMs": 358.726983,
+      "segments": {
+        "timerAt": null,
+        "resolvedAt": 373.88861799999995,
+        "reapedAt": null
+      },
+      "initializations": [
+        4.360318000000007
+      ]
+    },
+    {
+      "repeat": 2,
+      "elapsedMs": 374.4475450000001,
+      "depth": 4,
+      "deadlineStop": false,
+      "fallbackUsed": false,
+      "firstProgressMs": 14.000626000000011,
+      "searchElapsedMs": 358.794028,
+      "segments": {
+        "timerAt": null,
+        "resolvedAt": 374.3390229999999,
+        "reapedAt": null
+      },
+      "initializations": [
+        4.308164000000033
+      ]
+    },
+    {
+      "repeat": 3,
+      "elapsedMs": 375.1204089999999,
+      "depth": 4,
+      "deadlineStop": false,
+      "fallbackUsed": false,
+      "firstProgressMs": 16.60310100000015,
+      "searchElapsedMs": 357.799066,
+      "segments": {
+        "timerAt": null,
+        "resolvedAt": 375.0031490000001,
+        "reapedAt": null
+      },
+      "initializations": [
+        4.971921000000066
+      ]
+    },
+    {
+      "repeat": 4,
+      "elapsedMs": 375.3196529999998,
+      "depth": 4,
+      "deadlineStop": false,
+      "fallbackUsed": false,
+      "firstProgressMs": 16.114990000000034,
+      "searchElapsedMs": 358.372979,
+      "segments": {
+        "timerAt": null,
+        "resolvedAt": 375.2111609999997,
+        "reapedAt": null
+      },
+      "initializations": [
+        4.331817000000001
+      ]
+    },
+    {
+      "repeat": 5,
+      "elapsedMs": 374.6489319999996,
+      "depth": 4,
+      "deadlineStop": false,
+      "fallbackUsed": false,
+      "firstProgressMs": 18.744056,
+      "searchElapsedMs": 357.969674,
+      "segments": {
+        "timerAt": null,
+        "resolvedAt": 374.52579300000025,
+        "reapedAt": null
+      },
+      "initializations": [
+        4.9723690000000715
+      ]
+    }
+  ],
+  "passed": true,
+  "overGrace": 0,
+  "finishedAt": "2026-10-19T18:15:55.127Z",
+  "limitation": "Replays do not replace the original technical loss. The original log lacks callback/reap timestamps; exact historical cause remains unproved even if six replays succeed."
+}

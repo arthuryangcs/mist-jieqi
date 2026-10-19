@@ -1,0 +1,415 @@
+{
+  "createdAt": "2026-10-19T18:20:07.678Z",
+  "baselineCommit": "553da77",
+  "variant": "kingLazy",
+  "defaultUnchanged": true,
+  "decision": "Rejected for default; preserve experiment only",
+  "gates": {
+    "screenScore": false,
+    "technical": false,
+    "depth": false,
+    "confirmRequired": true
+  },
+  "depthLossPositionsAt1s": 2,
+  "costs": [
+    {
+      "position": "初始全暗",
+      "depth": 4,
+      "medianMs": {
+        "baseline": 992.141,
+        "kingFast": 1358.858621,
+        "kingLazy": 1058.844526
+      },
+      "lazyOverBaseline": 1.0672319015139986,
+      "lazyOverExact": 0.7792161080162879
+    },
+    {
+      "position": "可达中局 2111 / 20步",
+      "depth": 4,
+      "medianMs": {
+        "baseline": 163.841961,
+        "kingFast": 240.751565,
+        "kingLazy": 200.457608
+      },
+      "lazyOverBaseline": 1.2234814987352354,
+      "lazyOverExact": 0.8326326269156339
+    },
+    {
+      "position": "可达中局 2111 / 44步",
+      "depth": 4,
+      "medianMs": {
+        "baseline": 218.786381,
+        "kingFast": 394.06472,
+        "kingLazy": 277.898769
+      },
+      "lazyOverBaseline": 1.2701831244240016,
+      "lazyOverExact": 0.7052109841246382
+    },
+    {
+      "position": "可达中局 2221 / 44步",
+      "depth": 4,
+      "medianMs": {
+        "baseline": 368.587171,
+        "kingFast": 476.863145,
+        "kingLazy": 432.016074
+      },
+      "lazyOverBaseline": 1.1720865727038556,
+      "lazyOverExact": 0.9059540007018156
+    },
+    {
+      "position": "全明10子残局",
+      "depth": 5,
+      "medianMs": {
+        "baseline": 125.966497,
+        "kingFast": 187.205788,
+        "kingLazy": 142.224043
+      },
+      "lazyOverBaseline": 1.129062460155576,
+      "lazyOverExact": 0.759720329800914
+    }
+  ],
+  "depths": [
+    {
+      "position": "初始全暗",
+      "budgetMs": 1000,
+      "repeats": 3,
+      "depths": {
+        "baseline": [
+          3,
+          4,
+          4
+        ],
+        "kingFast": [
+          3,
+          3,
+          3
+        ],
+        "kingLazy": [
+          3,
+          3,
+          3
+        ]
+      },
+      "median": {
+        "baseline": 4,
+        "kingFast": 3,
+        "kingLazy": 3
+      }
+    },
+    {
+      "position": "初始全暗",
+      "budgetMs": 6000,
+      "repeats": 3,
+      "depths": {
+        "baseline": [
+          5,
+          5,
+          5
+        ],
+        "kingFast": [
+          5,
+          5,
+          5
+        ],
+        "kingLazy": [
+          5,
+          5,
+          5
+        ]
+      },
+      "median": {
+        "baseline": 5,
+        "kingFast": 5,
+        "kingLazy": 5
+      }
+    },
+    {
+      "position": "可达中局 2111 / 44步",
+      "budgetMs": 1000,
+      "repeats": 3,
+      "depths": {
+        "baseline": [
+          5,
+          5,
+          5
+        ],
+        "kingFast": [
+          4,
+          4,
+          4
+        ],
+        "kingLazy": [
+          4,
+          4,
+          4
+        ]
+      },
+      "median": {
+        "baseline": 5,
+        "kingFast": 4,
+        "kingLazy": 4
+      }
+    },
+    {
+      "position": "可达中局 2111 / 44步",
+      "budgetMs": 6000,
+      "repeats": 3,
+      "depths": {
+        "baseline": [
+          6,
+          6,
+          6
+        ],
+        "kingFast": [
+          5,
+          5,
+          5
+        ],
+        "kingLazy": [
+          6,
+          6,
+          6
+        ]
+      },
+      "median": {
+        "baseline": 6,
+        "kingFast": 5,
+        "kingLazy": 6
+      }
+    },
+    {
+      "position": "全明10子残局",
+      "budgetMs": 1000,
+      "repeats": 3,
+      "depths": {
+        "baseline": [
+          6,
+          6,
+          6
+        ],
+        "kingFast": [
+          6,
+          6,
+          6
+        ],
+        "kingLazy": [
+          6,
+          6,
+          6
+        ]
+      },
+      "median": {
+        "baseline": 6,
+        "kingFast": 6,
+        "kingLazy": 6
+      }
+    },
+    {
+      "position": "全明10子残局",
+      "budgetMs": 6000,
+      "repeats": 3,
+      "depths": {
+        "baseline": [
+          7,
+          7,
+          7
+        ],
+        "kingFast": [
+          7,
+          7,
+          7
+        ],
+        "kingLazy": [
+          7,
+          7,
+          7
+        ]
+      },
+      "median": {
+        "baseline": 7,
+        "kingFast": 7,
+        "kingLazy": 7
+      }
+    }
+  ],
+  "summary": {
+    "games": 8,
+    "wins": 3,
+    "draws": 3,
+    "losses": 2,
+    "unresolved": 0,
+    "scoreRate": 0.5625,
+    "technical": [
+      {
+        "seed": 13007,
+        "trialSide": "r",
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": true,
+        "offender": "baseline",
+        "reason": "technical-timeout"
+      }
+    ]
+  },
+  "timing": {
+    "trial": {
+      "attempts": 231,
+      "medianMs": 376.03324900000007,
+      "p95Ms": 382.8398240000097,
+      "maxMs": 455.09885100000247,
+      "hostStops": 1,
+      "fallbacks": 0,
+      "overGrace": 0
+    },
+    "baseline": {
+      "attempts": 232,
+      "medianMs": 377.87011050001,
+      "p95Ms": 385.8951620000007,
+      "maxMs": 509.4126479999977,
+      "hostStops": 3,
+      "fallbacks": 0,
+      "overGrace": 1
+    }
+  },
+  "verification": {
+    "passed": true,
+    "verifiedAt": "2026-10-19T18:18:43.517Z",
+    "matchSha256": "2d4022bfe3890c1cb3c8643323b011b6db6b99659657d3f3dc8867072422a368",
+    "games": 8,
+    "played": 462,
+    "darkCaptures": 55,
+    "summary": {
+      "games": 8,
+      "wins": 3,
+      "draws": 3,
+      "losses": 2,
+      "unresolved": 0,
+      "scoreRate": 0.5625,
+      "technical": [
+        {
+          "seed": 13007,
+          "trialSide": "r",
+          "status": "decided",
+          "winner": "r",
+          "technicalForfeit": true,
+          "offender": "baseline",
+          "reason": "technical-timeout"
+        }
+      ]
+    }
+  },
+  "checks": [
+    {
+      "name": "check-release",
+      "passed": true,
+      "cases": 86,
+      "searches": 9
+    },
+    {
+      "name": "check-fast-release",
+      "passed": true,
+      "cases": 86,
+      "searches": 9
+    },
+    {
+      "name": "check-cached-release",
+      "passed": true,
+      "cases": 86,
+      "searches": 11
+    },
+    {
+      "name": "check-lazy-release",
+      "passed": true,
+      "cases": 86,
+      "searches": 14
+    },
+    {
+      "name": "check-lazy-asan",
+      "passed": true,
+      "cases": 86,
+      "searches": 14
+    },
+    {
+      "name": "reference-check",
+      "passed": true,
+      "rows": 12
+    },
+    {
+      "name": "unit",
+      "passed": true
+    },
+    {
+      "name": "timing-replay",
+      "passed": true,
+      "rows": 6
+    }
+  ],
+  "archivedBuildReferences": 48,
+  "archivedSources": 26,
+  "sourceHashes": {
+    "native/defense-eval.inc": "e1307b935fa5926c90e93bf126779fd6009981790248eca1d34e7950542ddbc5",
+    "native/defense-variants.mjs": "240d67c88a421d88522f3575569de88ce308a200ccb9e8feaa10ba30191bfc47",
+    "native/defense-check.mjs": "b23b4939a9b60b9ecad36ab86f0343ee85cc3f896f6a0444554cb2bb51a5d816",
+    "native/defense-benchmark.mjs": "0201f3f30e1ddf309b9b9942a4d1600b3eadc48bbe0f1d242e0b1b11ada5760b",
+    "native/defense-match.mjs": "2bdae9b44d20e4655d5d84094b007e7bd043de1468e74330624cdb004d99764c",
+    "native/defense-match-verify.mjs": "160659dc1d954dff26a02ede6ab84e4280591da4f4add9b325766cb866dc0457",
+    "native/defense-reference.mjs": "2be76800b078b410c77612e531fe480067863a255a35330ccdc72e2ef5772660",
+    "native/defense-reference-check.mjs": "86f57b4fa07170a6d35f62330928eb346fadad509d934347f1f18e49e7ed448e",
+    "native/defense-trial.mjs": "7f5dfc581c9177d4257a78c76552dcf196c81f69aa72e9b78d8c7df21547e0ce",
+    "native/defense-timing.mjs": "377429172e64d9d95eefa899e226444a1d65376011302a0ec290545f52e63753",
+    "native/defense-report.mjs": "6d8a4c6c90fd2cec22ec4ac6b0a067dc64e0bc458b4f5c571185955dc2ff86b5",
+    "native/defense-verify.mjs": "b94a1baf6f277dc4d02f85700a4210f61ccce30a6ec175f9e762ed1fb9e0ac8a",
+    "native/search.cpp": "73de0d5768fbedd97d46305891a0513f95c7a856aa5aba8edff8a92e2d1798d0",
+    "ai.js": "1c36be499adb397ec55c15a687644c409c4fbfbfb9de5002943e9a3d4e4714be",
+    "native/server.mjs": "ac5cbbfac91b5e16db8b1b121b82600c56eb57a9f7ad5c697f5162e38c458d90",
+    "native/bridge.mjs": "a0c2a84c72acaeeaf7b0709f06fefc01f97924387274a649a90d270e06df4816",
+    "engine.js": "7f427f6e00e286a48335f7c7a7e74270d2a4349d7ea2aabcad0821122a17cb49"
+  },
+  "artifactHashes": {
+    "baseline-build.json": "176c09e3dc73c9204866dbc9a094b4129e9cd1e010feba490ddacfa2ba900f7d",
+    "budgets-cached.json": "ac741e2b6563a85b6dbd27ecf93e2dcf213eb222ccfbd4d9911912c4d834d1ae",
+    "budgets-lazy.json": "cabf841984b3fa9e19d75bea438cee28f725f2a057ad5643d95a556138d747fa",
+    "budgets-selected.json": "8ce198f2868277ee6aa32af4f8fdff1b8ccc5c6965801f5050a18af990f8dda0",
+    "check-cached-release.json": "2ec3179cf9f961702d36cc2af7c066fe9c3673385c8b67603a5dd118dd258ab8",
+    "check-fast-release.json": "c6d405592e52231d6973c059286f1f55b9210c4146e8ee7a4b5a8c6e52eeacab",
+    "check-lazy-asan.json": "2f82b85bf8af675af4d1f874694171a3b5f121c95a4d17f44a6a6dea345d9f33",
+    "check-lazy-release-initial.json": "ee58fd0086ae0a79992b6a519edab238900837e7764dc1c8ef5b1e9410ea9334",
+    "check-lazy-release.json": "829a72bef7e39b1ab0ff959db527b45b738c06687cdd262c0d47cb0d2d284328",
+    "check-release.json": "c3a9db3b37679a34120c8ecb411c5514b45b5dbe58de155fea3c1a64bb602b0c",
+    "diagnostic-fast.json": "e5ee67a2aa5993cc366449ba28f78799cd731caa11d27d3c26ccacfcea893a9d",
+    "diagnostic.json": "4c6ce54636780175b512725e26ff5cca0b23dc2eecffb9b771049e1af94aa429",
+    "fixed-cached.json": "53cddb2f570b91122a574bff964305efd032b95dc431b9d5fec1309d4f123d9e",
+    "fixed-lazy.json": "7cdbcb95dcaea27011a8336e0a005e44f9e1a2a24fd1a725be9225d099f11858",
+    "fixed-selected.json": "9145c9a36b7a7ae5d20e101362f30cee52be86da6944a43d1560e09f23bda332",
+    "matches-screen.json": "2d4022bfe3890c1cb3c8643323b011b6db6b99659657d3f3dc8867072422a368",
+    "production-status.json": "ebcacd20e943e76d525be1418ea9bc755154ad621b642aa8eb2abb4f4f58652e",
+    "reference-check.json": "4b97abb483c6556e0b3dd31be018084e6f3e3991100f79645fa34ef8e4268ed8",
+    "selection.json": "2272bdbea0a7dae0f031f6f02691cad12031b4de76f5818ee2b77f838a4d1418",
+    "timing-replay.json": "ba510e424de658f40aecc5ec4fb56f29ce670cf2321223c97e1c441942f02f7a",
+    "unit.json": "cbcebeaecb78e1b50f2f55a90f9fd79a2355f68a31a942206f51c7d7d13e6dd5",
+    "verification-screen.json": "34f63bae73b2cadb3683944c3ae54e0698e8a59c49c430e22cf1823a9292cc17"
+  },
+  "environment": {
+    "node": "v25.6.0",
+    "platform": "darwin",
+    "arch": "x64",
+    "cpu": "Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz"
+  },
+  "normalGames": {
+    "games": 7,
+    "wins": 2,
+    "draws": 3,
+    "losses": 2,
+    "scoreRate": 0.5
+  },
+  "confirmationPlayed": false,
+  "pikaPlayed": false,
+  "limitations": [
+    "Four paired exploratory400ms layouts, not an Elo or stable strength estimate.",
+    "No Pika match in this round; do not combine with historical Pika scores.",
+    "King pressure is a pseudo-control heuristic; pinned attackers and occupancy changes need legal search.",
+    "Host scheduling/frequency not controlled; rotated repeats retain all measurements.",
+    "Original technical result is retained. Six instrumented replays cannot establish its historical cause.",
+    "Default source and playable server stay unchanged if rejected."
+  ]
+}

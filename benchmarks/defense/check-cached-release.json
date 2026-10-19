@@ -1,0 +1,587 @@
+{
+  "kind": "release",
+  "startedAt": "2026-10-19T18:02:13.650Z",
+  "builds": [
+    {
+      "name": "baseline",
+      "audit": true,
+      "sanitizer": null,
+      "binary": "/Users/yangyemeng/Documents/Codex/2026-10-19/task/.cache/defense/baseline-audit",
+      "sourceSha256": "9b2b436ce990e757ee0431910f9c7be32d0861696e72e8adb532c0ab6d61f940",
+      "binarySha256": "b05da4939d949ad31340e320a7dc558a8d488243156677f84763322369d6e2aa",
+      "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+      "flags": [
+        "-std=c++17",
+        "-O3",
+        "-DNDEBUG",
+        "-ffp-contract=off",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-isystem",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+      ],
+      "warnings": ""
+    },
+    {
+      "name": "kingFast",
+      "audit": true,
+      "sanitizer": null,
+      "binary": "/Users/yangyemeng/Documents/Codex/2026-10-19/task/.cache/defense/kingFast-audit",
+      "sourceSha256": "e69da71d052be5fdf970802c1f5933a85d0857ad3dd34884736a04c02e914daf",
+      "binarySha256": "867792080bc8f14f59eb7314ceba6eb190109e94598cfd962ebe3d961ded61e3",
+      "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+      "flags": [
+        "-std=c++17",
+        "-O3",
+        "-DNDEBUG",
+        "-ffp-contract=off",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-isystem",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+      ],
+      "warnings": ""
+    },
+    {
+      "name": "kingCached",
+      "audit": true,
+      "sanitizer": null,
+      "binary": "/Users/yangyemeng/Documents/Codex/2026-10-19/task/.cache/defense/kingCached-audit",
+      "sourceSha256": "92f1527a3764d0be0290df7c12fbe1a41bc5a795abad0f720fe72fcded08432c",
+      "binarySha256": "12e5cf1530b73faa30b0cc8220f81e907a0a833332bb1ce6cbbc4d6815b39e75",
+      "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+      "flags": [
+        "-std=c++17",
+        "-O3",
+        "-DNDEBUG",
+        "-ffp-contract=off",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-isystem",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+      ],
+      "warnings": ""
+    }
+  ],
+  "cases": [
+    {
+      "name": "12007/0/r",
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "12007/0/b",
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "12007/0/null",
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "12007/12/r",
+      "transitions": 34,
+      "passed": true
+    },
+    {
+      "name": "12007/12/b",
+      "transitions": 34,
+      "passed": true
+    },
+    {
+      "name": "12007/12/null",
+      "transitions": 34,
+      "passed": true
+    },
+    {
+      "name": "12007/24/r",
+      "transitions": 36,
+      "passed": true
+    },
+    {
+      "name": "12007/24/b",
+      "transitions": 36,
+      "passed": true
+    },
+    {
+      "name": "12007/24/null",
+      "transitions": 36,
+      "passed": true
+    },
+    {
+      "name": "12007/36/r",
+      "transitions": 39,
+      "passed": true
+    },
+    {
+      "name": "12007/36/b",
+      "transitions": 39,
+      "passed": true
+    },
+    {
+      "name": "12007/36/null",
+      "transitions": 39,
+      "passed": true
+    },
+    {
+      "name": "12007/48/r",
+      "transitions": 29,
+      "passed": true
+    },
+    {
+      "name": "12007/48/b",
+      "transitions": 29,
+      "passed": true
+    },
+    {
+      "name": "12007/48/null",
+      "transitions": 29,
+      "passed": true
+    },
+    {
+      "name": "12011/0/r",
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "12011/0/b",
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "12011/0/null",
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "12011/12/r",
+      "transitions": 37,
+      "passed": true
+    },
+    {
+      "name": "12011/12/b",
+      "transitions": 37,
+      "passed": true
+    },
+    {
+      "name": "12011/12/null",
+      "transitions": 37,
+      "passed": true
+    },
+    {
+      "name": "12011/24/r",
+      "transitions": 43,
+      "passed": true
+    },
+    {
+      "name": "12011/24/b",
+      "transitions": 43,
+      "passed": true
+    },
+    {
+      "name": "12011/24/null",
+      "transitions": 43,
+      "passed": true
+    },
+    {
+      "name": "12011/36/r",
+      "transitions": 30,
+      "passed": true
+    },
+    {
+      "name": "12011/36/b",
+      "transitions": 30,
+      "passed": true
+    },
+    {
+      "name": "12011/36/null",
+      "transitions": 30,
+      "passed": true
+    },
+    {
+      "name": "12011/48/r",
+      "transitions": 43,
+      "passed": true
+    },
+    {
+      "name": "12011/48/b",
+      "transitions": 43,
+      "passed": true
+    },
+    {
+      "name": "12011/48/null",
+      "transitions": 43,
+      "passed": true
+    },
+    {
+      "name": "12037/0/r",
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "12037/0/b",
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "12037/0/null",
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "12037/12/r",
+      "transitions": 42,
+      "passed": true
+    },
+    {
+      "name": "12037/12/b",
+      "transitions": 42,
+      "passed": true
+    },
+    {
+      "name": "12037/12/null",
+      "transitions": 42,
+      "passed": true
+    },
+    {
+      "name": "12037/24/r",
+      "transitions": 33,
+      "passed": true
+    },
+    {
+      "name": "12037/24/b",
+      "transitions": 33,
+      "passed": true
+    },
+    {
+      "name": "12037/24/null",
+      "transitions": 33,
+      "passed": true
+    },
+    {
+      "name": "12037/36/r",
+      "transitions": 39,
+      "passed": true
+    },
+    {
+      "name": "12037/36/b",
+      "transitions": 39,
+      "passed": true
+    },
+    {
+      "name": "12037/36/null",
+      "transitions": 39,
+      "passed": true
+    },
+    {
+      "name": "12037/48/r",
+      "transitions": 51,
+      "passed": true
+    },
+    {
+      "name": "12037/48/b",
+      "transitions": 51,
+      "passed": true
+    },
+    {
+      "name": "12037/48/null",
+      "transitions": 51,
+      "passed": true
+    },
+    {
+      "name": "12041/0/r",
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "12041/0/b",
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "12041/0/null",
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "12041/12/r",
+      "transitions": 52,
+      "passed": true
+    },
+    {
+      "name": "12041/12/b",
+      "transitions": 52,
+      "passed": true
+    },
+    {
+      "name": "12041/12/null",
+      "transitions": 52,
+      "passed": true
+    },
+    {
+      "name": "12041/24/r",
+      "transitions": 55,
+      "passed": true
+    },
+    {
+      "name": "12041/24/b",
+      "transitions": 55,
+      "passed": true
+    },
+    {
+      "name": "12041/24/null",
+      "transitions": 55,
+      "passed": true
+    },
+    {
+      "name": "12041/36/r",
+      "transitions": 47,
+      "passed": true
+    },
+    {
+      "name": "12041/36/b",
+      "transitions": 47,
+      "passed": true
+    },
+    {
+      "name": "12041/36/null",
+      "transitions": 47,
+      "passed": true
+    },
+    {
+      "name": "12041/48/r",
+      "transitions": 41,
+      "passed": true
+    },
+    {
+      "name": "12041/48/b",
+      "transitions": 41,
+      "passed": true
+    },
+    {
+      "name": "12041/48/null",
+      "transitions": 41,
+      "passed": true
+    },
+    {
+      "name": "geometry/K/false/false",
+      "transitions": 0,
+      "passed": true
+    },
+    {
+      "name": "geometry/K/false/true",
+      "transitions": 0,
+      "passed": true
+    },
+    {
+      "name": "geometry/R/false/false",
+      "transitions": 14,
+      "passed": true
+    },
+    {
+      "name": "geometry/R/false/true",
+      "transitions": 14,
+      "passed": true
+    },
+    {
+      "name": "geometry/R/true/false",
+      "transitions": 14,
+      "passed": true
+    },
+    {
+      "name": "geometry/R/true/true",
+      "transitions": 14,
+      "passed": true
+    },
+    {
+      "name": "geometry/N/false/false",
+      "transitions": 9,
+      "passed": true
+    },
+    {
+      "name": "geometry/N/false/true",
+      "transitions": 9,
+      "passed": true
+    },
+    {
+      "name": "geometry/N/true/false",
+      "transitions": 9,
+      "passed": true
+    },
+    {
+      "name": "geometry/N/true/true",
+      "transitions": 9,
+      "passed": true
+    },
+    {
+      "name": "geometry/B/false/false",
+      "transitions": 8,
+      "passed": true
+    },
+    {
+      "name": "geometry/B/false/true",
+      "transitions": 8,
+      "passed": true
+    },
+    {
+      "name": "geometry/B/true/false",
+      "transitions": 6,
+      "passed": true
+    },
+    {
+      "name": "geometry/B/true/true",
+      "transitions": 6,
+      "passed": true
+    },
+    {
+      "name": "geometry/C/false/false",
+      "transitions": 15,
+      "passed": true
+    },
+    {
+      "name": "geometry/C/false/true",
+      "transitions": 15,
+      "passed": true
+    },
+    {
+      "name": "geometry/C/true/false",
+      "transitions": 15,
+      "passed": true
+    },
+    {
+      "name": "geometry/C/true/true",
+      "transitions": 15,
+      "passed": true
+    },
+    {
+      "name": "geometry/A/false/false",
+      "transitions": 8,
+      "passed": true
+    },
+    {
+      "name": "geometry/A/false/true",
+      "transitions": 8,
+      "passed": true
+    },
+    {
+      "name": "geometry/A/true/false",
+      "transitions": 5,
+      "passed": true
+    },
+    {
+      "name": "geometry/A/true/true",
+      "transitions": 5,
+      "passed": true
+    },
+    {
+      "name": "geometry/P/false/false",
+      "transitions": 8,
+      "passed": true
+    },
+    {
+      "name": "geometry/P/false/true",
+      "transitions": 8,
+      "passed": true
+    },
+    {
+      "name": "geometry/P/true/false",
+      "transitions": 8,
+      "passed": true
+    },
+    {
+      "name": "geometry/P/true/true",
+      "transitions": 8,
+      "passed": true
+    }
+  ],
+  "searches": [
+    {
+      "name": "kingFast",
+      "position": "初始全暗",
+      "depth": 3,
+      "passed": true
+    },
+    {
+      "name": "kingFast",
+      "position": "可达中局 2111 / 44步",
+      "depth": 3,
+      "passed": true
+    },
+    {
+      "name": "kingFast",
+      "position": "全明10子残局",
+      "depth": 3,
+      "passed": true
+    },
+    {
+      "name": "kingCached",
+      "position": "初始全暗",
+      "depth": 3,
+      "passed": true
+    },
+    {
+      "name": "kingCached",
+      "position": "可达中局 2111 / 44步",
+      "depth": 3,
+      "passed": true
+    },
+    {
+      "name": "kingCached",
+      "position": "全明10子残局",
+      "depth": 3,
+      "passed": true
+    },
+    {
+      "name": "cached-exact",
+      "position": "初始全暗",
+      "depth": 4,
+      "hits": 339847,
+      "misses": 1178619,
+      "passed": true
+    },
+    {
+      "name": "cached-exact",
+      "position": "可达中局 2111 / 20步",
+      "depth": 4,
+      "hits": 101242,
+      "misses": 281336,
+      "passed": true
+    },
+    {
+      "name": "cached-exact",
+      "position": "可达中局 2111 / 44步",
+      "depth": 4,
+      "hits": 131613,
+      "misses": 371946,
+      "passed": true
+    },
+    {
+      "name": "cached-exact",
+      "position": "可达中局 2221 / 44步",
+      "depth": 4,
+      "hits": 164247,
+      "misses": 490663,
+      "passed": true
+    },
+    {
+      "name": "cached-exact",
+      "position": "全明10子残局",
+      "depth": 5,
+      "hits": 21583,
+      "misses": 63441,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "informationIsolation": true,
+  "stderr": {
+    "baseline": "",
+    "kingFast": "",
+    "kingCached": ""
+  },
+  "finishedAt": "2026-10-19T18:02:35.884Z"
+}

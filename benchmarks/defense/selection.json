@@ -1,0 +1,58 @@
+{
+  "chosenAt": "2026-10-19T18:09:16.695Z",
+  "variant": "kingLazy",
+  "baselineCommit": "553da77",
+  "baselineSourceSha256": "73de0d5768fbedd97d46305891a0513f95c7a856aa5aba8edff8a92e2d1798d0",
+  "features": {
+    "kingAttacked": 20,
+    "controlledNeighbor": 12,
+    "missingSafeNeighbor": 18,
+    "maxPenaltyPerSide": 104,
+    "lazyWindowBound": 104,
+    "captureThreats": false,
+    "crossRequestCache": false,
+    "pressureCache": false
+  },
+  "reasons": "Full attack maps/hanging evaluation were costly. KingFast matches full king evaluation; choose exact bounded lazy evaluation, not the pressure cache. Diagnostic recommendations are not ground truth or a promotion criterion.",
+  "gates": {
+    "screenGames": 8,
+    "screenMinPoints": 5,
+    "confirmGames": 20,
+    "confirmMinPoints": 12,
+    "technicalFailures": 0,
+    "unresolved": 0,
+    "depthGate": "No median loss of at least one completed ply in two of three representative positions at1000ms. A failed gate prevents promotion even if screen scores well.",
+    "correctness": "Independent JS attack map, mirror and hidden-identity isolation, all root/per-world score equality to exact king evaluation, ASan/UBSan, TSan, independent replay and production checks if promoted.",
+    "weights": "Frozen before any game. No weights or variants changed after screen. Optional same-budget paired Pika comparison only after internal gates."
+  },
+  "seeds": {
+    "screen": [
+      13001,
+      13003,
+      13007,
+      13009
+    ],
+    "confirm": [
+      13103,
+      13109,
+      13121,
+      13127,
+      13147,
+      13151,
+      13159,
+      13163,
+      13171,
+      13177
+    ],
+    "pika": [
+      13217,
+      13219,
+      13229,
+      13241
+    ]
+  },
+  "sourceHashes": {
+    "native/defense-eval.inc": "e1307b935fa5926c90e93bf126779fd6009981790248eca1d34e7950542ddbc5",
+    "native/defense-variants.mjs": "240d67c88a421d88522f3575569de88ce308a200ccb9e8feaa10ba30191bfc47"
+  }
+}

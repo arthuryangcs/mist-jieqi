@@ -1,0 +1,587 @@
+{
+  "kind": "release",
+  "startedAt": "2026-10-19T17:59:12.864Z",
+  "builds": [
+    {
+      "name": "baseline",
+      "audit": true,
+      "sanitizer": null,
+      "binary": "/Users/yangyemeng/Documents/Codex/2026-10-19/task/.cache/defense/baseline-audit",
+      "sourceSha256": "69b8a3556f61476971ca41557b7aedb47495a437fe62fa12a2446fc3b6d59daa",
+      "binarySha256": "ce0670a514246ea54bd2d18134e2dea2528f9b2df774b8c5111c7c91f6b60ac3",
+      "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+      "flags": [
+        "-std=c++17",
+        "-O3",
+        "-DNDEBUG",
+        "-ffp-contract=off",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-isystem",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+      ],
+      "warnings": ""
+    },
+    {
+      "name": "hanging",
+      "audit": true,
+      "sanitizer": null,
+      "binary": "/Users/yangyemeng/Documents/Codex/2026-10-19/task/.cache/defense/hanging-audit",
+      "sourceSha256": "5caf24bac81dc649deff69787ca96476487723e89bf0cf92b6cbca292da047cb",
+      "binarySha256": "5da48c10a86c99909cab412bb01cf98fd2b462c19aa99e5ab18035d8c299fa9f",
+      "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+      "flags": [
+        "-std=c++17",
+        "-O3",
+        "-DNDEBUG",
+        "-ffp-contract=off",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-isystem",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+      ],
+      "warnings": ""
+    },
+    {
+      "name": "kingFast",
+      "audit": true,
+      "sanitizer": null,
+      "binary": "/Users/yangyemeng/Documents/Codex/2026-10-19/task/.cache/defense/kingFast-audit",
+      "sourceSha256": "d493606a999499087226dc396154de988f09214e045f23146e34d5c83df8bc8a",
+      "binarySha256": "efb3ebeba1fe6aaa978c9743cb0d2c0bb32dd19a8ff28505aa5db082dfd93ccc",
+      "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+      "flags": [
+        "-std=c++17",
+        "-O3",
+        "-DNDEBUG",
+        "-ffp-contract=off",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-isystem",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+      ],
+      "warnings": ""
+    },
+    {
+      "name": "combinedFast",
+      "audit": true,
+      "sanitizer": null,
+      "binary": "/Users/yangyemeng/Documents/Codex/2026-10-19/task/.cache/defense/combinedFast-audit",
+      "sourceSha256": "3d64dbb8d4e10580c7da8eaaa172e983c9620fe0051520e0e02c67230787198e",
+      "binarySha256": "0f61d57881a2a32829fe488b8e391da8cbd060e8aeddc836899c46db6579f488",
+      "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+      "flags": [
+        "-std=c++17",
+        "-O3",
+        "-DNDEBUG",
+        "-ffp-contract=off",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-isystem",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+      ],
+      "warnings": ""
+    }
+  ],
+  "cases": [
+    {
+      "name": "12007/0/r",
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "12007/0/b",
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "12007/0/null",
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "12007/12/r",
+      "transitions": 34,
+      "passed": true
+    },
+    {
+      "name": "12007/12/b",
+      "transitions": 34,
+      "passed": true
+    },
+    {
+      "name": "12007/12/null",
+      "transitions": 34,
+      "passed": true
+    },
+    {
+      "name": "12007/24/r",
+      "transitions": 36,
+      "passed": true
+    },
+    {
+      "name": "12007/24/b",
+      "transitions": 36,
+      "passed": true
+    },
+    {
+      "name": "12007/24/null",
+      "transitions": 36,
+      "passed": true
+    },
+    {
+      "name": "12007/36/r",
+      "transitions": 39,
+      "passed": true
+    },
+    {
+      "name": "12007/36/b",
+      "transitions": 39,
+      "passed": true
+    },
+    {
+      "name": "12007/36/null",
+      "transitions": 39,
+      "passed": true
+    },
+    {
+      "name": "12007/48/r",
+      "transitions": 29,
+      "passed": true
+    },
+    {
+      "name": "12007/48/b",
+      "transitions": 29,
+      "passed": true
+    },
+    {
+      "name": "12007/48/null",
+      "transitions": 29,
+      "passed": true
+    },
+    {
+      "name": "12011/0/r",
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "12011/0/b",
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "12011/0/null",
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "12011/12/r",
+      "transitions": 37,
+      "passed": true
+    },
+    {
+      "name": "12011/12/b",
+      "transitions": 37,
+      "passed": true
+    },
+    {
+      "name": "12011/12/null",
+      "transitions": 37,
+      "passed": true
+    },
+    {
+      "name": "12011/24/r",
+      "transitions": 43,
+      "passed": true
+    },
+    {
+      "name": "12011/24/b",
+      "transitions": 43,
+      "passed": true
+    },
+    {
+      "name": "12011/24/null",
+      "transitions": 43,
+      "passed": true
+    },
+    {
+      "name": "12011/36/r",
+      "transitions": 30,
+      "passed": true
+    },
+    {
+      "name": "12011/36/b",
+      "transitions": 30,
+      "passed": true
+    },
+    {
+      "name": "12011/36/null",
+      "transitions": 30,
+      "passed": true
+    },
+    {
+      "name": "12011/48/r",
+      "transitions": 43,
+      "passed": true
+    },
+    {
+      "name": "12011/48/b",
+      "transitions": 43,
+      "passed": true
+    },
+    {
+      "name": "12011/48/null",
+      "transitions": 43,
+      "passed": true
+    },
+    {
+      "name": "12037/0/r",
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "12037/0/b",
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "12037/0/null",
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "12037/12/r",
+      "transitions": 42,
+      "passed": true
+    },
+    {
+      "name": "12037/12/b",
+      "transitions": 42,
+      "passed": true
+    },
+    {
+      "name": "12037/12/null",
+      "transitions": 42,
+      "passed": true
+    },
+    {
+      "name": "12037/24/r",
+      "transitions": 33,
+      "passed": true
+    },
+    {
+      "name": "12037/24/b",
+      "transitions": 33,
+      "passed": true
+    },
+    {
+      "name": "12037/24/null",
+      "transitions": 33,
+      "passed": true
+    },
+    {
+      "name": "12037/36/r",
+      "transitions": 39,
+      "passed": true
+    },
+    {
+      "name": "12037/36/b",
+      "transitions": 39,
+      "passed": true
+    },
+    {
+      "name": "12037/36/null",
+      "transitions": 39,
+      "passed": true
+    },
+    {
+      "name": "12037/48/r",
+      "transitions": 51,
+      "passed": true
+    },
+    {
+      "name": "12037/48/b",
+      "transitions": 51,
+      "passed": true
+    },
+    {
+      "name": "12037/48/null",
+      "transitions": 51,
+      "passed": true
+    },
+    {
+      "name": "12041/0/r",
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "12041/0/b",
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "12041/0/null",
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "12041/12/r",
+      "transitions": 52,
+      "passed": true
+    },
+    {
+      "name": "12041/12/b",
+      "transitions": 52,
+      "passed": true
+    },
+    {
+      "name": "12041/12/null",
+      "transitions": 52,
+      "passed": true
+    },
+    {
+      "name": "12041/24/r",
+      "transitions": 55,
+      "passed": true
+    },
+    {
+      "name": "12041/24/b",
+      "transitions": 55,
+      "passed": true
+    },
+    {
+      "name": "12041/24/null",
+      "transitions": 55,
+      "passed": true
+    },
+    {
+      "name": "12041/36/r",
+      "transitions": 47,
+      "passed": true
+    },
+    {
+      "name": "12041/36/b",
+      "transitions": 47,
+      "passed": true
+    },
+    {
+      "name": "12041/36/null",
+      "transitions": 47,
+      "passed": true
+    },
+    {
+      "name": "12041/48/r",
+      "transitions": 41,
+      "passed": true
+    },
+    {
+      "name": "12041/48/b",
+      "transitions": 41,
+      "passed": true
+    },
+    {
+      "name": "12041/48/null",
+      "transitions": 41,
+      "passed": true
+    },
+    {
+      "name": "geometry/K/false/false",
+      "transitions": 0,
+      "passed": true
+    },
+    {
+      "name": "geometry/K/false/true",
+      "transitions": 0,
+      "passed": true
+    },
+    {
+      "name": "geometry/R/false/false",
+      "transitions": 14,
+      "passed": true
+    },
+    {
+      "name": "geometry/R/false/true",
+      "transitions": 14,
+      "passed": true
+    },
+    {
+      "name": "geometry/R/true/false",
+      "transitions": 14,
+      "passed": true
+    },
+    {
+      "name": "geometry/R/true/true",
+      "transitions": 14,
+      "passed": true
+    },
+    {
+      "name": "geometry/N/false/false",
+      "transitions": 9,
+      "passed": true
+    },
+    {
+      "name": "geometry/N/false/true",
+      "transitions": 9,
+      "passed": true
+    },
+    {
+      "name": "geometry/N/true/false",
+      "transitions": 9,
+      "passed": true
+    },
+    {
+      "name": "geometry/N/true/true",
+      "transitions": 9,
+      "passed": true
+    },
+    {
+      "name": "geometry/B/false/false",
+      "transitions": 8,
+      "passed": true
+    },
+    {
+      "name": "geometry/B/false/true",
+      "transitions": 8,
+      "passed": true
+    },
+    {
+      "name": "geometry/B/true/false",
+      "transitions": 6,
+      "passed": true
+    },
+    {
+      "name": "geometry/B/true/true",
+      "transitions": 6,
+      "passed": true
+    },
+    {
+      "name": "geometry/C/false/false",
+      "transitions": 15,
+      "passed": true
+    },
+    {
+      "name": "geometry/C/false/true",
+      "transitions": 15,
+      "passed": true
+    },
+    {
+      "name": "geometry/C/true/false",
+      "transitions": 15,
+      "passed": true
+    },
+    {
+      "name": "geometry/C/true/true",
+      "transitions": 15,
+      "passed": true
+    },
+    {
+      "name": "geometry/A/false/false",
+      "transitions": 8,
+      "passed": true
+    },
+    {
+      "name": "geometry/A/false/true",
+      "transitions": 8,
+      "passed": true
+    },
+    {
+      "name": "geometry/A/true/false",
+      "transitions": 5,
+      "passed": true
+    },
+    {
+      "name": "geometry/A/true/true",
+      "transitions": 5,
+      "passed": true
+    },
+    {
+      "name": "geometry/P/false/false",
+      "transitions": 8,
+      "passed": true
+    },
+    {
+      "name": "geometry/P/false/true",
+      "transitions": 8,
+      "passed": true
+    },
+    {
+      "name": "geometry/P/true/false",
+      "transitions": 8,
+      "passed": true
+    },
+    {
+      "name": "geometry/P/true/true",
+      "transitions": 8,
+      "passed": true
+    }
+  ],
+  "searches": [
+    {
+      "name": "hanging",
+      "position": "初始全暗",
+      "depth": 3,
+      "passed": true
+    },
+    {
+      "name": "hanging",
+      "position": "可达中局 2111 / 44步",
+      "depth": 3,
+      "passed": true
+    },
+    {
+      "name": "hanging",
+      "position": "全明10子残局",
+      "depth": 3,
+      "passed": true
+    },
+    {
+      "name": "kingFast",
+      "position": "初始全暗",
+      "depth": 3,
+      "passed": true
+    },
+    {
+      "name": "kingFast",
+      "position": "可达中局 2111 / 44步",
+      "depth": 3,
+      "passed": true
+    },
+    {
+      "name": "kingFast",
+      "position": "全明10子残局",
+      "depth": 3,
+      "passed": true
+    },
+    {
+      "name": "combinedFast",
+      "position": "初始全暗",
+      "depth": 3,
+      "passed": true
+    },
+    {
+      "name": "combinedFast",
+      "position": "可达中局 2111 / 44步",
+      "depth": 3,
+      "passed": true
+    },
+    {
+      "name": "combinedFast",
+      "position": "全明10子残局",
+      "depth": 3,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "informationIsolation": true,
+  "stderr": {
+    "baseline": "",
+    "hanging": "",
+    "kingFast": "",
+    "combinedFast": ""
+  },
+  "finishedAt": "2026-10-19T17:59:37.485Z"
+}

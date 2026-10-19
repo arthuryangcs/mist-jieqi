@@ -16,6 +16,8 @@
 
 最新默认仅修复表满后已有键不能更新的问题，C++与JS同步调整，表仍限制9万项、按采样世界和请求隔离。窄窗和请求内线程池经独立对照未采用，quiet-check保持关闭。完整候选/逐世界审计、JS/C++满表7层同节点、新Pika8局、时限故障调查与7组服务回归见 [TT_CACHE_REPORT.md](../TT_CACHE_REPORT.md)。历史冻结脚本的源码哈希限制保留，不把新核心冒充旧版。
 
+最近的[攻防/将帅压力实验](../DEFENSE_EVAL_EXPERIMENT.md)没有接入默认核心。原型、独立JS几何核对、ASan/UBSan、完整候选/逐世界同分、有界惰性计算消融及新布局换色8局均保留；正常7局得分率50%，另1局基线超时，1秒预算两处掉层，未过启用门槛。用 `node native/defense-check.mjs --lazy` 核验隔离原型；复跑前先另存正式证据，详见报告。
+
 以下保留离线性能及一致性复现方式；旧测量见 [NATIVE_SEARCH_REPORT.md](../NATIVE_SEARCH_REPORT.md)。
 
 需要 Node.js 20+ 和本机已有的 C++17 编译器；不需要 npm 依赖。

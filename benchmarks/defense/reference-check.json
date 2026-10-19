@@ -1,0 +1,125 @@
+{
+  "startedAt": "2026-10-19T18:12:22.039Z",
+  "rows": [
+    {
+      "name": "初始全暗",
+      "depth": 3,
+      "nodesEqual": false,
+      "candidates": 44,
+      "maxDifference": 1.7053025658242404e-13,
+      "passed": true
+    },
+    {
+      "name": "可达中局 2111 / 20步",
+      "depth": 3,
+      "nodesEqual": false,
+      "candidates": 25,
+      "maxDifference": 0,
+      "passed": true
+    },
+    {
+      "name": "可达中局 2111 / 44步",
+      "depth": 3,
+      "nodesEqual": false,
+      "candidates": 23,
+      "maxDifference": 0,
+      "passed": true
+    },
+    {
+      "name": "可达中局 2221 / 44步",
+      "depth": 3,
+      "nodesEqual": false,
+      "candidates": 31,
+      "maxDifference": 2.2737367544323206e-13,
+      "passed": true
+    },
+    {
+      "name": "全明10子残局",
+      "depth": 4,
+      "nodesEqual": true,
+      "candidates": 30,
+      "maxDifference": 0,
+      "passed": true
+    },
+    {
+      "name": "diagnostic/4003/45",
+      "depth": 2,
+      "nodesEqual": false,
+      "candidates": 21,
+      "maxDifference": 0,
+      "passed": true
+    },
+    {
+      "name": "diagnostic/4003/47",
+      "depth": 2,
+      "nodesEqual": false,
+      "candidates": 20,
+      "maxDifference": 3.126388037344441e-13,
+      "passed": true
+    },
+    {
+      "name": "diagnostic/4003/49",
+      "depth": 2,
+      "nodesEqual": true,
+      "candidates": 17,
+      "maxDifference": 1.4210854715202004e-14,
+      "passed": true
+    },
+    {
+      "name": "diagnostic/4057/29",
+      "depth": 2,
+      "nodesEqual": true,
+      "candidates": 6,
+      "maxDifference": 0,
+      "passed": true
+    },
+    {
+      "name": "diagnostic/4057/31",
+      "depth": 2,
+      "nodesEqual": true,
+      "candidates": 22,
+      "maxDifference": 1.1368683772161603e-13,
+      "passed": true
+    },
+    {
+      "name": "diagnostic/4057/41",
+      "depth": 2,
+      "nodesEqual": true,
+      "candidates": 7,
+      "maxDifference": 1.4210854715202004e-14,
+      "passed": true
+    },
+    {
+      "name": "diagnostic/4001/70",
+      "depth": 2,
+      "nodesEqual": true,
+      "candidates": 28,
+      "maxDifference": 0,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "build": {
+    "name": "kingLazy",
+    "audit": true,
+    "sanitizer": null,
+    "binary": "/Users/yangyemeng/Documents/Codex/2026-10-19/task/.cache/defense/kingLazy-audit",
+    "sourceSha256": "771b4a6319338b8a711032a176b2d5e4f321102de9d9bca842fc132401ad8297",
+    "binarySha256": "febf057b7e30e0abc1e5328e772c1fa4722ad6c24d0cf27bf29eb05ec43f87d5",
+    "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+    "flags": [
+      "-std=c++17",
+      "-O3",
+      "-DNDEBUG",
+      "-ffp-contract=off",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-isystem",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+    ],
+    "warnings": ""
+  },
+  "stderr": "",
+  "finishedAt": "2026-10-19T18:12:31.494Z"
+}

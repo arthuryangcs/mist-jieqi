@@ -1,0 +1,587 @@
+{
+  "kind": "release",
+  "startedAt": "2026-10-19T17:55:53.626Z",
+  "builds": [
+    {
+      "name": "baseline",
+      "audit": true,
+      "sanitizer": null,
+      "binary": "/Users/yangyemeng/Documents/Codex/2026-10-19/task/.cache/defense/baseline-audit",
+      "sourceSha256": "34241ae96b2a51e09a457fdf0e11edb34136014ac4c368a4e90002ff1130dd3d",
+      "binarySha256": "3b4c88fd11ba55143d1304f9e70e1cafedeed4dc15920c1ca3b7f5d20aa6e1b4",
+      "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+      "flags": [
+        "-std=c++17",
+        "-O3",
+        "-DNDEBUG",
+        "-ffp-contract=off",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-isystem",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+      ],
+      "warnings": ""
+    },
+    {
+      "name": "threats",
+      "audit": true,
+      "sanitizer": null,
+      "binary": "/Users/yangyemeng/Documents/Codex/2026-10-19/task/.cache/defense/threats-audit",
+      "sourceSha256": "6190f83ea94054024217bcb22a2a2061e55e3785749c588f1ef2e6c6c7cc0414",
+      "binarySha256": "5bd091cf2b147110558bc10e5fa4196144dc17fcddf30c6143197628f95d7d68",
+      "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+      "flags": [
+        "-std=c++17",
+        "-O3",
+        "-DNDEBUG",
+        "-ffp-contract=off",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-isystem",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+      ],
+      "warnings": ""
+    },
+    {
+      "name": "king",
+      "audit": true,
+      "sanitizer": null,
+      "binary": "/Users/yangyemeng/Documents/Codex/2026-10-19/task/.cache/defense/king-audit",
+      "sourceSha256": "d33979fed8549411f82d38f6fd6c386fc0de69ad291f6851e3d3ce97ca92cb1e",
+      "binarySha256": "499f31973078aa13ee9ea7afd5a2614a350eeecceae3fa3fcd800d89f14216da",
+      "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+      "flags": [
+        "-std=c++17",
+        "-O3",
+        "-DNDEBUG",
+        "-ffp-contract=off",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-isystem",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+      ],
+      "warnings": ""
+    },
+    {
+      "name": "both",
+      "audit": true,
+      "sanitizer": null,
+      "binary": "/Users/yangyemeng/Documents/Codex/2026-10-19/task/.cache/defense/both-audit",
+      "sourceSha256": "5dbea4ebdd06b22b67dae91eb78cd682d7186b5eb11254880aab795643a79091",
+      "binarySha256": "8266e13be65605ef5253b681b24bd4357b96382f5f2cc602744a483a359ef3bd",
+      "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+      "flags": [
+        "-std=c++17",
+        "-O3",
+        "-DNDEBUG",
+        "-ffp-contract=off",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-isystem",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+      ],
+      "warnings": ""
+    }
+  ],
+  "cases": [
+    {
+      "name": "12007/0/r",
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "12007/0/b",
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "12007/0/null",
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "12007/12/r",
+      "transitions": 34,
+      "passed": true
+    },
+    {
+      "name": "12007/12/b",
+      "transitions": 34,
+      "passed": true
+    },
+    {
+      "name": "12007/12/null",
+      "transitions": 34,
+      "passed": true
+    },
+    {
+      "name": "12007/24/r",
+      "transitions": 36,
+      "passed": true
+    },
+    {
+      "name": "12007/24/b",
+      "transitions": 36,
+      "passed": true
+    },
+    {
+      "name": "12007/24/null",
+      "transitions": 36,
+      "passed": true
+    },
+    {
+      "name": "12007/36/r",
+      "transitions": 39,
+      "passed": true
+    },
+    {
+      "name": "12007/36/b",
+      "transitions": 39,
+      "passed": true
+    },
+    {
+      "name": "12007/36/null",
+      "transitions": 39,
+      "passed": true
+    },
+    {
+      "name": "12007/48/r",
+      "transitions": 29,
+      "passed": true
+    },
+    {
+      "name": "12007/48/b",
+      "transitions": 29,
+      "passed": true
+    },
+    {
+      "name": "12007/48/null",
+      "transitions": 29,
+      "passed": true
+    },
+    {
+      "name": "12011/0/r",
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "12011/0/b",
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "12011/0/null",
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "12011/12/r",
+      "transitions": 37,
+      "passed": true
+    },
+    {
+      "name": "12011/12/b",
+      "transitions": 37,
+      "passed": true
+    },
+    {
+      "name": "12011/12/null",
+      "transitions": 37,
+      "passed": true
+    },
+    {
+      "name": "12011/24/r",
+      "transitions": 43,
+      "passed": true
+    },
+    {
+      "name": "12011/24/b",
+      "transitions": 43,
+      "passed": true
+    },
+    {
+      "name": "12011/24/null",
+      "transitions": 43,
+      "passed": true
+    },
+    {
+      "name": "12011/36/r",
+      "transitions": 30,
+      "passed": true
+    },
+    {
+      "name": "12011/36/b",
+      "transitions": 30,
+      "passed": true
+    },
+    {
+      "name": "12011/36/null",
+      "transitions": 30,
+      "passed": true
+    },
+    {
+      "name": "12011/48/r",
+      "transitions": 43,
+      "passed": true
+    },
+    {
+      "name": "12011/48/b",
+      "transitions": 43,
+      "passed": true
+    },
+    {
+      "name": "12011/48/null",
+      "transitions": 43,
+      "passed": true
+    },
+    {
+      "name": "12037/0/r",
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "12037/0/b",
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "12037/0/null",
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "12037/12/r",
+      "transitions": 42,
+      "passed": true
+    },
+    {
+      "name": "12037/12/b",
+      "transitions": 42,
+      "passed": true
+    },
+    {
+      "name": "12037/12/null",
+      "transitions": 42,
+      "passed": true
+    },
+    {
+      "name": "12037/24/r",
+      "transitions": 33,
+      "passed": true
+    },
+    {
+      "name": "12037/24/b",
+      "transitions": 33,
+      "passed": true
+    },
+    {
+      "name": "12037/24/null",
+      "transitions": 33,
+      "passed": true
+    },
+    {
+      "name": "12037/36/r",
+      "transitions": 39,
+      "passed": true
+    },
+    {
+      "name": "12037/36/b",
+      "transitions": 39,
+      "passed": true
+    },
+    {
+      "name": "12037/36/null",
+      "transitions": 39,
+      "passed": true
+    },
+    {
+      "name": "12037/48/r",
+      "transitions": 51,
+      "passed": true
+    },
+    {
+      "name": "12037/48/b",
+      "transitions": 51,
+      "passed": true
+    },
+    {
+      "name": "12037/48/null",
+      "transitions": 51,
+      "passed": true
+    },
+    {
+      "name": "12041/0/r",
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "12041/0/b",
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "12041/0/null",
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "name": "12041/12/r",
+      "transitions": 52,
+      "passed": true
+    },
+    {
+      "name": "12041/12/b",
+      "transitions": 52,
+      "passed": true
+    },
+    {
+      "name": "12041/12/null",
+      "transitions": 52,
+      "passed": true
+    },
+    {
+      "name": "12041/24/r",
+      "transitions": 55,
+      "passed": true
+    },
+    {
+      "name": "12041/24/b",
+      "transitions": 55,
+      "passed": true
+    },
+    {
+      "name": "12041/24/null",
+      "transitions": 55,
+      "passed": true
+    },
+    {
+      "name": "12041/36/r",
+      "transitions": 47,
+      "passed": true
+    },
+    {
+      "name": "12041/36/b",
+      "transitions": 47,
+      "passed": true
+    },
+    {
+      "name": "12041/36/null",
+      "transitions": 47,
+      "passed": true
+    },
+    {
+      "name": "12041/48/r",
+      "transitions": 41,
+      "passed": true
+    },
+    {
+      "name": "12041/48/b",
+      "transitions": 41,
+      "passed": true
+    },
+    {
+      "name": "12041/48/null",
+      "transitions": 41,
+      "passed": true
+    },
+    {
+      "name": "geometry/K/false/false",
+      "transitions": 0,
+      "passed": true
+    },
+    {
+      "name": "geometry/K/false/true",
+      "transitions": 0,
+      "passed": true
+    },
+    {
+      "name": "geometry/R/false/false",
+      "transitions": 14,
+      "passed": true
+    },
+    {
+      "name": "geometry/R/false/true",
+      "transitions": 14,
+      "passed": true
+    },
+    {
+      "name": "geometry/R/true/false",
+      "transitions": 14,
+      "passed": true
+    },
+    {
+      "name": "geometry/R/true/true",
+      "transitions": 14,
+      "passed": true
+    },
+    {
+      "name": "geometry/N/false/false",
+      "transitions": 9,
+      "passed": true
+    },
+    {
+      "name": "geometry/N/false/true",
+      "transitions": 9,
+      "passed": true
+    },
+    {
+      "name": "geometry/N/true/false",
+      "transitions": 9,
+      "passed": true
+    },
+    {
+      "name": "geometry/N/true/true",
+      "transitions": 9,
+      "passed": true
+    },
+    {
+      "name": "geometry/B/false/false",
+      "transitions": 8,
+      "passed": true
+    },
+    {
+      "name": "geometry/B/false/true",
+      "transitions": 8,
+      "passed": true
+    },
+    {
+      "name": "geometry/B/true/false",
+      "transitions": 6,
+      "passed": true
+    },
+    {
+      "name": "geometry/B/true/true",
+      "transitions": 6,
+      "passed": true
+    },
+    {
+      "name": "geometry/C/false/false",
+      "transitions": 15,
+      "passed": true
+    },
+    {
+      "name": "geometry/C/false/true",
+      "transitions": 15,
+      "passed": true
+    },
+    {
+      "name": "geometry/C/true/false",
+      "transitions": 15,
+      "passed": true
+    },
+    {
+      "name": "geometry/C/true/true",
+      "transitions": 15,
+      "passed": true
+    },
+    {
+      "name": "geometry/A/false/false",
+      "transitions": 8,
+      "passed": true
+    },
+    {
+      "name": "geometry/A/false/true",
+      "transitions": 8,
+      "passed": true
+    },
+    {
+      "name": "geometry/A/true/false",
+      "transitions": 5,
+      "passed": true
+    },
+    {
+      "name": "geometry/A/true/true",
+      "transitions": 5,
+      "passed": true
+    },
+    {
+      "name": "geometry/P/false/false",
+      "transitions": 8,
+      "passed": true
+    },
+    {
+      "name": "geometry/P/false/true",
+      "transitions": 8,
+      "passed": true
+    },
+    {
+      "name": "geometry/P/true/false",
+      "transitions": 8,
+      "passed": true
+    },
+    {
+      "name": "geometry/P/true/true",
+      "transitions": 8,
+      "passed": true
+    }
+  ],
+  "searches": [
+    {
+      "name": "threats",
+      "position": "初始全暗",
+      "depth": 3,
+      "passed": true
+    },
+    {
+      "name": "threats",
+      "position": "可达中局 2111 / 44步",
+      "depth": 3,
+      "passed": true
+    },
+    {
+      "name": "threats",
+      "position": "全明10子残局",
+      "depth": 3,
+      "passed": true
+    },
+    {
+      "name": "king",
+      "position": "初始全暗",
+      "depth": 3,
+      "passed": true
+    },
+    {
+      "name": "king",
+      "position": "可达中局 2111 / 44步",
+      "depth": 3,
+      "passed": true
+    },
+    {
+      "name": "king",
+      "position": "全明10子残局",
+      "depth": 3,
+      "passed": true
+    },
+    {
+      "name": "both",
+      "position": "初始全暗",
+      "depth": 3,
+      "passed": true
+    },
+    {
+      "name": "both",
+      "position": "可达中局 2111 / 44步",
+      "depth": 3,
+      "passed": true
+    },
+    {
+      "name": "both",
+      "position": "全明10子残局",
+      "depth": 3,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "informationIsolation": true,
+  "stderr": {
+    "baseline": "",
+    "threats": "",
+    "king": "",
+    "both": ""
+  },
+  "finishedAt": "2026-10-19T17:56:14.575Z"
+}
