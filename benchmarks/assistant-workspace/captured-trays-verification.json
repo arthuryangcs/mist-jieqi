@@ -1,0 +1,56 @@
+{
+  "kind": "captured piece trays and pale search arrows",
+  "tests": {
+    "total": 121,
+    "passed": 121,
+    "failed": 0,
+    "ui": 44
+  },
+  "structure": {
+    "uniqueIds": true,
+    "appIdsResolved": true,
+    "trayOrder": true
+  },
+  "browser": {
+    "supportedChromeAvailable": false,
+    "renderingExecuted": false
+  },
+  "http": [
+    {
+      "path": "/",
+      "status": 200,
+      "captureTrays": true
+    },
+    {
+      "path": "/api/status",
+      "status": 200,
+      "health": {
+        "engine": "cpp-native",
+        "sourceSha256": "73de0d5768fbedd97d46305891a0513f95c7a856aa5aba8edff8a92e2d1798d0",
+        "binarySha256": "2304327e3cb91987780ab453fa98db5e17383d32c4c39009649092ee9f14c49b",
+        "maxThreads": 4,
+        "independentWorldSearch": true,
+        "transport": "loopback-http",
+        "protocol": 2,
+        "active": 1,
+        "completed": 2,
+        "aborted": 160
+      }
+    },
+    {
+      "path": "/app.js",
+      "status": 200
+    },
+    {
+      "path": "/style.css",
+      "status": 200,
+      "paleArrow": true
+    }
+  ],
+  "sourceHashes": {
+    "app.js": "c0345cb2faa7ece389b7a7b3923032417fe11413577a1c8704c623fb33dfda51",
+    "index.html": "915218b9ae709f3ae35518fba462a37424ad815d28fca8d996fae67a6562a2c0",
+    "style.css": "e08ac4f33bf466c569b16060eb4072295c894ec342d2cbdd3db8229da6a653a2",
+    "native/search.cpp": "73de0d5768fbedd97d46305891a0513f95c7a856aa5aba8edff8a92e2d1798d0"
+  }
+}

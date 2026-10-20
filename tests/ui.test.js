@@ -124,9 +124,9 @@ test('明子推荐也先展示箭头等待确认，确认后清除并自动分�
 test('搜索箭头随完整层推荐更新，结束后保留，确认同步后立即清除',async()=>{
  const {$,workers}=await setup();$('editMode').onclick();$('analyze').onclick();const w=workers[0];assert($('moveArrowLayer').hidden);
  const send=(depth,move,progress=true)=>w.onmessage({data:{id:w.data.id,...(progress?{progress:true}:{}),result:{move,candidates:[],score:depth,depth,samples:8,nodes:100*depth,elapsedMs:10*depth}}});
- send(1,{from:54,to:45});assert(!$('moveArrowLayer').hidden);const first=$('moveArrow').x1;assert.match($('moveHint').textContent,/搜索推荐：红暗兵.*1列7行 → 1列6行/);assert.match($('counter').textContent,/已同步 0 步/);
+ send(1,{from:54,to:45});assert(!$('moveArrowLayer').hidden);assert.equal($('moveArrowLayer').dataset.phase,'searching');const first=$('moveArrow').x1;assert.match($('moveHint').textContent,/搜索推荐：红暗兵.*1列7行 → 1列6行/);assert.match($('counter').textContent,/已同步 0 步/);
  send(2,{from:56,to:47});assert($('moveArrow').x1>first);assert.match($('board').children[56].className,/move-from/);assert(!/move-from/.test($('board').children[54].className));
- send(3,{from:58,to:49},false);assert.match($('moveHint').textContent,/^推荐：.*5列7行 → 5列6行/);assert(!$('moveArrowLayer').hidden);$('apply').onclick();assert.match($('moveHint').textContent,/待同步/);
+ send(3,{from:58,to:49},false);assert.match($('moveHint').textContent,/^推荐：.*5列7行 → 5列6行/);assert(!$('moveArrowLayer').hidden);assert.equal($('moveArrowLayer').dataset.phase,'ready');$('apply').onclick();assert.match($('moveHint').textContent,/待同步/);assert.equal($('moveArrowLayer').dataset.phase,'confirm');
  $('revealType').value='R';$('confirmSync').onclick();assert($('moveArrowLayer').hidden);assert($('moveHint').hidden);
 });
 test('新搜索、重置与过期进度不保留旧推荐箭头',async()=>{
@@ -190,4 +190,19 @@ test('按钮切换会更新自动分析视角，重复点当前选项不重启�
  const {$,workers}=await setup();$('autoAnalyze').checked=true;$('editMode').onclick();await delay(350);assert.equal(workers.length,1);$('turnRed').onclick();assert(!workers[0].terminated);
  $('turnBlack').onclick();assert(workers[0].terminated);await delay(350);assert.equal(workers.length,2);assert.equal(workers[1].data.view.turn,'b');assert.equal(workers[1].data.view.viewer,'r');
  $('assistBlack').onclick();assert(workers[1].terminated);await delay(350);assert.equal(workers.length,3);assert.equal(workers[2].data.view.viewer,'b');$('stop').onclick();
+});
+test('棋盘上下按吃子方展示图标，未知暗俘不泄露身份',async()=>{
+ const {$,click}=await setup();assert.equal($('capturedTopPieces').children[0].textContent,'—');assert.equal($('capturedBottomPieces').children[0].textContent,'—');
+ $('editMode').onclick();click(64);click(1);$('revealChoices').children.find(b=>b.dataset.type==='C').onclick();$('captureChoices').children.find(b=>b.dataset.type==='N').onclick();$('confirmSync').onclick();
+ assert.equal($('capturedBottomLabel').textContent,'红方已吃');assert.equal($('capturedBottomPieces').children[0].textContent,'馬');assert.match($('capturedBottomPieces').children[0].className,/black/);
+ click(25);click(88);$('revealChoices').children.find(b=>b.dataset.type==='R').onclick();$('confirmSync').onclick();const hidden=$('capturedTopPieces').children[0];assert.equal($('capturedTopLabel').textContent,'黑方已吃');assert.equal(hidden.textContent,'?');assert.match(hidden['aria-label'],/身份未知/);assert(!/兵|车|炮|马|相|仕/.test(hidden.title));
+});
+test('翻转棋盘同步交换吃子区，撤回和重置恢复图标数量',async()=>{
+ const {$,click}=await setup();$('editMode').onclick();click(64);click(1);$('revealType').value='C';$('captureType').value='N';$('confirmSync').onclick();
+ $('flipBoard').onclick();assert.equal($('capturedTopLabel').textContent,'红方已吃');assert.equal($('capturedTopPieces').children[0].textContent,'馬');assert.equal($('capturedBottomLabel').textContent,'黑方已吃');$('undo').onclick();assert.equal($('capturedTopPieces').children[0].textContent,'—');
+ $('reset').onclick();assert.equal($('capturedBottomPieces').children[0].textContent,'—');
+});
+test('吃子区跟随观战信息视角，只改变显示不改变搜索输入',async()=>{
+ const {$,workers}=await setup();$('autoMode').onclick();$('autoStep').onclick();await reply(workers[0],{from:64,to:1});const known=$('capturedBottomPieces').children[0].textContent;assert.notEqual(known,'?');
+ $('autoStep').onclick();const payload=structuredClone(workers[1].data.view);assert.equal($('capturedBottomPieces').children[0].textContent,'?');$('viewSide').value='r';$('viewSide').onchange();assert.equal($('capturedBottomPieces').children[0].textContent,known);assert.deepEqual(workers[1].data.view,payload);$('stop').onclick();
 });
