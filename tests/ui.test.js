@@ -194,8 +194,8 @@ test('按钮切换会更新自动分析视角，重复点当前选项不重启�
 test('棋盘上下按吃子方展示图标，未知暗俘不泄露身份',async()=>{
  const {$,click}=await setup();assert.equal($('capturedTopPieces').children[0].textContent,'—');assert.equal($('capturedBottomPieces').children[0].textContent,'—');
  $('editMode').onclick();click(64);click(1);$('revealChoices').children.find(b=>b.dataset.type==='C').onclick();$('captureChoices').children.find(b=>b.dataset.type==='N').onclick();$('confirmSync').onclick();
- assert.equal($('capturedBottomLabel').textContent,'红方已吃');assert.equal($('capturedBottomPieces').children[0].textContent,'馬');assert.match($('capturedBottomPieces').children[0].className,/black/);
- click(25);click(88);$('revealChoices').children.find(b=>b.dataset.type==='R').onclick();$('confirmSync').onclick();const hidden=$('capturedTopPieces').children[0];assert.equal($('capturedTopLabel').textContent,'黑方已吃');assert.equal(hidden.textContent,'?');assert.match(hidden['aria-label'],/身份未知/);assert(!/兵|车|炮|马|相|仕/.test(hidden.title));
+ assert.equal($('capturedBottomLabel').textContent,'红方已吃');assert.equal($('capturedBottomPieces').children[0].textContent,'馬');assert.match($('capturedBottomPieces').children[0].className,/black dark-capture/);
+ click(25);click(88);$('revealChoices').children.find(b=>b.dataset.type==='R').onclick();$('confirmSync').onclick();const hidden=$('capturedTopPieces').children[0];assert.equal($('capturedTopLabel').textContent,'黑方已吃');assert.equal(hidden.textContent,'?');assert.match(hidden.className,/dark-capture unknown/);assert.match(hidden['aria-label'],/身份未知/);assert(!/兵|车|炮|马|相|仕/.test(hidden.title));
 });
 test('翻转棋盘同步交换吃子区，撤回和重置恢复图标数量',async()=>{
  const {$,click}=await setup();$('editMode').onclick();click(64);click(1);$('revealType').value='C';$('captureType').value='N';$('confirmSync').onclick();

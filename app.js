@@ -45,7 +45,7 @@ function renderCapturedTrays(view){
   const label=$('captured'+position+'Label'),box=$('captured'+position+'Pieces');label.textContent=(captor==='r'?'红':'黑')+'方已吃';label.className='capture-label '+(captor==='r'?'red':'black');box.replaceChildren();
   const pieces=view.captured.filter(p=>p.side!==captor);
   if(!pieces.length){const empty=document.createElement('span');empty.className='capture-empty';empty.textContent='—';box.append(empty);}
-  for(const p of pieces){const icon=document.createElement('span'),description=(p.side==='r'?'红':'黑')+(p.hidden?'暗子，身份未知':names[p.side][p.type]+(p.wasHidden?'，暗俘':''));icon.className='captured-piece '+(p.side==='r'?'red':'black')+(p.hidden?' unknown':'');icon.textContent=p.hidden?'?':names[p.side][p.type];icon.setAttribute('role','img');icon.setAttribute('aria-label',description);icon.title=description;box.append(icon);}
+  for(const p of pieces){const icon=document.createElement('span'),description=(p.side==='r'?'红':'黑')+(p.hidden?'暗子，身份未知':names[p.side][p.type]+(p.wasHidden?'，暗俘':''));icon.className='captured-piece '+(p.side==='r'?'red':'black')+((p.hidden||p.wasHidden)?' dark-capture':'')+(p.hidden?' unknown':'');icon.textContent=p.hidden?'?':names[p.side][p.type];icon.setAttribute('role','img');icon.setAttribute('aria-label',description);icon.title=description;box.append(icon);}
  }
 }
 function positionSyncPrompt(){if(pendingSync)positionBoardPopover('syncPrompt',pendingSync.to);if(paintTarget!==null)positionBoardPopover('piecePicker',paintTarget);}
