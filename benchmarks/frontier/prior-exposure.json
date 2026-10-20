@@ -1,0 +1,263 @@
+{
+  "passed": true,
+  "createdAt": "2026-10-20T00:25:35.066Z",
+  "groups": [
+    {
+      "input": "benchmarks/focus/matches-both-screen-production.json",
+      "seed": 15307,
+      "side": "r",
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "ownMoves": 14,
+      "focusedMoves": 11,
+      "lessThanQuarter": 4,
+      "depth8": []
+    },
+    {
+      "input": "benchmarks/focus/matches-both-screen-production.json",
+      "seed": 15307,
+      "side": "b",
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "ownMoves": 21,
+      "focusedMoves": 19,
+      "lessThanQuarter": 10,
+      "depth8": []
+    },
+    {
+      "input": "benchmarks/focus/matches-both-screen-production.json",
+      "seed": 15313,
+      "side": "r",
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "ownMoves": 49,
+      "focusedMoves": 40,
+      "lessThanQuarter": 10,
+      "depth8": []
+    },
+    {
+      "input": "benchmarks/focus/matches-both-screen-production.json",
+      "seed": 15313,
+      "side": "b",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "ownMoves": 57,
+      "focusedMoves": 43,
+      "lessThanQuarter": 18,
+      "depth8": []
+    },
+    {
+      "input": "benchmarks/focus/matches-both-screen-production.json",
+      "seed": 15319,
+      "side": "r",
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "ownMoves": 25,
+      "focusedMoves": 22,
+      "lessThanQuarter": 12,
+      "depth8": []
+    },
+    {
+      "input": "benchmarks/focus/matches-both-screen-production.json",
+      "seed": 15319,
+      "side": "b",
+      "result": {
+        "status": "draw",
+        "winner": null,
+        "reason": "threefold-public-position",
+        "technicalForfeit": false
+      },
+      "ownMoves": 16,
+      "focusedMoves": 16,
+      "lessThanQuarter": 10,
+      "depth8": []
+    },
+    {
+      "input": "benchmarks/focus/matches-both-screen-production.json",
+      "seed": 15329,
+      "side": "r",
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "ownMoves": 20,
+      "focusedMoves": 16,
+      "lessThanQuarter": 6,
+      "depth8": []
+    },
+    {
+      "input": "benchmarks/focus/matches-both-screen-production.json",
+      "seed": 15329,
+      "side": "b",
+      "result": {
+        "status": "draw",
+        "winner": null,
+        "reason": "threefold-public-position",
+        "technicalForfeit": false
+      },
+      "ownMoves": 39,
+      "focusedMoves": 34,
+      "lessThanQuarter": 19,
+      "depth8": []
+    },
+    {
+      "input": "benchmarks/focus/pika-both.json",
+      "seed": 17011,
+      "side": "r",
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "ownMoves": 17,
+      "focusedMoves": 14,
+      "lessThanQuarter": 2,
+      "depth8": []
+    },
+    {
+      "input": "benchmarks/focus/pika-both.json",
+      "seed": 17011,
+      "side": "b",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "ownMoves": 14,
+      "focusedMoves": 12,
+      "lessThanQuarter": 1,
+      "depth8": []
+    },
+    {
+      "input": "benchmarks/focus/pika-both.json",
+      "seed": 17021,
+      "side": "r",
+      "result": {
+        "status": "draw",
+        "winner": null,
+        "reason": "threefold-public-position",
+        "technicalForfeit": false
+      },
+      "ownMoves": 33,
+      "focusedMoves": 30,
+      "lessThanQuarter": 16,
+      "depth8": [
+        {
+          "ply": 49,
+          "count": 1,
+          "total": 1,
+          "elapsedMs": 953.6446220000216,
+          "budgetMs": 1000,
+          "early": false
+        }
+      ]
+    },
+    {
+      "input": "benchmarks/focus/pika-both.json",
+      "seed": 17021,
+      "side": "b",
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "ownMoves": 35,
+      "focusedMoves": 29,
+      "lessThanQuarter": 14,
+      "depth8": []
+    },
+    {
+      "input": "benchmarks/focus/pika-both.json",
+      "seed": 17027,
+      "side": "r",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "ownMoves": 11,
+      "focusedMoves": 9,
+      "lessThanQuarter": 4,
+      "depth8": []
+    },
+    {
+      "input": "benchmarks/focus/pika-both.json",
+      "seed": 17027,
+      "side": "b",
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "困毙",
+        "technicalForfeit": false
+      },
+      "ownMoves": 40,
+      "focusedMoves": 38,
+      "lessThanQuarter": 12,
+      "depth8": []
+    },
+    {
+      "input": "benchmarks/focus/pika-both.json",
+      "seed": 17033,
+      "side": "r",
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "ownMoves": 22,
+      "focusedMoves": 18,
+      "lessThanQuarter": 5,
+      "depth8": []
+    },
+    {
+      "input": "benchmarks/focus/pika-both.json",
+      "seed": 17033,
+      "side": "b",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "ownMoves": 47,
+      "focusedMoves": 35,
+      "lessThanQuarter": 11,
+      "depth8": []
+    }
+  ],
+  "summary": {
+    "games": 16,
+    "ownMoves": 460,
+    "focusedMoves": 386,
+    "lessThanQuarter": 154,
+    "depth8Moves": 1
+  },
+  "limitation": "Exposure counts only. Partial coverage below a quarter is not proof of a bad move."
+}

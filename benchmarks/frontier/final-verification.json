@@ -1,0 +1,77 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-20T01:16:36.336Z",
+  "productionUnchanged": [
+    "native/search.cpp",
+    "ai.js",
+    "engine.js",
+    "app.js",
+    "native-client.js",
+    "native/server.mjs",
+    "native/build.mjs",
+    "deadline-search.js"
+  ],
+  "syntaxModules": 20,
+  "localLinks": 66,
+  "summarySha256": "14d350c037dbcacf8aec67b6a86703876b1e5efcde2331382edc1b3f0c8aacf0",
+  "documentHashes": {
+    "FRONTIER_SEARCH_REPORT.md": "d30e7c2516d618b74e769ddc7d57f8927ea9ef189ca4039d823d3b777e4f4372",
+    "README.md": "b4d54e665197d1a0559be66f6d61c560e5b1f40fb9ae23d2fdf3f1c3506d2916",
+    "native/README.md": "ac6e5a5ec187adc0148853326239b883094fc466622166c7dfbd0fce819d0d9a"
+  },
+  "sourceHashes": {
+    "native/frontier-benchmark.mjs": "84c041671a7df42651e34467544d224d2c43b328dfeb3522b6fd494482e5e454",
+    "native/frontier-cap8-check.mjs": "512270b3ff681a8f71671f99c9ea91f0c0fae8d53dea523e0c527e5cd8faeeb2",
+    "native/frontier-check.mjs": "74548aab070ccee21c6c55aa695160ccbce11d12bb6f960c56ba6da92ef60bd8",
+    "native/frontier-divergence.mjs": "8cb6277a196a3d49504477280eb72d279f488d28beb9ba6caa841cad254459ea",
+    "native/frontier-final-check.mjs": "12e45f0dd485988475d6c067ca3e07a4705375dc377bf287a5cacf3d4979b781",
+    "native/frontier-impact.mjs": "0400c68c63ac4519ee04411f991481ea62ceb958c7a520c382ac8b57925a4bf1",
+    "native/frontier-invariants.mjs": "81609bf5738858c264620266386bfd60c27da1f9cb465074f3c8d0816a42f3da",
+    "native/frontier-match-verify.mjs": "08d31b94620fcc6e9b558ed595af6ad76b6599ae69448953f35c589d726d0cf9",
+    "native/frontier-match.mjs": "db335af93da42c1593d5d77d9ab2ddfe3c444cc92862a317fa11b36de50caf23",
+    "native/frontier-pika-verify.mjs": "8018ecc7fa41081b8008969d7854567d42f40c82345b8ba685d07b1f6eee85e4",
+    "native/frontier-pika.mjs": "adb00b588080ba175942873ea7fffb1e3420d37f5607259a5e1a0b5f8293cba2",
+    "native/frontier-policy.inc": "82ebd2156650246603649344100ef2fafd01974926242a5ece68d51fb01b1f2f",
+    "native/frontier-preview.mjs": "f2badd75b7892b90e447d592c4ce99663d89bfd2b14219e1d6db459f59f3c463",
+    "native/frontier-report.mjs": "916d5989fe18b0c8cf2b203d28dee5b65c5c57b8687c65f0978788030bfa6e39",
+    "native/frontier-run.mjs": "accd1a620464b0ce0e520d08c0353284905a6646348a265b23b25ab4795e236c",
+    "native/frontier-service-check.mjs": "12f37d2ad382ab045dd880164a8389d834a60981b8fdcf0691229ae8c084857b",
+    "native/frontier-timeouts.mjs": "d80517eef34fc31f3077a0dabb6af0de42cdae465e14e560b31e849570db8c04",
+    "native/frontier-ui-check.mjs": "e5c68986082266a3e84ebbb532aa41982c469b4c9b940870691c57a02578a87d",
+    "native/frontier-variants.mjs": "7907c1107d816e4baf536ba8fa9e93ec1db54d4de91a881e058b5174a6bad0c4",
+    "native/frontier-web.mjs": "134a1b3b94339ef5f8533220d732f522db4354f031d58c87b5722b29b94f0036",
+    "native/frontier-write-report.mjs": "31c994c046e0a8e120c3f41aeea2d1fd60215be7a1a891afde384cdf47fab7c5"
+  },
+  "browserScope": "HTTP and simulated-DOM checks only; supported tool still provides no Chrome. No alternative automation used.",
+  "gates": {
+    "combinedScreen": false,
+    "confirmation": false
+  },
+  "technical": {
+    "coverage": {
+      "timeouts": 0,
+      "illegal": 0,
+      "protocolOrProcess": 0,
+      "unresolved": 0
+    },
+    "cap": {
+      "timeouts": 0,
+      "illegal": 0,
+      "protocolOrProcess": 0,
+      "unresolved": 0
+    },
+    "combined": {
+      "timeouts": 1,
+      "illegal": 0,
+      "protocolOrProcess": 0,
+      "unresolved": 0
+    }
+  },
+  "pikaFaults": {
+    "timeouts": 3,
+    "illegalMoves": 0,
+    "protocolOrProcess": 0,
+    "unresolved": 0
+  },
+  "defaultUnchanged": true
+}

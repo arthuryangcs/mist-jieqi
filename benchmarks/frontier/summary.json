@@ -1,0 +1,3708 @@
+{
+  "createdAt": "2026-10-20T01:16:32.571Z",
+  "baseCommit": "0fc590b449aba63b769ebeda967b463e0d14a8e1",
+  "defaultUnchanged": true,
+  "productionHashes": {
+    "native/search.cpp": "73de0d5768fbedd97d46305891a0513f95c7a856aa5aba8edff8a92e2d1798d0",
+    "ai.js": "1c36be499adb397ec55c15a687644c409c4fbfbfb9de5002943e9a3d4e4714be",
+    "engine.js": "7f427f6e00e286a48335f7c7a7e74270d2a4349d7ea2aabcad0821122a17cb49",
+    "app.js": "8be707442188d8ea44e0ca9b3725962edd8a61befb949550ce5beec9cdda97e0",
+    "native-client.js": "08438f8c349bf1ddbf46b98b87dbdb2fcf4d3f772d8a03b08c5220e791494c50",
+    "native/server.mjs": "ac5cbbfac91b5e16db8b1b121b82600c56eb57a9f7ad5c697f5162e38c458d90",
+    "native/build.mjs": "d0d5194b56052835eb13f1f46f8fd40826b57b7f5189472b092f42ffbecb03eb",
+    "deadline-search.js": "20a1c2467443425638f2b9d439856888d62c78aa17b3b9e65d7fb79c3cb0d5df"
+  },
+  "priorImpact": {
+    "games": 16,
+    "losses": 9,
+    "diagnoses": 27,
+    "complete": 27,
+    "omittedHigher": 0,
+    "incompleteUnknown": 0,
+    "capEarlyReturns": 0,
+    "capEarlyReturnsInLosses": 0
+  },
+  "priorExposure": {
+    "games": 16,
+    "ownMoves": 460,
+    "focusedMoves": 386,
+    "lessThanQuarter": 154,
+    "depth8Moves": 1
+  },
+  "pairedDivergence": {
+    "pairs": 8,
+    "firstMoveDifferences": 4,
+    "firstDifferenceOnBaseline": 0,
+    "capActiveAtFirstDifference": 0
+  },
+  "timeoutReview": {
+    "passed": true,
+    "reviewedAt": "2026-10-20T01:13:28.313Z",
+    "rows": [
+      {
+        "file": "matches-combined-screen-production.json",
+        "seed": 18043,
+        "trialSide": "r",
+        "result": {
+          "status": "decided",
+          "winner": "r",
+          "technicalForfeit": true,
+          "offender": "baseline",
+          "reason": "technical-timeout"
+        },
+        "gameSha256": "328f2a24dee1eb08303d4fcae6fec7b8c8cbb78a355815b38017c2d87cda859e",
+        "budgetMs": 1000,
+        "graceMs": 60,
+        "lastRecordedRow": {
+          "ply": 30,
+          "engine": "baseline",
+          "side": "b",
+          "move": {
+            "from": 59,
+            "to": 86
+          },
+          "elapsedMs": 1061.0870270000305,
+          "depth": 4,
+          "fullRootDepth": 4,
+          "rootCount": 44,
+          "comparedCount": 44,
+          "searchScope": "full-root",
+          "nodes": 1026890,
+          "score": 1342.9306685950248,
+          "threads": 4,
+          "deadlineStop": true,
+          "fallbackUsed": false,
+          "clock": {
+            "preparationMs": 4.689191000012215,
+            "timerAt": 999.3965710000484,
+            "resolveAt": 999.5182090000017,
+            "reapAt": 1060.9696110000368
+          },
+          "viewSha256": "6023243a589eddc56bd78f13ec1f46ee8dd161e23823211b23caa40893a05907"
+        },
+        "lastAttempt": {
+          "ply": 30,
+          "engine": "baseline",
+          "side": "b",
+          "move": {
+            "from": 59,
+            "to": 86
+          },
+          "elapsedMs": 1061.0870270000305,
+          "depth": 4,
+          "fullRootDepth": 4,
+          "rootCount": 44,
+          "comparedCount": 44,
+          "searchScope": "full-root",
+          "nodes": 1026890,
+          "score": 1342.9306685950248,
+          "threads": 4,
+          "deadlineStop": true,
+          "fallbackUsed": false,
+          "clock": {
+            "preparationMs": 4.689191000012215,
+            "timerAt": 999.3965710000484,
+            "resolveAt": 999.5182090000017,
+            "reapAt": 1060.9696110000368
+          },
+          "viewSha256": "6023243a589eddc56bd78f13ec1f46ee8dd161e23823211b23caa40893a05907"
+        },
+        "overGraceMs": 1.0870270000305027,
+        "postResolveReapMs": 61.45140200003516,
+        "cause": "Underlying scheduling/process-exit notification cause not established. Recorded timer and reap timestamps locate a measured interval, not the OS mechanism. No result replacement, deadline change or replay."
+      },
+      {
+        "file": "pika-combined.json",
+        "seed": 20021,
+        "trialSide": "b",
+        "engine": "trial",
+        "result": {
+          "status": "decided",
+          "winner": "r",
+          "technicalForfeit": true,
+          "offender": "candidate",
+          "reason": "technical-timeout"
+        },
+        "gameSha256": "0dfbad5d2f500109f9b94ce785fa05aab71c8cf1d7ee65fb48cbb15488897ecd",
+        "budgetMs": 1000,
+        "graceMs": 60,
+        "lastRecordedRow": {
+          "ply": 72,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 8,
+            "to": 7
+          },
+          "elapsedMs": 1060.346722999995,
+          "depth": 5,
+          "nodes": 2554486,
+          "score": 1441.0565188031353,
+          "rootCount": 19,
+          "comparedCount": 19,
+          "fullRootDepth": 5,
+          "searchScope": "full-root",
+          "criticalRoot": true,
+          "tacticalSearch": true,
+          "quietChecks": 22391,
+          "reintroduced": 6,
+          "minimumComparisonRoots": 5,
+          "coverageRefreshes": 11,
+          "capFillRoots": 0,
+          "threads": 4,
+          "deadlineStop": true,
+          "fallbackUsed": false,
+          "clock": {
+            "preparationMs": 4.056947999983095,
+            "timerAt": 1055.5971690000151,
+            "resolveAt": 1055.751958000008,
+            "reapAt": 1060.1905489999917
+          },
+          "viewSha256": "75b63505f6e657fe5f6ae2e664c7b9c34e9dced7910dd67e232f02db256b0edb",
+          "visibleFen": "x1xxkx2r/4n4/4a4/x8/9/P1p2R3/9/2P6/4CKAP1/1P6p b r1a1p1n1b2 8 36",
+          "pikaInfo": null
+        },
+        "lastAttempt": {
+          "ply": 72,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 8,
+            "to": 7
+          },
+          "elapsedMs": 1060.346722999995,
+          "depth": 5,
+          "nodes": 2554486,
+          "score": 1441.0565188031353,
+          "rootCount": 19,
+          "comparedCount": 19,
+          "fullRootDepth": 5,
+          "searchScope": "full-root",
+          "criticalRoot": true,
+          "tacticalSearch": true,
+          "quietChecks": 22391,
+          "reintroduced": 6,
+          "minimumComparisonRoots": 5,
+          "coverageRefreshes": 11,
+          "capFillRoots": 0,
+          "threads": 4,
+          "deadlineStop": true,
+          "fallbackUsed": false,
+          "clock": {
+            "preparationMs": 4.056947999983095,
+            "timerAt": 1055.5971690000151,
+            "resolveAt": 1055.751958000008,
+            "reapAt": 1060.1905489999917
+          },
+          "viewSha256": "75b63505f6e657fe5f6ae2e664c7b9c34e9dced7910dd67e232f02db256b0edb",
+          "visibleFen": "x1xxkx2r/4n4/4a4/x8/9/P1p2R3/9/2P6/4CKAP1/1P6p b r1a1p1n1b2 8 36",
+          "pikaInfo": null
+        },
+        "overGraceMs": 0.3467229999951087,
+        "postResolveReapMs": 4.438590999983717,
+        "cause": "Underlying scheduling/process-exit notification cause not established. Recorded timer and reap timestamps locate a measured interval, not the OS mechanism. No result replacement, deadline change or replay."
+      },
+      {
+        "file": "pika-combined.json",
+        "seed": 20023,
+        "trialSide": "r",
+        "engine": "baseline",
+        "result": {
+          "status": "decided",
+          "winner": "b",
+          "technicalForfeit": true,
+          "offender": "candidate",
+          "reason": "technical-timeout"
+        },
+        "gameSha256": "76aa387f606907c97b413168d7c70147a371b6ae3126f48077cad651a3d575ae",
+        "budgetMs": 1000,
+        "graceMs": 60,
+        "lastRecordedRow": {
+          "ply": 51,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 1,
+            "to": 3
+          },
+          "elapsedMs": 1061.7323320000432,
+          "depth": 5,
+          "nodes": 940490,
+          "score": -3594.878728264789,
+          "rootCount": null,
+          "comparedCount": null,
+          "fullRootDepth": null,
+          "searchScope": null,
+          "threads": 4,
+          "deadlineStop": true,
+          "fallbackUsed": false,
+          "clock": {
+            "preparationMs": 3.626836999959778,
+            "timerAt": 1057.9582459999947,
+            "resolveAt": 1058.1297899999772,
+            "reapAt": 1061.5869919999968
+          },
+          "viewSha256": "7c428d56fc81bacb91cc4f63692a0743e8e762dcd4c772070d59d28e4c1dff93",
+          "visibleFen": "1C7/1n1kp4/b3a4/9/3rc3p/A8/2b1X1a1X/4A4/9/2PXKXX1X w R2P4N1B1 0 26",
+          "pikaInfo": null
+        },
+        "lastAttempt": {
+          "ply": 51,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 1,
+            "to": 3
+          },
+          "elapsedMs": 1061.7323320000432,
+          "depth": 5,
+          "nodes": 940490,
+          "score": -3594.878728264789,
+          "rootCount": null,
+          "comparedCount": null,
+          "fullRootDepth": null,
+          "searchScope": null,
+          "threads": 4,
+          "deadlineStop": true,
+          "fallbackUsed": false,
+          "clock": {
+            "preparationMs": 3.626836999959778,
+            "timerAt": 1057.9582459999947,
+            "resolveAt": 1058.1297899999772,
+            "reapAt": 1061.5869919999968
+          },
+          "viewSha256": "7c428d56fc81bacb91cc4f63692a0743e8e762dcd4c772070d59d28e4c1dff93",
+          "visibleFen": "1C7/1n1kp4/b3a4/9/3rc3p/A8/2b1X1a1X/4A4/9/2PXKXX1X w R2P4N1B1 0 26",
+          "pikaInfo": null
+        },
+        "overGraceMs": 1.7323320000432432,
+        "postResolveReapMs": 3.457202000019606,
+        "cause": "Underlying scheduling/process-exit notification cause not established. Recorded timer and reap timestamps locate a measured interval, not the OS mechanism. No result replacement, deadline change or replay."
+      },
+      {
+        "file": "pika-combined.json",
+        "seed": 20023,
+        "trialSide": "b",
+        "engine": "baseline",
+        "result": {
+          "status": "decided",
+          "winner": "b",
+          "technicalForfeit": true,
+          "offender": "pika",
+          "reason": "technical-timeout"
+        },
+        "gameSha256": "f8cc8902d2a5e88e7fab9327f19d50a521890503a0903a869f775b13055282b2",
+        "budgetMs": 1000,
+        "graceMs": 60,
+        "lastRecordedRow": {
+          "ply": 45,
+          "side": "r",
+          "engine": "pika",
+          "move": {
+            "from": 39,
+            "to": 28
+          },
+          "elapsedMs": 1069.5097369999858,
+          "depth": null,
+          "nodes": null,
+          "score": null,
+          "rootCount": null,
+          "comparedCount": null,
+          "fullRootDepth": null,
+          "searchScope": null,
+          "threads": 4,
+          "deadlineStop": false,
+          "fallbackUsed": false,
+          "verificationMs": 0.361786000081338,
+          "viewSha256": "3e3bf50f230fbcd2f32465ca3df9490af44a158a2194c6135eebb74cb2310767",
+          "visibleFen": "x1x1k1x1x/2r1p4/6p2/x3P4/3N5/9/1n5ap/4P2X1/3R5/1PXCK1X1X w R1A1C1P2B2r1a1c1p1b1 0 23",
+          "pikaInfo": [
+            "info depth 16 seldepth 15 multipv 1 score cp 275 nodes 4328003 nps 4048646 hashfull 437 tbhits 0 time 1069 pv d5b6 c8b8 b6d7 b8d8 e6d6 a6a5 d7f6 a5f5 d6d7 d8a8 f6g8 e9f9 g8i9 f5f2"
+          ]
+        },
+        "lastAttempt": {
+          "ply": 45,
+          "side": "r",
+          "engine": "pika",
+          "move": {
+            "from": 39,
+            "to": 28
+          },
+          "elapsedMs": 1069.5097369999858,
+          "depth": null,
+          "nodes": null,
+          "score": null,
+          "rootCount": null,
+          "comparedCount": null,
+          "fullRootDepth": null,
+          "searchScope": null,
+          "threads": 4,
+          "deadlineStop": false,
+          "fallbackUsed": false,
+          "verificationMs": 0.361786000081338,
+          "viewSha256": "3e3bf50f230fbcd2f32465ca3df9490af44a158a2194c6135eebb74cb2310767",
+          "visibleFen": "x1x1k1x1x/2r1p4/6p2/x3P4/3N5/9/1n5ap/4P2X1/3R5/1PXCK1X1X w R1A1C1P2B2r1a1c1p1b1 0 23",
+          "pikaInfo": [
+            "info depth 16 seldepth 15 multipv 1 score cp 275 nodes 4328003 nps 4048646 hashfull 437 tbhits 0 time 1069 pv d5b6 c8b8 b6d7 b8d8 e6d6 a6a5 d7f6 a5f5 d6d7 d8a8 f6g8 e9f9 g8i9 f5f2"
+          ]
+        },
+        "overGraceMs": 9.509736999985762,
+        "postResolveReapMs": null,
+        "cause": "Underlying scheduling/process-exit notification cause not established. Recorded timer and reap timestamps locate a measured interval, not the OS mechanism. No result replacement, deadline change or replay."
+      }
+    ],
+    "technicalGames": 4,
+    "limitation": "Evidence review passed does not mean time control had no failures. Every recorded forfeit remains in formal totals; normal-game outcomes are separately labeled, never substituted."
+  },
+  "checks": [
+    {
+      "name": "prior-impact",
+      "passed": true
+    },
+    {
+      "name": "prior-exposure",
+      "passed": true
+    },
+    {
+      "name": "paired-divergence",
+      "passed": true
+    },
+    {
+      "name": "timeout-review",
+      "passed": true
+    },
+    {
+      "name": "check-coverage-release",
+      "passed": true
+    },
+    {
+      "name": "check-cap-release",
+      "passed": true
+    },
+    {
+      "name": "check-combined-release",
+      "passed": true
+    },
+    {
+      "name": "check-coverage-asan",
+      "passed": true
+    },
+    {
+      "name": "check-cap-asan",
+      "passed": true
+    },
+    {
+      "name": "check-combined-asan",
+      "passed": true
+    },
+    {
+      "name": "check-combined-tsan",
+      "passed": true
+    },
+    {
+      "name": "invariants",
+      "passed": true
+    },
+    {
+      "name": "cap8-exact",
+      "passed": true
+    },
+    {
+      "name": "ui-controller",
+      "passed": true
+    },
+    {
+      "name": "service-combined",
+      "passed": true
+    },
+    {
+      "name": "unit",
+      "passed": true
+    },
+    {
+      "name": "budgets",
+      "passed": true
+    },
+    {
+      "name": "diagnostic",
+      "passed": true
+    },
+    {
+      "name": "verification-coverage-screen-production",
+      "passed": true
+    },
+    {
+      "name": "verification-cap-screen-production",
+      "passed": true
+    },
+    {
+      "name": "verification-combined-screen-production",
+      "passed": true
+    },
+    {
+      "name": "pika-combined-verification",
+      "passed": true
+    },
+    {
+      "name": "pipeline",
+      "passed": true
+    }
+  ],
+  "self": {
+    "coverage": {
+      "summary": {
+        "games": 8,
+        "wins": 4,
+        "draws": 4,
+        "losses": 0,
+        "unresolved": 0,
+        "scoreRate": 0.75,
+        "technical": []
+      },
+      "normalSummary": {
+        "games": 8,
+        "wins": 4,
+        "draws": 4,
+        "losses": 0,
+        "unresolved": 0,
+        "scoreRate": 0.75
+      },
+      "colors": {
+        "r": {
+          "games": 4,
+          "wins": 3,
+          "draws": 1,
+          "losses": 0,
+          "unresolved": 0,
+          "scoreRate": 0.875
+        },
+        "b": {
+          "games": 4,
+          "wins": 1,
+          "draws": 3,
+          "losses": 0,
+          "unresolved": 0,
+          "scoreRate": 0.625
+        }
+      },
+      "seeds": [
+        18013,
+        18041,
+        18043,
+        18047
+      ],
+      "budgetMs": 1000,
+      "plies": 537,
+      "attemptedMoves": 537,
+      "timing": {
+        "trial": {
+          "attempts": 270,
+          "medianMs": 970.452844000014,
+          "p95Ms": 989.8831040000077,
+          "maxMs": 1003.1632429999881,
+          "deadlineStops": 2,
+          "fallbacks": 0
+        },
+        "baseline": {
+          "attempts": 267,
+          "medianMs": 1001.0512279999966,
+          "p95Ms": 1003.0703360000043,
+          "maxMs": 1005.7469549999805,
+          "deadlineStops": 191,
+          "fallbacks": 0
+        }
+      },
+      "faults": {
+        "timeouts": 0,
+        "illegal": 0,
+        "protocolOrProcess": 0,
+        "unresolved": 0
+      },
+      "refreshMoves": 230,
+      "capFillMoves": 0
+    },
+    "cap": {
+      "summary": {
+        "games": 8,
+        "wins": 1,
+        "draws": 6,
+        "losses": 1,
+        "unresolved": 0,
+        "scoreRate": 0.5,
+        "technical": []
+      },
+      "normalSummary": {
+        "games": 8,
+        "wins": 1,
+        "draws": 6,
+        "losses": 1,
+        "unresolved": 0,
+        "scoreRate": 0.5
+      },
+      "colors": {
+        "r": {
+          "games": 4,
+          "wins": 1,
+          "draws": 2,
+          "losses": 1,
+          "unresolved": 0,
+          "scoreRate": 0.5
+        },
+        "b": {
+          "games": 4,
+          "wins": 0,
+          "draws": 4,
+          "losses": 0,
+          "unresolved": 0,
+          "scoreRate": 0.5
+        }
+      },
+      "seeds": [
+        18013,
+        18041,
+        18043,
+        18047
+      ],
+      "budgetMs": 1000,
+      "plies": 544,
+      "attemptedMoves": 544,
+      "timing": {
+        "trial": {
+          "attempts": 272,
+          "medianMs": 971.3753805000015,
+          "p95Ms": 978.9379980000085,
+          "maxMs": 1000.2028220000211,
+          "deadlineStops": 1,
+          "fallbacks": 0
+        },
+        "baseline": {
+          "attempts": 272,
+          "medianMs": 1000.9437624999846,
+          "p95Ms": 1003.3198529999936,
+          "maxMs": 1048.6621490000398,
+          "deadlineStops": 173,
+          "fallbacks": 0
+        }
+      },
+      "faults": {
+        "timeouts": 0,
+        "illegal": 0,
+        "protocolOrProcess": 0,
+        "unresolved": 0
+      },
+      "refreshMoves": 0,
+      "capFillMoves": 0
+    },
+    "combined": {
+      "summary": {
+        "games": 8,
+        "wins": 4,
+        "draws": 3,
+        "losses": 1,
+        "unresolved": 0,
+        "scoreRate": 0.6875,
+        "technical": [
+          {
+            "seed": 18043,
+            "trialSide": "r",
+            "status": "decided",
+            "winner": "r",
+            "technicalForfeit": true,
+            "offender": "baseline",
+            "reason": "technical-timeout"
+          }
+        ]
+      },
+      "normalSummary": {
+        "games": 7,
+        "wins": 3,
+        "draws": 3,
+        "losses": 1,
+        "unresolved": 0,
+        "scoreRate": 0.6428571428571429
+      },
+      "colors": {
+        "r": {
+          "games": 4,
+          "wins": 3,
+          "draws": 1,
+          "losses": 0,
+          "unresolved": 0,
+          "scoreRate": 0.875
+        },
+        "b": {
+          "games": 4,
+          "wins": 1,
+          "draws": 2,
+          "losses": 1,
+          "unresolved": 0,
+          "scoreRate": 0.5
+        }
+      },
+      "seeds": [
+        18013,
+        18041,
+        18043,
+        18047
+      ],
+      "budgetMs": 1000,
+      "plies": 555,
+      "attemptedMoves": 556,
+      "timing": {
+        "trial": {
+          "attempts": 278,
+          "medianMs": 970.4776195000159,
+          "p95Ms": 976.3880000000063,
+          "maxMs": 994.3486939999857,
+          "deadlineStops": 0,
+          "fallbacks": 0
+        },
+        "baseline": {
+          "attempts": 278,
+          "medianMs": 1001.0633800000032,
+          "p95Ms": 1003.5246840000036,
+          "maxMs": 1061.0870270000305,
+          "deadlineStops": 185,
+          "fallbacks": 0
+        }
+      },
+      "faults": {
+        "timeouts": 1,
+        "illegal": 0,
+        "protocolOrProcess": 0,
+        "unresolved": 0
+      },
+      "refreshMoves": 254,
+      "capFillMoves": 0
+    }
+  },
+  "confirm": null,
+  "pika": {
+    "passed": true,
+    "verifiedAt": "2026-10-20T01:12:33.635Z",
+    "variant": "combined",
+    "matchSha256": "06ec4ff73a7bf0ec67472947394e442e23f0627241fdcba4ccdce88354fd9e23",
+    "played": 914,
+    "darkCaptures": 92,
+    "focusedMoves": 102,
+    "summaries": {
+      "baseline": {
+        "games": 8,
+        "wins": 4,
+        "draws": 0,
+        "losses": 4,
+        "unresolved": 0,
+        "scoreRate": 0.5
+      },
+      "trial": {
+        "games": 8,
+        "wins": 1,
+        "draws": 1,
+        "losses": 6,
+        "unresolved": 0,
+        "scoreRate": 0.1875
+      }
+    },
+    "timing": {
+      "baseline": {
+        "candidate": {
+          "attempts": 239,
+          "medianMs": 1000.2862939999904,
+          "p95Ms": 1003.2447539999848,
+          "maxMs": 1061.7323320000432,
+          "hostStops": 124,
+          "fallbacks": 0,
+          "overGrace": 1
+        },
+        "pika": {
+          "attempts": 239,
+          "medianMs": 998.6881500000018,
+          "p95Ms": 999.8396039999789,
+          "maxMs": 1069.5097369999858,
+          "hostStops": 0,
+          "fallbacks": 0,
+          "overGrace": 1
+        }
+      },
+      "trial": {
+        "candidate": {
+          "attempts": 219,
+          "medianMs": 970.0990199999651,
+          "p95Ms": 977.7883500000025,
+          "maxMs": 1060.346722999995,
+          "hostStops": 3,
+          "fallbacks": 0,
+          "overGrace": 1
+        },
+        "pika": {
+          "attempts": 220,
+          "medianMs": 998.594508500013,
+          "p95Ms": 999.3546860000351,
+          "maxMs": 999.5917519999202,
+          "hostStops": 0,
+          "fallbacks": 0,
+          "overGrace": 0
+        }
+      }
+    },
+    "pairs": [
+      {
+        "seed": 20011,
+        "baseline": 0,
+        "trial": 0
+      },
+      {
+        "seed": 20021,
+        "baseline": 2,
+        "trial": 0.5
+      },
+      {
+        "seed": 20023,
+        "baseline": 1,
+        "trial": 1
+      },
+      {
+        "seed": 20029,
+        "baseline": 1,
+        "trial": 0
+      }
+    ],
+    "faults": {
+      "timeouts": 3,
+      "illegalMoves": 0,
+      "protocolOrProcess": 0,
+      "unresolved": 0
+    },
+    "limitation": "Four correlated layout pairs per implementation, one target build with known color asymmetry. No stable Elo or claim of exceeding Pika; all technical results retained."
+  },
+  "pikaColors": {
+    "baseline": {
+      "r": {
+        "games": 4,
+        "wins": 1,
+        "draws": 0,
+        "losses": 3,
+        "unresolved": 0,
+        "scoreRate": 0.25
+      },
+      "b": {
+        "games": 4,
+        "wins": 3,
+        "draws": 0,
+        "losses": 1,
+        "unresolved": 0,
+        "scoreRate": 0.75
+      }
+    },
+    "trial": {
+      "r": {
+        "games": 4,
+        "wins": 0,
+        "draws": 1,
+        "losses": 3,
+        "unresolved": 0,
+        "scoreRate": 0.125
+      },
+      "b": {
+        "games": 4,
+        "wins": 1,
+        "draws": 0,
+        "losses": 3,
+        "unresolved": 0,
+        "scoreRate": 0.25
+      }
+    }
+  },
+  "pikaNormal": {
+    "baseline": {
+      "games": 6,
+      "wins": 3,
+      "draws": 0,
+      "losses": 3,
+      "unresolved": 0,
+      "scoreRate": 0.5
+    },
+    "trial": {
+      "games": 7,
+      "wins": 1,
+      "draws": 1,
+      "losses": 5,
+      "unresolved": 0,
+      "scoreRate": 0.21428571428571427
+    }
+  },
+  "budgets": [
+    {
+      "position": "初始全暗",
+      "budget": 1000,
+      "repeat": 0,
+      "variants": {
+        "baseline": {
+          "depth": 4,
+          "fullRootDepth": 4,
+          "comparedCount": 44,
+          "rootCount": 44,
+          "move": {
+            "from": 88,
+            "to": 69
+          },
+          "elapsedMs": 965.175,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "old": {
+          "depth": 5,
+          "fullRootDepth": 3,
+          "comparedCount": 9,
+          "rootCount": 44,
+          "move": {
+            "from": 88,
+            "to": 69
+          },
+          "elapsedMs": 965.223168,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "coverage": {
+          "depth": 4,
+          "fullRootDepth": 4,
+          "comparedCount": 44,
+          "rootCount": 44,
+          "move": {
+            "from": 88,
+            "to": 69
+          },
+          "elapsedMs": 965.153667,
+          "coverageRefreshes": 31,
+          "capFillRoots": 0
+        },
+        "cap": {
+          "depth": 5,
+          "fullRootDepth": 3,
+          "comparedCount": 8,
+          "rootCount": 44,
+          "move": {
+            "from": 88,
+            "to": 69
+          },
+          "elapsedMs": 965.159293,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "combined": {
+          "depth": 4,
+          "fullRootDepth": 4,
+          "comparedCount": 44,
+          "rootCount": 44,
+          "move": {
+            "from": 88,
+            "to": 69
+          },
+          "elapsedMs": 965.15177,
+          "coverageRefreshes": 31,
+          "capFillRoots": 0
+        }
+      }
+    },
+    {
+      "position": "初始全暗",
+      "budget": 6000,
+      "repeat": 0,
+      "variants": {
+        "baseline": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 44,
+          "rootCount": 44,
+          "move": {
+            "from": 88,
+            "to": 69
+          },
+          "elapsedMs": 5965.14938,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "old": {
+          "depth": 6,
+          "fullRootDepth": 3,
+          "comparedCount": 9,
+          "rootCount": 44,
+          "move": {
+            "from": 60,
+            "to": 51
+          },
+          "elapsedMs": 5965.209258,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "coverage": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 44,
+          "rootCount": 44,
+          "move": {
+            "from": 88,
+            "to": 69
+          },
+          "elapsedMs": 5965.21426,
+          "coverageRefreshes": 61,
+          "capFillRoots": 0
+        },
+        "cap": {
+          "depth": 6,
+          "fullRootDepth": 3,
+          "comparedCount": 10,
+          "rootCount": 44,
+          "move": {
+            "from": 60,
+            "to": 51
+          },
+          "elapsedMs": 5965.173484,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "combined": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 44,
+          "rootCount": 44,
+          "move": {
+            "from": 88,
+            "to": 69
+          },
+          "elapsedMs": 5965.220441,
+          "coverageRefreshes": 61,
+          "capFillRoots": 0
+        }
+      }
+    },
+    {
+      "position": "可达中局 2111 / 44步",
+      "budget": 1000,
+      "repeat": 0,
+      "variants": {
+        "old": {
+          "depth": 6,
+          "fullRootDepth": 3,
+          "comparedCount": 3,
+          "rootCount": 23,
+          "move": {
+            "from": 63,
+            "to": 46
+          },
+          "elapsedMs": 965.224476,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "coverage": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 23,
+          "rootCount": 23,
+          "move": {
+            "from": 63,
+            "to": 46
+          },
+          "elapsedMs": 965.192355,
+          "coverageRefreshes": 24,
+          "capFillRoots": 0
+        },
+        "cap": {
+          "depth": 6,
+          "fullRootDepth": 3,
+          "comparedCount": 2,
+          "rootCount": 23,
+          "move": {
+            "from": 63,
+            "to": 46
+          },
+          "elapsedMs": 965.232121,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "combined": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 23,
+          "rootCount": 23,
+          "move": {
+            "from": 63,
+            "to": 46
+          },
+          "elapsedMs": 965.218285,
+          "coverageRefreshes": 24,
+          "capFillRoots": 0
+        },
+        "baseline": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 23,
+          "rootCount": 23,
+          "move": {
+            "from": 63,
+            "to": 46
+          },
+          "elapsedMs": 965.267258,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        }
+      }
+    },
+    {
+      "position": "可达中局 2111 / 44步",
+      "budget": 6000,
+      "repeat": 0,
+      "variants": {
+        "old": {
+          "depth": 7,
+          "fullRootDepth": 3,
+          "comparedCount": 4,
+          "rootCount": 23,
+          "move": {
+            "from": 63,
+            "to": 46
+          },
+          "elapsedMs": 5965.279681,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "coverage": {
+          "depth": 6,
+          "fullRootDepth": 6,
+          "comparedCount": 23,
+          "rootCount": 23,
+          "move": {
+            "from": 63,
+            "to": 46
+          },
+          "elapsedMs": 5965.204275,
+          "coverageRefreshes": 35,
+          "capFillRoots": 0
+        },
+        "cap": {
+          "depth": 7,
+          "fullRootDepth": 3,
+          "comparedCount": 4,
+          "rootCount": 23,
+          "move": {
+            "from": 63,
+            "to": 46
+          },
+          "elapsedMs": 5965.297402,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "combined": {
+          "depth": 6,
+          "fullRootDepth": 6,
+          "comparedCount": 23,
+          "rootCount": 23,
+          "move": {
+            "from": 63,
+            "to": 46
+          },
+          "elapsedMs": 5965.217807,
+          "coverageRefreshes": 35,
+          "capFillRoots": 0
+        },
+        "baseline": {
+          "depth": 6,
+          "fullRootDepth": 6,
+          "comparedCount": 23,
+          "rootCount": 23,
+          "move": {
+            "from": 63,
+            "to": 46
+          },
+          "elapsedMs": 5965.169305,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        }
+      }
+    },
+    {
+      "position": "全明10子残局",
+      "budget": 1000,
+      "repeat": 0,
+      "variants": {
+        "coverage": {
+          "depth": 6,
+          "fullRootDepth": 6,
+          "comparedCount": 30,
+          "rootCount": 30,
+          "move": {
+            "from": 72,
+            "to": 0
+          },
+          "elapsedMs": 965.099295,
+          "coverageRefreshes": 54,
+          "capFillRoots": 0
+        },
+        "cap": {
+          "depth": 7,
+          "fullRootDepth": 3,
+          "comparedCount": 11,
+          "rootCount": 30,
+          "move": {
+            "from": 72,
+            "to": 0
+          },
+          "elapsedMs": 965.147588,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "combined": {
+          "depth": 6,
+          "fullRootDepth": 6,
+          "comparedCount": 30,
+          "rootCount": 30,
+          "move": {
+            "from": 72,
+            "to": 0
+          },
+          "elapsedMs": 965.145674,
+          "coverageRefreshes": 54,
+          "capFillRoots": 0
+        },
+        "baseline": {
+          "depth": 6,
+          "fullRootDepth": 6,
+          "comparedCount": 30,
+          "rootCount": 30,
+          "move": {
+            "from": 72,
+            "to": 0
+          },
+          "elapsedMs": 965.121399,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "old": {
+          "depth": 7,
+          "fullRootDepth": 3,
+          "comparedCount": 11,
+          "rootCount": 30,
+          "move": {
+            "from": 72,
+            "to": 0
+          },
+          "elapsedMs": 965.157798,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        }
+      }
+    },
+    {
+      "position": "全明10子残局",
+      "budget": 6000,
+      "repeat": 0,
+      "variants": {
+        "coverage": {
+          "depth": 8,
+          "fullRootDepth": 7,
+          "comparedCount": 12,
+          "rootCount": 30,
+          "move": {
+            "from": 72,
+            "to": 0
+          },
+          "elapsedMs": 4649.823303,
+          "coverageRefreshes": 74,
+          "capFillRoots": 0
+        },
+        "cap": {
+          "depth": 8,
+          "fullRootDepth": 3,
+          "comparedCount": 28,
+          "rootCount": 30,
+          "move": {
+            "from": 72,
+            "to": 0
+          },
+          "elapsedMs": 5965.137976,
+          "coverageRefreshes": 0,
+          "capFillRoots": 16
+        },
+        "combined": {
+          "depth": 8,
+          "fullRootDepth": 7,
+          "comparedCount": 20,
+          "rootCount": 30,
+          "move": {
+            "from": 72,
+            "to": 0
+          },
+          "elapsedMs": 5965.227643,
+          "coverageRefreshes": 74,
+          "capFillRoots": 8
+        },
+        "baseline": {
+          "depth": 7,
+          "fullRootDepth": 7,
+          "comparedCount": 30,
+          "rootCount": 30,
+          "move": {
+            "from": 72,
+            "to": 0
+          },
+          "elapsedMs": 5965.114622,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "old": {
+          "depth": 8,
+          "fullRootDepth": 3,
+          "comparedCount": 12,
+          "rootCount": 30,
+          "move": {
+            "from": 72,
+            "to": 0
+          },
+          "elapsedMs": 2630.592465,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        }
+      }
+    },
+    {
+      "position": "初始全暗",
+      "budget": 1000,
+      "repeat": 1,
+      "variants": {
+        "old": {
+          "depth": 5,
+          "fullRootDepth": 3,
+          "comparedCount": 9,
+          "rootCount": 44,
+          "move": {
+            "from": 88,
+            "to": 69
+          },
+          "elapsedMs": 965.169798,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "coverage": {
+          "depth": 4,
+          "fullRootDepth": 4,
+          "comparedCount": 44,
+          "rootCount": 44,
+          "move": {
+            "from": 88,
+            "to": 69
+          },
+          "elapsedMs": 965.172918,
+          "coverageRefreshes": 31,
+          "capFillRoots": 0
+        },
+        "cap": {
+          "depth": 5,
+          "fullRootDepth": 3,
+          "comparedCount": 9,
+          "rootCount": 44,
+          "move": {
+            "from": 88,
+            "to": 69
+          },
+          "elapsedMs": 965.20205,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "combined": {
+          "depth": 4,
+          "fullRootDepth": 4,
+          "comparedCount": 44,
+          "rootCount": 44,
+          "move": {
+            "from": 88,
+            "to": 69
+          },
+          "elapsedMs": 965.200297,
+          "coverageRefreshes": 31,
+          "capFillRoots": 0
+        },
+        "baseline": {
+          "depth": 4,
+          "fullRootDepth": 4,
+          "comparedCount": 44,
+          "rootCount": 44,
+          "move": {
+            "from": 88,
+            "to": 69
+          },
+          "elapsedMs": 965.160139,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        }
+      }
+    },
+    {
+      "position": "初始全暗",
+      "budget": 6000,
+      "repeat": 1,
+      "variants": {
+        "old": {
+          "depth": 6,
+          "fullRootDepth": 3,
+          "comparedCount": 10,
+          "rootCount": 44,
+          "move": {
+            "from": 60,
+            "to": 51
+          },
+          "elapsedMs": 5965.158239,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "coverage": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 44,
+          "rootCount": 44,
+          "move": {
+            "from": 88,
+            "to": 69
+          },
+          "elapsedMs": 5965.180704,
+          "coverageRefreshes": 61,
+          "capFillRoots": 0
+        },
+        "cap": {
+          "depth": 6,
+          "fullRootDepth": 3,
+          "comparedCount": 10,
+          "rootCount": 44,
+          "move": {
+            "from": 60,
+            "to": 51
+          },
+          "elapsedMs": 5965.203867,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "combined": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 44,
+          "rootCount": 44,
+          "move": {
+            "from": 88,
+            "to": 69
+          },
+          "elapsedMs": 5965.180872,
+          "coverageRefreshes": 61,
+          "capFillRoots": 0
+        },
+        "baseline": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 44,
+          "rootCount": 44,
+          "move": {
+            "from": 88,
+            "to": 69
+          },
+          "elapsedMs": 5965.221428,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        }
+      }
+    },
+    {
+      "position": "可达中局 2111 / 44步",
+      "budget": 1000,
+      "repeat": 1,
+      "variants": {
+        "coverage": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 23,
+          "rootCount": 23,
+          "move": {
+            "from": 63,
+            "to": 46
+          },
+          "elapsedMs": 965.227809,
+          "coverageRefreshes": 24,
+          "capFillRoots": 0
+        },
+        "cap": {
+          "depth": 6,
+          "fullRootDepth": 3,
+          "comparedCount": 3,
+          "rootCount": 23,
+          "move": {
+            "from": 63,
+            "to": 46
+          },
+          "elapsedMs": 965.202402,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "combined": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 23,
+          "rootCount": 23,
+          "move": {
+            "from": 63,
+            "to": 46
+          },
+          "elapsedMs": 965.214736,
+          "coverageRefreshes": 24,
+          "capFillRoots": 0
+        },
+        "baseline": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 23,
+          "rootCount": 23,
+          "move": {
+            "from": 63,
+            "to": 46
+          },
+          "elapsedMs": 965.144903,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "old": {
+          "depth": 6,
+          "fullRootDepth": 3,
+          "comparedCount": 3,
+          "rootCount": 23,
+          "move": {
+            "from": 63,
+            "to": 46
+          },
+          "elapsedMs": 965.195631,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        }
+      }
+    },
+    {
+      "position": "可达中局 2111 / 44步",
+      "budget": 6000,
+      "repeat": 1,
+      "variants": {
+        "coverage": {
+          "depth": 6,
+          "fullRootDepth": 6,
+          "comparedCount": 23,
+          "rootCount": 23,
+          "move": {
+            "from": 63,
+            "to": 46
+          },
+          "elapsedMs": 5965.207758,
+          "coverageRefreshes": 35,
+          "capFillRoots": 0
+        },
+        "cap": {
+          "depth": 7,
+          "fullRootDepth": 3,
+          "comparedCount": 5,
+          "rootCount": 23,
+          "move": {
+            "from": 63,
+            "to": 46
+          },
+          "elapsedMs": 5965.235897,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "combined": {
+          "depth": 6,
+          "fullRootDepth": 6,
+          "comparedCount": 23,
+          "rootCount": 23,
+          "move": {
+            "from": 63,
+            "to": 46
+          },
+          "elapsedMs": 5965.231363,
+          "coverageRefreshes": 35,
+          "capFillRoots": 0
+        },
+        "baseline": {
+          "depth": 6,
+          "fullRootDepth": 6,
+          "comparedCount": 23,
+          "rootCount": 23,
+          "move": {
+            "from": 63,
+            "to": 46
+          },
+          "elapsedMs": 5965.222996,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "old": {
+          "depth": 7,
+          "fullRootDepth": 3,
+          "comparedCount": 4,
+          "rootCount": 23,
+          "move": {
+            "from": 63,
+            "to": 46
+          },
+          "elapsedMs": 5965.197087,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        }
+      }
+    },
+    {
+      "position": "全明10子残局",
+      "budget": 1000,
+      "repeat": 1,
+      "variants": {
+        "cap": {
+          "depth": 7,
+          "fullRootDepth": 3,
+          "comparedCount": 11,
+          "rootCount": 30,
+          "move": {
+            "from": 72,
+            "to": 0
+          },
+          "elapsedMs": 965.146741,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "combined": {
+          "depth": 6,
+          "fullRootDepth": 6,
+          "comparedCount": 30,
+          "rootCount": 30,
+          "move": {
+            "from": 72,
+            "to": 0
+          },
+          "elapsedMs": 965.123159,
+          "coverageRefreshes": 54,
+          "capFillRoots": 0
+        },
+        "baseline": {
+          "depth": 6,
+          "fullRootDepth": 6,
+          "comparedCount": 30,
+          "rootCount": 30,
+          "move": {
+            "from": 72,
+            "to": 0
+          },
+          "elapsedMs": 965.093152,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "old": {
+          "depth": 7,
+          "fullRootDepth": 3,
+          "comparedCount": 11,
+          "rootCount": 30,
+          "move": {
+            "from": 72,
+            "to": 0
+          },
+          "elapsedMs": 965.163067,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "coverage": {
+          "depth": 6,
+          "fullRootDepth": 6,
+          "comparedCount": 30,
+          "rootCount": 30,
+          "move": {
+            "from": 72,
+            "to": 0
+          },
+          "elapsedMs": 965.108624,
+          "coverageRefreshes": 54,
+          "capFillRoots": 0
+        }
+      }
+    },
+    {
+      "position": "全明10子残局",
+      "budget": 6000,
+      "repeat": 1,
+      "variants": {
+        "cap": {
+          "depth": 8,
+          "fullRootDepth": 3,
+          "comparedCount": 28,
+          "rootCount": 30,
+          "move": {
+            "from": 72,
+            "to": 0
+          },
+          "elapsedMs": 5965.165538,
+          "coverageRefreshes": 0,
+          "capFillRoots": 16
+        },
+        "combined": {
+          "depth": 8,
+          "fullRootDepth": 7,
+          "comparedCount": 20,
+          "rootCount": 30,
+          "move": {
+            "from": 72,
+            "to": 0
+          },
+          "elapsedMs": 5965.203958,
+          "coverageRefreshes": 74,
+          "capFillRoots": 8
+        },
+        "baseline": {
+          "depth": 7,
+          "fullRootDepth": 7,
+          "comparedCount": 30,
+          "rootCount": 30,
+          "move": {
+            "from": 72,
+            "to": 0
+          },
+          "elapsedMs": 5965.237394,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "old": {
+          "depth": 8,
+          "fullRootDepth": 3,
+          "comparedCount": 12,
+          "rootCount": 30,
+          "move": {
+            "from": 72,
+            "to": 0
+          },
+          "elapsedMs": 2811.222837,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "coverage": {
+          "depth": 8,
+          "fullRootDepth": 7,
+          "comparedCount": 12,
+          "rootCount": 30,
+          "move": {
+            "from": 72,
+            "to": 0
+          },
+          "elapsedMs": 4526.161968,
+          "coverageRefreshes": 74,
+          "capFillRoots": 0
+        }
+      }
+    },
+    {
+      "position": "初始全暗",
+      "budget": 1000,
+      "repeat": 2,
+      "variants": {
+        "coverage": {
+          "depth": 4,
+          "fullRootDepth": 4,
+          "comparedCount": 44,
+          "rootCount": 44,
+          "move": {
+            "from": 88,
+            "to": 69
+          },
+          "elapsedMs": 965.198153,
+          "coverageRefreshes": 31,
+          "capFillRoots": 0
+        },
+        "cap": {
+          "depth": 5,
+          "fullRootDepth": 3,
+          "comparedCount": 9,
+          "rootCount": 44,
+          "move": {
+            "from": 88,
+            "to": 69
+          },
+          "elapsedMs": 965.231828,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "combined": {
+          "depth": 4,
+          "fullRootDepth": 4,
+          "comparedCount": 44,
+          "rootCount": 44,
+          "move": {
+            "from": 88,
+            "to": 69
+          },
+          "elapsedMs": 965.167984,
+          "coverageRefreshes": 31,
+          "capFillRoots": 0
+        },
+        "baseline": {
+          "depth": 4,
+          "fullRootDepth": 4,
+          "comparedCount": 44,
+          "rootCount": 44,
+          "move": {
+            "from": 88,
+            "to": 69
+          },
+          "elapsedMs": 965.227735,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "old": {
+          "depth": 5,
+          "fullRootDepth": 3,
+          "comparedCount": 9,
+          "rootCount": 44,
+          "move": {
+            "from": 88,
+            "to": 69
+          },
+          "elapsedMs": 965.23499,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        }
+      }
+    },
+    {
+      "position": "初始全暗",
+      "budget": 6000,
+      "repeat": 2,
+      "variants": {
+        "coverage": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 44,
+          "rootCount": 44,
+          "move": {
+            "from": 88,
+            "to": 69
+          },
+          "elapsedMs": 5965.168782,
+          "coverageRefreshes": 61,
+          "capFillRoots": 0
+        },
+        "cap": {
+          "depth": 6,
+          "fullRootDepth": 3,
+          "comparedCount": 10,
+          "rootCount": 44,
+          "move": {
+            "from": 60,
+            "to": 51
+          },
+          "elapsedMs": 5965.191878,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "combined": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 44,
+          "rootCount": 44,
+          "move": {
+            "from": 88,
+            "to": 69
+          },
+          "elapsedMs": 5965.195136,
+          "coverageRefreshes": 61,
+          "capFillRoots": 0
+        },
+        "baseline": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 44,
+          "rootCount": 44,
+          "move": {
+            "from": 88,
+            "to": 69
+          },
+          "elapsedMs": 5965.213078,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "old": {
+          "depth": 6,
+          "fullRootDepth": 3,
+          "comparedCount": 10,
+          "rootCount": 44,
+          "move": {
+            "from": 60,
+            "to": 51
+          },
+          "elapsedMs": 5965.164359,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        }
+      }
+    },
+    {
+      "position": "可达中局 2111 / 44步",
+      "budget": 1000,
+      "repeat": 2,
+      "variants": {
+        "cap": {
+          "depth": 6,
+          "fullRootDepth": 3,
+          "comparedCount": 3,
+          "rootCount": 23,
+          "move": {
+            "from": 63,
+            "to": 46
+          },
+          "elapsedMs": 965.21322,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "combined": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 23,
+          "rootCount": 23,
+          "move": {
+            "from": 63,
+            "to": 46
+          },
+          "elapsedMs": 965.20283,
+          "coverageRefreshes": 24,
+          "capFillRoots": 0
+        },
+        "baseline": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 23,
+          "rootCount": 23,
+          "move": {
+            "from": 63,
+            "to": 46
+          },
+          "elapsedMs": 965.145805,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "old": {
+          "depth": 6,
+          "fullRootDepth": 3,
+          "comparedCount": 3,
+          "rootCount": 23,
+          "move": {
+            "from": 63,
+            "to": 46
+          },
+          "elapsedMs": 965.221526,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "coverage": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 23,
+          "rootCount": 23,
+          "move": {
+            "from": 63,
+            "to": 46
+          },
+          "elapsedMs": 965.200486,
+          "coverageRefreshes": 24,
+          "capFillRoots": 0
+        }
+      }
+    },
+    {
+      "position": "可达中局 2111 / 44步",
+      "budget": 6000,
+      "repeat": 2,
+      "variants": {
+        "cap": {
+          "depth": 7,
+          "fullRootDepth": 3,
+          "comparedCount": 5,
+          "rootCount": 23,
+          "move": {
+            "from": 63,
+            "to": 46
+          },
+          "elapsedMs": 5965.235196,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "combined": {
+          "depth": 6,
+          "fullRootDepth": 6,
+          "comparedCount": 23,
+          "rootCount": 23,
+          "move": {
+            "from": 63,
+            "to": 46
+          },
+          "elapsedMs": 5965.30102,
+          "coverageRefreshes": 35,
+          "capFillRoots": 0
+        },
+        "baseline": {
+          "depth": 6,
+          "fullRootDepth": 6,
+          "comparedCount": 23,
+          "rootCount": 23,
+          "move": {
+            "from": 63,
+            "to": 46
+          },
+          "elapsedMs": 5965.240124,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "old": {
+          "depth": 7,
+          "fullRootDepth": 3,
+          "comparedCount": 4,
+          "rootCount": 23,
+          "move": {
+            "from": 63,
+            "to": 46
+          },
+          "elapsedMs": 5965.151825,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "coverage": {
+          "depth": 6,
+          "fullRootDepth": 6,
+          "comparedCount": 23,
+          "rootCount": 23,
+          "move": {
+            "from": 63,
+            "to": 46
+          },
+          "elapsedMs": 5965.237009,
+          "coverageRefreshes": 35,
+          "capFillRoots": 0
+        }
+      }
+    },
+    {
+      "position": "全明10子残局",
+      "budget": 1000,
+      "repeat": 2,
+      "variants": {
+        "combined": {
+          "depth": 6,
+          "fullRootDepth": 6,
+          "comparedCount": 30,
+          "rootCount": 30,
+          "move": {
+            "from": 72,
+            "to": 0
+          },
+          "elapsedMs": 965.125773,
+          "coverageRefreshes": 54,
+          "capFillRoots": 0
+        },
+        "baseline": {
+          "depth": 6,
+          "fullRootDepth": 6,
+          "comparedCount": 30,
+          "rootCount": 30,
+          "move": {
+            "from": 72,
+            "to": 0
+          },
+          "elapsedMs": 965.113619,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "old": {
+          "depth": 7,
+          "fullRootDepth": 3,
+          "comparedCount": 11,
+          "rootCount": 30,
+          "move": {
+            "from": 72,
+            "to": 0
+          },
+          "elapsedMs": 965.125652,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "coverage": {
+          "depth": 6,
+          "fullRootDepth": 6,
+          "comparedCount": 30,
+          "rootCount": 30,
+          "move": {
+            "from": 72,
+            "to": 0
+          },
+          "elapsedMs": 965.101317,
+          "coverageRefreshes": 54,
+          "capFillRoots": 0
+        },
+        "cap": {
+          "depth": 7,
+          "fullRootDepth": 3,
+          "comparedCount": 11,
+          "rootCount": 30,
+          "move": {
+            "from": 72,
+            "to": 0
+          },
+          "elapsedMs": 965.155053,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        }
+      }
+    },
+    {
+      "position": "全明10子残局",
+      "budget": 6000,
+      "repeat": 2,
+      "variants": {
+        "combined": {
+          "depth": 8,
+          "fullRootDepth": 7,
+          "comparedCount": 20,
+          "rootCount": 30,
+          "move": {
+            "from": 72,
+            "to": 0
+          },
+          "elapsedMs": 5965.154117,
+          "coverageRefreshes": 74,
+          "capFillRoots": 8
+        },
+        "baseline": {
+          "depth": 7,
+          "fullRootDepth": 7,
+          "comparedCount": 30,
+          "rootCount": 30,
+          "move": {
+            "from": 72,
+            "to": 0
+          },
+          "elapsedMs": 5965.149184,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "old": {
+          "depth": 8,
+          "fullRootDepth": 3,
+          "comparedCount": 12,
+          "rootCount": 30,
+          "move": {
+            "from": 72,
+            "to": 0
+          },
+          "elapsedMs": 2631.013383,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "coverage": {
+          "depth": 8,
+          "fullRootDepth": 7,
+          "comparedCount": 12,
+          "rootCount": 30,
+          "move": {
+            "from": 72,
+            "to": 0
+          },
+          "elapsedMs": 4615.02043,
+          "coverageRefreshes": 74,
+          "capFillRoots": 0
+        },
+        "cap": {
+          "depth": 8,
+          "fullRootDepth": 3,
+          "comparedCount": 27,
+          "rootCount": 30,
+          "move": {
+            "from": 72,
+            "to": 0
+          },
+          "elapsedMs": 5965.162421,
+          "coverageRefreshes": 0,
+          "capFillRoots": 15
+        }
+      }
+    }
+  ],
+  "diagnostic": [
+    {
+      "position": "4003/r/45",
+      "budget": 1000,
+      "repeat": 0,
+      "variants": {
+        "baseline": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 21,
+          "rootCount": 21,
+          "move": {
+            "from": 86,
+            "to": 76
+          },
+          "elapsedMs": 965.201889,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "old": {
+          "depth": 6,
+          "fullRootDepth": 3,
+          "comparedCount": 3,
+          "rootCount": 21,
+          "move": {
+            "from": 84,
+            "to": 76
+          },
+          "elapsedMs": 965.198815,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "coverage": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 21,
+          "rootCount": 21,
+          "move": {
+            "from": 86,
+            "to": 76
+          },
+          "elapsedMs": 965.255088,
+          "coverageRefreshes": 17,
+          "capFillRoots": 0
+        },
+        "cap": {
+          "depth": 6,
+          "fullRootDepth": 3,
+          "comparedCount": 3,
+          "rootCount": 21,
+          "move": {
+            "from": 84,
+            "to": 76
+          },
+          "elapsedMs": 965.231406,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "combined": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 21,
+          "rootCount": 21,
+          "move": {
+            "from": 86,
+            "to": 76
+          },
+          "elapsedMs": 965.226466,
+          "coverageRefreshes": 17,
+          "capFillRoots": 0
+        }
+      }
+    },
+    {
+      "position": "4003/r/47",
+      "budget": 1000,
+      "repeat": 0,
+      "variants": {
+        "old": {
+          "depth": 6,
+          "fullRootDepth": 3,
+          "comparedCount": 7,
+          "rootCount": 20,
+          "move": {
+            "from": 15,
+            "to": 6
+          },
+          "elapsedMs": 965.214404,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "coverage": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 20,
+          "rootCount": 20,
+          "move": {
+            "from": 15,
+            "to": 6
+          },
+          "elapsedMs": 965.221041,
+          "coverageRefreshes": 15,
+          "capFillRoots": 0
+        },
+        "cap": {
+          "depth": 6,
+          "fullRootDepth": 3,
+          "comparedCount": 8,
+          "rootCount": 20,
+          "move": {
+            "from": 15,
+            "to": 6
+          },
+          "elapsedMs": 965.200203,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "combined": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 20,
+          "rootCount": 20,
+          "move": {
+            "from": 15,
+            "to": 6
+          },
+          "elapsedMs": 965.226723,
+          "coverageRefreshes": 15,
+          "capFillRoots": 0
+        },
+        "baseline": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 20,
+          "rootCount": 20,
+          "move": {
+            "from": 15,
+            "to": 6
+          },
+          "elapsedMs": 965.245739,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        }
+      }
+    },
+    {
+      "position": "4003/r/49",
+      "budget": 1000,
+      "repeat": 0,
+      "variants": {
+        "coverage": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 17,
+          "rootCount": 17,
+          "move": {
+            "from": 6,
+            "to": 15
+          },
+          "elapsedMs": 965.244182,
+          "coverageRefreshes": 5,
+          "capFillRoots": 0
+        },
+        "cap": {
+          "depth": 6,
+          "fullRootDepth": 5,
+          "comparedCount": 3,
+          "rootCount": 17,
+          "move": {
+            "from": 62,
+            "to": 53
+          },
+          "elapsedMs": 965.290113,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "combined": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 17,
+          "rootCount": 17,
+          "move": {
+            "from": 6,
+            "to": 15
+          },
+          "elapsedMs": 965.340372,
+          "coverageRefreshes": 5,
+          "capFillRoots": 0
+        },
+        "baseline": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 17,
+          "rootCount": 17,
+          "move": {
+            "from": 6,
+            "to": 3
+          },
+          "elapsedMs": 965.15097,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "old": {
+          "depth": 6,
+          "fullRootDepth": 5,
+          "comparedCount": 3,
+          "rootCount": 17,
+          "move": {
+            "from": 62,
+            "to": 53
+          },
+          "elapsedMs": 965.193661,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        }
+      }
+    },
+    {
+      "position": "4057/r/29",
+      "budget": 1000,
+      "repeat": 0,
+      "variants": {
+        "cap": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 6,
+          "rootCount": 6,
+          "move": {
+            "from": 65,
+            "to": 76
+          },
+          "elapsedMs": 965.21861,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "combined": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 6,
+          "rootCount": 6,
+          "move": {
+            "from": 65,
+            "to": 76
+          },
+          "elapsedMs": 965.273325,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "baseline": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 6,
+          "rootCount": 6,
+          "move": {
+            "from": 29,
+            "to": 49
+          },
+          "elapsedMs": 965.179372,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "old": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 6,
+          "rootCount": 6,
+          "move": {
+            "from": 65,
+            "to": 76
+          },
+          "elapsedMs": 967.811935,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "coverage": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 6,
+          "rootCount": 6,
+          "move": {
+            "from": 65,
+            "to": 76
+          },
+          "elapsedMs": 965.219711,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        }
+      }
+    },
+    {
+      "position": "4057/r/31",
+      "budget": 1000,
+      "repeat": 0,
+      "variants": {
+        "combined": {
+          "depth": 5,
+          "fullRootDepth": 4,
+          "comparedCount": 9,
+          "rootCount": 22,
+          "move": {
+            "from": 86,
+            "to": 76
+          },
+          "elapsedMs": 965.202873,
+          "coverageRefreshes": 8,
+          "capFillRoots": 0
+        },
+        "baseline": {
+          "depth": 4,
+          "fullRootDepth": 4,
+          "comparedCount": 22,
+          "rootCount": 22,
+          "move": {
+            "from": 65,
+            "to": 58
+          },
+          "elapsedMs": 965.190165,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "old": {
+          "depth": 5,
+          "fullRootDepth": 3,
+          "comparedCount": 10,
+          "rootCount": 22,
+          "move": {
+            "from": 86,
+            "to": 76
+          },
+          "elapsedMs": 965.198384,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "coverage": {
+          "depth": 5,
+          "fullRootDepth": 4,
+          "comparedCount": 8,
+          "rootCount": 22,
+          "move": {
+            "from": 86,
+            "to": 76
+          },
+          "elapsedMs": 965.20577,
+          "coverageRefreshes": 8,
+          "capFillRoots": 0
+        },
+        "cap": {
+          "depth": 5,
+          "fullRootDepth": 3,
+          "comparedCount": 10,
+          "rootCount": 22,
+          "move": {
+            "from": 86,
+            "to": 76
+          },
+          "elapsedMs": 965.207195,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        }
+      }
+    },
+    {
+      "position": "4057/r/41",
+      "budget": 1000,
+      "repeat": 0,
+      "variants": {
+        "baseline": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 7,
+          "rootCount": 7,
+          "move": {
+            "from": 49,
+            "to": 29
+          },
+          "elapsedMs": 965.22278,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "old": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 7,
+          "rootCount": 7,
+          "move": {
+            "from": 59,
+            "to": 76
+          },
+          "elapsedMs": 965.258629,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "coverage": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 7,
+          "rootCount": 7,
+          "move": {
+            "from": 59,
+            "to": 76
+          },
+          "elapsedMs": 965.172639,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "cap": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 7,
+          "rootCount": 7,
+          "move": {
+            "from": 59,
+            "to": 76
+          },
+          "elapsedMs": 965.239875,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "combined": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 7,
+          "rootCount": 7,
+          "move": {
+            "from": 59,
+            "to": 76
+          },
+          "elapsedMs": 965.232544,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        }
+      }
+    },
+    {
+      "position": "4001/b/70",
+      "budget": 1000,
+      "repeat": 0,
+      "variants": {
+        "old": {
+          "depth": 5,
+          "fullRootDepth": 3,
+          "comparedCount": 11,
+          "rootCount": 28,
+          "move": {
+            "from": 4,
+            "to": 2
+          },
+          "elapsedMs": 965.22877,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "coverage": {
+          "depth": 5,
+          "fullRootDepth": 4,
+          "comparedCount": 9,
+          "rootCount": 28,
+          "move": {
+            "from": 20,
+            "to": 56
+          },
+          "elapsedMs": 965.21582,
+          "coverageRefreshes": 17,
+          "capFillRoots": 0
+        },
+        "cap": {
+          "depth": 5,
+          "fullRootDepth": 3,
+          "comparedCount": 11,
+          "rootCount": 28,
+          "move": {
+            "from": 4,
+            "to": 2
+          },
+          "elapsedMs": 965.188243,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "combined": {
+          "depth": 5,
+          "fullRootDepth": 4,
+          "comparedCount": 8,
+          "rootCount": 28,
+          "move": {
+            "from": 20,
+            "to": 56
+          },
+          "elapsedMs": 965.175715,
+          "coverageRefreshes": 17,
+          "capFillRoots": 0
+        },
+        "baseline": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 28,
+          "rootCount": 28,
+          "move": {
+            "from": 20,
+            "to": 65
+          },
+          "elapsedMs": 965.264424,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        }
+      }
+    },
+    {
+      "position": "4003/r/45",
+      "budget": 1000,
+      "repeat": 1,
+      "variants": {
+        "old": {
+          "depth": 6,
+          "fullRootDepth": 3,
+          "comparedCount": 3,
+          "rootCount": 21,
+          "move": {
+            "from": 84,
+            "to": 76
+          },
+          "elapsedMs": 965.195223,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "coverage": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 21,
+          "rootCount": 21,
+          "move": {
+            "from": 86,
+            "to": 76
+          },
+          "elapsedMs": 965.211678,
+          "coverageRefreshes": 17,
+          "capFillRoots": 0
+        },
+        "cap": {
+          "depth": 6,
+          "fullRootDepth": 3,
+          "comparedCount": 3,
+          "rootCount": 21,
+          "move": {
+            "from": 84,
+            "to": 76
+          },
+          "elapsedMs": 965.284109,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "combined": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 21,
+          "rootCount": 21,
+          "move": {
+            "from": 86,
+            "to": 76
+          },
+          "elapsedMs": 965.20892,
+          "coverageRefreshes": 17,
+          "capFillRoots": 0
+        },
+        "baseline": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 21,
+          "rootCount": 21,
+          "move": {
+            "from": 86,
+            "to": 76
+          },
+          "elapsedMs": 965.202699,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        }
+      }
+    },
+    {
+      "position": "4003/r/47",
+      "budget": 1000,
+      "repeat": 1,
+      "variants": {
+        "coverage": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 20,
+          "rootCount": 20,
+          "move": {
+            "from": 15,
+            "to": 6
+          },
+          "elapsedMs": 965.198926,
+          "coverageRefreshes": 15,
+          "capFillRoots": 0
+        },
+        "cap": {
+          "depth": 6,
+          "fullRootDepth": 3,
+          "comparedCount": 6,
+          "rootCount": 20,
+          "move": {
+            "from": 15,
+            "to": 6
+          },
+          "elapsedMs": 965.269577,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "combined": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 20,
+          "rootCount": 20,
+          "move": {
+            "from": 15,
+            "to": 6
+          },
+          "elapsedMs": 965.153012,
+          "coverageRefreshes": 15,
+          "capFillRoots": 0
+        },
+        "baseline": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 20,
+          "rootCount": 20,
+          "move": {
+            "from": 15,
+            "to": 6
+          },
+          "elapsedMs": 965.164325,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "old": {
+          "depth": 6,
+          "fullRootDepth": 3,
+          "comparedCount": 7,
+          "rootCount": 20,
+          "move": {
+            "from": 15,
+            "to": 6
+          },
+          "elapsedMs": 965.269014,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        }
+      }
+    },
+    {
+      "position": "4003/r/49",
+      "budget": 1000,
+      "repeat": 1,
+      "variants": {
+        "cap": {
+          "depth": 6,
+          "fullRootDepth": 5,
+          "comparedCount": 3,
+          "rootCount": 17,
+          "move": {
+            "from": 62,
+            "to": 53
+          },
+          "elapsedMs": 965.199962,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "combined": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 17,
+          "rootCount": 17,
+          "move": {
+            "from": 6,
+            "to": 15
+          },
+          "elapsedMs": 965.202149,
+          "coverageRefreshes": 5,
+          "capFillRoots": 0
+        },
+        "baseline": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 17,
+          "rootCount": 17,
+          "move": {
+            "from": 6,
+            "to": 3
+          },
+          "elapsedMs": 965.159331,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "old": {
+          "depth": 6,
+          "fullRootDepth": 5,
+          "comparedCount": 2,
+          "rootCount": 17,
+          "move": {
+            "from": 62,
+            "to": 53
+          },
+          "elapsedMs": 965.233136,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "coverage": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 17,
+          "rootCount": 17,
+          "move": {
+            "from": 6,
+            "to": 15
+          },
+          "elapsedMs": 965.279479,
+          "coverageRefreshes": 5,
+          "capFillRoots": 0
+        }
+      }
+    },
+    {
+      "position": "4057/r/29",
+      "budget": 1000,
+      "repeat": 1,
+      "variants": {
+        "combined": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 6,
+          "rootCount": 6,
+          "move": {
+            "from": 65,
+            "to": 76
+          },
+          "elapsedMs": 968.05249,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "baseline": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 6,
+          "rootCount": 6,
+          "move": {
+            "from": 29,
+            "to": 49
+          },
+          "elapsedMs": 965.192765,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "old": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 6,
+          "rootCount": 6,
+          "move": {
+            "from": 65,
+            "to": 76
+          },
+          "elapsedMs": 965.279495,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "coverage": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 6,
+          "rootCount": 6,
+          "move": {
+            "from": 65,
+            "to": 76
+          },
+          "elapsedMs": 965.248128,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "cap": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 6,
+          "rootCount": 6,
+          "move": {
+            "from": 65,
+            "to": 76
+          },
+          "elapsedMs": 965.208812,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        }
+      }
+    },
+    {
+      "position": "4057/r/31",
+      "budget": 1000,
+      "repeat": 1,
+      "variants": {
+        "baseline": {
+          "depth": 4,
+          "fullRootDepth": 4,
+          "comparedCount": 22,
+          "rootCount": 22,
+          "move": {
+            "from": 65,
+            "to": 58
+          },
+          "elapsedMs": 965.17213,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "old": {
+          "depth": 5,
+          "fullRootDepth": 3,
+          "comparedCount": 10,
+          "rootCount": 22,
+          "move": {
+            "from": 86,
+            "to": 76
+          },
+          "elapsedMs": 965.202666,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "coverage": {
+          "depth": 5,
+          "fullRootDepth": 4,
+          "comparedCount": 8,
+          "rootCount": 22,
+          "move": {
+            "from": 86,
+            "to": 76
+          },
+          "elapsedMs": 965.211353,
+          "coverageRefreshes": 8,
+          "capFillRoots": 0
+        },
+        "cap": {
+          "depth": 5,
+          "fullRootDepth": 3,
+          "comparedCount": 9,
+          "rootCount": 22,
+          "move": {
+            "from": 86,
+            "to": 76
+          },
+          "elapsedMs": 965.159102,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "combined": {
+          "depth": 5,
+          "fullRootDepth": 4,
+          "comparedCount": 7,
+          "rootCount": 22,
+          "move": {
+            "from": 86,
+            "to": 76
+          },
+          "elapsedMs": 965.289776,
+          "coverageRefreshes": 8,
+          "capFillRoots": 0
+        }
+      }
+    },
+    {
+      "position": "4057/r/41",
+      "budget": 1000,
+      "repeat": 1,
+      "variants": {
+        "old": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 7,
+          "rootCount": 7,
+          "move": {
+            "from": 59,
+            "to": 76
+          },
+          "elapsedMs": 965.241969,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "coverage": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 7,
+          "rootCount": 7,
+          "move": {
+            "from": 59,
+            "to": 76
+          },
+          "elapsedMs": 965.23277,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "cap": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 7,
+          "rootCount": 7,
+          "move": {
+            "from": 59,
+            "to": 76
+          },
+          "elapsedMs": 965.150627,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "combined": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 7,
+          "rootCount": 7,
+          "move": {
+            "from": 59,
+            "to": 76
+          },
+          "elapsedMs": 965.25279,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "baseline": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 7,
+          "rootCount": 7,
+          "move": {
+            "from": 49,
+            "to": 29
+          },
+          "elapsedMs": 965.444745,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        }
+      }
+    },
+    {
+      "position": "4001/b/70",
+      "budget": 1000,
+      "repeat": 1,
+      "variants": {
+        "coverage": {
+          "depth": 5,
+          "fullRootDepth": 4,
+          "comparedCount": 8,
+          "rootCount": 28,
+          "move": {
+            "from": 20,
+            "to": 56
+          },
+          "elapsedMs": 965.216224,
+          "coverageRefreshes": 17,
+          "capFillRoots": 0
+        },
+        "cap": {
+          "depth": 5,
+          "fullRootDepth": 3,
+          "comparedCount": 11,
+          "rootCount": 28,
+          "move": {
+            "from": 4,
+            "to": 2
+          },
+          "elapsedMs": 965.275507,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "combined": {
+          "depth": 5,
+          "fullRootDepth": 4,
+          "comparedCount": 9,
+          "rootCount": 28,
+          "move": {
+            "from": 20,
+            "to": 56
+          },
+          "elapsedMs": 965.173463,
+          "coverageRefreshes": 17,
+          "capFillRoots": 0
+        },
+        "baseline": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 28,
+          "rootCount": 28,
+          "move": {
+            "from": 20,
+            "to": 65
+          },
+          "elapsedMs": 965.210162,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "old": {
+          "depth": 5,
+          "fullRootDepth": 3,
+          "comparedCount": 11,
+          "rootCount": 28,
+          "move": {
+            "from": 4,
+            "to": 2
+          },
+          "elapsedMs": 965.211216,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        }
+      }
+    },
+    {
+      "position": "4003/r/45",
+      "budget": 1000,
+      "repeat": 2,
+      "variants": {
+        "coverage": {
+          "depth": 5,
+          "fullRootDepth": 4,
+          "comparedCount": 19,
+          "rootCount": 21,
+          "move": {
+            "from": 86,
+            "to": 76
+          },
+          "elapsedMs": 965.279547,
+          "coverageRefreshes": 15,
+          "capFillRoots": 0
+        },
+        "cap": {
+          "depth": 6,
+          "fullRootDepth": 3,
+          "comparedCount": 2,
+          "rootCount": 21,
+          "move": {
+            "from": 84,
+            "to": 76
+          },
+          "elapsedMs": 965.199838,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "combined": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 21,
+          "rootCount": 21,
+          "move": {
+            "from": 86,
+            "to": 76
+          },
+          "elapsedMs": 965.304223,
+          "coverageRefreshes": 17,
+          "capFillRoots": 0
+        },
+        "baseline": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 21,
+          "rootCount": 21,
+          "move": {
+            "from": 86,
+            "to": 76
+          },
+          "elapsedMs": 965.194283,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "old": {
+          "depth": 6,
+          "fullRootDepth": 3,
+          "comparedCount": 3,
+          "rootCount": 21,
+          "move": {
+            "from": 84,
+            "to": 76
+          },
+          "elapsedMs": 965.256978,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        }
+      }
+    },
+    {
+      "position": "4003/r/47",
+      "budget": 1000,
+      "repeat": 2,
+      "variants": {
+        "cap": {
+          "depth": 6,
+          "fullRootDepth": 3,
+          "comparedCount": 7,
+          "rootCount": 20,
+          "move": {
+            "from": 15,
+            "to": 6
+          },
+          "elapsedMs": 965.18987,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "combined": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 20,
+          "rootCount": 20,
+          "move": {
+            "from": 15,
+            "to": 6
+          },
+          "elapsedMs": 965.229164,
+          "coverageRefreshes": 15,
+          "capFillRoots": 0
+        },
+        "baseline": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 20,
+          "rootCount": 20,
+          "move": {
+            "from": 15,
+            "to": 6
+          },
+          "elapsedMs": 965.190582,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "old": {
+          "depth": 6,
+          "fullRootDepth": 3,
+          "comparedCount": 6,
+          "rootCount": 20,
+          "move": {
+            "from": 15,
+            "to": 6
+          },
+          "elapsedMs": 965.226051,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "coverage": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 20,
+          "rootCount": 20,
+          "move": {
+            "from": 15,
+            "to": 6
+          },
+          "elapsedMs": 965.237092,
+          "coverageRefreshes": 15,
+          "capFillRoots": 0
+        }
+      }
+    },
+    {
+      "position": "4003/r/49",
+      "budget": 1000,
+      "repeat": 2,
+      "variants": {
+        "combined": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 17,
+          "rootCount": 17,
+          "move": {
+            "from": 6,
+            "to": 15
+          },
+          "elapsedMs": 965.186294,
+          "coverageRefreshes": 5,
+          "capFillRoots": 0
+        },
+        "baseline": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 17,
+          "rootCount": 17,
+          "move": {
+            "from": 6,
+            "to": 3
+          },
+          "elapsedMs": 965.194362,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "old": {
+          "depth": 6,
+          "fullRootDepth": 5,
+          "comparedCount": 3,
+          "rootCount": 17,
+          "move": {
+            "from": 62,
+            "to": 53
+          },
+          "elapsedMs": 965.205049,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "coverage": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 17,
+          "rootCount": 17,
+          "move": {
+            "from": 6,
+            "to": 15
+          },
+          "elapsedMs": 965.252481,
+          "coverageRefreshes": 5,
+          "capFillRoots": 0
+        },
+        "cap": {
+          "depth": 6,
+          "fullRootDepth": 5,
+          "comparedCount": 3,
+          "rootCount": 17,
+          "move": {
+            "from": 62,
+            "to": 53
+          },
+          "elapsedMs": 965.206485,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        }
+      }
+    },
+    {
+      "position": "4057/r/29",
+      "budget": 1000,
+      "repeat": 2,
+      "variants": {
+        "baseline": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 6,
+          "rootCount": 6,
+          "move": {
+            "from": 29,
+            "to": 49
+          },
+          "elapsedMs": 965.164808,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "old": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 6,
+          "rootCount": 6,
+          "move": {
+            "from": 65,
+            "to": 76
+          },
+          "elapsedMs": 965.224585,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "coverage": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 6,
+          "rootCount": 6,
+          "move": {
+            "from": 65,
+            "to": 76
+          },
+          "elapsedMs": 965.215633,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "cap": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 6,
+          "rootCount": 6,
+          "move": {
+            "from": 65,
+            "to": 76
+          },
+          "elapsedMs": 965.189932,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "combined": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 6,
+          "rootCount": 6,
+          "move": {
+            "from": 65,
+            "to": 76
+          },
+          "elapsedMs": 965.252558,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        }
+      }
+    },
+    {
+      "position": "4057/r/31",
+      "budget": 1000,
+      "repeat": 2,
+      "variants": {
+        "old": {
+          "depth": 5,
+          "fullRootDepth": 3,
+          "comparedCount": 9,
+          "rootCount": 22,
+          "move": {
+            "from": 86,
+            "to": 76
+          },
+          "elapsedMs": 965.15702,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "coverage": {
+          "depth": 5,
+          "fullRootDepth": 4,
+          "comparedCount": 8,
+          "rootCount": 22,
+          "move": {
+            "from": 86,
+            "to": 76
+          },
+          "elapsedMs": 965.297157,
+          "coverageRefreshes": 8,
+          "capFillRoots": 0
+        },
+        "cap": {
+          "depth": 5,
+          "fullRootDepth": 3,
+          "comparedCount": 10,
+          "rootCount": 22,
+          "move": {
+            "from": 86,
+            "to": 76
+          },
+          "elapsedMs": 965.2582,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "combined": {
+          "depth": 5,
+          "fullRootDepth": 4,
+          "comparedCount": 8,
+          "rootCount": 22,
+          "move": {
+            "from": 86,
+            "to": 76
+          },
+          "elapsedMs": 965.194157,
+          "coverageRefreshes": 8,
+          "capFillRoots": 0
+        },
+        "baseline": {
+          "depth": 4,
+          "fullRootDepth": 4,
+          "comparedCount": 22,
+          "rootCount": 22,
+          "move": {
+            "from": 65,
+            "to": 58
+          },
+          "elapsedMs": 965.58671,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        }
+      }
+    },
+    {
+      "position": "4057/r/41",
+      "budget": 1000,
+      "repeat": 2,
+      "variants": {
+        "coverage": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 7,
+          "rootCount": 7,
+          "move": {
+            "from": 59,
+            "to": 76
+          },
+          "elapsedMs": 965.225979,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "cap": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 7,
+          "rootCount": 7,
+          "move": {
+            "from": 59,
+            "to": 76
+          },
+          "elapsedMs": 965.223371,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "combined": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 7,
+          "rootCount": 7,
+          "move": {
+            "from": 59,
+            "to": 76
+          },
+          "elapsedMs": 965.243255,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "baseline": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 7,
+          "rootCount": 7,
+          "move": {
+            "from": 49,
+            "to": 29
+          },
+          "elapsedMs": 965.462043,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "old": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 7,
+          "rootCount": 7,
+          "move": {
+            "from": 59,
+            "to": 76
+          },
+          "elapsedMs": 965.266037,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        }
+      }
+    },
+    {
+      "position": "4001/b/70",
+      "budget": 1000,
+      "repeat": 2,
+      "variants": {
+        "cap": {
+          "depth": 5,
+          "fullRootDepth": 3,
+          "comparedCount": 11,
+          "rootCount": 28,
+          "move": {
+            "from": 4,
+            "to": 2
+          },
+          "elapsedMs": 965.185289,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "combined": {
+          "depth": 5,
+          "fullRootDepth": 4,
+          "comparedCount": 9,
+          "rootCount": 28,
+          "move": {
+            "from": 20,
+            "to": 56
+          },
+          "elapsedMs": 965.2182,
+          "coverageRefreshes": 17,
+          "capFillRoots": 0
+        },
+        "baseline": {
+          "depth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 28,
+          "rootCount": 28,
+          "move": {
+            "from": 20,
+            "to": 65
+          },
+          "elapsedMs": 965.180582,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "old": {
+          "depth": 5,
+          "fullRootDepth": 3,
+          "comparedCount": 11,
+          "rootCount": 28,
+          "move": {
+            "from": 4,
+            "to": 2
+          },
+          "elapsedMs": 965.221594,
+          "coverageRefreshes": 0,
+          "capFillRoots": 0
+        },
+        "coverage": {
+          "depth": 5,
+          "fullRootDepth": 4,
+          "comparedCount": 8,
+          "rootCount": 28,
+          "move": {
+            "from": 20,
+            "to": 56
+          },
+          "elapsedMs": 965.215923,
+          "coverageRefreshes": 17,
+          "capFillRoots": 0
+        }
+      }
+    }
+  ],
+  "archivedReferences": 56,
+  "gates": {
+    "combinedScreen": false,
+    "confirmation": false
+  },
+  "decision": "Keep production unchanged. Coverage/resource fixes are isolated experimental profiles; game evidence and browser-QA scope must be assessed separately from nominal depth or exact-model coverage.",
+  "sourceHashes": {
+    "native/frontier-benchmark.mjs": "84c041671a7df42651e34467544d224d2c43b328dfeb3522b6fd494482e5e454",
+    "native/frontier-cap8-check.mjs": "512270b3ff681a8f71671f99c9ea91f0c0fae8d53dea523e0c527e5cd8faeeb2",
+    "native/frontier-check.mjs": "74548aab070ccee21c6c55aa695160ccbce11d12bb6f960c56ba6da92ef60bd8",
+    "native/frontier-divergence.mjs": "8cb6277a196a3d49504477280eb72d279f488d28beb9ba6caa841cad254459ea",
+    "native/frontier-final-check.mjs": "12e45f0dd485988475d6c067ca3e07a4705375dc377bf287a5cacf3d4979b781",
+    "native/frontier-impact.mjs": "0400c68c63ac4519ee04411f991481ea62ceb958c7a520c382ac8b57925a4bf1",
+    "native/frontier-invariants.mjs": "81609bf5738858c264620266386bfd60c27da1f9cb465074f3c8d0816a42f3da",
+    "native/frontier-match-verify.mjs": "08d31b94620fcc6e9b558ed595af6ad76b6599ae69448953f35c589d726d0cf9",
+    "native/frontier-match.mjs": "db335af93da42c1593d5d77d9ab2ddfe3c444cc92862a317fa11b36de50caf23",
+    "native/frontier-pika-verify.mjs": "8018ecc7fa41081b8008969d7854567d42f40c82345b8ba685d07b1f6eee85e4",
+    "native/frontier-pika.mjs": "adb00b588080ba175942873ea7fffb1e3420d37f5607259a5e1a0b5f8293cba2",
+    "native/frontier-policy.inc": "82ebd2156650246603649344100ef2fafd01974926242a5ece68d51fb01b1f2f",
+    "native/frontier-preview.mjs": "f2badd75b7892b90e447d592c4ce99663d89bfd2b14219e1d6db459f59f3c463",
+    "native/frontier-report.mjs": "916d5989fe18b0c8cf2b203d28dee5b65c5c57b8687c65f0978788030bfa6e39",
+    "native/frontier-run.mjs": "accd1a620464b0ce0e520d08c0353284905a6646348a265b23b25ab4795e236c",
+    "native/frontier-service-check.mjs": "12f37d2ad382ab045dd880164a8389d834a60981b8fdcf0691229ae8c084857b",
+    "native/frontier-timeouts.mjs": "d80517eef34fc31f3077a0dabb6af0de42cdae465e14e560b31e849570db8c04",
+    "native/frontier-ui-check.mjs": "e5c68986082266a3e84ebbb532aa41982c469b4c9b940870691c57a02578a87d",
+    "native/frontier-variants.mjs": "7907c1107d816e4baf536ba8fa9e93ec1db54d4de91a881e058b5174a6bad0c4",
+    "native/frontier-web.mjs": "134a1b3b94339ef5f8533220d732f522db4354f031d58c87b5722b29b94f0036",
+    "native/frontier-write-report.mjs": "31c994c046e0a8e120c3f41aeea2d1fd60215be7a1a891afde384cdf47fab7c5"
+  },
+  "artifactHashes": {
+    "browser-availability.json": "dc24333da604140465cbf9d3577b74e4770d851824179d5f903ab98e81953ede",
+    "budgets.json": "397032683cf45a712885bbbada8d244a2f0e219dff6c4cc00be2e38a7217cf18",
+    "cap8-exact.json": "0eb90f9931db36d30b7f0672d8bf01e461cea70a7b6e74262ae0dd6b5df047cb",
+    "check-cap-asan.json": "e48114554d281e56c801b21c106f16acf3e6aae55dea63daaff0d7f2f60774da",
+    "check-cap-release.json": "db68aabc3df6bbb9c1c4a71a0a23b0652f7a33d74e76bd6266c41e1e1f1eda90",
+    "check-combined-asan.json": "1398a9978118d2c2c03d2f5784efbe92a86c1ed233cf3687d2d6a68e228ef0f5",
+    "check-combined-release.json": "79eee59e16df54be67f8d67aeb38bc414e2da76e0e9b11e8bdb298e2b948ca00",
+    "check-combined-tsan.json": "d36cc275c6e7cabc3047e28dc91b5c6e6e3223356b5c8cc14417e655dbe4f1a6",
+    "check-coverage-asan.json": "661f83bf81a8f49e641ffe9a02a4e3122eaaa26a919300f2796096a1e476b93a",
+    "check-coverage-release.json": "1f9532734217f4a5d0b2be94c02759bca94e7d1fd0a5b3e7587840632bd0b151",
+    "diagnostic.json": "5ddfeee507143a606d6a733f9c0330547b3eb8b4e5fb41a2c7ac18a05ec96723",
+    "freeze.json": "83001bf82093bd216a6914eb9d00bd3e0a67bdc7495141c2eefdfa78af85027e",
+    "invariants.json": "256e9d446f522a3a6c35786496cd33a5ca9945605b75a1ea30e749f18905ad70",
+    "matches-cap-screen-production.json": "acba968ff0b8152a60c3a2b7a05ebc8b4a395795837b5a379bf786a4e4954db9",
+    "matches-combined-screen-production.json": "715e53e955c5407e037ac90df1236a047761a0fcee898efcee28c5e25b1693df",
+    "matches-coverage-screen-production.json": "bee56f064961f27da6f73b58af4f61c82429543a648a7c1b01cceeea51161ef6",
+    "pages-status.json": "f6f52e242f0ecfe4cf9aa703b5dddd274fce052e097aa21a1ae64da9653af0e8",
+    "paired-divergence.json": "83ff246fc9e1a0ca19690f27b0f1721720ebed48d01dd48417a4236d7248d315",
+    "pika-combined-verification.json": "f06fa3128b509b075f4c3800ba8af91041f43b965b64d11863404ea6059a6272",
+    "pika-combined.json": "06ec4ff73a7bf0ec67472947394e442e23f0627241fdcba4ccdce88354fd9e23",
+    "pipeline.json": "7218c95a1c05d0f5f6c757d451cfe8bdb4408334fe6363a5eaff01676628ad07",
+    "prior-exposure.json": "9f038a812aa17d3772c4c3872304e9618fb27ac2f11d531e6396db56b9ee7e01",
+    "prior-impact.json": "a1a70e08c2831543a43d7542945f14f028ada5a4c812735401183c41c86ce860",
+    "service-combined-initial.json": "e49d7b5a6c492c5c6deb800741cca94941b8b0801b26783801c0ef08d13e1319",
+    "service-combined.json": "ff24d13f9fc58b43e00802f1619a787237086d567008ed2ae62859409d2e97cb",
+    "timeout-review.json": "c40a55084439b7b772ad1eb295576bf70fd0a376beed38392c7e5f24b21f51c3",
+    "ui-controller.json": "29cfc7cc4ef5923b79d1d5fccdd6c4b380fed09f55c7e24161eef96d87c77e93",
+    "unit.json": "f878277efa04448c082d4cdfe13112eac7b8ed0291055ede9f793a40ff71f2e1",
+    "verification-cap-screen-production.json": "34d948f66cb53f40065d85f984c6332e494fcb4d4ff3b8244f9d5e15d72cc872",
+    "verification-combined-screen-production.json": "50916baebcc8b8538e55a8c35571320ed2acce79bc23391916613f2e0b6e2de8",
+    "verification-coverage-screen-production.json": "f0009844ca5916b6567b3088385d6b527473fd9f15a04a474bdac15458a08f65"
+  }
+}

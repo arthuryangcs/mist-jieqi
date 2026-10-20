@@ -1,0 +1,891 @@
+{
+  "passed": true,
+  "createdAt": "2026-10-20T01:13:27.892Z",
+  "inputHashes": {
+    "coverage": "bee56f064961f27da6f73b58af4f61c82429543a648a7c1b01cceeea51161ef6",
+    "cap": "acba968ff0b8152a60c3a2b7a05ebc8b4a395795837b5a379bf786a4e4954db9",
+    "combined": "715e53e955c5407e037ac90df1236a047761a0fcee898efcee28c5e25b1693df"
+  },
+  "rows": [
+    {
+      "comparison": [
+        "coverage",
+        "combined"
+      ],
+      "seed": 18013,
+      "trialSide": "r",
+      "commonPlies": 2,
+      "firstDifferentMove": true,
+      "left": {
+        "ply": 3,
+        "engine": "trial",
+        "side": "r",
+        "move": {
+          "from": 70,
+          "to": 7
+        },
+        "depth": 5,
+        "fullRootDepth": 4,
+        "rootCount": 34,
+        "comparedCount": 11,
+        "minimumComparisonRoots": 9,
+        "coverageRefreshes": 23,
+        "capFillRoots": 0,
+        "score": 92.86579287080907,
+        "elapsedMs": 969.771925,
+        "deadlineStop": false,
+        "fallbackUsed": false,
+        "viewSha256": "a7e2cf21f3b3c7635b40b6bbd9f4eb9198d61a63b5ed33f0a006d08b5558feab"
+      },
+      "right": {
+        "ply": 3,
+        "engine": "trial",
+        "side": "r",
+        "move": {
+          "from": 60,
+          "to": 51
+        },
+        "depth": 4,
+        "fullRootDepth": 4,
+        "rootCount": 34,
+        "comparedCount": 34,
+        "minimumComparisonRoots": 9,
+        "coverageRefreshes": 23,
+        "capFillRoots": 0,
+        "score": 82.34695253758768,
+        "elapsedMs": 970.8813999999998,
+        "deadlineStop": false,
+        "fallbackUsed": false,
+        "viewSha256": "a7e2cf21f3b3c7635b40b6bbd9f4eb9198d61a63b5ed33f0a006d08b5558feab"
+      },
+      "capActiveAtFirstDifference": false,
+      "results": [
+        {
+          "status": "decided",
+          "winner": "r",
+          "reason": "将死",
+          "technicalForfeit": false
+        },
+        {
+          "status": "draw",
+          "winner": null,
+          "reason": "threefold-public-position",
+          "technicalForfeit": false
+        }
+      ]
+    },
+    {
+      "comparison": [
+        "coverage",
+        "combined"
+      ],
+      "seed": 18013,
+      "trialSide": "b",
+      "commonPlies": 23,
+      "firstDifferentMove": true,
+      "left": {
+        "ply": 24,
+        "engine": "trial",
+        "side": "b",
+        "move": {
+          "from": 31,
+          "to": 40
+        },
+        "depth": 5,
+        "fullRootDepth": 4,
+        "rootCount": 26,
+        "comparedCount": 8,
+        "minimumComparisonRoots": 7,
+        "coverageRefreshes": 15,
+        "capFillRoots": 0,
+        "score": -969.0105031009083,
+        "elapsedMs": 969.4480489999987,
+        "deadlineStop": false,
+        "fallbackUsed": false,
+        "viewSha256": "6fa74e062dbc8d960c6dd28d203b8739adf47e9061dcc9d818408669c453ccbc"
+      },
+      "right": {
+        "ply": 24,
+        "engine": "trial",
+        "side": "b",
+        "move": {
+          "from": 3,
+          "to": 13
+        },
+        "depth": 4,
+        "fullRootDepth": 4,
+        "rootCount": 26,
+        "comparedCount": 26,
+        "minimumComparisonRoots": 7,
+        "coverageRefreshes": 15,
+        "capFillRoots": 0,
+        "score": -994.5204910381996,
+        "elapsedMs": 971.1185720000067,
+        "deadlineStop": false,
+        "fallbackUsed": false,
+        "viewSha256": "6fa74e062dbc8d960c6dd28d203b8739adf47e9061dcc9d818408669c453ccbc"
+      },
+      "capActiveAtFirstDifference": false,
+      "results": [
+        {
+          "status": "draw",
+          "winner": null,
+          "reason": "threefold-public-position",
+          "technicalForfeit": false
+        },
+        {
+          "status": "decided",
+          "winner": "r",
+          "reason": "困毙",
+          "technicalForfeit": false
+        }
+      ]
+    },
+    {
+      "comparison": [
+        "coverage",
+        "combined"
+      ],
+      "seed": 18041,
+      "trialSide": "r",
+      "commonPlies": 18,
+      "firstDifferentMove": true,
+      "left": {
+        "ply": 19,
+        "engine": "trial",
+        "side": "r",
+        "move": {
+          "from": 82,
+          "to": 63
+        },
+        "depth": 6,
+        "fullRootDepth": 5,
+        "rootCount": 23,
+        "comparedCount": 6,
+        "minimumComparisonRoots": 6,
+        "coverageRefreshes": 22,
+        "capFillRoots": 0,
+        "score": 488.3068515417192,
+        "elapsedMs": 970.320504000003,
+        "deadlineStop": false,
+        "fallbackUsed": false,
+        "viewSha256": "6c8841e13c87cce3fc43151e766800034ad540c060de09cefb388931bb1f1b69"
+      },
+      "right": {
+        "ply": 19,
+        "engine": "trial",
+        "side": "r",
+        "move": {
+          "from": 35,
+          "to": 25
+        },
+        "depth": 6,
+        "fullRootDepth": 5,
+        "rootCount": 23,
+        "comparedCount": 7,
+        "minimumComparisonRoots": 6,
+        "coverageRefreshes": 22,
+        "capFillRoots": 0,
+        "score": 492.1088596119226,
+        "elapsedMs": 970.1258270000108,
+        "deadlineStop": false,
+        "fallbackUsed": false,
+        "viewSha256": "6c8841e13c87cce3fc43151e766800034ad540c060de09cefb388931bb1f1b69"
+      },
+      "capActiveAtFirstDifference": false,
+      "results": [
+        {
+          "status": "decided",
+          "winner": "r",
+          "reason": "将死",
+          "technicalForfeit": false
+        },
+        {
+          "status": "decided",
+          "winner": "r",
+          "reason": "将死",
+          "technicalForfeit": false
+        }
+      ]
+    },
+    {
+      "comparison": [
+        "coverage",
+        "combined"
+      ],
+      "seed": 18041,
+      "trialSide": "b",
+      "commonPlies": 54,
+      "firstDifferentMove": false,
+      "left": null,
+      "right": null,
+      "capActiveAtFirstDifference": false,
+      "results": [
+        {
+          "status": "draw",
+          "winner": null,
+          "reason": "threefold-public-position",
+          "technicalForfeit": false
+        },
+        {
+          "status": "draw",
+          "winner": null,
+          "reason": "threefold-public-position",
+          "technicalForfeit": false
+        }
+      ]
+    },
+    {
+      "comparison": [
+        "coverage",
+        "combined"
+      ],
+      "seed": 18043,
+      "trialSide": "r",
+      "commonPlies": 12,
+      "firstDifferentMove": true,
+      "left": {
+        "ply": 13,
+        "engine": "trial",
+        "side": "r",
+        "move": {
+          "from": 60,
+          "to": 49
+        },
+        "depth": 5,
+        "fullRootDepth": 4,
+        "rootCount": 43,
+        "comparedCount": 11,
+        "minimumComparisonRoots": 11,
+        "coverageRefreshes": 30,
+        "capFillRoots": 0,
+        "score": -505.8314950587918,
+        "elapsedMs": 969.6139309999999,
+        "deadlineStop": false,
+        "fallbackUsed": false,
+        "viewSha256": "d36913ad8fb6a2fe5405a450377660ffcfd44bc9e3a3f642e0d6510d0de64620"
+      },
+      "right": {
+        "ply": 13,
+        "engine": "trial",
+        "side": "r",
+        "move": {
+          "from": 60,
+          "to": 77
+        },
+        "depth": 4,
+        "fullRootDepth": 4,
+        "rootCount": 43,
+        "comparedCount": 43,
+        "minimumComparisonRoots": 11,
+        "coverageRefreshes": 30,
+        "capFillRoots": 0,
+        "score": -506.62754157127483,
+        "elapsedMs": 970.3844980000285,
+        "deadlineStop": false,
+        "fallbackUsed": false,
+        "viewSha256": "d36913ad8fb6a2fe5405a450377660ffcfd44bc9e3a3f642e0d6510d0de64620"
+      },
+      "capActiveAtFirstDifference": false,
+      "results": [
+        {
+          "status": "draw",
+          "winner": null,
+          "reason": "threefold-public-position",
+          "technicalForfeit": false
+        },
+        {
+          "status": "decided",
+          "winner": "r",
+          "technicalForfeit": true,
+          "offender": "baseline",
+          "reason": "technical-timeout"
+        }
+      ]
+    },
+    {
+      "comparison": [
+        "coverage",
+        "combined"
+      ],
+      "seed": 18043,
+      "trialSide": "b",
+      "commonPlies": 33,
+      "firstDifferentMove": false,
+      "left": null,
+      "right": null,
+      "capActiveAtFirstDifference": false,
+      "results": [
+        {
+          "status": "draw",
+          "winner": null,
+          "reason": "threefold-public-position",
+          "technicalForfeit": false
+        },
+        {
+          "status": "draw",
+          "winner": null,
+          "reason": "threefold-public-position",
+          "technicalForfeit": false
+        }
+      ]
+    },
+    {
+      "comparison": [
+        "coverage",
+        "combined"
+      ],
+      "seed": 18047,
+      "trialSide": "r",
+      "commonPlies": 57,
+      "firstDifferentMove": false,
+      "left": null,
+      "right": null,
+      "capActiveAtFirstDifference": false,
+      "results": [
+        {
+          "status": "decided",
+          "winner": "r",
+          "reason": "将死",
+          "technicalForfeit": false
+        },
+        {
+          "status": "decided",
+          "winner": "r",
+          "reason": "将死",
+          "technicalForfeit": false
+        }
+      ]
+    },
+    {
+      "comparison": [
+        "coverage",
+        "combined"
+      ],
+      "seed": 18047,
+      "trialSide": "b",
+      "commonPlies": 90,
+      "firstDifferentMove": false,
+      "left": null,
+      "right": null,
+      "capActiveAtFirstDifference": false,
+      "results": [
+        {
+          "status": "decided",
+          "winner": "b",
+          "reason": "将死",
+          "technicalForfeit": false
+        },
+        {
+          "status": "decided",
+          "winner": "b",
+          "reason": "将死",
+          "technicalForfeit": false
+        }
+      ]
+    },
+    {
+      "comparison": [
+        "coverage",
+        "cap"
+      ],
+      "seed": 18013,
+      "trialSide": "r",
+      "commonPlies": 32,
+      "firstDifferentMove": true,
+      "left": {
+        "ply": 33,
+        "engine": "trial",
+        "side": "r",
+        "move": {
+          "from": 52,
+          "to": 53
+        },
+        "depth": 5,
+        "fullRootDepth": 5,
+        "rootCount": 25,
+        "comparedCount": 25,
+        "minimumComparisonRoots": 7,
+        "coverageRefreshes": 27,
+        "capFillRoots": 0,
+        "score": 1903.1576525337487,
+        "elapsedMs": 970.3541589999986,
+        "deadlineStop": false,
+        "fallbackUsed": false,
+        "viewSha256": "c811735ddf5a7a74c8f7f35a33ba76c3eb56f3bb414773a6152a856ba922d563"
+      },
+      "right": {
+        "ply": 33,
+        "engine": "trial",
+        "side": "r",
+        "move": {
+          "from": 82,
+          "to": 65
+        },
+        "depth": 6,
+        "fullRootDepth": 3,
+        "rootCount": 25,
+        "comparedCount": 5,
+        "minimumComparisonRoots": 2,
+        "coverageRefreshes": 0,
+        "capFillRoots": 0,
+        "score": 1962.0655767162837,
+        "elapsedMs": 970.5340140000008,
+        "deadlineStop": false,
+        "fallbackUsed": false,
+        "viewSha256": "c811735ddf5a7a74c8f7f35a33ba76c3eb56f3bb414773a6152a856ba922d563"
+      },
+      "capActiveAtFirstDifference": false,
+      "results": [
+        {
+          "status": "decided",
+          "winner": "r",
+          "reason": "将死",
+          "technicalForfeit": false
+        },
+        {
+          "status": "draw",
+          "winner": null,
+          "reason": "threefold-public-position",
+          "technicalForfeit": false
+        }
+      ]
+    },
+    {
+      "comparison": [
+        "coverage",
+        "cap"
+      ],
+      "seed": 18013,
+      "trialSide": "b",
+      "commonPlies": 42,
+      "firstDifferentMove": false,
+      "left": null,
+      "right": null,
+      "capActiveAtFirstDifference": false,
+      "results": [
+        {
+          "status": "draw",
+          "winner": null,
+          "reason": "threefold-public-position",
+          "technicalForfeit": false
+        },
+        {
+          "status": "draw",
+          "winner": null,
+          "reason": "threefold-public-position",
+          "technicalForfeit": false
+        }
+      ]
+    },
+    {
+      "comparison": [
+        "coverage",
+        "cap"
+      ],
+      "seed": 18041,
+      "trialSide": "r",
+      "commonPlies": 10,
+      "firstDifferentMove": true,
+      "left": {
+        "ply": 11,
+        "engine": "trial",
+        "side": "r",
+        "move": {
+          "from": 89,
+          "to": 35
+        },
+        "depth": 5,
+        "fullRootDepth": 5,
+        "rootCount": 24,
+        "comparedCount": 24,
+        "minimumComparisonRoots": 6,
+        "coverageRefreshes": 26,
+        "capFillRoots": 0,
+        "score": 442.13648728361335,
+        "elapsedMs": 970.00798699999,
+        "deadlineStop": false,
+        "fallbackUsed": false,
+        "viewSha256": "353a991e3944faac03fb34424bb4f48ad6eb023891629fb991f9a0e20881b36c"
+      },
+      "right": {
+        "ply": 11,
+        "engine": "trial",
+        "side": "r",
+        "move": {
+          "from": 54,
+          "to": 45
+        },
+        "depth": 6,
+        "fullRootDepth": 3,
+        "rootCount": 24,
+        "comparedCount": 6,
+        "minimumComparisonRoots": 2,
+        "coverageRefreshes": 0,
+        "capFillRoots": 0,
+        "score": 499.5937583221854,
+        "elapsedMs": 971.330507000006,
+        "deadlineStop": false,
+        "fallbackUsed": false,
+        "viewSha256": "353a991e3944faac03fb34424bb4f48ad6eb023891629fb991f9a0e20881b36c"
+      },
+      "capActiveAtFirstDifference": false,
+      "results": [
+        {
+          "status": "decided",
+          "winner": "r",
+          "reason": "将死",
+          "technicalForfeit": false
+        },
+        {
+          "status": "decided",
+          "winner": "r",
+          "reason": "将死",
+          "technicalForfeit": false
+        }
+      ]
+    },
+    {
+      "comparison": [
+        "coverage",
+        "cap"
+      ],
+      "seed": 18041,
+      "trialSide": "b",
+      "commonPlies": 9,
+      "firstDifferentMove": true,
+      "left": {
+        "ply": 10,
+        "engine": "trial",
+        "side": "b",
+        "move": {
+          "from": 19,
+          "to": 55
+        },
+        "depth": 5,
+        "fullRootDepth": 5,
+        "rootCount": 30,
+        "comparedCount": 30,
+        "minimumComparisonRoots": 8,
+        "coverageRefreshes": 37,
+        "capFillRoots": 0,
+        "score": -642.6001406585458,
+        "elapsedMs": 970.4508610000194,
+        "deadlineStop": false,
+        "fallbackUsed": false,
+        "viewSha256": "6dc26b8742104a6d4ec28bc16edd7bf451cbed3f16495c8fef457cc7fd540ff2"
+      },
+      "right": {
+        "ply": 10,
+        "engine": "trial",
+        "side": "b",
+        "move": {
+          "from": 19,
+          "to": 73
+        },
+        "depth": 6,
+        "fullRootDepth": 3,
+        "rootCount": 30,
+        "comparedCount": 5,
+        "minimumComparisonRoots": 2,
+        "coverageRefreshes": 0,
+        "capFillRoots": 0,
+        "score": -619.5735845733784,
+        "elapsedMs": 970.4498519999906,
+        "deadlineStop": false,
+        "fallbackUsed": false,
+        "viewSha256": "6dc26b8742104a6d4ec28bc16edd7bf451cbed3f16495c8fef457cc7fd540ff2"
+      },
+      "capActiveAtFirstDifference": false,
+      "results": [
+        {
+          "status": "draw",
+          "winner": null,
+          "reason": "threefold-public-position",
+          "technicalForfeit": false
+        },
+        {
+          "status": "draw",
+          "winner": null,
+          "reason": "threefold-public-position",
+          "technicalForfeit": false
+        }
+      ]
+    },
+    {
+      "comparison": [
+        "coverage",
+        "cap"
+      ],
+      "seed": 18043,
+      "trialSide": "r",
+      "commonPlies": 14,
+      "firstDifferentMove": true,
+      "left": {
+        "ply": 15,
+        "engine": "trial",
+        "side": "r",
+        "move": {
+          "from": 56,
+          "to": 47
+        },
+        "depth": 4,
+        "fullRootDepth": 4,
+        "rootCount": 36,
+        "comparedCount": 36,
+        "minimumComparisonRoots": 9,
+        "coverageRefreshes": 25,
+        "capFillRoots": 0,
+        "score": -636.2613700688197,
+        "elapsedMs": 969.8678230000078,
+        "deadlineStop": false,
+        "fallbackUsed": false,
+        "viewSha256": "f06075e20cf910dd2a0c2daaa0be63b28fe5c5a614db776832241720765d8e2b"
+      },
+      "right": {
+        "ply": 15,
+        "engine": "trial",
+        "side": "r",
+        "move": {
+          "from": 83,
+          "to": 67
+        },
+        "depth": 5,
+        "fullRootDepth": 3,
+        "rootCount": 36,
+        "comparedCount": 8,
+        "minimumComparisonRoots": 2,
+        "coverageRefreshes": 0,
+        "capFillRoots": 0,
+        "score": -668.0484667850703,
+        "elapsedMs": 970.6174069999834,
+        "deadlineStop": false,
+        "fallbackUsed": false,
+        "viewSha256": "f06075e20cf910dd2a0c2daaa0be63b28fe5c5a614db776832241720765d8e2b"
+      },
+      "capActiveAtFirstDifference": false,
+      "results": [
+        {
+          "status": "draw",
+          "winner": null,
+          "reason": "threefold-public-position",
+          "technicalForfeit": false
+        },
+        {
+          "status": "draw",
+          "winner": null,
+          "reason": "threefold-public-position",
+          "technicalForfeit": false
+        }
+      ]
+    },
+    {
+      "comparison": [
+        "coverage",
+        "cap"
+      ],
+      "seed": 18043,
+      "trialSide": "b",
+      "commonPlies": 9,
+      "firstDifferentMove": true,
+      "left": {
+        "ply": 10,
+        "engine": "trial",
+        "side": "b",
+        "move": {
+          "from": 27,
+          "to": 36
+        },
+        "depth": 4,
+        "fullRootDepth": 4,
+        "rootCount": 44,
+        "comparedCount": 44,
+        "minimumComparisonRoots": 11,
+        "coverageRefreshes": 31,
+        "capFillRoots": 0,
+        "score": 625.3406231686762,
+        "elapsedMs": 970.0310949999839,
+        "deadlineStop": false,
+        "fallbackUsed": false,
+        "viewSha256": "4ce6ad343376023fff392f5bd2162974935d26d94f540c372d5bb84a889f3ca7"
+      },
+      "right": {
+        "ply": 10,
+        "engine": "trial",
+        "side": "b",
+        "move": {
+          "from": 35,
+          "to": 44
+        },
+        "depth": 5,
+        "fullRootDepth": 3,
+        "rootCount": 44,
+        "comparedCount": 13,
+        "minimumComparisonRoots": 2,
+        "coverageRefreshes": 0,
+        "capFillRoots": 0,
+        "score": 628.0201263201734,
+        "elapsedMs": 970.4039200000116,
+        "deadlineStop": false,
+        "fallbackUsed": false,
+        "viewSha256": "4ce6ad343376023fff392f5bd2162974935d26d94f540c372d5bb84a889f3ca7"
+      },
+      "capActiveAtFirstDifference": false,
+      "results": [
+        {
+          "status": "draw",
+          "winner": null,
+          "reason": "threefold-public-position",
+          "technicalForfeit": false
+        },
+        {
+          "status": "draw",
+          "winner": null,
+          "reason": "threefold-public-position",
+          "technicalForfeit": false
+        }
+      ]
+    },
+    {
+      "comparison": [
+        "coverage",
+        "cap"
+      ],
+      "seed": 18047,
+      "trialSide": "r",
+      "commonPlies": 14,
+      "firstDifferentMove": true,
+      "left": {
+        "ply": 15,
+        "engine": "trial",
+        "side": "r",
+        "move": {
+          "from": 63,
+          "to": 74
+        },
+        "depth": 5,
+        "fullRootDepth": 5,
+        "rootCount": 20,
+        "comparedCount": 20,
+        "minimumComparisonRoots": 5,
+        "coverageRefreshes": 18,
+        "capFillRoots": 0,
+        "score": -78.74891216442066,
+        "elapsedMs": 971.5663080000086,
+        "deadlineStop": false,
+        "fallbackUsed": false,
+        "viewSha256": "4b6ba994f9a542b992c8e035c4368f9eda7e9e82fb1526b1a513a2980e4f9996"
+      },
+      "right": {
+        "ply": 15,
+        "engine": "trial",
+        "side": "r",
+        "move": {
+          "from": 63,
+          "to": 82
+        },
+        "depth": 6,
+        "fullRootDepth": 3,
+        "rootCount": 20,
+        "comparedCount": 4,
+        "minimumComparisonRoots": 2,
+        "coverageRefreshes": 0,
+        "capFillRoots": 0,
+        "score": -65.18493928544784,
+        "elapsedMs": 971.8979129999643,
+        "deadlineStop": false,
+        "fallbackUsed": false,
+        "viewSha256": "4b6ba994f9a542b992c8e035c4368f9eda7e9e82fb1526b1a513a2980e4f9996"
+      },
+      "capActiveAtFirstDifference": false,
+      "results": [
+        {
+          "status": "decided",
+          "winner": "r",
+          "reason": "将死",
+          "technicalForfeit": false
+        },
+        {
+          "status": "decided",
+          "winner": "b",
+          "reason": "将死",
+          "technicalForfeit": false
+        }
+      ]
+    },
+    {
+      "comparison": [
+        "coverage",
+        "cap"
+      ],
+      "seed": 18047,
+      "trialSide": "b",
+      "commonPlies": 33,
+      "firstDifferentMove": true,
+      "left": {
+        "ply": 34,
+        "engine": "trial",
+        "side": "b",
+        "move": {
+          "from": 78,
+          "to": 71
+        },
+        "depth": 5,
+        "fullRootDepth": 5,
+        "rootCount": 27,
+        "comparedCount": 27,
+        "minimumComparisonRoots": 7,
+        "coverageRefreshes": 32,
+        "capFillRoots": 0,
+        "score": 1012.0319550688921,
+        "elapsedMs": 972.0683050000225,
+        "deadlineStop": false,
+        "fallbackUsed": false,
+        "viewSha256": "22c62a25588751b3f55b5c3861db4ab160b44c57f2f776de5a6e4ac4bd694276"
+      },
+      "right": {
+        "ply": 34,
+        "engine": "trial",
+        "side": "b",
+        "move": {
+          "from": 62,
+          "to": 58
+        },
+        "depth": 6,
+        "fullRootDepth": 3,
+        "rootCount": 27,
+        "comparedCount": 4,
+        "minimumComparisonRoots": 2,
+        "coverageRefreshes": 0,
+        "capFillRoots": 0,
+        "score": 986.3549737156093,
+        "elapsedMs": 971.2708720000228,
+        "deadlineStop": false,
+        "fallbackUsed": false,
+        "viewSha256": "22c62a25588751b3f55b5c3861db4ab160b44c57f2f776de5a6e4ac4bd694276"
+      },
+      "capActiveAtFirstDifference": false,
+      "results": [
+        {
+          "status": "decided",
+          "winner": "b",
+          "reason": "将死",
+          "technicalForfeit": false
+        },
+        {
+          "status": "draw",
+          "winner": null,
+          "reason": "threefold-public-position",
+          "technicalForfeit": false
+        }
+      ]
+    }
+  ],
+  "coverageVsCombined": {
+    "pairs": 8,
+    "firstMoveDifferences": 4,
+    "firstDifferenceOnBaseline": 0,
+    "capActiveAtFirstDifference": 0
+  },
+  "limitation": "Same-layout paired traces are descriptive. A different deadline depth/coverage with identical input is a measured budget-boundary difference, not a proven defect cause. A first baseline divergence cannot be attributed to a changed baseline binary; binaries are frozen. Active cap counters do not prove a saved or lost game. No counterfactual game result is substituted."
+}

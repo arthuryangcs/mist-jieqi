@@ -1,0 +1,263 @@
+{
+  "variant": "combined",
+  "startedAt": "2026-10-20T00:21:38.492Z",
+  "checks": [
+    {
+      "name": "loopback status and experimental assets",
+      "passed": true
+    },
+    {
+      "name": "purpose, real-hidden identity, cross-origin and raw HTTP foreign-host rejection",
+      "passed": true
+    },
+    {
+      "name": "analysis real C++ stream",
+      "elapsedMs": 975.152311,
+      "frames": 5,
+      "last": {
+        "depth": 4,
+        "nodes": 2248071,
+        "samples": 8,
+        "elapsedMs": 940.626699,
+        "interruptedDepth": 5,
+        "score": 77.10421607459259,
+        "move": {
+          "from": 64,
+          "to": 1
+        },
+        "threads": 4,
+        "wallMs": 963.4704160000001,
+        "from": 64,
+        "to": 1,
+        "spread": 362.62043794912995,
+        "heuristicWinRate": 53.2082617666332,
+        "sampleWins": 0,
+        "sampleLosses": 0,
+        "repetitionCount": 0,
+        "candidates": [
+          {
+            "from": 64,
+            "to": 1,
+            "score": 77.10421607459259,
+            "spread": 362.62043794912995,
+            "heuristicWinRate": 53.2082617666332,
+            "sampleWins": 0,
+            "sampleLosses": 0,
+            "repetitionCount": 0
+          },
+          {
+            "from": 70,
+            "to": 7,
+            "score": 21.598940529772456,
+            "spread": 423.57927295149335,
+            "heuristicWinRate": 50.89985868230171,
+            "sampleWins": 0,
+            "sampleLosses": 0,
+            "repetitionCount": 0
+          },
+          {
+            "from": 60,
+            "to": 51,
+            "score": -10.26295643930859,
+            "spread": 193.97624017365678,
+            "heuristicWinRate": 49.57238724083774,
+            "sampleWins": 0,
+            "sampleLosses": 0,
+            "repetitionCount": 0
+          },
+          {
+            "from": 82,
+            "to": 63,
+            "score": -12.283264684975869,
+            "spread": 162.45810362874505,
+            "heuristicWinRate": 49.48821517905968,
+            "sampleWins": 0,
+            "sampleLosses": 0,
+            "repetitionCount": 0
+          },
+          {
+            "from": 82,
+            "to": 65,
+            "score": -16.16280595642649,
+            "spread": 161.12128694075545,
+            "heuristicWinRate": 49.32659047331629,
+            "sampleWins": 0,
+            "sampleLosses": 0,
+            "repetitionCount": 0
+          }
+        ],
+        "uncertain": true,
+        "scoreKind": "expected-utility",
+        "seed": 1075149473,
+        "engine": "cpp-native",
+        "sourceSha256": "d6b0d46bf49ef1a96a040015a123632ebe6f318a054c386b8e33debd364144f8",
+        "binarySha256": "e2a17ce07356268dfbe8e3cef8eac3a0c0c28b99d7ba0e87150f7f8aa0f232f1",
+        "maxThreads": 4,
+        "independentWorldSearch": true,
+        "transport": "loopback-http",
+        "protocol": 2,
+        "focusedPlay": true,
+        "rootBudget": true,
+        "criticalTactics": true,
+        "engineVerified": true,
+        "serviceElapsedMs": 973.414575,
+        "preparationMs": 5.21004099999999,
+        "initializationMs": 6.032976000000019
+      },
+      "passed": true
+    },
+    {
+      "name": "play real C++ stream",
+      "elapsedMs": 958.5193909999998,
+      "frames": 16,
+      "last": {
+        "depth": 4,
+        "nodes": 2199494,
+        "samples": 8,
+        "elapsedMs": 942.798941,
+        "interruptedDepth": 5,
+        "score": 77.10421607459259,
+        "move": {
+          "from": 64,
+          "to": 1
+        },
+        "threads": 4,
+        "rootCount": 44,
+        "comparedCount": 44,
+        "plannedCount": 44,
+        "cohortComplete": true,
+        "fullRootDepth": 4,
+        "searchScope": "full-root",
+        "criticalRoot": false,
+        "tacticalSearch": false,
+        "quietChecksSearched": 0,
+        "reintroducedCount": 3,
+        "collapseExpansions": 0,
+        "comparisonDepth": 4,
+        "minimumComparisonRoots": 11,
+        "coverageRefreshes": 33,
+        "capFillRoots": 0,
+        "wallMs": 949.1680119999999,
+        "from": 64,
+        "to": 1,
+        "spread": 362.62043794912995,
+        "heuristicWinRate": 53.2082617666332,
+        "sampleWins": 0,
+        "sampleLosses": 0,
+        "repetitionCount": 0,
+        "candidates": [
+          {
+            "from": 64,
+            "to": 1,
+            "score": 77.10421607459259,
+            "spread": 362.62043794912995,
+            "heuristicWinRate": 53.2082617666332,
+            "sampleWins": 0,
+            "sampleLosses": 0,
+            "repetitionCount": 0
+          },
+          {
+            "from": 70,
+            "to": 7,
+            "score": 21.598940529772456,
+            "spread": 423.57927295149335,
+            "heuristicWinRate": 50.89985868230171,
+            "sampleWins": 0,
+            "sampleLosses": 0,
+            "repetitionCount": 0
+          },
+          {
+            "from": 60,
+            "to": 51,
+            "score": -10.26295643930859,
+            "spread": 193.97624017365678,
+            "heuristicWinRate": 49.57238724083774,
+            "sampleWins": 0,
+            "sampleLosses": 0,
+            "repetitionCount": 0
+          },
+          {
+            "from": 82,
+            "to": 63,
+            "score": -12.283264684975869,
+            "spread": 162.45810362874505,
+            "heuristicWinRate": 49.48821517905968,
+            "sampleWins": 0,
+            "sampleLosses": 0,
+            "repetitionCount": 0
+          },
+          {
+            "from": 82,
+            "to": 65,
+            "score": -16.16280595642649,
+            "spread": 161.12128694075545,
+            "heuristicWinRate": 49.32659047331629,
+            "sampleWins": 0,
+            "sampleLosses": 0,
+            "repetitionCount": 0
+          }
+        ],
+        "uncertain": true,
+        "scoreKind": "expected-utility",
+        "seed": 1075149473,
+        "engine": "cpp-native",
+        "sourceSha256": "d6b0d46bf49ef1a96a040015a123632ebe6f318a054c386b8e33debd364144f8",
+        "binarySha256": "e2a17ce07356268dfbe8e3cef8eac3a0c0c28b99d7ba0e87150f7f8aa0f232f1",
+        "maxThreads": 4,
+        "independentWorldSearch": true,
+        "transport": "loopback-http",
+        "protocol": 2,
+        "focusedPlay": true,
+        "rootBudget": true,
+        "criticalTactics": true,
+        "engineVerified": true,
+        "serviceElapsedMs": 956.635839,
+        "preparationMs": 3.4600859999998193,
+        "initializationMs": 6.018424999999979
+      },
+      "passed": true
+    },
+    {
+      "name": "duplicate search rejected and cancellation cleans active process",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "build": {
+    "name": "combined",
+    "audit": false,
+    "sanitizer": null,
+    "binary": "/Users/yangyemeng/Documents/Codex/2026-10-19/task/.cache/frontier/combined",
+    "sourceSha256": "d6b0d46bf49ef1a96a040015a123632ebe6f318a054c386b8e33debd364144f8",
+    "binarySha256": "e2a17ce07356268dfbe8e3cef8eac3a0c0c28b99d7ba0e87150f7f8aa0f232f1",
+    "flags": [
+      "-std=c++17",
+      "-O3",
+      "-DNDEBUG",
+      "-ffp-contract=off",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-isystem",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+    ],
+    "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+    "warnings": ""
+  },
+  "warmInitializationMs": 6.465820000000008,
+  "binding": {
+    "address": "127.0.0.1",
+    "family": "IPv4",
+    "port": 55057
+  },
+  "fetchHostControl": {
+    "status": 200,
+    "sentHost": "127.0.0.1:55057"
+  },
+  "previewFiles": {
+    "index.html": "726779f5a181589bc74c1f7f140d801fdad0164c4fd9bd06f8e74342a9fc0949",
+    "app.js": "d776beebb1458b318595efeb2f71da317262c3cf2e901246b914f4d925699a96",
+    "native-client.js": "f75bde09e625e0daf4f32f406457a9d2af910a91a3fb1729e382a3ed91f35865"
+  },
+  "finishedAt": "2026-10-20T00:21:40.545Z"
+}

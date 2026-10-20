@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "verifiedAt": "2026-10-20T00:39:52.040Z",
+  "matchSha256": "bee56f064961f27da6f73b58af4f61c82429543a648a7c1b01cceeea51161ef6",
+  "variant": "coverage",
+  "stage": "screen",
+  "games": 8,
+  "played": 537,
+  "darkCaptures": 56,
+  "focusedMoves": 111,
+  "summary": {
+    "games": 8,
+    "wins": 4,
+    "draws": 4,
+    "losses": 0,
+    "unresolved": 0,
+    "scoreRate": 0.75,
+    "technical": []
+  }
+}

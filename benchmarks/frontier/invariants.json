@@ -1,0 +1,225 @@
+{
+  "startedAt": "2026-10-20T00:23:53.100Z",
+  "builds": [
+    {
+      "name": "old",
+      "audit": true,
+      "sanitizer": null,
+      "binary": "/Users/yangyemeng/Documents/Codex/2026-10-19/task/.cache/focus/both-audit",
+      "sourceSha256": "1e123d822431edffe4cb73f705ffa66e79ed33ee7d0a66290e764b716a6bd0ca",
+      "binarySha256": "67c3d15639d313fd95383a2878292d796e17835ef25f82f0698cbe38ca4c94b2",
+      "flags": [
+        "-std=c++17",
+        "-O3",
+        "-DNDEBUG",
+        "-ffp-contract=off",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-isystem",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+      ],
+      "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+      "warnings": ""
+    },
+    {
+      "name": "coverage",
+      "audit": true,
+      "sanitizer": null,
+      "binary": "/Users/yangyemeng/Documents/Codex/2026-10-19/task/.cache/frontier/coverage-audit",
+      "sourceSha256": "ee0a299cb31fe92ee7afaebef99ad9d24ae172dd48e4864cc6f06fc160fe7080",
+      "binarySha256": "619c69367d800da6640c5092a35272b8102b4478a88908a30959a251eefca64b",
+      "flags": [
+        "-std=c++17",
+        "-O3",
+        "-DNDEBUG",
+        "-ffp-contract=off",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-isystem",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+      ],
+      "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+      "warnings": ""
+    },
+    {
+      "name": "cap",
+      "audit": true,
+      "sanitizer": null,
+      "binary": "/Users/yangyemeng/Documents/Codex/2026-10-19/task/.cache/frontier/cap-audit",
+      "sourceSha256": "94e5993c82a871c277bbbd283a87b0b6dbb865789b6a2632c8b9563155d99e9b",
+      "binarySha256": "59243af25ca8701c03775b53f182b12c04a467bcf14657059422bdcff636eea7",
+      "flags": [
+        "-std=c++17",
+        "-O3",
+        "-DNDEBUG",
+        "-ffp-contract=off",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-isystem",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+      ],
+      "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+      "warnings": ""
+    },
+    {
+      "name": "combined",
+      "audit": true,
+      "sanitizer": null,
+      "binary": "/Users/yangyemeng/Documents/Codex/2026-10-19/task/.cache/frontier/combined-audit",
+      "sourceSha256": "a385a9ffabe0fc8ebfeac3534fce95d1c0af76638be95808be488181fa6e0109",
+      "binarySha256": "9ef58ab2b23fe143bba9cb19b33003b98599a877989ea53d9c68dd7486f992dc",
+      "flags": [
+        "-std=c++17",
+        "-O3",
+        "-DNDEBUG",
+        "-ffp-contract=off",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-isystem",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+      ],
+      "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+      "warnings": ""
+    },
+    {
+      "name": "reference",
+      "audit": true,
+      "sanitizer": null,
+      "binary": "/Users/yangyemeng/Documents/Codex/2026-10-19/task/.cache/focus/tacticalCanonical-audit",
+      "sourceSha256": "224cc79bb5b3f652aced25402f8bf3a4d40fb1030ee9bff39b0c74ccbaf04648",
+      "binarySha256": "98a22dc0d8d31da18cb846ed62587eb4e9c4bd33833add5caa17757b2a66e13f",
+      "flags": [
+        "-std=c++17",
+        "-O3",
+        "-DNDEBUG",
+        "-ffp-contract=off",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-isystem",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+      ],
+      "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+      "warnings": ""
+    }
+  ],
+  "checks": [
+    {
+      "name": "cap fills ceiling omissions without changing per-world scores",
+      "oldCount": 13,
+      "rootCount": 44,
+      "filled": 31,
+      "passed": true
+    },
+    {
+      "name": "combined fills ceiling omissions without changing per-world scores",
+      "oldCount": 13,
+      "rootCount": 44,
+      "filled": 31,
+      "passed": true
+    },
+    {
+      "name": "coverage monotone common-depth stream",
+      "budget": 0,
+      "depth": 0,
+      "full": 0,
+      "count": 0,
+      "progress": 0,
+      "passed": true
+    },
+    {
+      "name": "coverage monotone common-depth stream",
+      "budget": 25,
+      "depth": 2,
+      "full": 2,
+      "count": 44,
+      "progress": 2,
+      "passed": true
+    },
+    {
+      "name": "coverage monotone common-depth stream",
+      "budget": 100,
+      "depth": 3,
+      "full": 2,
+      "count": 42,
+      "progress": 13,
+      "passed": true
+    },
+    {
+      "name": "coverage monotone common-depth stream",
+      "budget": 400,
+      "depth": 4,
+      "full": 3,
+      "count": 18,
+      "progress": 19,
+      "passed": true
+    },
+    {
+      "name": "coverage monotone common-depth stream",
+      "budget": 1000,
+      "depth": 4,
+      "full": 4,
+      "count": 44,
+      "progress": 15,
+      "passed": true
+    },
+    {
+      "name": "combined monotone common-depth stream",
+      "budget": 0,
+      "depth": 0,
+      "full": 0,
+      "count": 0,
+      "progress": 0,
+      "passed": true
+    },
+    {
+      "name": "combined monotone common-depth stream",
+      "budget": 25,
+      "depth": 2,
+      "full": 2,
+      "count": 44,
+      "progress": 2,
+      "passed": true
+    },
+    {
+      "name": "combined monotone common-depth stream",
+      "budget": 100,
+      "depth": 3,
+      "full": 2,
+      "count": 41,
+      "progress": 13,
+      "passed": true
+    },
+    {
+      "name": "combined monotone common-depth stream",
+      "budget": 400,
+      "depth": 4,
+      "full": 3,
+      "count": 18,
+      "progress": 19,
+      "passed": true
+    },
+    {
+      "name": "combined monotone common-depth stream",
+      "budget": 1000,
+      "depth": 4,
+      "full": 4,
+      "count": 44,
+      "progress": 15,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "finishedAt": "2026-10-20T00:23:58.835Z",
+  "stderr": {
+    "old": "",
+    "coverage": "",
+    "cap": "",
+    "combined": "",
+    "reference": ""
+  }
+}

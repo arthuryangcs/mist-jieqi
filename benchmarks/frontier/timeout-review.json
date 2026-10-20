@@ -1,0 +1,319 @@
+{
+  "passed": true,
+  "reviewedAt": "2026-10-20T01:13:28.313Z",
+  "rows": [
+    {
+      "file": "matches-combined-screen-production.json",
+      "seed": 18043,
+      "trialSide": "r",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": true,
+        "offender": "baseline",
+        "reason": "technical-timeout"
+      },
+      "gameSha256": "328f2a24dee1eb08303d4fcae6fec7b8c8cbb78a355815b38017c2d87cda859e",
+      "budgetMs": 1000,
+      "graceMs": 60,
+      "lastRecordedRow": {
+        "ply": 30,
+        "engine": "baseline",
+        "side": "b",
+        "move": {
+          "from": 59,
+          "to": 86
+        },
+        "elapsedMs": 1061.0870270000305,
+        "depth": 4,
+        "fullRootDepth": 4,
+        "rootCount": 44,
+        "comparedCount": 44,
+        "searchScope": "full-root",
+        "nodes": 1026890,
+        "score": 1342.9306685950248,
+        "threads": 4,
+        "deadlineStop": true,
+        "fallbackUsed": false,
+        "clock": {
+          "preparationMs": 4.689191000012215,
+          "timerAt": 999.3965710000484,
+          "resolveAt": 999.5182090000017,
+          "reapAt": 1060.9696110000368
+        },
+        "viewSha256": "6023243a589eddc56bd78f13ec1f46ee8dd161e23823211b23caa40893a05907"
+      },
+      "lastAttempt": {
+        "ply": 30,
+        "engine": "baseline",
+        "side": "b",
+        "move": {
+          "from": 59,
+          "to": 86
+        },
+        "elapsedMs": 1061.0870270000305,
+        "depth": 4,
+        "fullRootDepth": 4,
+        "rootCount": 44,
+        "comparedCount": 44,
+        "searchScope": "full-root",
+        "nodes": 1026890,
+        "score": 1342.9306685950248,
+        "threads": 4,
+        "deadlineStop": true,
+        "fallbackUsed": false,
+        "clock": {
+          "preparationMs": 4.689191000012215,
+          "timerAt": 999.3965710000484,
+          "resolveAt": 999.5182090000017,
+          "reapAt": 1060.9696110000368
+        },
+        "viewSha256": "6023243a589eddc56bd78f13ec1f46ee8dd161e23823211b23caa40893a05907"
+      },
+      "overGraceMs": 1.0870270000305027,
+      "postResolveReapMs": 61.45140200003516,
+      "cause": "Underlying scheduling/process-exit notification cause not established. Recorded timer and reap timestamps locate a measured interval, not the OS mechanism. No result replacement, deadline change or replay."
+    },
+    {
+      "file": "pika-combined.json",
+      "seed": 20021,
+      "trialSide": "b",
+      "engine": "trial",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": true,
+        "offender": "candidate",
+        "reason": "technical-timeout"
+      },
+      "gameSha256": "0dfbad5d2f500109f9b94ce785fa05aab71c8cf1d7ee65fb48cbb15488897ecd",
+      "budgetMs": 1000,
+      "graceMs": 60,
+      "lastRecordedRow": {
+        "ply": 72,
+        "side": "b",
+        "engine": "candidate",
+        "move": {
+          "from": 8,
+          "to": 7
+        },
+        "elapsedMs": 1060.346722999995,
+        "depth": 5,
+        "nodes": 2554486,
+        "score": 1441.0565188031353,
+        "rootCount": 19,
+        "comparedCount": 19,
+        "fullRootDepth": 5,
+        "searchScope": "full-root",
+        "criticalRoot": true,
+        "tacticalSearch": true,
+        "quietChecks": 22391,
+        "reintroduced": 6,
+        "minimumComparisonRoots": 5,
+        "coverageRefreshes": 11,
+        "capFillRoots": 0,
+        "threads": 4,
+        "deadlineStop": true,
+        "fallbackUsed": false,
+        "clock": {
+          "preparationMs": 4.056947999983095,
+          "timerAt": 1055.5971690000151,
+          "resolveAt": 1055.751958000008,
+          "reapAt": 1060.1905489999917
+        },
+        "viewSha256": "75b63505f6e657fe5f6ae2e664c7b9c34e9dced7910dd67e232f02db256b0edb",
+        "visibleFen": "x1xxkx2r/4n4/4a4/x8/9/P1p2R3/9/2P6/4CKAP1/1P6p b r1a1p1n1b2 8 36",
+        "pikaInfo": null
+      },
+      "lastAttempt": {
+        "ply": 72,
+        "side": "b",
+        "engine": "candidate",
+        "move": {
+          "from": 8,
+          "to": 7
+        },
+        "elapsedMs": 1060.346722999995,
+        "depth": 5,
+        "nodes": 2554486,
+        "score": 1441.0565188031353,
+        "rootCount": 19,
+        "comparedCount": 19,
+        "fullRootDepth": 5,
+        "searchScope": "full-root",
+        "criticalRoot": true,
+        "tacticalSearch": true,
+        "quietChecks": 22391,
+        "reintroduced": 6,
+        "minimumComparisonRoots": 5,
+        "coverageRefreshes": 11,
+        "capFillRoots": 0,
+        "threads": 4,
+        "deadlineStop": true,
+        "fallbackUsed": false,
+        "clock": {
+          "preparationMs": 4.056947999983095,
+          "timerAt": 1055.5971690000151,
+          "resolveAt": 1055.751958000008,
+          "reapAt": 1060.1905489999917
+        },
+        "viewSha256": "75b63505f6e657fe5f6ae2e664c7b9c34e9dced7910dd67e232f02db256b0edb",
+        "visibleFen": "x1xxkx2r/4n4/4a4/x8/9/P1p2R3/9/2P6/4CKAP1/1P6p b r1a1p1n1b2 8 36",
+        "pikaInfo": null
+      },
+      "overGraceMs": 0.3467229999951087,
+      "postResolveReapMs": 4.438590999983717,
+      "cause": "Underlying scheduling/process-exit notification cause not established. Recorded timer and reap timestamps locate a measured interval, not the OS mechanism. No result replacement, deadline change or replay."
+    },
+    {
+      "file": "pika-combined.json",
+      "seed": 20023,
+      "trialSide": "r",
+      "engine": "baseline",
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "technicalForfeit": true,
+        "offender": "candidate",
+        "reason": "technical-timeout"
+      },
+      "gameSha256": "76aa387f606907c97b413168d7c70147a371b6ae3126f48077cad651a3d575ae",
+      "budgetMs": 1000,
+      "graceMs": 60,
+      "lastRecordedRow": {
+        "ply": 51,
+        "side": "r",
+        "engine": "candidate",
+        "move": {
+          "from": 1,
+          "to": 3
+        },
+        "elapsedMs": 1061.7323320000432,
+        "depth": 5,
+        "nodes": 940490,
+        "score": -3594.878728264789,
+        "rootCount": null,
+        "comparedCount": null,
+        "fullRootDepth": null,
+        "searchScope": null,
+        "threads": 4,
+        "deadlineStop": true,
+        "fallbackUsed": false,
+        "clock": {
+          "preparationMs": 3.626836999959778,
+          "timerAt": 1057.9582459999947,
+          "resolveAt": 1058.1297899999772,
+          "reapAt": 1061.5869919999968
+        },
+        "viewSha256": "7c428d56fc81bacb91cc4f63692a0743e8e762dcd4c772070d59d28e4c1dff93",
+        "visibleFen": "1C7/1n1kp4/b3a4/9/3rc3p/A8/2b1X1a1X/4A4/9/2PXKXX1X w R2P4N1B1 0 26",
+        "pikaInfo": null
+      },
+      "lastAttempt": {
+        "ply": 51,
+        "side": "r",
+        "engine": "candidate",
+        "move": {
+          "from": 1,
+          "to": 3
+        },
+        "elapsedMs": 1061.7323320000432,
+        "depth": 5,
+        "nodes": 940490,
+        "score": -3594.878728264789,
+        "rootCount": null,
+        "comparedCount": null,
+        "fullRootDepth": null,
+        "searchScope": null,
+        "threads": 4,
+        "deadlineStop": true,
+        "fallbackUsed": false,
+        "clock": {
+          "preparationMs": 3.626836999959778,
+          "timerAt": 1057.9582459999947,
+          "resolveAt": 1058.1297899999772,
+          "reapAt": 1061.5869919999968
+        },
+        "viewSha256": "7c428d56fc81bacb91cc4f63692a0743e8e762dcd4c772070d59d28e4c1dff93",
+        "visibleFen": "1C7/1n1kp4/b3a4/9/3rc3p/A8/2b1X1a1X/4A4/9/2PXKXX1X w R2P4N1B1 0 26",
+        "pikaInfo": null
+      },
+      "overGraceMs": 1.7323320000432432,
+      "postResolveReapMs": 3.457202000019606,
+      "cause": "Underlying scheduling/process-exit notification cause not established. Recorded timer and reap timestamps locate a measured interval, not the OS mechanism. No result replacement, deadline change or replay."
+    },
+    {
+      "file": "pika-combined.json",
+      "seed": 20023,
+      "trialSide": "b",
+      "engine": "baseline",
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "technicalForfeit": true,
+        "offender": "pika",
+        "reason": "technical-timeout"
+      },
+      "gameSha256": "f8cc8902d2a5e88e7fab9327f19d50a521890503a0903a869f775b13055282b2",
+      "budgetMs": 1000,
+      "graceMs": 60,
+      "lastRecordedRow": {
+        "ply": 45,
+        "side": "r",
+        "engine": "pika",
+        "move": {
+          "from": 39,
+          "to": 28
+        },
+        "elapsedMs": 1069.5097369999858,
+        "depth": null,
+        "nodes": null,
+        "score": null,
+        "rootCount": null,
+        "comparedCount": null,
+        "fullRootDepth": null,
+        "searchScope": null,
+        "threads": 4,
+        "deadlineStop": false,
+        "fallbackUsed": false,
+        "verificationMs": 0.361786000081338,
+        "viewSha256": "3e3bf50f230fbcd2f32465ca3df9490af44a158a2194c6135eebb74cb2310767",
+        "visibleFen": "x1x1k1x1x/2r1p4/6p2/x3P4/3N5/9/1n5ap/4P2X1/3R5/1PXCK1X1X w R1A1C1P2B2r1a1c1p1b1 0 23",
+        "pikaInfo": [
+          "info depth 16 seldepth 15 multipv 1 score cp 275 nodes 4328003 nps 4048646 hashfull 437 tbhits 0 time 1069 pv d5b6 c8b8 b6d7 b8d8 e6d6 a6a5 d7f6 a5f5 d6d7 d8a8 f6g8 e9f9 g8i9 f5f2"
+        ]
+      },
+      "lastAttempt": {
+        "ply": 45,
+        "side": "r",
+        "engine": "pika",
+        "move": {
+          "from": 39,
+          "to": 28
+        },
+        "elapsedMs": 1069.5097369999858,
+        "depth": null,
+        "nodes": null,
+        "score": null,
+        "rootCount": null,
+        "comparedCount": null,
+        "fullRootDepth": null,
+        "searchScope": null,
+        "threads": 4,
+        "deadlineStop": false,
+        "fallbackUsed": false,
+        "verificationMs": 0.361786000081338,
+        "viewSha256": "3e3bf50f230fbcd2f32465ca3df9490af44a158a2194c6135eebb74cb2310767",
+        "visibleFen": "x1x1k1x1x/2r1p4/6p2/x3P4/3N5/9/1n5ap/4P2X1/3R5/1PXCK1X1X w R1A1C1P2B2r1a1c1p1b1 0 23",
+        "pikaInfo": [
+          "info depth 16 seldepth 15 multipv 1 score cp 275 nodes 4328003 nps 4048646 hashfull 437 tbhits 0 time 1069 pv d5b6 c8b8 b6d7 b8d8 e6d6 a6a5 d7f6 a5f5 d6d7 d8a8 f6g8 e9f9 g8i9 f5f2"
+        ]
+      },
+      "overGraceMs": 9.509736999985762,
+      "postResolveReapMs": null,
+      "cause": "Underlying scheduling/process-exit notification cause not established. Recorded timer and reap timestamps locate a measured interval, not the OS mechanism. No result replacement, deadline change or replay."
+    }
+  ],
+  "technicalGames": 4,
+  "limitation": "Evidence review passed does not mean time control had no failures. Every recorded forfeit remains in formal totals; normal-game outcomes are separately labeled, never substituted."
+}

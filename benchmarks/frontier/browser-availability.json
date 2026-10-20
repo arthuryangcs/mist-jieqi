@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-10-20T00:25:00.802Z",
+  "workflow": "cua supported browser inventory",
+  "observedBrowsers": [
+    {
+      "name": "ChatGPT in-app browser",
+      "type": "iab",
+      "tabs": []
+    },
+    {
+      "name": "Codex MCP Apps",
+      "type": "mcpapps",
+      "tabs": []
+    }
+  ],
+  "chromeAvailable": false,
+  "realBrowserChecksCompleted": [],
+  "blockedScope": [
+    "8768 experimental rendering and interaction",
+    "8766 real-browser regression"
+  ],
+  "reason": "Supported browser inventory still provides no Chrome. This is a tool availability limitation, not evidence of a fault in user Chrome or either page.",
+  "alternativeAutomationUsed": false,
+  "securitySettingsChanged": false
+}

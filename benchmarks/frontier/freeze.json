@@ -1,0 +1,132 @@
+{
+  "createdAt": "2026-10-20T00:20:43.810Z",
+  "baseCommit": "0fc590b449aba63b769ebeda967b463e0d14a8e1",
+  "node": "v25.6.0",
+  "arch": "x64",
+  "sourceHashes": {
+    "native/search.cpp": "73de0d5768fbedd97d46305891a0513f95c7a856aa5aba8edff8a92e2d1798d0",
+    "ai.js": "1c36be499adb397ec55c15a687644c409c4fbfbfb9de5002943e9a3d4e4714be",
+    "engine.js": "7f427f6e00e286a48335f7c7a7e74270d2a4349d7ea2aabcad0821122a17cb49",
+    "native/bridge.mjs": "a0c2a84c72acaeeaf7b0709f06fefc01f97924387274a649a90d270e06df4816",
+    "native/focus-engine.mjs": "2fe6ae599224c44bca6be6f4750ee6c654901a1befbb308f12aa8f0a887f84b9",
+    "native/focus-policy.inc": "2dc70404bcede263ada103b18456a968ea35c8ba0c572fc8885cbad66157d5d9",
+    "native/focus-tactics.inc": "866317be8e31e74d5bf3c3b0ede572b3bfc648e43c1b465f5f8d6d5d65613ff0",
+    "native/focus-variants.mjs": "16d0de3a164a88cc36a9c0f78c55ffed0216ea7511858fee20967c45c8030f39",
+    "native/frontier-policy.inc": "82ebd2156650246603649344100ef2fafd01974926242a5ece68d51fb01b1f2f",
+    "native/frontier-variants.mjs": "7907c1107d816e4baf536ba8fa9e93ec1db54d4de91a881e058b5174a6bad0c4"
+  },
+  "builds": [
+    {
+      "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+      "flags": [
+        "-std=c++17",
+        "-O3",
+        "-DNDEBUG",
+        "-ffp-contract=off",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-isystem",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+      ],
+      "threads": 4,
+      "independentWorldSearch": true,
+      "architecture": "x64",
+      "sourceSha256": "73de0d5768fbedd97d46305891a0513f95c7a856aa5aba8edff8a92e2d1798d0",
+      "binarySha256": "2304327e3cb91987780ab453fa98db5e17383d32c4c39009649092ee9f14c49b",
+      "sanitize": false,
+      "compilerWarnings": "",
+      "name": "baseline",
+      "binary": "/Users/yangyemeng/Documents/Codex/2026-10-19/task/.cache/focus/production-baseline",
+      "audit": false,
+      "sanitizer": null,
+      "warnings": ""
+    },
+    {
+      "name": "old",
+      "audit": false,
+      "sanitizer": null,
+      "binary": "/Users/yangyemeng/Documents/Codex/2026-10-19/task/.cache/focus/both",
+      "sourceSha256": "5ed2d46d6521a7b5219213eb2ad5a522892232d62288883dc3b65d17d5ce8f0c",
+      "binarySha256": "3483e2296af04f4198e2f6fdda96e97ba47775e495339f1518858762adb200a3",
+      "flags": [
+        "-std=c++17",
+        "-O3",
+        "-DNDEBUG",
+        "-ffp-contract=off",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-isystem",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+      ],
+      "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+      "warnings": ""
+    },
+    {
+      "name": "coverage",
+      "audit": false,
+      "sanitizer": null,
+      "binary": "/Users/yangyemeng/Documents/Codex/2026-10-19/task/.cache/frontier/coverage",
+      "sourceSha256": "6e39c6cbd8f055cdb1ae0dc9a345b22630b937674db3c9413e07e98759f3ad8b",
+      "binarySha256": "fb04d4b636c50fceee14d1f4ab848a874157cac3b66acbbebff5e1de3bc7b91d",
+      "flags": [
+        "-std=c++17",
+        "-O3",
+        "-DNDEBUG",
+        "-ffp-contract=off",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-isystem",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+      ],
+      "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+      "warnings": ""
+    },
+    {
+      "name": "cap",
+      "audit": false,
+      "sanitizer": null,
+      "binary": "/Users/yangyemeng/Documents/Codex/2026-10-19/task/.cache/frontier/cap",
+      "sourceSha256": "bd1cbcd3e7a576b8eff56f0628c2b2dc4f4918803565d511850db4bba20aa921",
+      "binarySha256": "4f1e4bd455ffd7fed935ab1d66a5ce5d2a46a0793fb63f89d8b68ff2db2ea7c8",
+      "flags": [
+        "-std=c++17",
+        "-O3",
+        "-DNDEBUG",
+        "-ffp-contract=off",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-isystem",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+      ],
+      "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+      "warnings": ""
+    },
+    {
+      "name": "combined",
+      "audit": false,
+      "sanitizer": null,
+      "binary": "/Users/yangyemeng/Documents/Codex/2026-10-19/task/.cache/frontier/combined",
+      "sourceSha256": "d6b0d46bf49ef1a96a040015a123632ebe6f318a054c386b8e33debd364144f8",
+      "binarySha256": "e2a17ce07356268dfbe8e3cef8eac3a0c0c28b99d7ba0e87150f7f8aa0f232f1",
+      "flags": [
+        "-std=c++17",
+        "-O3",
+        "-DNDEBUG",
+        "-ffp-contract=off",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-isystem",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+      ],
+      "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+      "warnings": ""
+    }
+  ],
+  "decisionGate": "No default replacement without rule/per-world/sanitizer/UI checks, >=5/8 own-baseline screen points, then >=12/20 independent1000ms confirmation points and no technical/unresolved games. Pika direct paired controls do not override a failed own-baseline gate. No tuning after frozen match configs.",
+  "information": "Only actor publicState; captor-private dark captures; fixed8 samples, max4 world threads,90k TT entries/world; identical samples and depth within any published root tier."
+}

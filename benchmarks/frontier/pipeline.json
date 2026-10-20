@@ -1,0 +1,125 @@
+{
+  "startedAt": "2026-10-20T00:24:16.826Z",
+  "steps": [
+    {
+      "args": [
+        "native/frontier-benchmark.mjs",
+        "budgets"
+      ],
+      "startedAt": "2026-10-20T00:24:16.828Z",
+      "finishedAt": "2026-10-20T00:29:18.301Z",
+      "code": 0,
+      "signal": null
+    },
+    {
+      "args": [
+        "native/frontier-benchmark.mjs",
+        "diagnostic"
+      ],
+      "startedAt": "2026-10-20T00:29:18.302Z",
+      "finishedAt": "2026-10-20T00:31:02.281Z",
+      "code": 0,
+      "signal": null
+    },
+    {
+      "args": [
+        "native/frontier-match.mjs",
+        "coverage",
+        "screen"
+      ],
+      "startedAt": "2026-10-20T00:31:02.281Z",
+      "finishedAt": "2026-10-20T00:39:51.279Z",
+      "code": 0,
+      "signal": null
+    },
+    {
+      "args": [
+        "native/frontier-match-verify.mjs",
+        "coverage",
+        "screen"
+      ],
+      "startedAt": "2026-10-20T00:39:51.279Z",
+      "finishedAt": "2026-10-20T00:39:52.059Z",
+      "code": 0,
+      "signal": null
+    },
+    {
+      "args": [
+        "native/frontier-match.mjs",
+        "cap",
+        "screen"
+      ],
+      "startedAt": "2026-10-20T00:39:52.059Z",
+      "finishedAt": "2026-10-20T00:48:38.978Z",
+      "code": 0,
+      "signal": null
+    },
+    {
+      "args": [
+        "native/frontier-match-verify.mjs",
+        "cap",
+        "screen"
+      ],
+      "startedAt": "2026-10-20T00:48:38.978Z",
+      "finishedAt": "2026-10-20T00:48:39.662Z",
+      "code": 0,
+      "signal": null
+    },
+    {
+      "args": [
+        "native/frontier-match.mjs",
+        "combined",
+        "screen"
+      ],
+      "startedAt": "2026-10-20T00:48:39.662Z",
+      "finishedAt": "2026-10-20T00:57:47.839Z",
+      "code": 0,
+      "signal": null
+    },
+    {
+      "args": [
+        "native/frontier-match-verify.mjs",
+        "combined",
+        "screen"
+      ],
+      "startedAt": "2026-10-20T00:57:47.839Z",
+      "finishedAt": "2026-10-20T00:57:48.576Z",
+      "code": 0,
+      "signal": null
+    },
+    {
+      "args": [
+        "native/frontier-pika.mjs",
+        "combined",
+        "freeze"
+      ],
+      "startedAt": "2026-10-20T00:57:48.585Z",
+      "finishedAt": "2026-10-20T00:57:48.869Z",
+      "code": 0,
+      "signal": null
+    },
+    {
+      "args": [
+        "native/frontier-pika.mjs",
+        "combined",
+        "run"
+      ],
+      "startedAt": "2026-10-20T00:57:48.869Z",
+      "finishedAt": "2026-10-20T01:12:32.742Z",
+      "code": 0,
+      "signal": null
+    },
+    {
+      "args": [
+        "native/frontier-pika-verify.mjs",
+        "combined"
+      ],
+      "startedAt": "2026-10-20T01:12:32.743Z",
+      "finishedAt": "2026-10-20T01:12:33.668Z",
+      "code": 0,
+      "signal": null
+    }
+  ],
+  "passed": true,
+  "finishedAt": "2026-10-20T01:12:33.668Z"
+}
