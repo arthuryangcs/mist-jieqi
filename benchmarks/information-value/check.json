@@ -1,0 +1,182 @@
+{
+  "points": 8,
+  "perSideLimit": 64,
+  "defaultEnabled": false,
+  "sanitize": false,
+  "units": 7,
+  "cases": [
+    {
+      "name": "初始全暗",
+      "depth": 1,
+      "samples": 4,
+      "transitions": 44,
+      "baselineMove": {
+        "from": 64,
+        "to": 1
+      },
+      "trialMove": {
+        "from": 64,
+        "to": 67
+      },
+      "recommendationChanged": true,
+      "baselineScore": -86.55311466420945,
+      "trialScore": -91.15581784651029,
+      "tacticalPassed": false,
+      "passed": true
+    },
+    {
+      "name": "红方全明/黑方全暗（上限）",
+      "depth": 1,
+      "samples": 4,
+      "transitions": 46,
+      "baselineMove": {
+        "from": 70,
+        "to": 69
+      },
+      "trialMove": {
+        "from": 70,
+        "to": 69
+      },
+      "recommendationChanged": false,
+      "baselineScore": 183.61366904252264,
+      "trialScore": 247.23557604609042,
+      "tacticalPassed": false,
+      "passed": true
+    },
+    {
+      "name": "暗俘后/红",
+      "depth": 1,
+      "samples": 4,
+      "transitions": 33,
+      "baselineMove": {
+        "from": 1,
+        "to": 2
+      },
+      "trialMove": {
+        "from": 1,
+        "to": 2
+      },
+      "recommendationChanged": false,
+      "baselineScore": 433.93960833673253,
+      "trialScore": 430.26665271888936,
+      "tacticalPassed": false,
+      "passed": true
+    },
+    {
+      "name": "暗俘后/黑",
+      "depth": 1,
+      "samples": 4,
+      "transitions": 33,
+      "baselineMove": {
+        "from": 1,
+        "to": 2
+      },
+      "trialMove": {
+        "from": 1,
+        "to": 2
+      },
+      "recommendationChanged": false,
+      "baselineScore": 567.000000000056,
+      "trialScore": 567.000000000056,
+      "tacticalPassed": false,
+      "passed": true
+    },
+    {
+      "name": "可证三层强制制胜 0",
+      "depth": 2,
+      "samples": 1,
+      "transitions": 38,
+      "baselineMove": {
+        "from": 19,
+        "to": 22
+      },
+      "trialMove": {
+        "from": 19,
+        "to": 22
+      },
+      "recommendationChanged": false,
+      "baselineScore": 98997,
+      "trialScore": 98997,
+      "tacticalPassed": true,
+      "passed": true
+    },
+    {
+      "name": "可证三层强制制胜 1",
+      "depth": 2,
+      "samples": 1,
+      "transitions": 38,
+      "baselineMove": {
+        "from": 33,
+        "to": 31
+      },
+      "trialMove": {
+        "from": 33,
+        "to": 31
+      },
+      "recommendationChanged": false,
+      "baselineScore": 98997,
+      "trialScore": 98997,
+      "tacticalPassed": true,
+      "passed": true
+    },
+    {
+      "name": "可证三层强制制胜 2",
+      "depth": 2,
+      "samples": 1,
+      "transitions": 32,
+      "baselineMove": {
+        "from": 39,
+        "to": 40
+      },
+      "trialMove": {
+        "from": 39,
+        "to": 40
+      },
+      "recommendationChanged": false,
+      "baselineScore": 98997,
+      "trialScore": 98997,
+      "tacticalPassed": true,
+      "passed": true
+    },
+    {
+      "name": "可证三层强制制胜 3",
+      "depth": 2,
+      "samples": 1,
+      "transitions": 34,
+      "baselineMove": {
+        "from": 19,
+        "to": 22
+      },
+      "trialMove": {
+        "from": 19,
+        "to": 22
+      },
+      "recommendationChanged": false,
+      "baselineScore": 98997,
+      "trialScore": 98997,
+      "tacticalPassed": true,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "build": {
+    "stableSourceSha256": "94dab5ee87ff8996fcf9e8f93070a8012866926822611eb0f84f6bd3607e1b2c",
+    "sourceSha256": "27a74fa3ca698f7cc1dbc29463517e451eecf7468d36114ccfc93f0ec7e004e3",
+    "policySha256": "1b04ba80733ed5e5503b4138804db59221c722c8661fb53ed88a9710d387b2c7",
+    "binarySha256": "349e324438fbccf9b50502fa709c68c4184d3941d31a99da93dc6e8b39568ee1",
+    "sanitize": false,
+    "flags": [
+      "-std=c++17",
+      "-O3",
+      "-ffp-contract=off",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-isystem",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+    ],
+    "warnings": ""
+  },
+  "defaultBinaryUnchanged": true,
+  "defaultSourceSha256": "94dab5ee87ff8996fcf9e8f93070a8012866926822611eb0f84f6bd3607e1b2c"
+}

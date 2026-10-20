@@ -1,0 +1,103 @@
+{
+  "kind": "automatic assisted synchronization, optional confirmation, parallel search controls and last-move arrows",
+  "tests": {
+    "total": 142,
+    "passed": 142,
+    "failed": 0,
+    "ui": 60
+  },
+  "structure": {
+    "uniqueIds": true,
+    "scriptReferencesResolved": true,
+    "dropdownsGrouped": true,
+    "autoSyncDefault": false,
+    "autoConfirmDefault": false,
+    "endpointFramesRemoved": true
+  },
+  "browser": {
+    "supportedChromeAvailable": false,
+    "renderingExecuted": false
+  },
+  "http": [
+    {
+      "port": 8766,
+      "path": "/",
+      "status": 200
+    },
+    {
+      "port": 8766,
+      "path": "/api/status",
+      "status": 200,
+      "health": {
+        "engine": "cpp-native",
+        "sourceSha256": "94dab5ee87ff8996fcf9e8f93070a8012866926822611eb0f84f6bd3607e1b2c",
+        "binarySha256": "5c68913e2035093465cb3807ea81604839023daa884d0c0c66ba65f5958a2d23",
+        "maxThreads": 4,
+        "independentWorldSearch": true,
+        "transport": "loopback-http",
+        "protocol": 2,
+        "active": 0,
+        "completed": 2,
+        "aborted": 51
+      }
+    },
+    {
+      "port": 8766,
+      "path": "/app.js",
+      "status": 200
+    },
+    {
+      "port": 8766,
+      "path": "/style.css",
+      "status": 200
+    },
+    {
+      "port": 8767,
+      "path": "/",
+      "status": 200
+    },
+    {
+      "port": 8767,
+      "path": "/api/status",
+      "status": 200,
+      "health": {
+        "engine": "cpp-native",
+        "sourceSha256": "27a74fa3ca698f7cc1dbc29463517e451eecf7468d36114ccfc93f0ec7e004e3",
+        "binarySha256": "349e324438fbccf9b50502fa709c68c4184d3941d31a99da93dc6e8b39568ee1",
+        "maxThreads": 4,
+        "independentWorldSearch": true,
+        "transport": "loopback-http",
+        "protocol": 2,
+        "experiment": "known-piece-bonus-8",
+        "active": 0,
+        "completed": 0,
+        "aborted": 0
+      }
+    },
+    {
+      "port": 8767,
+      "path": "/app.js",
+      "status": 200
+    },
+    {
+      "port": 8767,
+      "path": "/style.css",
+      "status": 200
+    }
+  ],
+  "sourceHashes": {
+    "app.js": "c271b0b1e03c5bd86514559798eee2c1e9371d2fa3b3b069798c21ad4fce03b0",
+    "index.html": "1d30738f57228c7268fc9cbf18eeaf3eaa626117cbd95ddeed6111def0cbf59d",
+    "style.css": "4bfaa69674dc52e2ac9e455911c216c35a3a25a462b8a0a410e32d26037fe40f",
+    "native/search.cpp": "94dab5ee87ff8996fcf9e8f93070a8012866926822611eb0f84f6bd3607e1b2c"
+  },
+  "previewSearch": {
+    "engine": "cpp-native",
+    "experiment": "known-piece-bonus-8",
+    "depth": 4,
+    "samples": 8,
+    "threads": 4,
+    "candidates": 5,
+    "passed": true
+  }
+}
