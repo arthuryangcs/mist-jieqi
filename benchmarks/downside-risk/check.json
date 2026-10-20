@@ -1,0 +1,153 @@
+{
+  "sanitize": false,
+  "passed": true,
+  "cases": [
+    {
+      "name": "初始暗局",
+      "candidates": 44,
+      "depth": 2,
+      "samples": 8,
+      "before": {
+        "from": 60,
+        "to": 51
+      },
+      "after": {
+        "from": 60,
+        "to": 51
+      },
+      "changed": false,
+      "coreMs": 19.9384,
+      "baseCoreMs": 22.522864,
+      "penalized": 6
+    },
+    {
+      "name": "双向暗俘/红",
+      "candidates": 33,
+      "depth": 2,
+      "samples": 8,
+      "before": {
+        "from": 1,
+        "to": 2
+      },
+      "after": {
+        "from": 1,
+        "to": 2
+      },
+      "changed": false,
+      "coreMs": 19.238278,
+      "baseCoreMs": 23.624154,
+      "penalized": 0
+    },
+    {
+      "name": "双向暗俘/黑",
+      "candidates": 33,
+      "depth": 2,
+      "samples": 8,
+      "before": {
+        "from": 1,
+        "to": 2
+      },
+      "after": {
+        "from": 1,
+        "to": 2
+      },
+      "changed": false,
+      "coreMs": 19.286754,
+      "baseCoreMs": 21.439967,
+      "penalized": 1
+    },
+    {
+      "name": "可证三层强制制胜 0",
+      "candidates": 38,
+      "depth": 2,
+      "samples": 1,
+      "before": {
+        "from": 19,
+        "to": 22
+      },
+      "after": {
+        "from": 19,
+        "to": 22
+      },
+      "changed": false,
+      "coreMs": 0.532648,
+      "baseCoreMs": 0.303784,
+      "penalized": 0
+    },
+    {
+      "name": "可证三层强制制胜 1",
+      "candidates": 38,
+      "depth": 2,
+      "samples": 1,
+      "before": {
+        "from": 33,
+        "to": 31
+      },
+      "after": {
+        "from": 33,
+        "to": 31
+      },
+      "changed": false,
+      "coreMs": 0.481521,
+      "baseCoreMs": 0.283808,
+      "penalized": 0
+    },
+    {
+      "name": "可证三层强制制胜 2",
+      "candidates": 32,
+      "depth": 2,
+      "samples": 1,
+      "before": {
+        "from": 39,
+        "to": 40
+      },
+      "after": {
+        "from": 39,
+        "to": 40
+      },
+      "changed": false,
+      "coreMs": 0.371396,
+      "baseCoreMs": 0.485398,
+      "penalized": 0
+    },
+    {
+      "name": "可证三层强制制胜 3",
+      "candidates": 34,
+      "depth": 2,
+      "samples": 1,
+      "before": {
+        "from": 19,
+        "to": 22
+      },
+      "after": {
+        "from": 19,
+        "to": 22
+      },
+      "changed": false,
+      "coreMs": 0.322643,
+      "baseCoreMs": 0.27398,
+      "penalized": 0
+    }
+  ],
+  "build": {
+    "stableSourceSha256": "73de0d5768fbedd97d46305891a0513f95c7a856aa5aba8edff8a92e2d1798d0",
+    "policySha256": "1cb6718ac510f2ecf5ba9dc166e653b662238e76bb604d5a80674b89dcf78430",
+    "sourceSha256": "be894a5f3af6a96f9c1394a5c89dc464655e410a4b79ef3ba91076f3e5b43c84",
+    "binarySha256": "66c0638fa08f4d096b13f18deb5faf7e13de9e9c52390f2bd29fe66155f9098a",
+    "sanitize": false,
+    "flags": [
+      "-std=c++17",
+      "-O3",
+      "-ffp-contract=off",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic"
+    ],
+    "warnings": ""
+  },
+  "policyAssertions": 10,
+  "hiddenLayoutIsolation": true,
+  "hiddenCaptureRejected": true,
+  "coreDiagnosticsEmpty": true,
+  "stableBinaryUnchanged": true
+}

@@ -9,3 +9,6 @@
 .modes{flex-wrap:wrap}
 #autoToggle{background:#344f45;color:white}
 #knowledge{white-space:pre-line;font-size:12px;line-height:1.9;color:#65735e}
+
+/* The assistance workspace keeps analysis and manual synchronization together. */
+.assist-mode aside{display:flex;flex-direction:column}.assist-mode #editor{order:-3}.assist-mode #analysis{order:-2}.assist-mode #searchControls{order:-1}.assist-mode .play{align-self:start;position:sticky;top:16px}.assist-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.best-move{font-weight:700;color:#344f45!important}#syncPrompt{margin-top:16px;border-color:#b48f37}#syncError{color:#a6382b}#confirmSync,#apply{background:#344f45;color:white}#board.flipped{transform:rotate(180deg)}#board.flipped .cell{transform:rotate(180deg)}#paintTools{margin-top:14px}#paintTools summary{font-size:13px}#applyHelp{font-size:12px}@media(max-width:760px){.assist-mode .play{position:static}.assist-grid{grid-template-columns:1fr 1fr}}

@@ -1,0 +1,44 @@
+{
+  "kind": "HTTP and unit/DOM checks; no real browser rendering",
+  "http": [
+    {
+      "path": "/",
+      "status": 200,
+      "newSyncControls": true
+    },
+    {
+      "path": "/api/status",
+      "status": 200,
+      "sourceSha256": "73de0d5768fbedd97d46305891a0513f95c7a856aa5aba8edff8a92e2d1798d0",
+      "binarySha256": "2304327e3cb91987780ab453fa98db5e17383d32c4c39009649092ee9f14c49b",
+      "active": 0
+    },
+    {
+      "path": "/app.js",
+      "status": 200
+    },
+    {
+      "path": "/editor.js",
+      "status": 200
+    },
+    {
+      "path": "/style.css",
+      "status": 200
+    }
+  ],
+  "unitTests": {
+    "passed": 97,
+    "failed": 0
+  },
+  "browser": {
+    "supportedChromeAvailable": false,
+    "executed": false
+  },
+  "sourceHashes": {
+    "app.js": "9b561dcb8b634aa837d2a136a9ee93f8c32c34d5450cfa5f50d9aedc70be63f7",
+    "editor.js": "daf2ee068aa956ca2fe456d2e3faf916fb304b6c16e4ab1b348fda1a645e2a6a",
+    "index.html": "eb90b84cf68200385845c738c3d057273e1e50e422365bb01ee3a0ff21be444e",
+    "style.css": "debdb46bc9f943f4c099275a84e08efb859354b1649829a8e167702a7934bb2d",
+    "native/search.cpp": "73de0d5768fbedd97d46305891a0513f95c7a856aa5aba8edff8a92e2d1798d0"
+  }
+}

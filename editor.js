@@ -1,4 +1,4 @@
-import {initial,TYPES,inCheck,other} from './engine.js';
+import {initial,TYPES,inCheck,other,legalMoves,move,publicState,positionKey} from './engine.js';
 const count=items=>{let out={R:0,N:0,B:0,A:0,C:0,P:0};for(let t of items)if(t in out)out[t]++;return out;};
 export function parseInventory(text){let input=text.toUpperCase().replace(/[\s,，]/g,''),counts=count([]),seen=new Set(),parts=[...input.matchAll(/([RNBCAP])(\d+)/g)];if(!parts.length||parts.map(m=>m[0]).join('')!==input)return {error:'未知库存格式应为 R2N2B2A2C2P5（未写类型视为0）'};for(let [,t,n] of parts){if(seen.has(t)||Number(n)>5)return {error:'库存类型不能重复，单项数量不得超过初始数量'};seen.add(t);counts[t]=Number(n);}return {counts};}
 export function validatePosition(board,turn,knownCaptured={r:'',b:''},inventory={r:'',b:''}){
@@ -25,4 +25,21 @@ export function validatePosition(board,turn,knownCaptured={r:'',b:''},inventory=
  board.forEach((p,i)=>{if(p?.hidden&&(!start[i]?.hidden||start[i].side!==p.side||start[i].role!==p.role))errors.push('暗子只能放在己方原始非将帅位置，首步角色须与位置一致');});
  if(!errors.length&&inCheck(board,other(turn)))errors.push('非行棋方正被将军：上一手不合法，请更改行棋方或局面');
  return {errors:[...new Set(errors)],state:{board:structuredClone(board),turn,captured,ply:0,quiet:0,result:null,positions:[]}};
+}
+
+// Synchronize only an observed move. Unrevealed identities are never invented.
+export function syncObservedMove(view,m,{revealed,captured}={}){
+ if(!['r','b'].includes(view.viewer))throw Error('请先选择你的执棋方');
+ if(view.result)throw Error('当前局面已结束，请撤回或重新录入');
+ if(view.board.some(p=>p?.hidden&&'type'in p)||view.captured.some(p=>p.hidden&&'type'in p))throw Error('局面含不可见身份');
+ if(!legalMoves(view).some(x=>x.from===m.from&&x.to===m.to))throw Error('这一步不合法，请检查行棋方和局面');
+ const input=structuredClone(view),p=input.board[m.from],q=input.board[m.to];
+ if(!input.positions.length)input.positions=[positionKey(input)];
+ if(p.hidden){if(!/^[RNBCAP]$/.test(revealed||''))throw Error('请填写移动暗子实际揭开的身份');p.type=revealed;}
+ if(q?.hidden&&p.side===view.viewer){if(!/^[RNBCAP]$/.test(captured||''))throw Error('请填写你吃到的暗子身份');q.type=captured;}
+ const next=publicState(move(input,m),view.viewer);
+ const known=side=>next.captured.filter(p=>p.side===side&&!p.hidden).map(p=>p.type).join('');
+ const check=validatePosition(next.board,next.turn,{r:known('r'),b:known('b')});
+ if(check.errors.length)throw Error(check.errors.join('；'));
+ return next;
 }
