@@ -1,0 +1,49 @@
+{
+  "kind": "live arrows, landing identity icons, direct board editing and compact controls",
+  "tests": {
+    "total": 118,
+    "passed": 118,
+    "failed": 0,
+    "ui": 41
+  },
+  "browser": {
+    "supportedChromeAvailable": false,
+    "renderingExecuted": false
+  },
+  "http": [
+    {
+      "path": "/",
+      "status": 200,
+      "identityIcons": true,
+      "piecePicker": true,
+      "directControls": true,
+      "noIdentityOrSideDropdown": true,
+      "compactActions": true
+    },
+    {
+      "path": "/api/status",
+      "status": 200,
+      "sourceSha256": "73de0d5768fbedd97d46305891a0513f95c7a856aa5aba8edff8a92e2d1798d0",
+      "binarySha256": "2304327e3cb91987780ab453fa98db5e17383d32c4c39009649092ee9f14c49b"
+    },
+    {
+      "path": "/app.js",
+      "status": 200
+    },
+    {
+      "path": "/editor.js",
+      "status": 200
+    },
+    {
+      "path": "/style.css",
+      "status": 200
+    }
+  ],
+  "sourceHashes": {
+    "app.js": "f9909ced8c4d6e06b5172c9016d22f5d18d55df2664dad6e1dcc8c8b07dbc761",
+    "editor.js": "525e9f832e9839eb61ad50d71e6a62f7c19e4972e9ea08b87cd1a282fbea6c96",
+    "index.html": "5a9798f50ce8b9d5127d7085abd1d725de8e65de36d6f836f94b9bc05ddc4e51",
+    "style.css": "ba92a508319d5e54129cecf2c0912cb949ebfa9b3e42a9e351f95f41169eb036",
+    "native/search.cpp": "73de0d5768fbedd97d46305891a0513f95c7a856aa5aba8edff8a92e2d1798d0"
+  }
+}

@@ -36,7 +36,7 @@ export function syncObservedMove(view,m,{revealed,captured}={}){
  const input=structuredClone(view),p=input.board[m.from],q=input.board[m.to];
  if(!input.positions.length)input.positions=[positionKey(input)];
  if(p.hidden){if(!/^[RNBCAP]$/.test(revealed||''))throw Error('请填写移动暗子实际揭开的身份');p.type=revealed;}
- if(q?.hidden&&p.side===view.viewer){if(!/^[RNBCAP]$/.test(captured||''))throw Error('请填写你吃到的暗子身份');q.type=captured;}
+ if(q?.hidden&&p.side===view.viewer&&captured){if(!/^[RNBCAP]$/.test(captured))throw Error('被吃暗子身份仅接受车、马、象、士、炮、兵');q.type=captured;}
  const next=publicState(move(input,m),view.viewer);
  const known=side=>next.captured.filter(p=>p.side===side&&!p.hidden).map(p=>p.type).join('');
  const check=validatePosition(next.board,next.turn,{r:known('r'),b:known('b')});

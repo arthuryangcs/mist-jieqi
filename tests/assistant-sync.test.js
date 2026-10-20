@@ -10,10 +10,16 @@ test('辅助盘揭子必须手动填写，取消和缺少身份不会修改原�
  assert.throws(()=>syncObservedMove(s,m),/实际揭开/);assert.deepEqual(s,before);
  const n=syncObservedMove(s,m,{revealed:'R'});assert.equal(n.board[45].type,'R');assert.equal(n.turn,'b');assert.equal(n.ply,1);assert.deepEqual(s,before);
 });
-test('辅助盘己方暗吃暗需要两项身份，只向吃子方保留暗俘',()=>{
- const s=start('r'),m={from:64,to:1};assert.throws(()=>syncObservedMove(s,m,{revealed:'C'}),/吃到的暗子/);
+test('辅助盘填写暗俘时，只向吃子方保留身份',()=>{
+ const s=start('r'),m={from:64,to:1};
  const n=syncObservedMove(s,m,{revealed:'C',captured:'N'});assert.equal(n.board[1].type,'C');assert.equal(n.captured[0].type,'N');assert.equal(n.captured[0].wasHidden,true);
  assert(!('type'in publicState(n,'b').captured[0]));
+});
+test('辅助盘被吃暗子可留空作为未知，移动暗子仍必须填写实际身份',()=>{
+ const s=start('r'),m={from:64,to:1};assert.throws(()=>syncObservedMove(s,m,{captured:'N'}),/实际揭开/);
+ const n=syncObservedMove(s,m,{revealed:'C'});assert.equal(n.board[1].type,'C');assert.equal(n.captured[0].hidden,true);assert.equal(n.captured[0].capturedBy,'r');assert(!('type'in n.captured[0]));
+ assert.throws(()=>syncObservedMove(s,m,{revealed:'C',captured:'K'}),/仅接受/);
+ const checked=validateRequest({token:'unknown-capture-123',timeMs:1000,view:n});assert.equal(checked.view.captured[0].hidden,true);assert(!('type'in checked.view.captured[0]));
 });
 test('辅助盘对手吃己方暗子无需也不接受身份，未知库存仍包含它',()=>{
  const a=syncObservedMove(start('r'),{from:64,to:1},{revealed:'C',captured:'N'});
