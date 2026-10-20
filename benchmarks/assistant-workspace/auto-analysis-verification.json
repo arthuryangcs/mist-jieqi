@@ -1,0 +1,41 @@
+{
+  "kind": "auto analysis and confirmation-only move arrow",
+  "tests": {
+    "total": 105,
+    "passed": 105,
+    "failed": 0,
+    "ui": 29
+  },
+  "browser": {
+    "supportedChromeAvailable": false,
+    "renderingExecuted": false
+  },
+  "http": [
+    {
+      "path": "/",
+      "status": 200,
+      "autoAnalysisChecked": true,
+      "moveArrow": true
+    },
+    {
+      "path": "/api/status",
+      "status": 200,
+      "sourceSha256": "73de0d5768fbedd97d46305891a0513f95c7a856aa5aba8edff8a92e2d1798d0",
+      "binarySha256": "2304327e3cb91987780ab453fa98db5e17383d32c4c39009649092ee9f14c49b"
+    },
+    {
+      "path": "/app.js",
+      "status": 200
+    },
+    {
+      "path": "/style.css",
+      "status": 200
+    }
+  ],
+  "sourceHashes": {
+    "app.js": "c6f5f1e72502238cfd622d078abe9e4f22c99976852618a413888d38a01ef0ea",
+    "index.html": "afc43bf83030756b77495a0bf46669093e8399f6cf57185aa063079e4cb0d4f4",
+    "style.css": "d246e4f0ff3f961de4aef97a105151a20ded65f91f1c9ec31a62266646dec279",
+    "native/search.cpp": "73de0d5768fbedd97d46305891a0513f95c7a856aa5aba8edff8a92e2d1798d0"
+  }
+}

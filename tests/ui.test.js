@@ -1,5 +1,5 @@
 import test from 'node:test';import assert from 'node:assert/strict';
-class Element{constructor(){this.children=[];this.value='';this.disabled=false;this.hidden=false;this.textContent='';this.className='';this.dataset={};this.classList={toggle:()=>{},add:()=>{},remove:()=>{}};}append(...e){this.children.push(...e);}replaceChildren(...e){this.children=e;}setAttribute(k,v){this[k]=v;}querySelectorAll(){return this.children;}}
+class Element{constructor(){this.children=[];this.value='';this.disabled=false;this.hidden=false;this.checked=false;this.textContent='';this.className='';this.dataset={};this.classList={toggle:()=>{},add:()=>{},remove:()=>{}};}append(...e){this.children.push(...e);}replaceChildren(...e){this.children=e;}setAttribute(k,v){this[k]=v;}querySelectorAll(){return this.children;}}
 let cleanupPrevious=null;
 async function setup(){cleanupPrevious?.();const elements=new Map();globalThis.document={getElementById:id=>{if(!elements.has(id))elements.set(id,new Element());return elements.get(id);},createElement:()=>new Element()};let workers=[];globalThis.Worker=class{constructor(){workers.push(this);}postMessage(data){this.data=data;}terminate(){this.terminated=true;}};await import('../app.js?test='+Math.random());let $=id=>document.getElementById(id);$('time').value='6000';cleanupPrevious=()=>{if(!$('stop').disabled)$('stop').onclick();};return {$,workers,click:i=>$('board').children[i].onclick()};}
 test('连续重复点击在思考期间不会重复走子，发往Worker的身份已脱敏',async()=>{let {$,workers,click}=await setup();click(54);click(45);assert.equal(workers.length,1);for(let p of workers[0].data.view.board)if(p?.hidden)assert(!('type'in p));click(56);click(47);assert.equal(workers.length,1);assert.equal($('counter').textContent,'第 1 回合');assert.equal($('status').textContent,'搜索中…');});
@@ -62,4 +62,62 @@ test('辅助盘摆放修正不把私有暗俘变成公开身份，重置会取�
  $('palette').children[0].onclick();click(27);$('assistSide').value='b';$('assistSide').onchange();$('analyze').onclick();
  const view=workers.at(-1).data.view;assert(view.captured.filter(p=>p.side==='b').every(p=>p.hidden&&!('type'in p)));$('stop').onclick();
  $('freshDraft').onclick();$('inputMethod').value='sync';click(54);click(45);assert(!$('syncPrompt').hidden);$('reset').onclick();assert($('syncPrompt').hidden);assert.equal($('board').children[45].children.length,0);assert.match($('status').textContent,/对局辅助/);$('confirmSync').onclick();assert.equal($('board').children[45].children.length,0);$('undo').onclick();assert.match($('status').textContent,/对局辅助/);
+});
+test('辅助盘开启自动分析后进入即搜索，完成后仅推荐而不自动落子或循环',async()=>{
+ const {$,workers}=await setup();$('autoAnalyze').checked=true;$('editMode').onclick();
+ assert.equal(workers.length,0);assert(!$('stop').disabled);await delay(350);assert.equal(workers.length,1);
+ await reply(workers[0],{from:54,to:45});assert.match($('counter').textContent,/已同步 0 步/);assert(!$('apply').disabled);
+ await delay(350);assert.equal(workers.length,1);$('autoAnalyze').checked=false;$('autoAnalyze').onchange();
+});
+test('自动分析等待揭子和暗俘补录完成，只搜索新的脱敏观察',async()=>{
+ const {$,workers,click}=await setup();$('editMode').onclick();click(64);click(1);
+ $('autoAnalyze').checked=true;$('autoAnalyze').onchange();await delay(350);assert.equal(workers.length,0);
+ $('revealType').value='C';$('confirmSync').onclick();await delay(350);assert.equal(workers.length,0);
+ $('captureType').value='N';$('confirmSync').onclick();await delay(350);assert.equal(workers.length,1);
+ const view=workers[0].data.view;assert.equal(view.turn,'b');assert.equal(view.viewer,'r');assert.equal(view.captured[0].type,'N');assert(view.board.every(p=>!p?.hidden||!('type'in p)));
+ $('stop').onclick();assert.equal($('autoAnalyze').checked,false);assert(workers[0].terminated);
+});
+test('连续修改防抖只启动最新预算，修改后丢弃旧结果，非法局面不启动',async()=>{
+ const {$,workers}=await setup();$('autoAnalyze').checked=true;$('editMode').onclick();
+ for(const value of ['1000','2000','15000']){$('time').value=value;$('time').onchange();}
+ await delay(350);assert.equal(workers.length,1);assert.equal(workers[0].data.timeMs,15000);const old=workers[0];
+ $('time').value='6000';$('time').onchange();assert(old.terminated);await reply(old,{from:54,to:45});assert($('analysis').hidden);
+ await delay(350);assert.equal(workers.length,2);assert.equal(workers[1].data.timeMs,6000);
+ $('deadRed').value='X';$('deadRed').onchange();assert(workers[1].terminated);await delay(350);assert.equal(workers.length,2);assert($('analysis').hidden);
+ $('stop').onclick();
+});
+test('自动分析可在等待期关闭；切换模式或停止不会迟到启动',async()=>{
+ const {$,workers}=await setup();$('autoAnalyze').checked=true;$('editMode').onclick();$('stop').onclick();
+ await delay(350);assert.equal(workers.length,0);assert.equal($('autoAnalyze').checked,false);
+ $('autoAnalyze').checked=true;$('autoAnalyze').onchange();$('playMode').onclick();await delay(350);assert.equal(workers.length,0);
+ $('editMode').onclick();await delay(350);assert.equal(workers.length,1);$('autoAnalyze').checked=false;$('autoAnalyze').onchange();assert(workers[0].terminated);
+ await reply(workers[0]);assert($('analysis').hidden);await delay(350);assert.equal(workers.length,1);
+});
+test('撤回与重置会取消旧自动搜索并更新局面，暂停后不再自动恢复',async()=>{
+ const {$,workers,click}=await setup();$('editMode').onclick();click(54);click(45);$('revealType').value='R';$('confirmSync').onclick();
+ $('autoAnalyze').checked=true;$('autoAnalyze').onchange();await delay(350);assert.equal(workers.length,1);assert.equal(workers[0].data.view.ply,1);
+ $('undo').onclick();assert(workers[0].terminated);await delay(350);assert.equal(workers.length,2);assert.equal(workers[1].data.view.ply,0);
+ $('reset').onclick();assert(workers[1].terminated);await reply(workers[1]);assert($('analysis').hidden);await delay(350);assert.equal(workers.length,3);
+ $('stop').onclick();$('reset').onclick();await delay(350);assert.equal(workers.length,3);
+});
+test('同步推荐时棋盘用箭头标出起点与落点，补录期间保留，确认后消失',async()=>{
+ const {$,workers}=await setup();$('editMode').onclick();$('analyze').onclick();await reply(workers[0],{from:54,to:45});$('apply').onclick();
+ assert.match($('board').children[54].className,/move-from/);assert.equal($('board').children[54].dataset.moveLabel,'起点');
+ assert.match($('board').children[45].className,/move-to/);assert.equal($('board').children[45].dataset.moveLabel,'落点');
+ assert.match($('moveHint').textContent,/待同步：红暗兵.*1列7行 → 1列6行/);assert(!$('moveHint').hidden);
+ assert(!$('moveArrowLayer').hidden);assert($('moveArrow').y1>$('moveArrow').y2);$('revealType').value='R';$('confirmSync').onclick();assert($('moveHint').hidden);assert($('moveArrowLayer').hidden);assert(!/move-from|move-to/.test($('board').children[54].className));
+ $('undo').onclick();assert($('moveHint').hidden);assert(!/move-from|move-to/.test($('board').children[54].className));
+});
+test('取消待同步推荐与重置会清除标记，翻转棋盘不改变起终点',async()=>{
+ const {$,workers}=await setup();$('editMode').onclick();$('analyze').onclick();await reply(workers[0],{from:54,to:45});$('apply').onclick();
+ const hint=$('moveHint').textContent;const x=$('moveArrow').x1,y=$('moveArrow').y1;$('flipBoard').onclick();assert.equal($('moveArrow').x1,x);assert.equal($('moveArrow').y1,y);assert.equal($('moveHint').textContent,hint);assert.match($('board').children[54].className,/move-from/);
+ $('cancelSync').onclick();assert($('moveHint').hidden);assert($('moveArrowLayer').hidden);assert.equal($('board').children[54].children[0].textContent,'');
+ $('reset').onclick();assert($('moveHint').hidden);
+});
+test('明子推荐也先展示箭头等待确认，确认后清除并自动分析新局面',async()=>{
+ const {$,workers,click}=await setup();$('editMode').onclick();click(54);click(45);$('revealType').value='R';$('confirmSync').onclick();
+ click(27);click(36);$('revealType').value='P';$('confirmSync').onclick();$('analyze').onclick();await reply(workers[0],{from:45,to:46});
+ $('autoAnalyze').checked=true;$('autoAnalyze').onchange();$('apply').onclick();assert(!$('moveArrowLayer').hidden);assert($('revealLabel').hidden);assert($('captureLabel').hidden);
+ assert($('moveArrow').x1<$('moveArrow').x2);assert.equal($('moveArrow').y1,$('moveArrow').y2);await delay(350);assert.equal(workers.length,1);assert.equal($('board').children[45].children[0].textContent,'车');
+ $('confirmSync').onclick();assert($('moveArrowLayer').hidden);assert($('moveHint').hidden);assert.equal($('board').children[46].children[0].textContent,'车');await delay(350);assert.equal(workers.length,2);assert.equal(workers[1].data.view.board[46].type,'R');$('stop').onclick();
 });
