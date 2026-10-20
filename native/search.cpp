@@ -216,7 +216,7 @@ double revealOrder(const State& view,const std::vector<Piece>& captured,Move m) 
     return 3*(after/pool.size()-before);
 }
 struct Row {
-    Move move;double score=0,spread=0,winRate=0;int wins=0,losses=0,repetitions=0;bool draw=false;
+    Move move;double score=0,spread=0,winRate=0;int wins=0,losses=0,repetitions=0;bool draw=false,repetitionLoss=false;
 };
 Row summarize(Move m,const std::vector<double>& scores,bool uncertain) {
     Row row;row.move=m;double probability=0,mean=0;
@@ -229,7 +229,7 @@ Row summarize(Move m,const std::vector<double>& scores,bool uncertain) {
 struct Packet {
     std::string mode;int depth=0,turn=0,viewer=-1;double budget=0;uint64_t nodeLimit=0;
     Board view;std::vector<Piece> captured;std::vector<Board> worlds;
-    std::array<int,8100> repetitions{};std::array<bool,8100> draws{};
+    std::array<int,8100> repetitions{};std::array<int,8100> outcomes{};
 };
 Piece readPiece() {
     Piece p;int hidden;if(!(std::cin>>p.side>>p.type>>p.role>>hidden))throw std::runtime_error("truncated piece");p.hidden=hidden!=0;
@@ -242,7 +242,7 @@ bool read(Packet& p) {
     if((p.mode!="SEARCH"&&p.mode!="STREAM"&&p.mode!="VERIFY")||p.depth<0||p.depth>8||!std::isfinite(p.budget)||p.budget<0||p.budget>300000||p.turn<0||p.turn>1||p.viewer< -1||p.viewer>1||captured<0||captured>32||worlds<1||worlds>30||metadata<0||metadata>8100)throw std::runtime_error("header out of range");
     for(auto& v:p.view)v=readPiece();for(int i=0;i<captured;i++)p.captured.push_back(readPiece());
     p.worlds.resize(worlds);for(auto& w:p.worlds)for(auto& v:w){v=readPiece();if(v.live()&&(v.type<0||(v.hidden&&v.role<0)))throw std::runtime_error("incomplete sample");}
-    for(int i=0;i<metadata;i++){int f,t,count,draw;if(!(std::cin>>f>>t>>count>>draw))throw std::runtime_error("truncated root metadata");if(f<0||f>=90||t<0||t>=90||count<0||draw<0||draw>1)throw std::runtime_error("root metadata out of range");p.repetitions[f*90+t]=count;p.draws[f*90+t]=draw;}
+    for(int i=0;i<metadata;i++){int f,t,count,outcome;if(!(std::cin>>f>>t>>count>>outcome))throw std::runtime_error("truncated root metadata");if(f<0||f>=90||t<0||t>=90||count<0||outcome<0||outcome>2)throw std::runtime_error("root metadata out of range");p.repetitions[f*90+t]=count;p.outcomes[f*90+t]=outcome;}
     return true;
 }
 struct Timeout {};
@@ -291,7 +291,7 @@ void writeMove(Move m){if(m.from<0)std::cout<<"null";else std::cout<<"{\"from\":
 void writeMoves(const std::vector<Move>& moves){std::cout<<'[';bool comma=false;for(auto m:moves){if(comma)std::cout<<',';comma=true;writeMove(m);}std::cout<<']';}
 void writeRows(const std::vector<Row>& rows) {
     std::cout<<'[';bool comma=false;for(const Row& r:rows){if(comma)std::cout<<',';comma=true;
-        std::cout<<"{\"from\":"<<r.move.from<<",\"to\":"<<r.move.to<<",\"score\":"<<r.score<<",\"spread\":"<<r.spread<<",\"heuristicWinRate\":"<<r.winRate<<",\"sampleWins\":"<<r.wins<<",\"sampleLosses\":"<<r.losses<<",\"repetitionCount\":"<<r.repetitions;if(r.draw)std::cout<<",\"draw\":true";std::cout<<'}';}
+        std::cout<<"{\"from\":"<<r.move.from<<",\"to\":"<<r.move.to<<",\"score\":"<<r.score<<",\"spread\":"<<r.spread<<",\"heuristicWinRate\":"<<r.winRate<<",\"sampleWins\":"<<r.wins<<",\"sampleLosses\":"<<r.losses<<",\"repetitionCount\":"<<r.repetitions;if(r.draw)std::cout<<",\"draw\":true";if(r.repetitionLoss)std::cout<<",\"repetitionLoss\":true";std::cout<<'}';}
     std::cout<<']';
 }
 void run(const Packet& p) {
@@ -325,7 +325,7 @@ void run(const Packet& p) {
     };
     for(int depth=1;depth<=p.depth;depth++) {
         std::vector<Row> rows;
-        try {for(Move m:root){Row row;if(p.draws[m.index()]){row=summarize(m,{0},uncertain);row.draw=true;}else{std::vector<double> scores;if(parallel){scores=parallelScores(m,depth-1);}else for(State& w:s.worlds){if(s.elapsed()>s.limit)throw Timeout{};Undo old=push(w,m);double v;try{v=-s.search(w,depth-1,-inf,inf,1);}catch(...){pop(w,m,old);throw;}pop(w,m,old);scores.push_back(v);}row=summarize(m,scores,uncertain);}row.repetitions=p.repetitions[m.index()];rows.push_back(row);}}
+        try {for(Move m:root){Row row;if(p.outcomes[m.index()]){const bool loss=p.outcomes[m.index()]==2;row=summarize(m,{loss?-mate+1.0:0.0},uncertain);row.draw=!loss;row.repetitionLoss=loss;}else{std::vector<double> scores;if(parallel){scores=parallelScores(m,depth-1);}else for(State& w:s.worlds){if(s.elapsed()>s.limit)throw Timeout{};Undo old=push(w,m);double v;try{v=-s.search(w,depth-1,-inf,inf,1);}catch(...){pop(w,m,old);throw;}pop(w,m,old);scores.push_back(v);}row=summarize(m,scores,uncertain);}row.repetitions=p.repetitions[m.index()];rows.push_back(row);}}
         catch(const Timeout&){interrupted=depth;break;}
         std::stable_sort(rows.begin(),rows.end(),[](const Row& a,const Row& b){return a.score>b.score;});
         iterations.push_back({depth,s.nodes,s.elapsed(),rows});

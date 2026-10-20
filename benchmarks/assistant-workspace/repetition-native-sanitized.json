@@ -1,0 +1,159 @@
+{
+  "build": {
+    "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+    "flags": [
+      "-std=c++17",
+      "-O1",
+      "-g",
+      "-fsanitize=address,undefined",
+      "-fno-omit-frame-pointer",
+      "-DMIST_VERIFY_RESTORE",
+      "-ffp-contract=off",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-isystem",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+    ],
+    "threads": 4,
+    "independentWorldSearch": true,
+    "architecture": "x64",
+    "sourceSha256": "94dab5ee87ff8996fcf9e8f93070a8012866926822611eb0f84f6bd3607e1b2c",
+    "binarySha256": "7a895880b87a9637ad80f21de1a905a96b7005e45e71f6c5fd25b6ea8271a911",
+    "sanitize": true,
+    "compilerWarnings": ""
+  },
+  "cases": [
+    {
+      "turn": "r",
+      "hidden": false,
+      "priorOccurrences": 1,
+      "samples": 1,
+      "nodesEqual": true,
+      "candidates": 46,
+      "maxDifference": 0,
+      "repetitionLoss": false,
+      "score": -4,
+      "move": {
+        "from": 64,
+        "to": 67
+      },
+      "passed": true
+    },
+    {
+      "turn": "r",
+      "hidden": false,
+      "priorOccurrences": 2,
+      "samples": 1,
+      "nodesEqual": true,
+      "candidates": 46,
+      "maxDifference": 0,
+      "repetitionLoss": true,
+      "score": -98999,
+      "move": {
+        "from": 64,
+        "to": 67
+      },
+      "passed": true
+    },
+    {
+      "turn": "r",
+      "hidden": true,
+      "priorOccurrences": 1,
+      "samples": 4,
+      "nodesEqual": true,
+      "candidates": 46,
+      "maxDifference": 0,
+      "repetitionLoss": false,
+      "score": -40.00000000000005,
+      "move": {
+        "from": 64,
+        "to": 67
+      },
+      "passed": true
+    },
+    {
+      "turn": "r",
+      "hidden": true,
+      "priorOccurrences": 2,
+      "samples": 4,
+      "nodesEqual": true,
+      "candidates": 46,
+      "maxDifference": 0,
+      "repetitionLoss": true,
+      "score": -3594.878728264789,
+      "move": {
+        "from": 64,
+        "to": 67
+      },
+      "passed": true
+    },
+    {
+      "turn": "b",
+      "hidden": false,
+      "priorOccurrences": 1,
+      "samples": 1,
+      "nodesEqual": true,
+      "candidates": 46,
+      "maxDifference": 0,
+      "repetitionLoss": false,
+      "score": -4,
+      "move": {
+        "from": 19,
+        "to": 22
+      },
+      "passed": true
+    },
+    {
+      "turn": "b",
+      "hidden": false,
+      "priorOccurrences": 2,
+      "samples": 1,
+      "nodesEqual": true,
+      "candidates": 46,
+      "maxDifference": 0,
+      "repetitionLoss": true,
+      "score": -98999,
+      "move": {
+        "from": 19,
+        "to": 22
+      },
+      "passed": true
+    },
+    {
+      "turn": "b",
+      "hidden": true,
+      "priorOccurrences": 1,
+      "samples": 4,
+      "nodesEqual": true,
+      "candidates": 46,
+      "maxDifference": 0,
+      "repetitionLoss": false,
+      "score": -40.00000000000005,
+      "move": {
+        "from": 19,
+        "to": 22
+      },
+      "passed": true
+    },
+    {
+      "turn": "b",
+      "hidden": true,
+      "priorOccurrences": 2,
+      "samples": 4,
+      "nodesEqual": true,
+      "candidates": 46,
+      "maxDifference": 0,
+      "repetitionLoss": true,
+      "score": -3594.878728264789,
+      "move": {
+        "from": 19,
+        "to": 22
+      },
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "invalidOutcomeRejected": true,
+  "runtimeStderr": ""
+}

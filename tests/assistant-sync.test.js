@@ -42,3 +42,7 @@ test('辅助盘同步后的真实观察可通过C++服务公开信息校验，�
  assert.deepEqual(checked.view.board,b.board);assert.equal(checked.view.ply,2);assert.equal(checked.view.positions.length,3);
  assert.equal(checked.view.captured[0].wasHidden,true);assert(!('type'in checked.view.captured[1]));
 });
+test('辅助盘真实同步保留重复记录并判负，结束后不能继续同步',()=>{
+ let s=start('r');s.board=s.board.map(p=>p?{...p,hidden:false,type:p.role}:null);const cycle=[{from:82,to:63},{from:1,to:18},{from:63,to:82},{from:18,to:1}];
+ for(let i=0;i<8;i++){s=syncObservedMove(s,cycle[i%4]);if(i<7)assert.equal(s.result,null);}assert.deepEqual(s.result,{winner:'r',text:'黑方重复局面判负'});assert.throws(()=>syncObservedMove(s,cycle[0]),/已结束/);
+});

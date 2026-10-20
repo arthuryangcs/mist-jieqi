@@ -1,0 +1,90 @@
+{
+  "kind": "threefold mover loss and numbered candidate arrows",
+  "tests": {
+    "total": 130,
+    "passed": 130,
+    "failed": 0,
+    "ui": 48
+  },
+  "structure": {
+    "uniqueIds": true,
+    "svgReferencesResolved": true
+  },
+  "browser": {
+    "supportedChromeAvailable": false,
+    "renderingExecuted": false
+  },
+  "http": [
+    {
+      "path": "/",
+      "status": 200,
+      "numberedCandidates": true
+    },
+    {
+      "path": "/api/status",
+      "status": 200,
+      "health": {
+        "engine": "cpp-native",
+        "sourceSha256": "94dab5ee87ff8996fcf9e8f93070a8012866926822611eb0f84f6bd3607e1b2c",
+        "binarySha256": "5c68913e2035093465cb3807ea81604839023daa884d0c0c66ba65f5958a2d23",
+        "maxThreads": 4,
+        "independentWorldSearch": true,
+        "transport": "loopback-http",
+        "protocol": 2,
+        "active": 0,
+        "completed": 0,
+        "aborted": 9
+      }
+    },
+    {
+      "path": "/app.js",
+      "status": 200
+    },
+    {
+      "path": "/engine.js",
+      "status": 200
+    },
+    {
+      "path": "/ai.js",
+      "status": 200
+    },
+    {
+      "path": "/editor.js",
+      "status": 200
+    },
+    {
+      "path": "/style.css",
+      "status": 200
+    }
+  ],
+  "searchChecks": [
+    {
+      "kind": "reachable seven-ply cycle",
+      "avoidedMove": {
+        "from": 18,
+        "to": 1
+      },
+      "move": {
+        "from": 25,
+        "to": 24
+      },
+      "depth": 4,
+      "passed": true
+    },
+    {
+      "kind": "synthetic all-root repetition-loss metadata",
+      "score": -98999,
+      "repetitionLoss": true,
+      "passed": true
+    }
+  ],
+  "sourceHashes": {
+    "app.js": "c939a6dd32616bad30ab2c8d32c6c6f28575d49f67275b3f9ef8780b26ce48e3",
+    "index.html": "82d208e4f0de0b4e688b62b501bb2eb35b8cac309742314deb487e971fa15544",
+    "style.css": "6d99b9dd5e2d2be2ea08bb0d0cab9c5c3c5f918af069d5bdc5a9b79bbc89bee9",
+    "engine.js": "9250d5440b8572c3473a84c0dec0284c99098387bb16a14a5dc259ac27ce510b",
+    "ai.js": "223a1027a4c19c6d01628b2e37e82d2ba3ad9ee588c1bf29e0c2710adc554726",
+    "native/bridge.mjs": "1ba71013573be4b3bd89753def3b778d5a171e9f0de49a111594222d8b4bfb5d",
+    "native/search.cpp": "94dab5ee87ff8996fcf9e8f93070a8012866926822611eb0f84f6bd3607e1b2c"
+  }
+}

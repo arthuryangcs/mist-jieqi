@@ -206,3 +206,20 @@ test('吃子区跟随观战信息视角，只改变显示不改变搜索输入',
  const {$,workers}=await setup();$('autoMode').onclick();$('autoStep').onclick();await reply(workers[0],{from:64,to:1});const known=$('capturedBottomPieces').children[0].textContent;assert.notEqual(known,'?');
  $('autoStep').onclick();const payload=structuredClone(workers[1].data.view);assert.equal($('capturedBottomPieces').children[0].textContent,'?');$('viewSide').value='r';$('viewSide').onchange();assert.equal($('capturedBottomPieces').children[0].textContent,known);assert.deepEqual(workers[1].data.view,payload);$('stop').onclick();
 });
+test('搜索结束后显示编号灰色候选，搜索中只显示主推荐，待确认时隐藏其他走法',async()=>{
+ const {$,workers}=await setup();$('editMode').onclick();$('analyze').onclick();const w=workers[0],candidates=[54,56,58,60,62].map((from,i)=>({from,to:from-9,score:50-i,spread:0})),result={move:{from:54,to:45},candidates,score:50,depth:2,samples:8,nodes:100,elapsedMs:10};
+ w.onmessage({data:{id:w.data.id,progress:true,result}});assert.equal($('alternativeMove2').style.display,'none');assert.equal($('moveArrowNumber').style.display,'none');
+ w.onmessage({data:{id:w.data.id,result}});assert.equal($('moveArrowNumber').textContent,'1');assert.equal($('moveArrowNumber').style.display,'');for(let rank=2;rank<=5;rank++){assert.equal($('alternativeMove'+rank).style.display,'');assert.equal($('alternativeNumber'+rank).textContent,String(rank));assert.equal(Number($('alternativeArrow'+rank).x1),candidates[rank-1].from%9+.5);}
+ $('apply').onclick();assert.equal($('alternativeMove2').style.display,'none');assert.equal($('moveArrowNumber').style.display,'none');$('cancelSync').onclick();assert($('moveArrowLayer').hidden);
+});
+test('候选箭头不重复主推荐，不残留旧数量，翻转时数字保持正向',async()=>{
+ const {$,workers}=await setup();$('editMode').onclick();$('analyze').onclick();const w=workers[0],result={move:{from:54,to:45},candidates:[{from:54,to:45,score:1,spread:0},{from:56,to:47,score:0,spread:0}],score:1,depth:1,samples:8,nodes:1,elapsedMs:1};w.onmessage({data:{id:w.data.id,result}});
+ assert.equal($('alternativeMove2').style.display,'');assert.equal($('alternativeMove3').style.display,'none');$('flipBoard').onclick();assert.match($('alternativeNumber2').transform,/^rotate\(180 /);assert.match($('moveArrowNumber').transform,/^rotate\(180 /);$('reset').onclick();assert($('moveArrowLayer').hidden);assert.equal($('alternativeMove2').style.display,'none');
+});
+test('对手私人搜索完成后不会向玩家展示候选箭头',async()=>{
+ const {$,workers,click}=await setup();click(54);click(45);const w=workers[0];w.onmessage({data:{id:w.data.id,result:{move:{from:27,to:36},candidates:[{from:27,to:36,score:1,spread:0},{from:29,to:38,score:0,spread:0}],score:1,depth:1,samples:8,nodes:1,elapsedMs:1}}});assert($('moveArrowLayer').hidden);assert.equal($('alternativeMove2').style.display,'none');
+});
+test('辅助盘第三次重复展示判负并停止分析，撤回后恢复可操作',async()=>{
+ const {$,click}=await setup();$('editMode').onclick();const cycle=[{from:82,to:63},{from:1,to:18},{from:63,to:82},{from:18,to:1}];for(let i=0;i<10;i++){const m=cycle[i%4];click(m.from);click(m.to);if(i<2){$('revealType').value='N';$('confirmSync').onclick();}}
+ assert.match($('status').textContent,/红方获胜.*黑方重复局面判负/);assert($('analyze').disabled);$('undo').onclick();assert(!/判负/.test($('status').textContent));assert(!$('analyze').disabled);
+});
