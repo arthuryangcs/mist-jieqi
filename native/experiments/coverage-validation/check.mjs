@@ -1,0 +1,20 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';import {performance} from 'node:perf_hooks';
+import {ClockNative,ClockPika} from './engines.mjs';import {binary,dir,verifyBinaries,hash,safeRoots,stableBinary} from './common.mjs';
+import {initial,publicState,legalMoves,move,positionKey} from '../../../engine.js';import {seeded} from '../../../ai.js';import {fixture,Native,compare,encode} from '../../bridge.mjs';import {fen} from '../../../scripts/external-engine.js';
+verifyBinaries();fs.mkdirSync(dir,{recursive:true});const record={passed:false,checks:[],defaultBinarySha256:hash(binary)};
+class StallWire {
+ constructor(){this.ready=Promise.resolve();this.initializationMs=0;this.exited=new Promise(r=>this.exit=r);this.reaped=new Promise(r=>this.reap=r);}
+ async request(f,opts){assert(f.view.board.every(p=>!p?.hidden||!('type'in p)));const m=legalMoves(f.view)[0];this.progress=setTimeout(()=>opts.onProgress({move:m,depth:1,nodes:1,samples:f.samples,elapsedMs:1,allCandidates:[{...m,score:0}]}),2);return new Promise(()=>{});}
+ stop(){clearTimeout(this.progress);this.exitAt=this.closeAt=performance.now();this.exit();this.reap();}
+ async close(){this.stop();}
+}
+try{
+ const view=publicState(initial(seeded(17)),'r');assert.equal(encode(fixture(publicState(initial(seeded(1)),'r'))),encode(fixture(publicState(initial(seeded(999)),'r'))));record.checks.push({name:'hidden identity isolation',passed:true});
+ const faults=[];for(const reserveMs of [0,40]){const c=new ClockNative({binary,reserveMs,fault:{reapDelayMs:80},wireFactory:()=>new StallWire()});try{const r=await c.search(view,200);assert.equal(r.depth,1);assert(r.deadlineStop);assert(!r.fallbackUsed);faults.push({reserveMs,elapsedMs:r.elapsedMs,overGrace:r.elapsedMs>260,clock:r.clock});}finally{await c.close();}}assert(faults[0].overGrace);assert(!faults[1].overGrace);record.faultRecovery=faults;record.checks.push({name:'40ms reserve covers injected 80ms cleanup inside 60ms common grace',passed:true});
+ const stressed=new ClockNative({binary,reserveMs:40,fault:{stallMs:180},wireFactory:()=>new StallWire()});try{const r=await stressed.search(view,200);assert(r.elapsedMs>260);record.stallLimit={elapsedMs:r.elapsedMs,timerLateMs:r.clock.timerLateMs,hardRealtime:false};}finally{await stressed.close();}record.checks.push({name:'long host stall remains a reported limitation',passed:true});
+ const live=new ClockNative({binary,reserveMs:40});try{const r=await live.search(view,1000);assert(r.depth>=1);assert(legalMoves(view).some(m=>m.from===r.move.from&&m.to===r.move.to));record.nativeSmoke={depth:r.depth,elapsedMs:r.elapsedMs,fallbackUsed:r.fallbackUsed};}finally{await live.close();}
+ let cycle=initial(seeded(17));cycle.board=cycle.board.map(p=>p?{...p,type:p.role,hidden:false}:null);cycle.positions=[positionKey(cycle)];for(const m of [{from:82,to:63},{from:1,to:18},{from:63,to:82},{from:18,to:1},{from:82,to:63},{from:1,to:18},{from:63,to:82}])cycle=move(cycle,m);assert.equal(safeRoots(cycle).excluded,1);assert(!safeRoots(cycle).moves.some(m=>m.from===18&&m.to===1));record.checks.push({name:'new threefold mover-loss root whitelist',passed:true});
+ const f=fixture(view,{samples:8,seed:6101}),a=new Native({binary}),b=new Native({binary});try{const x=await a.request(f,{depth:2,nodeLimit:30000}),y=await b.request(f,{depth:2,nodeLimit:30000});record.fixedTree={requestedDepth:2,completedDepth:x.depth,nodeLimit:30000,...compare(x,y)};assert(x.depth>=1);}finally{await a.close();await b.close();}
+ const pika=new ClockPika({reserveMs:40});try{await pika.init();const allowed=safeRoots(view).moves.slice(0,1),r=await pika.search(fen(view),[],500,fen(view),{searchMoves:allowed});assert.deepEqual(r.move,allowed[0]);record.pikaSmoke={move:r.move,elapsedMs:r.elapsedMs,whitelistedRoots:1};}finally{await pika.stopAndClose();}
+ assert.equal(hash(binary),stableBinary);record.passed=true;
+}finally{fs.writeFileSync(dir+'/check.json',JSON.stringify(record,null,2)+'\n');console.log(JSON.stringify({passed:record.passed,checks:record.checks.length,native:record.nativeSmoke,stallLimit:record.stallLimit}));}

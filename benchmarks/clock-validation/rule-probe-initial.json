@@ -1,0 +1,8 @@
+{
+  "passed": false,
+  "fixture": "All pieces shown in original roles;7 legal knight-cycle plies;no unknown inventory",
+  "error": "Pika public board/stock mismatch",
+  "diagnosis": "Fixed opponent Position::fen() emits an empty stock field when inventory is empty; adapter expects dash. Frozen match adapter was not changed. Supplemental probe fixture corrected to a partially hidden start.",
+  "sourceSha256": "0d6942fa0d95a2f94ab6c67b45b23885c9d882a83dc4a932cc7b86089e5c7fe5",
+  "matchResultsAffected": false
+}

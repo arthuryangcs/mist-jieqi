@@ -1,0 +1,10 @@
+import fs from 'node:fs';import path from 'node:path';import {createHash} from 'node:crypto';
+import {legalMoves,rootRules} from '../../../engine.js';
+export const dir='benchmarks/clock-validation',cache='.cache/clock-validation',binary=path.resolve('.cache/native/mist-core');
+export const stableSource='94dab5ee87ff8996fcf9e8f93070a8012866926822611eb0f84f6bd3607e1b2c',stableBinary='5c68913e2035093465cb3807ea81604839023daa884d0c0c66ba65f5958a2d23',pikaHash='f32d3c6dfe4d6d90da7728d9cc2af68c3195a1cefb1bc28f3829f174c518dba1';
+export const sha=x=>createHash('sha256').update(x).digest('hex'),hash=p=>sha(fs.readFileSync(p));
+export function verifyBinaries(){if(hash('native/search.cpp')!==stableSource||hash(binary)!==stableBinary)throw Error('Stable core changed');const p=process.env.JIEQI_ENGINE_PATH;if(!p||hash(p)!==pikaHash)throw Error('Use the previously approved fixed Pika binary');return p;}
+export function safeRoots(view){const ms=legalMoves(view),safe=ms.filter(m=>view.board[m.from].hidden||!rootRules(view,m).loss);return {moves:safe.length?safe:ms,excluded:safe.length?ms.length-safe.length:0};}
+export function summary(games){const finished=games.filter(g=>g.result),wins=finished.filter(g=>g.result.winner===g.candidateSide).length,losses=finished.filter(g=>g.result.winner&&g.result.winner!==g.candidateSide).length,draws=finished.filter(g=>g.result.status==='draw').length,unresolved=finished.filter(g=>g.result.status==='unresolved').length;return {games:finished.length,wins,draws,losses,unresolved,scoreRate:unresolved?null:finished.length?(wins+.5*draws)/finished.length:null,technical:finished.filter(g=>g.result.technicalForfeit).map(g=>({seed:g.seed,candidateSide:g.candidateSide,...g.result}))};}
+
+export function acquireLock(){fs.mkdirSync(cache,{recursive:true});const file=cache+'/run.lock',fd=fs.openSync(file,'wx');fs.writeFileSync(fd,JSON.stringify({pid:process.pid,startedAt:new Date().toISOString()}));fs.closeSync(fd);const release=()=>{try{if(JSON.parse(fs.readFileSync(file)).pid===process.pid)fs.unlinkSync(file);}catch{}};process.once('exit',release);return release;}

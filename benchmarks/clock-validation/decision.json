@@ -1,0 +1,208 @@
+{
+  "adopted": false,
+  "defaultSourceUnchanged": true,
+  "defaultBinaryUnchanged": true,
+  "stats": {
+    "internal": {
+      "games": 4,
+      "wins": 2,
+      "draws": 0,
+      "losses": 2,
+      "unresolved": 0,
+      "scoreRate": 0.5,
+      "technical": []
+    },
+    "baseline": {
+      "games": 4,
+      "wins": 1,
+      "draws": 0,
+      "losses": 3,
+      "unresolved": 0,
+      "scoreRate": 0.25,
+      "technical": []
+    },
+    "trial": {
+      "games": 4,
+      "wins": 1,
+      "draws": 0,
+      "losses": 3,
+      "unresolved": 0,
+      "scoreRate": 0.25,
+      "technical": []
+    }
+  },
+  "bySide": {
+    "r": {
+      "internal": {
+        "games": 2,
+        "wins": 0,
+        "draws": 0,
+        "losses": 2,
+        "unresolved": 0,
+        "scoreRate": 0,
+        "technical": []
+      },
+      "baseline": {
+        "games": 2,
+        "wins": 1,
+        "draws": 0,
+        "losses": 1,
+        "unresolved": 0,
+        "scoreRate": 0.5,
+        "technical": []
+      },
+      "trial": {
+        "games": 2,
+        "wins": 1,
+        "draws": 0,
+        "losses": 1,
+        "unresolved": 0,
+        "scoreRate": 0.5,
+        "technical": []
+      }
+    },
+    "b": {
+      "internal": {
+        "games": 2,
+        "wins": 2,
+        "draws": 0,
+        "losses": 0,
+        "unresolved": 0,
+        "scoreRate": 1,
+        "technical": []
+      },
+      "baseline": {
+        "games": 2,
+        "wins": 0,
+        "draws": 0,
+        "losses": 2,
+        "unresolved": 0,
+        "scoreRate": 0,
+        "technical": []
+      },
+      "trial": {
+        "games": 2,
+        "wins": 0,
+        "draws": 0,
+        "losses": 2,
+        "unresolved": 0,
+        "scoreRate": 0,
+        "technical": []
+      }
+    }
+  },
+  "timings": {
+    "baseline": {
+      "attempts": 242,
+      "p50Ms": 1001.5332719999969,
+      "p95Ms": 1002.9171600000009,
+      "maxMs": 1004.4602349999996,
+      "overGrace": 0
+    },
+    "trial": {
+      "attempts": 225,
+      "p50Ms": 961.1274359999989,
+      "p95Ms": 963.1191220000037,
+      "maxMs": 998.5398330000003,
+      "overGrace": 0
+    },
+    "pika": {
+      "attempts": 223,
+      "p50Ms": 959.2499989999997,
+      "p95Ms": 960.349970999996,
+      "maxMs": 970.1818950000006,
+      "overGrace": 0
+    }
+  },
+  "technical": [],
+  "repetitionDiagnostics": [
+    {
+      "index": 6,
+      "seed": 2026102103,
+      "kind": "internal",
+      "engine": "trial",
+      "candidateSide": "r",
+      "roots": [
+        {
+          "from": 67,
+          "to": 76,
+          "priorOccurrences": 2,
+          "loss": true
+        }
+      ],
+      "lastDepth": 8,
+      "lastNodes": 0
+    },
+    {
+      "index": 8,
+      "seed": 2026102103,
+      "kind": "pika",
+      "engine": "trial",
+      "candidateSide": "r",
+      "roots": [
+        {
+          "from": 22,
+          "to": 13,
+          "priorOccurrences": 2,
+          "loss": true
+        }
+      ],
+      "lastDepth": null,
+      "lastNodes": null
+    }
+  ],
+  "ruleProbe": {
+    "passed": true,
+    "historyPlies": 9,
+    "excludedRepeatRoots": 1,
+    "forbiddenImmediateLoss": {
+      "from": 1,
+      "to": 18
+    },
+    "returnedMove": {
+      "from": 7,
+      "to": 24
+    },
+    "elapsedMs": 960.2737570000002,
+    "binarySha256": "f32d3c6dfe4d6d90da7728d9cc2af68c3195a1cefb1bc28f3829f174c518dba1",
+    "probeSha256": "2953a0ef034c9580a4f53e403d147f52051add5a80b4d3c811182c021b1186ab"
+  },
+  "normalOnly": {
+    "internal": {
+      "games": 4,
+      "wins": 2,
+      "draws": 0,
+      "losses": 2,
+      "unresolved": 0,
+      "scoreRate": 0.5,
+      "technical": []
+    },
+    "baseline": {
+      "games": 4,
+      "wins": 1,
+      "draws": 0,
+      "losses": 3,
+      "unresolved": 0,
+      "scoreRate": 0.25,
+      "technical": []
+    },
+    "trial": {
+      "games": 4,
+      "wins": 1,
+      "draws": 0,
+      "losses": 3,
+      "unresolved": 0,
+      "scoreRate": 0.25,
+      "technical": []
+    }
+  },
+  "limitations": [
+    "Two correlated paired layouts only",
+    "No existing 8+20 adoption gate completed",
+    "No hard realtime guarantee",
+    "Pika deeper repetition search not rewritten",
+    "Known Pika color evaluation asymmetry retained",
+    "Browser rendering not part of controller-only experiment",
+    "Unchanged strict Pika FEN comparator rejects an empty-inventory all-known synthetic fixture; formal12 games unaffected"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "historyPlies": 9,
+  "excludedRepeatRoots": 1,
+  "forbiddenImmediateLoss": {
+    "from": 1,
+    "to": 18
+  },
+  "returnedMove": {
+    "from": 7,
+    "to": 24
+  },
+  "elapsedMs": 960.2737570000002,
+  "binarySha256": "f32d3c6dfe4d6d90da7728d9cc2af68c3195a1cefb1bc28f3829f174c518dba1",
+  "probeSha256": "2953a0ef034c9580a4f53e403d147f52051add5a80b4d3c811182c021b1186ab"
+}

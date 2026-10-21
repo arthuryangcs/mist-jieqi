@@ -1,0 +1,7 @@
+{
+  "command": "npm test",
+  "total": 142,
+  "passed": 142,
+  "failed": 0,
+  "durationMs": 12795.809246
+}

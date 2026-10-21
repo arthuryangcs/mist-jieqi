@@ -1,0 +1,99 @@
+{
+  "passed": false,
+  "checks": [
+    {
+      "name": "hidden identity isolation",
+      "passed": true
+    },
+    {
+      "name": "40ms reserve covers injected 80ms cleanup inside 60ms common grace",
+      "passed": true
+    },
+    {
+      "name": "long host stall remains a reported limitation",
+      "passed": true
+    },
+    {
+      "name": "new threefold mover-loss root whitelist",
+      "passed": true
+    }
+  ],
+  "defaultBinarySha256": "5c68913e2035093465cb3807ea81604839023daa884d0c0c66ba65f5958a2d23",
+  "faultRecovery": [
+    {
+      "reserveMs": 0,
+      "elapsedMs": 280.94658799999996,
+      "overGrace": true,
+      "clock": {
+        "nominalBudgetMs": 200,
+        "reserveMs": 0,
+        "softDeadlineAt": 200,
+        "frames": [],
+        "parseMs": 0,
+        "preparationStartAt": 1.2867789999999673,
+        "preparationEndAt": 2.5721059999999625,
+        "timerAt": 200.379207,
+        "timerLateMs": 0.37920700000000807,
+        "killAt": 200.40427800000003,
+        "resolveAt": 201.02047899999997,
+        "exitAt": 200.69041499999997,
+        "closeAt": 200.69041499999997,
+        "injectedReapDelayMs": 80,
+        "reapAt": 280.93488099999996,
+        "eventLoopMaxMs": 6.508543,
+        "eventLoopMeanMs": 5.51387136,
+        "preparationMs": 1.2853269999999952,
+        "encodingMs": null,
+        "writeCallbackLagMs": null,
+        "postKillExitMs": 0.2861369999999397,
+        "exitToPipeCloseMs": 0,
+        "finalTransportQueueCleanupMs": null
+      }
+    },
+    {
+      "reserveMs": 40,
+      "elapsedMs": 240.59189600000002,
+      "overGrace": false,
+      "clock": {
+        "nominalBudgetMs": 200,
+        "reserveMs": 40,
+        "softDeadlineAt": 160,
+        "frames": [],
+        "parseMs": 0,
+        "preparationStartAt": 0.32720000000006166,
+        "preparationEndAt": 1.6657810000000381,
+        "timerAt": 159.68413500000008,
+        "timerLateMs": -0.315864999999917,
+        "killAt": 159.68644700000004,
+        "resolveAt": 159.70104800000001,
+        "exitAt": 159.69066400000008,
+        "closeAt": 159.69066400000008,
+        "injectedReapDelayMs": 80,
+        "reapAt": 240.58631300000002,
+        "eventLoopMaxMs": 6.369279,
+        "eventLoopMeanMs": 5.505219047619048,
+        "preparationMs": 1.3385809999999765,
+        "encodingMs": null,
+        "writeCallbackLagMs": null,
+        "postKillExitMs": 0.004217000000039661,
+        "exitToPipeCloseMs": 0,
+        "finalTransportQueueCleanupMs": null
+      }
+    }
+  ],
+  "stallLimit": {
+    "elapsedMs": 330.459154,
+    "timerLateMs": 170.42014200000006,
+    "hardRealtime": false
+  },
+  "nativeSmoke": {
+    "depth": 4,
+    "elapsedMs": 948.842725,
+    "fallbackUsed": false
+  },
+  "fixedTree": {
+    "nodesEqual": true,
+    "candidates": 44,
+    "maxDifference": 0
+  }
+}
