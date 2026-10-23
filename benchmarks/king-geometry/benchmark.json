@@ -1,0 +1,1390 @@
+{
+  "passed": true,
+  "build": {
+    "stableSourceSha256": "94dab5ee87ff8996fcf9e8f93070a8012866926822611eb0f84f6bd3607e1b2c",
+    "stableBinarySha256": "5c68913e2035093465cb3807ea81604839023daa884d0c0c66ba65f5958a2d23",
+    "sourceSha256": "8f93d3e84ed75f0e7de9cbe2d51a3448311b76aaf13f6a8405dad6fd350becfd",
+    "binarySha256": "f225dfc3b9ccf3efbae8a6aaaf0d9b302df2bbd80b9a23296bae93b3158541c9",
+    "sanitize": false,
+    "flags": [
+      "-std=c++17",
+      "-O3",
+      "-ffp-contract=off",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-isystem",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+    ],
+    "warnings": ""
+  },
+  "runtime": "v25.6.0",
+  "cpu": "Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz",
+  "fixtureHash": "daac59bec782d24bed790547213a10ee80162743b36e47ffee270aefd7aa10de",
+  "repeats": 5,
+  "protocol": "Same fixed worlds and ordering, warmed clients, alternating order, serial requests; fixed node cap forces single lane. Wall includes encode/IPC; core excludes them. No reserve change.",
+  "fixed": [
+    {
+      "repeat": 0,
+      "position": "初始全暗",
+      "requestedDepth": 3,
+      "depth": 3,
+      "nodes": 217728,
+      "nodesEqual": true,
+      "candidates": 44,
+      "maxDifference": 0,
+      "baselineCoreMs": 225.806581,
+      "trialCoreMs": 226.170471,
+      "baselineWallMs": 233.095885,
+      "trialWallMs": 233.37748899999997
+    },
+    {
+      "repeat": 0,
+      "position": "可达中局 2111 / 20步",
+      "requestedDepth": 3,
+      "depth": 3,
+      "nodes": 68709,
+      "nodesEqual": true,
+      "candidates": 25,
+      "maxDifference": 0,
+      "baselineCoreMs": 75.6814,
+      "trialCoreMs": 65.999856,
+      "baselineWallMs": 82.50309900000002,
+      "trialWallMs": 71.45045300000004
+    },
+    {
+      "repeat": 0,
+      "position": "可达中局 2111 / 44步",
+      "requestedDepth": 3,
+      "depth": 3,
+      "nodes": 109718,
+      "nodesEqual": true,
+      "candidates": 23,
+      "maxDifference": 0,
+      "baselineCoreMs": 108.073229,
+      "trialCoreMs": 106.094564,
+      "baselineWallMs": 114.85224799999992,
+      "trialWallMs": 112.70985599999995
+    },
+    {
+      "repeat": 0,
+      "position": "可达中局 2221 / 44步",
+      "requestedDepth": 3,
+      "depth": 3,
+      "nodes": 207583,
+      "nodesEqual": true,
+      "candidates": 31,
+      "maxDifference": 0,
+      "baselineCoreMs": 161.111815,
+      "trialCoreMs": 179.162219,
+      "baselineWallMs": 166.30397399999993,
+      "trialWallMs": 185.96596099999988
+    },
+    {
+      "repeat": 0,
+      "position": "全明10子残局",
+      "requestedDepth": 4,
+      "depth": 4,
+      "nodes": 38033,
+      "nodesEqual": true,
+      "candidates": 30,
+      "maxDifference": 0,
+      "baselineCoreMs": 25.967714,
+      "trialCoreMs": 25.684211,
+      "baselineWallMs": 28.035742000000027,
+      "trialWallMs": 27.815669999999955
+    },
+    {
+      "repeat": 1,
+      "position": "初始全暗",
+      "requestedDepth": 3,
+      "depth": 3,
+      "nodes": 217728,
+      "nodesEqual": true,
+      "candidates": 44,
+      "maxDifference": 0,
+      "baselineCoreMs": 240.360626,
+      "trialCoreMs": 237.685813,
+      "baselineWallMs": 247.84714099999997,
+      "trialWallMs": 244.63522799999987
+    },
+    {
+      "repeat": 1,
+      "position": "可达中局 2111 / 20步",
+      "requestedDepth": 3,
+      "depth": 3,
+      "nodes": 68709,
+      "nodesEqual": true,
+      "candidates": 25,
+      "maxDifference": 0,
+      "baselineCoreMs": 75.58425,
+      "trialCoreMs": 71.865944,
+      "baselineWallMs": 81.88582900000006,
+      "trialWallMs": 78.93501800000013
+    },
+    {
+      "repeat": 1,
+      "position": "可达中局 2111 / 44步",
+      "requestedDepth": 3,
+      "depth": 3,
+      "nodes": 109718,
+      "nodesEqual": true,
+      "candidates": 23,
+      "maxDifference": 0,
+      "baselineCoreMs": 84.554435,
+      "trialCoreMs": 85.738024,
+      "baselineWallMs": 93.18224800000007,
+      "trialWallMs": 91.91810199999964
+    },
+    {
+      "repeat": 1,
+      "position": "可达中局 2221 / 44步",
+      "requestedDepth": 3,
+      "depth": 3,
+      "nodes": 207583,
+      "nodesEqual": true,
+      "candidates": 31,
+      "maxDifference": 0,
+      "baselineCoreMs": 159.34648,
+      "trialCoreMs": 159.615378,
+      "baselineWallMs": 164.61286699999982,
+      "trialWallMs": 165.11709299999984
+    },
+    {
+      "repeat": 1,
+      "position": "全明10子残局",
+      "requestedDepth": 4,
+      "depth": 4,
+      "nodes": 38033,
+      "nodesEqual": true,
+      "candidates": 30,
+      "maxDifference": 0,
+      "baselineCoreMs": 23.51952,
+      "trialCoreMs": 24.074343,
+      "baselineWallMs": 25.770372999999836,
+      "trialWallMs": 26.124119999999948
+    },
+    {
+      "repeat": 2,
+      "position": "初始全暗",
+      "requestedDepth": 3,
+      "depth": 3,
+      "nodes": 217728,
+      "nodesEqual": true,
+      "candidates": 44,
+      "maxDifference": 0,
+      "baselineCoreMs": 179.081972,
+      "trialCoreMs": 181.354129,
+      "baselineWallMs": 184.98837500000036,
+      "trialWallMs": 187.08941800000002
+    },
+    {
+      "repeat": 2,
+      "position": "可达中局 2111 / 20步",
+      "requestedDepth": 3,
+      "depth": 3,
+      "nodes": 68709,
+      "nodesEqual": true,
+      "candidates": 25,
+      "maxDifference": 0,
+      "baselineCoreMs": 55.542231,
+      "trialCoreMs": 57.272084,
+      "baselineWallMs": 60.38599599999998,
+      "trialWallMs": 62.4496979999999
+    },
+    {
+      "repeat": 2,
+      "position": "可达中局 2111 / 44步",
+      "requestedDepth": 3,
+      "depth": 3,
+      "nodes": 109718,
+      "nodesEqual": true,
+      "candidates": 23,
+      "maxDifference": 0,
+      "baselineCoreMs": 81.249645,
+      "trialCoreMs": 82.063996,
+      "baselineWallMs": 86.25137499999983,
+      "trialWallMs": 87.27117300000009
+    },
+    {
+      "repeat": 2,
+      "position": "可达中局 2221 / 44步",
+      "requestedDepth": 3,
+      "depth": 3,
+      "nodes": 207583,
+      "nodesEqual": true,
+      "candidates": 31,
+      "maxDifference": 0,
+      "baselineCoreMs": 204.445794,
+      "trialCoreMs": 209.568423,
+      "baselineWallMs": 210.58765399999993,
+      "trialWallMs": 215.27666899999986
+    },
+    {
+      "repeat": 2,
+      "position": "全明10子残局",
+      "requestedDepth": 4,
+      "depth": 4,
+      "nodes": 38033,
+      "nodesEqual": true,
+      "candidates": 30,
+      "maxDifference": 0,
+      "baselineCoreMs": 25.334737,
+      "trialCoreMs": 23.903941,
+      "baselineWallMs": 27.52848099999983,
+      "trialWallMs": 25.84936800000014
+    },
+    {
+      "repeat": 3,
+      "position": "初始全暗",
+      "requestedDepth": 3,
+      "depth": 3,
+      "nodes": 217728,
+      "nodesEqual": true,
+      "candidates": 44,
+      "maxDifference": 0,
+      "baselineCoreMs": 209.24574,
+      "trialCoreMs": 229.592038,
+      "baselineWallMs": 216.01329499999974,
+      "trialWallMs": 236.9040269999996
+    },
+    {
+      "repeat": 3,
+      "position": "可达中局 2111 / 20步",
+      "requestedDepth": 3,
+      "depth": 3,
+      "nodes": 68709,
+      "nodesEqual": true,
+      "candidates": 25,
+      "maxDifference": 0,
+      "baselineCoreMs": 56.716393,
+      "trialCoreMs": 57.228099,
+      "baselineWallMs": 61.72154800000044,
+      "trialWallMs": 62.141467999999804
+    },
+    {
+      "repeat": 3,
+      "position": "可达中局 2111 / 44步",
+      "requestedDepth": 3,
+      "depth": 3,
+      "nodes": 109718,
+      "nodesEqual": true,
+      "candidates": 23,
+      "maxDifference": 0,
+      "baselineCoreMs": 90.377814,
+      "trialCoreMs": 83.674444,
+      "baselineWallMs": 95.572674,
+      "trialWallMs": 88.73752199999944
+    },
+    {
+      "repeat": 3,
+      "position": "可达中局 2221 / 44步",
+      "requestedDepth": 3,
+      "depth": 3,
+      "nodes": 207583,
+      "nodesEqual": true,
+      "candidates": 31,
+      "maxDifference": 0,
+      "baselineCoreMs": 160.837311,
+      "trialCoreMs": 164.74042,
+      "baselineWallMs": 166.3695660000003,
+      "trialWallMs": 170.13004900000033
+    },
+    {
+      "repeat": 3,
+      "position": "全明10子残局",
+      "requestedDepth": 4,
+      "depth": 4,
+      "nodes": 38033,
+      "nodesEqual": true,
+      "candidates": 30,
+      "maxDifference": 0,
+      "baselineCoreMs": 28.430499,
+      "trialCoreMs": 25.403528,
+      "baselineWallMs": 30.782199999999648,
+      "trialWallMs": 27.634767000000465
+    },
+    {
+      "repeat": 4,
+      "position": "初始全暗",
+      "requestedDepth": 3,
+      "depth": 3,
+      "nodes": 217728,
+      "nodesEqual": true,
+      "candidates": 44,
+      "maxDifference": 0,
+      "baselineCoreMs": 180.829333,
+      "trialCoreMs": 228.521773,
+      "baselineWallMs": 187.40292799999952,
+      "trialWallMs": 237.14741500000036
+    },
+    {
+      "repeat": 4,
+      "position": "可达中局 2111 / 20步",
+      "requestedDepth": 3,
+      "depth": 3,
+      "nodes": 68709,
+      "nodesEqual": true,
+      "candidates": 25,
+      "maxDifference": 0,
+      "baselineCoreMs": 74.406408,
+      "trialCoreMs": 74.851648,
+      "baselineWallMs": 81.0549860000001,
+      "trialWallMs": 81.11631599999964
+    },
+    {
+      "repeat": 4,
+      "position": "可达中局 2111 / 44步",
+      "requestedDepth": 3,
+      "depth": 3,
+      "nodes": 109718,
+      "nodesEqual": true,
+      "candidates": 23,
+      "maxDifference": 0,
+      "baselineCoreMs": 106.372027,
+      "trialCoreMs": 107.110946,
+      "baselineWallMs": 112.97799799999939,
+      "trialWallMs": 113.975727
+    },
+    {
+      "repeat": 4,
+      "position": "可达中局 2221 / 44步",
+      "requestedDepth": 3,
+      "depth": 3,
+      "nodes": 207583,
+      "nodesEqual": true,
+      "candidates": 31,
+      "maxDifference": 0,
+      "baselineCoreMs": 207.545149,
+      "trialCoreMs": 206.559201,
+      "baselineWallMs": 214.23012000000017,
+      "trialWallMs": 213.27795100000003
+    },
+    {
+      "repeat": 4,
+      "position": "全明10子残局",
+      "requestedDepth": 4,
+      "depth": 4,
+      "nodes": 38033,
+      "nodesEqual": true,
+      "candidates": 30,
+      "maxDifference": 0,
+      "baselineCoreMs": 30.52619,
+      "trialCoreMs": 30.740854,
+      "baselineWallMs": 32.914958999999726,
+      "trialWallMs": 33.14763199999925
+    }
+  ],
+  "timed": [
+    {
+      "repeat": 0,
+      "name": "baseline",
+      "position": "初始全暗",
+      "depth": 4,
+      "nodes": 2566229,
+      "elapsedMs": 991.6553169999997,
+      "fallbackUsed": false,
+      "clock": {
+        "nominalBudgetMs": 1000,
+        "reserveMs": 0,
+        "softDeadlineAt": 1000,
+        "frames": [
+          {
+            "receivedAt": 15.309542999999394,
+            "callbackAt": 15.327857999999651,
+            "parsedAt": 15.398557999999866,
+            "parseMs": 0.07070000000021537,
+            "coreMs": 4.718413,
+            "progress": true
+          },
+          {
+            "receivedAt": 31.212147000000186,
+            "callbackAt": 31.230407000000014,
+            "parsedAt": 31.286833000000115,
+            "parseMs": 0.05642600000010134,
+            "coreMs": 20.616222,
+            "progress": true
+          },
+          {
+            "receivedAt": 126.79048499999953,
+            "callbackAt": 126.81042199999956,
+            "parsedAt": 126.86819699999978,
+            "parseMs": 0.057775000000219734,
+            "coreMs": 116.201249,
+            "progress": true
+          },
+          {
+            "receivedAt": 568.4448249999996,
+            "callbackAt": 568.4638850000001,
+            "parsedAt": 568.5179259999995,
+            "parseMs": 0.05404099999941536,
+            "coreMs": 557.874268,
+            "progress": true
+          },
+          {
+            "receivedAt": 991.307941,
+            "callbackAt": 991.325374,
+            "parsedAt": 991.3824319999994,
+            "parseMs": 0.05705799999941519,
+            "coreMs": 962.531113,
+            "progress": false
+          }
+        ],
+        "parseMs": 0.295999999999367,
+        "preparationStartAt": 2.4278859999994893,
+        "preparationEndAt": 4.942269000000124,
+        "encodeStartAt": 5.043897999999899,
+        "encodeEndAt": 5.353213999999753,
+        "sendAt": 5.414639999999963,
+        "writeCallbackAt": 5.633571999999731,
+        "finalFrameAt": 991.3824319999994,
+        "finalCoreMs": 962.531113,
+        "resolveAt": 991.6390709999996,
+        "eventLoopMaxMs": 6.389759,
+        "eventLoopMeanMs": 5.4586481777777776,
+        "preparationMs": 2.5143830000006346,
+        "encodingMs": 0.3093159999998534,
+        "writeCallbackLagMs": 0.21893199999976787,
+        "postKillExitMs": null,
+        "exitToPipeCloseMs": null,
+        "finalTransportQueueCleanupMs": 23.436678999999458
+      }
+    },
+    {
+      "repeat": 0,
+      "name": "trial",
+      "position": "初始全暗",
+      "depth": 4,
+      "nodes": 2661145,
+      "elapsedMs": 993.1321849999995,
+      "fallbackUsed": false,
+      "clock": {
+        "nominalBudgetMs": 1000,
+        "reserveMs": 0,
+        "softDeadlineAt": 1000,
+        "frames": [
+          {
+            "receivedAt": 13.548377000000073,
+            "callbackAt": 13.571601999999984,
+            "parsedAt": 13.653521000000183,
+            "parseMs": 0.08191900000019814,
+            "coreMs": 6.29562,
+            "progress": true
+          },
+          {
+            "receivedAt": 29.653863999999885,
+            "callbackAt": 29.686925999999403,
+            "parsedAt": 29.77026299999943,
+            "parseMs": 0.08333700000002864,
+            "coreMs": 22.474504,
+            "progress": true
+          },
+          {
+            "receivedAt": 129.3126599999996,
+            "callbackAt": 129.34084799999982,
+            "parsedAt": 129.39687700000013,
+            "parseMs": 0.05602900000030786,
+            "coreMs": 122.117187,
+            "progress": true
+          },
+          {
+            "receivedAt": 556.3118699999995,
+            "callbackAt": 556.3263429999997,
+            "parsedAt": 556.3754129999998,
+            "parseMs": 0.04907000000002881,
+            "coreMs": 549.189109,
+            "progress": true
+          },
+          {
+            "receivedAt": 992.9792050000005,
+            "callbackAt": 992.996263,
+            "parsedAt": 993.050381,
+            "parseMs": 0.054118000000016764,
+            "coreMs": 963.654954,
+            "progress": false
+          }
+        ],
+        "parseMs": 0.3244730000005802,
+        "preparationStartAt": 0.35261199999968085,
+        "preparationEndAt": 1.5701639999997496,
+        "encodeStartAt": 1.5922359999995024,
+        "encodeEndAt": 1.8505489999997735,
+        "sendAt": 1.864912999999433,
+        "writeCallbackAt": 1.9984809999996287,
+        "finalFrameAt": 993.050381,
+        "finalCoreMs": 963.654954,
+        "resolveAt": 993.1256289999992,
+        "eventLoopMaxMs": 6.459391,
+        "eventLoopMeanMs": 5.510550167597765,
+        "preparationMs": 1.2175520000000688,
+        "encodingMs": 0.25831300000027113,
+        "writeCallbackLagMs": 0.13356800000019575,
+        "postKillExitMs": null,
+        "exitToPipeCloseMs": null,
+        "finalTransportQueueCleanupMs": 27.530514000000608
+      }
+    },
+    {
+      "repeat": 0,
+      "name": "trial",
+      "position": "可达中局 2111 / 20步",
+      "depth": 5,
+      "nodes": 2109904,
+      "elapsedMs": 1003.1130560000001,
+      "fallbackUsed": false,
+      "clock": {
+        "nominalBudgetMs": 1000,
+        "reserveMs": 0,
+        "softDeadlineAt": 1000,
+        "frames": [
+          {
+            "receivedAt": 12.50147300000026,
+            "callbackAt": 12.516991000000417,
+            "parsedAt": 12.555656000000454,
+            "parseMs": 0.03866500000003725,
+            "coreMs": 2.785592,
+            "progress": true
+          },
+          {
+            "receivedAt": 19.110713000000032,
+            "callbackAt": 19.129863000000114,
+            "parsedAt": 19.19121300000006,
+            "parseMs": 0.06134999999994761,
+            "coreMs": 9.315089,
+            "progress": true
+          },
+          {
+            "receivedAt": 51.65605399999913,
+            "callbackAt": 51.675231999999596,
+            "parsedAt": 51.76785600000039,
+            "parseMs": 0.09262400000079651,
+            "coreMs": 41.898169,
+            "progress": true
+          },
+          {
+            "receivedAt": 174.87425900000017,
+            "callbackAt": 174.89127799999915,
+            "parsedAt": 174.94253899999967,
+            "parseMs": 0.05126100000052247,
+            "coreMs": 165.114796,
+            "progress": true
+          },
+          {
+            "receivedAt": 692.7949329999992,
+            "callbackAt": 692.8079429999998,
+            "parsedAt": 692.8391740000006,
+            "parseMs": 0.031231000000843778,
+            "coreMs": 683.086435,
+            "progress": true
+          }
+        ],
+        "parseMs": 0.27513100000214763,
+        "preparationStartAt": 0.3226329999997688,
+        "preparationEndAt": 3.7677569999996194,
+        "encodeStartAt": 3.7932639999999083,
+        "encodeEndAt": 4.577675000000454,
+        "sendAt": 4.591915999999401,
+        "writeCallbackAt": 4.712745000000723,
+        "timerAt": 1000.2536220000002,
+        "timerLateMs": 0.25362200000017765,
+        "killAt": 1000.2683280000001,
+        "resolveAt": 1000.4766089999994,
+        "exitAt": 1002.8836210000009,
+        "closeAt": 1003.0999219999994,
+        "reapAt": 1003.1097740000005,
+        "eventLoopMaxMs": 6.348799,
+        "eventLoopMeanMs": 5.657373090909091,
+        "preparationMs": 3.4451239999998506,
+        "encodingMs": 0.7844110000005458,
+        "writeCallbackLagMs": 0.12082900000132213,
+        "postKillExitMs": 2.6152930000007473,
+        "exitToPipeCloseMs": 0.2163009999985661,
+        "finalTransportQueueCleanupMs": null
+      }
+    },
+    {
+      "repeat": 0,
+      "name": "baseline",
+      "position": "可达中局 2111 / 20步",
+      "depth": 5,
+      "nodes": 2109904,
+      "elapsedMs": 1002.6306760000007,
+      "fallbackUsed": false,
+      "clock": {
+        "nominalBudgetMs": 1000,
+        "reserveMs": 0,
+        "softDeadlineAt": 1000,
+        "frames": [
+          {
+            "receivedAt": 9.958142000001317,
+            "callbackAt": 9.972015000001193,
+            "parsedAt": 10.00712200000089,
+            "parseMs": 0.03510699999969802,
+            "coreMs": 2.424223,
+            "progress": true
+          },
+          {
+            "receivedAt": 13.537115000000995,
+            "callbackAt": 13.5468120000005,
+            "parsedAt": 13.575088000001415,
+            "parseMs": 0.02827600000091479,
+            "coreMs": 6.027211,
+            "progress": true
+          },
+          {
+            "receivedAt": 33.99725000000035,
+            "callbackAt": 34.00896600000124,
+            "parsedAt": 34.038134000000355,
+            "parseMs": 0.029167999999117455,
+            "coreMs": 26.479695,
+            "progress": true
+          },
+          {
+            "receivedAt": 119.7609390000016,
+            "callbackAt": 119.77410200000122,
+            "parsedAt": 119.8058600000004,
+            "parseMs": 0.03175799999917217,
+            "coreMs": 112.194794,
+            "progress": true
+          },
+          {
+            "receivedAt": 599.5803750000014,
+            "callbackAt": 599.6013190000012,
+            "parsedAt": 599.6466650000002,
+            "parseMs": 0.04534599999897182,
+            "coreMs": 592.025791,
+            "progress": true
+          }
+        ],
+        "parseMs": 0.16965499999787426,
+        "preparationStartAt": 0.4293680000009772,
+        "preparationEndAt": 2.667103000001589,
+        "encodeStartAt": 2.6774140000015905,
+        "encodeEndAt": 2.9088430000010703,
+        "sendAt": 2.9146060000002763,
+        "writeCallbackAt": 2.9701420000001235,
+        "timerAt": 999.0114030000004,
+        "timerLateMs": -0.9885969999995723,
+        "killAt": 999.0141540000004,
+        "resolveAt": 999.0809600000011,
+        "exitAt": 1002.5720170000004,
+        "closeAt": 1002.5929210000013,
+        "reapAt": 1002.6287570000004,
+        "eventLoopMaxMs": 6.569983,
+        "eventLoopMeanMs": 5.63275209039548,
+        "preparationMs": 2.2377350000006118,
+        "encodingMs": 0.23142899999947986,
+        "writeCallbackLagMs": 0.05553599999984726,
+        "postKillExitMs": 3.5578629999999976,
+        "exitToPipeCloseMs": 0.02090400000088266,
+        "finalTransportQueueCleanupMs": null
+      }
+    },
+    {
+      "repeat": 0,
+      "name": "baseline",
+      "position": "全明10子残局",
+      "depth": 6,
+      "nodes": 1174192,
+      "elapsedMs": 976.3585329999987,
+      "fallbackUsed": false,
+      "clock": {
+        "nominalBudgetMs": 1000,
+        "reserveMs": 0,
+        "softDeadlineAt": 1000,
+        "frames": [
+          {
+            "receivedAt": 4.832347999999911,
+            "callbackAt": 4.84970599999906,
+            "parsedAt": 4.889766999998756,
+            "parseMs": 0.04006099999969592,
+            "coreMs": 0.194707,
+            "progress": true
+          },
+          {
+            "receivedAt": 6.279692999998588,
+            "callbackAt": 6.302487999999357,
+            "parsedAt": 6.345986999998786,
+            "parseMs": 0.043498999999428634,
+            "coreMs": 1.643338,
+            "progress": true
+          },
+          {
+            "receivedAt": 11.322847999999794,
+            "callbackAt": 11.336756999999125,
+            "parsedAt": 11.37798599999951,
+            "parseMs": 0.041229000000384985,
+            "coreMs": 6.761654,
+            "progress": true
+          },
+          {
+            "receivedAt": 36.72721499999898,
+            "callbackAt": 36.74113799999941,
+            "parsedAt": 36.77713599999879,
+            "parseMs": 0.035997999999381136,
+            "coreMs": 32.135839,
+            "progress": true
+          },
+          {
+            "receivedAt": 104.85175100000015,
+            "callbackAt": 104.86738399999922,
+            "parsedAt": 104.9078840000002,
+            "parseMs": 0.04050000000097498,
+            "coreMs": 100.278618,
+            "progress": true
+          },
+          {
+            "receivedAt": 408.8465500000002,
+            "callbackAt": 408.86234799999875,
+            "parsedAt": 408.9020239999991,
+            "parseMs": 0.039676000000326894,
+            "coreMs": 404.269995,
+            "progress": true
+          },
+          {
+            "receivedAt": 976.2597499999993,
+            "callbackAt": 976.272633999999,
+            "parsedAt": 976.3045759999986,
+            "parseMs": 0.03194199999961711,
+            "coreMs": 962.450562,
+            "progress": false
+          }
+        ],
+        "parseMs": 0.27290499999980966,
+        "preparationStartAt": 0.3035490000002028,
+        "preparationEndAt": 2.6608719999985624,
+        "encodeStartAt": 2.681405999999697,
+        "encodeEndAt": 2.7717849999989994,
+        "sendAt": 2.779193000000305,
+        "writeCallbackAt": 2.856030999999348,
+        "finalFrameAt": 976.3045759999986,
+        "finalCoreMs": 962.450562,
+        "resolveAt": 976.352852,
+        "eventLoopMaxMs": 6.340607,
+        "eventLoopMeanMs": 5.795582467065868,
+        "preparationMs": 2.3573229999983596,
+        "encodingMs": 0.09037899999930232,
+        "writeCallbackLagMs": 0.07683799999904295,
+        "postKillExitMs": null,
+        "exitToPipeCloseMs": null,
+        "finalTransportQueueCleanupMs": 11.074820999998337
+      }
+    },
+    {
+      "repeat": 0,
+      "name": "trial",
+      "position": "全明10子残局",
+      "depth": 6,
+      "nodes": 1124120,
+      "elapsedMs": 981.0475990000014,
+      "fallbackUsed": false,
+      "clock": {
+        "nominalBudgetMs": 1000,
+        "reserveMs": 0,
+        "softDeadlineAt": 1000,
+        "frames": [
+          {
+            "receivedAt": 3.8135940000011033,
+            "callbackAt": 3.8220470000014757,
+            "parsedAt": 3.8519220000016503,
+            "parseMs": 0.029875000000174623,
+            "coreMs": 0.164837,
+            "progress": true
+          },
+          {
+            "receivedAt": 4.881364000000758,
+            "callbackAt": 4.888853000000381,
+            "parsedAt": 4.918818000000101,
+            "parseMs": 0.02996499999972002,
+            "coreMs": 1.245525,
+            "progress": true
+          },
+          {
+            "receivedAt": 9.277061000000685,
+            "callbackAt": 9.284421000000293,
+            "parsedAt": 9.313469000000623,
+            "parseMs": 0.02904800000032992,
+            "coreMs": 5.641865,
+            "progress": true
+          },
+          {
+            "receivedAt": 29.431053000000247,
+            "callbackAt": 29.439652000000933,
+            "parsedAt": 29.46634500000073,
+            "parseMs": 0.026692999999795575,
+            "coreMs": 25.799755,
+            "progress": true
+          },
+          {
+            "receivedAt": 89.37606100000085,
+            "callbackAt": 89.38799200000176,
+            "parsedAt": 89.41892400000143,
+            "parseMs": 0.030931999999666004,
+            "coreMs": 85.711064,
+            "progress": true
+          },
+          {
+            "receivedAt": 340.30471800000123,
+            "callbackAt": 340.3163430000004,
+            "parsedAt": 340.34870800000135,
+            "parseMs": 0.03236500000093656,
+            "coreMs": 336.64797,
+            "progress": true
+          },
+          {
+            "receivedAt": 980.9339170000003,
+            "callbackAt": 980.9486870000001,
+            "parsedAt": 980.988636,
+            "parseMs": 0.039948999999978696,
+            "coreMs": 963.231992,
+            "progress": false
+          }
+        ],
+        "parseMs": 0.2188270000006014,
+        "preparationStartAt": 0.16072100000019418,
+        "preparationEndAt": 1.9855030000016995,
+        "encodeStartAt": 1.9958390000010695,
+        "encodeEndAt": 2.1375560000014957,
+        "sendAt": 2.1437130000012985,
+        "writeCallbackAt": 2.1846850000001723,
+        "finalFrameAt": 980.988636,
+        "finalCoreMs": 963.231992,
+        "resolveAt": 981.0402050000012,
+        "eventLoopMaxMs": 6.348799,
+        "eventLoopMeanMs": 5.520907636363637,
+        "preparationMs": 1.8247820000015054,
+        "encodingMs": 0.1417170000004262,
+        "writeCallbackLagMs": 0.0409719999988738,
+        "postKillExitMs": null,
+        "exitToPipeCloseMs": null,
+        "finalTransportQueueCleanupMs": 15.612930999998753
+      }
+    },
+    {
+      "repeat": 1,
+      "name": "trial",
+      "position": "初始全暗",
+      "depth": 4,
+      "nodes": 2358768,
+      "elapsedMs": 988.5365320000001,
+      "fallbackUsed": false,
+      "clock": {
+        "nominalBudgetMs": 1000,
+        "reserveMs": 0,
+        "softDeadlineAt": 1000,
+        "frames": [
+          {
+            "receivedAt": 11.64910400000008,
+            "callbackAt": 11.683524000000034,
+            "parsedAt": 11.74004799999966,
+            "parseMs": 0.05652399999962654,
+            "coreMs": 4.709397,
+            "progress": true
+          },
+          {
+            "receivedAt": 28.47975299999962,
+            "callbackAt": 28.497252999999546,
+            "parsedAt": 28.552426000000196,
+            "parseMs": 0.05517300000065006,
+            "coreMs": 21.617823,
+            "progress": true
+          },
+          {
+            "receivedAt": 125.98400100000072,
+            "callbackAt": 126.00033299999996,
+            "parsedAt": 126.05278999999973,
+            "parseMs": 0.0524569999997766,
+            "coreMs": 119.110123,
+            "progress": true
+          },
+          {
+            "receivedAt": 623.0886499999997,
+            "callbackAt": 623.1043549999995,
+            "parsedAt": 623.1554219999998,
+            "parseMs": 0.051067000000330154,
+            "coreMs": 616.247567,
+            "progress": true
+          },
+          {
+            "receivedAt": 988.399711,
+            "callbackAt": 988.4156189999994,
+            "parsedAt": 988.4698480000006,
+            "parseMs": 0.054229000001214445,
+            "coreMs": 963.874501,
+            "progress": false
+          }
+        ],
+        "parseMs": 0.2694500000015978,
+        "preparationStartAt": 0.3900389999998879,
+        "preparationEndAt": 1.3633809999992081,
+        "encodeStartAt": 1.3763309999994817,
+        "encodeEndAt": 1.6241829999999027,
+        "sendAt": 1.6306409999997413,
+        "writeCallbackAt": 1.6970600000004197,
+        "finalFrameAt": 988.4698480000006,
+        "finalCoreMs": 963.874501,
+        "resolveAt": 988.5292730000001,
+        "eventLoopMaxMs": 6.406143,
+        "eventLoopMeanMs": 5.334305391304348,
+        "preparationMs": 0.9733419999993203,
+        "encodingMs": 0.24785200000042096,
+        "writeCallbackLagMs": 0.06641900000067835,
+        "postKillExitMs": null,
+        "exitToPipeCloseMs": null,
+        "finalTransportQueueCleanupMs": 22.964706000000888
+      }
+    },
+    {
+      "repeat": 1,
+      "name": "baseline",
+      "position": "初始全暗",
+      "depth": 4,
+      "nodes": 2592402,
+      "elapsedMs": 991.1096669999988,
+      "fallbackUsed": false,
+      "clock": {
+        "nominalBudgetMs": 1000,
+        "reserveMs": 0,
+        "softDeadlineAt": 1000,
+        "frames": [
+          {
+            "receivedAt": 10.862354999999297,
+            "callbackAt": 10.880255000000034,
+            "parsedAt": 10.934817999999723,
+            "parseMs": 0.054562999999689055,
+            "coreMs": 4.545401,
+            "progress": true
+          },
+          {
+            "receivedAt": 26.284443999998985,
+            "callbackAt": 26.29947699999866,
+            "parsedAt": 26.41987799999879,
+            "parseMs": 0.12040100000012899,
+            "coreMs": 19.997102,
+            "progress": true
+          },
+          {
+            "receivedAt": 106.0790769999985,
+            "callbackAt": 106.09342399999878,
+            "parsedAt": 106.13726099999985,
+            "parseMs": 0.043837000001076376,
+            "coreMs": 99.789999,
+            "progress": true
+          },
+          {
+            "receivedAt": 534.9324019999985,
+            "callbackAt": 534.9453439999997,
+            "parsedAt": 534.987568999999,
+            "parseMs": 0.04222499999923457,
+            "coreMs": 528.654919,
+            "progress": true
+          },
+          {
+            "receivedAt": 990.9738679999991,
+            "callbackAt": 990.9903409999988,
+            "parsedAt": 991.0457749999987,
+            "parseMs": 0.055433999999877415,
+            "coreMs": 964.117851,
+            "progress": false
+          }
+        ],
+        "parseMs": 0.3164600000000064,
+        "preparationStartAt": 0.20637600000009115,
+        "preparationEndAt": 1.0560329999989335,
+        "encodeStartAt": 1.0668809999988298,
+        "encodeEndAt": 1.3122149999999237,
+        "sendAt": 1.3184759999985545,
+        "writeCallbackAt": 1.3836839999985386,
+        "finalFrameAt": 991.0457749999987,
+        "finalCoreMs": 964.117851,
+        "resolveAt": 991.1017639999991,
+        "eventLoopMaxMs": 6.393855,
+        "eventLoopMeanMs": 5.505636111731844,
+        "preparationMs": 0.8496569999988424,
+        "encodingMs": 0.24533400000109395,
+        "writeCallbackLagMs": 0.06520799999998417,
+        "postKillExitMs": null,
+        "exitToPipeCloseMs": null,
+        "finalTransportQueueCleanupMs": 25.609448000000157
+      }
+    },
+    {
+      "repeat": 1,
+      "name": "baseline",
+      "position": "可达中局 2111 / 20步",
+      "depth": 5,
+      "nodes": 2109904,
+      "elapsedMs": 1003.6798460000009,
+      "fallbackUsed": false,
+      "clock": {
+        "nominalBudgetMs": 1000,
+        "reserveMs": 0,
+        "softDeadlineAt": 1000,
+        "frames": [
+          {
+            "receivedAt": 10.204797000000326,
+            "callbackAt": 10.219200999999885,
+            "parsedAt": 10.254699000000983,
+            "parseMs": 0.03549800000109826,
+            "coreMs": 2.514941,
+            "progress": true
+          },
+          {
+            "receivedAt": 13.877700000000914,
+            "callbackAt": 13.887375000000247,
+            "parsedAt": 13.917945999999574,
+            "parseMs": 0.030570999999326887,
+            "coreMs": 6.219623,
+            "progress": true
+          },
+          {
+            "receivedAt": 35.30852899999991,
+            "callbackAt": 35.32169400000021,
+            "parsedAt": 35.353462000000945,
+            "parseMs": 0.03176800000073854,
+            "coreMs": 27.585742,
+            "progress": true
+          },
+          {
+            "receivedAt": 118.48657300000013,
+            "callbackAt": 118.4998169999999,
+            "parsedAt": 118.53260000000046,
+            "parseMs": 0.032783000000563334,
+            "coreMs": 110.772989,
+            "progress": true
+          },
+          {
+            "receivedAt": 676.3937470000001,
+            "callbackAt": 676.4104299999999,
+            "parsedAt": 676.447075,
+            "parseMs": 0.03664500000013504,
+            "coreMs": 668.654335,
+            "progress": true
+          }
+        ],
+        "parseMs": 0.16726500000186206,
+        "preparationStartAt": 0.18722300000081304,
+        "preparationEndAt": 2.5192900000001828,
+        "encodeStartAt": 2.5470729999997275,
+        "encodeEndAt": 2.8106769999994867,
+        "sendAt": 2.817844999999579,
+        "writeCallbackAt": 2.8987360000010085,
+        "timerAt": 1000.3259429999998,
+        "timerLateMs": 0.3259429999998247,
+        "killAt": 1000.3278879999998,
+        "resolveAt": 1000.3928539999997,
+        "exitAt": 1003.587332000001,
+        "closeAt": 1003.6721670000006,
+        "reapAt": 1003.6764710000007,
+        "eventLoopMaxMs": 6.832127,
+        "eventLoopMeanMs": 5.502613922651934,
+        "preparationMs": 2.3320669999993697,
+        "encodingMs": 0.26360399999975925,
+        "writeCallbackLagMs": 0.08089100000142935,
+        "postKillExitMs": 3.2594440000011673,
+        "exitToPipeCloseMs": 0.08483499999965716,
+        "finalTransportQueueCleanupMs": null
+      }
+    },
+    {
+      "repeat": 1,
+      "name": "trial",
+      "position": "可达中局 2111 / 20步",
+      "depth": 5,
+      "nodes": 2109904,
+      "elapsedMs": 1008.085239,
+      "fallbackUsed": false,
+      "clock": {
+        "nominalBudgetMs": 1000,
+        "reserveMs": 0,
+        "softDeadlineAt": 1000,
+        "frames": [
+          {
+            "receivedAt": 9.559626000000208,
+            "callbackAt": 9.572512000000643,
+            "parsedAt": 9.606748000000152,
+            "parseMs": 0.03423599999950966,
+            "coreMs": 2.223216,
+            "progress": true
+          },
+          {
+            "receivedAt": 13.965373000000909,
+            "callbackAt": 13.98066000000108,
+            "parsedAt": 14.01646400000027,
+            "parseMs": 0.03580399999918882,
+            "coreMs": 6.592272,
+            "progress": true
+          },
+          {
+            "receivedAt": 35.36675400000058,
+            "callbackAt": 35.37999000000127,
+            "parsedAt": 35.41190900000038,
+            "parseMs": 0.031918999999106745,
+            "coreMs": 28.026156,
+            "progress": true
+          },
+          {
+            "receivedAt": 120.30520500000057,
+            "callbackAt": 120.3188480000008,
+            "parsedAt": 120.35100299999976,
+            "parseMs": 0.03215499999896565,
+            "coreMs": 112.92855,
+            "progress": true
+          },
+          {
+            "receivedAt": 603.898306000001,
+            "callbackAt": 603.9119210000008,
+            "parsedAt": 603.9436180000012,
+            "parseMs": 0.03169700000034936,
+            "coreMs": 596.515766,
+            "progress": true
+          }
+        ],
+        "parseMs": 0.16581099999712023,
+        "preparationStartAt": 0.3461390000011306,
+        "preparationEndAt": 2.506833999999799,
+        "encodeStartAt": 2.520484000000579,
+        "encodeEndAt": 2.7567890000009356,
+        "sendAt": 2.7653669999999693,
+        "writeCallbackAt": 2.826364000000467,
+        "timerAt": 1004.7614700000013,
+        "timerLateMs": 4.761470000001282,
+        "killAt": 1004.7656380000008,
+        "resolveAt": 1004.8574480000007,
+        "exitAt": 1007.984316,
+        "closeAt": 1008.0739000000012,
+        "reapAt": 1008.0825130000012,
+        "eventLoopMaxMs": 18.350079,
+        "eventLoopMeanMs": 6.024179662650603,
+        "preparationMs": 2.160694999998668,
+        "encodingMs": 0.2363050000003568,
+        "writeCallbackLagMs": 0.06099700000049779,
+        "postKillExitMs": 3.2186779999992723,
+        "exitToPipeCloseMs": 0.08958400000119582,
+        "finalTransportQueueCleanupMs": null
+      }
+    },
+    {
+      "repeat": 1,
+      "name": "trial",
+      "position": "全明10子残局",
+      "depth": 6,
+      "nodes": 1074760,
+      "elapsedMs": 982.6189749999994,
+      "fallbackUsed": false,
+      "clock": {
+        "nominalBudgetMs": 1000,
+        "reserveMs": 0,
+        "softDeadlineAt": 1000,
+        "frames": [
+          {
+            "receivedAt": 4.043293000000631,
+            "callbackAt": 4.052741000001333,
+            "parsedAt": 4.088234000000739,
+            "parseMs": 0.03549299999940558,
+            "coreMs": 0.199074,
+            "progress": true
+          },
+          {
+            "receivedAt": 5.243145000000368,
+            "callbackAt": 5.251442000000679,
+            "parsedAt": 5.284957000001668,
+            "parseMs": 0.03351500000098895,
+            "coreMs": 1.427301,
+            "progress": true
+          },
+          {
+            "receivedAt": 10.364396000000852,
+            "callbackAt": 10.374148000000787,
+            "parsedAt": 10.408481000000393,
+            "parseMs": 0.03433299999960582,
+            "coreMs": 6.532166,
+            "progress": true
+          },
+          {
+            "receivedAt": 34.346911999999065,
+            "callbackAt": 34.35755900000186,
+            "parsedAt": 34.390480000000025,
+            "parseMs": 0.032920999998168554,
+            "coreMs": 30.531914,
+            "progress": true
+          },
+          {
+            "receivedAt": 94.52051100000062,
+            "callbackAt": 94.53246300000137,
+            "parsedAt": 94.56271899999956,
+            "parseMs": 0.03025599999818951,
+            "coreMs": 90.718883,
+            "progress": true
+          },
+          {
+            "receivedAt": 371.22458700000243,
+            "callbackAt": 371.2406510000019,
+            "parsedAt": 371.28249700000197,
+            "parseMs": 0.041846000000077765,
+            "coreMs": 367.367463,
+            "progress": true
+          },
+          {
+            "receivedAt": 982.4716050000006,
+            "callbackAt": 982.4873280000011,
+            "parsedAt": 982.5456470000008,
+            "parseMs": 0.05831899999975576,
+            "coreMs": 963.243708,
+            "progress": false
+          }
+        ],
+        "parseMs": 0.26668299999619194,
+        "preparationStartAt": 0.15458600000056322,
+        "preparationEndAt": 2.0440310000012687,
+        "encodeStartAt": 2.0506160000004456,
+        "encodeEndAt": 2.1265090000015334,
+        "sendAt": 2.1301670000011654,
+        "writeCallbackAt": 2.1694600000009814,
+        "finalFrameAt": 982.5456470000008,
+        "finalCoreMs": 963.243708,
+        "resolveAt": 982.60016,
+        "eventLoopMaxMs": 7.106559,
+        "eventLoopMeanMs": 5.560314148571429,
+        "preparationMs": 1.8894450000007055,
+        "encodingMs": 0.07589300000108778,
+        "writeCallbackLagMs": 0.03929299999981595,
+        "postKillExitMs": null,
+        "exitToPipeCloseMs": null,
+        "finalTransportQueueCleanupMs": 17.17177199999969
+      }
+    },
+    {
+      "repeat": 1,
+      "name": "baseline",
+      "position": "全明10子残局",
+      "depth": 6,
+      "nodes": 1235200,
+      "elapsedMs": 976.7558690000005,
+      "fallbackUsed": false,
+      "clock": {
+        "nominalBudgetMs": 1000,
+        "reserveMs": 0,
+        "softDeadlineAt": 1000,
+        "frames": [
+          {
+            "receivedAt": 5.242934000001696,
+            "callbackAt": 5.257603000001836,
+            "parsedAt": 5.296578000001318,
+            "parseMs": 0.03897499999948195,
+            "coreMs": 0.221372,
+            "progress": true
+          },
+          {
+            "receivedAt": 6.558883000001515,
+            "callbackAt": 6.616807000002154,
+            "parsedAt": 6.690968999999313,
+            "parseMs": 0.074161999997159,
+            "coreMs": 1.544547,
+            "progress": true
+          },
+          {
+            "receivedAt": 11.871369000000414,
+            "callbackAt": 11.885287000000972,
+            "parsedAt": 11.925943999998708,
+            "parseMs": 0.04065699999773642,
+            "coreMs": 6.871713,
+            "progress": true
+          },
+          {
+            "receivedAt": 36.71017199999915,
+            "callbackAt": 36.72401600000012,
+            "parsedAt": 36.76068200000009,
+            "parseMs": 0.036665999999968335,
+            "coreMs": 31.69562,
+            "progress": true
+          },
+          {
+            "receivedAt": 102.12930400000187,
+            "callbackAt": 102.14225599999918,
+            "parsedAt": 102.17602099999931,
+            "parseMs": 0.033765000000130385,
+            "coreMs": 97.123772,
+            "progress": true
+          },
+          {
+            "receivedAt": 336.52942800000164,
+            "callbackAt": 336.5435810000017,
+            "parsedAt": 336.57604999999967,
+            "parseMs": 0.0324689999979455,
+            "coreMs": 331.478753,
+            "progress": true
+          },
+          {
+            "receivedAt": 976.664123999999,
+            "callbackAt": 976.6765130000022,
+            "parsedAt": 976.7087979999997,
+            "parseMs": 0.03228499999750056,
+            "coreMs": 962.113184,
+            "progress": false
+          }
+        ],
+        "parseMs": 0.28897899998992216,
+        "preparationStartAt": 0.18839500000103726,
+        "preparationEndAt": 2.9971740000000864,
+        "encodeStartAt": 3.0110789999998815,
+        "encodeEndAt": 3.163293000001431,
+        "sendAt": 3.169065000001865,
+        "writeCallbackAt": 3.231471999999485,
+        "finalFrameAt": 976.7087979999997,
+        "finalCoreMs": 962.113184,
+        "resolveAt": 976.7520330000007,
+        "eventLoopMaxMs": 6.328319,
+        "eventLoopMeanMs": 5.7886903952095805,
+        "preparationMs": 2.808778999999049,
+        "encodingMs": 0.15221400000154972,
+        "writeCallbackLagMs": 0.062406999997620005,
+        "postKillExitMs": null,
+        "exitToPipeCloseMs": null,
+        "finalTransportQueueCleanupMs": 11.426548999997749
+      }
+    }
+  ],
+  "summary": [
+    {
+      "position": "初始全暗",
+      "depth": 3,
+      "nodes": 217728,
+      "baselineMedianMs": 209.24574,
+      "trialMedianMs": 228.521773,
+      "speedup": 0.9156490309568883
+    },
+    {
+      "position": "可达中局 2111 / 20步",
+      "depth": 3,
+      "nodes": 68709,
+      "baselineMedianMs": 74.406408,
+      "trialMedianMs": 65.999856,
+      "speedup": 1.1273722779031519
+    },
+    {
+      "position": "可达中局 2111 / 44步",
+      "depth": 3,
+      "nodes": 109718,
+      "baselineMedianMs": 90.377814,
+      "trialMedianMs": 85.738024,
+      "speedup": 1.0541158961162904
+    },
+    {
+      "position": "可达中局 2221 / 44步",
+      "depth": 3,
+      "nodes": 207583,
+      "baselineMedianMs": 161.111815,
+      "trialMedianMs": 179.162219,
+      "speedup": 0.8992510580592888
+    },
+    {
+      "position": "全明10子残局",
+      "depth": 4,
+      "nodes": 38033,
+      "baselineMedianMs": 25.967714,
+      "trialMedianMs": 25.403528,
+      "speedup": 1.0222089624716693
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "passed": true,
+  "games": [
+    {
+      "index": 0,
+      "kind": "internal",
+      "seed": 2026102301,
+      "candidateSide": "r",
+      "engine": "trial",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "plies": 47,
+      "passed": true
+    },
+    {
+      "index": 1,
+      "kind": "internal",
+      "seed": 2026102301,
+      "candidateSide": "b",
+      "engine": "trial",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "plies": 47,
+      "passed": true
+    },
+    {
+      "index": 2,
+      "kind": "pika",
+      "seed": 2026102301,
+      "candidateSide": "r",
+      "engine": "baseline",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "黑方重复局面判负",
+        "technicalForfeit": false
+      },
+      "plies": 30,
+      "passed": true
+    },
+    {
+      "index": 3,
+      "kind": "pika",
+      "seed": 2026102301,
+      "candidateSide": "r",
+      "engine": "trial",
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "plies": 66,
+      "passed": true
+    },
+    {
+      "index": 4,
+      "kind": "pika",
+      "seed": 2026102301,
+      "candidateSide": "b",
+      "engine": "trial",
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "plies": 68,
+      "passed": true
+    },
+    {
+      "index": 5,
+      "kind": "pika",
+      "seed": 2026102301,
+      "candidateSide": "b",
+      "engine": "baseline",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "plies": 63,
+      "passed": true
+    },
+    {
+      "index": 6,
+      "kind": "internal",
+      "seed": 2026102303,
+      "candidateSide": "r",
+      "engine": "trial",
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "plies": 38,
+      "passed": true
+    },
+    {
+      "index": 7,
+      "kind": "internal",
+      "seed": 2026102303,
+      "candidateSide": "b",
+      "engine": "trial",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "plies": 45,
+      "passed": true
+    },
+    {
+      "index": 8,
+      "kind": "pika",
+      "seed": 2026102303,
+      "candidateSide": "r",
+      "engine": "trial",
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "plies": 110,
+      "passed": true
+    },
+    {
+      "index": 9,
+      "kind": "pika",
+      "seed": 2026102303,
+      "candidateSide": "r",
+      "engine": "baseline",
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "plies": 80,
+      "passed": true
+    },
+    {
+      "index": 10,
+      "kind": "pika",
+      "seed": 2026102303,
+      "candidateSide": "b",
+      "engine": "baseline",
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "plies": 38,
+      "passed": true
+    },
+    {
+      "index": 11,
+      "kind": "pika",
+      "seed": 2026102303,
+      "candidateSide": "b",
+      "engine": "trial",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "plies": 49,
+      "passed": true
+    }
+  ],
+  "plies": 681,
+  "privateDarkCaptures": 97,
+  "repetitionLosses": 1,
+  "rootGuardUses": 1,
+  "complete": true
+}

@@ -1,0 +1,155 @@
+{
+  "promoted": false,
+  "reason": "Mixed exact-tree timing; no increase in completed layers in the 1s screen; only two paired layouts, below the existing independent 8+20 gate. No reliable strength claim.",
+  "statistics": {
+    "internal": {
+      "total": {
+        "games": 4,
+        "wins": 1,
+        "draws": 0,
+        "losses": 3,
+        "unresolved": 0,
+        "scoreRate": 0.25,
+        "technical": []
+      },
+      "withoutTechnical": {
+        "games": 4,
+        "wins": 1,
+        "draws": 0,
+        "losses": 3,
+        "unresolved": 0,
+        "scoreRate": 0.25,
+        "technical": []
+      }
+    },
+    "baselinePika": {
+      "total": {
+        "games": 4,
+        "wins": 2,
+        "draws": 0,
+        "losses": 2,
+        "unresolved": 0,
+        "scoreRate": 0.5,
+        "technical": []
+      },
+      "withoutTechnical": {
+        "games": 4,
+        "wins": 2,
+        "draws": 0,
+        "losses": 2,
+        "unresolved": 0,
+        "scoreRate": 0.5,
+        "technical": []
+      }
+    },
+    "trialPika": {
+      "total": {
+        "games": 4,
+        "wins": 1,
+        "draws": 0,
+        "losses": 3,
+        "unresolved": 0,
+        "scoreRate": 0.25,
+        "technical": []
+      },
+      "withoutTechnical": {
+        "games": 4,
+        "wins": 1,
+        "draws": 0,
+        "losses": 3,
+        "unresolved": 0,
+        "scoreRate": 0.25,
+        "technical": []
+      }
+    }
+  },
+  "timing": {
+    "internal": {
+      "attempts": 177,
+      "p50Ms": 998.3604570000007,
+      "p95Ms": 1002.7190340000016,
+      "maxMs": 1018.185472000001,
+      "overGrace": 0,
+      "unmeasuredProtocolFailures": 0
+    },
+    "baselinePika": {
+      "attempts": 211,
+      "p50Ms": 999.193898000005,
+      "p95Ms": 1002.8322249999983,
+      "maxMs": 1004.5164240000004,
+      "overGrace": 0,
+      "unmeasuredProtocolFailures": 0
+    },
+    "trialPika": {
+      "attempts": 293,
+      "p50Ms": 999.4810270000016,
+      "p95Ms": 1002.7751759999992,
+      "maxMs": 1004.3385249999992,
+      "overGrace": 0,
+      "unmeasuredProtocolFailures": 0
+    }
+  },
+  "repetitionDiagnostics": [
+    {
+      "index": 2,
+      "side": "b",
+      "legalRoots": 1,
+      "immediateRepetitionLosingRoots": 1,
+      "allLegalRootsLose": true
+    }
+  ],
+  "compileEquivalence": {
+    "trialFlags": [
+      "-std=c++17",
+      "-O3",
+      "-ffp-contract=off",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-isystem",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+    ],
+    "stableFlags": [
+      "-std=c++17",
+      "-O3",
+      "-DNDEBUG",
+      "-ffp-contract=off",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-isystem",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+    ],
+    "sourceSha256": "8f93d3e84ed75f0e7de9cbe2d51a3448311b76aaf13f6a8405dad6fd350becfd",
+    "trialBinarySha256": "f225dfc3b9ccf3efbae8a6aaaf0d9b302df2bbd80b9a23296bae93b3158541c9",
+    "ndebugBinarySha256": "f225dfc3b9ccf3efbae8a6aaaf0d9b302df2bbd80b9a23296bae93b3158541c9",
+    "sameOutputBasename": true,
+    "byteIdentical": true,
+    "warnings": ""
+  },
+  "verification": {
+    "plies": 681,
+    "privateDarkCaptures": 97,
+    "repetitionLosses": 1,
+    "rootGuardUses": 1
+  },
+  "stableSourceSha256": "94dab5ee87ff8996fcf9e8f93070a8012866926822611eb0f84f6bd3607e1b2c",
+  "trialBuild": {
+    "stableSourceSha256": "94dab5ee87ff8996fcf9e8f93070a8012866926822611eb0f84f6bd3607e1b2c",
+    "stableBinarySha256": "5c68913e2035093465cb3807ea81604839023daa884d0c0c66ba65f5958a2d23",
+    "sourceSha256": "8f93d3e84ed75f0e7de9cbe2d51a3448311b76aaf13f6a8405dad6fd350becfd",
+    "binarySha256": "f225dfc3b9ccf3efbae8a6aaaf0d9b302df2bbd80b9a23296bae93b3158541c9",
+    "sanitize": false,
+    "flags": [
+      "-std=c++17",
+      "-O3",
+      "-ffp-contract=off",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-isystem",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+    ],
+    "warnings": ""
+  }
+}

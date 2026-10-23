@@ -1,0 +1,27 @@
+{
+  "trialFlags": [
+    "-std=c++17",
+    "-O3",
+    "-ffp-contract=off",
+    "-Wall",
+    "-Wextra",
+    "-Wpedantic",
+    "-isystem",
+    "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+  ],
+  "stableFlags": [
+    "-std=c++17",
+    "-O3",
+    "-DNDEBUG",
+    "-ffp-contract=off",
+    "-Wall",
+    "-Wextra",
+    "-Wpedantic",
+    "-isystem",
+    "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+  ],
+  "trialBinarySha256": "f225dfc3b9ccf3efbae8a6aaaf0d9b302df2bbd80b9a23296bae93b3158541c9",
+  "ndebugBinarySha256": "dfe6f8270bd42e2b6ba4aba98896fb5715b041c7b1b36ae26b40286e7bd47bfb",
+  "byteIdentical": false,
+  "warnings": ""
+}

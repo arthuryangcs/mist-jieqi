@@ -6,6 +6,8 @@
 
 服务测试：`npm run test:cpp-ui`；浏览器测试：`npm run test:browser:cpp`（使用已有Chrome/Playwright，配置同主README）。HTTP只接受公开观察，不接受实际暗布局。
 
+2026-10-23 的[将帅安全几何表实验](../docs/experiments/king-geometry.md)保留为独立原型，没有替换默认核心。正确性与内存检查通过，但固定搜索树速度有快有慢；同预算、新布局换色对稳定版及固定Pika的原始记录、限制与复现步骤均见报告。
+
 当前核心增加单次走法预评分、逐层走法/评分缓冲复用和单子落点栈数组，保持稳定排序与原搜索语义。冻结 `b200995` 的四变体消融、剖析、等时预算及验证见 [NATIVE_PERFORMANCE_REPORT.md](../NATIVE_PERFORMANCE_REPORT.md)。用 `node native/perf-benchmark.mjs fixed` 重跑；脚本会重写该模式的结果文件，先另存正式记录。历史深层脚本若固定旧源码哈希而拒绝执行，应保留其冻结条件，不把新核心冒充旧基线。
 
 新一轮在 `46f83ad` 上增加射线/保守将军检查快路径与循环路径栈，消融和安全条件见 [NATIVE_MOVEGEN_REPORT.md](../NATIVE_MOVEGEN_REPORT.md)。`node native/movegen-benchmark.mjs fixed` 重跑四变体；`guards` 逐着与旧检查复核并对照独立JS规则，`budgets` 测相同1/6/15秒预算。脚本默认覆盖相应模式的JSON，先另存正式记录。

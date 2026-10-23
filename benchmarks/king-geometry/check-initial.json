@@ -1,0 +1,28 @@
+{
+  "passed": false,
+  "build": {
+    "stableSourceSha256": "94dab5ee87ff8996fcf9e8f93070a8012866926822611eb0f84f6bd3607e1b2c",
+    "stableBinarySha256": "5c68913e2035093465cb3807ea81604839023daa884d0c0c66ba65f5958a2d23",
+    "sourceSha256": "8f93d3e84ed75f0e7de9cbe2d51a3448311b76aaf13f6a8405dad6fd350becfd",
+    "binarySha256": "f225dfc3b9ccf3efbae8a6aaaf0d9b302df2bbd80b9a23296bae93b3158541c9",
+    "sanitize": false,
+    "flags": [
+      "-std=c++17",
+      "-O3",
+      "-ffp-contract=off",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-isystem",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+    ],
+    "warnings": ""
+  },
+  "sanitize": false,
+  "geometryTriples": 729000,
+  "views": 0,
+  "transitions": 0,
+  "searches": [],
+  "privacyChecks": 0,
+  "error": "AssertionError [ERR_ASSERTION]: reachable/2026102307/0\n+ actual - expected\n... Skipped lines\n\n  {\n    sides: [\n      {\n        captures: [\n          {\n...\n    ],\n+   wallMs: 5.3447980000000825\n-   wallMs: 3.6419910000004165\n  }\n\n    at file://<project>/native/experiments/king-geometry/check.mjs:38:116\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"
+}
