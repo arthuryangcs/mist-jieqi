@@ -1,0 +1,370 @@
+{
+  "passed": true,
+  "games": [
+    {
+      "index": 0,
+      "kind": "internal",
+      "seed": 2026102401,
+      "candidateSide": "r",
+      "engine": "trial",
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "plies": 208,
+      "passed": true
+    },
+    {
+      "index": 1,
+      "kind": "internal",
+      "seed": 2026102401,
+      "candidateSide": "b",
+      "engine": "trial",
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "plies": 104,
+      "passed": true
+    },
+    {
+      "index": 2,
+      "kind": "pika",
+      "seed": 2026102401,
+      "candidateSide": "r",
+      "engine": "baseline",
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "plies": 62,
+      "passed": true
+    },
+    {
+      "index": 3,
+      "kind": "pika",
+      "seed": 2026102401,
+      "candidateSide": "r",
+      "engine": "trial",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "黑方重复局面判负",
+        "technicalForfeit": false
+      },
+      "plies": 38,
+      "passed": true
+    },
+    {
+      "index": 4,
+      "kind": "pika",
+      "seed": 2026102401,
+      "candidateSide": "b",
+      "engine": "trial",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "plies": 83,
+      "passed": true
+    },
+    {
+      "index": 5,
+      "kind": "pika",
+      "seed": 2026102401,
+      "candidateSide": "b",
+      "engine": "baseline",
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "plies": 112,
+      "passed": true
+    },
+    {
+      "index": 6,
+      "kind": "internal",
+      "seed": 2026102403,
+      "candidateSide": "r",
+      "engine": "trial",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "plies": 43,
+      "passed": true
+    },
+    {
+      "index": 7,
+      "kind": "internal",
+      "seed": 2026102403,
+      "candidateSide": "b",
+      "engine": "trial",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "plies": 35,
+      "passed": true
+    },
+    {
+      "index": 8,
+      "kind": "pika",
+      "seed": 2026102403,
+      "candidateSide": "r",
+      "engine": "trial",
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "plies": 80,
+      "passed": true
+    },
+    {
+      "index": 9,
+      "kind": "pika",
+      "seed": 2026102403,
+      "candidateSide": "r",
+      "engine": "baseline",
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "plies": 50,
+      "passed": true
+    },
+    {
+      "index": 10,
+      "kind": "pika",
+      "seed": 2026102403,
+      "candidateSide": "b",
+      "engine": "baseline",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "plies": 33,
+      "passed": true
+    },
+    {
+      "index": 11,
+      "kind": "pika",
+      "seed": 2026102403,
+      "candidateSide": "b",
+      "engine": "trial",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "plies": 65,
+      "passed": true
+    },
+    {
+      "index": 12,
+      "kind": "internal",
+      "seed": 2026102405,
+      "candidateSide": "r",
+      "engine": "trial",
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "困毙",
+        "technicalForfeit": false
+      },
+      "plies": 92,
+      "passed": true
+    },
+    {
+      "index": 13,
+      "kind": "internal",
+      "seed": 2026102405,
+      "candidateSide": "b",
+      "engine": "trial",
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "困毙",
+        "technicalForfeit": false
+      },
+      "plies": 92,
+      "passed": true
+    },
+    {
+      "index": 14,
+      "kind": "pika",
+      "seed": 2026102405,
+      "candidateSide": "r",
+      "engine": "baseline",
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "plies": 50,
+      "passed": true
+    },
+    {
+      "index": 15,
+      "kind": "pika",
+      "seed": 2026102405,
+      "candidateSide": "r",
+      "engine": "trial",
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "plies": 42,
+      "passed": true
+    },
+    {
+      "index": 16,
+      "kind": "pika",
+      "seed": 2026102405,
+      "candidateSide": "b",
+      "engine": "trial",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "plies": 43,
+      "passed": true
+    },
+    {
+      "index": 17,
+      "kind": "pika",
+      "seed": 2026102405,
+      "candidateSide": "b",
+      "engine": "baseline",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "plies": 77,
+      "passed": true
+    },
+    {
+      "index": 18,
+      "kind": "internal",
+      "seed": 2026102409,
+      "candidateSide": "r",
+      "engine": "trial",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "plies": 89,
+      "passed": true
+    },
+    {
+      "index": 19,
+      "kind": "internal",
+      "seed": 2026102409,
+      "candidateSide": "b",
+      "engine": "trial",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "困毙",
+        "technicalForfeit": false
+      },
+      "plies": 91,
+      "passed": true
+    },
+    {
+      "index": 20,
+      "kind": "pika",
+      "seed": 2026102409,
+      "candidateSide": "r",
+      "engine": "trial",
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "plies": 60,
+      "passed": true
+    },
+    {
+      "index": 21,
+      "kind": "pika",
+      "seed": 2026102409,
+      "candidateSide": "r",
+      "engine": "baseline",
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "plies": 34,
+      "passed": true
+    },
+    {
+      "index": 22,
+      "kind": "pika",
+      "seed": 2026102409,
+      "candidateSide": "b",
+      "engine": "baseline",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "plies": 17,
+      "passed": true
+    },
+    {
+      "index": 23,
+      "kind": "pika",
+      "seed": 2026102409,
+      "candidateSide": "b",
+      "engine": "trial",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "plies": 63,
+      "passed": true
+    }
+  ],
+  "plies": 1663,
+  "privateDarkCaptures": 162,
+  "repetitionLosses": 1,
+  "rootGuardUses": 2,
+  "complete": true
+}

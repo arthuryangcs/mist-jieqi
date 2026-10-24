@@ -1,0 +1,83 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';
+import {build,baseline,dir,hash,stableBinary} from './build.mjs';
+import {diagnosticBuild} from './diagnostic.mjs';
+import {Native,fixture,encode,compare} from '../../bridge.mjs';
+import {initial,publicState,move,legalMoves,inCheck} from '../../../engine.js';
+import {seeded,evaluate,remaining,values} from '../../../ai.js';
+const sanitize=process.argv.includes('--sanitize'),built=build({sanitize});
+const r={passed:false,build:{...built,binary:undefined},sanitize,qCases:0,qDiagnostics:[],views:0,transitions:0,searches:[],privacyChecks:0};
+const cases=[];
+const targeted=[
+ ['stalemate',[[85,'r','K'],[4,'b','K'],[49,'r','P'],[12,'r','R'],[14,'r','R']]],
+ ['mate',[[85,'r','K'],[4,'b','K'],[49,'r','P'],[12,'r','R'],[14,'r','R'],[13,'r','R']]],
+ ['cannon screen added',[[85,'r','K'],[3,'b','K'],[4,'b','C'],[72,'r','R']]],
+ ['cannon second screen removed',[[85,'r','K'],[3,'b','K'],[4,'b','C'],[76,'r','R'],[49,'r','P']]],
+ ['rook line vacated',[[85,'r','K'],[3,'b','K'],[4,'b','R'],[76,'r','R']]],
+ ['horse leg vacated',[[85,'r','K'],[3,'b','K'],[66,'b','N'],[75,'r','R']]],
+ ['elephant eye vacated',[[85,'r','K'],[3,'b','K'],[65,'b','B'],[75,'r','R']]],
+ ['kings facing',[[85,'r','K'],[4,'b','K']]],
+ ['missing king',[[4,'b','K'],[72,'r','R']]],
+ ['hidden cannon evasion',[[85,'r','K'],[3,'b','K'],[4,'b','R'],[12,'b','R'],[14,'b','R'],[64,'r','N',true,'C']]]
+];
+for(const [name,pieces]of targeted){const s={...initial(),board:Array(90).fill(null),captured:[],positions:[],result:null};for(const [i,side,type,hidden=false,role=type]of pieces)s.board[i]={side,type,role,hidden};cases.push({name,state:s,arbitrary:true});}
+for(const seed of [2026102407,2026102411,2026102419]){
+ const rng=seeded(seed);let s=initial(rng);cases.push({name:`reachable/${seed}/0`,state:structuredClone(s)});
+ for(let ply=1;ply<=64&&!s.result;ply++){
+  const ms=legalMoves(s);s=move(s,ms[Math.floor(rng()*ms.length)]);
+  if(ply%8===0)cases.push({name:`reachable/${seed}/${ply}`,state:structuredClone(s)});
+ }
+}
+// Existing tactical/rule fixtures are independently checked by the JS oracle.
+for(const p of JSON.parse(fs.readFileSync('benchmarks/tactical-positions.json')))cases.push({name:p.name,state:p.state});
+for(const p of JSON.parse(fs.readFileSync('benchmarks/native-benchmark.json')).positions)cases.push({name:p.name,state:p.fixture.view});
+// Arbitrary geometry stress: legal inventory is not claimed for these diagrams.
+const rng=seeded(2026102423),types=['K','R','N','B','C','A','P'];
+for(let i=0;i<100;i++){
+ const s={...initial(),board:Array(90).fill(null),captured:[],positions:[],result:null};
+ for(let n=0;n<20;n++){const square=Math.floor(rng()*90),type=types[1+Math.floor(rng()*6)];s.board[square]={side:rng()<.5?'r':'b',type,role:types[1+Math.floor(rng()*6)],hidden:rng()<.5};}
+ for(const [side,squares]of [['r',[84,85,86,75,76,77,66,67,68]],['b',[3,4,5,12,13,14,21,22,23]]]){const square=squares[Math.floor(rng()*9)];s.board[square]={side,type:'K',role:'K',hidden:false};}
+ cases.push({name:`diagram/${i}`,state:s,arbitrary:true});
+}
+const diagnostics=Object.fromEntries(['baseline','trial'].map(name=>[name,diagnosticBuild(name,{sanitize})]));r.diagnosticBuilds=Object.fromEntries(Object.entries(diagnostics).map(([k,{binary,...v}])=>[k,v]));
+const qclients=Object.fromEntries(Object.entries(diagnostics).map(([k,v])=>[k,new Native({binary:v.binary})]));
+const native=new Native({binary:built.binary}),stable=new Native({binary:baseline});
+try{
+ for(const c of cases)for(const viewer of ['r','b',null]){
+  const f=c.arbitrary?{view:publicState(c.state,viewer),worlds:[{board:c.state.board}],repetitions:[]}:fixture(publicState(c.state,viewer),{seed:6101,samples:1});
+  const x=await native.request(f,{mode:'VERIFY',depth:1}),y=await stable.request(f,{mode:'VERIFY',depth:1});
+  // Transport timings are observations, not part of VERIFY rule semantics.
+  assert.deepEqual({...x,wallMs:undefined},{...y,wallMs:undefined},c.name);
+  const w={...f.view,...f.worlds[0]},v=publicState(w,viewer);
+  for(const [i,side]of ['r','b'].entries()){
+   assert.equal(x.sides[i].check,inCheck(w.board,side),c.name);
+   assert.deepEqual(x.sides[i].legal,legalMoves(w,side),c.name);
+   assert.deepEqual(x.sides[i].captures,legalMoves(w,side,{capturesOnly:true}),c.name);
+   if(!c.arbitrary)assert(Math.abs(x.sides[i].score-evaluate(v,side))<1e-7,c.name);
+  }
+  if(!c.name.startsWith('diagram/')&&(!c.name.startsWith('reachable/')||c.name.endsWith('/0')||c.name.endsWith('/32'))){
+   const a=await qclients.baseline.request(f,{mode:'VERIFY',depth:1}),b=await qclients.trial.request(f,{mode:'VERIFY',depth:1});assert.equal(a.cases.length,b.cases.length);
+   for(let j=0;j<a.cases.length;j++){
+    const row=a.cases[j],trial=b.cases[j],side=row.side===0?'r':'b';for(const k of ['side','qleft','stand','alpha','beta','checked','score','nodes','restored'])assert.equal(row[k],trial[k],c.name+'/'+k);assert(row.restored);
+    const ms=legalMoves(w,side);assert.equal(row.checked,inCheck(w.board,side));
+    if(!row.checked&&!ms.length)assert.equal(row.score,-99000,'stalemate before stand-pat');
+    if(!row.checked&&ms.length&&row.stand>=row.beta)assert.equal(row.score,row.stand,'legal stand-pat cutoff');
+    if(!row.checked&&ms.length&&row.stand<row.beta&&row.qleft===0)assert.equal(row.score,Math.max(row.alpha,row.stand));
+    r.qCases++;
+   }
+   r.qDiagnostics.push({name:c.name,viewer,baseline:a.cases,trial:b.cases});
+  }
+  for(const row of x.transitions){assert(row.restored);if(!c.arbitrary){const n=move(w,{from:row.from,to:row.to},false),v=publicState(n,viewer);assert.deepEqual(row.reply,legalMoves(n));assert(Math.abs(row.score-evaluate(v,w.turn))<1e-7);assert.deepEqual(row.poolCount,['r','b'].map(s=>remaining(v,s).length));assert.deepEqual(row.poolValue,['r','b'].map(s=>remaining(v,s).reduce((a,t)=>a+values[t],0)));}r.transitions++;}r.views++;
+ }
+ assert.equal(encode(fixture(publicState(initial(seeded(1)),'r'))),encode(fixture(publicState(initial(seeded(999)),'r'))));r.privacyChecks++;
+ const fixtures=JSON.parse(fs.readFileSync('benchmarks/native-benchmark.json')).positions;
+ for(const [i,p]of fixtures.entries())for(const nodeLimit of [1000,30000]){
+  const f=p.fixture,options={depth:i===fixtures.length-1?4:3,nodeLimit};const a=await stable.request(f,options),b=await native.request(f,options);
+  assert.equal(a.iterations.length,b.iterations.length);for(let i=0;i<a.iterations.length;i++){assert.equal(a.iterations[i].nodes,b.iterations[i].nodes);assert.deepEqual(a.iterations[i].allCandidates,b.iterations[i].allCandidates);}
+  r.searches.push({name:p.name,nodeLimit,depth:a.depth,nodes:a.nodes,...compare(a,b)});
+ }
+ r.diagnosticSummary=Object.fromEntries(['baseline','trial'].map(name=>[name,Object.fromEntries(['nodes','captureLists','firstLegalProbes','candidateCalls'].map(k=>[k,r.qDiagnostics.reduce((a,x)=>a+x[name].reduce((s,c)=>s+c[k],0),0)]))]));
+ assert(r.diagnosticSummary.trial.captureLists<r.diagnosticSummary.baseline.captureLists,'must exercise the skipped capture-list path');
+ assert(!native.stderr.trim(),native.stderr);assert.equal(hash(baseline),stableBinary);r.passed=true;
+}catch(e){r.error=e.stack.replaceAll(process.cwd(),'<project>');throw e;}finally{
+ await native.close();await stable.close();for(const c of Object.values(qclients)){await c.close();assert(!c.stderr.trim(),c.stderr);}fs.writeFileSync(dir+`/check${sanitize?'-sanitized':''}.json`,JSON.stringify(r,null,2)+'\n');console.log(JSON.stringify({passed:r.passed,sanitize,views:r.views,transitions:r.transitions,qCases:r.qCases,searches:r.searches.length}));
+}
