@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "modelSha256": "0b3ccf77fb30ce16ccdeaceb198bf7a114cee7b8a084643adac0d14887090edb",
+  "results": [
+    {
+      "name": "pilot",
+      "sourceSha256": "3cbb137af8ab92121631f54a40df30f240096f1bdcf054fcdb7501a929ab59c5",
+      "binarySha256": "d780e92a6618f90c22c345116559715814a625393e22c7261f17d831c9253532",
+      "flags": [
+        "-std=c++17",
+        "-O3",
+        "-DNDEBUG",
+        "-ffp-contract=off",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-isystem",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+      ],
+      "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+      "warnings": "",
+      "passed": true,
+      "inheritedFieldsEqual": true,
+      "keysEqual": true,
+      "tableEntries": 1,
+      "scoreA": -309.50767447959845,
+      "scoreB": -301.1910094999464
+    },
+    {
+      "name": "corrected",
+      "sourceSha256": "42bc6e42d222f22dcda5376c7c3b561ba9c1fd3e5bd77997f1da87069eb2a42d",
+      "binarySha256": "1e5a4477a7d9c0c9d49252240317395a9759ca14590ace9c57045602f954bc69",
+      "flags": [
+        "-std=c++17",
+        "-O3",
+        "-DNDEBUG",
+        "-ffp-contract=off",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-isystem",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+      ],
+      "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+      "warnings": "",
+      "passed": true,
+      "inheritedFieldsEqual": true,
+      "keysEqual": false,
+      "tableEntries": 2,
+      "scoreA": -309.50767447959845,
+      "scoreB": -301.1910094999464
+    }
+  ],
+  "scope": "Constructed consistent belief inventories with the same board/count/value; not a claim that a particular pilot game hit the alias."
+}

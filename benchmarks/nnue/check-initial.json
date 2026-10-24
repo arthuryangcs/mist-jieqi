@@ -1,0 +1,6 @@
+{
+  "passed": false,
+  "stage": "JavaScript module loading before compilation or execution",
+  "error": "file://<project>/native/experiments/nnue/check.mjs:2\nimport {compile} from '../standpat/build.mjs';import {build,cache,dir,modelFile,sourceOf,patch,hash} from './build.mjs';import {loadModel,forward} from './reference.mjs';import {featureIndices,TYPES} from './features.mjs';\n                                                                                         ^^^^^\nSyntaxError: The requested module './build.mjs' does not provide an export named 'patch'\n    at #asyncInstantiate (node:internal/modules/esm/module_job:319:21)\n    at async ModuleJob.run (node:internal/modules/esm/module_job:422:5)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:655:26)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)\n\nNode.js v25.6.0\n",
+  "engineFailure": false
+}

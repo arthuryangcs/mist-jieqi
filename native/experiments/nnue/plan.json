@@ -1,0 +1,13 @@
+{
+  "experiment": "observation-residual-nnue-v1",
+  "baseCommit": "59cd3d19585e3cb2427223b6f6f8a968a3636dd6",
+  "stableSourceSha256": "94dab5ee87ff8996fcf9e8f93070a8012866926822611eb0f84f6bd3607e1b2c",
+  "stableBinarySha256": "5c68913e2035093465cb3807ea81604839023daa884d0c0c66ba65f5958a2d23",
+  "dataSources": ["benchmarks/clock-validation/matches.json", "benchmarks/king-geometry/matches.json", "benchmarks/standpat/matches.json"],
+  "data": {"splitSeed": 2026102407, "trainingLayouts": 5, "validationLayouts": 1, "testLayouts": 2, "firstPly": 8, "stride": 2, "viewers": ["r", "b"], "excludeTechnicalOrUnresolved": true, "labels": "Actual referee result, red win=1, black win=0, quiet draw=0.5. No engine score labels.", "weighting": "Equal total weight per initial layout, equal games within layout, equal observations within game."},
+  "network": {"features": 2597, "hidden": 16, "accumulators": 2, "activation": "clipped ReLU [0,1]", "residualCapCp": 256, "sigmoidScaleCp": 600, "output": "HCE(red) + cap/2*(tanh(z(red-frame))-tanh(z(rotated-color-swapped-frame)))", "weightStorage": "float32", "accumulatorArithmetic": "float64", "kingRelativeBuckets": false},
+  "training": {"seed": 1729, "epochs": 120, "optimizer": "full-batch Adam", "learningRate": 0.005, "l2": 0.0001, "selection": "Lowest validation weighted BCE among epochs 1..120; test is evaluated once after freezing the selected model.", "hyperparameterSweeps": 0},
+  "matches": {"seeds": [2026102427, 2026102431], "internalGames": 4, "baselinePikaGames": 4, "nnuePikaGames": 4, "budgetMs": 1000, "graceMs": 60, "maxPlies": 400, "samples": 8, "brightSamples": 1, "maxThreads": 4, "pikaThreads": 4, "pikaHashMiB": 64, "pikaMoveOverheadMs": 0, "hostReserveMs": 0, "rule": "Third same public board and turn loses for mover; mate/stalemate priority.120 quiet plies draw;400-ply cap unresolved.", "stopRule": "Finish the entire prespecified plan regardless of wins; pause safely only for quota/access/technical execution blockers. No tuning after results."},
+  "defaultPromotion": false,
+  "publication": "Only after completed checks and privacy/provenance review, under the user's subsequent explicit publication approval. Default engine remains unchanged."
+}

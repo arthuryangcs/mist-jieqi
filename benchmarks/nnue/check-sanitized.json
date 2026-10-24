@@ -1,0 +1,157 @@
+{
+  "passed": true,
+  "sanitize": true,
+  "modelSha256": "0b3ccf77fb30ce16ccdeaceb198bf7a114cee7b8a084643adac0d14887090edb",
+  "build": {
+    "stableSourceSha256": "94dab5ee87ff8996fcf9e8f93070a8012866926822611eb0f84f6bd3607e1b2c",
+    "stableBinarySha256": "5c68913e2035093465cb3807ea81604839023daa884d0c0c66ba65f5958a2d23",
+    "sourceSha256": "09fa7564235ab18248ff4a0dfe649b3f395cbc937c9be7191adad0cc2bd38ae7",
+    "headerSha256": "152ecbaaeb3857c413f22351bc2c0c9e7c45193fd0c81caa001899be8cbd2ef5",
+    "modelSha256": "0b3ccf77fb30ce16ccdeaceb198bf7a114cee7b8a084643adac0d14887090edb",
+    "binarySha256": "391771cc16a2a099d9c70ef1d4ff4ee7d8615c5cca7d6ea1d7712b1a91fa10e5",
+    "sanitize": true,
+    "flags": [
+      "-std=c++17",
+      "-ffp-contract=off",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-isystem",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1",
+      "-O1",
+      "-g",
+      "-fsanitize=address,undefined",
+      "-fno-omit-frame-pointer",
+      "-DMIST_VERIFY_RESTORE"
+    ],
+    "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+    "warnings": ""
+  },
+  "views": 87,
+  "transitions": 2994,
+  "privateCaptures": 111,
+  "reveals": 1152,
+  "maxAccumulatorError": 0,
+  "maxForwardError": 5.684341886080802e-14,
+  "searches": [
+    {
+      "name": "初始全暗",
+      "nodeLimit": 30000,
+      "depth": 1,
+      "nodes": 30001,
+      "threads": 1,
+      "nodesEqual": true,
+      "candidates": 44,
+      "maxDifference": 0
+    },
+    {
+      "name": "初始全暗",
+      "nodeLimit": 0,
+      "depth": 2,
+      "nodes": 31055,
+      "threads": 4,
+      "nodesEqual": true,
+      "candidates": 44,
+      "maxDifference": 0
+    },
+    {
+      "name": "可达中局 2111 / 20步",
+      "nodeLimit": 30000,
+      "depth": 2,
+      "nodes": 8811,
+      "threads": 1,
+      "nodesEqual": true,
+      "candidates": 25,
+      "maxDifference": 0
+    },
+    {
+      "name": "可达中局 2111 / 20步",
+      "nodeLimit": 0,
+      "depth": 2,
+      "nodes": 8811,
+      "threads": 4,
+      "nodesEqual": true,
+      "candidates": 25,
+      "maxDifference": 0
+    },
+    {
+      "name": "可达中局 2111 / 44步",
+      "nodeLimit": 30000,
+      "depth": 2,
+      "nodes": 24998,
+      "threads": 1,
+      "nodesEqual": true,
+      "candidates": 23,
+      "maxDifference": 0
+    },
+    {
+      "name": "可达中局 2111 / 44步",
+      "nodeLimit": 0,
+      "depth": 2,
+      "nodes": 24998,
+      "threads": 4,
+      "nodesEqual": true,
+      "candidates": 23,
+      "maxDifference": 0
+    },
+    {
+      "name": "可达中局 2221 / 44步",
+      "nodeLimit": 30000,
+      "depth": 1,
+      "nodes": 30001,
+      "threads": 1,
+      "nodesEqual": true,
+      "candidates": 31,
+      "maxDifference": 0
+    },
+    {
+      "name": "可达中局 2221 / 44步",
+      "nodeLimit": 0,
+      "depth": 2,
+      "nodes": 40725,
+      "threads": 4,
+      "nodesEqual": true,
+      "candidates": 31,
+      "maxDifference": 0
+    },
+    {
+      "name": "全明10子残局",
+      "nodeLimit": 30000,
+      "depth": 2,
+      "nodes": 1457,
+      "threads": 1,
+      "nodesEqual": true,
+      "candidates": 30,
+      "maxDifference": 0
+    },
+    {
+      "name": "全明10子残局",
+      "nodeLimit": 0,
+      "depth": 2,
+      "nodes": 1457,
+      "threads": 1,
+      "nodesEqual": true,
+      "candidates": 30,
+      "maxDifference": 0
+    }
+  ],
+  "privacyChecks": 3,
+  "auditBuild": {
+    "flags": [
+      "-std=c++17",
+      "-ffp-contract=off",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-isystem",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1",
+      "-O1",
+      "-g",
+      "-fsanitize=address,undefined",
+      "-fno-omit-frame-pointer",
+      "-DMIST_VERIFY_RESTORE"
+    ],
+    "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+    "warnings": ""
+  }
+}

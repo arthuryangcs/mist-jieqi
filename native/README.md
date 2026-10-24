@@ -10,6 +10,8 @@
 
 2026-10-24 的[保留困毙检测的静态截断实验](../docs/experiments/standpat.md)先验证任一合法着，再允许提前返回原静态分。五个固定单线程搜索树中位耗时约提速1.08～1.29倍，实际并行路径另作逐层一致性与内存检查；同预算完整层数未变。原型与新布局换色对赛证据独立保留，尚未启用默认核心。
 
+另有[合法观察残差 NNUE 原型](../docs/experiments/nnue.md)：自有小模型、双视角增量累加器、翻子/私有暗俘库存更新与完整前向一致性检查。首次集成漏扩展分类型库存缓存键，旧试跑单独保留；当前有效实现为 `native/experiments/nnue/build-corrected.mjs`，使用另行冻结的修复阶段对照。默认 HCE 和网页不加载实验权重；训练、误差、推理成本、失败与对赛样本限制均见报告。
+
 当前核心增加单次走法预评分、逐层走法/评分缓冲复用和单子落点栈数组，保持稳定排序与原搜索语义。冻结 `b200995` 的四变体消融、剖析、等时预算及验证见 [NATIVE_PERFORMANCE_REPORT.md](../NATIVE_PERFORMANCE_REPORT.md)。用 `node native/perf-benchmark.mjs fixed` 重跑；脚本会重写该模式的结果文件，先另存正式记录。历史深层脚本若固定旧源码哈希而拒绝执行，应保留其冻结条件，不把新核心冒充旧基线。
 
 新一轮在 `46f83ad` 上增加射线/保守将军检查快路径与循环路径栈，消融和安全条件见 [NATIVE_MOVEGEN_REPORT.md](../NATIVE_MOVEGEN_REPORT.md)。`node native/movegen-benchmark.mjs fixed` 重跑四变体；`guards` 逐着与旧检查复核并对照独立JS规则，`budgets` 测相同1/6/15秒预算。脚本默认覆盖相应模式的JSON，先另存正式记录。

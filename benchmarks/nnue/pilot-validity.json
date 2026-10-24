@@ -1,0 +1,14 @@
+{
+  "identifiedAt": "2026-10-24T19:07:28.951067+00:00",
+  "status": "pilot-stopped-for-integration-correctness",
+  "reason": "NNUE consumes per-type unknown inventories, but inherited HCE Key only includes count/value. Equal-value advisor/elephant inventories can alias.",
+  "modelChanged": false,
+  "retrainingPlanned": false,
+  "resultsToRetain": "All pilot attempts and failures; excluded from corrected formal strength estimates.",
+  "fix": "Include complete per-type inventory in experimental Key equality/hash and path state.",
+  "completedGames": 7,
+  "originalPlannedGames": 12,
+  "correctedPlan": "native/experiments/nnue/plan-corrected.json",
+  "regression": "benchmarks/nnue/inventory-key.json",
+  "integrationMistake": "New NNUE inventory features were added without extending inherited HCE keys; this is a new integration omission, not evidence that original HCE stock-mean keys were wrong."
+}

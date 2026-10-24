@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "games": 48,
+  "plies": 3034,
+  "observations": 2672,
+  "splitDisjoint": true,
+  "allowedTrainerFields": [
+    "features",
+    "base",
+    "target",
+    "weight"
+  ],
+  "metrics": {
+    "train": {
+      "bce": 0.6883340662460024,
+      "brier": 0.24422161879315368,
+      "observations": 1486
+    },
+    "validation": {
+      "bce": 0.4189364889599992,
+      "brier": 0.12923201924567984,
+      "observations": 350
+    },
+    "test": {
+      "bce": 0.47594377223305606,
+      "brier": 0.16300396885303242,
+      "observations": 836
+    }
+  },
+  "testMetricUsedForEpochSelection": false
+}

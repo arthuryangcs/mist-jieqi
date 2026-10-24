@@ -1,0 +1,517 @@
+{
+  "promoted": false,
+  "reason": "Small residual NNUE prototype only; two unseen paired layouts, no independent strength confirmation. Held-out outcome fit is not move quality or Elo. All technical failures retained; default HCE remains unchanged.",
+  "modelSha256": "0b3ccf77fb30ce16ccdeaceb198bf7a114cee7b8a084643adac0d14887090edb",
+  "statistics": {
+    "internal": {
+      "total": {
+        "games": 4,
+        "wins": 2,
+        "draws": 0,
+        "losses": 2,
+        "unresolved": 0,
+        "scoreRate": 0.5,
+        "technical": [
+          {
+            "seed": 2026102443,
+            "candidateSide": "r",
+            "status": "decided",
+            "winner": "b",
+            "technicalForfeit": true,
+            "offender": "candidate",
+            "reason": "technical-timeout"
+          }
+        ]
+      },
+      "withoutTechnical": {
+        "games": 3,
+        "wins": 2,
+        "draws": 0,
+        "losses": 1,
+        "unresolved": 0,
+        "scoreRate": 0.6666666666666666,
+        "technical": []
+      }
+    },
+    "baselinePika": {
+      "total": {
+        "games": 4,
+        "wins": 1,
+        "draws": 0,
+        "losses": 3,
+        "unresolved": 0,
+        "scoreRate": 0.25,
+        "technical": []
+      },
+      "withoutTechnical": {
+        "games": 4,
+        "wins": 1,
+        "draws": 0,
+        "losses": 3,
+        "unresolved": 0,
+        "scoreRate": 0.25,
+        "technical": []
+      }
+    },
+    "nnuePika": {
+      "total": {
+        "games": 4,
+        "wins": 0,
+        "draws": 0,
+        "losses": 4,
+        "unresolved": 0,
+        "scoreRate": 0,
+        "technical": []
+      },
+      "withoutTechnical": {
+        "games": 4,
+        "wins": 0,
+        "draws": 0,
+        "losses": 4,
+        "unresolved": 0,
+        "scoreRate": 0,
+        "technical": []
+      }
+    }
+  },
+  "timing": {
+    "internal": {
+      "recordedAttempts": 238,
+      "p50Ms": 1001.6654770000023,
+      "p95Ms": 1003.4079309999943,
+      "maxMs": 1095.8333820000007,
+      "overGrace": 1,
+      "fallbacks": 0
+    },
+    "baselinePika": {
+      "recordedAttempts": 256,
+      "p50Ms": 999.9516999999978,
+      "p95Ms": 1002.9220710000004,
+      "maxMs": 1025.1128059999992,
+      "overGrace": 0,
+      "fallbacks": 0
+    },
+    "nnuePika": {
+      "recordedAttempts": 334,
+      "p50Ms": 999.7799379999924,
+      "p95Ms": 1003.8881039999978,
+      "maxMs": 1049.6369090000007,
+      "overGrace": 0,
+      "fallbacks": 0
+    }
+  },
+  "technical": [
+    {
+      "index": 6,
+      "kind": "internal",
+      "engine": "nnue",
+      "seed": 2026102443,
+      "candidateSide": "r",
+      "playedPlies": 22,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "technicalForfeit": true,
+        "offender": "candidate",
+        "reason": "technical-timeout"
+      },
+      "lastAttempt": {
+        "ply": 23,
+        "side": "r",
+        "engine": "candidate",
+        "move": {
+          "from": 58,
+          "to": 41
+        },
+        "elapsedMs": 1095.8333820000007,
+        "depth": 4,
+        "nodes": 591254,
+        "score": 517.6086010085774,
+        "samples": 8,
+        "firstProgressMs": 14.092132999998285,
+        "deadlineStop": true,
+        "fallbackUsed": false,
+        "clock": {
+          "nominalBudgetMs": 999,
+          "reserveMs": 0,
+          "softDeadlineAt": 999,
+          "frames": [
+            {
+              "receivedAt": 14.023389999998471,
+              "callbackAt": 14.037647999997716,
+              "parsedAt": 14.086852000000363,
+              "parseMs": 0.04920400000264635,
+              "coreMs": 4.439572,
+              "progress": true
+            },
+            {
+              "receivedAt": 21.364018000000215,
+              "callbackAt": 21.38077599999815,
+              "parsedAt": 21.431767999998556,
+              "parseMs": 0.050992000000405824,
+              "coreMs": 11.790291,
+              "progress": true
+            },
+            {
+              "receivedAt": 60.41402299999754,
+              "callbackAt": 60.427834999998595,
+              "parsedAt": 60.472154999999475,
+              "parseMs": 0.0443200000008801,
+              "coreMs": 50.883236,
+              "progress": true
+            },
+            {
+              "receivedAt": 231.5689280000006,
+              "callbackAt": 231.5827599999975,
+              "parsedAt": 231.62563600000067,
+              "parseMs": 0.04287600000316161,
+              "coreMs": 222.033216,
+              "progress": true
+            }
+          ],
+          "parseMs": 0.18739200000709388,
+          "preparationStartAt": 0.16419300000052317,
+          "preparationEndAt": 4.270550999997795,
+          "encodeStartAt": 4.2757369999999355,
+          "encodeEndAt": 4.521004999998695,
+          "sendAt": 4.522849999997561,
+          "writeCallbackAt": 4.583402000000206,
+          "timerAt": 1080.3883969999988,
+          "timerLateMs": 81.3883969999988,
+          "killAt": 1080.3937819999992,
+          "resolveAt": 1082.4062720000002,
+          "exitAt": 1094.272410999998,
+          "closeAt": 1094.2909739999996,
+          "reapAt": 1094.3319620000002,
+          "eventLoopMaxMs": 107.937791,
+          "eventLoopMeanMs": 6.052994844444444,
+          "preparationMs": 4.106357999997272,
+          "encodingMs": 0.24526799999875948,
+          "writeCallbackLagMs": 0.06055200000264449,
+          "postKillExitMs": 13.87862899999891,
+          "exitToPipeCloseMs": 0.018563000001449836,
+          "finalTransportQueueCleanupMs": null
+        },
+        "excludedRepeatRoots": 0,
+        "viewSha256": "051eb6758bb083dcfe19628748873155f56bb16b152bc7656b2dfc3477cb28da",
+        "visibleFen": "x2xkxxxx/3p3C1/4c4/x3x3x/1Cn6/P8/4N1X1P/2A6/4B4/X1XX1K1B1 w R2A1P3N1r1a1c1p4n1b1 2 12",
+        "pikaInfo": null,
+        "applied": false
+      }
+    }
+  ],
+  "pilot": {
+    "completed": 7,
+    "planned": 12,
+    "statistics": {
+      "internal": {
+        "games": 3,
+        "wins": 1,
+        "draws": 0,
+        "losses": 2,
+        "unresolved": 0,
+        "scoreRate": 0.3333333333333333,
+        "technical": [
+          {
+            "seed": 2026102427,
+            "candidateSide": "r",
+            "status": "decided",
+            "winner": "b",
+            "technicalForfeit": true,
+            "offender": "candidate",
+            "reason": "technical-timeout"
+          },
+          {
+            "seed": 2026102431,
+            "candidateSide": "r",
+            "status": "decided",
+            "winner": "r",
+            "technicalForfeit": true,
+            "offender": "opponent",
+            "reason": "technical-timeout"
+          }
+        ]
+      },
+      "baselinePika": {
+        "games": 2,
+        "wins": 0,
+        "draws": 0,
+        "losses": 2,
+        "unresolved": 0,
+        "scoreRate": 0,
+        "technical": []
+      },
+      "nnuePika": {
+        "games": 2,
+        "wins": 1,
+        "draws": 0,
+        "losses": 1,
+        "unresolved": 0,
+        "scoreRate": 0.5,
+        "technical": []
+      }
+    },
+    "technical": [
+      {
+        "index": 0,
+        "result": {
+          "status": "decided",
+          "winner": "b",
+          "technicalForfeit": true,
+          "offender": "candidate",
+          "reason": "technical-timeout"
+        },
+        "lastAttempt": {
+          "ply": 13,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 58,
+            "to": 49
+          },
+          "elapsedMs": 1090.4909549999993,
+          "depth": 4,
+          "nodes": 449229,
+          "score": -203.9730509569272,
+          "samples": 8,
+          "firstProgressMs": 11.794369999999617,
+          "deadlineStop": true,
+          "fallbackUsed": false,
+          "clock": {
+            "nominalBudgetMs": 999,
+            "reserveMs": 0,
+            "softDeadlineAt": 999,
+            "frames": [
+              {
+                "receivedAt": 11.718514000000141,
+                "callbackAt": 11.736457999999402,
+                "parsedAt": 11.78791799999999,
+                "parseMs": 0.05146000000058848,
+                "coreMs": 3.447164,
+                "progress": true
+              },
+              {
+                "receivedAt": 18.795179999999164,
+                "callbackAt": 18.811947000000146,
+                "parsedAt": 18.866799999999785,
+                "parseMs": 0.054852999999638996,
+                "coreMs": 10.536668,
+                "progress": true
+              },
+              {
+                "receivedAt": 79.75810699999965,
+                "callbackAt": 79.77752300000066,
+                "parsedAt": 79.8439240000007,
+                "parseMs": 0.06640100000004168,
+                "coreMs": 71.454301,
+                "progress": true
+              },
+              {
+                "receivedAt": 278.0246869999992,
+                "callbackAt": 278.04567999999927,
+                "parsedAt": 278.12719500000094,
+                "parseMs": 0.08151500000167289,
+                "coreMs": 269.706794,
+                "progress": true
+              }
+            ],
+            "parseMs": 0.25422900000194204,
+            "preparationStartAt": 0.26392699999996694,
+            "preparationEndAt": 2.6045969999995577,
+            "encodeStartAt": 2.609624000000622,
+            "encodeEndAt": 2.9905109999999695,
+            "sendAt": 2.9932320000007167,
+            "writeCallbackAt": 3.074803999999858,
+            "timerAt": 1071.783453,
+            "timerLateMs": 72.78345300000001,
+            "killAt": 1071.7875239999994,
+            "resolveAt": 1071.8686039999993,
+            "exitAt": 1089.2412330000006,
+            "closeAt": 1089.6099269999995,
+            "reapAt": 1089.615804000001,
+            "eventLoopMaxMs": 111.017983,
+            "eventLoopMeanMs": 5.932121530054645,
+            "preparationMs": 2.340669999999591,
+            "encodingMs": 0.3808869999993476,
+            "writeCallbackLagMs": 0.08157199999914155,
+            "postKillExitMs": 17.453709000001254,
+            "exitToPipeCloseMs": 0.3686939999988681,
+            "finalTransportQueueCleanupMs": null
+          },
+          "excludedRepeatRoots": 0,
+          "viewSha256": "4098bd26ece23bf5a20afb831afb6533581e11047b9ef025294f16e62d01b2c0",
+          "visibleFen": "x1xxkxxxx/7B1/1xc5p/x3C3x/6p2/9/X1X1X1X1X/9/9/X1XXK1XXX w R1A1C1P5N2B1r2a1p3n2b2 0 7",
+          "pikaInfo": null,
+          "applied": false
+        }
+      },
+      {
+        "index": 6,
+        "result": {
+          "status": "decided",
+          "winner": "r",
+          "technicalForfeit": true,
+          "offender": "opponent",
+          "reason": "technical-timeout"
+        },
+        "lastAttempt": {
+          "ply": 42,
+          "side": "b",
+          "engine": "opponent",
+          "move": {
+            "from": 51,
+            "to": 60
+          },
+          "elapsedMs": 1061.590833999995,
+          "depth": 5,
+          "nodes": 2575403,
+          "score": 278.05237449851415,
+          "samples": 8,
+          "firstProgressMs": 12.562909000000218,
+          "deadlineStop": true,
+          "fallbackUsed": false,
+          "clock": {
+            "nominalBudgetMs": 999,
+            "reserveMs": 0,
+            "softDeadlineAt": 999,
+            "frames": [
+              {
+                "receivedAt": 12.507798999999068,
+                "callbackAt": 12.522196999998414,
+                "parsedAt": 12.557801000002655,
+                "parseMs": 0.03560400000424124,
+                "coreMs": 4.500963,
+                "progress": true
+              },
+              {
+                "receivedAt": 22.78641200000129,
+                "callbackAt": 22.808255000003555,
+                "parsedAt": 22.87608000000182,
+                "parseMs": 0.06782499999826541,
+                "coreMs": 14.76049,
+                "progress": true
+              },
+              {
+                "receivedAt": 58.846880999997666,
+                "callbackAt": 58.86025299999892,
+                "parsedAt": 58.90825300000142,
+                "parseMs": 0.04800000000250293,
+                "coreMs": 50.871674,
+                "progress": true
+              },
+              {
+                "receivedAt": 187.30706500000088,
+                "callbackAt": 187.3200629999992,
+                "parsedAt": 187.35177500000282,
+                "parseMs": 0.03171200000360841,
+                "coreMs": 179.325455,
+                "progress": true
+              },
+              {
+                "receivedAt": 729.5517709999986,
+                "callbackAt": 729.5677359999972,
+                "parsedAt": 729.599503999998,
+                "parseMs": 0.03176800000073854,
+                "coreMs": 721.566663,
+                "progress": true
+              }
+            ],
+            "parseMs": 0.21490900000935653,
+            "preparationStartAt": 0.12535899999784306,
+            "preparationEndAt": 2.766211000001931,
+            "encodeStartAt": 2.7886490000018966,
+            "encodeEndAt": 3.002381999998761,
+            "sendAt": 3.0047019999983604,
+            "writeCallbackAt": 3.0628389999983483,
+            "timerAt": 1023.538453000001,
+            "timerLateMs": 24.538453000001027,
+            "killAt": 1023.5419729999994,
+            "resolveAt": 1035.479711,
+            "exitAt": 1061.1173120000021,
+            "closeAt": 1061.1301840000015,
+            "reapAt": 1061.1526520000043,
+            "eventLoopMaxMs": 48.300031,
+            "eventLoopMeanMs": 5.820653613259669,
+            "preparationMs": 2.640852000004088,
+            "encodingMs": 0.21373299999686424,
+            "writeCallbackLagMs": 0.05813699999998789,
+            "postKillExitMs": 37.575339000002714,
+            "exitToPipeCloseMs": 0.012871999999333639,
+            "finalTransportQueueCleanupMs": null
+          },
+          "excludedRepeatRoots": 0,
+          "viewSha256": "a4934bdbc206fe0169dbaf1b4d91a6bd75de1e8955ab76998a3b676c220cb5b5",
+          "visibleFen": "2xxkxp2/9/2a2R1A1/2x6/b8/1R3nr1p/6B2/9/5K3/2XX3P1 b A1P1r1c1p3b1 0 21",
+          "pikaInfo": null,
+          "applied": false
+        }
+      }
+    ],
+    "validForStrengthClaim": false
+  },
+  "inventoryKeyAudit": {
+    "passed": true,
+    "modelSha256": "0b3ccf77fb30ce16ccdeaceb198bf7a114cee7b8a084643adac0d14887090edb",
+    "results": [
+      {
+        "name": "pilot",
+        "sourceSha256": "3cbb137af8ab92121631f54a40df30f240096f1bdcf054fcdb7501a929ab59c5",
+        "binarySha256": "d780e92a6618f90c22c345116559715814a625393e22c7261f17d831c9253532",
+        "flags": [
+          "-std=c++17",
+          "-O3",
+          "-DNDEBUG",
+          "-ffp-contract=off",
+          "-Wall",
+          "-Wextra",
+          "-Wpedantic",
+          "-isystem",
+          "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+        ],
+        "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+        "warnings": "",
+        "passed": true,
+        "inheritedFieldsEqual": true,
+        "keysEqual": true,
+        "tableEntries": 1,
+        "scoreA": -309.50767447959845,
+        "scoreB": -301.1910094999464
+      },
+      {
+        "name": "corrected",
+        "sourceSha256": "42bc6e42d222f22dcda5376c7c3b561ba9c1fd3e5bd77997f1da87069eb2a42d",
+        "binarySha256": "1e5a4477a7d9c0c9d49252240317395a9759ca14590ace9c57045602f954bc69",
+        "flags": [
+          "-std=c++17",
+          "-O3",
+          "-DNDEBUG",
+          "-ffp-contract=off",
+          "-Wall",
+          "-Wextra",
+          "-Wpedantic",
+          "-isystem",
+          "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+        ],
+        "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+        "warnings": "",
+        "passed": true,
+        "inheritedFieldsEqual": true,
+        "keysEqual": false,
+        "tableEntries": 2,
+        "scoreA": -309.50767447959845,
+        "scoreB": -301.1910094999464
+      }
+    ],
+    "scope": "Constructed consistent belief inventories with the same board/count/value; not a claim that a particular pilot game hit the alias."
+  },
+  "heldOut": {
+    "weightedBCE": 0.47594377223305534,
+    "weightedBrier": 0.16300396885303242,
+    "observations": 836
+  },
+  "heldOutBaseline": {
+    "weightedBCE": 0.5064994129894459,
+    "weightedBrier": 0.17653861605515245,
+    "observations": 836
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "passed": true,
+  "games": [
+    {
+      "index": 0,
+      "kind": "internal",
+      "seed": 2026102427,
+      "candidateSide": "r",
+      "engine": "nnue",
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "technicalForfeit": true,
+        "offender": "candidate",
+        "reason": "technical-timeout"
+      },
+      "plies": 12,
+      "passed": true
+    },
+    {
+      "index": 1,
+      "kind": "internal",
+      "seed": 2026102427,
+      "candidateSide": "b",
+      "engine": "nnue",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "plies": 87,
+      "passed": true
+    },
+    {
+      "index": 2,
+      "kind": "pika",
+      "seed": 2026102427,
+      "candidateSide": "r",
+      "engine": "baseline",
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "plies": 28,
+      "passed": true
+    },
+    {
+      "index": 3,
+      "kind": "pika",
+      "seed": 2026102427,
+      "candidateSide": "r",
+      "engine": "nnue",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "plies": 117,
+      "passed": true
+    },
+    {
+      "index": 4,
+      "kind": "pika",
+      "seed": 2026102427,
+      "candidateSide": "b",
+      "engine": "nnue",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "plies": 49,
+      "passed": true
+    },
+    {
+      "index": 5,
+      "kind": "pika",
+      "seed": 2026102427,
+      "candidateSide": "b",
+      "engine": "baseline",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "plies": 33,
+      "passed": true
+    },
+    {
+      "index": 6,
+      "kind": "internal",
+      "seed": 2026102431,
+      "candidateSide": "r",
+      "engine": "nnue",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": true,
+        "offender": "opponent",
+        "reason": "technical-timeout"
+      },
+      "plies": 41,
+      "passed": true
+    }
+  ],
+  "plies": 367,
+  "privateDarkCaptures": 34,
+  "repetitionLosses": 0,
+  "rootGuardUses": 0,
+  "complete": false
+}

@@ -1,0 +1,191 @@
+{
+  "passed": true,
+  "games": [
+    {
+      "index": 0,
+      "kind": "internal",
+      "seed": 2026102441,
+      "candidateSide": "r",
+      "engine": "nnue",
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "plies": 74,
+      "passed": true
+    },
+    {
+      "index": 1,
+      "kind": "internal",
+      "seed": 2026102441,
+      "candidateSide": "b",
+      "engine": "nnue",
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "红方重复局面判负",
+        "technicalForfeit": false
+      },
+      "plies": 69,
+      "passed": true
+    },
+    {
+      "index": 2,
+      "kind": "pika",
+      "seed": 2026102441,
+      "candidateSide": "r",
+      "engine": "baseline",
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "plies": 66,
+      "passed": true
+    },
+    {
+      "index": 3,
+      "kind": "pika",
+      "seed": 2026102441,
+      "candidateSide": "r",
+      "engine": "nnue",
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "plies": 72,
+      "passed": true
+    },
+    {
+      "index": 4,
+      "kind": "pika",
+      "seed": 2026102441,
+      "candidateSide": "b",
+      "engine": "nnue",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "plies": 125,
+      "passed": true
+    },
+    {
+      "index": 5,
+      "kind": "pika",
+      "seed": 2026102441,
+      "candidateSide": "b",
+      "engine": "baseline",
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "红方重复局面判负",
+        "technicalForfeit": false
+      },
+      "plies": 81,
+      "passed": true
+    },
+    {
+      "index": 6,
+      "kind": "internal",
+      "seed": 2026102443,
+      "candidateSide": "r",
+      "engine": "nnue",
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "technicalForfeit": true,
+        "offender": "candidate",
+        "reason": "technical-timeout"
+      },
+      "plies": 22,
+      "passed": true
+    },
+    {
+      "index": 7,
+      "kind": "internal",
+      "seed": 2026102443,
+      "candidateSide": "b",
+      "engine": "nnue",
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "plies": 72,
+      "passed": true
+    },
+    {
+      "index": 8,
+      "kind": "pika",
+      "seed": 2026102443,
+      "candidateSide": "r",
+      "engine": "nnue",
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "plies": 76,
+      "passed": true
+    },
+    {
+      "index": 9,
+      "kind": "pika",
+      "seed": 2026102443,
+      "candidateSide": "r",
+      "engine": "baseline",
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "plies": 50,
+      "passed": true
+    },
+    {
+      "index": 10,
+      "kind": "pika",
+      "seed": 2026102443,
+      "candidateSide": "b",
+      "engine": "baseline",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "plies": 59,
+      "passed": true
+    },
+    {
+      "index": 11,
+      "kind": "pika",
+      "seed": 2026102443,
+      "candidateSide": "b",
+      "engine": "nnue",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "plies": 61,
+      "passed": true
+    }
+  ],
+  "plies": 827,
+  "privateDarkCaptures": 71,
+  "repetitionLosses": 2,
+  "rootGuardUses": 1,
+  "complete": true
+}

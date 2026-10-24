@@ -1,0 +1,46 @@
+{
+  "planSha256": "a6671a2a8d3397bd906968041f5d24ffc2cb1e1caf895a440124a8d31d890814",
+  "dataSha256": "06380ac7c22e79aa1b7b13213cfb5b61ed5b9ff588161153f17cbbdc3943fe58",
+  "sources": [
+    {
+      "file": "benchmarks/clock-validation/matches.json",
+      "sha256": "ad40e58514dc9692b30ccabcd1b43a61000c5dbbaf7f97aadcb524bc094d05cf"
+    },
+    {
+      "file": "benchmarks/king-geometry/matches.json",
+      "sha256": "ed68d9e9d13b0ec8d084bb8e8a617663721200862e66284b91ff3f970f27dba0"
+    },
+    {
+      "file": "benchmarks/standpat/matches.json",
+      "sha256": "e2cd218e37aa232d632f51360cce23d0c0fd60ce2d3fba727fa00b490be4fa90"
+    }
+  ],
+  "splits": {
+    "train": {
+      "layoutHashes": [
+        "d5ad61916fb1b49e4e884dcb2da1c0d0111ad218e3e0181d058c03ee1636da28",
+        "c300a8b6768f0f43be8f29a2e976766c3d4f6d81e57ba75c076f476fa139f02a",
+        "0e6f9a181f7e3265734fc51cc8e3639e0424feb28827402d9077650b563dbba6",
+        "de74c6a52d2c44afeaa69c1d4723e4fe011eaeea8dc996d76992ce9cd0ea4c33",
+        "8576538b2ec19893164ab864e72f09b6deff9bc737c0f8a27e82e66419b4fa75"
+      ],
+      "games": 30,
+      "observations": 1486
+    },
+    "validation": {
+      "layoutHashes": [
+        "7d05c1a7a2c1d2631728819bd97e79d81fb492da9f3d2564d50e10cc9350b28b"
+      ],
+      "games": 6,
+      "observations": 350
+    },
+    "test": {
+      "layoutHashes": [
+        "e445d7bbdcd357205c03292aa4f2a221802738a405c9007a1eea1efbf577543e",
+        "36c13bf8ffe74daa1958725dec57cbc463203e24fab1f9e42b5e8813d0a9cd39"
+      ],
+      "games": 12,
+      "observations": 836
+    }
+  }
+}

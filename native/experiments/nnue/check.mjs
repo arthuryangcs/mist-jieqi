@@ -1,0 +1,26 @@
+import fs from 'node:fs';import path from 'node:path';import assert from 'node:assert/strict';
+import {compile} from '../standpat/build.mjs';import {build,cache,dir,modelFile,sourceOf,patch,hash} from './build.mjs';import {loadModel,forward} from './reference.mjs';import {featureIndices,TYPES} from './features.mjs';
+import {Native,fixture,compare,encode} from '../../bridge.mjs';import {initial,publicState,move,legalMoves,positionKey} from '../../../engine.js';import {seeded,remaining} from '../../../ai.js';
+const sanitize=process.argv.includes('--sanitize'),built=build({sanitize}),model=loadModel(modelFile),record={passed:false,sanitize,modelSha256:hash(modelFile),build:{...built,binary:undefined},views:0,transitions:0,privateCaptures:0,reveals:0,maxAccumulatorError:0,maxForwardError:0,searches:[],privacyChecks:0};
+let auditSource=patch(sourceOf(),"catch(const std::exception& error){std::cerr<<\"native error: \"<<error.what()<<'\\n';return 2;}\n}","catch(const std::exception& error){std::cerr<<\"native error: \"<<error.what()<<'\\n';return 2;}\n    return 0;\n}");fs.writeFileSync(cache+'/search-audit.cpp',auditSource);fs.copyFileSync(new URL('./audit.cpp',import.meta.url),cache+'/audit.cpp');const audit=path.resolve(cache+'/audit'+(sanitize?'-sanitized':''));record.auditBuild=compile(path.resolve(cache+'/audit.cpp'),audit,{sanitize});
+process.env.MIST_NNUE_MODEL=modelFile;delete process.env.MIST_NNUE_FULL;const client=new Native({binary:audit}),inc=new Native({binary:built.binary});process.env.MIST_NNUE_FULL='1';const full=new Native({binary:built.binary});delete process.env.MIST_NNUE_FULL;
+const states=[];for(const seed of [2026102451,2026102453,2026102459]){const rng=seeded(seed);let s=initial(rng);s.positions=[positionKey(s)];states.push(structuredClone(s));for(let ply=1;ply<=64&&!s.result;ply++){const ms=legalMoves(s);s=move(s,ms[Math.floor(rng()*ms.length)]);if(ply%8===0)states.push(structuredClone(s));}}
+let capture=initial(seeded(37));capture.positions=[positionKey(capture)];for(const m of [{from:64,to:1},{from:25,to:88}]){assert(legalMoves(capture).some(x=>x.from===m.from&&x.to===m.to));capture=move(capture,m);states.push(structuredClone(capture));}
+function check(view,row){
+ const ref=forward(view,model);assert.deepEqual(row.features,ref.features);const error=Math.abs(row.correction-ref.correction);record.maxAccumulatorError=Math.max(record.maxAccumulatorError,row.maxAccumulatorError);record.maxForwardError=Math.max(record.maxForwardError,error);assert(row.maxAccumulatorError<1e-9);assert(error<1e-8);assert(Math.abs(row.fullCorrection-row.correction)<1e-9);assert(Math.abs(row.base+row.correction-ref.score)<1e-7);
+ assert.deepEqual(row.stock,['r','b'].map(s=>{const bag=remaining(view,s);return Array.from({length:6},(_,t)=>bag.filter(x=>x===TYPES[t+1]).length);}));
+}
+try{
+ const a=initial(seeded(1)),b=initial(seeded(999));a.positions=[positionKey(a)];b.positions=[positionKey(b)];for(const viewer of ['r','b']){assert.deepEqual(featureIndices(publicState(a,viewer)),featureIndices(publicState(b,viewer)));assert.equal(encode(fixture(publicState(a,viewer))),encode(fixture(publicState(b,viewer))));record.privacyChecks++;}
+ assert.throws(()=>featureIndices(a),/Hidden truth/);record.privacyChecks++;
+ for(const s of states)for(const viewer of ['r','b',null]){
+  const f=fixture(publicState(s,viewer),{seed:6101,samples:1}),w={...f.view,...f.worlds[0]},r=await client.request(f,{mode:'VERIFY',depth:1});check(publicState(w,viewer),r.root);
+  const v=publicState(w,viewer),swap=x=>x==='r'?'b':'r',flipped={...v,turn:swap(v.turn),viewer:v.viewer?swap(v.viewer):null,board:v.board.slice().reverse().map(p=>p?{...p,side:swap(p.side)}:null),captured:v.captured.map(p=>({...p,side:swap(p.side),...(p.capturedBy?{capturedBy:swap(p.capturedBy)}:{})}))};assert(Math.abs(forward(v,model).correction+forward(flipped,model).correction)<1e-9);
+  for(const row of r.transitions){const p=w.board[row.from],q=w.board[row.to],n=move(w,{from:row.from,to:row.to},false);check(publicState(n,viewer),row.after);assert(row.restored);record.transitions++;if(p.hidden)record.reveals++;if(q?.hidden)record.privateCaptures++;}record.views++;
+ }
+ const fixtures=JSON.parse(fs.readFileSync('benchmarks/native-benchmark.json')).positions;
+ for(const p of fixtures)for(const nodeLimit of [30000,0]){
+  const options={depth:2,nodeLimit:nodeLimit||Infinity,budget:60000},a=await inc.request(p.fixture,options),b=await full.request(p.fixture,options);record.searches.push({name:p.name,nodeLimit,depth:a.depth,nodes:a.nodes,threads:a.threads,...compare(a,b)});for(let i=0;i<a.iterations.length;i++){assert.equal(a.iterations[i].nodes,b.iterations[i].nodes);assert.deepEqual(a.iterations[i].allCandidates,b.iterations[i].allCandidates);}
+ }
+ record.passed=true;
+}catch(e){record.error=e.stack.replaceAll(process.cwd(),'<project>');throw e;}finally{for(const c of [client,inc,full]){await c.close();assert(!c.stderr.trim(),c.stderr);}fs.writeFileSync(dir+`/check${sanitize?'-sanitized':''}.json`,JSON.stringify(record,null,2)+'\n');console.log(JSON.stringify({passed:record.passed,sanitize,views:record.views,transitions:record.transitions,reveals:record.reveals,privateCaptures:record.privateCaptures,maxAccumulatorError:record.maxAccumulatorError,maxForwardError:record.maxForwardError,searches:record.searches.length}));}
