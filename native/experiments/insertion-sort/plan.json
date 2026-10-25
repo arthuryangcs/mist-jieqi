@@ -1,0 +1,42 @@
+{
+  "experiment": "stable-insertion-move-ordering",
+  "date": "2026-10-25",
+  "baseCommit": "a5fee2858f05baa8176d7ae33fcea7af6cac9779",
+  "stableSourceSha256": "94dab5ee87ff8996fcf9e8f93070a8012866926822611eb0f84f6bd3607e1b2c",
+  "change": "Only replace the recursive scored-move stable_sort with full stable insertion sort. Root sorts, scoring, tie order, search, HCE, rules, sampling and clock are unchanged. No NNUE or other experimental changes.",
+  "algorithmFrozenBeforeMeasurement": true,
+  "benchmark": {
+    "fixedRepeats": 5,
+    "positions": "five existing native-benchmark fixtures",
+    "depth": "fixture depth + 1",
+    "nodeCap": 5000000,
+    "timedBudgetsMs": [
+      1000,
+      6000
+    ],
+    "timedRepeats": 2,
+    "sameTree": "All completed layers, candidate order/scores and nodes must match. Node-capped path serial; parallel tested separately."
+  },
+  "matches": {
+    "seeds": [
+      2026102501,
+      2026102503
+    ],
+    "internalGames": 4,
+    "baselinePikaGames": 4,
+    "trialPikaGames": 4,
+    "budgetMs": 1000,
+    "graceMs": 60,
+    "samples": 8,
+    "brightSamples": 1,
+    "threads": 4,
+    "ttPerWorld": 90000,
+    "maxDepth": 8,
+    "hostReserveMs": 0,
+    "maxPlies": 400,
+    "stopRule": "Finish all 12 regardless of scores; pause only for quota/access/execution blocker. No result-driven tuning, reruns, replacement or added games.",
+    "rule": "Third same public board/turn loses for mover; mate/stalemate priority;120 quiet plies draw;400 cap unresolved."
+  },
+  "defaultPromotion": false,
+  "publication": "Reviewed code and full evidence under existing user authorization; default unchanged absent reliable benefit."
+}

@@ -1,0 +1,119 @@
+{
+  "passed": true,
+  "build": {
+    "stableSourceSha256": "94dab5ee87ff8996fcf9e8f93070a8012866926822611eb0f84f6bd3607e1b2c",
+    "stableBinarySha256": "5c68913e2035093465cb3807ea81604839023daa884d0c0c66ba65f5958a2d23",
+    "sourceSha256": "ad0d89a89f9f59bc49c0c1ccf6f77de142bdaaff43acdcbd5a25eae6caff9185",
+    "binarySha256": "79b901fdc0bc38f3ab08d6b850dbba84cfc0d34d7a7981d74712b40a3f6a93ba",
+    "sanitize": false,
+    "flags": [
+      "-std=c++17",
+      "-O3",
+      "-DNDEBUG",
+      "-ffp-contract=off",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-isystem",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+    ],
+    "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+    "warnings": ""
+  },
+  "sanitize": false,
+  "views": 438,
+  "transitions": 11151,
+  "searches": [
+    {
+      "name": "初始全暗",
+      "nodeLimit": 1000,
+      "depth": 0,
+      "nodes": 1001,
+      "nodesEqual": true,
+      "candidates": 0,
+      "maxDifference": 0
+    },
+    {
+      "name": "初始全暗",
+      "nodeLimit": 30000,
+      "depth": 1,
+      "nodes": 30001,
+      "nodesEqual": true,
+      "candidates": 44,
+      "maxDifference": 0
+    },
+    {
+      "name": "可达中局 2111 / 20步",
+      "nodeLimit": 1000,
+      "depth": 1,
+      "nodes": 1001,
+      "nodesEqual": true,
+      "candidates": 25,
+      "maxDifference": 0
+    },
+    {
+      "name": "可达中局 2111 / 20步",
+      "nodeLimit": 30000,
+      "depth": 2,
+      "nodes": 30001,
+      "nodesEqual": true,
+      "candidates": 25,
+      "maxDifference": 0
+    },
+    {
+      "name": "可达中局 2111 / 44步",
+      "nodeLimit": 1000,
+      "depth": 0,
+      "nodes": 1001,
+      "nodesEqual": true,
+      "candidates": 0,
+      "maxDifference": 0
+    },
+    {
+      "name": "可达中局 2111 / 44步",
+      "nodeLimit": 30000,
+      "depth": 2,
+      "nodes": 30001,
+      "nodesEqual": true,
+      "candidates": 23,
+      "maxDifference": 0
+    },
+    {
+      "name": "可达中局 2221 / 44步",
+      "nodeLimit": 1000,
+      "depth": 0,
+      "nodes": 1001,
+      "nodesEqual": true,
+      "candidates": 0,
+      "maxDifference": 0
+    },
+    {
+      "name": "可达中局 2221 / 44步",
+      "nodeLimit": 30000,
+      "depth": 1,
+      "nodes": 30001,
+      "nodesEqual": true,
+      "candidates": 31,
+      "maxDifference": 0
+    },
+    {
+      "name": "全明10子残局",
+      "nodeLimit": 1000,
+      "depth": 1,
+      "nodes": 1001,
+      "nodesEqual": true,
+      "candidates": 30,
+      "maxDifference": 0
+    },
+    {
+      "name": "全明10子残局",
+      "nodeLimit": 30000,
+      "depth": 3,
+      "nodes": 30001,
+      "nodesEqual": true,
+      "candidates": 30,
+      "maxDifference": 0
+    }
+  ],
+  "privacyChecks": 1
+}

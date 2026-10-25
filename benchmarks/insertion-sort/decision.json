@@ -1,0 +1,296 @@
+{
+  "promoted": false,
+  "reason": "No consistent fixed-tree speedup or extra completed depth in the budget screen. Two paired layouts only, no reliable strength improvement or superiority to Pika. Keep prototype non-default.",
+  "statistics": {
+    "internal": {
+      "total": {
+        "games": 4,
+        "wins": 1,
+        "draws": 2,
+        "losses": 1,
+        "unresolved": 0,
+        "scoreRate": 0.5,
+        "technical": []
+      },
+      "withoutTechnical": {
+        "games": 4,
+        "wins": 1,
+        "draws": 2,
+        "losses": 1,
+        "unresolved": 0,
+        "scoreRate": 0.5,
+        "technical": []
+      }
+    },
+    "baselinePika": {
+      "total": {
+        "games": 4,
+        "wins": 1,
+        "draws": 0,
+        "losses": 3,
+        "unresolved": 0,
+        "scoreRate": 0.25,
+        "technical": []
+      },
+      "withoutTechnical": {
+        "games": 4,
+        "wins": 1,
+        "draws": 0,
+        "losses": 3,
+        "unresolved": 0,
+        "scoreRate": 0.25,
+        "technical": []
+      }
+    },
+    "trialPika": {
+      "total": {
+        "games": 4,
+        "wins": 0,
+        "draws": 0,
+        "losses": 4,
+        "unresolved": 0,
+        "scoreRate": 0,
+        "technical": []
+      },
+      "withoutTechnical": {
+        "games": 4,
+        "wins": 0,
+        "draws": 0,
+        "losses": 4,
+        "unresolved": 0,
+        "scoreRate": 0,
+        "technical": []
+      }
+    }
+  },
+  "timing": {
+    "internal": {
+      "recordedAttempts": 663,
+      "p50Ms": 977.7656920000009,
+      "p95Ms": 1003.2547979999999,
+      "maxMs": 1020.7702940000017,
+      "overGrace": 0,
+      "unmeasuredProtocolFailures": 0,
+      "fallbacks": 0
+    },
+    "baselinePika": {
+      "recordedAttempts": 241,
+      "p50Ms": 999.5227720000039,
+      "p95Ms": 1003.3101029999962,
+      "maxMs": 1057.6900170000008,
+      "overGrace": 0,
+      "unmeasuredProtocolFailures": 0,
+      "fallbacks": 0
+    },
+    "trialPika": {
+      "recordedAttempts": 144,
+      "p50Ms": 999.8154570000006,
+      "p95Ms": 1002.9191219999998,
+      "maxMs": 1004.8008560000017,
+      "overGrace": 0,
+      "unmeasuredProtocolFailures": 0,
+      "fallbacks": 0
+    }
+  },
+  "repetitionDiagnostics": [],
+  "sortProbe": {
+    "passed": true,
+    "rows": [
+      {
+        "sanitize": false,
+        "sourceSha256": "f374ca907b1e6568a60ac3b285b2aa38573cbc3707f0be242a5d865e785c1188",
+        "binarySha256": "0657d862b3e1c8a26ed158f3e5c315aed6c55f20d35595dbae95ad78893004b8",
+        "flags": [
+          "-std=c++17",
+          "-O3",
+          "-DNDEBUG",
+          "-ffp-contract=off",
+          "-Wall",
+          "-Wextra",
+          "-Wpedantic",
+          "-isystem",
+          "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+        ],
+        "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+        "warnings": "In file included from <project>/.cache/insertion-sort/sort-probe.cpp:2:\n<project>/.cache/insertion-sort/search.cpp:374:1: warning: non-void function does not return a value in all control paths [-Wreturn-type]\n  374 | }\n      | ^\n1 warning generated.",
+        "passed": true,
+        "cases": 1152,
+        "items": 143424,
+        "maxLength": 1024,
+        "seed": 2026102507,
+        "scope": "Empty/single, sorted/reversed, equal/tied/random, signed zero, infinities and subnormals; compare full order and score bits. NaN excluded: engine priorities are finite."
+      },
+      {
+        "sanitize": true,
+        "sourceSha256": "f374ca907b1e6568a60ac3b285b2aa38573cbc3707f0be242a5d865e785c1188",
+        "binarySha256": "1402f290cf3c0aa6c432515734eb95f61b9ae7c31e2ee360ad22d6f6b638b441",
+        "flags": [
+          "-std=c++17",
+          "-ffp-contract=off",
+          "-Wall",
+          "-Wextra",
+          "-Wpedantic",
+          "-isystem",
+          "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1",
+          "-O1",
+          "-g",
+          "-fsanitize=address,undefined",
+          "-fno-omit-frame-pointer",
+          "-DMIST_VERIFY_RESTORE"
+        ],
+        "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+        "warnings": "In file included from <project>/.cache/insertion-sort/sort-probe.cpp:2:\n<project>/.cache/insertion-sort/search.cpp:374:1: warning: non-void function does not return a value in all control paths [-Wreturn-type]\n  374 | }\n      | ^\n1 warning generated.",
+        "passed": true,
+        "cases": 1152,
+        "items": 143424,
+        "maxLength": 1024,
+        "seed": 2026102507,
+        "scope": "Empty/single, sorted/reversed, equal/tied/random, signed zero, infinities and subnormals; compare full order and score bits. NaN excluded: engine priorities are finite."
+      }
+    ],
+    "diagnosticPathsNormalized": true
+  },
+  "parallelVerification": {
+    "passed": true,
+    "fixtureSha256": "daac59bec782d24bed790547213a10ee80162743b36e47ffee270aefd7aa10de",
+    "rows": [
+      {
+        "position": "初始全暗",
+        "sanitize": false,
+        "depth": 4,
+        "samples": 8,
+        "threads": 4,
+        "nodes": 1666160,
+        "nodesEqual": true,
+        "candidates": 44,
+        "maxDifference": 0
+      },
+      {
+        "position": "可达中局 2111 / 20步",
+        "sanitize": false,
+        "depth": 4,
+        "samples": 8,
+        "threads": 4,
+        "nodes": 417268,
+        "nodesEqual": true,
+        "candidates": 25,
+        "maxDifference": 0
+      },
+      {
+        "position": "可达中局 2111 / 44步",
+        "sanitize": false,
+        "depth": 4,
+        "samples": 8,
+        "threads": 4,
+        "nodes": 546046,
+        "nodesEqual": true,
+        "candidates": 23,
+        "maxDifference": 0
+      },
+      {
+        "position": "可达中局 2221 / 44步",
+        "sanitize": false,
+        "depth": 4,
+        "samples": 8,
+        "threads": 4,
+        "nodes": 712546,
+        "nodesEqual": true,
+        "candidates": 31,
+        "maxDifference": 0
+      },
+      {
+        "position": "全明10子残局",
+        "sanitize": false,
+        "depth": 5,
+        "samples": 1,
+        "threads": 1,
+        "nodes": 117642,
+        "nodesEqual": true,
+        "candidates": 30,
+        "maxDifference": 0
+      },
+      {
+        "position": "初始全暗",
+        "sanitize": true,
+        "depth": 4,
+        "samples": 8,
+        "threads": 4,
+        "nodes": 1666160,
+        "nodesEqual": true,
+        "candidates": 44,
+        "maxDifference": 0
+      },
+      {
+        "position": "可达中局 2111 / 20步",
+        "sanitize": true,
+        "depth": 4,
+        "samples": 8,
+        "threads": 4,
+        "nodes": 417268,
+        "nodesEqual": true,
+        "candidates": 25,
+        "maxDifference": 0
+      },
+      {
+        "position": "可达中局 2111 / 44步",
+        "sanitize": true,
+        "depth": 4,
+        "samples": 8,
+        "threads": 4,
+        "nodes": 546046,
+        "nodesEqual": true,
+        "candidates": 23,
+        "maxDifference": 0
+      },
+      {
+        "position": "可达中局 2221 / 44步",
+        "sanitize": true,
+        "depth": 4,
+        "samples": 8,
+        "threads": 4,
+        "nodes": 712546,
+        "nodesEqual": true,
+        "candidates": 31,
+        "maxDifference": 0
+      },
+      {
+        "position": "全明10子残局",
+        "sanitize": true,
+        "depth": 5,
+        "samples": 1,
+        "threads": 1,
+        "nodes": 117642,
+        "nodesEqual": true,
+        "candidates": 30,
+        "maxDifference": 0
+      }
+    ]
+  },
+  "verification": {
+    "plies": 1048,
+    "privateDarkCaptures": 65,
+    "repetitionLosses": 0,
+    "rootGuardUses": 0
+  },
+  "stableSourceSha256": "94dab5ee87ff8996fcf9e8f93070a8012866926822611eb0f84f6bd3607e1b2c",
+  "trialBuild": {
+    "stableSourceSha256": "94dab5ee87ff8996fcf9e8f93070a8012866926822611eb0f84f6bd3607e1b2c",
+    "stableBinarySha256": "5c68913e2035093465cb3807ea81604839023daa884d0c0c66ba65f5958a2d23",
+    "sourceSha256": "ad0d89a89f9f59bc49c0c1ccf6f77de142bdaaff43acdcbd5a25eae6caff9185",
+    "binarySha256": "79b901fdc0bc38f3ab08d6b850dbba84cfc0d34d7a7981d74712b40a3f6a93ba",
+    "sanitize": false,
+    "flags": [
+      "-std=c++17",
+      "-O3",
+      "-DNDEBUG",
+      "-ffp-contract=off",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-isystem",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+    ],
+    "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+    "warnings": ""
+  }
+}

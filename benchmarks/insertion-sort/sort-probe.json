@@ -1,0 +1,57 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "sanitize": false,
+      "sourceSha256": "f374ca907b1e6568a60ac3b285b2aa38573cbc3707f0be242a5d865e785c1188",
+      "binarySha256": "0657d862b3e1c8a26ed158f3e5c315aed6c55f20d35595dbae95ad78893004b8",
+      "flags": [
+        "-std=c++17",
+        "-O3",
+        "-DNDEBUG",
+        "-ffp-contract=off",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-isystem",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+      ],
+      "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+      "warnings": "In file included from <project>/.cache/insertion-sort/sort-probe.cpp:2:\n<project>/.cache/insertion-sort/search.cpp:374:1: warning: non-void function does not return a value in all control paths [-Wreturn-type]\n  374 | }\n      | ^\n1 warning generated.",
+      "passed": true,
+      "cases": 1152,
+      "items": 143424,
+      "maxLength": 1024,
+      "seed": 2026102507,
+      "scope": "Empty/single, sorted/reversed, equal/tied/random, signed zero, infinities and subnormals; compare full order and score bits. NaN excluded: engine priorities are finite."
+    },
+    {
+      "sanitize": true,
+      "sourceSha256": "f374ca907b1e6568a60ac3b285b2aa38573cbc3707f0be242a5d865e785c1188",
+      "binarySha256": "1402f290cf3c0aa6c432515734eb95f61b9ae7c31e2ee360ad22d6f6b638b441",
+      "flags": [
+        "-std=c++17",
+        "-ffp-contract=off",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-isystem",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1",
+        "-O1",
+        "-g",
+        "-fsanitize=address,undefined",
+        "-fno-omit-frame-pointer",
+        "-DMIST_VERIFY_RESTORE"
+      ],
+      "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+      "warnings": "In file included from <project>/.cache/insertion-sort/sort-probe.cpp:2:\n<project>/.cache/insertion-sort/search.cpp:374:1: warning: non-void function does not return a value in all control paths [-Wreturn-type]\n  374 | }\n      | ^\n1 warning generated.",
+      "passed": true,
+      "cases": 1152,
+      "items": 143424,
+      "maxLength": 1024,
+      "seed": 2026102507,
+      "scope": "Empty/single, sorted/reversed, equal/tied/random, signed zero, infinities and subnormals; compare full order and score bits. NaN excluded: engine priorities are finite."
+    }
+  ],
+  "diagnosticPathsNormalized": true
+}
