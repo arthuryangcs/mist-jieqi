@@ -14,6 +14,8 @@
 
 2026-10-25 的[内部走法稳定插入排序实验](../docs/experiments/insertion-sort.md)保持完整同分次序，并核对规则、撤销、信息隔离和多线程逐层结果。同树五局面未见一致提速，预算筛选没有增加完整层数；新布局换色对照及全部失败记录独立保留，默认排序与HCE保持不变。
 
+2026-10-26 的[增量己方棋子位图实验](../docs/experiments/piece-mask.md)按原格号次序枚举己方占位，走子/撤销增量维护并与棋盘重建核对。同树五局面中位速度比约0.967～1.023倍，预算筛选未增加完整层数；原型和新布局换色对照独立保留，未启用默认核心。
+
 当前核心增加单次走法预评分、逐层走法/评分缓冲复用和单子落点栈数组，保持稳定排序与原搜索语义。冻结 `b200995` 的四变体消融、剖析、等时预算及验证见 [NATIVE_PERFORMANCE_REPORT.md](../NATIVE_PERFORMANCE_REPORT.md)。用 `node native/perf-benchmark.mjs fixed` 重跑；脚本会重写该模式的结果文件，先另存正式记录。历史深层脚本若固定旧源码哈希而拒绝执行，应保留其冻结条件，不把新核心冒充旧基线。
 
 新一轮在 `46f83ad` 上增加射线/保守将军检查快路径与循环路径栈，消融和安全条件见 [NATIVE_MOVEGEN_REPORT.md](../NATIVE_MOVEGEN_REPORT.md)。`node native/movegen-benchmark.mjs fixed` 重跑四变体；`guards` 逐着与旧检查复核并对照独立JS规则，`budgets` 测相同1/6/15秒预算。脚本默认覆盖相应模式的JSON，先另存正式记录。

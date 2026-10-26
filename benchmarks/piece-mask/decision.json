@@ -1,0 +1,328 @@
+{
+  "promoted": false,
+  "reason": "Four of five fixed-tree medians slower, no extra completed depth in the budget screen. Two paired layouts only; no reliable strength benefit. Keep default HCE unchanged.",
+  "statistics": {
+    "internal": {
+      "total": {
+        "games": 4,
+        "wins": 2,
+        "draws": 0,
+        "losses": 2,
+        "unresolved": 0,
+        "scoreRate": 0.5,
+        "technical": []
+      },
+      "withoutTechnical": {
+        "games": 4,
+        "wins": 2,
+        "draws": 0,
+        "losses": 2,
+        "unresolved": 0,
+        "scoreRate": 0.5,
+        "technical": []
+      }
+    },
+    "baselinePika": {
+      "total": {
+        "games": 4,
+        "wins": 2,
+        "draws": 0,
+        "losses": 2,
+        "unresolved": 0,
+        "scoreRate": 0.5,
+        "technical": []
+      },
+      "withoutTechnical": {
+        "games": 4,
+        "wins": 2,
+        "draws": 0,
+        "losses": 2,
+        "unresolved": 0,
+        "scoreRate": 0.5,
+        "technical": []
+      }
+    },
+    "trialPika": {
+      "total": {
+        "games": 4,
+        "wins": 1,
+        "draws": 0,
+        "losses": 3,
+        "unresolved": 0,
+        "scoreRate": 0.25,
+        "technical": []
+      },
+      "withoutTechnical": {
+        "games": 4,
+        "wins": 1,
+        "draws": 0,
+        "losses": 3,
+        "unresolved": 0,
+        "scoreRate": 0.25,
+        "technical": []
+      }
+    }
+  },
+  "timing": {
+    "internal": {
+      "recordedAttempts": 278,
+      "p50Ms": 1001.227313000003,
+      "p95Ms": 1003.1901369999978,
+      "maxMs": 1006.527724,
+      "overGrace": 0,
+      "unmeasuredProtocolFailures": 0,
+      "fallbacks": 0
+    },
+    "baselinePika": {
+      "recordedAttempts": 211,
+      "p50Ms": 999.0843920000043,
+      "p95Ms": 1002.5972609999881,
+      "maxMs": 1005.465995,
+      "overGrace": 0,
+      "unmeasuredProtocolFailures": 0,
+      "fallbacks": 0
+    },
+    "trialPika": {
+      "recordedAttempts": 296,
+      "p50Ms": 999.3456819999997,
+      "p95Ms": 1002.746067,
+      "maxMs": 1007.3416940000002,
+      "overGrace": 0,
+      "unmeasuredProtocolFailures": 0,
+      "fallbacks": 0
+    }
+  },
+  "repetitionDiagnostics": [
+    {
+      "index": 2,
+      "side": "b",
+      "legalRoots": 1,
+      "immediateRepetitionLosingRoots": 1,
+      "allLegalRootsLose": true
+    },
+    {
+      "index": 3,
+      "side": "b",
+      "legalRoots": 1,
+      "immediateRepetitionLosingRoots": 1,
+      "allLegalRootsLose": true
+    },
+    {
+      "index": 6,
+      "side": "r",
+      "legalRoots": 1,
+      "immediateRepetitionLosingRoots": 1,
+      "allLegalRootsLose": true
+    },
+    {
+      "index": 7,
+      "side": "r",
+      "legalRoots": 1,
+      "immediateRepetitionLosingRoots": 1,
+      "allLegalRootsLose": true
+    }
+  ],
+  "maskProbe": {
+    "passed": true,
+    "rows": [
+      {
+        "sanitize": false,
+        "sourceSha256": "19dbeb694c0a4f1eef717c234ab215040d0205af2f9e492ab7f40398f98c5183",
+        "binarySha256": "e1502ec42a77eecde6b48e88b1bb878c836964148d0d90cef941d1731b821fae",
+        "flags": [
+          "-std=c++17",
+          "-O3",
+          "-DNDEBUG",
+          "-ffp-contract=off",
+          "-Wall",
+          "-Wextra",
+          "-Wpedantic",
+          "-isystem",
+          "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+        ],
+        "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+        "warnings": "",
+        "passed": true,
+        "bitCases": 1090,
+        "worlds": 33,
+        "transitions": 4224,
+        "reveals": 318,
+        "darkCaptures": 48,
+        "crossWordMoves": 340,
+        "legalComparisons": 16896
+      },
+      {
+        "sanitize": true,
+        "sourceSha256": "19dbeb694c0a4f1eef717c234ab215040d0205af2f9e492ab7f40398f98c5183",
+        "binarySha256": "237817b2f6fb1df72a347e38478780cc000c9aa243115dac5a10a6611b25157a",
+        "flags": [
+          "-std=c++17",
+          "-ffp-contract=off",
+          "-Wall",
+          "-Wextra",
+          "-Wpedantic",
+          "-isystem",
+          "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1",
+          "-O1",
+          "-g",
+          "-fsanitize=address,undefined",
+          "-fno-omit-frame-pointer",
+          "-DMIST_VERIFY_RESTORE"
+        ],
+        "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+        "warnings": "",
+        "passed": true,
+        "bitCases": 1090,
+        "worlds": 33,
+        "transitions": 4224,
+        "reveals": 318,
+        "darkCaptures": 48,
+        "crossWordMoves": 340,
+        "legalComparisons": 16896
+      }
+    ]
+  },
+  "parallelVerification": {
+    "passed": true,
+    "fixtureSha256": "daac59bec782d24bed790547213a10ee80162743b36e47ffee270aefd7aa10de",
+    "rows": [
+      {
+        "position": "初始全暗",
+        "sanitize": false,
+        "depth": 4,
+        "samples": 8,
+        "threads": 4,
+        "nodes": 1666160,
+        "nodesEqual": true,
+        "candidates": 44,
+        "maxDifference": 0
+      },
+      {
+        "position": "可达中局 2111 / 20步",
+        "sanitize": false,
+        "depth": 4,
+        "samples": 8,
+        "threads": 4,
+        "nodes": 417268,
+        "nodesEqual": true,
+        "candidates": 25,
+        "maxDifference": 0
+      },
+      {
+        "position": "可达中局 2111 / 44步",
+        "sanitize": false,
+        "depth": 4,
+        "samples": 8,
+        "threads": 4,
+        "nodes": 546046,
+        "nodesEqual": true,
+        "candidates": 23,
+        "maxDifference": 0
+      },
+      {
+        "position": "可达中局 2221 / 44步",
+        "sanitize": false,
+        "depth": 4,
+        "samples": 8,
+        "threads": 4,
+        "nodes": 712546,
+        "nodesEqual": true,
+        "candidates": 31,
+        "maxDifference": 0
+      },
+      {
+        "position": "全明10子残局",
+        "sanitize": false,
+        "depth": 5,
+        "samples": 1,
+        "threads": 1,
+        "nodes": 117642,
+        "nodesEqual": true,
+        "candidates": 30,
+        "maxDifference": 0
+      },
+      {
+        "position": "初始全暗",
+        "sanitize": true,
+        "depth": 4,
+        "samples": 8,
+        "threads": 4,
+        "nodes": 1666160,
+        "nodesEqual": true,
+        "candidates": 44,
+        "maxDifference": 0
+      },
+      {
+        "position": "可达中局 2111 / 20步",
+        "sanitize": true,
+        "depth": 4,
+        "samples": 8,
+        "threads": 4,
+        "nodes": 417268,
+        "nodesEqual": true,
+        "candidates": 25,
+        "maxDifference": 0
+      },
+      {
+        "position": "可达中局 2111 / 44步",
+        "sanitize": true,
+        "depth": 4,
+        "samples": 8,
+        "threads": 4,
+        "nodes": 546046,
+        "nodesEqual": true,
+        "candidates": 23,
+        "maxDifference": 0
+      },
+      {
+        "position": "可达中局 2221 / 44步",
+        "sanitize": true,
+        "depth": 4,
+        "samples": 8,
+        "threads": 4,
+        "nodes": 712546,
+        "nodesEqual": true,
+        "candidates": 31,
+        "maxDifference": 0
+      },
+      {
+        "position": "全明10子残局",
+        "sanitize": true,
+        "depth": 5,
+        "samples": 1,
+        "threads": 1,
+        "nodes": 117642,
+        "nodesEqual": true,
+        "candidates": 30,
+        "maxDifference": 0
+      }
+    ]
+  },
+  "verification": {
+    "plies": 785,
+    "privateDarkCaptures": 89,
+    "repetitionLosses": 4,
+    "rootGuardUses": 1
+  },
+  "stableSourceSha256": "94dab5ee87ff8996fcf9e8f93070a8012866926822611eb0f84f6bd3607e1b2c",
+  "trialBuild": {
+    "stableSourceSha256": "94dab5ee87ff8996fcf9e8f93070a8012866926822611eb0f84f6bd3607e1b2c",
+    "stableBinarySha256": "5c68913e2035093465cb3807ea81604839023daa884d0c0c66ba65f5958a2d23",
+    "sourceSha256": "f4a10a3e064b6504390196a1b600495f34a8e0e4e7971ec7484aa1a5ad5f169c",
+    "binarySha256": "ce0c0dc74e325b285b1629c35ce19d583e69e36710947c55ad43002fa61df6b3",
+    "sanitize": false,
+    "flags": [
+      "-std=c++17",
+      "-O3",
+      "-DNDEBUG",
+      "-ffp-contract=off",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-isystem",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+    ],
+    "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+    "warnings": ""
+  }
+}

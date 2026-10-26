@@ -1,0 +1,116 @@
+{
+  "passed": true,
+  "fixtureSha256": "daac59bec782d24bed790547213a10ee80162743b36e47ffee270aefd7aa10de",
+  "rows": [
+    {
+      "position": "初始全暗",
+      "sanitize": false,
+      "depth": 4,
+      "samples": 8,
+      "threads": 4,
+      "nodes": 1666160,
+      "nodesEqual": true,
+      "candidates": 44,
+      "maxDifference": 0
+    },
+    {
+      "position": "可达中局 2111 / 20步",
+      "sanitize": false,
+      "depth": 4,
+      "samples": 8,
+      "threads": 4,
+      "nodes": 417268,
+      "nodesEqual": true,
+      "candidates": 25,
+      "maxDifference": 0
+    },
+    {
+      "position": "可达中局 2111 / 44步",
+      "sanitize": false,
+      "depth": 4,
+      "samples": 8,
+      "threads": 4,
+      "nodes": 546046,
+      "nodesEqual": true,
+      "candidates": 23,
+      "maxDifference": 0
+    },
+    {
+      "position": "可达中局 2221 / 44步",
+      "sanitize": false,
+      "depth": 4,
+      "samples": 8,
+      "threads": 4,
+      "nodes": 712546,
+      "nodesEqual": true,
+      "candidates": 31,
+      "maxDifference": 0
+    },
+    {
+      "position": "全明10子残局",
+      "sanitize": false,
+      "depth": 5,
+      "samples": 1,
+      "threads": 1,
+      "nodes": 117642,
+      "nodesEqual": true,
+      "candidates": 30,
+      "maxDifference": 0
+    },
+    {
+      "position": "初始全暗",
+      "sanitize": true,
+      "depth": 4,
+      "samples": 8,
+      "threads": 4,
+      "nodes": 1666160,
+      "nodesEqual": true,
+      "candidates": 44,
+      "maxDifference": 0
+    },
+    {
+      "position": "可达中局 2111 / 20步",
+      "sanitize": true,
+      "depth": 4,
+      "samples": 8,
+      "threads": 4,
+      "nodes": 417268,
+      "nodesEqual": true,
+      "candidates": 25,
+      "maxDifference": 0
+    },
+    {
+      "position": "可达中局 2111 / 44步",
+      "sanitize": true,
+      "depth": 4,
+      "samples": 8,
+      "threads": 4,
+      "nodes": 546046,
+      "nodesEqual": true,
+      "candidates": 23,
+      "maxDifference": 0
+    },
+    {
+      "position": "可达中局 2221 / 44步",
+      "sanitize": true,
+      "depth": 4,
+      "samples": 8,
+      "threads": 4,
+      "nodes": 712546,
+      "nodesEqual": true,
+      "candidates": 31,
+      "maxDifference": 0
+    },
+    {
+      "position": "全明10子残局",
+      "sanitize": true,
+      "depth": 5,
+      "samples": 1,
+      "threads": 1,
+      "nodes": 117642,
+      "nodesEqual": true,
+      "candidates": 30,
+      "maxDifference": 0
+    }
+  ]
+}

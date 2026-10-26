@@ -1,0 +1,42 @@
+{
+  "experiment": "incremental-side-piece-masks",
+  "date": "2026-10-26",
+  "baseCommit": "3075bc6ea0dd28d447016de4b07313a7d10867bb",
+  "stableSourceSha256": "94dab5ee87ff8996fcf9e8f93070a8012866926822611eb0f84f6bd3607e1b2c",
+  "hypothesis": "Recursive legal generation scans 90 squares. Iterate an incrementally maintained per-color 90-bit occupancy mask in original square order instead. Maintain mask in stateOf/push/pop; no evaluation/search/rule/sampling changes.",
+  "algorithmFrozenBeforeMeasurement": true,
+  "benchmark": {
+    "fixedRepeats": 5,
+    "positions": "five existing native-benchmark fixtures",
+    "depth": "fixture depth + 1",
+    "nodeCap": 5000000,
+    "timedBudgetsMs": [
+      1000,
+      6000
+    ],
+    "timedRepeats": 2,
+    "sameTree": "Completed layer candidates/scores/order and node counts must match. Separate actual parallel check."
+  },
+  "matches": {
+    "seeds": [
+      2026102601,
+      2026102603
+    ],
+    "internalGames": 4,
+    "baselinePikaGames": 4,
+    "trialPikaGames": 4,
+    "budgetMs": 1000,
+    "graceMs": 60,
+    "samples": 8,
+    "brightSamples": 1,
+    "threads": 4,
+    "ttPerWorld": 90000,
+    "maxDepth": 8,
+    "hostReserveMs": 0,
+    "maxPlies": 400,
+    "stopRule": "Complete the fixed 12 regardless of score. Pause only for quota/access/execution blockers. No tuning, game replacement or added games.",
+    "rule": "Third same public board and turn loses for mover;mate/stalemate priority;120 quiet plies draw;400 cap unresolved."
+  },
+  "defaultPromotion": false,
+  "publication": "Reviewed experiment and full evidence only; no default promotion without reliable benefit."
+}

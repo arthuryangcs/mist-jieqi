@@ -1,0 +1,61 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "sanitize": false,
+      "sourceSha256": "b5f1dde2966c353344718c29e0681a5ea656b2201d183d8e6838f7484ec7b73e",
+      "binarySha256": "e1502ec42a77eecde6b48e88b1bb878c836964148d0d90cef941d1731b821fae",
+      "flags": [
+        "-std=c++17",
+        "-O3",
+        "-DNDEBUG",
+        "-ffp-contract=off",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-isystem",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+      ],
+      "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+      "warnings": "",
+      "passed": true,
+      "bitCases": 1090,
+      "worlds": 33,
+      "transitions": 4224,
+      "reveals": 318,
+      "darkCaptures": 48,
+      "crossWordMoves": 340,
+      "legalComparisons": 16896
+    },
+    {
+      "sanitize": true,
+      "sourceSha256": "b5f1dde2966c353344718c29e0681a5ea656b2201d183d8e6838f7484ec7b73e",
+      "binarySha256": "6ab0c15aa6f618eaa63feaa822383b59d5a3b20007d8fcf724e107b50a6291f3",
+      "flags": [
+        "-std=c++17",
+        "-ffp-contract=off",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-isystem",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1",
+        "-O1",
+        "-g",
+        "-fsanitize=address,undefined",
+        "-fno-omit-frame-pointer",
+        "-DMIST_VERIFY_RESTORE"
+      ],
+      "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+      "warnings": "<project>/.cache/piece-mask/mask-probe.cpp:1:9: warning: 'MIST_VERIFY_RESTORE' macro redefined [-Wmacro-redefined]\n    1 | #define MIST_VERIFY_RESTORE\n      |         ^\n<command line>:1:9: note: previous definition is here\n    1 | #define MIST_VERIFY_RESTORE 1\n      |         ^\n1 warning generated.",
+      "passed": true,
+      "bitCases": 1090,
+      "worlds": 33,
+      "transitions": 4224,
+      "reveals": 318,
+      "darkCaptures": 48,
+      "crossWordMoves": 340,
+      "legalComparisons": 16896
+    }
+  ],
+  "diagnosticPathsNormalized": true
+}

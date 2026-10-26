@@ -1,0 +1,7 @@
+{
+  "passed": false,
+  "stage": "JavaScript module load",
+  "error": "Invalid or unexpected token: newline escaping in builder string literal",
+  "engineCompiledOrExecuted": false,
+  "initialBuilderSha256": "eb32f676aa9bc1a1a1fe1e2da7c2e02efcbe2813111b218bc3342fdfd0a192f6"
+}
