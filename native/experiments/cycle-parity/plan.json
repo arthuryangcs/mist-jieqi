@@ -1,0 +1,43 @@
+{
+  "experiment": "same-turn-cycle-path-scan",
+  "date": "2026-10-27",
+  "baseCommit": "da1ab8ce11659110f19422213c5811cbfab77cb6",
+  "stableSourceSha256": "94dab5ee87ff8996fcf9e8f93070a8012866926822611eb0f84f6bd3607e1b2c",
+  "hypothesis": "Search edges toggle turn and the complete Key includes turn. Scan only same-turn ancestors, retaining full Key equality, existing zero cycle value, cycle counter, push/pop, root rule and all other search semantics.",
+  "algorithmFrozenBeforeMeasurement": true,
+  "benchmark": {
+    "fixedRepeats": 5,
+    "positions": "five existing native-benchmark fixtures",
+    "depth": "fixture depth + 1",
+    "nodeCap": 5000000,
+    "timedBudgetsMs": [
+      1000,
+      6000
+    ],
+    "timedRepeats": 2,
+    "sameTree": "Completed layer candidate order/scores and node counts must match; separate actual parallel check."
+  },
+  "matches": {
+    "seeds": [
+      2026102701,
+      2026102703
+    ],
+    "internalGames": 4,
+    "baselinePikaGames": 4,
+    "trialPikaGames": 4,
+    "budgetMs": 1000,
+    "graceMs": 60,
+    "samples": 8,
+    "brightSamples": 1,
+    "threads": 4,
+    "ttPerWorld": 90000,
+    "maxDepth": 8,
+    "hostReserveMs": 0,
+    "maxPlies": 400,
+    "stopRule": "Complete fixed 12 regardless of score. Pause only for quota/access/execution blockers. No tuning or replaced/added games.",
+    "rule": "Third same public board/turn loses for mover;mate/stalemate priority;120 quiet plies draw;400 cap unresolved."
+  },
+  "defaultPromotion": false,
+  "publication": "Reviewed experiment and full evidence only; no default activation without reliable benefit.",
+  "traversal": "Keep original forward order; only skip opposite-turn entries using stride 2."
+}

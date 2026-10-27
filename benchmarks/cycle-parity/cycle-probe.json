@@ -1,0 +1,58 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "sanitize": false,
+      "sourceSha256": "cbf88b399f7af003e7ff8545d09876aa1727cf076fa571d0152835e874c88a3b",
+      "binarySha256": "7af1f39158559e936342dc1eac6d40656ca0319c85f66d29022c47774575574a",
+      "flags": [
+        "-std=c++17",
+        "-O3",
+        "-DNDEBUG",
+        "-ffp-contract=off",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-isystem",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+      ],
+      "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+      "warnings": "",
+      "passed": true,
+      "cases": 139112,
+      "positive": 25760,
+      "negative": 113352,
+      "fieldCases": 8,
+      "maxLength": 160,
+      "seed": 2026102707
+    },
+    {
+      "sanitize": true,
+      "sourceSha256": "cbf88b399f7af003e7ff8545d09876aa1727cf076fa571d0152835e874c88a3b",
+      "binarySha256": "a2d458788c13c57b40871d9805bb2b93a5ed9f3ecef6898ed57c571fddc178c4",
+      "flags": [
+        "-std=c++17",
+        "-ffp-contract=off",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-isystem",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1",
+        "-O1",
+        "-g",
+        "-fsanitize=address,undefined",
+        "-fno-omit-frame-pointer",
+        "-DMIST_VERIFY_RESTORE"
+      ],
+      "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+      "warnings": "",
+      "passed": true,
+      "cases": 139112,
+      "positive": 25760,
+      "negative": 113352,
+      "fieldCases": 8,
+      "maxLength": 160,
+      "seed": 2026102707
+    }
+  ]
+}
