@@ -1,0 +1,795 @@
+{
+  "recordedAt": "2026-10-28T21:33:55.690Z",
+  "complete": true,
+  "completedGames": 12,
+  "plannedGames": 12,
+  "summary": {
+    "internal": {
+      "games": 4,
+      "wins": 2,
+      "draws": 0,
+      "losses": 2,
+      "unresolved": 0,
+      "scoreRate": 0.5,
+      "technical": []
+    },
+    "ab": {
+      "baseline": {
+        "games": 4,
+        "wins": 2,
+        "draws": 0,
+        "losses": 2,
+        "unresolved": 0,
+        "scoreRate": 0.5,
+        "technical": []
+      },
+      "trial": {
+        "games": 4,
+        "wins": 0,
+        "draws": 0,
+        "losses": 4,
+        "unresolved": 0,
+        "scoreRate": 0,
+        "technical": []
+      }
+    }
+  },
+  "interruptions": [
+    {
+      "recordedAt": "2026-10-28T21:20:59.387Z",
+      "kind": "infrastructure-interruption",
+      "stage": "during game10, after persisted ply7",
+      "inspection": "saved PID absent and no Mist/AB match engines in process list",
+      "reason": "Terminal session handle became unknown; process exit cause unavailable",
+      "pendingSearchOutcome": "unknown, no move or timing persisted",
+      "recovery": "resume identical frozen game/layout/parameters from saved position, not replay from start",
+      "previousCompletedGamesPreserved": 10
+    }
+  ],
+  "cleanFullyPairedAB": {
+    "baseline": {
+      "games": 2,
+      "wins": 0,
+      "draws": 0,
+      "losses": 2,
+      "unresolved": 0,
+      "scoreRate": 0,
+      "technical": []
+    },
+    "trial": {
+      "games": 2,
+      "wins": 0,
+      "draws": 0,
+      "losses": 2,
+      "unresolved": 0,
+      "scoreRate": 0,
+      "technical": []
+    }
+  },
+  "excludedLayoutsForCleanAB": [
+    2026102893
+  ],
+  "metrics": {
+    "baseline": {
+      "attempts": 282,
+      "applied": 282,
+      "elapsedMs": {
+        "n": 282,
+        "min": 2000.975599999998,
+        "p10": 2002.2857739999963,
+        "median": 2003.6636195000028,
+        "p90": 2004.9546630000114,
+        "max": 2006.400305
+      },
+      "completedDepth": {
+        "n": 282,
+        "min": 4,
+        "p10": 5,
+        "median": 5,
+        "p90": 7,
+        "max": 9
+      },
+      "mainDepth": {
+        "n": 282,
+        "min": 5,
+        "p10": 6,
+        "median": 6,
+        "p90": 8,
+        "max": 10
+      },
+      "selDepth": {
+        "n": 282,
+        "min": 12,
+        "p10": 13,
+        "median": 14,
+        "p90": 15,
+        "max": 17
+      },
+      "abLastReportedDepth": {
+        "n": 0,
+        "min": null,
+        "p10": null,
+        "median": null,
+        "p90": null,
+        "max": null
+      },
+      "abLastReportedSelDepth": {
+        "n": 0,
+        "min": null,
+        "p10": null,
+        "median": null,
+        "p90": null,
+        "max": null
+      },
+      "abCpOnlyDepth": {
+        "n": 0,
+        "min": null,
+        "p10": null,
+        "median": null,
+        "p90": null,
+        "max": null
+      },
+      "abCpOnlySelDepth": {
+        "n": 0,
+        "min": null,
+        "p10": null,
+        "median": null,
+        "p90": null,
+        "max": null
+      },
+      "lowerBoundStats": 282,
+      "hostDeadlineStops": 282,
+      "fallbacks": 0
+    },
+    "trial": {
+      "attempts": 278,
+      "applied": 278,
+      "elapsedMs": {
+        "n": 278,
+        "min": 3.585068999993382,
+        "p10": 2002.1377089999987,
+        "median": 2003.7455534999995,
+        "p90": 2005.1433190000098,
+        "max": 2006.1914640000032
+      },
+      "completedDepth": {
+        "n": 278,
+        "min": 2,
+        "p10": 5,
+        "median": 6,
+        "p90": 8,
+        "max": 10
+      },
+      "mainDepth": {
+        "n": 278,
+        "min": 2,
+        "p10": 6,
+        "median": 7,
+        "p90": 9,
+        "max": 11
+      },
+      "selDepth": {
+        "n": 278,
+        "min": 6,
+        "p10": 14,
+        "median": 15,
+        "p90": 17,
+        "max": 19
+      },
+      "abLastReportedDepth": {
+        "n": 0,
+        "min": null,
+        "p10": null,
+        "median": null,
+        "p90": null,
+        "max": null
+      },
+      "abLastReportedSelDepth": {
+        "n": 0,
+        "min": null,
+        "p10": null,
+        "median": null,
+        "p90": null,
+        "max": null
+      },
+      "abCpOnlyDepth": {
+        "n": 0,
+        "min": null,
+        "p10": null,
+        "median": null,
+        "p90": null,
+        "max": null
+      },
+      "abCpOnlySelDepth": {
+        "n": 0,
+        "min": null,
+        "p10": null,
+        "median": null,
+        "p90": null,
+        "max": null
+      },
+      "lowerBoundStats": 271,
+      "hostDeadlineStops": 271,
+      "fallbacks": 0
+    },
+    "ab": {
+      "attempts": 263,
+      "applied": 263,
+      "elapsedMs": {
+        "n": 263,
+        "min": 10.8274689999962,
+        "p10": 1998.577609,
+        "median": 1999.5338630000006,
+        "p90": 2000.2171570000064,
+        "max": 2002.0257310000002
+      },
+      "completedDepth": {
+        "n": 0,
+        "min": null,
+        "p10": null,
+        "median": null,
+        "p90": null,
+        "max": null
+      },
+      "mainDepth": {
+        "n": 0,
+        "min": null,
+        "p10": null,
+        "median": null,
+        "p90": null,
+        "max": null
+      },
+      "selDepth": {
+        "n": 0,
+        "min": null,
+        "p10": null,
+        "median": null,
+        "p90": null,
+        "max": null
+      },
+      "abLastReportedDepth": {
+        "n": 263,
+        "min": 4,
+        "p10": 8,
+        "median": 15,
+        "p90": 53,
+        "max": 245
+      },
+      "abLastReportedSelDepth": {
+        "n": 263,
+        "min": 2,
+        "p10": 7,
+        "median": 18,
+        "p90": 27,
+        "max": 39
+      },
+      "abCpOnlyDepth": {
+        "n": 230,
+        "min": 4,
+        "p10": 8,
+        "median": 14,
+        "p90": 21,
+        "max": 140
+      },
+      "abCpOnlySelDepth": {
+        "n": 230,
+        "min": 4,
+        "p10": 13,
+        "median": 19,
+        "p90": 28,
+        "max": 39
+      },
+      "lowerBoundStats": 0,
+      "hostDeadlineStops": 0,
+      "fallbacks": 0
+    }
+  },
+  "benchmark": [
+    {
+      "name": "初始全暗",
+      "engines": {
+        "old": {
+          "completedDepth": [
+            4,
+            4
+          ],
+          "selDepth": [
+            null,
+            null
+          ],
+          "mainDepth": [
+            null,
+            null
+          ],
+          "visitedNodes": [
+            1472157,
+            1472157
+          ],
+          "elapsedMs": [
+            2004.3944860000001,
+            2003.4250969999994
+          ],
+          "reportedNps": [
+            734464.7025735232,
+            734820.0849657224
+          ],
+          "npsComparable": false,
+          "statsExact": [
+            false,
+            false
+          ]
+        },
+        "functional": {
+          "completedDepth": [
+            4,
+            4
+          ],
+          "selDepth": [
+            13,
+            13
+          ],
+          "mainDepth": [
+            5,
+            5
+          ],
+          "visitedNodes": [
+            5864704,
+            5884928
+          ],
+          "elapsedMs": [
+            2003.1706199999999,
+            2002.766496999997
+          ],
+          "reportedNps": [
+            2927710.6709961635,
+            2938399.463349925
+          ],
+          "npsComparable": true,
+          "statsExact": [
+            false,
+            false
+          ]
+        },
+        "trial": {
+          "completedDepth": [
+            5,
+            5
+          ],
+          "selDepth": [
+            14,
+            14
+          ],
+          "mainDepth": [
+            6,
+            6
+          ],
+          "visitedNodes": [
+            5451264,
+            5418496
+          ],
+          "elapsedMs": [
+            2004.2336160000004,
+            2001.1023300000015
+          ],
+          "reportedNps": [
+            2719874.547798224,
+            2707755.5798958046
+          ],
+          "npsComparable": true,
+          "statsExact": [
+            false,
+            false
+          ]
+        }
+      }
+    },
+    {
+      "name": "可达中局 2111 / 20步",
+      "engines": {
+        "old": {
+          "completedDepth": [
+            5,
+            5
+          ],
+          "selDepth": [
+            null,
+            null
+          ],
+          "mainDepth": [
+            null,
+            null
+          ],
+          "visitedNodes": [
+            2109904,
+            2109904
+          ],
+          "elapsedMs": [
+            2004.9404760000007,
+            2001.9461129999981
+          ],
+          "reportedNps": [
+            1052352.4390157503,
+            1053926.4699978477
+          ],
+          "npsComparable": false,
+          "statsExact": [
+            false,
+            false
+          ]
+        },
+        "functional": {
+          "completedDepth": [
+            5,
+            5
+          ],
+          "selDepth": [
+            13,
+            13
+          ],
+          "mainDepth": [
+            6,
+            6
+          ],
+          "visitedNodes": [
+            7474432,
+            7251712
+          ],
+          "elapsedMs": [
+            2004.866245000001,
+            2003.6366699999999
+          ],
+          "reportedNps": [
+            3728144.9665985056,
+            3619274.9456916265
+          ],
+          "npsComparable": true,
+          "statsExact": [
+            false,
+            false
+          ]
+        },
+        "trial": {
+          "completedDepth": [
+            6,
+            6
+          ],
+          "selDepth": [
+            15,
+            15
+          ],
+          "mainDepth": [
+            7,
+            7
+          ],
+          "visitedNodes": [
+            6453504,
+            6446336
+          ],
+          "elapsedMs": [
+            2004.0469700000012,
+            2002.461596000001
+          ],
+          "reportedNps": [
+            3220235.9009579476,
+            3219205.8079300094
+          ],
+          "npsComparable": true,
+          "statsExact": [
+            false,
+            false
+          ]
+        }
+      }
+    },
+    {
+      "name": "可达中局 2111 / 44步",
+      "engines": {
+        "old": {
+          "completedDepth": [
+            5,
+            5
+          ],
+          "selDepth": [
+            null,
+            null
+          ],
+          "mainDepth": [
+            null,
+            null
+          ],
+          "visitedNodes": [
+            2409351,
+            2409351
+          ],
+          "elapsedMs": [
+            2004.6611140000005,
+            2002.7966830000005
+          ],
+          "reportedNps": [
+            1201874.463057001,
+            1202993.304538042
+          ],
+          "npsComparable": false,
+          "statsExact": [
+            false,
+            false
+          ]
+        },
+        "functional": {
+          "completedDepth": [
+            5,
+            5
+          ],
+          "selDepth": [
+            14,
+            14
+          ],
+          "mainDepth": [
+            6,
+            6
+          ],
+          "visitedNodes": [
+            8256768,
+            8400384
+          ],
+          "elapsedMs": [
+            2004.9291119999998,
+            2002.9390280000007
+          ],
+          "reportedNps": [
+            4118234.380747523,
+            4194028.815938574
+          ],
+          "npsComparable": true,
+          "statsExact": [
+            false,
+            false
+          ]
+        },
+        "trial": {
+          "completedDepth": [
+            6,
+            6
+          ],
+          "selDepth": [
+            15,
+            15
+          ],
+          "mainDepth": [
+            7,
+            7
+          ],
+          "visitedNodes": [
+            7010816,
+            6819072
+          ],
+          "elapsedMs": [
+            2004.6947269999982,
+            2003.0468690000052
+          ],
+          "reportedNps": [
+            3497198.803177181,
+            3404349.696222701
+          ],
+          "npsComparable": true,
+          "statsExact": [
+            false,
+            false
+          ]
+        }
+      }
+    },
+    {
+      "name": "可达中局 2221 / 44步",
+      "engines": {
+        "old": {
+          "completedDepth": [
+            5,
+            5
+          ],
+          "selDepth": [
+            null,
+            null
+          ],
+          "mainDepth": [
+            null,
+            null
+          ],
+          "visitedNodes": [
+            3356915,
+            3356915
+          ],
+          "elapsedMs": [
+            2004.2507929999992,
+            2004.5858819999994
+          ],
+          "reportedNps": [
+            1674897.678336606,
+            1674617.7004153924
+          ],
+          "npsComparable": false,
+          "statsExact": [
+            false,
+            false
+          ]
+        },
+        "functional": {
+          "completedDepth": [
+            5,
+            5
+          ],
+          "selDepth": [
+            13,
+            13
+          ],
+          "mainDepth": [
+            6,
+            6
+          ],
+          "visitedNodes": [
+            7121664,
+            7117056
+          ],
+          "elapsedMs": [
+            2004.8004029999975,
+            2004.3530540000065
+          ],
+          "reportedNps": [
+            3552305.7504094136,
+            3550799.588823325
+          ],
+          "npsComparable": true,
+          "statsExact": [
+            false,
+            false
+          ]
+        },
+        "trial": {
+          "completedDepth": [
+            6,
+            6
+          ],
+          "selDepth": [
+            14,
+            14
+          ],
+          "mainDepth": [
+            7,
+            7
+          ],
+          "visitedNodes": [
+            6432256,
+            6490368
+          ],
+          "elapsedMs": [
+            2004.503087000001,
+            2002.8868359999979
+          ],
+          "reportedNps": [
+            3208903.015273828,
+            3240506.594452452
+          ],
+          "npsComparable": true,
+          "statsExact": [
+            false,
+            false
+          ]
+        }
+      }
+    },
+    {
+      "name": "全明10子残局",
+      "engines": {
+        "old": {
+          "completedDepth": [
+            7,
+            7
+          ],
+          "selDepth": [
+            null,
+            null
+          ],
+          "mainDepth": [
+            null,
+            null
+          ],
+          "visitedNodes": [
+            2734632,
+            2727528
+          ],
+          "elapsedMs": [
+            1976.7897000000012,
+            1976.7567189999972
+          ],
+          "reportedNps": [
+            1383370.2188958179,
+            1379799.5341479366
+          ],
+          "npsComparable": false,
+          "statsExact": [
+            false,
+            false
+          ]
+        },
+        "functional": {
+          "completedDepth": [
+            7,
+            7
+          ],
+          "selDepth": [
+            16,
+            16
+          ],
+          "mainDepth": [
+            8,
+            8
+          ],
+          "visitedNodes": [
+            2714296,
+            2699584
+          ],
+          "elapsedMs": [
+            1978.733497000001,
+            1976.881153000002
+          ],
+          "reportedNps": [
+            1371733.9925337094,
+            1365577.2861728512
+          ],
+          "npsComparable": true,
+          "statsExact": [
+            true,
+            true
+          ]
+        },
+        "trial": {
+          "completedDepth": [
+            8,
+            8
+          ],
+          "selDepth": [
+            17,
+            17
+          ],
+          "mainDepth": [
+            9,
+            9
+          ],
+          "visitedNodes": [
+            2548264,
+            2598496
+          ],
+          "elapsedMs": [
+            1978.203999999998,
+            1976.8907350000009
+          ],
+          "reportedNps": [
+            1288170.481911877,
+            1314435.822878192
+          ],
+          "npsComparable": true,
+          "statsExact": [
+            true,
+            true
+          ]
+        }
+      }
+    }
+  ],
+  "provenance": {
+    "productionHceHash": "7262d0abda78f09162c6e87045ac81d9c2b73ad8e445d277fbc8ced39926dbea",
+    "functionalBaselineHash": "7262d0abda78f09162c6e87045ac81d9c2b73ad8e445d277fbc8ced39926dbea",
+    "trialHash": "971fa5a9cf22cc3cf9bd50eb46c8ad3752b4dadf6ec3df6b3f683d894c1f9b45",
+    "oldAnchorHash": "5c68913e2035093465cb3807ea81604839023daa884d0c0c66ba65f5958a2d23"
+  },
+  "limits": [
+    "Only2 new layouts;4 games per comparison; no overall superiority or default strategy promotion.",
+    "Internal/AB games have different move sequences; match depth medians are not pure speed comparisons.",
+    "AB last info depth need not be a finished iteration and is not directly equivalent to Mist completedDepth.",
+    "selDepth is deepest visited single path including quiescence; host-deadline telemetry is a lower bound.",
+    "Old anchor has no partial node telemetry: its host-stopped NPS counts only last complete iteration and is not comparable to new visited-node NPS.",
+    "Fixed-depth parity uses stored fixture worlds; timed benchmark consistently reconstructs all3 variants with public observationSeed, as the UI does.",
+    "AB internal repetition/quiet rules differ; genericSSE2 build and scalar NNUE head may differ from official best performance.",
+    "DOM and HTTP checks passed; existing browser access restriction not bypassed, no real visual acceptance claimed."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "kind": "one bright non-capture check per quiescence line",
+  "sanitize": false,
+  "diagnostic": false,
+  "stableSourceSha256": "94dab5ee87ff8996fcf9e8f93070a8012866926822611eb0f84f6bd3607e1b2c",
+  "sourceSha256": "4504740bd02e3d1e0a79c431c6d61bd1bb725c5dc5d557bac27cffb003dff37f",
+  "flags": [
+    "-std=c++17",
+    "-O3",
+    "-DNDEBUG",
+    "-ffp-contract=off",
+    "-Wall",
+    "-Wextra",
+    "-Wpedantic",
+    "-isystem",
+    "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+  ],
+  "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+  "warnings": "",
+  "binarySha256": "30dcd1cef87ab9f07746fde634b463290d4751da36aa4be83451252500597d91"
+}

@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "diagnosticSafetyMaxPly": 7,
+  "productionSafetyMaxPly": 127,
+  "flags": [
+    "-std=c++17",
+    "-ffp-contract=off",
+    "-Wall",
+    "-Wextra",
+    "-Wpedantic",
+    "-isystem",
+    "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1",
+    "-O1",
+    "-g",
+    "-fsanitize=address,undefined",
+    "-fno-omit-frame-pointer",
+    "-DMIST_VERIFY_RESTORE"
+  ],
+  "sourceSha256": "0f76e91b6833ef396b5b54b3882dc7eb79f66b445839663e307b9223c82bfd8d",
+  "binarySha256": "3df73b2cc24df94c0b2bf6e169716dfe0b7215c52b75e9473643a10ab7d8b9d4",
+  "nativeGuard": {
+    "depth": 2,
+    "mainDepth": 2,
+    "selDepth": 7,
+    "safetyCutoffs": 50,
+    "terminationReason": "stack-safety"
+  },
+  "javascriptGuard": {
+    "mainDepth": 2,
+    "selDepth": 7,
+    "safetyCutoffs": 16
+  },
+  "history": {
+    "iterationsRetained": 64,
+    "completedIterations": 3346,
+    "selDepth": 15,
+    "truncated": true
+  }
+}

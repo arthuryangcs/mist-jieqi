@@ -1,0 +1,127 @@
+{
+  "build": {
+    "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+    "flags": [
+      "-std=c++17",
+      "-O3",
+      "-DNDEBUG",
+      "-ffp-contract=off",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-isystem",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+    ],
+    "threads": 4,
+    "independentWorldSearch": true,
+    "unlimitedDepth": true,
+    "depthMetrics": true,
+    "safetyMaxPly": 127,
+    "architecture": "x64",
+    "sourceSha256": "3fa98d62f3c1636b831680fcd5dcbf88f9339e966ed1b8e2f8a170b83afcbfb0",
+    "binarySha256": "7262d0abda78f09162c6e87045ac81d9c2b73ad8e445d277fbc8ced39926dbea",
+    "sanitize": false,
+    "compilerWarnings": ""
+  },
+  "tests": [
+    {
+      "name": "HTTP边界与公开信息验证",
+      "passed": true
+    },
+    {
+      "name": "STREAM与完整参考搜索逐着对齐",
+      "passed": true
+    },
+    {
+      "name": "实际HTTP流与核心证明",
+      "passed": true
+    },
+    {
+      "name": "取消/竞态/限流与子进程退出",
+      "passed": true
+    },
+    {
+      "name": "无人工层数上限/遥测/取消",
+      "passed": true
+    },
+    {
+      "name": "浏览器适配器无静默回退",
+      "passed": true
+    },
+    {
+      "name": "故障注入：服务硬时限",
+      "passed": true
+    },
+    {
+      "name": "故障注入：就绪前截止",
+      "passed": true
+    }
+  ],
+  "streamComparisons": [
+    {
+      "name": "开局",
+      "depth": 3,
+      "samples": 8,
+      "nodes": 241176,
+      "javascriptNodes": 251696,
+      "threads": 4,
+      "nodesEqual": false,
+      "candidates": 44,
+      "maxDifference": 2.842170943040401e-14
+    },
+    {
+      "name": "中局",
+      "depth": 3,
+      "samples": 8,
+      "nodes": 69317,
+      "javascriptNodes": 67190,
+      "threads": 4,
+      "nodesEqual": false,
+      "candidates": 25,
+      "maxDifference": 1.1368683772161603e-13
+    },
+    {
+      "name": "全明残局",
+      "depth": 3,
+      "samples": 1,
+      "nodes": 2636,
+      "javascriptNodes": 2636,
+      "threads": 1,
+      "nodesEqual": true,
+      "candidates": 21,
+      "maxDifference": 0
+    }
+  ],
+  "passed": true,
+  "httpTiming": {
+    "elapsedMs": 1183.7481329999996,
+    "depth": 4,
+    "nodes": 3435643,
+    "threads": 4,
+    "firstProgressMs": 17.25452600000017,
+    "serviceElapsedMs": 1180.735381,
+    "initializationMs": 5.013879999999972
+  },
+  "unlimited": {
+    "depth": 10859,
+    "mainDepth": 10860,
+    "selDepth": 15,
+    "events": 19,
+    "elapsedMs": 451.773451,
+    "terminationReason": "time-budget"
+  },
+  "watchdog": {
+    "injected": true,
+    "mock": "compiled-local-cpp",
+    "imageProbeMs": 335.2585689999996,
+    "elapsedMs": 1204.012450000001,
+    "depth": 1,
+    "initializationMs": 3.429121000000123,
+    "processExited": true
+  },
+  "unreadyWatchdog": {
+    "elapsedMs": 1204.8379229999991,
+    "depth": 0,
+    "processExited": true
+  }
+}

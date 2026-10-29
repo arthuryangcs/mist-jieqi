@@ -1,0 +1,20 @@
+{
+  "kind": "unchanged algorithm, root per-world score instrumentation only",
+  "sanitize": false,
+  "stableSourceSha256": "94dab5ee87ff8996fcf9e8f93070a8012866926822611eb0f84f6bd3607e1b2c",
+  "sourceSha256": "ff21b6ce1d615e6a83bf02ac3c563aeb36f0d820d6032b4191029ad0b35a8fcb",
+  "binarySha256": "9a57fc6021a0c9ed13294f96b706b946d2581180b6955c88cd230817ac2df1de",
+  "flags": [
+    "-std=c++17",
+    "-O3",
+    "-DNDEBUG",
+    "-ffp-contract=off",
+    "-Wall",
+    "-Wextra",
+    "-Wpedantic",
+    "-isystem",
+    "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+  ],
+  "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+  "warnings": ""
+}

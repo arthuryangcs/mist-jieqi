@@ -1,0 +1,23 @@
+{
+  "savedAt": "2026-10-28T20:21:54.973Z",
+  "baseCommit": "7d52437caba9a5d6a22734feb0072497eb40c209",
+  "files": {
+    "native/search.cpp": "94dab5ee87ff8996fcf9e8f93070a8012866926822611eb0f84f6bd3607e1b2c",
+    "native/bridge.mjs": "1ba71013573be4b3bd89753def3b778d5a171e9f0de49a111594222d8b4bfb5d",
+    "native/server.mjs": "ac5cbbfac91b5e16db8b1b121b82600c56eb57a9f7ad5c697f5162e38c458d90",
+    "native/build.mjs": "d0d5194b56052835eb13f1f46f8fd40826b57b7f5189472b092f42ffbecb03eb",
+    "ai.js": "223a1027a4c19c6d01628b2e37e82d2ba3ad9ee588c1bf29e0c2710adc554726",
+    "worker.js": "fdacb906f65b1423dbe5ed62e7389f5f0a4f31cc8e918764f76fd8a29576c523",
+    "deadline-search.js": "20a1c2467443425638f2b9d439856888d62c78aa17b3b9e65d7fb79c3cb0d5df",
+    "native-client.js": "08438f8c349bf1ddbf46b98b87dbdb2fcf4d3f772d8a03b08c5220e791494c50",
+    "app.js": "c271b0b1e03c5bd86514559798eee2c1e9371d2fa3b3b069798c21ad4fce03b0",
+    "index.html": "1d30738f57228c7268fc9cbf18eeaf3eaa626117cbd95ddeed6111def0cbf59d",
+    "style.css": "4bfaa69674dc52e2ac9e455911c216c35a3a25a462b8a0a410e32d26037fe40f",
+    "scripts/native-match-engine.mjs": "13ac0a59a5d4c1d6b32c2f1e249143ad4ffc699050deb7be4643f6c79709a605"
+  },
+  "binarySha256": "5c68913e2035093465cb3807ea81604839023daa884d0c0c66ba65f5958a2d23",
+  "oldScreens": {
+    "mateProof": "24 complete",
+    "qcheckFilter": "4/12 paused, superseded by explicit new no-depth-cap/metrics/search goal;not merged or overwritten"
+  }
+}

@@ -1,0 +1,449 @@
+{
+  "passed": true,
+  "plies": 1534,
+  "darkCaptures": 181,
+  "repetitions": 0,
+  "rootGuards": 1,
+  "quietDifferences": 190,
+  "games": [
+    {
+      "index": 0,
+      "kind": "internal",
+      "engine": "trial",
+      "seed": 2026102851,
+      "candidateSide": "r",
+      "plies": 83,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 1,
+      "kind": "internal",
+      "engine": "trial",
+      "seed": 2026102851,
+      "candidateSide": "b",
+      "plies": 96,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "technicalForfeit": true,
+        "offender": "opponent",
+        "reason": "technical-timeout"
+      },
+      "passed": true
+    },
+    {
+      "index": 2,
+      "kind": "ab",
+      "engine": "baseline",
+      "seed": 2026102851,
+      "candidateSide": "r",
+      "plies": 103,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 3,
+      "kind": "ab",
+      "engine": "trial",
+      "seed": 2026102851,
+      "candidateSide": "r",
+      "plies": 48,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 4,
+      "kind": "ab",
+      "engine": "trial",
+      "seed": 2026102851,
+      "candidateSide": "b",
+      "plies": 31,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 5,
+      "kind": "ab",
+      "engine": "baseline",
+      "seed": 2026102851,
+      "candidateSide": "b",
+      "plies": 43,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 6,
+      "kind": "internal",
+      "engine": "trial",
+      "seed": 2026102853,
+      "candidateSide": "r",
+      "plies": 51,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 7,
+      "kind": "internal",
+      "engine": "trial",
+      "seed": 2026102853,
+      "candidateSide": "b",
+      "plies": 67,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 8,
+      "kind": "ab",
+      "engine": "trial",
+      "seed": 2026102853,
+      "candidateSide": "r",
+      "plies": 44,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 9,
+      "kind": "ab",
+      "engine": "baseline",
+      "seed": 2026102853,
+      "candidateSide": "r",
+      "plies": 72,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 10,
+      "kind": "ab",
+      "engine": "baseline",
+      "seed": 2026102853,
+      "candidateSide": "b",
+      "plies": 23,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 11,
+      "kind": "ab",
+      "engine": "trial",
+      "seed": 2026102853,
+      "candidateSide": "b",
+      "plies": 68,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 12,
+      "kind": "internal",
+      "engine": "trial",
+      "seed": 2026102857,
+      "candidateSide": "r",
+      "plies": 135,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 13,
+      "kind": "internal",
+      "engine": "trial",
+      "seed": 2026102857,
+      "candidateSide": "b",
+      "plies": 33,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 14,
+      "kind": "ab",
+      "engine": "baseline",
+      "seed": 2026102857,
+      "candidateSide": "r",
+      "plies": 36,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 15,
+      "kind": "ab",
+      "engine": "trial",
+      "seed": 2026102857,
+      "candidateSide": "r",
+      "plies": 71,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 16,
+      "kind": "ab",
+      "engine": "trial",
+      "seed": 2026102857,
+      "candidateSide": "b",
+      "plies": 89,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 17,
+      "kind": "ab",
+      "engine": "baseline",
+      "seed": 2026102857,
+      "candidateSide": "b",
+      "plies": 71,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 18,
+      "kind": "internal",
+      "engine": "trial",
+      "seed": 2026102859,
+      "candidateSide": "r",
+      "plies": 65,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 19,
+      "kind": "internal",
+      "engine": "trial",
+      "seed": 2026102859,
+      "candidateSide": "b",
+      "plies": 48,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 20,
+      "kind": "ab",
+      "engine": "trial",
+      "seed": 2026102859,
+      "candidateSide": "r",
+      "plies": 85,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 21,
+      "kind": "ab",
+      "engine": "baseline",
+      "seed": 2026102859,
+      "candidateSide": "r",
+      "plies": 98,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 22,
+      "kind": "ab",
+      "engine": "baseline",
+      "seed": 2026102859,
+      "candidateSide": "b",
+      "plies": 43,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 23,
+      "kind": "ab",
+      "engine": "trial",
+      "seed": 2026102859,
+      "candidateSide": "b",
+      "plies": 31,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    }
+  ],
+  "time": {
+    "baseline": {
+      "attempts": 532,
+      "mean": 1960.8626543834548,
+      "p95": 2005.2075380000024,
+      "max": 2078.5534800000023,
+      "over2060": 1
+    },
+    "trial": {
+      "attempts": 523,
+      "mean": 1985.150277458889,
+      "p95": 2002.869989999992,
+      "max": 2042.8184889999975,
+      "over2060": 0
+    },
+    "ab": {
+      "attempts": 480,
+      "mean": 1866.38340011042,
+      "p95": 2000.629939999999,
+      "max": 2003.0823519999976,
+      "over2060": 0
+    }
+  },
+  "threads": {
+    "baseline": {
+      "1": 9,
+      "4": 523
+    },
+    "trial": {
+      "1": 2,
+      "4": 521
+    },
+    "ab": {
+      "4": 480
+    }
+  },
+  "complete": true,
+  "summary": {
+    "internal": {
+      "games": 8,
+      "wins": 6,
+      "draws": 0,
+      "losses": 2,
+      "unresolved": 0,
+      "scoreRate": 0.75,
+      "technical": [
+        {
+          "seed": 2026102851,
+          "candidateSide": "b",
+          "status": "decided",
+          "winner": "b",
+          "technicalForfeit": true,
+          "offender": "opponent",
+          "reason": "technical-timeout"
+        }
+      ]
+    },
+    "ab": {
+      "baseline": {
+        "games": 8,
+        "wins": 1,
+        "draws": 0,
+        "losses": 7,
+        "unresolved": 0,
+        "scoreRate": 0.125,
+        "technical": []
+      },
+      "trial": {
+        "games": 8,
+        "wins": 3,
+        "draws": 0,
+        "losses": 5,
+        "unresolved": 0,
+        "scoreRate": 0.375,
+        "technical": []
+      }
+    }
+  }
+}

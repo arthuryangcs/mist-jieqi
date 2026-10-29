@@ -1,0 +1,176 @@
+{
+  "upstream": "https://github.com/lxsgx23/AB-JChess",
+  "tag": "v0.2d",
+  "commit": "fe35d87c7553fd23e8aab3a1dde7e712f286b416",
+  "modelSha256": "05c13ac64f5b8ede77cfdc408d399d1f235564ba0999e2c768bebaeedb1db761",
+  "modelBytes": 143667546,
+  "license": "GPL-3.0 source; release model has no separate license file; local use only, no redistribution",
+  "arch": "x86_64 generic SSE2; no unverified BMI2/AVX2",
+  "flags": [
+    "-std=c++17",
+    "-O3",
+    "-funroll-loops",
+    "-DNDEBUG",
+    "-ffp-contract=off",
+    "-flto=full",
+    "-arch",
+    "x86_64",
+    "-mmacosx-version-min=10.15",
+    "-pthread",
+    "-DABJCHESS_V11",
+    "-DABJNNUE_RUNTIME_REFRESH_CACHE",
+    "-DABJNNUE_RUNTIME_SIMD_TRANSFORM",
+    "-DIS_64BIT",
+    "-DUSE_SSE2",
+    "-DNO_PREFETCH",
+    "-DUSE_PTHREADS",
+    "-isystem",
+    "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1",
+    "-I",
+    "<project>/external/AB-JChess-v0.2d/abjchess/src"
+  ],
+  "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+  "sources": {
+    "abjnnue/abjnnue_accumulator.cpp": "a38dd2a875aa4cc656458b0dd1c7519b0585ce4205900ef1efc5687fab42bc24",
+    "abjnnue/abjnnue_feature_encoder.cpp": "52877b26e099fe42c14b837f82530a087b24cd5d19428a9462af83f2074535cb",
+    "abjnnue/abjnnue_inference.cpp": "64f63dde239377f273c29f2c2528147ee479c3cfbed8b287b902eaf17953680d",
+    "abjnnue/abjnnue_layers.cpp": "443db459ffb89f70375bba808dbc48fdbb42dd211dcde4ef943c52ab203e7e02",
+    "abjnnue/abjnnue_model.cpp": "3ef75982686a5db0dc533627888af89d9d48a181760e6060bc6e2e4b746cba25",
+    "abjnnue/abjnnue_network.cpp": "f254fe1d405717ca43be8b37eb5b895f07aae8d46dbee998fb1bac834f36ac75",
+    "abjnnue/abjnnue_package.cpp": "377d9896983278909536952994265c3bfd7d9a92500f6adfb0b4d2d206e8b5d1",
+    "abjnnue/abjnnue_runtime_layout.cpp": "54f2213e69f3d988e563af6531b9fb116e310ed85819dc3c246036cb551f3992",
+    "benchmark.cpp": "4657f4ab0f99dc8f76c35bbc75bc0b9db35f42003c104e4903dd61d965db711e",
+    "bitboard.cpp": "ec3980703fcaed62d9c50421f4d3c24163033311d5cd5bf406f6bac6ecee81cf",
+    "engine.cpp": "39043339be1efdd632409afaf65816ab03a984397b4aa786c864d6e1bdcba997",
+    "evaluate.cpp": "6705292794965723e8fcc710c6565e381d28564e21875da16893692ad7876301",
+    "main.cpp": "d22d7e8936aa2942c043bc6dca93a4c52793bc0c95c97d829fcad92857232d5a",
+    "memory.cpp": "11a4154d77d98e2d8360a006c847827c39095160cf5887bc9eae6edac02c57ef",
+    "misc.cpp": "57d8f839f62139ca53eb3353e5b0a2a97db406dd217d2c68904a6fd37f1d324c",
+    "movegen.cpp": "17ef2d6d192bc72eefb1519540b0b73b5fb76b501f4c6c6b85fa83fd2029a258",
+    "movepick.cpp": "bed771de1c4c4820e0c121867414c62f4be8464c2303f4f91c2db46f239ac0cf",
+    "position.cpp": "d469e7cfaa3250909fe5ed28ab28c779796c1db78cf19abe098ce3c1c97aa6bf",
+    "reveal.cpp": "b464db07b19dce31eab6058fa48da8f91472a544b56ae8e58448f62f6dd1bf28",
+    "score.cpp": "9e7ff30882b14ea1ebca113bf08bb7e1431102f6958439d9cb9035f2553059f0",
+    "search.cpp": "cfd6288cb79c7fb79c5e9a908b2898f0f305704e119e7d373bd5759177428788",
+    "thread.cpp": "b740e9b71e4313e7b2be46dffd025dd63ba4be55a118c064cc933199972c0407",
+    "timeman.cpp": "47ba2a6459ad91676360d1d6d1bf986682b69ac34d797c4783e9af65ef08c3d8",
+    "tt.cpp": "ec1bd4a4f27cac7667ba9085473bbb50d2801485ab3380b0096c3ad18e041ab0",
+    "tune.cpp": "39bcdedc5a36b796fe7a3c7f0e3aa487041f644eaf044fd4d73c10a946381465",
+    "uci.cpp": "a813f48028b94f2d010f47ab9fff24bf98a756b949920eb8adee3bead6f16155",
+    "ucioption.cpp": "2397bc274831f1ea7b264a0e73a90e8dca1853d2c33fa08aac8300206f7ac4f3"
+  },
+  "completed": [
+    {
+      "source": "abjnnue/abjnnue_accumulator.cpp",
+      "warnings": ""
+    },
+    {
+      "source": "abjnnue/abjnnue_feature_encoder.cpp",
+      "warnings": ""
+    },
+    {
+      "source": "abjnnue/abjnnue_inference.cpp",
+      "warnings": ""
+    },
+    {
+      "source": "abjnnue/abjnnue_layers.cpp",
+      "warnings": ""
+    },
+    {
+      "source": "abjnnue/abjnnue_model.cpp",
+      "warnings": ""
+    },
+    {
+      "source": "abjnnue/abjnnue_network.cpp",
+      "warnings": ""
+    },
+    {
+      "source": "abjnnue/abjnnue_package.cpp",
+      "warnings": ""
+    },
+    {
+      "source": "abjnnue/abjnnue_runtime_layout.cpp",
+      "warnings": ""
+    },
+    {
+      "source": "benchmark.cpp",
+      "warnings": ""
+    },
+    {
+      "source": "bitboard.cpp",
+      "warnings": ""
+    },
+    {
+      "source": "engine.cpp",
+      "warnings": ""
+    },
+    {
+      "source": "evaluate.cpp",
+      "warnings": ""
+    },
+    {
+      "source": "main.cpp",
+      "warnings": ""
+    },
+    {
+      "source": "memory.cpp",
+      "warnings": ""
+    },
+    {
+      "source": "misc.cpp",
+      "warnings": ""
+    },
+    {
+      "source": "movegen.cpp",
+      "warnings": ""
+    },
+    {
+      "source": "movepick.cpp",
+      "warnings": ""
+    },
+    {
+      "source": "position.cpp",
+      "warnings": ""
+    },
+    {
+      "source": "reveal.cpp",
+      "warnings": ""
+    },
+    {
+      "source": "score.cpp",
+      "warnings": ""
+    },
+    {
+      "source": "search.cpp",
+      "warnings": ""
+    },
+    {
+      "source": "thread.cpp",
+      "warnings": ""
+    },
+    {
+      "source": "timeman.cpp",
+      "warnings": ""
+    },
+    {
+      "source": "tt.cpp",
+      "warnings": ""
+    },
+    {
+      "source": "tune.cpp",
+      "warnings": ""
+    },
+    {
+      "source": "uci.cpp",
+      "warnings": ""
+    },
+    {
+      "source": "ucioption.cpp",
+      "warnings": ""
+    }
+  ],
+  "passed": true,
+  "linkWarnings": "",
+  "binarySha256": "a48c64cd4d959c3fa5e51b32a2260c27cb93023551d0a90e075577c29e86cf42",
+  "binaryBytes": 711832
+}

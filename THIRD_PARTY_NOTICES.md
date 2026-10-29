@@ -24,3 +24,7 @@
 ## 保留的测量材料
 
 `benchmarks/` 中的 JSON、独立基线快照、报告和 `browser-evidence/` 中的页面截图属于本项目验证材料。截图仅含本地应用页面；不包含个人浏览器资料。原始本机日志与 CPU 分析文件留在本地，未上传。
+
+## AB-JChess local comparison metadata
+
+The project includes its own comparison adapter and synthetic regression/match reports for AB-JChess v0.2d (`fe35d87c7553fd23e8aab3a1dde7e712f286b416`), upstream https://github.com/lxsgx23/AB-JChess. Upstream source is GPL-3.0; no upstream source, executable, object files or NNUE weights are bundled here. The release network has no separately verified redistribution license and is not distributed. Reproduction requiring that opponent must obtain and review the fixed upstream source and network separately under their applicable terms. Generic search ideas in the independent Mist prototypes were implemented in this project; the comparison does not claim model or engine equivalence across platforms.

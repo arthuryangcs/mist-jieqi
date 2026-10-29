@@ -1,0 +1,10 @@
+{
+  "recordedAt": "2026-10-28T21:20:59.387Z",
+  "kind": "infrastructure-interruption",
+  "stage": "during game10, after persisted ply7",
+  "inspection": "saved PID absent and no Mist/AB match engines in process list",
+  "reason": "Terminal session handle became unknown; process exit cause unavailable",
+  "pendingSearchOutcome": "unknown, no move or timing persisted",
+  "recovery": "resume identical frozen game/layout/parameters from saved position, not replay from start",
+  "previousCompletedGamesPreserved": 10
+}

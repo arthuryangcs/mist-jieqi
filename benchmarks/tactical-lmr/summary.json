@@ -1,0 +1,185 @@
+{
+  "complete": true,
+  "completedGames": 12,
+  "summary": {
+    "internal": {
+      "games": 4,
+      "wins": 2,
+      "draws": 0,
+      "losses": 2,
+      "unresolved": 0,
+      "scoreRate": 0.5,
+      "technical": []
+    },
+    "pika": {
+      "baseline": {
+        "games": 4,
+        "wins": 2,
+        "draws": 0,
+        "losses": 2,
+        "unresolved": 0,
+        "scoreRate": 0.5,
+        "technical": []
+      },
+      "trial": {
+        "games": 4,
+        "wins": 0,
+        "draws": 0,
+        "losses": 4,
+        "unresolved": 0,
+        "scoreRate": 0,
+        "technical": []
+      }
+    }
+  },
+  "metrics": {
+    "baseline": {
+      "attempts": 406,
+      "applied": 406,
+      "elapsedMs": {
+        "n": 406,
+        "min": 2.628292000008514,
+        "median": 2003.7657025000026,
+        "p10": 1981.632301000005,
+        "p90": 2005.1235079999897,
+        "max": 2008.3534900000086
+      },
+      "selDepth": {
+        "n": 406,
+        "min": 2,
+        "median": 14,
+        "p10": 13,
+        "p90": 15,
+        "max": 17
+      },
+      "completedDepth": {
+        "n": 406,
+        "min": 2,
+        "median": 5,
+        "p10": 5,
+        "p90": 7,
+        "max": 9
+      },
+      "mainDepth": {
+        "n": 406,
+        "min": 2,
+        "median": 6,
+        "p10": 6,
+        "p90": 8,
+        "max": 10
+      },
+      "fallbacks": 0,
+      "hostDeadlineStops": 364,
+      "lowerBoundStats": 364
+    },
+    "trial": {
+      "attempts": 380,
+      "applied": 380,
+      "elapsedMs": {
+        "n": 380,
+        "min": 4.963175000011688,
+        "median": 1998.116460499994,
+        "p10": 1976.3794730000081,
+        "p90": 2002.9252859999997,
+        "max": 2005.4418460000015
+      },
+      "selDepth": {
+        "n": 380,
+        "min": 0,
+        "median": 14,
+        "p10": 14,
+        "p90": 16,
+        "max": 19
+      },
+      "completedDepth": {
+        "n": 380,
+        "min": 1,
+        "median": 5,
+        "p10": 5,
+        "p90": 7,
+        "max": 1953546
+      },
+      "mainDepth": {
+        "n": 380,
+        "min": 1,
+        "median": 6,
+        "p10": 6,
+        "p90": 8,
+        "max": 1953546
+      },
+      "fallbacks": 0,
+      "hostDeadlineStops": 165,
+      "lowerBoundStats": 165
+    },
+    "pika": {
+      "attempts": 294,
+      "applied": 294,
+      "elapsedMs": {
+        "n": 294,
+        "min": 3.771666999993613,
+        "median": 1999.4660085000069,
+        "p10": 1998.580030000012,
+        "p90": 2000.2586139999985,
+        "max": 2003.522466
+      },
+      "selDepth": {
+        "n": 294,
+        "min": 2,
+        "median": 17.5,
+        "p10": 7,
+        "p90": 30,
+        "max": 47
+      },
+      "completedDepth": {
+        "n": 0,
+        "min": null,
+        "median": null,
+        "p10": null,
+        "p90": null,
+        "max": null
+      },
+      "mainDepth": {
+        "n": 0,
+        "min": null,
+        "median": null,
+        "p10": null,
+        "p90": null,
+        "max": null
+      },
+      "fallbacks": 0,
+      "hostDeadlineStops": 0,
+      "lowerBoundStats": 0
+    }
+  },
+  "ruleOnlyIterations": [
+    {
+      "game": 0,
+      "ply": 39,
+      "mainDepth": 1930880,
+      "completedDepth": 1930880,
+      "selDepth": 0,
+      "nodes": 0,
+      "elapsedMs": 1968.928349000009,
+      "meaning": "rule-only outer-loop iterations,not actual search moves;efficiency issue retained,not tuned mid-plan"
+    },
+    {
+      "game": 6,
+      "ply": 173,
+      "mainDepth": 1953546,
+      "completedDepth": 1953546,
+      "selDepth": 0,
+      "nodes": 0,
+      "elapsedMs": 1969.0501989999902,
+      "meaning": "rule-only outer-loop iterations,not actual search moves;efficiency issue retained,not tuned mid-plan"
+    }
+  ],
+  "limits": [
+    "Only2fresh initial layouts and4games per comparison;not evidence of overall superiority.",
+    "Combined q-check+LMR policy;cannot attribute WDL to either component alone.",
+    "Pika fixedHCE build has known color evaluation asymmetry;both colors paired,no correction or exclusions.",
+    "Both2seconds/max4threads;not equal measured RSS.",
+    "selDepth is deepest visited path including qsearch;host stop counters are latest-reported lower bounds. Pika rawUCI counters have different scope.",
+    "Same exact external third-public-repetition adjudicator and root guard;internal deep-cycle approximations differ.",
+    "No browser visual acceptance;existing runtime restriction preserved."
+  ]
+}

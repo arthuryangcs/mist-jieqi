@@ -26,11 +26,11 @@ test('C++连接失败明确停止，手动选择JavaScript才恢复黑方搜索'
 });
 test('自动对战逐层显示当前方推荐，落子后明确标记，下一方搜索前清除旧层',async()=>{
  const {$,workers}=await setup();$('autoMode').onclick();$('autoToggle').onclick();const w=workers[0];
- assert(!$('analysis').hidden);assert.match($('report').children[0].textContent,/等待第一层/);
+ assert(!$('analysis').hidden);assert.match($('report').children[0].textContent,/搜索走子路径/);
  w.onmessage({data:{id:w.data.id,progress:true,result:{move:{from:54,to:45},candidates:[{from:54,to:45,score:30,spread:2}],score:30,depth:2,samples:8,nodes:500,elapsedMs:100}}});
- assert.match($('report').children[2].textContent,/推荐：暗兵.*→/);assert.match($('report').children[1].textContent,/深度 2.*搜索中/);assert($('apply').disabled);
+ assert.match($('report').children[2].textContent,/推荐：暗兵.*→/);assert.match($('report').children[1].textContent,/最深走子 未报告.*完成迭代 2.*搜索中/);assert($('apply').disabled);
  await reply(w,{from:54,to:45});assert.match($('analysisTitle').textContent,/红方.*已落子/);
- await delay(350);assert.equal(workers.length,2);assert.equal($('viewSide').value,'b');assert.match($('report').children[0].textContent,/黑方.*等待第一层/);
+ await delay(350);assert.equal(workers.length,2);assert.equal($('viewSide').value,'b');assert.match($('report').children[0].textContent,/黑方.*搜索走子路径/);
  $('reset').onclick();assert($('analysis').hidden);assert.equal($('report').children.length,0);
 });
 test('自动搜索不会跨信息视角显示，旧进度不能污染重开或悔棋',async()=>{
@@ -266,4 +266,13 @@ test('落子后仅保留蓝色上步箭头，新搜索时仍可区分上步与�
 });
 test('独立计分实验在引擎状态明确标记，普通核心不显示实验标签',async()=>{
  const {$,workers}=await setup();$('editMode').onclick();$('analyze').onclick();const w=workers[0];w.onmessage({data:{id:w.data.id,result:{move:{from:54,to:45},candidates:[],score:8,depth:1,samples:4,nodes:1,elapsedMs:1,engine:'cpp-native',engineVerified:true,sourceSha256:'abcdef0123456789',experiment:'known-piece-bonus-8'}}});assert.match($('engineStatus').textContent,/已知明子\+8实验/);$('reset').onclick();$('analyze').onclick();const next=workers[1];next.onmessage({data:{id:next.data.id,result:{move:{from:54,to:45},candidates:[],score:0,depth:1,samples:4,nodes:1,elapsedMs:1,engine:'cpp-native',engineVerified:true,sourceSha256:'0123456789abcdef'}}});assert(!$('engineStatus').textContent.includes('实验'));
+});
+test('真实走子深度遥测与安全推荐分离，重开和停止丢弃过期计数',async()=>{
+ const {$,workers}=await setup();$('editMode').onclick();$('analyze').onclick();const w=workers[0],id=w.data.id;
+ const telemetry={mainDepth:3,selDepth:9,completedDepth:0,visitedNodes:100,elapsedMs:20};
+ w.onmessage({data:{id,telemetry}});assert.match($('report').children[0].textContent,/9 半回合/);assert($('apply').disabled);assert($('moveArrowLayer').hidden);
+ const result={move:{from:54,to:45},candidates:[],score:30,depth:2,completedDepth:2,mainDepth:3,selDepth:9,samples:8,nodes:100,elapsedMs:30};w.onmessage({data:{id,progress:true,result}});
+ w.onmessage({data:{id,telemetry:{...telemetry,mainDepth:4,selDepth:14,completedDepth:3,elapsedMs:40}}});assert.match($('report').children[1].textContent,/14 半回合.*完成迭代 2/);assert.equal($('moveArrowLayer').dataset.phase,'searching');
+ $('stop').onclick();const report=$('report').children.map(x=>x.textContent).join('');w.onmessage({data:{id,telemetry:{...telemetry,selDepth:99}}});assert.equal($('report').children.map(x=>x.textContent).join(''),report);
+ $('reset').onclick();w.onmessage({data:{id,telemetry:{...telemetry,selDepth:99}}});assert($('analysis').hidden);assert.equal($('report').children.length,0);
 });

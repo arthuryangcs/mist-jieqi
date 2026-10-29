@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "method": "Deep equality of original private backup and public records after removing a fixed allowlist of usage/process metadata and normalizing local workspace path;all game,clock,score and source fingerprints preserved",
+  "metadataKeyAllowlist": [
+    "pid",
+    "oldPid",
+    "staleLockPid",
+    "savedPid",
+    "terminalSession",
+    "savedLockStartedAt",
+    "accountId",
+    "planType",
+    "usedPercent",
+    "remainingPercent",
+    "rateLimits",
+    "rateLimitsByLimitId",
+    "credits",
+    "quota"
+  ],
+  "files": [
+    "benchmarks/ab-jchess/matches.json",
+    "benchmarks/mate-proof/matches.json",
+    "benchmarks/mate-proof/resume.json",
+    "benchmarks/time-search/interruption.json",
+    "benchmarks/time-search/matches.json",
+    "benchmarks/time-search/profile.json",
+    "benchmarks/time-search/summary.json"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+ "hypothesis":"One non-capture bright checking move per quiescence line can expose quiet mate threats at the frontier; main depth may decrease because it costs nodes. Strength is not assumed.",
+ "singleChange":"At non-check quiescence nodes, after legal stand-pat handling, include legal non-capture bright checks while qleft>0 and one per-line quiet-check budget remains. Do not add hidden checking moves or alter sampling, aggregation, evaluation, main depth, repetition or defaults.",
+ "diagnostic":"Previous AB game 3 is development data, never a validation layout. Stable 8 samples exactly R2,N1,A2,P3; depth2 sees six immediate mates; c3e5 loses all8 by depth4, so i0i2 is an escape gamble, not an uncovered-identity bug.",
+ "budgetMs":2000,"graceMs":60,"maxSearchThreads":4,"samples":8,"brightSamples":1,"maxDepth":8,
+ "seeds":[2026102851,2026102853,2026102857,2026102859],
+ "games":24,"internalGames":8,"abGames":{"stable":8,"trial":8},
+ "order":"Per layout: trial vs stable red/black, then stable and trial vs fixed AB in each color, alternating stable/trial order between pairs. Serial only.",
+ "stop":"No tuning or outcome-dependent stopping. All technical failures and unresolved retained. Pause after a completed move if readable quota<40%, or on user stop. Diagnose protocol failures before continuing, do not replace failed games.",
+ "promotion":"Screen only; no default promotion from four correlated layouts. Keep baseline even if promising. Report WDL, score, failures, costs and rule/build limitations.",
+ "publication":"Local code and report only; no commits, push or uploads. No third-party code or model copied into deliverable. Implementation independent; upstream conceptual references cited."
+}

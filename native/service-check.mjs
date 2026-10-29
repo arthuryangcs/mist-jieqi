@@ -7,9 +7,9 @@ import http from 'node:http';
 import {createLocalServer,ensureBuild,validateRequest} from './server.mjs';
 import {Native,fixture,javascript,compare,observationSeed} from './bridge.mjs';
 import {NativeWorker} from '../native-client.js';
-import {initial,publicState,move,legalMoves} from '../engine.js';
+import {initial,publicState,move,legalMoves,TYPES} from '../engine.js';
 import {seeded} from '../ai.js';
-const built=ensureBuild(),view=publicState(initial(seeded(17)),'r'),payload=(timeMs=1000)=>({token:crypto.randomUUID(),timeMs,view:structuredClone(view)});
+const built=ensureBuild(),view=publicState(initial(seeded(17)),'r'),payload=(timeMs=1000)=>({token:crypto.randomUUID(),timeMs,depthMetrics:true,view:structuredClone(view)});
 const evidence={build:built,tests:[],streamComparisons:[],passed:false};
 const service=createLocalServer({buildInfo:built}),address=await service.listen(0),base=`http://127.0.0.1:${address.port}`;
 const post=body=>fetch(base+'/api/search',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
@@ -47,8 +47,8 @@ test('STREAM与参考搜索逐层同分并记录两种节点数',()=>checked('ST
 test('实际HTTP流只传五候选，标记核心且逐层返回完整结果',()=>checked('实际HTTP流与核心证明',async()=>{
  const input=payload(1200),events=[];const start=performance.now();for await(const item of messages(await post(input)))events.push(item);
  assert(events.some(x=>x.progress));const r=events.at(-1).result;assert.equal(r.engine,'cpp-native');assert(r.engineVerified);assert.equal(r.sourceSha256,built.sourceSha256);assert.equal(r.candidates.length,5);assert(!('allCandidates'in r));assert(!('iterations'in r));assert.equal(r.samples,8);assert.equal(r.threads,4);assert.equal(r.maxThreads,4);assert.equal(r.independentWorldSearch,true);assert(r.depth>=1);assert(legalMoves(view).some(m=>m.from===r.move.from&&m.to===r.move.to));
- assert(events.filter(x=>x.progress).every((x,i)=>x.result.depth===i+1));
- evidence.httpTiming={elapsedMs:performance.now()-start,depth:r.depth,nodes:r.nodes,threads:r.threads,firstProgressMs:events[0].result.serviceElapsedMs,serviceElapsedMs:r.serviceElapsedMs,initializationMs:r.initializationMs};await waitFor(()=>service.active.size===0);
+ const progress=events.filter(x=>x.progress);assert(progress.every((x,i)=>i===0||x.result.depth>progress[i-1].result.depth));
+ evidence.httpTiming={elapsedMs:performance.now()-start,depth:r.depth,nodes:r.nodes,threads:r.threads,firstProgressMs:events.find(x=>x.progress).result.serviceElapsedMs,serviceElapsedMs:r.serviceElapsedMs,initializationMs:r.initializationMs};await waitFor(()=>service.active.size===0);
 }));
 test('取消、先取消后到达及限流不会遗留C++子进程',()=>checked('取消/竞态/限流与子进程退出',async()=>{
  const input=payload(15000),response=await post(input);let process;
@@ -57,9 +57,17 @@ test('取消、先取消后到达及限流不会遗留C++子进程',()=>checked(
  const early=payload();await fetch(base+'/api/search/'+early.token,{method:'DELETE'});assert.equal((await post(early)).status,409);
  const pending=[payload(15000),payload(15000)],responses=await Promise.all(pending.map(post));assert(responses.every(r=>r.status===200));assert.equal((await post(payload())).status,429);for(const p of pending)await fetch(base+'/api/search/'+p.token,{method:'DELETE'});for(const r of responses)await r.text();await waitFor(()=>!service.active.size);
 }));
+test('HTTP与浏览器适配器无8层上限，遥测不包含推荐且取消同一数据块不再回调',()=>checked('无人工层数上限/遥测/取消',async()=>{
+ const s={...initial(),board:Array(90).fill(null),captured:[]};s.board[85]={side:'r',type:'K',role:'K',hidden:false};s.board[3]={side:'b',type:'K',role:'K',hidden:false};for(const side of ['r','b'])for(const type of TYPES)s.captured.push({side,type,hidden:false,capturedBy:side==='r'?'b':'r'});
+ const input={...payload(500),view:publicState(s,'r')},events=[];for await(const x of messages(await post(input)))events.push(x);const r=events.at(-1).result;assert(r.depth>8);assert(r.selDepth>=10);assert(r.selDepth<=127);assert.equal(r.completedDepth,r.depth);assert(r.mainDepth>=r.depth);assert(events.length<40);const telemetry=events.filter(x=>x.telemetry);assert(telemetry.length);assert(telemetry.every(x=>!('move'in x.telemetry)&&!('score'in x.telemetry)));evidence.unlimited={depth:r.depth,mainDepth:r.mainDepth,selDepth:r.selDepth,events:events.length,elapsedMs:r.serviceElapsedMs,terminationReason:r.terminationReason};await waitFor(()=>!service.active.size);
+ const legacy={...input,token:crypto.randomUUID()};delete legacy.depthMetrics;const old=[];for await(const x of messages(await post(legacy)))old.push(x);assert(old.every(x=>!x.telemetry));assert(old.some(x=>x.progress));assert(old.at(-1).result.move);evidence.legacyPageCompatible=true;await waitFor(()=>!service.active.size);
+ assert.equal((await post({...payload(),depthMetrics:'yes'})).status,400);
+ let count=0;const frame={telemetry:{mainDepth:3,selDepth:6,completedDepth:2,elapsedMs:20,engine:'cpp-native',engineVerified:true}},sameChunk=new NativeWorker({fetcher:async()=>new Response(JSON.stringify(frame)+'\n'+JSON.stringify(frame)+'\n',{headers:{'X-Engine':'cpp-native'}})});
+ sameChunk.onmessage=()=>{count++;sameChunk.terminate();};sameChunk.onerror=e=>{throw e;};sameChunk.postMessage({id:3,view,timeMs:200});await new Promise(r=>setTimeout(r,20));assert.equal(count,1);
+}));
 test('浏览器适配器验证C++身份、传递进度、取消不回调',()=>checked('浏览器适配器无静默回退',async()=>{
  const fetcher=(url,options)=>fetch(base+url,options),worker=new NativeWorker({fetcher});let progress=0;
- const result=await new Promise((resolve,reject)=>{worker.onerror=reject;worker.onmessage=({data})=>{assert.equal(data.id,77);if(data.progress)progress++;else resolve(data.result);};worker.postMessage({id:77,view,timeMs:1000});});worker.terminate();assert(progress>=1);assert.equal(result.engine,'cpp-native');
+ const result=await new Promise((resolve,reject)=>{worker.onerror=reject;worker.onmessage=({data})=>{assert.equal(data.id,77);if(data.telemetry)return;if(data.progress)progress++;else resolve(data.result);};worker.postMessage({id:77,view,timeMs:1000});});worker.terminate();assert(progress>=1);assert.equal(result.engine,'cpp-native');
  const fake=new NativeWorker({fetcher:async()=>new Response('{}\n',{status:200,headers:{'X-Engine':'javascript'}})});let fallbackError=await new Promise(resolve=>{fake.onerror=resolve;fake.postMessage({id:1,view,timeMs:1000});});assert.match(fallbackError.message,/未确认/);fake.terminate();
  const broken=new NativeWorker({fetcher:async()=>new Response('',{status:200,headers:{'X-Engine':'cpp-native'}})});fallbackError=await new Promise(resolve=>{broken.onerror=resolve;broken.postMessage({id:1,view,timeMs:1000});});assert.match(fallbackError.message,/提前结束/);broken.terminate();
  const stop=new NativeWorker({fetcher});let callbacks=0;stop.onerror=()=>callbacks++;stop.onmessage=()=>callbacks++;stop.postMessage({id:8,view,timeMs:15000});stop.terminate();await new Promise(r=>setTimeout(r,100));assert.equal(callbacks,0);
@@ -72,7 +80,7 @@ test('独立服务时限在模拟核心阻塞时保留完整轮次并杀进程',
 #include <string>
 #include <chrono>
 int main(int argc,char**){
- std::cout<<R"({"ready":true,"protocol":2,"streaming":true})"<<std::endl;
+ std::cout<<R"({"ready":true,"protocol":2,"streaming":true,"unlimitedDepth":true})"<<std::endl;
  if(argc>1)return 0;
  std::string request;std::getline(std::cin,request);
  std::cout<<R"({"progress":true,"result":{"depth":1,"nodes":1,"samples":8,"elapsedMs":1,"move":{"from":54,"to":45},"score":0,"allCandidates":[{"from":54,"to":45,"score":0,"spread":0}]}})"<<std::endl;
@@ -98,7 +106,7 @@ test('核心未就绪时硬截止返回合法保底并清理进程',()=>checked(
 #include <chrono>
 int main(){const auto end=std::chrono::steady_clock::now()+std::chrono::seconds(2);
 while(std::chrono::steady_clock::now()<end){};
-std::cout<<R"({"ready":true,"protocol":2,"streaming":true})"<<std::endl;}
+std::cout<<R"({"ready":true,"protocol":2,"streaming":true,"unlimitedDepth":true})"<<std::endl;}
 `);
  let stalled;try{
   const compiled=spawnSync(process.env.CXX||'clang++',[...built.flags,source,'-o',stub],{encoding:'utf8'});assert.equal(compiled.status,0,compiled.stderr);

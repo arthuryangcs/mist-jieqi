@@ -1,0 +1,90 @@
+{
+  "scope": "Metadata-only publication cleanup. Original local files kept in ignored private backup. No move,layout,clock measurement,result or source fingerprint changed.",
+  "changes": [
+    {
+      "file": "benchmarks/ab-jchess/matches.json",
+      "metadataRedactions": [
+        "$.gates[0].usedPercent"
+      ]
+    },
+    {
+      "file": "benchmarks/time-search/interruption.json",
+      "metadataRedactions": [
+        "$.terminalSession",
+        "$.savedPid",
+        "$.savedLockStartedAt"
+      ]
+    },
+    {
+      "file": "benchmarks/time-search/matches.json",
+      "metadataRedactions": [
+        "$.games[10].interruptions[0].terminalSession",
+        "$.games[10].interruptions[0].savedPid",
+        "$.games[10].interruptions[0].savedLockStartedAt",
+        "$.interruptions[0].terminalSession",
+        "$.interruptions[0].savedPid",
+        "$.interruptions[0].savedLockStartedAt"
+      ]
+    },
+    {
+      "file": "benchmarks/time-search/profile.json",
+      "metadataRedactions": [
+        "$.build.binary:local-path"
+      ]
+    },
+    {
+      "file": "benchmarks/time-search/summary.json",
+      "metadataRedactions": [
+        "$.interruptions[0].terminalSession",
+        "$.interruptions[0].savedPid",
+        "$.interruptions[0].savedLockStartedAt"
+      ]
+    },
+    {
+      "file": "docs/experiments/ab-jchess.md",
+      "metadataRedactions": [
+        "personal usage paragraph",
+        "live process identifiers where present"
+      ],
+      "historicalResultsUnchanged": true
+    },
+    {
+      "file": "docs/experiments/mate-proof.md",
+      "metadataRedactions": [
+        "personal usage paragraph",
+        "live process identifiers where present"
+      ],
+      "historicalResultsUnchanged": true
+    },
+    {
+      "file": "docs/experiments/qcheck-filter.md",
+      "metadataRedactions": [
+        "personal usage paragraph",
+        "live process identifiers where present"
+      ],
+      "historicalResultsUnchanged": true
+    },
+    {
+      "file": "docs/experiments/time-search.md",
+      "metadataRedactions": [
+        "personal usage paragraph",
+        "live process identifiers where present"
+      ],
+      "historicalResultsUnchanged": true
+    },
+    {
+      "file": "benchmarks/mate-proof/matches.json",
+      "metadataRedactions": [
+        "historical process identifier"
+      ],
+      "historicalResultsUnchanged": true
+    },
+    {
+      "file": "benchmarks/mate-proof/resume.json",
+      "metadataRedactions": [
+        "historical process identifier"
+      ],
+      "historicalResultsUnchanged": true
+    }
+  ]
+}

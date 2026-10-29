@@ -1,0 +1,245 @@
+{
+  "passed": true,
+  "plies": 1080,
+  "darkCaptures": 93,
+  "repetitions": 2,
+  "rootGuards": 0,
+  "quietDifferences": 162,
+  "games": [
+    {
+      "index": 0,
+      "kind": "internal",
+      "engine": "trial",
+      "seed": 2026102921,
+      "candidateSide": "r",
+      "plies": 39,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "红方重复局面判负",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 1,
+      "kind": "internal",
+      "engine": "trial",
+      "seed": 2026102921,
+      "candidateSide": "b",
+      "plies": 118,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 2,
+      "kind": "pika",
+      "engine": "baseline",
+      "seed": 2026102921,
+      "candidateSide": "r",
+      "plies": 24,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 3,
+      "kind": "pika",
+      "engine": "trial",
+      "seed": 2026102921,
+      "candidateSide": "r",
+      "plies": 72,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 4,
+      "kind": "pika",
+      "engine": "trial",
+      "seed": 2026102921,
+      "candidateSide": "b",
+      "plies": 63,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 5,
+      "kind": "pika",
+      "engine": "baseline",
+      "seed": 2026102921,
+      "candidateSide": "b",
+      "plies": 73,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 6,
+      "kind": "internal",
+      "engine": "trial",
+      "seed": 2026102923,
+      "candidateSide": "r",
+      "plies": 173,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "红方重复局面判负",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 7,
+      "kind": "internal",
+      "engine": "trial",
+      "seed": 2026102923,
+      "candidateSide": "b",
+      "plies": 164,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 8,
+      "kind": "pika",
+      "engine": "trial",
+      "seed": 2026102923,
+      "candidateSide": "r",
+      "plies": 38,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 9,
+      "kind": "pika",
+      "engine": "baseline",
+      "seed": 2026102923,
+      "candidateSide": "r",
+      "plies": 117,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 10,
+      "kind": "pika",
+      "engine": "baseline",
+      "seed": 2026102923,
+      "candidateSide": "b",
+      "plies": 106,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "困毙",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 11,
+      "kind": "pika",
+      "engine": "trial",
+      "seed": 2026102923,
+      "candidateSide": "b",
+      "plies": 93,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    }
+  ],
+  "time": {
+    "baseline": {
+      "attempts": 406,
+      "mean": 1963.4243665566535,
+      "p95": 2005.6073670000187,
+      "max": 2008.3534900000086,
+      "over2060": 0
+    },
+    "trial": {
+      "attempts": 380,
+      "mean": 1950.2291468763142,
+      "p95": 2003.363874999981,
+      "max": 2005.4418460000015,
+      "over2060": 0
+    },
+    "pika": {
+      "attempts": 294,
+      "mean": 1853.8248015034019,
+      "p95": 2000.452271000002,
+      "max": 2003.522466,
+      "over2060": 0
+    }
+  },
+  "complete": true,
+  "summary": {
+    "internal": {
+      "games": 4,
+      "wins": 2,
+      "draws": 0,
+      "losses": 2,
+      "unresolved": 0,
+      "scoreRate": 0.5,
+      "technical": []
+    },
+    "pika": {
+      "baseline": {
+        "games": 4,
+        "wins": 2,
+        "draws": 0,
+        "losses": 2,
+        "unresolved": 0,
+        "scoreRate": 0.5,
+        "technical": []
+      },
+      "trial": {
+        "games": 4,
+        "wins": 0,
+        "draws": 0,
+        "losses": 4,
+        "unresolved": 0,
+        "scoreRate": 0,
+        "technical": []
+      }
+    }
+  }
+}

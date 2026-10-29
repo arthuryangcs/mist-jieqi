@@ -20,7 +20,7 @@ export function fixture(view,{seed=6101,samples=8}={}) {
 }
 // Match analyze()'s visible-information seed for the playable service.
 export function observationSeed(view){let h=2166136261;for(const c of visibleKey(view))h=Math.imul(h^c.charCodeAt(0),16777619);return h>>>0;}
-export function encode(f,{mode='SEARCH',depth=3,budget=60000,nodeLimit=Infinity}={}) {
+export function encode(f,{mode='SEARCH',depth=0,budget=60000,nodeLimit=Infinity}={}) {
  const parts=[mode,depth,budget,Number.isFinite(nodeLimit)?nodeLimit:0,side(f.view.turn),side(f.view.viewer),f.view.captured.length,f.worlds.length,f.repetitions.length];
  for(const p of f.view.board)parts.push(...piece(p));for(const p of f.view.captured)parts.push(...piece(p));for(const w of f.worlds)for(const p of w.board)parts.push(...piece(p));
  for(const r of f.repetitions)parts.push(r.from,r.to,r.count,r.loss?2:Number(r.draw));return parts.join(' ')+'\n';
@@ -45,13 +45,13 @@ export class Native {
   this.ready=new Promise((resolve,reject)=>{this.readyReject=reject;this.resolveReady=()=>{this.initializationMs=performance.now()-start;resolve();};});
   this.process.stderr.on('data',x=>this.stderr+=x);
   this.process.stdin.on('error',e=>{if(!this.closed)this.fail(e);});
-  createInterface({input:this.process.stdout}).on('line',line=>{try{const r=JSON.parse(line);if(r.ready){this.capabilities=r;this.resolveReady();}else if(r.progress){const task=this.pending[0];if(!task)throw Error('unexpected native progress');task.onProgress?.({...r.result,wallMs:performance.now()-task.start});}else{const task=this.pending.shift();if(!task)throw Error('unexpected native response');clearTimeout(task.timer);task.resolve({...r,wallMs:performance.now()-task.start});}}catch(e){this.fail(e);}});
+  createInterface({input:this.process.stdout}).on('line',line=>{try{const r=JSON.parse(line);if(r.ready){this.capabilities=r;this.resolveReady();}else if(r.telemetry){const task=this.pending[0];if(!task)throw Error('unexpected native telemetry');task.onTelemetry?.(r.telemetry);}else if(r.progress){const task=this.pending[0];if(!task)throw Error('unexpected native progress');task.onProgress?.({...r.result,wallMs:performance.now()-task.start});}else{const task=this.pending.shift();if(!task)throw Error('unexpected native response');clearTimeout(task.timer);task.resolve({...r,wallMs:performance.now()-task.start});}}catch(e){this.fail(e);}});
   this.process.on('error',e=>this.fail(e));this.process.on('exit',(code,signal)=>{if(!this.closed)this.fail(Error(`native退出 ${code}/${signal}: ${this.stderr}`));});
  }
  fail(error){this.readyReject(error);for(const t of this.pending){clearTimeout(t.timer);t.reject(error);}this.pending=[];}
  async request(f,options={}) {
   await this.ready;if(this.pending.length)throw Error('每个原生进程只顺序处理一个请求');const start=performance.now(),data=encode(f,options);
-  return new Promise((resolve,reject)=>{const task={resolve,reject,start,onProgress:options.onProgress,timer:setTimeout(()=>{this.process.kill();this.fail(Error('原生请求超时'));},(options.budget??60000)+10000)};this.pending.push(task);this.process.stdin.write(data);});
+  return new Promise((resolve,reject)=>{const task={resolve,reject,start,onProgress:options.onProgress,onTelemetry:options.onTelemetry,timer:setTimeout(()=>{this.process.kill();this.fail(Error('原生请求超时'));},(options.budget??60000)+10000)};this.pending.push(task);this.process.stdin.write(data);});
  }
  stop(){this.closed=true;this.fail(Error('native request cancelled'));this.process.kill();}
  async close(){this.closed=true;this.process.stdin.end();if(this.process.exitCode!==null)return;await new Promise(resolve=>{this.process.once('exit',resolve);setTimeout(()=>this.process.kill(),2000).unref();});}

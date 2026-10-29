@@ -1,0 +1,35 @@
+{
+  "game": 10,
+  "ply": 45,
+  "side": "r",
+  "chosen": {
+    "from": 85,
+    "to": 76
+  },
+  "legal": [
+    {
+      "from": 85,
+      "to": 76,
+      "count": 2,
+      "loss": true,
+      "draw": false
+    }
+  ],
+  "safeRoots": {
+    "moves": [
+      {
+        "from": 85,
+        "to": 76
+      }
+    ],
+    "excluded": 0
+  },
+  "recordedExcluded": 0,
+  "abPosition": {
+    "actual": "x2x1R1PC/3k5/n1p5r/x3x1x1A/3A5/6B2/3c2p2/P8/9/1r2KX1X1 w R1P3N1a1c1p2n1 8 23",
+    "expected": "x2x1R1PC/3k5/n1p5r/x3x1x1A/3A5/6B2/3c2p2/P8/9/1r2KX1X1 w R1P3N1a1c1p2n1 8 23",
+    "abQuiet": 8,
+    "mistQuiet": 8
+  },
+  "interrupted": true
+}

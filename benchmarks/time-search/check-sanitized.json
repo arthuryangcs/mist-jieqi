@@ -1,0 +1,83 @@
+{
+  "passed": true,
+  "sanitize": true,
+  "views": 24,
+  "transitions": 508,
+  "privacyChecks": 20,
+  "aggregationChecks": 197,
+  "regressions": [
+    {
+      "color": "r",
+      "depth": 2,
+      "sampleLosses": 6,
+      "counts": {
+        "R": 2,
+        "N": 1,
+        "A": 2,
+        "P": 3
+      }
+    },
+    {
+      "color": "b",
+      "depth": 2,
+      "sampleLosses": 6,
+      "counts": {
+        "R": 2,
+        "N": 1,
+        "A": 2,
+        "P": 3
+      }
+    }
+  ],
+  "selective": [
+    {
+      "name": "初始全暗",
+      "depth": 2,
+      "mainDepth": 3,
+      "selDepth": 9,
+      "nodes": 150001,
+      "lmrSearches": 0,
+      "lmrResearches": 0
+    },
+    {
+      "name": "可达中局 2111 / 20步",
+      "depth": 3,
+      "mainDepth": 4,
+      "selDepth": 10,
+      "nodes": 150001,
+      "lmrSearches": 5862,
+      "lmrResearches": 13
+    },
+    {
+      "name": "可达中局 2111 / 44步",
+      "depth": 3,
+      "mainDepth": 4,
+      "selDepth": 11,
+      "nodes": 150001,
+      "lmrSearches": 1515,
+      "lmrResearches": 2
+    },
+    {
+      "name": "可达中局 2221 / 44步",
+      "depth": 2,
+      "mainDepth": 3,
+      "selDepth": 9,
+      "nodes": 150001,
+      "lmrSearches": 0,
+      "lmrResearches": 0
+    },
+    {
+      "name": "全明10子残局",
+      "depth": 4,
+      "mainDepth": 4,
+      "selDepth": 12,
+      "nodes": 19255,
+      "lmrSearches": 770,
+      "lmrResearches": 0
+    }
+  ],
+  "beyondEight": {
+    "depth": 10,
+    "selDepth": 10
+  }
+}

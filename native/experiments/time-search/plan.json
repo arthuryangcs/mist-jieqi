@@ -1,0 +1,10 @@
+{
+ "hypothesis":"One selective policy: late quiet moves use a reduced null-window probe (1 ply,2 at depth>=6 and move>=8). A result above alpha is re-searched at full depth; checks, captures, evasions, early/hash/killer/high-history moves and mate windows remain full. All roots and all8 sampled worlds remain in every completed iteration. No evaluation/reveal probability change.",
+ "functionalChanges":"Both Mist arms have no user main-depth cap and report actual visited halfplies including quiescence. Original5c depth8 binary retained as benchmark anchor only. Production strength policy remains HCE without LMR.",
+ "budgetMs":2000,"graceMs":60,"maxSearchThreads":4,"samples":8,"brightSamples":1,"maxDepth":0,
+ "seeds":[2026102891,2026102893],"games":12,"internalGames":4,"abGames":{"baseline":4,"trial":4},
+ "order":"Per new layout: trial vs functional stable HCE red/black, then baseline/trial vs fixed AB each color with alternating baseline/trial order. Serial, never concurrent.",
+ "stop":"Frozen12-game screen. No tuning/stopping by WDL. Retain all failures and unresolved. Pause only user request, infrastructure problem or readable quota<40%; inspect existing process and persisted state before resume.",
+ "promotion":"Small screen cannot establish superiority to AB or justify default strategy replacement. Functional no-cap/metrics update separate from strength experiment.",
+ "publication":"Local files only. No commits/push/upload/model redistribution. Preserve existing user game and prior experiments."
+}

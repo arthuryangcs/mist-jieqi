@@ -1,0 +1,62 @@
+{
+  "passed": true,
+  "startedAt": "2026-10-28T17:44:46.000Z",
+  "positionChecks": 324,
+  "legalSetChecks": 40,
+  "privateCaptures": 22,
+  "quietDifferences": 128,
+  "seeds": [
+    2026102807,
+    2026102811
+  ],
+  "initialization": [
+    "AB JChess by Huorongrong,Laoxu(Kouza)",
+    "AB JChess is free of charge. Resale is prohibited.",
+    "id name AB JChess 0.2d",
+    "id author Huorongrong,Laoxu(Kouza)",
+    "",
+    "option name Debug Log File type string default ",
+    "option name NumaPolicy type string default auto",
+    "option name Threads type spin default 1 min 1 max 1024",
+    "option name Hash type spin default 16 min 1 max 33554432",
+    "option name Clear Hash type button",
+    "option name Ponder type check default false",
+    "option name MultiPV type spin default 1 min 1 max 128",
+    "option name ChasingRule type combo default skyrule_Jieqi var github var skyrule_Jieqi",
+    "option name Move Overhead type spin default 10 min 0 max 5000",
+    "option name AggressiveLevel type spin default 3 min 0 max 10",
+    "option name RevealQuietBase type spin default -12 min -96 max 96",
+    "option name RevealQuietSafety type spin default 24 min -192 max 192",
+    "option name RevealQuietHighValue type spin default -12 min -96 max 96",
+    "option name nodestime type spin default 0 min 0 max 10000",
+    "option name UCI_ShowWDL type check default false",
+    "option name EvalFile type string default abjchess-20261010.nnue",
+    "uciok",
+    "info string Using 4 threads",
+    "readyok",
+    "info string ABJNNUE model loaded: abjchess-20261010.nnue features=34800 accumulator=2048 psqt_buckets=0 heads=16 head_backend=scalar inference_complete=true probability_tables=true",
+    "",
+    "",
+    "ABJNNUE runtime evaluation",
+    "Positional raw        316",
+    "Runtime value         24 (side to move)",
+    "",
+    "readyok",
+    "readyok"
+  ],
+  "repeatProbe": {
+    "excluded": 1,
+    "returned": {
+      "from": 33,
+      "to": 42
+    },
+    "elapsedMs": 202.09548900000027
+  },
+  "tokenLengths": {
+    "4": 217,
+    "5": 99,
+    "6": 4
+  },
+  "stderr": "",
+  "sourceSha256": "93a8f068301e94e19151e46e08176c5e6c5c00cb6afcd43763dc2741da53c9fb"
+}

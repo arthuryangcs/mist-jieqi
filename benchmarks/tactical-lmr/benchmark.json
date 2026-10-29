@@ -1,0 +1,391 @@
+{
+  "passed": true,
+  "budgetMs": 2000,
+  "rounds": 2,
+  "threads": 4,
+  "baselineHash": "7262d0abda78f09162c6e87045ac81d9c2b73ad8e445d277fbc8ced39926dbea",
+  "trialHash": "e2490bc6cecab1ca2add17b593709836f07b2afc5e0c07741e89a6cb51e5c295",
+  "rows": [
+    {
+      "name": "初始全暗",
+      "round": 0,
+      "engine": "baseline",
+      "mainDepth": 5,
+      "completedDepth": 4,
+      "selDepth": 13,
+      "visitedNodes": 5958656,
+      "statsExact": false,
+      "nps": 2967403.8348758,
+      "elapsedMs": 2008.036766,
+      "move": {
+        "from": 64,
+        "to": 1
+      },
+      "score": 77.10421607459259,
+      "deadlineStop": true,
+      "fallbackUsed": false
+    },
+    {
+      "name": "初始全暗",
+      "round": 0,
+      "engine": "trial",
+      "mainDepth": 5,
+      "completedDepth": 4,
+      "selDepth": 13,
+      "visitedNodes": 3385518,
+      "statsExact": true,
+      "nps": 1704363.338452367,
+      "elapsedMs": 1986.382788,
+      "move": {
+        "from": 64,
+        "to": 1
+      },
+      "score": 77.85677629459524,
+      "deadlineStop": false,
+      "fallbackUsed": false
+    },
+    {
+      "name": "可达中局 2111 / 20步",
+      "round": 0,
+      "engine": "baseline",
+      "mainDepth": 6,
+      "completedDepth": 5,
+      "selDepth": 13,
+      "visitedNodes": 7542784,
+      "statsExact": false,
+      "nps": 3763485.0890664426,
+      "elapsedMs": 2004.2019090000003,
+      "move": {
+        "from": 72,
+        "to": 73
+      },
+      "score": -117.85930262619662,
+      "deadlineStop": true,
+      "fallbackUsed": false
+    },
+    {
+      "name": "可达中局 2111 / 20步",
+      "round": 0,
+      "engine": "trial",
+      "mainDepth": 7,
+      "completedDepth": 6,
+      "selDepth": 14,
+      "visitedNodes": 3520256,
+      "statsExact": false,
+      "nps": 1757603.2582839774,
+      "elapsedMs": 2002.872937,
+      "move": {
+        "from": 72,
+        "to": 73
+      },
+      "score": -81.24183076061891,
+      "deadlineStop": true,
+      "fallbackUsed": false
+    },
+    {
+      "name": "可达中局 2111 / 44步",
+      "round": 0,
+      "engine": "baseline",
+      "mainDepth": 6,
+      "completedDepth": 5,
+      "selDepth": 14,
+      "visitedNodes": 8369408,
+      "statsExact": false,
+      "nps": 4172815.1114543187,
+      "elapsedMs": 2005.6982579999994,
+      "move": {
+        "from": 63,
+        "to": 46
+      },
+      "score": 911.9993089107861,
+      "deadlineStop": true,
+      "fallbackUsed": false
+    },
+    {
+      "name": "可达中局 2111 / 44步",
+      "round": 0,
+      "engine": "trial",
+      "mainDepth": 6,
+      "completedDepth": 5,
+      "selDepth": 14,
+      "visitedNodes": 3942656,
+      "statsExact": false,
+      "nps": 1967022.5907883951,
+      "elapsedMs": 2004.37759,
+      "move": {
+        "from": 63,
+        "to": 46
+      },
+      "score": 959.1923598185977,
+      "deadlineStop": true,
+      "fallbackUsed": false
+    },
+    {
+      "name": "可达中局 2221 / 44步",
+      "round": 0,
+      "engine": "baseline",
+      "mainDepth": 6,
+      "completedDepth": 5,
+      "selDepth": 13,
+      "visitedNodes": 7047168,
+      "statsExact": false,
+      "nps": 3517072.5270940606,
+      "elapsedMs": 2003.7027800000014,
+      "move": {
+        "from": 26,
+        "to": 22
+      },
+      "score": -279.13202532722613,
+      "deadlineStop": true,
+      "fallbackUsed": false
+    },
+    {
+      "name": "可达中局 2221 / 44步",
+      "round": 0,
+      "engine": "trial",
+      "mainDepth": 6,
+      "completedDepth": 5,
+      "selDepth": 13,
+      "visitedNodes": 3652173,
+      "statsExact": true,
+      "nps": 1833427.2511988669,
+      "elapsedMs": 1991.9923180000005,
+      "move": {
+        "from": 26,
+        "to": 22
+      },
+      "score": -277.9697500859273,
+      "deadlineStop": false,
+      "fallbackUsed": false
+    },
+    {
+      "name": "全明10子残局",
+      "round": 0,
+      "engine": "baseline",
+      "mainDepth": 8,
+      "completedDepth": 7,
+      "selDepth": 16,
+      "visitedNodes": 2721984,
+      "statsExact": true,
+      "nps": 1375535.044397238,
+      "elapsedMs": 1978.854709000001,
+      "move": {
+        "from": 72,
+        "to": 0
+      },
+      "score": 213,
+      "deadlineStop": false,
+      "fallbackUsed": false
+    },
+    {
+      "name": "全明10子残局",
+      "round": 0,
+      "engine": "trial",
+      "mainDepth": 8,
+      "completedDepth": 7,
+      "selDepth": 16,
+      "visitedNodes": 1761088,
+      "statsExact": true,
+      "nps": 891181.6661540803,
+      "elapsedMs": 1976.1268290000007,
+      "move": {
+        "from": 72,
+        "to": 0
+      },
+      "score": 213,
+      "deadlineStop": false,
+      "fallbackUsed": false
+    },
+    {
+      "name": "初始全暗",
+      "round": 1,
+      "engine": "trial",
+      "mainDepth": 6,
+      "completedDepth": 5,
+      "selDepth": 13,
+      "visitedNodes": 3396213,
+      "statsExact": true,
+      "nps": 1710027.0696319428,
+      "elapsedMs": 1986.0580340000015,
+      "move": {
+        "from": 64,
+        "to": 1
+      },
+      "score": 77.62789881037568,
+      "deadlineStop": false,
+      "fallbackUsed": false
+    },
+    {
+      "name": "初始全暗",
+      "round": 1,
+      "engine": "baseline",
+      "mainDepth": 5,
+      "completedDepth": 4,
+      "selDepth": 13,
+      "visitedNodes": 5985280,
+      "statsExact": false,
+      "nps": 2988145.6973927123,
+      "elapsedMs": 2003.0080879999987,
+      "move": {
+        "from": 64,
+        "to": 1
+      },
+      "score": 77.10421607459259,
+      "deadlineStop": true,
+      "fallbackUsed": false
+    },
+    {
+      "name": "可达中局 2111 / 20步",
+      "round": 1,
+      "engine": "trial",
+      "mainDepth": 7,
+      "completedDepth": 6,
+      "selDepth": 14,
+      "visitedNodes": 3541504,
+      "statsExact": false,
+      "nps": 1769447.9274941229,
+      "elapsedMs": 2001.4739880000016,
+      "move": {
+        "from": 72,
+        "to": 73
+      },
+      "score": -81.24183076061891,
+      "deadlineStop": true,
+      "fallbackUsed": false
+    },
+    {
+      "name": "可达中局 2111 / 20步",
+      "round": 1,
+      "engine": "baseline",
+      "mainDepth": 6,
+      "completedDepth": 5,
+      "selDepth": 13,
+      "visitedNodes": 7432448,
+      "statsExact": false,
+      "nps": 3710582.4619647856,
+      "elapsedMs": 2003.0407829999967,
+      "move": {
+        "from": 72,
+        "to": 73
+      },
+      "score": -117.85930262619662,
+      "deadlineStop": true,
+      "fallbackUsed": false
+    },
+    {
+      "name": "可达中局 2111 / 44步",
+      "round": 1,
+      "engine": "trial",
+      "mainDepth": 6,
+      "completedDepth": 5,
+      "selDepth": 14,
+      "visitedNodes": 4022016,
+      "statsExact": false,
+      "nps": 2009347.6750114665,
+      "elapsedMs": 2001.652600999998,
+      "move": {
+        "from": 63,
+        "to": 46
+      },
+      "score": 959.1923598185977,
+      "deadlineStop": true,
+      "fallbackUsed": false
+    },
+    {
+      "name": "可达中局 2111 / 44步",
+      "round": 1,
+      "engine": "baseline",
+      "mainDepth": 6,
+      "completedDepth": 5,
+      "selDepth": 14,
+      "visitedNodes": 8456192,
+      "statsExact": false,
+      "nps": 4217501.248852763,
+      "elapsedMs": 2005.0241840000017,
+      "move": {
+        "from": 63,
+        "to": 46
+      },
+      "score": 911.9993089107861,
+      "deadlineStop": true,
+      "fallbackUsed": false
+    },
+    {
+      "name": "可达中局 2221 / 44步",
+      "round": 1,
+      "engine": "trial",
+      "mainDepth": 6,
+      "completedDepth": 5,
+      "selDepth": 13,
+      "visitedNodes": 3666030,
+      "statsExact": true,
+      "nps": 1840227.648974903,
+      "elapsedMs": 1992.1611340000018,
+      "move": {
+        "from": 26,
+        "to": 22
+      },
+      "score": -277.9697500859273,
+      "deadlineStop": false,
+      "fallbackUsed": false
+    },
+    {
+      "name": "可达中局 2221 / 44步",
+      "round": 1,
+      "engine": "baseline",
+      "mainDepth": 6,
+      "completedDepth": 5,
+      "selDepth": 13,
+      "visitedNodes": 7076096,
+      "statsExact": false,
+      "nps": 3533844.761994731,
+      "elapsedMs": 2002.378847,
+      "move": {
+        "from": 26,
+        "to": 22
+      },
+      "score": -279.13202532722613,
+      "deadlineStop": true,
+      "fallbackUsed": false
+    },
+    {
+      "name": "全明10子残局",
+      "round": 1,
+      "engine": "trial",
+      "mainDepth": 8,
+      "completedDepth": 7,
+      "selDepth": 16,
+      "visitedNodes": 1787064,
+      "statsExact": true,
+      "nps": 904196.3348014641,
+      "elapsedMs": 1976.4114619999964,
+      "move": {
+        "from": 72,
+        "to": 0
+      },
+      "score": 213,
+      "deadlineStop": false,
+      "fallbackUsed": false
+    },
+    {
+      "name": "全明10子残局",
+      "round": 1,
+      "engine": "baseline",
+      "mainDepth": 8,
+      "completedDepth": 7,
+      "selDepth": 16,
+      "visitedNodes": 2691480,
+      "statsExact": true,
+      "nps": 1360750.104419952,
+      "elapsedMs": 1977.938485000006,
+      "move": {
+        "from": 72,
+        "to": 0
+      },
+      "score": 213,
+      "deadlineStop": false,
+      "fallbackUsed": false
+    }
+  ],
+  "definition": "selDepth=deepest visited halfplies including q-checks;completedDepth=last whole root/sample iteration. Different search policy;deeper paths not proof of strength. Timed views use same derived observationSeed, all8 worlds per root."
+}

@@ -1,0 +1,77 @@
+{
+  "completed": 24,
+  "defaultEnabled": false,
+  "raw": {
+    "internal": {
+      "games": 8,
+      "wins": 6,
+      "draws": 0,
+      "losses": 2,
+      "unresolved": 0,
+      "scoreRate": 0.75,
+      "technical": [
+        {
+          "seed": 2026102851,
+          "candidateSide": "b",
+          "status": "decided",
+          "winner": "b",
+          "technicalForfeit": true,
+          "offender": "opponent",
+          "reason": "technical-timeout"
+        }
+      ]
+    },
+    "ab": {
+      "baseline": {
+        "games": 8,
+        "wins": 1,
+        "draws": 0,
+        "losses": 7,
+        "unresolved": 0,
+        "scoreRate": 0.125,
+        "technical": []
+      },
+      "trial": {
+        "games": 8,
+        "wins": 3,
+        "draws": 0,
+        "losses": 5,
+        "unresolved": 0,
+        "scoreRate": 0.375,
+        "technical": []
+      }
+    }
+  },
+  "normalInternal": {
+    "wins": 5,
+    "draws": 0,
+    "losses": 2
+  },
+  "cleanPairedInternal": {
+    "layouts": 3,
+    "games": 6,
+    "wins": 4,
+    "draws": 0,
+    "losses": 2
+  },
+  "cleanPairedAB": {
+    "layouts": 3,
+    "baseline": {
+      "wins": 1,
+      "draws": 0,
+      "losses": 5
+    },
+    "trial": {
+      "wins": 2,
+      "draws": 0,
+      "losses": 4
+    },
+    "netAdditionalWins": 1
+  },
+  "technicalForfeits": 1,
+  "interruptedGames": [
+    9
+  ],
+  "conclusion": "Promising screen, not reliable promotion. Four layouts; technical and interruption effects retained. Next isolated work: push down bright quiet filtering, preserve search semantics.",
+  "source": "paired.json + independently verified raw games"
+}

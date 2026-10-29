@@ -1,0 +1,24 @@
+import fs from 'node:fs';import path from 'node:path';import assert from 'node:assert/strict';import {Native,fixture,observationSeed,encode,compare} from '../../bridge.mjs';import {cache,dir,baseline} from './build.mjs';import {initial,publicState,legalMoves,move,inCheck,other} from '../../../engine.js';import {seeded,summarizeScores,remaining} from '../../../ai.js';
+const sanitize=process.argv.includes('--sanitize'),trial=new Native({binary:path.resolve(cache+'/trial'+(sanitize?'-sanitized':'-trace'))}),base=new Native({binary:path.resolve(cache+'/diagnostic')}),formal=new Native({binary:path.resolve(cache+'/trial')}),out={passed:false,sanitize,regressions:[],views:0,transitions:0,privacyChecks:0,aggregationChecks:0,formalParityChecks:0};
+function rotate(v){v=structuredClone(v);v.board.reverse();for(const p of [...v.board,...v.captured])if(p){p.side=other(p.side);if(p.capturedBy)p.capturedBy=other(p.capturedBy);}v.turn=other(v.turn);v.viewer=v.viewer?other(v.viewer):null;v.positions=[];return v;}
+try{
+ const example=JSON.parse(fs.readFileSync('benchmarks/ab-jchess/postmortem.json')).examples.find(x=>x.index===3),red=example.publicObservation;
+ for(const [color,view,from,to]of [['r',red,89,71],['b',rotate(red),0,18]]){
+  const f=fixture(view,{seed:observationSeed(view),samples:8});assert.deepEqual(Object.fromEntries([...new Set(remaining(view,color))].map(t=>[t,f.worlds.filter(w=>w.board[from].type===t).length])),{R:2,N:1,A:2,P:3});
+  const old=await base.request(f,{depth:1,budget:60000,nodeLimit:1000000}),x=await trial.request(f,{depth:1,budget:60000,nodeLimit:1000000}),r=x.allCandidates.find(m=>m.from===from&&m.to===to),b=old.allCandidates.find(m=>m.from===from&&m.to===to);assert.equal(old.depth,1);assert.equal(x.depth,1);assert.equal(b.sampleLosses,0);assert.equal(r.sampleLosses,6);
+  const old2=await base.request(f,{depth:2,budget:60000,nodeLimit:2000000});assert.equal(old2.allCandidates.find(m=>m.from===from&&m.to===to).sampleLosses,6);
+  if(!sanitize)for(const row of x.allCandidates){const y=summarizeScores(row.worldScores,true);for(const k of ['score','sampleWins','sampleLosses','heuristicWinRate'])assert(Math.abs(row[k]-y[k])<1e-7);out.aggregationChecks++;}
+  compare(x,await formal.request(f,{depth:1,budget:60000,nodeLimit:1000000}));out.formalParityChecks++;
+  out.regressions.push({color,identityCounts:{R:2,N:1,A:2,P:3},baselineDepth1Losses:b.sampleLosses,baselineDepth2Losses:6,trialDepth1Losses:r.sampleLosses,baselineNodes:old.nodes,trialNodes:x.nodes,trialMove:x.move});
+ }
+ const stable=new Native({binary:baseline});try{
+  for(const seed of [2026102831,2026102833]){let s=initial(seeded(seed)),rng=seeded(seed+19);for(let ply=0;ply<48&&!s.result;ply++){
+   if(ply%8===0)for(const viewer of ['r','b']){const v=publicState(s,viewer),f=fixture(v,{seed:observationSeed(v),samples:1}),a=await stable.request(f,{mode:'VERIFY',depth:1}),b=await trial.request(f,{mode:'VERIFY',depth:1});assert.deepEqual({...a,wallMs:undefined},{...b,wallMs:undefined});const w={...v,...f.worlds[0]};for(const[i,side]of ['r','b'].entries()){assert.equal(b.sides[i].check,inCheck(w.board,side));assert.deepEqual(b.sides[i].legal,legalMoves(w,side));}for(const x of b.transitions){assert(x.restored);out.transitions++;}out.views++;}
+   const ms=legalMoves(s),cs=ms.filter(m=>s.board[m.to]),bag=cs.length?cs:ms,m=bag[Math.floor(rng()*bag.length)],n=move(s,m);if(s.board[m.to]?.hidden){const unknown=other(s.turn),changed=structuredClone(n);changed.captured.at(-1).type=changed.captured.at(-1).type==='R'?'P':'R';assert.deepEqual(publicState(n,unknown),publicState(changed,unknown));const v=publicState(n,unknown);assert.equal(encode(fixture(v,{seed:observationSeed(v)})),encode(fixture(publicState(changed,unknown),{seed:observationSeed(v)})));assert.equal(publicState(n,s.turn).captured.at(-1).type,s.board[m.to].type);out.privacyChecks++;}s=n;
+  }}
+ }finally{await stable.close();}
+ assert.equal(encode(fixture(publicState(initial(seeded(1)),'r'))),encode(fixture(publicState(initial(seeded(999)),'r'))));out.privacyChecks++;assert.throws(()=>fixture(initial(seeded(1))));
+ // Partial searches and timeouts must unwind board, kings, pools, hashes and path.
+ for(const budget of [0,1,15,150])for(const viewer of ['r','b']){const v=publicState(initial(seeded(2026102837)),viewer),f=fixture(v,{seed:observationSeed(v),samples:8}),r=await trial.request(f,{depth:8,budget,nodeLimit:budget===150?3000:0});assert(legalMoves(v).some(m=>m.from===r.move?.from&&m.to===r.move?.to));}
+ assert(!trial.stderr.trim(),trial.stderr);out.passed=true;
+}catch(e){out.error=e.stack.replaceAll(process.cwd(),'<project>');throw e;}finally{await trial.close();await base.close();await formal.close();fs.writeFileSync(dir+'/check'+(sanitize?'-sanitized':'')+'.json',JSON.stringify(out,null,2)+'\n');console.log(JSON.stringify(out));}

@@ -1,0 +1,25 @@
+{
+  "kind": "one bright q-check plus LMR, full-depth re-search on alpha improvement",
+  "sanitize": true,
+  "trace": true,
+  "baselineSourceSha256": "3fa98d62f3c1636b831680fcd5dcbf88f9339e966ed1b8e2f8a170b83afcbfb0",
+  "baselineBinarySha256": "7262d0abda78f09162c6e87045ac81d9c2b73ad8e445d277fbc8ced39926dbea",
+  "sourceSha256": "ca761698745b6cede215936ff8e2e77ef63a62e2ffc255429b8f8db807a33edc",
+  "binarySha256": "bba87dd19e1328d5ca9762fdd20de14b8eb5617f3a925efc9c30affe08e72243",
+  "flags": [
+    "-std=c++17",
+    "-ffp-contract=off",
+    "-Wall",
+    "-Wextra",
+    "-Wpedantic",
+    "-isystem",
+    "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1",
+    "-O1",
+    "-g",
+    "-fsanitize=address,undefined",
+    "-fno-omit-frame-pointer",
+    "-DMIST_VERIFY_RESTORE"
+  ],
+  "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+  "warnings": ""
+}

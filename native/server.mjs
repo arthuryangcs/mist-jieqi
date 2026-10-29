@@ -8,16 +8,18 @@ import {build,binary,manifestPath,root} from './build.mjs';
 import {Native,fixture,observationSeed} from './bridge.mjs';
 import {legalMoves} from '../engine.js';
 import {validatePosition} from '../editor.js';
+import {cleanSearchStats,mergeSearchStats} from '../search-metrics.js';
 
 const hash=p=>createHash('sha256').update(fs.readFileSync(p)).digest('hex');
-const staticFiles=new Map(['index.html','style.css','board.svg','app.js','engine.js','ai.js','editor.js','worker.js','deadline-search.js','native-client.js'].map(p=>['/'+p,p]));
+const staticFiles=new Map(['index.html','style.css','board.svg','app.js','engine.js','ai.js','editor.js','worker.js','deadline-search.js','native-client.js','search-metrics.js'].map(p=>['/'+p,p]));
 const mime={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.svg':'image/svg+xml'};
 const tokenPattern=/^[a-zA-Z0-9_-]{8,80}$/;
 function invalid(message){throw Object.assign(Error(message),{status:400});}
 export function validateRequest(input){
  if(!input||!tokenPattern.test(input.token||''))invalid('无效搜索编号');
- if(Object.keys(input).some(k=>!['token','timeMs','view'].includes(k)))invalid('不支持的搜索选项');
+ if(Object.keys(input).some(k=>!['token','timeMs','view','depthMetrics'].includes(k)))invalid('不支持的搜索选项');
  if(!Number.isInteger(input.timeMs)||input.timeMs<100||input.timeMs>15000)invalid('思考预算须为100至15000毫秒');
+ if(input.depthMetrics!==undefined&&typeof input.depthMetrics!=='boolean')invalid('无效深度遥测选项');
  const v=input.view;if(!v||!Array.isArray(v.board)||v.board.length!==90||!Array.isArray(v.captured)||v.captured.length>30||!['r','b'].includes(v.turn)||![null,'r','b'].includes(v.viewer))invalid('无效公开局面');
  const clean=(p,captured=false)=>{
   if(p===null&&!captured)return null;
@@ -38,13 +40,13 @@ export function validateRequest(input){
  const validation=validatePosition(board,v.turn,{r:known('r'),b:known('b')});
  if(validation.errors.length)invalid(validation.errors.join('；'));
  for(const side of['r','b'])if(board.filter(p=>p?.side===side).length+captured.filter(p=>p.side===side).length!==16)invalid('每方盘上及离盘棋子合计须为16');
- return{token:input.token,timeMs:input.timeMs,view:{board,captured,turn:v.turn,viewer:v.viewer,ply:v.ply,quiet:v.quiet,positions:v.positions,result:null}};
+ return{token:input.token,timeMs:input.timeMs,depthMetrics:input.depthMetrics===true,view:{board,captured,turn:v.turn,viewer:v.viewer,ply:v.ply,quiet:v.quiet,positions:v.positions,result:null}};
 }
 async function readJSON(req){let size=0,parts=[];for await(const part of req){size+=part.length;if(size>2*1024*1024)throw Object.assign(Error('请求过大'),{status:413});parts.push(part);}try{return JSON.parse(Buffer.concat(parts).toString());}catch{invalid('请求不是有效JSON');}}
 
 export function createLocalServer({executable=binary,buildInfo=JSON.parse(fs.readFileSync(manifestPath)),maxSearches=2}={}){
  const active=new Map(),cancelled=new Map();let completed=0,aborted=0;
- const info={engine:'cpp-native',sourceSha256:buildInfo.sourceSha256,binarySha256:buildInfo.binarySha256,maxThreads:buildInfo.threads||1,independentWorldSearch:buildInfo.independentWorldSearch===true,transport:'loopback-http',protocol:2};
+ const info={engine:'cpp-native',sourceSha256:buildInfo.sourceSha256,binarySha256:buildInfo.binarySha256,maxThreads:buildInfo.threads||1,independentWorldSearch:buildInfo.independentWorldSearch===true,unlimitedDepth:buildInfo.unlimitedDepth===true,depthMetrics:buildInfo.depthMetrics===true,safetyMaxPly:buildInfo.safetyMaxPly,transport:'loopback-http',protocol:2};
  function cancel(token){const job=active.get(token);if(job){aborted++;job.cancel();}else{cancelled.set(token,Date.now()+3000);if(cancelled.size>100)cancelled.delete(cancelled.keys().next().value);}}
  const server=http.createServer(async(req,res)=>{
   res.setHeader('Cache-Control','no-store');res.setHeader('X-Content-Type-Options','nosniff');
@@ -66,9 +68,9 @@ export function createLocalServer({executable=binary,buildInfo=JSON.parse(fs.rea
     if(active.has(input.token)){json(409,{error:'搜索编号重复'});return;}
     if(active.size>=maxSearches){json(429,{error:'本机搜索忙，请停止另一页面的搜索后重试'});return;}
     const f=fixture(input.view,{seed:observationSeed(input.view),samples:8}),native=new Native({binary:executable});
-    let finished=false,timer,latest=null;
+    let finished=false,timer,latest=null,latestStats=null;
     const prepareMs=performance.now()-started;
-    const wire=r=>{const top=r.allCandidates?.[0]||{};return{...r,...top,move:r.move??(top.from!==undefined?{from:top.from,to:top.to}:null),allCandidates:undefined,iterations:undefined,candidates:(r.allCandidates||[]).slice(0,5),uncertain:input.view.board.some(p=>p?.hidden),scoreKind:input.view.board.some(p=>p?.hidden)?'expected-utility':'material',seed:f.seed,...info,threads:r.threads??1,engineVerified:true,serviceElapsedMs:performance.now()-started,preparationMs:prepareMs,initializationMs:native.initializationMs??null};};
+    const wire=r=>{const top=r.allCandidates?.[0]||{};return{...r,...top,move:r.move??(top.from!==undefined?{from:top.from,to:top.to}:null),allCandidates:undefined,iterations:undefined,candidates:(r.allCandidates||[]).filter(x=>!x.scoreBound||x.scoreBound==='exact').slice(0,5),fallbackUsed:!r.depth&&!r.terminal,searchStatus:!r.depth&&!r.terminal?'fallback':r.searchStatus,uncertain:input.view.board.some(p=>p?.hidden),scoreKind:input.view.board.some(p=>p?.hidden)?'expected-utility':'material',seed:f.seed,...info,threads:r.threads??1,engineVerified:true,serviceElapsedMs:performance.now()-started,preparationMs:prepareMs,initializationMs:native.initializationMs??null};};
     const send=value=>{if(!res.destroyed&&!res.writableEnded)res.write(JSON.stringify(value)+'\n');};
     const cleanup=()=>{clearTimeout(timer);active.delete(input.token);native.stop();};
     const stop=()=>{if(finished)return;finished=true;cleanup();if(!res.writableEnded)res.end();};
@@ -78,12 +80,12 @@ export function createLocalServer({executable=binary,buildInfo=JSON.parse(fs.rea
      if(finished)return;finished=true;
      // Independent Node timer remains responsive while the C++ process searches.
      const fallback={move:legalMoves(input.view)[0]||null,depth:0,nodes:0,samples:0,score:0,elapsedMs:0,allCandidates:[]};
-     send({result:{...(latest||{...wire(fallback),engineVerified:false}),deadlineStop:true}});res.end();cleanup();
+     send({result:{...mergeSearchStats(latest||{...wire(fallback),engineVerified:false},latestStats,{deadlineStop:true}),deadlineStop:true,fallbackUsed:!latest?.depth}});res.end();cleanup();
     },Math.max(0,input.timeMs-(performance.now()-started)));
     try{
-     await native.ready;if(finished)return;if(native.capabilities.protocol!==2||!native.capabilities.streaming)throw Error('C++程序不支持流式接口，请重新构建');
+     await native.ready;if(finished)return;if(native.capabilities.protocol!==2||!native.capabilities.streaming||!native.capabilities.unlimitedDepth)throw Error('C++程序需要重新构建以支持按时间搜索');
      const remaining=Math.max(0,input.timeMs-(performance.now()-started)-15);
-     const r=await native.request(f,{mode:'STREAM',depth:8,budget:remaining,onProgress:r=>{if(finished)return;latest=wire(r);send({progress:true,result:latest});}});
+     const r=await native.request(f,{mode:'STREAM',depth:0,budget:remaining,onTelemetry:s=>{if(finished)return;const clean=cleanSearchStats(s);if(clean){latestStats=clean;if(input.depthMetrics)send({telemetry:{...clean,...info,engineVerified:true}});}},onProgress:r=>{if(finished)return;latest=wire(r);send({progress:true,result:latest});}});
      if(finished)return;finished=true;completed++;send({result:wire(r)});res.end();cleanup();
     }catch(error){if(!finished){finished=true;send({error:'C++搜索未完成，请重试或明确选择JavaScript回退。'});res.end();cleanup();}}
     return;

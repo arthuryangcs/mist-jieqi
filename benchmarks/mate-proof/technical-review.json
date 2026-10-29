@@ -1,0 +1,20 @@
+{
+  "checkedAt": "2026-10-28T18:42:05.227Z",
+  "retained": true,
+  "resumeFromNextGame": true,
+  "budgetAndParametersUnchanged": true,
+  "game": 1,
+  "result": {
+    "status": "decided",
+    "winner": "b",
+    "technicalForfeit": true,
+    "offender": "opponent",
+    "reason": "technical-timeout"
+  },
+  "elapsedMs": 2078.5534800000023,
+  "timerLateMs": 73.13985900001717,
+  "eventLoopMaxMs": 101.122047,
+  "conclusion": "Deadline callback was late in host event loop; no claim whether GC or OS scheduling; count as technical failure, never a strength win. No residual engines at review.",
+  "rematched": false,
+  "independentReplayVerified": true
+}

@@ -1,0 +1,119 @@
+{
+  "repo": "https://github.com/lxsgx23/AB-JChess",
+  "tag": "v0.2d",
+  "commit": "fe35d87c7553fd23e8aab3a1dde7e712f286b416",
+  "sourceLicense": "GPL-3.0",
+  "sourceLicenseSha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+  "releaseUrl": "https://github.com/lxsgx23/AB-JChess/releases/tag/v0.2d",
+  "releaseArchiveSha256": "01d3d539b1d3c50371132401d70c441364ae1c2e9d6e4121f83143f2fe1b3a4e",
+  "modelSha256": "05c13ac64f5b8ede77cfdc408d399d1f235564ba0999e2c768bebaeedb1db761",
+  "modelBytes": 143667546,
+  "modelMetadata": {
+    "accumulator_width": 2048,
+    "architecture": {
+      "architecture_sha256": "04f4fe0b23c4e66187fa6d67a2d417174980f17a855abc19bbd4294c6431ca21",
+      "ft_dim": 2048,
+      "inventory_context": {
+        "hidden": 16,
+        "inputs": 16,
+        "normalization": "per-side-inventory-maxima-v1"
+      },
+      "l1": 1024,
+      "l2": 32,
+      "l3": 32,
+      "layer_stack_q_format": "Q0.8",
+      "layer_stack_selection": "continuous-q0.8-v1",
+      "layer_stacks": 16,
+      "metadata_layout": "pool-dark-owner-exact-loss-context-v1",
+      "psqt_buckets": 0,
+      "real_features": 34800,
+      "training_features": 36274
+    },
+    "architecture_sha256": "04f4fe0b23c4e66187fa6d67a2d417174980f17a855abc19bbd4294c6431ca21",
+    "chunks": [
+      {
+        "data_offset": 0,
+        "dtype": "u8",
+        "name": "primary_runtime_nnue_container.bin",
+        "role": "runtime",
+        "sha256": "b1d14fb1e1c08471266d06fb00e0defa15eaaa89b4e7a5fd0f365152478ff4ea",
+        "size": 142545216
+      },
+      {
+        "data_offset": 142545216,
+        "dtype": "u8",
+        "name": "eval_heads_runtime.bin",
+        "role": "runtime",
+        "sha256": "5a192e683dd0297d3b34974fe620745623a164a1925fc46deb07f65b55ce14c6",
+        "size": 1096704
+      },
+      {
+        "data_offset": 143641920,
+        "dtype": "i32le",
+        "name": "probability_score_to_mass.i32le",
+        "role": "runtime",
+        "sha256": "c64435733a0e394b983610366a2ac2eb95ad24814d92ada2667c0d2f6137d0e7",
+        "size": 16004
+      },
+      {
+        "data_offset": 143657924,
+        "dtype": "i32le",
+        "name": "probability_mass_to_score.i32le",
+        "role": "runtime",
+        "sha256": "ba6bf50fd09add072aa0803af1f64b8bf3ac607a87739d67658302a1860de399",
+        "size": 7604
+      }
+    ],
+    "description": "AB-JChess V11 8B lambda 1.0 -> 0.8 from fresh initialization",
+    "feature_dimensions": 34800,
+    "feature_identity": "HalfKAv2_hm_jieqi_v11_sfnn_pool_owner_exact_loss_visible_threat_summary_no_relation_threat_input",
+    "feature_identity_sha256": "ecdc69d39f113c79f75ce1932f176f38eba5f0f2f220bb89745709760f934cfa",
+    "format_version": 110,
+    "interpolation": {
+      "format": "q0.8",
+      "rounding": "+127/255",
+      "version": "v1"
+    },
+    "interpolation_format": "Q0.8",
+    "interpolation_formula": "continuous-q0.8-v1",
+    "inventory_context_hidden": 16,
+    "inventory_context_inputs": 16,
+    "layer_stacks": 16,
+    "payload_bytes": 143665528,
+    "psqt_buckets": 0,
+    "schema": "abjchess-v11-sfnn-inventory-context-v1",
+    "smoke_only": false
+  },
+  "modelChunksVerified": 4,
+  "modelSeparateLicense": "No license file in release archive; source repository GPL-3.0. No redistribution in this local task.",
+  "auditScope": [
+    "UCI entry/commands and position-history parser",
+    "build rules and source manifest",
+    "model file loading and chunk integrity",
+    "compiled source scan for network/command-execution APIs; none found on generic Mac path",
+    "Windows-only LoadLibrary and local optional debug logger identified; no install/PGO/training scripts executed"
+  ],
+  "permissionEvents": [
+    {
+      "action": "sysctl -n machdep.cpu.brand_string machdep.cpu.features machdep.cpu.leaf7_features",
+      "status": "denied",
+      "reason": "Operation not permitted",
+      "response": "No retry or alternate feature query; use generic x86_64/SSE2 only."
+    }
+  ],
+  "plannedRuntime": {
+    "threads": 4,
+    "hashMiB": 64,
+    "budgetMs": 2000,
+    "ChasingRule": "github",
+    "referee": "existing Mist third public repetition loses for mover; root guard; internal search rules remain approximate and differ between engines"
+  },
+  "phase": "static audit plus links to subsequent local execution evidence",
+  "executionEvidence": [
+    "smoke.json",
+    "check.json",
+    "matches.json",
+    "verification.json"
+  ],
+  "noExecutionAtInitialAudit": true
+}

@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "tests": 148,
+  "passedTests": 148,
+  "failed": 0,
+  "command": "npm test -- --test-concurrency=1",
+  "runtime": "v25.6.0",
+  "scope": "rules,privacy,editor,DOM logic,worker/transport/cancellation;not real browser visual acceptance"
+}

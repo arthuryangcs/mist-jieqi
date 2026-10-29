@@ -1,0 +1,10 @@
+{
+  "recordedAt": "2026-10-28T20:21:54.975Z",
+  "completed": 4,
+  "total": 12,
+  "preserved": true,
+  "reason": "User explicitly changed goal to unbounded-by-depth timed search,actual move-depth UI and aggressive search",
+  "resumeOldScreen": false,
+  "baselineSnapshot": ".cache/time-search/baseline",
+  "oldFrozenRecordsUnchanged": true
+}

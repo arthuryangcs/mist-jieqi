@@ -1,0 +1,25 @@
+{
+  "lmr": true,
+  "trace": true,
+  "sanitize": true,
+  "functionalSourceSha256": "3fa98d62f3c1636b831680fcd5dcbf88f9339e966ed1b8e2f8a170b83afcbfb0",
+  "functionalBinarySha256": "7262d0abda78f09162c6e87045ac81d9c2b73ad8e445d277fbc8ced39926dbea",
+  "sourceSha256": "011295b08cb3f82df53d16c14bed596d9b22b4b8506bbcc1e118b8ea8bb3f35e",
+  "binarySha256": "9f8dcf391d8217373c475cafd4d7fe39956045969e12d264962435f19d51ab1a",
+  "flags": [
+    "-std=c++17",
+    "-ffp-contract=off",
+    "-Wall",
+    "-Wextra",
+    "-Wpedantic",
+    "-isystem",
+    "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1",
+    "-O1",
+    "-g",
+    "-fsanitize=address,undefined",
+    "-fno-omit-frame-pointer",
+    "-DMIST_VERIFY_RESTORE"
+  ],
+  "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+  "warnings": ""
+}

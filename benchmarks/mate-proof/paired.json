@@ -1,0 +1,37 @@
+{
+  "pairs": [
+    {
+      "seed": 2026102851,
+      "internalPoints": 2,
+      "internalAffected": true,
+      "baselineABPoints": 1,
+      "trialABPoints": 0,
+      "abAffected": false
+    },
+    {
+      "seed": 2026102853,
+      "internalPoints": 1,
+      "internalAffected": false,
+      "baselineABPoints": 0,
+      "trialABPoints": 1,
+      "abAffected": true
+    },
+    {
+      "seed": 2026102857,
+      "internalPoints": 1,
+      "internalAffected": false,
+      "baselineABPoints": 0,
+      "trialABPoints": 1,
+      "abAffected": false
+    },
+    {
+      "seed": 2026102859,
+      "internalPoints": 2,
+      "internalAffected": false,
+      "baselineABPoints": 0,
+      "trialABPoints": 1,
+      "abAffected": false
+    }
+  ],
+  "interpretation": "Two color-swapped games per layout are correlated. A self pair of1/2 is no net advantage. Do not treat technical wins as strength. Interrupted layouts excluded from clean paired comparison, never removed from raw records."
+}

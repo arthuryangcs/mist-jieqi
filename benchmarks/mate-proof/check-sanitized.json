@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "sanitize": true,
+  "regressions": [
+    {
+      "color": "r",
+      "identityCounts": {
+        "R": 2,
+        "N": 1,
+        "A": 2,
+        "P": 3
+      },
+      "baselineDepth1Losses": 0,
+      "baselineDepth2Losses": 6,
+      "trialDepth1Losses": 6,
+      "baselineNodes": 1225,
+      "trialNodes": 3155,
+      "trialMove": {
+        "from": 56,
+        "to": 40
+      }
+    },
+    {
+      "color": "b",
+      "identityCounts": {
+        "R": 2,
+        "N": 1,
+        "A": 2,
+        "P": 3
+      },
+      "baselineDepth1Losses": 0,
+      "baselineDepth2Losses": 6,
+      "trialDepth1Losses": 6,
+      "baselineNodes": 1241,
+      "trialNodes": 3259,
+      "trialMove": {
+        "from": 33,
+        "to": 49
+      }
+    }
+  ],
+  "views": 24,
+  "transitions": 518,
+  "privacyChecks": 23,
+  "aggregationChecks": 0,
+  "formalParityChecks": 2
+}

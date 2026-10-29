@@ -1,0 +1,61 @@
+{
+  "seed": 2026102893,
+  "firstDivergencePly": 4,
+  "side": "b",
+  "sameABObservationHash": "d569f5b33a33ae06f56a7a3cd27e77c4877aec2bb5ca07aa783ce3a4ed5701c8",
+  "commonMistMoves": [
+    {
+      "from": 64,
+      "to": 1
+    },
+    {
+      "from": 70,
+      "to": 7
+    }
+  ],
+  "trial": {
+    "index": 8,
+    "engine": "trial",
+    "side": "r",
+    "result": {
+      "status": "decided",
+      "winner": "b",
+      "reason": "将死",
+      "technicalForfeit": false
+    },
+    "divergentMove": {
+      "from": 27,
+      "to": 36
+    },
+    "divergentActor": "opponent",
+    "budgetMs": 2000,
+    "elapsedMs": 1999.6431009999997,
+    "abNativeBudgetMs": 1998,
+    "info": [
+      "info depth 8 seldepth 14 multipv 1 score cp 14 nodes 224838 nps 112531 hashfull 115 tbhits 0 time 1998 pv a6a5"
+    ]
+  },
+  "baseline": {
+    "index": 9,
+    "engine": "baseline",
+    "side": "r",
+    "result": {
+      "status": "decided",
+      "winner": "r",
+      "reason": "将死",
+      "technicalForfeit": false
+    },
+    "divergentMove": {
+      "from": 35,
+      "to": 44
+    },
+    "divergentActor": "opponent",
+    "budgetMs": 2000,
+    "elapsedMs": 2000.1237169999995,
+    "abNativeBudgetMs": 1998,
+    "info": [
+      "info depth 8 seldepth 18 multipv 1 score cp 13 nodes 220566 nps 110393 hashfull 99 tbhits 0 time 1998 pv i6i5"
+    ]
+  },
+  "conclusion": "Mist first two moves identical; first divergence is AB replying differently to the same observation. This pair does not isolate the causal effect of LMR on WDL; opponent scheduling/time/search nondeterminism not separated."
+}

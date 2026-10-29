@@ -15,11 +15,15 @@
 #include <vector>
 #include <future>
 #include <exception>
+#include <atomic>
+#include <functional>
 
 namespace mist {
 enum Type { K, R, N, B, C, A, P };
 constexpr int value[] = {100000,900,420,210,450,210,110};
 constexpr int mate=99000;
+// Storage/stack protection, not a playing-strength depth setting.
+constexpr int MAX_SEARCH_PLY=128;
 constexpr double inf=std::numeric_limits<double>::infinity();
 struct Piece {
     int side=-1, type=-1, role=-1; bool hidden=false;
@@ -239,7 +243,7 @@ Piece readPiece() {
 bool read(Packet& p) {
     if(!(std::cin>>p.mode))return false;int captured,worlds,metadata;
     if(!(std::cin>>p.depth>>p.budget>>p.nodeLimit>>p.turn>>p.viewer>>captured>>worlds>>metadata))throw std::runtime_error("truncated header");
-    if((p.mode!="SEARCH"&&p.mode!="STREAM"&&p.mode!="VERIFY")||p.depth<0||p.depth>8||!std::isfinite(p.budget)||p.budget<0||p.budget>300000||p.turn<0||p.turn>1||p.viewer< -1||p.viewer>1||captured<0||captured>32||worlds<1||worlds>30||metadata<0||metadata>8100)throw std::runtime_error("header out of range");
+    if((p.mode!="SEARCH"&&p.mode!="STREAM"&&p.mode!="VERIFY")||p.depth<0||!std::isfinite(p.budget)||p.budget<0||p.budget>300000||p.turn<0||p.turn>1||p.viewer< -1||p.viewer>1||captured<0||captured>32||worlds<1||worlds>30||metadata<0||metadata>8100)throw std::runtime_error("header out of range");
     for(auto& v:p.view)v=readPiece();for(int i=0;i<captured;i++)p.captured.push_back(readPiece());
     p.worlds.resize(worlds);for(auto& w:p.worlds)for(auto& v:w){v=readPiece();if(v.live()&&(v.type<0||(v.hidden&&v.role<0)))throw std::runtime_error("incomplete sample");}
     for(int i=0;i<metadata;i++){int f,t,count,outcome;if(!(std::cin>>f>>t>>count>>outcome))throw std::runtime_error("truncated root metadata");if(f<0||f>=90||t<0||t>=90||count<0||outcome<0||outcome>2)throw std::runtime_error("root metadata out of range");p.repetitions[f*90+t]=count;p.outcomes[f*90+t]=outcome;}
@@ -249,14 +253,19 @@ struct Timeout {};
 struct Iteration {int depth=0;uint64_t nodes=0;double elapsed=0;std::vector<Row> rows;};
 struct ScoredMove {Move move;double score;};
 struct Search {
-    std::array<std::vector<Move>,128> moveBuffers,probeBuffers;
-    std::array<std::vector<ScoredMove>,128> scoreBuffers;
-    std::vector<State> worlds;std::array<uint32_t,16200> history{};std::array<std::vector<Move>,128> killers;
+    std::array<std::vector<Move>,MAX_SEARCH_PLY> moveBuffers,probeBuffers;
+    std::array<std::vector<ScoredMove>,MAX_SEARCH_PLY> scoreBuffers;
+    std::vector<State> worlds;std::array<uint32_t,16200> history{};std::array<std::vector<Move>,MAX_SEARCH_PLY> killers;
     uint64_t nodes=0,nodeLimit=0;double limit=0;std::chrono::steady_clock::time_point start;
+    int selDepth=0;uint64_t safetyCutoffs=0;
+    std::atomic<uint64_t> publishedNodes{0};std::atomic<int> publishedSelDepth{0};
+    std::function<void()> poll;
     double elapsed() const {return std::chrono::duration<double,std::milli>(std::chrono::steady_clock::now()-start).count();}
-    void tick(){nodes++;if((nodeLimit&&nodes>nodeLimit)||((nodes&7)==0&&elapsed()>limit))throw Timeout{};}
+    void tick(int ply){nodes++;if(ply>selDepth){selDepth=ply;publishedSelDepth.store(ply,std::memory_order_relaxed);}if((nodes&255)==0)publishedNodes.store(nodes,std::memory_order_relaxed);if((nodes&1023)==0&&poll)poll();if((nodeLimit&&nodes>nodeLimit)||((nodes&7)==0&&elapsed()>limit))throw Timeout{};}
     double search(State& s,int depth,double alpha,double beta,int ply,int qleft=3,int extensions=2) {
-        tick();Key path=s.key();if(std::find(s.path.begin(),s.path.end(),path)!=s.path.end()){s.cycles++;return 0;}
+        tick(ply);
+        if(ply>=MAX_SEARCH_PLY-1){safetyCutoffs++;auto& probe=probeBuffers.back();legalInto(s.board,s.turn,false,true,s.kings[s.turn],probe);if(probe.empty())return -mate+ply;return evaluate(s,s.turn)-(inCheck(s.board,s.turn,s.kings[s.turn])?180:0);}
+        Key path=s.key();if(std::find(s.path.begin(),s.path.end(),path)!=s.path.end()){s.cycles++;return 0;}
         s.path.push_back(path);
         try{double v=node(s,depth,alpha,beta,ply,qleft,extensions);s.path.pop_back();return v;}catch(...){s.path.pop_back();throw;}
     }
@@ -282,7 +291,7 @@ struct Search {
                 if(first||!std::isfinite(alpha))v=-search(s,depth-1,-beta,-alpha,ply+1,quiet?qleft-1:qleft,extensions);
                 else {v=-search(s,depth-1,-alpha-1,-alpha,ply+1,quiet?qleft-1:qleft,extensions);if(v>alpha&&v<beta)v=-search(s,depth-1,-beta,-alpha,ply+1,quiet?qleft-1:qleft,extensions);}
             }catch(...){pop(s,m,old);throw;}pop(s,m,old);first=false;
-            if(v>=beta){if(!capture&&depth>0){auto& h=history[hbase+m.index()];h=std::min(uint32_t(2000),h+uint32_t(depth*depth));auto& ks=killers.at(ply);if(std::find(ks.begin(),ks.end(),m)==ks.end())ks.insert(ks.begin(),m);if(ks.size()>2)ks.resize(2);}save(v,1,m);return v;}
+            if(v>=beta){if(!capture&&depth>0){auto& h=history[hbase+m.index()];h=std::min(uint32_t(2000),h+uint32_t(std::min(uint64_t(2000),uint64_t(depth)*uint64_t(depth))));auto& ks=killers.at(ply);if(std::find(ks.begin(),ks.end(),m)==ks.end())ks.insert(ks.begin(),m);if(ks.size()>2)ks.resize(2);}save(v,1,m);return v;}
             if(v>alpha){alpha=v;best=m;}
         }save(alpha,alpha<=originalAlpha?2:0,best);return alpha;
     }
@@ -298,20 +307,28 @@ void run(const Packet& p) {
     Search s;s.start=std::chrono::steady_clock::now();s.nodeLimit=p.nodeLimit;s.limit=p.budget-std::min(35.0,p.budget*.10);
     // Root only uses public roles. Unknown true identities are never read here.
     Board rootBoard=p.view;auto root=legal(rootBoard,p.turn);
-    if(root.empty()){std::cout<<"{\"depth\":0,\"nodes\":0,\"samples\":0,\"score\":-99999,\"move\":null,\"terminal\":true,\"elapsedMs\":"<<s.elapsed()<<",\"allCandidates\":[],\"iterations\":[]}\n";return;}
+    if(root.empty()){std::cout<<"{\"depth\":0,\"mainDepth\":0,\"selDepth\":0,\"completedDepth\":0,\"visitedNodes\":0,\"statsExact\":true,\"searchStatus\":\"completed\",\"terminationReason\":\"terminal\",\"nodes\":0,\"samples\":0,\"score\":-99999,\"move\":null,\"terminal\":true,\"elapsedMs\":"<<s.elapsed()<<",\"allCandidates\":[],\"iterations\":[]}\n";return;}
     State rootContext;rootContext.board=p.view;rootContext.turn=p.turn;
     for(int side:{0,1}){auto bag=remaining(p.view,p.captured,side);rootContext.poolCount[side]=int(bag.size());for(int t:bag)rootContext.poolValue[side]+=value[t];}
     std::array<double,8100> reveal{};for(auto m:root)reveal[m.index()]=revealOrder(rootContext,p.captured,m);
     std::stable_sort(root.begin(),root.end(),[&](Move a,Move b){return priority(rootContext,a)+reveal[a.index()]>priority(rootContext,b)+reveal[b.index()];});
     bool uncertain=false;for(auto q:p.view)uncertain|=q.live()&&q.hidden;
     for(const Board& b:p.worlds)s.worlds.push_back(stateOf(b,p.captured,p.turn,p.viewer));
-    std::vector<Iteration> iterations;int interrupted=0;Move fallback=root[0];
+    std::vector<Iteration> iterations;int interrupted=0,currentDepth=0;Move fallback=root[0];
     const bool parallel=p.nodeLimit==0&&s.worlds.size()>1;
     const size_t lanes=parallel?std::min(size_t(4),s.worlds.size()):1;
     std::vector<Search> workers(parallel?s.worlds.size():0);
     for(auto& worker:workers){worker.start=s.start;worker.limit=s.limit;}
+    bool jobsActive=false;double lastTelemetry=-100,lastProgress=-100;uint64_t completedIterations=0;bool iterationsTruncated=false;
+    auto telemetry=[&](){
+        if(p.mode!="STREAM"||s.elapsed()-lastTelemetry<50)return;
+        lastTelemetry=s.elapsed();uint64_t seen=s.nodes;int deepest=s.selDepth;
+        if(parallel&&jobsActive){seen=0;for(auto& w:workers){seen+=w.publishedNodes.load(std::memory_order_relaxed);deepest=std::max(deepest,w.publishedSelDepth.load(std::memory_order_relaxed));}}
+        std::cout<<"{\"telemetry\":{\"mainDepth\":"<<currentDepth<<",\"selDepth\":"<<deepest<<",\"completedDepth\":"<<(iterations.empty()?0:iterations.back().depth)<<",\"visitedNodes\":"<<seen<<",\"elapsedMs\":"<<s.elapsed()<<",\"statsExact\":false,\"searchStatus\":\"searching\"}}\n"<<std::flush;
+    };
+    if(!parallel&&p.mode=="STREAM")s.poll=telemetry;
     auto parallelScores=[&](Move m,int childDepth) {
-        std::vector<double> scores(s.worlds.size());std::vector<std::future<void>> tasks;
+        std::vector<double> scores(s.worlds.size());std::vector<std::future<void>> tasks;jobsActive=true;
         for(size_t lane=0;lane<lanes;lane++)tasks.push_back(std::async(std::launch::async,[&,lane]{
             for(size_t world=lane;world<s.worlds.size();world+=lanes){
                 State& w=s.worlds[world];if(workers[world].elapsed()>workers[world].limit)throw Timeout{};Undo old=push(w,m);
@@ -319,22 +336,26 @@ void run(const Packet& p) {
                 pop(w,m,old);
             }
         }));
-        std::exception_ptr error;for(auto& task:tasks)try{task.get();}catch(...){if(!error)error=std::current_exception();}
-        s.nodes=0;for(const auto& worker:workers)s.nodes+=worker.nodes;
+        std::exception_ptr error;for(auto& task:tasks)try{while(task.wait_for(std::chrono::milliseconds(5))!=std::future_status::ready)telemetry();task.get();}catch(...){if(!error)error=std::current_exception();}
+        s.nodes=0;s.safetyCutoffs=0;for(const auto& worker:workers){s.nodes+=worker.nodes;s.selDepth=std::max(s.selDepth,worker.selDepth);s.safetyCutoffs+=worker.safetyCutoffs;}jobsActive=false;
         if(error)std::rethrow_exception(error);return scores;
     };
-    for(int depth=1;depth<=p.depth;depth++) {
+    for(int depth=1;p.depth==0||depth<=p.depth;depth++) {
+        currentDepth=depth;telemetry();
+        if(depth==std::numeric_limits<int>::max()-1){s.safetyCutoffs++;break;}
         std::vector<Row> rows;
         try {for(Move m:root){Row row;if(p.outcomes[m.index()]){const bool loss=p.outcomes[m.index()]==2;row=summarize(m,{loss?-mate+1.0:0.0},uncertain);row.draw=!loss;row.repetitionLoss=loss;}else{std::vector<double> scores;if(parallel){scores=parallelScores(m,depth-1);}else for(State& w:s.worlds){if(s.elapsed()>s.limit)throw Timeout{};Undo old=push(w,m);double v;try{v=-s.search(w,depth-1,-inf,inf,1);}catch(...){pop(w,m,old);throw;}pop(w,m,old);scores.push_back(v);}row=summarize(m,scores,uncertain);}row.repetitions=p.repetitions[m.index()];rows.push_back(row);}}
         catch(const Timeout&){interrupted=depth;break;}
         std::stable_sort(rows.begin(),rows.end(),[](const Row& a,const Row& b){return a.score>b.score;});
-        iterations.push_back({depth,s.nodes,s.elapsed(),rows});
+        iterations.push_back({depth,s.nodes,s.elapsed(),rows});completedIterations++;
+        if(iterations.size()>64){iterations.erase(iterations.begin());iterationsTruncated=true;}
         // Stream only after every root move has completed in every sampled world.
-        if(p.mode=="STREAM") {
+        if(p.mode=="STREAM"&&(p.depth>0||completedIterations==1||s.elapsed()-lastProgress>=50)) {
+            lastProgress=s.elapsed();
             std::cout<<"{\"progress\":true,\"result\":{\"depth\":"<<depth<<",\"nodes\":"<<s.nodes<<",\"samples\":"<<p.worlds.size()<<",\"elapsedMs\":"<<iterations.back().elapsed<<",\"threads\":"<<lanes<<",\"score\":"<<rows[0].score<<",\"move\":";writeMove(rows[0].move);
-            std::cout<<",\"allCandidates\":";writeRows(rows);std::cout<<"}}\n"<<std::flush;
+            std::cout<<",\"mainDepth\":"<<depth<<",\"completedDepth\":"<<depth<<",\"selDepth\":"<<s.selDepth<<",\"visitedNodes\":"<<s.nodes<<",\"statsExact\":true,\"searchStatus\":\"searching\",\"allCandidates\":";writeRows(rows);std::cout<<"}}\n"<<std::flush;
         }
-        if((!uncertain&&std::abs(rows[0].score)>98000)||s.elapsed()>s.limit)break;
+        if(s.safetyCutoffs||(!uncertain&&std::abs(rows[0].score)>98000)||s.elapsed()>s.limit)break;
         std::array<int,8100> rank{};for(size_t i=0;i<rows.size();i++)rank[rows[i].move.index()]=int(i);
         std::stable_sort(root.begin(),root.end(),[&](Move a,Move b){return rank[a.index()]<rank[b.index()];});
     }
@@ -347,7 +368,8 @@ void run(const Packet& p) {
 #endif
     double elapsed=s.elapsed();const Iteration* last=iterations.empty()?nullptr:&iterations.back();
     std::cout<<"{\"depth\":"<<(last?last->depth:0)<<",\"nodes\":"<<s.nodes<<",\"samples\":"<<p.worlds.size()<<",\"elapsedMs\":"<<elapsed<<",\"interruptedDepth\":"<<interrupted<<",\"score\":"<<(last?last->rows[0].score:0)<<",\"move\":";writeMove(last?last->rows[0].move:fallback);
-    std::cout<<",\"threads\":"<<lanes;std::cout<<",\"allCandidates\":";writeRows(last?last->rows:std::vector<Row>{});std::cout<<",\"iterations\":[";
+    const char* reason=s.safetyCutoffs?"stack-safety":interrupted?(p.nodeLimit&&s.nodes>p.nodeLimit?"node-limit":"time-budget"):s.elapsed()>s.limit?"time-budget":last&&!uncertain&&std::abs(last->rows[0].score)>98000?"terminal":"depth-limit";
+    std::cout<<",\"mainDepth\":"<<currentDepth<<",\"completedDepth\":"<<(last?last->depth:0)<<",\"selDepth\":"<<s.selDepth<<",\"visitedNodes\":"<<s.nodes<<",\"statsExact\":true,\"completedIterations\":"<<completedIterations<<",\"iterationsTruncated\":"<<(iterationsTruncated?"true":"false")<<",\"safetyCutoffs\":"<<s.safetyCutoffs<<",\"terminationReason\":\""<<reason<<"\",\"searchStatus\":\""<<(interrupted||s.elapsed()>s.limit?"time-budget":"completed")<<"\",\"threads\":"<<lanes;std::cout<<",\"allCandidates\":";writeRows(last?last->rows:std::vector<Row>{});std::cout<<",\"iterations\":[";
     if(p.mode!="STREAM")for(size_t i=0;i<iterations.size();i++){if(i)std::cout<<',';const auto& r=iterations[i];std::cout<<"{\"depth\":"<<r.depth<<",\"nodes\":"<<r.nodes<<",\"elapsedMs\":"<<r.elapsed<<",\"allCandidates\":";writeRows(r.rows);std::cout<<'}';}
     std::cout<<"]}\n";
 }
@@ -360,7 +382,7 @@ void verify(const Packet& p) {
 }
 } // namespace mist
 int main() {
-    using namespace mist;std::ios::sync_with_stdio(false);std::cin.tie(nullptr);std::cout<<std::setprecision(17);initialize();std::cout<<"{\"ready\":true,\"protocol\":2,\"streaming\":true,\"threads\":4,\"independentWorldSearch\":true}\n"<<std::flush;
+    using namespace mist;std::ios::sync_with_stdio(false);std::cin.tie(nullptr);std::cout<<std::setprecision(17);initialize();std::cout<<"{\"ready\":true,\"protocol\":2,\"streaming\":true,\"depthMetrics\":true,\"unlimitedDepth\":true,\"safetyMaxPly\":"<<MAX_SEARCH_PLY-1<<",\"threads\":4,\"independentWorldSearch\":true}\n"<<std::flush;
     try {Packet packet;while(read(packet)){if(packet.mode=="VERIFY")verify(packet);else run(packet);std::cout<<std::flush;packet=Packet{};}}
     catch(const std::exception& error){std::cerr<<"native error: "<<error.what()<<'\n';return 2;}
 }

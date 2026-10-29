@@ -1,0 +1,9 @@
+{
+  "command": "npm test",
+  "exitCode": 0,
+  "tests": 142,
+  "passed": 142,
+  "failed": 0,
+  "skipped": 0,
+  "durationMs": 12664.418824
+}

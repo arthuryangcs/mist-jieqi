@@ -34,3 +34,11 @@ dist/
 .idea/
 .agents/
 .codex/
+
+# Private usage and live-machine status; keep local experiment evidence.
+/benchmarks/*/quota.json
+/benchmarks/*/status.json
+/benchmarks/time-search/delivery.json
+/benchmarks/time-search/service-health.json
+/benchmarks/tactical-lmr/delivery.json
+/benchmarks/ab-jchess/manifest.json

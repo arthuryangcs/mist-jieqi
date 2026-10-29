@@ -1,0 +1,146 @@
+{
+  "passed": true,
+  "plies": 407,
+  "darkCaptures": 25,
+  "repetitions": 0,
+  "rootGuards": 0,
+  "quietDifferences": 53,
+  "games": [
+    {
+      "index": 0,
+      "kind": "internal",
+      "engine": "trial",
+      "seed": 2026102871,
+      "candidateSide": "r",
+      "plies": 64,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 1,
+      "kind": "internal",
+      "engine": "trial",
+      "seed": 2026102871,
+      "candidateSide": "b",
+      "plies": 140,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 2,
+      "kind": "ab",
+      "engine": "baseline",
+      "seed": 2026102871,
+      "candidateSide": "r",
+      "plies": 82,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 3,
+      "kind": "ab",
+      "engine": "trial",
+      "seed": 2026102871,
+      "candidateSide": "r",
+      "plies": 121,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 4,
+      "kind": "ab",
+      "engine": "trial",
+      "seed": 2026102871,
+      "candidateSide": "b",
+      "plies": 0,
+      "result": null,
+      "passed": true
+    }
+  ],
+  "time": {
+    "baseline": {
+      "attempts": 143,
+      "mean": 1995.8106644685304,
+      "p95": 2005.6871749999991,
+      "max": 2007.9583109999949,
+      "over2060": 0
+    },
+    "trial": {
+      "attempts": 163,
+      "mean": 1997.7728754478533,
+      "p95": 2002.7834399999992,
+      "max": 2014.650637999992,
+      "over2060": 0
+    },
+    "ab": {
+      "attempts": 101,
+      "mean": 1907.0946864653463,
+      "p95": 2000.5458669999935,
+      "max": 2001.018978,
+      "over2060": 0
+    }
+  },
+  "threads": {
+    "baseline": {
+      "4": 143
+    },
+    "trial": {
+      "4": 163
+    },
+    "ab": {
+      "4": 101
+    }
+  },
+  "complete": false,
+  "summary": {
+    "internal": {
+      "games": 2,
+      "wins": 1,
+      "draws": 0,
+      "losses": 1,
+      "unresolved": 0,
+      "scoreRate": 0.5,
+      "technical": []
+    },
+    "ab": {
+      "baseline": {
+        "games": 1,
+        "wins": 0,
+        "draws": 0,
+        "losses": 1,
+        "unresolved": 0,
+        "scoreRate": 0,
+        "technical": []
+      },
+      "trial": {
+        "games": 1,
+        "wins": 1,
+        "draws": 0,
+        "losses": 0,
+        "unresolved": 0,
+        "scoreRate": 1,
+        "technical": []
+      }
+    }
+  }
+}

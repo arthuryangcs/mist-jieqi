@@ -1,0 +1,11 @@
+{
+ "hypothesis":"Use LMR branch savings to fund one bright non-capture q-check per quiescence line. This combines two prior measured mechanisms into one tactical/search budget policy;not a pure one-factor LMR or q-check attribution. Filter pushdown preserves quiet-check legality/order.",
+ "budgetMs":2000,"graceMs":60,"maxSearchThreads":4,"samples":8,"brightSamples":1,"maxDepth":0,
+ "seeds":[2026102921,2026102923],"games":12,"internalGames":4,"pikaGames":{"baseline":4,"trial":4},
+ "order":"Each new layout: trial vs stable uncapped HCE both colors;stable/trial vs fixed Pika both colors in alternating order. Sequential, readiness outside;projection,sampling,FEN/root-rule verification,search,transport,stop/cleanup within2seconds+60ms adjudication grace.",
+ "opponent":"Pika bcc83f88 fixed f32d3c6d HCE,Threads4,Hash64MiB,MoveOverhead0. No AB substitution,no new weights. Known color-asymmetric evaluation remains disclosed.",
+ "rules":"Common third identical public board+turn loses for mover,mate/stalemate priority,120quietplies draw,400cap unresolved;Pika root whitelist excludes immediately losing repeats if alternatives;deep internal cycle approximations differ.",
+ "stop":"Fixed12game screen,no tuning/reselection by WDL. Preserve failures/unresolved. User stop,infrastructure problems or actual readable quota<40% cause saved pause;inspect live process+log before resuming. Never erase completed games.",
+ "promotion":"Prototype remains non-default unless reliable independent evidence supports promotion;this small screen alone cannot establish superiority.",
+ "publication":"User authorizes reviewed related source/report publication to existing public mist-jieqi;exclude third-party source/binaries/weights,private quota/account/runtime metadata,secrets,temporary builds;normal commit/push only. Browser access restriction preserved."
+}

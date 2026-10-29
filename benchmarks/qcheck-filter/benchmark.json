@@ -1,0 +1,380 @@
+{
+  "passed": true,
+  "referenceSha256": "30dcd1cef87ab9f07746fde634b463290d4751da36aa4be83451252500597d91",
+  "trialSha256": "b40d3c0ec02b2d643146292217710d27885d798406eb2591a6585d6518f9a71b",
+  "fixed": [
+    {
+      "name": "初始全暗",
+      "round": 0,
+      "depth": 1,
+      "nodes": 30001,
+      "referenceMs": 42.792038,
+      "trialMs": 25.100068,
+      "referenceWallMs": 47.94102699999999,
+      "trialWallMs": 29.569628000000023
+    },
+    {
+      "name": "初始全暗",
+      "round": 1,
+      "depth": 1,
+      "nodes": 30001,
+      "referenceMs": 36.323013,
+      "trialMs": 25.033723,
+      "referenceWallMs": 40.75335200000001,
+      "trialWallMs": 29.463279
+    },
+    {
+      "name": "初始全暗",
+      "round": 2,
+      "depth": 1,
+      "nodes": 30001,
+      "referenceMs": 38.353912,
+      "trialMs": 24.937447,
+      "referenceWallMs": 42.86281500000001,
+      "trialWallMs": 29.410322000000008
+    },
+    {
+      "name": "初始全暗",
+      "round": 3,
+      "depth": 1,
+      "nodes": 30001,
+      "referenceMs": 36.627226,
+      "trialMs": 24.869343,
+      "referenceWallMs": 41.22486700000002,
+      "trialWallMs": 29.32433500000002
+    },
+    {
+      "name": "初始全暗",
+      "round": 4,
+      "depth": 1,
+      "nodes": 30001,
+      "referenceMs": 39.344044,
+      "trialMs": 25.268837,
+      "referenceWallMs": 43.84921899999995,
+      "trialWallMs": 29.84507199999996
+    },
+    {
+      "name": "可达中局 2111 / 20步",
+      "round": 0,
+      "depth": 2,
+      "nodes": 30001,
+      "referenceMs": 55.401369,
+      "trialMs": 49.781279,
+      "referenceWallMs": 60.04711699999996,
+      "trialWallMs": 54.296438999999964
+    },
+    {
+      "name": "可达中局 2111 / 20步",
+      "round": 1,
+      "depth": 2,
+      "nodes": 30001,
+      "referenceMs": 55.731949,
+      "trialMs": 49.272992,
+      "referenceWallMs": 60.25333699999999,
+      "trialWallMs": 53.81638299999997
+    },
+    {
+      "name": "可达中局 2111 / 20步",
+      "round": 2,
+      "depth": 2,
+      "nodes": 30001,
+      "referenceMs": 55.698929,
+      "trialMs": 49.910369,
+      "referenceWallMs": 60.182908999999995,
+      "trialWallMs": 54.441470000000095
+    },
+    {
+      "name": "可达中局 2111 / 20步",
+      "round": 3,
+      "depth": 2,
+      "nodes": 30001,
+      "referenceMs": 55.673828,
+      "trialMs": 49.487417,
+      "referenceWallMs": 60.26645400000007,
+      "trialWallMs": 54.24524199999996
+    },
+    {
+      "name": "可达中局 2111 / 20步",
+      "round": 4,
+      "depth": 2,
+      "nodes": 30001,
+      "referenceMs": 55.393991,
+      "trialMs": 50.00255,
+      "referenceWallMs": 59.947200000000066,
+      "trialWallMs": 54.645129
+    },
+    {
+      "name": "可达中局 2111 / 44步",
+      "round": 0,
+      "depth": 1,
+      "nodes": 30001,
+      "referenceMs": 44.834399,
+      "trialMs": 42.826835,
+      "referenceWallMs": 49.275715999999875,
+      "trialWallMs": 47.272313999999824
+    },
+    {
+      "name": "可达中局 2111 / 44步",
+      "round": 1,
+      "depth": 1,
+      "nodes": 30001,
+      "referenceMs": 44.608226,
+      "trialMs": 42.756375,
+      "referenceWallMs": 48.99529000000007,
+      "trialWallMs": 47.22246999999993
+    },
+    {
+      "name": "可达中局 2111 / 44步",
+      "round": 2,
+      "depth": 1,
+      "nodes": 30001,
+      "referenceMs": 54.025673,
+      "trialMs": 72.597663,
+      "referenceWallMs": 58.473522,
+      "trialWallMs": 79.29049899999995
+    },
+    {
+      "name": "可达中局 2111 / 44步",
+      "round": 3,
+      "depth": 1,
+      "nodes": 30001,
+      "referenceMs": 44.744589,
+      "trialMs": 48.399964,
+      "referenceWallMs": 49.06706999999983,
+      "trialWallMs": 54.74236100000007
+    },
+    {
+      "name": "可达中局 2111 / 44步",
+      "round": 4,
+      "depth": 1,
+      "nodes": 30001,
+      "referenceMs": 44.874376,
+      "trialMs": 42.895767,
+      "referenceWallMs": 49.208708000000115,
+      "trialWallMs": 47.22317299999986
+    },
+    {
+      "name": "可达中局 2221 / 44步",
+      "round": 0,
+      "depth": 1,
+      "nodes": 30001,
+      "referenceMs": 52.071573,
+      "trialMs": 46.636344,
+      "referenceWallMs": 56.488014999999905,
+      "trialWallMs": 51.08856500000002
+    },
+    {
+      "name": "可达中局 2221 / 44步",
+      "round": 1,
+      "depth": 1,
+      "nodes": 30001,
+      "referenceMs": 52.04078,
+      "trialMs": 46.516664,
+      "referenceWallMs": 56.45419300000003,
+      "trialWallMs": 50.971260999999686
+    },
+    {
+      "name": "可达中局 2221 / 44步",
+      "round": 2,
+      "depth": 1,
+      "nodes": 30001,
+      "referenceMs": 52.219985,
+      "trialMs": 46.65049,
+      "referenceWallMs": 56.66319199999998,
+      "trialWallMs": 51.099834999999985
+    },
+    {
+      "name": "可达中局 2221 / 44步",
+      "round": 3,
+      "depth": 1,
+      "nodes": 30001,
+      "referenceMs": 51.77555,
+      "trialMs": 47.479757,
+      "referenceWallMs": 56.30367499999966,
+      "trialWallMs": 51.96200599999975
+    },
+    {
+      "name": "可达中局 2221 / 44步",
+      "round": 4,
+      "depth": 1,
+      "nodes": 30001,
+      "referenceMs": 52.015818,
+      "trialMs": 46.977454,
+      "referenceWallMs": 56.40384499999982,
+      "trialWallMs": 51.357154000000264
+    },
+    {
+      "name": "全明10子残局",
+      "round": 0,
+      "depth": 3,
+      "nodes": 15913,
+      "referenceMs": 18.551637,
+      "trialMs": 18.608488,
+      "referenceWallMs": 20.31280199999992,
+      "trialWallMs": 20.36514699999998
+    },
+    {
+      "name": "全明10子残局",
+      "round": 1,
+      "depth": 3,
+      "nodes": 15913,
+      "referenceMs": 18.969663,
+      "trialMs": 18.650934,
+      "referenceWallMs": 20.779433999999583,
+      "trialWallMs": 20.49256400000013
+    },
+    {
+      "name": "全明10子残局",
+      "round": 2,
+      "depth": 3,
+      "nodes": 15913,
+      "referenceMs": 18.583201,
+      "trialMs": 18.749983,
+      "referenceWallMs": 20.337751000000026,
+      "trialWallMs": 20.53234599999996
+    },
+    {
+      "name": "全明10子残局",
+      "round": 3,
+      "depth": 3,
+      "nodes": 15913,
+      "referenceMs": 18.703661,
+      "trialMs": 18.622451,
+      "referenceWallMs": 20.467661999999564,
+      "trialWallMs": 20.329289999999673
+    },
+    {
+      "name": "全明10子残局",
+      "round": 4,
+      "depth": 3,
+      "nodes": 15913,
+      "referenceMs": 18.557649,
+      "trialMs": 18.736186,
+      "referenceWallMs": 20.312998000000334,
+      "trialWallMs": 20.498033000000305
+    }
+  ],
+  "wall": [
+    {
+      "name": "初始全暗",
+      "engine": "reference",
+      "depth": 4,
+      "nodes": 3093777,
+      "threads": 4,
+      "elapsedMs": 1989.7336339999997,
+      "move": {
+        "from": 64,
+        "to": 1
+      }
+    },
+    {
+      "name": "初始全暗",
+      "engine": "trial",
+      "depth": 4,
+      "nodes": 1565734,
+      "threads": 4,
+      "elapsedMs": 2001.043334,
+      "move": {
+        "from": 64,
+        "to": 1
+      }
+    },
+    {
+      "name": "可达中局 2111 / 20步",
+      "engine": "reference",
+      "depth": 5,
+      "nodes": 2237774,
+      "threads": 4,
+      "elapsedMs": 2002.469935,
+      "move": {
+        "from": 72,
+        "to": 73
+      }
+    },
+    {
+      "name": "可达中局 2111 / 20步",
+      "engine": "trial",
+      "depth": 5,
+      "nodes": 2237774,
+      "threads": 4,
+      "elapsedMs": 2002.522352,
+      "move": {
+        "from": 72,
+        "to": 73
+      }
+    },
+    {
+      "name": "可达中局 2111 / 44步",
+      "engine": "reference",
+      "depth": 5,
+      "nodes": 2874796,
+      "threads": 4,
+      "elapsedMs": 2002.094583,
+      "move": {
+        "from": 63,
+        "to": 46
+      }
+    },
+    {
+      "name": "可达中局 2111 / 44步",
+      "engine": "trial",
+      "depth": 5,
+      "nodes": 2874796,
+      "threads": 4,
+      "elapsedMs": 2001.437245000001,
+      "move": {
+        "from": 63,
+        "to": 46
+      }
+    }
+  ],
+  "singleThreadNodeLimit": 30000,
+  "productionDefaultUnchanged": true,
+  "summary": [
+    {
+      "name": "初始全暗",
+      "rounds": 5,
+      "nodes": 30001,
+      "depth": 1,
+      "referenceMedianMs": 38.353912,
+      "trialMedianMs": 25.033723,
+      "speedup": 1.5320898134088967
+    },
+    {
+      "name": "可达中局 2111 / 20步",
+      "rounds": 5,
+      "nodes": 30001,
+      "depth": 2,
+      "referenceMedianMs": 55.673828,
+      "trialMedianMs": 49.781279,
+      "speedup": 1.1183687747355788
+    },
+    {
+      "name": "可达中局 2111 / 44步",
+      "rounds": 5,
+      "nodes": 30001,
+      "depth": 1,
+      "referenceMedianMs": 44.834399,
+      "trialMedianMs": 42.895767,
+      "speedup": 1.0451940164632094
+    },
+    {
+      "name": "可达中局 2221 / 44步",
+      "rounds": 5,
+      "nodes": 30001,
+      "depth": 1,
+      "referenceMedianMs": 52.04078,
+      "trialMedianMs": 46.65049,
+      "speedup": 1.1155462675740384
+    },
+    {
+      "name": "全明10子残局",
+      "rounds": 5,
+      "nodes": 15913,
+      "depth": 3,
+      "referenceMedianMs": 18.583201,
+      "trialMedianMs": 18.650934,
+      "speedup": 0.9963683856261568
+    }
+  ]
+}

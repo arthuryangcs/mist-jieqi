@@ -1,0 +1,11 @@
+{
+  "exitCode": 0,
+  "uciok": true,
+  "readyok": true,
+  "nnueLoaded": true,
+  "inferenceComplete": true,
+  "probabilityComplete": true,
+  "stderr": "",
+  "transcript": "AB JChess by Huorongrong,Laoxu(Kouza)\nAB JChess is free of charge. Resale is prohibited.\nid name AB JChess 0.2d\nid author Huorongrong,Laoxu(Kouza)\n\noption name Debug Log File type string default \noption name NumaPolicy type string default auto\noption name Threads type spin default 1 min 1 max 1024\noption name Hash type spin default 16 min 1 max 33554432\noption name Clear Hash type button\noption name Ponder type check default false\noption name MultiPV type spin default 1 min 1 max 128\noption name ChasingRule type combo default skyrule_Jieqi var github var skyrule_Jieqi\noption name Move Overhead type spin default 10 min 0 max 5000\noption name AggressiveLevel type spin default 3 min 0 max 10\noption name RevealQuietBase type spin default -12 min -96 max 96\noption name RevealQuietSafety type spin default 24 min -192 max 192\noption name RevealQuietHighValue type spin default -12 min -96 max 96\noption name nodestime type spin default 0 min 0 max 10000\noption name UCI_ShowWDL type check default false\noption name EvalFile type string default abjchess-20261010.nnue\nuciok\ninfo string Using 4 threads\ninfo string ABJNNUE model loaded: abjchess-20261010.nnue features=34800 accumulator=2048 psqt_buckets=0 heads=16 head_backend=scalar inference_complete=true probability_tables=true\n\n\nABJNNUE runtime evaluation\nPositional raw        316\nRuntime value         24 (side to move)\n\nreadyok\n",
+  "passed": true
+}

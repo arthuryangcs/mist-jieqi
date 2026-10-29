@@ -1,0 +1,245 @@
+{
+  "passed": true,
+  "games": [
+    {
+      "index": 0,
+      "seed": 2026102801,
+      "mistSide": "r",
+      "plies": 46,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 1,
+      "seed": 2026102801,
+      "mistSide": "b",
+      "plies": 35,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 2,
+      "seed": 2026102803,
+      "mistSide": "r",
+      "plies": 44,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 3,
+      "seed": 2026102803,
+      "mistSide": "b",
+      "plies": 95,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 4,
+      "seed": 2026102805,
+      "mistSide": "r",
+      "plies": 38,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 5,
+      "seed": 2026102805,
+      "mistSide": "b",
+      "plies": 39,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 6,
+      "seed": 2026102809,
+      "mistSide": "r",
+      "plies": 36,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 7,
+      "seed": 2026102809,
+      "mistSide": "b",
+      "plies": 37,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 8,
+      "seed": 2026102817,
+      "mistSide": "r",
+      "plies": 78,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 9,
+      "seed": 2026102817,
+      "mistSide": "b",
+      "plies": 23,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 10,
+      "seed": 2026102819,
+      "mistSide": "r",
+      "plies": 26,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 11,
+      "seed": 2026102819,
+      "mistSide": "b",
+      "plies": 78,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 12,
+      "seed": 2026102821,
+      "mistSide": "r",
+      "plies": 28,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 13,
+      "seed": 2026102821,
+      "mistSide": "b",
+      "plies": 31,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 14,
+      "seed": 2026102823,
+      "mistSide": "r",
+      "plies": 76,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    },
+    {
+      "index": 15,
+      "seed": 2026102823,
+      "mistSide": "b",
+      "plies": 77,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "reason": "将死",
+        "technicalForfeit": false
+      },
+      "passed": true
+    }
+  ],
+  "plies": 787,
+  "privateDarkCaptures": 109,
+  "repetitionLosses": 0,
+  "rootGuardUses": 0,
+  "quietCounterDifferences": 177,
+  "threads": {
+    "mist": {
+      "4": 390
+    },
+    "ab": {
+      "4": 397
+    }
+  },
+  "time": {
+    "mist": {
+      "attempts": 390,
+      "mean": 1953.6388896307697,
+      "p50": 2002.9566729999997,
+      "p95": 2005.6129309999815,
+      "max": 2012.9809769999993,
+      "over2060": 0
+    },
+    "ab": {
+      "attempts": 397,
+      "mean": 1849.7028067002516,
+      "p50": 1999.542849000005,
+      "p95": 2000.758355,
+      "max": 2044.2742460000009,
+      "over2060": 0
+    }
+  },
+  "completed": 16
+}

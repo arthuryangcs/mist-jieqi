@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "work": [
+    {
+      "name": "opening",
+      "nodes": 30001,
+      "depth": 1,
+      "reference": {
+        "lists": 11836,
+        "generated": 448416,
+        "relevant": 53796
+      },
+      "trial": {
+        "lists": 11836,
+        "generated": 53796,
+        "relevant": 53796
+      },
+      "discardedBeforeLegality": 394620
+    },
+    {
+      "name": "old diagnostic game3",
+      "nodes": 30001,
+      "depth": 2,
+      "reference": {
+        "lists": 4852,
+        "generated": 125871,
+        "relevant": 94079
+      },
+      "trial": {
+        "lists": 4852,
+        "generated": 94079,
+        "relevant": 94079
+      },
+      "discardedBeforeLegality": 31792
+    }
+  ],
+  "reference": "previous isolated q-check candidate; not production stable"
+}

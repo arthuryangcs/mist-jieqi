@@ -1,0 +1,10 @@
+{
+ "singleChange":"Push down bright/non-capture filtering inside the q-check candidate query. Same move order, one quiet check per q-line, same tree and values as preceding mate-proof candidate. No new evaluation or policy.",
+ "reference":"Prior unpromoted mate-proof candidate30dcd1ce for exact tree and performance comparisons. Production stable HCE5c68913e remains baseline in strength matches and default; do not confuse them.",
+ "budgetMs":2000,"graceMs":60,"maxSearchThreads":4,"samples":8,"brightSamples":1,"maxDepth":8,
+ "seeds":[2026102871,2026102873],"games":12,"internalGames":4,"abGames":{"stable":4,"trial":4},
+ "order":"Per layout: trial vs production stable red/black, then stable/trial vs fixed AB each color with alternating stable/trial order. Serial. New layouts unused by preceding24 or development.",
+ "stop":"Do not tune or stop by WDL. Retain failures/unresolved. Pause if actual readable quota<40%, user stop or infrastructure failure; resume only after checking processes and persisted state.",
+ "promotion":"Screen only, no default switch. Exact tree/speed evidence concerns implementation equivalence to previous unpromoted policy, not proof of strength relative to production or AB.",
+ "publication":"Local only; no commits, push, uploads or third-party redistribution. Preserve user games, pages and prior evidence."
+}
