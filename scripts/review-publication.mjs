@@ -8,10 +8,10 @@ for(const file of files){
  if(/\/Users\//.test(s)||/gh[pousr]_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,}|-----BEGIN [A-Z ]*PRIVATE KEY-----/.test(s))issues.push({file,reason:'private path or credential pattern'});
  if(file.endsWith('.json')){let data;try{data=JSON.parse(s);}catch{issues.push({file,reason:'invalid JSON'});continue;}const visit=x=>{if(Array.isArray(x))return x.forEach(visit);if(x&&typeof x==='object')for(const[k,v]of Object.entries(x)){if(privateKeys.has(k))issues.push({file,reason:'private metadata key',key:k});visit(v);}};visit(data);}
 }
-if(files.includes('benchmarks/tactical-lmr/matches.json')){
+for(const experiment of ['tactical-lmr','cluster-tt'])if(files.includes('benchmarks/'+experiment+'/matches.json')){
  const staged=p=>JSON.parse(execFileSync('git',['show',':'+p],{encoding:'utf8',maxBuffer:32*1024*1024}));
- const r=staged('benchmarks/tactical-lmr/matches.json'),v=staged('benchmarks/tactical-lmr/verification.json');
- if(!r.completedAt||r.games.filter(g=>g.result).length!==r.tasks.length||!v.passed||!v.complete){issues.push({file:'benchmarks/tactical-lmr/matches.json',reason:'current frozen screen or replay incomplete'});}
+ const r=staged('benchmarks/'+experiment+'/matches.json'),v=staged('benchmarks/'+experiment+'/verification.json');
+ if(!r.completedAt||r.games.filter(g=>g.result).length!==r.tasks.length||!v.passed||!v.complete){issues.push({file:'benchmarks/'+experiment+'/matches.json',reason:'current frozen screen or replay incomplete'});}
  const {createHash}=await import('node:crypto');for(const[p,expected]of Object.entries(r.sourceHashes)){const actual=createHash('sha256').update(execFileSync('git',['show',':'+p],{maxBuffer:32*1024*1024})).digest('hex');if(actual!==expected){issues.push({file:p,reason:'staged source differs from measured fingerprint'});}}
 }
 console.log(JSON.stringify({reviewedFiles:files.length,passed:issues.length===0,issues},null,2));if(issues.length)process.exitCode=1;

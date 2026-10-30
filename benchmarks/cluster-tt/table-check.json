@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "kind": "control",
+      "sanitize": false,
+      "output": "ok 8640168 bytes"
+    },
+    {
+      "kind": "control",
+      "sanitize": true,
+      "output": "ok 8640168 bytes"
+    },
+    {
+      "kind": "trial",
+      "sanitize": false,
+      "output": "ok 384 bytes"
+    },
+    {
+      "kind": "trial",
+      "sanitize": true,
+      "output": "ok 384 bytes"
+    }
+  ]
+}

@@ -35,3 +35,15 @@ jobs:
         run: |
           node native/experiments/tactical-lmr/check.mjs
           node native/experiments/tactical-lmr/check.mjs --sanitize
+      - name: Build bounded and clustered TT prototypes
+        run: |
+          node native/experiments/cluster-tt/build.mjs --control
+          node native/experiments/cluster-tt/build.mjs
+          node native/experiments/cluster-tt/build.mjs --trace
+          node native/experiments/cluster-tt/build.mjs --trace --sanitize
+      - name: TT collision, memory bound, probability and rollback checks
+        run: |
+          node native/experiments/cluster-tt/table-check.mjs
+          node native/experiments/cluster-tt/check.mjs
+          node native/experiments/cluster-tt/check.mjs --sanitize
+          node native/experiments/cluster-tt/control-saturation.mjs

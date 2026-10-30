@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "javascript": {
+    "command": "npm test -- --test-concurrency=1",
+    "passed": 151,
+    "failed": 0,
+    "includesCanonicalAdapterTests": 3
+  },
+  "native": {
+    "command": "node native/check.mjs",
+    "ruleCases": 72,
+    "transitions": 2172,
+    "searchCases": 16,
+    "passed": true
+  },
+  "http": {
+    "command": "node --test native/service-check.mjs",
+    "passed": 8,
+    "failed": 0
+  },
+  "browserVisual": "Not performed:prior access restriction retained;HTTP and UI DOM tests are not visual browser acceptance.",
+  "defaultSourceUnchanged": true,
+  "controlSaturation": {
+    "passed": true,
+    "nodeBudget": 3000000,
+    "nodes": 3000001,
+    "candidates": 30,
+    "maxDifference": 0,
+    "allocationDenials": 0
+  }
+}

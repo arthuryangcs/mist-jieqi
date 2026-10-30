@@ -1,0 +1,29 @@
+{
+  "hypothesis": "Two-way 64-byte full-key clustered TT reduces per-node allocation and pointer chasing compared with bounded unordered_map. Only TT layout/replacement changes;no LMR,q-check or evaluation changes.",
+  "budgetMs": 2000,
+  "graceMs": 60,
+  "maxSearchThreads": 4,
+  "samples": 8,
+  "brightSamples": 1,
+  "maxDepth": 0,
+  "ttBudgetBytes": 67108864,
+  "seeds": [
+    2026103031,
+    2026103033
+  ],
+  "games": 12,
+  "internalGames": 4,
+  "pikaGames": {
+    "baseline": 4,
+    "trial": 4
+  },
+  "control": "Current stable HCE with bounded arena unordered_map,reserve90000,unchanged 90000 entries/world. Raw stable kept intact and compared fixed-node;not byte-identical control. Shared64MiB allocation limit;zero denials required for unchanged control cache semantics.",
+  "trial": "Two-way full-key TT,shallowest-depth replacement,new depth >= victim;64MiB/request split into separate power-of-two per-world tables. No private-world sharing.",
+  "opponent": "Unchanged fixed Pika bcc83f88/f32d3c6d HCE;Threads4,Hash64MiB,MoveOverhead0. Canonical own-red orientation for both actual colors,move/history/captor-private tokens mapped;not mixed with historical raw Pika scores.",
+  "fairness": "Same2seconds hand budget,max4 search threads,TT64MiB cap,initialization/projection/sampling/protocol/stop included. Maximum threads are equal,parallel algorithm differs. Not equal process RSS:boards,stacks,history,allocator and engine states differ;Mist uses8worlds (1bright),Pika its fixed probability model.",
+  "order": "Per fresh layout:trial vs normalized stable both colors,then normalized stable/trial vs canonical fixed Pika both colors with alternating order. Sequential.",
+  "rules": "Third identical public board+turn loses mover,mate/stalemate priority,120quietplies draw,400cap unresolved. Same Pika safe-root whitelist;deep cycle/draw approximations may differ. Canonical initial-black frame offsets fullmove counter to preserve history progression.",
+  "stop": "Frozen12game screen;no tuning/stopping by WDL. Preserve technical failures/unresolved. Pause on infrastructure,user stop or actual readable remaining<40%. Follow existing processes/logs,never overwrite/replay completed games.",
+  "promotion": "Experimental only. Small screen cannot establish overall superiority or justify default promotion.",
+  "publication": "Reviewed own source/report and synthetic replay evidence only;exclude credentials,private quota/account/live-runtime metadata,third-party source/binaries/weights and temporary builds. Normal commit/push,no force. Browser restriction retained."
+}

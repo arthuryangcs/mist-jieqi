@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "nodeBudget": 3000000,
+  "parity": {
+    "nodesEqual": true,
+    "candidates": 30,
+    "maxDifference": 0
+  },
+  "raw": {
+    "depth": 7,
+    "nodes": 3000001,
+    "score": 213,
+    "move": {
+      "from": 72,
+      "to": 0
+    }
+  },
+  "control": {
+    "depth": 7,
+    "nodes": 3000001,
+    "score": 213,
+    "move": {
+      "from": 72,
+      "to": 0
+    },
+    "ttAllocatedBytes": 7200008,
+    "ttDenied": 0
+  }
+}

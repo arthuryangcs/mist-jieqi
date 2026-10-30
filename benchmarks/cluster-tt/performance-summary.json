@@ -1,0 +1,110 @@
+{
+  "passed": true,
+  "positions": [
+    {
+      "name": "初始全暗",
+      "controlSelDepth": [
+        13,
+        13
+      ],
+      "trialSelDepth": [
+        13,
+        13
+      ],
+      "controlCompletedDepth": [
+        4,
+        4
+      ],
+      "trialCompletedDepth": [
+        4,
+        4
+      ],
+      "meanNpsTrialVsControl": 1.00138783900622,
+      "controlVsRawStable": 0.9947848203825623
+    },
+    {
+      "name": "可达中局 2111 / 20步",
+      "controlSelDepth": [
+        13,
+        13
+      ],
+      "trialSelDepth": [
+        13,
+        13
+      ],
+      "controlCompletedDepth": [
+        5,
+        5
+      ],
+      "trialCompletedDepth": [
+        5,
+        5
+      ],
+      "meanNpsTrialVsControl": 0.9923128355446555,
+      "controlVsRawStable": 1.036495523303799
+    },
+    {
+      "name": "可达中局 2111 / 44步",
+      "controlSelDepth": [
+        14,
+        14
+      ],
+      "trialSelDepth": [
+        14,
+        14
+      ],
+      "controlCompletedDepth": [
+        5,
+        5
+      ],
+      "trialCompletedDepth": [
+        5,
+        5
+      ],
+      "meanNpsTrialVsControl": 0.9890383837898798,
+      "controlVsRawStable": 1.0094811364027358
+    },
+    {
+      "name": "可达中局 2221 / 44步",
+      "controlSelDepth": [
+        13,
+        13
+      ],
+      "trialSelDepth": [
+        13,
+        13
+      ],
+      "controlCompletedDepth": [
+        5,
+        5
+      ],
+      "trialCompletedDepth": [
+        5,
+        5
+      ],
+      "meanNpsTrialVsControl": 0.94476110841397,
+      "controlVsRawStable": 1.0363007148787875
+    },
+    {
+      "name": "全明10子残局",
+      "controlSelDepth": [
+        16,
+        16
+      ],
+      "trialSelDepth": [
+        16,
+        16
+      ],
+      "controlCompletedDepth": [
+        7,
+        7
+      ],
+      "trialCompletedDepth": [
+        7,
+        7
+      ],
+      "meanNpsTrialVsControl": 1.0567730866485978,
+      "controlVsRawStable": 1.0006014799920988
+    }
+  ]
+}

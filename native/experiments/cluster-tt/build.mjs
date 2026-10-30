@@ -1,0 +1,18 @@
+import fs from 'node:fs';import path from 'node:path';import {spawnSync} from 'node:child_process';import {fileURLToPath} from 'node:url';
+import {patch,hash,sha,baseline} from '../time-search/build.mjs';
+export {patch,hash,sha,baseline};export const cache='.cache/cluster-tt',dir='benchmarks/cluster-tt';
+export function sourceOf({trial=true,trace=false}={}){
+ const ref=JSON.parse(fs.readFileSync('.cache/time-search/functional/build.json'));let s=fs.readFileSync('.cache/time-search/functional/search.cpp','utf8');if(sha(s)!==ref.sourceSha256||hash(baseline)!==ref.binarySha256)throw Error('Frozen stable changed');
+ s='#include <new>\n'+(trial?'#define MIST_CLUSTER_TT\n':'')+s;
+ s=patch(s,'struct State {',fs.readFileSync('native/experiments/cluster-tt/table.hpp','utf8')+'\nstruct State {');
+ s=patch(s,'std::unordered_map<Key,Entry,KeyHash> table;','TTTable table;');
+ s=patch(s,'auto i=s.table.find(key);if(i!=s.table.end()){entry=i->second;','const Entry* i=s.table.probe(key);if(i){entry=*i;');
+ s=patch(s,'if(hasKey&&cycleStart==s.cycles&&(s.table.size()<90000||s.table.find(key)!=s.table.end()))s.table[key]={depth,flag,score>98000?score+ply:score< -98000?score-ply:score,m};','if(hasKey&&cycleStart==s.cycles)s.table.store(key,{depth,flag,score>98000?score+ply:score< -98000?score-ply:score,m});');
+ s=patch(s,'Search s;s.start=std::chrono::steady_clock::now();','TTArena arena;TTScope scope(arena);Search s;s.start=std::chrono::steady_clock::now();');
+ s=patch(s,'std::vector<Iteration> iterations;','for(auto& w:s.worlds)w.table.configure(s.worlds.size());\n    std::vector<Iteration> iterations;');
+ s=patch(s,'std::cout<<",\\\"mainDepth\\\":"<<currentDepth','std::cout<<",\\\"ttBudgetBytes\\\":"<<TTArena::budget<<",\\\"ttAllocatedBytes\\\":"<<arena.used.load()<<",\\\"ttDenied\\\":"<<arena.denied.load();std::cout<<",\\\"mainDepth\\\":"<<currentDepth');
+ if(trace){s=patch(s,'Move move;double score=0,spread=0,winRate=0;','Move move;std::vector<double> worldScores;double score=0,spread=0,winRate=0;');s=patch(s,'Row row;row.move=m;double probability=0,mean=0;','Row row;row.move=m;row.worldScores=scores;double probability=0,mean=0;');s=patch(s,'if(r.draw)std::cout','std::cout<<",\\\"worldScores\\\":[";for(size_t i=0;i<r.worldScores.size();i++){if(i)std::cout<<\',\';std::cout<<r.worldScores[i];}std::cout<<\']\';if(r.draw)std::cout');}
+ return s;
+}
+export function build({trial=true,trace=false,sanitize=false}={}){fs.mkdirSync(cache,{recursive:true});fs.mkdirSync(dir,{recursive:true});const name=(trial?'trial':'control')+(trace?'-trace':'')+(sanitize?'-sanitized':''),source=path.resolve(cache+'/'+name+'.cpp'),binary=path.resolve(cache+'/'+name);fs.writeFileSync(source,sourceOf({trial,trace}));const ref=JSON.parse(fs.readFileSync('.cache/time-search/functional/build.json')),flags=sanitize?ref.flags.filter(x=>!['-O3','-DNDEBUG'].includes(x)).concat(['-O1','-g','-fsanitize=address,undefined','-fno-omit-frame-pointer','-DMIST_VERIFY_RESTORE']):ref.flags,r=spawnSync(process.env.CXX||'clang++',[...flags,source,'-o',binary],{encoding:'utf8',timeout:60000});if(r.status!==0)throw Error(r.stderr||String(r.error));const record={trial,trace,sanitize,baselineSourceSha256:ref.sourceSha256,baselineBinarySha256:hash(baseline),sourceSha256:hash(source),binarySha256:hash(binary),flags,compiler:ref.compiler,warnings:r.stderr.trim()};fs.writeFileSync(dir+'/'+name+'-build.json',JSON.stringify(record,null,2)+'\n');return {binary,...record};}
+if(process.argv[1]===fileURLToPath(import.meta.url))console.log(JSON.stringify(build({trial:!process.argv.includes('--control'),trace:process.argv.includes('--trace'),sanitize:process.argv.includes('--sanitize')})));

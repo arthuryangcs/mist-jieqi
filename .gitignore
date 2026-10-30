@@ -42,3 +42,5 @@ dist/
 /benchmarks/time-search/service-health.json
 /benchmarks/tactical-lmr/delivery.json
 /benchmarks/ab-jchess/manifest.json
+
+/benchmarks/cluster-tt/delivery.json

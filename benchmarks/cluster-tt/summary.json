@@ -1,0 +1,366 @@
+{
+  "complete": true,
+  "sourceHashes": {
+    "engine.js": "9250d5440b8572c3473a84c0dec0284c99098387bb16a14a5dc259ac27ce510b",
+    "ai.js": "c4c1494eef9a20c2927b7649110113ddb974990d5289237d24c0fbb97e1fa26a",
+    "native/search.cpp": "3fa98d62f3c1636b831680fcd5dcbf88f9339e966ed1b8e2f8a170b83afcbfb0",
+    "native/bridge.mjs": "7cecb21e3ce1d1e87d9504d9907a4b36d33f31909df4033164f58c68f90e75ab",
+    "search-metrics.js": "9333314da45b554e053f3018b688b255e000b184e1d2794b0b85e87de5a1059e",
+    "scripts/external-engine.js": "6aba8c2768315c580a71143987665667c3d6d0bec21e0282c798c1d5c6268a74",
+    "scripts/native-match-engine.mjs": "f16790ba13f259f37148ee9ec74685bc92dc32ebdf4fc3ed6818ffade2882e2f",
+    "native/experiments/coverage-validation/common.mjs": "ceddb26dddea469d5d748d1bbad7e9d0da5d546bee9af522b6469a11d8301f0d",
+    "native/experiments/coverage-validation/engines.mjs": "06b9d7289b3ad6b45640c4718bd0a0a6781679d6bb1a64094041212b144686e7",
+    "native/experiments/ab-jchess/adapter.mjs": "88c74870000e1fb2806a10a3779d6c5ae04e60cab8b4f5389f1e93f4196d6b13",
+    "native/experiments/ab-jchess/build.mjs": "a5c7ff96621fe320ca951c4df0d1e32568648fb9c508556047fb2d9b4c9c6929",
+    "native/experiments/tactical-lmr/pika.mjs": "6e71f3d482ac60ab49fd8dcd9d5ba2e85bdb054eff95d350f374d212b1220a93",
+    "native/experiments/tactical-lmr/build.mjs": "ca152fc39b498665e6e185a08bb76c8c0a925e24c5814099bfdb7708980e664c",
+    "native/experiments/time-search/build.mjs": "d0357c765e92c4ede9bd2abbd1bc098f606e00cc2b5caa5ed3a57998d230c0cd",
+    "native/experiments/time-search/clock.mjs": "b4fb0a394f237c3673cbfc08ca191394522d5d4cd39e2c6e403532c043b21fc9",
+    "native/experiments/cluster-tt/build.mjs": "c70339795a65d6bd35db2916711d1e81dbc1f0b5ff88911c74850c0d388826ea",
+    "native/experiments/cluster-tt/check.mjs": "c4bae7dd6632c7e0dca3cddf49cbe6d338ee10a2a057f19e7bab877615ef5de6",
+    "native/experiments/cluster-tt/benchmark.mjs": "e6c31a95a615424e95594d2c5978cf64e1d5e80222a2b2e0a72a9cf850ed826b",
+    "native/experiments/cluster-tt/protocol-check.mjs": "6d2ddf204114acdde75e4f4d33efa7471db92173a87739154fde4137c6bb74ca",
+    "native/experiments/cluster-tt/table-check.mjs": "00fc45fe60fe3b909f4a3c67c4eb20cd5e507e98fd669cc85b0d4e1e740daddf",
+    "native/experiments/cluster-tt/table.hpp": "d814598433069a56b9cc14927e0c40d8cf6a8e4ce65954aa924eeb470dbf74ea",
+    "native/experiments/cluster-tt/pika.mjs": "985dddc43244162317781c495050440c93f25418873b8884b57540e99879971e",
+    "native/experiments/cluster-tt/plan.json": "4341832758b0fc610e997f913ebe676ab3512e277cb3e0a224e33fee9126c46a",
+    "native/experiments/cluster-tt/matches.mjs": "e75d7d9258223e1669c38f17be14537ad959f70c50be0eb6c41111259e07a9cc",
+    "native/experiments/cluster-tt/verify.mjs": "8408f726984672474d648453f1e4520d1a694fa58f13e4d88d1c88546ef7ec30"
+  },
+  "summary": {
+    "internal": {
+      "games": 4,
+      "wins": 2,
+      "draws": 1,
+      "losses": 1,
+      "unresolved": 0,
+      "scoreRate": 0.625,
+      "technical": []
+    },
+    "pika": {
+      "baseline": {
+        "games": 4,
+        "wins": 2,
+        "draws": 0,
+        "losses": 2,
+        "unresolved": 0,
+        "scoreRate": 0.5,
+        "technical": []
+      },
+      "trial": {
+        "games": 4,
+        "wins": 1,
+        "draws": 0,
+        "losses": 3,
+        "unresolved": 0,
+        "scoreRate": 0.25,
+        "technical": []
+      }
+    }
+  },
+  "normalOnly": {
+    "internal": {
+      "games": 4,
+      "wins": 2,
+      "draws": 1,
+      "losses": 1,
+      "unresolved": 0,
+      "scoreRate": 0.625,
+      "technical": []
+    },
+    "pika": {
+      "baseline": {
+        "games": 4,
+        "wins": 2,
+        "draws": 0,
+        "losses": 2,
+        "unresolved": 0,
+        "scoreRate": 0.5,
+        "technical": []
+      },
+      "trial": {
+        "games": 4,
+        "wins": 1,
+        "draws": 0,
+        "losses": 3,
+        "unresolved": 0,
+        "scoreRate": 0.25,
+        "technical": []
+      }
+    }
+  },
+  "colors": [
+    {
+      "index": 0,
+      "kind": "internal",
+      "engine": "trial",
+      "candidateSide": "r",
+      "winner": "r",
+      "reason": "将死",
+      "plies": 155,
+      "technical": false
+    },
+    {
+      "index": 1,
+      "kind": "internal",
+      "engine": "trial",
+      "candidateSide": "b",
+      "winner": null,
+      "reason": "120-quiet-plies",
+      "plies": 276,
+      "technical": false
+    },
+    {
+      "index": 2,
+      "kind": "pika",
+      "engine": "baseline",
+      "candidateSide": "r",
+      "winner": "r",
+      "reason": "将死",
+      "plies": 139,
+      "technical": false
+    },
+    {
+      "index": 3,
+      "kind": "pika",
+      "engine": "trial",
+      "candidateSide": "r",
+      "winner": "r",
+      "reason": "黑方重复局面判负",
+      "plies": 76,
+      "technical": false
+    },
+    {
+      "index": 4,
+      "kind": "pika",
+      "engine": "trial",
+      "candidateSide": "b",
+      "winner": "r",
+      "reason": "将死",
+      "plies": 57,
+      "technical": false
+    },
+    {
+      "index": 5,
+      "kind": "pika",
+      "engine": "baseline",
+      "candidateSide": "b",
+      "winner": "r",
+      "reason": "将死",
+      "plies": 43,
+      "technical": false
+    },
+    {
+      "index": 6,
+      "kind": "internal",
+      "engine": "trial",
+      "candidateSide": "r",
+      "winner": "b",
+      "reason": "将死",
+      "plies": 100,
+      "technical": false
+    },
+    {
+      "index": 7,
+      "kind": "internal",
+      "engine": "trial",
+      "candidateSide": "b",
+      "winner": "b",
+      "reason": "将死",
+      "plies": 100,
+      "technical": false
+    },
+    {
+      "index": 8,
+      "kind": "pika",
+      "engine": "trial",
+      "candidateSide": "r",
+      "winner": "b",
+      "reason": "将死",
+      "plies": 76,
+      "technical": false
+    },
+    {
+      "index": 9,
+      "kind": "pika",
+      "engine": "baseline",
+      "candidateSide": "r",
+      "winner": "r",
+      "reason": "将死",
+      "plies": 99,
+      "technical": false
+    },
+    {
+      "index": 10,
+      "kind": "pika",
+      "engine": "baseline",
+      "candidateSide": "b",
+      "winner": "r",
+      "reason": "将死",
+      "plies": 59,
+      "technical": false
+    },
+    {
+      "index": 11,
+      "kind": "pika",
+      "engine": "trial",
+      "candidateSide": "b",
+      "winner": "r",
+      "reason": "将死",
+      "plies": 43,
+      "technical": false
+    }
+  ],
+  "fullmoveChecks": 297,
+  "engines": {
+    "baseline": {
+      "hands": 485,
+      "time": {
+        "n": 485,
+        "min": 5.393554999958724,
+        "p10": 1968.6989850000245,
+        "median": 1972.6903650000168,
+        "p90": 1973.5924599999853,
+        "max": 1975.7259710000362
+      },
+      "ruleOnlyIterations": [],
+      "completedDepth": {
+        "n": 485,
+        "min": 2,
+        "p10": 5,
+        "median": 6,
+        "p90": 9,
+        "max": 10
+      },
+      "selDepth": {
+        "n": 485,
+        "min": 2,
+        "p10": 13,
+        "median": 15,
+        "p90": 16,
+        "max": 18
+      },
+      "reportedDepth": {
+        "n": 485,
+        "min": 2,
+        "p10": 5,
+        "median": 6,
+        "p90": 9,
+        "max": 10
+      },
+      "over2060": 0,
+      "deadlineStops": 0,
+      "fallbacks": 0,
+      "exactStats": 485,
+      "ttReports": 485,
+      "ttDenied": 0,
+      "ttAllocatedBytes": {
+        "n": 485,
+        "min": 720080,
+        "p10": 7200008,
+        "median": 45283024,
+        "p90": 57600064,
+        "max": 57600064
+      }
+    },
+    "trial": {
+      "hands": 441,
+      "time": {
+        "n": 441,
+        "min": 16.43254700000398,
+        "p10": 1969.800114999991,
+        "median": 1973.3975499999942,
+        "p90": 1974.2142069999973,
+        "max": 1976.6265489999787
+      },
+      "ruleOnlyIterations": [
+        {
+          "ply": 276,
+          "nominalIterations": 1196866,
+          "actualVisitedDepth": 0
+        }
+      ],
+      "completedDepth": {
+        "n": 440,
+        "min": 1,
+        "p10": 5,
+        "median": 6,
+        "p90": 9,
+        "max": 11
+      },
+      "selDepth": {
+        "n": 441,
+        "min": 0,
+        "p10": 13,
+        "median": 14,
+        "p90": 17,
+        "max": 19
+      },
+      "reportedDepth": {
+        "n": 440,
+        "min": 1,
+        "p10": 5,
+        "median": 6,
+        "p90": 9,
+        "max": 11
+      },
+      "over2060": 0,
+      "deadlineStops": 0,
+      "fallbacks": 0,
+      "exactStats": 441,
+      "ttReports": 441,
+      "ttDenied": 0,
+      "ttAllocatedBytes": {
+        "n": 441,
+        "min": 67108864,
+        "p10": 67108864,
+        "median": 67108864,
+        "p90": 67108864,
+        "max": 67108864
+      }
+    },
+    "pika": {
+      "hands": 297,
+      "time": {
+        "n": 297,
+        "min": 3.7413999999989755,
+        "p10": 1998.709143999993,
+        "median": 1999.68161900001,
+        "p90": 2000.4713090000005,
+        "max": 2012.7972389999995
+      },
+      "ruleOnlyIterations": [],
+      "completedDepth": null,
+      "selDepth": {
+        "n": 297,
+        "min": 2,
+        "p10": 6,
+        "median": 18,
+        "p90": 32,
+        "max": 54
+      },
+      "reportedDepth": {
+        "n": 297,
+        "min": 7,
+        "p10": 15,
+        "median": 20,
+        "p90": 79,
+        "max": 245
+      },
+      "over2060": 0,
+      "deadlineStops": 0,
+      "fallbacks": 0,
+      "exactStats": 0,
+      "ttReports": 0,
+      "ttDenied": 0,
+      "ttAllocatedBytes": null
+    }
+  },
+  "limits": [
+    "Only two paired layouts;games sharing a layout are correlated. No overall superiority claim.",
+    "Control is stable HCE with resource-normalized TT allocation,not the unchanged original executable.",
+    "Fixed Pika uses canonical own-red orientation;not pooled with historical raw-orientation results.",
+    "Equal time/max threads/TT budget does not equal full process RSS,parallel strategy or internal cycle rules.",
+    "Mist selDepth counts actual halfplies including quiescence/extensions;Pika reported depth is a different implementation metric."
+  ]
+}

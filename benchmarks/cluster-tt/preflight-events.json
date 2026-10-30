@@ -1,0 +1,12 @@
+{
+  "events": [
+    {
+      "stage": "freeze",
+      "reason": "Runner copied old experiment plan path;fresh-layout guard rejected old seeds before matches.json creation. Corrected plan path;no game started,no completed results overwritten."
+    },
+    {
+      "stage": "next",
+      "reason": "Missing frozen manifest following failed freeze;exited before engine startup. No formal technical forfeit."
+    }
+  ]
+}

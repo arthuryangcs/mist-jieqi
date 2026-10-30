@@ -1,0 +1,115 @@
+{
+  "passed": true,
+  "sanitize": false,
+  "views": 24,
+  "transitions": 508,
+  "privacyChecks": 20,
+  "aggregationChecks": 197,
+  "regressions": [
+    {
+      "color": "r",
+      "depth": 2,
+      "sampleLosses": 6,
+      "counts": {
+        "R": 2,
+        "N": 1,
+        "A": 2,
+        "P": 3
+      }
+    },
+    {
+      "color": "b",
+      "depth": 2,
+      "sampleLosses": 6,
+      "counts": {
+        "R": 2,
+        "N": 1,
+        "A": 2,
+        "P": 3
+      }
+    }
+  ],
+  "selective": [
+    {
+      "name": "初始全暗",
+      "depth": 2,
+      "mainDepth": 3,
+      "selDepth": 9,
+      "nodes": 150001,
+      "ttAllocatedBytes": 67108864,
+      "ttDenied": 0
+    },
+    {
+      "name": "可达中局 2111 / 20步",
+      "depth": 3,
+      "mainDepth": 4,
+      "selDepth": 9,
+      "nodes": 150001,
+      "ttAllocatedBytes": 67108864,
+      "ttDenied": 0
+    },
+    {
+      "name": "可达中局 2111 / 44步",
+      "depth": 3,
+      "mainDepth": 4,
+      "selDepth": 10,
+      "nodes": 150001,
+      "ttAllocatedBytes": 67108864,
+      "ttDenied": 0
+    },
+    {
+      "name": "可达中局 2221 / 44步",
+      "depth": 2,
+      "mainDepth": 3,
+      "selDepth": 9,
+      "nodes": 150001,
+      "ttAllocatedBytes": 67108864,
+      "ttDenied": 0
+    },
+    {
+      "name": "全明10子残局",
+      "depth": 4,
+      "mainDepth": 4,
+      "selDepth": 12,
+      "nodes": 38033,
+      "ttAllocatedBytes": 67108864,
+      "ttDenied": 0
+    }
+  ],
+  "controlEquivalence": [
+    {
+      "name": "初始全暗",
+      "nodes": 350001,
+      "depth": 3,
+      "ttAllocatedBytes": 7194088
+    },
+    {
+      "name": "可达中局 2111 / 20步",
+      "nodes": 350001,
+      "depth": 3,
+      "ttAllocatedBytes": 6999112
+    },
+    {
+      "name": "可达中局 2111 / 44步",
+      "nodes": 350001,
+      "depth": 3,
+      "ttAllocatedBytes": 7049152
+    },
+    {
+      "name": "可达中局 2221 / 44步",
+      "nodes": 350001,
+      "depth": 3,
+      "ttAllocatedBytes": 6755392
+    },
+    {
+      "name": "全明10子残局",
+      "nodes": 350001,
+      "depth": 5,
+      "ttAllocatedBytes": 3535856
+    }
+  ],
+  "beyondEight": {
+    "depth": 10,
+    "selDepth": 10
+  }
+}
