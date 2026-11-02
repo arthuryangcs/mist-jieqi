@@ -47,3 +47,14 @@ jobs:
           node native/experiments/cluster-tt/check.mjs
           node native/experiments/cluster-tt/check.mjs --sanitize
           node native/experiments/cluster-tt/control-saturation.mjs
+      - name: Protected null-move prototype
+        run: |
+          node native/experiments/verified-null/build.mjs --control
+          node native/experiments/verified-null/build.mjs
+          node native/experiments/verified-null/build.mjs --trace
+          node native/experiments/verified-null/build.mjs --trace --sanitize
+          node native/experiments/verified-null/null-check.mjs
+          node native/experiments/verified-null/check.mjs
+          node native/experiments/verified-null/check.mjs --sanitize
+          node native/experiments/verified-null/control-saturation.mjs
+          node native/experiments/verified-null/cancel-check.mjs

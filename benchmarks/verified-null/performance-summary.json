@@ -1,0 +1,165 @@
+{
+  "passed": true,
+  "positions": [
+    {
+      "name": "初始全暗",
+      "controlSelDepth": [
+        13,
+        13
+      ],
+      "trialSelDepth": [
+        13,
+        13
+      ],
+      "controlCompletedDepth": [
+        4,
+        4
+      ],
+      "trialCompletedDepth": [
+        4,
+        4
+      ],
+      "trialNullSearches": [
+        0,
+        0
+      ],
+      "trialNullCutoffs": [
+        0,
+        0
+      ],
+      "trialVerifications": [
+        0,
+        0
+      ],
+      "npsRatio": 0.999214513335069
+    },
+    {
+      "name": "可达中局 2111 / 20步",
+      "controlSelDepth": [
+        13,
+        13
+      ],
+      "trialSelDepth": [
+        13,
+        13
+      ],
+      "controlCompletedDepth": [
+        5,
+        5
+      ],
+      "trialCompletedDepth": [
+        5,
+        5
+      ],
+      "trialNullSearches": [
+        15902,
+        15492
+      ],
+      "trialNullCutoffs": [
+        11092,
+        10707
+      ],
+      "trialVerifications": [
+        0,
+        0
+      ],
+      "npsRatio": 0.8862790204750923
+    },
+    {
+      "name": "可达中局 2111 / 44步",
+      "controlSelDepth": [
+        14,
+        14
+      ],
+      "trialSelDepth": [
+        14,
+        14
+      ],
+      "controlCompletedDepth": [
+        5,
+        5
+      ],
+      "trialCompletedDepth": [
+        6,
+        6
+      ],
+      "trialNullSearches": [
+        23313,
+        23987
+      ],
+      "trialNullCutoffs": [
+        18414,
+        18861
+      ],
+      "trialVerifications": [
+        0,
+        0
+      ],
+      "npsRatio": 0.8778972888075969
+    },
+    {
+      "name": "可达中局 2221 / 44步",
+      "controlSelDepth": [
+        13,
+        13
+      ],
+      "trialSelDepth": [
+        13,
+        13
+      ],
+      "controlCompletedDepth": [
+        5,
+        5
+      ],
+      "trialCompletedDepth": [
+        5,
+        5
+      ],
+      "trialNullSearches": [
+        12032,
+        12060
+      ],
+      "trialNullCutoffs": [
+        6796,
+        6804
+      ],
+      "trialVerifications": [
+        0,
+        0
+      ],
+      "npsRatio": 0.9719322203371071
+    },
+    {
+      "name": "全明10子残局",
+      "controlSelDepth": [
+        16,
+        16
+      ],
+      "trialSelDepth": [
+        17,
+        17
+      ],
+      "controlCompletedDepth": [
+        7,
+        7
+      ],
+      "trialCompletedDepth": [
+        8,
+        8
+      ],
+      "trialNullSearches": [
+        32594,
+        32594
+      ],
+      "trialNullCutoffs": [
+        24771,
+        24771
+      ],
+      "trialVerifications": [
+        24771,
+        24771
+      ],
+      "npsRatio": 1.0295524373555507
+    }
+  ]
+}

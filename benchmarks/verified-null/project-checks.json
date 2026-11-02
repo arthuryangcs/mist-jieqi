@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "javascript": {
+    "passed": 151,
+    "failed": 0
+  },
+  "native": {
+    "ruleCases": 72,
+    "transitions": 2172,
+    "searchCases": 16,
+    "passed": true
+  },
+  "http": {
+    "passed": 8,
+    "failed": 0
+  },
+  "defaultSourceUnchanged": true,
+  "browserVisual": "Not performed;prior browser restriction preserved. DOM and real HTTP tests are not browser visual acceptance.",
+  "oldQcheckFilter": "Kept paused;STOP,lock and4/12game evidence untouched."
+}

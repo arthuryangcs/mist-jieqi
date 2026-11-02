@@ -1,0 +1,30 @@
+{
+  "hypothesis": "Protected null-move pruning with reduced legal-position verification at depth>=6 or population<=10. Only selective search changes,not evaluation,priors or TT layout. Virtual pass frames excluded from actual selDepth and mate distance.",
+  "budgetMs": 2000,
+  "graceMs": 60,
+  "maxSearchThreads": 4,
+  "samples": 8,
+  "brightSamples": 1,
+  "maxDepth": 0,
+  "ttBudgetBytes": 67108864,
+  "seeds": [
+    2026110221,
+    2026110223
+  ],
+  "games": 12,
+  "internalGames": 4,
+  "pikaGames": {
+    "baseline": 4,
+    "trial": 4
+  },
+  "control": "Current stable HCE plus64MiB bounded arena map,reserve90000,cap90000/world;null-enabled flag false. Fixed-node parity to original7262d0ab required. Original production executable retained,not changed.",
+  "trial": "Allow only depth>=3,not in check,>=2 legal moves,>=2 own publicly revealed rook/cannon/horse,finite non-mate beta and staticEval>=beta. R=2 plus1 atdepth>=6. Depth>=6 or<=10nonking pieces requires reduced legal-position verification;no nested nulls. Selective heuristic,not mathematically sound zugzwang proof.",
+  "isolation": "Synthetic subtree no TT probes/stores,no real-history repetition claims,no synthetic history/killer updates. Turn restored on normal return and timeout. Separate buffer frames;actual move count and mate distances subtract virtual frames. Stack and cancellation guards retained.",
+  "opponent": "Unchanged fixed Pika bcc83f88/f32d3c6d HCE canonical own-red view,Threads4,Hash64MiB,MoveOverhead0;same normalized reference as Oct30,not pooled with historical raw Pika.",
+  "fairness": "Same host2s/max4threads/TT64MiB ceiling. HCE8worlds(1bright) reset per hand,cap90000/world;Pika persistent search with its own probability model and parallelism. Arena cap not totalRSS;actual TT use differs. HCE35ms core reserve,Pikaoverhead0;effective CPU time not identical.",
+  "rules": "Public third identical board+turn loses mover,mate/stalemate priority,120quietdraw,400cap unresolved. Pika root whitelist excludes immediate losing repeats when alternatives. Internal deep cycle/quiet approximations differ.",
+  "order": "Each fresh layout:trial-stable both colors,then each vs canonical fixed Pika both colors with alternating order. Sequential;readiness outsidehand,observer projection,sampling,protocol validation,transport,stop/cleanup withinbudget.",
+  "stop": "Frozen12game screen,no stopping/tuning by WDL. Preserve failures/unresolved. Pause on userstop,infrastructure problem or actual readable quota<40%;inspect existing processes/logs before resuming. Old qcheck-filter4/12 stays untouched/paused.",
+  "promotion": "Prototype non-default unless reliable independent evidence;two layouts/four games per group cannot establish overall superiority.",
+  "publication": "Reviewed own code,reports and synthetic replay evidence to authorized public mist-jieqi. Exclude credentials,private quota/account/runtime metadata,third-party code/binaries/weights,temporarybuilds. Normal commit/push,no force;verify exactremote and CI. Preserve browser restrictions,user game and unrelated projects."
+}

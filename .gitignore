@@ -44,3 +44,5 @@ dist/
 /benchmarks/ab-jchess/manifest.json
 
 /benchmarks/cluster-tt/delivery.json
+
+/benchmarks/verified-null/delivery.json

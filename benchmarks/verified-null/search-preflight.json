@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "budgetMs": 2000,
+  "rows": [
+    {
+      "viewer": "r",
+      "move": {
+        "from": 83,
+        "to": 67
+      },
+      "depth": 11,
+      "selDepth": 5,
+      "elapsedMs": 1999.2571009999997,
+      "position": {
+        "actual": "xxxxkxxxx/9/1x5x1/x1x1x1x1x/9/9/X1X1X1X1X/1X5X1/9/XXXXKXXXX w R2A2C2P5N2B2r2a2c2p5n2b2 0 1",
+        "expected": "xxxxkxxxx/9/1x5x1/x1x1x1x1x/9/9/X1X1X1X1X/1X5X1/9/XXXXKXXXX w R2A2C2P5N2B2r2a2c2p5n2b2 0 1"
+      },
+      "canonicalOrientation": "identity"
+    },
+    {
+      "viewer": "b",
+      "move": {
+        "from": 0,
+        "to": 1
+      },
+      "depth": 19,
+      "selDepth": 6,
+      "elapsedMs": 1999.8527760000002,
+      "position": {
+        "actual": "xxxxkxxxx/9/1x7/x1x1x1x1x/9/9/X1X1X1X1X/1X5X1/9/XXXXKXXcX w R2A2C2P5N2B2r2a2c1p5n2b2 0 2",
+        "expected": "xxxxkxxxx/9/1x7/x1x1x1x1x/9/9/X1X1X1X1X/1X5X1/9/XXXXKXXcX w R2A2C2P5N2B2r2a2c1p5n2b2 0 2"
+      },
+      "canonicalOrientation": "rotate180+swap"
+    }
+  ]
+}

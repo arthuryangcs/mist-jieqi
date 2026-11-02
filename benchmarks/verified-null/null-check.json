@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "sanitize": false,
+      "output": "ok guards,timeout restore,synthetic TT isolation,mate distance,actual plies"
+    },
+    {
+      "sanitize": true,
+      "output": "ok guards,timeout restore,synthetic TT isolation,mate distance,actual plies"
+    }
+  ]
+}
