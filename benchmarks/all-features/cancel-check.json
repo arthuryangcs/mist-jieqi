@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "stopped": true,
+  "shortBudgets": [
+    {
+      "budgetMs": 30,
+      "elapsedMs": 3.272500000000008,
+      "move": {
+        "from": 54,
+        "to": 45
+      },
+      "deadlineStop": true,
+      "fallbackUsed": true
+    },
+    {
+      "budgetMs": 100,
+      "elapsedMs": 63.80753600000003,
+      "move": {
+        "from": 82,
+        "to": 65
+      },
+      "deadlineStop": true,
+      "fallbackUsed": false
+    },
+    {
+      "budgetMs": 200,
+      "elapsedMs": 156.808176,
+      "move": {
+        "from": 86,
+        "to": 76
+      },
+      "deadlineStop": false,
+      "fallbackUsed": false
+    }
+  ]
+}

@@ -58,3 +58,13 @@ jobs:
           node native/experiments/verified-null/check.mjs --sanitize
           node native/experiments/verified-null/control-saturation.mjs
           node native/experiments/verified-null/cancel-check.mjs
+      - name: All-compatible-features composition and correctness
+        run: |
+          node native/experiments/all-features/build.mjs --control
+          node native/experiments/all-features/build.mjs
+          node native/experiments/all-features/build.mjs --sanitize
+          node native/experiments/all-features/unit-check.mjs
+          node native/experiments/all-features/check.mjs
+          node native/experiments/all-features/check.mjs --sanitize
+          node native/experiments/all-features/control-saturation.mjs
+          node native/experiments/all-features/cancel-check.mjs

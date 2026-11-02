@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "javascript": {
+    "tests": 151,
+    "passed": 151
+  },
+  "native": {
+    "ruleCases": 72,
+    "transitions": 2172,
+    "searchCases": 16
+  },
+  "http": {
+    "tests": 8,
+    "passed": 8
+  },
+  "browser": {
+    "performed": false,
+    "reason": "Previously denied browser access;no browser retry or visual claim."
+  },
+  "releaseSanitizerFixedNodeParity": true
+}

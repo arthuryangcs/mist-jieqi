@@ -46,3 +46,5 @@ dist/
 /benchmarks/cluster-tt/delivery.json
 
 /benchmarks/verified-null/delivery.json
+
+/benchmarks/all-features/delivery.json

@@ -1,0 +1,258 @@
+{
+  "status": "implemented;release and sanitizer correctness checks passed,actual activity observed in representative2s benchmark;formal strength screen pending",
+  "features": [
+    {
+      "id": "incremental-nnue",
+      "selection": "wire-on",
+      "source": "native/experiments/nnue/nnue.hpp",
+      "sourceSha256": "152ecbaaeb3857c413f22351bc2c0c9e7c45193fd0c81caa001899be8cbd2ef5",
+      "reason": "Use existing16-hidden residual model,incremental accumulators,full inventory key and null-turn coherence. Full-forward remains oracle,not simultaneous inference mode."
+    },
+    {
+      "id": "full-activity-and-sliding-mobility",
+      "selection": "wire-on",
+      "source": "ai.js",
+      "sourceSha256": "c4c1494eef9a20c2927b7649110113ddb974990d5289237d24c0fbb97e1fa26a",
+      "reason": "Port activity=true/slidingMobility=true richer piece-square evaluator;simplePSQT and its leaper-only ablation are alternatives covered by this head."
+    },
+    {
+      "id": "generic-mobility",
+      "selection": "wire-on",
+      "source": "ai.js",
+      "sourceSha256": "c4c1494eef9a20c2927b7649110113ddb974990d5289237d24c0fbb97e1fa26a",
+      "reason": "Add nonking public-role/revealed mobility term;no opening-square reward."
+    },
+    {
+      "id": "information-value",
+      "selection": "wire-on",
+      "source": "native/experiments/information-value/policy.hpp",
+      "sourceSha256": "1b04ba80733ed5e5503b4138804db59221c722c8661fb53ed88a9710d387b2c7",
+      "reason": "Original8cp per revealed nonking,capped8/side."
+    },
+    {
+      "id": "defense-threats-and-king",
+      "selection": "wire-on",
+      "source": "native/defense-eval.inc",
+      "sourceSha256": "e1307b935fa5926c90e93bf126779fd6009981790248eca1d34e7950542ddbc5",
+      "reason": "Full pseudo-attack map,both pressure terms;fast hanging-only/king-only variants are alternative evaluators."
+    },
+    {
+      "id": "defense-cache-and-lazy-bounds",
+      "selection": "wire-on",
+      "source": "native/defense-variants.mjs",
+      "sourceSha256": "240d67c88a421d88522f3575569de88ce308a200ccb9e8feaa10ba30191bfc47",
+      "reason": "Adapt cached pressure to full key including inventories;generalize original safe lazy king bound to full pressure magnitude."
+    },
+    {
+      "id": "downside-risk",
+      "selection": "wire-on",
+      "source": "native/experiments/downside-risk/policy.hpp",
+      "sourceSha256": "1cb6718ac510f2ecf5ba9dc166e653b662238e76bb604d5a80674b89dcf78430",
+      "reason": "Original worst-quarter tail loss penalty and common per-tier risk weight."
+    },
+    {
+      "id": "lmr",
+      "selection": "wire-on",
+      "source": "native/experiments/time-search/build.mjs",
+      "sourceSha256": "d0357c765e92c4ede9bd2abbd1bc098f606e00cc2b5caa5ed3a57998d230c0cd",
+      "reason": "Late quiet reduced probes with full-depth re-search on alpha improvement."
+    },
+    {
+      "id": "protected-null",
+      "selection": "wire-on",
+      "source": "native/experiments/verified-null/build.mjs",
+      "sourceSha256": "4e2391c76c7f4921e3d1721bd82c91176736ad16f0e46e3a062f558264348a90",
+      "reason": "Same guarded selective policy;virtual frames excluded,neural turn updated/restored,synthetic TT/history isolated."
+    },
+    {
+      "id": "quiet-checks-and-filter",
+      "selection": "wire-on",
+      "source": "native/experiments/tactical-lmr/build.mjs",
+      "sourceSha256": "ca152fc39b498665e6e185a08bb76c8c0a925e24c5814099bfdb7708980e664c",
+      "reason": "One quiet check per line,bright-only filtered legal query;critical-root dark-reveal checks unioned without duplicate bright moves."
+    },
+    {
+      "id": "critical-tactical-focus",
+      "selection": "wire-on",
+      "source": "native/focus-tactics.inc",
+      "sourceSha256": "866317be8e31e74d5bf3c3b0ede572b3bfc648e43c1b465f5f8d6d5d65613ff0",
+      "reason": "Public king geometry gates optional dark-reveal quiet checks at first q boundary;deduplicate against global bright checks."
+    },
+    {
+      "id": "focused-root-frontier",
+      "selection": "wire-on",
+      "source": "native/frontier-policy.inc",
+      "sourceSha256": "82ebd2156650246603649344100ef2fafd01974926242a5ece68d51fb01b1f2f",
+      "reason": "Champion/leaders/exploration/unstable/tactical quotas,coverage floor andcollapse expansion. One-ply warmup chosen before testing for2s all-feature cost;full-root scoring is mutually exclusive runtime mode."
+    },
+    {
+      "id": "finite-diagnostic-cap-refill",
+      "selection": "conditional-on",
+      "source": "native/frontier-policy.inc",
+      "sourceSha256": "82ebd2156650246603649344100ef2fafd01974926242a5ece68d51fb01b1f2f",
+      "reason": "Refill remaining roots at an explicit diagnostic depth cap;normal play has depth0/time limit,so no artificial ceiling."
+    },
+    {
+      "id": "canonical-root-cache-isolation",
+      "selection": "wire-on",
+      "source": "native/focus-policy.inc",
+      "sourceSha256": "2dc70404bcede263ada103b18456a968ea35c8ba0c572fc8885cbad66157d5d9",
+      "reason": "Root/depth history/killers reset and generation-cleared private TT;strict depth probe for comparable tiers."
+    },
+    {
+      "id": "aspiration2",
+      "selection": "wire-on",
+      "source": "native/aspiration2-variants.mjs",
+      "sourceSha256": "69bfcdb880628f5461e3e15bd26bdb98b9f01863c118cdd93a4ac8082e045ed5",
+      "reason": "Per-root/per-world previous score,radius200,adaptive widening,threefailures->fullwindow;never average bounds. Older fixed-width versions are alternatives."
+    },
+    {
+      "id": "request-thread-pool",
+      "selection": "wire-on",
+      "source": "native/aspiration2-variants.mjs",
+      "sourceSha256": "69bfcdb880628f5461e3e15bd26bdb98b9f01863c118cdd93a4ac8082e045ed5",
+      "reason": "Request-local4workers instead of repeated std::async launches;State/TT remain private per sampled world."
+    },
+    {
+      "id": "clustered-bounded-tt",
+      "selection": "wire-on",
+      "source": "native/experiments/cluster-tt/table.hpp",
+      "sourceSha256": "d814598433069a56b9cc14927e0c40d8cf6a8e4ce65954aa924eeb470dbf74ea",
+      "reason": "Two-way full-key depth replacement,64MiB request cap,generation clear. NNUE inventory expands slots to128bytes;old64-byte layout/map/linear probe mutually exclusive."
+    },
+    {
+      "id": "standpat-early-exit",
+      "selection": "wire-on",
+      "source": "native/experiments/standpat/build.mjs",
+      "sourceSha256": "7a39606e9ac84b442e83396e5e313ccbb11d34d7067f57786652e03a6fabe74a",
+      "reason": "Probe a legal move before accepting standpat;stalemate remains loss."
+    },
+    {
+      "id": "king-geometry",
+      "selection": "wire-on",
+      "source": "native/experiments/king-geometry/build.mjs",
+      "sourceSha256": "01eb4d694cd251a59b0d39c937cf6f3cd7bccc983626b6f2e35715b0a819dfb0",
+      "reason": "Precomputed sensitivity masks,legal oracle remains."
+    },
+    {
+      "id": "piece-square-mask",
+      "selection": "wire-on",
+      "source": "native/experiments/piece-mask/build.mjs",
+      "sourceSha256": "9e2c05addead073b46c003a02b15eaf6da37b955577be685e66234cd436d168f",
+      "reason": "Incremental active-piece square masks with scan oracle."
+    },
+    {
+      "id": "cycle-parity",
+      "selection": "wire-on",
+      "source": "native/experiments/cycle-parity/cycle.hpp",
+      "sourceSha256": "debe6244bb24463ebc3252cbf3078bf316ed9ff1e0b2a21d3deff48a400333fd",
+      "reason": "Same-turn scan only on real alternating history;null synthetic frames excluded."
+    },
+    {
+      "id": "stable-insertion-sort",
+      "selection": "wire-on",
+      "source": "native/experiments/insertion-sort/build.mjs",
+      "sourceSha256": "394a0c5097592aa1d1a4d4bfd5e4594c37a50e424353c43a5de0bdb9803bc8e4",
+      "reason": "Replace stable_sort of node move scores;strict comparison preserves ties."
+    },
+    {
+      "id": "direct-pseudo-movegen",
+      "selection": "wire-on",
+      "source": "native/movegen-variants.mjs",
+      "sourceSha256": "787d4d8600cd3e24d3c0dab338615b2a94232ab0beb7a6e17c3de12a8401bbeb",
+      "reason": "Use existing direct generator,check exact order against scan oracle;safe-ray baseline shortcuts remain covered."
+    },
+    {
+      "id": "precomputed-attack-rays",
+      "selection": "wire-on",
+      "source": "native/window-variants.mjs",
+      "sourceSha256": "33838ff8ca85faf4316817c1e52dc24eb0a99555304861fea324cc28ca26689d",
+      "reason": "Precompute ray coordinates for inCheck;kingGeometry complements this."
+    },
+    {
+      "id": "balanced-sample-count",
+      "selection": "choice",
+      "source": "ai.js",
+      "sourceSha256": "c4c1494eef9a20c2927b7649110113ddb974990d5289237d24c0fbb97e1fa26a",
+      "reason": "15legal without-replacement worlds (1bright) instead of8;not exhaustive15! enumeration,not truth."
+    },
+    {
+      "id": "host-reserve40ms",
+      "selection": "wire-on",
+      "source": "docs/experiments/clock-reserve.md",
+      "sourceSha256": "e0ad723e709f64599cc70d6ba743be3a697572452a1c3175ac21b7d597e6f9ba",
+      "reason": "Apply40ms shared host reserve to combo,stable and fixedPika within same2000ms budget;keep core safetyreserve."
+    },
+    {
+      "id": "baseline-enabled-features",
+      "selection": "already-on",
+      "source": "native/search.cpp",
+      "sourceSha256": "3fa98d62f3c1636b831680fcd5dcbf88f9339e966ed1b8e2f8a170b83afcbfb0",
+      "reason": "PVS,history/killers,check extensions,quiescence captures/evasions,scored buffers,fixed destinations,TT existing-key refresh,public-role reveal ordering,private dark capture accounting,no artificial main depth cap."
+    },
+    {
+      "id": "negative-ablation-switches",
+      "selection": "excluded",
+      "source": "ai.js",
+      "sourceSha256": "c4c1494eef9a20c2927b7649110113ddb974990d5289237d24c0fbb97e1fa26a",
+      "reason": "Never disable privacy,legal rules,killer safety,stock conditioning,cancellation or stack guards."
+    },
+    {
+      "id": "legacy-single-thread-and-depth8",
+      "selection": "excluded",
+      "source": "native/window-variants.mjs",
+      "sourceSha256": "33838ff8ca85faf4316817c1e52dc24eb0a99555304861fea324cc28ca26689d",
+      "reason": "Alternative resource settings contradict current max4threads/time-controlled no-cap request."
+    }
+  ],
+  "model": {
+    "path": "models/experimental/observation-nnue-v1.bin",
+    "sha256": "0b3ccf77fb30ce16ccdeaceb198bf7a114cee7b8a084643adac0d14887090edb",
+    "bytes": 166364,
+    "provenance": "Own random-init network trained on48self-generated games/8layouts,5trainlayouts;actual referee outcomes,not engine scores. No training this round;unproven strength.",
+    "license": "Existing project GPLv3,already public own weights."
+  },
+  "plannedMatch": {
+    "budgetMs": 2000,
+    "sharedHostReserveMs": 40,
+    "threadsMax": 4,
+    "ttCapMiB": 64,
+    "layouts": 4,
+    "games": 24,
+    "internal": 8,
+    "stablePika": 8,
+    "comboPika": 8,
+    "seeds": [
+      2026110241,
+      2026110243,
+      2026110247,
+      2026110249
+    ],
+    "promotion": false
+  },
+  "preserved": "Production HCE/service/usergame/model settings and oldqcheck-filterSTOP/lock/4of12 records untouched.",
+  "observedBenchmarkCounters": {
+    "nnueEvaluations": 7619668,
+    "nnueUpdates": 47181383,
+    "fullActivityEvaluations": 7619668,
+    "pressureCacheHits": 2008558,
+    "pressureCacheMisses": 4470308,
+    "lazyBounds": 1140802,
+    "ttProbes": 803751,
+    "ttHits": 174772,
+    "canonicalClears": 14231,
+    "poolTasks": 3680,
+    "windowAttempts": 2823,
+    "windowFailures": 138,
+    "windowFullFallbacks": 30,
+    "lmrSearches": 145333,
+    "lmrResearches": 2313,
+    "nullSearches": 5885,
+    "nullCutoffs": 1467,
+    "nullVerifications": 1407,
+    "quietQueries": 2104061,
+    "quietAdded": 440739,
+    "quietSearched": 284246,
+    "criticalQuietAdded": 16463
+  }
+}
