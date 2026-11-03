@@ -1,0 +1,178 @@
+{
+  "createdAt": "2026-11-03T16:31:29.747Z",
+  "fixtureSha256": "b02fe3de2dabda4ff18cd3ca929941d8af6944a738170af2a9b35a1fc6729c94",
+  "pikaCommit": "bcc83f88ee18760e60903d1a3aaa61ef6f70f2c9",
+  "pikaHash": "f32d3c6dfe4d6d90da7728d9cc2af68c3195a1cefb1bc28f3829f174c518dba1",
+  "candidateSourceSha256": "855cccb05cff5a4eb3efa919546f41d7b66ae7b852490ecf0b81115f7f9f20d0",
+  "candidateBinarySha256": "17284b7e3b2cceb7e70d378788c591990add1c10785e09a0b7a0094951807d15",
+  "c6BinarySha256": "55420db70b7f091a1c027301215f7bc2e299f9386846e5bda2e2ccfefcfa4f9f",
+  "budgetMs": 2000,
+  "threadsMaximum": 4,
+  "ttMiBMaximum": 64,
+  "repeats": 6,
+  "requests": 252,
+  "darkSamples": 8,
+  "originalHCE": true,
+  "fullRoots": true,
+  "engines": [
+    "geometry",
+    "c6",
+    "pika"
+  ],
+  "timing": "fresh/reaped process each request,all6orders balanced, ready before clock",
+  "retentionGate": {
+    "geoNpsVsC6AtLeast": 1.03,
+    "worstLongPositionVsC6AtLeast": 0.97,
+    "noTechnicalEvents": true
+  },
+  "goal": "every original preselected long-view native NPS over fixedPika; original failures not replaced. New confirmation separately evaluated, not universal strength proof.",
+  "limits": [
+    "11new observer views relative to checked fixtures and known repeated full initial control",
+    "Sparse endings inventory-valid edits, reachability not asserted",
+    "All histories reset0 for static-position speed comparison",
+    "Native node semantics differ,8worlds already summed",
+    "Same2s/max4/TT64 caps;reserve/utilization/RSS differ"
+  ],
+  "positions": [
+    {
+      "name": "gather-confirmation/opening/9720001/0",
+      "category": "opening",
+      "origin": "generated legal-play public observer view",
+      "pieces": 32,
+      "hidden": 30,
+      "roots": 44,
+      "observationHash": "af147cbf21007e455b1face0ced553e3c119f24c0b0237d90173296486023a9a",
+      "partition": "repeated-initial-control"
+    },
+    {
+      "name": "gather-confirmation/opening/9720017/3",
+      "category": "opening",
+      "origin": "generated legal-play public observer view",
+      "pieces": 32,
+      "hidden": 27,
+      "roots": 41,
+      "observationHash": "9fd156443837d777a48ca0dd4c88ab989793d140b1e0b73d46d2e12c1c6c5cb1",
+      "partition": "independent-confirmation"
+    },
+    {
+      "name": "gather-confirmation/opening/9720031/8",
+      "category": "opening",
+      "origin": "generated legal-play public observer view",
+      "pieces": 32,
+      "hidden": 23,
+      "roots": 26,
+      "observationHash": "80164e72c91bd8047a9941bb39ffb0fdffa6825589bad6c3f0c8f35007e6c95d",
+      "partition": "independent-confirmation"
+    },
+    {
+      "name": "gather-confirmation/opening/9720049/11",
+      "category": "opening",
+      "origin": "generated legal-play public observer view",
+      "pieces": 31,
+      "hidden": 22,
+      "roots": 31,
+      "observationHash": "40591d1105d5c98076ad0cbe92f21c2d5ab01faa3ecd964fc7faeea6496834ae",
+      "partition": "independent-confirmation"
+    },
+    {
+      "name": "gather-confirmation/middle/9720203/28",
+      "category": "middle",
+      "origin": "generated legal-play public observer view",
+      "pieces": 31,
+      "hidden": 14,
+      "roots": 53,
+      "observationHash": "178a91fa08c9dd1026ddb91f8b3aec444380357516d8f4858ca28a50e35c7636",
+      "partition": "independent-confirmation"
+    },
+    {
+      "name": "gather-confirmation/middle/9720217/41",
+      "category": "middle",
+      "origin": "generated legal-play public observer view",
+      "pieces": 31,
+      "hidden": 6,
+      "roots": 29,
+      "observationHash": "78e9aaafe1114d88e014b83e3a6eb78c24e8f515210363e9a830938a58f31ccb",
+      "partition": "independent-confirmation"
+    },
+    {
+      "name": "gather-confirmation/middle/9720229/54",
+      "category": "middle",
+      "origin": "generated legal-play public observer view",
+      "pieces": 25,
+      "hidden": 6,
+      "roots": 44,
+      "observationHash": "54219b3538773cec81aa675da89e139eec24dbbf1b8644df6232ab722df6644f",
+      "partition": "independent-confirmation"
+    },
+    {
+      "name": "gather-confirmation/middle/9720241/67",
+      "category": "middle",
+      "origin": "generated legal-play public observer view",
+      "pieces": 29,
+      "hidden": 9,
+      "roots": 42,
+      "observationHash": "bffd91fce8612f285c4887beb37deabf09984b2c20119e3bf4696222e797f18d",
+      "partition": "independent-confirmation"
+    },
+    {
+      "name": "gather-confirmation/ending/9720915/0",
+      "category": "ending",
+      "origin": "edited inventory-valid sparse public view; reachability not asserted",
+      "pieces": 8,
+      "hidden": 0,
+      "roots": 21,
+      "observationHash": "0e19c0cedaca5c0e11179ae9da4a24f451f310987dca759b2df4387a0cefe8b8",
+      "partition": "independent-confirmation"
+    },
+    {
+      "name": "gather-confirmation/ending/9721122/0",
+      "category": "ending",
+      "origin": "edited inventory-valid sparse public view; reachability not asserted",
+      "pieces": 8,
+      "hidden": 0,
+      "roots": 6,
+      "observationHash": "142f80b93d4a0252763c5168e3ae82925d7b0c6dd70da57c2c608cc441b64c61",
+      "partition": "independent-confirmation"
+    },
+    {
+      "name": "gather-confirmation/ending/9721331/0",
+      "category": "ending",
+      "origin": "edited inventory-valid sparse public view; reachability not asserted",
+      "pieces": 12,
+      "hidden": 0,
+      "roots": 4,
+      "observationHash": "d55fdbcc85bf7a0d460a551b779406679cf345a164bad005b2350f306e90696b",
+      "partition": "independent-confirmation"
+    },
+    {
+      "name": "gather-confirmation/ending/9721552/0",
+      "category": "ending",
+      "origin": "edited inventory-valid sparse public view, first admissible 1..3 roots",
+      "pieces": 10,
+      "hidden": 0,
+      "roots": 2,
+      "observationHash": "a600d901eace6a564128ac63cd921aab0f0c8e806ab488f875a44e341724d2c1",
+      "partition": "independent-confirmation"
+    },
+    {
+      "name": "near-confirmation/ending/9711333/0",
+      "category": "ending",
+      "origin": "edited inventory-valid sparse public view; reachability not asserted",
+      "pieces": 8,
+      "hidden": 0,
+      "roots": 26,
+      "observationHash": "7e00b8d4db2456582a86cde790a0097773ee4a8bff71819650d38747341d3162",
+      "partition": "seen-challenge"
+    },
+    {
+      "name": "near-confirmation/ending/9711560/0",
+      "category": "ending",
+      "origin": "edited inventory-valid sparse public view, first admissible 1..3 roots",
+      "pieces": 12,
+      "hidden": 0,
+      "roots": 1,
+      "observationHash": "725130592c34ea280cb3b05e9fde0b7a5746b8f8b0cd9046e974261b081653e1",
+      "partition": "seen-challenge"
+    }
+  ]
+}

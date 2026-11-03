@@ -1,0 +1,933 @@
+{
+  "completed": true,
+  "requests": 216,
+  "technical": [],
+  "longViews": 12,
+  "abovePika": 11,
+  "geoNpsVsC6": 1.0683953630780283,
+  "worstVsC6": 1.0033050702359347,
+  "retentionGatePassed": true,
+  "allOriginalLongAbovePika": false,
+  "limits": [
+    "Seen development set, not holdout",
+    "6repeats descriptive; no statistical strength proof",
+    "Native node definitions differ; total8worlds already summed",
+    "Same2s/max4/TT64 caps; reserve/actual utilization/RSS differ",
+    "Pika mainDepth field is raw UCI depth, not equated with Mist actual halfmoves",
+    "All short or technical cases preserved; no case replacements"
+  ],
+  "rows": [
+    {
+      "name": "overlay-holdout/opening/900603/0",
+      "category": "opening",
+      "engines": {
+        "geometry": {
+          "nps": 5990601.609268121,
+          "wallMs": 1935.3118735000025,
+          "nodes": 11592907.5,
+          "mainDepth": 6.0,
+          "completedDepth": 5.0,
+          "selDepth": 14.0,
+          "npsMinMax": [
+            5227920.5828906745,
+            6395297.256437889
+          ],
+          "wallMinMax": [
+            1934.4140619999962,
+            1938.366094
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            8
+          ],
+          "n": 6
+        },
+        "c6": {
+          "nps": 5407789.9542357875,
+          "wallMs": 1935.3531795000017,
+          "nodes": 10466002.0,
+          "mainDepth": 6.0,
+          "completedDepth": 5.0,
+          "selDepth": 14.0,
+          "npsMinMax": [
+            4850233.197906068,
+            5901036.188424381
+          ],
+          "wallMinMax": [
+            1933.332831000007,
+            1935.9648530000122
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            8
+          ],
+          "n": 6
+        },
+        "pika": {
+          "nps": 5777897.460055918,
+          "wallMs": 1960.2907284999965,
+          "nodes": 11332772.5,
+          "mainDepth": 12.0,
+          "completedDepth": null,
+          "selDepth": 6.0,
+          "npsMinMax": [
+            5110553.274131803,
+            6134943.449146422
+          ],
+          "wallMinMax": [
+            1959.543411999999,
+            1962.3166360000005
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [],
+          "n": 6
+        }
+      },
+      "long": true,
+      "ratioVsC6": 1.1077726132051102,
+      "ratioVsPika": 1.036813417109369
+    },
+    {
+      "name": "overlay-holdout/opening/900617/3",
+      "category": "opening",
+      "engines": {
+        "geometry": {
+          "nps": 7014574.576520432,
+          "wallMs": 1935.4904489999944,
+          "nodes": 13573968.0,
+          "mainDepth": 7.0,
+          "completedDepth": 6.0,
+          "selDepth": 14.0,
+          "npsMinMax": [
+            6440238.33216632,
+            7446861.956483621
+          ],
+          "wallMinMax": [
+            1934.562063999998,
+            1936.4677759999904
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            8
+          ],
+          "n": 6
+        },
+        "c6": {
+          "nps": 6725111.172312673,
+          "wallMs": 1934.6685040000157,
+          "nodes": 13011795.0,
+          "mainDepth": 7.0,
+          "completedDepth": 6.0,
+          "selDepth": 14.0,
+          "npsMinMax": [
+            6140894.550088867,
+            7395146.039176202
+          ],
+          "wallMinMax": [
+            1934.0432239999936,
+            1936.290282
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            8
+          ],
+          "n": 6
+        },
+        "pika": {
+          "nps": 9076435.324678132,
+          "wallMs": 1960.036288999996,
+          "nodes": 17796910.5,
+          "mainDepth": 33.0,
+          "completedDepth": null,
+          "selDepth": 5.0,
+          "npsMinMax": [
+            8205747.588154303,
+            9789718.365226578
+          ],
+          "wallMinMax": [
+            1959.477899999998,
+            1960.9701839999998
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [],
+          "n": 6
+        }
+      },
+      "long": true,
+      "ratioVsC6": 1.043042173845316,
+      "ratioVsPika": 0.7728336429003511
+    },
+    {
+      "name": "overlay-holdout/opening/900631/8",
+      "category": "opening",
+      "engines": {
+        "geometry": {
+          "nps": 8492611.02259735,
+          "wallMs": 1935.246524999995,
+          "nodes": 16437453.0,
+          "mainDepth": 6.0,
+          "completedDepth": 5.0,
+          "selDepth": 14.0,
+          "npsMinMax": [
+            7489871.555694295,
+            9662047.040135734
+          ],
+          "wallMinMax": [
+            1934.7602660000011,
+            1935.9928730000101
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            8
+          ],
+          "n": 6
+        },
+        "c6": {
+          "nps": 8036598.071274536,
+          "wallMs": 1935.2181484999892,
+          "nodes": 15546258.5,
+          "mainDepth": 6.0,
+          "completedDepth": 5.0,
+          "selDepth": 14.0,
+          "npsMinMax": [
+            6755374.141029249,
+            8441450.837582476
+          ],
+          "wallMinMax": [
+            1934.3985419999808,
+            1936.5956239999996
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            8
+          ],
+          "n": 6
+        },
+        "pika": {
+          "nps": 5636173.430051386,
+          "wallMs": 1959.960073499984,
+          "nodes": 11050034.5,
+          "mainDepth": 20.0,
+          "completedDepth": null,
+          "selDepth": 12.0,
+          "npsMinMax": [
+            5092983.156301325,
+            6011067.691822898
+          ],
+          "wallMinMax": [
+            1959.6520730000047,
+            1961.0754469999993
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [],
+          "n": 6
+        }
+      },
+      "long": true,
+      "ratioVsC6": 1.0567420377725192,
+      "ratioVsPika": 1.5068044175709336
+    },
+    {
+      "name": "overlay-holdout/opening/900649/11",
+      "category": "opening",
+      "engines": {
+        "geometry": {
+          "nps": 6612216.7992088,
+          "wallMs": 1935.585152500018,
+          "nodes": 12799252.5,
+          "mainDepth": 6.0,
+          "completedDepth": 5.0,
+          "selDepth": 14.0,
+          "npsMinMax": [
+            6389247.883112674,
+            7110439.952107275
+          ],
+          "wallMinMax": [
+            1933.7057189999905,
+            1935.8279739999998
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            8
+          ],
+          "n": 6
+        },
+        "c6": {
+          "nps": 6495563.96836606,
+          "wallMs": 1934.6011614999952,
+          "nodes": 12564584.0,
+          "mainDepth": 6.0,
+          "completedDepth": 5.0,
+          "selDepth": 14.0,
+          "npsMinMax": [
+            5750732.932017185,
+            6777240.924657729
+          ],
+          "wallMinMax": [
+            1934.2251050000195,
+            1935.7061319999993
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            8
+          ],
+          "n": 6
+        },
+        "pika": {
+          "nps": 5073973.262206662,
+          "wallMs": 1960.0138444999757,
+          "nodes": 9944730.0,
+          "mainDepth": 14.0,
+          "completedDepth": null,
+          "selDepth": 14.0,
+          "npsMinMax": [
+            4400512.376507572,
+            5493418.348098059
+          ],
+          "wallMinMax": [
+            1959.7533629999962,
+            1960.6577030000008
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [],
+          "n": 6
+        }
+      },
+      "long": true,
+      "ratioVsC6": 1.0179588456692674,
+      "ratioVsPika": 1.303163508656953
+    },
+    {
+      "name": "overlay-holdout/middle/900803/28",
+      "category": "middle",
+      "engines": {
+        "geometry": {
+          "nps": 5860367.655099543,
+          "wallMs": 1935.5231539999986,
+          "nodes": 11347159.0,
+          "mainDepth": 7.0,
+          "completedDepth": 6.0,
+          "selDepth": 15.0,
+          "npsMinMax": [
+            5599977.701223477,
+            6667409.841926417
+          ],
+          "wallMinMax": [
+            1934.8060650000116,
+            1936.5069409999996
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            8
+          ],
+          "n": 6
+        },
+        "c6": {
+          "nps": 5841062.533174913,
+          "wallMs": 1934.8671095000027,
+          "nodes": 11305114.0,
+          "mainDepth": 7.0,
+          "completedDepth": 6.0,
+          "selDepth": 15.0,
+          "npsMinMax": [
+            5617661.253125971,
+            6540364.465455616
+          ],
+          "wallMinMax": [
+            1934.5954650000022,
+            1935.6251510000002
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            8
+          ],
+          "n": 6
+        },
+        "pika": {
+          "nps": 4785534.604942262,
+          "wallMs": 1960.1605315000124,
+          "nodes": 9379817.0,
+          "mainDepth": 17.5,
+          "completedDepth": null,
+          "selDepth": 17.5,
+          "npsMinMax": [
+            4034021.2572206035,
+            4947655.725440494
+          ],
+          "wallMinMax": [
+            1959.735338999977,
+            1960.7073180000007
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [],
+          "n": 6
+        }
+      },
+      "long": true,
+      "ratioVsC6": 1.0033050702359347,
+      "ratioVsPika": 1.2246004133053905
+    },
+    {
+      "name": "overlay-holdout/middle/900817/41",
+      "category": "middle",
+      "engines": {
+        "geometry": {
+          "nps": 8323655.802186788,
+          "wallMs": 1935.2746819999884,
+          "nodes": 16100001.5,
+          "mainDepth": 7.0,
+          "completedDepth": 6.0,
+          "selDepth": 14.0,
+          "npsMinMax": [
+            7848817.637503464,
+            8683583.37890136
+          ],
+          "wallMinMax": [
+            1934.2067490000045,
+            1935.7632979999908
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            8
+          ],
+          "n": 6
+        },
+        "c6": {
+          "nps": 7976780.37764632,
+          "wallMs": 1935.732915999979,
+          "nodes": 15441920.0,
+          "mainDepth": 7.0,
+          "completedDepth": 6.0,
+          "selDepth": 14.0,
+          "npsMinMax": [
+            7217738.688369271,
+            8223844.364884301
+          ],
+          "wallMinMax": [
+            1934.2051349999965,
+            1938.1101049999997
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            8
+          ],
+          "n": 6
+        },
+        "pika": {
+          "nps": 3879842.4906558497,
+          "wallMs": 1960.2149919999938,
+          "nodes": 7606042.5,
+          "mainDepth": 18.0,
+          "completedDepth": null,
+          "selDepth": 25.5,
+          "npsMinMax": [
+            3674037.6497317734,
+            4560539.072605587
+          ],
+          "wallMinMax": [
+            1959.2191070000117,
+            1961.0817000000025
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [],
+          "n": 6
+        }
+      },
+      "long": true,
+      "ratioVsC6": 1.0434856430938644,
+      "ratioVsPika": 2.145359205234065
+    },
+    {
+      "name": "overlay-holdout/middle/900829/54",
+      "category": "middle",
+      "engines": {
+        "geometry": {
+          "nps": 5863403.14683385,
+          "wallMs": 1934.9835370000073,
+          "nodes": 11344191.0,
+          "mainDepth": 6.0,
+          "completedDepth": 5.0,
+          "selDepth": 14.0,
+          "npsMinMax": [
+            5407251.760830817,
+            6100503.561212866
+          ],
+          "wallMinMax": [
+            1934.321448999981,
+            1935.565522000019
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            8
+          ],
+          "n": 6
+        },
+        "c6": {
+          "nps": 5687221.885625605,
+          "wallMs": 1935.045814000001,
+          "nodes": 11005866.0,
+          "mainDepth": 6.0,
+          "completedDepth": 5.0,
+          "selDepth": 14.0,
+          "npsMinMax": [
+            5180861.101104895,
+            5909874.815738705
+          ],
+          "wallMinMax": [
+            1934.5734650000231,
+            1935.2104049999907
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            8
+          ],
+          "n": 6
+        },
+        "pika": {
+          "nps": 4346739.337032911,
+          "wallMs": 1960.0454800000007,
+          "nodes": 8520195.5,
+          "mainDepth": 15.5,
+          "completedDepth": null,
+          "selDepth": 18.5,
+          "npsMinMax": [
+            4123926.623982057,
+            4663315.8163462505
+          ],
+          "wallMinMax": [
+            1959.4098740000045,
+            1960.7206279999955
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [],
+          "n": 6
+        }
+      },
+      "long": true,
+      "ratioVsC6": 1.0309784398694803,
+      "ratioVsPika": 1.3489198896468024
+    },
+    {
+      "name": "overlay-holdout/middle/900841/67",
+      "category": "middle",
+      "engines": {
+        "geometry": {
+          "nps": 7067682.967140343,
+          "wallMs": 1935.491062000001,
+          "nodes": 13681031.5,
+          "mainDepth": 6.0,
+          "completedDepth": 5.0,
+          "selDepth": 14.0,
+          "npsMinMax": [
+            5907136.53961046,
+            7374569.84865446
+          ],
+          "wallMinMax": [
+            1934.759698000009,
+            1936.2618150000053
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            8
+          ],
+          "n": 6
+        },
+        "c6": {
+          "nps": 6469525.238039501,
+          "wallMs": 1935.2172810000084,
+          "nodes": 12522027.5,
+          "mainDepth": 6.0,
+          "completedDepth": 5.0,
+          "selDepth": 14.0,
+          "npsMinMax": [
+            5866735.622199694,
+            6853192.183198294
+          ],
+          "wallMinMax": [
+            1934.4582269999955,
+            1935.7486079999944
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            8
+          ],
+          "n": 6
+        },
+        "pika": {
+          "nps": 3560987.3314313516,
+          "wallMs": 1960.1658080000052,
+          "nodes": 6980125.0,
+          "mainDepth": 18.0,
+          "completedDepth": null,
+          "selDepth": 24.5,
+          "npsMinMax": [
+            3334320.9261328676,
+            4053781.3941871156
+          ],
+          "wallMinMax": [
+            1959.5595389999798,
+            1961.9692119999963
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [],
+          "n": 6
+        }
+      },
+      "long": true,
+      "ratioVsC6": 1.0924577472213564,
+      "ratioVsPika": 1.9847537520723115
+    },
+    {
+      "name": "overlay-holdout/ending/900913/0",
+      "category": "ending",
+      "engines": {
+        "geometry": {
+          "nps": 7833115.923140587,
+          "wallMs": 1928.5357830000066,
+          "nodes": 15106687.5,
+          "mainDepth": 8.0,
+          "completedDepth": 7.0,
+          "selDepth": 16.0,
+          "npsMinMax": [
+            7521900.349039261,
+            8424305.266817447
+          ],
+          "wallMinMax": [
+            1928.2807969999994,
+            1928.855435000005
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            1
+          ],
+          "n": 6
+        },
+        "c6": {
+          "nps": 7024258.050412741,
+          "wallMs": 1928.454325000028,
+          "nodes": 13547180.0,
+          "mainDepth": 8.0,
+          "completedDepth": 7.0,
+          "selDepth": 16.0,
+          "npsMinMax": [
+            6267232.323662756,
+            7929107.550754277
+          ],
+          "wallMinMax": [
+            1927.9636330000067,
+            1928.6909029999952
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            1
+          ],
+          "n": 6
+        },
+        "pika": {
+          "nps": 5725095.700491454,
+          "wallMs": 1959.6225434999942,
+          "nodes": 11216726.5,
+          "mainDepth": 25.0,
+          "completedDepth": null,
+          "selDepth": 30.5,
+          "npsMinMax": [
+            4820538.054147758,
+            6515502.323161174
+          ],
+          "wallMinMax": [
+            1959.1671970000025,
+            1960.5068079999983
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [],
+          "n": 6
+        }
+      },
+      "long": true,
+      "ratioVsC6": 1.1151520725637805,
+      "ratioVsPika": 1.3682069842899178
+    },
+    {
+      "name": "overlay-holdout/ending/901122/0",
+      "category": "ending",
+      "engines": {
+        "geometry": {
+          "nps": 7836171.509670544,
+          "wallMs": 1928.1965974999912,
+          "nodes": 15111313.0,
+          "mainDepth": 11.0,
+          "completedDepth": 10.0,
+          "selDepth": 17.0,
+          "npsMinMax": [
+            7433864.642280106,
+            8016282.279646326
+          ],
+          "wallMinMax": [
+            1928.0468929999624,
+            1928.5291560000041
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            1
+          ],
+          "n": 6
+        },
+        "c6": {
+          "nps": 7239711.440721176,
+          "wallMs": 1928.3934645000081,
+          "nodes": 13962132.5,
+          "mainDepth": 10.0,
+          "completedDepth": 9.0,
+          "selDepth": 16.0,
+          "npsMinMax": [
+            6827713.990142821,
+            7538068.8154468415
+          ],
+          "wallMinMax": [
+            1928.0080860000162,
+            1928.7672299999977
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            1
+          ],
+          "n": 6
+        },
+        "pika": {
+          "nps": 6810161.535037985,
+          "wallMs": 1959.696022499993,
+          "nodes": 13347796.0,
+          "mainDepth": 80.5,
+          "completedDepth": null,
+          "selDepth": 26.0,
+          "npsMinMax": [
+            6085653.950844494,
+            7412169.632325318
+          ],
+          "wallMinMax": [
+            1959.1171599999652,
+            1960.303488000005
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [],
+          "n": 6
+        }
+      },
+      "long": true,
+      "ratioVsC6": 1.0823872710719467,
+      "ratioVsPika": 1.1506586839906487
+    },
+    {
+      "name": "overlay-holdout/ending/901331/0",
+      "category": "ending",
+      "engines": {
+        "geometry": {
+          "nps": 10348586.500908181,
+          "wallMs": 1928.3520474999968,
+          "nodes": 19956876.0,
+          "mainDepth": 8.0,
+          "completedDepth": 7.0,
+          "selDepth": 14.0,
+          "npsMinMax": [
+            9649357.641548803,
+            10782091.325437069
+          ],
+          "wallMinMax": [
+            1928.044974999997,
+            1928.6611830000184
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            1
+          ],
+          "n": 6
+        },
+        "c6": {
+          "nps": 9579006.00019319,
+          "wallMs": 1928.158072499995,
+          "nodes": 18470354.0,
+          "mainDepth": 8.0,
+          "completedDepth": 7.0,
+          "selDepth": 14.0,
+          "npsMinMax": [
+            8367755.982984492,
+            9762010.585682841
+          ],
+          "wallMinMax": [
+            1927.7612010000157,
+            1928.3375770000275
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            1
+          ],
+          "n": 6
+        },
+        "pika": {
+          "nps": 4670216.674294887,
+          "wallMs": 1959.729018500002,
+          "nodes": 9153270.5,
+          "mainDepth": 24.0,
+          "completedDepth": null,
+          "selDepth": 32.5,
+          "npsMinMax": [
+            4378233.944375606,
+            4948178.098605765
+          ],
+          "wallMinMax": [
+            1959.0198209999944,
+            1960.7947829999612
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [],
+          "n": 6
+        }
+      },
+      "long": true,
+      "ratioVsC6": 1.0803403297481462,
+      "ratioVsPika": 2.2158686036704323
+    },
+    {
+      "name": "overlay-holdout/ending/901544/0",
+      "category": "ending",
+      "engines": {
+        "geometry": {
+          "nps": 9754100.287850566,
+          "wallMs": 1927.9286929999798,
+          "nodes": 18805841.5,
+          "mainDepth": 10.0,
+          "completedDepth": 9.0,
+          "selDepth": 17.0,
+          "npsMinMax": [
+            8393215.760216268,
+            10485290.830462806
+          ],
+          "wallMinMax": [
+            1927.6423099999956,
+            1928.0597510000225
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            1
+          ],
+          "n": 6
+        },
+        "c6": {
+          "nps": 8427641.612226918,
+          "wallMs": 1927.7716419999779,
+          "nodes": 16245760.0,
+          "mainDepth": 10.0,
+          "completedDepth": 9.0,
+          "selDepth": 17.0,
+          "npsMinMax": [
+            6952345.363001192,
+            8938558.010707607
+          ],
+          "wallMinMax": [
+            1927.6191949999775,
+            1928.143425000002
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            1
+          ],
+          "n": 6
+        },
+        "pika": {
+          "nps": 5372318.937056638,
+          "wallMs": 1959.743929999997,
+          "nodes": 10530704.0,
+          "mainDepth": 65.5,
+          "completedDepth": null,
+          "selDepth": 21.0,
+          "npsMinMax": [
+            4899634.59031514,
+            5409777.708714757
+          ],
+          "wallMinMax": [
+            1959.3079490000382,
+            1960.7576950000366
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [],
+          "n": 6
+        }
+      },
+      "long": true,
+      "ratioVsC6": 1.1573938162841675,
+      "ratioVsPika": 1.8156219692337547
+    }
+  ]
+}

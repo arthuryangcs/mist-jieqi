@@ -1,0 +1,46 @@
+{
+  "newViews": 11,
+  "seenChallenges": 2,
+  "initialControlRepeated": true,
+  "knownHashes": 56,
+  "checked": [
+    {
+      "file": "benchmarks/search-speed/c6-2026-11-03/confirmation-fixtures.json",
+      "n": 12
+    },
+    {
+      "file": ".cache/king-destination-hint/development-fixtures.json",
+      "n": 12
+    },
+    {
+      "file": ".cache/lazy-legality/confirmation-fixtures.json",
+      "n": 12
+    },
+    {
+      "file": ".cache/lazy-legality/development-fixtures.json",
+      "n": 12
+    },
+    {
+      "file": ".cache/near-line-legality/confirmation-fixtures.json",
+      "n": 12
+    },
+    {
+      "file": ".cache/overlay-legal-only/holdout-fixtures.json",
+      "n": 12
+    },
+    {
+      "file": ".cache/piece-pack/holdout-fixtures.json",
+      "n": 12
+    },
+    {
+      "file": ".cache/tail-cow/holdout-fixtures.json",
+      "n": 12
+    },
+    {
+      "file": ".cache/c6-delivery/report-data/confirmation-fixtures.json",
+      "n": 12
+    }
+  ],
+  "skipped": [],
+  "limitations": "Only project fixture files under10MiB scanned; not a claim of novel chess positions globally."
+}

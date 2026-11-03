@@ -1,0 +1,1176 @@
+{
+  "completed": true,
+  "requests": 252,
+  "technical": [],
+  "primaryLongViews": 10,
+  "primaryGeoNpsVsC6": 1.0632758442957968,
+  "primaryWorstVsC6": 0.9906920415889888,
+  "primaryAbovePika": 8,
+  "challenge": [
+    {
+      "name": "near-confirmation/ending/9711333/0",
+      "ratioVsC6": 1.0864772760704298,
+      "ratioVsPika": 0.7209420805761392,
+      "long": true
+    },
+    {
+      "name": "near-confirmation/ending/9711560/0",
+      "ratioVsC6": 1.0031091074668192,
+      "ratioVsPika": 0.45461121111624925,
+      "long": true
+    }
+  ],
+  "allOriginalGoalMet": false,
+  "allConfirmationAndChallengeAbovePika": false,
+  "retentionGatePassed": true,
+  "rows": [
+    {
+      "name": "gather-confirmation/opening/9720001/0",
+      "category": "opening",
+      "origin": "generated legal-play public observer view",
+      "pieces": 32,
+      "hidden": 30,
+      "roots": 44,
+      "observationHash": "af147cbf21007e455b1face0ced553e3c119f24c0b0237d90173296486023a9a",
+      "partition": "repeated-initial-control",
+      "engines": {
+        "geometry": {
+          "nps": 5494222.07321388,
+          "wallMs": 1935.025738999997,
+          "nodes": 10630542.0,
+          "mainDepth": 6.0,
+          "completedDepth": 5.0,
+          "selDepth": 14.0,
+          "npsMinMax": [
+            4904902.915427421,
+            6078712.207349881
+          ],
+          "wallMinMax": [
+            1934.692073000013,
+            1937.670447
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            8
+          ],
+          "n": 6
+        },
+        "c6": {
+          "nps": 5529852.370852964,
+          "wallMs": 1934.8870924999937,
+          "nodes": 10698580.0,
+          "mainDepth": 6.0,
+          "completedDepth": 5.0,
+          "selDepth": 14.0,
+          "npsMinMax": [
+            4821461.304233608,
+            5612308.648414239
+          ],
+          "wallMinMax": [
+            1934.3561319999862,
+            1935.9591919999948
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            8
+          ],
+          "n": 6
+        },
+        "pika": {
+          "nps": 5890387.621774513,
+          "wallMs": 1960.188595500018,
+          "nodes": 11545460.5,
+          "mainDepth": 12.0,
+          "completedDepth": null,
+          "selDepth": 6.0,
+          "npsMinMax": [
+            5562784.971339653,
+            6829173.22276763
+          ],
+          "wallMinMax": [
+            1959.4658259999997,
+            1962.1756109999997
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [],
+          "n": 6
+        }
+      },
+      "long": true,
+      "ratioVsC6": 0.9935567361930155,
+      "ratioVsPika": 0.9327437218059876
+    },
+    {
+      "name": "gather-confirmation/opening/9720017/3",
+      "category": "opening",
+      "origin": "generated legal-play public observer view",
+      "pieces": 32,
+      "hidden": 27,
+      "roots": 41,
+      "observationHash": "9fd156443837d777a48ca0dd4c88ab989793d140b1e0b73d46d2e12c1c6c5cb1",
+      "partition": "independent-confirmation",
+      "engines": {
+        "geometry": {
+          "nps": 6802252.9165688455,
+          "wallMs": 1935.3977855000162,
+          "nodes": 13159543.5,
+          "mainDepth": 6.0,
+          "completedDepth": 5.0,
+          "selDepth": 14.0,
+          "npsMinMax": [
+            6073807.613465057,
+            7351355.742352827
+          ],
+          "wallMinMax": [
+            1934.5293190000084,
+            1936.047722999996
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            8
+          ],
+          "n": 6
+        },
+        "c6": {
+          "nps": 6110404.111151589,
+          "wallMs": 1935.4209449999908,
+          "nodes": 11827704.0,
+          "mainDepth": 6.0,
+          "completedDepth": 5.0,
+          "selDepth": 14.0,
+          "npsMinMax": [
+            5538278.643986684,
+            6568272.278737205
+          ],
+          "wallMinMax": [
+            1935.225827000002,
+            1935.8537290000004
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            8
+          ],
+          "n": 6
+        },
+        "pika": {
+          "nps": 6224726.183209417,
+          "wallMs": 1960.158277999988,
+          "nodes": 12202300.5,
+          "mainDepth": 17.0,
+          "completedDepth": null,
+          "selDepth": 7.0,
+          "npsMinMax": [
+            6001123.382001622,
+            6820852.71033098
+          ],
+          "wallMinMax": [
+            1959.4361559999961,
+            1961.5934500000003
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [],
+          "n": 6
+        }
+      },
+      "long": true,
+      "ratioVsC6": 1.1132247217748856,
+      "ratioVsPika": 1.0927794599089755
+    },
+    {
+      "name": "gather-confirmation/opening/9720031/8",
+      "category": "opening",
+      "origin": "generated legal-play public observer view",
+      "pieces": 32,
+      "hidden": 23,
+      "roots": 26,
+      "observationHash": "80164e72c91bd8047a9941bb39ffb0fdffa6825589bad6c3f0c8f35007e6c95d",
+      "partition": "independent-confirmation",
+      "engines": {
+        "geometry": {
+          "nps": 6766273.52841241,
+          "wallMs": 1935.0239120000115,
+          "nodes": 13091431.5,
+          "mainDepth": 6.0,
+          "completedDepth": 5.0,
+          "selDepth": 14.0,
+          "npsMinMax": [
+            6137050.376503449,
+            6917810.835529746
+          ],
+          "wallMinMax": [
+            1934.2780570000177,
+            1935.5886509999982
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            8
+          ],
+          "n": 6
+        },
+        "c6": {
+          "nps": 6360453.907016397,
+          "wallMs": 1935.3935635000234,
+          "nodes": 12311847.5,
+          "mainDepth": 6.0,
+          "completedDepth": 5.0,
+          "selDepth": 14.0,
+          "npsMinMax": [
+            6002758.982867113,
+            6972345.829281561
+          ],
+          "wallMinMax": [
+            1934.552875000023,
+            1936.1760489999997
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            8
+          ],
+          "n": 6
+        },
+        "pika": {
+          "nps": 5836911.20962889,
+          "wallMs": 1959.7495545000056,
+          "nodes": 11439519.0,
+          "mainDepth": 21.0,
+          "completedDepth": null,
+          "selDepth": 11.0,
+          "npsMinMax": [
+            4989901.136035054,
+            6385369.2173797395
+          ],
+          "wallMinMax": [
+            1959.389916999964,
+            1959.9722460000012
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [],
+          "n": 6
+        }
+      },
+      "long": true,
+      "ratioVsC6": 1.0638035629734446,
+      "ratioVsPika": 1.1592215960473053
+    },
+    {
+      "name": "gather-confirmation/opening/9720049/11",
+      "category": "opening",
+      "origin": "generated legal-play public observer view",
+      "pieces": 31,
+      "hidden": 22,
+      "roots": 31,
+      "observationHash": "40591d1105d5c98076ad0cbe92f21c2d5ab01faa3ecd964fc7faeea6496834ae",
+      "partition": "independent-confirmation",
+      "engines": {
+        "geometry": {
+          "nps": 7067355.461186604,
+          "wallMs": 1935.2023689999914,
+          "nodes": 13673746.5,
+          "mainDepth": 6.0,
+          "completedDepth": 5.0,
+          "selDepth": 14.0,
+          "npsMinMax": [
+            6518410.060293655,
+            7903609.598902269
+          ],
+          "wallMinMax": [
+            1934.7260840000235,
+            1936.2200239999984
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            8
+          ],
+          "n": 6
+        },
+        "c6": {
+          "nps": 6667753.547375636,
+          "wallMs": 1935.2809965000088,
+          "nodes": 12904545.5,
+          "mainDepth": 6.0,
+          "completedDepth": 5.0,
+          "selDepth": 14.0,
+          "npsMinMax": [
+            6077910.660988912,
+            7309875.265373114
+          ],
+          "wallMinMax": [
+            1933.8562960000127,
+            1936.001580000011
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            8
+          ],
+          "n": 6
+        },
+        "pika": {
+          "nps": 5124707.10032694,
+          "wallMs": 1960.6950959999958,
+          "nodes": 10050468.0,
+          "mainDepth": 13.0,
+          "completedDepth": null,
+          "selDepth": 13.0,
+          "npsMinMax": [
+            4591685.554967806,
+            5596192.662556681
+          ],
+          "wallMinMax": [
+            1959.6538089999813,
+            1961.4972019999987
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [],
+          "n": 6
+        }
+      },
+      "long": true,
+      "ratioVsC6": 1.0599305164733102,
+      "ratioVsPika": 1.3790750032788661
+    },
+    {
+      "name": "gather-confirmation/middle/9720203/28",
+      "category": "middle",
+      "origin": "generated legal-play public observer view",
+      "pieces": 31,
+      "hidden": 14,
+      "roots": 53,
+      "observationHash": "178a91fa08c9dd1026ddb91f8b3aec444380357516d8f4858ca28a50e35c7636",
+      "partition": "independent-confirmation",
+      "engines": {
+        "geometry": {
+          "nps": 6480719.504034461,
+          "wallMs": 1935.9887179999805,
+          "nodes": 12541828.5,
+          "mainDepth": 5.0,
+          "completedDepth": 4.0,
+          "selDepth": 12.0,
+          "npsMinMax": [
+            5987889.900173434,
+            6942927.742584854
+          ],
+          "wallMinMax": [
+            1934.4167460000026,
+            1936.2861030000204
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            8
+          ],
+          "n": 6
+        },
+        "c6": {
+          "nps": 6222870.316475803,
+          "wallMs": 1935.2414094999895,
+          "nodes": 12043397.0,
+          "mainDepth": 5.0,
+          "completedDepth": 4.0,
+          "selDepth": 12.0,
+          "npsMinMax": [
+            5780060.325741828,
+            6455465.606524827
+          ],
+          "wallMinMax": [
+            1934.9074829999881,
+            1935.7367479999666
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            8
+          ],
+          "n": 6
+        },
+        "pika": {
+          "nps": 3296602.474783257,
+          "wallMs": 1960.3593625000012,
+          "nodes": 6462146.0,
+          "mainDepth": 18.0,
+          "completedDepth": null,
+          "selDepth": 20.5,
+          "npsMinMax": [
+            3070645.0403076755,
+            3836035.019459682
+          ],
+          "wallMinMax": [
+            1959.6890439999988,
+            1961.2375699999975
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [],
+          "n": 6
+        }
+      },
+      "long": true,
+      "ratioVsC6": 1.0414357321373018,
+      "ratioVsPika": 1.9658783713254815
+    },
+    {
+      "name": "gather-confirmation/middle/9720217/41",
+      "category": "middle",
+      "origin": "generated legal-play public observer view",
+      "pieces": 31,
+      "hidden": 6,
+      "roots": 29,
+      "observationHash": "78e9aaafe1114d88e014b83e3a6eb78c24e8f515210363e9a830938a58f31ccb",
+      "partition": "independent-confirmation",
+      "engines": {
+        "geometry": {
+          "nps": 7425420.252732743,
+          "wallMs": 1935.399828499998,
+          "nodes": 14370056.0,
+          "mainDepth": 7.0,
+          "completedDepth": 6.0,
+          "selDepth": 14.0,
+          "npsMinMax": [
+            7055942.383313818,
+            8176547.181822225
+          ],
+          "wallMinMax": [
+            1935.0546369999938,
+            1936.3037929999991
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            8
+          ],
+          "n": 6
+        },
+        "c6": {
+          "nps": 7184951.830685286,
+          "wallMs": 1935.7663649999959,
+          "nodes": 13906305.0,
+          "mainDepth": 7.0,
+          "completedDepth": 6.0,
+          "selDepth": 14.0,
+          "npsMinMax": [
+            6202471.776099252,
+            7788610.190725093
+          ],
+          "wallMinMax": [
+            1934.7508620000008,
+            1936.497646999982
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            8
+          ],
+          "n": 6
+        },
+        "pika": {
+          "nps": 3552264.585521605,
+          "wallMs": 1960.009370499998,
+          "nodes": 6962475.0,
+          "mainDepth": 23.0,
+          "completedDepth": null,
+          "selDepth": 27.5,
+          "npsMinMax": [
+            3145447.454526033,
+            3874825.3947770004
+          ],
+          "wallMinMax": [
+            1959.653954999987,
+            1960.8935179999971
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [],
+          "n": 6
+        }
+      },
+      "long": true,
+      "ratioVsC6": 1.0334683415719603,
+      "ratioVsPika": 2.0903342287614013
+    },
+    {
+      "name": "gather-confirmation/middle/9720229/54",
+      "category": "middle",
+      "origin": "generated legal-play public observer view",
+      "pieces": 25,
+      "hidden": 6,
+      "roots": 44,
+      "observationHash": "54219b3538773cec81aa675da89e139eec24dbbf1b8644df6232ab722df6644f",
+      "partition": "independent-confirmation",
+      "engines": {
+        "geometry": {
+          "nps": 5951984.7637728825,
+          "wallMs": 1936.0047130000094,
+          "nodes": 11523843.5,
+          "mainDepth": 6.0,
+          "completedDepth": 5.0,
+          "selDepth": 14.0,
+          "npsMinMax": [
+            4175671.366508396,
+            6178729.492486862
+          ],
+          "wallMinMax": [
+            1934.2317890000122,
+            1936.3467599999858
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            8
+          ],
+          "n": 6
+        },
+        "c6": {
+          "nps": 5604088.551414145,
+          "wallMs": 1934.9445604999928,
+          "nodes": 10842064.5,
+          "mainDepth": 6.0,
+          "completedDepth": 5.0,
+          "selDepth": 14.0,
+          "npsMinMax": [
+            3985831.434302081,
+            5923369.321012723
+          ],
+          "wallMinMax": [
+            1934.424549999996,
+            1936.0896439999924
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            8
+          ],
+          "n": 6
+        },
+        "pika": {
+          "nps": 3533988.0591472024,
+          "wallMs": 1959.8927284999736,
+          "nodes": 6926054.5,
+          "mainDepth": 21.5,
+          "completedDepth": null,
+          "selDepth": 21.0,
+          "npsMinMax": [
+            2745169.9282586514,
+            4124641.8233382506
+          ],
+          "wallMinMax": [
+            1959.2108420000004,
+            1960.1337459999995
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [],
+          "n": 6
+        }
+      },
+      "long": true,
+      "ratioVsC6": 1.062078999852875,
+      "ratioVsPika": 1.684211905687416
+    },
+    {
+      "name": "gather-confirmation/middle/9720241/67",
+      "category": "middle",
+      "origin": "generated legal-play public observer view",
+      "pieces": 29,
+      "hidden": 9,
+      "roots": 42,
+      "observationHash": "bffd91fce8612f285c4887beb37deabf09984b2c20119e3bf4696222e797f18d",
+      "partition": "independent-confirmation",
+      "engines": {
+        "geometry": {
+          "nps": 6658186.193879506,
+          "wallMs": 1936.298386500006,
+          "nodes": 12891164.0,
+          "mainDepth": 6.0,
+          "completedDepth": 5.0,
+          "selDepth": 14.0,
+          "npsMinMax": [
+            5406379.155282962,
+            6956666.132649723
+          ],
+          "wallMinMax": [
+            1935.881174000002,
+            1943.5647589999717
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            8
+          ],
+          "n": 6
+        },
+        "c6": {
+          "nps": 6720742.586364498,
+          "wallMs": 1935.8973975000044,
+          "nodes": 13009024.0,
+          "mainDepth": 6.0,
+          "completedDepth": 5.0,
+          "selDepth": 14.0,
+          "npsMinMax": [
+            6355241.491687844,
+            7131603.26988139
+          ],
+          "wallMinMax": [
+            1935.121113000001,
+            1936.9145950000384
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            8
+          ],
+          "n": 6
+        },
+        "pika": {
+          "nps": 4143442.980392999,
+          "wallMs": 1960.5402434999924,
+          "nodes": 8123805.0,
+          "mainDepth": 19.0,
+          "completedDepth": null,
+          "selDepth": 25.0,
+          "npsMinMax": [
+            2758597.82137541,
+            4306692.328424139
+          ],
+          "wallMinMax": [
+            1959.8898970000446,
+            1960.930198999995
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [],
+          "n": 6
+        }
+      },
+      "long": true,
+      "ratioVsC6": 0.9906920415889888,
+      "ratioVsPika": 1.606921158414973
+    },
+    {
+      "name": "gather-confirmation/ending/9720915/0",
+      "category": "ending",
+      "origin": "edited inventory-valid sparse public view; reachability not asserted",
+      "pieces": 8,
+      "hidden": 0,
+      "roots": 21,
+      "observationHash": "0e19c0cedaca5c0e11179ae9da4a24f451f310987dca759b2df4387a0cefe8b8",
+      "partition": "independent-confirmation",
+      "engines": {
+        "geometry": {
+          "nps": 10591091.924651325,
+          "wallMs": 1928.2257575000258,
+          "nodes": 20422016.0,
+          "mainDepth": 10.0,
+          "completedDepth": 9.0,
+          "selDepth": 15.0,
+          "npsMinMax": [
+            8800786.94660342,
+            10816305.323224079
+          ],
+          "wallMinMax": [
+            1928.1016369999852,
+            1928.4469790000003
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            1
+          ],
+          "n": 6
+        },
+        "c6": {
+          "nps": 9034295.498973474,
+          "wallMs": 1928.3435240000035,
+          "nodes": 17420958.0,
+          "mainDepth": 10.0,
+          "completedDepth": 9.0,
+          "selDepth": 15.0,
+          "npsMinMax": [
+            8075305.735853293,
+            9287342.209552271
+          ],
+          "wallMinMax": [
+            1927.7503290000022,
+            1928.7699450000073
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            1
+          ],
+          "n": 6
+        },
+        "pika": {
+          "nps": 6029880.724589519,
+          "wallMs": 1959.816886499997,
+          "nodes": 11815575.5,
+          "mainDepth": 33.0,
+          "completedDepth": null,
+          "selDepth": 44.5,
+          "npsMinMax": [
+            5431553.80005867,
+            6124181.307522068
+          ],
+          "wallMinMax": [
+            1959.0406300000031,
+            1960.1911499999696
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [],
+          "n": 6
+        }
+      },
+      "long": true,
+      "ratioVsC6": 1.172320733349351,
+      "ratioVsPika": 1.7564347303689507
+    },
+    {
+      "name": "gather-confirmation/ending/9721122/0",
+      "category": "ending",
+      "origin": "edited inventory-valid sparse public view; reachability not asserted",
+      "pieces": 8,
+      "hidden": 0,
+      "roots": 6,
+      "observationHash": "142f80b93d4a0252763c5168e3ae82925d7b0c6dd70da57c2c608cc441b64c61",
+      "partition": "independent-confirmation",
+      "engines": {
+        "geometry": {
+          "nps": 6344837.430156794,
+          "wallMs": 1928.200828000001,
+          "nodes": 12232965.0,
+          "mainDepth": 11.0,
+          "completedDepth": 10.0,
+          "selDepth": 17.0,
+          "npsMinMax": [
+            5947992.7518693,
+            6462050.4546650695
+          ],
+          "wallMinMax": [
+            1927.8812620000099,
+            1928.6450659999973
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            1
+          ],
+          "n": 6
+        },
+        "c6": {
+          "nps": 5687834.71613043,
+          "wallMs": 1928.1458269999857,
+          "nodes": 10966641.0,
+          "mainDepth": 11.0,
+          "completedDepth": 10.0,
+          "selDepth": 17.0,
+          "npsMinMax": [
+            5410735.331062596,
+            6263098.60389124
+          ],
+          "wallMinMax": [
+            1927.9225450000085,
+            1928.2421290000202
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            1
+          ],
+          "n": 6
+        },
+        "pika": {
+          "nps": 8081073.618489154,
+          "wallMs": 1959.5842779999803,
+          "nodes": 15835182.5,
+          "mainDepth": 101.5,
+          "completedDepth": null,
+          "selDepth": 23.0,
+          "npsMinMax": [
+            6696278.092410258,
+            8338263.557454938
+          ],
+          "wallMinMax": [
+            1959.1604279999738,
+            1960.3380040000047
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [],
+          "n": 6
+        }
+      },
+      "long": true,
+      "ratioVsC6": 1.1155101627976522,
+      "ratioVsPika": 0.7851478317980021
+    },
+    {
+      "name": "gather-confirmation/ending/9721331/0",
+      "category": "ending",
+      "origin": "edited inventory-valid sparse public view; reachability not asserted",
+      "pieces": 12,
+      "hidden": 0,
+      "roots": 4,
+      "observationHash": "d55fdbcc85bf7a0d460a551b779406679cf345a164bad005b2350f306e90696b",
+      "partition": "independent-confirmation",
+      "engines": {
+        "geometry": {
+          "nps": 1716185.1973440035,
+          "wallMs": 14.312373499997193,
+          "nodes": 24562.0,
+          "mainDepth": 5.0,
+          "completedDepth": 5.0,
+          "selDepth": 12.0,
+          "npsMinMax": [
+            1661855.5040932603,
+            1862327.8567440864
+          ],
+          "wallMinMax": [
+            13.188870000012685,
+            14.77986499999679
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            1
+          ],
+          "n": 6
+        },
+        "c6": {
+          "nps": 1638756.5763879984,
+          "wallMs": 14.988895500006038,
+          "nodes": 24562.0,
+          "mainDepth": 5.0,
+          "completedDepth": 5.0,
+          "selDepth": 12.0,
+          "npsMinMax": [
+            1592377.9541036948,
+            1680069.6488134272
+          ],
+          "wallMinMax": [
+            14.619631999987178,
+            15.424729999998817
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            1
+          ],
+          "n": 6
+        },
+        "pika": {
+          "nps": 11854990.968018815,
+          "wallMs": 639.4828414999938,
+          "nodes": 7250376.0,
+          "mainDepth": 245.0,
+          "completedDepth": null,
+          "selDepth": 8.0,
+          "npsMinMax": [
+            11087497.830708195,
+            13220919.742446985
+          ],
+          "wallMinMax": [
+            458.925619000016,
+            756.840159000014
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [],
+          "n": 6
+        }
+      },
+      "long": false,
+      "ratioVsC6": 1.0472483967854862,
+      "ratioVsPika": 0.14476478320175468
+    },
+    {
+      "name": "gather-confirmation/ending/9721552/0",
+      "category": "ending",
+      "origin": "edited inventory-valid sparse public view, first admissible 1..3 roots",
+      "pieces": 10,
+      "hidden": 0,
+      "roots": 2,
+      "observationHash": "a600d901eace6a564128ac63cd921aab0f0c8e806ab488f875a44e341724d2c1",
+      "partition": "independent-confirmation",
+      "engines": {
+        "geometry": {
+          "nps": 10974.28593270076,
+          "wallMs": 10.20582349999313,
+          "nodes": 112.0,
+          "mainDepth": 2.0,
+          "completedDepth": 2.0,
+          "selDepth": 3.0,
+          "npsMinMax": [
+            10744.40602574485,
+            12039.571060228902
+          ],
+          "wallMinMax": [
+            9.302656999963801,
+            10.424028999987058
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            1
+          ],
+          "n": 6
+        },
+        "c6": {
+          "nps": 10926.01778189846,
+          "wallMs": 10.250965500024904,
+          "nodes": 112.0,
+          "mainDepth": 2.0,
+          "completedDepth": 2.0,
+          "selDepth": 3.0,
+          "npsMinMax": [
+            10130.12049325461,
+            11832.871675245671
+          ],
+          "wallMinMax": [
+            9.46515800000634,
+            11.056137000006856
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            1
+          ],
+          "n": 6
+        },
+        "pika": {
+          "nps": 933258.7210449468,
+          "wallMs": 3.862683500017738,
+          "nodes": 3669.5,
+          "mainDepth": 245.0,
+          "completedDepth": null,
+          "selDepth": 3.0,
+          "npsMinMax": [
+            835516.7772387693,
+            1348285.8218800423
+          ],
+          "wallMinMax": [
+            2.7167829999816604,
+            4.065159000005224
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [],
+          "n": 6
+        }
+      },
+      "long": false,
+      "ratioVsC6": 1.0044177258142732,
+      "ratioVsPika": 0.011759103542491543
+    },
+    {
+      "name": "near-confirmation/ending/9711333/0",
+      "category": "ending",
+      "origin": "edited inventory-valid sparse public view; reachability not asserted",
+      "pieces": 8,
+      "hidden": 0,
+      "roots": 26,
+      "observationHash": "7e00b8d4db2456582a86cde790a0097773ee4a8bff71819650d38747341d3162",
+      "partition": "seen-challenge",
+      "engines": {
+        "geometry": {
+          "nps": 8398426.692575777,
+          "wallMs": 1287.9982989999698,
+          "nodes": 10811195.0,
+          "mainDepth": 8.0,
+          "completedDepth": 8.0,
+          "selDepth": 15.0,
+          "npsMinMax": [
+            7998136.044008488,
+            8930816.697435932
+          ],
+          "wallMinMax": [
+            1210.5494230000186,
+            1351.7143169999981
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            1
+          ],
+          "n": 6
+        },
+        "c6": {
+          "nps": 7729960.743358757,
+          "wallMs": 1398.6402374999889,
+          "nodes": 10811195.0,
+          "mainDepth": 8.0,
+          "completedDepth": 8.0,
+          "selDepth": 15.0,
+          "npsMinMax": [
+            6916906.059425547,
+            8193512.601508043
+          ],
+          "wallMinMax": [
+            1319.4823179999948,
+            1563.0102399999741
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            1
+          ],
+          "n": 6
+        },
+        "pika": {
+          "nps": 11649239.125928387,
+          "wallMs": 1959.4130210000294,
+          "nodes": 22828860.0,
+          "mainDepth": 149.5,
+          "completedDepth": null,
+          "selDepth": 10.0,
+          "npsMinMax": [
+            10799879.627267279,
+            12530641.475725044
+          ],
+          "wallMinMax": [
+            1958.7107369999867,
+            1959.976881999988
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [],
+          "n": 6
+        }
+      },
+      "long": true,
+      "ratioVsC6": 1.0864772760704298,
+      "ratioVsPika": 0.7209420805761392
+    },
+    {
+      "name": "near-confirmation/ending/9711560/0",
+      "category": "ending",
+      "origin": "edited inventory-valid sparse public view, first admissible 1..3 roots",
+      "pieces": 12,
+      "hidden": 0,
+      "roots": 1,
+      "observationHash": "725130592c34ea280cb3b05e9fde0b7a5746b8f8b0cd9046e974261b081653e1",
+      "partition": "seen-challenge",
+      "engines": {
+        "geometry": {
+          "nps": 2386157.3439519387,
+          "wallMs": 1928.0202839999838,
+          "nodes": 4600943.0,
+          "mainDepth": 10.0,
+          "completedDepth": 9.0,
+          "selDepth": 17.0,
+          "npsMinMax": [
+            2287737.3844992365,
+            2646073.290559948
+          ],
+          "wallMinMax": [
+            1927.9477419999894,
+            1928.8887920000125
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            1
+          ],
+          "n": 6
+        },
+        "c6": {
+          "nps": 2378761.518752204,
+          "wallMs": 1928.0557225000084,
+          "nodes": 4586381.5,
+          "mainDepth": 10.0,
+          "completedDepth": 9.0,
+          "selDepth": 17.0,
+          "npsMinMax": [
+            2195570.7582803722,
+            2541705.2289825175
+          ],
+          "wallMinMax": [
+            1927.4893950000114,
+            1928.3309289999888
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [
+            1
+          ],
+          "n": 6
+        },
+        "pika": {
+          "nps": 5248786.843802167,
+          "wallMs": 1959.7601259999938,
+          "nodes": 10288958.0,
+          "mainDepth": 28.5,
+          "completedDepth": null,
+          "selDepth": 33.5,
+          "npsMinMax": [
+            4888119.2506373795,
+            5473665.469968581
+          ],
+          "wallMinMax": [
+            1959.3153540000203,
+            1960.8221309999935
+          ],
+          "threads": [
+            4
+          ],
+          "samples": [],
+          "n": 6
+        }
+      },
+      "long": true,
+      "ratioVsC6": 1.0031091074668192,
+      "ratioVsPika": 0.45461121111624925
+    }
+  ]
+}

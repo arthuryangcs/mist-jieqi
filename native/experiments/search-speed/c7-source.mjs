@@ -1,0 +1,4 @@
+// Reviewable exact-source patch on the fixed C6 experiment; stable sources stay unchanged.
+import fs from 'node:fs';import {applyC6Edits,c6Source,c6UnitSource} from './c6-source.mjs';
+export function c7Source(){return applyC6Edits(c6Source(),JSON.parse(fs.readFileSync(new URL('./c7-source-edits.json',import.meta.url),'utf8')));}
+export function c7UnitSource(cpp){const text=c6UnitSource(cpp,fs.readFileSync(new URL('./test-support.hpp',import.meta.url),'utf8'),fs.readFileSync(new URL('./c6-test-support.hpp',import.meta.url),'utf8')+'\n'+fs.readFileSync(new URL('./c7-test-support.hpp',import.meta.url),'utf8')),anchor='+packedUnits(packet);';if(text.split(anchor).length!==2)throw Error('C7 unit anchor changed');return text.replace(anchor,'+packedUnits(packet)+sharedLineUnits(packet.depth==17);');}

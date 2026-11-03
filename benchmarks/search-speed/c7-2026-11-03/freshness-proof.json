@@ -1,0 +1,148 @@
+{
+  "method": "SHA256(JSON.stringify(observerView)), frozen project-fixture scan before confirmation; 11 new views, repeated initial control and two seen challenges.",
+  "knownViewHashes": [
+    "05078097eb6256fbeecc10d7345f211bd28ff6040c10faec5060259085b17391",
+    "056749e173cc6d23e1dc3a78da98fafb444f348f0bcc7b6a958aa8c317f83521",
+    "06209079a4c13d473c1691897001e42cfa691435f40e3c64e25fd2b980b5fa89",
+    "0c0130bb8a149f8f3978fd90c2c2e1913b2fdecbfc590797c10344f937543d4a",
+    "0e77d290ead0f77662edb08ffd94c53eead7adeeff9bff19ddac9d9968b07959",
+    "17cf1950517f92195d875f8daa6d9e3d6e2614139dbccec74a4f34f243256e50",
+    "18e87aab52df1f8e71e323e37e6f84fdb3276ae7d0adbe5765c70fa80d2e5e2c",
+    "1e96b7fb3ea6302604d665f6dfc1e3d6cf31bff147ff64df0bf92fd40944eac4",
+    "2141f7482c6974fff31eae5e03138fd7cd5a9b37b98c82f9664b2c6a8cbc4c9f",
+    "2de3d3754d465f96ad57eac6ffd4b41e68b1af1991d7edbc988713bc3fc96887",
+    "2eb9008100fdc122d637d0740b119d605cf96555215d1b8b8db71b3f87b45ca7",
+    "3379fe9d49c27d6c6791cb6c037085c1a840691bd775e77481a1d2c0262c1d69",
+    "361cb129eb66831f93b7ecaf36838c7d4e512f73a81b883fb6d14cfbe4f68a76",
+    "38ca5b5f15b90bb8b91f75e292b078d7cd7906c57c2dfd9af8ad6fdf56097fcc",
+    "3ba9fe7e89c5a9c62b17538fa2da8160bd657db21a22e0e43e22ec852a9e268e",
+    "43ba0f05aee879cdca1b679047777afc059656adb911bebf4fde65a610a8e7a8",
+    "4d2c41ea16cee20626e16a39716d9d286497b7b4f0eff654f0046dd090e37fb5",
+    "4dbd1f7a0a39ebae9d95eac492abb0f9ff5234f1d37a1b0cac6e95b2ac3a6d44",
+    "4e6ff85d79e235c55041112a6b55710840b75b96ec2265f22c043c6be472120e",
+    "5da388dd15ed31a9a816ce80a637179c62c06a97fe7d2201651b9e0d4854dc51",
+    "66ce6b6cd40d59d0528463b491025df010043fad7e9ce26dc513dcc80d7b6154",
+    "68b5d992dec3080b41221a78c597e4a60eee7131ad1a5af6b383d6ab47bfe774",
+    "725130592c34ea280cb3b05e9fde0b7a5746b8f8b0cd9046e974261b081653e1",
+    "74190db30ec46a9983ed15b8be6042c875c86822e8a3c033bb0ce7edabc42d44",
+    "7e00b8d4db2456582a86cde790a0097773ee4a8bff71819650d38747341d3162",
+    "7e163dd24c9414e1cdbefe10c27fca60e2e28868749903199a307be842c5aa38",
+    "801feee5220ece641aef839e46f3759cdb3718a78526d512dac052bca6671750",
+    "83158ad3e4a65c2a8f97a2656f7f14500728990e4581c44012cc04052f7fced7",
+    "86d61ac21d173b6841025797499db6fbbaa83968bb1d74892977d89e21681acf",
+    "877b8074fa62428f4bfddec72f73eb2ad8a89fc091ff728b67e884820f5fc323",
+    "9101246d9f52284b15d848e8222d8cd3be2ac58dbcc7d978089515aab397094b",
+    "91087c48f6a66094269fc53fd3e73cce13b21a53049c388f0d8617bf8362d456",
+    "936ddfe659bf6b31e5b09d71405ae70c40224fb0010e99f8408e1e48aa8ad0c7",
+    "93a5498e235d357293cbf448ededde77213d597698e1a573f93f024deb79bb33",
+    "98724a36f6cf6f2fbce26475d34408d9d5e159f232bc60277a2a6f3f87e7784f",
+    "9c913c80fbe3490df893278d65e7ba04b16d5cbb72121d68a4a9dc9779239838",
+    "a625dda107f669f837b99748de69186b4e8428b696c883d82050214b43dffcc3",
+    "ac6eac4097726c8e22e71da77d0dfbcc633ba5e2f9845100f8283bcd229866b8",
+    "ac7e5f59c0fa2ab2720abbf3646a97e57b11779c493f2adc4859c1b467e668a1",
+    "af147cbf21007e455b1face0ced553e3c119f24c0b0237d90173296486023a9a",
+    "b0279bd1aec5f73082cf8baaea1a7647f293caf17a4200460f17dbe6a86514d3",
+    "b03b582c269e950aa7eda66ca94e71b85ff8e04da2c89fb8d0f73d8073ad821d",
+    "b10502b603989f8715561c6ad29e02634792588e0b6ecb5a0d32c9827abcfbdb",
+    "b36f5d4af3e41fe062dd8e3fcd5d5f779abfd37b9d7cd9cafb4897c802f2c709",
+    "b9b9047f95b105f0534c00eca62daf75371b588ff9e84f15a4bf55c119cd0ad7",
+    "bf33c8ce6ea6ef96f2bdcbf1ea03934b22859c3fb95dd079ad930250cf2e37d0",
+    "c5f979f1fca445fce31ff9e1b03635842fd3ebf7a70bd8887522a4be910ba5c8",
+    "c711695b40bfeae65d768bf21e4cfb67b1c875e88a599a0c58b6bd2c4cb178e0",
+    "ccba80a14080e76c102ec8643257cd8ef6e8cfb4203cb63d2044b010e0cbfeb2",
+    "d54caee05c9be93ff08b3790de7165b792bf5d2d7ca776ae517b6d4260261807",
+    "d5cbff2c6c154a5dec63eb9df8043f91fae530aa16cf95eee7c80552a46b1f56",
+    "da776d19c211bb1cc226c2a8c11488471fc9aa407df854d467cae37005dd2558",
+    "dab1c6f177e1fac9578a3860885e49d2f6fdad61eb4f81d658a125c3efe53289",
+    "ec3a18e234e0a6eacaebfacc22903eb86ef638c8ec06f163644cb94f0dfa8450",
+    "f7902d7dbbe0e87646dc5b9347ecb31c7cf091c80039efa7b4222af186e19967",
+    "f7f808a511d61ac6d2b0d1899b8c885ee5420c2646aad8f226bfd8bdf68989d4"
+  ],
+  "confirmation": [
+    {
+      "name": "gather-confirmation/opening/9720001/0",
+      "hash": "af147cbf21007e455b1face0ced553e3c119f24c0b0237d90173296486023a9a",
+      "previouslySeen": true,
+      "partition": "repeated-initial-control"
+    },
+    {
+      "name": "gather-confirmation/opening/9720017/3",
+      "hash": "9fd156443837d777a48ca0dd4c88ab989793d140b1e0b73d46d2e12c1c6c5cb1",
+      "previouslySeen": false,
+      "partition": "independent-confirmation"
+    },
+    {
+      "name": "gather-confirmation/opening/9720031/8",
+      "hash": "80164e72c91bd8047a9941bb39ffb0fdffa6825589bad6c3f0c8f35007e6c95d",
+      "previouslySeen": false,
+      "partition": "independent-confirmation"
+    },
+    {
+      "name": "gather-confirmation/opening/9720049/11",
+      "hash": "40591d1105d5c98076ad0cbe92f21c2d5ab01faa3ecd964fc7faeea6496834ae",
+      "previouslySeen": false,
+      "partition": "independent-confirmation"
+    },
+    {
+      "name": "gather-confirmation/middle/9720203/28",
+      "hash": "178a91fa08c9dd1026ddb91f8b3aec444380357516d8f4858ca28a50e35c7636",
+      "previouslySeen": false,
+      "partition": "independent-confirmation"
+    },
+    {
+      "name": "gather-confirmation/middle/9720217/41",
+      "hash": "78e9aaafe1114d88e014b83e3a6eb78c24e8f515210363e9a830938a58f31ccb",
+      "previouslySeen": false,
+      "partition": "independent-confirmation"
+    },
+    {
+      "name": "gather-confirmation/middle/9720229/54",
+      "hash": "54219b3538773cec81aa675da89e139eec24dbbf1b8644df6232ab722df6644f",
+      "previouslySeen": false,
+      "partition": "independent-confirmation"
+    },
+    {
+      "name": "gather-confirmation/middle/9720241/67",
+      "hash": "bffd91fce8612f285c4887beb37deabf09984b2c20119e3bf4696222e797f18d",
+      "previouslySeen": false,
+      "partition": "independent-confirmation"
+    },
+    {
+      "name": "gather-confirmation/ending/9720915/0",
+      "hash": "0e19c0cedaca5c0e11179ae9da4a24f451f310987dca759b2df4387a0cefe8b8",
+      "previouslySeen": false,
+      "partition": "independent-confirmation"
+    },
+    {
+      "name": "gather-confirmation/ending/9721122/0",
+      "hash": "142f80b93d4a0252763c5168e3ae82925d7b0c6dd70da57c2c608cc441b64c61",
+      "previouslySeen": false,
+      "partition": "independent-confirmation"
+    },
+    {
+      "name": "gather-confirmation/ending/9721331/0",
+      "hash": "d55fdbcc85bf7a0d460a551b779406679cf345a164bad005b2350f306e90696b",
+      "previouslySeen": false,
+      "partition": "independent-confirmation"
+    },
+    {
+      "name": "gather-confirmation/ending/9721552/0",
+      "hash": "a600d901eace6a564128ac63cd921aab0f0c8e806ab488f875a44e341724d2c1",
+      "previouslySeen": false,
+      "partition": "independent-confirmation"
+    },
+    {
+      "name": "near-confirmation/ending/9711333/0",
+      "hash": "7e00b8d4db2456582a86cde790a0097773ee4a8bff71819650d38747341d3162",
+      "previouslySeen": true,
+      "partition": "seen-challenge"
+    },
+    {
+      "name": "near-confirmation/ending/9711560/0",
+      "hash": "725130592c34ea280cb3b05e9fde0b7a5746b8f8b0cd9046e974261b081653e1",
+      "previouslySeen": true,
+      "partition": "seen-challenge"
+    }
+  ],
+  "limitations": "Only project fixture files under10MiB scanned; not a claim of novel chess positions globally."
+}

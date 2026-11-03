@@ -1,0 +1,38 @@
+{
+  "createdAt": "2026-11-03T16:19:20.823Z",
+  "baseSourceSha256": "31044329472faed1e956052a4304e694211a5e0e85cdbdd5c8e75a8271c475c2",
+  "candidateSourceSha256": "855cccb05cff5a4eb3efa919546f41d7b66ae7b852490ecf0b81115f7f9f20d0",
+  "repeats": 5,
+  "requests": 40,
+  "warmups": 8,
+  "cases": [
+    {
+      "name": "opening/51101/0",
+      "depth": 5
+    },
+    {
+      "name": "middle/51203/28",
+      "depth": 5
+    },
+    {
+      "name": "ending/51307/3",
+      "depth": 7
+    },
+    {
+      "name": "lazy-confirm/ending/54546/0",
+      "depth": 10
+    }
+  ],
+  "advanceGate": {
+    "geoWallAtLeast": 1.05,
+    "worstCaseGeoAtLeast": 0.97
+  },
+  "sameMode": "SEARCH_LAZYLEGAL",
+  "budgetMs": 60000,
+  "threadsMax": 4,
+  "semantics": "8worlds/HCE/fullroots unchanged; existing90bit occupancy gather only; each process warmed then requests interleaved",
+  "binarySha256": {
+    "candidate": "17284b7e3b2cceb7e70d378788c591990add1c10785e09a0b7a0094951807d15",
+    "c6": "55420db70b7f091a1c027301215f7bc2e299f9386846e5bda2e2ccfefcfa4f9f"
+  }
+}

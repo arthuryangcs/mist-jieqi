@@ -48,3 +48,7 @@ node native/experiments/search-speed/benchmark.mjs
 ## C6 可选实验
 
 [C6 构建与复现说明](README-C6.md) · [2026-11-03 报告](../../../docs/experiments/search-speed-c6.md)。C6 必须显式选择，默认引擎不变。
+
+## C7 可选实验
+
+[C7 构建与复现说明](README-C7.md) · [行列提取与自将检查报告](../../../docs/experiments/search-speed-c7.md)。C7 在 C6 上减少重复几何计算，8 样本、HCE、根着覆盖与默认引擎保持原配置；阶段结果尚未全面超过固定 Pika。

@@ -1,0 +1,119 @@
+{
+  "completed": 12,
+  "summary": {
+    "retained": {
+      "finished": 4,
+      "normalWins": 2,
+      "normalDraws": 0,
+      "normalLosses": 2,
+      "normalScoreRate": 0.5,
+      "technical": [],
+      "unresolved": 0
+    },
+    "pika": {
+      "finished": 4,
+      "normalWins": 1,
+      "normalDraws": 0,
+      "normalLosses": 3,
+      "normalScoreRate": 0.25,
+      "technical": [],
+      "unresolved": 0
+    },
+    "production": {
+      "finished": 4,
+      "normalWins": 1,
+      "normalDraws": 0,
+      "normalLosses": 3,
+      "normalScoreRate": 0.25,
+      "technical": [],
+      "unresolved": 0
+    }
+  },
+  "engines": {
+    "c7": {
+      "moves": 596,
+      "wallMedianMs": 1934.9040055000114,
+      "wallP10P90Ms": [
+        1933.3792050000047,
+        1936.6883204999976
+      ],
+      "maxWallMs": 1966.1038479999988,
+      "actualThreads": [
+        4
+      ],
+      "fallbackMoves": 0,
+      "hostStopMoves": 1,
+      "TTMiB": [
+        64
+      ],
+      "mainDepthMedian": 7,
+      "completedDepthMedian": 6,
+      "selDepthMedian": 15
+    },
+    "retained": {
+      "moves": 212,
+      "wallMedianMs": 1934.409590499985,
+      "wallP10P90Ms": [
+        1933.1437575000048,
+        1935.9779730999974
+      ],
+      "maxWallMs": 1938.8336129999952,
+      "actualThreads": [
+        4
+      ],
+      "fallbackMoves": 0,
+      "hostStopMoves": 0,
+      "TTMiB": [
+        64
+      ],
+      "mainDepthMedian": 7,
+      "completedDepthMedian": 6,
+      "selDepthMedian": 15
+    },
+    "pika": {
+      "moves": 181,
+      "wallMedianMs": 1960.0985099999962,
+      "wallP10P90Ms": [
+        1958.8466039999912,
+        1960.9714550000062
+      ],
+      "maxWallMs": 1962.2559249999995,
+      "actualThreads": [
+        4
+      ],
+      "fallbackMoves": 0,
+      "hostStopMoves": 0,
+      "TTMiB": [],
+      "mainDepthMedian": null,
+      "completedDepthMedian": null,
+      "selDepthMedian": 20
+    },
+    "production": {
+      "moves": 206,
+      "wallMedianMs": 1971.2962179999959,
+      "wallP10P90Ms": [
+        1968.7376419999928,
+        1974.839783500007
+      ],
+      "maxWallMs": 1978.5608470000152,
+      "actualThreads": [
+        4
+      ],
+      "fallbackMoves": 0,
+      "hostStopMoves": 206,
+      "TTMiB": [],
+      "mainDepthMedian": 7,
+      "completedDepthMedian": 6,
+      "selDepthMedian": 14
+    }
+  },
+  "technicalForfeits": [],
+  "unresolved": [],
+  "limits": [
+    "Two independent initial layouts, each color vs each opponent;4games/opponent is a very small sample.",
+    "C6/Pika primary64MiB/max4 controls; unchanged production protocol2 is separately labelled diagnostic and lacks a hard64MiB TT arena/current inner history evaluation.",
+    "Per-game depths/throughput come from different positions and are descriptive, not a same-position speed benchmark.",
+    "MainDepth and selDepth retain original engine semantics; rawPika UCI depth is not equated with Mist halfmoves.",
+    "No default enablement or universal/strength superiority claim."
+  ]
+}

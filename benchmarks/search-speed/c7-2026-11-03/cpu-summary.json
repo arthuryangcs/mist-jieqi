@@ -1,0 +1,180 @@
+{
+  "completed": true,
+  "technical": [],
+  "readinessCpuMedianMs": {
+    "c6": 231.91499999999988,
+    "gather": 196.04799999999977,
+    "pika": 747.6680000000005
+  },
+  "limits": [
+    "Whole process CPU includes Node, startup and close; readiness controls approximate those costs.",
+    "No OS process list or attach; CPU ratio is not node-equivalence or strength.",
+    "Do not mix into frozen performance or match outcomes."
+  ],
+  "rows": [
+    {
+      "position": "overlay-holdout/opening/900603/0",
+      "engines": {
+        "c6": {
+          "n": 3,
+          "wholeCpuMs": 6978.969,
+          "wholeWallMs": 2156.1466970015317,
+          "wholeCpuOverWall": 3.2078777430212475,
+          "approxSearchCpuOverWall": 3.4859826656288027,
+          "nativeSelfCpuOverClientSearchWall": 3.4752952546119156,
+          "nodesMedian": 11313248,
+          "actualReportedThreadCaps": [
+            4
+          ]
+        },
+        "gather": {
+          "n": 3,
+          "wholeCpuMs": 6924.615999999986,
+          "wholeWallMs": 2128.848779015243,
+          "wholeCpuOverWall": 3.2723501238102863,
+          "approxSearchCpuOverWall": 3.4762152959374992,
+          "nativeSelfCpuOverClientSearchWall": 3.4664607061046326,
+          "nodesMedian": 11592892,
+          "actualReportedThreadCaps": [
+            4
+          ]
+        },
+        "pika": {
+          "n": 3,
+          "wholeCpuMs": 8485.480999999992,
+          "wholeWallMs": 2651.806219946593,
+          "wholeCpuOverWall": 3.2077742777673093,
+          "approxSearchCpuOverWall": 3.939508570271226,
+          "nativeSelfCpuOverClientSearchWall": null,
+          "nodesMedian": 11935824,
+          "actualReportedThreadCaps": [
+            4
+          ]
+        }
+      }
+    },
+    {
+      "position": "overlay-holdout/opening/900617/3",
+      "engines": {
+        "c6": {
+          "n": 3,
+          "wholeCpuMs": 7601.453000000007,
+          "wholeWallMs": 2177.5272010127082,
+          "wholeCpuOverWall": 3.485088106370782,
+          "approxSearchCpuOverWall": 3.8039195171937394,
+          "nativeSelfCpuOverClientSearchWall": 3.778973635057507,
+          "nodesMedian": 13089679,
+          "actualReportedThreadCaps": [
+            4
+          ]
+        },
+        "gather": {
+          "n": 3,
+          "wholeCpuMs": 7645.02499999999,
+          "wholeWallMs": 2168.69033803232,
+          "wholeCpuOverWall": 3.523305658616185,
+          "approxSearchCpuOverWall": 3.8420724870410514,
+          "nativeSelfCpuOverClientSearchWall": 3.8021352348960185,
+          "nodesMedian": 14153180,
+          "actualReportedThreadCaps": [
+            4
+          ]
+        },
+        "pika": {
+          "n": 3,
+          "wholeCpuMs": 8458.75700000002,
+          "wholeWallMs": 2665.1748580043204,
+          "wholeCpuOverWall": 3.1743954714982845,
+          "approxSearchCpuOverWall": 3.927928372078476,
+          "nativeSelfCpuOverClientSearchWall": null,
+          "nodesMedian": 17827312,
+          "actualReportedThreadCaps": [
+            4
+          ]
+        }
+      }
+    },
+    {
+      "position": "near-confirmation/ending/9711333/0",
+      "engines": {
+        "c6": {
+          "n": 3,
+          "wholeCpuMs": 5073.890999999996,
+          "wholeWallMs": 1588.6257590027526,
+          "wholeCpuOverWall": 3.20305948193156,
+          "approxSearchCpuOverWall": 3.5018728332853866,
+          "nativeSelfCpuOverClientSearchWall": 3.5025797272768773,
+          "nodesMedian": 10811195,
+          "actualReportedThreadCaps": [
+            4
+          ]
+        },
+        "gather": {
+          "n": 3,
+          "wholeCpuMs": 4993.866999999995,
+          "wholeWallMs": 1590.1794240344316,
+          "wholeCpuOverWall": 3.15353223484071,
+          "approxSearchCpuOverWall": 3.521627346052529,
+          "nativeSelfCpuOverClientSearchWall": 3.4839135192375963,
+          "nodesMedian": 10811195,
+          "actualReportedThreadCaps": [
+            4
+          ]
+        },
+        "pika": {
+          "n": 3,
+          "wholeCpuMs": 8481.503000000004,
+          "wholeWallMs": 2638.7007070006803,
+          "wholeCpuOverWall": 3.226449313495847,
+          "approxSearchCpuOverWall": 3.9398699221493994,
+          "nativeSelfCpuOverClientSearchWall": null,
+          "nodesMedian": 24795582,
+          "actualReportedThreadCaps": [
+            4
+          ]
+        }
+      }
+    },
+    {
+      "position": "near-confirmation/ending/9711560/0",
+      "engines": {
+        "c6": {
+          "n": 3,
+          "wholeCpuMs": 3204.9279999999953,
+          "wholeWallMs": 2165.7189690158702,
+          "wholeCpuOverWall": 1.50549739378623,
+          "approxSearchCpuOverWall": 1.5409845148822567,
+          "nativeSelfCpuOverClientSearchWall": 1.5508676931470435,
+          "nodesMedian": 5700902,
+          "actualReportedThreadCaps": [
+            4
+          ]
+        },
+        "gather": {
+          "n": 3,
+          "wholeCpuMs": 3540.381999999994,
+          "wholeWallMs": 2119.4324230309576,
+          "wholeCpuOverWall": 1.6493609568628378,
+          "approxSearchCpuOverWall": 1.7332789087665115,
+          "nativeSelfCpuOverClientSearchWall": 1.7119957191123907,
+          "nodesMedian": 6533641,
+          "actualReportedThreadCaps": [
+            4
+          ]
+        },
+        "pika": {
+          "n": 3,
+          "wholeCpuMs": 8493.881000000016,
+          "wholeWallMs": 2661.350394017063,
+          "wholeCpuOverWall": 3.193453563866429,
+          "approxSearchCpuOverWall": 3.9452511838818936,
+          "nativeSelfCpuOverClientSearchWall": null,
+          "nodesMedian": 9703628,
+          "actualReportedThreadCaps": [
+            4
+          ]
+        }
+      }
+    }
+  ]
+}

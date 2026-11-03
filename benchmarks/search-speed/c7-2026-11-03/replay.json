@@ -1,0 +1,151 @@
+{
+  "passed": true,
+  "games": [
+    {
+      "index": 0,
+      "kind": "retained",
+      "plies": 170,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "technicalForfeit": false,
+        "reason": "将死"
+      },
+      "passed": true
+    },
+    {
+      "index": 1,
+      "kind": "pika",
+      "plies": 40,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "technicalForfeit": false,
+        "reason": "将死"
+      },
+      "passed": true
+    },
+    {
+      "index": 2,
+      "kind": "production",
+      "plies": 106,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "technicalForfeit": false,
+        "reason": "将死"
+      },
+      "passed": true
+    },
+    {
+      "index": 3,
+      "kind": "retained",
+      "plies": 94,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "technicalForfeit": false,
+        "reason": "困毙"
+      },
+      "passed": true
+    },
+    {
+      "index": 4,
+      "kind": "pika",
+      "plies": 73,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": false,
+        "reason": "将死"
+      },
+      "passed": true
+    },
+    {
+      "index": 5,
+      "kind": "production",
+      "plies": 94,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "technicalForfeit": false,
+        "reason": "困毙"
+      },
+      "passed": true
+    },
+    {
+      "index": 6,
+      "kind": "pika",
+      "plies": 170,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": false,
+        "reason": "黑方重复局面判负"
+      },
+      "passed": true
+    },
+    {
+      "index": 7,
+      "kind": "production",
+      "plies": 108,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "technicalForfeit": false,
+        "reason": "将死"
+      },
+      "passed": true
+    },
+    {
+      "index": 8,
+      "kind": "retained",
+      "plies": 80,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "technicalForfeit": false,
+        "reason": "困毙"
+      },
+      "passed": true
+    },
+    {
+      "index": 9,
+      "kind": "pika",
+      "plies": 77,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": false,
+        "reason": "将死"
+      },
+      "passed": true
+    },
+    {
+      "index": 10,
+      "kind": "production",
+      "plies": 103,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": false,
+        "reason": "将死"
+      },
+      "passed": true
+    },
+    {
+      "index": 11,
+      "kind": "retained",
+      "plies": 80,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "technicalForfeit": false,
+        "reason": "困毙"
+      },
+      "passed": true
+    }
+  ],
+  "moves": 1195,
+  "privateChecks": 22
+}

@@ -1,0 +1,90 @@
+--- generated-c6-search.cpp
++++ generated-c7-search.cpp
+@@ -116,0 +117,19 @@
++struct OccupiedBits {
++ std::array<uint64_t,2> words{};void toggle(int i){words[i>>6]^=uint64_t(1)<<(i&63);}bool operator==(const OccupiedBits& x)const{return words==x.words;}
++ struct It{uint64_t low,high;int operator*()const{return low?__builtin_ctzll(low):64+__builtin_ctzll(high);}It& operator++(){if(low)low&=low-1;else high&=high-1;return *this;}bool operator!=(const It& x)const{return low!=x.low||high!=x.high;}};It begin()const{return {words[0],words[1]};}It end()const{return {0,0};}
++};
++uint16_t rankOf(const OccupiedBits& b,int row){if(row<7)return uint16_t((b.words[0]>>(9*row))&511);if(row==7)return uint16_t(((b.words[0]>>63)|(b.words[1]<<1))&511);return uint16_t((b.words[1]>>(9*row-64))&511);}
++uint64_t gatherDiagonal(uint64_t x){return ((x&0x8040201008040201ULL)*0x0101010101010101ULL)>>56;}
++uint16_t fileOf(const OccupiedBits& b,int file){const uint64_t lo=gatherDiagonal(b.words[0]>>file),hi=gatherDiagonal((b.words[1]>>(file?file-1:8))&0x40201ULL);return uint16_t((lo|(hi<<(file?7:8)))&1023);}
++using RankBits=std::array<uint16_t,10>;using FileBits=std::array<uint16_t,9>;
++struct LineAttack {uint16_t blockers=0,rook=0,cannonQuiet=0,cannonCapture=0;};
++static_assert(sizeof(LineAttack)==8,"line table budget");
++const std::array<std::array<LineAttack,1024>,10> lineTable=[](){std::array<std::array<LineAttack,1024>,10> a{};for(int k=0;k<10;k++)for(int mask=0;mask<1024;mask++){auto& out=a[k][mask];for(int dir=0;dir<2;dir++){int count=0;for(int i=k+(dir?1:-1);i>=0&&i<10;i+=(dir?1:-1)){const uint16_t bit=uint16_t(1)<<i;if(!count){out.rook|=bit;if(!(mask&bit))out.cannonQuiet|=bit;}if(mask&bit){out.blockers|=uint16_t(i+1)<<(dir*8+count*4);count++;if(count==2){out.cannonCapture|=bit;break;}}}}}return a;}();
++void toggleLines(RankBits& r,FileBits& f,int i){r[i/9]^=uint16_t(1)<<(i%9);f[i%9]^=uint16_t(1)<<(i/9);}
++bool lineCheckMasks(const Board& b,int side,int k,uint16_t rank,uint16_t file){if(k<0)return true;const int x=k%9,y=k/9;const uint16_t lines[2]={lineTable[x][rank].blockers,lineTable[y][file].blockers};for(int axis=0;axis<2;axis++)for(int dir=0;dir<2;dir++){const int pack=(lines[axis]>>(dir*8))&255,first=(pack&15)-1,second=(pack>>4)-1;if(first>=0){const int at=axis?first*9+x:y*9+first;const Piece p=b[at];if(p.side!=side){const int t=p.effective(),distance=std::abs(first-(axis?y:x));if(t==R)return true;if(t==K&&((axis&&b[k].type==K)||(distance==1&&palace(x,y,p.side))))return true;if(t==P&&distance==1&&(axis?(p.side==0?dir==1:dir==0):(p.side==0?y<=4:y>=5)))return true;}}if(second>=0){const Piece p=b[axis?second*9+x:y*9+second];if(p.side!=side&&p.effective()==C)return true;}}for(auto a:checks[k]){Piece p=b[a.from];if(!p.live()||p.side==side||p.effective()!=a.type)continue;if(a.type==N){if(!b[a.block].live())return true;}else if(a.type==A){if(!p.hidden||palace(x,y,p.side))return true;}else if(!b[a.block].live()&&(!p.hidden||(p.side==0?y>=5:y<=4)))return true;}return false;}
++bool lineCheck(const Board& b,int side,int k,const OccupiedBits& occupied){const bool answer=k<0?true:lineCheckMasks(b,side,k,rankOf(occupied,k/9),fileOf(occupied,k%9));
++#ifdef MIST_VERIFY_RESTORE
++if(answer!=inCheck(b,side,k))throw std::logic_error("shared line check differs from ray oracle");
++#endif
++return answer;}
++
+@@ -280,0 +300,20 @@
++Destinations lineDestinations(const Board& b,const OccupiedBits& occupied,int f,bool captures,int enemyKing){const Piece p=b[f];const int type=p.effective();if(type!=R&&type!=C)return kingHintEnabled?hintDestinations(b,f,captures,enemyKing):pseudoDestinations(b,f,captures);Destinations out;const int x=f%9,y=f/9;const uint16_t rank=rankOf(occupied,y),file=fileOf(occupied,x);const auto& r=lineTable[x][rank];const auto& c=lineTable[y][file];uint16_t row=(type==R?(captures?r.rook&rank:r.rook):captures?r.cannonCapture:r.cannonQuiet|r.cannonCapture)&511,col=type==R?(captures?c.rook&file:c.rook):captures?c.cannonCapture:c.cannonQuiet|c.cannonCapture;auto emit=[&](int to){const Piece q=b[to];if(q.side!=p.side&&(!captures||q.live()))out.push_back(to);};auto visit=[&](uint16_t mask,bool forward,bool vertical){while(mask){const int t=forward?__builtin_ctz(unsigned(mask)):31-__builtin_clz(unsigned(mask));emit(vertical?t*9+x:y*9+t);mask^=uint16_t(1)<<t;}};visit(row&uint16_t(~((1<<(x+1))-1)),true,false);visit(row&uint16_t((1<<x)-1),false,false);visit(col&uint16_t(~((1<<(y+1))-1)),true,true);visit(col&uint16_t((1<<y)-1),false,true);
++#ifdef MIST_VERIFY_RESTORE
++std::vector<int> expected;for(int t:candidates(b,f,captures))if(pseudo(b,f,t))expected.push_back(t);if(expected!=std::vector<int>(out.begin(),out.end()))throw std::logic_error("line destinations/order differs");
++#endif
++return out;}
++bool nearRayRelevant(int king,int square,uint16_t packed){if(king==square)return true;const int dir=square>king?1:0,second=int((packed>>(dir*8+4))&15)-1;return second<0||std::abs(square-king)<=std::abs(second-king);}
++bool lineLegalPseudo(Board& b,const OccupiedBits& occupied,int side,Move m,int king,bool check){const Piece p=b[m.from],q=b[m.to];const bool royal=!p.hidden&&p.type==K;const int kx=king%9,ky=king/9,fx=m.from%9,fy=m.from/9,tx=m.to%9,ty=m.to/9;bool safe=king>=0&&!check&&!royal;
++if(safe){if(std::abs(fx-kx)==1&&std::abs(fy-ky)==1)safe=false;else if(!kingHintEnabled)safe=!(fx==kx||fy==ky||tx==kx||ty==ky);else {if(fy==ky||ty==ky){const auto packed=lineTable[kx][rankOf(occupied,ky)].blockers;if((fy==ky&&nearRayRelevant(kx,fx,packed))||(ty==ky&&nearRayRelevant(kx,tx,packed)))safe=false;}if(safe&&(fx==kx||tx==kx)){const auto packed=lineTable[ky][fileOf(occupied,kx)].blockers;if((fx==kx&&nearRayRelevant(ky,fy,packed))||(tx==kx&&nearRayRelevant(ky,ty,packed)))safe=false;}}}
++#ifdef MIST_VERIFY_RESTORE
++const Board before=b;const bool expected=legalSearchPseudo(b,side,m,king,check);
++#endif
++if(!safe){const int k=royal?m.to:king;if(k<0)return false;uint16_t rank=rankOf(occupied,k/9),file=fileOf(occupied,k%9);auto toggle=[&](int i){if(i/9==k/9)rank^=uint16_t(1)<<(i%9);if(i%9==k%9)file^=uint16_t(1)<<(i/9);};toggle(m.from);if(!q.live())toggle(m.to);b[m.to]=p;b[m.from]=Piece{};try{safe=!lineCheckMasks(b,side,k,rank,file);}catch(...){b[m.from]=p;b[m.to]=q;throw;}b[m.from]=p;b[m.to]=q;}
++#ifdef MIST_VERIFY_RESTORE
++if(safe!=expected||b!=before)throw std::logic_error("shared line legality differs");
++#endif
++return safe;}
++void linePseudos(Board& b,const OccupiedBits& occupied,int side,bool captures,int enemyKing,std::vector<Move>& out){out.clear();for(int f=0;f<90;f++)if(b[f].side==side)for(int t:lineDestinations(b,occupied,f,captures,enemyKing))out.push_back({f,t});}
++void lineLegalInto(Board& b,const OccupiedBits& occupied,int side,bool captures,bool first,int king,std::vector<Move>& out,int checked=-1,int enemyKing=-2){if(king==-2)king=kingAt(b,side);if(enemyKing==-2)enemyKing=kingAt(b,side^1);const bool check=checked<0?lineCheck(b,side,king,occupied):checked;out.clear();for(int f=0;f<90;f++)if(b[f].side==side)for(int t:lineDestinations(b,occupied,f,captures,enemyKing))if(lineLegalPseudo(b,occupied,side,{f,t},king,check)){out.push_back({f,t});if(first)return;}}
++std::vector<Move> lineFullLegal(Board& b,int side,bool captures=false){OccupiedBits occupied;for(int i=0;i<90;i++)if(b[i].live())occupied.toggle(i);std::vector<Move> out;lineLegalInto(b,occupied,side,captures,false,-2,out);return out;}
++
+@@ -352,4 +391 @@
+-struct OccupiedBits {
+- std::array<uint64_t,2> words{};void toggle(int i){words[i>>6]^=uint64_t(1)<<(i&63);}bool operator==(const OccupiedBits& x)const{return words==x.words;}
+- struct It{uint64_t low,high;int operator*()const{return low?__builtin_ctzll(low):64+__builtin_ctzll(high);}It& operator++(){if(low)low&=low-1;else high&=high-1;return *this;}bool operator!=(const It& x)const{return low!=x.low||high!=x.high;}};It begin()const{return {words[0],words[1]};}It end()const{return {0,0};}
+-};
++
+@@ -372 +408 @@
+-OccupiedBits rebuilt;for(int i=0;i<90;i++)if(s.board[i].live())rebuilt.toggle(i);if(!(rebuilt==s.occupied))throw std::logic_error("occupied mask drift");
++OccupiedBits rebuilt;for(int i=0;i<90;i++)if(s.board[i].live())rebuilt.toggle(i);if(!(rebuilt==s.occupied))throw std::logic_error("occupied mask drift");RankBits r{};FileBits f{};for(int i=0;i<90;i++)if(s.board[i].live())toggleLines(r,f,i);for(int i=0;i<10;i++)if(rankOf(s.occupied,i)!=r[i])throw std::logic_error("gather rank drift");for(int i=0;i<9;i++)if(fileOf(s.occupied,i)!=f[i])throw std::logic_error("gather file drift");
+@@ -551 +587 @@
+-        if(ply>=MAX_SEARCH_PLY-1){safetyCutoffs++;auto& probe=probeBuffers.back();legalKingHintInto(s.board,s.turn,false,true,s.kings[s.turn],probe,-1,s.kings[s.turn^1]);if(probe.empty())return -mate+ply;return evaluate(s,s.turn)-(inCheck(s.board,s.turn,s.kings[s.turn])?180:0);}
++        if(ply>=MAX_SEARCH_PLY-1){safetyCutoffs++;auto& probe=probeBuffers.back();lineLegalInto(s.board,s.occupied,s.turn,false,true,s.kings[s.turn],probe,-1,s.kings[s.turn^1]);if(probe.empty())return -mate+ply;return evaluate(s,s.turn)-(lineCheck(s.board,s.turn,s.kings[s.turn],s.occupied)?180:0);}
+@@ -554 +590 @@
+-        if(previous>=2||s.quiet>=120||s.gamePly>=400){auto& probe=probeBuffers.at(ply);legalKingHintInto(s.board,s.turn,false,true,s.kings[s.turn],probe,-1,s.kings[s.turn^1]);if(probe.empty())return -mate+ply;if(previous>=2)return mate-ply;return 0;}
++        if(previous>=2||s.quiet>=120||s.gamePly>=400){auto& probe=probeBuffers.at(ply);lineLegalInto(s.board,s.occupied,s.turn,false,true,s.kings[s.turn],probe,-1,s.kings[s.turn^1]);if(probe.empty())return -mate+ply;if(previous>=2)return mate-ply;return 0;}
+@@ -561 +597 @@
+-        const bool check=inCheck(s.board,s.turn,s.kings[s.turn]);
++        const bool check=lineCheck(s.board,s.turn,s.kings[s.turn],s.occupied);
+@@ -576 +612 @@
+-        bool check=inCheck(s.board,s.turn,s.kings[s.turn]);if(check&&depth>0&&extensions>0){depth++;extensions--;}
++        bool check=lineCheck(s.board,s.turn,s.kings[s.turn],s.occupied);if(check&&depth>0&&extensions>0){depth++;extensions--;}
+@@ -590 +626 @@
+-                auto& probe=probeBuffers.at(ply);legalKingHintInto(s.board,s.turn,false,true,s.kings[s.turn],probe,check,s.kings[s.turn^1]);
++                auto& probe=probeBuffers.at(ply);lineLegalInto(s.board,s.occupied,s.turn,false,true,s.kings[s.turn],probe,check,s.kings[s.turn^1]);
+@@ -598,2 +634,2 @@
+-                legalKingHintInto(s.board,s.turn,true,true,s.kings[s.turn],probe,check,s.kings[s.turn^1]);
+-                if(probe.empty())legalKingHintInto(s.board,s.turn,false,true,s.kings[s.turn],probe,check,s.kings[s.turn^1]);
++                lineLegalInto(s.board,s.occupied,s.turn,true,true,s.kings[s.turn],probe,check,s.kings[s.turn^1]);
++                if(probe.empty())lineLegalInto(s.board,s.occupied,s.turn,false,true,s.kings[s.turn],probe,check,s.kings[s.turn^1]);
+@@ -605,2 +641,2 @@
+-        if(lazy)searchPseudos(s.board,s.turn,quiet,s.kings[s.turn^1],moves);else legalKingHintInto(s.board,s.turn,quiet,false,s.kings[s.turn],moves,check,s.kings[s.turn^1]);
+-        if(moves.empty()){if(!quiet)return -mate+ply;auto& probe=probeBuffers.at(ply);legalKingHintInto(s.board,s.turn,false,true,s.kings[s.turn],probe,check,s.kings[s.turn^1]);if(probe.empty())return -mate+ply;}
++        if(lazy)linePseudos(s.board,s.occupied,s.turn,quiet,s.kings[s.turn^1],moves);else lineLegalInto(s.board,s.occupied,s.turn,quiet,false,s.kings[s.turn],moves,check,s.kings[s.turn^1]);
++        if(moves.empty()){if(!quiet)return -mate+ply;auto& probe=probeBuffers.at(ply);lineLegalInto(s.board,s.occupied,s.turn,false,true,s.kings[s.turn],probe,check,s.kings[s.turn^1]);if(probe.empty())return -mate+ply;}
+@@ -618 +654 @@
+-            if(lazy&&!legalSearchPseudo(s.board,s.turn,m,s.kings[s.turn],check))continue;hadLegal=true;
++            if(lazy&&!lineLegalPseudo(s.board,s.occupied,s.turn,m,s.kings[s.turn],check))continue;hadLegal=true;
+@@ -627 +663 @@
+-        if(lazy&&!hadLegal){if(!quiet)return -mate+ply;auto& probe=probeBuffers.at(ply);legalKingHintInto(s.board,s.turn,false,true,s.kings[s.turn],probe,check,s.kings[s.turn^1]);if(probe.empty())return -mate+ply;return alpha;}
++        if(lazy&&!hadLegal){if(!quiet)return -mate+ply;auto& probe=probeBuffers.at(ply);lineLegalInto(s.board,s.occupied,s.turn,false,true,s.kings[s.turn],probe,check,s.kings[s.turn^1]);if(probe.empty())return -mate+ply;return alpha;}
+@@ -1011,3 +1047,3 @@
+-    for(int side:{0,1}){if(side)std::cout<<',';std::cout<<"{\"check\":"<<(inCheck(s.board,side,s.kings[side])?"true":"false")<<",\"score\":"<<evaluate(s,side)<<",\"legal\":";writeMoves(lazyFullLegal(s.board,side));std::cout<<",\"captures\":";writeMoves(lazyFullLegal(s.board,side,true));std::cout<<'}';}
+-    std::cout<<"],\"transitions\":[";const Board before=s.board;Key old=s.key();const int oldPopulation=s.population,oldKings[2]={s.kings[0],s.kings[1]};auto moves=lazyFullLegal(s.board,s.turn);
+-    for(size_t i=0;i<moves.size();i++){if(i)std::cout<<',';Move m=moves[i];Undo u=push(s,m);std::cout<<"{\"from\":"<<m.from<<",\"to\":"<<m.to<<",\"type\":"<<s.board[m.to].type<<",\"score\":"<<evaluate(s,p.turn)<<",\"poolCount\":["<<s.poolCount[0]<<','<<s.poolCount[1]<<"],\"poolValue\":["<<s.poolValue[0]<<','<<s.poolValue[1]<<"],\"reply\":";writeMoves(lazyFullLegal(s.board,s.turn));pop(s,m,u);std::cout<<",\"restored\":"<<((s.board==before&&s.key()==old&&s.population==oldPopulation&&s.kings[0]==oldKings[0]&&s.kings[1]==oldKings[1])?"true":"false")<<'}';}
++    for(int side:{0,1}){if(side)std::cout<<',';std::cout<<"{\"check\":"<<(inCheck(s.board,side,s.kings[side])?"true":"false")<<",\"score\":"<<evaluate(s,side)<<",\"legal\":";writeMoves(lineFullLegal(s.board,side));std::cout<<",\"captures\":";writeMoves(lineFullLegal(s.board,side,true));std::cout<<'}';}
++    std::cout<<"],\"transitions\":[";const Board before=s.board;Key old=s.key();const int oldPopulation=s.population,oldKings[2]={s.kings[0],s.kings[1]};auto moves=lineFullLegal(s.board,s.turn);
++    for(size_t i=0;i<moves.size();i++){if(i)std::cout<<',';Move m=moves[i];Undo u=push(s,m);std::cout<<"{\"from\":"<<m.from<<",\"to\":"<<m.to<<",\"type\":"<<s.board[m.to].type<<",\"score\":"<<evaluate(s,p.turn)<<",\"poolCount\":["<<s.poolCount[0]<<','<<s.poolCount[1]<<"],\"poolValue\":["<<s.poolValue[0]<<','<<s.poolValue[1]<<"],\"reply\":";writeMoves(lineFullLegal(s.board,s.turn));pop(s,m,u);std::cout<<",\"restored\":"<<((s.board==before&&s.key()==old&&s.population==oldPopulation&&s.kings[0]==oldKings[0]&&s.kings[1]==oldKings[1])?"true":"false")<<'}';}
