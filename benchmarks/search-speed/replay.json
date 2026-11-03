@@ -1,0 +1,103 @@
+{
+  "passed": true,
+  "games": [
+    {
+      "index": 0,
+      "kind": "stable",
+      "plies": 26,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": false,
+        "reason": "黑方重复局面判负"
+      },
+      "passed": true
+    },
+    {
+      "index": 1,
+      "kind": "pika",
+      "plies": 30,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "technicalForfeit": false,
+        "reason": "将死"
+      },
+      "passed": true
+    },
+    {
+      "index": 2,
+      "kind": "stable",
+      "plies": 73,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": false,
+        "reason": "将死"
+      },
+      "passed": true
+    },
+    {
+      "index": 3,
+      "kind": "pika",
+      "plies": 25,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": false,
+        "reason": "将死"
+      },
+      "passed": true
+    },
+    {
+      "index": 4,
+      "kind": "pika",
+      "plies": 72,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": false,
+        "reason": "黑方重复局面判负"
+      },
+      "passed": true
+    },
+    {
+      "index": 5,
+      "kind": "stable",
+      "plies": 28,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": false,
+        "reason": "黑方重复局面判负"
+      },
+      "passed": true
+    },
+    {
+      "index": 6,
+      "kind": "pika",
+      "plies": 58,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "technicalForfeit": false,
+        "reason": "将死"
+      },
+      "passed": true
+    },
+    {
+      "index": 7,
+      "kind": "stable",
+      "plies": 60,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "technicalForfeit": false,
+        "reason": "将死"
+      },
+      "passed": true
+    }
+  ],
+  "moves": 372,
+  "privateChecks": 27
+}

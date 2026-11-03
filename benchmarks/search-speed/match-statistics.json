@@ -1,0 +1,50 @@
+{
+  "candidate": {
+    "allRequests": 185,
+    "longCount": 185,
+    "zeroOrShort": 0,
+    "fallback": 0,
+    "hostStop": 2,
+    "maxMs": 1968.9625419999938,
+    "threads": [
+      4
+    ],
+    "depthTargetMedian": 6,
+    "selMedian": 14,
+    "selP10": 14,
+    "selP90": 15,
+    "npsMedian": 5821131.351283525
+  },
+  "stable": {
+    "allRequests": 94,
+    "longCount": 92,
+    "zeroOrShort": 2,
+    "fallback": 0,
+    "hostStop": 92,
+    "maxMs": 1972.989846999997,
+    "threads": [
+      4
+    ],
+    "depthTargetMedian": 6,
+    "selMedian": 14,
+    "selP10": 13,
+    "selP90": 16,
+    "npsMedian": 2754270.618465177
+  },
+  "pika": {
+    "allRequests": 93,
+    "longCount": 86,
+    "zeroOrShort": 7,
+    "fallback": 0,
+    "hostStop": 0,
+    "maxMs": 1964.6424679999998,
+    "threads": [
+      4
+    ],
+    "depthTargetMedian": 16,
+    "selMedian": 14,
+    "selP10": 8,
+    "selP90": 23.5,
+    "npsMedian": 4913167.750906115
+  }
+}

@@ -1,0 +1,252 @@
+{
+  "passed": true,
+  "positions": [
+    {
+      "name": "opening/51101/0",
+      "config": {
+        "threads": 4,
+        "hashMiB": 64,
+        "moveOverheadMs": 0,
+        "evaluation": "unchanged fixed HCE binary; canonical own-red orientation, distinct reference from raw historical Pika",
+        "hostReserveMs": 40
+      },
+      "legalMoves": 44,
+      "actualFen": "xxxxkxxxx/9/1x5x1/x1x1x1x1x/9/9/X1X1X1X1X/1X5X1/9/XXXXKXXXX w R2A2C2P5N2B2r2a2c2p5n2b2 0 1",
+      "expectedFen": "xxxxkxxxx/9/1x5x1/x1x1x1x1x/9/9/X1X1X1X1X/1X5X1/9/XXXXKXXXX w R2A2C2P5N2B2r2a2c2p5n2b2 0 1"
+    },
+    {
+      "name": "opening/51109/3",
+      "config": {
+        "threads": 4,
+        "hashMiB": 64,
+        "moveOverheadMs": 0,
+        "evaluation": "unchanged fixed HCE binary; canonical own-red orientation, distinct reference from raw historical Pika",
+        "hostReserveMs": 40
+      },
+      "legalMoves": 35,
+      "actualFen": "xxxxkxxxx/9/7x1/x3x1x1x/2p6/1b7/XPX1X1X1X/7X1/9/XXXXKXXXX w R2A2C2P4N2B2r2a2c2p4n2b1 0 1",
+      "expectedFen": "xxxxkxxxx/9/7x1/x3x1x1x/2p6/1b7/XPX1X1X1X/7X1/9/XXXXKXXXX w R2A2C2P4N2B2r2a2c2p4n2b1 0 1"
+    },
+    {
+      "name": "opening/51119/7",
+      "config": {
+        "threads": 4,
+        "hashMiB": 64,
+        "moveOverheadMs": 0,
+        "evaluation": "unchanged fixed HCE binary; canonical own-red orientation, distinct reference from raw historical Pika",
+        "hostReserveMs": 40
+      },
+      "legalMoves": 32,
+      "actualFen": "1xx1kxxxx/4p4/n6x1/x1x1x1x2/8a/1rP6/X3X1X1X/3B3X1/4K4/XXXX1XXXX w R2A2C2P4N2B1r1a1c2p4n1b2 0 1",
+      "expectedFen": "1xx1kxxxx/4p4/n6x1/x1x1x1x2/8a/1rP6/X3X1X1X/3B3X1/4K4/XXXX1XXXX w R2A2C2P4N2B1r1a1c2p4n1b2 0 1"
+    },
+    {
+      "name": "opening/51131/10",
+      "config": {
+        "threads": 4,
+        "hashMiB": 64,
+        "moveOverheadMs": 0,
+        "evaluation": "unchanged fixed HCE binary; canonical own-red orientation, distinct reference from raw historical Pika",
+        "hostReserveMs": 40
+      },
+      "legalMoves": 24,
+      "actualFen": "1xxxkx2x/5b3/cx1np2x1/x3x1x1x/7P1/9/X1X1X1X1X/C2PP4/9/X2XKXXXX w R2A2C1P2N2B2r2a2c1p4n1b1 0 1",
+      "expectedFen": "1xxxkx2x/5b3/cx1np2x1/x3x1x1x/7P1/9/X1X1X1X1X/C2PP4/9/X2XKXXXX w R2A2C1P2N2B2r2a2c1p4n1b1 0 1"
+    },
+    {
+      "name": "middle/51203/28",
+      "config": {
+        "threads": 4,
+        "hashMiB": 64,
+        "moveOverheadMs": 0,
+        "evaluation": "unchanged fixed HCE binary; canonical own-red orientation, distinct reference from raw historical Pika",
+        "hostReserveMs": 40
+      },
+      "legalMoves": 44,
+      "actualFen": "2xxkx1x1/r6b1/2p1b3p/P1C1x4/7Pn/2P2a3/X3X1X1X/1C6A/R3B4/2pXK3X w R1A1P2N2B1a1c2p1n1 0 1",
+      "expectedFen": "2xxkx1x1/r6b1/2p1b3p/P1C1x4/7Pn/2P2a3/X3X1X1X/1C6A/R3B4/2pXK3X w R1A1P2N2B1a1c2p1n1 0 1"
+    },
+    {
+      "name": "middle/51217/37",
+      "config": {
+        "threads": 4,
+        "hashMiB": 64,
+        "moveOverheadMs": 0,
+        "evaluation": "unchanged fixed HCE binary; canonical own-red orientation, distinct reference from raw historical Pika",
+        "hostReserveMs": 40
+      },
+      "legalMoves": 23,
+      "actualFen": "x4xxx1/4c4/p3k4/2x1r4/p3b3a/9/2XnX3X/1b4ANN/C2P5/1P1XKXX2 w R1A1C1P3r1a1c1p2 0 1",
+      "expectedFen": "x4xxx1/4c4/p3k4/2x1r4/p3b3a/9/2XnX3X/1b4ANN/C2P5/1P1XKXX2 w R1A1C1P3r1a1c1p2 0 1"
+    },
+    {
+      "name": "middle/51229/46",
+      "config": {
+        "threads": 4,
+        "hashMiB": 64,
+        "moveOverheadMs": 0,
+        "evaluation": "unchanged fixed HCE binary; canonical own-red orientation, distinct reference from raw historical Pika",
+        "hostReserveMs": 40
+      },
+      "legalMoves": 47,
+      "actualFen": "1xxx3c1/1N1k5/3apap1b/2x1x1x1x/p8/B5A2/3A4X/9/RR5CP/1XXXK1XX1 w C1P4N1r2c1p1n2b1 0 1",
+      "expectedFen": "1xxx3c1/1N1k5/3apap1b/2x1x1x1x/p8/B5A2/3A4X/9/RR5CP/1XXXK1XX1 w C1P4N1r2c1p1n2b1 0 1"
+    },
+    {
+      "name": "middle/51241/57",
+      "config": {
+        "threads": 4,
+        "hashMiB": 64,
+        "moveOverheadMs": 0,
+        "evaluation": "unchanged fixed HCE binary; canonical own-red orientation, distinct reference from raw historical Pika",
+        "hostReserveMs": 40
+      },
+      "legalMoves": 37,
+      "actualFen": "xxxxkx3/2r6/3bp4/2x3x2/2a2C2r/2PcB4/Xn4RAX/P1R3B1P/N8/3K1X1X1 w C1P2N1a1c1p4b1 0 1",
+      "expectedFen": "xxxxkx3/2r6/3bp4/2x3x2/2a2C2r/2PcB4/Xn4RAX/P1R3B1P/N8/3K1X1X1 w C1P2N1a1c1p4b1 0 1"
+    },
+    {
+      "name": "ending/51307/3",
+      "config": {
+        "threads": 4,
+        "hashMiB": 64,
+        "moveOverheadMs": 0,
+        "evaluation": "unchanged fixed HCE binary; canonical own-red orientation, distinct reference from raw historical Pika",
+        "hostReserveMs": 40
+      },
+      "legalMoves": 31,
+      "actualFen": "4k1b2/7r1/6n2/9/4p4/4P4/9/2N6/5R3/2B1K4 w  0 1",
+      "expectedFen": "4k1b2/7r1/6n2/9/4p4/4P4/9/2N6/5R3/2B1K4 w - 0 1"
+    },
+    {
+      "name": "ending/51319/6",
+      "config": {
+        "threads": 4,
+        "hashMiB": 64,
+        "moveOverheadMs": 0,
+        "evaluation": "unchanged fixed HCE binary; canonical own-red orientation, distinct reference from raw historical Pika",
+        "hostReserveMs": 40
+      },
+      "legalMoves": 31,
+      "actualFen": "4k1b2/9/6n2/9/4P4/9/4N4/7r1/3R5/2B1K4 w  0 1",
+      "expectedFen": "4k1b2/9/6n2/9/4P4/9/4N4/7r1/3R5/2B1K4 w - 0 1"
+    },
+    {
+      "name": "ending/51329/9",
+      "config": {
+        "threads": 4,
+        "hashMiB": 64,
+        "moveOverheadMs": 0,
+        "evaluation": "unchanged fixed HCE binary; canonical own-red orientation, distinct reference from raw historical Pika",
+        "hostReserveMs": 40
+      },
+      "legalMoves": 2,
+      "actualFen": "4k1b2/9/6n2/9/4p4/4P4/9/9/r3K4/2BN5 w  0 1",
+      "expectedFen": "4k1b2/9/6n2/9/4p4/4P4/9/9/r3K4/2BN5 w - 0 1"
+    },
+    {
+      "name": "ending/51341/12",
+      "config": {
+        "threads": 4,
+        "hashMiB": 64,
+        "moveOverheadMs": 0,
+        "evaluation": "unchanged fixed HCE binary; canonical own-red orientation, distinct reference from raw historical Pika",
+        "hostReserveMs": 40
+      },
+      "legalMoves": 18,
+      "actualFen": "5k3/3Rn4/8b/9/4p2r1/4P4/9/9/9/2BNK4 w  0 1",
+      "expectedFen": "5k3/3Rn4/8b/9/4p2r1/4P4/9/9/9/2BNK4 w - 0 1"
+    },
+    {
+      "name": "previous-frozen-two-roots",
+      "config": {
+        "threads": 4,
+        "hashMiB": 64,
+        "moveOverheadMs": 0,
+        "evaluation": "unchanged fixed HCE binary; canonical own-red orientation, distinct reference from raw historical Pika",
+        "hostReserveMs": 40
+      },
+      "legalMoves": 2,
+      "actualFen": "4k1b2/9/6n2/9/4p4/4P4/9/9/r3K4/2BN5 w  0 1",
+      "expectedFen": "4k1b2/9/6n2/9/4p4/4P4/9/9/r3K4/2BN5 w - 0 1"
+    },
+    {
+      "name": "color-rotated-two-roots",
+      "config": {
+        "threads": 4,
+        "hashMiB": 64,
+        "moveOverheadMs": 0,
+        "evaluation": "unchanged fixed HCE binary; canonical own-red orientation, distinct reference from raw historical Pika",
+        "hostReserveMs": 40
+      },
+      "legalMoves": 2,
+      "actualFen": "4k1b2/9/6n2/9/4p4/4P4/9/9/r3K4/2BN5 w  0 1",
+      "expectedFen": "4k1b2/9/6n2/9/4p4/4P4/9/9/r3K4/2BN5 w - 0 1"
+    },
+    {
+      "name": "first-reachable-forced/51503/17",
+      "config": {
+        "threads": 4,
+        "hashMiB": 64,
+        "moveOverheadMs": 0,
+        "evaluation": "unchanged fixed HCE binary; canonical own-red orientation, distinct reference from raw historical Pika",
+        "hostReserveMs": 40
+      },
+      "legalMoves": 1,
+      "actualFen": "3k5/5n3/9/9/4P4/9/N8/3rK4/5R3/2B6 w  0 1",
+      "expectedFen": "3k5/5n3/9/9/4P4/9/N8/3rK4/5R3/2B6 w - 0 1"
+    },
+    {
+      "name": "first-reachable-forced/51504/19",
+      "config": {
+        "threads": 4,
+        "hashMiB": 64,
+        "moveOverheadMs": 0,
+        "evaluation": "unchanged fixed HCE binary; canonical own-red orientation, distinct reference from raw historical Pika",
+        "hostReserveMs": 40
+      },
+      "legalMoves": 2,
+      "actualFen": "4k4/9/R8/4n4/6b2/2N2p3/9/9/9/2BrK4 w  0 1",
+      "expectedFen": "4k4/9/R8/4n4/6b2/2N2p3/9/9/9/2BrK4 w - 0 1"
+    },
+    {
+      "name": "first-reachable-forced/51505/31",
+      "config": {
+        "threads": 4,
+        "hashMiB": 64,
+        "moveOverheadMs": 0,
+        "evaluation": "unchanged fixed HCE binary; canonical own-red orientation, distinct reference from raw historical Pika",
+        "hostReserveMs": 40
+      },
+      "legalMoves": 2,
+      "actualFen": "9/1N3k3/9/9/2b2P3/4n4/9/4B4/3R5/5K2r w  0 1",
+      "expectedFen": "9/1N3k3/9/9/2b2P3/4n4/9/4B4/3R5/5K2r w - 0 1"
+    },
+    {
+      "name": "first-reachable-forced/51506/31",
+      "config": {
+        "threads": 4,
+        "hashMiB": 64,
+        "moveOverheadMs": 0,
+        "evaluation": "unchanged fixed HCE binary; canonical own-red orientation, distinct reference from raw historical Pika",
+        "hostReserveMs": 40
+      },
+      "legalMoves": 2,
+      "actualFen": "5k3/9/2n6/9/4p1b2/1R2P1B2/N8/9/4Kr3/9 w  0 1",
+      "expectedFen": "5k3/9/2n6/9/4p1b2/1R2P1B2/N8/9/4Kr3/9 w - 0 1"
+    },
+    {
+      "name": "全明/49033/11",
+      "config": {
+        "threads": 4,
+        "hashMiB": 64,
+        "moveOverheadMs": 0,
+        "evaluation": "unchanged fixed HCE binary; canonical own-red orientation, distinct reference from raw historical Pika",
+        "hostReserveMs": 40
+      },
+      "legalMoves": 28,
+      "actualFen": "4k1b2/4n4/9/3r5/4p4/2N1P4/9/B8/1R7/4K4 w  0 1",
+      "expectedFen": "4k1b2/4n4/9/3r5/4p4/2N1P4/9/B8/1R7/4K4 w - 0 1"
+    }
+  ]
+}

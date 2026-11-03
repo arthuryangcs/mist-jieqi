@@ -1,0 +1,107 @@
+{
+  "passed": true,
+  "exhaustive": [
+    {
+      "case": 0,
+      "depth": 1,
+      "worlds": 1,
+      "jsNodes": 12,
+      "nativeNodes": 12,
+      "rootCount": 12
+    },
+    {
+      "case": 0,
+      "depth": 2,
+      "worlds": 1,
+      "jsNodes": 94,
+      "nativeNodes": 130,
+      "rootCount": 12
+    },
+    {
+      "case": 1,
+      "depth": 1,
+      "worlds": 1,
+      "jsNodes": 11,
+      "nativeNodes": 11,
+      "rootCount": 11
+    },
+    {
+      "case": 1,
+      "depth": 2,
+      "worlds": 1,
+      "jsNodes": 99,
+      "nativeNodes": 114,
+      "rootCount": 11
+    },
+    {
+      "case": 2,
+      "depth": 1,
+      "worlds": 8,
+      "jsNodes": 40,
+      "nativeNodes": 40,
+      "rootCount": 5
+    },
+    {
+      "case": 2,
+      "depth": 2,
+      "worlds": 8,
+      "jsNodes": 304,
+      "nativeNodes": 424,
+      "rootCount": 5
+    },
+    {
+      "case": 3,
+      "depth": 1,
+      "worlds": 8,
+      "jsNodes": 32,
+      "nativeNodes": 32,
+      "rootCount": 4
+    },
+    {
+      "case": 3,
+      "depth": 2,
+      "worlds": 8,
+      "jsNodes": 272,
+      "nativeNodes": 304,
+      "rootCount": 4
+    }
+  ],
+  "rules": [
+    {
+      "kind": "root-third-repeat",
+      "turn": "r",
+      "score": -98999
+    },
+    {
+      "kind": "already-third-repeat",
+      "turn": "r",
+      "score": 99000
+    },
+    {
+      "kind": "root-third-repeat",
+      "turn": "b",
+      "score": -98999
+    },
+    {
+      "kind": "already-third-repeat",
+      "turn": "b",
+      "score": 99000
+    },
+    {
+      "kind": "quiet-boundary",
+      "roots": 12,
+      "passed": true
+    },
+    {
+      "kind": "ply-boundary",
+      "roots": 12,
+      "passed": true
+    }
+  ],
+  "qAssertions": 285,
+  "zeroNodeRule": {
+    "passed": true,
+    "reason": "root-adjudication",
+    "nodes": 0
+  }
+}

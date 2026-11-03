@@ -1,0 +1,381 @@
+{
+  "passed": true,
+  "sourceSha256": "ba92720de594d2eda5fa94ffa388954fac8c55706df27f01af51db6eb1abcf87",
+  "sanitize": false,
+  "threadSanitize": true,
+  "comparisons": [
+    {
+      "name": "opening/51101/0",
+      "depth": 2,
+      "score": 32.59487964945658,
+      "nodes": 35128,
+      "referenceNodes": 49148
+    },
+    {
+      "name": "opening/51101/0",
+      "depth": 3,
+      "score": 55.93144182857111,
+      "nodes": 237112,
+      "referenceNodes": 866194
+    },
+    {
+      "name": "opening/51109/3",
+      "depth": 2,
+      "score": 74.61984111985372,
+      "nodes": 24509,
+      "referenceNodes": 31249
+    },
+    {
+      "name": "opening/51109/3",
+      "depth": 3,
+      "score": 64.47357582229819,
+      "nodes": 114419,
+      "referenceNodes": 356329
+    },
+    {
+      "name": "opening/51119/7",
+      "depth": 2,
+      "score": 798.7498060298326,
+      "nodes": 30601,
+      "referenceNodes": 26925
+    },
+    {
+      "name": "opening/51119/7",
+      "depth": 3,
+      "score": 796.2700698000424,
+      "nodes": 133471,
+      "referenceNodes": 449118
+    },
+    {
+      "name": "opening/51131/10",
+      "depth": 2,
+      "score": 209.27782397212027,
+      "nodes": 17834,
+      "referenceNodes": 25338
+    },
+    {
+      "name": "opening/51131/10",
+      "depth": 3,
+      "score": 101.50462330909187,
+      "nodes": 131505,
+      "referenceNodes": 457920
+    },
+    {
+      "name": "middle/51203/28",
+      "depth": 2,
+      "score": 991,
+      "nodes": 39874,
+      "referenceNodes": 113439
+    },
+    {
+      "name": "middle/51203/28",
+      "depth": 3,
+      "score": 857.0000000000003,
+      "nodes": 276275,
+      "referenceNodes": 1285387
+    },
+    {
+      "name": "middle/51217/37",
+      "depth": 2,
+      "score": -933.8015776394041,
+      "nodes": 12707,
+      "referenceNodes": 13829
+    },
+    {
+      "name": "middle/51217/37",
+      "depth": 3,
+      "score": -1047.159229436833,
+      "nodes": 109612,
+      "referenceNodes": 282953
+    },
+    {
+      "name": "middle/51229/46",
+      "depth": 2,
+      "score": 335.4443016361061,
+      "nodes": 50089,
+      "referenceNodes": 108132
+    },
+    {
+      "name": "middle/51229/46",
+      "depth": 3,
+      "score": 403.97095489562935,
+      "nodes": 257725,
+      "referenceNodes": 752766
+    },
+    {
+      "name": "middle/51241/57",
+      "depth": 2,
+      "score": 234.00000000000014,
+      "nodes": 46178,
+      "referenceNodes": 53120
+    },
+    {
+      "name": "middle/51241/57",
+      "depth": 3,
+      "score": 178.3972537954503,
+      "nodes": 258434,
+      "referenceNodes": 599543
+    },
+    {
+      "name": "ending/51307/3",
+      "depth": 2,
+      "score": 187,
+      "nodes": 1763,
+      "referenceNodes": 1627
+    },
+    {
+      "name": "ending/51307/3",
+      "depth": 3,
+      "score": 189,
+      "nodes": 8750,
+      "referenceNodes": 31687
+    },
+    {
+      "name": "ending/51319/6",
+      "depth": 2,
+      "score": 204.33333333333334,
+      "nodes": 1504,
+      "referenceNodes": 1409
+    },
+    {
+      "name": "ending/51319/6",
+      "depth": 3,
+      "score": 197,
+      "nodes": 6833,
+      "referenceNodes": 18851
+    },
+    {
+      "name": "ending/51329/9",
+      "depth": 2,
+      "score": -1117,
+      "nodes": 86,
+      "referenceNodes": 90
+    },
+    {
+      "name": "ending/51329/9",
+      "depth": 3,
+      "score": -1113,
+      "nodes": 396,
+      "referenceNodes": 619
+    },
+    {
+      "name": "ending/51341/12",
+      "depth": 2,
+      "score": 20,
+      "nodes": 1121,
+      "referenceNodes": 1053
+    },
+    {
+      "name": "ending/51341/12",
+      "depth": 3,
+      "score": 20,
+      "nodes": 4176,
+      "referenceNodes": 8434
+    },
+    {
+      "name": "previous-frozen-two-roots",
+      "depth": 2,
+      "score": -1117,
+      "nodes": 86,
+      "referenceNodes": 90
+    },
+    {
+      "name": "previous-frozen-two-roots",
+      "depth": 3,
+      "score": -1113,
+      "nodes": 396,
+      "referenceNodes": 586
+    },
+    {
+      "name": "color-rotated-two-roots",
+      "depth": 2,
+      "score": -1117,
+      "nodes": 86,
+      "referenceNodes": 82
+    },
+    {
+      "name": "color-rotated-two-roots",
+      "depth": 3,
+      "score": -1113,
+      "nodes": 397,
+      "referenceNodes": 384
+    },
+    {
+      "name": "first-reachable-forced/51503/17",
+      "depth": 2,
+      "score": -505.3333333333333,
+      "nodes": 54,
+      "referenceNodes": 59
+    },
+    {
+      "name": "first-reachable-forced/51503/17",
+      "depth": 3,
+      "score": -505.3333333333333,
+      "nodes": 195,
+      "referenceNodes": 213
+    },
+    {
+      "name": "first-reachable-forced/51504/19",
+      "depth": 2,
+      "score": 685,
+      "nodes": 50,
+      "referenceNodes": 49
+    },
+    {
+      "name": "first-reachable-forced/51504/19",
+      "depth": 3,
+      "score": 693,
+      "nodes": 280,
+      "referenceNodes": 281
+    },
+    {
+      "name": "first-reachable-forced/51505/31",
+      "depth": 2,
+      "score": -33,
+      "nodes": 72,
+      "referenceNodes": 71
+    },
+    {
+      "name": "first-reachable-forced/51505/31",
+      "depth": 3,
+      "score": -721,
+      "nodes": 381,
+      "referenceNodes": 386
+    },
+    {
+      "name": "first-reachable-forced/51506/31",
+      "depth": 2,
+      "score": -14.666666666666666,
+      "nodes": 118,
+      "referenceNodes": 117
+    },
+    {
+      "name": "first-reachable-forced/51506/31",
+      "depth": 3,
+      "score": -162,
+      "nodes": 1323,
+      "referenceNodes": 1784
+    }
+  ],
+  "units": [
+    {
+      "name": "ending/51307/3",
+      "passed": true,
+      "assertions": 148,
+      "wallMs": 1392.0523539999995
+    },
+    {
+      "name": "ending/51307/3",
+      "passed": true,
+      "assertions": 15,
+      "wallMs": 109.70046200000797
+    },
+    {
+      "name": "ending/51319/6",
+      "passed": true,
+      "assertions": 148,
+      "wallMs": 1376.643802999999
+    },
+    {
+      "name": "ending/51319/6",
+      "passed": true,
+      "assertions": 15,
+      "wallMs": 89.833157999994
+    }
+  ],
+  "timeouts": [
+    {
+      "name": "opening/51101/0",
+      "budget": 75,
+      "nodes": 14964,
+      "completedLayers": 1,
+      "threads": 4
+    },
+    {
+      "name": "opening/51101/0",
+      "budget": 150,
+      "nodes": 32397,
+      "completedLayers": 1,
+      "threads": 4
+    },
+    {
+      "name": "opening/51101/0",
+      "budget": 500,
+      "nodes": 74405,
+      "completedLayers": 2,
+      "threads": 4
+    },
+    {
+      "name": "middle/51203/28",
+      "budget": 75,
+      "nodes": 10173,
+      "completedLayers": 0,
+      "threads": 4
+    },
+    {
+      "name": "middle/51203/28",
+      "budget": 150,
+      "nodes": 20740,
+      "completedLayers": 1,
+      "threads": 4
+    },
+    {
+      "name": "middle/51203/28",
+      "budget": 500,
+      "nodes": 88696,
+      "completedLayers": 2,
+      "threads": 4
+    },
+    {
+      "name": "ending/51307/3",
+      "budget": 75,
+      "nodes": 13311,
+      "completedLayers": 1,
+      "threads": 4
+    },
+    {
+      "name": "ending/51307/3",
+      "budget": 150,
+      "nodes": 29812,
+      "completedLayers": 1,
+      "threads": 4
+    },
+    {
+      "name": "ending/51307/3",
+      "budget": 500,
+      "nodes": 86382,
+      "completedLayers": 2,
+      "threads": 4
+    },
+    {
+      "name": "previous-frozen-two-roots",
+      "budget": 75,
+      "nodes": 8812,
+      "completedLayers": 4,
+      "threads": 4
+    },
+    {
+      "name": "previous-frozen-two-roots",
+      "budget": 150,
+      "nodes": 18662,
+      "completedLayers": 5,
+      "threads": 4
+    },
+    {
+      "name": "previous-frozen-two-roots",
+      "budget": 500,
+      "nodes": 76485,
+      "completedLayers": 6,
+      "threads": 4
+    }
+  ],
+  "privacy": true,
+  "cancel": true,
+  "oldCounterexample": {
+    "from": 16,
+    "to": 25,
+    "score": 203,
+    "referenceScore": 203
+  },
+  "truncatedRejected": true
+}

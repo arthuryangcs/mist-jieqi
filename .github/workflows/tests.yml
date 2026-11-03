@@ -9,6 +9,27 @@ concurrency:
   group: tests-${{ github.ref }}
   cancel-in-progress: true
 jobs:
+  search-speed-experiment:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '24'
+      - name: Independent experimental TT, probability, rules and cancellation
+        run: |
+          node native/experiments/search-speed/replay-public.mjs
+          node native/experiments/search-speed/check.mjs
+          node native/experiments/search-speed/reference-check.mjs
+          node native/experiments/search-speed/rules.mjs
+      - name: Experimental memory and undefined-behavior checks
+        run: |
+          node native/experiments/search-speed/check.mjs --sanitize
+          node native/experiments/search-speed/reference-check.mjs --sanitize
+          node native/experiments/search-speed/rules.mjs --sanitize
   test:
     runs-on: ubuntu-latest
     timeout-minutes: 15
