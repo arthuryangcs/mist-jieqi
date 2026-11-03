@@ -1,0 +1,148 @@
+{
+  "createdAt": "2026-11-03T13:20:49.508227+00:00",
+  "fixturesSha256": "b32de77cd6c1f8357d392e802dc46ced8915ffd410b4e9243afbe00bca8ee97b",
+  "candidateSourceSha256": "31044329472faed1e956052a4304e694211a5e0e85cdbdd5c8e75a8271c475c2",
+  "candidateBinarySha256": "55420db70b7f091a1c027301215f7bc2e299f9386846e5bda2e2ccfefcfa4f9f",
+  "controlBinarySha256": "55420db70b7f091a1c027301215f7bc2e299f9386846e5bda2e2ccfefcfa4f9f",
+  "baselineBinarySha256": "34e1bd30f64c26be41ec486a750f5328c82787c8e6cd9ac350ad7b9047c31aae",
+  "repeats": 3,
+  "requests": 108,
+  "budgetMs": 2000,
+  "threadsMaximum": 4,
+  "TTMiBMaximum": 64,
+  "darkSamples": 8,
+  "originalHCE": true,
+  "fullRoots": true,
+  "engines": [
+    "c6",
+    "published-c4",
+    "fixed-pika"
+  ],
+  "timing": "one fresh process per request; ready before clock, close/reap before next;3 cyclic orders across3 repeats",
+  "thresholds": {
+    "target": "median native NPS over Pika at every preselected long-running view; node units differ, not strength proof",
+    "shortProof": "elapsed<1000ms retained separately; do not call low NPS a failure for a faster terminal proof",
+    "technical": "all failures/hoststops/overbudget retained; no outcome-selected reruns"
+  },
+  "caveats": [
+    "Full initial public control is repeated, not unseen. Other11views frozen before timing.",
+    "Sparse endings inventory-valid edits; reachability not asserted.",
+    "NPS node definitions differ; Mist8world nodes already summed.",
+    "2s/max4/TT64 upper budgets, reserves and actual utilization/RSS differ.",
+    "Existing fixed development12 remains target; these new cases do not replace failed old cases.",
+    "No chess-strength or universal all-position claim."
+  ],
+  "positions": [
+    {
+      "name": "c6-confirmation/opening/9703001/0",
+      "category": "opening",
+      "origin": "generated legal-play public observer view",
+      "pieces": 32,
+      "hidden": 30,
+      "roots": 44,
+      "observationHash": "af147cbf21007e455b1face0ced553e3c119f24c0b0237d90173296486023a9a"
+    },
+    {
+      "name": "c6-confirmation/opening/9703017/3",
+      "category": "opening",
+      "origin": "generated legal-play public observer view",
+      "pieces": 32,
+      "hidden": 27,
+      "roots": 28,
+      "observationHash": "06209079a4c13d473c1691897001e42cfa691435f40e3c64e25fd2b980b5fa89"
+    },
+    {
+      "name": "c6-confirmation/opening/9703031/8",
+      "category": "opening",
+      "origin": "generated legal-play public observer view",
+      "pieces": 32,
+      "hidden": 23,
+      "roots": 44,
+      "observationHash": "68b5d992dec3080b41221a78c597e4a60eee7131ad1a5af6b383d6ab47bfe774"
+    },
+    {
+      "name": "c6-confirmation/opening/9703049/11",
+      "category": "opening",
+      "origin": "generated legal-play public observer view",
+      "pieces": 30,
+      "hidden": 23,
+      "roots": 27,
+      "observationHash": "3379fe9d49c27d6c6791cb6c037085c1a840691bd775e77481a1d2c0262c1d69"
+    },
+    {
+      "name": "c6-confirmation/middle/9703203/28",
+      "category": "middle",
+      "origin": "generated legal-play public observer view",
+      "pieces": 30,
+      "hidden": 14,
+      "roots": 48,
+      "observationHash": "9101246d9f52284b15d848e8222d8cd3be2ac58dbcc7d978089515aab397094b"
+    },
+    {
+      "name": "c6-confirmation/middle/9703217/41",
+      "category": "middle",
+      "origin": "generated legal-play public observer view",
+      "pieces": 32,
+      "hidden": 15,
+      "roots": 40,
+      "observationHash": "2eb9008100fdc122d637d0740b119d605cf96555215d1b8b8db71b3f87b45ca7"
+    },
+    {
+      "name": "c6-confirmation/middle/9703229/54",
+      "category": "middle",
+      "origin": "generated legal-play public observer view",
+      "pieces": 29,
+      "hidden": 5,
+      "roots": 27,
+      "observationHash": "b10502b603989f8715561c6ad29e02634792588e0b6ecb5a0d32c9827abcfbdb"
+    },
+    {
+      "name": "c6-confirmation/middle/9703241/67",
+      "category": "middle",
+      "origin": "generated legal-play public observer view",
+      "pieces": 24,
+      "hidden": 7,
+      "roots": 34,
+      "observationHash": "b0279bd1aec5f73082cf8baaea1a7647f293caf17a4200460f17dbe6a86514d3"
+    },
+    {
+      "name": "c6-confirmation/ending/9703903/0",
+      "category": "ending",
+      "origin": "edited inventory-valid sparse public view; reachability not asserted",
+      "pieces": 10,
+      "hidden": 0,
+      "roots": 36,
+      "observationHash": "d5cbff2c6c154a5dec63eb9df8043f91fae530aa16cf95eee7c80552a46b1f56"
+    },
+    {
+      "name": "c6-confirmation/ending/9704122/0",
+      "category": "ending",
+      "origin": "edited inventory-valid sparse public view; reachability not asserted",
+      "pieces": 10,
+      "hidden": 0,
+      "roots": 22,
+      "observationHash": "ccba80a14080e76c102ec8643257cd8ef6e8cfb4203cb63d2044b010e0cbfeb2"
+    },
+    {
+      "name": "c6-confirmation/ending/9704331/0",
+      "category": "ending",
+      "origin": "edited inventory-valid sparse public view; reachability not asserted",
+      "pieces": 8,
+      "hidden": 0,
+      "roots": 9,
+      "observationHash": "43ba0f05aee879cdca1b679047777afc059656adb911bebf4fde65a610a8e7a8"
+    },
+    {
+      "name": "c6-confirmation/ending/9704546/0",
+      "category": "ending",
+      "origin": "edited inventory-valid sparse public view, first admissible 1..3 roots",
+      "pieces": 12,
+      "hidden": 0,
+      "roots": 3,
+      "observationHash": "1e96b7fb3ea6302604d665f6dfc1e3d6cf31bff147ff64df0bf92fd40944eac4"
+    }
+  ],
+  "stage": "independent confirmation: eleven new synthetic observer views plus known full-initial control",
+  "candidateMode": "STREAM_LAZYLEGAL",
+  "baselineMode": "STREAM"
+}

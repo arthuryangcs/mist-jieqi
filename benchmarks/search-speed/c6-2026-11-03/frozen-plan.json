@@ -1,0 +1,21 @@
+{
+  "createdAt": "2026-11-03T13:20:49.519953+00:00",
+  "games": {
+    "newLayouts": [
+      9705101,
+      9705123
+    ],
+    "count": 12,
+    "budgetMs": 2000,
+    "threadsMaximum": 4,
+    "primaryKinds": [
+      "retained",
+      "pika"
+    ],
+    "productionDiagnosticKind": "production",
+    "resources": "C6/publishedC4/Pika TT arena or Hash64MiB, max4 search threads, actual utilization/RSS differ; production diagnostic keeps unchanged protocol2 engine,90k entries/world, no hard64MiB arena, separately labelled"
+  },
+  "stopping": "all12preselectedtasks; preserve all technical/unresolved; no win-based sample change. infrastructure issue or quota<40/unavailable stops new work with checkpoint",
+  "rules": "common referee terminal-first third public repetition previous mover loses;120quiet draw;400ply unresolved. C6/C4 full public history; stock fixed Pika intrinsic repeat unchanged with safe-root filter; production protocol2 diagnostic has older inner cycle evaluation/root metadata and is not a strictly same-resource or same-search-rule strength control",
+  "defaultChanged": false
+}

@@ -1,0 +1,256 @@
+{
+  "passed": true,
+  "sourceGenerationTests": 2,
+  "projectTests": {
+    "passed": 153,
+    "failed": 0
+  },
+  "variants": [
+    {
+      "name": "release",
+      "units": [
+        {
+          "name": "ending/51307/3",
+          "assertions": 173425,
+          "passed": true
+        },
+        {
+          "name": "ending/51319/6",
+          "assertions": 1710,
+          "passed": true
+        },
+        {
+          "name": "全明/49033/11",
+          "assertions": 1638,
+          "passed": true
+        }
+      ],
+      "finiteCases": 40,
+      "timeouts": 6,
+      "cancel": true,
+      "immediateCancel": true,
+      "privacy": true,
+      "rootAdjudication": true,
+      "ruleCases": 414,
+      "passed": true,
+      "transitions": 11874
+    },
+    {
+      "name": "-sanitized",
+      "units": [
+        {
+          "name": "ending/51307/3",
+          "assertions": 173425,
+          "passed": true
+        },
+        {
+          "name": "ending/51319/6",
+          "assertions": 1710,
+          "passed": true
+        },
+        {
+          "name": "全明/49033/11",
+          "assertions": 1638,
+          "passed": true
+        }
+      ],
+      "finiteCases": 40,
+      "timeouts": 6,
+      "cancel": true,
+      "immediateCancel": true,
+      "privacy": true,
+      "rootAdjudication": true,
+      "ruleCases": 414,
+      "passed": true,
+      "transitions": 11874
+    },
+    {
+      "name": "-tsan",
+      "units": [
+        {
+          "name": "ending/51307/3",
+          "assertions": 173425,
+          "passed": true
+        },
+        {
+          "name": "ending/51319/6",
+          "assertions": 1710,
+          "passed": true
+        },
+        {
+          "name": "全明/49033/11",
+          "assertions": 1638,
+          "passed": true
+        }
+      ],
+      "finiteCases": 40,
+      "timeouts": 6,
+      "cancel": true,
+      "immediateCancel": true,
+      "privacy": true,
+      "rootAdjudication": true,
+      "ruleCases": 414,
+      "passed": true,
+      "transitions": 11874
+    }
+  ],
+  "replay": {
+    "passed": true,
+    "games": [
+      {
+        "index": 0,
+        "kind": "retained",
+        "plies": 49,
+        "result": {
+          "status": "decided",
+          "winner": "r",
+          "technicalForfeit": false,
+          "reason": "将死"
+        },
+        "passed": true
+      },
+      {
+        "index": 1,
+        "kind": "pika",
+        "plies": 96,
+        "result": {
+          "status": "decided",
+          "winner": "b",
+          "technicalForfeit": false,
+          "reason": "将死"
+        },
+        "passed": true
+      },
+      {
+        "index": 2,
+        "kind": "production",
+        "plies": 49,
+        "result": {
+          "status": "decided",
+          "winner": "r",
+          "technicalForfeit": false,
+          "reason": "将死"
+        },
+        "passed": true
+      },
+      {
+        "index": 3,
+        "kind": "retained",
+        "plies": 49,
+        "result": {
+          "status": "decided",
+          "winner": "r",
+          "technicalForfeit": false,
+          "reason": "将死"
+        },
+        "passed": true
+      },
+      {
+        "index": 4,
+        "kind": "pika",
+        "plies": 113,
+        "result": {
+          "status": "decided",
+          "winner": "r",
+          "technicalForfeit": false,
+          "reason": "将死"
+        },
+        "passed": true
+      },
+      {
+        "index": 5,
+        "kind": "production",
+        "plies": 101,
+        "result": {
+          "status": "decided",
+          "winner": "r",
+          "technicalForfeit": false,
+          "reason": "将死"
+        },
+        "passed": true
+      },
+      {
+        "index": 6,
+        "kind": "pika",
+        "plies": 46,
+        "result": {
+          "status": "decided",
+          "winner": "b",
+          "technicalForfeit": false,
+          "reason": "将死"
+        },
+        "passed": true
+      },
+      {
+        "index": 7,
+        "kind": "production",
+        "plies": 200,
+        "result": {
+          "status": "decided",
+          "winner": "b",
+          "technicalForfeit": false,
+          "reason": "困毙"
+        },
+        "passed": true
+      },
+      {
+        "index": 8,
+        "kind": "retained",
+        "plies": 68,
+        "result": {
+          "status": "decided",
+          "winner": "r",
+          "technicalForfeit": false,
+          "reason": "黑方重复局面判负"
+        },
+        "passed": true
+      },
+      {
+        "index": 9,
+        "kind": "pika",
+        "plies": 55,
+        "result": {
+          "status": "decided",
+          "winner": "r",
+          "technicalForfeit": false,
+          "reason": "将死"
+        },
+        "passed": true
+      },
+      {
+        "index": 10,
+        "kind": "production",
+        "plies": 249,
+        "result": {
+          "status": "decided",
+          "winner": "r",
+          "technicalForfeit": true,
+          "offender": "candidate",
+          "reason": "process-or-protocol-failure",
+          "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ undefined\n- true\n\n    at file://.cache/lazy-legality/matches.mjs:28:53\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"
+        },
+        "passed": true
+      },
+      {
+        "index": 11,
+        "kind": "retained",
+        "plies": 67,
+        "result": {
+          "status": "decided",
+          "winner": "r",
+          "technicalForfeit": true,
+          "offender": "candidate",
+          "reason": "process-or-protocol-failure",
+          "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ undefined\n- true\n\n    at file://.cache/lazy-legality/matches.mjs:28:53\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"
+        },
+        "passed": true
+      }
+    ],
+    "moves": 1142,
+    "privateChecks": 22
+  },
+  "generatedSourceSha256": "31044329472faed1e956052a4304e694211a5e0e85cdbdd5c8e75a8271c475c2",
+  "binarySha256": "55420db70b7f091a1c027301215f7bc2e299f9386846e5bda2e2ccfefcfa4f9f",
+  "browserVisualAcceptance": "not run; prior browser restriction respected",
+  "defaultChanged": false
+}

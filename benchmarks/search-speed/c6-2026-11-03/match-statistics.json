@@ -1,0 +1,166 @@
+{
+  "completed": 12,
+  "summary": {
+    "retained": {
+      "finished": 4,
+      "normalWins": 2,
+      "normalDraws": 0,
+      "normalLosses": 1,
+      "normalScoreRate": 0.6666666666666666,
+      "technical": [
+        {
+          "index": 11,
+          "status": "decided",
+          "winner": "r",
+          "technicalForfeit": true,
+          "offender": "candidate",
+          "reason": "process-or-protocol-failure",
+          "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ undefined\n- true\n\n    at file://.cache/lazy-legality/matches.mjs:28:53\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"
+        }
+      ],
+      "unresolved": 0
+    },
+    "pika": {
+      "finished": 4,
+      "normalWins": 0,
+      "normalDraws": 0,
+      "normalLosses": 4,
+      "normalScoreRate": 0,
+      "technical": [],
+      "unresolved": 0
+    },
+    "production": {
+      "finished": 4,
+      "normalWins": 1,
+      "normalDraws": 0,
+      "normalLosses": 2,
+      "normalScoreRate": 0.3333333333333333,
+      "technical": [
+        {
+          "index": 10,
+          "status": "decided",
+          "winner": "r",
+          "technicalForfeit": true,
+          "offender": "candidate",
+          "reason": "process-or-protocol-failure",
+          "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ undefined\n- true\n\n    at file://.cache/lazy-legality/matches.mjs:28:53\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"
+        }
+      ],
+      "unresolved": 0
+    }
+  },
+  "engines": {
+    "c6": {
+      "moves": 569,
+      "wallMedianMs": 1934.601766000007,
+      "wallP10P90Ms": [
+        1931.9262649999932,
+        1936.3271848000004
+      ],
+      "maxWallMs": 1968.2258560000046,
+      "actualThreads": [
+        4
+      ],
+      "fallbackMoves": 0,
+      "hostStopMoves": 1,
+      "TTMiB": [
+        64
+      ],
+      "mainDepthMedian": 7,
+      "completedDepthMedian": 6,
+      "selDepthMedian": 14
+    },
+    "retained": {
+      "moves": 117,
+      "wallMedianMs": 1934.4910670000027,
+      "wallP10P90Ms": [
+        1933.213494800002,
+        1935.9484150000033
+      ],
+      "maxWallMs": 1939.9292730000002,
+      "actualThreads": [
+        0,
+        4
+      ],
+      "fallbackMoves": 0,
+      "hostStopMoves": 0,
+      "TTMiB": [
+        64
+      ],
+      "mainDepthMedian": 6,
+      "completedDepthMedian": 5,
+      "selDepthMedian": 14
+    },
+    "pika": {
+      "moves": 156,
+      "wallMedianMs": 1959.9492270000046,
+      "wallP10P90Ms": [
+        1958.8825154999904,
+        1960.75194250001
+      ],
+      "maxWallMs": 1963.028072,
+      "actualThreads": [
+        4
+      ],
+      "fallbackMoves": 0,
+      "hostStopMoves": 0,
+      "TTMiB": [],
+      "mainDepthMedian": null,
+      "completedDepthMedian": null,
+      "selDepthMedian": 16
+    },
+    "production": {
+      "moves": 300,
+      "wallMedianMs": 1969.3324894999969,
+      "wallP10P90Ms": [
+        1938.6691530999901,
+        1973.4078090000112
+      ],
+      "maxWallMs": 1978.8793999999762,
+      "actualThreads": [
+        1,
+        4
+      ],
+      "fallbackMoves": 0,
+      "hostStopMoves": 228,
+      "TTMiB": [],
+      "mainDepthMedian": 7,
+      "completedDepthMedian": 6,
+      "selDepthMedian": 14
+    }
+  },
+  "technicalForfeits": [
+    {
+      "index": 10,
+      "kind": "production",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": true,
+        "offender": "candidate",
+        "reason": "process-or-protocol-failure",
+        "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ undefined\n- true\n\n    at file://.cache/lazy-legality/matches.mjs:28:53\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      }
+    },
+    {
+      "index": 11,
+      "kind": "retained",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": true,
+        "offender": "candidate",
+        "reason": "process-or-protocol-failure",
+        "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ undefined\n- true\n\n    at file://.cache/lazy-legality/matches.mjs:28:53\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      }
+    }
+  ],
+  "unresolved": [],
+  "limits": [
+    "Two independent initial layouts, each color vs each opponent;4games/opponent is a very small sample.",
+    "C4/Pika primary64MiB/max4 controls; unchanged production protocol2 is separately labelled diagnostic and lacks a hard64MiB TT arena/current inner history evaluation.",
+    "Per-game depths/throughput come from different positions and are descriptive, not a same-position speed benchmark.",
+    "MainDepth and selDepth retain original engine semantics; rawPika UCI depth is not equated with Mist halfmoves.",
+    "No default enablement or universal/strength superiority claim."
+  ]
+}

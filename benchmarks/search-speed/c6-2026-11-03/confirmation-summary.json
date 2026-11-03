@@ -1,0 +1,971 @@
+{
+  "completed": true,
+  "generatedAt": "2026-11-03T13:25:22.977081+00:00",
+  "requests": 108,
+  "technical": [],
+  "longViews": 11,
+  "abovePikaLongViews": 10,
+  "geoNpsVsC4": 1.1361929369023902,
+  "worstNpsVsC4": 1.0137694473701742,
+  "allConfirmationLongAbovePika": false,
+  "originalDevelopmentGoalMet": false,
+  "newViews": 11,
+  "initialControlRepeated": true,
+  "limits": [
+    "3 repeats/view descriptive, not statistical strength proof",
+    "Original fixed development target still has two failed openings; confirmation does not replace those cases",
+    "Native node semantics differ;8world nodes already summed",
+    "2s/max4/TT64 budgets; different reserve/actual utilization/RSS",
+    "Sparse inventory-valid edits not asserted reachable"
+  ],
+  "rows": [
+    {
+      "position": "c6-confirmation/opening/9703001/0",
+      "category": "opening",
+      "turn": "r",
+      "pieces": 32,
+      "hidden": 30,
+      "roots": 44,
+      "engines": {
+        "c6": {
+          "n": 3,
+          "plannedN": 3,
+          "nps": 5218396.572412577,
+          "wallMs": 1935.8712700000033,
+          "nodes": 10102144,
+          "mainDepth": 6,
+          "completedDepth": 5,
+          "selDepth": 14,
+          "npsMinMax": [
+            4724999.499759687,
+            5743192.575885115
+          ],
+          "wallMinMax": [
+            1934.6200989999925,
+            1937.8113919999998
+          ],
+          "threads": [
+            4
+          ],
+          "anyShort": false
+        },
+        "published-c4": {
+          "n": 3,
+          "plannedN": 3,
+          "nps": 4444417.203726275,
+          "wallMs": 1935.2511569999915,
+          "nodes": 8607251,
+          "mainDepth": 6,
+          "completedDepth": 5,
+          "selDepth": 14,
+          "npsMinMax": [
+            4425877.688960933,
+            5251790.16854609
+          ],
+          "wallMinMax": [
+            1935.100019000005,
+            1936.643345
+          ],
+          "threads": [
+            4
+          ],
+          "anyShort": false
+        },
+        "fixed-pika": {
+          "n": 3,
+          "plannedN": 3,
+          "nps": 5457987.298751326,
+          "wallMs": 1960.8814599999896,
+          "nodes": 10711036,
+          "mainDepth": 11,
+          "completedDepth": null,
+          "selDepth": 6,
+          "npsMinMax": [
+            5409229.196600116,
+            6123110.062961207
+          ],
+          "wallMinMax": [
+            1959.714890000003,
+            1962.4516169999997
+          ],
+          "threads": [
+            4
+          ],
+          "anyShort": false
+        }
+      },
+      "allLong": true,
+      "ratioVsC4": 1.174146425325999,
+      "ratioVsPika": 0.9561027328895466
+    },
+    {
+      "position": "c6-confirmation/opening/9703017/3",
+      "category": "opening",
+      "turn": "b",
+      "pieces": 32,
+      "hidden": 27,
+      "roots": 28,
+      "engines": {
+        "c6": {
+          "n": 3,
+          "plannedN": 3,
+          "nps": 7645981.265056758,
+          "wallMs": 1935.5031499999895,
+          "nodes": 14795685,
+          "mainDepth": 6,
+          "completedDepth": 5,
+          "selDepth": 14,
+          "npsMinMax": [
+            6954484.475546206,
+            7968872.073393465
+          ],
+          "wallMinMax": [
+            1935.093022999994,
+            1935.7841759999992
+          ],
+          "threads": [
+            4
+          ],
+          "anyShort": false
+        },
+        "published-c4": {
+          "n": 3,
+          "plannedN": 3,
+          "nps": 6996921.291115495,
+          "wallMs": 1935.248581000007,
+          "nodes": 13540782,
+          "mainDepth": 6,
+          "completedDepth": 5,
+          "selDepth": 14,
+          "npsMinMax": [
+            6474788.507969542,
+            7385509.181220645
+          ],
+          "wallMinMax": [
+            1935.1469140000117,
+            1935.860839
+          ],
+          "threads": [
+            4
+          ],
+          "anyShort": false
+        },
+        "fixed-pika": {
+          "n": 3,
+          "plannedN": 3,
+          "nps": 5376641.880425455,
+          "wallMs": 1960.2255430000077,
+          "nodes": 10545117,
+          "mainDepth": 15,
+          "completedDepth": null,
+          "selDepth": 10,
+          "npsMinMax": [
+            4879089.058987924,
+            5913885.72453592
+          ],
+          "wallMinMax": [
+            1959.8398650000163,
+            1961.2831270000006
+          ],
+          "threads": [
+            4
+          ],
+          "anyShort": false
+        }
+      },
+      "allLong": true,
+      "ratioVsC4": 1.0927636523174016,
+      "ratioVsPika": 1.4220737469782403
+    },
+    {
+      "position": "c6-confirmation/opening/9703031/8",
+      "category": "opening",
+      "turn": "r",
+      "pieces": 32,
+      "hidden": 23,
+      "roots": 44,
+      "engines": {
+        "c6": {
+          "n": 3,
+          "plannedN": 3,
+          "nps": 5571487.300476084,
+          "wallMs": 1935.4112139999997,
+          "nodes": 10783119,
+          "mainDepth": 6,
+          "completedDepth": 5,
+          "selDepth": 14,
+          "npsMinMax": [
+            5226144.604582007,
+            5788533.037762288
+          ],
+          "wallMinMax": [
+            1934.9267509999918,
+            1935.9524990000064
+          ],
+          "threads": [
+            4
+          ],
+          "anyShort": false
+        },
+        "published-c4": {
+          "n": 3,
+          "plannedN": 3,
+          "nps": 4997879.095058949,
+          "wallMs": 1935.3413350000046,
+          "nodes": 9672602,
+          "mainDepth": 6,
+          "completedDepth": 5,
+          "selDepth": 14,
+          "npsMinMax": [
+            4750072.573379848,
+            5264604.854467673
+          ],
+          "wallMinMax": [
+            1933.5823450000025,
+            1935.4548499999983
+          ],
+          "threads": [
+            4
+          ],
+          "anyShort": false
+        },
+        "fixed-pika": {
+          "n": 3,
+          "plannedN": 3,
+          "nps": 4708047.0719124125,
+          "wallMs": 1960.353900999995,
+          "nodes": 9227609,
+          "mainDepth": 13,
+          "completedDepth": null,
+          "selDepth": 13,
+          "npsMinMax": [
+            4354905.507441853,
+            5125506.934575697
+          ],
+          "wallMinMax": [
+            1959.9653229999967,
+            1961.2836599999991
+          ],
+          "threads": [
+            4
+          ],
+          "anyShort": false
+        }
+      },
+      "allLong": true,
+      "ratioVsC4": 1.1147703244730793,
+      "ratioVsPika": 1.1833966855843143
+    },
+    {
+      "position": "c6-confirmation/opening/9703049/11",
+      "category": "opening",
+      "turn": "b",
+      "pieces": 30,
+      "hidden": 23,
+      "roots": 27,
+      "engines": {
+        "c6": {
+          "n": 3,
+          "plannedN": 3,
+          "nps": 7282157.166512288,
+          "wallMs": 1935.2030469999881,
+          "nodes": 14095152,
+          "mainDepth": 6,
+          "completedDepth": 5,
+          "selDepth": 14,
+          "npsMinMax": [
+            6829967.026193961,
+            8018743.649538398
+          ],
+          "wallMinMax": [
+            1934.059208999999,
+            1935.5737149999914
+          ],
+          "threads": [
+            4
+          ],
+          "anyShort": false
+        },
+        "published-c4": {
+          "n": 3,
+          "plannedN": 3,
+          "nps": 7183247.813793342,
+          "wallMs": 1935.047591999988,
+          "nodes": 13897579,
+          "mainDepth": 6,
+          "completedDepth": 5,
+          "selDepth": 14,
+          "npsMinMax": [
+            6588318.578161399,
+            7446545.952301897
+          ],
+          "wallMinMax": [
+            1934.7208060000012,
+            1936.092531000002
+          ],
+          "threads": [
+            4
+          ],
+          "anyShort": false
+        },
+        "fixed-pika": {
+          "n": 3,
+          "plannedN": 3,
+          "nps": 5340341.363449222,
+          "wallMs": 1960.3344220000145,
+          "nodes": 10468855,
+          "mainDepth": 13,
+          "completedDepth": null,
+          "selDepth": 10,
+          "npsMinMax": [
+            4784027.199954116,
+            5769483.919340624
+          ],
+          "wallMinMax": [
+            1959.7979919999925,
+            1960.6303660000012
+          ],
+          "threads": [
+            4
+          ],
+          "anyShort": false
+        }
+      },
+      "allLong": true,
+      "ratioVsC4": 1.0137694473701742,
+      "ratioVsPika": 1.3636126739675092
+    },
+    {
+      "position": "c6-confirmation/middle/9703203/28",
+      "category": "middle",
+      "turn": "r",
+      "pieces": 30,
+      "hidden": 14,
+      "roots": 48,
+      "engines": {
+        "c6": {
+          "n": 3,
+          "plannedN": 3,
+          "nps": 6096061.23173785,
+          "wallMs": 1935.708574999997,
+          "nodes": 11800198,
+          "mainDepth": 6,
+          "completedDepth": 5,
+          "selDepth": 14,
+          "npsMinMax": [
+            5620266.335239211,
+            6212559.565434486
+          ],
+          "wallMinMax": [
+            1935.1115870000067,
+            1936.2644670000009
+          ],
+          "threads": [
+            4
+          ],
+          "anyShort": false
+        },
+        "published-c4": {
+          "n": 3,
+          "plannedN": 3,
+          "nps": 5682938.326450371,
+          "wallMs": 1935.4795650000015,
+          "nodes": 10999211,
+          "mainDepth": 6,
+          "completedDepth": 5,
+          "selDepth": 14,
+          "npsMinMax": [
+            5279616.160279034,
+            5748315.451635907
+          ],
+          "wallMinMax": [
+            1935.058097000001,
+            1935.4910309999977
+          ],
+          "threads": [
+            4
+          ],
+          "anyShort": false
+        },
+        "fixed-pika": {
+          "n": 3,
+          "plannedN": 3,
+          "nps": 4298738.343639181,
+          "wallMs": 1960.1053510000056,
+          "nodes": 8430434,
+          "mainDepth": 17,
+          "completedDepth": null,
+          "selDepth": 22,
+          "npsMinMax": [
+            4094806.43267729,
+            4914676.445025174
+          ],
+          "wallMinMax": [
+            1959.5509710000188,
+            1961.1414619999996
+          ],
+          "threads": [
+            4
+          ],
+          "anyShort": false
+        }
+      },
+      "allLong": true,
+      "ratioVsC4": 1.0726952997826251,
+      "ratioVsPika": 1.4181047424666258
+    },
+    {
+      "position": "c6-confirmation/middle/9703217/41",
+      "category": "middle",
+      "turn": "b",
+      "pieces": 32,
+      "hidden": 15,
+      "roots": 40,
+      "engines": {
+        "c6": {
+          "n": 3,
+          "plannedN": 3,
+          "nps": 5539563.536010008,
+          "wallMs": 1934.7500809999983,
+          "nodes": 10717671,
+          "mainDepth": 6,
+          "completedDepth": 5,
+          "selDepth": 14,
+          "npsMinMax": [
+            5075362.4751766715,
+            5983656.902361505
+          ],
+          "wallMinMax": [
+            1934.7198860000062,
+            1935.9813310000027
+          ],
+          "threads": [
+            4
+          ],
+          "anyShort": false
+        },
+        "published-c4": {
+          "n": 3,
+          "plannedN": 3,
+          "nps": 4924035.066066977,
+          "wallMs": 1934.7861009999906,
+          "nodes": 9526816,
+          "mainDepth": 6,
+          "completedDepth": 5,
+          "selDepth": 14,
+          "npsMinMax": [
+            4639693.345800399,
+            5163205.893838519
+          ],
+          "wallMinMax": [
+            1934.7579520000145,
+            1935.2738059999974
+          ],
+          "threads": [
+            4
+          ],
+          "anyShort": false
+        },
+        "fixed-pika": {
+          "n": 3,
+          "plannedN": 3,
+          "nps": 4821296.778186221,
+          "wallMs": 1960.4890060000034,
+          "nodes": 9452932,
+          "mainDepth": 27,
+          "completedDepth": null,
+          "selDepth": 19,
+          "npsMinMax": [
+            4034115.8872357695,
+            4851843.071238311
+          ],
+          "wallMinMax": [
+            1960.2659470000071,
+            1960.661713000005
+          ],
+          "threads": [
+            4
+          ],
+          "anyShort": false
+        }
+      },
+      "allLong": true,
+      "ratioVsC4": 1.1250048916557938,
+      "ratioVsPika": 1.1489779183628686
+    },
+    {
+      "position": "c6-confirmation/middle/9703229/54",
+      "category": "middle",
+      "turn": "r",
+      "pieces": 29,
+      "hidden": 5,
+      "roots": 27,
+      "engines": {
+        "c6": {
+          "n": 3,
+          "plannedN": 3,
+          "nps": 7408668.542731948,
+          "wallMs": 1935.0524210000003,
+          "nodes": 14336162,
+          "mainDepth": 6,
+          "completedDepth": 5,
+          "selDepth": 13,
+          "npsMinMax": [
+            7029954.226854064,
+            8182430.626894228
+          ],
+          "wallMinMax": [
+            1934.5096489999996,
+            1935.930955000018
+          ],
+          "threads": [
+            4
+          ],
+          "anyShort": false
+        },
+        "published-c4": {
+          "n": 3,
+          "plannedN": 3,
+          "nps": 6496040.559947083,
+          "wallMs": 1936.6336900000024,
+          "nodes": 12580451,
+          "mainDepth": 6,
+          "completedDepth": 5,
+          "selDepth": 13,
+          "npsMinMax": [
+            6269774.299574617,
+            7317431.639824646
+          ],
+          "wallMinMax": [
+            1934.9832969999989,
+            1944.0337749999962
+          ],
+          "threads": [
+            4
+          ],
+          "anyShort": false
+        },
+        "fixed-pika": {
+          "n": 3,
+          "plannedN": 3,
+          "nps": 3563512.684828905,
+          "wallMs": 1960.422259999992,
+          "nodes": 6983955,
+          "mainDepth": 23,
+          "completedDepth": null,
+          "selDepth": 31,
+          "npsMinMax": [
+            3280630.5049150977,
+            3726893.5111969346
+          ],
+          "wallMinMax": [
+            1959.8513089999906,
+            1960.4713149999952
+          ],
+          "threads": [
+            4
+          ],
+          "anyShort": false
+        }
+      },
+      "allLong": true,
+      "ratioVsC4": 1.1404898837011417,
+      "ratioVsPika": 2.0790352660376907
+    },
+    {
+      "position": "c6-confirmation/middle/9703241/67",
+      "category": "middle",
+      "turn": "b",
+      "pieces": 24,
+      "hidden": 7,
+      "roots": 34,
+      "engines": {
+        "c6": {
+          "n": 3,
+          "plannedN": 3,
+          "nps": 7080682.937881904,
+          "wallMs": 1935.029165999993,
+          "nodes": 13701328,
+          "mainDepth": 7,
+          "completedDepth": 6,
+          "selDepth": 15,
+          "npsMinMax": [
+            6763984.354666116,
+            7394121.860179513
+          ],
+          "wallMinMax": [
+            1934.5293830000155,
+            1936.1194990000004
+          ],
+          "threads": [
+            4
+          ],
+          "anyShort": false
+        },
+        "published-c4": {
+          "n": 3,
+          "plannedN": 3,
+          "nps": 6026028.301245891,
+          "wallMs": 1934.9706600000209,
+          "nodes": 11660503,
+          "mainDepth": 7,
+          "completedDepth": 6,
+          "selDepth": 15,
+          "npsMinMax": [
+            5695834.6851625545,
+            6729294.032557471
+          ],
+          "wallMinMax": [
+            1934.2870050000056,
+            1935.0229399999953
+          ],
+          "threads": [
+            4
+          ],
+          "anyShort": false
+        },
+        "fixed-pika": {
+          "n": 3,
+          "plannedN": 3,
+          "nps": 4015832.792649741,
+          "wallMs": 1960.281409999996,
+          "nodes": 7871250,
+          "mainDepth": 17,
+          "completedDepth": null,
+          "selDepth": 28,
+          "npsMinMax": [
+            3607867.709157133,
+            4063813.024386219
+          ],
+          "wallMinMax": [
+            1960.0542169999972,
+            1960.3305940000064
+          ],
+          "threads": [
+            4
+          ],
+          "anyShort": false
+        }
+      },
+      "allLong": true,
+      "ratioVsC4": 1.1750165422253265,
+      "ratioVsPika": 1.763191672432632
+    },
+    {
+      "position": "c6-confirmation/ending/9703903/0",
+      "category": "ending",
+      "turn": "r",
+      "pieces": 10,
+      "hidden": 0,
+      "roots": 36,
+      "engines": {
+        "c6": {
+          "n": 3,
+          "plannedN": 3,
+          "nps": 506678.9393547433,
+          "wallMs": 8.826102000006358,
+          "nodes": 4472,
+          "mainDepth": 3,
+          "completedDepth": 3,
+          "selDepth": 7,
+          "npsMinMax": [
+            457645.43674172094,
+            514042.0139685272
+          ],
+          "wallMinMax": [
+            8.699678000004496,
+            9.771757000002253
+          ],
+          "threads": [
+            4
+          ],
+          "anyShort": true
+        },
+        "published-c4": {
+          "n": 3,
+          "plannedN": 3,
+          "nps": 487445.1801296891,
+          "wallMs": 9.174364999998943,
+          "nodes": 4472,
+          "mainDepth": 3,
+          "completedDepth": 3,
+          "selDepth": 7,
+          "npsMinMax": [
+            449052.3409063301,
+            505964.31458090455
+          ],
+          "wallMinMax": [
+            8.83856800000649,
+            9.958749999997963
+          ],
+          "threads": [
+            4
+          ],
+          "anyShort": true
+        },
+        "fixed-pika": {
+          "n": 3,
+          "plannedN": 3,
+          "nps": 13635576.070863228,
+          "wallMs": 213.81194200000027,
+          "nodes": 2915449,
+          "mainDepth": 245,
+          "completedDepth": null,
+          "selDepth": 6,
+          "npsMinMax": [
+            11766400.912112027,
+            15354222.0126995
+          ],
+          "wallMinMax": [
+            191.852052000002,
+            240.38446600000316
+          ],
+          "threads": [
+            4
+          ],
+          "anyShort": true
+        }
+      },
+      "allLong": false,
+      "ratioVsC4": 1.0394583022032076,
+      "ratioVsPika": 0.03715860164041217
+    },
+    {
+      "position": "c6-confirmation/ending/9704122/0",
+      "category": "ending",
+      "turn": "b",
+      "pieces": 10,
+      "hidden": 0,
+      "roots": 22,
+      "engines": {
+        "c6": {
+          "n": 3,
+          "plannedN": 3,
+          "nps": 7562208.127197109,
+          "wallMs": 1928.3611179999862,
+          "nodes": 14581838,
+          "mainDepth": 9,
+          "completedDepth": 8,
+          "selDepth": 17,
+          "npsMinMax": [
+            6893542.0726625575,
+            7572692.097808677
+          ],
+          "wallMinMax": [
+            1928.2513460000046,
+            1929.0743220000004
+          ],
+          "threads": [
+            4
+          ],
+          "anyShort": false
+        },
+        "published-c4": {
+          "n": 3,
+          "plannedN": 3,
+          "nps": 6582605.1061449405,
+          "wallMs": 1928.484626999998,
+          "nodes": 12689771,
+          "mainDepth": 9,
+          "completedDepth": 8,
+          "selDepth": 17,
+          "npsMinMax": [
+            5959144.4486086825,
+            6888112.466141019
+          ],
+          "wallMinMax": [
+            1927.7733960000041,
+            1928.5936260000017
+          ],
+          "threads": [
+            4
+          ],
+          "anyShort": false
+        },
+        "fixed-pika": {
+          "n": 3,
+          "plannedN": 3,
+          "nps": 7457352.314573079,
+          "wallMs": 1960.0726079999877,
+          "nodes": 14616952,
+          "mainDepth": 85,
+          "completedDepth": null,
+          "selDepth": 16,
+          "npsMinMax": [
+            6399512.131759805,
+            7481441.158277704
+          ],
+          "wallMinMax": [
+            1959.5205909999931,
+            1960.3456860000006
+          ],
+          "threads": [
+            4
+          ],
+          "anyShort": false
+        }
+      },
+      "allLong": true,
+      "ratioVsC4": 1.1488169205437673,
+      "ratioVsPika": 1.0140607293582096
+    },
+    {
+      "position": "c6-confirmation/ending/9704331/0",
+      "category": "ending",
+      "turn": "r",
+      "pieces": 8,
+      "hidden": 0,
+      "roots": 9,
+      "engines": {
+        "c6": {
+          "n": 3,
+          "plannedN": 3,
+          "nps": 6991946.146966655,
+          "wallMs": 1928.0494609999878,
+          "nodes": 13480818,
+          "mainDepth": 12,
+          "completedDepth": 11,
+          "selDepth": 17,
+          "npsMinMax": [
+            5234049.434276121,
+            7259265.439186475
+          ],
+          "wallMinMax": [
+            1928.010226000013,
+            1928.7656960000022
+          ],
+          "threads": [
+            4
+          ],
+          "anyShort": false
+        },
+        "published-c4": {
+          "n": 3,
+          "plannedN": 3,
+          "nps": 5141071.125573995,
+          "wallMs": 1928.1752300000007,
+          "nodes": 9912886,
+          "mainDepth": 11,
+          "completedDepth": 10,
+          "selDepth": 16,
+          "npsMinMax": [
+            4990654.12683551,
+            5334832.4018965075
+          ],
+          "wallMinMax": [
+            1927.5435900000157,
+            1928.4345810000086
+          ],
+          "threads": [
+            4
+          ],
+          "anyShort": false
+        },
+        "fixed-pika": {
+          "n": 3,
+          "plannedN": 3,
+          "nps": 6326952.648325687,
+          "wallMs": 1959.6447310000076,
+          "nodes": 12395086,
+          "mainDepth": 37,
+          "completedDepth": null,
+          "selDepth": 39,
+          "npsMinMax": [
+            5561254.459852375,
+            6327638.982794017
+          ],
+          "wallMinMax": [
+            1959.092581999983,
+            1959.9836579999974
+          ],
+          "threads": [
+            4
+          ],
+          "anyShort": false
+        }
+      },
+      "allLong": true,
+      "ratioVsC4": 1.3600173925207097,
+      "ratioVsPika": 1.1051048641587267
+    },
+    {
+      "position": "c6-confirmation/ending/9704546/0",
+      "category": "ending",
+      "turn": "b",
+      "pieces": 12,
+      "hidden": 0,
+      "roots": 3,
+      "engines": {
+        "c6": {
+          "n": 3,
+          "plannedN": 3,
+          "nps": 5420260.057397693,
+          "wallMs": 1929.9463289999985,
+          "nodes": 10460811,
+          "mainDepth": 9,
+          "completedDepth": 8,
+          "selDepth": 17,
+          "npsMinMax": [
+            5371580.905547292,
+            5424004.088455152
+          ],
+          "wallMinMax": [
+            1929.2763850000047,
+            1930.3402820000047
+          ],
+          "threads": [
+            4
+          ],
+          "anyShort": false
+        },
+        "published-c4": {
+          "n": 3,
+          "plannedN": 3,
+          "nps": 4875080.354223649,
+          "wallMs": 1929.81455000001,
+          "nodes": 9408001,
+          "mainDepth": 9,
+          "completedDepth": 8,
+          "selDepth": 17,
+          "npsMinMax": [
+            4657998.367501124,
+            5173411.925603587
+          ],
+          "wallMinMax": [
+            1929.2217869999877,
+            1930.3731540000008
+          ],
+          "threads": [
+            4
+          ],
+          "anyShort": false
+        },
+        "fixed-pika": {
+          "n": 3,
+          "plannedN": 3,
+          "nps": 4954542.978627246,
+          "wallMs": 1959.5994859999919,
+          "nodes": 9709304,
+          "mainDepth": 52,
+          "completedDepth": null,
+          "selDepth": 18,
+          "npsMinMax": [
+            4455606.028024123,
+            5143594.939685569
+          ],
+          "wallMinMax": [
+            1959.4288510000042,
+            1959.6770160000015
+          ],
+          "threads": [
+            4
+          ],
+          "anyShort": false
+        }
+      },
+      "allLong": true,
+      "ratioVsC4": 1.1118298907015376,
+      "ratioVsPika": 1.0939979894774237
+    }
+  ]
+}

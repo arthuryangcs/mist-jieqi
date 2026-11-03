@@ -1,0 +1,156 @@
+--- stable-search.cpp
++++ generated-c6-search.cpp
+@@ -7,0 +8 @@
++#include <sys/resource.h>
+@@ -30,0 +32,2 @@
++bool lazyLegalityEnabled=false;
++bool kingHintEnabled=false;double requestCpuStart=0;double selfCpuMs(){rusage r{};if(getrusage(RUSAGE_SELF,&r))throw std::runtime_error("self CPU timing failed");return 1000.0*(r.ru_utime.tv_sec+r.ru_stime.tv_sec)+.001*(r.ru_utime.tv_usec+r.ru_stime.tv_usec);}
+@@ -198,0 +202,79 @@
++Destinations hintDestinations(const Board& b,int f,bool captures,int enemyKing) {
++    Destinations out;const Piece p=b[f];const int type=p.effective(),x=f%9,y=f/9;
++    auto emit=[&](int to){const Piece q=b[to];if(q.side!=p.side&&(!captures||q.live()))out.push_back(to);};
++    if(type==R||type==C) {
++        for(auto d:rays) {
++            bool screen=false;
++            for(int u=x+d[0],v=y+d[1];inside(u,v);u+=d[0],v+=d[1]) {
++                const int to=v*9+u;const bool occupied=b[to].live();
++                if(type==R){emit(to);if(occupied)break;}
++                else if(!screen){if(occupied)screen=true;else if(!captures)emit(to);}
++                else if(occupied){emit(to);break;}
++            }
++        }
++    }else if(type==N) {
++        for(auto d:horses) {
++            const int u=x+d[0],v=y+d[1];if(!inside(u,v))continue;
++            const int block=(y+(std::abs(d[1])==2?sign(d[1]):0))*9+x+(std::abs(d[0])==2?sign(d[0]):0);
++            if(!b[block].live())emit(v*9+u);
++        }
++    }else if(type==A||type==B) {
++        const int distance=type==A?1:2;
++        for(int dx:{-distance,distance})for(int dy:{-distance,distance}) {
++            const int u=x+dx,v=y+dy;if(!inside(u,v))continue;
++            if(type==A){if(!p.hidden||palace(u,v,p.side))emit(v*9+u);}
++            else if(!b[(y+dy/2)*9+x+dx/2].live()&&(!p.hidden||(p.side==0?v>=5:v<=4)))emit(v*9+u);
++        }
++    }else if(type==P) {
++        const int v=y+(p.side==0?-1:1);if(inside(x,v))emit(v*9+x);
++        if(p.side==0?y<=4:y>=5){if(x<8)emit(f+1);if(x>0)emit(f-1);}
++    }else if(type==K) {
++        for(auto d:rays){const int u=x+d[0],v=y+d[1];if(inside(u,v)&&(palace(u,v,p.side)||(d[0]==0&&b[v*9+u].type==K)))emit(v*9+u);}
++        if(enemyKing>=0){const int to=enemyKing;if(b[to].side!=p.side&&b[to].type==K) {
++            if(to%9==x&&std::find(out.begin(),out.end(),to)==out.end()) {
++                const int step=to>f?9:-9;bool clear=true;
++                for(int i=f+step;i!=to;i+=step)if(b[i].live()){clear=false;break;}
++                if(clear)emit(to);
++            }
++        }}
++    }
++#ifdef MIST_VERIFY_RESTORE
++    std::vector<int> expected;for(int t:candidates(b,f,captures))if(pseudo(b,f,t))expected.push_back(t);if(expected!=std::vector<int>(out.begin(),out.end()))throw std::logic_error("fused destinations/order differs");
++#endif
++    return out;
++}
++
++
++void legalKingHintInto(Board& b,int side,bool captures,bool first,int king,std::vector<Move>& out,int checked=-1,int enemyKing=-2) {
++    if(!kingHintEnabled){legalInto(b,side,captures,first,king,out,checked);return;}
++    if(enemyKing==-2){enemyKing=-1;for(int i=0;i<90;i++)if(b[i].side!=side&&b[i].type==K){enemyKing=i;break;}}
++    if(king==-2)king=kingAt(b,side);out.clear();
++    const bool noCheck=king>=0&&!(checked<0?inCheck(b,side,king):checked);
++    const int kx=king%9,ky=king/9;
++    for(int f=0;f<90;f++)if(b[f].side==side)for(int t:hintDestinations(b,f,captures,enemyKing)) {
++        Piece p=b[f],q=b[t];
++        const int fx=f%9,fy=f/9,tx=t%9,ty=t/9;
++        // Removing a ray blocker or a horse/elephant blocker can expose check;
++        // adding a ray blocker can create a cannon screen. Keep the full test there.
++        const bool sensitive=fx==kx||fy==ky||tx==kx||ty==ky||(std::abs(fx-kx)==1&&std::abs(fy-ky)==1);
++        if(noCheck&&!(!p.hidden&&p.type==K)&&!sensitive){out.push_back({f,t});if(first)return;continue;}
++        b[t]=p;b[f]=Piece{};
++        bool safe=!inCheck(b,side,!p.hidden&&p.type==K?t:king);b[f]=p;b[t]=q;
++        if(safe) {out.push_back({f,t});if(first)return;}
++    }
++}
++
++std::vector<Move> hintLegal(Board& b,int side,bool captures=false){std::vector<Move> out;out.reserve(48);legalKingHintInto(b,side,captures,false,-2,out);return out;}
++// Frozen ordering is built before children; validate only a child actually visited.
++void searchPseudos(Board& b,int side,bool captures,int enemyKing,std::vector<Move>& out){out.clear();if(kingHintEnabled&&enemyKing==-2){enemyKing=-1;for(int i=0;i<90;i++)if(b[i].side!=side&&b[i].type==K){enemyKing=i;break;}}for(int f=0;f<90;f++)if(b[f].side==side)for(int t:kingHintEnabled?hintDestinations(b,f,captures,enemyKing):pseudoDestinations(b,f,captures))out.push_back({f,t});}
++bool legalSearchPseudo(Board& b,int side,Move m,int king,bool check){const Piece p=b[m.from],q=b[m.to];const bool royal=!p.hidden&&p.type==K;const int kx=king%9,ky=king/9,fx=m.from%9,fy=m.from/9,tx=m.to%9,ty=m.to/9;const bool sensitive=fx==kx||fy==ky||tx==kx||ty==ky||(std::abs(fx-kx)==1&&std::abs(fy-ky)==1);bool safe=king>=0&&!check&&!royal&&!sensitive;
++#ifdef MIST_VERIFY_RESTORE
++ const Board before=b;Board oracle=b;oracle[m.to]=p;oracle[m.from]=Piece{};const bool expected=!inCheck(oracle,side,royal?m.to:king);
++#endif
++ if(!safe){b[m.to]=p;b[m.from]=Piece{};try{safe=!inCheck(b,side,royal?m.to:king);}catch(...){b[m.from]=p;b[m.to]=q;throw;}b[m.from]=p;b[m.to]=q;}
++#ifdef MIST_VERIFY_RESTORE
++ if(safe!=expected||b!=before)throw std::logic_error("lazy legality differs from old Board check");
++#endif
++ return safe;}
++std::vector<Move> lazyFullLegal(Board& b,int side,bool captures=false){if(!lazyLegalityEnabled)return hintLegal(b,side,captures);const int king=kingAt(b,side);const bool check=inCheck(b,side,king);std::vector<Move> pseudo,out;searchPseudos(b,side,captures,-2,pseudo);out.reserve(48);for(Move m:pseudo)if(legalSearchPseudo(b,side,m,king,check))out.push_back(m);return out;}
++
+@@ -413 +495 @@
+-    std::string mode;int depth=0,turn=0,viewer=-1,quiet=0,gamePly=0;std::vector<Position> positions;double budget=0;uint64_t nodeLimit=0;
++    std::string mode;bool lazyLegalityEnabled=false;bool kingHintEnabled=false;int depth=0,turn=0,viewer=-1,quiet=0,gamePly=0;std::vector<Position> positions;double budget=0;uint64_t nodeLimit=0;
+@@ -424,0 +507,2 @@
++    if(p.mode=="SEARCH_LAZYLEGAL"){p.mode="SEARCH";p.kingHintEnabled=true;p.lazyLegalityEnabled=true;}else if(p.mode=="STREAM_LAZYLEGAL"){p.mode="STREAM";p.kingHintEnabled=true;p.lazyLegalityEnabled=true;}else if(p.mode=="VERIFY_LAZYLEGAL"){p.mode="VERIFY";p.kingHintEnabled=true;p.lazyLegalityEnabled=true;}
++    if(p.mode=="SEARCH_KINGHINT"){p.mode="SEARCH";p.kingHintEnabled=true;}else if(p.mode=="STREAM_KINGHINT"){p.mode="STREAM";p.kingHintEnabled=true;}else if(p.mode=="VERIFY_KINGHINT"){p.mode="VERIFY";p.kingHintEnabled=true;}
+@@ -432,0 +517 @@
++bool safeKingHints(const Packet& p){for(const Board& b:p.worlds){int counts[2]={0,0};for(const Piece x:b)if(x.type==K){if(!x.live()||x.hidden||++counts[x.side]>1)return false;}}return true;}
+@@ -466 +551 @@
+-        if(ply>=MAX_SEARCH_PLY-1){safetyCutoffs++;auto& probe=probeBuffers.back();legalInto(s.board,s.turn,false,true,s.kings[s.turn],probe);if(probe.empty())return -mate+ply;return evaluate(s,s.turn)-(inCheck(s.board,s.turn,s.kings[s.turn])?180:0);}
++        if(ply>=MAX_SEARCH_PLY-1){safetyCutoffs++;auto& probe=probeBuffers.back();legalKingHintInto(s.board,s.turn,false,true,s.kings[s.turn],probe,-1,s.kings[s.turn^1]);if(probe.empty())return -mate+ply;return evaluate(s,s.turn)-(inCheck(s.board,s.turn,s.kings[s.turn])?180:0);}
+@@ -469 +554 @@
+-        if(previous>=2||s.quiet>=120||s.gamePly>=400){auto& probe=probeBuffers.at(ply);legalInto(s.board,s.turn,false,true,s.kings[s.turn],probe);if(probe.empty())return -mate+ply;if(previous>=2)return mate-ply;return 0;}
++        if(previous>=2||s.quiet>=120||s.gamePly>=400){auto& probe=probeBuffers.at(ply);legalKingHintInto(s.board,s.turn,false,true,s.kings[s.turn],probe,-1,s.kings[s.turn^1]);if(probe.empty())return -mate+ply;if(previous>=2)return mate-ply;return 0;}
+@@ -505 +590 @@
+-                auto& probe=probeBuffers.at(ply);legalInto(s.board,s.turn,false,true,s.kings[s.turn],probe,check);
++                auto& probe=probeBuffers.at(ply);legalKingHintInto(s.board,s.turn,false,true,s.kings[s.turn],probe,check,s.kings[s.turn^1]);
+@@ -513,2 +598,2 @@
+-                legalInto(s.board,s.turn,true,true,s.kings[s.turn],probe,check);
+-                if(probe.empty())legalInto(s.board,s.turn,false,true,s.kings[s.turn],probe,check);
++                legalKingHintInto(s.board,s.turn,true,true,s.kings[s.turn],probe,check,s.kings[s.turn^1]);
++                if(probe.empty())legalKingHintInto(s.board,s.turn,false,true,s.kings[s.turn],probe,check,s.kings[s.turn^1]);
+@@ -519,2 +604,3 @@
+-        auto& moves=moveBuffers.at(ply);legalInto(s.board,s.turn,quiet,false,s.kings[s.turn],moves,check);
+-        if(moves.empty()){if(!quiet)return -mate+ply;auto& probe=probeBuffers.at(ply);legalInto(s.board,s.turn,false,true,s.kings[s.turn],probe,check);if(probe.empty())return -mate+ply;}
++        auto& moves=moveBuffers.at(ply);const bool lazy=lazyLegalityEnabled&&depth> -6&&(!quiet||qleft>0);
++        if(lazy)searchPseudos(s.board,s.turn,quiet,s.kings[s.turn^1],moves);else legalKingHintInto(s.board,s.turn,quiet,false,s.kings[s.turn],moves,check,s.kings[s.turn^1]);
++        if(moves.empty()){if(!quiet)return -mate+ply;auto& probe=probeBuffers.at(ply);legalKingHintInto(s.board,s.turn,false,true,s.kings[s.turn],probe,check,s.kings[s.turn^1]);if(probe.empty())return -mate+ply;}
+@@ -529 +615 @@
+-        Move best;bool first=true;
++        Move best;bool first=true,hadLegal=false;
+@@ -531,0 +618 @@
++            if(lazy&&!legalSearchPseudo(s.board,s.turn,m,s.kings[s.turn],check))continue;hadLegal=true;
+@@ -539 +626,3 @@
+-        }save(alpha,alpha<=originalAlpha?2:0,best);return alpha;
++        }
++        if(lazy&&!hadLegal){if(!quiet)return -mate+ply;auto& probe=probeBuffers.at(ply);legalKingHintInto(s.board,s.turn,false,true,s.kings[s.turn],probe,check,s.kings[s.turn^1]);if(probe.empty())return -mate+ply;return alpha;}
++        save(alpha,alpha<=originalAlpha?2:0,best);return alpha;
+@@ -671 +760 @@
+-    std::cout<<"{\"depth\":"<<(last?last->depth:0)<<",\"nodes\":"<<s.nodes<<",\"samples\":"<<p.worlds.size()<<",\"elapsedMs\":"<<elapsed<<",\"interruptedDepth\":"<<interrupted<<",\"score\":"<<(last?last->rows[0].score:0)<<",\"move\":";writeMove(last?last->rows[0].move:fallback);
++    std::cout<<"{\"lazyLegalityEnabled\":"<<(lazyLegalityEnabled?"true":"false")<<",\"selfCpuMs\":"<<(selfCpuMs()-requestCpuStart)<<",\"kingHintEnabled\":"<<(kingHintEnabled?"true":"false")<<",\"depth\":"<<(last?last->depth:0)<<",\"nodes\":"<<s.nodes<<",\"samples\":"<<p.worlds.size()<<",\"elapsedMs\":"<<elapsed<<",\"interruptedDepth\":"<<interrupted<<",\"score\":"<<(last?last->rows[0].score:0)<<",\"move\":";writeMove(last?last->rows[0].move:fallback);
+@@ -674 +763 @@
+-    if(p.mode!="STREAM")for(size_t i=0;i<iterations.size();i++){if(i)std::cout<<',';const auto& r=iterations[i];std::cout<<"{\"depth\":"<<r.depth<<",\"nodes\":"<<r.nodes<<",\"elapsedMs\":"<<r.elapsed<<",\"allCandidates\":";writeRows(r.rows);std::cout<<'}';}
++    if(p.mode!="STREAM")for(size_t i=0;i<iterations.size();i++){if(i)std::cout<<',';const auto& r=iterations[i];std::cout<<"{\"lazyLegalityEnabled\":"<<(lazyLegalityEnabled?"true":"false")<<",\"selfCpuMs\":"<<(selfCpuMs()-requestCpuStart)<<",\"kingHintEnabled\":"<<(kingHintEnabled?"true":"false")<<",\"depth\":"<<r.depth<<",\"nodes\":"<<r.nodes<<",\"elapsedMs\":"<<r.elapsed<<",\"allCandidates\":";writeRows(r.rows);std::cout<<'}';}
+@@ -745 +834 @@
+-    std::cout<<"{\"depth\":"<<(last?last->depth:0)<<",\"nodes\":"<<s.nodes<<",\"samples\":"<<p.worlds.size()<<",\"elapsedMs\":"<<elapsed<<",\"interruptedDepth\":"<<interrupted<<",\"score\":"<<(last?last->rows[0].score:0)<<",\"move\":";writeMove(last?last->rows[0].move:fallback);
++    std::cout<<"{\"lazyLegalityEnabled\":"<<(lazyLegalityEnabled?"true":"false")<<",\"selfCpuMs\":"<<(selfCpuMs()-requestCpuStart)<<",\"kingHintEnabled\":"<<(kingHintEnabled?"true":"false")<<",\"depth\":"<<(last?last->depth:0)<<",\"nodes\":"<<s.nodes<<",\"samples\":"<<p.worlds.size()<<",\"elapsedMs\":"<<elapsed<<",\"interruptedDepth\":"<<interrupted<<",\"score\":"<<(last?last->rows[0].score:0)<<",\"move\":";writeMove(last?last->rows[0].move:fallback);
+@@ -748 +837 @@
+-    if(p.mode!="STREAM")for(size_t i=0;i<iterations.size();i++){if(i)std::cout<<',';const auto& r=iterations[i];std::cout<<"{\"depth\":"<<r.depth<<",\"nodes\":"<<r.nodes<<",\"elapsedMs\":"<<r.elapsed<<",\"allCandidates\":";writeRows(r.rows);std::cout<<'}';}
++    if(p.mode!="STREAM")for(size_t i=0;i<iterations.size();i++){if(i)std::cout<<',';const auto& r=iterations[i];std::cout<<"{\"lazyLegalityEnabled\":"<<(lazyLegalityEnabled?"true":"false")<<",\"selfCpuMs\":"<<(selfCpuMs()-requestCpuStart)<<",\"kingHintEnabled\":"<<(kingHintEnabled?"true":"false")<<",\"depth\":"<<r.depth<<",\"nodes\":"<<r.nodes<<",\"elapsedMs\":"<<r.elapsed<<",\"allCandidates\":";writeRows(r.rows);std::cout<<'}';}
+@@ -831 +920 @@
+-    std::cout<<"{\"depth\":"<<(last?last->depth:0)<<",\"mainDepth\":"<<currentDepth<<",\"completedDepth\":"<<(last?last->depth:0)<<",\"selDepth\":"<<controller.selDepth<<",\"nodes\":"<<controller.nodes<<",\"visitedNodes\":"<<controller.nodes<<",\"statsExact\":true,\"samples\":1,\"elapsedMs\":"<<controller.elapsed()<<",\"interruptedDepth\":"<<interrupted<<",\"score\":"<<(last?last->rows[0].score:0)<<",\"move\":";writeMove(last?last->rows[0].move:fallback);
++    std::cout<<"{\"lazyLegalityEnabled\":"<<(lazyLegalityEnabled?"true":"false")<<",\"selfCpuMs\":"<<(selfCpuMs()-requestCpuStart)<<",\"kingHintEnabled\":"<<(kingHintEnabled?"true":"false")<<",\"depth\":"<<(last?last->depth:0)<<",\"mainDepth\":"<<currentDepth<<",\"completedDepth\":"<<(last?last->depth:0)<<",\"selDepth\":"<<controller.selDepth<<",\"nodes\":"<<controller.nodes<<",\"visitedNodes\":"<<controller.nodes<<",\"statsExact\":true,\"samples\":1,\"elapsedMs\":"<<controller.elapsed()<<",\"interruptedDepth\":"<<interrupted<<",\"score\":"<<(last?last->rows[0].score:0)<<",\"move\":";writeMove(last?last->rows[0].move:fallback);
+@@ -833 +922 @@
+-    if(p.mode!="STREAM")for(size_t i=0;i<iterations.size();i++){if(i)std::cout<<',';const auto& r=iterations[i];std::cout<<"{\"depth\":"<<r.depth<<",\"nodes\":"<<r.nodes<<",\"elapsedMs\":"<<r.elapsed<<",\"allCandidates\":";writeRows(r.rows);std::cout<<'}';}std::cout<<"]}\n";
++    if(p.mode!="STREAM")for(size_t i=0;i<iterations.size();i++){if(i)std::cout<<',';const auto& r=iterations[i];std::cout<<"{\"lazyLegalityEnabled\":"<<(lazyLegalityEnabled?"true":"false")<<",\"selfCpuMs\":"<<(selfCpuMs()-requestCpuStart)<<",\"kingHintEnabled\":"<<(kingHintEnabled?"true":"false")<<",\"depth\":"<<r.depth<<",\"nodes\":"<<r.nodes<<",\"elapsedMs\":"<<r.elapsed<<",\"allCandidates\":";writeRows(r.rows);std::cout<<'}';}std::cout<<"]}\n";
+@@ -917 +1006 @@
+-    const Iteration* last=iterations.empty()?nullptr:&iterations.back();std::cout<<"{\"depth\":"<<(last?last->depth:0)<<",\"mainDepth\":"<<currentDepth<<",\"completedDepth\":"<<(last?last->depth:0)<<",\"selDepth\":"<<controller.selDepth<<",\"nodes\":"<<controller.nodes<<",\"visitedNodes\":"<<controller.nodes<<",\"statsExact\":true,\"samples\":1,\"threads\":"<<lanes<<",\"elapsedMs\":"<<controller.elapsed()<<",\"score\":"<<(last?last->rows[0].score:0)<<",\"move\":";writeMove(last?last->rows[0].move:roots[0]);std::cout<<",\"ttBudgetBytes\":"<<TTArena::budget<<",\"ttAllocatedBytes\":"<<allocated<<",\"ttDenied\":"<<denied<<",\"frontierSplit\":true,\"frontierContexts\":"<<contexts.size()<<",\"splitNodes\":"<<splitNodes<<",\"completedIterations\":"<<completed<<",\"safetyCutoffs\":"<<controller.safetyCutoffs<<",\"interruptedDepth\":"<<interrupted<<",\"terminationReason\":\""<<(controller.safetyCutoffs?"stack-safety":interrupted?"time-budget":last&&std::abs(last->rows[0].score)>98000?"terminal":"depth-limit")<<"\",\"searchStatus\":\""<<(interrupted?"time-budget":"completed")<<"\",\"allCandidates\":";writeRows(last?last->rows:std::vector<Row>{});std::cout<<",\"iterations\":[";if(p.mode!="STREAM")for(size_t i=0;i<iterations.size();i++){if(i)std::cout<<',';std::cout<<"{\"depth\":"<<iterations[i].depth<<",\"nodes\":"<<iterations[i].nodes<<",\"elapsedMs\":"<<iterations[i].elapsed<<",\"allCandidates\":";writeRows(iterations[i].rows);std::cout<<'}';}std::cout<<"]}\n";
++    const Iteration* last=iterations.empty()?nullptr:&iterations.back();std::cout<<"{\"lazyLegalityEnabled\":"<<(lazyLegalityEnabled?"true":"false")<<",\"selfCpuMs\":"<<(selfCpuMs()-requestCpuStart)<<",\"kingHintEnabled\":"<<(kingHintEnabled?"true":"false")<<",\"depth\":"<<(last?last->depth:0)<<",\"mainDepth\":"<<currentDepth<<",\"completedDepth\":"<<(last?last->depth:0)<<",\"selDepth\":"<<controller.selDepth<<",\"nodes\":"<<controller.nodes<<",\"visitedNodes\":"<<controller.nodes<<",\"statsExact\":true,\"samples\":1,\"threads\":"<<lanes<<",\"elapsedMs\":"<<controller.elapsed()<<",\"score\":"<<(last?last->rows[0].score:0)<<",\"move\":";writeMove(last?last->rows[0].move:roots[0]);std::cout<<",\"ttBudgetBytes\":"<<TTArena::budget<<",\"ttAllocatedBytes\":"<<allocated<<",\"ttDenied\":"<<denied<<",\"frontierSplit\":true,\"frontierContexts\":"<<contexts.size()<<",\"splitNodes\":"<<splitNodes<<",\"completedIterations\":"<<completed<<",\"safetyCutoffs\":"<<controller.safetyCutoffs<<",\"interruptedDepth\":"<<interrupted<<",\"terminationReason\":\""<<(controller.safetyCutoffs?"stack-safety":interrupted?"time-budget":last&&std::abs(last->rows[0].score)>98000?"terminal":"depth-limit")<<"\",\"searchStatus\":\""<<(interrupted?"time-budget":"completed")<<"\",\"allCandidates\":";writeRows(last?last->rows:std::vector<Row>{});std::cout<<",\"iterations\":[";if(p.mode!="STREAM")for(size_t i=0;i<iterations.size();i++){if(i)std::cout<<',';std::cout<<"{\"lazyLegalityEnabled\":"<<(lazyLegalityEnabled?"true":"false")<<",\"selfCpuMs\":"<<(selfCpuMs()-requestCpuStart)<<",\"kingHintEnabled\":"<<(kingHintEnabled?"true":"false")<<",\"depth\":"<<iterations[i].depth<<",\"nodes\":"<<iterations[i].nodes<<",\"elapsedMs\":"<<iterations[i].elapsed<<",\"allCandidates\":";writeRows(iterations[i].rows);std::cout<<'}';}std::cout<<"]}\n";
+@@ -922,3 +1011,3 @@
+-    for(int side:{0,1}){if(side)std::cout<<',';std::cout<<"{\"check\":"<<(inCheck(s.board,side,s.kings[side])?"true":"false")<<",\"score\":"<<evaluate(s,side)<<",\"legal\":";writeMoves(legal(s.board,side));std::cout<<",\"captures\":";writeMoves(legal(s.board,side,true));std::cout<<'}';}
+-    std::cout<<"],\"transitions\":[";const Board before=s.board;Key old=s.key();const int oldPopulation=s.population,oldKings[2]={s.kings[0],s.kings[1]};auto moves=legal(s.board,s.turn);
+-    for(size_t i=0;i<moves.size();i++){if(i)std::cout<<',';Move m=moves[i];Undo u=push(s,m);std::cout<<"{\"from\":"<<m.from<<",\"to\":"<<m.to<<",\"type\":"<<s.board[m.to].type<<",\"score\":"<<evaluate(s,p.turn)<<",\"poolCount\":["<<s.poolCount[0]<<','<<s.poolCount[1]<<"],\"poolValue\":["<<s.poolValue[0]<<','<<s.poolValue[1]<<"],\"reply\":";writeMoves(legal(s.board,s.turn));pop(s,m,u);std::cout<<",\"restored\":"<<((s.board==before&&s.key()==old&&s.population==oldPopulation&&s.kings[0]==oldKings[0]&&s.kings[1]==oldKings[1])?"true":"false")<<'}';}
++    for(int side:{0,1}){if(side)std::cout<<',';std::cout<<"{\"check\":"<<(inCheck(s.board,side,s.kings[side])?"true":"false")<<",\"score\":"<<evaluate(s,side)<<",\"legal\":";writeMoves(lazyFullLegal(s.board,side));std::cout<<",\"captures\":";writeMoves(lazyFullLegal(s.board,side,true));std::cout<<'}';}
++    std::cout<<"],\"transitions\":[";const Board before=s.board;Key old=s.key();const int oldPopulation=s.population,oldKings[2]={s.kings[0],s.kings[1]};auto moves=lazyFullLegal(s.board,s.turn);
++    for(size_t i=0;i<moves.size();i++){if(i)std::cout<<',';Move m=moves[i];Undo u=push(s,m);std::cout<<"{\"from\":"<<m.from<<",\"to\":"<<m.to<<",\"type\":"<<s.board[m.to].type<<",\"score\":"<<evaluate(s,p.turn)<<",\"poolCount\":["<<s.poolCount[0]<<','<<s.poolCount[1]<<"],\"poolValue\":["<<s.poolValue[0]<<','<<s.poolValue[1]<<"],\"reply\":";writeMoves(lazyFullLegal(s.board,s.turn));pop(s,m,u);std::cout<<",\"restored\":"<<((s.board==before&&s.key()==old&&s.population==oldPopulation&&s.kings[0]==oldKings[0]&&s.kings[1]==oldKings[1])?"true":"false")<<'}';}
+@@ -930 +1019 @@
+-    try {Packet packet;while(read(packet)){if(packet.mode=="VERIFY")verify(packet);else {if(std::any_of(packet.view.begin(),packet.view.end(),[](Piece p){return p.live()&&p.hidden;}))runDarkMesh(packet);else runFrontier(packet);}std::cout<<std::flush;packet=Packet{};}}
++    try {Packet packet;while(read(packet)){lazyLegalityEnabled=packet.lazyLegalityEnabled;kingHintEnabled=packet.kingHintEnabled&&safeKingHints(packet);if(packet.mode=="VERIFY")verify(packet);else {requestCpuStart=selfCpuMs();if(std::any_of(packet.view.begin(),packet.view.end(),[](Piece p){return p.live()&&p.hidden;}))runDarkMesh(packet);else runFrontier(packet);}std::cout<<std::flush;packet=Packet{};}}

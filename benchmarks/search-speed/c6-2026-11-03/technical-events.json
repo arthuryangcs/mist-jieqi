@@ -1,0 +1,40 @@
+{
+  "events": [
+    {
+      "index": 10,
+      "originalTechnicalForfeitPreserved": true,
+      "diagnosis": "Frozen harness requires search-mode diagnostic flags on root-adjudication fast path that does not search or emit those flags.",
+      "reproduced": {
+        "legal": true,
+        "adjudicated": true,
+        "terminationReason": "root-adjudication",
+        "nodes": 0,
+        "move": {
+          "from": 14,
+          "to": 23
+        },
+        "kingHintFlagPresent": false,
+        "lazyLegalityFlagPresent": false
+      },
+      "originalGameRerun": false
+    },
+    {
+      "index": 11,
+      "originalTechnicalForfeitPreserved": true,
+      "diagnosis": "Frozen harness requires search-mode diagnostic flags on root-adjudication fast path that does not search or emit those flags.",
+      "reproduced": {
+        "legal": true,
+        "adjudicated": true,
+        "terminationReason": "root-adjudication",
+        "nodes": 0,
+        "move": {
+          "from": 7,
+          "to": 23
+        },
+        "kingHintFlagPresent": false,
+        "lazyLegalityFlagPresent": false
+      },
+      "originalGameRerun": false
+    }
+  ]
+}

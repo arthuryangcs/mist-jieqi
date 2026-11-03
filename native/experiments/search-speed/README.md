@@ -44,3 +44,7 @@ node native/experiments/search-speed/benchmark.mjs
 各引擎使用自己的原生节点定义，Mist 节点已经累加世界，不能再乘 8。原生 NPS 不能当作等量工作或棋力；短终局证明与持续 2 秒搜索单列。FEN 单局面测速不重建 Pika 历史，对局测试才传完整合法观察历史。
 
 历史实测、负结果、新布局对战与限制见 [实验报告](../../../docs/experiments/search-speed.md)。本地比赛脚本 `matches.mjs` 采用预先冻结计划、串行锁和逐手持久化；需要独立缓存目录里的 `plan.json`、`selection.json` 与稳定二进制副本，且拒绝已参与旧赛的布局，不是默认应用入口。旧暂停赛事不会被恢复。
+
+## C6 可选实验
+
+[C6 构建与复现说明](README-C6.md) · [2026-11-03 报告](../../../docs/experiments/search-speed-c6.md)。C6 必须显式选择，默认引擎不变。

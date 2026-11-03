@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "checkedAgainst": [
+    ".cache/overlay-legal-only/holdout-fixtures.json",
+    ".cache/tail-cow/holdout-fixtures.json",
+    ".cache/piece-pack/holdout-fixtures.json"
+  ],
+  "initialControlRepeated": true,
+  "otherNewViews": 11,
+  "fixturesSha256": "b32de77cd6c1f8357d392e802dc46ced8915ffd410b4e9243afbe00bca8ee97b"
+}
