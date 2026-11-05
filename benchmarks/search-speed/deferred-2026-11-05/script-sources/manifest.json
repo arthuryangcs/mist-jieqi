@@ -1,0 +1,40 @@
+{
+  "scope": "self-authored source of the original local diagnostics, not an automatic portable launcher; same relative .cache layout is required; frozen original binary hashes must not be rewritten to disguise new measurements",
+  "files": [
+    {
+      "originalRelativePath": ".cache/daily-20261105/screen.mjs",
+      "sourceFile": "86c683ab0ca1d4d348125801e626de36eb76ffe2b8b4b01aa1c7721b3642f1c4-screen.mjs",
+      "sha256": "86c683ab0ca1d4d348125801e626de36eb76ffe2b8b4b01aa1c7721b3642f1c4"
+    },
+    {
+      "originalRelativePath": ".cache/daily-20261105/diagnostic-run.mjs",
+      "sourceFile": "4ebcd26ed401e03f162228a80a6d23d9e60873e7292a45343d954e64234fa387-diagnostic-run.mjs",
+      "sha256": "4ebcd26ed401e03f162228a80a6d23d9e60873e7292a45343d954e64234fa387"
+    },
+    {
+      "originalRelativePath": ".cache/daily-20261105/guarded-native.mjs",
+      "sourceFile": "274eb6d65a5af03bbeca9692e147a34e293e663d5055ae5990403d9b8347c15b-guarded-native.mjs",
+      "sha256": "274eb6d65a5af03bbeca9692e147a34e293e663d5055ae5990403d9b8347c15b"
+    },
+    {
+      "originalRelativePath": ".cache/deferred-order-20261105/holdout-fixtures.mjs",
+      "sourceFile": "865f3e960dbc8049b3e11e4d508ffed0ba5dc0c5b66810a5b93352cb7c49f91e-holdout-fixtures.mjs",
+      "sha256": "865f3e960dbc8049b3e11e4d508ffed0ba5dc0c5b66810a5b93352cb7c49f91e"
+    },
+    {
+      "originalRelativePath": ".cache/deferred-order-20261105/holdout.mjs",
+      "sourceFile": "06a3df18e6da580ecdc99a0a60d80d2dfe606b58e07fcbe7f2877246c4f43be1-holdout.mjs",
+      "sha256": "06a3df18e6da580ecdc99a0a60d80d2dfe606b58e07fcbe7f2877246c4f43be1"
+    },
+    {
+      "originalRelativePath": ".cache/deferred-order-20261105/screen.mjs",
+      "sourceFile": "c21216a6cfcb6ddc8c40dec3efb0f5b4959301be6e97e2ab81982580849c2c12-screen.mjs",
+      "sha256": "c21216a6cfcb6ddc8c40dec3efb0f5b4959301be6e97e2ab81982580849c2c12"
+    },
+    {
+      "originalRelativePath": ".cache/deferred-order-20261105/matches.mjs",
+      "sourceFile": "e6f044f75dfcb71b7478009332f3757595451501736f506bf7b391e14e04cfd4-matches.mjs",
+      "sha256": "e6f044f75dfcb71b7478009332f3757595451501736f506bf7b391e14e04cfd4"
+    }
+  ]
+}

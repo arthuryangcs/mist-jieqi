@@ -1,0 +1,1042 @@
+{
+  "requests": 108,
+  "technicalFailures": 0,
+  "positions": [
+    {
+      "position": "frontier-holdout/ending/11120007/0",
+      "engines": {
+        "candidate": {
+          "runs": 3,
+          "wallMs": 14.03443299999708,
+          "nativeNps": 3323753.7989607207,
+          "allSustained": false,
+          "completedDepth": [
+            6,
+            6,
+            6
+          ],
+          "mainDepth": [
+            6,
+            6,
+            6
+          ],
+          "selDepth": [
+            11,
+            11,
+            11
+          ],
+          "parents": [
+            1,
+            1,
+            1
+          ],
+          "selfCpuMs": 24.641
+        },
+        "deferred": {
+          "runs": 3,
+          "wallMs": 13.221381000000008,
+          "nativeNps": 3528148.8370995414,
+          "allSustained": false,
+          "completedDepth": [
+            6,
+            6,
+            6
+          ],
+          "mainDepth": [
+            6,
+            6,
+            6
+          ],
+          "selDepth": [
+            11,
+            11,
+            11
+          ],
+          "parents": [
+            0,
+            0,
+            0
+          ],
+          "selfCpuMs": 23.531000000000002
+        },
+        "stable": {
+          "runs": 3,
+          "wallMs": 20.980717999998888,
+          "nativeNps": 1442800.9565736314,
+          "allSustained": false,
+          "completedDepth": [
+            6,
+            6,
+            6
+          ],
+          "mainDepth": [
+            6,
+            6,
+            6
+          ],
+          "selDepth": [
+            11,
+            11,
+            11
+          ],
+          "parents": [
+            0,
+            0,
+            0
+          ],
+          "selfCpuMs": 0
+        },
+        "pika": {
+          "runs": 3,
+          "wallMs": 876.7886040000012,
+          "nativeNps": 16845369.011417944,
+          "allSustained": false,
+          "completedDepth": [
+            null,
+            null,
+            null
+          ],
+          "mainDepth": [
+            245,
+            245,
+            245
+          ],
+          "selDepth": [
+            9,
+            9,
+            9
+          ],
+          "parents": [
+            0,
+            0,
+            0
+          ],
+          "selfCpuMs": 0
+        }
+      },
+      "candidateOverDeferredNativeNps": 0.9420673425141406,
+      "candidateOverPikaNativeNps": 0.19730964615306737
+    },
+    {
+      "position": "frontier-holdout/ending/11124084/0",
+      "engines": {
+        "candidate": {
+          "runs": 3,
+          "wallMs": 4.321323999996821,
+          "nativeNps": 7173.727311357076,
+          "allSustained": false,
+          "completedDepth": [
+            2,
+            2,
+            2
+          ],
+          "mainDepth": [
+            2,
+            2,
+            2
+          ],
+          "selDepth": [
+            3,
+            3,
+            3
+          ],
+          "parents": [
+            0,
+            0,
+            0
+          ],
+          "selfCpuMs": 2.1879999999999997
+        },
+        "deferred": {
+          "runs": 3,
+          "wallMs": 4.25644900000043,
+          "nativeNps": 7283.066236667436,
+          "allSustained": false,
+          "completedDepth": [
+            2,
+            2,
+            2
+          ],
+          "mainDepth": [
+            2,
+            2,
+            2
+          ],
+          "selDepth": [
+            3,
+            3,
+            3
+          ],
+          "parents": [
+            0,
+            0,
+            0
+          ],
+          "selfCpuMs": 2.2359999999999998
+        },
+        "stable": {
+          "runs": 3,
+          "wallMs": 2.0894699999989825,
+          "nativeNps": 16272.068993580457,
+          "allSustained": false,
+          "completedDepth": [
+            2,
+            2,
+            2
+          ],
+          "mainDepth": [
+            2,
+            2,
+            2
+          ],
+          "selDepth": [
+            3,
+            3,
+            3
+          ],
+          "parents": [
+            0,
+            0,
+            0
+          ],
+          "selfCpuMs": 0
+        },
+        "pika": {
+          "runs": 3,
+          "wallMs": 2.9714009999988775,
+          "nativeNps": 658275.338805075,
+          "allSustained": false,
+          "completedDepth": [
+            null,
+            null,
+            null
+          ],
+          "mainDepth": [
+            245,
+            245,
+            245
+          ],
+          "selDepth": [
+            3,
+            3,
+            3
+          ],
+          "parents": [
+            0,
+            0,
+            0
+          ],
+          "selfCpuMs": 0
+        }
+      },
+      "candidateOverDeferredNativeNps": 0.9849872400226322,
+      "candidateOverPikaNativeNps": 0.010897760995238077
+    },
+    {
+      "position": "frontier-holdout/ending/11130003/0",
+      "engines": {
+        "candidate": {
+          "runs": 3,
+          "wallMs": 9.931702999998379,
+          "nativeNps": 413524.24654670706,
+          "allSustained": false,
+          "completedDepth": [
+            4,
+            4,
+            4
+          ],
+          "mainDepth": [
+            4,
+            4,
+            4
+          ],
+          "selDepth": [
+            7,
+            7,
+            7
+          ],
+          "parents": [
+            1,
+            1,
+            1
+          ],
+          "selfCpuMs": 9.282
+        },
+        "deferred": {
+          "runs": 3,
+          "wallMs": 9.36372499999925,
+          "nativeNps": 439355.06435743574,
+          "allSustained": false,
+          "completedDepth": [
+            4,
+            4,
+            4
+          ],
+          "mainDepth": [
+            4,
+            4,
+            4
+          ],
+          "selDepth": [
+            7,
+            7,
+            7
+          ],
+          "parents": [
+            0,
+            0,
+            0
+          ],
+          "selfCpuMs": 8.649
+        },
+        "stable": {
+          "runs": 3,
+          "wallMs": 4.186793000000762,
+          "nativeNps": 726331.5860133154,
+          "allSustained": false,
+          "completedDepth": [
+            4,
+            4,
+            4
+          ],
+          "mainDepth": [
+            4,
+            4,
+            4
+          ],
+          "selDepth": [
+            7,
+            7,
+            7
+          ],
+          "parents": [
+            0,
+            0,
+            0
+          ],
+          "selfCpuMs": 0
+        },
+        "pika": {
+          "runs": 3,
+          "wallMs": 7.826270999998087,
+          "nativeNps": 10277885.515483499,
+          "allSustained": false,
+          "completedDepth": [
+            null,
+            null,
+            null
+          ],
+          "mainDepth": [
+            245,
+            245,
+            245
+          ],
+          "selDepth": [
+            5,
+            5,
+            5
+          ],
+          "parents": [
+            0,
+            0,
+            0
+          ],
+          "selfCpuMs": 0
+        }
+      },
+      "candidateOverDeferredNativeNps": 0.9412074199064788,
+      "candidateOverPikaNativeNps": 0.040234369795590565
+    },
+    {
+      "position": "frontier-holdout/ending/11134044/0",
+      "engines": {
+        "candidate": {
+          "runs": 3,
+          "wallMs": 13.029516999995394,
+          "nativeNps": 1975668.0159371295,
+          "allSustained": false,
+          "completedDepth": [
+            5,
+            5,
+            5
+          ],
+          "mainDepth": [
+            5,
+            5,
+            5
+          ],
+          "selDepth": [
+            7,
+            7,
+            7
+          ],
+          "parents": [
+            3,
+            3,
+            3
+          ],
+          "selfCpuMs": 19.427000000000003
+        },
+        "deferred": {
+          "runs": 3,
+          "wallMs": 12.504361999999674,
+          "nativeNps": 2058641.6164215873,
+          "allSustained": false,
+          "completedDepth": [
+            5,
+            5,
+            5
+          ],
+          "mainDepth": [
+            5,
+            5,
+            5
+          ],
+          "selDepth": [
+            7,
+            7,
+            7
+          ],
+          "parents": [
+            0,
+            0,
+            0
+          ],
+          "selfCpuMs": 19.077
+        },
+        "stable": {
+          "runs": 3,
+          "wallMs": 16.1609669999998,
+          "nativeNps": 1362418.4740925634,
+          "allSustained": false,
+          "completedDepth": [
+            5,
+            5,
+            5
+          ],
+          "mainDepth": [
+            5,
+            5,
+            5
+          ],
+          "selDepth": [
+            7,
+            7,
+            7
+          ],
+          "parents": [
+            0,
+            0,
+            0
+          ],
+          "selfCpuMs": 0
+        },
+        "pika": {
+          "runs": 3,
+          "wallMs": 142.47074500000235,
+          "nativeNps": 15594113.829632653,
+          "allSustained": false,
+          "completedDepth": [
+            null,
+            null,
+            null
+          ],
+          "mainDepth": [
+            245,
+            245,
+            245
+          ],
+          "selDepth": [
+            7,
+            7,
+            7
+          ],
+          "parents": [
+            0,
+            0,
+            0
+          ],
+          "selfCpuMs": 0
+        }
+      },
+      "candidateOverDeferredNativeNps": 0.9596949756467638,
+      "candidateOverPikaNativeNps": 0.12669318933550902
+    },
+    {
+      "position": "frontier-holdout/ending/11140047/0",
+      "engines": {
+        "candidate": {
+          "runs": 3,
+          "wallMs": 1928.6195569999982,
+          "nativeNps": 8241577.912010829,
+          "allSustained": true,
+          "completedDepth": [
+            9,
+            9,
+            9
+          ],
+          "mainDepth": [
+            10,
+            10,
+            10
+          ],
+          "selDepth": [
+            18,
+            18,
+            18
+          ],
+          "parents": [
+            16,
+            16,
+            16
+          ],
+          "selfCpuMs": 6138.014
+        },
+        "deferred": {
+          "runs": 3,
+          "wallMs": 1928.3805809999903,
+          "nativeNps": 8454229.04912761,
+          "allSustained": true,
+          "completedDepth": [
+            9,
+            9,
+            9
+          ],
+          "mainDepth": [
+            10,
+            10,
+            10
+          ],
+          "selDepth": [
+            18,
+            18,
+            18
+          ],
+          "parents": [
+            0,
+            0,
+            0
+          ],
+          "selfCpuMs": 6100.428
+        },
+        "stable": {
+          "runs": 3,
+          "wallMs": 1935.9876219999996,
+          "nativeNps": 1307124.0597012455,
+          "allSustained": true,
+          "completedDepth": [
+            8,
+            8,
+            8
+          ],
+          "mainDepth": [
+            9,
+            9,
+            9
+          ],
+          "selDepth": [
+            16,
+            16,
+            16
+          ],
+          "parents": [
+            0,
+            0,
+            0
+          ],
+          "selfCpuMs": 0
+        },
+        "pika": {
+          "runs": 3,
+          "wallMs": 1959.5305999999982,
+          "nativeNps": 5883444.870221815,
+          "allSustained": true,
+          "completedDepth": [
+            null,
+            null,
+            null
+          ],
+          "mainDepth": [
+            28,
+            28,
+            27
+          ],
+          "selDepth": [
+            38,
+            44,
+            46
+          ],
+          "parents": [
+            0,
+            0,
+            0
+          ],
+          "selfCpuMs": 0
+        }
+      },
+      "candidateOverDeferredNativeNps": 0.974846773622874,
+      "candidateOverPikaNativeNps": 1.400808215901598
+    },
+    {
+      "position": "frontier-holdout/ending/11144008/0",
+      "engines": {
+        "candidate": {
+          "runs": 3,
+          "wallMs": 26.12076999999408,
+          "nativeNps": 3979974.55664682,
+          "allSustained": false,
+          "completedDepth": [
+            6,
+            6,
+            6
+          ],
+          "mainDepth": [
+            6,
+            6,
+            6
+          ],
+          "selDepth": [
+            12,
+            12,
+            12
+          ],
+          "parents": [
+            12,
+            12,
+            12
+          ],
+          "selfCpuMs": 64.899
+        },
+        "deferred": {
+          "runs": 3,
+          "wallMs": 20.66781899999478,
+          "nativeNps": 4433752.782527423,
+          "allSustained": false,
+          "completedDepth": [
+            6,
+            6,
+            6
+          ],
+          "mainDepth": [
+            6,
+            6,
+            6
+          ],
+          "selDepth": [
+            12,
+            12,
+            12
+          ],
+          "parents": [
+            0,
+            0,
+            0
+          ],
+          "selfCpuMs": 46.542
+        },
+        "stable": {
+          "runs": 3,
+          "wallMs": 60.180025000008754,
+          "nativeNps": 1419657.1038311727,
+          "allSustained": false,
+          "completedDepth": [
+            6,
+            6,
+            6
+          ],
+          "mainDepth": [
+            6,
+            6,
+            6
+          ],
+          "selDepth": [
+            12,
+            12,
+            12
+          ],
+          "parents": [
+            0,
+            0,
+            0
+          ],
+          "selfCpuMs": 0
+        },
+        "pika": {
+          "runs": 3,
+          "wallMs": 465.28374500000064,
+          "nativeNps": 15197007.714099724,
+          "allSustained": false,
+          "completedDepth": [
+            null,
+            null,
+            null
+          ],
+          "mainDepth": [
+            245,
+            245,
+            245
+          ],
+          "selDepth": [
+            8,
+            8,
+            8
+          ],
+          "parents": [
+            0,
+            0,
+            0
+          ],
+          "selfCpuMs": 0
+        }
+      },
+      "candidateOverDeferredNativeNps": 0.897653692450139,
+      "candidateOverPikaNativeNps": 0.2618919876545312
+    },
+    {
+      "position": "frontier-holdout/opening/11170001/0",
+      "engines": {
+        "candidate": {
+          "runs": 3,
+          "wallMs": 1934.7647030000007,
+          "nativeNps": 7418477.327420794,
+          "allSustained": true,
+          "completedDepth": [
+            5,
+            5,
+            5
+          ],
+          "mainDepth": [
+            6,
+            6,
+            6
+          ],
+          "selDepth": [
+            14,
+            14,
+            14
+          ],
+          "parents": [
+            0,
+            0,
+            0
+          ],
+          "selfCpuMs": 6952.659000000001
+        },
+        "deferred": {
+          "runs": 3,
+          "wallMs": 1934.6011340000114,
+          "nativeNps": 7368307.314522877,
+          "allSustained": true,
+          "completedDepth": [
+            5,
+            5,
+            5
+          ],
+          "mainDepth": [
+            6,
+            6,
+            6
+          ],
+          "selDepth": [
+            14,
+            14,
+            14
+          ],
+          "parents": [
+            0,
+            0,
+            0
+          ],
+          "selfCpuMs": 6954.312
+        },
+        "stable": {
+          "runs": 3,
+          "wallMs": 1963.9522899999938,
+          "nativeNps": 2886357.5277856607,
+          "allSustained": true,
+          "completedDepth": [
+            4,
+            4,
+            4
+          ],
+          "mainDepth": [
+            5,
+            5,
+            5
+          ],
+          "selDepth": [
+            13,
+            13,
+            13
+          ],
+          "parents": [
+            0,
+            0,
+            0
+          ],
+          "selfCpuMs": 0
+        },
+        "pika": {
+          "runs": 3,
+          "wallMs": 1959.8175809999957,
+          "nativeNps": 7259116.1386258565,
+          "allSustained": true,
+          "completedDepth": [
+            null,
+            null,
+            null
+          ],
+          "mainDepth": [
+            12,
+            14,
+            13
+          ],
+          "selDepth": [
+            8,
+            9,
+            8
+          ],
+          "parents": [
+            0,
+            0,
+            0
+          ],
+          "selfCpuMs": 0
+        }
+      },
+      "candidateOverDeferredNativeNps": 1.006808892566008,
+      "candidateOverPikaNativeNps": 1.0219532496452253
+    },
+    {
+      "position": "frontier-holdout/middle/11170101/40",
+      "engines": {
+        "candidate": {
+          "runs": 3,
+          "wallMs": 1934.697576999999,
+          "nativeNps": 8055803.382754685,
+          "allSustained": true,
+          "completedDepth": [
+            6,
+            6,
+            6
+          ],
+          "mainDepth": [
+            7,
+            7,
+            7
+          ],
+          "selDepth": [
+            15,
+            15,
+            15
+          ],
+          "parents": [
+            0,
+            0,
+            0
+          ],
+          "selfCpuMs": 7652.013
+        },
+        "deferred": {
+          "runs": 3,
+          "wallMs": 1934.2875110000023,
+          "nativeNps": 7998932.03529787,
+          "allSustained": true,
+          "completedDepth": [
+            6,
+            6,
+            6
+          ],
+          "mainDepth": [
+            7,
+            7,
+            7
+          ],
+          "selDepth": [
+            15,
+            15,
+            15
+          ],
+          "parents": [
+            0,
+            0,
+            0
+          ],
+          "selfCpuMs": 7656.5869999999995
+        },
+        "stable": {
+          "runs": 3,
+          "wallMs": 1964.6776290000053,
+          "nativeNps": 3794952.5583047466,
+          "allSustained": true,
+          "completedDepth": [
+            6,
+            6,
+            6
+          ],
+          "mainDepth": [
+            7,
+            7,
+            7
+          ],
+          "selDepth": [
+            15,
+            15,
+            15
+          ],
+          "parents": [
+            0,
+            0,
+            0
+          ],
+          "selfCpuMs": 0
+        },
+        "pika": {
+          "runs": 3,
+          "wallMs": 1960.1901990000006,
+          "nativeNps": 6069673.4147677,
+          "allSustained": true,
+          "completedDepth": [
+            null,
+            null,
+            null
+          ],
+          "mainDepth": [
+            28,
+            26,
+            27
+          ],
+          "selDepth": [
+            30,
+            24,
+            30
+          ],
+          "parents": [
+            0,
+            0,
+            0
+          ],
+          "selfCpuMs": 0
+        }
+      },
+      "candidateOverDeferredNativeNps": 1.0071098675680519,
+      "candidateOverPikaNativeNps": 1.3272218836609349
+    },
+    {
+      "position": "frontier-holdout/ending/11170201/0",
+      "engines": {
+        "candidate": {
+          "runs": 3,
+          "wallMs": 5.772055000001274,
+          "nativeNps": 4850.958627385537,
+          "allSustained": false,
+          "completedDepth": [
+            1,
+            1,
+            1
+          ],
+          "mainDepth": [
+            1,
+            1,
+            1
+          ],
+          "selDepth": [
+            3,
+            3,
+            3
+          ],
+          "parents": [
+            0,
+            0,
+            0
+          ],
+          "selfCpuMs": 2.1930000000000005
+        },
+        "deferred": {
+          "runs": 3,
+          "wallMs": 5.677035000000615,
+          "nativeNps": 4932.152082908942,
+          "allSustained": false,
+          "completedDepth": [
+            1,
+            1,
+            1
+          ],
+          "mainDepth": [
+            1,
+            1,
+            1
+          ],
+          "selDepth": [
+            3,
+            3,
+            3
+          ],
+          "parents": [
+            0,
+            0,
+            0
+          ],
+          "selfCpuMs": 2.1209999999999996
+        },
+        "stable": {
+          "runs": 3,
+          "wallMs": 3.7289120000059484,
+          "nativeNps": 7508.892674312328,
+          "allSustained": false,
+          "completedDepth": [
+            1,
+            1,
+            1
+          ],
+          "mainDepth": [
+            1,
+            1,
+            1
+          ],
+          "selDepth": [
+            3,
+            3,
+            3
+          ],
+          "parents": [
+            0,
+            0,
+            0
+          ],
+          "selfCpuMs": 0
+        },
+        "pika": {
+          "runs": 3,
+          "wallMs": 5.708540999999968,
+          "nativeNps": 7290654.477212344,
+          "allSustained": false,
+          "completedDepth": [
+            null,
+            null,
+            null
+          ],
+          "mainDepth": [
+            245,
+            245,
+            245
+          ],
+          "selDepth": [
+            4,
+            4,
+            4
+          ],
+          "parents": [
+            0,
+            0,
+            0
+          ],
+          "selfCpuMs": 0
+        }
+      },
+      "candidateOverDeferredNativeNps": 0.9835379254008083,
+      "candidateOverPikaNativeNps": 0.0006653666886213966
+    }
+  ],
+  "method": "all frozen views retained; sustained throughput only if all3 runs both engines>=1000ms; native node definitions differ"
+}

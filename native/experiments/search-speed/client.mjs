@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import {performance} from 'node:perf_hooks';
 import {Native,fixture,observationSeed} from './bridge.mjs';
 import {binary as defaultBinary} from './build.mjs';
-import {legalMoves} from '../../../engine.js';
+import {legalMoves} from './legacy-engine-20261103.js';
 import {mergeSearchStats,cleanSearchStats} from '../../../search-metrics.js';
 
 const bounded=(promise,ms)=>Promise.race([promise,new Promise((_,reject)=>{const timer=setTimeout(()=>reject(Error('experimental readiness/reap timeout')),ms);timer.unref();})]);

@@ -1,0 +1,452 @@
+{
+  "method": "replay actual public board after each applied move; no new engine searches, no private dark identity check inputs",
+  "evidenceOnly": "positive scores during a losing check cycle are observed; no causal isolation or new rule implementation claimed",
+  "games": [
+    {
+      "index": 3,
+      "candidateSide": "b",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": false,
+        "reason": "黑方单方长将判负（2020棋例）"
+      },
+      "tail": [
+        {
+          "ply": 48,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 87,
+            "to": 33
+          },
+          "gaveCheck": false,
+          "selfCheck": false,
+          "reportedScore": 1692.8207583059864,
+          "completedDepth": 5
+        },
+        {
+          "ply": 49,
+          "side": "r",
+          "engine": "opponent",
+          "move": {
+            "from": 70,
+            "to": 68
+          },
+          "gaveCheck": false,
+          "selfCheck": false,
+          "reportedScore": null,
+          "completedDepth": null
+        },
+        {
+          "ply": 50,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 33,
+            "to": 78
+          },
+          "gaveCheck": true,
+          "selfCheck": false,
+          "reportedScore": 1716.3737534937827,
+          "completedDepth": 6
+        },
+        {
+          "ply": 51,
+          "side": "r",
+          "engine": "opponent",
+          "move": {
+            "from": 76,
+            "to": 85
+          },
+          "gaveCheck": false,
+          "selfCheck": false,
+          "reportedScore": null,
+          "completedDepth": null
+        },
+        {
+          "ply": 52,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 78,
+            "to": 87
+          },
+          "gaveCheck": true,
+          "selfCheck": false,
+          "reportedScore": 1727.1466417388058,
+          "completedDepth": 6
+        },
+        {
+          "ply": 53,
+          "side": "r",
+          "engine": "opponent",
+          "move": {
+            "from": 85,
+            "to": 76
+          },
+          "gaveCheck": false,
+          "selfCheck": false,
+          "reportedScore": null,
+          "completedDepth": null
+        },
+        {
+          "ply": 54,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 87,
+            "to": 84
+          },
+          "gaveCheck": false,
+          "selfCheck": false,
+          "reportedScore": 1776.6618190928186,
+          "completedDepth": 6
+        },
+        {
+          "ply": 55,
+          "side": "r",
+          "engine": "opponent",
+          "move": {
+            "from": 76,
+            "to": 77
+          },
+          "gaveCheck": false,
+          "selfCheck": false,
+          "reportedScore": null,
+          "completedDepth": null
+        },
+        {
+          "ply": 56,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 84,
+            "to": 75
+          },
+          "gaveCheck": true,
+          "selfCheck": false,
+          "reportedScore": 3594.878728264789,
+          "completedDepth": 6
+        },
+        {
+          "ply": 57,
+          "side": "r",
+          "engine": "opponent",
+          "move": {
+            "from": 77,
+            "to": 86
+          },
+          "gaveCheck": false,
+          "selfCheck": false,
+          "reportedScore": null,
+          "completedDepth": null
+        },
+        {
+          "ply": 58,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 75,
+            "to": 84
+          },
+          "gaveCheck": true,
+          "selfCheck": false,
+          "reportedScore": 3594.878728264789,
+          "completedDepth": 6
+        },
+        {
+          "ply": 59,
+          "side": "r",
+          "engine": "opponent",
+          "move": {
+            "from": 86,
+            "to": 77
+          },
+          "gaveCheck": false,
+          "selfCheck": false,
+          "reportedScore": null,
+          "completedDepth": null
+        },
+        {
+          "ply": 60,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 84,
+            "to": 75
+          },
+          "gaveCheck": true,
+          "selfCheck": false,
+          "reportedScore": 3594.878728264789,
+          "completedDepth": 6
+        },
+        {
+          "ply": 61,
+          "side": "r",
+          "engine": "opponent",
+          "move": {
+            "from": 77,
+            "to": 86
+          },
+          "gaveCheck": false,
+          "selfCheck": false,
+          "reportedScore": null,
+          "completedDepth": null
+        },
+        {
+          "ply": 62,
+          "side": "b",
+          "engine": "candidate",
+          "move": {
+            "from": 75,
+            "to": 84
+          },
+          "gaveCheck": true,
+          "selfCheck": false,
+          "reportedScore": 3594.878728264789,
+          "completedDepth": 6
+        },
+        {
+          "ply": 63,
+          "side": "r",
+          "engine": "opponent",
+          "move": {
+            "from": 86,
+            "to": 77
+          },
+          "gaveCheck": false,
+          "selfCheck": false,
+          "reportedScore": null,
+          "completedDepth": null
+        }
+      ],
+      "policy": "cn2020-evidence-v1",
+      "kind": "perpetual-check",
+      "liable": "b"
+    },
+    {
+      "index": 5,
+      "candidateSide": "r",
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "technicalForfeit": false,
+        "reason": "红方单方长将判负（2020棋例）"
+      },
+      "tail": [
+        {
+          "ply": 47,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 37,
+            "to": 36
+          },
+          "gaveCheck": false,
+          "selfCheck": false,
+          "reportedScore": 2133.3059697857802,
+          "completedDepth": 5
+        },
+        {
+          "ply": 48,
+          "side": "b",
+          "engine": "opponent",
+          "move": {
+            "from": 57,
+            "to": 37
+          },
+          "gaveCheck": false,
+          "selfCheck": false,
+          "reportedScore": -1644.0000000000002,
+          "completedDepth": 6
+        },
+        {
+          "ply": 49,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 46,
+            "to": 37
+          },
+          "gaveCheck": false,
+          "selfCheck": false,
+          "reportedScore": 2184.2839165412024,
+          "completedDepth": 5
+        },
+        {
+          "ply": 50,
+          "side": "b",
+          "engine": "opponent",
+          "move": {
+            "from": 13,
+            "to": 22
+          },
+          "gaveCheck": false,
+          "selfCheck": false,
+          "reportedScore": -1943.9602832872968,
+          "completedDepth": 6
+        },
+        {
+          "ply": 51,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 37,
+            "to": 1
+          },
+          "gaveCheck": true,
+          "selfCheck": false,
+          "reportedScore": 2411.50249308983,
+          "completedDepth": 6
+        },
+        {
+          "ply": 52,
+          "side": "b",
+          "engine": "opponent",
+          "move": {
+            "from": 4,
+            "to": 13
+          },
+          "gaveCheck": false,
+          "selfCheck": false,
+          "reportedScore": -2064,
+          "completedDepth": 7
+        },
+        {
+          "ply": 53,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 1,
+            "to": 5
+          },
+          "gaveCheck": false,
+          "selfCheck": false,
+          "reportedScore": 2473.1331963944494,
+          "completedDepth": 6
+        },
+        {
+          "ply": 54,
+          "side": "b",
+          "engine": "opponent",
+          "move": {
+            "from": 32,
+            "to": 39
+          },
+          "gaveCheck": false,
+          "selfCheck": false,
+          "reportedScore": -2064,
+          "completedDepth": 5
+        },
+        {
+          "ply": 55,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 5,
+            "to": 14
+          },
+          "gaveCheck": true,
+          "selfCheck": false,
+          "reportedScore": 3594.878728264789,
+          "completedDepth": 6
+        },
+        {
+          "ply": 56,
+          "side": "b",
+          "engine": "opponent",
+          "move": {
+            "from": 13,
+            "to": 4
+          },
+          "gaveCheck": false,
+          "selfCheck": false,
+          "reportedScore": -2251.2347916933477,
+          "completedDepth": 7
+        },
+        {
+          "ply": 57,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 14,
+            "to": 5
+          },
+          "gaveCheck": true,
+          "selfCheck": false,
+          "reportedScore": 3594.878728264789,
+          "completedDepth": 6
+        },
+        {
+          "ply": 58,
+          "side": "b",
+          "engine": "opponent",
+          "move": {
+            "from": 4,
+            "to": 13
+          },
+          "gaveCheck": false,
+          "selfCheck": false,
+          "reportedScore": -2251.2347916933477,
+          "completedDepth": 7
+        },
+        {
+          "ply": 59,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 5,
+            "to": 14
+          },
+          "gaveCheck": true,
+          "selfCheck": false,
+          "reportedScore": 3594.878728264789,
+          "completedDepth": 6
+        },
+        {
+          "ply": 60,
+          "side": "b",
+          "engine": "opponent",
+          "move": {
+            "from": 13,
+            "to": 4
+          },
+          "gaveCheck": false,
+          "selfCheck": false,
+          "reportedScore": -2251.2347916933477,
+          "completedDepth": 7
+        },
+        {
+          "ply": 61,
+          "side": "r",
+          "engine": "candidate",
+          "move": {
+            "from": 14,
+            "to": 5
+          },
+          "gaveCheck": true,
+          "selfCheck": false,
+          "reportedScore": 3594.878728264789,
+          "completedDepth": 6
+        },
+        {
+          "ply": 62,
+          "side": "b",
+          "engine": "opponent",
+          "move": {
+            "from": 4,
+            "to": 13
+          },
+          "gaveCheck": false,
+          "selfCheck": false,
+          "reportedScore": -3594.878728264789,
+          "completedDepth": 1726658
+        }
+      ],
+      "policy": "cn2020-evidence-v1",
+      "kind": "perpetual-check",
+      "liable": "r"
+    }
+  ]
+}

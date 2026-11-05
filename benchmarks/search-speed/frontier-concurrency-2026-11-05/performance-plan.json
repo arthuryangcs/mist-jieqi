@@ -1,0 +1,157 @@
+{
+  "createdAt": "2026-11-05T06:39:30.571Z",
+  "purpose": "frozen independent characterization, report failed gates and do not promote failed candidate",
+  "fixturesSha256": "0f629b44179b7221b16e336b15a3ba03cba040ef760c61c3cf39fb172d8021c7",
+  "budgetMs": 2000,
+  "repeats": 3,
+  "requests": 108,
+  "threadsMaximum": 4,
+  "darkSamples": 8,
+  "HCE": true,
+  "fullRoots": true,
+  "engines": [
+    "candidate",
+    "deferred",
+    "stable",
+    "pika"
+  ],
+  "binaries": {
+    "candidate": ".cache/frontier-concurrency-20261105/core",
+    "deferred": ".cache/deferred-order-20261105/core",
+    "stable": ".cache/lazy-history-20261105/stable-core"
+  },
+  "binaryHashes": {
+    "candidate": "561805a0df339814c81ba6589ecc553f284d802c8a2b0e81a2afa5fa1fd95eba",
+    "deferred": "d7f743be6f1c84f8f898ec75d3b4dd8cb7a45ab2751bc418b77e3f7d3ee5926d",
+    "stable": "7262d0abda78f09162c6e87045ac81d9c2b73ad8e445d277fbc8ced39926dbea"
+  },
+  "fixedPikaCommit": "bcc83f88ee18760e60903d1a3aaa61ef6f70f2c9",
+  "fixedPikaHash": "f32d3c6dfe4d6d90da7728d9cc2af68c3195a1cefb1bc28f3829f174c518dba1",
+  "caveats": [
+    "inventory-valid edited endings, reachability not asserted",
+    "8new views plus known all-hidden initial control frozen before timing; 6few-root primary plus3controls; no unseen universal guarantee",
+    "8world native nodes already summed; Pika node definition differs",
+    "same4thread maximum; stable single-world actual1thread, Pika4; not identical thread use",
+    "candidate/deferred/Pika TT64MiB upperbound, actual allocation/RSS and stable differ",
+    "old unrelated build states remain unknown; no system process listing; paired order reduces but does not eliminate contention",
+    "internal legacy repeat heuristic retained; full2020 long-kill/joint-chase cases remain unsupported",
+    "2s performance characterization is not strength evidence"
+  ],
+  "positions": [
+    {
+      "name": "frontier-holdout/ending/11120007/0",
+      "category": "ending",
+      "origin": "first admissible new inventory-valid few-root edit; no immediate terminal move; reachability not asserted",
+      "pieces": 8,
+      "hidden": 0,
+      "roots": 1,
+      "observationHash": "c4fcead8cbf655ae8508ba02bb0f04cd426a3f432f42f5c6250c6f0576a5ba2d",
+      "primaryFrontier": true
+    },
+    {
+      "name": "frontier-holdout/ending/11124084/0",
+      "category": "ending",
+      "origin": "first admissible new inventory-valid few-root edit; no immediate terminal move; reachability not asserted",
+      "pieces": 8,
+      "hidden": 0,
+      "roots": 1,
+      "observationHash": "f82f4ff731f91f64ff82cc25376f509f7ab428a8634d1c4254aa235413e976e5",
+      "primaryFrontier": true
+    },
+    {
+      "name": "frontier-holdout/ending/11130003/0",
+      "category": "ending",
+      "origin": "first admissible new inventory-valid few-root edit; no immediate terminal move; reachability not asserted",
+      "pieces": 8,
+      "hidden": 0,
+      "roots": 2,
+      "observationHash": "00aa256c10304ee33d3f5bd2276e40e4fa93134ad58a2c2b445c8acee1c04c2b",
+      "primaryFrontier": true
+    },
+    {
+      "name": "frontier-holdout/ending/11134044/0",
+      "category": "ending",
+      "origin": "first admissible new inventory-valid few-root edit; no immediate terminal move; reachability not asserted",
+      "pieces": 8,
+      "hidden": 0,
+      "roots": 2,
+      "observationHash": "5a393ce6c67059063ff62cb730fcbae7f9266a2c9b504f8cb85e3f3f7fecb6aa",
+      "primaryFrontier": true
+    },
+    {
+      "name": "frontier-holdout/ending/11140047/0",
+      "category": "ending",
+      "origin": "first admissible new inventory-valid few-root edit; no immediate terminal move; reachability not asserted",
+      "pieces": 8,
+      "hidden": 0,
+      "roots": 3,
+      "observationHash": "c2d0651f8ffffd41a27cc4c41a34a0a7b9b6f293a6da31b723c3a5db0d6fbb8d",
+      "primaryFrontier": true
+    },
+    {
+      "name": "frontier-holdout/ending/11144008/0",
+      "category": "ending",
+      "origin": "first admissible new inventory-valid few-root edit; no immediate terminal move; reachability not asserted",
+      "pieces": 10,
+      "hidden": 0,
+      "roots": 3,
+      "observationHash": "d1c2f1b31b552adb03d50771d7edf4da16f5a423f43a3d9cee098abc0c66155b",
+      "primaryFrontier": true
+    },
+    {
+      "name": "frontier-holdout/opening/11170001/0",
+      "category": "opening",
+      "origin": "known all-hidden initial public-view control; private layout seed does not create a new visible position",
+      "pieces": 32,
+      "hidden": 30,
+      "roots": 44,
+      "observationHash": "af147cbf21007e455b1face0ced553e3c119f24c0b0237d90173296486023a9a",
+      "primaryFrontier": false
+    },
+    {
+      "name": "frontier-holdout/middle/11170101/40",
+      "category": "middle",
+      "origin": "generated legal-play public observer view",
+      "pieces": 27,
+      "hidden": 10,
+      "roots": 22,
+      "observationHash": "4a9438cd1f95baf6a1dc51ce6989cb0ace0fc6de8e901fdc1cd8e6d14caefd72",
+      "primaryFrontier": false
+    },
+    {
+      "name": "frontier-holdout/ending/11170201/0",
+      "category": "ending",
+      "origin": "edited inventory-valid sparse public view; reachability not asserted",
+      "pieces": 10,
+      "hidden": 0,
+      "roots": 26,
+      "observationHash": "7672d091bdcb2379b6e831d0d52ae9a7ec96a6b25b178dfc6661f332cdf46ab2",
+      "primaryFrontier": false
+    }
+  ],
+  "matchPlan": {
+    "layouts": [
+      11180013
+    ],
+    "games": 4,
+    "editedPositions": [
+      "frontier-holdout/ending/11120007/0",
+      "frontier-holdout/ending/11130003/0"
+    ],
+    "editedGames": 8,
+    "total": 12,
+    "kinds": [
+      "stable",
+      "pika"
+    ],
+    "candidateSides": [
+      "r",
+      "b"
+    ],
+    "budgetMs": 2000,
+    "graceMs": 60,
+    "maxPlies": 400,
+    "stopRule": "all12 frozen games; retain all technical/unresolved; user service pauses own load",
+    "refereePolicy": "cn2020-evidence-v1, incomplete manual-review cases unresolved, legacy internal heuristic remains"
+  }
+}

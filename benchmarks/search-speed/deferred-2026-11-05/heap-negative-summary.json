@@ -1,0 +1,44 @@
+{
+  "completed": true,
+  "rows": [
+    {
+      "name": "overlay-holdout/opening/900603/0",
+      "candidateMedianMs": 1361.095046,
+      "c7MedianMs": 1274.8758919999964,
+      "speedup": 0.9366545677663105
+    },
+    {
+      "name": "overlay-holdout/opening/900617/3",
+      "candidateMedianMs": 284.97711200000003,
+      "c7MedianMs": 264.57457899999963,
+      "speedup": 0.9284064153194156
+    },
+    {
+      "name": "overlay-holdout/middle/900803/28",
+      "candidateMedianMs": 301.4311439999947,
+      "c7MedianMs": 278.4851789999998,
+      "speedup": 0.9238765951802402
+    },
+    {
+      "name": "overlay-holdout/middle/900817/41",
+      "candidateMedianMs": 400.86157500000263,
+      "c7MedianMs": 364.34741299999587,
+      "speedup": 0.9089107954535016
+    },
+    {
+      "name": "overlay-holdout/ending/900913/0",
+      "candidateMedianMs": 21293.264154000004,
+      "c7MedianMs": 19270.241727,
+      "speedup": 0.9049923763510925
+    },
+    {
+      "name": "overlay-holdout/ending/901122/0",
+      "candidateMedianMs": 422.35990799999854,
+      "c7MedianMs": 420.5599759999968,
+      "speedup": 0.9957383928590076
+    }
+  ],
+  "geometricSpeedup": 0.9326252399385279,
+  "worst": 0.9049923763510925,
+  "gatePassed": false
+}

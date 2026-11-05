@@ -4,7 +4,7 @@ import {spawnSync} from 'node:child_process';
 import {build,cache} from './build.mjs';
 import {Native,fixture,encode} from './bridge.mjs';
 import {ExperimentalEngine} from './client.mjs';
-import {initial,publicState,legalMoves,move} from '../../../engine.js';
+import {initial,publicState,legalMoves,move} from './legacy-engine-20261103.js';
 import {seeded} from '../../../ai.js';
 
 const sanitize=process.argv.includes('--sanitize'),threadSanitize=process.argv.includes('--tsan');

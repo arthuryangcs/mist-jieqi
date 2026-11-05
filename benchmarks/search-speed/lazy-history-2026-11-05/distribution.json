@@ -1,0 +1,2481 @@
+{
+  "requests": 180,
+  "technical": [],
+  "positions": [
+    {
+      "position": "lazy-history-holdout/opening/1106001/0",
+      "engines": {
+        "candidate": {
+          "wallMs": {
+            "median": 1934.5692310000013,
+            "min": 1934.4604530000001,
+            "max": 1934.7383750000008
+          },
+          "nps": {
+            "median": 7243399.5113163525,
+            "min": 7197353.693464171,
+            "max": 7347677.735131243
+          },
+          "nodes": {
+            "median": 14014083,
+            "min": 13923779,
+            "max": 14213792
+          },
+          "selfCpuMs": {
+            "median": 6943.696000000001,
+            "min": 6908.477000000001,
+            "max": 6970.418
+          },
+          "mainDepth": {
+            "median": 6,
+            "min": 6,
+            "max": 6
+          },
+          "completedDepth": {
+            "median": 5,
+            "min": 5,
+            "max": 5
+          },
+          "selDepth": {
+            "median": 14,
+            "min": 14,
+            "max": 14
+          },
+          "threads": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "allShort": false
+        },
+        "deferred": {
+          "wallMs": {
+            "median": 1934.5111800000013,
+            "min": 1934.087908000016,
+            "max": 1934.5241689999998
+          },
+          "nps": {
+            "median": 7423496.294400653,
+            "min": 7341590.034129444,
+            "max": 7447585.469315639
+          },
+          "nodes": {
+            "median": 14360933,
+            "min": 14202388,
+            "max": 14404285
+          },
+          "selfCpuMs": {
+            "median": 6961.743,
+            "min": 6961.254,
+            "max": 6985.825
+          },
+          "mainDepth": {
+            "median": 6,
+            "min": 6,
+            "max": 6
+          },
+          "completedDepth": {
+            "median": 5,
+            "min": 5,
+            "max": 5
+          },
+          "selDepth": {
+            "median": 14,
+            "min": 14,
+            "max": 14
+          },
+          "threads": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "allShort": false
+        },
+        "stable": {
+          "wallMs": {
+            "median": 1964.446505,
+            "min": 1963.217451000004,
+            "max": 1965.075822999992
+          },
+          "nps": {
+            "median": 2886903.7591838115,
+            "min": 2883634.2769456706,
+            "max": 2910226.7795601357
+          },
+          "nodes": {
+            "median": 5671168,
+            "min": 5666560,
+            "max": 5713408
+          },
+          "selfCpuMs": null,
+          "mainDepth": {
+            "median": 5,
+            "min": 5,
+            "max": 5
+          },
+          "completedDepth": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "selDepth": {
+            "median": 13,
+            "min": 13,
+            "max": 13
+          },
+          "threads": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "allShort": false
+        },
+        "pika": {
+          "wallMs": {
+            "median": 1959.6485239999893,
+            "min": 1959.287863999998,
+            "max": 1961.1136129999995
+          },
+          "nps": {
+            "median": 6869209.368485751,
+            "min": 6614967.222601044,
+            "max": 7286201.016238626
+          },
+          "nodes": {
+            "median": 13461236,
+            "min": 12960625,
+            "max": 14289068
+          },
+          "selfCpuMs": null,
+          "mainDepth": {
+            "median": 11,
+            "min": 10,
+            "max": 13
+          },
+          "completedDepth": null,
+          "selDepth": {
+            "median": 7,
+            "min": 7,
+            "max": 7
+          },
+          "threads": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "allShort": false
+        }
+      }
+    },
+    {
+      "position": "lazy-history-holdout/opening/1106013/3",
+      "engines": {
+        "candidate": {
+          "wallMs": {
+            "median": 1934.4160709999996,
+            "min": 1934.398137000011,
+            "max": 1934.5529999999999
+          },
+          "nps": {
+            "median": 8092675.218474238,
+            "min": 7933393.398888529,
+            "max": 8147884.708182962
+          },
+          "nodes": {
+            "median": 15654601,
+            "min": 15347570,
+            "max": 15761253
+          },
+          "selfCpuMs": {
+            "median": 7442.9349999999995,
+            "min": 7424.076,
+            "max": 7470.991
+          },
+          "mainDepth": {
+            "median": 6,
+            "min": 6,
+            "max": 6
+          },
+          "completedDepth": {
+            "median": 5,
+            "min": 5,
+            "max": 5
+          },
+          "selDepth": {
+            "median": 14,
+            "min": 14,
+            "max": 14
+          },
+          "threads": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "allShort": false
+        },
+        "deferred": {
+          "wallMs": {
+            "median": 1933.9981369999878,
+            "min": 1933.994233999998,
+            "max": 1934.6746169999988
+          },
+          "nps": {
+            "median": 8191782.153308734,
+            "min": 8162750.809938566,
+            "max": 8261233.914518554
+          },
+          "nodes": {
+            "median": 15848433,
+            "min": 15786713,
+            "max": 15977211
+          },
+          "selfCpuMs": {
+            "median": 7482.627,
+            "min": 7460.3330000000005,
+            "max": 7545.912
+          },
+          "mainDepth": {
+            "median": 6,
+            "min": 6,
+            "max": 6
+          },
+          "completedDepth": {
+            "median": 5,
+            "min": 5,
+            "max": 5
+          },
+          "selDepth": {
+            "median": 14,
+            "min": 14,
+            "max": 14
+          },
+          "threads": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "allShort": false
+        },
+        "stable": {
+          "wallMs": {
+            "median": 1962.9113939999952,
+            "min": 1962.2233490000071,
+            "max": 1962.9431489999988
+          },
+          "nps": {
+            "median": 2780086.627969888,
+            "min": 2540791.2929691584,
+            "max": 2800346.473509753
+          },
+          "nodes": {
+            "median": 5457152,
+            "min": 4985600,
+            "max": 5496832
+          },
+          "selfCpuMs": null,
+          "mainDepth": {
+            "median": 5,
+            "min": 5,
+            "max": 5
+          },
+          "completedDepth": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "selDepth": {
+            "median": 13,
+            "min": 13,
+            "max": 13
+          },
+          "threads": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "allShort": false
+        },
+        "pika": {
+          "wallMs": {
+            "median": 1960.5907759999973,
+            "min": 1959.5892149999854,
+            "max": 1960.6556689999998
+          },
+          "nps": {
+            "median": 7157222.4896125,
+            "min": 7034172.403680741,
+            "max": 7472132.471156755
+          },
+          "nodes": {
+            "median": 14025216,
+            "min": 13791590,
+            "max": 14649794
+          },
+          "selfCpuMs": null,
+          "mainDepth": {
+            "median": 15,
+            "min": 14,
+            "max": 15
+          },
+          "completedDepth": null,
+          "selDepth": {
+            "median": 9,
+            "min": 8,
+            "max": 11
+          },
+          "threads": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "allShort": false
+        }
+      }
+    },
+    {
+      "position": "lazy-history-holdout/opening/1106029/11",
+      "engines": {
+        "candidate": {
+          "wallMs": {
+            "median": 1934.9813129999966,
+            "min": 1934.3275190000131,
+            "max": 1935.0253510000002
+          },
+          "nps": {
+            "median": 7307742.502025751,
+            "min": 7218949.302586895,
+            "max": 7319964.618670094
+          },
+          "nodes": {
+            "median": 14140667,
+            "min": 13968532,
+            "max": 14159209
+          },
+          "selfCpuMs": {
+            "median": 7193.311,
+            "min": 7144.9259999999995,
+            "max": 7223.7660000000005
+          },
+          "mainDepth": {
+            "median": 7,
+            "min": 7,
+            "max": 7
+          },
+          "completedDepth": {
+            "median": 6,
+            "min": 6,
+            "max": 6
+          },
+          "selDepth": {
+            "median": 15,
+            "min": 15,
+            "max": 15
+          },
+          "threads": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "allShort": false
+        },
+        "deferred": {
+          "wallMs": {
+            "median": 1934.8187990000006,
+            "min": 1933.770811999988,
+            "max": 1935.0854159999872
+          },
+          "nps": {
+            "median": 7292504.446222385,
+            "min": 7077221.310340104,
+            "max": 7368496.21647696
+          },
+          "nodes": {
+            "median": 14111619,
+            "min": 13685724,
+            "max": 14256705
+          },
+          "selfCpuMs": {
+            "median": 7186.062,
+            "min": 7182.068,
+            "max": 7194.518
+          },
+          "mainDepth": {
+            "median": 7,
+            "min": 7,
+            "max": 7
+          },
+          "completedDepth": {
+            "median": 6,
+            "min": 6,
+            "max": 6
+          },
+          "selDepth": {
+            "median": 15,
+            "min": 15,
+            "max": 15
+          },
+          "threads": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "allShort": false
+        },
+        "stable": {
+          "wallMs": {
+            "median": 1962.9673940000066,
+            "min": 1962.1332609999954,
+            "max": 1964.9835910000002
+          },
+          "nps": {
+            "median": 2919727.1805614787,
+            "min": 2911510.408919192,
+            "max": 2963109.6498700115
+          },
+          "nodes": {
+            "median": 5737216,
+            "min": 5715200,
+            "max": 5814016
+          },
+          "selfCpuMs": null,
+          "mainDepth": {
+            "median": 6,
+            "min": 6,
+            "max": 6
+          },
+          "completedDepth": {
+            "median": 5,
+            "min": 5,
+            "max": 5
+          },
+          "selDepth": {
+            "median": 14,
+            "min": 14,
+            "max": 14
+          },
+          "threads": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "allShort": false
+        },
+        "pika": {
+          "wallMs": {
+            "median": 1960.0784200000016,
+            "min": 1958.8385220000055,
+            "max": 1960.121054999996
+          },
+          "nps": {
+            "median": 6811047.896746901,
+            "min": 6772942.154748968,
+            "max": 7133425.236330635
+          },
+          "nodes": {
+            "median": 13350188,
+            "min": 13267100,
+            "max": 13982377
+          },
+          "selfCpuMs": null,
+          "mainDepth": {
+            "median": 23,
+            "min": 21,
+            "max": 23
+          },
+          "completedDepth": null,
+          "selDepth": {
+            "median": 13,
+            "min": 12,
+            "max": 18
+          },
+          "threads": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "allShort": false
+        }
+      }
+    },
+    {
+      "position": "lazy-history-holdout/middle/1106101/28",
+      "engines": {
+        "candidate": {
+          "wallMs": {
+            "median": 1935.1820789999983,
+            "min": 1934.4785770000017,
+            "max": 1935.81872499999
+          },
+          "nps": {
+            "median": 7643601.834521627,
+            "min": 7546019.062296277,
+            "max": 7991134.357750537
+          },
+          "nodes": {
+            "median": 14786384,
+            "min": 14607725,
+            "max": 15464300
+          },
+          "selfCpuMs": {
+            "median": 7283.911,
+            "min": 7219.71,
+            "max": 7401.691000000001
+          },
+          "mainDepth": {
+            "median": 7,
+            "min": 7,
+            "max": 7
+          },
+          "completedDepth": {
+            "median": 6,
+            "min": 6,
+            "max": 6
+          },
+          "selDepth": {
+            "median": 14,
+            "min": 14,
+            "max": 14
+          },
+          "threads": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "allShort": false
+        },
+        "deferred": {
+          "wallMs": {
+            "median": 1934.771305999995,
+            "min": 1934.3681780000006,
+            "max": 1935.4121030000097
+          },
+          "nps": {
+            "median": 8005375.17357869,
+            "min": 7938630.2413976565,
+            "max": 8023432.238244768
+          },
+          "nodes": {
+            "median": 15493700,
+            "min": 15359434,
+            "max": 15520272
+          },
+          "selfCpuMs": {
+            "median": 7342.139,
+            "min": 7335.732,
+            "max": 7353.724
+          },
+          "mainDepth": {
+            "median": 7,
+            "min": 7,
+            "max": 7
+          },
+          "completedDepth": {
+            "median": 6,
+            "min": 6,
+            "max": 6
+          },
+          "selDepth": {
+            "median": 14,
+            "min": 14,
+            "max": 14
+          },
+          "threads": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "allShort": false
+        },
+        "stable": {
+          "wallMs": {
+            "median": 1964.3393069999875,
+            "min": 1964.2078129999973,
+            "max": 1964.5399259999976
+          },
+          "nps": {
+            "median": 2994387.844846643,
+            "min": 2985977.0046336693,
+            "max": 3020986.197050193
+          },
+          "nodes": {
+            "median": 5881600,
+            "min": 5865472,
+            "max": 5934848
+          },
+          "selfCpuMs": null,
+          "mainDepth": {
+            "median": 6,
+            "min": 6,
+            "max": 6
+          },
+          "completedDepth": {
+            "median": 5,
+            "min": 5,
+            "max": 5
+          },
+          "selDepth": {
+            "median": 14,
+            "min": 14,
+            "max": 14
+          },
+          "threads": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "allShort": false
+        },
+        "pika": {
+          "wallMs": {
+            "median": 1960.158786,
+            "min": 1959.566850000003,
+            "max": 1960.93102
+          },
+          "nps": {
+            "median": 5749089.5319714,
+            "min": 5350337.499330521,
+            "max": 5818446.995956786
+          },
+          "nodes": {
+            "median": 11273568,
+            "min": 10484344,
+            "max": 11405080
+          },
+          "selfCpuMs": null,
+          "mainDepth": {
+            "median": 26,
+            "min": 25,
+            "max": 27
+          },
+          "completedDepth": null,
+          "selDepth": {
+            "median": 28,
+            "min": 25,
+            "max": 30
+          },
+          "threads": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "allShort": false
+        }
+      }
+    },
+    {
+      "position": "lazy-history-holdout/middle/1106117/55",
+      "engines": {
+        "candidate": {
+          "wallMs": {
+            "median": 1935.020599999989,
+            "min": 1934.6048299999966,
+            "max": 1935.7218579999899
+          },
+          "nps": {
+            "median": 8277642.933415,
+            "min": 7587277.035335351,
+            "max": 8288846.123912114
+          },
+          "nodes": {
+            "median": 16013968,
+            "min": 14686858,
+            "max": 16039088
+          },
+          "selfCpuMs": {
+            "median": 7590.952,
+            "min": 7519.6539999999995,
+            "max": 7605.428000000001
+          },
+          "mainDepth": {
+            "median": 6,
+            "min": 6,
+            "max": 6
+          },
+          "completedDepth": {
+            "median": 5,
+            "min": 5,
+            "max": 5
+          },
+          "selDepth": {
+            "median": 14,
+            "min": 14,
+            "max": 14
+          },
+          "threads": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "allShort": false
+        },
+        "deferred": {
+          "wallMs": {
+            "median": 1934.921024000003,
+            "min": 1934.7168799999927,
+            "max": 1935.2862330000062
+          },
+          "nps": {
+            "median": 8242364.831527085,
+            "min": 8210836.066025975,
+            "max": 8372883.478434354
+          },
+          "nodes": {
+            "median": 15948325,
+            "min": 15890318,
+            "max": 16199159
+          },
+          "selfCpuMs": {
+            "median": 7602.0689999999995,
+            "min": 7591.353,
+            "max": 7612.308
+          },
+          "mainDepth": {
+            "median": 6,
+            "min": 6,
+            "max": 6
+          },
+          "completedDepth": {
+            "median": 5,
+            "min": 5,
+            "max": 5
+          },
+          "selDepth": {
+            "median": 14,
+            "min": 14,
+            "max": 14
+          },
+          "threads": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "allShort": false
+        },
+        "stable": {
+          "wallMs": {
+            "median": 1963.446407000003,
+            "min": 1962.8760709999915,
+            "max": 1964.5544130000053
+          },
+          "nps": {
+            "median": 3003763.1681586257,
+            "min": 2994250.482997431,
+            "max": 3004375.10402562
+          },
+          "nodes": {
+            "median": 5897216,
+            "min": 5882368,
+            "max": 5897728
+          },
+          "selfCpuMs": null,
+          "mainDepth": {
+            "median": 6,
+            "min": 6,
+            "max": 6
+          },
+          "completedDepth": {
+            "median": 5,
+            "min": 5,
+            "max": 5
+          },
+          "selDepth": {
+            "median": 14,
+            "min": 14,
+            "max": 14
+          },
+          "threads": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "allShort": false
+        },
+        "pika": {
+          "wallMs": {
+            "median": 1960.1458189999976,
+            "min": 1959.423466999986,
+            "max": 1960.656130999996
+          },
+          "nps": {
+            "median": 4390149.404491835,
+            "min": 4326594.99331656,
+            "max": 4528455.512266284
+          },
+          "nodes": {
+            "median": 8605333,
+            "min": 8482965,
+            "max": 8873162
+          },
+          "selfCpuMs": null,
+          "mainDepth": {
+            "median": 22,
+            "min": 20,
+            "max": 22
+          },
+          "completedDepth": null,
+          "selDepth": {
+            "median": 27,
+            "min": 23,
+            "max": 27
+          },
+          "threads": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "allShort": false
+        }
+      }
+    },
+    {
+      "position": "lazy-history-holdout/ending/1106202/0",
+      "engines": {
+        "candidate": {
+          "wallMs": {
+            "median": 1928.1146630000003,
+            "min": 1928.1125199999951,
+            "max": 1928.1998000000021
+          },
+          "nps": {
+            "median": 9051241.474042255,
+            "min": 8843587.120212672,
+            "max": 9212305.721659878
+          },
+          "nodes": {
+            "median": 17452602,
+            "min": 17051450,
+            "max": 17762362
+          },
+          "selfCpuMs": {
+            "median": 7328.864,
+            "min": 7304.116,
+            "max": 7337.665999999999
+          },
+          "mainDepth": {
+            "median": 12,
+            "min": 12,
+            "max": 12
+          },
+          "completedDepth": {
+            "median": 11,
+            "min": 11,
+            "max": 11
+          },
+          "selDepth": {
+            "median": 19,
+            "min": 19,
+            "max": 19
+          },
+          "threads": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "allShort": false
+        },
+        "deferred": {
+          "wallMs": {
+            "median": 1927.957563999982,
+            "min": 1927.5752219999995,
+            "max": 1928.341456000002
+          },
+          "nps": {
+            "median": 9197253.264854623,
+            "min": 8653506.332127512,
+            "max": 9272994.27591418
+          },
+          "nodes": {
+            "median": 17731914,
+            "min": 16686915,
+            "max": 17874394
+          },
+          "selfCpuMs": {
+            "median": 7326.455,
+            "min": 7322.924,
+            "max": 7326.456
+          },
+          "mainDepth": {
+            "median": 12,
+            "min": 12,
+            "max": 12
+          },
+          "completedDepth": {
+            "median": 11,
+            "min": 11,
+            "max": 11
+          },
+          "selDepth": {
+            "median": 19,
+            "min": 19,
+            "max": 19
+          },
+          "threads": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "allShort": false
+        },
+        "stable": {
+          "wallMs": {
+            "median": 1936.3729079999976,
+            "min": 1936.213619999995,
+            "max": 1937.1184349999967
+          },
+          "nps": {
+            "median": 1372512.4892110934,
+            "min": 1325226.1470528024,
+            "max": 1516716.941594496
+          },
+          "nodes": {
+            "median": 2657696,
+            "min": 2567120,
+            "max": 2936688
+          },
+          "selfCpuMs": null,
+          "mainDepth": {
+            "median": 12,
+            "min": 12,
+            "max": 12
+          },
+          "completedDepth": {
+            "median": 11,
+            "min": 11,
+            "max": 11
+          },
+          "selDepth": {
+            "median": 17,
+            "min": 17,
+            "max": 17
+          },
+          "threads": {
+            "median": 1,
+            "min": 1,
+            "max": 1
+          },
+          "allShort": false
+        },
+        "pika": {
+          "wallMs": {
+            "median": 1959.774421000002,
+            "min": 1959.2401430000027,
+            "max": 1959.838791000002
+          },
+          "nps": {
+            "median": 9117659.106483102,
+            "min": 8801016.492091456,
+            "max": 9162791.025969692
+          },
+          "nodes": {
+            "median": 17869142,
+            "min": 17248007,
+            "max": 17952108
+          },
+          "selfCpuMs": null,
+          "mainDepth": {
+            "median": 50,
+            "min": 49,
+            "max": 61
+          },
+          "completedDepth": null,
+          "selDepth": {
+            "median": 64,
+            "min": 60,
+            "max": 70
+          },
+          "threads": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "allShort": false
+        }
+      }
+    },
+    {
+      "position": "lazy-history-holdout/ending/1106303/0",
+      "engines": {
+        "candidate": {
+          "wallMs": {
+            "median": 1928.3937929999956,
+            "min": 1927.9802999999956,
+            "max": 1928.642896999998
+          },
+          "nps": {
+            "median": 8289327.705438887,
+            "min": 8246938.492401606,
+            "max": 8516738.993650526
+          },
+          "nodes": {
+            "median": 15987153,
+            "min": 15903345,
+            "max": 16420105
+          },
+          "selfCpuMs": {
+            "median": 7524.9839999999995,
+            "min": 7524.759,
+            "max": 7530.228999999999
+          },
+          "mainDepth": {
+            "median": 8,
+            "min": 8,
+            "max": 8
+          },
+          "completedDepth": {
+            "median": 7,
+            "min": 7,
+            "max": 7
+          },
+          "selDepth": {
+            "median": 16,
+            "min": 16,
+            "max": 16
+          },
+          "threads": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "allShort": false
+        },
+        "deferred": {
+          "wallMs": {
+            "median": 1927.857971999998,
+            "min": 1927.8415840000016,
+            "max": 1928.1990230000229
+          },
+          "nps": {
+            "median": 8458317.91125011,
+            "min": 8241992.040465738,
+            "max": 8695010.339693228
+          },
+          "nodes": {
+            "median": 16306297,
+            "min": 15892201,
+            "max": 16762745
+          },
+          "selfCpuMs": {
+            "median": 7529.38,
+            "min": 7505.224,
+            "max": 7532.607
+          },
+          "mainDepth": {
+            "median": 8,
+            "min": 8,
+            "max": 8
+          },
+          "completedDepth": {
+            "median": 7,
+            "min": 7,
+            "max": 7
+          },
+          "selDepth": {
+            "median": 16,
+            "min": 16,
+            "max": 16
+          },
+          "threads": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "allShort": false
+        },
+        "stable": {
+          "wallMs": {
+            "median": 1936.2844639999967,
+            "min": 1936.2722559999966,
+            "max": 1936.7093650000024
+          },
+          "nps": {
+            "median": 1168369.6492231959,
+            "min": 1166431.0083467953,
+            "max": 1178844.921834721
+          },
+          "nodes": {
+            "median": 2262296,
+            "min": 2258528,
+            "max": 2283080
+          },
+          "selfCpuMs": null,
+          "mainDepth": {
+            "median": 7,
+            "min": 7,
+            "max": 7
+          },
+          "completedDepth": {
+            "median": 6,
+            "min": 6,
+            "max": 6
+          },
+          "selDepth": {
+            "median": 15,
+            "min": 15,
+            "max": 15
+          },
+          "threads": {
+            "median": 1,
+            "min": 1,
+            "max": 1
+          },
+          "allShort": false
+        },
+        "pika": {
+          "wallMs": {
+            "median": 1959.476170000009,
+            "min": 1959.4269179999828,
+            "max": 1960.0120859999952
+          },
+          "nps": {
+            "median": 6084067.355613692,
+            "min": 5991917.275477637,
+            "max": 6143216.710756563
+          },
+          "nodes": {
+            "median": 11921585,
+            "min": 11740724,
+            "max": 12040779
+          },
+          "selfCpuMs": null,
+          "mainDepth": {
+            "median": 57,
+            "min": 54,
+            "max": 60
+          },
+          "completedDepth": null,
+          "selDepth": {
+            "median": 26,
+            "min": 24,
+            "max": 26
+          },
+          "threads": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "allShort": false
+        }
+      }
+    },
+    {
+      "position": "lazy-history-holdout/ending/1106426/0",
+      "engines": {
+        "candidate": {
+          "wallMs": {
+            "median": 1927.6078170000037,
+            "min": 1927.4002509999846,
+            "max": 1927.6344420000096
+          },
+          "nps": {
+            "median": 3744933.9727387014,
+            "min": 3697308.9112297385,
+            "max": 3758843.549097399
+          },
+          "nodes": {
+            "median": 7218764,
+            "min": 7127060,
+            "max": 7244796
+          },
+          "selfCpuMs": {
+            "median": 3413.45,
+            "min": 3409.9139999999998,
+            "max": 3415.432
+          },
+          "mainDepth": {
+            "median": 11,
+            "min": 11,
+            "max": 11
+          },
+          "completedDepth": {
+            "median": 10,
+            "min": 10,
+            "max": 10
+          },
+          "selDepth": {
+            "median": 18,
+            "min": 18,
+            "max": 18
+          },
+          "threads": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "allShort": false
+        },
+        "deferred": {
+          "wallMs": {
+            "median": 1927.3798299999908,
+            "min": 1927.2482730000047,
+            "max": 1927.755915000016
+          },
+          "nps": {
+            "median": 3781970.44050483,
+            "min": 3779894.282695713,
+            "max": 3789079.2828924814
+          },
+          "nodes": {
+            "median": 7288796,
+            "min": 7285292,
+            "max": 7304420
+          },
+          "selfCpuMs": {
+            "median": 3407.357,
+            "min": 3407.348,
+            "max": 3417.27
+          },
+          "mainDepth": {
+            "median": 11,
+            "min": 11,
+            "max": 11
+          },
+          "completedDepth": {
+            "median": 10,
+            "min": 10,
+            "max": 10
+          },
+          "selDepth": {
+            "median": 18,
+            "min": 18,
+            "max": 19
+          },
+          "threads": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "allShort": false
+        },
+        "stable": {
+          "wallMs": {
+            "median": 1936.1878249999936,
+            "min": 1936.136956000002,
+            "max": 1936.3464950000052
+          },
+          "nps": {
+            "median": 1224166.3589636546,
+            "min": 1218492.3141356523,
+            "max": 1231903.4873972768
+          },
+          "nodes": {
+            "median": 2370216,
+            "min": 2359168,
+            "max": 2385392
+          },
+          "selfCpuMs": null,
+          "mainDepth": {
+            "median": 10,
+            "min": 10,
+            "max": 10
+          },
+          "completedDepth": {
+            "median": 9,
+            "min": 9,
+            "max": 9
+          },
+          "selDepth": {
+            "median": 18,
+            "min": 18,
+            "max": 18
+          },
+          "threads": {
+            "median": 1,
+            "min": 1,
+            "max": 1
+          },
+          "allShort": false
+        },
+        "pika": {
+          "wallMs": {
+            "median": 1959.563816000009,
+            "min": 1959.3453630000004,
+            "max": 1960.3123900000064
+          },
+          "nps": {
+            "median": 7638127.872024317,
+            "min": 7530471.798707596,
+            "max": 7907659.554199904
+          },
+          "nodes": {
+            "median": 14967399,
+            "min": 14754795,
+            "max": 15501483
+          },
+          "selfCpuMs": null,
+          "mainDepth": {
+            "median": 81,
+            "min": 81,
+            "max": 81
+          },
+          "completedDepth": null,
+          "selDepth": {
+            "median": 20,
+            "min": 18,
+            "max": 22
+          },
+          "threads": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "allShort": false
+        }
+      }
+    },
+    {
+      "position": "near-confirmation/ending/9711333/0",
+      "engines": {
+        "candidate": {
+          "wallMs": {
+            "median": 1165.1249569999927,
+            "min": 1160.8396280000015,
+            "max": 1165.1752160000033
+          },
+          "nps": {
+            "median": 9279000.449734652,
+            "min": 9278600.206683395,
+            "max": 9313254.595405651
+          },
+          "nodes": {
+            "median": 10811195,
+            "min": 10811195,
+            "max": 10811195
+          },
+          "selfCpuMs": {
+            "median": 4126.481,
+            "min": 4111.015,
+            "max": 4129.448
+          },
+          "mainDepth": {
+            "median": 8,
+            "min": 8,
+            "max": 8
+          },
+          "completedDepth": {
+            "median": 8,
+            "min": 8,
+            "max": 8
+          },
+          "selDepth": {
+            "median": 15,
+            "min": 15,
+            "max": 15
+          },
+          "threads": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "allShort": false
+        },
+        "deferred": {
+          "wallMs": {
+            "median": 1159.7171659999876,
+            "min": 1153.7300999999861,
+            "max": 1160.4357280000113
+          },
+          "nps": {
+            "median": 9322268.66770386,
+            "min": 9316496.156691838,
+            "max": 9370644.832790729
+          },
+          "nodes": {
+            "median": 10811195,
+            "min": 10811195,
+            "max": 10811195
+          },
+          "selfCpuMs": {
+            "median": 4101.847,
+            "min": 4086.753,
+            "max": 4109.742
+          },
+          "mainDepth": {
+            "median": 8,
+            "min": 8,
+            "max": 8
+          },
+          "completedDepth": {
+            "median": 8,
+            "min": 8,
+            "max": 8
+          },
+          "selDepth": {
+            "median": 15,
+            "min": 15,
+            "max": 15
+          },
+          "threads": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "allShort": false
+        },
+        "stable": {
+          "wallMs": {
+            "median": 1936.051886000001,
+            "min": 1935.6318670000182,
+            "max": 1936.2410279999895
+          },
+          "nps": {
+            "median": 1490994.2583622348,
+            "min": 1483782.547757606,
+            "max": 1496193.89224099
+          },
+          "nodes": {
+            "median": 2886016,
+            "min": 2872680,
+            "max": 2896992
+          },
+          "selfCpuMs": null,
+          "mainDepth": {
+            "median": 8,
+            "min": 8,
+            "max": 8
+          },
+          "completedDepth": {
+            "median": 7,
+            "min": 7,
+            "max": 7
+          },
+          "selDepth": {
+            "median": 15,
+            "min": 15,
+            "max": 15
+          },
+          "threads": {
+            "median": 1,
+            "min": 1,
+            "max": 1
+          },
+          "allShort": false
+        },
+        "pika": {
+          "wallMs": {
+            "median": 1959.5725610000081,
+            "min": 1959.4916580000136,
+            "max": 1959.9985929999966
+          },
+          "nps": {
+            "median": 13816251.24462528,
+            "min": 13320590.173338262,
+            "max": 14701975.83255024
+          },
+          "nodes": {
+            "median": 27079833,
+            "min": 26102663,
+            "max": 28808399
+          },
+          "selfCpuMs": null,
+          "mainDepth": {
+            "median": 167,
+            "min": 164,
+            "max": 168
+          },
+          "completedDepth": null,
+          "selDepth": {
+            "median": 10,
+            "min": 10,
+            "max": 10
+          },
+          "threads": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "allShort": false
+        }
+      }
+    },
+    {
+      "position": "near-confirmation/ending/9711560/0",
+      "engines": {
+        "candidate": {
+          "wallMs": {
+            "median": 1927.928053999989,
+            "min": 1927.8559559999849,
+            "max": 1927.9702950000064
+          },
+          "nps": {
+            "median": 4091654.845750605,
+            "min": 3830763.8008985794,
+            "max": 4254938.743981589
+          },
+          "nodes": {
+            "median": 7888589,
+            "min": 7385437,
+            "max": 8202909
+          },
+          "selfCpuMs": {
+            "median": 3605.013,
+            "min": 3473.535,
+            "max": 3705.078
+          },
+          "mainDepth": {
+            "median": 10,
+            "min": 10,
+            "max": 10
+          },
+          "completedDepth": {
+            "median": 9,
+            "min": 9,
+            "max": 9
+          },
+          "selDepth": {
+            "median": 18,
+            "min": 18,
+            "max": 18
+          },
+          "threads": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "allShort": false
+        },
+        "deferred": {
+          "wallMs": {
+            "median": 1927.7034529999946,
+            "min": 1927.503561999998,
+            "max": 1927.859891
+          },
+          "nps": {
+            "median": 4324368.7152366815,
+            "min": 4314861.804628423,
+            "max": 4400887.327646873
+          },
+          "nodes": {
+            "median": 8336777,
+            "min": 8317774,
+            "max": 8482726
+          },
+          "selfCpuMs": {
+            "median": 3732.11,
+            "min": 3723.4700000000003,
+            "max": 3738.135
+          },
+          "mainDepth": {
+            "median": 10,
+            "min": 10,
+            "max": 10
+          },
+          "completedDepth": {
+            "median": 9,
+            "min": 9,
+            "max": 9
+          },
+          "selDepth": {
+            "median": 18,
+            "min": 18,
+            "max": 18
+          },
+          "threads": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "allShort": false
+        },
+        "stable": {
+          "wallMs": {
+            "median": 1936.783488000001,
+            "min": 1935.287175000005,
+            "max": 1936.9533949999895
+          },
+          "nps": {
+            "median": 1195452.5560269856,
+            "min": 1085948.6890235743,
+            "max": 1201468.3181768218
+          },
+          "nodes": {
+            "median": 2313544,
+            "min": 2103432,
+            "max": 2326984
+          },
+          "selfCpuMs": null,
+          "mainDepth": {
+            "median": 9,
+            "min": 9,
+            "max": 9
+          },
+          "completedDepth": {
+            "median": 8,
+            "min": 8,
+            "max": 8
+          },
+          "selDepth": {
+            "median": 17,
+            "min": 17,
+            "max": 17
+          },
+          "threads": {
+            "median": 1,
+            "min": 1,
+            "max": 1
+          },
+          "allShort": false
+        },
+        "pika": {
+          "wallMs": {
+            "median": 1959.5151579999947,
+            "min": 1959.451457999996,
+            "max": 1959.8596060000127
+          },
+          "nps": {
+            "median": 5916670.22970793,
+            "min": 5897657.200344906,
+            "max": 5994620.208525245
+          },
+          "nodes": {
+            "median": 11593805,
+            "min": 11556173,
+            "max": 11748614
+          },
+          "selfCpuMs": null,
+          "mainDepth": {
+            "median": 29,
+            "min": 28,
+            "max": 29
+          },
+          "completedDepth": null,
+          "selDepth": {
+            "median": 39,
+            "min": 33,
+            "max": 42
+          },
+          "threads": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "allShort": false
+        }
+      }
+    },
+    {
+      "position": "deferred-holdout/ending/1105303/0",
+      "engines": {
+        "candidate": {
+          "wallMs": {
+            "median": 6.616260999988299,
+            "min": 5.982913999992888,
+            "max": 6.8780339999939315
+          },
+          "nps": {
+            "median": 25391.98498975435,
+            "min": 24425.584403936973,
+            "max": 28079.962372883798
+          },
+          "nodes": {
+            "median": 168,
+            "min": 168,
+            "max": 168
+          },
+          "selfCpuMs": {
+            "median": 1.5890000000000004,
+            "min": 1.375,
+            "max": 1.725999999999999
+          },
+          "mainDepth": {
+            "median": 1,
+            "min": 1,
+            "max": 1
+          },
+          "completedDepth": {
+            "median": 1,
+            "min": 1,
+            "max": 1
+          },
+          "selDepth": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "threads": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "allShort": true
+        },
+        "deferred": {
+          "wallMs": {
+            "median": 8.941696999972919,
+            "min": 8.270840000011958,
+            "max": 9.428872999997111
+          },
+          "nps": {
+            "median": 18788.379879178283,
+            "min": 17817.611924569508,
+            "max": 20312.326196584276
+          },
+          "nodes": {
+            "median": 168,
+            "min": 168,
+            "max": 168
+          },
+          "selfCpuMs": {
+            "median": 3.6370000000000005,
+            "min": 3.4240000000000004,
+            "max": 3.66
+          },
+          "mainDepth": {
+            "median": 1,
+            "min": 1,
+            "max": 1
+          },
+          "completedDepth": {
+            "median": 1,
+            "min": 1,
+            "max": 1
+          },
+          "selDepth": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "threads": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "allShort": true
+        },
+        "stable": {
+          "wallMs": {
+            "median": 5.2882319999916945,
+            "min": 4.891014000022551,
+            "max": 5.57889500001329
+          },
+          "nps": {
+            "median": 31768.65160232453,
+            "min": 30113.490216180766,
+            "max": 34348.70560567306
+          },
+          "nodes": {
+            "median": 168,
+            "min": 168,
+            "max": 168
+          },
+          "selfCpuMs": null,
+          "mainDepth": {
+            "median": 1,
+            "min": 1,
+            "max": 1
+          },
+          "completedDepth": {
+            "median": 1,
+            "min": 1,
+            "max": 1
+          },
+          "selDepth": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "threads": {
+            "median": 1,
+            "min": 1,
+            "max": 1
+          },
+          "allShort": true
+        },
+        "pika": {
+          "wallMs": {
+            "median": 5.442221999983303,
+            "min": 5.438419999991311,
+            "max": 5.73417799998424
+          },
+          "nps": {
+            "median": 8829114.284596883,
+            "min": 8379753.820012574,
+            "max": 8833999.580774704
+          },
+          "nodes": {
+            "median": 48050,
+            "min": 48043,
+            "max": 48051
+          },
+          "selfCpuMs": null,
+          "mainDepth": {
+            "median": 245,
+            "min": 245,
+            "max": 245
+          },
+          "completedDepth": null,
+          "selDepth": {
+            "median": 2,
+            "min": 2,
+            "max": 2
+          },
+          "threads": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "allShort": true
+        }
+      }
+    },
+    {
+      "position": "lazy-history-holdout/ending/1106606/0",
+      "engines": {
+        "candidate": {
+          "wallMs": {
+            "median": 4.594801999992342,
+            "min": 4.120741999999154,
+            "max": 4.650578999979189
+          },
+          "nps": {
+            "median": 42221.623478078785,
+            "min": 41715.23588801914,
+            "max": 47078.89986804314
+          },
+          "nodes": {
+            "median": 194,
+            "min": 194,
+            "max": 194
+          },
+          "selfCpuMs": {
+            "median": 1.2830000000000004,
+            "min": 1.1399999999999997,
+            "max": 1.2850000000000001
+          },
+          "mainDepth": {
+            "median": 1,
+            "min": 1,
+            "max": 1
+          },
+          "completedDepth": {
+            "median": 1,
+            "min": 1,
+            "max": 1
+          },
+          "selDepth": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "threads": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "allShort": true
+        },
+        "deferred": {
+          "wallMs": {
+            "median": 5.67027999999118,
+            "min": 5.1270430000149645,
+            "max": 5.871096999995643
+          },
+          "nps": {
+            "median": 34213.47799408526,
+            "min": 33043.2285482839,
+            "max": 37838.57478851528
+          },
+          "nodes": {
+            "median": 194,
+            "min": 194,
+            "max": 194
+          },
+          "selfCpuMs": {
+            "median": 2.365,
+            "min": 2.159,
+            "max": 2.423000000000001
+          },
+          "mainDepth": {
+            "median": 1,
+            "min": 1,
+            "max": 1
+          },
+          "completedDepth": {
+            "median": 1,
+            "min": 1,
+            "max": 1
+          },
+          "selDepth": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "threads": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "allShort": true
+        },
+        "stable": {
+          "wallMs": {
+            "median": 3.591421999997692,
+            "min": 3.4145560000033583,
+            "max": 3.823038999995333
+          },
+          "nps": {
+            "median": 54017.60082778483,
+            "min": 50744.97016646621,
+            "max": 56815.58597949754
+          },
+          "nodes": {
+            "median": 194,
+            "min": 194,
+            "max": 194
+          },
+          "selfCpuMs": null,
+          "mainDepth": {
+            "median": 1,
+            "min": 1,
+            "max": 1
+          },
+          "completedDepth": {
+            "median": 1,
+            "min": 1,
+            "max": 1
+          },
+          "selDepth": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "threads": {
+            "median": 1,
+            "min": 1,
+            "max": 1
+          },
+          "allShort": true
+        },
+        "pika": {
+          "wallMs": {
+            "median": 4.4534439999988535,
+            "min": 4.015568000002531,
+            "max": 4.812981999973999
+          },
+          "nps": {
+            "median": 5502932.112766279,
+            "min": 5091853.657489763,
+            "max": 6102997.135146149
+          },
+          "nodes": {
+            "median": 24507,
+            "min": 24507,
+            "max": 24507
+          },
+          "selfCpuMs": null,
+          "mainDepth": {
+            "median": 245,
+            "min": 245,
+            "max": 245
+          },
+          "completedDepth": null,
+          "selDepth": {
+            "median": 2,
+            "min": 2,
+            "max": 2
+          },
+          "threads": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "allShort": true
+        }
+      }
+    },
+    {
+      "position": "lazy-history-holdout/ending/1106806/0",
+      "engines": {
+        "candidate": {
+          "wallMs": {
+            "median": 3.359415999992052,
+            "min": 3.3100160000030883,
+            "max": 3.5092210000148043
+          },
+          "nps": {
+            "median": 8334.78199784315,
+            "min": 7978.978810363291,
+            "max": 8459.173611237491
+          },
+          "nodes": {
+            "median": 28,
+            "min": 28,
+            "max": 28
+          },
+          "selfCpuMs": {
+            "median": 0.8540000000000001,
+            "min": 0.8390000000000004,
+            "max": 0.9180000000000001
+          },
+          "mainDepth": {
+            "median": 1,
+            "min": 1,
+            "max": 1
+          },
+          "completedDepth": {
+            "median": 1,
+            "min": 1,
+            "max": 1
+          },
+          "selDepth": {
+            "median": 3,
+            "min": 3,
+            "max": 3
+          },
+          "threads": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "allShort": true
+        },
+        "deferred": {
+          "wallMs": {
+            "median": 3.9447280000022147,
+            "min": 3.677462999999989,
+            "max": 5.514654000027804
+          },
+          "nps": {
+            "median": 7098.081287222916,
+            "min": 5077.381101309135,
+            "max": 7613.944722217487
+          },
+          "nodes": {
+            "median": 28,
+            "min": 28,
+            "max": 28
+          },
+          "selfCpuMs": {
+            "median": 1.4770000000000003,
+            "min": 1.3020000000000005,
+            "max": 2.0269999999999992
+          },
+          "mainDepth": {
+            "median": 1,
+            "min": 1,
+            "max": 1
+          },
+          "completedDepth": {
+            "median": 1,
+            "min": 1,
+            "max": 1
+          },
+          "selDepth": {
+            "median": 3,
+            "min": 3,
+            "max": 3
+          },
+          "threads": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "allShort": true
+        },
+        "stable": {
+          "wallMs": {
+            "median": 2.8073219999932917,
+            "min": 2.7393759999831673,
+            "max": 2.98597399998107
+          },
+          "nps": {
+            "median": 9973.918203920643,
+            "min": 9377.174751078714,
+            "max": 10221.305874101274
+          },
+          "nodes": {
+            "median": 28,
+            "min": 28,
+            "max": 28
+          },
+          "selfCpuMs": null,
+          "mainDepth": {
+            "median": 1,
+            "min": 1,
+            "max": 1
+          },
+          "completedDepth": {
+            "median": 1,
+            "min": 1,
+            "max": 1
+          },
+          "selDepth": {
+            "median": 3,
+            "min": 3,
+            "max": 3
+          },
+          "threads": {
+            "median": 1,
+            "min": 1,
+            "max": 1
+          },
+          "allShort": true
+        },
+        "pika": {
+          "wallMs": {
+            "median": 3.628638000009232,
+            "min": 3.143151000025682,
+            "max": 3.68812499998603
+          },
+          "nps": {
+            "median": 3242263.350593271,
+            "min": 3189425.5211102,
+            "max": 3743695.4189931867
+          },
+          "nodes": {
+            "median": 11765,
+            "min": 11763,
+            "max": 11767
+          },
+          "selfCpuMs": null,
+          "mainDepth": {
+            "median": 245,
+            "min": 245,
+            "max": 245
+          },
+          "completedDepth": null,
+          "selDepth": {
+            "median": 2,
+            "min": 2,
+            "max": 2
+          },
+          "threads": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "allShort": true
+        }
+      }
+    },
+    {
+      "position": "lazy-history-holdout/ending/1107007/0",
+      "engines": {
+        "candidate": {
+          "wallMs": {
+            "median": 6.503802999999607,
+            "min": 6.294132999988506,
+            "max": 6.542310000004363
+          },
+          "nps": {
+            "median": 23370.941586024237,
+            "min": 23233.383927068364,
+            "max": 24149.473803664077
+          },
+          "nodes": {
+            "median": 152,
+            "min": 152,
+            "max": 152
+          },
+          "selfCpuMs": {
+            "median": 1.5569999999999995,
+            "min": 1.484,
+            "max": 1.5939999999999994
+          },
+          "mainDepth": {
+            "median": 1,
+            "min": 1,
+            "max": 1
+          },
+          "completedDepth": {
+            "median": 1,
+            "min": 1,
+            "max": 1
+          },
+          "selDepth": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "threads": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "allShort": true
+        },
+        "deferred": {
+          "wallMs": {
+            "median": 8.829307999985758,
+            "min": 8.622363000002224,
+            "max": 8.879884000009042
+          },
+          "nps": {
+            "median": 17215.392191578907,
+            "min": 17117.340722001012,
+            "max": 17628.578151947535
+          },
+          "nodes": {
+            "median": 152,
+            "min": 152,
+            "max": 152
+          },
+          "selfCpuMs": {
+            "median": 3.570000000000001,
+            "min": 3.4419999999999993,
+            "max": 3.6310000000000002
+          },
+          "mainDepth": {
+            "median": 1,
+            "min": 1,
+            "max": 1
+          },
+          "completedDepth": {
+            "median": 1,
+            "min": 1,
+            "max": 1
+          },
+          "selDepth": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "threads": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "allShort": true
+        },
+        "stable": {
+          "wallMs": {
+            "median": 5.245696999976644,
+            "min": 5.057841999980155,
+            "max": 5.4021429999993416
+          },
+          "nps": {
+            "median": 28976.13034086352,
+            "min": 28136.981934765245,
+            "max": 30052.342481357933
+          },
+          "nodes": {
+            "median": 152,
+            "min": 152,
+            "max": 152
+          },
+          "selfCpuMs": null,
+          "mainDepth": {
+            "median": 1,
+            "min": 1,
+            "max": 1
+          },
+          "completedDepth": {
+            "median": 1,
+            "min": 1,
+            "max": 1
+          },
+          "selDepth": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "threads": {
+            "median": 1,
+            "min": 1,
+            "max": 1
+          },
+          "allShort": true
+        },
+        "pika": {
+          "wallMs": {
+            "median": 5.382136000000173,
+            "min": 5.168949999992037,
+            "max": 5.500020999999833
+          },
+          "nps": {
+            "median": 8743554.60359948,
+            "min": 8555967.331761356,
+            "max": 9103009.315252127
+          },
+          "nodes": {
+            "median": 47058,
+            "min": 47053,
+            "max": 47059
+          },
+          "selfCpuMs": null,
+          "mainDepth": {
+            "median": 245,
+            "min": 245,
+            "max": 245
+          },
+          "completedDepth": null,
+          "selDepth": {
+            "median": 2,
+            "min": 2,
+            "max": 2
+          },
+          "threads": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "allShort": true
+        }
+      }
+    },
+    {
+      "position": "lazy-history-holdout/ending/1107221/0",
+      "engines": {
+        "candidate": {
+          "wallMs": {
+            "median": 5.418080999981612,
+            "min": 5.104240000015125,
+            "max": 5.4712540000036824
+          },
+          "nps": {
+            "median": 38020.84169666329,
+            "min": 37651.331851868206,
+            "max": 40358.60382728664
+          },
+          "nodes": {
+            "median": 206,
+            "min": 206,
+            "max": 206
+          },
+          "selfCpuMs": {
+            "median": 1.5190000000000001,
+            "min": 1.444,
+            "max": 1.5279999999999996
+          },
+          "mainDepth": {
+            "median": 1,
+            "min": 1,
+            "max": 1
+          },
+          "completedDepth": {
+            "median": 1,
+            "min": 1,
+            "max": 1
+          },
+          "selDepth": {
+            "median": 5,
+            "min": 5,
+            "max": 5
+          },
+          "threads": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "allShort": true
+        },
+        "deferred": {
+          "wallMs": {
+            "median": 6.9802659999986645,
+            "min": 6.5590440000232775,
+            "max": 6.9826219999813475
+          },
+          "nps": {
+            "median": 29511.769322263564,
+            "min": 29501.811783675286,
+            "max": 31407.01602234547
+          },
+          "nodes": {
+            "median": 206,
+            "min": 206,
+            "max": 206
+          },
+          "selfCpuMs": {
+            "median": 2.902,
+            "min": 2.728999999999999,
+            "max": 2.939000000000001
+          },
+          "mainDepth": {
+            "median": 1,
+            "min": 1,
+            "max": 1
+          },
+          "completedDepth": {
+            "median": 1,
+            "min": 1,
+            "max": 1
+          },
+          "selDepth": {
+            "median": 5,
+            "min": 5,
+            "max": 5
+          },
+          "threads": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "allShort": true
+        },
+        "stable": {
+          "wallMs": {
+            "median": 4.2672939999902155,
+            "min": 4.168350000021746,
+            "max": 4.6199110000015935
+          },
+          "nps": {
+            "median": 48274.15219117134,
+            "min": 44589.603565940764,
+            "max": 49420.034305882495
+          },
+          "nodes": {
+            "median": 206,
+            "min": 206,
+            "max": 206
+          },
+          "selfCpuMs": null,
+          "mainDepth": {
+            "median": 1,
+            "min": 1,
+            "max": 1
+          },
+          "completedDepth": {
+            "median": 1,
+            "min": 1,
+            "max": 1
+          },
+          "selDepth": {
+            "median": 5,
+            "min": 5,
+            "max": 5
+          },
+          "threads": {
+            "median": 1,
+            "min": 1,
+            "max": 1
+          },
+          "allShort": true
+        },
+        "pika": {
+          "wallMs": {
+            "median": 4.5895890000101645,
+            "min": 4.412183000007644,
+            "max": 5.320228999989922
+          },
+          "nps": {
+            "median": 7477357.994348513,
+            "min": 6451414.027491113,
+            "max": 7778689.143206557
+          },
+          "nodes": {
+            "median": 34321,
+            "min": 34318,
+            "max": 34323
+          },
+          "selfCpuMs": null,
+          "mainDepth": {
+            "median": 245,
+            "min": 245,
+            "max": 245
+          },
+          "completedDepth": null,
+          "selDepth": {
+            "median": 2,
+            "min": 2,
+            "max": 2
+          },
+          "threads": {
+            "median": 4,
+            "min": 4,
+            "max": 4
+          },
+          "allShort": true
+        }
+      }
+    }
+  ]
+}

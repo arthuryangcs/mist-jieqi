@@ -1,6 +1,6 @@
 import fs from 'node:fs';import assert from 'node:assert/strict';
 import {build,cache} from './build.mjs';import {Native,fixture} from './bridge.mjs';import {ExperimentalEngine} from './client.mjs';
-import {initial,TYPES,publicState,positionKey,move,legalMoves} from '../../../engine.js';import {exhaustive} from './reference.mjs';
+import {initial,TYPES,publicState,positionKey,move,legalMoves} from './legacy-engine-20261103.js';import {exhaustive} from './reference.mjs';
 const sanitize=process.argv.includes('--sanitize'),built=build({sanitize}),unit=build({sanitize,kind:'unit'}),native=new Native({binary:built.binary}),u=new Native({binary:unit.binary}),out={passed:false,exhaustive:[],rules:[],qAssertions:0};
 const sorted=r=>r.allCandidates.slice().sort((a,b)=>a.from-b.from||a.to-b.to),equal=(a,b)=>{const x=sorted(a),y=sorted(b);assert.equal(x.length,y.length);for(let i=0;i<x.length;i++)for(let j=0;j<x[i].worldScores.length;j++)assert(Math.abs(x[i].worldScores[j]-y[i].worldScores[j])<1e-7);};
 async function req(f,depth){const r=await native.request(f,{depth,budget:30000});assert(r.depth===depth||r.adjudicated);return r;}

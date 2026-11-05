@@ -7,17 +7,19 @@ import {performance} from 'node:perf_hooks';
 import {build,binary,manifestPath,root} from './build.mjs';
 import {Native,fixture,observationSeed} from './bridge.mjs';
 import {legalMoves} from '../engine.js';
+import {repetitionPolicy} from '../repetition.js';
 import {validatePosition} from '../editor.js';
 import {cleanSearchStats,mergeSearchStats} from '../search-metrics.js';
 
 const hash=p=>createHash('sha256').update(fs.readFileSync(p)).digest('hex');
-const staticFiles=new Map(['index.html','style.css','board.svg','app.js','engine.js','ai.js','editor.js','worker.js','deadline-search.js','native-client.js','search-metrics.js'].map(p=>['/'+p,p]));
+const staticFiles=new Map(['index.html','style.css','board.svg','app.js','engine.js','repetition.js','ai.js','editor.js','worker.js','deadline-search.js','native-client.js','search-metrics.js'].map(p=>['/'+p,p]));
 const mime={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.svg':'image/svg+xml'};
 const tokenPattern=/^[a-zA-Z0-9_-]{8,80}$/;
 function invalid(message){throw Object.assign(Error(message),{status:400});}
 export function validateRequest(input){
  if(!input||!tokenPattern.test(input.token||''))invalid('无效搜索编号');
- if(Object.keys(input).some(k=>!['token','timeMs','view','depthMetrics'].includes(k)))invalid('不支持的搜索选项');
+ if(Object.keys(input).some(k=>!['token','timeMs','view','depthMetrics','repetitionPolicy'].includes(k)))invalid('不支持的搜索选项');
+ if(input.repetitionPolicy!==undefined&&input.repetitionPolicy!==repetitionPolicy)invalid('页面与引擎的重复棋例版本不一致，请重新打开配套页面');
  if(!Number.isInteger(input.timeMs)||input.timeMs<100||input.timeMs>15000)invalid('思考预算须为100至15000毫秒');
  if(input.depthMetrics!==undefined&&typeof input.depthMetrics!=='boolean')invalid('无效深度遥测选项');
  const v=input.view;if(!v||!Array.isArray(v.board)||v.board.length!==90||!Array.isArray(v.captured)||v.captured.length>30||!['r','b'].includes(v.turn)||![null,'r','b'].includes(v.viewer))invalid('无效公开局面');
@@ -46,7 +48,7 @@ async function readJSON(req){let size=0,parts=[];for await(const part of req){si
 
 export function createLocalServer({executable=binary,buildInfo=JSON.parse(fs.readFileSync(manifestPath)),maxSearches=2}={}){
  const active=new Map(),cancelled=new Map();let completed=0,aborted=0;
- const info={engine:'cpp-native',sourceSha256:buildInfo.sourceSha256,binarySha256:buildInfo.binarySha256,maxThreads:buildInfo.threads||1,independentWorldSearch:buildInfo.independentWorldSearch===true,unlimitedDepth:buildInfo.unlimitedDepth===true,depthMetrics:buildInfo.depthMetrics===true,safetyMaxPly:buildInfo.safetyMaxPly,transport:'loopback-http',protocol:2};
+ const info={engine:'cpp-native',repetitionPolicy,sourceSha256:buildInfo.sourceSha256,binarySha256:buildInfo.binarySha256,maxThreads:buildInfo.threads||1,independentWorldSearch:buildInfo.independentWorldSearch===true,unlimitedDepth:buildInfo.unlimitedDepth===true,depthMetrics:buildInfo.depthMetrics===true,safetyMaxPly:buildInfo.safetyMaxPly,transport:'loopback-http',protocol:2};
  function cancel(token){const job=active.get(token);if(job){aborted++;job.cancel();}else{cancelled.set(token,Date.now()+3000);if(cancelled.size>100)cancelled.delete(cancelled.keys().next().value);}}
  const server=http.createServer(async(req,res)=>{
   res.setHeader('Cache-Control','no-store');res.setHeader('X-Content-Type-Options','nosniff');

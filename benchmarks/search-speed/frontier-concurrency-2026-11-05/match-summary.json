@@ -1,0 +1,162 @@
+{
+  "cohorts": {
+    "initial": {
+      "stable": {
+        "games": 2,
+        "wins": 0,
+        "draws": 0,
+        "losses": 2,
+        "scoreRateDecidedOnly": 0.0,
+        "unresolved": 0,
+        "technical": 0
+      },
+      "pika": {
+        "games": 2,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "scoreRateDecidedOnly": null,
+        "unresolved": 2,
+        "technical": 0
+      }
+    },
+    "edited-ending": {
+      "stable": {
+        "games": 4,
+        "wins": 2,
+        "draws": 0,
+        "losses": 2,
+        "scoreRateDecidedOnly": 0.5,
+        "unresolved": 0,
+        "technical": 0
+      },
+      "pika": {
+        "games": 4,
+        "wins": 2,
+        "draws": 0,
+        "losses": 2,
+        "scoreRateDecidedOnly": 0.5,
+        "unresolved": 0,
+        "technical": 0
+      }
+    }
+  },
+  "technicalFailures": 0,
+  "totalMoves": 340,
+  "reportedActivation": [
+    {
+      "index": 0,
+      "cohort": "initial",
+      "turns": 25,
+      "positiveParentReports": 0,
+      "parentSum": 0,
+      "candidateHostStops": 0,
+      "positiveCountsAreLowerBoundWhenStopped": true
+    },
+    {
+      "index": 1,
+      "cohort": "initial",
+      "turns": 56,
+      "positiveParentReports": 0,
+      "parentSum": 0,
+      "candidateHostStops": 0,
+      "positiveCountsAreLowerBoundWhenStopped": true
+    },
+    {
+      "index": 2,
+      "cohort": "initial",
+      "turns": 41,
+      "positiveParentReports": 0,
+      "parentSum": 0,
+      "candidateHostStops": 0,
+      "positiveCountsAreLowerBoundWhenStopped": true
+    },
+    {
+      "index": 3,
+      "cohort": "initial",
+      "turns": 23,
+      "positiveParentReports": 0,
+      "parentSum": 0,
+      "candidateHostStops": 0,
+      "positiveCountsAreLowerBoundWhenStopped": true
+    },
+    {
+      "index": 4,
+      "cohort": "edited-ending",
+      "turns": 4,
+      "positiveParentReports": 2,
+      "parentSum": 4,
+      "candidateHostStops": 0,
+      "positiveCountsAreLowerBoundWhenStopped": true
+    },
+    {
+      "index": 5,
+      "cohort": "edited-ending",
+      "turns": 4,
+      "positiveParentReports": 2,
+      "parentSum": 4,
+      "candidateHostStops": 0,
+      "positiveCountsAreLowerBoundWhenStopped": true
+    },
+    {
+      "index": 6,
+      "cohort": "edited-ending",
+      "turns": 4,
+      "positiveParentReports": 0,
+      "parentSum": 0,
+      "candidateHostStops": 0,
+      "positiveCountsAreLowerBoundWhenStopped": true
+    },
+    {
+      "index": 7,
+      "cohort": "edited-ending",
+      "turns": 4,
+      "positiveParentReports": 0,
+      "parentSum": 0,
+      "candidateHostStops": 0,
+      "positiveCountsAreLowerBoundWhenStopped": true
+    },
+    {
+      "index": 8,
+      "cohort": "edited-ending",
+      "turns": 2,
+      "positiveParentReports": 1,
+      "parentSum": 1,
+      "candidateHostStops": 0,
+      "positiveCountsAreLowerBoundWhenStopped": true
+    },
+    {
+      "index": 9,
+      "cohort": "edited-ending",
+      "turns": 2,
+      "positiveParentReports": 1,
+      "parentSum": 1,
+      "candidateHostStops": 0,
+      "positiveCountsAreLowerBoundWhenStopped": true
+    },
+    {
+      "index": 10,
+      "cohort": "edited-ending",
+      "turns": 2,
+      "positiveParentReports": 0,
+      "parentSum": 0,
+      "candidateHostStops": 0,
+      "positiveCountsAreLowerBoundWhenStopped": true
+    },
+    {
+      "index": 11,
+      "cohort": "edited-ending",
+      "turns": 2,
+      "positiveParentReports": 0,
+      "parentSum": 0,
+      "candidateHostStops": 0,
+      "positiveCountsAreLowerBoundWhenStopped": true
+    }
+  ],
+  "hostDeadlineStops": {
+    "candidate": 0,
+    "stable": 66,
+    "pika": 0
+  },
+  "fallbacks": 0
+}

@@ -1,0 +1,50 @@
+{
+  "baseSha256": "855cccb05cff5a4eb3efa919546f41d7b66ae7b852490ecf0b81115f7f9f20d0",
+  "resultSha256": "6a3b23aaa1a6820dfbd1b89f897eeb2574b59fee827d1ab35c4ac93beee7b5aa",
+  "edits": [
+    {
+      "startLine": 574,
+      "endLine": 574,
+      "before": [],
+      "after": [
+        "// Frozen scores: first maximum has the same stable tie order as stable_sort.\n",
+        "inline size_t firstStableMaximum(const std::vector<ScoredMove>& scored){\n",
+        " if(scored.empty())return 0;\n",
+        " return size_t(std::max_element(scored.begin(),scored.end(),[](const ScoredMove& a,const ScoredMove& b){return a.score<b.score;})-scored.begin());\n",
+        "}\n",
+        "inline Move nextStableOrdered(std::vector<ScoredMove>& scored,size_t visit,size_t first,bool deferred){\n",
+        " if(deferred&&visit==1)std::stable_sort(scored.begin(),scored.end(),[](const ScoredMove& a,const ScoredMove& b){return a.score>b.score;});\n",
+        " return scored[visit==0?first:visit].move;\n",
+        "}\n"
+      ]
+    },
+    {
+      "startLine": 648,
+      "endLine": 650,
+      "before": [
+        "        std::stable_sort(scored.begin(),scored.end(),[](const ScoredMove& a,const ScoredMove& b){return a.score>b.score;});\n",
+        "        for(size_t i=0;i<moves.size();i++)moves[i]=scored[i].move;\n"
+      ],
+      "after": [
+        "#ifdef MIST_DEFERRED_ORDER_DISABLE\n",
+        "        const bool deferred=false;\n",
+        "#else\n",
+        "        const bool deferred=scored.size()>=24;\n",
+        "#endif\n",
+        "        const size_t firstIndex=deferred?firstStableMaximum(scored):0;\n",
+        "        if(!deferred)std::stable_sort(scored.begin(),scored.end(),[](const ScoredMove& a,const ScoredMove& b){return a.score>b.score;});\n"
+      ]
+    },
+    {
+      "startLine": 652,
+      "endLine": 653,
+      "before": [
+        "        for(Move m:moves) {\n"
+      ],
+      "after": [
+        "        for(size_t visit=0;visit<scored.size();visit++) {\n",
+        "            const Move m=nextStableOrdered(scored,visit,firstIndex,deferred);\n"
+      ]
+    }
+  ]
+}

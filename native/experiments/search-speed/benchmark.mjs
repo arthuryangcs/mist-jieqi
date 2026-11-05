@@ -4,7 +4,7 @@ import assert from 'node:assert/strict';
 import {build,cache} from './build.mjs';
 import {ExperimentalEngine} from './client.mjs';
 import {FourThreadPika,canonicalFen,pikaCommit,pikaHash} from './pika.mjs';
-import {legalMoves} from '../../../engine.js';
+import {legalMoves} from './legacy-engine-20261103.js';
 const built=build(),positions=JSON.parse(fs.readFileSync(new URL('./benchmark-fixtures.json',import.meta.url))).positions;
 const output=process.env.MIST_BENCH_OUTPUT??cache+'/benchmark.json';
 assert(!fs.existsSync(output),'refusing to overwrite completed/partial benchmark');

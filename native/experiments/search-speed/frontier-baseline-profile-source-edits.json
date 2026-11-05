@@ -1,0 +1,61 @@
+{
+  "baseSha256": "6a3b23aaa1a6820dfbd1b89f897eeb2574b59fee827d1ab35c4ac93beee7b5aa",
+  "resultSha256": "6a27dc25d762de5245f39e4b3299999bf4e84b5011b97e1a1aa8385d2c8026e5",
+  "edits": [
+    {
+      "startLine": 985,
+      "endLine": 985,
+      "before": [],
+      "after": [
+        "struct FrontierCell {double start=-1,end=-1;uint64_t nodes=0;int lane=-1;};\n",
+        "struct FrontierSpan {FrontierCell& c;Search& work;const Search& clock;uint64_t before;FrontierSpan(FrontierCell& c,Search& s,const Search& k,int lane):c(c),work(s),clock(k),before(s.nodes){c.start=k.elapsed();c.lane=lane;}~FrontierSpan(){c.end=clock.elapsed();c.nodes=work.nodes-before;}};\n"
+      ]
+    },
+    {
+      "startLine": 1001,
+      "endLine": 1001,
+      "before": [],
+      "after": [
+        "    struct BatchTrace {int depth;double start,end;std::vector<FrontierCell> cells;};std::vector<BatchTrace> traces;\n"
+      ]
+    },
+    {
+      "startLine": 1004,
+      "endLine": 1004,
+      "before": [],
+      "after": [
+        "        const double batchStart=controller.elapsed();std::vector<FrontierCell> cells(jobs.size());\n"
+      ]
+    },
+    {
+      "startLine": 1006,
+      "endLine": 1008,
+      "before": [
+        "        try{for(size_t lane=0;lane<std::min(lanes,jobs.size());lane++)futures.push_back(pool->submit([&]{for(size_t i=next.fetch_add(1);i<jobs.size();i=next.fetch_add(1)){\n",
+        "            if(cancelled.load(std::memory_order_relaxed))return;const Job j=jobs[i];PrivateRoot& c=*contexts[j.context];try{\n"
+      ],
+      "after": [
+        "        try{for(size_t lane=0;lane<std::min(lanes,jobs.size());lane++)futures.push_back(pool->submit([&,lane]{for(size_t i=next.fetch_add(1);i<jobs.size();i=next.fetch_add(1)){\n",
+        "            if(cancelled.load(std::memory_order_relaxed))return;const Job j=jobs[i];PrivateRoot& c=*contexts[j.context];FrontierSpan measured(cells[i],c.search,controller,int(lane));try{\n"
+      ]
+    },
+    {
+      "startLine": 1031,
+      "endLine": 1032,
+      "before": [
+        "        active=false;stats();if(error)std::rethrow_exception(error);return values;\n"
+      ],
+      "after": [
+        "        active=false;stats();traces.push_back({currentDepth,batchStart,controller.elapsed(),std::move(cells)});if(error)std::rethrow_exception(error);return values;\n"
+      ]
+    },
+    {
+      "startLine": 1055,
+      "endLine": 1055,
+      "before": [],
+      "after": [
+        "    std::cerr<<\"{\\\"frontierTrace\\\":[\";for(size_t b=0;b<traces.size();b++){if(b)std::cerr<<',';const auto& t=traces[b];std::cerr<<\"{\\\"depth\\\":\"<<t.depth<<\",\\\"batch\\\":\"<<b<<\",\\\"start\\\":\"<<t.start<<\",\\\"end\\\":\"<<t.end<<\",\\\"jobs\\\":[\";for(size_t j=0;j<t.cells.size();j++){if(j)std::cerr<<',';const auto& c=t.cells[j];std::cerr<<\"{\\\"start\\\":\"<<c.start<<\",\\\"end\\\":\"<<c.end<<\",\\\"nodes\\\":\"<<c.nodes<<\",\\\"lane\\\":\"<<c.lane<<'}';}std::cerr<<\"]}\";}std::cerr<<\"]}\\n\";\n"
+      ]
+    }
+  ]
+}

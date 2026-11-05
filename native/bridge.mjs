@@ -23,7 +23,7 @@ export function observationSeed(view){let h=2166136261;for(const c of visibleKey
 export function encode(f,{mode='SEARCH',depth=0,budget=60000,nodeLimit=Infinity}={}) {
  const parts=[mode,depth,budget,Number.isFinite(nodeLimit)?nodeLimit:0,side(f.view.turn),side(f.view.viewer),f.view.captured.length,f.worlds.length,f.repetitions.length];
  for(const p of f.view.board)parts.push(...piece(p));for(const p of f.view.captured)parts.push(...piece(p));for(const w of f.worlds)for(const p of w.board)parts.push(...piece(p));
- for(const r of f.repetitions)parts.push(r.from,r.to,r.count,r.loss?2:Number(r.draw));return parts.join(' ')+'\n';
+ for(const r of f.repetitions)parts.push(r.from,r.to,r.count,r.loss?2:r.win?3:Number(r.draw));return parts.join(' ')+'\n';
 }
 let reference;
 export async function loadReference() {
@@ -63,6 +63,6 @@ export function compare(a,b,{tolerance=1e-7,requireNodes=true}={}) {
  if(Math.abs(a.score-b.score)>tolerance||Boolean(a.terminal)!==Boolean(b.terminal))throw Error('总体评分或终局标记不同');
  if(JSON.stringify(a.move)!==JSON.stringify(b.move))throw Error(`推荐不同 ${JSON.stringify([a.move,b.move])}`);
  const rows=x=>(x.allCandidates||[]).slice().sort((m,n)=>m.from-n.from||m.to-n.to),x=rows(a),y=rows(b);if(x.length!==y.length)throw Error('根候选不全');
- let maxDifference=0;for(let i=0;i<x.length;i++){if(x[i].from!==y[i].from||x[i].to!==y[i].to)throw Error('候选不同');for(const key of['score','spread','heuristicWinRate']){const d=Math.abs(x[i][key]-y[i][key]);maxDifference=Math.max(maxDifference,d);if(d>tolerance)throw Error(`候选${x[i].from}->${x[i].to} ${key} 不同 ${x[i][key]} / ${y[i][key]}`);}for(const key of['sampleWins','sampleLosses','repetitionCount'])if(x[i][key]!==y[i][key])throw Error(`候选${key}不同`);if(Boolean(x[i].draw)!==Boolean(y[i].draw))throw Error('和棋标记不同');if(Boolean(x[i].repetitionLoss)!==Boolean(y[i].repetitionLoss))throw Error('重复判负标记不同');}
+ let maxDifference=0;for(let i=0;i<x.length;i++){if(x[i].from!==y[i].from||x[i].to!==y[i].to)throw Error('候选不同');for(const key of['score','spread','heuristicWinRate']){const d=Math.abs(x[i][key]-y[i][key]);maxDifference=Math.max(maxDifference,d);if(d>tolerance)throw Error(`候选${x[i].from}->${x[i].to} ${key} 不同 ${x[i][key]} / ${y[i][key]}`);}for(const key of['sampleWins','sampleLosses','repetitionCount'])if(x[i][key]!==y[i][key])throw Error(`候选${key}不同`);if(Boolean(x[i].draw)!==Boolean(y[i].draw))throw Error('和棋标记不同');if(Boolean(x[i].repetitionLoss)!==Boolean(y[i].repetitionLoss))throw Error('重复判负标记不同');if(Boolean(x[i].repetitionWin)!==Boolean(y[i].repetitionWin))throw Error('重复获胜标记不同');}
  return{nodesEqual:a.nodes===b.nodes,candidates:x.length,maxDifference};
 }

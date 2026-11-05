@@ -1,4 +1,4 @@
-import assert from 'node:assert/strict';import {initial,TYPES,legalMoves} from '../../../engine.js';
+import assert from 'node:assert/strict';import {initial,TYPES,legalMoves} from './legacy-engine-20261103.js';
 const piece=(side,type,hidden=false,role=type)=>({side,type,hidden,role});
 function sparse(name,placements,from,to,allowed=false){const s=initial(()=>.5);s.board=Array(90).fill(null);s.board[85]=piece('r','K');s.board[4]=piece('b','K');s.board[49]=piece('r','P');s.captured=[];s.positions=[];s.quiet=0;s.ply=0;for(const [i,side,type,hidden=false,role=type]of placements)s.board[i]=piece(side,type,hidden,role);for(const side of['r','b']){const bag=[...TYPES];for(const p of s.board)if(p?.side===side&&p.type!=='K'){const i=bag.indexOf(p.type);assert(i>=0,name+' stock');bag.splice(i,1);}for(const t of bag)s.captured.push(piece(side,t));}return{name,state:s,from,to,allowed};}
 const raw=[

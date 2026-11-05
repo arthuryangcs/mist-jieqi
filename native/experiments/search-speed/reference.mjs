@@ -1,4 +1,4 @@
-import {legalMoves,inCheck,move,positionKey,publicState} from '../../../engine.js';import {evaluate} from '../../../ai.js';
+import {legalMoves,inCheck,move,positionKey,publicState} from './legacy-engine-20261103.js';import {evaluate} from '../../../ai.js';
 export const mate=99000;
 // Independent exhaustive minimax, no TT, alpha-beta, PVS or move ordering.
 // Used only for bounded sparse positions; probabilities are explicit fixed worlds.

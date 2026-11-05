@@ -1,0 +1,2016 @@
+{
+  "productionChanged": false,
+  "completeCompetitionRules": false,
+  "sourceSha256": "a53621542823a6a9a16a7daaced6a980f7a5381bee494a1da51414767eb213b3",
+  "unitSourceSha256": "a0939f8189bfa1546ce703e583088b6b7b43e070f036cd4deb6226691e22f5a0",
+  "sourceBuilds": {
+    "release": {
+      "sourceSha256": "a53621542823a6a9a16a7daaced6a980f7a5381bee494a1da51414767eb213b3",
+      "binarySha256": "561805a0df339814c81ba6589ecc553f284d802c8a2b0e81a2afa5fa1fd95eba",
+      "flags": [
+        "-std=c++17",
+        "-ffp-contract=off",
+        "-DMIST_ROOT_LANES=4",
+        "-DMIST_MESH_LANES=4",
+        "-DMIST_CAPTURE_PREFIX_DISABLE",
+        "-O3",
+        "-DNDEBUG",
+        "-isystem",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+      ],
+      "compilerExitCode": 0
+    },
+    "-sanitized": {
+      "sourceSha256": "a53621542823a6a9a16a7daaced6a980f7a5381bee494a1da51414767eb213b3",
+      "binarySha256": "e0dc41b50bc01085a31010c1ef3d55be2610bd3952823c7961923934679a9843",
+      "flags": [
+        "-std=c++17",
+        "-ffp-contract=off",
+        "-DMIST_ROOT_LANES=4",
+        "-DMIST_MESH_LANES=4",
+        "-DMIST_CAPTURE_PREFIX_DISABLE",
+        "-O1",
+        "-g",
+        "-DMIST_VERIFY_RESTORE",
+        "-fno-omit-frame-pointer",
+        "-fsanitize=address,undefined",
+        "-isystem",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+      ],
+      "compilerExitCode": 0
+    },
+    "-tsan": {
+      "sourceSha256": "a53621542823a6a9a16a7daaced6a980f7a5381bee494a1da51414767eb213b3",
+      "binarySha256": "79416c509cadbafc75371c59d0b24a5090eb776a2e803fee2b01313e695234f3",
+      "flags": [
+        "-std=c++17",
+        "-ffp-contract=off",
+        "-DMIST_ROOT_LANES=4",
+        "-DMIST_MESH_LANES=4",
+        "-DMIST_CAPTURE_PREFIX_DISABLE",
+        "-O1",
+        "-g",
+        "-DMIST_VERIFY_RESTORE",
+        "-fno-omit-frame-pointer",
+        "-fsanitize=thread",
+        "-isystem",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+      ],
+      "compilerExitCode": 0
+    }
+  },
+  "suites": {
+    "check-release": {
+      "passed": true,
+      "sourceSha256": "a53621542823a6a9a16a7daaced6a980f7a5381bee494a1da51414767eb213b3",
+      "binarySha256": "561805a0df339814c81ba6589ecc553f284d802c8a2b0e81a2afa5fa1fd95eba",
+      "finite": [
+        {
+          "name": "opening/51101/0",
+          "depth": 2,
+          "score": 32.59487964945658,
+          "nodes": {
+            "baseline": 35128,
+            "reference": 49148,
+            "candidate": 35128
+          }
+        },
+        {
+          "name": "opening/51101/0",
+          "depth": 3,
+          "score": 55.93144182857111,
+          "nodes": {
+            "baseline": 237112,
+            "reference": 866194,
+            "candidate": 237112
+          }
+        },
+        {
+          "name": "opening/51109/3",
+          "depth": 2,
+          "score": 74.61984111985372,
+          "nodes": {
+            "baseline": 24509,
+            "reference": 31249,
+            "candidate": 24509
+          }
+        },
+        {
+          "name": "opening/51109/3",
+          "depth": 3,
+          "score": 64.47357582229819,
+          "nodes": {
+            "baseline": 114419,
+            "reference": 356329,
+            "candidate": 114419
+          }
+        },
+        {
+          "name": "opening/51119/7",
+          "depth": 2,
+          "score": 798.7498060298326,
+          "nodes": {
+            "baseline": 30601,
+            "reference": 26925,
+            "candidate": 30601
+          }
+        },
+        {
+          "name": "opening/51119/7",
+          "depth": 3,
+          "score": 796.2700698000424,
+          "nodes": {
+            "baseline": 133471,
+            "reference": 449118,
+            "candidate": 133471
+          }
+        },
+        {
+          "name": "opening/51131/10",
+          "depth": 2,
+          "score": 209.27782397212027,
+          "nodes": {
+            "baseline": 17834,
+            "reference": 25338,
+            "candidate": 17834
+          }
+        },
+        {
+          "name": "opening/51131/10",
+          "depth": 3,
+          "score": 101.50462330909187,
+          "nodes": {
+            "baseline": 131505,
+            "reference": 457920,
+            "candidate": 131505
+          }
+        },
+        {
+          "name": "middle/51203/28",
+          "depth": 2,
+          "score": 991,
+          "nodes": {
+            "baseline": 39874,
+            "reference": 113439,
+            "candidate": 39874
+          }
+        },
+        {
+          "name": "middle/51203/28",
+          "depth": 3,
+          "score": 857.0000000000003,
+          "nodes": {
+            "baseline": 276275,
+            "reference": 1285387,
+            "candidate": 276275
+          }
+        },
+        {
+          "name": "middle/51217/37",
+          "depth": 2,
+          "score": -933.8015776394041,
+          "nodes": {
+            "baseline": 12707,
+            "reference": 13829,
+            "candidate": 12707
+          }
+        },
+        {
+          "name": "middle/51217/37",
+          "depth": 3,
+          "score": -1047.159229436833,
+          "nodes": {
+            "baseline": 109612,
+            "reference": 282953,
+            "candidate": 109612
+          }
+        },
+        {
+          "name": "middle/51229/46",
+          "depth": 2,
+          "score": 335.4443016361061,
+          "nodes": {
+            "baseline": 50089,
+            "reference": 108132,
+            "candidate": 50089
+          }
+        },
+        {
+          "name": "middle/51229/46",
+          "depth": 3,
+          "score": 403.97095489562935,
+          "nodes": {
+            "baseline": 257725,
+            "reference": 752766,
+            "candidate": 257725
+          }
+        },
+        {
+          "name": "middle/51241/57",
+          "depth": 2,
+          "score": 234.00000000000014,
+          "nodes": {
+            "baseline": 46178,
+            "reference": 53120,
+            "candidate": 46178
+          }
+        },
+        {
+          "name": "middle/51241/57",
+          "depth": 3,
+          "score": 178.3972537954503,
+          "nodes": {
+            "baseline": 258434,
+            "reference": 599543,
+            "candidate": 258434
+          }
+        },
+        {
+          "name": "ending/51307/3",
+          "depth": 2,
+          "score": 187,
+          "nodes": {
+            "baseline": 1763,
+            "reference": 1627,
+            "candidate": 1763
+          }
+        },
+        {
+          "name": "ending/51307/3",
+          "depth": 3,
+          "score": 189,
+          "nodes": {
+            "baseline": 8750,
+            "reference": 31687,
+            "candidate": 8750
+          }
+        },
+        {
+          "name": "ending/51319/6",
+          "depth": 2,
+          "score": 204.33333333333334,
+          "nodes": {
+            "baseline": 1504,
+            "reference": 1409,
+            "candidate": 1504
+          }
+        },
+        {
+          "name": "ending/51319/6",
+          "depth": 3,
+          "score": 197,
+          "nodes": {
+            "baseline": 6833,
+            "reference": 18851,
+            "candidate": 6833
+          }
+        },
+        {
+          "name": "ending/51329/9",
+          "depth": 2,
+          "score": -1117,
+          "nodes": {
+            "baseline": 86,
+            "reference": 90,
+            "candidate": 86
+          }
+        },
+        {
+          "name": "ending/51329/9",
+          "depth": 3,
+          "score": -1113,
+          "nodes": {
+            "baseline": 396,
+            "reference": 619,
+            "candidate": 397
+          }
+        },
+        {
+          "name": "ending/51341/12",
+          "depth": 2,
+          "score": 20,
+          "nodes": {
+            "baseline": 1121,
+            "reference": 1053,
+            "candidate": 1121
+          }
+        },
+        {
+          "name": "ending/51341/12",
+          "depth": 3,
+          "score": 20,
+          "nodes": {
+            "baseline": 4176,
+            "reference": 8434,
+            "candidate": 4176
+          }
+        },
+        {
+          "name": "previous-frozen-two-roots",
+          "depth": 2,
+          "score": -1117,
+          "nodes": {
+            "baseline": 86,
+            "reference": 90,
+            "candidate": 86
+          }
+        },
+        {
+          "name": "previous-frozen-two-roots",
+          "depth": 3,
+          "score": -1113,
+          "nodes": {
+            "baseline": 396,
+            "reference": 619,
+            "candidate": 396
+          }
+        },
+        {
+          "name": "color-rotated-two-roots",
+          "depth": 2,
+          "score": -1117,
+          "nodes": {
+            "baseline": 86,
+            "reference": 82,
+            "candidate": 86
+          }
+        },
+        {
+          "name": "color-rotated-two-roots",
+          "depth": 3,
+          "score": -1113,
+          "nodes": {
+            "baseline": 397,
+            "reference": 384,
+            "candidate": 397
+          }
+        },
+        {
+          "name": "first-reachable-forced/51503/17",
+          "depth": 2,
+          "score": -505.3333333333333,
+          "nodes": {
+            "baseline": 52,
+            "reference": 55,
+            "candidate": 54
+          }
+        },
+        {
+          "name": "first-reachable-forced/51503/17",
+          "depth": 3,
+          "score": -505.3333333333333,
+          "nodes": {
+            "baseline": 193,
+            "reference": 211,
+            "candidate": 193
+          }
+        },
+        {
+          "name": "first-reachable-forced/51504/19",
+          "depth": 2,
+          "score": 685,
+          "nodes": {
+            "baseline": 50,
+            "reference": 49,
+            "candidate": 50
+          }
+        },
+        {
+          "name": "first-reachable-forced/51504/19",
+          "depth": 3,
+          "score": 693,
+          "nodes": {
+            "baseline": 280,
+            "reference": 281,
+            "candidate": 280
+          }
+        },
+        {
+          "name": "first-reachable-forced/51505/31",
+          "depth": 2,
+          "score": -33,
+          "nodes": {
+            "baseline": 72,
+            "reference": 71,
+            "candidate": 72
+          }
+        },
+        {
+          "name": "first-reachable-forced/51505/31",
+          "depth": 3,
+          "score": -721,
+          "nodes": {
+            "baseline": 381,
+            "reference": 386,
+            "candidate": 381
+          }
+        },
+        {
+          "name": "first-reachable-forced/51506/31",
+          "depth": 2,
+          "score": -14.666666666666666,
+          "nodes": {
+            "baseline": 114,
+            "reference": 118,
+            "candidate": 116
+          }
+        },
+        {
+          "name": "first-reachable-forced/51506/31",
+          "depth": 3,
+          "score": -162,
+          "nodes": {
+            "baseline": 1298,
+            "reference": 1759,
+            "candidate": 1300
+          }
+        },
+        {
+          "name": "全明/49033/11",
+          "depth": 2,
+          "score": 671.3333333333334,
+          "nodes": {
+            "baseline": 1670,
+            "reference": 1704,
+            "candidate": 1670
+          }
+        },
+        {
+          "name": "全明/49033/11",
+          "depth": 3,
+          "score": 690.6666666666666,
+          "nodes": {
+            "baseline": 8911,
+            "reference": 28386,
+            "candidate": 8911
+          }
+        },
+        {
+          "name": "lazy-confirm/ending/54546/0",
+          "depth": 2,
+          "score": 603,
+          "nodes": {
+            "baseline": 29,
+            "reference": 27,
+            "candidate": 29
+          }
+        },
+        {
+          "name": "lazy-confirm/ending/54546/0",
+          "depth": 3,
+          "score": 589,
+          "nodes": {
+            "baseline": 306,
+            "reference": 239,
+            "candidate": 311
+          }
+        }
+      ],
+      "timeouts": [
+        {
+          "name": "opening/51109/3",
+          "budget": 75,
+          "depth": 3,
+          "nodes": 568474
+        },
+        {
+          "name": "opening/51109/3",
+          "budget": 150,
+          "depth": 4,
+          "nodes": 1018959
+        },
+        {
+          "name": "opening/51109/3",
+          "budget": 500,
+          "depth": 4,
+          "nodes": 3463124
+        },
+        {
+          "name": "lazy-confirm/ending/54546/0",
+          "budget": 75,
+          "depth": 8,
+          "nodes": 271732
+        },
+        {
+          "name": "lazy-confirm/ending/54546/0",
+          "budget": 150,
+          "depth": 8,
+          "nodes": 502146
+        },
+        {
+          "name": "lazy-confirm/ending/54546/0",
+          "budget": 500,
+          "depth": 9,
+          "nodes": 1928502
+        }
+      ],
+      "cancel": true,
+      "privacy": true,
+      "immediateCancel": true,
+      "rootAdjudication": true,
+      "unitAssertions": [
+        690238,
+        8653,
+        8581
+      ]
+    },
+    "rules-release": {
+      "sourceSha256": "a53621542823a6a9a16a7daaced6a980f7a5381bee494a1da51414767eb213b3",
+      "transitionCount": 11874,
+      "passed": true,
+      "ruleViews": 414
+    },
+    "reference-release": {
+      "passed": true
+    },
+    "check-sanitized": {
+      "passed": true,
+      "sourceSha256": "a53621542823a6a9a16a7daaced6a980f7a5381bee494a1da51414767eb213b3",
+      "binarySha256": "e0dc41b50bc01085a31010c1ef3d55be2610bd3952823c7961923934679a9843",
+      "finite": [
+        {
+          "name": "opening/51101/0",
+          "depth": 2,
+          "score": 32.59487964945658,
+          "nodes": {
+            "baseline": 35128,
+            "reference": 49148,
+            "candidate": 35128
+          }
+        },
+        {
+          "name": "opening/51101/0",
+          "depth": 3,
+          "score": 55.93144182857111,
+          "nodes": {
+            "baseline": 237112,
+            "reference": 866194,
+            "candidate": 237112
+          }
+        },
+        {
+          "name": "opening/51109/3",
+          "depth": 2,
+          "score": 74.61984111985372,
+          "nodes": {
+            "baseline": 24509,
+            "reference": 31249,
+            "candidate": 24509
+          }
+        },
+        {
+          "name": "opening/51109/3",
+          "depth": 3,
+          "score": 64.47357582229819,
+          "nodes": {
+            "baseline": 114419,
+            "reference": 356329,
+            "candidate": 114419
+          }
+        },
+        {
+          "name": "opening/51119/7",
+          "depth": 2,
+          "score": 798.7498060298326,
+          "nodes": {
+            "baseline": 30601,
+            "reference": 26925,
+            "candidate": 30601
+          }
+        },
+        {
+          "name": "opening/51119/7",
+          "depth": 3,
+          "score": 796.2700698000424,
+          "nodes": {
+            "baseline": 133471,
+            "reference": 449118,
+            "candidate": 133471
+          }
+        },
+        {
+          "name": "opening/51131/10",
+          "depth": 2,
+          "score": 209.27782397212027,
+          "nodes": {
+            "baseline": 17834,
+            "reference": 25338,
+            "candidate": 17834
+          }
+        },
+        {
+          "name": "opening/51131/10",
+          "depth": 3,
+          "score": 101.50462330909187,
+          "nodes": {
+            "baseline": 131505,
+            "reference": 457920,
+            "candidate": 131505
+          }
+        },
+        {
+          "name": "middle/51203/28",
+          "depth": 2,
+          "score": 991,
+          "nodes": {
+            "baseline": 39874,
+            "reference": 113439,
+            "candidate": 39874
+          }
+        },
+        {
+          "name": "middle/51203/28",
+          "depth": 3,
+          "score": 857.0000000000003,
+          "nodes": {
+            "baseline": 276275,
+            "reference": 1285387,
+            "candidate": 276275
+          }
+        },
+        {
+          "name": "middle/51217/37",
+          "depth": 2,
+          "score": -933.8015776394041,
+          "nodes": {
+            "baseline": 12707,
+            "reference": 13829,
+            "candidate": 12707
+          }
+        },
+        {
+          "name": "middle/51217/37",
+          "depth": 3,
+          "score": -1047.159229436833,
+          "nodes": {
+            "baseline": 109612,
+            "reference": 282953,
+            "candidate": 109612
+          }
+        },
+        {
+          "name": "middle/51229/46",
+          "depth": 2,
+          "score": 335.4443016361061,
+          "nodes": {
+            "baseline": 50089,
+            "reference": 108132,
+            "candidate": 50089
+          }
+        },
+        {
+          "name": "middle/51229/46",
+          "depth": 3,
+          "score": 403.97095489562935,
+          "nodes": {
+            "baseline": 257725,
+            "reference": 752766,
+            "candidate": 257725
+          }
+        },
+        {
+          "name": "middle/51241/57",
+          "depth": 2,
+          "score": 234.00000000000014,
+          "nodes": {
+            "baseline": 46178,
+            "reference": 53120,
+            "candidate": 46178
+          }
+        },
+        {
+          "name": "middle/51241/57",
+          "depth": 3,
+          "score": 178.3972537954503,
+          "nodes": {
+            "baseline": 258434,
+            "reference": 599543,
+            "candidate": 258434
+          }
+        },
+        {
+          "name": "ending/51307/3",
+          "depth": 2,
+          "score": 187,
+          "nodes": {
+            "baseline": 1763,
+            "reference": 1627,
+            "candidate": 1763
+          }
+        },
+        {
+          "name": "ending/51307/3",
+          "depth": 3,
+          "score": 189,
+          "nodes": {
+            "baseline": 8750,
+            "reference": 31687,
+            "candidate": 8750
+          }
+        },
+        {
+          "name": "ending/51319/6",
+          "depth": 2,
+          "score": 204.33333333333334,
+          "nodes": {
+            "baseline": 1504,
+            "reference": 1409,
+            "candidate": 1504
+          }
+        },
+        {
+          "name": "ending/51319/6",
+          "depth": 3,
+          "score": 197,
+          "nodes": {
+            "baseline": 6833,
+            "reference": 18851,
+            "candidate": 6833
+          }
+        },
+        {
+          "name": "ending/51329/9",
+          "depth": 2,
+          "score": -1117,
+          "nodes": {
+            "baseline": 86,
+            "reference": 90,
+            "candidate": 86
+          }
+        },
+        {
+          "name": "ending/51329/9",
+          "depth": 3,
+          "score": -1113,
+          "nodes": {
+            "baseline": 396,
+            "reference": 619,
+            "candidate": 397
+          }
+        },
+        {
+          "name": "ending/51341/12",
+          "depth": 2,
+          "score": 20,
+          "nodes": {
+            "baseline": 1121,
+            "reference": 1053,
+            "candidate": 1121
+          }
+        },
+        {
+          "name": "ending/51341/12",
+          "depth": 3,
+          "score": 20,
+          "nodes": {
+            "baseline": 4176,
+            "reference": 8434,
+            "candidate": 4176
+          }
+        },
+        {
+          "name": "previous-frozen-two-roots",
+          "depth": 2,
+          "score": -1117,
+          "nodes": {
+            "baseline": 86,
+            "reference": 90,
+            "candidate": 86
+          }
+        },
+        {
+          "name": "previous-frozen-two-roots",
+          "depth": 3,
+          "score": -1113,
+          "nodes": {
+            "baseline": 396,
+            "reference": 619,
+            "candidate": 398
+          }
+        },
+        {
+          "name": "color-rotated-two-roots",
+          "depth": 2,
+          "score": -1117,
+          "nodes": {
+            "baseline": 86,
+            "reference": 82,
+            "candidate": 86
+          }
+        },
+        {
+          "name": "color-rotated-two-roots",
+          "depth": 3,
+          "score": -1113,
+          "nodes": {
+            "baseline": 397,
+            "reference": 384,
+            "candidate": 397
+          }
+        },
+        {
+          "name": "first-reachable-forced/51503/17",
+          "depth": 2,
+          "score": -505.3333333333333,
+          "nodes": {
+            "baseline": 48,
+            "reference": 56,
+            "candidate": 54
+          }
+        },
+        {
+          "name": "first-reachable-forced/51503/17",
+          "depth": 3,
+          "score": -505.3333333333333,
+          "nodes": {
+            "baseline": 191,
+            "reference": 209,
+            "candidate": 195
+          }
+        },
+        {
+          "name": "first-reachable-forced/51504/19",
+          "depth": 2,
+          "score": 685,
+          "nodes": {
+            "baseline": 50,
+            "reference": 49,
+            "candidate": 50
+          }
+        },
+        {
+          "name": "first-reachable-forced/51504/19",
+          "depth": 3,
+          "score": 693,
+          "nodes": {
+            "baseline": 280,
+            "reference": 281,
+            "candidate": 281
+          }
+        },
+        {
+          "name": "first-reachable-forced/51505/31",
+          "depth": 2,
+          "score": -33,
+          "nodes": {
+            "baseline": 72,
+            "reference": 71,
+            "candidate": 72
+          }
+        },
+        {
+          "name": "first-reachable-forced/51505/31",
+          "depth": 3,
+          "score": -721,
+          "nodes": {
+            "baseline": 387,
+            "reference": 386,
+            "candidate": 381
+          }
+        },
+        {
+          "name": "first-reachable-forced/51506/31",
+          "depth": 2,
+          "score": -14.666666666666666,
+          "nodes": {
+            "baseline": 116,
+            "reference": 117,
+            "candidate": 119
+          }
+        },
+        {
+          "name": "first-reachable-forced/51506/31",
+          "depth": 3,
+          "score": -162,
+          "nodes": {
+            "baseline": 1300,
+            "reference": 1758,
+            "candidate": 1329
+          }
+        },
+        {
+          "name": "全明/49033/11",
+          "depth": 2,
+          "score": 671.3333333333334,
+          "nodes": {
+            "baseline": 1670,
+            "reference": 1704,
+            "candidate": 1670
+          }
+        },
+        {
+          "name": "全明/49033/11",
+          "depth": 3,
+          "score": 690.6666666666666,
+          "nodes": {
+            "baseline": 8911,
+            "reference": 28386,
+            "candidate": 8911
+          }
+        },
+        {
+          "name": "lazy-confirm/ending/54546/0",
+          "depth": 2,
+          "score": 603,
+          "nodes": {
+            "baseline": 29,
+            "reference": 27,
+            "candidate": 29
+          }
+        },
+        {
+          "name": "lazy-confirm/ending/54546/0",
+          "depth": 3,
+          "score": 589,
+          "nodes": {
+            "baseline": 319,
+            "reference": 239,
+            "candidate": 343
+          }
+        }
+      ],
+      "timeouts": [
+        {
+          "name": "opening/51109/3",
+          "budget": 75,
+          "depth": 1,
+          "nodes": 17545
+        },
+        {
+          "name": "opening/51109/3",
+          "budget": 150,
+          "depth": 2,
+          "nodes": 30214
+        },
+        {
+          "name": "opening/51109/3",
+          "budget": 500,
+          "depth": 2,
+          "nodes": 102876
+        },
+        {
+          "name": "lazy-confirm/ending/54546/0",
+          "budget": 75,
+          "depth": 5,
+          "nodes": 11702
+        },
+        {
+          "name": "lazy-confirm/ending/54546/0",
+          "budget": 150,
+          "depth": 6,
+          "nodes": 19846
+        },
+        {
+          "name": "lazy-confirm/ending/54546/0",
+          "budget": 500,
+          "depth": 7,
+          "nodes": 63575
+        }
+      ],
+      "cancel": true,
+      "privacy": true,
+      "immediateCancel": true,
+      "rootAdjudication": true,
+      "unitAssertions": [
+        690238,
+        8653,
+        8581
+      ]
+    },
+    "rules-sanitized": {
+      "sourceSha256": "a53621542823a6a9a16a7daaced6a980f7a5381bee494a1da51414767eb213b3",
+      "transitionCount": 11874,
+      "passed": true,
+      "ruleViews": 414
+    },
+    "reference-sanitized": {
+      "passed": true
+    },
+    "check-tsan": {
+      "passed": true,
+      "sourceSha256": "a53621542823a6a9a16a7daaced6a980f7a5381bee494a1da51414767eb213b3",
+      "binarySha256": "79416c509cadbafc75371c59d0b24a5090eb776a2e803fee2b01313e695234f3",
+      "finite": [
+        {
+          "name": "opening/51101/0",
+          "depth": 2,
+          "score": 32.59487964945658,
+          "nodes": {
+            "baseline": 35128,
+            "reference": 49148,
+            "candidate": 35128
+          }
+        },
+        {
+          "name": "opening/51101/0",
+          "depth": 3,
+          "score": 55.93144182857111,
+          "nodes": {
+            "baseline": 237112,
+            "reference": 866194,
+            "candidate": 237112
+          }
+        },
+        {
+          "name": "opening/51109/3",
+          "depth": 2,
+          "score": 74.61984111985372,
+          "nodes": {
+            "baseline": 24509,
+            "reference": 31249,
+            "candidate": 24509
+          }
+        },
+        {
+          "name": "opening/51109/3",
+          "depth": 3,
+          "score": 64.47357582229819,
+          "nodes": {
+            "baseline": 114419,
+            "reference": 356329,
+            "candidate": 114419
+          }
+        },
+        {
+          "name": "opening/51119/7",
+          "depth": 2,
+          "score": 798.7498060298326,
+          "nodes": {
+            "baseline": 30601,
+            "reference": 26925,
+            "candidate": 30601
+          }
+        },
+        {
+          "name": "opening/51119/7",
+          "depth": 3,
+          "score": 796.2700698000424,
+          "nodes": {
+            "baseline": 133471,
+            "reference": 449118,
+            "candidate": 133471
+          }
+        },
+        {
+          "name": "opening/51131/10",
+          "depth": 2,
+          "score": 209.27782397212027,
+          "nodes": {
+            "baseline": 17834,
+            "reference": 25338,
+            "candidate": 17834
+          }
+        },
+        {
+          "name": "opening/51131/10",
+          "depth": 3,
+          "score": 101.50462330909187,
+          "nodes": {
+            "baseline": 131505,
+            "reference": 457920,
+            "candidate": 131505
+          }
+        },
+        {
+          "name": "middle/51203/28",
+          "depth": 2,
+          "score": 991,
+          "nodes": {
+            "baseline": 39874,
+            "reference": 113439,
+            "candidate": 39874
+          }
+        },
+        {
+          "name": "middle/51203/28",
+          "depth": 3,
+          "score": 857.0000000000003,
+          "nodes": {
+            "baseline": 276275,
+            "reference": 1285387,
+            "candidate": 276275
+          }
+        },
+        {
+          "name": "middle/51217/37",
+          "depth": 2,
+          "score": -933.8015776394041,
+          "nodes": {
+            "baseline": 12707,
+            "reference": 13829,
+            "candidate": 12707
+          }
+        },
+        {
+          "name": "middle/51217/37",
+          "depth": 3,
+          "score": -1047.159229436833,
+          "nodes": {
+            "baseline": 109612,
+            "reference": 282953,
+            "candidate": 109612
+          }
+        },
+        {
+          "name": "middle/51229/46",
+          "depth": 2,
+          "score": 335.4443016361061,
+          "nodes": {
+            "baseline": 50089,
+            "reference": 108132,
+            "candidate": 50089
+          }
+        },
+        {
+          "name": "middle/51229/46",
+          "depth": 3,
+          "score": 403.97095489562935,
+          "nodes": {
+            "baseline": 257725,
+            "reference": 752766,
+            "candidate": 257725
+          }
+        },
+        {
+          "name": "middle/51241/57",
+          "depth": 2,
+          "score": 234.00000000000014,
+          "nodes": {
+            "baseline": 46178,
+            "reference": 53120,
+            "candidate": 46178
+          }
+        },
+        {
+          "name": "middle/51241/57",
+          "depth": 3,
+          "score": 178.3972537954503,
+          "nodes": {
+            "baseline": 258434,
+            "reference": 599543,
+            "candidate": 258434
+          }
+        },
+        {
+          "name": "ending/51307/3",
+          "depth": 2,
+          "score": 187,
+          "nodes": {
+            "baseline": 1763,
+            "reference": 1627,
+            "candidate": 1763
+          }
+        },
+        {
+          "name": "ending/51307/3",
+          "depth": 3,
+          "score": 189,
+          "nodes": {
+            "baseline": 8750,
+            "reference": 31687,
+            "candidate": 8750
+          }
+        },
+        {
+          "name": "ending/51319/6",
+          "depth": 2,
+          "score": 204.33333333333334,
+          "nodes": {
+            "baseline": 1504,
+            "reference": 1409,
+            "candidate": 1504
+          }
+        },
+        {
+          "name": "ending/51319/6",
+          "depth": 3,
+          "score": 197,
+          "nodes": {
+            "baseline": 6833,
+            "reference": 18851,
+            "candidate": 6833
+          }
+        },
+        {
+          "name": "ending/51329/9",
+          "depth": 2,
+          "score": -1117,
+          "nodes": {
+            "baseline": 86,
+            "reference": 90,
+            "candidate": 86
+          }
+        },
+        {
+          "name": "ending/51329/9",
+          "depth": 3,
+          "score": -1113,
+          "nodes": {
+            "baseline": 396,
+            "reference": 619,
+            "candidate": 397
+          }
+        },
+        {
+          "name": "ending/51341/12",
+          "depth": 2,
+          "score": 20,
+          "nodes": {
+            "baseline": 1121,
+            "reference": 1053,
+            "candidate": 1121
+          }
+        },
+        {
+          "name": "ending/51341/12",
+          "depth": 3,
+          "score": 20,
+          "nodes": {
+            "baseline": 4176,
+            "reference": 8434,
+            "candidate": 4176
+          }
+        },
+        {
+          "name": "previous-frozen-two-roots",
+          "depth": 2,
+          "score": -1117,
+          "nodes": {
+            "baseline": 86,
+            "reference": 90,
+            "candidate": 86
+          }
+        },
+        {
+          "name": "previous-frozen-two-roots",
+          "depth": 3,
+          "score": -1113,
+          "nodes": {
+            "baseline": 396,
+            "reference": 586,
+            "candidate": 397
+          }
+        },
+        {
+          "name": "color-rotated-two-roots",
+          "depth": 2,
+          "score": -1117,
+          "nodes": {
+            "baseline": 86,
+            "reference": 82,
+            "candidate": 86
+          }
+        },
+        {
+          "name": "color-rotated-two-roots",
+          "depth": 3,
+          "score": -1113,
+          "nodes": {
+            "baseline": 397,
+            "reference": 384,
+            "candidate": 397
+          }
+        },
+        {
+          "name": "first-reachable-forced/51503/17",
+          "depth": 2,
+          "score": -505.3333333333333,
+          "nodes": {
+            "baseline": 48,
+            "reference": 56,
+            "candidate": 54
+          }
+        },
+        {
+          "name": "first-reachable-forced/51503/17",
+          "depth": 3,
+          "score": -505.3333333333333,
+          "nodes": {
+            "baseline": 193,
+            "reference": 209,
+            "candidate": 195
+          }
+        },
+        {
+          "name": "first-reachable-forced/51504/19",
+          "depth": 2,
+          "score": 685,
+          "nodes": {
+            "baseline": 50,
+            "reference": 49,
+            "candidate": 50
+          }
+        },
+        {
+          "name": "first-reachable-forced/51504/19",
+          "depth": 3,
+          "score": 693,
+          "nodes": {
+            "baseline": 280,
+            "reference": 281,
+            "candidate": 281
+          }
+        },
+        {
+          "name": "first-reachable-forced/51505/31",
+          "depth": 2,
+          "score": -33,
+          "nodes": {
+            "baseline": 72,
+            "reference": 71,
+            "candidate": 72
+          }
+        },
+        {
+          "name": "first-reachable-forced/51505/31",
+          "depth": 3,
+          "score": -721,
+          "nodes": {
+            "baseline": 381,
+            "reference": 386,
+            "candidate": 381
+          }
+        },
+        {
+          "name": "first-reachable-forced/51506/31",
+          "depth": 2,
+          "score": -14.666666666666666,
+          "nodes": {
+            "baseline": 114,
+            "reference": 114,
+            "candidate": 119
+          }
+        },
+        {
+          "name": "first-reachable-forced/51506/31",
+          "depth": 3,
+          "score": -162,
+          "nodes": {
+            "baseline": 1300,
+            "reference": 1756,
+            "candidate": 1332
+          }
+        },
+        {
+          "name": "全明/49033/11",
+          "depth": 2,
+          "score": 671.3333333333334,
+          "nodes": {
+            "baseline": 1670,
+            "reference": 1704,
+            "candidate": 1670
+          }
+        },
+        {
+          "name": "全明/49033/11",
+          "depth": 3,
+          "score": 690.6666666666666,
+          "nodes": {
+            "baseline": 8911,
+            "reference": 28386,
+            "candidate": 8911
+          }
+        },
+        {
+          "name": "lazy-confirm/ending/54546/0",
+          "depth": 2,
+          "score": 603,
+          "nodes": {
+            "baseline": 29,
+            "reference": 27,
+            "candidate": 29
+          }
+        },
+        {
+          "name": "lazy-confirm/ending/54546/0",
+          "depth": 3,
+          "score": 589,
+          "nodes": {
+            "baseline": 319,
+            "reference": 245,
+            "candidate": 359
+          }
+        }
+      ],
+      "timeouts": [
+        {
+          "name": "opening/51109/3",
+          "budget": 75,
+          "depth": 1,
+          "nodes": 6702
+        },
+        {
+          "name": "opening/51109/3",
+          "budget": 150,
+          "depth": 1,
+          "nodes": 14431
+        },
+        {
+          "name": "opening/51109/3",
+          "budget": 500,
+          "depth": 2,
+          "nodes": 44589
+        },
+        {
+          "name": "lazy-confirm/ending/54546/0",
+          "budget": 75,
+          "depth": 4,
+          "nodes": 3775
+        },
+        {
+          "name": "lazy-confirm/ending/54546/0",
+          "budget": 150,
+          "depth": 5,
+          "nodes": 6770
+        },
+        {
+          "name": "lazy-confirm/ending/54546/0",
+          "budget": 500,
+          "depth": 6,
+          "nodes": 25016
+        }
+      ],
+      "cancel": true,
+      "privacy": true,
+      "immediateCancel": true,
+      "rootAdjudication": true,
+      "unitAssertions": [
+        690238,
+        8653,
+        8581
+      ]
+    },
+    "rules-tsan": {
+      "sourceSha256": "a53621542823a6a9a16a7daaced6a980f7a5381bee494a1da51414767eb213b3",
+      "transitionCount": 11874,
+      "passed": true,
+      "ruleViews": 414
+    },
+    "reference-tsan": {
+      "passed": true
+    }
+  },
+  "specialProofs": {
+    "release": {
+      "passed": true,
+      "rows": [
+        {
+          "position": "lazy-history-holdout/ending/1106426/0",
+          "rotated": false,
+          "depth": 3,
+          "score": 504,
+          "parents": 2,
+          "children": 66,
+          "workers": 8,
+          "allocated": 619288,
+          "nodes": {
+            "candidate": 308,
+            "baseline": 302,
+            "plain": 346
+          }
+        },
+        {
+          "position": "lazy-history-holdout/ending/1106426/0",
+          "rotated": false,
+          "depth": 4,
+          "score": 492,
+          "parents": 4,
+          "children": 132,
+          "workers": 8,
+          "allocated": 677760,
+          "nodes": {
+            "candidate": 1125,
+            "baseline": 1180,
+            "plain": 1948
+          }
+        },
+        {
+          "position": "lazy-history-holdout/ending/1106426/0",
+          "rotated": true,
+          "depth": 3,
+          "score": 504,
+          "parents": 2,
+          "children": 66,
+          "workers": 8,
+          "allocated": 619288,
+          "nodes": {
+            "candidate": 319,
+            "baseline": 308,
+            "plain": 526
+          }
+        },
+        {
+          "position": "lazy-history-holdout/ending/1106426/0",
+          "rotated": true,
+          "depth": 4,
+          "score": 492,
+          "parents": 4,
+          "children": 132,
+          "workers": 8,
+          "allocated": 677536,
+          "nodes": {
+            "candidate": 1114,
+            "baseline": 1119,
+            "plain": 2315
+          }
+        },
+        {
+          "position": "near-confirmation/ending/9711560/0",
+          "rotated": false,
+          "depth": 3,
+          "score": 62,
+          "parents": 1,
+          "children": 28,
+          "workers": 4,
+          "allocated": 673336,
+          "nodes": {
+            "candidate": 718,
+            "baseline": 718,
+            "plain": 660
+          }
+        },
+        {
+          "position": "near-confirmation/ending/9711560/0",
+          "rotated": false,
+          "depth": 4,
+          "score": 52,
+          "parents": 2,
+          "children": 52,
+          "workers": 4,
+          "allocated": 705320,
+          "nodes": {
+            "candidate": 2232,
+            "baseline": 1938,
+            "plain": 7173
+          }
+        },
+        {
+          "position": "near-confirmation/ending/9711560/0",
+          "rotated": true,
+          "depth": 3,
+          "score": 62,
+          "parents": 1,
+          "children": 28,
+          "workers": 4,
+          "allocated": 673336,
+          "nodes": {
+            "candidate": 628,
+            "baseline": 614,
+            "plain": 558
+          }
+        },
+        {
+          "position": "near-confirmation/ending/9711560/0",
+          "rotated": true,
+          "depth": 4,
+          "score": 52,
+          "parents": 2,
+          "children": 52,
+          "workers": 4,
+          "allocated": 705152,
+          "nodes": {
+            "candidate": 2457,
+            "baseline": 1894,
+            "plain": 6001
+          }
+        },
+        {
+          "position": "deferred-holdout/ending/1105424/0",
+          "rotated": false,
+          "depth": 3,
+          "score": -690,
+          "parents": 3,
+          "children": 53,
+          "workers": 12,
+          "allocated": 705528,
+          "nodes": {
+            "candidate": 1748,
+            "baseline": 1748,
+            "plain": 3335
+          }
+        },
+        {
+          "position": "deferred-holdout/ending/1105424/0",
+          "rotated": false,
+          "depth": 4,
+          "score": -679.3333333333334,
+          "parents": 6,
+          "children": 89,
+          "workers": 12,
+          "allocated": 757376,
+          "nodes": {
+            "candidate": 15717,
+            "baseline": 14818,
+            "plain": 52853
+          }
+        },
+        {
+          "position": "deferred-holdout/ending/1105424/0",
+          "rotated": true,
+          "depth": 3,
+          "score": -690,
+          "parents": 3,
+          "children": 53,
+          "workers": 12,
+          "allocated": 705528,
+          "nodes": {
+            "candidate": 1552,
+            "baseline": 1552,
+            "plain": 2310
+          }
+        },
+        {
+          "position": "deferred-holdout/ending/1105424/0",
+          "rotated": true,
+          "depth": 4,
+          "score": -679.3333333333334,
+          "parents": 6,
+          "children": 89,
+          "workers": 12,
+          "allocated": 753568,
+          "nodes": {
+            "candidate": 13597,
+            "baseline": 13150,
+            "plain": 26822
+          }
+        }
+      ],
+      "expectedMaxDeepWorkers": 12,
+      "expectedTTCeiling": 67108864
+    },
+    "-sanitized": {
+      "passed": true,
+      "rows": [
+        {
+          "position": "lazy-history-holdout/ending/1106426/0",
+          "rotated": false,
+          "depth": 3,
+          "score": 504,
+          "parents": 2,
+          "children": 66,
+          "workers": 8,
+          "allocated": 619288,
+          "nodes": {
+            "candidate": 302,
+            "baseline": 302,
+            "plain": 346
+          }
+        },
+        {
+          "position": "lazy-history-holdout/ending/1106426/0",
+          "rotated": false,
+          "depth": 4,
+          "score": 492,
+          "parents": 4,
+          "children": 132,
+          "workers": 8,
+          "allocated": 677760,
+          "nodes": {
+            "candidate": 1103,
+            "baseline": 1180,
+            "plain": 1948
+          }
+        },
+        {
+          "position": "lazy-history-holdout/ending/1106426/0",
+          "rotated": true,
+          "depth": 3,
+          "score": 504,
+          "parents": 2,
+          "children": 66,
+          "workers": 8,
+          "allocated": 619288,
+          "nodes": {
+            "candidate": 318,
+            "baseline": 308,
+            "plain": 526
+          }
+        },
+        {
+          "position": "lazy-history-holdout/ending/1106426/0",
+          "rotated": true,
+          "depth": 4,
+          "score": 492,
+          "parents": 4,
+          "children": 132,
+          "workers": 8,
+          "allocated": 677536,
+          "nodes": {
+            "candidate": 1109,
+            "baseline": 1119,
+            "plain": 2315
+          }
+        },
+        {
+          "position": "near-confirmation/ending/9711560/0",
+          "rotated": false,
+          "depth": 3,
+          "score": 62,
+          "parents": 1,
+          "children": 30,
+          "workers": 4,
+          "allocated": 673336,
+          "nodes": {
+            "candidate": 751,
+            "baseline": 739,
+            "plain": 660
+          }
+        },
+        {
+          "position": "near-confirmation/ending/9711560/0",
+          "rotated": false,
+          "depth": 4,
+          "score": 52,
+          "parents": 2,
+          "children": 54,
+          "workers": 4,
+          "allocated": 705432,
+          "nodes": {
+            "candidate": 2231,
+            "baseline": 1943,
+            "plain": 7173
+          }
+        },
+        {
+          "position": "near-confirmation/ending/9711560/0",
+          "rotated": true,
+          "depth": 3,
+          "score": 62,
+          "parents": 1,
+          "children": 28,
+          "workers": 4,
+          "allocated": 673336,
+          "nodes": {
+            "candidate": 614,
+            "baseline": 628,
+            "plain": 558
+          }
+        },
+        {
+          "position": "near-confirmation/ending/9711560/0",
+          "rotated": true,
+          "depth": 4,
+          "score": 52,
+          "parents": 2,
+          "children": 52,
+          "workers": 4,
+          "allocated": 705544,
+          "nodes": {
+            "candidate": 2346,
+            "baseline": 1843,
+            "plain": 6001
+          }
+        },
+        {
+          "position": "deferred-holdout/ending/1105424/0",
+          "rotated": false,
+          "depth": 3,
+          "score": -690,
+          "parents": 3,
+          "children": 53,
+          "workers": 12,
+          "allocated": 705528,
+          "nodes": {
+            "candidate": 1751,
+            "baseline": 1748,
+            "plain": 3335
+          }
+        },
+        {
+          "position": "deferred-holdout/ending/1105424/0",
+          "rotated": false,
+          "depth": 4,
+          "score": -679.3333333333334,
+          "parents": 6,
+          "children": 89,
+          "workers": 12,
+          "allocated": 757376,
+          "nodes": {
+            "candidate": 15751,
+            "baseline": 14818,
+            "plain": 52853
+          }
+        },
+        {
+          "position": "deferred-holdout/ending/1105424/0",
+          "rotated": true,
+          "depth": 3,
+          "score": -690,
+          "parents": 3,
+          "children": 53,
+          "workers": 12,
+          "allocated": 705528,
+          "nodes": {
+            "candidate": 1552,
+            "baseline": 1552,
+            "plain": 2310
+          }
+        },
+        {
+          "position": "deferred-holdout/ending/1105424/0",
+          "rotated": true,
+          "depth": 4,
+          "score": -679.3333333333334,
+          "parents": 6,
+          "children": 89,
+          "workers": 12,
+          "allocated": 753568,
+          "nodes": {
+            "candidate": 13661,
+            "baseline": 13150,
+            "plain": 26822
+          }
+        }
+      ],
+      "expectedMaxDeepWorkers": 12,
+      "expectedTTCeiling": 67108864
+    },
+    "-tsan": {
+      "passed": true,
+      "rows": [
+        {
+          "position": "lazy-history-holdout/ending/1106426/0",
+          "rotated": false,
+          "depth": 3,
+          "score": 504,
+          "parents": 2,
+          "children": 66,
+          "workers": 8,
+          "allocated": 619288,
+          "nodes": {
+            "candidate": 304,
+            "baseline": 302,
+            "plain": 346
+          }
+        },
+        {
+          "position": "lazy-history-holdout/ending/1106426/0",
+          "rotated": false,
+          "depth": 4,
+          "score": 492,
+          "parents": 4,
+          "children": 132,
+          "workers": 8,
+          "allocated": 677760,
+          "nodes": {
+            "candidate": 1110,
+            "baseline": 1180,
+            "plain": 1948
+          }
+        },
+        {
+          "position": "lazy-history-holdout/ending/1106426/0",
+          "rotated": true,
+          "depth": 3,
+          "score": 504,
+          "parents": 2,
+          "children": 66,
+          "workers": 8,
+          "allocated": 619288,
+          "nodes": {
+            "candidate": 321,
+            "baseline": 308,
+            "plain": 526
+          }
+        },
+        {
+          "position": "lazy-history-holdout/ending/1106426/0",
+          "rotated": true,
+          "depth": 4,
+          "score": 492,
+          "parents": 4,
+          "children": 132,
+          "workers": 8,
+          "allocated": 677536,
+          "nodes": {
+            "candidate": 1107,
+            "baseline": 1119,
+            "plain": 2315
+          }
+        },
+        {
+          "position": "near-confirmation/ending/9711560/0",
+          "rotated": false,
+          "depth": 3,
+          "score": 62,
+          "parents": 1,
+          "children": 30,
+          "workers": 4,
+          "allocated": 673336,
+          "nodes": {
+            "candidate": 749,
+            "baseline": 718,
+            "plain": 660
+          }
+        },
+        {
+          "position": "near-confirmation/ending/9711560/0",
+          "rotated": false,
+          "depth": 4,
+          "score": 52,
+          "parents": 2,
+          "children": 54,
+          "workers": 4,
+          "allocated": 705432,
+          "nodes": {
+            "candidate": 2401,
+            "baseline": 1938,
+            "plain": 7173
+          }
+        },
+        {
+          "position": "near-confirmation/ending/9711560/0",
+          "rotated": true,
+          "depth": 3,
+          "score": 62,
+          "parents": 1,
+          "children": 28,
+          "workers": 4,
+          "allocated": 673336,
+          "nodes": {
+            "candidate": 616,
+            "baseline": 649,
+            "plain": 566
+          }
+        },
+        {
+          "position": "near-confirmation/ending/9711560/0",
+          "rotated": true,
+          "depth": 4,
+          "score": 52,
+          "parents": 2,
+          "children": 52,
+          "workers": 4,
+          "allocated": 705488,
+          "nodes": {
+            "candidate": 2237,
+            "baseline": 1894,
+            "plain": 6001
+          }
+        },
+        {
+          "position": "deferred-holdout/ending/1105424/0",
+          "rotated": false,
+          "depth": 3,
+          "score": -690,
+          "parents": 3,
+          "children": 53,
+          "workers": 12,
+          "allocated": 705528,
+          "nodes": {
+            "candidate": 1751,
+            "baseline": 1748,
+            "plain": 3335
+          }
+        },
+        {
+          "position": "deferred-holdout/ending/1105424/0",
+          "rotated": false,
+          "depth": 4,
+          "score": -679.3333333333334,
+          "parents": 6,
+          "children": 89,
+          "workers": 12,
+          "allocated": 757376,
+          "nodes": {
+            "candidate": 15758,
+            "baseline": 14818,
+            "plain": 52853
+          }
+        },
+        {
+          "position": "deferred-holdout/ending/1105424/0",
+          "rotated": true,
+          "depth": 3,
+          "score": -690,
+          "parents": 3,
+          "children": 53,
+          "workers": 12,
+          "allocated": 705528,
+          "nodes": {
+            "candidate": 1552,
+            "baseline": 1552,
+            "plain": 2312
+          }
+        },
+        {
+          "position": "deferred-holdout/ending/1105424/0",
+          "rotated": true,
+          "depth": 4,
+          "score": -679.3333333333334,
+          "parents": 6,
+          "children": 89,
+          "workers": 12,
+          "allocated": 753568,
+          "nodes": {
+            "candidate": 13659,
+            "baseline": 13150,
+            "plain": 26822
+          }
+        }
+      ],
+      "expectedMaxDeepWorkers": 12,
+      "expectedTTCeiling": 67108864
+    }
+  }
+}

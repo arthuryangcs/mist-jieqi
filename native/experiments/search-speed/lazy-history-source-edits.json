@@ -1,0 +1,41 @@
+{
+  "baseSha256": "6a3b23aaa1a6820dfbd1b89f897eeb2574b59fee827d1ab35c4ac93beee7b5aa",
+  "resultSha256": "7d848c79bf4312e7886afc5df51069f465ca6f1ef45aefdfc06966db4f6e3f88",
+  "edits": [
+    {
+      "startLine": 583,
+      "endLine": 583,
+      "before": [],
+      "after": [
+        "// Shared immutable zeroes only; each Search allocates its own writable table.\n",
+        "struct SearchHistory {\n",
+        "    static inline const std::array<uint32_t,16200> zero{};\n",
+        "    std::unique_ptr<std::array<uint32_t,16200>> owned;\n",
+        "    const uint32_t* values=zero.data();\n",
+        "    uint32_t operator[](size_t i)const{return values[i];}\n",
+        "    uint32_t& writable(size_t i){if(!owned){owned=std::make_unique<std::array<uint32_t,16200>>();values=owned->data();}return (*owned)[i];}\n",
+        "};\n"
+      ]
+    },
+    {
+      "startLine": 586,
+      "endLine": 587,
+      "before": [
+        "    std::vector<State> worlds;std::array<uint32_t,16200> history{};std::array<std::vector<Move>,MAX_SEARCH_PLY> killers;\n"
+      ],
+      "after": [
+        "    std::vector<State> worlds;SearchHistory history;std::array<std::vector<Move>,MAX_SEARCH_PLY> killers;\n"
+      ]
+    },
+    {
+      "startLine": 674,
+      "endLine": 675,
+      "before": [
+        "            if(v>=beta){if(!capture&&depth>0){auto& h=history[hbase+m.index()];h=std::min(uint32_t(2000),h+uint32_t(std::min(uint64_t(2000),uint64_t(depth)*uint64_t(depth))));auto& ks=killers.at(ply);if(std::find(ks.begin(),ks.end(),m)==ks.end())ks.insert(ks.begin(),m);if(ks.size()>2)ks.resize(2);}save(v,1,m);return v;}\n"
+      ],
+      "after": [
+        "            if(v>=beta){if(!capture&&depth>0){auto& h=history.writable(hbase+m.index());h=std::min(uint32_t(2000),h+uint32_t(std::min(uint64_t(2000),uint64_t(depth)*uint64_t(depth))));auto& ks=killers.at(ply);if(std::find(ks.begin(),ks.end(),m)==ks.end())ks.insert(ks.begin(),m);if(ks.size()>2)ks.resize(2);}save(v,1,m);return v;}\n"
+      ]
+    }
+  ]
+}

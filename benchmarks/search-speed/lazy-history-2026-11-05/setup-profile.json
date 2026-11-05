@@ -1,0 +1,383 @@
+{
+  "startedAt": "2026-11-05T03:59:12.012Z",
+  "rows": [
+    {
+      "repeat": 0,
+      "position": "deferred-holdout/opening/1105001/0",
+      "startedAt": "2026-11-05T03:59:12.077Z",
+      "readyMs": 622.773396,
+      "wallMs": 1936.0098270000003,
+      "nodes": 13419228,
+      "score": 80.56962666945898,
+      "mainDepth": 6,
+      "selDepth": 14,
+      "completedDepth": 5,
+      "selfCpuMs": 6795.112999999999,
+      "preparationMs": 4.125242999999955,
+      "terminationReason": "time-budget",
+      "threads": 4,
+      "phases": [
+        {
+          "phase": "worlds-ready",
+          "wallMs": 0.67776,
+          "arenaMs": 0.005598,
+          "arenaCount": 1,
+          "arenaCapacity": 67108864
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "repeat": 0,
+      "position": "deferred-holdout/ending/1105204/0",
+      "startedAt": "2026-11-05T03:59:14.642Z",
+      "readyMs": 5.86043299999983,
+      "wallMs": 1928.204675,
+      "nodes": 18972214,
+      "score": 413.3333333333333,
+      "mainDepth": 9,
+      "selDepth": 17,
+      "completedDepth": 8,
+      "selfCpuMs": 7408.092,
+      "preparationMs": 1.4867150000000038,
+      "terminationReason": "time-budget",
+      "threads": 4,
+      "phases": [
+        {
+          "phase": "bright-contexts",
+          "wallMs": 0.792669,
+          "arenaMs": 0.018861,
+          "arenaCount": 14,
+          "arenaCapacity": 67108608
+        },
+        {
+          "phase": "bright-ready",
+          "wallMs": 0.879483,
+          "arenaMs": 0.018861,
+          "arenaCount": 14,
+          "arenaCapacity": 67108608
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "repeat": 0,
+      "position": "deferred-holdout/ending/1105303/0",
+      "startedAt": "2026-11-05T03:59:16.578Z",
+      "readyMs": 5.0979379999998855,
+      "wallMs": 7.702948000000106,
+      "nodes": 168,
+      "score": 98999,
+      "mainDepth": 1,
+      "selDepth": 4,
+      "completedDepth": 1,
+      "selfCpuMs": 3.011,
+      "preparationMs": 2.76591499999995,
+      "terminationReason": "terminal",
+      "threads": 4,
+      "phases": [
+        {
+          "phase": "bright-contexts",
+          "wallMs": 2.26348,
+          "arenaMs": 0.05708,
+          "arenaCount": 49,
+          "arenaCapacity": 67107264
+        },
+        {
+          "phase": "bright-ready",
+          "wallMs": 2.33648,
+          "arenaMs": 0.05708,
+          "arenaCount": 49,
+          "arenaCapacity": 67107264
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "repeat": 0,
+      "position": "deferred-holdout/ending/1105424/0",
+      "startedAt": "2026-11-05T03:59:16.593Z",
+      "readyMs": 5.104025999999976,
+      "wallMs": 1929.879148,
+      "nodes": 18026530,
+      "score": -489.3333333333333,
+      "mainDepth": 9,
+      "selDepth": 17,
+      "completedDepth": 8,
+      "selfCpuMs": 6736.524,
+      "preparationMs": 0.6413189999993847,
+      "terminationReason": "time-budget",
+      "threads": 4,
+      "phases": [
+        {
+          "phase": "frontier-contexts",
+          "wallMs": 7.81484,
+          "arenaMs": 0.223822,
+          "arenaCount": 159,
+          "arenaCapacity": 67100544
+        },
+        {
+          "phase": "frontier-ready",
+          "wallMs": 7.9008,
+          "arenaMs": 0.223822,
+          "arenaCount": 159,
+          "arenaCapacity": 67100544
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "repeat": 1,
+      "position": "deferred-holdout/opening/1105001/0",
+      "startedAt": "2026-11-05T03:59:18.530Z",
+      "readyMs": 5.0589749999999185,
+      "wallMs": 1933.499777,
+      "nodes": 14359516,
+      "score": 80.56962666945898,
+      "mainDepth": 6,
+      "selDepth": 14,
+      "completedDepth": 5,
+      "selfCpuMs": 6983.263,
+      "preparationMs": 0.9807530000007318,
+      "terminationReason": "time-budget",
+      "threads": 4,
+      "phases": [
+        {
+          "phase": "worlds-ready",
+          "wallMs": 0.522881,
+          "arenaMs": 0.003022,
+          "arenaCount": 1,
+          "arenaCapacity": 67108864
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "repeat": 1,
+      "position": "deferred-holdout/ending/1105204/0",
+      "startedAt": "2026-11-05T03:59:20.473Z",
+      "readyMs": 5.611661000000822,
+      "wallMs": 1927.924278999999,
+      "nodes": 19055586,
+      "score": 413.3333333333333,
+      "mainDepth": 9,
+      "selDepth": 17,
+      "completedDepth": 8,
+      "selfCpuMs": 7409.709,
+      "preparationMs": 1.291998999999123,
+      "terminationReason": "time-budget",
+      "threads": 4,
+      "phases": [
+        {
+          "phase": "bright-contexts",
+          "wallMs": 0.767239,
+          "arenaMs": 0.018258,
+          "arenaCount": 14,
+          "arenaCapacity": 67108608
+        },
+        {
+          "phase": "bright-ready",
+          "wallMs": 0.844145,
+          "arenaMs": 0.018258,
+          "arenaCount": 14,
+          "arenaCapacity": 67108608
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "repeat": 1,
+      "position": "deferred-holdout/ending/1105303/0",
+      "startedAt": "2026-11-05T03:59:22.409Z",
+      "readyMs": 4.960908999999447,
+      "wallMs": 8.145915999999488,
+      "nodes": 168,
+      "score": 98999,
+      "mainDepth": 1,
+      "selDepth": 4,
+      "completedDepth": 1,
+      "selfCpuMs": 2.9690000000000003,
+      "preparationMs": 3.2585479999997915,
+      "terminationReason": "terminal",
+      "threads": 4,
+      "phases": [
+        {
+          "phase": "bright-contexts",
+          "wallMs": 2.18222,
+          "arenaMs": 0.05632,
+          "arenaCount": 49,
+          "arenaCapacity": 67107264
+        },
+        {
+          "phase": "bright-ready",
+          "wallMs": 2.25334,
+          "arenaMs": 0.05632,
+          "arenaCount": 49,
+          "arenaCapacity": 67107264
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "repeat": 1,
+      "position": "deferred-holdout/ending/1105424/0",
+      "startedAt": "2026-11-05T03:59:22.423Z",
+      "readyMs": 5.019092000000455,
+      "wallMs": 1929.8269060000002,
+      "nodes": 17944026,
+      "score": -489.3333333333333,
+      "mainDepth": 9,
+      "selDepth": 17,
+      "completedDepth": 8,
+      "selfCpuMs": 6724.073,
+      "preparationMs": 0.4670449999994162,
+      "terminationReason": "time-budget",
+      "threads": 4,
+      "phases": [
+        {
+          "phase": "frontier-contexts",
+          "wallMs": 7.88082,
+          "arenaMs": 0.222258,
+          "arenaCount": 159,
+          "arenaCapacity": 67100544
+        },
+        {
+          "phase": "frontier-ready",
+          "wallMs": 7.96989,
+          "arenaMs": 0.222258,
+          "arenaCount": 159,
+          "arenaCapacity": 67100544
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "repeat": 2,
+      "position": "deferred-holdout/opening/1105001/0",
+      "startedAt": "2026-11-05T03:59:24.360Z",
+      "readyMs": 5.185757999999623,
+      "wallMs": 1933.5629559999998,
+      "nodes": 14311856,
+      "score": 80.56962666945898,
+      "mainDepth": 6,
+      "selDepth": 14,
+      "completedDepth": 5,
+      "selfCpuMs": 6991.43,
+      "preparationMs": 0.7513620000008814,
+      "terminationReason": "time-budget",
+      "threads": 4,
+      "phases": [
+        {
+          "phase": "worlds-ready",
+          "wallMs": 0.543026,
+          "arenaMs": 0.001723,
+          "arenaCount": 1,
+          "arenaCapacity": 67108864
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "repeat": 2,
+      "position": "deferred-holdout/ending/1105204/0",
+      "startedAt": "2026-11-05T03:59:26.305Z",
+      "readyMs": 6.006010999999489,
+      "wallMs": 1928.184217,
+      "nodes": 19013470,
+      "score": 413.3333333333333,
+      "mainDepth": 9,
+      "selDepth": 17,
+      "completedDepth": 8,
+      "selfCpuMs": 7412.862,
+      "preparationMs": 1.1309040000014647,
+      "terminationReason": "time-budget",
+      "threads": 4,
+      "phases": [
+        {
+          "phase": "bright-contexts",
+          "wallMs": 0.826027,
+          "arenaMs": 0.019885,
+          "arenaCount": 14,
+          "arenaCapacity": 67108608
+        },
+        {
+          "phase": "bright-ready",
+          "wallMs": 0.921135,
+          "arenaMs": 0.019885,
+          "arenaCount": 14,
+          "arenaCapacity": 67108608
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "repeat": 2,
+      "position": "deferred-holdout/ending/1105303/0",
+      "startedAt": "2026-11-05T03:59:28.241Z",
+      "readyMs": 4.998756000000867,
+      "wallMs": 7.770833999999013,
+      "nodes": 168,
+      "score": 98999,
+      "mainDepth": 1,
+      "selDepth": 4,
+      "completedDepth": 1,
+      "selfCpuMs": 3.3230000000000004,
+      "preparationMs": 2.371718000000328,
+      "terminationReason": "terminal",
+      "threads": 4,
+      "phases": [
+        {
+          "phase": "bright-contexts",
+          "wallMs": 2.55527,
+          "arenaMs": 0.06509,
+          "arenaCount": 49,
+          "arenaCapacity": 67107264
+        },
+        {
+          "phase": "bright-ready",
+          "wallMs": 2.64046,
+          "arenaMs": 0.06509,
+          "arenaCount": 49,
+          "arenaCapacity": 67107264
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "repeat": 2,
+      "position": "deferred-holdout/ending/1105424/0",
+      "startedAt": "2026-11-05T03:59:28.256Z",
+      "readyMs": 5.097571000002063,
+      "wallMs": 1929.6802829999979,
+      "nodes": 17751810,
+      "score": -489.3333333333333,
+      "mainDepth": 9,
+      "selDepth": 17,
+      "completedDepth": 8,
+      "selfCpuMs": 6722.131,
+      "preparationMs": 0.4752630000002682,
+      "terminationReason": "time-budget",
+      "threads": 4,
+      "phases": [
+        {
+          "phase": "frontier-contexts",
+          "wallMs": 8.03317,
+          "arenaMs": 0.218533,
+          "arenaCount": 159,
+          "arenaCapacity": 67100544
+        },
+        {
+          "phase": "frontier-ready",
+          "wallMs": 8.11904,
+          "arenaMs": 0.218533,
+          "arenaCount": 159,
+          "arenaCapacity": 67100544
+        }
+      ],
+      "status": "ok"
+    }
+  ],
+  "completed": true,
+  "finishedAt": "2026-11-05T03:59:30.192Z",
+  "note": "Diagnostic instrumented binary, not throughput. Only pre-search checkpoints captured; unused-arena teardown count not measured."
+}

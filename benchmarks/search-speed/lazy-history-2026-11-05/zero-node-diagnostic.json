@@ -1,0 +1,17 @@
+{
+  "criterion": "reported nodes==0 and selDepth==0 while completedDepth>0",
+  "interpretation": "no actual visited search path; raw iteration counters must not be treated as ply depth or a speed gain",
+  "rawMetricsChanged": false,
+  "rows": [
+    {
+      "game": 5,
+      "ply": 62,
+      "engine": "opponent",
+      "nodes": 0,
+      "mainDepth": 1726658,
+      "completedDepth": 1726658,
+      "selDepth": 0,
+      "elapsedMs": 1939.1195080000034
+    }
+  ]
+}

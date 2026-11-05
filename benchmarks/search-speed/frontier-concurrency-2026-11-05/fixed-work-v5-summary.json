@@ -1,0 +1,242 @@
+{
+  "positions": [
+    {
+      "position": "lazy-history-holdout/ending/1106426/0",
+      "primary": true,
+      "candidate": {
+        "wallMs": 1080.9187209999982,
+        "selfCpuMs": 3591.1189999999997,
+        "nodes": 6701557,
+        "ttAllocatedBytes": 1850512,
+        "ttDenied": 0,
+        "deepParents": 16,
+        "deepWorkerContexts": 8
+      },
+      "baseline": {
+        "wallMs": 1695.800732,
+        "selfCpuMs": 2936.531,
+        "nodes": 6240594,
+        "ttAllocatedBytes": 1850512,
+        "ttDenied": 0,
+        "deepParents": 0,
+        "deepWorkerContexts": 0
+      },
+      "speedup": 1.5688512920112545,
+      "nodeRatio": 1.0738652442379684,
+      "candidateCores": 3.3222840258310278,
+      "baselineCores": 1.7316486215551417
+    },
+    {
+      "position": "lazy-history-holdout/ending/1106426/0/rotated",
+      "primary": true,
+      "candidate": {
+        "wallMs": 1346.8183300000005,
+        "selfCpuMs": 4132.521,
+        "nodes": 7690669,
+        "ttAllocatedBytes": 2463040,
+        "ttDenied": 0,
+        "deepParents": 16,
+        "deepWorkerContexts": 8
+      },
+      "baseline": {
+        "wallMs": 2083.423738000005,
+        "selfCpuMs": 3869.087,
+        "nodes": 8058575,
+        "ttAllocatedBytes": 2463040,
+        "ttDenied": 0,
+        "deepParents": 0,
+        "deepWorkerContexts": 0
+      },
+      "speedup": 1.546922618732108,
+      "nodeRatio": 0.9543460227149341,
+      "candidateCores": 3.068358150427013,
+      "baselineCores": 1.8570811733738588
+    },
+    {
+      "position": "near-confirmation/ending/9711560/0",
+      "primary": true,
+      "candidate": {
+        "wallMs": 1894.1972690000002,
+        "selfCpuMs": 4573.202,
+        "nodes": 10082241,
+        "ttAllocatedBytes": 5553856,
+        "ttDenied": 0,
+        "deepParents": 8,
+        "deepWorkerContexts": 4
+      },
+      "baseline": {
+        "wallMs": 2146.913969999994,
+        "selfCpuMs": 4453.657,
+        "nodes": 10071329,
+        "ttAllocatedBytes": 5553856,
+        "ttDenied": 0,
+        "deepParents": 0,
+        "deepWorkerContexts": 0
+      },
+      "speedup": 1.1334162524336286,
+      "nodeRatio": 1.0010834717046777,
+      "candidateCores": 2.414321926677849,
+      "baselineCores": 2.0744459546276146
+    },
+    {
+      "position": "near-confirmation/ending/9711560/0/rotated",
+      "primary": true,
+      "candidate": {
+        "wallMs": 2180.9895319999996,
+        "selfCpuMs": 5557.295,
+        "nodes": 12163603,
+        "ttAllocatedBytes": 5560352,
+        "ttDenied": 0,
+        "deepParents": 8,
+        "deepWorkerContexts": 4
+      },
+      "baseline": {
+        "wallMs": 2457.272558000004,
+        "selfCpuMs": 4978.403,
+        "nodes": 11820114,
+        "ttAllocatedBytes": 5560352,
+        "ttDenied": 0,
+        "deepParents": 0,
+        "deepWorkerContexts": 0
+      },
+      "speedup": 1.1266778322162092,
+      "nodeRatio": 1.0290597028082809,
+      "candidateCores": 2.548061289823743,
+      "baselineCores": 2.0259873019751486
+    },
+    {
+      "position": "deferred-holdout/ending/1105424/0",
+      "primary": true,
+      "candidate": {
+        "wallMs": 1588.3827389999933,
+        "selfCpuMs": 6144.637,
+        "nodes": 16499034,
+        "ttAllocatedBytes": 5479352,
+        "ttDenied": 0,
+        "deepParents": 18,
+        "deepWorkerContexts": 12
+      },
+      "baseline": {
+        "wallMs": 1585.704144000003,
+        "selfCpuMs": 6121.088,
+        "nodes": 16462136,
+        "ttAllocatedBytes": 5478680,
+        "ttDenied": 0,
+        "deepParents": 0,
+        "deepWorkerContexts": 0
+      },
+      "speedup": 0.9983136337771609,
+      "nodeRatio": 1.0022413859295052,
+      "candidateCores": 3.868486385005992,
+      "baselineCores": 3.8601702739827033
+    },
+    {
+      "position": "deferred-holdout/ending/1105424/0/rotated",
+      "primary": true,
+      "candidate": {
+        "wallMs": 1508.0454420000024,
+        "selfCpuMs": 5778.7609999999995,
+        "nodes": 18459655,
+        "ttAllocatedBytes": 5559936,
+        "ttDenied": 0,
+        "deepParents": 18,
+        "deepWorkerContexts": 12
+      },
+      "baseline": {
+        "wallMs": 1514.0085269999981,
+        "selfCpuMs": 5813.774,
+        "nodes": 18427047,
+        "ttAllocatedBytes": 5559320,
+        "ttDenied": 0,
+        "deepParents": 0,
+        "deepWorkerContexts": 0
+      },
+      "speedup": 1.0039541812427664,
+      "nodeRatio": 1.0017695727372922,
+      "candidateCores": 3.831954156723608,
+      "baselineCores": 3.8399876198319505
+    },
+    {
+      "position": "lazy-history-holdout/opening/1106001/0",
+      "primary": false,
+      "candidate": {
+        "wallMs": 1172.1888369999979,
+        "selfCpuMs": 3940.5879999999997,
+        "nodes": 7508205,
+        "ttAllocatedBytes": 38463224,
+        "ttDenied": 0,
+        "deepParents": 0,
+        "deepWorkerContexts": 0
+      },
+      "baseline": {
+        "wallMs": 1194.3979790000012,
+        "selfCpuMs": 4009.925,
+        "nodes": 7508205,
+        "ttAllocatedBytes": 38463224,
+        "ttDenied": 0,
+        "deepParents": 0,
+        "deepWorkerContexts": 0
+      },
+      "speedup": 1.01894672709633,
+      "nodeRatio": 1.0,
+      "candidateCores": 3.3617347952956207,
+      "baselineCores": 3.3572771140799094
+    },
+    {
+      "position": "lazy-history-holdout/middle/1106117/55",
+      "primary": false,
+      "candidate": {
+        "wallMs": 679.094261000002,
+        "selfCpuMs": 2610.44,
+        "nodes": 5540182,
+        "ttAllocatedBytes": 29016752,
+        "ttDenied": 0,
+        "deepParents": 0,
+        "deepWorkerContexts": 0
+      },
+      "baseline": {
+        "wallMs": 682.0858990000052,
+        "selfCpuMs": 2616.248,
+        "nodes": 5540182,
+        "ttAllocatedBytes": 29016752,
+        "ttDenied": 0,
+        "deepParents": 0,
+        "deepWorkerContexts": 0
+      },
+      "speedup": 1.0044053354177929,
+      "nodeRatio": 1.0,
+      "candidateCores": 3.8440024454867134,
+      "baselineCores": 3.8356576551950976
+    },
+    {
+      "position": "deferred-holdout/ending/1105204/0",
+      "primary": false,
+      "candidate": {
+        "wallMs": 118.64187999999922,
+        "selfCpuMs": 403.41,
+        "nodes": 951543,
+        "ttAllocatedBytes": 5472880,
+        "ttDenied": 0,
+        "deepParents": 0,
+        "deepWorkerContexts": 0
+      },
+      "baseline": {
+        "wallMs": 121.14191599999322,
+        "selfCpuMs": 408.38399999999996,
+        "nodes": 951543,
+        "ttAllocatedBytes": 5472880,
+        "ttDenied": 0,
+        "deepParents": 0,
+        "deepWorkerContexts": 0
+      },
+      "speedup": 1.0210721205698527,
+      "nodeRatio": 1.0,
+      "candidateCores": 3.4002327002910158,
+      "baselineCores": 3.3711205294129805
+    }
+  ],
+  "technicalFailures": 0,
+  "primaryGeometricSpeedup": 1.2079160213445574,
+  "primaryMinimum": 0.9983136337771609,
+  "passed": true
+}

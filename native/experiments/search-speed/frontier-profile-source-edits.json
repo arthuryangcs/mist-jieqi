@@ -1,0 +1,241 @@
+{
+  "baseSha256": "6a3b23aaa1a6820dfbd1b89f897eeb2574b59fee827d1ab35c4ac93beee7b5aa",
+  "resultSha256": "bd5ea03b094a05ceb7979305404d1b0db3dce83eb7505c890485a062d936445b",
+  "edits": [
+    {
+      "startLine": 382,
+      "endLine": 382,
+      "before": [],
+      "after": [
+        "    struct Shared {TTTable* owner;std::mutex mutex;explicit Shared(TTTable& t):owner(&t){}};\n",
+        "    std::shared_ptr<Shared> sharing;\n"
+      ]
+    },
+    {
+      "startLine": 383,
+      "endLine": 385,
+      "before": [
+        "    const Entry* probe(const Key& k)const{auto i=map.find(k);return i==map.end()?nullptr:&i->second;}\n",
+        "    void store(const Key& k,const Entry& e){auto i=map.find(k);if(i!=map.end()){i->second=e;return;}if(map.size()>=entryLimit)return;\n"
+      ],
+      "after": [
+        "    const Entry* probeLocal(const Key& k)const{auto i=map.find(k);return i==map.end()?nullptr:&i->second;}\n",
+        "    const Entry* probe(const Key& k)const{\n",
+        "        if(!sharing)return probeLocal(k);\n",
+        "        // Snapshot is valid until the next shared probe on this thread. Search\n",
+        "        // copies it immediately; no mutable map entry escapes the lock.\n",
+        "        static thread_local Entry snapshot;\n",
+        "        std::lock_guard<std::mutex> lock(sharing->mutex);const Entry* p=sharing->owner->probeLocal(k);\n",
+        "        if(!p)return nullptr;snapshot=*p;return &snapshot;\n",
+        "    }\n",
+        "    void storeLocal(const Key& k,const Entry& e){auto i=map.find(k);if(i!=map.end()){i->second=e;return;}if(map.size()>=entryLimit)return;\n"
+      ]
+    },
+    {
+      "startLine": 387,
+      "endLine": 387,
+      "before": [],
+      "after": [
+        "    void store(const Key& k,const Entry& e){if(!sharing){storeLocal(k,e);return;}std::lock_guard<std::mutex> lock(sharing->mutex);sharing->owner->storeLocal(k,e);}\n"
+      ]
+    },
+    {
+      "startLine": 985,
+      "endLine": 985,
+      "before": [],
+      "after": [
+        "// Own bounded three-ply frontier. Maps/history/state are private per root/lane.\n",
+        "// Deep workers share a mutex-protected full-key TT within one parent only.\n",
+        "// Board/history/killer state remains private; no cross-observer table sharing.\n",
+        "struct FrontierChildWorker {\n",
+        "    State state; Search search;\n",
+        "    FrontierChildWorker(PrivateRoot& parent,const Packet& p,Move root,Move reply,std::shared_ptr<TTTable::Shared> table,\n",
+        "                        std::chrono::steady_clock::time_point start,double limit):state(stateInArena(*parent.arena,p)) {\n",
+        "        state.table.sharing=std::move(table);\n",
+        "        push(state,root);state.positions.push_back(state.position());state.historyDigest+=positionDigest(state.position());push(state,reply);\n",
+        "        if(!(state.key()==parent.state.key()))throw std::logic_error(\"deep frontier base drift\");\n",
+        "        state.positions.push_back(state.position());state.historyDigest+=positionDigest(state.position());\n",
+        "        search.start=start;search.limit=limit;\n",
+        "    }\n",
+        "};\n",
+        "struct FrontierDeepGroup {\n",
+        "    size_t origin=std::numeric_limits<size_t>::max();\n",
+        "    std::vector<std::unique_ptr<FrontierChildWorker>> workers;\n",
+        "    std::shared_ptr<TTTable::Shared> table;\n",
+        "};\n",
+        "struct FrontierCell {double start=-1,end=-1;uint64_t nodes=0;int lane=-1;};\n",
+        "struct FrontierSpan {FrontierCell& c;Search& work;const Search& clock;uint64_t before;FrontierSpan(FrontierCell& c,Search& s,const Search& k,int lane):c(c),work(s),clock(k),before(s.nodes){c.start=k.elapsed();c.lane=lane;}~FrontierSpan(){c.end=clock.elapsed();c.nodes=work.nodes-before;}};\n"
+      ]
+    },
+    {
+      "startLine": 999,
+      "endLine": 1001,
+      "before": [
+        "    auto stats=[&]{controller.nodes=splitNodes;controller.safetyCutoffs=0;for(const auto& c:contexts){controller.nodes+=c->search.nodes;controller.safetyCutoffs+=c->search.safetyCutoffs;controller.selDepth=std::max(controller.selDepth,c->search.selDepth);}};\n",
+        "    auto telemetry=[&]{if(p.mode!=\"STREAM\"||controller.elapsed()-lastTelemetry<50)return;lastTelemetry=controller.elapsed();uint64_t nodes=splitNodes;int sel=controller.selDepth;for(const auto& c:contexts){nodes+=active?c->search.publishedNodes.load(std::memory_order_relaxed):c->search.nodes;sel=std::max(sel,c->search.publishedSelDepth.load(std::memory_order_relaxed));}std::cout<<\"{\\\"telemetry\\\":{\\\"mainDepth\\\":\"<<currentDepth<<\",\\\"completedDepth\\\":\"<<(iterations.empty()?0:iterations.back().depth)<<\",\\\"selDepth\\\":\"<<sel<<\",\\\"visitedNodes\\\":\"<<nodes<<\",\\\"elapsedMs\\\":\"<<controller.elapsed()<<\",\\\"statsExact\\\":false,\\\"searchStatus\\\":\\\"searching\\\"}}\\n\"<<std::flush;};\n"
+      ],
+      "after": [
+        "    std::array<FrontierDeepGroup,3> deepGroups;std::array<std::atomic<double>,3> continuationAlpha;\n",
+        "    std::array<Move,512> principalHints; // Per-input/context hints, never shared across observers or requests.\n",
+        "    uint64_t retiredNodes=0,retiredSafety=0,deepParents=0,deepChildren=0;int retiredSel=0;std::vector<uint64_t> deepProbes(lanes),deepResearches(lanes);\n",
+        "    auto stats=[&]{controller.nodes=splitNodes+retiredNodes;controller.safetyCutoffs=retiredSafety;controller.selDepth=std::max(controller.selDepth,retiredSel);\n",
+        "        auto add=[&](const Search& w){controller.nodes+=w.nodes;controller.safetyCutoffs+=w.safetyCutoffs;controller.selDepth=std::max(controller.selDepth,w.selDepth);};\n",
+        "        for(const auto& c:contexts)add(c->search);for(const auto& g:deepGroups)for(const auto& w:g.workers)add(w->search);\n",
+        "    };\n",
+        "    auto telemetry=[&]{if(p.mode!=\"STREAM\"||controller.elapsed()-lastTelemetry<50)return;lastTelemetry=controller.elapsed();uint64_t nodes=splitNodes+retiredNodes;int sel=controller.selDepth;auto add=[&](const Search& w){nodes+=active?w.publishedNodes.load(std::memory_order_relaxed):w.nodes;sel=std::max(sel,w.publishedSelDepth.load(std::memory_order_relaxed));};for(const auto& c:contexts)add(c->search);for(const auto& g:deepGroups)for(const auto& w:g.workers)add(w->search);std::cout<<\"{\\\"telemetry\\\":{\\\"mainDepth\\\":\"<<currentDepth<<\",\\\"completedDepth\\\":\"<<(iterations.empty()?0:iterations.back().depth)<<\",\\\"selDepth\\\":\"<<sel<<\",\\\"visitedNodes\\\":\"<<nodes<<\",\\\"elapsedMs\\\":\"<<controller.elapsed()<<\",\\\"statsExact\\\":false,\\\"searchStatus\\\":\\\"searching\\\"}}\\n\"<<std::flush;};\n",
+        "    struct BatchTrace {int depth;const char* stage;double start,end;std::vector<FrontierCell> cells;};std::vector<BatchTrace> traces;\n"
+      ]
+    },
+    {
+      "startLine": 1002,
+      "endLine": 1004,
+      "before": [
+        "    struct Job {size_t group,reply,context;int depth,ply,ext;double alpha;bool fallback;};\n",
+        "    auto batch=[&](const std::vector<Job>& jobs){\n"
+      ],
+      "after": [
+        "    struct Job {size_t group,reply,context;int depth,ply,ext;double alpha;bool fallback;bool deeper=false;Move next;};\n",
+        "    auto batch=[&](const std::vector<Job>& jobs,const char* stage){\n",
+        "        const double batchStart=controller.elapsed();std::vector<FrontierCell> cells(jobs.size());\n"
+      ]
+    },
+    {
+      "startLine": 1006,
+      "endLine": 1009,
+      "before": [
+        "        try{for(size_t lane=0;lane<std::min(lanes,jobs.size());lane++)futures.push_back(pool->submit([&]{for(size_t i=next.fetch_add(1);i<jobs.size();i=next.fetch_add(1)){\n",
+        "            if(cancelled.load(std::memory_order_relaxed))return;const Job j=jobs[i];PrivateRoot& c=*contexts[j.context];try{\n",
+        "                if(c.search.elapsed()>c.search.limit)throw Timeout{};\n"
+      ],
+      "after": [
+        "        try{for(size_t lane=0;lane<std::min(lanes,jobs.size());lane++)futures.push_back(pool->submit([&,lane]{for(size_t i=next.fetch_add(1);i<jobs.size();i=next.fetch_add(1)){\n",
+        "            if(cancelled.load(std::memory_order_relaxed))return;const Job j=jobs[i];\n",
+        "            Search& work=j.deeper?deepGroups[j.group].workers[lane]->search:contexts[j.context]->search;\n",
+        "            State& state=j.deeper?deepGroups[j.group].workers[lane]->state:contexts[j.context]->state;\n",
+        "            FrontierSpan trace(cells[i],work,controller,int(lane));\n",
+        "            try{\n",
+        "                if(work.elapsed()>work.limit)throw Timeout{};\n"
+      ]
+    },
+    {
+      "startLine": 1019,
+      "endLine": 1020,
+      "before": [
+        "                const auto originalKey=c.state.key();const auto originalHistory=c.state.positions;\n"
+      ],
+      "after": [
+        "                const auto originalKey=state.key();const auto originalHistory=state.positions;\n"
+      ]
+    },
+    {
+      "startLine": 1021,
+      "endLine": 1023,
+      "before": [
+        "                if(j.fallback){Undo u=push(c.state,groups[j.group].root);try{values[i]=c.search.search(c.state,j.depth,-inf,inf,1);}catch(...){pop(c.state,groups[j.group].root,u);throw;}pop(c.state,groups[j.group].root,u);}\n",
+        "                else {const double bound=provenAlpha[j.group].load(std::memory_order_relaxed);values[i]=-c.search.search(c.state,j.depth,-inf,-bound,j.ply,3,j.ext);exactProof[i]=values[i]>bound;\n"
+      ],
+      "after": [
+        "                if(j.fallback){Undo u=push(state,groups[j.group].root);try{values[i]=work.search(state,j.depth,-inf,inf,1);}catch(...){pop(state,groups[j.group].root,u);throw;}pop(state,groups[j.group].root,u);}\n",
+        "                else if(j.deeper){\n",
+        "                    const double bound=continuationAlpha[j.group].load(std::memory_order_relaxed);double proofBound=bound;Undo u=push(state,j.next);\n",
+        "                    try{\n",
+        "                        if(std::isfinite(bound)){\n",
+        "                            deepProbes[lane]++;values[i]=-work.search(state,j.depth,-bound-1,-bound,3,3,j.ext);\n",
+        "                            if(values[i]>bound){proofBound=continuationAlpha[j.group].load(std::memory_order_relaxed);deepResearches[lane]++;values[i]=-work.search(state,j.depth,-inf,-proofBound,3,3,j.ext);}\n",
+        "                        }else values[i]=-work.search(state,j.depth,-inf,inf,3,3,j.ext);\n",
+        "                    }catch(...){pop(state,j.next,u);throw;}pop(state,j.next,u);\n",
+        "                    exactProof[i]=values[i]>proofBound;double old=continuationAlpha[j.group].load(std::memory_order_relaxed);\n",
+        "                    while(values[i]>old&&!continuationAlpha[j.group].compare_exchange_weak(old,values[i],std::memory_order_relaxed)){}\n",
+        "                }else{\n",
+        "                    const double bound=provenAlpha[j.group].load(std::memory_order_relaxed);values[i]=-work.search(state,j.depth,-inf,-bound,j.ply,3,j.ext);exactProof[i]=values[i]>bound;\n"
+      ]
+    },
+    {
+      "startLine": 1026,
+      "endLine": 1027,
+      "before": [
+        "                if(!(c.state.key()==originalKey)||c.state.positions!=originalHistory)throw std::logic_error(\"frontier context not restored\");\n"
+      ],
+      "after": [
+        "                if(!(state.key()==originalKey)||state.positions!=originalHistory)throw std::logic_error(\"frontier context not restored\");\n"
+      ]
+    },
+    {
+      "startLine": 1031,
+      "endLine": 1032,
+      "before": [
+        "        active=false;stats();if(error)std::rethrow_exception(error);return values;\n"
+      ],
+      "after": [
+        "        active=false;stats();traces.push_back({currentDepth,stage,batchStart,controller.elapsed(),std::move(cells)});if(error)std::rethrow_exception(error);return values;\n"
+      ]
+    },
+    {
+      "startLine": 1044,
+      "endLine": 1045,
+      "before": [
+        "            auto initial=batch(first);for(size_t i=0;i<first.size();i++)best[first[i].group]=initial[i];\n"
+      ],
+      "after": [
+        "            std::vector<Job> expanded;std::array<std::vector<Move>,3> continuations;std::array<Job,3> seeds;std::array<bool,3> deeper{};\n",
+        "            for(const Job& j:first){\n",
+        "                State& parent=contexts[j.context]->state;int previous=0;for(size_t i=parent.historyStart;i<parent.positions.size();i++)previous+=parent.positions[i]==parent.position();\n",
+        "                // This is a scheduling choice, not a search depth cap. Terminal,\n",
+        "                // cycle/clock and quiescence entries retain the original search.\n",
+        "                if(j.fallback||j.depth<=0||previous>=2||parent.quiet>=120||parent.gamePly>=400){expanded.push_back(j);continue;}\n",
+        "                auto moves=legal(parent.board,parent.turn);if(moves.size()<2){expanded.push_back(j);continue;}\n",
+        "                const Move hint=principalHints[j.context];std::stable_sort(moves.begin(),moves.end(),[&](Move a,Move b){const double av=(a==hint?10000000.0:priority(parent,a)),bv=(b==hint?10000000.0:priority(parent,b));return av>bv;});\n",
+        "                auto& dg=deepGroups[j.group];if(dg.origin!=j.context){\n",
+        "                    for(const auto& w:dg.workers){retiredNodes+=w->search.nodes;retiredSafety+=w->search.safetyCutoffs;retiredSel=std::max(retiredSel,w->search.selDepth);}dg.workers.clear();dg.origin=j.context;dg.table=std::make_shared<TTTable::Shared>(contexts[j.context]->state.table);\n",
+        "                    for(size_t lane=0;lane<lanes;lane++){auto w=std::make_unique<FrontierChildWorker>(*contexts[j.context],p,groups[j.group].root,groups[j.group].replies[j.reply],dg.table,start,controller.limit);w->search.cancel=&cancelled;dg.workers.push_back(std::move(w));}\n",
+        "                }\n",
+        "                const bool check=inCheck(parent.board,parent.turn,parent.kings[parent.turn]);const bool extend=check&&j.ext>0;\n",
+        "                Job seed=j;seed.depth=j.depth+int(extend)-1;seed.ext=j.ext-int(extend);seed.ply=3;seed.deeper=true;\n",
+        "                seeds[j.group]=seed;continuations[j.group]=std::move(moves);deeper[j.group]=true;continuationAlpha[j.group].store(-inf,std::memory_order_relaxed);\n",
+        "                controller.tick(2);splitNodes++;deepParents++;\n",
+        "            }\n",
+        "            size_t childWidth=0;for(const auto& m:continuations)childWidth=std::max(childWidth,m.size());\n",
+        "            for(size_t child=0;child<childWidth;child++)for(size_t g=0;g<groups.size();g++)if(child<continuations[g].size()){Job j=seeds[g];j.next=continuations[g][child];expanded.push_back(j);deepChildren++;}\n",
+        "            // Young Brothers Wait: prove one ordered continuation per parent\n",
+        "            // before siblings use its bound. All sibling work and re-searches\n",
+        "            // are counted; this is not a smaller root/sample coverage policy.\n",
+        "            std::vector<Job> principal,siblings;std::array<bool,3> primed{};\n",
+        "            for(const Job& j:expanded){if(!j.deeper||!primed[j.group]){principal.push_back(j);if(j.deeper)primed[j.group]=true;}else siblings.push_back(j);}\n",
+        "            auto initial=batch(principal,\"principal\");auto initialProofs=exactProof;\n",
+        "            const auto otherValues=batch(siblings,\"siblings\");initial.insert(initial.end(),otherValues.begin(),otherValues.end());\n",
+        "            initialProofs.insert(initialProofs.end(),exactProof.begin(),exactProof.end());\n",
+        "            principal.insert(principal.end(),siblings.begin(),siblings.end());expanded=std::move(principal);exactProof=std::move(initialProofs);\n",
+        "            for(size_t i=0;i<expanded.size();i++)if(!expanded[i].deeper)best[expanded[i].group]=initial[i];\n",
+        "            for(size_t g=0;g<groups.size();g++)if(deeper[g]){\n",
+        "                const double exact=continuationAlpha[g].load(std::memory_order_relaxed);best[g]=-exact;if(!std::isfinite(exact))throw std::logic_error(\"missing deep frontier exact proof\");\n",
+        "                bool found=false;for(size_t i=0;i<expanded.size();i++)if(expanded[i].deeper&&expanded[i].group==g&&exactProof[i]&&initial[i]==exact){principalHints[expanded[i].context]=expanded[i].next;found=true;break;}\n",
+        "                if(!found)throw std::logic_error(\"missing deep principal move proof\");provenAlpha[g].store(best[g],std::memory_order_relaxed);\n",
+        "            }\n",
+        "\n"
+      ]
+    },
+    {
+      "startLine": 1048,
+      "endLine": 1049,
+      "before": [
+        "            const auto values=batch(jobs);for(size_t i=0;i<jobs.size();i++){const size_t g=jobs[i].group;if(values[i]>best[g])best[g]=values[i];if(exactProof[i]&&values[i]>=best[g])bestReply[g]=jobs[i].reply;}\n"
+      ],
+      "after": [
+        "            const auto values=batch(jobs,\"rest\");for(size_t i=0;i<jobs.size();i++){const size_t g=jobs[i].group;if(values[i]>best[g])best[g]=values[i];if(exactProof[i]&&values[i]>=best[g])bestReply[g]=jobs[i].reply;}\n"
+      ]
+    },
+    {
+      "startLine": 1055,
+      "endLine": 1057,
+      "before": [
+        "    pool.reset();for(auto& c:contexts)c->search.cancel=nullptr;stats();size_t allocated=0,denied=0;for(const auto& c:contexts){allocated+=c->arena->used.load();denied+=c->arena->denied.load();}\n",
+        "    const Iteration* last=iterations.empty()?nullptr:&iterations.back();std::cout<<\"{\\\"lazyLegalityEnabled\\\":\"<<(lazyLegalityEnabled?\"true\":\"false\")<<\",\\\"selfCpuMs\\\":\"<<(selfCpuMs()-requestCpuStart)<<\",\\\"kingHintEnabled\\\":\"<<(kingHintEnabled?\"true\":\"false\")<<\",\\\"depth\\\":\"<<(last?last->depth:0)<<\",\\\"mainDepth\\\":\"<<currentDepth<<\",\\\"completedDepth\\\":\"<<(last?last->depth:0)<<\",\\\"selDepth\\\":\"<<controller.selDepth<<\",\\\"nodes\\\":\"<<controller.nodes<<\",\\\"visitedNodes\\\":\"<<controller.nodes<<\",\\\"statsExact\\\":true,\\\"samples\\\":1,\\\"threads\\\":\"<<lanes<<\",\\\"elapsedMs\\\":\"<<controller.elapsed()<<\",\\\"score\\\":\"<<(last?last->rows[0].score:0)<<\",\\\"move\\\":\";writeMove(last?last->rows[0].move:roots[0]);std::cout<<\",\\\"ttBudgetBytes\\\":\"<<TTArena::budget<<\",\\\"ttAllocatedBytes\\\":\"<<allocated<<\",\\\"ttDenied\\\":\"<<denied<<\",\\\"frontierSplit\\\":true,\\\"frontierContexts\\\":\"<<contexts.size()<<\",\\\"splitNodes\\\":\"<<splitNodes<<\",\\\"completedIterations\\\":\"<<completed<<\",\\\"safetyCutoffs\\\":\"<<controller.safetyCutoffs<<\",\\\"interruptedDepth\\\":\"<<interrupted<<\",\\\"terminationReason\\\":\\\"\"<<(controller.safetyCutoffs?\"stack-safety\":interrupted?\"time-budget\":last&&std::abs(last->rows[0].score)>98000?\"terminal\":\"depth-limit\")<<\"\\\",\\\"searchStatus\\\":\\\"\"<<(interrupted?\"time-budget\":\"completed\")<<\"\\\",\\\"allCandidates\\\":\";writeRows(last?last->rows:std::vector<Row>{});std::cout<<\",\\\"iterations\\\":[\";if(p.mode!=\"STREAM\")for(size_t i=0;i<iterations.size();i++){if(i)std::cout<<',';std::cout<<\"{\\\"lazyLegalityEnabled\\\":\"<<(lazyLegalityEnabled?\"true\":\"false\")<<\",\\\"selfCpuMs\\\":\"<<(selfCpuMs()-requestCpuStart)<<\",\\\"kingHintEnabled\\\":\"<<(kingHintEnabled?\"true\":\"false\")<<\",\\\"depth\\\":\"<<iterations[i].depth<<\",\\\"nodes\\\":\"<<iterations[i].nodes<<\",\\\"elapsedMs\\\":\"<<iterations[i].elapsed<<\",\\\"allCandidates\\\":\";writeRows(iterations[i].rows);std::cout<<'}';}std::cout<<\"]}\\n\";\n"
+      ],
+      "after": [
+        "    pool.reset();for(auto& c:contexts)c->search.cancel=nullptr;for(auto& g:deepGroups)for(auto& w:g.workers)w->search.cancel=nullptr;stats();size_t deepWorkerContexts=0;for(const auto& g:deepGroups)deepWorkerContexts+=g.workers.size();uint64_t probeCount=0,researchCount=0;for(size_t lane=0;lane<lanes;lane++){probeCount+=deepProbes[lane];researchCount+=deepResearches[lane];}size_t allocated=0,denied=0;for(const auto& c:contexts){allocated+=c->arena->used.load();denied+=c->arena->denied.load();}\n",
+        "    std::cerr<<\"{\\\"frontierTrace\\\":[\";for(size_t b=0;b<traces.size();b++){if(b)std::cerr<<',';const auto& t=traces[b];std::cerr<<\"{\\\"depth\\\":\"<<t.depth<<\",\\\"stage\\\":\\\"\"<<t.stage<<\"\\\",\\\"batch\\\":\"<<b<<\",\\\"start\\\":\"<<t.start<<\",\\\"end\\\":\"<<t.end<<\",\\\"jobs\\\":[\";for(size_t j=0;j<t.cells.size();j++){if(j)std::cerr<<',';const auto& c=t.cells[j];std::cerr<<\"{\\\"start\\\":\"<<c.start<<\",\\\"end\\\":\"<<c.end<<\",\\\"nodes\\\":\"<<c.nodes<<\",\\\"lane\\\":\"<<c.lane<<'}';}std::cerr<<\"]}\";}std::cerr<<\"]}\\n\";\n",
+        "    const Iteration* last=iterations.empty()?nullptr:&iterations.back();std::cout<<\"{\\\"lazyLegalityEnabled\\\":\"<<(lazyLegalityEnabled?\"true\":\"false\")<<\",\\\"selfCpuMs\\\":\"<<(selfCpuMs()-requestCpuStart)<<\",\\\"kingHintEnabled\\\":\"<<(kingHintEnabled?\"true\":\"false\")<<\",\\\"depth\\\":\"<<(last?last->depth:0)<<\",\\\"mainDepth\\\":\"<<currentDepth<<\",\\\"completedDepth\\\":\"<<(last?last->depth:0)<<\",\\\"selDepth\\\":\"<<controller.selDepth<<\",\\\"nodes\\\":\"<<controller.nodes<<\",\\\"visitedNodes\\\":\"<<controller.nodes<<\",\\\"statsExact\\\":true,\\\"samples\\\":1,\\\"threads\\\":\"<<lanes<<\",\\\"elapsedMs\\\":\"<<controller.elapsed()<<\",\\\"score\\\":\"<<(last?last->rows[0].score:0)<<\",\\\"move\\\":\";writeMove(last?last->rows[0].move:roots[0]);std::cout<<\",\\\"ttBudgetBytes\\\":\"<<TTArena::budget<<\",\\\"ttAllocatedBytes\\\":\"<<allocated<<\",\\\"ttDenied\\\":\"<<denied<<\",\\\"deepPvsProbes\\\":\"<<probeCount<<\",\\\"deepPvsResearches\\\":\"<<researchCount<<\",\\\"deepFirstParallel\\\":true,\\\"deepParents\\\":\"<<deepParents<<\",\\\"deepChildrenQueued\\\":\"<<deepChildren<<\",\\\"deepWorkerContexts\\\":\"<<deepWorkerContexts<<\",\\\"frontierSplit\\\":true,\\\"frontierContexts\\\":\"<<contexts.size()<<\",\\\"splitNodes\\\":\"<<splitNodes<<\",\\\"completedIterations\\\":\"<<completed<<\",\\\"safetyCutoffs\\\":\"<<controller.safetyCutoffs<<\",\\\"interruptedDepth\\\":\"<<interrupted<<\",\\\"terminationReason\\\":\\\"\"<<(controller.safetyCutoffs?\"stack-safety\":interrupted?\"time-budget\":last&&std::abs(last->rows[0].score)>98000?\"terminal\":\"depth-limit\")<<\"\\\",\\\"searchStatus\\\":\\\"\"<<(interrupted?\"time-budget\":\"completed\")<<\"\\\",\\\"allCandidates\\\":\";writeRows(last?last->rows:std::vector<Row>{});std::cout<<\",\\\"iterations\\\":[\";if(p.mode!=\"STREAM\")for(size_t i=0;i<iterations.size();i++){if(i)std::cout<<',';std::cout<<\"{\\\"lazyLegalityEnabled\\\":\"<<(lazyLegalityEnabled?\"true\":\"false\")<<\",\\\"selfCpuMs\\\":\"<<(selfCpuMs()-requestCpuStart)<<\",\\\"kingHintEnabled\\\":\"<<(kingHintEnabled?\"true\":\"false\")<<\",\\\"depth\\\":\"<<iterations[i].depth<<\",\\\"nodes\\\":\"<<iterations[i].nodes<<\",\\\"elapsedMs\\\":\"<<iterations[i].elapsed<<\",\\\"allCandidates\\\":\";writeRows(iterations[i].rows);std::cout<<'}';}std::cout<<\"]}\\n\";\n"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "baseSha256": "855cccb05cff5a4eb3efa919546f41d7b66ae7b852490ecf0b81115f7f9f20d0",
+  "resultSha256": "f3abad3fe06548a045044d5bfe8ae1fb21f4262033e3e3a2ca9f280befab992e",
+  "edits": [
+    {
+      "startLine": 564,
+      "endLine": 564,
+      "before": [],
+      "after": [
+        "// Frozen scores, original ordinal as the stable tie breaker. No hidden-state input.\n",
+        "struct StableIndexLess {\n",
+        " const std::vector<ScoredMove>* scores;\n",
+        " bool operator()(uint16_t a,uint16_t b) const {\n",
+        "  const double x=(*scores)[a].score,y=(*scores)[b].score;\n",
+        "  return x<y||(x==y&&a>b);\n",
+        " }\n",
+        "};\n",
+        "bool prepareStableIndexHeap(const std::vector<ScoredMove>& scores,std::vector<uint16_t>& indices){\n",
+        " indices.clear();if(scores.size()>std::numeric_limits<uint16_t>::max())return false;\n",
+        " indices.resize(scores.size());for(size_t i=0;i<indices.size();i++)indices[i]=uint16_t(i);\n",
+        " std::make_heap(indices.begin(),indices.end(),StableIndexLess{&scores});return true;\n",
+        "}\n",
+        "Move popStableIndexHeap(const std::vector<ScoredMove>& scores,std::vector<uint16_t>& indices){\n",
+        " if(indices.empty())throw std::logic_error(\"empty stable index heap\");\n",
+        " std::pop_heap(indices.begin(),indices.end(),StableIndexLess{&scores});\n",
+        " const uint16_t i=indices.back();indices.pop_back();return scores[i].move;\n",
+        "}\n",
+        "\n"
+      ]
+    },
+    {
+      "startLine": 577,
+      "endLine": 577,
+      "before": [],
+      "after": [
+        "    std::array<std::vector<uint16_t>,MAX_SEARCH_PLY> heapIndexBuffers;\n"
+      ]
+    },
+    {
+      "startLine": 648,
+      "endLine": 650,
+      "before": [
+        "        std::stable_sort(scored.begin(),scored.end(),[](const ScoredMove& a,const ScoredMove& b){return a.score>b.score;});\n",
+        "        for(size_t i=0;i<moves.size();i++)moves[i]=scored[i].move;\n"
+      ],
+      "after": [
+        "#ifdef MIST_INDEX_HEAP_DISABLE\n",
+        "        const bool useHeap=false;\n",
+        "#else\n",
+        "        const bool useHeap=moves.size()>=24&&prepareStableIndexHeap(scored,heapIndexBuffers.at(ply));\n",
+        "#endif\n",
+        "        if(!useHeap){\n",
+        "         std::stable_sort(scored.begin(),scored.end(),[](const ScoredMove& a,const ScoredMove& b){return a.score>b.score;});\n",
+        "         for(size_t i=0;i<moves.size();i++)moves[i]=scored[i].move;\n",
+        "        }\n"
+      ]
+    },
+    {
+      "startLine": 652,
+      "endLine": 653,
+      "before": [
+        "        for(Move m:moves) {\n"
+      ],
+      "after": [
+        "        for(size_t visit=0;visit<moves.size();visit++) {\n",
+        "            const Move m=useHeap?popStableIndexHeap(scored,heapIndexBuffers.at(ply)):moves[visit];\n"
+      ]
+    }
+  ]
+}

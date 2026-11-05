@@ -1,0 +1,18 @@
+{
+  "baseSha256": "6a3b23aaa1a6820dfbd1b89f897eeb2574b59fee827d1ab35c4ac93beee7b5aa",
+  "resultSha256": "f382185ed8380511c656b4a9f88c3db7cf37437470e5eeec857a9fa28adbafab",
+  "edits": [
+    {
+      "startLine": 315,
+      "endLine": 317,
+      "before": [
+        "void linePseudos(Board& b,const OccupiedBits& occupied,int side,bool captures,int enemyKing,std::vector<Move>& out){out.clear();for(int f=0;f<90;f++)if(b[f].side==side)for(int t:lineDestinations(b,occupied,f,captures,enemyKing))out.push_back({f,t});}\n",
+        "void lineLegalInto(Board& b,const OccupiedBits& occupied,int side,bool captures,bool first,int king,std::vector<Move>& out,int checked=-1,int enemyKing=-2){if(king==-2)king=kingAt(b,side);if(enemyKing==-2)enemyKing=kingAt(b,side^1);const bool check=checked<0?lineCheck(b,side,king,occupied):checked;out.clear();for(int f=0;f<90;f++)if(b[f].side==side)for(int t:lineDestinations(b,occupied,f,captures,enemyKing))if(lineLegalPseudo(b,occupied,side,{f,t},king,check)){out.push_back({f,t});if(first)return;}}\n"
+      ],
+      "after": [
+        "void linePseudos(Board& b,const OccupiedBits& occupied,int side,bool captures,int enemyKing,std::vector<Move>& out){out.clear();for(int f:occupied)if(b[f].side==side)for(int t:lineDestinations(b,occupied,f,captures,enemyKing))out.push_back({f,t});}\n",
+        "void lineLegalInto(Board& b,const OccupiedBits& occupied,int side,bool captures,bool first,int king,std::vector<Move>& out,int checked=-1,int enemyKing=-2){if(king==-2)king=kingAt(b,side);if(enemyKing==-2)enemyKing=kingAt(b,side^1);const bool check=checked<0?lineCheck(b,side,king,occupied):checked;out.clear();for(int f:occupied)if(b[f].side==side)for(int t:lineDestinations(b,occupied,f,captures,enemyKing))if(lineLegalPseudo(b,occupied,side,{f,t},king,check)){out.push_back({f,t});if(first)return;}}\n"
+      ]
+    }
+  ]
+}

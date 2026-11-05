@@ -1,0 +1,1530 @@
+{
+  "productionChanged": false,
+  "commonRefereeComplete": false,
+  "candidateSourceSha256": "7d848c79bf4312e7886afc5df51069f465ca6f1ef45aefdfc06966db4f6e3f88",
+  "candidateUnitSourceSha256": "bd339c8770c96c7cdf33fd6b9b37b12e25eefa3599a863fef19676f21a3701b2",
+  "sourceBuilds": {
+    "release": {
+      "sourceSha256": "7d848c79bf4312e7886afc5df51069f465ca6f1ef45aefdfc06966db4f6e3f88",
+      "binarySha256": "c1895fb544f415653925e5069c3fafa8df10685eb511e9ea367031e65eebf0a5",
+      "flags": [
+        "-std=c++17",
+        "-ffp-contract=off",
+        "-DMIST_ROOT_LANES=4",
+        "-DMIST_MESH_LANES=4",
+        "-DMIST_CAPTURE_PREFIX_DISABLE",
+        "-O3",
+        "-DNDEBUG",
+        "-isystem",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+      ],
+      "compilerExitCode": 0
+    },
+    "-sanitized": {
+      "sourceSha256": "7d848c79bf4312e7886afc5df51069f465ca6f1ef45aefdfc06966db4f6e3f88",
+      "binarySha256": "4caa12493dbe50bb6318cb4d7d5b3d9ba0b6ca4c7ad7b86cede57227073aea04",
+      "flags": [
+        "-std=c++17",
+        "-ffp-contract=off",
+        "-DMIST_ROOT_LANES=4",
+        "-DMIST_MESH_LANES=4",
+        "-DMIST_CAPTURE_PREFIX_DISABLE",
+        "-O1",
+        "-g",
+        "-DMIST_VERIFY_RESTORE",
+        "-fno-omit-frame-pointer",
+        "-fsanitize=address,undefined",
+        "-isystem",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+      ],
+      "compilerExitCode": 0
+    },
+    "-tsan": {
+      "sourceSha256": "7d848c79bf4312e7886afc5df51069f465ca6f1ef45aefdfc06966db4f6e3f88",
+      "binarySha256": "5d4cb219d4a4421130394c3f2be4d2b61492f31d093ce4481d35a238ae3ce700",
+      "flags": [
+        "-std=c++17",
+        "-ffp-contract=off",
+        "-DMIST_ROOT_LANES=4",
+        "-DMIST_MESH_LANES=4",
+        "-DMIST_CAPTURE_PREFIX_DISABLE",
+        "-O1",
+        "-g",
+        "-DMIST_VERIFY_RESTORE",
+        "-fno-omit-frame-pointer",
+        "-fsanitize=thread",
+        "-isystem",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
+      ],
+      "compilerExitCode": 0
+    }
+  },
+  "suites": {
+    "check-release": {
+      "passed": true,
+      "sourceSha256": "7d848c79bf4312e7886afc5df51069f465ca6f1ef45aefdfc06966db4f6e3f88",
+      "binarySha256": "c1895fb544f415653925e5069c3fafa8df10685eb511e9ea367031e65eebf0a5",
+      "finite": [
+        {
+          "name": "opening/51101/0",
+          "depth": 2,
+          "score": 32.59487964945658,
+          "nodes": {
+            "baseline": 35128,
+            "reference": 49148,
+            "candidate": 35128
+          }
+        },
+        {
+          "name": "opening/51101/0",
+          "depth": 3,
+          "score": 55.93144182857111,
+          "nodes": {
+            "baseline": 237112,
+            "reference": 866194,
+            "candidate": 237112
+          }
+        },
+        {
+          "name": "opening/51109/3",
+          "depth": 2,
+          "score": 74.61984111985372,
+          "nodes": {
+            "baseline": 24509,
+            "reference": 31249,
+            "candidate": 24509
+          }
+        },
+        {
+          "name": "opening/51109/3",
+          "depth": 3,
+          "score": 64.47357582229819,
+          "nodes": {
+            "baseline": 114419,
+            "reference": 356329,
+            "candidate": 114419
+          }
+        },
+        {
+          "name": "opening/51119/7",
+          "depth": 2,
+          "score": 798.7498060298326,
+          "nodes": {
+            "baseline": 30601,
+            "reference": 26925,
+            "candidate": 30601
+          }
+        },
+        {
+          "name": "opening/51119/7",
+          "depth": 3,
+          "score": 796.2700698000424,
+          "nodes": {
+            "baseline": 133471,
+            "reference": 449118,
+            "candidate": 133471
+          }
+        },
+        {
+          "name": "opening/51131/10",
+          "depth": 2,
+          "score": 209.27782397212027,
+          "nodes": {
+            "baseline": 17834,
+            "reference": 25338,
+            "candidate": 17834
+          }
+        },
+        {
+          "name": "opening/51131/10",
+          "depth": 3,
+          "score": 101.50462330909187,
+          "nodes": {
+            "baseline": 131505,
+            "reference": 457920,
+            "candidate": 131505
+          }
+        },
+        {
+          "name": "middle/51203/28",
+          "depth": 2,
+          "score": 991,
+          "nodes": {
+            "baseline": 39874,
+            "reference": 113439,
+            "candidate": 39874
+          }
+        },
+        {
+          "name": "middle/51203/28",
+          "depth": 3,
+          "score": 857.0000000000003,
+          "nodes": {
+            "baseline": 276275,
+            "reference": 1285387,
+            "candidate": 276275
+          }
+        },
+        {
+          "name": "middle/51217/37",
+          "depth": 2,
+          "score": -933.8015776394041,
+          "nodes": {
+            "baseline": 12707,
+            "reference": 13829,
+            "candidate": 12707
+          }
+        },
+        {
+          "name": "middle/51217/37",
+          "depth": 3,
+          "score": -1047.159229436833,
+          "nodes": {
+            "baseline": 109612,
+            "reference": 282953,
+            "candidate": 109612
+          }
+        },
+        {
+          "name": "middle/51229/46",
+          "depth": 2,
+          "score": 335.4443016361061,
+          "nodes": {
+            "baseline": 50089,
+            "reference": 108132,
+            "candidate": 50089
+          }
+        },
+        {
+          "name": "middle/51229/46",
+          "depth": 3,
+          "score": 403.97095489562935,
+          "nodes": {
+            "baseline": 257725,
+            "reference": 752766,
+            "candidate": 257725
+          }
+        },
+        {
+          "name": "middle/51241/57",
+          "depth": 2,
+          "score": 234.00000000000014,
+          "nodes": {
+            "baseline": 46178,
+            "reference": 53120,
+            "candidate": 46178
+          }
+        },
+        {
+          "name": "middle/51241/57",
+          "depth": 3,
+          "score": 178.3972537954503,
+          "nodes": {
+            "baseline": 258434,
+            "reference": 599543,
+            "candidate": 258434
+          }
+        },
+        {
+          "name": "ending/51307/3",
+          "depth": 2,
+          "score": 187,
+          "nodes": {
+            "baseline": 1763,
+            "reference": 1627,
+            "candidate": 1763
+          }
+        },
+        {
+          "name": "ending/51307/3",
+          "depth": 3,
+          "score": 189,
+          "nodes": {
+            "baseline": 8750,
+            "reference": 31687,
+            "candidate": 8750
+          }
+        },
+        {
+          "name": "ending/51319/6",
+          "depth": 2,
+          "score": 204.33333333333334,
+          "nodes": {
+            "baseline": 1504,
+            "reference": 1409,
+            "candidate": 1504
+          }
+        },
+        {
+          "name": "ending/51319/6",
+          "depth": 3,
+          "score": 197,
+          "nodes": {
+            "baseline": 6833,
+            "reference": 18851,
+            "candidate": 6833
+          }
+        },
+        {
+          "name": "ending/51329/9",
+          "depth": 2,
+          "score": -1117,
+          "nodes": {
+            "baseline": 86,
+            "reference": 90,
+            "candidate": 86
+          }
+        },
+        {
+          "name": "ending/51329/9",
+          "depth": 3,
+          "score": -1113,
+          "nodes": {
+            "baseline": 396,
+            "reference": 619,
+            "candidate": 396
+          }
+        },
+        {
+          "name": "ending/51341/12",
+          "depth": 2,
+          "score": 20,
+          "nodes": {
+            "baseline": 1121,
+            "reference": 1053,
+            "candidate": 1121
+          }
+        },
+        {
+          "name": "ending/51341/12",
+          "depth": 3,
+          "score": 20,
+          "nodes": {
+            "baseline": 4176,
+            "reference": 8434,
+            "candidate": 4176
+          }
+        },
+        {
+          "name": "previous-frozen-two-roots",
+          "depth": 2,
+          "score": -1117,
+          "nodes": {
+            "baseline": 86,
+            "reference": 90,
+            "candidate": 86
+          }
+        },
+        {
+          "name": "previous-frozen-two-roots",
+          "depth": 3,
+          "score": -1113,
+          "nodes": {
+            "baseline": 396,
+            "reference": 619,
+            "candidate": 396
+          }
+        },
+        {
+          "name": "color-rotated-two-roots",
+          "depth": 2,
+          "score": -1117,
+          "nodes": {
+            "baseline": 86,
+            "reference": 82,
+            "candidate": 86
+          }
+        },
+        {
+          "name": "color-rotated-two-roots",
+          "depth": 3,
+          "score": -1113,
+          "nodes": {
+            "baseline": 397,
+            "reference": 384,
+            "candidate": 397
+          }
+        },
+        {
+          "name": "first-reachable-forced/51503/17",
+          "depth": 2,
+          "score": -505.3333333333333,
+          "nodes": {
+            "baseline": 52,
+            "reference": 56,
+            "candidate": 51
+          }
+        },
+        {
+          "name": "first-reachable-forced/51503/17",
+          "depth": 3,
+          "score": -505.3333333333333,
+          "nodes": {
+            "baseline": 193,
+            "reference": 210,
+            "candidate": 192
+          }
+        },
+        {
+          "name": "first-reachable-forced/51504/19",
+          "depth": 2,
+          "score": 685,
+          "nodes": {
+            "baseline": 50,
+            "reference": 49,
+            "candidate": 50
+          }
+        },
+        {
+          "name": "first-reachable-forced/51504/19",
+          "depth": 3,
+          "score": 693,
+          "nodes": {
+            "baseline": 280,
+            "reference": 281,
+            "candidate": 280
+          }
+        },
+        {
+          "name": "first-reachable-forced/51505/31",
+          "depth": 2,
+          "score": -33,
+          "nodes": {
+            "baseline": 72,
+            "reference": 71,
+            "candidate": 72
+          }
+        },
+        {
+          "name": "first-reachable-forced/51505/31",
+          "depth": 3,
+          "score": -721,
+          "nodes": {
+            "baseline": 381,
+            "reference": 386,
+            "candidate": 381
+          }
+        },
+        {
+          "name": "first-reachable-forced/51506/31",
+          "depth": 2,
+          "score": -14.666666666666666,
+          "nodes": {
+            "baseline": 117,
+            "reference": 116,
+            "candidate": 116
+          }
+        },
+        {
+          "name": "first-reachable-forced/51506/31",
+          "depth": 3,
+          "score": -162,
+          "nodes": {
+            "baseline": 1300,
+            "reference": 1759,
+            "candidate": 1300
+          }
+        },
+        {
+          "name": "全明/49033/11",
+          "depth": 2,
+          "score": 671.3333333333334,
+          "nodes": {
+            "baseline": 1670,
+            "reference": 1704,
+            "candidate": 1670
+          }
+        },
+        {
+          "name": "全明/49033/11",
+          "depth": 3,
+          "score": 690.6666666666666,
+          "nodes": {
+            "baseline": 8911,
+            "reference": 28386,
+            "candidate": 8911
+          }
+        },
+        {
+          "name": "lazy-confirm/ending/54546/0",
+          "depth": 2,
+          "score": 603,
+          "nodes": {
+            "baseline": 29,
+            "reference": 27,
+            "candidate": 29
+          }
+        },
+        {
+          "name": "lazy-confirm/ending/54546/0",
+          "depth": 3,
+          "score": 589,
+          "nodes": {
+            "baseline": 311,
+            "reference": 239,
+            "candidate": 311
+          }
+        }
+      ],
+      "timeouts": [
+        {
+          "name": "opening/51109/3",
+          "budget": 75,
+          "depth": 3,
+          "nodes": 560714
+        },
+        {
+          "name": "opening/51109/3",
+          "budget": 150,
+          "depth": 4,
+          "nodes": 1012314
+        },
+        {
+          "name": "opening/51109/3",
+          "budget": 500,
+          "depth": 4,
+          "nodes": 3426724
+        },
+        {
+          "name": "lazy-confirm/ending/54546/0",
+          "budget": 75,
+          "depth": 8,
+          "nodes": 279510
+        },
+        {
+          "name": "lazy-confirm/ending/54546/0",
+          "budget": 150,
+          "depth": 8,
+          "nodes": 529984
+        },
+        {
+          "name": "lazy-confirm/ending/54546/0",
+          "budget": 500,
+          "depth": 9,
+          "nodes": 1912336
+        }
+      ],
+      "cancel": true,
+      "privacy": true,
+      "immediateCancel": true,
+      "rootAdjudication": true,
+      "unitAssertions": [
+        758142,
+        76557,
+        76485
+      ]
+    },
+    "rules-release": {
+      "sourceSha256": "7d848c79bf4312e7886afc5df51069f465ca6f1ef45aefdfc06966db4f6e3f88",
+      "transitionCount": 11874,
+      "passed": true,
+      "ruleViews": 414
+    },
+    "reference-release": {
+      "passed": true
+    },
+    "check-sanitized": {
+      "passed": true,
+      "sourceSha256": "7d848c79bf4312e7886afc5df51069f465ca6f1ef45aefdfc06966db4f6e3f88",
+      "binarySha256": "4caa12493dbe50bb6318cb4d7d5b3d9ba0b6ca4c7ad7b86cede57227073aea04",
+      "finite": [
+        {
+          "name": "opening/51101/0",
+          "depth": 2,
+          "score": 32.59487964945658,
+          "nodes": {
+            "baseline": 35128,
+            "reference": 49148,
+            "candidate": 35128
+          }
+        },
+        {
+          "name": "opening/51101/0",
+          "depth": 3,
+          "score": 55.93144182857111,
+          "nodes": {
+            "baseline": 237112,
+            "reference": 866194,
+            "candidate": 237112
+          }
+        },
+        {
+          "name": "opening/51109/3",
+          "depth": 2,
+          "score": 74.61984111985372,
+          "nodes": {
+            "baseline": 24509,
+            "reference": 31249,
+            "candidate": 24509
+          }
+        },
+        {
+          "name": "opening/51109/3",
+          "depth": 3,
+          "score": 64.47357582229819,
+          "nodes": {
+            "baseline": 114419,
+            "reference": 356329,
+            "candidate": 114419
+          }
+        },
+        {
+          "name": "opening/51119/7",
+          "depth": 2,
+          "score": 798.7498060298326,
+          "nodes": {
+            "baseline": 30601,
+            "reference": 26925,
+            "candidate": 30601
+          }
+        },
+        {
+          "name": "opening/51119/7",
+          "depth": 3,
+          "score": 796.2700698000424,
+          "nodes": {
+            "baseline": 133471,
+            "reference": 449118,
+            "candidate": 133471
+          }
+        },
+        {
+          "name": "opening/51131/10",
+          "depth": 2,
+          "score": 209.27782397212027,
+          "nodes": {
+            "baseline": 17834,
+            "reference": 25338,
+            "candidate": 17834
+          }
+        },
+        {
+          "name": "opening/51131/10",
+          "depth": 3,
+          "score": 101.50462330909187,
+          "nodes": {
+            "baseline": 131505,
+            "reference": 457920,
+            "candidate": 131505
+          }
+        },
+        {
+          "name": "middle/51203/28",
+          "depth": 2,
+          "score": 991,
+          "nodes": {
+            "baseline": 39874,
+            "reference": 113439,
+            "candidate": 39874
+          }
+        },
+        {
+          "name": "middle/51203/28",
+          "depth": 3,
+          "score": 857.0000000000003,
+          "nodes": {
+            "baseline": 276275,
+            "reference": 1285387,
+            "candidate": 276275
+          }
+        },
+        {
+          "name": "middle/51217/37",
+          "depth": 2,
+          "score": -933.8015776394041,
+          "nodes": {
+            "baseline": 12707,
+            "reference": 13829,
+            "candidate": 12707
+          }
+        },
+        {
+          "name": "middle/51217/37",
+          "depth": 3,
+          "score": -1047.159229436833,
+          "nodes": {
+            "baseline": 109612,
+            "reference": 282953,
+            "candidate": 109612
+          }
+        },
+        {
+          "name": "middle/51229/46",
+          "depth": 2,
+          "score": 335.4443016361061,
+          "nodes": {
+            "baseline": 50089,
+            "reference": 108132,
+            "candidate": 50089
+          }
+        },
+        {
+          "name": "middle/51229/46",
+          "depth": 3,
+          "score": 403.97095489562935,
+          "nodes": {
+            "baseline": 257725,
+            "reference": 752766,
+            "candidate": 257725
+          }
+        },
+        {
+          "name": "middle/51241/57",
+          "depth": 2,
+          "score": 234.00000000000014,
+          "nodes": {
+            "baseline": 46178,
+            "reference": 53120,
+            "candidate": 46178
+          }
+        },
+        {
+          "name": "middle/51241/57",
+          "depth": 3,
+          "score": 178.3972537954503,
+          "nodes": {
+            "baseline": 258434,
+            "reference": 599543,
+            "candidate": 258434
+          }
+        },
+        {
+          "name": "ending/51307/3",
+          "depth": 2,
+          "score": 187,
+          "nodes": {
+            "baseline": 1763,
+            "reference": 1627,
+            "candidate": 1763
+          }
+        },
+        {
+          "name": "ending/51307/3",
+          "depth": 3,
+          "score": 189,
+          "nodes": {
+            "baseline": 8750,
+            "reference": 31687,
+            "candidate": 8750
+          }
+        },
+        {
+          "name": "ending/51319/6",
+          "depth": 2,
+          "score": 204.33333333333334,
+          "nodes": {
+            "baseline": 1504,
+            "reference": 1409,
+            "candidate": 1504
+          }
+        },
+        {
+          "name": "ending/51319/6",
+          "depth": 3,
+          "score": 197,
+          "nodes": {
+            "baseline": 6833,
+            "reference": 18851,
+            "candidate": 6833
+          }
+        },
+        {
+          "name": "ending/51329/9",
+          "depth": 2,
+          "score": -1117,
+          "nodes": {
+            "baseline": 86,
+            "reference": 90,
+            "candidate": 86
+          }
+        },
+        {
+          "name": "ending/51329/9",
+          "depth": 3,
+          "score": -1113,
+          "nodes": {
+            "baseline": 396,
+            "reference": 619,
+            "candidate": 396
+          }
+        },
+        {
+          "name": "ending/51341/12",
+          "depth": 2,
+          "score": 20,
+          "nodes": {
+            "baseline": 1121,
+            "reference": 1053,
+            "candidate": 1121
+          }
+        },
+        {
+          "name": "ending/51341/12",
+          "depth": 3,
+          "score": 20,
+          "nodes": {
+            "baseline": 4176,
+            "reference": 8434,
+            "candidate": 4176
+          }
+        },
+        {
+          "name": "previous-frozen-two-roots",
+          "depth": 2,
+          "score": -1117,
+          "nodes": {
+            "baseline": 86,
+            "reference": 90,
+            "candidate": 86
+          }
+        },
+        {
+          "name": "previous-frozen-two-roots",
+          "depth": 3,
+          "score": -1113,
+          "nodes": {
+            "baseline": 396,
+            "reference": 619,
+            "candidate": 396
+          }
+        },
+        {
+          "name": "color-rotated-two-roots",
+          "depth": 2,
+          "score": -1117,
+          "nodes": {
+            "baseline": 86,
+            "reference": 82,
+            "candidate": 86
+          }
+        },
+        {
+          "name": "color-rotated-two-roots",
+          "depth": 3,
+          "score": -1113,
+          "nodes": {
+            "baseline": 397,
+            "reference": 384,
+            "candidate": 397
+          }
+        },
+        {
+          "name": "first-reachable-forced/51503/17",
+          "depth": 2,
+          "score": -505.3333333333333,
+          "nodes": {
+            "baseline": 52,
+            "reference": 56,
+            "candidate": 54
+          }
+        },
+        {
+          "name": "first-reachable-forced/51503/17",
+          "depth": 3,
+          "score": -505.3333333333333,
+          "nodes": {
+            "baseline": 189,
+            "reference": 208,
+            "candidate": 195
+          }
+        },
+        {
+          "name": "first-reachable-forced/51504/19",
+          "depth": 2,
+          "score": 685,
+          "nodes": {
+            "baseline": 50,
+            "reference": 49,
+            "candidate": 50
+          }
+        },
+        {
+          "name": "first-reachable-forced/51504/19",
+          "depth": 3,
+          "score": 693,
+          "nodes": {
+            "baseline": 280,
+            "reference": 281,
+            "candidate": 280
+          }
+        },
+        {
+          "name": "first-reachable-forced/51505/31",
+          "depth": 2,
+          "score": -33,
+          "nodes": {
+            "baseline": 72,
+            "reference": 71,
+            "candidate": 72
+          }
+        },
+        {
+          "name": "first-reachable-forced/51505/31",
+          "depth": 3,
+          "score": -721,
+          "nodes": {
+            "baseline": 381,
+            "reference": 386,
+            "candidate": 381
+          }
+        },
+        {
+          "name": "first-reachable-forced/51506/31",
+          "depth": 2,
+          "score": -14.666666666666666,
+          "nodes": {
+            "baseline": 117,
+            "reference": 116,
+            "candidate": 119
+          }
+        },
+        {
+          "name": "first-reachable-forced/51506/31",
+          "depth": 3,
+          "score": -162,
+          "nodes": {
+            "baseline": 1302,
+            "reference": 1760,
+            "candidate": 1324
+          }
+        },
+        {
+          "name": "全明/49033/11",
+          "depth": 2,
+          "score": 671.3333333333334,
+          "nodes": {
+            "baseline": 1670,
+            "reference": 1704,
+            "candidate": 1670
+          }
+        },
+        {
+          "name": "全明/49033/11",
+          "depth": 3,
+          "score": 690.6666666666666,
+          "nodes": {
+            "baseline": 8911,
+            "reference": 28386,
+            "candidate": 8911
+          }
+        },
+        {
+          "name": "lazy-confirm/ending/54546/0",
+          "depth": 2,
+          "score": 603,
+          "nodes": {
+            "baseline": 29,
+            "reference": 27,
+            "candidate": 29
+          }
+        },
+        {
+          "name": "lazy-confirm/ending/54546/0",
+          "depth": 3,
+          "score": 589,
+          "nodes": {
+            "baseline": 311,
+            "reference": 239,
+            "candidate": 343
+          }
+        }
+      ],
+      "timeouts": [
+        {
+          "name": "opening/51109/3",
+          "budget": 75,
+          "depth": 1,
+          "nodes": 17633
+        },
+        {
+          "name": "opening/51109/3",
+          "budget": 150,
+          "depth": 2,
+          "nodes": 31507
+        },
+        {
+          "name": "opening/51109/3",
+          "budget": 500,
+          "depth": 2,
+          "nodes": 104117
+        },
+        {
+          "name": "lazy-confirm/ending/54546/0",
+          "budget": 75,
+          "depth": 5,
+          "nodes": 10992
+        },
+        {
+          "name": "lazy-confirm/ending/54546/0",
+          "budget": 150,
+          "depth": 6,
+          "nodes": 19827
+        },
+        {
+          "name": "lazy-confirm/ending/54546/0",
+          "budget": 500,
+          "depth": 7,
+          "nodes": 63153
+        }
+      ],
+      "cancel": true,
+      "privacy": true,
+      "immediateCancel": true,
+      "rootAdjudication": true,
+      "unitAssertions": [
+        758142,
+        76557,
+        76485
+      ]
+    },
+    "rules-sanitized": {
+      "sourceSha256": "7d848c79bf4312e7886afc5df51069f465ca6f1ef45aefdfc06966db4f6e3f88",
+      "transitionCount": 11874,
+      "passed": true,
+      "ruleViews": 414
+    },
+    "reference-sanitized": {
+      "passed": true
+    },
+    "check-tsan": {
+      "passed": true,
+      "sourceSha256": "7d848c79bf4312e7886afc5df51069f465ca6f1ef45aefdfc06966db4f6e3f88",
+      "binarySha256": "5d4cb219d4a4421130394c3f2be4d2b61492f31d093ce4481d35a238ae3ce700",
+      "finite": [
+        {
+          "name": "opening/51101/0",
+          "depth": 2,
+          "score": 32.59487964945658,
+          "nodes": {
+            "baseline": 35128,
+            "reference": 49148,
+            "candidate": 35128
+          }
+        },
+        {
+          "name": "opening/51101/0",
+          "depth": 3,
+          "score": 55.93144182857111,
+          "nodes": {
+            "baseline": 237112,
+            "reference": 866194,
+            "candidate": 237112
+          }
+        },
+        {
+          "name": "opening/51109/3",
+          "depth": 2,
+          "score": 74.61984111985372,
+          "nodes": {
+            "baseline": 24509,
+            "reference": 31249,
+            "candidate": 24509
+          }
+        },
+        {
+          "name": "opening/51109/3",
+          "depth": 3,
+          "score": 64.47357582229819,
+          "nodes": {
+            "baseline": 114419,
+            "reference": 356329,
+            "candidate": 114419
+          }
+        },
+        {
+          "name": "opening/51119/7",
+          "depth": 2,
+          "score": 798.7498060298326,
+          "nodes": {
+            "baseline": 30601,
+            "reference": 26925,
+            "candidate": 30601
+          }
+        },
+        {
+          "name": "opening/51119/7",
+          "depth": 3,
+          "score": 796.2700698000424,
+          "nodes": {
+            "baseline": 133471,
+            "reference": 449118,
+            "candidate": 133471
+          }
+        },
+        {
+          "name": "opening/51131/10",
+          "depth": 2,
+          "score": 209.27782397212027,
+          "nodes": {
+            "baseline": 17834,
+            "reference": 25338,
+            "candidate": 17834
+          }
+        },
+        {
+          "name": "opening/51131/10",
+          "depth": 3,
+          "score": 101.50462330909187,
+          "nodes": {
+            "baseline": 131505,
+            "reference": 457920,
+            "candidate": 131505
+          }
+        },
+        {
+          "name": "middle/51203/28",
+          "depth": 2,
+          "score": 991,
+          "nodes": {
+            "baseline": 39874,
+            "reference": 113439,
+            "candidate": 39874
+          }
+        },
+        {
+          "name": "middle/51203/28",
+          "depth": 3,
+          "score": 857.0000000000003,
+          "nodes": {
+            "baseline": 276275,
+            "reference": 1285387,
+            "candidate": 276275
+          }
+        },
+        {
+          "name": "middle/51217/37",
+          "depth": 2,
+          "score": -933.8015776394041,
+          "nodes": {
+            "baseline": 12707,
+            "reference": 13829,
+            "candidate": 12707
+          }
+        },
+        {
+          "name": "middle/51217/37",
+          "depth": 3,
+          "score": -1047.159229436833,
+          "nodes": {
+            "baseline": 109612,
+            "reference": 282953,
+            "candidate": 109612
+          }
+        },
+        {
+          "name": "middle/51229/46",
+          "depth": 2,
+          "score": 335.4443016361061,
+          "nodes": {
+            "baseline": 50089,
+            "reference": 108132,
+            "candidate": 50089
+          }
+        },
+        {
+          "name": "middle/51229/46",
+          "depth": 3,
+          "score": 403.97095489562935,
+          "nodes": {
+            "baseline": 257725,
+            "reference": 752766,
+            "candidate": 257725
+          }
+        },
+        {
+          "name": "middle/51241/57",
+          "depth": 2,
+          "score": 234.00000000000014,
+          "nodes": {
+            "baseline": 46178,
+            "reference": 53120,
+            "candidate": 46178
+          }
+        },
+        {
+          "name": "middle/51241/57",
+          "depth": 3,
+          "score": 178.3972537954503,
+          "nodes": {
+            "baseline": 258434,
+            "reference": 599543,
+            "candidate": 258434
+          }
+        },
+        {
+          "name": "ending/51307/3",
+          "depth": 2,
+          "score": 187,
+          "nodes": {
+            "baseline": 1763,
+            "reference": 1627,
+            "candidate": 1763
+          }
+        },
+        {
+          "name": "ending/51307/3",
+          "depth": 3,
+          "score": 189,
+          "nodes": {
+            "baseline": 8750,
+            "reference": 31687,
+            "candidate": 8750
+          }
+        },
+        {
+          "name": "ending/51319/6",
+          "depth": 2,
+          "score": 204.33333333333334,
+          "nodes": {
+            "baseline": 1504,
+            "reference": 1409,
+            "candidate": 1504
+          }
+        },
+        {
+          "name": "ending/51319/6",
+          "depth": 3,
+          "score": 197,
+          "nodes": {
+            "baseline": 6833,
+            "reference": 18851,
+            "candidate": 6833
+          }
+        },
+        {
+          "name": "ending/51329/9",
+          "depth": 2,
+          "score": -1117,
+          "nodes": {
+            "baseline": 86,
+            "reference": 90,
+            "candidate": 86
+          }
+        },
+        {
+          "name": "ending/51329/9",
+          "depth": 3,
+          "score": -1113,
+          "nodes": {
+            "baseline": 396,
+            "reference": 619,
+            "candidate": 396
+          }
+        },
+        {
+          "name": "ending/51341/12",
+          "depth": 2,
+          "score": 20,
+          "nodes": {
+            "baseline": 1121,
+            "reference": 1053,
+            "candidate": 1121
+          }
+        },
+        {
+          "name": "ending/51341/12",
+          "depth": 3,
+          "score": 20,
+          "nodes": {
+            "baseline": 4176,
+            "reference": 8434,
+            "candidate": 4176
+          }
+        },
+        {
+          "name": "previous-frozen-two-roots",
+          "depth": 2,
+          "score": -1117,
+          "nodes": {
+            "baseline": 86,
+            "reference": 90,
+            "candidate": 86
+          }
+        },
+        {
+          "name": "previous-frozen-two-roots",
+          "depth": 3,
+          "score": -1113,
+          "nodes": {
+            "baseline": 396,
+            "reference": 619,
+            "candidate": 396
+          }
+        },
+        {
+          "name": "color-rotated-two-roots",
+          "depth": 2,
+          "score": -1117,
+          "nodes": {
+            "baseline": 86,
+            "reference": 82,
+            "candidate": 86
+          }
+        },
+        {
+          "name": "color-rotated-two-roots",
+          "depth": 3,
+          "score": -1113,
+          "nodes": {
+            "baseline": 397,
+            "reference": 384,
+            "candidate": 397
+          }
+        },
+        {
+          "name": "first-reachable-forced/51503/17",
+          "depth": 2,
+          "score": -505.3333333333333,
+          "nodes": {
+            "baseline": 50,
+            "reference": 56,
+            "candidate": 54
+          }
+        },
+        {
+          "name": "first-reachable-forced/51503/17",
+          "depth": 3,
+          "score": -505.3333333333333,
+          "nodes": {
+            "baseline": 194,
+            "reference": 208,
+            "candidate": 195
+          }
+        },
+        {
+          "name": "first-reachable-forced/51504/19",
+          "depth": 2,
+          "score": 685,
+          "nodes": {
+            "baseline": 50,
+            "reference": 49,
+            "candidate": 50
+          }
+        },
+        {
+          "name": "first-reachable-forced/51504/19",
+          "depth": 3,
+          "score": 693,
+          "nodes": {
+            "baseline": 280,
+            "reference": 281,
+            "candidate": 280
+          }
+        },
+        {
+          "name": "first-reachable-forced/51505/31",
+          "depth": 2,
+          "score": -33,
+          "nodes": {
+            "baseline": 72,
+            "reference": 71,
+            "candidate": 72
+          }
+        },
+        {
+          "name": "first-reachable-forced/51505/31",
+          "depth": 3,
+          "score": -721,
+          "nodes": {
+            "baseline": 381,
+            "reference": 386,
+            "candidate": 381
+          }
+        },
+        {
+          "name": "first-reachable-forced/51506/31",
+          "depth": 2,
+          "score": -14.666666666666666,
+          "nodes": {
+            "baseline": 115,
+            "reference": 117,
+            "candidate": 119
+          }
+        },
+        {
+          "name": "first-reachable-forced/51506/31",
+          "depth": 3,
+          "score": -162,
+          "nodes": {
+            "baseline": 1301,
+            "reference": 1759,
+            "candidate": 1324
+          }
+        },
+        {
+          "name": "全明/49033/11",
+          "depth": 2,
+          "score": 671.3333333333334,
+          "nodes": {
+            "baseline": 1670,
+            "reference": 1704,
+            "candidate": 1670
+          }
+        },
+        {
+          "name": "全明/49033/11",
+          "depth": 3,
+          "score": 690.6666666666666,
+          "nodes": {
+            "baseline": 8911,
+            "reference": 28386,
+            "candidate": 8911
+          }
+        },
+        {
+          "name": "lazy-confirm/ending/54546/0",
+          "depth": 2,
+          "score": 603,
+          "nodes": {
+            "baseline": 29,
+            "reference": 27,
+            "candidate": 29
+          }
+        },
+        {
+          "name": "lazy-confirm/ending/54546/0",
+          "depth": 3,
+          "score": 589,
+          "nodes": {
+            "baseline": 311,
+            "reference": 245,
+            "candidate": 359
+          }
+        }
+      ],
+      "timeouts": [
+        {
+          "name": "opening/51109/3",
+          "budget": 75,
+          "depth": 1,
+          "nodes": 6605
+        },
+        {
+          "name": "opening/51109/3",
+          "budget": 150,
+          "depth": 1,
+          "nodes": 14569
+        },
+        {
+          "name": "opening/51109/3",
+          "budget": 500,
+          "depth": 2,
+          "nodes": 43556
+        },
+        {
+          "name": "lazy-confirm/ending/54546/0",
+          "budget": 75,
+          "depth": 4,
+          "nodes": 3184
+        },
+        {
+          "name": "lazy-confirm/ending/54546/0",
+          "budget": 150,
+          "depth": 5,
+          "nodes": 6347
+        },
+        {
+          "name": "lazy-confirm/ending/54546/0",
+          "budget": 500,
+          "depth": 6,
+          "nodes": 24920
+        }
+      ],
+      "cancel": true,
+      "privacy": true,
+      "immediateCancel": true,
+      "rootAdjudication": true,
+      "unitAssertions": [
+        758142,
+        76557,
+        76485
+      ]
+    },
+    "rules-tsan": {
+      "sourceSha256": "7d848c79bf4312e7886afc5df51069f465ca6f1ef45aefdfc06966db4f6e3f88",
+      "transitionCount": 11874,
+      "passed": true,
+      "ruleViews": 414
+    },
+    "reference-tsan": {
+      "passed": true
+    }
+  },
+  "ownInitialDiagnosticBuild": {
+    "firstAttempt": "failed before any compiler launch: missing search.cpp input",
+    "recovery": "new journal, restored source input; compilation exit0"
+  },
+  "matchReplay": {
+    "passed": true,
+    "games": 8,
+    "moves": 545,
+    "privateChecks": 31,
+    "refereePolicy": "cn2020-evidence-v1",
+    "completeCompetitionRules": false
+  },
+  "publicPackage": {
+    "npmTests": 181,
+    "npmPassed": true,
+    "sourceChecksumTests": 5,
+    "sourceChecksPassed": true,
+    "replay": {
+      "passed": true,
+      "games": 8,
+      "moves": 545,
+      "privateChecks": 31,
+      "refereePolicy": "cn2020-evidence-v1",
+      "completeCompetitionRules": false
+    },
+    "steps": [
+      {
+        "command": "npm",
+        "args": [
+          "test",
+          "--",
+          "--test-concurrency=1"
+        ],
+        "label": "npm",
+        "state": "closed",
+        "code": 0,
+        "signal": null,
+        "busy": false
+      },
+      {
+        "command": "node",
+        "args": [
+          "native/experiments/search-speed/check-lazy-history.mjs",
+          "search"
+        ],
+        "label": "search",
+        "state": "closed",
+        "code": 0,
+        "signal": null,
+        "busy": false
+      },
+      {
+        "command": "node",
+        "args": [
+          "native/experiments/search-speed/check-lazy-history.mjs",
+          "rules"
+        ],
+        "label": "rules",
+        "state": "closed",
+        "code": 0,
+        "signal": null,
+        "busy": false
+      },
+      {
+        "command": "node",
+        "args": [
+          "native/experiments/search-speed/check-lazy-history.mjs",
+          "reference"
+        ],
+        "label": "reference",
+        "state": "closed",
+        "code": 0,
+        "signal": null,
+        "busy": false
+      }
+    ]
+  }
+}

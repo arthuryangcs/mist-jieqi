@@ -1,0 +1,2753 @@
+{
+  "positions": [
+    {
+      "name": "frontier-holdout/ending/11120007/0",
+      "category": "ending",
+      "origin": "first admissible new inventory-valid few-root edit; no immediate terminal move; reachability not asserted",
+      "pieces": 8,
+      "hidden": 0,
+      "roots": 1,
+      "trace": [],
+      "view": {
+        "board": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "b",
+            "role": "K",
+            "hidden": false,
+            "type": "K"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "b",
+            "role": "P",
+            "hidden": false,
+            "type": "P"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "b",
+            "role": "B",
+            "hidden": false,
+            "type": "B"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "b",
+            "role": "R",
+            "hidden": false,
+            "type": "R"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "b",
+            "role": "N",
+            "hidden": false,
+            "type": "N"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "r",
+            "role": "A",
+            "hidden": false,
+            "type": "A"
+          },
+          null,
+          {
+            "side": "b",
+            "role": "P",
+            "hidden": false,
+            "type": "P"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "r",
+            "role": "K",
+            "hidden": false,
+            "type": "K"
+          },
+          null,
+          null,
+          null
+        ],
+        "turn": "r",
+        "captured": [
+          {
+            "side": "r",
+            "type": "R",
+            "role": "R",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "R",
+            "role": "R",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "N",
+            "role": "N",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "N",
+            "role": "N",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "B",
+            "role": "B",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "B",
+            "role": "B",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "A",
+            "role": "A",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "C",
+            "role": "C",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "C",
+            "role": "C",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "R",
+            "role": "R",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "N",
+            "role": "N",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "B",
+            "role": "B",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "A",
+            "role": "A",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "A",
+            "role": "A",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "C",
+            "role": "C",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "C",
+            "role": "C",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          }
+        ],
+        "ply": 0,
+        "quiet": 0,
+        "result": null,
+        "positions": [],
+        "viewer": "r"
+      },
+      "observationHash": "c4fcead8cbf655ae8508ba02bb0f04cd426a3f432f42f5c6250c6f0576a5ba2d",
+      "primaryFrontier": true
+    },
+    {
+      "name": "frontier-holdout/ending/11124084/0",
+      "category": "ending",
+      "origin": "first admissible new inventory-valid few-root edit; no immediate terminal move; reachability not asserted",
+      "pieces": 8,
+      "hidden": 0,
+      "roots": 1,
+      "trace": [],
+      "view": {
+        "board": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "b",
+            "role": "K",
+            "hidden": false,
+            "type": "K"
+          },
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "r",
+            "role": "A",
+            "hidden": false,
+            "type": "A"
+          },
+          null,
+          null,
+          null,
+          {
+            "side": "b",
+            "role": "P",
+            "hidden": false,
+            "type": "P"
+          },
+          {
+            "side": "r",
+            "role": "P",
+            "hidden": false,
+            "type": "P"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "r",
+            "role": "A",
+            "hidden": false,
+            "type": "A"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "r",
+            "role": "R",
+            "hidden": false,
+            "type": "R"
+          },
+          {
+            "side": "r",
+            "role": "K",
+            "hidden": false,
+            "type": "K"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "r",
+            "role": "N",
+            "hidden": false,
+            "type": "N"
+          },
+          null,
+          null,
+          null,
+          null
+        ],
+        "turn": "b",
+        "captured": [
+          {
+            "side": "r",
+            "type": "R",
+            "role": "R",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "N",
+            "role": "N",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "B",
+            "role": "B",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "B",
+            "role": "B",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "C",
+            "role": "C",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "C",
+            "role": "C",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "R",
+            "role": "R",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "R",
+            "role": "R",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "N",
+            "role": "N",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "N",
+            "role": "N",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "B",
+            "role": "B",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "B",
+            "role": "B",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "A",
+            "role": "A",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "A",
+            "role": "A",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "C",
+            "role": "C",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "C",
+            "role": "C",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          }
+        ],
+        "ply": 0,
+        "quiet": 0,
+        "result": null,
+        "positions": [],
+        "viewer": "b"
+      },
+      "observationHash": "f82f4ff731f91f64ff82cc25376f509f7ab428a8634d1c4254aa235413e976e5",
+      "primaryFrontier": true
+    },
+    {
+      "name": "frontier-holdout/ending/11130003/0",
+      "category": "ending",
+      "origin": "first admissible new inventory-valid few-root edit; no immediate terminal move; reachability not asserted",
+      "pieces": 8,
+      "hidden": 0,
+      "roots": 2,
+      "trace": [],
+      "view": {
+        "board": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "b",
+            "role": "K",
+            "hidden": false,
+            "type": "K"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "b",
+            "role": "R",
+            "hidden": false,
+            "type": "R"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "b",
+            "role": "A",
+            "hidden": false,
+            "type": "A"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "b",
+            "role": "P",
+            "hidden": false,
+            "type": "P"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "b",
+            "role": "N",
+            "hidden": false,
+            "type": "N"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "b",
+            "role": "P",
+            "hidden": false,
+            "type": "P"
+          },
+          {
+            "side": "b",
+            "role": "C",
+            "hidden": false,
+            "type": "C"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "r",
+            "role": "K",
+            "hidden": false,
+            "type": "K"
+          },
+          null,
+          null,
+          null,
+          null
+        ],
+        "turn": "r",
+        "captured": [
+          {
+            "side": "r",
+            "type": "R",
+            "role": "R",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "R",
+            "role": "R",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "N",
+            "role": "N",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "N",
+            "role": "N",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "B",
+            "role": "B",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "B",
+            "role": "B",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "A",
+            "role": "A",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "A",
+            "role": "A",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "C",
+            "role": "C",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "C",
+            "role": "C",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "R",
+            "role": "R",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "N",
+            "role": "N",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "B",
+            "role": "B",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "B",
+            "role": "B",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "A",
+            "role": "A",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "C",
+            "role": "C",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          }
+        ],
+        "ply": 0,
+        "quiet": 0,
+        "result": null,
+        "positions": [],
+        "viewer": "r"
+      },
+      "observationHash": "00aa256c10304ee33d3f5bd2276e40e4fa93134ad58a2c2b445c8acee1c04c2b",
+      "primaryFrontier": true
+    },
+    {
+      "name": "frontier-holdout/ending/11134044/0",
+      "category": "ending",
+      "origin": "first admissible new inventory-valid few-root edit; no immediate terminal move; reachability not asserted",
+      "pieces": 8,
+      "hidden": 0,
+      "roots": 2,
+      "trace": [],
+      "view": {
+        "board": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "b",
+            "role": "K",
+            "hidden": false,
+            "type": "K"
+          },
+          null,
+          null,
+          {
+            "side": "r",
+            "role": "C",
+            "hidden": false,
+            "type": "C"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "r",
+            "role": "R",
+            "hidden": false,
+            "type": "R"
+          },
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "r",
+            "role": "N",
+            "hidden": false,
+            "type": "N"
+          },
+          {
+            "side": "r",
+            "role": "C",
+            "hidden": false,
+            "type": "C"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "r",
+            "role": "A",
+            "hidden": false,
+            "type": "A"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "r",
+            "role": "P",
+            "hidden": false,
+            "type": "P"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "r",
+            "role": "K",
+            "hidden": false,
+            "type": "K"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "turn": "b",
+        "captured": [
+          {
+            "side": "r",
+            "type": "R",
+            "role": "R",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "N",
+            "role": "N",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "B",
+            "role": "B",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "B",
+            "role": "B",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "A",
+            "role": "A",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "R",
+            "role": "R",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "R",
+            "role": "R",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "N",
+            "role": "N",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "N",
+            "role": "N",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "B",
+            "role": "B",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "B",
+            "role": "B",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "A",
+            "role": "A",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "A",
+            "role": "A",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "C",
+            "role": "C",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "C",
+            "role": "C",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          }
+        ],
+        "ply": 0,
+        "quiet": 0,
+        "result": null,
+        "positions": [],
+        "viewer": "b"
+      },
+      "observationHash": "5a393ce6c67059063ff62cb730fcbae7f9266a2c9b504f8cb85e3f3f7fecb6aa",
+      "primaryFrontier": true
+    },
+    {
+      "name": "frontier-holdout/ending/11140047/0",
+      "category": "ending",
+      "origin": "first admissible new inventory-valid few-root edit; no immediate terminal move; reachability not asserted",
+      "pieces": 8,
+      "hidden": 0,
+      "roots": 3,
+      "trace": [],
+      "view": {
+        "board": [
+          {
+            "side": "b",
+            "role": "C",
+            "hidden": false,
+            "type": "C"
+          },
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "b",
+            "role": "K",
+            "hidden": false,
+            "type": "K"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "b",
+            "role": "A",
+            "hidden": false,
+            "type": "A"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "r",
+            "role": "R",
+            "hidden": false,
+            "type": "R"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "b",
+            "role": "P",
+            "hidden": false,
+            "type": "P"
+          },
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "r",
+            "role": "C",
+            "hidden": false,
+            "type": "C"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "b",
+            "role": "N",
+            "hidden": false,
+            "type": "N"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "r",
+            "role": "K",
+            "hidden": false,
+            "type": "K"
+          },
+          null,
+          null,
+          null,
+          null
+        ],
+        "turn": "r",
+        "captured": [
+          {
+            "side": "r",
+            "type": "R",
+            "role": "R",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "N",
+            "role": "N",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "N",
+            "role": "N",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "B",
+            "role": "B",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "B",
+            "role": "B",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "A",
+            "role": "A",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "A",
+            "role": "A",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "C",
+            "role": "C",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "R",
+            "role": "R",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "R",
+            "role": "R",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "N",
+            "role": "N",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "B",
+            "role": "B",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "B",
+            "role": "B",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "A",
+            "role": "A",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "C",
+            "role": "C",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          }
+        ],
+        "ply": 0,
+        "quiet": 0,
+        "result": null,
+        "positions": [],
+        "viewer": "r"
+      },
+      "observationHash": "c2d0651f8ffffd41a27cc4c41a34a0a7b9b6f293a6da31b723c3a5db0d6fbb8d",
+      "primaryFrontier": true
+    },
+    {
+      "name": "frontier-holdout/ending/11144008/0",
+      "category": "ending",
+      "origin": "first admissible new inventory-valid few-root edit; no immediate terminal move; reachability not asserted",
+      "pieces": 10,
+      "hidden": 0,
+      "roots": 3,
+      "trace": [],
+      "view": {
+        "board": [
+          null,
+          null,
+          {
+            "side": "b",
+            "role": "R",
+            "hidden": false,
+            "type": "R"
+          },
+          {
+            "side": "r",
+            "role": "R",
+            "hidden": false,
+            "type": "R"
+          },
+          {
+            "side": "b",
+            "role": "K",
+            "hidden": false,
+            "type": "K"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "r",
+            "role": "A",
+            "hidden": false,
+            "type": "A"
+          },
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "r",
+            "role": "P",
+            "hidden": false,
+            "type": "P"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "b",
+            "role": "A",
+            "hidden": false,
+            "type": "A"
+          },
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "b",
+            "role": "N",
+            "hidden": false,
+            "type": "N"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "r",
+            "role": "B",
+            "hidden": false,
+            "type": "B"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "b",
+            "role": "C",
+            "hidden": false,
+            "type": "C"
+          },
+          null,
+          null,
+          null,
+          {
+            "side": "r",
+            "role": "K",
+            "hidden": false,
+            "type": "K"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "turn": "b",
+        "captured": [
+          {
+            "side": "r",
+            "type": "R",
+            "role": "R",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "N",
+            "role": "N",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "N",
+            "role": "N",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "B",
+            "role": "B",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "A",
+            "role": "A",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "C",
+            "role": "C",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "C",
+            "role": "C",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "R",
+            "role": "R",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "N",
+            "role": "N",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "B",
+            "role": "B",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "B",
+            "role": "B",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "A",
+            "role": "A",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "C",
+            "role": "C",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          }
+        ],
+        "ply": 0,
+        "quiet": 0,
+        "result": null,
+        "positions": [],
+        "viewer": "b"
+      },
+      "observationHash": "d1c2f1b31b552adb03d50771d7edf4da16f5a423f43a3d9cee098abc0c66155b",
+      "primaryFrontier": true
+    },
+    {
+      "name": "frontier-holdout/opening/11170001/0",
+      "category": "opening",
+      "origin": "known all-hidden initial public-view control; private layout seed does not create a new visible position",
+      "pieces": 32,
+      "hidden": 30,
+      "roots": 44,
+      "trace": [],
+      "view": {
+        "board": [
+          {
+            "side": "b",
+            "role": "R",
+            "hidden": true
+          },
+          {
+            "side": "b",
+            "role": "N",
+            "hidden": true
+          },
+          {
+            "side": "b",
+            "role": "B",
+            "hidden": true
+          },
+          {
+            "side": "b",
+            "role": "A",
+            "hidden": true
+          },
+          {
+            "side": "b",
+            "role": "K",
+            "hidden": false,
+            "type": "K"
+          },
+          {
+            "side": "b",
+            "role": "A",
+            "hidden": true
+          },
+          {
+            "side": "b",
+            "role": "B",
+            "hidden": true
+          },
+          {
+            "side": "b",
+            "role": "N",
+            "hidden": true
+          },
+          {
+            "side": "b",
+            "role": "R",
+            "hidden": true
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "b",
+            "role": "C",
+            "hidden": true
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "b",
+            "role": "C",
+            "hidden": true
+          },
+          null,
+          {
+            "side": "b",
+            "role": "P",
+            "hidden": true
+          },
+          null,
+          {
+            "side": "b",
+            "role": "P",
+            "hidden": true
+          },
+          null,
+          {
+            "side": "b",
+            "role": "P",
+            "hidden": true
+          },
+          null,
+          {
+            "side": "b",
+            "role": "P",
+            "hidden": true
+          },
+          null,
+          {
+            "side": "b",
+            "role": "P",
+            "hidden": true
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "r",
+            "role": "P",
+            "hidden": true
+          },
+          null,
+          {
+            "side": "r",
+            "role": "P",
+            "hidden": true
+          },
+          null,
+          {
+            "side": "r",
+            "role": "P",
+            "hidden": true
+          },
+          null,
+          {
+            "side": "r",
+            "role": "P",
+            "hidden": true
+          },
+          null,
+          {
+            "side": "r",
+            "role": "P",
+            "hidden": true
+          },
+          null,
+          {
+            "side": "r",
+            "role": "C",
+            "hidden": true
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "r",
+            "role": "C",
+            "hidden": true
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "r",
+            "role": "R",
+            "hidden": true
+          },
+          {
+            "side": "r",
+            "role": "N",
+            "hidden": true
+          },
+          {
+            "side": "r",
+            "role": "B",
+            "hidden": true
+          },
+          {
+            "side": "r",
+            "role": "A",
+            "hidden": true
+          },
+          {
+            "side": "r",
+            "role": "K",
+            "hidden": false,
+            "type": "K"
+          },
+          {
+            "side": "r",
+            "role": "A",
+            "hidden": true
+          },
+          {
+            "side": "r",
+            "role": "B",
+            "hidden": true
+          },
+          {
+            "side": "r",
+            "role": "N",
+            "hidden": true
+          },
+          {
+            "side": "r",
+            "role": "R",
+            "hidden": true
+          }
+        ],
+        "turn": "r",
+        "captured": [],
+        "ply": 0,
+        "quiet": 0,
+        "result": null,
+        "positions": [],
+        "viewer": "r"
+      },
+      "observationHash": "af147cbf21007e455b1face0ced553e3c119f24c0b0237d90173296486023a9a",
+      "primaryFrontier": false
+    },
+    {
+      "name": "frontier-holdout/middle/11170101/40",
+      "category": "middle",
+      "origin": "generated legal-play public observer view",
+      "pieces": 27,
+      "hidden": 10,
+      "roots": 22,
+      "trace": [
+        {
+          "from": 58,
+          "to": 49
+        },
+        {
+          "from": 7,
+          "to": 26
+        },
+        {
+          "from": 70,
+          "to": 69
+        },
+        {
+          "from": 31,
+          "to": 40
+        },
+        {
+          "from": 64,
+          "to": 1
+        },
+        {
+          "from": 26,
+          "to": 17
+        },
+        {
+          "from": 69,
+          "to": 78
+        },
+        {
+          "from": 40,
+          "to": 44
+        },
+        {
+          "from": 78,
+          "to": 75
+        },
+        {
+          "from": 19,
+          "to": 37
+        },
+        {
+          "from": 81,
+          "to": 72
+        },
+        {
+          "from": 25,
+          "to": 21
+        },
+        {
+          "from": 75,
+          "to": 77
+        },
+        {
+          "from": 44,
+          "to": 53
+        },
+        {
+          "from": 77,
+          "to": 14
+        },
+        {
+          "from": 2,
+          "to": 18
+        },
+        {
+          "from": 14,
+          "to": 16
+        },
+        {
+          "from": 3,
+          "to": 13
+        },
+        {
+          "from": 89,
+          "to": 71
+        },
+        {
+          "from": 18,
+          "to": 54
+        },
+        {
+          "from": 62,
+          "to": 53
+        },
+        {
+          "from": 0,
+          "to": 1
+        },
+        {
+          "from": 16,
+          "to": 25
+        },
+        {
+          "from": 8,
+          "to": 7
+        },
+        {
+          "from": 82,
+          "to": 63
+        },
+        {
+          "from": 17,
+          "to": 8
+        },
+        {
+          "from": 25,
+          "to": 24
+        },
+        {
+          "from": 1,
+          "to": 0
+        },
+        {
+          "from": 24,
+          "to": 25
+        },
+        {
+          "from": 8,
+          "to": 17
+        },
+        {
+          "from": 25,
+          "to": 26
+        },
+        {
+          "from": 17,
+          "to": 14
+        },
+        {
+          "from": 87,
+          "to": 67
+        },
+        {
+          "from": 35,
+          "to": 44
+        },
+        {
+          "from": 88,
+          "to": 77
+        },
+        {
+          "from": 14,
+          "to": 17
+        },
+        {
+          "from": 63,
+          "to": 73
+        },
+        {
+          "from": 0,
+          "to": 3
+        },
+        {
+          "from": 53,
+          "to": 44
+        },
+        {
+          "from": 13,
+          "to": 22
+        }
+      ],
+      "view": {
+        "board": [
+          null,
+          null,
+          null,
+          {
+            "side": "b",
+            "role": "R",
+            "hidden": false,
+            "type": "R"
+          },
+          {
+            "side": "b",
+            "role": "K",
+            "hidden": false,
+            "type": "K"
+          },
+          {
+            "side": "b",
+            "role": "A",
+            "hidden": true
+          },
+          {
+            "side": "b",
+            "role": "B",
+            "hidden": true
+          },
+          {
+            "side": "b",
+            "role": "R",
+            "hidden": false,
+            "type": "P"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "b",
+            "role": "N",
+            "hidden": false,
+            "type": "C"
+          },
+          null,
+          null,
+          null,
+          {
+            "side": "b",
+            "role": "C",
+            "hidden": false,
+            "type": "B"
+          },
+          {
+            "side": "b",
+            "role": "A",
+            "hidden": false,
+            "type": "P"
+          },
+          null,
+          null,
+          null,
+          {
+            "side": "r",
+            "role": "C",
+            "hidden": false,
+            "type": "R"
+          },
+          {
+            "side": "b",
+            "role": "P",
+            "hidden": true
+          },
+          null,
+          {
+            "side": "b",
+            "role": "P",
+            "hidden": true
+          },
+          null,
+          null,
+          null,
+          {
+            "side": "b",
+            "role": "P",
+            "hidden": true
+          },
+          null,
+          null,
+          null,
+          {
+            "side": "b",
+            "role": "C",
+            "hidden": false,
+            "type": "P"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "r",
+            "role": "P",
+            "hidden": false,
+            "type": "P"
+          },
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "r",
+            "role": "P",
+            "hidden": false,
+            "type": "P"
+          },
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "b",
+            "role": "B",
+            "hidden": false,
+            "type": "C"
+          },
+          null,
+          {
+            "side": "r",
+            "role": "P",
+            "hidden": true
+          },
+          null,
+          null,
+          null,
+          {
+            "side": "r",
+            "role": "P",
+            "hidden": true
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "r",
+            "role": "B",
+            "hidden": false,
+            "type": "B"
+          },
+          null,
+          null,
+          null,
+          {
+            "side": "r",
+            "role": "R",
+            "hidden": false,
+            "type": "P"
+          },
+          {
+            "side": "r",
+            "role": "R",
+            "hidden": false,
+            "type": "N"
+          },
+          {
+            "side": "r",
+            "role": "N",
+            "hidden": false,
+            "type": "A"
+          },
+          null,
+          null,
+          null,
+          {
+            "side": "r",
+            "role": "N",
+            "hidden": false,
+            "type": "P"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "r",
+            "role": "B",
+            "hidden": true
+          },
+          {
+            "side": "r",
+            "role": "A",
+            "hidden": true
+          },
+          {
+            "side": "r",
+            "role": "K",
+            "hidden": false,
+            "type": "K"
+          },
+          {
+            "side": "r",
+            "role": "A",
+            "hidden": true
+          },
+          null,
+          null,
+          null
+        ],
+        "turn": "r",
+        "captured": [
+          {
+            "side": "b",
+            "hidden": false,
+            "capturedBy": "r",
+            "type": "N",
+            "wasHidden": true
+          },
+          {
+            "side": "r",
+            "hidden": true,
+            "capturedBy": "b"
+          },
+          {
+            "side": "b",
+            "role": "P",
+            "type": "R",
+            "hidden": false,
+            "capturedBy": "r"
+          },
+          {
+            "side": "r",
+            "role": "C",
+            "type": "A",
+            "hidden": false,
+            "capturedBy": "b"
+          },
+          {
+            "side": "b",
+            "role": "P",
+            "type": "A",
+            "hidden": false,
+            "capturedBy": "r"
+          }
+        ],
+        "ply": 0,
+        "quiet": 0,
+        "result": null,
+        "positions": [],
+        "viewer": "r"
+      },
+      "observationHash": "4a9438cd1f95baf6a1dc51ce6989cb0ace0fc6de8e901fdc1cd8e6d14caefd72",
+      "primaryFrontier": false
+    },
+    {
+      "name": "frontier-holdout/ending/11170201/0",
+      "category": "ending",
+      "origin": "edited inventory-valid sparse public view; reachability not asserted",
+      "pieces": 10,
+      "hidden": 0,
+      "roots": 26,
+      "trace": [],
+      "view": {
+        "board": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "b",
+            "role": "K",
+            "hidden": false,
+            "type": "K"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "b",
+            "role": "P",
+            "hidden": false,
+            "type": "P"
+          },
+          {
+            "side": "r",
+            "role": "C",
+            "hidden": false,
+            "type": "C"
+          },
+          null,
+          {
+            "side": "r",
+            "role": "P",
+            "hidden": false,
+            "type": "P"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "r",
+            "role": "B",
+            "hidden": false,
+            "type": "B"
+          },
+          null,
+          null,
+          {
+            "side": "b",
+            "role": "C",
+            "hidden": false,
+            "type": "C"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "r",
+            "role": "R",
+            "hidden": false,
+            "type": "R"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "r",
+            "role": "P",
+            "hidden": false,
+            "type": "P"
+          },
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "r",
+            "role": "K",
+            "hidden": false,
+            "type": "K"
+          },
+          null,
+          null,
+          null,
+          null,
+          {
+            "side": "r",
+            "role": "P",
+            "hidden": false,
+            "type": "P"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "turn": "r",
+        "captured": [
+          {
+            "side": "r",
+            "type": "R",
+            "role": "R",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "N",
+            "role": "N",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "N",
+            "role": "N",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "B",
+            "role": "B",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "A",
+            "role": "A",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "A",
+            "role": "A",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "C",
+            "role": "C",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          },
+          {
+            "side": "r",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "R",
+            "role": "R",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "R",
+            "role": "R",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "N",
+            "role": "N",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "N",
+            "role": "N",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "B",
+            "role": "B",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "B",
+            "role": "B",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "A",
+            "role": "A",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "A",
+            "role": "A",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "C",
+            "role": "C",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          },
+          {
+            "side": "b",
+            "type": "P",
+            "role": "P",
+            "hidden": false
+          }
+        ],
+        "ply": 0,
+        "quiet": 0,
+        "result": null,
+        "positions": [],
+        "viewer": "r"
+      },
+      "observationHash": "7672d091bdcb2379b6e831d0d52ae9a7ec96a6b25b178dfc6661f332cdf46ab2",
+      "primaryFrontier": false
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "games": 8,
+  "moves": 545,
+  "privateChecks": 31,
+  "refereePolicy": "cn2020-evidence-v1",
+  "completeCompetitionRules": false
+}
