@@ -1,0 +1,202 @@
+{
+  "createdAt": "2026-11-05T04:17:21.054Z",
+  "gate": "require predeclared fixed screen and all release/ASan/TSan checks before timing",
+  "fixturesSha256": "8b669969f2bb45b54d027d548766d68198e571ff37248d28cbc3da15ce0856a5",
+  "budgetMs": 2000,
+  "repeats": 3,
+  "requests": 180,
+  "threadsMaximum": 4,
+  "darkSamples": 8,
+  "HCE": true,
+  "fullRoots": true,
+  "engines": [
+    "candidate",
+    "deferred",
+    "stable",
+    "pika"
+  ],
+  "binaries": {
+    "candidate": ".cache/lazy-history-20261105/core",
+    "deferred": ".cache/deferred-order-20261105/core",
+    "stable": ".cache/lazy-history-20261105/stable-core"
+  },
+  "binaryHashes": {
+    "candidate": "c1895fb544f415653925e5069c3fafa8df10685eb511e9ea367031e65eebf0a5",
+    "deferred": "d7f743be6f1c84f8f898ec75d3b4dd8cb7a45ab2751bc418b77e3f7d3ee5926d",
+    "stable": "7262d0abda78f09162c6e87045ac81d9c2b73ad8e445d277fbc8ced39926dbea"
+  },
+  "fixedPikaCommit": "bcc83f88ee18760e60903d1a3aaa61ef6f70f2c9",
+  "fixedPikaHash": "f32d3c6dfe4d6d90da7728d9cc2af68c3195a1cefb1bc28f3829f174c518dba1",
+  "caveats": [
+    "full-dark initial and three challenging endings are known controls; seven nonterminal and four terminal views fixed before new timing",
+    "sparse endings are inventory-valid edits, reachability not asserted",
+    "8world native nodes already summed, Pika node units differ",
+    "same 4 thread upper bound; unchanged stable uses one actual thread in single-world endings, candidate/C7 use root lanes",
+    "Pika/C7 configured TT64MiB upper bound; stable old unordered-map allocation and RSS differ",
+    "old unknown builds remain unknown; randomized sequential order reduces but cannot prove absence of unrelated contention",
+    "2s data are performance diagnostics, not win rates or formal competition adjudication"
+  ],
+  "matchPlan": {
+    "layouts": [
+      11106013,
+      11106027
+    ],
+    "games": 8,
+    "kinds": [
+      "stable",
+      "pika"
+    ],
+    "candidateSides": [
+      "r",
+      "b"
+    ],
+    "budgetMs": 2000,
+    "graceMs": 60,
+    "maxPlies": 400,
+    "refereePolicy": "cn2020-evidence-v1, incomplete cases explicitly unresolved; no legacy last-mover referee or safe-root filter",
+    "stopRule": "fixed eight games; all technical failures and undecided cases retained; user-service-busy pauses own schedule"
+  },
+  "positions": [
+    {
+      "name": "lazy-history-holdout/opening/1106001/0",
+      "category": "opening",
+      "origin": "generated legal-play public observer view",
+      "pieces": 32,
+      "hidden": 30,
+      "roots": 44,
+      "observationHash": "af147cbf21007e455b1face0ced553e3c119f24c0b0237d90173296486023a9a"
+    },
+    {
+      "name": "lazy-history-holdout/opening/1106013/3",
+      "category": "opening",
+      "origin": "generated legal-play public observer view",
+      "pieces": 32,
+      "hidden": 28,
+      "roots": 30,
+      "observationHash": "fb038231ecdf89131f92ff79326c552301f4945d8dde3978890d7337ff0caba0"
+    },
+    {
+      "name": "lazy-history-holdout/opening/1106029/11",
+      "category": "opening",
+      "origin": "generated legal-play public observer view",
+      "pieces": 32,
+      "hidden": 21,
+      "roots": 32,
+      "observationHash": "6a31557a58e5c34a7440c9f36592f346d92a15e6096283c715bf3f81fa8be6b7"
+    },
+    {
+      "name": "lazy-history-holdout/middle/1106101/28",
+      "category": "middle",
+      "origin": "generated legal-play public observer view",
+      "pieces": 31,
+      "hidden": 10,
+      "roots": 46,
+      "observationHash": "a717b54b12e4aa4b6c10feb1fbb33e0c5d7b316a62ce6b46f5209f510b1f4162"
+    },
+    {
+      "name": "lazy-history-holdout/middle/1106117/55",
+      "category": "middle",
+      "origin": "generated legal-play public observer view",
+      "pieces": 31,
+      "hidden": 9,
+      "roots": 58,
+      "observationHash": "7693e8f4356edd3312a2b5a6c8e37a03790b93ea240e7bc9e6e84adcff89ca88"
+    },
+    {
+      "name": "lazy-history-holdout/ending/1106202/0",
+      "category": "ending",
+      "origin": "edited inventory-valid sparse public view; reachability not asserted",
+      "pieces": 8,
+      "hidden": 0,
+      "roots": 10,
+      "observationHash": "2338ab3efb8332d76c985684cfac5fce39cd56fa39dca2a2f50e9ad8b07e2b86"
+    },
+    {
+      "name": "lazy-history-holdout/ending/1106303/0",
+      "category": "ending",
+      "origin": "edited inventory-valid sparse public view; reachability not asserted",
+      "pieces": 12,
+      "hidden": 0,
+      "roots": 35,
+      "observationHash": "d22ccc1b50df8287c45a7c4575c6423676dc03693bef93241d680fbef74587d9"
+    },
+    {
+      "name": "lazy-history-holdout/ending/1106426/0",
+      "category": "ending",
+      "origin": "edited inventory-valid sparse public view, first admissible 1..3 roots",
+      "pieces": 12,
+      "hidden": 0,
+      "roots": 2,
+      "observationHash": "dde15ec9d5d9c7b90d5464a13c0c5d32e248d72712b3d67bd9781b0898b3f1e8"
+    },
+    {
+      "name": "near-confirmation/ending/9711333/0",
+      "category": "ending",
+      "origin": "previously measured difficult ending; separate diagnostic control",
+      "pieces": 8,
+      "hidden": 0,
+      "roots": 26,
+      "observationHash": "7e00b8d4db2456582a86cde790a0097773ee4a8bff71819650d38747341d3162",
+      "partition": "seen-challenge"
+    },
+    {
+      "name": "near-confirmation/ending/9711560/0",
+      "category": "ending",
+      "origin": "previously measured difficult ending; separate diagnostic control",
+      "pieces": 12,
+      "hidden": 0,
+      "roots": 1,
+      "observationHash": "725130592c34ea280cb3b05e9fde0b7a5746b8f8b0cd9046e974261b081653e1",
+      "partition": "seen-challenge"
+    },
+    {
+      "name": "deferred-holdout/ending/1105303/0",
+      "category": "ending",
+      "origin": "previously measured short terminal control",
+      "pieces": 10,
+      "hidden": 0,
+      "roots": 49,
+      "observationHash": "58413bf6094a3c5b0cff86d392a5787fee9681fe524508e5ec64ab0d843d6a22"
+    },
+    {
+      "name": "lazy-history-holdout/ending/1106606/0",
+      "category": "ending",
+      "origin": "first admissible inventory-valid one-move win, selected by JS legal terminal proof; reachability not asserted",
+      "pieces": 12,
+      "hidden": 0,
+      "roots": 25,
+      "observationHash": "7e35b9e1646de64c2b01c74deeb7f6719147b5690a3da2f647c76f06108543d8",
+      "partition": "new-short-terminal"
+    },
+    {
+      "name": "lazy-history-holdout/ending/1106806/0",
+      "category": "ending",
+      "origin": "first admissible inventory-valid one-move win, selected by JS legal terminal proof; reachability not asserted",
+      "pieces": 10,
+      "hidden": 0,
+      "roots": 12,
+      "observationHash": "f0ae8ab0155f37bbf55348dc547ed57bfb408ed11c8fe4af050728054d356b6c",
+      "partition": "new-short-terminal"
+    },
+    {
+      "name": "lazy-history-holdout/ending/1107007/0",
+      "category": "ending",
+      "origin": "first admissible inventory-valid one-move win, selected by JS legal terminal proof; reachability not asserted",
+      "pieces": 10,
+      "hidden": 0,
+      "roots": 48,
+      "observationHash": "6424fb0c6ee669a8091f2950d4fd93a788fcc606f4ff0feda583a28aaf3cdaed",
+      "partition": "new-short-terminal"
+    },
+    {
+      "name": "lazy-history-holdout/ending/1107221/0",
+      "category": "ending",
+      "origin": "first admissible inventory-valid one-move win, selected by JS legal terminal proof; reachability not asserted",
+      "pieces": 12,
+      "hidden": 0,
+      "roots": 35,
+      "observationHash": "c4ad388394d95443734616d5f6aed14ad22fb2a2d13ca694040056d5c8631985",
+      "partition": "new-short-terminal"
+    }
+  ]
+}

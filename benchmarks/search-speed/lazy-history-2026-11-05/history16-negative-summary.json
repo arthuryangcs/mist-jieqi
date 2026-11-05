@@ -1,0 +1,31 @@
+{
+  "history16": "not retained; below predeclared >=1.02 gate",
+  "geometricSpeedup": 1.0045703535816486,
+  "perPosition": [
+    {
+      "position": "overlay-holdout/opening/900603/0",
+      "speedup": 1.0021674689312177
+    },
+    {
+      "position": "overlay-holdout/opening/900617/3",
+      "speedup": 1.0139324076949516
+    },
+    {
+      "position": "overlay-holdout/middle/900803/28",
+      "speedup": 0.9927166083110908
+    },
+    {
+      "position": "overlay-holdout/middle/900817/41",
+      "speedup": 1.0046035694783217
+    },
+    {
+      "position": "overlay-holdout/ending/900913/0",
+      "speedup": 1.0027554205517943
+    },
+    {
+      "position": "overlay-holdout/ending/901122/0",
+      "speedup": 1.011388044073123
+    }
+  ],
+  "tests": "release40 finite/6budgets/414views/11874transitions/3noTT refs passed; no sanitizer or formal match claimed for rejected candidate"
+}

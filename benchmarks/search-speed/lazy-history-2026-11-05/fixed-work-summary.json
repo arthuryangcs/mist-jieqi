@@ -1,0 +1,50 @@
+{
+  "longGeometricSpeedup": 0.9913818882174319,
+  "minimumLongSpeedup": 0.9663259166709373,
+  "shortLatency": {
+    "baselineMedianMs": 8.383248999999978,
+    "candidateMedianMs": 6.115673000000015,
+    "speedup": 1.370781106184055,
+    "latencyReduction": 0.2704889238050747,
+    "pairs": 25
+  },
+  "positions": [
+    {
+      "position": "overlay-holdout/opening/900603/0",
+      "baselineMs": 1232.5533419999992,
+      "candidateMs": 1220.459907,
+      "speedup": 1.0099089162459471
+    },
+    {
+      "position": "overlay-holdout/opening/900617/3",
+      "baselineMs": 249.86952900000006,
+      "candidateMs": 258.5768680000001,
+      "speedup": 0.9663259166709373
+    },
+    {
+      "position": "overlay-holdout/middle/900803/28",
+      "baselineMs": 269.41240300000027,
+      "candidateMs": 273.9206689999992,
+      "speedup": 0.9835417092968661
+    },
+    {
+      "position": "overlay-holdout/middle/900817/41",
+      "baselineMs": 352.80080199999975,
+      "candidateMs": 357.34719399999994,
+      "speedup": 0.9872773815596263
+    },
+    {
+      "position": "overlay-holdout/ending/900913/0",
+      "baselineMs": 679.3805289999982,
+      "candidateMs": 695.1772670000009,
+      "speedup": 0.9772766763962627
+    },
+    {
+      "position": "overlay-holdout/ending/901122/0",
+      "baselineMs": 34.90281899999991,
+      "candidateMs": 34.04630299999917,
+      "speedup": 1.025157386398187
+    }
+  ],
+  "passed": true
+}

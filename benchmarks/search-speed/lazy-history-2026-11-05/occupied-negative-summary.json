@@ -1,0 +1,43 @@
+{
+  "geometricSpeedup": 1.0007859108296784,
+  "minSpeedup": 0.9653314116285556,
+  "passed": false,
+  "positions": [
+    {
+      "position": "overlay-holdout/opening/900603/0",
+      "speedup": 0.9933345448693588,
+      "baselineMs": 1193.9556249999996,
+      "candidateMs": 1201.9672840000003
+    },
+    {
+      "position": "overlay-holdout/opening/900617/3",
+      "speedup": 1.0064858704810806,
+      "baselineMs": 256.02634799999987,
+      "candidateMs": 254.3764949999986
+    },
+    {
+      "position": "overlay-holdout/middle/900803/28",
+      "speedup": 0.9980007708209947,
+      "baselineMs": 270.79161600000043,
+      "candidateMs": 271.33407499999885
+    },
+    {
+      "position": "overlay-holdout/middle/900817/41",
+      "speedup": 0.9915249294808094,
+      "baselineMs": 349.15133799999967,
+      "candidateMs": 352.1357130000001
+    },
+    {
+      "position": "overlay-holdout/ending/900913/0",
+      "speedup": 1.0520416208144727,
+      "baselineMs": 681.6175210000001,
+      "candidateMs": 647.8997670000008
+    },
+    {
+      "position": "overlay-holdout/ending/901122/0",
+      "speedup": 0.9653314116285556,
+      "baselineMs": 36.9393940000009,
+      "candidateMs": 38.26602300000013
+    }
+  ]
+}

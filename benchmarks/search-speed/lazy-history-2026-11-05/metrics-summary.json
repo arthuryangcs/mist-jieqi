@@ -1,0 +1,13 @@
+{
+  "longNativeNpsVsDeferredGeometricRatio": 0.9819045251472808,
+  "newShortLatencyReductions": [
+    0.18966929322723247,
+    0.14837829123068413,
+    0.26338474090946906,
+    0.22380021048157073
+  ],
+  "newShortLatencyMedianReduction": 0.2067347518544016,
+  "samePikaLongViews": 6,
+  "longViews": 10,
+  "candidateVsPikaNotEquivalentNodes": true
+}

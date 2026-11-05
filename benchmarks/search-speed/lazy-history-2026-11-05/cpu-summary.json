@@ -1,0 +1,110 @@
+{
+  "source": "resource.getrusage(RUSAGE_CHILDREN), own waited Node and engine subtree only",
+  "calibration": {
+    "wallSeconds": 0.3536113680456765,
+    "childTreeCpuSeconds": 0.34141099999999996,
+    "reported": {
+      "ownCpu": 0.052871,
+      "grandchildCpu": 0.24344400000000002
+    }
+  },
+  "method": "search whole own-child-tree CPU minus each-engine median ready-control CPU; startup/close/Node error remains",
+  "positions": [
+    {
+      "position": "lazy-history-holdout/opening/1106001/0",
+      "engines": {
+        "candidate": {
+          "samples": 3,
+          "cores": {
+            "median": 3.6437437175759193,
+            "min": 3.6088221710910293,
+            "max": 3.6605572274608793
+          },
+          "estimatedSearchCpuMs": 7053.361000000002,
+          "nativeNodeNps": 7270445.423336603,
+          "selfReportedCoresMedian": 3.5916738597777216
+        },
+        "pika": {
+          "samples": 3,
+          "cores": {
+            "median": 3.9986491134189146,
+            "min": 3.9546531087566175,
+            "max": 4.018175272067554
+          },
+          "estimatedSearchCpuMs": 7851.282999999997,
+          "nativeNodeNps": 6769146.154510037,
+          "selfReportedCoresMedian": null
+        }
+      }
+    },
+    {
+      "position": "lazy-history-holdout/ending/1106426/0",
+      "engines": {
+        "candidate": {
+          "samples": 3,
+          "cores": {
+            "median": 1.8058792830612036,
+            "min": 1.7844937535189522,
+            "max": 1.8298330886412708
+          },
+          "estimatedSearchCpuMs": 3482.5420000000013,
+          "nativeNodeNps": 3686143.9229371864,
+          "selfReportedCoresMedian": 1.761868184042344
+        },
+        "pika": {
+          "samples": 3,
+          "cores": {
+            "median": 4.005651065736398,
+            "min": 3.9980556047108986,
+            "max": 4.010001822599545
+          },
+          "estimatedSearchCpuMs": 7861.293999999999,
+          "nativeNodeNps": 7672648.490028392,
+          "selfReportedCoresMedian": null
+        }
+      }
+    },
+    {
+      "position": "near-confirmation/ending/9711560/0",
+      "engines": {
+        "candidate": {
+          "samples": 3,
+          "cores": {
+            "median": 1.9108000365058473,
+            "min": 1.8804656397753907,
+            "max": 1.9490630223115017
+          },
+          "estimatedSearchCpuMs": 3686.1749999999975,
+          "nativeNodeNps": 3936018.008995399,
+          "selfReportedCoresMedian": 1.8442046113049442
+        },
+        "pika": {
+          "samples": 3,
+          "cores": {
+            "median": 3.9929635885316332,
+            "min": 3.976902033375223,
+            "max": 4.0017832509339675
+          },
+          "estimatedSearchCpuMs": 7835.541000000007,
+          "nativeNodeNps": 5828676.513041501,
+          "selfReportedCoresMedian": null
+        }
+      }
+    }
+  ],
+  "readiness": {
+    "candidate": {
+      "samples": 3,
+      "medianCpuMs": 273.936,
+      "min": 253.90099999999998,
+      "max": 278.32299999999987
+    },
+    "pika": {
+      "samples": 3,
+      "medianCpuMs": 877.701,
+      "min": 870.9590000000001,
+      "max": 905.0510000000002
+    }
+  },
+  "allSearchSamples": 18
+}

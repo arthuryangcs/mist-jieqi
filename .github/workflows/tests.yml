@@ -9,6 +9,30 @@ concurrency:
   group: tests-${{ github.ref }}
   cancel-in-progress: true
 jobs:
+  lazy-history-experiment:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '24'
+      - name: Reproduce exact optional history and rejected sources
+        run: node --test native/experiments/search-speed/lazy-history-source.test.mjs
+      - name: Replay synthetic matches with the recorded referee version
+        run: node native/experiments/search-speed/replay-lazy-history.mjs
+      - name: Private history, fixed worlds, rules, privacy and cancellation
+        run: |
+          node native/experiments/search-speed/check-lazy-history.mjs search
+          node native/experiments/search-speed/check-lazy-history.mjs rules
+          node native/experiments/search-speed/check-lazy-history.mjs reference
+      - name: Address and undefined behavior checks
+        run: |
+          node native/experiments/search-speed/check-lazy-history.mjs search --sanitize
+          node native/experiments/search-speed/check-lazy-history.mjs rules --sanitize
+          node native/experiments/search-speed/check-lazy-history.mjs reference --sanitize
   deferred-order-experiment:
     runs-on: ubuntu-latest
     timeout-minutes: 15

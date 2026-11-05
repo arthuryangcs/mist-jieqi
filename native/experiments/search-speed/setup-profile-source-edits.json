@@ -1,0 +1,87 @@
+{
+  "baseSha256": "6a3b23aaa1a6820dfbd1b89f897eeb2574b59fee827d1ab35c4ac93beee7b5aa",
+  "resultSha256": "93ae5d3db5b6fb20dd0ec2e1f6f398d190ba36822c6c58d479d3e9611fd184c2",
+  "edits": [
+    {
+      "startLine": 31,
+      "endLine": 31,
+      "before": [],
+      "after": [
+        "using DiagClock=std::chrono::steady_clock;\n",
+        "DiagClock::time_point diagStart;double diagArenaMs=0;size_t diagArenaCount=0,diagUnused=0,diagCapacity=0;\n",
+        "void diagMark(const char* phase){std::cerr<<\"{\\\"phase\\\":\\\"\"<<phase<<\"\\\",\\\"wallMs\\\":\"<<std::chrono::duration<double,std::milli>(DiagClock::now()-diagStart).count()<<\",\\\"arenaMs\\\":\"<<diagArenaMs<<\",\\\"arenaCount\\\":\"<<diagArenaCount<<\",\\\"arenaCapacity\\\":\"<<diagCapacity<<\",\\\"unusedArenas\\\":\"<<diagUnused<<\"}\\n\";}\n",
+        "\n"
+      ]
+    },
+    {
+      "startLine": 344,
+      "endLine": 345,
+      "before": [
+        "    static size_t checked(size_t cap){if(cap==0||cap>budget)throw std::logic_error(\"invalid TT partition\");return cap;}const size_t capacity;void* data;explicit TTArena(size_t cap=budget):capacity(checked(cap)),data(::operator new(capacity,std::align_val_t(64))){}\n"
+      ],
+      "after": [
+        "    static size_t checked(size_t cap){if(cap==0||cap>budget)throw std::logic_error(\"invalid TT partition\");return cap;}const size_t capacity;void* data;explicit TTArena(size_t cap=budget):capacity(checked(cap)),data(nullptr){const auto t=DiagClock::now();data=::operator new(capacity,std::align_val_t(64));diagArenaMs+=std::chrono::duration<double,std::milli>(DiagClock::now()-t).count();diagArenaCount++;diagCapacity+=capacity;}\n"
+      ]
+    },
+    {
+      "startLine": 346,
+      "endLine": 347,
+      "before": [
+        "    ~TTArena(){::operator delete(data,std::align_val_t(64));}\n"
+      ],
+      "after": [
+        "    ~TTArena(){if(!used.load())diagUnused++;::operator delete(data,std::align_val_t(64));}\n"
+      ]
+    },
+    {
+      "startLine": 719,
+      "endLine": 720,
+      "before": [
+        "std::unique_ptr<RequestWorkers> pool;if(parallel)pool=std::make_unique<RequestWorkers>(lanes);\n"
+      ],
+      "after": [
+        "std::unique_ptr<RequestWorkers> pool;if(parallel)pool=std::make_unique<RequestWorkers>(lanes);diagMark(\"worlds-ready\");\n"
+      ]
+    },
+    {
+      "startLine": 834,
+      "endLine": 835,
+      "before": [
+        "std::unique_ptr<RequestWorkers> pool;if(parallel)pool=std::make_unique<RequestWorkers>(lanes);\n"
+      ],
+      "after": [
+        "std::unique_ptr<RequestWorkers> pool;if(parallel)pool=std::make_unique<RequestWorkers>(lanes);diagMark(\"worlds-ready\");\n"
+      ]
+    },
+    {
+      "startLine": 915,
+      "endLine": 916,
+      "before": [
+        "    std::unique_ptr<RequestWorkers> pool=std::make_unique<RequestWorkers>(lanes);\n"
+      ],
+      "after": [
+        "    diagMark(\"bright-contexts\");std::unique_ptr<RequestWorkers> pool=std::make_unique<RequestWorkers>(lanes);diagMark(\"bright-ready\");\n"
+      ]
+    },
+    {
+      "startLine": 998,
+      "endLine": 999,
+      "before": [
+        "    auto pool=std::make_unique<RequestWorkers>(lanes);uint64_t splitNodes=0,completed=0;int currentDepth=0,interrupted=0;double lastTelemetry=-100;bool active=false;std::vector<Iteration> iterations;\n"
+      ],
+      "after": [
+        "    diagMark(\"frontier-contexts\");auto pool=std::make_unique<RequestWorkers>(lanes);diagMark(\"frontier-ready\");uint64_t splitNodes=0,completed=0;int currentDepth=0,interrupted=0;double lastTelemetry=-100;bool active=false;std::vector<Iteration> iterations;\n"
+      ]
+    },
+    {
+      "startLine": 1069,
+      "endLine": 1070,
+      "before": [
+        "    try {Packet packet;while(read(packet)){lazyLegalityEnabled=packet.lazyLegalityEnabled;kingHintEnabled=packet.kingHintEnabled&&safeKingHints(packet);if(packet.mode==\"VERIFY\")verify(packet);else {requestCpuStart=selfCpuMs();if(std::any_of(packet.view.begin(),packet.view.end(),[](Piece p){return p.live()&&p.hidden;}))runDarkMesh(packet);else runFrontier(packet);}std::cout<<std::flush;packet=Packet{};}}\n"
+      ],
+      "after": [
+        "    try {Packet packet;while(read(packet)){lazyLegalityEnabled=packet.lazyLegalityEnabled;kingHintEnabled=packet.kingHintEnabled&&safeKingHints(packet);if(packet.mode==\"VERIFY\")verify(packet);else {diagStart=DiagClock::now();diagArenaMs=0;diagArenaCount=0;diagUnused=0;diagCapacity=0;requestCpuStart=selfCpuMs();if(std::any_of(packet.view.begin(),packet.view.end(),[](Piece p){return p.live()&&p.hidden;}))runDarkMesh(packet);else runFrontier(packet);diagMark(\"request-finished\");}std::cout<<std::flush;packet=Packet{};}}\n"
+      ]
+    }
+  ]
+}

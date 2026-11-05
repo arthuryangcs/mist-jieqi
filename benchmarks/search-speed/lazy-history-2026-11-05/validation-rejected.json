@@ -1,0 +1,118 @@
+{
+  "history16": {
+    "check-release": {
+      "passed": true,
+      "sourceSha256": "ea9f035ad324d3e823a723aba2d05e9f71a29f5e611bbb6627ee34be7a9602a9",
+      "units": [
+        705730,
+        24145,
+        24073
+      ],
+      "finiteCases": 40,
+      "ruleViews": 0,
+      "transitionCount": null
+    },
+    "rules-release": {
+      "passed": true,
+      "sourceSha256": "ea9f035ad324d3e823a723aba2d05e9f71a29f5e611bbb6627ee34be7a9602a9",
+      "units": [],
+      "finiteCases": 0,
+      "ruleViews": 414,
+      "transitionCount": 11874
+    },
+    "reference-release": {
+      "passed": true,
+      "sourceSha256": null,
+      "units": [],
+      "finiteCases": 0,
+      "ruleViews": 0,
+      "transitionCount": null
+    }
+  },
+  "occupied": {
+    "check-release": {
+      "passed": true,
+      "sourceSha256": "f382185ed8380511c656b4a9f88c3db7cf37437470e5eeec857a9fa28adbafab",
+      "units": [
+        689814,
+        8229,
+        8157
+      ],
+      "finiteCases": 40,
+      "ruleViews": 0,
+      "transitionCount": null
+    },
+    "rules-release": {
+      "passed": true,
+      "sourceSha256": "f382185ed8380511c656b4a9f88c3db7cf37437470e5eeec857a9fa28adbafab",
+      "units": [],
+      "finiteCases": 0,
+      "ruleViews": 414,
+      "transitionCount": 11874
+    },
+    "reference-release": {
+      "passed": true,
+      "sourceSha256": null,
+      "units": [],
+      "finiteCases": 0,
+      "ruleViews": 0,
+      "transitionCount": null
+    },
+    "check-sanitized": {
+      "passed": true,
+      "sourceSha256": "f382185ed8380511c656b4a9f88c3db7cf37437470e5eeec857a9fa28adbafab",
+      "units": [
+        689814,
+        8229,
+        8157
+      ],
+      "finiteCases": 40,
+      "ruleViews": 0,
+      "transitionCount": null
+    },
+    "rules-sanitized": {
+      "passed": true,
+      "sourceSha256": "f382185ed8380511c656b4a9f88c3db7cf37437470e5eeec857a9fa28adbafab",
+      "units": [],
+      "finiteCases": 0,
+      "ruleViews": 414,
+      "transitionCount": 11874
+    },
+    "reference-sanitized": {
+      "passed": true,
+      "sourceSha256": null,
+      "units": [],
+      "finiteCases": 0,
+      "ruleViews": 0,
+      "transitionCount": null
+    },
+    "check-tsan": {
+      "passed": true,
+      "sourceSha256": "f382185ed8380511c656b4a9f88c3db7cf37437470e5eeec857a9fa28adbafab",
+      "units": [
+        689814,
+        8229,
+        8157
+      ],
+      "finiteCases": 40,
+      "ruleViews": 0,
+      "transitionCount": null
+    },
+    "rules-tsan": {
+      "passed": true,
+      "sourceSha256": "f382185ed8380511c656b4a9f88c3db7cf37437470e5eeec857a9fa28adbafab",
+      "units": [],
+      "finiteCases": 0,
+      "ruleViews": 414,
+      "transitionCount": 11874
+    },
+    "reference-tsan": {
+      "passed": true,
+      "sourceSha256": null,
+      "units": [],
+      "finiteCases": 0,
+      "ruleViews": 0,
+      "transitionCount": null
+    }
+  }
+}
