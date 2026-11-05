@@ -1,0 +1,67 @@
+{
+  "state": "completed",
+  "checks": [
+    {
+      "command": "npm",
+      "args": [
+        "test",
+        "--",
+        "--test-concurrency=1"
+      ],
+      "code": 0,
+      "signal": null
+    },
+    {
+      "command": "node",
+      "args": [
+        "native/experiments/search-speed/check-frontier-concurrency.mjs",
+        "search"
+      ],
+      "code": 0,
+      "signal": null
+    },
+    {
+      "command": "node",
+      "args": [
+        "native/experiments/search-speed/check-frontier-concurrency.mjs",
+        "rules"
+      ],
+      "code": 0,
+      "signal": null
+    },
+    {
+      "command": "node",
+      "args": [
+        "native/experiments/search-speed/check-frontier-concurrency.mjs",
+        "reference"
+      ],
+      "code": 0,
+      "signal": null
+    },
+    {
+      "command": "node",
+      "args": [
+        "native/experiments/search-speed/frontier-concurrency-proof.mjs"
+      ],
+      "code": 0,
+      "signal": null
+    },
+    {
+      "command": "node",
+      "args": [
+        "native/experiments/search-speed/replay-frontier-concurrency.mjs"
+      ],
+      "code": 0,
+      "signal": null
+    }
+  ],
+  "npmTests": 189,
+  "exactSourceTests": 8,
+  "publicReplay": {
+    "games": 12,
+    "moves": 340,
+    "darkCaptureChecks": 15
+  },
+  "browserRun": false,
+  "browserReason": "engine-only round; preserve prior browser restriction and active user page"
+}

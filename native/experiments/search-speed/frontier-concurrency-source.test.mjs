@@ -1,0 +1,10 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {createHash}from'node:crypto';import{frontierConcurrencySource,frontierConcurrencyUnitSource,frontierProfileSource,baselineFrontierProfileSource}from'./frontier-concurrency-source.mjs';
+const sha=s=>createHash('sha256').update(s).digest('hex');
+test('frontier v1 regenerates measured source',()=>assert.equal(sha(frontierConcurrencySource({revision:'v1'})),'8e4b589fe3a0955dfe3ed76a9cf32482df4671d6e5b9b1bd3e1c79f794f51005'));
+test('frontier v2 regenerates measured source',()=>assert.equal(sha(frontierConcurrencySource({revision:'v2'})),'7bedddb790e8cfd252907344dfb347eb3176dad585484464b2aba5e7ee7854b3'));
+test('frontier v3 regenerates measured source',()=>assert.equal(sha(frontierConcurrencySource({revision:'v3'})),'d32259816c12d332b43d88718e38eb0bd56ee8d819fa44c67e986733ab1e80f8'));
+test('frontier v4 regenerates measured source',()=>assert.equal(sha(frontierConcurrencySource({revision:'v4'})),'f03004da767017741001d475841cd6d36eea1d008b6aaf037d59f8db6a8f5349'));
+test('frontier v5 regenerates measured source',()=>assert.equal(sha(frontierConcurrencySource({revision:'v5'})),'a53621542823a6a9a16a7daaced6a980f7a5381bee494a1da51414767eb213b3'));
+test('frontier tested units regenerate exactly',()=>assert.equal(sha(frontierConcurrencyUnitSource(frontierConcurrencySource())),'a0939f8189bfa1546ce703e583088b6b7b43e070f036cd4deb6226691e22f5a0'));
+test('frontierProfileSource preserves exact instrumented source',()=>assert.equal(sha(frontierProfileSource()),'bd5ea03b094a05ceb7979305404d1b0db3dce83eb7505c890485a062d936445b'));
+test('baselineFrontierProfileSource preserves exact instrumented source',()=>assert.equal(sha(baselineFrontierProfileSource()),'6a27dc25d762de5245f39e4b3299999bf4e84b5011b97e1a1aa8385d2c8026e5'));

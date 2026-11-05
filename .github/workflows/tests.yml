@@ -9,6 +9,32 @@ concurrency:
   group: tests-${{ github.ref }}
   cancel-in-progress: true
 jobs:
+  frontier-concurrency-experiment:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '24'
+      - name: Exact measured sources and synthetic replay
+        run: |
+          node --test native/experiments/search-speed/frontier-concurrency-source.test.mjs
+          node native/experiments/search-speed/replay-frontier-concurrency.mjs
+      - name: Private states, shared TT snapshots, fixed roots and cancellation
+        run: |
+          node native/experiments/search-speed/check-frontier-concurrency.mjs search
+          node native/experiments/search-speed/check-frontier-concurrency.mjs rules
+          node native/experiments/search-speed/check-frontier-concurrency.mjs reference
+          node native/experiments/search-speed/frontier-concurrency-proof.mjs
+      - name: Address and undefined behavior checks
+        run: |
+          node native/experiments/search-speed/check-frontier-concurrency.mjs search --sanitize
+          node native/experiments/search-speed/check-frontier-concurrency.mjs rules --sanitize
+          node native/experiments/search-speed/check-frontier-concurrency.mjs reference --sanitize
+          node native/experiments/search-speed/frontier-concurrency-proof.mjs --sanitize
   lazy-history-experiment:
     runs-on: ubuntu-latest
     timeout-minutes: 15

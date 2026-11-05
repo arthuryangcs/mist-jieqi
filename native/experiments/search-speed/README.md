@@ -52,3 +52,5 @@ node native/experiments/search-speed/benchmark.mjs
 ## C7 可选实验
 
 [C7 构建与复现说明](README-C7.md) · [行列提取与自将检查报告](../../../docs/experiments/search-speed-c7.md)。C7 在 C6 上减少重复几何计算，8 样本、HCE、根着覆盖与默认引擎保持原配置；阶段结果尚未全面超过固定 Pika。
+
+少根残局的首批瓶颈、共享完整键 TT 与先主分支后并行的显式原型见 [构建说明](README-FRONTIER-CONCURRENCY.md) 和 [比较报告](../../../docs/experiments/frontier-concurrency.md)。

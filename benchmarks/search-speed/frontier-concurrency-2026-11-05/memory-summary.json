@@ -1,0 +1,43 @@
+{
+  "method": "BSD /usr/bin/time -l of owned native core; separate Node wrapper/controller RSS excluded; own held child process group forwarded on cancellation",
+  "calibration": {
+    "selfMaxRss": 43257856,
+    "touchedBytes": 33554432,
+    "observed": 43315200
+  },
+  "positions": [
+    {
+      "position": "lazy-history-holdout/ending/1106426/0",
+      "candidate": {
+        "maxResidentBytesMedian": 7208960,
+        "ttAllocatedMedian": 1850512
+      },
+      "baseline": {
+        "maxResidentBytesMedian": 6365184,
+        "ttAllocatedMedian": 1850512
+      }
+    },
+    {
+      "position": "near-confirmation/ending/9711560/0",
+      "candidate": {
+        "maxResidentBytesMedian": 10764288,
+        "ttAllocatedMedian": 5553856
+      },
+      "baseline": {
+        "maxResidentBytesMedian": 10305536,
+        "ttAllocatedMedian": 5553856
+      }
+    },
+    {
+      "position": "deferred-holdout/ending/1105424/0",
+      "candidate": {
+        "maxResidentBytesMedian": 23998464,
+        "ttAllocatedMedian": 5479352
+      },
+      "baseline": {
+        "maxResidentBytesMedian": 22802432,
+        "ttAllocatedMedian": 5478680
+      }
+    }
+  ]
+}

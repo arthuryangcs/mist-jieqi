@@ -1,0 +1,6 @@
+// Self-authored optional few-root concurrency experiment; no production dispatch change.
+import fs from 'node:fs';import{deferredOrderSource}from './deferred-order-source.mjs';import{c7UnitSource}from './c7-source.mjs';import{applyC6Edits}from './c6-source.mjs';
+const derive=name=>applyC6Edits(deferredOrderSource(),JSON.parse(fs.readFileSync(new URL('./'+name+'-source-edits.json',import.meta.url))));
+export function frontierConcurrencySource({revision='v5'}={}){if(!['v1','v2','v3','v4','v5'].includes(revision))throw Error('unknown measured frontier revision');return derive('frontier-concurrency-'+revision);}
+export const frontierProfileSource=()=>derive('frontier-profile');export const baselineFrontierProfileSource=()=>derive('frontier-baseline-profile');
+export function frontierConcurrencyUnitSource(cpp){let text=c7UnitSource(cpp);const anchor='void verify(const Packet& p) {',call='+sharedLineUnits(packet.depth==17);';if(text.split(anchor).length!==2||text.split(call).length!==2)throw Error('frontier unit anchors changed');text=text.replace(anchor,fs.readFileSync(new URL('./frontier-concurrency-test-support.hpp',import.meta.url),'utf8')+'\n'+anchor);return text.replace(call,'+sharedLineUnits(packet.depth==17)+deferredOrderUnits(packet);');}
