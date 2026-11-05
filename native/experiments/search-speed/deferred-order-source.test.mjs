@@ -1,0 +1,5 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {createHash} from 'node:crypto';
+import {c7Source} from './c7-source.mjs';import {deferredOrderSource,deferredOrderUnitSource,rejectedIndexHeapSource} from './deferred-order-source.mjs';
+const sha=s=>createHash('sha256').update(s).digest('hex');
+test('deferred sorting regenerates exactly the release source that passed fixed-world and sanitizer checks',()=>{assert.equal(sha(c7Source()),'855cccb05cff5a4eb3efa919546f41d7b66ae7b852490ecf0b81115f7f9f20d0');assert.equal(sha(deferredOrderSource()),'6a3b23aaa1a6820dfbd1b89f897eeb2574b59fee827d1ab35c4ac93beee7b5aa');assert.equal(sha(deferredOrderUnitSource(deferredOrderSource())),'308c708c56eed625a32aacd042aecd328e79fa5d087342e9e5693493b9a35daa');});
+test('rejected stable index heap is reproducible and separate from the retained candidate',()=>{assert.equal(sha(rejectedIndexHeapSource()),'f3abad3fe06548a045044d5bfe8ae1fb21f4262033e3e3a2ca9f280befab992e');assert.notEqual(sha(rejectedIndexHeapSource()),sha(deferredOrderSource()));});

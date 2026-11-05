@@ -2,7 +2,7 @@ import {targeted} from './targeted.mjs';
 import fs from 'node:fs';import assert from 'node:assert/strict';
 import {performance} from 'node:perf_hooks';
 import {spawnSync} from 'node:child_process';
-import {initial,publicState,move,legalMoves,inCheck,TYPES} from '../../../engine.js';
+import {initial,publicState,move,legalMoves,inCheck,TYPES} from './legacy-engine-20261103.js';
 import {seeded,evaluate,remaining,values} from '../../../ai.js';
 
 import {Native,fixture,encode} from './bridge.mjs';

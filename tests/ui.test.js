@@ -219,11 +219,20 @@ test('候选箭头不重复主推荐，不残留旧数量，翻转时数字保�
 test('对手私人搜索完成后不会向玩家展示候选箭头',async()=>{
  const {$,workers,click}=await setup();click(54);click(45);const w=workers[0];w.onmessage({data:{id:w.data.id,result:{move:{from:27,to:36},candidates:[{from:27,to:36,score:1,spread:0},{from:29,to:38,score:0,spread:0}],score:1,depth:1,samples:8,nodes:1,elapsedMs:1}}});assert.equal($('moveArrowLayer').dataset.phase,'last');assert.equal($('alternativeMove2').style.display,'none');
 });
-test('辅助盘第三次重复展示判负并停止分析，撤回后恢复可操作',async()=>{
+test('辅助盘复杂重复显示待裁定而非误判负，撤回重置不残留提示',async()=>{
  const {$,click}=await setup();$('editMode').onclick();const cycle=[{from:82,to:63},{from:1,to:18},{from:63,to:82},{from:18,to:1}];for(let i=0;i<10;i++){const m=cycle[i%4];click(m.from);click(m.to);if(i<2){$('revealType').value='N';$('confirmSync').onclick();}}
- assert.match($('status').textContent,/红方获胜.*黑方重复局面判负/);assert($('analyze').disabled);$('undo').onclick();assert(!/判负/.test($('status').textContent));assert(!$('analyze').disabled);
+ assert(!/获胜|判负/.test($('status').textContent));assert.match($('repetitionNotice').textContent,/待裁定/);assert(!$('repetitionNotice').hidden);assert(!$('analyze').disabled);$('undo').onclick();assert(!/判负/.test($('status').textContent));assert(!$('analyze').disabled);$('reset').onclick();assert($('repetitionNotice').hidden);
 });
 async function knownAssist(){const ctx=await setup(),{$,click}=ctx;$('editMode').onclick();click(54);click(45);$('revealType').value='R';$('confirmSync').onclick();click(27);click(36);$('revealType').value='P';$('confirmSync').onclick();return ctx;}
+test('可确认的循环显示剩余变着机会，撤回后恢复，重开清除',async()=>{
+ const {$,click}=await setup();$('editMode').onclick();$('clear').onclick();
+ for(const[i,label]of[[85,'红帅'],[4,'黑将'],[49,'红兵']]){click(i);$('palette').children.find(b=>b['aria-label']===label).onclick();}
+ $('methodSync').onclick();const cycle=[[85,84],[4,5],[84,85],[5,4]];
+ for(let i=0;i<9;i++){click(cycle[i%4][0]);click(cycle[i%4][1]);}
+ assert.match($('repetitionNotice').textContent,/红方应变着.*2次/);assert(!$('repetitionNotice').hidden);assert(!$('analyze').disabled);
+ click(4);click(5);click(84);click(85);assert.match($('repetitionNotice').textContent,/1次/);
+ $('undo').onclick();assert.match($('repetitionNotice').textContent,/2次/);$('reset').onclick();assert($('repetitionNotice').hidden);
+});
 test('自动同步默认关闭，开启后只在完整搜索结束时同步明子一步',async()=>{
  const {$,workers}=await knownAssist();assert(!$('autoSync').checked);$('analyze').onclick();const w=workers[0];$('autoSync').checked=true;$('autoSync').onchange();assert(!w.terminated);
  const result={move:{from:45,to:46},candidates:[],score:1,depth:1,samples:8,nodes:1,elapsedMs:1};w.onmessage({data:{id:w.data.id,progress:true,result}});assert.match($('counter').textContent,/已同步 2 步/);assert.equal($('board').children[45].children[0].textContent,'车');w.onmessage({data:{id:w.data.id,result}});assert.match($('counter').textContent,/已同步 3 步/);assert.equal($('board').children[46].children[0].textContent,'车');assert($('syncPrompt').hidden);w.onmessage({data:{id:w.data.id,result}});assert.match($('counter').textContent,/已同步 3 步/);

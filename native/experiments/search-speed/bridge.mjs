@@ -1,9 +1,12 @@
 // Protocol3 adds public repetition/clock context to the existing safe wire format.
 import {performance} from 'node:perf_hooks';
 import {Native as BaseNative,encode as encodeBase} from '../../bridge.mjs';
-import {positionKey} from '../../../engine.js';
+import {positionKey,rootRules,legalMoves} from './legacy-engine-20261103.js';
+import {fixture as baseFixture,observationSeed} from '../../bridge.mjs';
 import {binary as experimentBinary} from './build.mjs';
-export {fixture,observationSeed} from '../../bridge.mjs';
+export {observationSeed};
+// Preserve the explicit legacy rule contract of these frozen binaries.
+export function fixture(view,options){const f=baseFixture(view,options);f.repetitions=legalMoves(view).filter(m=>!view.board[m.from].hidden).map(m=>({...m,...rootRules(view,m)}));return f;}
 
 const types='KRNBCAP',side=x=>x==='r'?0:x==='b'?1:-1;
 let rng=817331;const next=()=>rng=(Math.imul(rng,1664525)+1013904223)>>>0;
