@@ -1,0 +1,333 @@
+{
+  "rows": [
+    {
+      "name": "deferred-holdout/opening/1105001/0",
+      "series": {
+        "deferred": {
+          "n": 3,
+          "medianM": 7.376482963709839,
+          "minM": 7.228410322152993,
+          "maxM": 7.447987373687691,
+          "exactFlags": [
+            true
+          ]
+        },
+        "c7": {
+          "n": 3,
+          "medianM": 6.878681544311919,
+          "minM": 6.7784765582592605,
+          "maxM": 6.895887460073455,
+          "exactFlags": [
+            true
+          ]
+        },
+        "stable": {
+          "n": 3,
+          "medianM": 2.9223562119008535,
+          "minM": 2.8870036548661204,
+          "maxM": 2.9337222977353923,
+          "exactFlags": [
+            false
+          ]
+        },
+        "pika": {
+          "n": 3,
+          "medianM": 6.987218061774794,
+          "minM": 6.869189611553431,
+          "maxM": 7.187276692450602,
+          "exactFlags": [
+            null
+          ]
+        }
+      }
+    },
+    {
+      "name": "deferred-holdout/opening/1105013/3",
+      "series": {
+        "deferred": {
+          "n": 3,
+          "medianM": 7.746930304522677,
+          "minM": 7.63557023158784,
+          "maxM": 7.757101927756467,
+          "exactFlags": [
+            true
+          ]
+        },
+        "c7": {
+          "n": 3,
+          "medianM": 7.364235639365592,
+          "minM": 7.228173255953067,
+          "maxM": 7.394783560473173,
+          "exactFlags": [
+            true
+          ]
+        },
+        "stable": {
+          "n": 3,
+          "medianM": 3.024737474113541,
+          "minM": 3.0228133821052476,
+          "maxM": 3.064211675756564,
+          "exactFlags": [
+            false
+          ]
+        },
+        "pika": {
+          "n": 3,
+          "medianM": 6.230862206262452,
+          "minM": 6.083744748078835,
+          "maxM": 6.267232247636022,
+          "exactFlags": [
+            null
+          ]
+        }
+      }
+    },
+    {
+      "name": "deferred-holdout/opening/1105029/11",
+      "series": {
+        "deferred": {
+          "n": 3,
+          "medianM": 8.007349778048718,
+          "minM": 7.78493796687157,
+          "maxM": 8.047001840335405,
+          "exactFlags": [
+            true
+          ]
+        },
+        "c7": {
+          "n": 3,
+          "medianM": 7.703477200788988,
+          "minM": 7.170869094758258,
+          "maxM": 7.732859585110358,
+          "exactFlags": [
+            true
+          ]
+        },
+        "stable": {
+          "n": 3,
+          "medianM": 2.908117590063158,
+          "minM": 2.8815647164066918,
+          "maxM": 2.9232774551909206,
+          "exactFlags": [
+            false
+          ]
+        },
+        "pika": {
+          "n": 3,
+          "medianM": 5.828351537858857,
+          "minM": 5.544035652247467,
+          "maxM": 5.846476299191324,
+          "exactFlags": [
+            null
+          ]
+        }
+      }
+    },
+    {
+      "name": "deferred-holdout/middle/1105101/28",
+      "series": {
+        "deferred": {
+          "n": 3,
+          "medianM": 7.090308904012848,
+          "minM": 7.006865880927597,
+          "maxM": 7.1034412153692665,
+          "exactFlags": [
+            true
+          ]
+        },
+        "c7": {
+          "n": 3,
+          "medianM": 6.825847194591268,
+          "minM": 6.521279530143613,
+          "maxM": 6.848966560420637,
+          "exactFlags": [
+            true
+          ]
+        },
+        "stable": {
+          "n": 3,
+          "medianM": 2.5714024686783574,
+          "minM": 2.5683541791505475,
+          "maxM": 2.6322348947479797,
+          "exactFlags": [
+            false
+          ]
+        },
+        "pika": {
+          "n": 3,
+          "medianM": 5.8404821585888556,
+          "minM": 5.595732899621223,
+          "maxM": 5.887549386519657,
+          "exactFlags": [
+            null
+          ]
+        }
+      }
+    },
+    {
+      "name": "deferred-holdout/middle/1105117/55",
+      "series": {
+        "deferred": {
+          "n": 3,
+          "medianM": 8.116753244329306,
+          "minM": 6.942957487924282,
+          "maxM": 8.119229902003925,
+          "exactFlags": [
+            true
+          ]
+        },
+        "c7": {
+          "n": 3,
+          "medianM": 7.714067630282485,
+          "minM": 7.703639863863458,
+          "maxM": 7.756644621565393,
+          "exactFlags": [
+            true
+          ]
+        },
+        "stable": {
+          "n": 3,
+          "medianM": 3.0599129587475935,
+          "minM": 3.038948963703899,
+          "maxM": 3.121428766025822,
+          "exactFlags": [
+            false
+          ]
+        },
+        "pika": {
+          "n": 3,
+          "medianM": 5.1391103700715695,
+          "minM": 5.117161618946834,
+          "maxM": 5.73061372701187,
+          "exactFlags": [
+            null
+          ]
+        }
+      }
+    },
+    {
+      "name": "deferred-holdout/ending/1105204/0",
+      "series": {
+        "deferred": {
+          "n": 3,
+          "medianM": 9.71615551547625,
+          "minM": 9.183293310901295,
+          "maxM": 9.876568010326649,
+          "exactFlags": [
+            true
+          ]
+        },
+        "c7": {
+          "n": 3,
+          "medianM": 9.688873842802806,
+          "minM": 8.88693409781175,
+          "maxM": 9.856335781682048,
+          "exactFlags": [
+            true
+          ]
+        },
+        "stable": {
+          "n": 3,
+          "medianM": 1.4477091718197075,
+          "minM": 1.3679637260760813,
+          "maxM": 1.4693088362645292,
+          "exactFlags": [
+            true
+          ]
+        },
+        "pika": {
+          "n": 3,
+          "medianM": 7.679991456415808,
+          "minM": 7.409064812951433,
+          "maxM": 7.72122539721549,
+          "exactFlags": [
+            null
+          ]
+        }
+      }
+    },
+    {
+      "name": "deferred-holdout/ending/1105303/0",
+      "series": {
+        "deferred": {
+          "n": 3,
+          "medianM": 0.018985775359858435,
+          "minM": 0.01536096063058759,
+          "maxM": 0.021215874171689426,
+          "exactFlags": [
+            true
+          ]
+        },
+        "c7": {
+          "n": 3,
+          "medianM": 0.019013119505158233,
+          "minM": 0.01843202291890678,
+          "maxM": 0.020886658547394965,
+          "exactFlags": [
+            true
+          ]
+        },
+        "stable": {
+          "n": 3,
+          "medianM": 0.03388148739733518,
+          "minM": 0.03270720452101081,
+          "maxM": 0.03495287187777641,
+          "exactFlags": [
+            true
+          ]
+        },
+        "pika": {
+          "n": 3,
+          "medianM": 8.639326332863867,
+          "minM": 8.06044621616825,
+          "maxM": 8.886674279686202,
+          "exactFlags": [
+            null
+          ]
+        }
+      }
+    },
+    {
+      "name": "deferred-holdout/ending/1105424/0",
+      "series": {
+        "deferred": {
+          "n": 3,
+          "medianM": 9.196643674149785,
+          "minM": 8.896583148788247,
+          "maxM": 9.225622108501137,
+          "exactFlags": [
+            true
+          ]
+        },
+        "c7": {
+          "n": 3,
+          "medianM": 9.210376947322453,
+          "minM": 8.83298472714479,
+          "maxM": 9.251064238571551,
+          "exactFlags": [
+            true
+          ]
+        },
+        "stable": {
+          "n": 3,
+          "medianM": 1.3720156579707428,
+          "minM": 1.3681637516900456,
+          "maxM": 1.3837989530524188,
+          "exactFlags": [
+            true
+          ]
+        },
+        "pika": {
+          "n": 3,
+          "medianM": 5.5812961085929365,
+          "minM": 5.546537149800749,
+          "maxM": 5.982299118483787,
+          "exactFlags": [
+            null
+          ]
+        }
+      }
+    }
+  ],
+  "description": "All three repetitions, min/median/max. Short proof retained separately. Native and UCI node definitions differ; stable telemetry is approximate."
+}

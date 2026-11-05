@@ -1,0 +1,415 @@
+{
+  "completed": true,
+  "requests": 96,
+  "technical": [],
+  "rows": [
+    {
+      "position": "deferred-holdout/opening/1105001/0",
+      "series": {
+        "deferred": {
+          "n": 3,
+          "nps": 7376482.96370984,
+          "wallMs": 1934.821115999992,
+          "short": 0,
+          "mainDepth": 6,
+          "selDepth": 14,
+          "threads": [
+            4
+          ]
+        },
+        "c7": {
+          "n": 3,
+          "nps": 6878681.544311919,
+          "wallMs": 1934.440502,
+          "short": 0,
+          "mainDepth": 6,
+          "selDepth": 14,
+          "threads": [
+            4
+          ]
+        },
+        "stable": {
+          "n": 3,
+          "nps": 2922356.2119008536,
+          "wallMs": 1963.846491999997,
+          "short": 0,
+          "mainDepth": 5,
+          "selDepth": 13,
+          "threads": [
+            4
+          ]
+        },
+        "pika": {
+          "n": 3,
+          "nps": 6987218.061774794,
+          "wallMs": 1960.2927629999976,
+          "short": 0,
+          "mainDepth": 12,
+          "selDepth": 6,
+          "threads": [
+            4
+          ]
+        }
+      },
+      "candidateOverC7": 1.072368725923874,
+      "candidateOverPika": 1.0557109994984428
+    },
+    {
+      "position": "deferred-holdout/opening/1105013/3",
+      "series": {
+        "deferred": {
+          "n": 3,
+          "nps": 7746930.304522677,
+          "wallMs": 1934.8473359999916,
+          "short": 0,
+          "mainDepth": 6,
+          "selDepth": 14,
+          "threads": [
+            4
+          ]
+        },
+        "c7": {
+          "n": 3,
+          "nps": 7364235.639365592,
+          "wallMs": 1934.8471039999858,
+          "short": 0,
+          "mainDepth": 6,
+          "selDepth": 14,
+          "threads": [
+            4
+          ]
+        },
+        "stable": {
+          "n": 3,
+          "nps": 3024737.4741135407,
+          "wallMs": 1963.0136730000086,
+          "short": 0,
+          "mainDepth": 6,
+          "selDepth": 13,
+          "threads": [
+            4
+          ]
+        },
+        "pika": {
+          "n": 3,
+          "nps": 6230862.206262452,
+          "wallMs": 1959.8335389999993,
+          "short": 0,
+          "mainDepth": 14,
+          "selDepth": 12,
+          "threads": [
+            4
+          ]
+        }
+      },
+      "candidateOverC7": 1.0519666512450236,
+      "candidateOverPika": 1.2433159405670169
+    },
+    {
+      "position": "deferred-holdout/opening/1105029/11",
+      "series": {
+        "deferred": {
+          "n": 3,
+          "nps": 8007349.778048719,
+          "wallMs": 1934.654340000001,
+          "short": 0,
+          "mainDepth": 6,
+          "selDepth": 14,
+          "threads": [
+            4
+          ]
+        },
+        "c7": {
+          "n": 3,
+          "nps": 7703477.200788988,
+          "wallMs": 1934.827451000001,
+          "short": 0,
+          "mainDepth": 6,
+          "selDepth": 14,
+          "threads": [
+            4
+          ]
+        },
+        "stable": {
+          "n": 3,
+          "nps": 2908117.590063158,
+          "wallMs": 1962.9474409999966,
+          "short": 0,
+          "mainDepth": 6,
+          "selDepth": 14,
+          "threads": [
+            4
+          ]
+        },
+        "pika": {
+          "n": 3,
+          "nps": 5828351.537858857,
+          "wallMs": 1959.6928840000182,
+          "short": 0,
+          "mainDepth": 13,
+          "selDepth": 11,
+          "threads": [
+            4
+          ]
+        }
+      },
+      "candidateOverC7": 1.039446157798534,
+      "candidateOverPika": 1.373861841729326
+    },
+    {
+      "position": "deferred-holdout/middle/1105101/28",
+      "series": {
+        "deferred": {
+          "n": 3,
+          "nps": 7090308.904012848,
+          "wallMs": 1935.1001189999952,
+          "short": 0,
+          "mainDepth": 7,
+          "selDepth": 15,
+          "threads": [
+            4
+          ]
+        },
+        "c7": {
+          "n": 3,
+          "nps": 6825847.194591268,
+          "wallMs": 1934.746358000004,
+          "short": 0,
+          "mainDepth": 7,
+          "selDepth": 15,
+          "threads": [
+            4
+          ]
+        },
+        "stable": {
+          "n": 3,
+          "nps": 2571402.4686783575,
+          "wallMs": 1962.9568149999977,
+          "short": 0,
+          "mainDepth": 6,
+          "selDepth": 14,
+          "threads": [
+            4
+          ]
+        },
+        "pika": {
+          "n": 3,
+          "nps": 5840482.1585888555,
+          "wallMs": 1959.7389750000148,
+          "short": 0,
+          "mainDepth": 23,
+          "selDepth": 15,
+          "threads": [
+            4
+          ]
+        }
+      },
+      "candidateOverC7": 1.0387441590592794,
+      "candidateOverPika": 1.2139937613859553
+    },
+    {
+      "position": "deferred-holdout/middle/1105117/55",
+      "series": {
+        "deferred": {
+          "n": 3,
+          "nps": 8116753.244329305,
+          "wallMs": 1934.7888900000253,
+          "short": 0,
+          "mainDepth": 6,
+          "selDepth": 14,
+          "threads": [
+            4
+          ]
+        },
+        "c7": {
+          "n": 3,
+          "nps": 7714067.630282485,
+          "wallMs": 1934.8429019999967,
+          "short": 0,
+          "mainDepth": 6,
+          "selDepth": 14,
+          "threads": [
+            4
+          ]
+        },
+        "stable": {
+          "n": 3,
+          "nps": 3059912.9587475937,
+          "wallMs": 1962.555171,
+          "short": 0,
+          "mainDepth": 5,
+          "selDepth": 13,
+          "threads": [
+            4
+          ]
+        },
+        "pika": {
+          "n": 3,
+          "nps": 5139110.370071569,
+          "wallMs": 1960.178706000006,
+          "short": 0,
+          "mainDepth": 20,
+          "selDepth": 24,
+          "threads": [
+            4
+          ]
+        }
+      },
+      "candidateOverC7": 1.0522014627491767,
+      "candidateOverPika": 1.579408236024374
+    },
+    {
+      "position": "deferred-holdout/ending/1105204/0",
+      "series": {
+        "deferred": {
+          "n": 3,
+          "nps": 9716155.515476251,
+          "wallMs": 1928.1912450000236,
+          "short": 0,
+          "mainDepth": 9,
+          "selDepth": 17,
+          "threads": [
+            4
+          ]
+        },
+        "c7": {
+          "n": 3,
+          "nps": 9688873.842802806,
+          "wallMs": 1928.0491800000018,
+          "short": 0,
+          "mainDepth": 9,
+          "selDepth": 17,
+          "threads": [
+            4
+          ]
+        },
+        "stable": {
+          "n": 3,
+          "nps": 1447709.1718197074,
+          "wallMs": 1936.624450999996,
+          "short": 0,
+          "mainDepth": 8,
+          "selDepth": 16,
+          "threads": [
+            1
+          ]
+        },
+        "pika": {
+          "n": 3,
+          "nps": 7679991.456415808,
+          "wallMs": 1959.8057590000026,
+          "short": 0,
+          "mainDepth": 89,
+          "selDepth": 24,
+          "threads": [
+            4
+          ]
+        }
+      },
+      "candidateOverC7": 1.002815773341265,
+      "candidateOverPika": 1.2651258234616194
+    },
+    {
+      "position": "deferred-holdout/ending/1105303/0",
+      "series": {
+        "deferred": {
+          "n": 3,
+          "nps": 18985.775359858435,
+          "wallMs": 8.848729999997886,
+          "short": 3,
+          "mainDepth": 1,
+          "selDepth": 4,
+          "threads": [
+            4
+          ]
+        },
+        "c7": {
+          "n": 3,
+          "nps": 19013.119505158233,
+          "wallMs": 8.836003999997047,
+          "short": 3,
+          "mainDepth": 1,
+          "selDepth": 4,
+          "threads": [
+            4
+          ]
+        },
+        "stable": {
+          "n": 3,
+          "nps": 33881.48739733518,
+          "wallMs": 4.958459999994375,
+          "short": 3,
+          "mainDepth": 1,
+          "selDepth": 4,
+          "threads": [
+            1
+          ]
+        },
+        "pika": {
+          "n": 3,
+          "nps": 8639326.332863867,
+          "wallMs": 5.560966000004555,
+          "short": 3,
+          "mainDepth": 245,
+          "selDepth": 2,
+          "threads": [
+            4
+          ]
+        }
+      },
+      "candidateOverC7": 0.9985618275163958,
+      "candidateOverPika": 0.0021975990520970174
+    },
+    {
+      "position": "deferred-holdout/ending/1105424/0",
+      "series": {
+        "deferred": {
+          "n": 3,
+          "nps": 9196643.674149785,
+          "wallMs": 1929.9015940000027,
+          "short": 0,
+          "mainDepth": 9,
+          "selDepth": 17,
+          "threads": [
+            4
+          ]
+        },
+        "c7": {
+          "n": 3,
+          "nps": 9210376.947322454,
+          "wallMs": 1929.9060289999761,
+          "short": 0,
+          "mainDepth": 9,
+          "selDepth": 17,
+          "threads": [
+            4
+          ]
+        },
+        "stable": {
+          "n": 3,
+          "nps": 1372015.6579707428,
+          "wallMs": 1936.5240840000042,
+          "short": 0,
+          "mainDepth": 8,
+          "selDepth": 16,
+          "threads": [
+            1
+          ]
+        },
+        "pika": {
+          "n": 3,
+          "nps": 5581296.108592937,
+          "wallMs": 1960.2887550000014,
+          "short": 0,
+          "mainDepth": 38,
+          "selDepth": 51,
+          "threads": [
+            4
+          ]
+        }
+      },
+      "candidateOverC7": 0.9985089347318558,
+      "candidateOverPika": 1.64776128971023
+    }
+  ]
+}

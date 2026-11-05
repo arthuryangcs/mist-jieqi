@@ -1,0 +1,44 @@
+{
+  "completed": true,
+  "rows": [
+    {
+      "name": "overlay-holdout/opening/900603/0",
+      "candidateMedianMs": 1191.312703,
+      "c7MedianMs": 1267.087452000007,
+      "speedup": 1.0636060950321344
+    },
+    {
+      "name": "overlay-holdout/opening/900617/3",
+      "candidateMedianMs": 256.3446120000008,
+      "c7MedianMs": 261.1051889999999,
+      "speedup": 1.0185710047223426
+    },
+    {
+      "name": "overlay-holdout/middle/900803/28",
+      "candidateMedianMs": 273.3519459999952,
+      "c7MedianMs": 280.07240000000456,
+      "speedup": 1.0245853526867135
+    },
+    {
+      "name": "overlay-holdout/middle/900817/41",
+      "candidateMedianMs": 359.4561130000002,
+      "c7MedianMs": 368.0441600000004,
+      "speedup": 1.0238917817486113
+    },
+    {
+      "name": "overlay-holdout/ending/900913/0",
+      "candidateMedianMs": 18153.965815999996,
+      "c7MedianMs": 19386.172837000006,
+      "speedup": 1.0678753630743318
+    },
+    {
+      "name": "overlay-holdout/ending/901122/0",
+      "candidateMedianMs": 422.4597450000001,
+      "c7MedianMs": 421.263380999997,
+      "speedup": 0.9971680994126362
+    }
+  ],
+  "geometricSpeedup": 1.0323109761017681,
+  "worst": 0.9971680994126362,
+  "gatePassed": true
+}

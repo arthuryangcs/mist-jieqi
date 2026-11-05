@@ -1,0 +1,129 @@
+{
+  "createdAt": "2026-11-05T01:37:19.763Z",
+  "gate": "fixed screen passed, sanitized validation still required before timing",
+  "fixturesSha256": "0622fe01c2c808894a51371b0f7c777043f317ef35c87e0890ca5d0ce7908b78",
+  "budgetMs": 2000,
+  "repeats": 3,
+  "requests": 96,
+  "threadsMaximum": 4,
+  "darkSamples": 8,
+  "HCE": true,
+  "fullRoots": true,
+  "engines": [
+    "deferred",
+    "c7",
+    "stable",
+    "pika"
+  ],
+  "binaryHashes": {
+    "deferred": "d7f743be6f1c84f8f898ec75d3b4dd8cb7a45ab2751bc418b77e3f7d3ee5926d",
+    "c7": "17284b7e3b2cceb7e70d378788c591990add1c10785e09a0b7a0094951807d15",
+    "stable": "7262d0abda78f09162c6e87045ac81d9c2b73ad8e445d277fbc8ced39926dbea"
+  },
+  "fixedPikaCommit": "bcc83f88ee18760e60903d1a3aaa61ef6f70f2c9",
+  "fixedPikaHash": "f32d3c6dfe4d6d90da7728d9cc2af68c3195a1cefb1bc28f3829f174c518dba1",
+  "caveats": [
+    "full-dark public initial control is a known repeated observation; 7 other views fixed before new timing",
+    "sparse endings are inventory-valid edits, reachability not asserted",
+    "8world native nodes already summed, Pika node units differ",
+    "same 4 thread upper bound; unchanged stable uses one actual thread in single-world endings, candidate/C7 use root lanes",
+    "Pika/C7 configured TT64MiB upper bound; stable old unordered-map allocation and RSS differ",
+    "old unknown builds remain unknown; randomized sequential order reduces but cannot prove absence of unrelated contention",
+    "2s data are performance diagnostics, not win rates or formal competition adjudication"
+  ],
+  "matchPlan": {
+    "layouts": [
+      11105013,
+      11105027
+    ],
+    "games": 8,
+    "kinds": [
+      "stable",
+      "pika"
+    ],
+    "candidateSides": [
+      "r",
+      "b"
+    ],
+    "budgetMs": 2000,
+    "graceMs": 60,
+    "maxPlies": 400,
+    "refereePolicy": "cn2020-evidence-v1, incomplete cases explicitly unresolved; no legacy last-mover referee or safe-root filter",
+    "stopRule": "fixed eight games; all technical failures and undecided cases retained; user-service-busy pauses own schedule"
+  },
+  "positions": [
+    {
+      "name": "deferred-holdout/opening/1105001/0",
+      "category": "opening",
+      "origin": "generated legal-play public observer view",
+      "pieces": 32,
+      "hidden": 30,
+      "roots": 44,
+      "observationHash": "af147cbf21007e455b1face0ced553e3c119f24c0b0237d90173296486023a9a"
+    },
+    {
+      "name": "deferred-holdout/opening/1105013/3",
+      "category": "opening",
+      "origin": "generated legal-play public observer view",
+      "pieces": 32,
+      "hidden": 27,
+      "roots": 47,
+      "observationHash": "3ea2e7d118993db4a5c5d7c0a866ef5b57db1ef0bfbf53c6cf82b431478b29da"
+    },
+    {
+      "name": "deferred-holdout/opening/1105029/11",
+      "category": "opening",
+      "origin": "generated legal-play public observer view",
+      "pieces": 32,
+      "hidden": 21,
+      "roots": 31,
+      "observationHash": "55384c59587677df4e28c6f3e6425b838ebe6ad2333d08deb8f7e1b867528a70"
+    },
+    {
+      "name": "deferred-holdout/middle/1105101/28",
+      "category": "middle",
+      "origin": "generated legal-play public observer view",
+      "pieces": 31,
+      "hidden": 17,
+      "roots": 36,
+      "observationHash": "2f1044dc310e36022d2b7dd0f1ff6575a3b8d5e46dbba4413124f4ed3edd1fc8"
+    },
+    {
+      "name": "deferred-holdout/middle/1105117/55",
+      "category": "middle",
+      "origin": "generated legal-play public observer view",
+      "pieces": 29,
+      "hidden": 10,
+      "roots": 37,
+      "observationHash": "e846945549f7fa827f9a9f52c355a3ffbfdd379073e634d3e6cef5f1c9ca5950"
+    },
+    {
+      "name": "deferred-holdout/ending/1105204/0",
+      "category": "ending",
+      "origin": "edited inventory-valid sparse public view; reachability not asserted",
+      "pieces": 10,
+      "hidden": 0,
+      "roots": 14,
+      "observationHash": "5cbe78480877a06f0fa12b710ca6c84d2100bb2e5d02cfc1b32f5ba3a1f1e82c"
+    },
+    {
+      "name": "deferred-holdout/ending/1105303/0",
+      "category": "ending",
+      "origin": "edited inventory-valid sparse public view; reachability not asserted",
+      "pieces": 10,
+      "hidden": 0,
+      "roots": 49,
+      "observationHash": "58413bf6094a3c5b0cff86d392a5787fee9681fe524508e5ec64ab0d843d6a22"
+    },
+    {
+      "name": "deferred-holdout/ending/1105424/0",
+      "category": "ending",
+      "origin": "edited inventory-valid sparse public view, first admissible 1..3 roots",
+      "pieces": 12,
+      "hidden": 0,
+      "roots": 3,
+      "observationHash": "43fbaa9374b9de21debda99f4852480aee4e1c6872dfd0f31f973a0529a8983b"
+    }
+  ],
+  "role": "original completed measurements; reproduce with new local binaries and a fresh output directory, do not overwrite this ledger"
+}

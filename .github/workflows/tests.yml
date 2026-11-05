@@ -21,6 +21,8 @@ jobs:
           node-version: '24'
       - name: Reproduce exact tested ordering sources
         run: node --test native/experiments/search-speed/deferred-order-source.test.mjs
+      - name: Replay synthetic matches with the recorded referee version
+        run: node native/experiments/search-speed/replay-deferred-order.mjs
       - name: Stable order, fixed worlds, rules, privacy and cancellation
         run: |
           node native/experiments/search-speed/check-deferred-order.mjs search

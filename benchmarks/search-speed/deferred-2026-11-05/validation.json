@@ -1,0 +1,180 @@
+{
+  "sourceSha256": "6a3b23aaa1a6820dfbd1b89f897eeb2574b59fee827d1ab35c4ac93beee7b5aa",
+  "variants": {
+    "release": {
+      "passed": true,
+      "finiteSearchCases": 40,
+      "timeoutBudgets": 6,
+      "unitChecks": [
+        {
+          "name": "ending/51307/3",
+          "passed": true,
+          "assertions": 685718,
+          "wallMs": 466.885664
+        },
+        {
+          "name": "ending/51319/6",
+          "passed": true,
+          "assertions": 4133,
+          "wallMs": 54.795050000000174
+        },
+        {
+          "name": "全明/49033/11",
+          "passed": true,
+          "assertions": 4061,
+          "wallMs": 224.62329699999987
+        }
+      ],
+      "ruleViews": 414,
+      "transitions": 11874,
+      "noTTReference": [
+        {
+          "name": "全明/49033/11",
+          "depth": 5,
+          "score": 690.3333333333334,
+          "nodes": 108571,
+          "referenceNodes": 2956041,
+          "passed": true
+        },
+        {
+          "name": "ending/51307/3",
+          "depth": 6,
+          "score": 2,
+          "nodes": 920781,
+          "referenceNodes": 22582756,
+          "passed": true
+        },
+        {
+          "name": "lazy-confirm/ending/54546/0",
+          "depth": 8,
+          "score": 626,
+          "nodes": 174840,
+          "referenceNodes": 2796630,
+          "passed": true
+        }
+      ],
+      "cancel": true,
+      "privacy": true
+    },
+    "-sanitized": {
+      "passed": true,
+      "finiteSearchCases": 40,
+      "timeoutBudgets": 6,
+      "unitChecks": [
+        {
+          "name": "ending/51307/3",
+          "passed": true,
+          "assertions": 685718,
+          "wallMs": 5494.298742
+        },
+        {
+          "name": "ending/51319/6",
+          "passed": true,
+          "assertions": 4133,
+          "wallMs": 1028.5054369999998
+        },
+        {
+          "name": "全明/49033/11",
+          "passed": true,
+          "assertions": 4061,
+          "wallMs": 3733.207240999999
+        }
+      ],
+      "ruleViews": 414,
+      "transitions": 11874,
+      "noTTReference": [
+        {
+          "name": "全明/49033/11",
+          "depth": 5,
+          "score": 690.3333333333334,
+          "nodes": 108571,
+          "referenceNodes": 2956041,
+          "passed": true
+        },
+        {
+          "name": "ending/51307/3",
+          "depth": 6,
+          "score": 2,
+          "nodes": 920781,
+          "referenceNodes": 22582756,
+          "passed": true
+        },
+        {
+          "name": "lazy-confirm/ending/54546/0",
+          "depth": 8,
+          "score": 626,
+          "nodes": 176261,
+          "referenceNodes": 2796624,
+          "passed": true
+        }
+      ],
+      "cancel": true,
+      "privacy": true
+    },
+    "-tsan": {
+      "passed": true,
+      "finiteSearchCases": 40,
+      "timeoutBudgets": 6,
+      "unitChecks": [
+        {
+          "name": "ending/51307/3",
+          "passed": true,
+          "assertions": 685718,
+          "wallMs": 10136.261614
+        },
+        {
+          "name": "ending/51319/6",
+          "passed": true,
+          "assertions": 4133,
+          "wallMs": 2174.690886999999
+        },
+        {
+          "name": "全明/49033/11",
+          "passed": true,
+          "assertions": 4061,
+          "wallMs": 6522.318973000001
+        }
+      ],
+      "ruleViews": 414,
+      "transitions": 11874,
+      "noTTReference": [
+        {
+          "name": "全明/49033/11",
+          "depth": 5,
+          "score": 690.3333333333334,
+          "nodes": 108571,
+          "referenceNodes": 2956041,
+          "passed": true
+        },
+        {
+          "name": "ending/51307/3",
+          "depth": 6,
+          "score": 2,
+          "nodes": 920781,
+          "referenceNodes": 22582756,
+          "passed": true
+        },
+        {
+          "name": "lazy-confirm/ending/54546/0",
+          "depth": 8,
+          "score": 626,
+          "nodes": 175480,
+          "referenceNodes": 2796624,
+          "passed": true
+        }
+      ],
+      "cancel": true,
+      "privacy": true
+    }
+  },
+  "rules": {
+    "projectTestsPassed": 176,
+    "newRepetitionCases": 18,
+    "nativeRepetitionParity": 5,
+    "nativeRepetitionParityAsanUbsan": 5,
+    "forgedHistoryCases": 8,
+    "httpAndCancellationPassed": true,
+    "completeCompetitionRules": false
+  },
+  "publicBuildEntrySmokePassed": true
+}
