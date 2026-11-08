@@ -1,0 +1,117 @@
+{
+  "sourceSha256": "855cccb05cff5a4eb3efa919546f41d7b66ae7b852490ecf0b81115f7f9f20d0",
+  "fixture": "opening/51101/0",
+  "durationSeconds": 5,
+  "intervalMilliseconds": 1,
+  "note": "Own synthetic engine process only; stack samples include waiting threads and are not percentages of CPU time. Raw system paths and process IDs omitted.",
+  "rows": [
+    {
+      "symbol": "__psynch_cvwait  (in libsystem_kernel.dylib)",
+      "sampleCount": 4050
+    },
+    {
+      "symbol": "mist::hintDestinations(std::array<mist::Piece, 90ul> const&, int, bool, int)  (in core)",
+      "sampleCount": 2117
+    },
+    {
+      "symbol": "mist::Search::node(mist::State&, int, double, double, int, int, int)  (in core)",
+      "sampleCount": 1968
+    },
+    {
+      "symbol": "mist::lineDestinations(std::array<mist::Piece, 90ul> const&, mist::OccupiedBits const&, int, bool, int)  (in core)",
+      "sampleCount": 1737
+    },
+    {
+      "symbol": "std::__stable_sort<std::_ClassicAlgPolicy, mist::Search::node(mist::State&, int, double, double, int, int, int)::'lambda'(mist::ScoredMove const&, mist::ScoredMove const&)&, std::__wrap_iter<mist::ScoredMove*>>(std::__wrap_iter<mist::ScoredMove*>, std::__wrap_iter<mist::ScoredMove*>, mist::Search::node(mist::State&, int, double, double, int, int, int)::'lambda'(mist::ScoredMove const&, mist::ScoredMove const&)&, std::iterator_traits<std::__wrap_iter<mist::ScoredMove*>>::difference_type, std::iterator_traits<std::__wrap_iter<mist::ScoredMove*>>::value_type*, long)  (in core)",
+      "sampleCount": 1522
+    },
+    {
+      "symbol": "mist::linePseudos(std::array<mist::Piece, 90ul>&, mist::OccupiedBits const&, int, bool, int, std::vector<mist::Move>&)  (in core)",
+      "sampleCount": 1036
+    },
+    {
+      "symbol": "mist::Search::node(mist::State&, int, double, double, int, int, int)::'lambda'(mist::Move)::operator()(mist::Move) const  (in core)",
+      "sampleCount": 986
+    },
+    {
+      "symbol": "mist::lineCheckMasks(std::array<mist::Piece, 90ul> const&, int, int, unsigned short, unsigned short)  (in core)",
+      "sampleCount": 970
+    },
+    {
+      "symbol": "mist::lineLegalPseudo(std::array<mist::Piece, 90ul>&, mist::OccupiedBits const&, int, mist::Move, int, bool)  (in core)",
+      "sampleCount": 954
+    },
+    {
+      "symbol": "mist::push(mist::State&, mist::Move)  (in core)",
+      "sampleCount": 838
+    },
+    {
+      "symbol": "mist::lineLegalInto(std::array<mist::Piece, 90ul>&, mist::OccupiedBits const&, int, bool, bool, int, std::vector<mist::Move>&, int, int)  (in core)",
+      "sampleCount": 631
+    },
+    {
+      "symbol": "mist::xorPiece(mist::State&, mist::Piece, int)  (in core)",
+      "sampleCount": 426
+    },
+    {
+      "symbol": "mist::pop(mist::State&, mist::Move, mist::Undo const&)  (in core)",
+      "sampleCount": 302
+    },
+    {
+      "symbol": "mist::Search::search(mist::State&, int, double, double, int, int, int)  (in core)",
+      "sampleCount": 269
+    },
+    {
+      "symbol": "mist::changedKingGuard(mist::State&, int, int, int, int, int)  (in core)",
+      "sampleCount": 219
+    },
+    {
+      "symbol": "mist::Search::tick(int)  (in core)",
+      "sampleCount": 95
+    },
+    {
+      "symbol": "mist::TTTable::store(mist::Key const&, mist::Entry const&)  (in core)",
+      "sampleCount": 93
+    },
+    {
+      "symbol": "<deduplicated_symbol>  (in core)",
+      "sampleCount": 87
+    },
+    {
+      "symbol": "mach_absolute_time  (in libsystem_kernel.dylib)",
+      "sampleCount": 60
+    },
+    {
+      "symbol": "clock_gettime_nsec_np  (in libsystem_c.dylib)",
+      "sampleCount": 56
+    },
+    {
+      "symbol": "mach_timebase_info  (in libsystem_kernel.dylib)",
+      "sampleCount": 46
+    },
+    {
+      "symbol": "clock_gettime  (in libsystem_c.dylib)",
+      "sampleCount": 26
+    },
+    {
+      "symbol": "_mach_continuous_time  (in libsystem_kernel.dylib)",
+      "sampleCount": 24
+    },
+    {
+      "symbol": "mist::hintDestinations(std::array<mist::Piece, 90ul> const&, int, bool, int)::$_0::operator()(int) const  (in core)",
+      "sampleCount": 19
+    },
+    {
+      "symbol": "mach_continuous_time  (in libsystem_kernel.dylib)",
+      "sampleCount": 10
+    },
+    {
+      "symbol": "std::__hash_table<std::__hash_value_type<mist::Key, mist::Entry>, mist::TTAllocator<std::__hash_value_type<mist::Key, mist::Entry>>>::__emplace_unique_key_args<mist::Key, mist::Key const&, mist::Entry const&>(mist::Key const&, mist::Key const&, mist::Entry const&)  (in core)",
+      "sampleCount": 9
+    },
+    {
+      "symbol": "std::chrono::steady_clock::now()  (in libc++.1.dylib)",
+      "sampleCount": 9
+    }
+  ]
+}

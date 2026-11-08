@@ -1,0 +1,30 @@
+{
+  "createdAt": "2026-11-08T02:20:24.892Z",
+  "budgetMs": 2000,
+  "threadsMaximum": 4,
+  "ttMiBMaximum": 64,
+  "repeats": 6,
+  "engines": [
+    "c8",
+    "c7",
+    "pika"
+  ],
+  "requests": 216,
+  "partitions": {
+    "newGeneratedViews": 7,
+    "repeatedInitial": 1,
+    "knownEndingChallenges": 4
+  },
+  "allSixOrders": true,
+  "notes": [
+    "Exact candidate source and binary hashes will be frozen before timing.",
+    "All original selected positions retained, including regressions.",
+    "Node units differ across engines; not a strength proof.",
+    "No builds or other tests while timed runs execute."
+  ],
+  "gate": {
+    "geometricNpsRatioC8C7": 1.03,
+    "worstLongPositionRatio": 0.97,
+    "noTechnicalEvents": true
+  }
+}

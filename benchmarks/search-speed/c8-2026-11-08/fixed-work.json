@@ -1,0 +1,847 @@
+{
+  "passed": true,
+  "createdAt": "2026-11-08T02:30:48.418Z",
+  "depth": 4,
+  "repeats": 4,
+  "samples": 8,
+  "threadsMaximum": 4,
+  "ttMiBMaximum": 64,
+  "sourceHashes": {
+    "c7": "855cccb05cff5a4eb3efa919546f41d7b66ae7b852490ecf0b81115f7f9f20d0",
+    "c8": "a17db66bebc4cfabe9bc0d48a5f4b1693bb9306b1af5397907a0c601afc80047"
+  },
+  "rows": [
+    {
+      "name": "c7",
+      "repeat": 0,
+      "position": "opening/51101/0",
+      "wallMs": 218.164764,
+      "coreMs": 207.655195,
+      "nodes": 1462014,
+      "score": 77.10421607459446,
+      "move": {
+        "from": 64,
+        "to": 1
+      }
+    },
+    {
+      "name": "c8",
+      "repeat": 0,
+      "position": "opening/51101/0",
+      "wallMs": 201.41857399999998,
+      "coreMs": 192.199035,
+      "nodes": 1462014,
+      "score": 77.10421607459446,
+      "move": {
+        "from": 64,
+        "to": 1
+      }
+    },
+    {
+      "name": "c8",
+      "repeat": 0,
+      "position": "opening/51109/3",
+      "wallMs": 127.363338,
+      "coreMs": 119.49016,
+      "nodes": 878095,
+      "score": 137.57603220096564,
+      "move": {
+        "from": 19,
+        "to": 82
+      }
+    },
+    {
+      "name": "c7",
+      "repeat": 0,
+      "position": "opening/51109/3",
+      "wallMs": 132.27655500000003,
+      "coreMs": 124.538485,
+      "nodes": 878095,
+      "score": 137.57603220096564,
+      "move": {
+        "from": 19,
+        "to": 82
+      }
+    },
+    {
+      "name": "c7",
+      "repeat": 0,
+      "position": "opening/51119/7",
+      "wallMs": 101.10937200000001,
+      "coreMs": 94.034245,
+      "nodes": 722257,
+      "score": 793.6207954531035,
+      "move": {
+        "from": 23,
+        "to": 43
+      }
+    },
+    {
+      "name": "c8",
+      "repeat": 0,
+      "position": "opening/51119/7",
+      "wallMs": 98.50017799999989,
+      "coreMs": 90.168836,
+      "nodes": 722257,
+      "score": 793.6207954531035,
+      "move": {
+        "from": 23,
+        "to": 43
+      }
+    },
+    {
+      "name": "c8",
+      "repeat": 0,
+      "position": "opening/51131/10",
+      "wallMs": 81.57206700000006,
+      "coreMs": 73.894576,
+      "nodes": 590736,
+      "score": 138.8728141444335,
+      "move": {
+        "from": 63,
+        "to": 27
+      }
+    },
+    {
+      "name": "c7",
+      "repeat": 0,
+      "position": "opening/51131/10",
+      "wallMs": 82.99688500000002,
+      "coreMs": 75.423984,
+      "nodes": 590736,
+      "score": 138.8728141444335,
+      "move": {
+        "from": 63,
+        "to": 27
+      }
+    },
+    {
+      "name": "c7",
+      "repeat": 0,
+      "position": "middle/51203/28",
+      "wallMs": 129.60453500000017,
+      "coreMs": 121.905973,
+      "nodes": 909165,
+      "score": 991,
+      "move": {
+        "from": 29,
+        "to": 83
+      }
+    },
+    {
+      "name": "c8",
+      "repeat": 0,
+      "position": "middle/51203/28",
+      "wallMs": 128.31683900000007,
+      "coreMs": 120.245058,
+      "nodes": 909165,
+      "score": 991,
+      "move": {
+        "from": 29,
+        "to": 83
+      }
+    },
+    {
+      "name": "c8",
+      "repeat": 0,
+      "position": "middle/51217/37",
+      "wallMs": 72.289894,
+      "coreMs": 65.811747,
+      "nodes": 529319,
+      "score": -980.1693219488112,
+      "move": {
+        "from": 33,
+        "to": 42
+      }
+    },
+    {
+      "name": "c7",
+      "repeat": 0,
+      "position": "middle/51217/37",
+      "wallMs": 74.88551899999993,
+      "coreMs": 67.648957,
+      "nodes": 529319,
+      "score": -980.1693219488112,
+      "move": {
+        "from": 33,
+        "to": 42
+      }
+    },
+    {
+      "name": "c7",
+      "repeat": 0,
+      "position": "middle/51229/46",
+      "wallMs": 196.3676680000001,
+      "coreMs": 188.227424,
+      "nodes": 1157397,
+      "score": 481.69391412984413,
+      "move": {
+        "from": 10,
+        "to": 29
+      }
+    },
+    {
+      "name": "c8",
+      "repeat": 0,
+      "position": "middle/51229/46",
+      "wallMs": 189.6600060000003,
+      "coreMs": 180.963458,
+      "nodes": 1157397,
+      "score": 481.69391412984413,
+      "move": {
+        "from": 10,
+        "to": 29
+      }
+    },
+    {
+      "name": "c8",
+      "repeat": 0,
+      "position": "middle/51241/57",
+      "wallMs": 138.7719830000001,
+      "coreMs": 130.779656,
+      "nodes": 1213609,
+      "score": 162.37997549548757,
+      "move": {
+        "from": 29,
+        "to": 34
+      }
+    },
+    {
+      "name": "c7",
+      "repeat": 0,
+      "position": "middle/51241/57",
+      "wallMs": 142.81568100000004,
+      "coreMs": 134.736679,
+      "nodes": 1213609,
+      "score": 162.37997549548757,
+      "move": {
+        "from": 29,
+        "to": 34
+      }
+    },
+    {
+      "name": "c8",
+      "repeat": 1,
+      "position": "opening/51101/0",
+      "wallMs": 203.33093899999994,
+      "coreMs": 194.631303,
+      "nodes": 1462014,
+      "score": 77.10421607459446,
+      "move": {
+        "from": 64,
+        "to": 1
+      }
+    },
+    {
+      "name": "c7",
+      "repeat": 1,
+      "position": "opening/51101/0",
+      "wallMs": 222.21530799999982,
+      "coreMs": 213.391043,
+      "nodes": 1462014,
+      "score": 77.10421607459446,
+      "move": {
+        "from": 64,
+        "to": 1
+      }
+    },
+    {
+      "name": "c7",
+      "repeat": 1,
+      "position": "opening/51109/3",
+      "wallMs": 138.98104899999998,
+      "coreMs": 131.16648,
+      "nodes": 878095,
+      "score": 137.57603220096564,
+      "move": {
+        "from": 19,
+        "to": 82
+      }
+    },
+    {
+      "name": "c8",
+      "repeat": 1,
+      "position": "opening/51109/3",
+      "wallMs": 127.80477800000017,
+      "coreMs": 120.015577,
+      "nodes": 878095,
+      "score": 137.57603220096564,
+      "move": {
+        "from": 19,
+        "to": 82
+      }
+    },
+    {
+      "name": "c8",
+      "repeat": 1,
+      "position": "opening/51119/7",
+      "wallMs": 100.12816199999997,
+      "coreMs": 92.382708,
+      "nodes": 722257,
+      "score": 793.6207954531035,
+      "move": {
+        "from": 23,
+        "to": 43
+      }
+    },
+    {
+      "name": "c7",
+      "repeat": 1,
+      "position": "opening/51119/7",
+      "wallMs": 105.1424579999998,
+      "coreMs": 97.473882,
+      "nodes": 722257,
+      "score": 793.6207954531035,
+      "move": {
+        "from": 23,
+        "to": 43
+      }
+    },
+    {
+      "name": "c7",
+      "repeat": 1,
+      "position": "opening/51131/10",
+      "wallMs": 82.33344000000034,
+      "coreMs": 74.866615,
+      "nodes": 590736,
+      "score": 138.8728141444335,
+      "move": {
+        "from": 63,
+        "to": 27
+      }
+    },
+    {
+      "name": "c8",
+      "repeat": 1,
+      "position": "opening/51131/10",
+      "wallMs": 77.95968300000004,
+      "coreMs": 70.404901,
+      "nodes": 590736,
+      "score": 138.8728141444335,
+      "move": {
+        "from": 63,
+        "to": 27
+      }
+    },
+    {
+      "name": "c8",
+      "repeat": 1,
+      "position": "middle/51203/28",
+      "wallMs": 129.17600600000014,
+      "coreMs": 121.167906,
+      "nodes": 909165,
+      "score": 991,
+      "move": {
+        "from": 29,
+        "to": 83
+      }
+    },
+    {
+      "name": "c7",
+      "repeat": 1,
+      "position": "middle/51203/28",
+      "wallMs": 131.16243799999984,
+      "coreMs": 122.746798,
+      "nodes": 909165,
+      "score": 991,
+      "move": {
+        "from": 29,
+        "to": 83
+      }
+    },
+    {
+      "name": "c7",
+      "repeat": 1,
+      "position": "middle/51217/37",
+      "wallMs": 74.94064600000002,
+      "coreMs": 67.922671,
+      "nodes": 529319,
+      "score": -980.1693219488112,
+      "move": {
+        "from": 33,
+        "to": 42
+      }
+    },
+    {
+      "name": "c8",
+      "repeat": 1,
+      "position": "middle/51217/37",
+      "wallMs": 71.55509500000016,
+      "coreMs": 64.556764,
+      "nodes": 529319,
+      "score": -980.1693219488112,
+      "move": {
+        "from": 33,
+        "to": 42
+      }
+    },
+    {
+      "name": "c8",
+      "repeat": 1,
+      "position": "middle/51229/46",
+      "wallMs": 185.24783899999966,
+      "coreMs": 177.079704,
+      "nodes": 1157397,
+      "score": 481.69391412984413,
+      "move": {
+        "from": 10,
+        "to": 29
+      }
+    },
+    {
+      "name": "c7",
+      "repeat": 1,
+      "position": "middle/51229/46",
+      "wallMs": 196.9536509999998,
+      "coreMs": 188.616931,
+      "nodes": 1157397,
+      "score": 481.69391412984413,
+      "move": {
+        "from": 10,
+        "to": 29
+      }
+    },
+    {
+      "name": "c7",
+      "repeat": 1,
+      "position": "middle/51241/57",
+      "wallMs": 142.02573699999994,
+      "coreMs": 134.392076,
+      "nodes": 1213609,
+      "score": 162.37997549548757,
+      "move": {
+        "from": 29,
+        "to": 34
+      }
+    },
+    {
+      "name": "c8",
+      "repeat": 1,
+      "position": "middle/51241/57",
+      "wallMs": 138.07200400000056,
+      "coreMs": 130.002961,
+      "nodes": 1213609,
+      "score": 162.37997549548757,
+      "move": {
+        "from": 29,
+        "to": 34
+      }
+    },
+    {
+      "name": "c7",
+      "repeat": 2,
+      "position": "opening/51101/0",
+      "wallMs": 338.338984,
+      "coreMs": 329.75468,
+      "nodes": 1462014,
+      "score": 77.10421607459446,
+      "move": {
+        "from": 64,
+        "to": 1
+      }
+    },
+    {
+      "name": "c8",
+      "repeat": 2,
+      "position": "opening/51101/0",
+      "wallMs": 202.61917799999992,
+      "coreMs": 194.31408,
+      "nodes": 1462014,
+      "score": 77.10421607459446,
+      "move": {
+        "from": 64,
+        "to": 1
+      }
+    },
+    {
+      "name": "c8",
+      "repeat": 2,
+      "position": "opening/51109/3",
+      "wallMs": 126.72815499999979,
+      "coreMs": 118.94119,
+      "nodes": 878095,
+      "score": 137.57603220096564,
+      "move": {
+        "from": 19,
+        "to": 82
+      }
+    },
+    {
+      "name": "c7",
+      "repeat": 2,
+      "position": "opening/51109/3",
+      "wallMs": 132.21436499999982,
+      "coreMs": 124.849226,
+      "nodes": 878095,
+      "score": 137.57603220096564,
+      "move": {
+        "from": 19,
+        "to": 82
+      }
+    },
+    {
+      "name": "c7",
+      "repeat": 2,
+      "position": "opening/51119/7",
+      "wallMs": 102.09387900000002,
+      "coreMs": 94.961724,
+      "nodes": 722257,
+      "score": 793.6207954531035,
+      "move": {
+        "from": 23,
+        "to": 43
+      }
+    },
+    {
+      "name": "c8",
+      "repeat": 2,
+      "position": "opening/51119/7",
+      "wallMs": 96.65904000000046,
+      "coreMs": 89.471246,
+      "nodes": 722257,
+      "score": 793.6207954531035,
+      "move": {
+        "from": 23,
+        "to": 43
+      }
+    },
+    {
+      "name": "c8",
+      "repeat": 2,
+      "position": "opening/51131/10",
+      "wallMs": 76.97787700000026,
+      "coreMs": 69.894278,
+      "nodes": 590736,
+      "score": 138.8728141444335,
+      "move": {
+        "from": 63,
+        "to": 27
+      }
+    },
+    {
+      "name": "c7",
+      "repeat": 2,
+      "position": "opening/51131/10",
+      "wallMs": 79.21093699999983,
+      "coreMs": 72.620952,
+      "nodes": 590736,
+      "score": 138.8728141444335,
+      "move": {
+        "from": 63,
+        "to": 27
+      }
+    },
+    {
+      "name": "c7",
+      "repeat": 2,
+      "position": "middle/51203/28",
+      "wallMs": 129.50963600000068,
+      "coreMs": 121.80608,
+      "nodes": 909165,
+      "score": 991,
+      "move": {
+        "from": 29,
+        "to": 83
+      }
+    },
+    {
+      "name": "c8",
+      "repeat": 2,
+      "position": "middle/51203/28",
+      "wallMs": 130.17309300000034,
+      "coreMs": 122.381529,
+      "nodes": 909165,
+      "score": 991,
+      "move": {
+        "from": 29,
+        "to": 83
+      }
+    },
+    {
+      "name": "c8",
+      "repeat": 2,
+      "position": "middle/51217/37",
+      "wallMs": 71.73579299999983,
+      "coreMs": 64.906087,
+      "nodes": 529319,
+      "score": -980.1693219488112,
+      "move": {
+        "from": 33,
+        "to": 42
+      }
+    },
+    {
+      "name": "c7",
+      "repeat": 2,
+      "position": "middle/51217/37",
+      "wallMs": 76.16291900000033,
+      "coreMs": 68.826191,
+      "nodes": 529319,
+      "score": -980.1693219488112,
+      "move": {
+        "from": 33,
+        "to": 42
+      }
+    },
+    {
+      "name": "c7",
+      "repeat": 2,
+      "position": "middle/51229/46",
+      "wallMs": 194.06255499999952,
+      "coreMs": 186.137217,
+      "nodes": 1157397,
+      "score": 481.69391412984413,
+      "move": {
+        "from": 10,
+        "to": 29
+      }
+    },
+    {
+      "name": "c8",
+      "repeat": 2,
+      "position": "middle/51229/46",
+      "wallMs": 184.45047200000045,
+      "coreMs": 176.33882,
+      "nodes": 1157397,
+      "score": 481.69391412984413,
+      "move": {
+        "from": 10,
+        "to": 29
+      }
+    },
+    {
+      "name": "c8",
+      "repeat": 2,
+      "position": "middle/51241/57",
+      "wallMs": 138.71440600000005,
+      "coreMs": 130.884333,
+      "nodes": 1213609,
+      "score": 162.37997549548757,
+      "move": {
+        "from": 29,
+        "to": 34
+      }
+    },
+    {
+      "name": "c7",
+      "repeat": 2,
+      "position": "middle/51241/57",
+      "wallMs": 144.34013099999993,
+      "coreMs": 136.312962,
+      "nodes": 1213609,
+      "score": 162.37997549548757,
+      "move": {
+        "from": 29,
+        "to": 34
+      }
+    },
+    {
+      "name": "c8",
+      "repeat": 3,
+      "position": "opening/51101/0",
+      "wallMs": 201.97274800000014,
+      "coreMs": 193.82977,
+      "nodes": 1462014,
+      "score": 77.10421607459446,
+      "move": {
+        "from": 64,
+        "to": 1
+      }
+    },
+    {
+      "name": "c7",
+      "repeat": 3,
+      "position": "opening/51101/0",
+      "wallMs": 214.7084789999999,
+      "coreMs": 206.367297,
+      "nodes": 1462014,
+      "score": 77.10421607459446,
+      "move": {
+        "from": 64,
+        "to": 1
+      }
+    },
+    {
+      "name": "c7",
+      "repeat": 3,
+      "position": "opening/51109/3",
+      "wallMs": 133.65260099999978,
+      "coreMs": 125.640836,
+      "nodes": 878095,
+      "score": 137.57603220096564,
+      "move": {
+        "from": 19,
+        "to": 82
+      }
+    },
+    {
+      "name": "c8",
+      "repeat": 3,
+      "position": "opening/51109/3",
+      "wallMs": 127.67640500000016,
+      "coreMs": 120.303487,
+      "nodes": 878095,
+      "score": 137.57603220096564,
+      "move": {
+        "from": 19,
+        "to": 82
+      }
+    },
+    {
+      "name": "c8",
+      "repeat": 3,
+      "position": "opening/51119/7",
+      "wallMs": 94.2605480000002,
+      "coreMs": 87.759489,
+      "nodes": 722257,
+      "score": 793.6207954531035,
+      "move": {
+        "from": 23,
+        "to": 43
+      }
+    },
+    {
+      "name": "c7",
+      "repeat": 3,
+      "position": "opening/51119/7",
+      "wallMs": 100.21845200000007,
+      "coreMs": 93.538628,
+      "nodes": 722257,
+      "score": 793.6207954531035,
+      "move": {
+        "from": 23,
+        "to": 43
+      }
+    },
+    {
+      "name": "c7",
+      "repeat": 3,
+      "position": "opening/51131/10",
+      "wallMs": 81.14920600000005,
+      "coreMs": 74.037561,
+      "nodes": 590736,
+      "score": 138.8728141444335,
+      "move": {
+        "from": 63,
+        "to": 27
+      }
+    },
+    {
+      "name": "c8",
+      "repeat": 3,
+      "position": "opening/51131/10",
+      "wallMs": 78.16141000000061,
+      "coreMs": 70.631049,
+      "nodes": 590736,
+      "score": 138.8728141444335,
+      "move": {
+        "from": 63,
+        "to": 27
+      }
+    },
+    {
+      "name": "c8",
+      "repeat": 3,
+      "position": "middle/51203/28",
+      "wallMs": 129.7476970000007,
+      "coreMs": 121.493099,
+      "nodes": 909165,
+      "score": 991,
+      "move": {
+        "from": 29,
+        "to": 83
+      }
+    },
+    {
+      "name": "c7",
+      "repeat": 3,
+      "position": "middle/51203/28",
+      "wallMs": 129.9745610000009,
+      "coreMs": 121.716603,
+      "nodes": 909165,
+      "score": 991,
+      "move": {
+        "from": 29,
+        "to": 83
+      }
+    },
+    {
+      "name": "c7",
+      "repeat": 3,
+      "position": "middle/51217/37",
+      "wallMs": 74.11718399999882,
+      "coreMs": 67.346021,
+      "nodes": 529319,
+      "score": -980.1693219488112,
+      "move": {
+        "from": 33,
+        "to": 42
+      }
+    },
+    {
+      "name": "c8",
+      "repeat": 3,
+      "position": "middle/51217/37",
+      "wallMs": 70.79230599999937,
+      "coreMs": 64.189096,
+      "nodes": 529319,
+      "score": -980.1693219488112,
+      "move": {
+        "from": 33,
+        "to": 42
+      }
+    },
+    {
+      "name": "c8",
+      "repeat": 3,
+      "position": "middle/51229/46",
+      "wallMs": 185.54063700000006,
+      "coreMs": 177.090438,
+      "nodes": 1157397,
+      "score": 481.69391412984413,
+      "move": {
+        "from": 10,
+        "to": 29
+      }
+    },
+    {
+      "name": "c7",
+      "repeat": 3,
+      "position": "middle/51229/46",
+      "wallMs": 192.5672740000009,
+      "coreMs": 184.68611,
+      "nodes": 1157397,
+      "score": 481.69391412984413,
+      "move": {
+        "from": 10,
+        "to": 29
+      }
+    },
+    {
+      "name": "c7",
+      "repeat": 3,
+      "position": "middle/51241/57",
+      "wallMs": 143.85418199999913,
+      "coreMs": 136.359722,
+      "nodes": 1213609,
+      "score": 162.37997549548757,
+      "move": {
+        "from": 29,
+        "to": 34
+      }
+    },
+    {
+      "name": "c8",
+      "repeat": 3,
+      "position": "middle/51241/57",
+      "wallMs": 134.25736599999982,
+      "coreMs": 127.472431,
+      "nodes": 1213609,
+      "score": 162.37997549548757,
+      "move": {
+        "from": 29,
+        "to": 34
+      }
+    }
+  ]
+}

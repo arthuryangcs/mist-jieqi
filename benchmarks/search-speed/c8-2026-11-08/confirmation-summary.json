@@ -1,0 +1,548 @@
+{
+  "completed": true,
+  "passed": true,
+  "requests": 216,
+  "technical": [],
+  "method": "Per-position median of six balanced engine-order requests, then geometric mean of ratios. Native node units differ.",
+  "allLong": {
+    "positions": 12,
+    "geometricC8C7Ratio": 1.0379243590763192,
+    "worstC8C7Ratio": 0.9503960136076058,
+    "abovePika": 8
+  },
+  "primaryLong": {
+    "positions": 8,
+    "geometricC8C7Ratio": 1.0354861768481247,
+    "worstC8C7Ratio": 0.9503960136076058,
+    "abovePika": 7
+  },
+  "knownChallenges": {
+    "positions": 4,
+    "geometricC8C7Ratio": 1.0428179600692762,
+    "worstC8C7Ratio": 1.031036915998973,
+    "abovePika": 1
+  },
+  "gate": {
+    "geometricAtLeast1_03": true,
+    "worstAtLeast0_97": false,
+    "noTechnicalEvents": true
+  },
+  "rows": [
+    {
+      "position": "clock-geometry-confirm/9810001/0",
+      "partition": "repeated-initial-control",
+      "category": "opening",
+      "long": true,
+      "engines": {
+        "c8": {
+          "npsMedian": 6251270.823021401,
+          "npsMin": 3106776.1216415437,
+          "npsMax": 6533418.275914541,
+          "wallMs": 1935.296103500019,
+          "readyMs": 6.395813499984797,
+          "completedDepth": 5,
+          "mainDepth": 6,
+          "selDepth": 14,
+          "nodes": 12096202
+        },
+        "c7": {
+          "npsMedian": 5760744.037101977,
+          "npsMin": 2971074.516194494,
+          "npsMax": 6648854.146797178,
+          "wallMs": 1935.443417999988,
+          "readyMs": 6.691368500018143,
+          "completedDepth": 5,
+          "mainDepth": 6,
+          "selDepth": 14,
+          "nodes": 11151032
+        },
+        "pika": {
+          "npsMedian": 5924065.173110706,
+          "npsMin": 5136444.058866663,
+          "npsMax": 6043963.827506602,
+          "wallMs": 1960.3113699999958,
+          "readyMs": 335.2367324999941,
+          "completedDepth": 0,
+          "mainDepth": 10.5,
+          "selDepth": 7,
+          "nodes": 11613963.5
+        }
+      },
+      "c8c7Ratio": 1.0851499012558439,
+      "c8pikaRatio": 1.0552332967901634
+    },
+    {
+      "position": "clock-geometry-confirm/9810017/3",
+      "partition": "new-generated-view",
+      "category": "opening",
+      "long": true,
+      "engines": {
+        "c8": {
+          "npsMedian": 6134303.334471544,
+          "npsMin": 4970529.022152947,
+          "npsMax": 7200007.675679632,
+          "wallMs": 1935.5673249999963,
+          "readyMs": 6.849703499989118,
+          "completedDepth": 5,
+          "mainDepth": 6,
+          "selDepth": 13,
+          "nodes": 11873345.5
+        },
+        "c7": {
+          "npsMedian": 5800789.6760525815,
+          "npsMin": 4819409.156272847,
+          "npsMax": 6773026.601603802,
+          "wallMs": 1935.5405465000222,
+          "readyMs": 6.5637264999968465,
+          "completedDepth": 5,
+          "mainDepth": 6,
+          "selDepth": 13,
+          "nodes": 11226496
+        },
+        "pika": {
+          "npsMedian": 6224898.132987163,
+          "npsMin": 4899427.3155638315,
+          "npsMax": 6399887.212298735,
+          "wallMs": 1960.4224094999854,
+          "readyMs": 338.1963315000039,
+          "completedDepth": 0,
+          "mainDepth": 15.5,
+          "selDepth": 9,
+          "nodes": 12201722.5
+        }
+      },
+      "c8c7Ratio": 1.0574945269599771,
+      "c8pikaRatio": 0.9854463805543201
+    },
+    {
+      "position": "clock-geometry-confirm/9810031/8",
+      "partition": "new-generated-view",
+      "category": "opening",
+      "long": true,
+      "engines": {
+        "c8": {
+          "npsMedian": 5887101.316568197,
+          "npsMin": 4747993.846439164,
+          "npsMax": 7887685.413692052,
+          "wallMs": 1935.6275475000002,
+          "readyMs": 6.54585449998558,
+          "completedDepth": 5,
+          "mainDepth": 6,
+          "selDepth": 13,
+          "nodes": 11395844
+        },
+        "c7": {
+          "npsMedian": 5783888.301673477,
+          "npsMin": 4953426.7072658865,
+          "npsMax": 7291404.819952536,
+          "wallMs": 1935.0811424999993,
+          "readyMs": 6.443024499980311,
+          "completedDepth": 5,
+          "mainDepth": 6,
+          "selDepth": 13,
+          "nodes": 11193942
+        },
+        "pika": {
+          "npsMedian": 4717057.330670394,
+          "npsMin": 2224257.575657051,
+          "npsMax": 5105546.632490566,
+          "wallMs": 1960.2226000000119,
+          "readyMs": 354.128399499994,
+          "completedDepth": 0,
+          "mainDepth": 17.5,
+          "selDepth": 9,
+          "nodes": 9248434.5
+        }
+      },
+      "c8c7Ratio": 1.0178449184201668,
+      "c8pikaRatio": 1.248045318060935
+    },
+    {
+      "position": "clock-geometry-confirm/9810049/11",
+      "partition": "new-generated-view",
+      "category": "opening",
+      "long": true,
+      "engines": {
+        "c8": {
+          "npsMedian": 5569476.432495338,
+          "npsMin": 4993511.068288508,
+          "npsMax": 7028273.182342604,
+          "wallMs": 1935.9864055000053,
+          "readyMs": 6.575737000002846,
+          "completedDepth": 5,
+          "mainDepth": 6,
+          "selDepth": 14,
+          "nodes": 10781046.5
+        },
+        "c7": {
+          "npsMedian": 5201271.633213423,
+          "npsMin": 4243606.619286461,
+          "npsMax": 6762680.006669856,
+          "wallMs": 1935.7207464999956,
+          "readyMs": 6.5938344999885885,
+          "completedDepth": 5,
+          "mainDepth": 6,
+          "selDepth": 14,
+          "nodes": 10072106.5
+        },
+        "pika": {
+          "npsMedian": 4852902.522794927,
+          "npsMin": 3994608.958097388,
+          "npsMax": 5281289.211492577,
+          "wallMs": 1959.932957500001,
+          "readyMs": 348.84715850000066,
+          "completedDepth": 0,
+          "mainDepth": 13.5,
+          "selDepth": 15,
+          "nodes": 9513206.5
+        }
+      },
+      "c8c7Ratio": 1.070791303597892,
+      "c8pikaRatio": 1.147658830222643
+    },
+    {
+      "position": "clock-geometry-confirm/9810203/28",
+      "partition": "new-generated-view",
+      "category": "middle",
+      "long": true,
+      "engines": {
+        "c8": {
+          "npsMedian": 5467242.372858688,
+          "npsMin": 4418503.196198747,
+          "npsMax": 6867891.006399282,
+          "wallMs": 1935.708484499999,
+          "readyMs": 6.832800499993027,
+          "completedDepth": 5,
+          "mainDepth": 6,
+          "selDepth": 14,
+          "nodes": 10582959.5
+        },
+        "c7": {
+          "npsMedian": 5563133.546184074,
+          "npsMin": 4100564.117773392,
+          "npsMax": 6855629.496726659,
+          "wallMs": 1935.702530999988,
+          "readyMs": 6.570606500012218,
+          "completedDepth": 5,
+          "mainDepth": 6,
+          "selDepth": 14,
+          "nodes": 10767618
+        },
+        "pika": {
+          "npsMedian": 4345036.509667804,
+          "npsMin": 3639235.9925602996,
+          "npsMax": 4602518.896626131,
+          "wallMs": 1960.293983999989,
+          "readyMs": 352.2410839999866,
+          "completedDepth": 0,
+          "mainDepth": 16.5,
+          "selDepth": 14.5,
+          "nodes": 8518010
+        }
+      },
+      "c8c7Ratio": 0.9827631005926218,
+      "c8pikaRatio": 1.258273057244502
+    },
+    {
+      "position": "clock-geometry-confirm/9810217/41",
+      "partition": "new-generated-view",
+      "category": "middle",
+      "long": true,
+      "engines": {
+        "c8": {
+          "npsMedian": 5420063.4252949525,
+          "npsMin": 4211205.1621783,
+          "npsMax": 6327279.879505491,
+          "wallMs": 1935.8673650000237,
+          "readyMs": 6.7411859999920125,
+          "completedDepth": 5,
+          "mainDepth": 6,
+          "selDepth": 14,
+          "nodes": 10492369
+        },
+        "c7": {
+          "npsMedian": 5213104.624709731,
+          "npsMin": 4070815.1449561673,
+          "npsMax": 6302809.274531764,
+          "wallMs": 1936.3630295000112,
+          "readyMs": 7.02614449999237,
+          "completedDepth": 5,
+          "mainDepth": 6,
+          "selDepth": 14,
+          "nodes": 10328178.5
+        },
+        "pika": {
+          "npsMedian": 4216370.546883888,
+          "npsMin": 3344211.053320957,
+          "npsMax": 4779129.378656108,
+          "wallMs": 1960.1987745000133,
+          "readyMs": 354.1418364999972,
+          "completedDepth": 0,
+          "mainDepth": 19.5,
+          "selDepth": 19.5,
+          "nodes": 8265174.5
+        }
+      },
+      "c8c7Ratio": 1.0396997212763104,
+      "c8pikaRatio": 1.285480809863985
+    },
+    {
+      "position": "clock-geometry-confirm/9810229/54",
+      "partition": "new-generated-view",
+      "category": "middle",
+      "long": true,
+      "engines": {
+        "c8": {
+          "npsMedian": 6920197.980720624,
+          "npsMin": 6278031.892392243,
+          "npsMax": 7912027.449224407,
+          "wallMs": 1936.026399499984,
+          "readyMs": 6.830084999994142,
+          "completedDepth": 5,
+          "mainDepth": 6,
+          "selDepth": 14,
+          "nodes": 13396103
+        },
+        "c7": {
+          "npsMedian": 7281383.635493442,
+          "npsMin": 5876713.336103332,
+          "npsMax": 7764314.5461552935,
+          "wallMs": 1935.5677785000153,
+          "readyMs": 6.750867000002472,
+          "completedDepth": 5,
+          "mainDepth": 6,
+          "selDepth": 14,
+          "nodes": 14093551
+        },
+        "pika": {
+          "npsMedian": 3344243.1531024445,
+          "npsMin": 2480004.5857041623,
+          "npsMax": 3873187.258914661,
+          "wallMs": 1959.9723980000053,
+          "readyMs": 358.34013349998713,
+          "completedDepth": 0,
+          "mainDepth": 19,
+          "selDepth": 27,
+          "nodes": 6555036.5
+        }
+      },
+      "c8c7Ratio": 0.9503960136076058,
+      "c8pikaRatio": 2.069286730631646
+    },
+    {
+      "position": "clock-geometry-confirm/9810241/67",
+      "partition": "new-generated-view",
+      "category": "middle",
+      "long": true,
+      "engines": {
+        "c8": {
+          "npsMedian": 6531871.67794295,
+          "npsMin": 4576688.580967168,
+          "npsMax": 6652708.57877864,
+          "wallMs": 1935.8314850000024,
+          "readyMs": 6.617108000034932,
+          "completedDepth": 5,
+          "mainDepth": 6,
+          "selDepth": 14,
+          "nodes": 12641443.5
+        },
+        "c7": {
+          "npsMedian": 6002040.006985955,
+          "npsMin": 5305247.961838115,
+          "npsMax": 6473895.977063676,
+          "wallMs": 1936.2088854999893,
+          "readyMs": 6.70478699998057,
+          "completedDepth": 5,
+          "mainDepth": 6,
+          "selDepth": 14,
+          "nodes": 11622249
+        },
+        "pika": {
+          "npsMedian": 3850713.875836263,
+          "npsMin": 3384272.3835996753,
+          "npsMax": 4221421.962877758,
+          "wallMs": 1960.1350680000032,
+          "readyMs": 340.29272599997785,
+          "completedDepth": 0,
+          "mainDepth": 17.5,
+          "selDepth": 21.5,
+          "nodes": 7546209.5
+        }
+      },
+      "c8c7Ratio": 1.0882752648000193,
+      "c8pikaRatio": 1.696275518919052
+    },
+    {
+      "position": "known-challenge/gather-confirmation/ending/9720915/0",
+      "partition": "known-challenge",
+      "category": "ending",
+      "long": true,
+      "engines": {
+        "c8": {
+          "npsMedian": 9221768.36439272,
+          "npsMin": 8793305.0937944,
+          "npsMax": 10238890.58380156,
+          "wallMs": 1928.3404949999895,
+          "readyMs": 6.383757000003243,
+          "completedDepth": 9,
+          "mainDepth": 10,
+          "selDepth": 15,
+          "nodes": 17783377
+        },
+        "c7": {
+          "npsMedian": 8810150.356483106,
+          "npsMin": 8543836.633702217,
+          "npsMax": 9472578.543136518,
+          "wallMs": 1928.4695829999982,
+          "readyMs": 6.882170499971835,
+          "completedDepth": 9,
+          "mainDepth": 10,
+          "selDepth": 15,
+          "nodes": 16989369
+        },
+        "pika": {
+          "npsMedian": 5980888.079660704,
+          "npsMin": 5532396.6588789355,
+          "npsMax": 6183471.812840163,
+          "wallMs": 1959.782914000025,
+          "readyMs": 346.17408850000356,
+          "completedDepth": 0,
+          "mainDepth": 33,
+          "selDepth": 46.5,
+          "nodes": 11718822.5
+        }
+      },
+      "c8c7Ratio": 1.0467208834417585,
+      "c8pikaRatio": 1.5418727522678992
+    },
+    {
+      "position": "known-challenge/gather-confirmation/ending/9721122/0",
+      "partition": "known-challenge",
+      "category": "ending",
+      "long": true,
+      "engines": {
+        "c8": {
+          "npsMedian": 6398491.281086203,
+          "npsMin": 5622347.542436923,
+          "npsMax": 6567088.300080096,
+          "wallMs": 1928.323482000007,
+          "readyMs": 6.80401049998909,
+          "completedDepth": 10,
+          "mainDepth": 11,
+          "selDepth": 17,
+          "nodes": 12337373
+        },
+        "c7": {
+          "npsMedian": 6199661.206882432,
+          "npsMin": 5463326.460160984,
+          "npsMax": 6424937.196381861,
+          "wallMs": 1928.2139599999864,
+          "readyMs": 6.35468249997939,
+          "completedDepth": 10,
+          "mainDepth": 11,
+          "selDepth": 17,
+          "nodes": 11957297
+        },
+        "pika": {
+          "npsMedian": 7411658.122892114,
+          "npsMin": 6712532.58674093,
+          "npsMax": 7832843.767691812,
+          "wallMs": 1959.299383000005,
+          "readyMs": 348.146980000005,
+          "completedDepth": 0,
+          "mainDepth": 98.5,
+          "selDepth": 23,
+          "nodes": 14521002
+        }
+      },
+      "c8c7Ratio": 1.0320711193029457,
+      "c8pikaRatio": 0.8633009206567986
+    },
+    {
+      "position": "known-challenge/near-confirmation/ending/9711333/0",
+      "partition": "known-challenge",
+      "category": "ending",
+      "long": true,
+      "engines": {
+        "c8": {
+          "npsMedian": 7832893.670398749,
+          "npsMin": 7099271.728983943,
+          "npsMax": 8181444.619863883,
+          "wallMs": 1380.3252804999938,
+          "readyMs": 6.180975499999477,
+          "completedDepth": 8,
+          "mainDepth": 8,
+          "selDepth": 15,
+          "nodes": 10811195
+        },
+        "c7": {
+          "npsMedian": 7377393.550694935,
+          "npsMin": 6847222.455689144,
+          "npsMax": 8082999.433448157,
+          "wallMs": 1465.4681615000009,
+          "readyMs": 6.405946999962907,
+          "completedDepth": 8,
+          "mainDepth": 8,
+          "selDepth": 15,
+          "nodes": 10811195
+        },
+        "pika": {
+          "npsMedian": 11900036.157191843,
+          "npsMin": 9622251.372755408,
+          "npsMax": 12859400.422321457,
+          "wallMs": 1959.7492530000018,
+          "readyMs": 350.15943249998963,
+          "completedDepth": 0,
+          "mainDepth": 151.5,
+          "selDepth": 10,
+          "nodes": 23321588
+        }
+      },
+      "c8c7Ratio": 1.0617426895520448,
+      "c8pikaRatio": 0.6582243588953218
+    },
+    {
+      "position": "known-challenge/near-confirmation/ending/9711560/0",
+      "partition": "known-challenge",
+      "category": "ending",
+      "long": true,
+      "engines": {
+        "c8": {
+          "npsMedian": 2626723.4870585203,
+          "npsMin": 2002781.1974143658,
+          "npsMax": 3202037.521768609,
+          "wallMs": 1928.048169000016,
+          "readyMs": 6.38068299999577,
+          "completedDepth": 9,
+          "mainDepth": 10,
+          "selDepth": 18,
+          "nodes": 5064409.5
+        },
+        "c7": {
+          "npsMedian": 2547652.219138521,
+          "npsMin": 2018427.254707131,
+          "npsMax": 3381688.629944689,
+          "wallMs": 1928.1455359999673,
+          "readyMs": 6.525560499998392,
+          "completedDepth": 9,
+          "mainDepth": 10,
+          "selDepth": 18,
+          "nodes": 4912390.5
+        },
+        "pika": {
+          "npsMedian": 4544778.323066935,
+          "npsMin": 4242533.081603685,
+          "npsMax": 4993925.657868363,
+          "wallMs": 1959.8980550000051,
+          "readyMs": 357.4333570000017,
+          "completedDepth": 0,
+          "mainDepth": 27,
+          "selDepth": 36.5,
+          "nodes": 8907945.5
+        }
+      },
+      "c8c7Ratio": 1.031036915998973,
+      "c8pikaRatio": 0.5779651504071466
+    }
+  ]
+}

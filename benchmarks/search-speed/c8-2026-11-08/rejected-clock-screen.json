@@ -1,0 +1,1956 @@
+{
+  "completed": true,
+  "budgetMs": 2000,
+  "rows": [
+    {
+      "name": "base",
+      "repeat": 0,
+      "position": "lazy-confirm/opening/53601/0",
+      "wallMs": 1937.1063529999956,
+      "nodes": 12638123,
+      "nps": 6524227.738155598,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 14,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 80.56962666945898,
+      "move": {
+        "from": 64,
+        "to": 1
+      }
+    },
+    {
+      "name": "clock32",
+      "repeat": 0,
+      "position": "lazy-confirm/opening/53601/0",
+      "wallMs": 1934.737282999995,
+      "nodes": 12772478,
+      "nps": 6601660.138680458,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 14,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 80.56962666945898,
+      "move": {
+        "from": 64,
+        "to": 1
+      }
+    },
+    {
+      "name": "clock64",
+      "repeat": 0,
+      "position": "lazy-confirm/opening/53601/0",
+      "wallMs": 1935.3010910000012,
+      "nodes": 12297879,
+      "nps": 6354504.245975229,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 14,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 80.56962666945898,
+      "move": {
+        "from": 64,
+        "to": 1
+      }
+    },
+    {
+      "name": "clock64",
+      "repeat": 0,
+      "position": "lazy-confirm/opening/53611/2",
+      "wallMs": 1934.599549999999,
+      "nodes": 14187137,
+      "nps": 7333371.394612392,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 14,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 421.2597620859272,
+      "move": {
+        "from": 70,
+        "to": 7
+      }
+    },
+    {
+      "name": "clock32",
+      "repeat": 0,
+      "position": "lazy-confirm/opening/53611/2",
+      "wallMs": 1935.4811469999986,
+      "nodes": 13028475,
+      "nps": 6731388.223643601,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 14,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 421.2597620859272,
+      "move": {
+        "from": 70,
+        "to": 7
+      }
+    },
+    {
+      "name": "base",
+      "repeat": 0,
+      "position": "lazy-confirm/opening/53611/2",
+      "wallMs": 1934.9517209999976,
+      "nodes": 13045059,
+      "nps": 6741800.768681823,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 14,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 421.2597620859272,
+      "move": {
+        "from": 70,
+        "to": 7
+      }
+    },
+    {
+      "name": "clock32",
+      "repeat": 0,
+      "position": "lazy-confirm/opening/53623/5",
+      "wallMs": 1935.6965819999969,
+      "nodes": 11679260,
+      "nps": 6033621.234136176,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 13,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 132.5591603015603,
+      "move": {
+        "from": 0,
+        "to": 1
+      }
+    },
+    {
+      "name": "base",
+      "repeat": 0,
+      "position": "lazy-confirm/opening/53623/5",
+      "wallMs": 1935.6667629999938,
+      "nodes": 11561077,
+      "nps": 5972658.7349581085,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 13,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 132.5591603015603,
+      "move": {
+        "from": 0,
+        "to": 1
+      }
+    },
+    {
+      "name": "clock64",
+      "repeat": 0,
+      "position": "lazy-confirm/opening/53623/5",
+      "wallMs": 1935.5645010000007,
+      "nodes": 11194572,
+      "nps": 5783621.260989429,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 13,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 132.5591603015603,
+      "move": {
+        "from": 0,
+        "to": 1
+      }
+    },
+    {
+      "name": "base",
+      "repeat": 0,
+      "position": "lazy-confirm/opening/53637/9",
+      "wallMs": 1935.7612630000003,
+      "nodes": 11121368,
+      "nps": 5745216.733371525,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 14,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 430.7013056342747,
+      "move": {
+        "from": 44,
+        "to": 62
+      }
+    },
+    {
+      "name": "clock32",
+      "repeat": 0,
+      "position": "lazy-confirm/opening/53637/9",
+      "wallMs": 1935.8492249999981,
+      "nodes": 12571737,
+      "nps": 6494171.569585959,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 14,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 430.7013056342747,
+      "move": {
+        "from": 44,
+        "to": 62
+      }
+    },
+    {
+      "name": "clock64",
+      "repeat": 0,
+      "position": "lazy-confirm/opening/53637/9",
+      "wallMs": 1935.7428720000025,
+      "nodes": 12085790,
+      "nps": 6243489.347070671,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 14,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 430.7013056342747,
+      "move": {
+        "from": 44,
+        "to": 62
+      }
+    },
+    {
+      "name": "clock64",
+      "repeat": 0,
+      "position": "lazy-confirm/middle/53803/26",
+      "wallMs": 1936.381607000003,
+      "nodes": 10748586,
+      "nps": 5550861.442364436,
+      "completedDepth": 6,
+      "mainDepth": 7,
+      "selDepth": 15,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 1558.2405575536243,
+      "move": {
+        "from": 50,
+        "to": 47
+      }
+    },
+    {
+      "name": "clock32",
+      "repeat": 0,
+      "position": "lazy-confirm/middle/53803/26",
+      "wallMs": 1936.754350000003,
+      "nodes": 10637393,
+      "nps": 5492381.106566243,
+      "completedDepth": 6,
+      "mainDepth": 7,
+      "selDepth": 15,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 1558.2405575536243,
+      "move": {
+        "from": 50,
+        "to": 47
+      }
+    },
+    {
+      "name": "base",
+      "repeat": 0,
+      "position": "lazy-confirm/middle/53803/26",
+      "wallMs": 1937.3663450000022,
+      "nodes": 10102540,
+      "nps": 5214573.911678015,
+      "completedDepth": 6,
+      "mainDepth": 7,
+      "selDepth": 15,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 1558.2405575536243,
+      "move": {
+        "from": 50,
+        "to": 47
+      }
+    },
+    {
+      "name": "clock32",
+      "repeat": 0,
+      "position": "lazy-confirm/middle/53817/39",
+      "wallMs": 1936.644849000004,
+      "nodes": 11238778,
+      "nps": 5803220.9704340985,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 14,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 238.84916430946944,
+      "move": {
+        "from": 46,
+        "to": 28
+      }
+    },
+    {
+      "name": "base",
+      "repeat": 0,
+      "position": "lazy-confirm/middle/53817/39",
+      "wallMs": 1936.5479880000057,
+      "nodes": 10993669,
+      "nps": 5676941.169608634,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 14,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 238.84916430946944,
+      "move": {
+        "from": 46,
+        "to": 28
+      }
+    },
+    {
+      "name": "clock64",
+      "repeat": 0,
+      "position": "lazy-confirm/middle/53817/39",
+      "wallMs": 1936.823251000009,
+      "nodes": 10859211,
+      "nps": 5606712.432016312,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 14,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 238.84916430946944,
+      "move": {
+        "from": 46,
+        "to": 28
+      }
+    },
+    {
+      "name": "base",
+      "repeat": 0,
+      "position": "lazy-confirm/middle/53829/52",
+      "wallMs": 1937.0120869999955,
+      "nodes": 11915154,
+      "nps": 6151305.962397966,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 14,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": -126.55536876425275,
+      "move": {
+        "from": 15,
+        "to": 33
+      }
+    },
+    {
+      "name": "clock32",
+      "repeat": 0,
+      "position": "lazy-confirm/middle/53829/52",
+      "wallMs": 1936.5417610000004,
+      "nodes": 10981548,
+      "nps": 5670700.32836746,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 14,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": -126.55536876425275,
+      "move": {
+        "from": 15,
+        "to": 33
+      }
+    },
+    {
+      "name": "clock64",
+      "repeat": 0,
+      "position": "lazy-confirm/middle/53829/52",
+      "wallMs": 1937.3242759999994,
+      "nodes": 11288480,
+      "nps": 5826840.730715131,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 14,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": -126.55536876425275,
+      "move": {
+        "from": 15,
+        "to": 33
+      }
+    },
+    {
+      "name": "clock64",
+      "repeat": 0,
+      "position": "lazy-confirm/middle/53841/63",
+      "wallMs": 1936.9940999999963,
+      "nodes": 10399670,
+      "nps": 5368973.503842898,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 13,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": -317.5202292542084,
+      "move": {
+        "from": 40,
+        "to": 49
+      }
+    },
+    {
+      "name": "clock32",
+      "repeat": 0,
+      "position": "lazy-confirm/middle/53841/63",
+      "wallMs": 1938.2898640000058,
+      "nodes": 10430521,
+      "nps": 5381300.905363435,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 13,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": -317.5202292542084,
+      "move": {
+        "from": 40,
+        "to": 49
+      }
+    },
+    {
+      "name": "base",
+      "repeat": 0,
+      "position": "lazy-confirm/middle/53841/63",
+      "wallMs": 1936.4404910000012,
+      "nodes": 10928109,
+      "nps": 5643400.378576361,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 13,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": -317.5202292542084,
+      "move": {
+        "from": 40,
+        "to": 49
+      }
+    },
+    {
+      "name": "clock32",
+      "repeat": 0,
+      "position": "lazy-confirm/ending/53908/0",
+      "wallMs": 1928.977589000002,
+      "nodes": 13099842,
+      "nps": 6791080.453553153,
+      "completedDepth": 9,
+      "mainDepth": 10,
+      "selDepth": 17,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": -8,
+      "move": {
+        "from": 37,
+        "to": 36
+      }
+    },
+    {
+      "name": "base",
+      "repeat": 0,
+      "position": "lazy-confirm/ending/53908/0",
+      "wallMs": 1928.9549150000094,
+      "nodes": 12628874,
+      "nps": 6547003.199398229,
+      "completedDepth": 9,
+      "mainDepth": 10,
+      "selDepth": 17,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": -8,
+      "move": {
+        "from": 37,
+        "to": 36
+      }
+    },
+    {
+      "name": "clock64",
+      "repeat": 0,
+      "position": "lazy-confirm/ending/53908/0",
+      "wallMs": 1928.8016699999862,
+      "nodes": 13765860,
+      "nps": 7137001.286399809,
+      "completedDepth": 9,
+      "mainDepth": 10,
+      "selDepth": 17,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": -8,
+      "move": {
+        "from": 37,
+        "to": 36
+      }
+    },
+    {
+      "name": "base",
+      "repeat": 0,
+      "position": "lazy-confirm/ending/54119/0",
+      "wallMs": 1928.6378839999961,
+      "nodes": 11972096,
+      "nps": 6207539.579783565,
+      "completedDepth": 7,
+      "mainDepth": 8,
+      "selDepth": 16,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": -77,
+      "move": {
+        "from": 73,
+        "to": 10
+      }
+    },
+    {
+      "name": "clock32",
+      "repeat": 0,
+      "position": "lazy-confirm/ending/54119/0",
+      "wallMs": 1928.6138950000022,
+      "nodes": 12262616,
+      "nps": 6358253.475094861,
+      "completedDepth": 7,
+      "mainDepth": 8,
+      "selDepth": 16,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": -77,
+      "move": {
+        "from": 73,
+        "to": 10
+      }
+    },
+    {
+      "name": "clock64",
+      "repeat": 0,
+      "position": "lazy-confirm/ending/54119/0",
+      "wallMs": 1928.5442380000022,
+      "nodes": 12480947,
+      "nps": 6471693.391354804,
+      "completedDepth": 8,
+      "mainDepth": 9,
+      "selDepth": 16,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": -74.66666666666667,
+      "move": {
+        "from": 73,
+        "to": 10
+      }
+    },
+    {
+      "name": "clock64",
+      "repeat": 0,
+      "position": "lazy-confirm/ending/54331/0",
+      "wallMs": 9.968097999997553,
+      "nodes": 4867,
+      "nps": 488257.63952172163,
+      "completedDepth": 3,
+      "mainDepth": 3,
+      "selDepth": 7,
+      "deadlineStop": false,
+      "terminationReason": "terminal",
+      "score": 98997,
+      "move": {
+        "from": 41,
+        "to": 24
+      }
+    },
+    {
+      "name": "clock32",
+      "repeat": 0,
+      "position": "lazy-confirm/ending/54331/0",
+      "wallMs": 9.53314899999532,
+      "nodes": 4867,
+      "nps": 510534.3470454925,
+      "completedDepth": 3,
+      "mainDepth": 3,
+      "selDepth": 7,
+      "deadlineStop": false,
+      "terminationReason": "terminal",
+      "score": 98997,
+      "move": {
+        "from": 41,
+        "to": 24
+      }
+    },
+    {
+      "name": "base",
+      "repeat": 0,
+      "position": "lazy-confirm/ending/54331/0",
+      "wallMs": 10.397765000001527,
+      "nodes": 4867,
+      "nps": 468081.3617156461,
+      "completedDepth": 3,
+      "mainDepth": 3,
+      "selDepth": 7,
+      "deadlineStop": false,
+      "terminationReason": "terminal",
+      "score": 98997,
+      "move": {
+        "from": 41,
+        "to": 24
+      }
+    },
+    {
+      "name": "clock32",
+      "repeat": 0,
+      "position": "lazy-confirm/ending/54546/0",
+      "wallMs": 1928.1132380000054,
+      "nodes": 6753383,
+      "nps": 3502586.293637584,
+      "completedDepth": 10,
+      "mainDepth": 11,
+      "selDepth": 17,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 632,
+      "move": {
+        "from": 14,
+        "to": 13
+      }
+    },
+    {
+      "name": "base",
+      "repeat": 0,
+      "position": "lazy-confirm/ending/54546/0",
+      "wallMs": 1928.0407280000072,
+      "nodes": 7069092,
+      "nps": 3666464.0416247337,
+      "completedDepth": 10,
+      "mainDepth": 11,
+      "selDepth": 17,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 632,
+      "move": {
+        "from": 14,
+        "to": 13
+      }
+    },
+    {
+      "name": "clock64",
+      "repeat": 0,
+      "position": "lazy-confirm/ending/54546/0",
+      "wallMs": 1928.1919659999985,
+      "nodes": 6779807,
+      "nps": 3516147.312896752,
+      "completedDepth": 10,
+      "mainDepth": 11,
+      "selDepth": 17,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 632,
+      "move": {
+        "from": 14,
+        "to": 13
+      }
+    },
+    {
+      "name": "clock64",
+      "repeat": 1,
+      "position": "lazy-confirm/opening/53601/0",
+      "wallMs": 1934.424211999998,
+      "nodes": 11687723,
+      "nps": 6041964.801462076,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 14,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 80.56962666945898,
+      "move": {
+        "from": 64,
+        "to": 1
+      }
+    },
+    {
+      "name": "clock32",
+      "repeat": 1,
+      "position": "lazy-confirm/opening/53601/0",
+      "wallMs": 1934.6337839999906,
+      "nodes": 11505195,
+      "nps": 5946962.725013623,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 14,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 80.56962666945898,
+      "move": {
+        "from": 64,
+        "to": 1
+      }
+    },
+    {
+      "name": "base",
+      "repeat": 1,
+      "position": "lazy-confirm/opening/53601/0",
+      "wallMs": 1934.9441859999934,
+      "nodes": 11001615,
+      "nps": 5685753.149677692,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 14,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 80.56962666945898,
+      "move": {
+        "from": 64,
+        "to": 1
+      }
+    },
+    {
+      "name": "clock32",
+      "repeat": 1,
+      "position": "lazy-confirm/opening/53611/2",
+      "wallMs": 1935.037353000007,
+      "nodes": 13151024,
+      "nps": 6796263.637811002,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 14,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 421.2597620859272,
+      "move": {
+        "from": 70,
+        "to": 7
+      }
+    },
+    {
+      "name": "base",
+      "repeat": 1,
+      "position": "lazy-confirm/opening/53611/2",
+      "wallMs": 1935.2167229999905,
+      "nodes": 12465851,
+      "nps": 6441578.791586363,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 14,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 421.2597620859272,
+      "move": {
+        "from": 70,
+        "to": 7
+      }
+    },
+    {
+      "name": "clock64",
+      "repeat": 1,
+      "position": "lazy-confirm/opening/53611/2",
+      "wallMs": 1935.229210999998,
+      "nodes": 12685101,
+      "nps": 6554831.2974488335,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 14,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 421.2597620859272,
+      "move": {
+        "from": 70,
+        "to": 7
+      }
+    },
+    {
+      "name": "base",
+      "repeat": 1,
+      "position": "lazy-confirm/opening/53623/5",
+      "wallMs": 1935.261142999996,
+      "nodes": 11474508,
+      "nps": 5929178.106791567,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 13,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 132.5591603015603,
+      "move": {
+        "from": 0,
+        "to": 1
+      }
+    },
+    {
+      "name": "clock32",
+      "repeat": 1,
+      "position": "lazy-confirm/opening/53623/5",
+      "wallMs": 1935.3492600000027,
+      "nodes": 11521419,
+      "nps": 5953147.185433592,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 13,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 132.5591603015603,
+      "move": {
+        "from": 0,
+        "to": 1
+      }
+    },
+    {
+      "name": "clock64",
+      "repeat": 1,
+      "position": "lazy-confirm/opening/53623/5",
+      "wallMs": 1935.765201000002,
+      "nodes": 11470487,
+      "nps": 5925556.980812772,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 13,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 132.5591603015603,
+      "move": {
+        "from": 0,
+        "to": 1
+      }
+    },
+    {
+      "name": "clock64",
+      "repeat": 1,
+      "position": "lazy-confirm/opening/53637/9",
+      "wallMs": 1936.3306529999973,
+      "nodes": 12227083,
+      "nps": 6314563.5695310235,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 14,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 430.7013056342747,
+      "move": {
+        "from": 44,
+        "to": 62
+      }
+    },
+    {
+      "name": "clock32",
+      "repeat": 1,
+      "position": "lazy-confirm/opening/53637/9",
+      "wallMs": 1935.557593000005,
+      "nodes": 12558552,
+      "nps": 6488338.061041601,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 14,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 430.7013056342747,
+      "move": {
+        "from": 44,
+        "to": 62
+      }
+    },
+    {
+      "name": "base",
+      "repeat": 1,
+      "position": "lazy-confirm/opening/53637/9",
+      "wallMs": 1935.5778989999963,
+      "nodes": 12608727,
+      "nps": 6514192.483037866,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 14,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 430.7013056342747,
+      "move": {
+        "from": 44,
+        "to": 62
+      }
+    },
+    {
+      "name": "clock32",
+      "repeat": 1,
+      "position": "lazy-confirm/middle/53803/26",
+      "wallMs": 1935.8108589999902,
+      "nodes": 12425144,
+      "nps": 6418573.355053209,
+      "completedDepth": 6,
+      "mainDepth": 7,
+      "selDepth": 15,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 1558.2405575536243,
+      "move": {
+        "from": 50,
+        "to": 47
+      }
+    },
+    {
+      "name": "base",
+      "repeat": 1,
+      "position": "lazy-confirm/middle/53803/26",
+      "wallMs": 1935.2286569999997,
+      "nodes": 12281096,
+      "nps": 6346069.729578215,
+      "completedDepth": 6,
+      "mainDepth": 7,
+      "selDepth": 15,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 1558.2405575536243,
+      "move": {
+        "from": 50,
+        "to": 47
+      }
+    },
+    {
+      "name": "clock64",
+      "repeat": 1,
+      "position": "lazy-confirm/middle/53803/26",
+      "wallMs": 1935.2327270000242,
+      "nodes": 12411995,
+      "nps": 6413696.3099218225,
+      "completedDepth": 6,
+      "mainDepth": 7,
+      "selDepth": 15,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 1558.2405575536243,
+      "move": {
+        "from": 50,
+        "to": 47
+      }
+    },
+    {
+      "name": "base",
+      "repeat": 1,
+      "position": "lazy-confirm/middle/53817/39",
+      "wallMs": 1935.526801,
+      "nodes": 14124971,
+      "nps": 7297739.815693722,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 14,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 238.84916430946944,
+      "move": {
+        "from": 46,
+        "to": 28
+      }
+    },
+    {
+      "name": "clock32",
+      "repeat": 1,
+      "position": "lazy-confirm/middle/53817/39",
+      "wallMs": 1935.5240489999996,
+      "nodes": 13904299,
+      "nps": 7183738.69194947,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 14,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 238.84916430946944,
+      "move": {
+        "from": 46,
+        "to": 28
+      }
+    },
+    {
+      "name": "clock64",
+      "repeat": 1,
+      "position": "lazy-confirm/middle/53817/39",
+      "wallMs": 1935.5099480000208,
+      "nodes": 13684113,
+      "nps": 7070029.794545831,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 14,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 238.84916430946944,
+      "move": {
+        "from": 46,
+        "to": 28
+      }
+    },
+    {
+      "name": "clock64",
+      "repeat": 1,
+      "position": "lazy-confirm/middle/53829/52",
+      "wallMs": 1936.1135470000154,
+      "nodes": 14413591,
+      "nps": 7444600.045453783,
+      "completedDepth": 6,
+      "mainDepth": 7,
+      "selDepth": 15,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": -84.15783500009107,
+      "move": {
+        "from": 15,
+        "to": 33
+      }
+    },
+    {
+      "name": "clock32",
+      "repeat": 1,
+      "position": "lazy-confirm/middle/53829/52",
+      "wallMs": 1935.3353350000107,
+      "nodes": 14428119,
+      "nps": 7455100.28110964,
+      "completedDepth": 6,
+      "mainDepth": 7,
+      "selDepth": 15,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": -84.15783500009107,
+      "move": {
+        "from": 15,
+        "to": 33
+      }
+    },
+    {
+      "name": "base",
+      "repeat": 1,
+      "position": "lazy-confirm/middle/53829/52",
+      "wallMs": 1935.5467090000166,
+      "nodes": 14220247,
+      "nps": 7346889.090238885,
+      "completedDepth": 6,
+      "mainDepth": 7,
+      "selDepth": 15,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": -84.15783500009107,
+      "move": {
+        "from": 15,
+        "to": 33
+      }
+    },
+    {
+      "name": "clock32",
+      "repeat": 1,
+      "position": "lazy-confirm/middle/53841/63",
+      "wallMs": 1935.5654210000066,
+      "nodes": 12556989,
+      "nps": 6487504.304304245,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 13,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": -317.5202292542084,
+      "move": {
+        "from": 40,
+        "to": 49
+      }
+    },
+    {
+      "name": "base",
+      "repeat": 1,
+      "position": "lazy-confirm/middle/53841/63",
+      "wallMs": 1935.4488239999919,
+      "nodes": 12351832,
+      "nps": 6381895.427476336,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 13,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": -317.5202292542084,
+      "move": {
+        "from": 40,
+        "to": 49
+      }
+    },
+    {
+      "name": "clock64",
+      "repeat": 1,
+      "position": "lazy-confirm/middle/53841/63",
+      "wallMs": 1935.7603339999914,
+      "nodes": 12141982,
+      "nps": 6272461.413087336,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 13,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": -317.5202292542084,
+      "move": {
+        "from": 40,
+        "to": 49
+      }
+    },
+    {
+      "name": "base",
+      "repeat": 1,
+      "position": "lazy-confirm/ending/53908/0",
+      "wallMs": 1928.7297700000054,
+      "nodes": 13949044,
+      "nps": 7232243.840981394,
+      "completedDepth": 9,
+      "mainDepth": 10,
+      "selDepth": 17,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": -8,
+      "move": {
+        "from": 37,
+        "to": 36
+      }
+    },
+    {
+      "name": "clock32",
+      "repeat": 1,
+      "position": "lazy-confirm/ending/53908/0",
+      "wallMs": 1928.5738200000196,
+      "nodes": 14077636,
+      "nps": 7299505.911575559,
+      "completedDepth": 9,
+      "mainDepth": 10,
+      "selDepth": 17,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": -8,
+      "move": {
+        "from": 37,
+        "to": 36
+      }
+    },
+    {
+      "name": "clock64",
+      "repeat": 1,
+      "position": "lazy-confirm/ending/53908/0",
+      "wallMs": 1928.552412000019,
+      "nodes": 13995108,
+      "nps": 7256794.221882865,
+      "completedDepth": 9,
+      "mainDepth": 10,
+      "selDepth": 17,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": -8,
+      "move": {
+        "from": 37,
+        "to": 36
+      }
+    },
+    {
+      "name": "clock64",
+      "repeat": 1,
+      "position": "lazy-confirm/ending/54119/0",
+      "wallMs": 1928.3866259999922,
+      "nodes": 12128760,
+      "nps": 6289589.35748191,
+      "completedDepth": 7,
+      "mainDepth": 8,
+      "selDepth": 16,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": -77,
+      "move": {
+        "from": 73,
+        "to": 10
+      }
+    },
+    {
+      "name": "clock32",
+      "repeat": 1,
+      "position": "lazy-confirm/ending/54119/0",
+      "wallMs": 1928.5804059999937,
+      "nodes": 11954936,
+      "nps": 6198826.848394331,
+      "completedDepth": 7,
+      "mainDepth": 8,
+      "selDepth": 16,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": -77,
+      "move": {
+        "from": 73,
+        "to": 10
+      }
+    },
+    {
+      "name": "base",
+      "repeat": 1,
+      "position": "lazy-confirm/ending/54119/0",
+      "wallMs": 1928.350780000008,
+      "nodes": 12249016,
+      "nps": 6352068.372124677,
+      "completedDepth": 7,
+      "mainDepth": 8,
+      "selDepth": 16,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": -77,
+      "move": {
+        "from": 73,
+        "to": 10
+      }
+    },
+    {
+      "name": "clock32",
+      "repeat": 1,
+      "position": "lazy-confirm/ending/54331/0",
+      "wallMs": 9.867588999972213,
+      "nodes": 4867,
+      "nps": 493230.9199353262,
+      "completedDepth": 3,
+      "mainDepth": 3,
+      "selDepth": 7,
+      "deadlineStop": false,
+      "terminationReason": "terminal",
+      "score": 98997,
+      "move": {
+        "from": 41,
+        "to": 24
+      }
+    },
+    {
+      "name": "base",
+      "repeat": 1,
+      "position": "lazy-confirm/ending/54331/0",
+      "wallMs": 9.553362000006018,
+      "nodes": 4867,
+      "nps": 509454.1586508429,
+      "completedDepth": 3,
+      "mainDepth": 3,
+      "selDepth": 7,
+      "deadlineStop": false,
+      "terminationReason": "terminal",
+      "score": 98997,
+      "move": {
+        "from": 41,
+        "to": 24
+      }
+    },
+    {
+      "name": "clock64",
+      "repeat": 1,
+      "position": "lazy-confirm/ending/54331/0",
+      "wallMs": 9.676960999990115,
+      "nodes": 4867,
+      "nps": 502947.15458757884,
+      "completedDepth": 3,
+      "mainDepth": 3,
+      "selDepth": 7,
+      "deadlineStop": false,
+      "terminationReason": "terminal",
+      "score": 98997,
+      "move": {
+        "from": 41,
+        "to": 24
+      }
+    },
+    {
+      "name": "base",
+      "repeat": 1,
+      "position": "lazy-confirm/ending/54546/0",
+      "wallMs": 1928.265883999993,
+      "nodes": 6430279,
+      "nps": 3334747.066447618,
+      "completedDepth": 10,
+      "mainDepth": 11,
+      "selDepth": 17,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 632,
+      "move": {
+        "from": 14,
+        "to": 13
+      }
+    },
+    {
+      "name": "clock32",
+      "repeat": 1,
+      "position": "lazy-confirm/ending/54546/0",
+      "wallMs": 1927.961009999999,
+      "nodes": 7016607,
+      "nps": 3639392.582944405,
+      "completedDepth": 10,
+      "mainDepth": 11,
+      "selDepth": 17,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 632,
+      "move": {
+        "from": 14,
+        "to": 13
+      }
+    },
+    {
+      "name": "clock64",
+      "repeat": 1,
+      "position": "lazy-confirm/ending/54546/0",
+      "wallMs": 1927.7291620000033,
+      "nodes": 6679655,
+      "nps": 3465038.103729215,
+      "completedDepth": 10,
+      "mainDepth": 11,
+      "selDepth": 17,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 632,
+      "move": {
+        "from": 14,
+        "to": 13
+      }
+    },
+    {
+      "name": "clock32",
+      "repeat": 2,
+      "position": "lazy-confirm/opening/53601/0",
+      "wallMs": 1934.2885090000054,
+      "nodes": 10753486,
+      "nps": 5559401.273370213,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 14,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 80.56962666945898,
+      "move": {
+        "from": 64,
+        "to": 1
+      }
+    },
+    {
+      "name": "base",
+      "repeat": 2,
+      "position": "lazy-confirm/opening/53601/0",
+      "wallMs": 1934.7375120000215,
+      "nodes": 11146080,
+      "nps": 5761029.561306131,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 14,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 80.56962666945898,
+      "move": {
+        "from": 64,
+        "to": 1
+      }
+    },
+    {
+      "name": "clock64",
+      "repeat": 2,
+      "position": "lazy-confirm/opening/53601/0",
+      "wallMs": 1935.956635999988,
+      "nodes": 11460587,
+      "nps": 5919857.287547256,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 14,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 80.56962666945898,
+      "move": {
+        "from": 64,
+        "to": 1
+      }
+    },
+    {
+      "name": "base",
+      "repeat": 2,
+      "position": "lazy-confirm/opening/53611/2",
+      "wallMs": 1934.9309340000036,
+      "nodes": 12939091,
+      "nps": 6687107.416930663,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 14,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 421.2597620859272,
+      "move": {
+        "from": 70,
+        "to": 7
+      }
+    },
+    {
+      "name": "clock32",
+      "repeat": 2,
+      "position": "lazy-confirm/opening/53611/2",
+      "wallMs": 1934.8605709999974,
+      "nodes": 12693572,
+      "nps": 6560458.252265464,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 14,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 421.2597620859272,
+      "move": {
+        "from": 70,
+        "to": 7
+      }
+    },
+    {
+      "name": "clock64",
+      "repeat": 2,
+      "position": "lazy-confirm/opening/53611/2",
+      "wallMs": 1935.2014659999986,
+      "nodes": 12620110,
+      "nps": 6521341.690633057,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 14,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 421.2597620859272,
+      "move": {
+        "from": 70,
+        "to": 7
+      }
+    },
+    {
+      "name": "clock64",
+      "repeat": 2,
+      "position": "lazy-confirm/opening/53623/5",
+      "wallMs": 1935.4662140000146,
+      "nodes": 11537762,
+      "nps": 5961231.416256545,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 13,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 132.5591603015603,
+      "move": {
+        "from": 0,
+        "to": 1
+      }
+    },
+    {
+      "name": "clock32",
+      "repeat": 2,
+      "position": "lazy-confirm/opening/53623/5",
+      "wallMs": 1935.668743999995,
+      "nodes": 11254104,
+      "nps": 5814065.053684634,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 13,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 132.5591603015603,
+      "move": {
+        "from": 0,
+        "to": 1
+      }
+    },
+    {
+      "name": "base",
+      "repeat": 2,
+      "position": "lazy-confirm/opening/53623/5",
+      "wallMs": 1935.2184220000054,
+      "nodes": 11025733,
+      "nps": 5697410.108676596,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 13,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 132.5591603015603,
+      "move": {
+        "from": 0,
+        "to": 1
+      }
+    },
+    {
+      "name": "clock32",
+      "repeat": 2,
+      "position": "lazy-confirm/opening/53637/9",
+      "wallMs": 1935.3621370000183,
+      "nodes": 12602520,
+      "nps": 6511711.559850507,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 14,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 430.7013056342747,
+      "move": {
+        "from": 44,
+        "to": 62
+      }
+    },
+    {
+      "name": "base",
+      "repeat": 2,
+      "position": "lazy-confirm/opening/53637/9",
+      "wallMs": 1935.971544,
+      "nodes": 12476627,
+      "nps": 6444633.465129072,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 14,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 430.7013056342747,
+      "move": {
+        "from": 44,
+        "to": 62
+      }
+    },
+    {
+      "name": "clock64",
+      "repeat": 2,
+      "position": "lazy-confirm/opening/53637/9",
+      "wallMs": 1935.4133069999807,
+      "nodes": 12508362,
+      "nps": 6462889.324342196,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 14,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 430.7013056342747,
+      "move": {
+        "from": 44,
+        "to": 62
+      }
+    },
+    {
+      "name": "base",
+      "repeat": 2,
+      "position": "lazy-confirm/middle/53803/26",
+      "wallMs": 1936.0812260000093,
+      "nodes": 10127780,
+      "nps": 5231071.849668331,
+      "completedDepth": 6,
+      "mainDepth": 7,
+      "selDepth": 15,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 1558.2405575536243,
+      "move": {
+        "from": 50,
+        "to": 47
+      }
+    },
+    {
+      "name": "clock32",
+      "repeat": 2,
+      "position": "lazy-confirm/middle/53803/26",
+      "wallMs": 1936.068247999996,
+      "nodes": 11393838,
+      "nps": 5885039.44102699,
+      "completedDepth": 6,
+      "mainDepth": 7,
+      "selDepth": 15,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 1558.2405575536243,
+      "move": {
+        "from": 50,
+        "to": 47
+      }
+    },
+    {
+      "name": "clock64",
+      "repeat": 2,
+      "position": "lazy-confirm/middle/53803/26",
+      "wallMs": 1936.6314890000212,
+      "nodes": 11225297,
+      "nps": 5796299.948523597,
+      "completedDepth": 6,
+      "mainDepth": 7,
+      "selDepth": 15,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 1558.2405575536243,
+      "move": {
+        "from": 50,
+        "to": 47
+      }
+    },
+    {
+      "name": "clock64",
+      "repeat": 2,
+      "position": "lazy-confirm/middle/53817/39",
+      "wallMs": 1936.192165000015,
+      "nodes": 13038084,
+      "nps": 6733879.124027909,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 14,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 238.84916430946944,
+      "move": {
+        "from": 46,
+        "to": 28
+      }
+    },
+    {
+      "name": "clock32",
+      "repeat": 2,
+      "position": "lazy-confirm/middle/53817/39",
+      "wallMs": 1935.622916000022,
+      "nodes": 13159911,
+      "nps": 6798798.924738422,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 14,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 238.84916430946944,
+      "move": {
+        "from": 46,
+        "to": 28
+      }
+    },
+    {
+      "name": "base",
+      "repeat": 2,
+      "position": "lazy-confirm/middle/53817/39",
+      "wallMs": 1935.9631759999902,
+      "nodes": 12942011,
+      "nps": 6685050.191264622,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 14,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 238.84916430946944,
+      "move": {
+        "from": 46,
+        "to": 28
+      }
+    },
+    {
+      "name": "clock32",
+      "repeat": 2,
+      "position": "lazy-confirm/middle/53829/52",
+      "wallMs": 1935.557644000015,
+      "nodes": 13965271,
+      "nps": 7215115.0048620775,
+      "completedDepth": 6,
+      "mainDepth": 7,
+      "selDepth": 15,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": -84.15783500009107,
+      "move": {
+        "from": 15,
+        "to": 33
+      }
+    },
+    {
+      "name": "base",
+      "repeat": 2,
+      "position": "lazy-confirm/middle/53829/52",
+      "wallMs": 1935.7464650000038,
+      "nodes": 13854095,
+      "nps": 7156978.0704726605,
+      "completedDepth": 6,
+      "mainDepth": 7,
+      "selDepth": 14,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": -84.15783500009107,
+      "move": {
+        "from": 15,
+        "to": 33
+      }
+    },
+    {
+      "name": "clock64",
+      "repeat": 2,
+      "position": "lazy-confirm/middle/53829/52",
+      "wallMs": 1936.0765819999797,
+      "nodes": 13959255,
+      "nps": 7210073.780025788,
+      "completedDepth": 6,
+      "mainDepth": 7,
+      "selDepth": 15,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": -84.15783500009107,
+      "move": {
+        "from": 15,
+        "to": 33
+      }
+    },
+    {
+      "name": "base",
+      "repeat": 2,
+      "position": "lazy-confirm/middle/53841/63",
+      "wallMs": 1935.7674779999943,
+      "nodes": 11447348,
+      "nps": 5913596.612247679,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 13,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": -317.5202292542084,
+      "move": {
+        "from": 40,
+        "to": 49
+      }
+    },
+    {
+      "name": "clock32",
+      "repeat": 2,
+      "position": "lazy-confirm/middle/53841/63",
+      "wallMs": 1936.5362339999992,
+      "nodes": 11628271,
+      "nps": 6004675.14929029,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 13,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": -317.5202292542084,
+      "move": {
+        "from": 40,
+        "to": 49
+      }
+    },
+    {
+      "name": "clock64",
+      "repeat": 2,
+      "position": "lazy-confirm/middle/53841/63",
+      "wallMs": 1936.4838379999856,
+      "nodes": 9933863,
+      "nps": 5129845.550510644,
+      "completedDepth": 5,
+      "mainDepth": 6,
+      "selDepth": 13,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": -317.5202292542084,
+      "move": {
+        "from": 40,
+        "to": 49
+      }
+    },
+    {
+      "name": "clock64",
+      "repeat": 2,
+      "position": "lazy-confirm/ending/53908/0",
+      "wallMs": 1928.647438999993,
+      "nodes": 12618338,
+      "nps": 6542584.064271814,
+      "completedDepth": 9,
+      "mainDepth": 10,
+      "selDepth": 17,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": -8,
+      "move": {
+        "from": 37,
+        "to": 36
+      }
+    },
+    {
+      "name": "clock32",
+      "repeat": 2,
+      "position": "lazy-confirm/ending/53908/0",
+      "wallMs": 1930.7627410000132,
+      "nodes": 12392546,
+      "nps": 6418471.693513955,
+      "completedDepth": 9,
+      "mainDepth": 10,
+      "selDepth": 17,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": -8,
+      "move": {
+        "from": 37,
+        "to": 36
+      }
+    },
+    {
+      "name": "base",
+      "repeat": 2,
+      "position": "lazy-confirm/ending/53908/0",
+      "wallMs": 1929.2754640000057,
+      "nodes": 10565842,
+      "nps": 5476585.483595809,
+      "completedDepth": 8,
+      "mainDepth": 9,
+      "selDepth": 16,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 6,
+      "move": {
+        "from": 37,
+        "to": 36
+      }
+    },
+    {
+      "name": "clock32",
+      "repeat": 2,
+      "position": "lazy-confirm/ending/54119/0",
+      "wallMs": 1929.0650020000176,
+      "nodes": 10341927,
+      "nps": 5361108.614420814,
+      "completedDepth": 7,
+      "mainDepth": 8,
+      "selDepth": 16,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": -77,
+      "move": {
+        "from": 73,
+        "to": 10
+      }
+    },
+    {
+      "name": "base",
+      "repeat": 2,
+      "position": "lazy-confirm/ending/54119/0",
+      "wallMs": 1929.2867899999837,
+      "nodes": 9330643,
+      "nps": 4836317.258980496,
+      "completedDepth": 7,
+      "mainDepth": 8,
+      "selDepth": 16,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": -77,
+      "move": {
+        "from": 73,
+        "to": 10
+      }
+    },
+    {
+      "name": "clock64",
+      "repeat": 2,
+      "position": "lazy-confirm/ending/54119/0",
+      "wallMs": 1928.6655740000133,
+      "nodes": 11694840,
+      "nps": 6063695.104872504,
+      "completedDepth": 7,
+      "mainDepth": 8,
+      "selDepth": 16,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": -77,
+      "move": {
+        "from": 73,
+        "to": 10
+      }
+    },
+    {
+      "name": "base",
+      "repeat": 2,
+      "position": "lazy-confirm/ending/54331/0",
+      "wallMs": 10.050084999995306,
+      "nodes": 4867,
+      "nps": 484274.5111113262,
+      "completedDepth": 3,
+      "mainDepth": 3,
+      "selDepth": 7,
+      "deadlineStop": false,
+      "terminationReason": "terminal",
+      "score": 98997,
+      "move": {
+        "from": 41,
+        "to": 24
+      }
+    },
+    {
+      "name": "clock32",
+      "repeat": 2,
+      "position": "lazy-confirm/ending/54331/0",
+      "wallMs": 10.194686000002548,
+      "nodes": 4867,
+      "nps": 477405.5816921466,
+      "completedDepth": 3,
+      "mainDepth": 3,
+      "selDepth": 7,
+      "deadlineStop": false,
+      "terminationReason": "terminal",
+      "score": 98997,
+      "move": {
+        "from": 41,
+        "to": 24
+      }
+    },
+    {
+      "name": "clock64",
+      "repeat": 2,
+      "position": "lazy-confirm/ending/54331/0",
+      "wallMs": 10.263506999996025,
+      "nodes": 4867,
+      "nps": 474204.38257623685,
+      "completedDepth": 3,
+      "mainDepth": 3,
+      "selDepth": 7,
+      "deadlineStop": false,
+      "terminationReason": "terminal",
+      "score": 98997,
+      "move": {
+        "from": 41,
+        "to": 24
+      }
+    },
+    {
+      "name": "clock64",
+      "repeat": 2,
+      "position": "lazy-confirm/ending/54546/0",
+      "wallMs": 1928.195053000003,
+      "nodes": 6125183,
+      "nps": 3176640.7607311658,
+      "completedDepth": 10,
+      "mainDepth": 11,
+      "selDepth": 17,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 632,
+      "move": {
+        "from": 14,
+        "to": 13
+      }
+    },
+    {
+      "name": "clock32",
+      "repeat": 2,
+      "position": "lazy-confirm/ending/54546/0",
+      "wallMs": 1928.0479789999954,
+      "nodes": 6481447,
+      "nps": 3361662.7130626068,
+      "completedDepth": 10,
+      "mainDepth": 11,
+      "selDepth": 17,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 632,
+      "move": {
+        "from": 14,
+        "to": 13
+      }
+    },
+    {
+      "name": "base",
+      "repeat": 2,
+      "position": "lazy-confirm/ending/54546/0",
+      "wallMs": 1928.0470379999897,
+      "nodes": 6993894,
+      "nps": 3627449.8817492216,
+      "completedDepth": 10,
+      "mainDepth": 11,
+      "selDepth": 17,
+      "deadlineStop": false,
+      "terminationReason": "time-budget",
+      "score": 632,
+      "move": {
+        "from": 14,
+        "to": 13
+      }
+    }
+  ],
+  "note": "Developer screen only. Neither clock variant was retained. Cancellation remains every eight nodes in both; candidate clock reads every 32 or 64 nodes.",
+  "sourceHashes": {
+    "c7": "855cccb05cff5a4eb3efa919546f41d7b66ae7b852490ecf0b81115f7f9f20d0",
+    "clock32": "3199310c52ab9fd986773576c1925b3174a075fdcd3ee91cd078c2f3c8326950",
+    "clock64": "0f3f7e2b731e3964efc4707543ce901d658a5fd5732274f518296f4a67aa0200"
+  }
+}

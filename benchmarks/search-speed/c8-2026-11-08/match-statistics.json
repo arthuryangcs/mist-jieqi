@@ -1,0 +1,52 @@
+{
+  "completed": true,
+  "stats": {
+    "c7": {
+      "games": 4,
+      "wins": 1,
+      "draws": 0,
+      "losses": 3,
+      "scoreRate": 0.25,
+      "unresolved": 0,
+      "technical": [],
+      "normalWins": 1,
+      "normalDraws": 0,
+      "normalLosses": 3
+    },
+    "pika": {
+      "games": 4,
+      "wins": 0,
+      "draws": 0,
+      "losses": 4,
+      "scoreRate": 0,
+      "unresolved": 0,
+      "technical": [],
+      "normalWins": 0,
+      "normalDraws": 0,
+      "normalLosses": 4
+    },
+    "stable": {
+      "games": 4,
+      "wins": 2,
+      "draws": 0,
+      "losses": 2,
+      "scoreRate": 0.5,
+      "unresolved": 0,
+      "technical": [],
+      "normalWins": 2,
+      "normalDraws": 0,
+      "normalLosses": 2
+    }
+  },
+  "candidate": {
+    "moves": 477,
+    "hostStops": 2,
+    "fallbacks": 0,
+    "wallMsMedian": 1934.958402999997
+  },
+  "opponentHostStops": {
+    "c7": 1,
+    "pika": 1,
+    "stable": 178
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "passed": true,
+  "requests": 64,
+  "depth": 4,
+  "repeats": 4,
+  "geometricSpeedup": 1.0480909424143965,
+  "worstSpeedup": 1.0043313428129914,
+  "bestSpeedup": 1.0847685413539336,
+  "rows": [
+    {
+      "position": "opening/51101/0",
+      "engines": {
+        "c7": {
+          "coreMsMedian": 210.523119,
+          "coreMsMin": 206.367297,
+          "coreMsMax": 329.75468,
+          "wallMsMedian": 220.1900359999999,
+          "nodes": 1462014
+        },
+        "c8": {
+          "coreMsMedian": 194.071925,
+          "coreMsMin": 192.199035,
+          "coreMsMax": 194.631303,
+          "wallMsMedian": 202.29596300000003,
+          "nodes": 1462014
+        }
+      },
+      "speedup": 1.0847685413539336
+    },
+    {
+      "position": "opening/51109/3",
+      "engines": {
+        "c7": {
+          "coreMsMedian": 125.245031,
+          "coreMsMin": 124.538485,
+          "coreMsMax": 131.16648,
+          "wallMsMedian": 132.9645779999999,
+          "nodes": 878095
+        },
+        "c8": {
+          "coreMsMedian": 119.7528685,
+          "coreMsMin": 118.94119,
+          "coreMsMax": 120.303487,
+          "wallMsMedian": 127.51987150000008,
+          "nodes": 878095
+        }
+      },
+      "speedup": 1.0458624713444755
+    },
+    {
+      "position": "opening/51119/7",
+      "engines": {
+        "c7": {
+          "coreMsMedian": 94.4979845,
+          "coreMsMin": 93.538628,
+          "coreMsMax": 97.473882,
+          "wallMsMedian": 101.60162550000001,
+          "nodes": 722257
+        },
+        "c8": {
+          "coreMsMedian": 89.820041,
+          "coreMsMin": 87.759489,
+          "coreMsMax": 92.382708,
+          "wallMsMedian": 97.57960900000018,
+          "nodes": 722257
+        }
+      },
+      "speedup": 1.052081288851783
+    },
+    {
+      "position": "opening/51131/10",
+      "engines": {
+        "c7": {
+          "coreMsMedian": 74.452088,
+          "coreMsMin": 72.620952,
+          "coreMsMax": 75.423984,
+          "wallMsMedian": 81.7413230000002,
+          "nodes": 590736
+        },
+        "c8": {
+          "coreMsMedian": 70.517975,
+          "coreMsMin": 69.894278,
+          "coreMsMax": 73.894576,
+          "wallMsMedian": 78.06054650000033,
+          "nodes": 590736
+        }
+      },
+      "speedup": 1.0557887971116584
+    },
+    {
+      "position": "middle/51203/28",
+      "engines": {
+        "c7": {
+          "coreMsMedian": 121.8560265,
+          "coreMsMin": 121.716603,
+          "coreMsMax": 122.746798,
+          "wallMsMedian": 129.78954800000054,
+          "nodes": 909165
+        },
+        "c8": {
+          "coreMsMedian": 121.3305025,
+          "coreMsMin": 120.245058,
+          "coreMsMax": 122.381529,
+          "wallMsMedian": 129.46185150000042,
+          "nodes": 909165
+        }
+      },
+      "speedup": 1.0043313428129914
+    },
+    {
+      "position": "middle/51217/37",
+      "engines": {
+        "c7": {
+          "coreMsMedian": 67.78581399999999,
+          "coreMsMin": 67.346021,
+          "coreMsMax": 68.826191,
+          "wallMsMedian": 74.91308249999997,
+          "nodes": 529319
+        },
+        "c8": {
+          "coreMsMedian": 64.7314255,
+          "coreMsMin": 64.189096,
+          "coreMsMax": 65.811747,
+          "wallMsMedian": 71.645444,
+          "nodes": 529319
+        }
+      },
+      "speedup": 1.047185559045042
+    },
+    {
+      "position": "middle/51229/46",
+      "engines": {
+        "c7": {
+          "coreMsMedian": 187.1823205,
+          "coreMsMin": 184.68611,
+          "coreMsMax": 188.616931,
+          "wallMsMedian": 195.2151114999998,
+          "nodes": 1157397
+        },
+        "c8": {
+          "coreMsMedian": 177.085071,
+          "coreMsMin": 176.33882,
+          "coreMsMax": 180.963458,
+          "wallMsMedian": 185.39423799999986,
+          "nodes": 1157397
+        }
+      },
+      "speedup": 1.0570192023696905
+    },
+    {
+      "position": "middle/51241/57",
+      "engines": {
+        "c7": {
+          "coreMsMedian": 135.5248205,
+          "coreMsMin": 134.392076,
+          "coreMsMax": 136.359722,
+          "wallMsMedian": 143.33493149999958,
+          "nodes": 1213609
+        },
+        "c8": {
+          "coreMsMedian": 130.39130849999998,
+          "coreMsMin": 127.472431,
+          "coreMsMax": 130.884333,
+          "wallMsMedian": 138.3932050000003,
+          "nodes": 1213609
+        }
+      },
+      "speedup": 1.0393700474291967
+    }
+  ]
+}

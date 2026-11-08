@@ -1,0 +1,10 @@
+{
+  "createdAt": "2026-11-08T02:30:57.785Z",
+  "candidateSourceSha256": "a17db66bebc4cfabe9bc0d48a5f4b1693bb9306b1af5397907a0c601afc80047",
+  "candidateBinarySha256": "188951846a541667fc32ee7ebd5eccb5f53b11ab97b95af8e11631137350e3ae",
+  "baselineSourceSha256": "855cccb05cff5a4eb3efa919546f41d7b66ae7b852490ecf0b81115f7f9f20d0",
+  "baselineBinarySha256": "17284b7e3b2cceb7e70d378788c591990add1c10785e09a0b7a0094951807d15",
+  "pikaCommit": "bcc83f88ee18760e60903d1a3aaa61ef6f70f2c9",
+  "pikaHash": "f32d3c6dfe4d6d90da7728d9cc2af68c3195a1cefb1bc28f3829f174c518dba1",
+  "fixtureSha256": "fbbfec54301722f44fd7950dad748c6f3df5d263150b60e1bce0c3b87dba875d"
+}

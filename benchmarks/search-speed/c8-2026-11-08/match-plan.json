@@ -1,0 +1,23 @@
+{
+  "createdAt": "2026-11-08T02:38:27.150Z",
+  "games": {
+    "newLayouts": [
+      9815101,
+      9815123
+    ],
+    "opponents": [
+      "c7",
+      "pika",
+      "stable"
+    ],
+    "colors": [
+      "r",
+      "b"
+    ],
+    "total": 12
+  },
+  "budgetMs": 2000,
+  "graceMs": 60,
+  "maxPlies": 400,
+  "stopRule": "Do not alter sample based on intermediate results. Stop on infrastructure failure and retain the event; never silently replay a failed game."
+}

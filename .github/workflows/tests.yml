@@ -135,3 +135,27 @@ jobs:
           node native/experiments/all-features/check.mjs --sanitize
           node native/experiments/all-features/control-saturation.mjs
           node native/experiments/all-features/cancel-check.mjs
+  search-speed-c8:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '24'
+      - name: C8 exact geometry source and unchanged search
+        run: |
+          node --test native/experiments/search-speed/c8-source.test.mjs
+          node native/experiments/search-speed/replay-public.mjs benchmarks/search-speed/c8-2026-11-08/matches.json
+      - name: C8 ordered geometry, search, rules and privacy
+        run: |
+          node native/experiments/search-speed/check-c8.mjs
+          node native/experiments/search-speed/rules-c8.mjs
+          node native/experiments/search-speed/reference-check-c8.mjs
+      - name: C8 address and undefined behavior checks
+        run: |
+          node native/experiments/search-speed/check-c8.mjs --sanitize
+          node native/experiments/search-speed/rules-c8.mjs --sanitize
+          node native/experiments/search-speed/reference-check-c8.mjs --sanitize
