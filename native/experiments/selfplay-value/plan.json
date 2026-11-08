@@ -1,0 +1,114 @@
+{
+  "experiment": "selfplay-observation-residual-value-v1",
+  "version": 1,
+  "provenance": "Locally generated synthetic self-play only. No user games, external datasets, third-party weights, sampled-truth labels, or search-score labels.",
+  "generation": {
+    "layoutSeeds": [
+      2026110801,
+      2026110802,
+      2026110803,
+      2026110804,
+      2026110805,
+      2026110806,
+      2026110807,
+      2026110808,
+      2026110809,
+      2026110810,
+      2026110811,
+      2026110812,
+      2026110813,
+      2026110814,
+      2026110815,
+      2026110816,
+      2026110817,
+      2026110818,
+      2026110819,
+      2026110820,
+      2026110821,
+      2026110822,
+      2026110823,
+      2026110824
+    ],
+    "policySeeds": [
+      170001,
+      170002
+    ],
+    "games": 48,
+    "samples": 8,
+    "depth": 2,
+    "nodeLimit": 30000,
+    "budgetMs": 10000,
+    "openingPlies": 8,
+    "openingTopK": 3,
+    "maxPlies": 400,
+    "binary": ".cache/selfplay-value/control",
+    "policy": "Current HCE only. First 8 plies: seeded uniform choice among top 3 completed ranked candidates, then best completed candidate. Tie-break by from then to. Policy RNG independent of layout seed; native sampling seed solely observationSeed(publicState(state, state.turn)).",
+    "clock": "Fixed depth and deterministic node limit, one search at a time. Wall-clock timeout, stack-safety cutoff, incomplete first iteration, illegal move, or protocol failure is a technical failure, never a training example.",
+    "rule": "Terminal mate/stalemate first; third identical public board and turn loses for mover; 120 quiet plies draw; 400-ply cap unresolved unless an earlier-priority terminal condition applies.",
+    "stopRule": "Generate exactly the frozen 48 games. Preserve all failures and unresolved results; no replacement layouts, retries, outcome quotas, or result-dependent tuning. Resume incomplete games from their public journals."
+  },
+  "data": {
+    "split": "SHA256(JSON.stringify(true initial board)) is the grouping identity only. First 16 prescribed seeds train, next 4 validation, final 4 test. All policy games for a layout stay together.",
+    "trainingLayouts": 16,
+    "validationLayouts": 4,
+    "testLayouts": 4,
+    "firstPly": 8,
+    "stride": 1,
+    "viewers": [
+      "r",
+      "b"
+    ],
+    "excludeTechnicalOrUnresolved": true,
+    "labels": "Independently replayed terminal outcome only: red win 1, black win 0, 120-quiet draw 0.5.",
+    "weighting": "Equal total weight per eligible initial layout, equal eligible games within layout, equal pre-move viewpoint observations within game. Missing/failed groups are reported, never backfilled.",
+    "modelInput": "Only existing 2597 sparse lawful observation features and HCE base score. No layout hash, seed, journal, ply, future move/capture, or search output.",
+    "files": {
+      "train": ".cache/selfplay-value/train.json",
+      "validation": ".cache/selfplay-value/validation.json",
+      "test": ".cache/selfplay-value/test.json"
+    }
+  },
+  "network": {
+    "features": 2597,
+    "hidden": 16,
+    "accumulators": 2,
+    "activation": "clipped ReLU [0,1]",
+    "residualCapCp": 256,
+    "sigmoidScaleCp": 600,
+    "output": "HCE(red) + cap/2*(tanh(z(red-frame))-tanh(z(rotated-color-swapped-frame)))",
+    "weightStorage": "float32",
+    "accumulatorArithmetic": "float64",
+    "kingRelativeBuckets": false
+  },
+  "training": {
+    "seed": 1729,
+    "epochs": 120,
+    "optimizer": "full-batch Adam",
+    "learningRate": 0.005,
+    "l2": 0.0001,
+    "selection": "Lowest validation weighted BCE among epochs 1..120, ties retain earlier epoch; freeze float32 model before opening test file, then evaluate test once.",
+    "hyperparameterSweeps": 0,
+    "model": "models/experimental/selfplay-value-v1.bin"
+  },
+  "matches": {
+    "seeds": [
+      2026110891,
+      2026110893
+    ],
+    "internalGames": 4,
+    "budgetMs": 2000,
+    "graceMs": 60,
+    "maxPlies": 400,
+    "samples": 8,
+    "brightSamples": 1,
+    "maxThreads": 4,
+    "hostReserveMs": 40,
+    "stopRule": "Complete all paired held-out matches with frozen weights and equal clocks; no tuning after any test or match outcome.",
+    "ttBudgetBytes": 67108864,
+    "candidatePikaGames": 4,
+    "controlPikaGames": 4,
+    "totalGames": 12
+  },
+  "defaultPromotion": false,
+  "publication": "Only checked isolated experiment code, synthetic reproducibility evidence, and model under the user-authorized publication workflow. No default engine changes."
+}

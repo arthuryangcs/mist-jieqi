@@ -159,3 +159,27 @@ jobs:
           node native/experiments/search-speed/check-c8.mjs --sanitize
           node native/experiments/search-speed/rules-c8.mjs --sanitize
           node native/experiments/search-speed/reference-check-c8.mjs --sanitize
+
+  selfplay-value:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '24'
+      - name: Self-play privacy, grouped data and portable frozen-model replay
+        run: |
+          node --test native/experiments/selfplay-value/dataset.test.mjs
+          node native/experiments/selfplay-value/replay-data.mjs
+      - name: Isolated current-HCE residual build and rule checks
+        run: |
+          node native/experiments/selfplay-value/build.mjs --control
+          node native/experiments/selfplay-value/check.mjs
+          node native/experiments/selfplay-value/rules.mjs
+      - name: Address and undefined-behavior checks
+        run: |
+          node native/experiments/selfplay-value/check.mjs --sanitize
+          node native/experiments/selfplay-value/rules.mjs --sanitize

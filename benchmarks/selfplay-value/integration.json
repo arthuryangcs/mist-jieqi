@@ -1,0 +1,356 @@
+{
+  "passed": true,
+  "modelSha256": "c5d0870e3feb8f7c86f9fb29e601d2ca3e3749099a02c261670f1d0f7e56df0b",
+  "sourceSha256": "91aafedc08dd81b7b30904ea2f215ed58dfa3a4d7b158444e79370e00ca0c1b7",
+  "candidateBinarySha256": "0a8b0671089b025f3bd4400cfa09f1d364d1d6856de2741eb98272b1f16ea205",
+  "controlBinarySha256": "494eb5b63bc5538f835a41057bbe85ef142d446b16438540d7bc4c2e7b118440",
+  "rootCases": [
+    {
+      "turn": "r",
+      "hidden": false,
+      "count": 1,
+      "repetitionLoss": false,
+      "score": -4.3275034032378565
+    },
+    {
+      "turn": "r",
+      "hidden": false,
+      "count": 2,
+      "repetitionLoss": true,
+      "score": -98999
+    },
+    {
+      "turn": "r",
+      "hidden": true,
+      "count": 1,
+      "repetitionLoss": false,
+      "score": -39.726749474561544
+    },
+    {
+      "turn": "r",
+      "hidden": true,
+      "count": 2,
+      "repetitionLoss": true,
+      "score": -3594.878728264789
+    },
+    {
+      "turn": "b",
+      "hidden": false,
+      "count": 1,
+      "repetitionLoss": false,
+      "score": -4.025500262691261
+    },
+    {
+      "turn": "b",
+      "hidden": false,
+      "count": 2,
+      "repetitionLoss": true,
+      "score": -98999
+    },
+    {
+      "turn": "b",
+      "hidden": true,
+      "count": 1,
+      "repetitionLoss": false,
+      "score": -40.00033468132802
+    },
+    {
+      "turn": "b",
+      "hidden": true,
+      "count": 2,
+      "repetitionLoss": true,
+      "score": -3594.878728264789
+    }
+  ],
+  "timed": [
+    {
+      "repeat": 0,
+      "name": "control",
+      "position": "初始全暗",
+      "wallMs": 1933.0014709999996,
+      "depth": 4,
+      "completedDepth": 4,
+      "selDepth": 13,
+      "nodes": 5735823,
+      "visitedNodes": 5735823,
+      "threads": 4,
+      "samples": 8,
+      "move": {
+        "from": 64,
+        "to": 1
+      },
+      "clock": {
+        "budgetMs": 2000,
+        "hostReserveMs": 40,
+        "softBudgetMs": 1960,
+        "preparationMs": 1.559491999999409
+      }
+    },
+    {
+      "repeat": 0,
+      "name": "candidate",
+      "position": "初始全暗",
+      "wallMs": 1933.877611,
+      "depth": 4,
+      "completedDepth": 4,
+      "selDepth": 13,
+      "nodes": 4745185,
+      "visitedNodes": 4745185,
+      "threads": 4,
+      "samples": 8,
+      "move": {
+        "from": 64,
+        "to": 1
+      },
+      "clock": {
+        "budgetMs": 2000,
+        "hostReserveMs": 40,
+        "softBudgetMs": 1960,
+        "preparationMs": 1.112141999999949
+      }
+    },
+    {
+      "repeat": 0,
+      "name": "candidate",
+      "position": "可达中局 2111 / 20步",
+      "wallMs": 1933.4087049999998,
+      "depth": 5,
+      "completedDepth": 5,
+      "selDepth": 13,
+      "nodes": 5671026,
+      "visitedNodes": 5671026,
+      "threads": 4,
+      "samples": 8,
+      "move": {
+        "from": 72,
+        "to": 73
+      },
+      "clock": {
+        "budgetMs": 2000,
+        "hostReserveMs": 40,
+        "softBudgetMs": 1960,
+        "preparationMs": 2.498674000000392
+      }
+    },
+    {
+      "repeat": 0,
+      "name": "control",
+      "position": "可达中局 2111 / 20步",
+      "wallMs": 1932.7042789999996,
+      "depth": 5,
+      "completedDepth": 5,
+      "selDepth": 13,
+      "nodes": 7283159,
+      "visitedNodes": 7283159,
+      "threads": 4,
+      "samples": 8,
+      "move": {
+        "from": 72,
+        "to": 73
+      },
+      "clock": {
+        "budgetMs": 2000,
+        "hostReserveMs": 40,
+        "softBudgetMs": 1960,
+        "preparationMs": 2.617356999999174
+      }
+    },
+    {
+      "repeat": 0,
+      "name": "control",
+      "position": "全明10子残局",
+      "wallMs": 1928.9657229999993,
+      "depth": 7,
+      "completedDepth": 7,
+      "selDepth": 16,
+      "nodes": 2606984,
+      "visitedNodes": 2606984,
+      "threads": 1,
+      "samples": 1,
+      "move": {
+        "from": 72,
+        "to": 0
+      },
+      "clock": {
+        "budgetMs": 2000,
+        "hostReserveMs": 40,
+        "softBudgetMs": 1960,
+        "preparationMs": 2.2227289999991626
+      }
+    },
+    {
+      "repeat": 0,
+      "name": "candidate",
+      "position": "全明10子残局",
+      "wallMs": 1929.4339569999993,
+      "depth": 7,
+      "completedDepth": 7,
+      "selDepth": 16,
+      "nodes": 2130168,
+      "visitedNodes": 2130168,
+      "threads": 1,
+      "samples": 1,
+      "move": {
+        "from": 72,
+        "to": 0
+      },
+      "clock": {
+        "budgetMs": 2000,
+        "hostReserveMs": 40,
+        "softBudgetMs": 1960,
+        "preparationMs": 1.878350999999384
+      }
+    },
+    {
+      "repeat": 1,
+      "name": "candidate",
+      "position": "初始全暗",
+      "wallMs": 1933.2727030000005,
+      "depth": 4,
+      "completedDepth": 4,
+      "selDepth": 13,
+      "nodes": 4745953,
+      "visitedNodes": 4745953,
+      "threads": 4,
+      "samples": 8,
+      "move": {
+        "from": 64,
+        "to": 1
+      },
+      "clock": {
+        "budgetMs": 2000,
+        "hostReserveMs": 40,
+        "softBudgetMs": 1960,
+        "preparationMs": 0.9322119999997085
+      }
+    },
+    {
+      "repeat": 1,
+      "name": "control",
+      "position": "初始全暗",
+      "wallMs": 1932.3680490000006,
+      "depth": 4,
+      "completedDepth": 4,
+      "selDepth": 13,
+      "nodes": 5741279,
+      "visitedNodes": 5741279,
+      "threads": 4,
+      "samples": 8,
+      "move": {
+        "from": 64,
+        "to": 1
+      },
+      "clock": {
+        "budgetMs": 2000,
+        "hostReserveMs": 40,
+        "softBudgetMs": 1960,
+        "preparationMs": 0.8523649999988265
+      }
+    },
+    {
+      "repeat": 1,
+      "name": "control",
+      "position": "可达中局 2111 / 20步",
+      "wallMs": 1932.444156999998,
+      "depth": 5,
+      "completedDepth": 5,
+      "selDepth": 13,
+      "nodes": 7314505,
+      "visitedNodes": 7314505,
+      "threads": 4,
+      "samples": 8,
+      "move": {
+        "from": 72,
+        "to": 73
+      },
+      "clock": {
+        "budgetMs": 2000,
+        "hostReserveMs": 40,
+        "softBudgetMs": 1960,
+        "preparationMs": 2.510016000000178
+      }
+    },
+    {
+      "repeat": 1,
+      "name": "candidate",
+      "position": "可达中局 2111 / 20步",
+      "wallMs": 1933.0265870000003,
+      "depth": 5,
+      "completedDepth": 5,
+      "selDepth": 13,
+      "nodes": 5634751,
+      "visitedNodes": 5634751,
+      "threads": 4,
+      "samples": 8,
+      "move": {
+        "from": 72,
+        "to": 73
+      },
+      "clock": {
+        "budgetMs": 2000,
+        "hostReserveMs": 40,
+        "softBudgetMs": 1960,
+        "preparationMs": 2.451741000000766
+      }
+    },
+    {
+      "repeat": 1,
+      "name": "candidate",
+      "position": "全明10子残局",
+      "wallMs": 1929.5194560000018,
+      "depth": 7,
+      "completedDepth": 7,
+      "selDepth": 16,
+      "nodes": 2113512,
+      "visitedNodes": 2113512,
+      "threads": 1,
+      "samples": 1,
+      "move": {
+        "from": 72,
+        "to": 0
+      },
+      "clock": {
+        "budgetMs": 2000,
+        "hostReserveMs": 40,
+        "softBudgetMs": 1960,
+        "preparationMs": 2.053014000000985
+      }
+    },
+    {
+      "repeat": 1,
+      "name": "control",
+      "position": "全明10子残局",
+      "wallMs": 1928.849213999998,
+      "depth": 7,
+      "completedDepth": 7,
+      "selDepth": 16,
+      "nodes": 2576456,
+      "visitedNodes": 2576456,
+      "threads": 1,
+      "samples": 1,
+      "move": {
+        "from": 72,
+        "to": 0
+      },
+      "clock": {
+        "budgetMs": 2000,
+        "hostReserveMs": 40,
+        "softBudgetMs": 1960,
+        "preparationMs": 2.078457999999955
+      }
+    }
+  ],
+  "cancellation": {
+    "passed": true,
+    "reapMs": 4.699093999999604,
+    "recoveryDepth": 3
+  },
+  "inventory": {
+    "passed": true,
+    "inheritedFieldsEqual": true,
+    "keysEqual": false,
+    "tableEntries": 2,
+    "scoreA": -547.1951943314015,
+    "scoreB": -547.1981497877674
+  }
+}

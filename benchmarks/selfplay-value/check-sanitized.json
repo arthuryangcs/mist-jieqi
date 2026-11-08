@@ -1,0 +1,152 @@
+{
+  "passed": true,
+  "sanitize": true,
+  "modelSha256": "c5d0870e3feb8f7c86f9fb29e601d2ca3e3749099a02c261670f1d0f7e56df0b",
+  "build": {
+    "trial": true,
+    "sanitize": true,
+    "stableSourceSha256": "3fa98d62f3c1636b831680fcd5dcbf88f9339e966ed1b8e2f8a170b83afcbfb0",
+    "sourceSha256": "91aafedc08dd81b7b30904ea2f215ed58dfa3a4d7b158444e79370e00ca0c1b7",
+    "binarySha256": "aa676da43043e6c874d5f54d76534e035132bab5d0a206e9a7a680c49cb6a3ea",
+    "headerSha256": "152ecbaaeb3857c413f22351bc2c0c9e7c45193fd0c81caa001899be8cbd2ef5",
+    "compiler": "clang++",
+    "compilerVersion": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix",
+    "flags": [
+      "-std=c++17",
+      "-ffp-contract=off",
+      "-O1",
+      "-g",
+      "-fsanitize=address,undefined",
+      "-fno-omit-frame-pointer",
+      "-DMIST_VERIFY_RESTORE",
+      "-isystem",
+      "<system-c++-include>"
+    ],
+    "warnings": ""
+  },
+  "views": 87,
+  "transitions": 2853,
+  "privateCaptures": 117,
+  "reveals": 1224,
+  "maxAccumulatorError": 0,
+  "maxForwardError": 4.440892098500626e-16,
+  "searches": [
+    {
+      "name": "初始全暗",
+      "nodeLimit": 30000,
+      "depth": 1,
+      "nodes": 30001,
+      "threads": 1,
+      "nodesEqual": true,
+      "candidates": 44,
+      "maxDifference": 0
+    },
+    {
+      "name": "初始全暗",
+      "nodeLimit": 0,
+      "depth": 2,
+      "nodes": 30834,
+      "threads": 4,
+      "nodesEqual": true,
+      "candidates": 44,
+      "maxDifference": 0
+    },
+    {
+      "name": "可达中局 2111 / 20步",
+      "nodeLimit": 30000,
+      "depth": 2,
+      "nodes": 8810,
+      "threads": 1,
+      "nodesEqual": true,
+      "candidates": 25,
+      "maxDifference": 0
+    },
+    {
+      "name": "可达中局 2111 / 20步",
+      "nodeLimit": 0,
+      "depth": 2,
+      "nodes": 8810,
+      "threads": 4,
+      "nodesEqual": true,
+      "candidates": 25,
+      "maxDifference": 0
+    },
+    {
+      "name": "可达中局 2111 / 44步",
+      "nodeLimit": 30000,
+      "depth": 2,
+      "nodes": 27516,
+      "threads": 1,
+      "nodesEqual": true,
+      "candidates": 23,
+      "maxDifference": 0
+    },
+    {
+      "name": "可达中局 2111 / 44步",
+      "nodeLimit": 0,
+      "depth": 2,
+      "nodes": 27516,
+      "threads": 4,
+      "nodesEqual": true,
+      "candidates": 23,
+      "maxDifference": 0
+    },
+    {
+      "name": "可达中局 2221 / 44步",
+      "nodeLimit": 30000,
+      "depth": 1,
+      "nodes": 30001,
+      "threads": 1,
+      "nodesEqual": true,
+      "candidates": 31,
+      "maxDifference": 0
+    },
+    {
+      "name": "可达中局 2221 / 44步",
+      "nodeLimit": 0,
+      "depth": 2,
+      "nodes": 48306,
+      "threads": 4,
+      "nodesEqual": true,
+      "candidates": 31,
+      "maxDifference": 0
+    },
+    {
+      "name": "全明10子残局",
+      "nodeLimit": 30000,
+      "depth": 2,
+      "nodes": 1695,
+      "threads": 1,
+      "nodesEqual": true,
+      "candidates": 30,
+      "maxDifference": 0
+    },
+    {
+      "name": "全明10子残局",
+      "nodeLimit": 0,
+      "depth": 2,
+      "nodes": 1695,
+      "threads": 1,
+      "nodesEqual": true,
+      "candidates": 30,
+      "maxDifference": 0
+    }
+  ],
+  "privacyChecks": 3,
+  "auditBuild": {
+    "compiler": "clang++",
+    "compilerVersion": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix",
+    "flags": [
+      "-std=c++17",
+      "-ffp-contract=off",
+      "-O1",
+      "-g",
+      "-fsanitize=address,undefined",
+      "-fno-omit-frame-pointer",
+      "-DMIST_VERIFY_RESTORE",
+      "-isystem",
+      "<system-c++-include>"
+    ],
+    "warnings": ""
+  }
+}

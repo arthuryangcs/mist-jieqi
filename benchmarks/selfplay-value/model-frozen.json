@@ -1,0 +1,10 @@
+{
+  "planSha256": "625e4959d775751edd1bcbc957f4472c558b2deeb7f0c798b2e50017b721b73a",
+  "modelSha256": "c5d0870e3feb8f7c86f9fb29e601d2ca3e3749099a02c261670f1d0f7e56df0b",
+  "selectedEpoch": 1,
+  "validationSelectionBCE": 0.5843179356458492,
+  "testOpened": false,
+  "selection": "Lowest validation weighted BCE among epochs 1..120, ties retain earlier epoch; freeze float32 model before opening test file, then evaluate test once.",
+  "modelFile": "models/experimental/selfplay-value-v1.bin",
+  "dataManifestSha256": "42e6674ae2681d3ac2cc2d00de022e8c2aafa36f9937565b8fabdccf9701df7a"
+}

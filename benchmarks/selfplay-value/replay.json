@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "games": 12,
+  "moves": 613,
+  "privateCaptureChecks": 51,
+  "repetitionLosses": 1,
+  "technicalFailures": 0,
+  "matchesSha256": "1a4a49d0cb453441fee084008eda64baaca77e334e525ae860fd7b170919de59"
+}

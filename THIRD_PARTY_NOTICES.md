@@ -28,3 +28,9 @@
 ## AB-JChess local comparison metadata
 
 The project includes its own comparison adapter and synthetic regression/match reports for AB-JChess v0.2d (`fe35d87c7553fd23e8aab3a1dde7e712f286b416`), upstream https://github.com/lxsgx23/AB-JChess. Upstream source is GPL-3.0; no upstream source, executable, object files or NNUE weights are bundled here. The release network has no separately verified redistribution license and is not distributed. Reproduction requiring that opponent must obtain and review the fixed upstream source and network separately under their applicable terms. Generic search ideas in the independent Mist prototypes were implemented in this project; the comparison does not claim model or engine equivalence across platforms.
+
+## Independent self-play value experiment (2026-11-08)
+
+`models/experimental/selfplay-value-v1.bin` is independently initialized and trained locally on this project's own newly generated synthetic HCE games. Its code and weights are distributed under this repository's GPLv3. No user games, third-party checkpoints, converted weights or teacher outputs were used. See [the report](docs/experiments/selfplay-value.md) for grouped data provenance and negative held-out results.
+
+Conceptual research references: [devinokeefe/jieqi](https://github.com/devinokeefe/jieqi) ([MIT license](https://github.com/devinokeefe/jieqi/blob/main/LICENSE), with separately identified exceptions in [THIRD_PARTY.md](https://github.com/devinokeefe/jieqi/blob/main/THIRD_PARTY.md)) and [lxsgx23/AB-JChess](https://github.com/lxsgx23/AB-JChess) ([GPLv3](https://github.com/lxsgx23/AB-JChess/blob/main/LICENSE)). No source or weights were imported from either. Their current branches must not be conflated with this repository's older fixed comparison versions, and code licensing does not provide access to unpublished training data.

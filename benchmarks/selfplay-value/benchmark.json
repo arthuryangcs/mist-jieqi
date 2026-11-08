@@ -1,0 +1,526 @@
+{
+  "passed": true,
+  "modelSha256": "c5d0870e3feb8f7c86f9fb29e601d2ca3e3749099a02c261670f1d0f7e56df0b",
+  "sourceSha256": "91aafedc08dd81b7b30904ea2f215ed58dfa3a4d7b158444e79370e00ca0c1b7",
+  "compiler": {
+    "compiler": "clang++",
+    "compilerVersion": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix",
+    "flags": [
+      "-std=c++17",
+      "-ffp-contract=off",
+      "-O3",
+      "-DNDEBUG",
+      "-isystem",
+      "<system-c++-include>"
+    ],
+    "warnings": ""
+  },
+  "protocol": "Five rotated repeats of 25000 inference calls with no-inline wrapper and compiler barrier. Excludes make/unmake accumulator maintenance and TT/key overhead. HCE and NNUE search trees differ; these numbers are not NPS or strength gains.",
+  "rows": [
+    {
+      "name": "初始全暗",
+      "iterations": 25000,
+      "raw": [
+        {
+          "repeat": 0,
+          "mode": 0,
+          "nsPerCall": 187.42908,
+          "checksum": -1.1652900866465643e-7
+        },
+        {
+          "repeat": 0,
+          "mode": 1,
+          "nsPerCall": 251.63784,
+          "checksum": 1852.85866238589
+        },
+        {
+          "repeat": 0,
+          "mode": 2,
+          "nsPerCall": 1182.7676,
+          "checksum": 1852.85866238589
+        },
+        {
+          "repeat": 1,
+          "mode": 1,
+          "nsPerCall": 192.15404,
+          "checksum": 1852.85866238589
+        },
+        {
+          "repeat": 1,
+          "mode": 2,
+          "nsPerCall": 1020.17408,
+          "checksum": 1852.85866238589
+        },
+        {
+          "repeat": 1,
+          "mode": 0,
+          "nsPerCall": 140.2346,
+          "checksum": -1.1652900866465643e-7
+        },
+        {
+          "repeat": 2,
+          "mode": 2,
+          "nsPerCall": 1029.07132,
+          "checksum": 1852.85866238589
+        },
+        {
+          "repeat": 2,
+          "mode": 0,
+          "nsPerCall": 144.33232,
+          "checksum": -1.1652900866465643e-7
+        },
+        {
+          "repeat": 2,
+          "mode": 1,
+          "nsPerCall": 211.655,
+          "checksum": 1852.85866238589
+        },
+        {
+          "repeat": 3,
+          "mode": 0,
+          "nsPerCall": 139.4872,
+          "checksum": -1.1652900866465643e-7
+        },
+        {
+          "repeat": 3,
+          "mode": 1,
+          "nsPerCall": 191.87984,
+          "checksum": 1852.85866238589
+        },
+        {
+          "repeat": 3,
+          "mode": 2,
+          "nsPerCall": 1062.7154,
+          "checksum": 1852.85866238589
+        },
+        {
+          "repeat": 4,
+          "mode": 1,
+          "nsPerCall": 201.12944,
+          "checksum": 1852.85866238589
+        },
+        {
+          "repeat": 4,
+          "mode": 2,
+          "nsPerCall": 1025.58464,
+          "checksum": 1852.85866238589
+        },
+        {
+          "repeat": 4,
+          "mode": 0,
+          "nsPerCall": 136.82216,
+          "checksum": -1.1652900866465643e-7
+        }
+      ],
+      "mediansNs": {
+        "0": 140.2346,
+        "1": 201.12944,
+        "2": 1029.07132
+      }
+    },
+    {
+      "name": "可达中局 2111 / 20步",
+      "iterations": 25000,
+      "raw": [
+        {
+          "repeat": 0,
+          "mode": 0,
+          "nsPerCall": 166.58152,
+          "checksum": -399999.9999998808
+        },
+        {
+          "repeat": 0,
+          "mode": 1,
+          "nsPerCall": 221.92608,
+          "checksum": -418303.57155304187
+        },
+        {
+          "repeat": 0,
+          "mode": 2,
+          "nsPerCall": 1067.92536,
+          "checksum": -418303.57155304187
+        },
+        {
+          "repeat": 1,
+          "mode": 1,
+          "nsPerCall": 222.23528,
+          "checksum": -418303.57155304187
+        },
+        {
+          "repeat": 1,
+          "mode": 2,
+          "nsPerCall": 1067.66732,
+          "checksum": -418303.57155304187
+        },
+        {
+          "repeat": 1,
+          "mode": 0,
+          "nsPerCall": 168.81744,
+          "checksum": -399999.9999998808
+        },
+        {
+          "repeat": 2,
+          "mode": 2,
+          "nsPerCall": 1170.93044,
+          "checksum": -418303.57155304187
+        },
+        {
+          "repeat": 2,
+          "mode": 0,
+          "nsPerCall": 171.07652,
+          "checksum": -399999.9999998808
+        },
+        {
+          "repeat": 2,
+          "mode": 1,
+          "nsPerCall": 218.15296,
+          "checksum": -418303.57155304187
+        },
+        {
+          "repeat": 3,
+          "mode": 0,
+          "nsPerCall": 166.33508,
+          "checksum": -399999.9999998808
+        },
+        {
+          "repeat": 3,
+          "mode": 1,
+          "nsPerCall": 218.10316,
+          "checksum": -418303.57155304187
+        },
+        {
+          "repeat": 3,
+          "mode": 2,
+          "nsPerCall": 1046.86092,
+          "checksum": -418303.57155304187
+        },
+        {
+          "repeat": 4,
+          "mode": 1,
+          "nsPerCall": 218.44444,
+          "checksum": -418303.57155304187
+        },
+        {
+          "repeat": 4,
+          "mode": 2,
+          "nsPerCall": 1049.18292,
+          "checksum": -418303.57155304187
+        },
+        {
+          "repeat": 4,
+          "mode": 0,
+          "nsPerCall": 163.47276,
+          "checksum": -399999.9999998808
+        }
+      ],
+      "mediansNs": {
+        "0": 166.58152,
+        "1": 218.44444,
+        "2": 1067.66732
+      }
+    },
+    {
+      "name": "可达中局 2111 / 44步",
+      "iterations": 25000,
+      "raw": [
+        {
+          "repeat": 0,
+          "mode": 0,
+          "nsPerCall": 165.38704,
+          "checksum": 4400000
+        },
+        {
+          "repeat": 0,
+          "mode": 1,
+          "nsPerCall": 217.91412,
+          "checksum": 4416274.030762857
+        },
+        {
+          "repeat": 0,
+          "mode": 2,
+          "nsPerCall": 1018.82776,
+          "checksum": 4416274.030762857
+        },
+        {
+          "repeat": 1,
+          "mode": 1,
+          "nsPerCall": 214.48568,
+          "checksum": 4416274.030762857
+        },
+        {
+          "repeat": 1,
+          "mode": 2,
+          "nsPerCall": 1016.66628,
+          "checksum": 4416274.030762857
+        },
+        {
+          "repeat": 1,
+          "mode": 0,
+          "nsPerCall": 163.6394,
+          "checksum": 4400000
+        },
+        {
+          "repeat": 2,
+          "mode": 2,
+          "nsPerCall": 1020.69992,
+          "checksum": 4416274.030762857
+        },
+        {
+          "repeat": 2,
+          "mode": 0,
+          "nsPerCall": 163.3946,
+          "checksum": 4400000
+        },
+        {
+          "repeat": 2,
+          "mode": 1,
+          "nsPerCall": 214.73976,
+          "checksum": 4416274.030762857
+        },
+        {
+          "repeat": 3,
+          "mode": 0,
+          "nsPerCall": 165.03964,
+          "checksum": 4400000
+        },
+        {
+          "repeat": 3,
+          "mode": 1,
+          "nsPerCall": 216.37028,
+          "checksum": 4416274.030762857
+        },
+        {
+          "repeat": 3,
+          "mode": 2,
+          "nsPerCall": 1059.60408,
+          "checksum": 4416274.030762857
+        },
+        {
+          "repeat": 4,
+          "mode": 1,
+          "nsPerCall": 214.9906,
+          "checksum": 4416274.030762857
+        },
+        {
+          "repeat": 4,
+          "mode": 2,
+          "nsPerCall": 1016.6654,
+          "checksum": 4416274.030762857
+        },
+        {
+          "repeat": 4,
+          "mode": 0,
+          "nsPerCall": 163.46492,
+          "checksum": 4400000
+        }
+      ],
+      "mediansNs": {
+        "0": 163.6394,
+        "1": 214.9906,
+        "2": 1018.82776
+      }
+    },
+    {
+      "name": "可达中局 2221 / 44步",
+      "iterations": 25000,
+      "raw": [
+        {
+          "repeat": 0,
+          "mode": 0,
+          "nsPerCall": 153.28056,
+          "checksum": -17408333.333338216
+        },
+        {
+          "repeat": 0,
+          "mode": 1,
+          "nsPerCall": 203.50744,
+          "checksum": -17446342.218243763
+        },
+        {
+          "repeat": 0,
+          "mode": 2,
+          "nsPerCall": 986.49456,
+          "checksum": -17446342.218243763
+        },
+        {
+          "repeat": 1,
+          "mode": 1,
+          "nsPerCall": 205.72612,
+          "checksum": -17446342.218243763
+        },
+        {
+          "repeat": 1,
+          "mode": 2,
+          "nsPerCall": 962.64216,
+          "checksum": -17446342.218243763
+        },
+        {
+          "repeat": 1,
+          "mode": 0,
+          "nsPerCall": 157.58416,
+          "checksum": -17408333.333338216
+        },
+        {
+          "repeat": 2,
+          "mode": 2,
+          "nsPerCall": 959.62908,
+          "checksum": -17446342.218243763
+        },
+        {
+          "repeat": 2,
+          "mode": 0,
+          "nsPerCall": 157.9522,
+          "checksum": -17408333.333338216
+        },
+        {
+          "repeat": 2,
+          "mode": 1,
+          "nsPerCall": 204.68908,
+          "checksum": -17446342.218243763
+        },
+        {
+          "repeat": 3,
+          "mode": 0,
+          "nsPerCall": 154.07724,
+          "checksum": -17408333.333338216
+        },
+        {
+          "repeat": 3,
+          "mode": 1,
+          "nsPerCall": 203.5848,
+          "checksum": -17446342.218243763
+        },
+        {
+          "repeat": 3,
+          "mode": 2,
+          "nsPerCall": 963.9874,
+          "checksum": -17446342.218243763
+        },
+        {
+          "repeat": 4,
+          "mode": 1,
+          "nsPerCall": 203.52732,
+          "checksum": -17446342.218243763
+        },
+        {
+          "repeat": 4,
+          "mode": 2,
+          "nsPerCall": 961.99628,
+          "checksum": -17446342.218243763
+        },
+        {
+          "repeat": 4,
+          "mode": 0,
+          "nsPerCall": 155.60264,
+          "checksum": -17408333.333338216
+        }
+      ],
+      "mediansNs": {
+        "0": 155.60264,
+        "1": 203.5848,
+        "2": 962.64216
+      }
+    },
+    {
+      "name": "全明10子残局",
+      "iterations": 25000,
+      "raw": [
+        {
+          "repeat": 0,
+          "mode": 0,
+          "nsPerCall": 105.64292,
+          "checksum": 0
+        },
+        {
+          "repeat": 0,
+          "mode": 1,
+          "nsPerCall": 153.97088,
+          "checksum": 1852.8846734450958
+        },
+        {
+          "repeat": 0,
+          "mode": 2,
+          "nsPerCall": 642.40428,
+          "checksum": 1852.8846734450958
+        },
+        {
+          "repeat": 1,
+          "mode": 1,
+          "nsPerCall": 153.83224,
+          "checksum": 1852.8846734450958
+        },
+        {
+          "repeat": 1,
+          "mode": 2,
+          "nsPerCall": 641.87404,
+          "checksum": 1852.8846734450958
+        },
+        {
+          "repeat": 1,
+          "mode": 0,
+          "nsPerCall": 107.11524,
+          "checksum": 0
+        },
+        {
+          "repeat": 2,
+          "mode": 2,
+          "nsPerCall": 647.74528,
+          "checksum": 1852.8846734450958
+        },
+        {
+          "repeat": 2,
+          "mode": 0,
+          "nsPerCall": 103.7492,
+          "checksum": 0
+        },
+        {
+          "repeat": 2,
+          "mode": 1,
+          "nsPerCall": 153.8022,
+          "checksum": 1852.8846734450958
+        },
+        {
+          "repeat": 3,
+          "mode": 0,
+          "nsPerCall": 107.86828,
+          "checksum": 0
+        },
+        {
+          "repeat": 3,
+          "mode": 1,
+          "nsPerCall": 157.7678,
+          "checksum": 1852.8846734450958
+        },
+        {
+          "repeat": 3,
+          "mode": 2,
+          "nsPerCall": 646.32128,
+          "checksum": 1852.8846734450958
+        },
+        {
+          "repeat": 4,
+          "mode": 1,
+          "nsPerCall": 157.3554,
+          "checksum": 1852.8846734450958
+        },
+        {
+          "repeat": 4,
+          "mode": 2,
+          "nsPerCall": 638.87644,
+          "checksum": 1852.8846734450958
+        },
+        {
+          "repeat": 4,
+          "mode": 0,
+          "nsPerCall": 104.74652,
+          "checksum": 0
+        }
+      ],
+      "mediansNs": {
+        "0": 105.64292,
+        "1": 153.97088,
+        "2": 642.40428
+      }
+    }
+  ]
+}
