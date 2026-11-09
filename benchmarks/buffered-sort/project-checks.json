@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "npm": {
+    "tests": 170,
+    "pass": 170,
+    "fail": 0
+  },
+  "native": {
+    "passed": true,
+    "ruleCases": 72,
+    "transitions": 2172,
+    "searchCases": 16,
+    "elapsedMs": 8018.549784000001
+  },
+  "scope": "No UI changes or browser visual testing. Existing production source unchanged; no preview server restarted."
+}

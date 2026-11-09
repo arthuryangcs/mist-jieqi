@@ -1,0 +1,276 @@
+{
+  "matchesSha256": "878a832d1b037ab5a36e8211674a3fa35ca8913cc9c6b495d459abd3e4912c12",
+  "summary": {
+    "internal": {
+      "finished": 4,
+      "wins": 2,
+      "draws": 0,
+      "losses": 2,
+      "technicalFailures": 0,
+      "cleanupFailures": 0,
+      "unresolved": 0,
+      "scoreRate": 0.5,
+      "normal": {
+        "wins": 2,
+        "draws": 0,
+        "losses": 2
+      }
+    },
+    "candidatePika": {
+      "finished": 4,
+      "wins": 2,
+      "draws": 0,
+      "losses": 2,
+      "technicalFailures": 0,
+      "cleanupFailures": 0,
+      "unresolved": 0,
+      "scoreRate": 0.5,
+      "normal": {
+        "wins": 2,
+        "draws": 0,
+        "losses": 2
+      }
+    },
+    "controlPika": {
+      "finished": 4,
+      "wins": 0,
+      "draws": 0,
+      "losses": 4,
+      "technicalFailures": 0,
+      "cleanupFailures": 0,
+      "unresolved": 0,
+      "scoreRate": 0,
+      "normal": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 4
+      }
+    }
+  },
+  "timing": {
+    "candidate": {
+      "requests": 432,
+      "applied": 432,
+      "hostStops": 0,
+      "fallbacks": 0,
+      "elapsedMs": {
+        "p50": 1932.6520129999844,
+        "p95": 1933.3062779998872,
+        "max": 1980.1583940000273
+      },
+      "depthMedian": 7,
+      "observedThreads": [
+        4,
+        1
+      ],
+      "sampleCounts": [
+        8,
+        1
+      ]
+    },
+    "control": {
+      "requests": 453,
+      "applied": 453,
+      "hostStops": 0,
+      "fallbacks": 0,
+      "elapsedMs": {
+        "p50": 1932.7298399999854,
+        "p95": 1933.349702999927,
+        "max": 1935.3628439999884
+      },
+      "depthMedian": 7,
+      "observedThreads": [
+        4,
+        1
+      ],
+      "sampleCounts": [
+        8,
+        1
+      ]
+    },
+    "pika": {
+      "requests": 202,
+      "applied": 202,
+      "hostStops": 0,
+      "fallbacks": 0,
+      "elapsedMs": {
+        "p50": 1959.2940330000129,
+        "p95": 1960.2409320001025,
+        "max": 1970.5018490001094
+      },
+      "depthMedian": null,
+      "observedThreads": [
+        4
+      ],
+      "sampleCounts": [
+        null
+      ]
+    }
+  },
+  "technicalEvents": [],
+  "games": [
+    {
+      "index": 0,
+      "group": "internal",
+      "seed": 2026110911,
+      "side": "r",
+      "plies": 258,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "technicalForfeit": false,
+        "reason": "困毙"
+      }
+    },
+    {
+      "index": 1,
+      "group": "candidatePika",
+      "seed": 2026110911,
+      "side": "r",
+      "plies": 38,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "technicalForfeit": false,
+        "reason": "将死"
+      }
+    },
+    {
+      "index": 2,
+      "group": "controlPika",
+      "seed": 2026110911,
+      "side": "r",
+      "plies": 48,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "technicalForfeit": false,
+        "reason": "将死"
+      }
+    },
+    {
+      "index": 3,
+      "group": "internal",
+      "seed": 2026110911,
+      "side": "b",
+      "plies": 258,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "technicalForfeit": false,
+        "reason": "困毙"
+      }
+    },
+    {
+      "index": 4,
+      "group": "candidatePika",
+      "seed": 2026110911,
+      "side": "b",
+      "plies": 71,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "technicalForfeit": false,
+        "reason": "红方重复局面判负"
+      }
+    },
+    {
+      "index": 5,
+      "group": "controlPika",
+      "seed": 2026110911,
+      "side": "b",
+      "plies": 7,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": false,
+        "reason": "将死"
+      }
+    },
+    {
+      "index": 6,
+      "group": "controlPika",
+      "seed": 2026110929,
+      "side": "r",
+      "plies": 62,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "technicalForfeit": false,
+        "reason": "将死"
+      }
+    },
+    {
+      "index": 7,
+      "group": "candidatePika",
+      "seed": 2026110929,
+      "side": "r",
+      "plies": 35,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": false,
+        "reason": "将死"
+      }
+    },
+    {
+      "index": 8,
+      "group": "internal",
+      "seed": 2026110929,
+      "side": "r",
+      "plies": 85,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": false,
+        "reason": "将死"
+      }
+    },
+    {
+      "index": 9,
+      "group": "controlPika",
+      "seed": 2026110929,
+      "side": "b",
+      "plies": 105,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": false,
+        "reason": "将死"
+      }
+    },
+    {
+      "index": 10,
+      "group": "candidatePika",
+      "seed": 2026110929,
+      "side": "b",
+      "plies": 35,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": false,
+        "reason": "将死"
+      }
+    },
+    {
+      "index": 11,
+      "group": "internal",
+      "seed": 2026110929,
+      "side": "b",
+      "plies": 85,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": false,
+        "reason": "将死"
+      }
+    }
+  ],
+  "limitations": [
+    "Only two independent layouts per comparison, four games each; paired colors are not independent games.",
+    "Nominal equal 2000 ms, at most four search threads, 64 MiB TT budget. Total RSS and effective reserve time differ across implementations.",
+    "Stable control is current production HCE with its map memory constrained by the existing bounded arena. Not the byte-identical unbounded production executable.",
+    "Root referee aligned; legacy Mist internal cycle-draw and Pika internal rules remain different.",
+    "No statistical or chess-strength superiority claim, no promotion to default."
+  ]
+}

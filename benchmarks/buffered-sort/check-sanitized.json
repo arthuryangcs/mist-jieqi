@@ -1,0 +1,291 @@
+{
+  "passed": true,
+  "sanitize": true,
+  "build": {
+    "trial": true,
+    "sanitize": true,
+    "stableSourceSha256": "3fa98d62f3c1636b831680fcd5dcbf88f9339e966ed1b8e2f8a170b83afcbfb0",
+    "sourceSha256": "b9f7fdeedd0e05087bb568b8276165fb52e653d37d71bc4d173724ebc1d296a9",
+    "binarySha256": "928e9d173feab7e536eb4d209f03f83396bde1ec8ccfc5aafac07e7b6a0a7d0c",
+    "headerSha256": "abf7318225053b755d2831d4e06ed69d394698edae1a7f3d00f8b585d3db8f94",
+    "compiler": "clang++",
+    "compilerVersion": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix",
+    "flags": [
+      "-std=c++17",
+      "-ffp-contract=off",
+      "-O1",
+      "-g",
+      "-fsanitize=address,undefined",
+      "-fno-omit-frame-pointer",
+      "-DMIST_VERIFY_RESTORE",
+      "-isystem",
+      "<system-c++-include>"
+    ],
+    "warnings": ""
+  },
+  "control": {
+    "trial": false,
+    "sanitize": true,
+    "stableSourceSha256": "3fa98d62f3c1636b831680fcd5dcbf88f9339e966ed1b8e2f8a170b83afcbfb0",
+    "sourceSha256": "46f7e906c49ace1860baae0c9d6c5bf8ac5b83f8cb25a4810b69405e7ff955bc",
+    "binarySha256": "a6b22110850a758450e71ddb985f8ad6ac3f268eccf0b89db97b855d44e1d079",
+    "headerSha256": "abf7318225053b755d2831d4e06ed69d394698edae1a7f3d00f8b585d3db8f94",
+    "compiler": "clang++",
+    "compilerVersion": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix",
+    "flags": [
+      "-std=c++17",
+      "-ffp-contract=off",
+      "-O1",
+      "-g",
+      "-fsanitize=address,undefined",
+      "-fno-omit-frame-pointer",
+      "-DMIST_VERIFY_RESTORE",
+      "-isystem",
+      "<system-c++-include>"
+    ],
+    "warnings": ""
+  },
+  "searches": [
+    {
+      "name": "初始全暗",
+      "nodeLimit": 1000,
+      "depth": 0,
+      "nodes": 1001,
+      "threads": 1,
+      "nodesEqual": true,
+      "candidates": 0,
+      "maxDifference": 0
+    },
+    {
+      "name": "初始全暗",
+      "nodeLimit": 30000,
+      "depth": 1,
+      "nodes": 30001,
+      "threads": 1,
+      "nodesEqual": true,
+      "candidates": 44,
+      "maxDifference": 0
+    },
+    {
+      "name": "初始全暗",
+      "nodeLimit": 0,
+      "depth": 2,
+      "nodes": 30118,
+      "threads": 4,
+      "nodesEqual": true,
+      "candidates": 44,
+      "maxDifference": 0
+    },
+    {
+      "name": "可达中局 2111 / 20步",
+      "nodeLimit": 1000,
+      "depth": 1,
+      "nodes": 1001,
+      "threads": 1,
+      "nodesEqual": true,
+      "candidates": 25,
+      "maxDifference": 0
+    },
+    {
+      "name": "可达中局 2111 / 20步",
+      "nodeLimit": 30000,
+      "depth": 2,
+      "nodes": 30001,
+      "threads": 1,
+      "nodesEqual": true,
+      "candidates": 25,
+      "maxDifference": 0
+    },
+    {
+      "name": "可达中局 2111 / 20步",
+      "nodeLimit": 0,
+      "depth": 2,
+      "nodes": 8787,
+      "threads": 4,
+      "nodesEqual": true,
+      "candidates": 25,
+      "maxDifference": 0
+    },
+    {
+      "name": "可达中局 2111 / 44步",
+      "nodeLimit": 1000,
+      "depth": 0,
+      "nodes": 1001,
+      "threads": 1,
+      "nodesEqual": true,
+      "candidates": 0,
+      "maxDifference": 0
+    },
+    {
+      "name": "可达中局 2111 / 44步",
+      "nodeLimit": 30000,
+      "depth": 2,
+      "nodes": 30001,
+      "threads": 1,
+      "nodesEqual": true,
+      "candidates": 23,
+      "maxDifference": 0
+    },
+    {
+      "name": "可达中局 2111 / 44步",
+      "nodeLimit": 0,
+      "depth": 2,
+      "nodes": 25315,
+      "threads": 4,
+      "nodesEqual": true,
+      "candidates": 23,
+      "maxDifference": 0
+    },
+    {
+      "name": "可达中局 2221 / 44步",
+      "nodeLimit": 1000,
+      "depth": 0,
+      "nodes": 1001,
+      "threads": 1,
+      "nodesEqual": true,
+      "candidates": 0,
+      "maxDifference": 0
+    },
+    {
+      "name": "可达中局 2221 / 44步",
+      "nodeLimit": 30000,
+      "depth": 1,
+      "nodes": 30001,
+      "threads": 1,
+      "nodesEqual": true,
+      "candidates": 31,
+      "maxDifference": 0
+    },
+    {
+      "name": "可达中局 2221 / 44步",
+      "nodeLimit": 0,
+      "depth": 2,
+      "nodes": 49359,
+      "threads": 4,
+      "nodesEqual": true,
+      "candidates": 31,
+      "maxDifference": 0
+    },
+    {
+      "name": "全明10子残局",
+      "nodeLimit": 1000,
+      "depth": 1,
+      "nodes": 1001,
+      "threads": 1,
+      "nodesEqual": true,
+      "candidates": 30,
+      "maxDifference": 0
+    },
+    {
+      "name": "全明10子残局",
+      "nodeLimit": 30000,
+      "depth": 3,
+      "nodes": 30001,
+      "threads": 1,
+      "nodesEqual": true,
+      "candidates": 30,
+      "maxDifference": 0
+    },
+    {
+      "name": "全明10子残局",
+      "nodeLimit": 0,
+      "depth": 2,
+      "nodes": 1687,
+      "threads": 1,
+      "nodesEqual": true,
+      "candidates": 30,
+      "maxDifference": 0
+    }
+  ],
+  "privacyChecks": 4,
+  "lifecycle": [
+    {
+      "arm": "candidate",
+      "budget": 1,
+      "depth": 0,
+      "fallbackUsed": true,
+      "deadlineStop": true,
+      "elapsedMs": 23.37797000000137
+    },
+    {
+      "arm": "candidate",
+      "budget": 20,
+      "depth": 0,
+      "fallbackUsed": true,
+      "deadlineStop": true,
+      "elapsedMs": 36.218777000001865
+    },
+    {
+      "arm": "candidate",
+      "budget": 100,
+      "depth": 2,
+      "fallbackUsed": false,
+      "deadlineStop": false,
+      "elapsedMs": 99.58602099999916
+    },
+    {
+      "arm": "candidate",
+      "budget": 1,
+      "depth": 0,
+      "fallbackUsed": true,
+      "deadlineStop": true,
+      "elapsedMs": 21.094366999997874
+    },
+    {
+      "arm": "candidate",
+      "budget": 100,
+      "depth": 2,
+      "fallbackUsed": false,
+      "deadlineStop": false,
+      "elapsedMs": 99.44986599999902
+    },
+    {
+      "arm": "candidate",
+      "explicitCancelRestart": true
+    },
+    {
+      "arm": "control",
+      "budget": 1,
+      "depth": 0,
+      "fallbackUsed": true,
+      "deadlineStop": true,
+      "elapsedMs": 20.32436400000006
+    },
+    {
+      "arm": "control",
+      "budget": 20,
+      "depth": 1,
+      "fallbackUsed": false,
+      "deadlineStop": true,
+      "elapsedMs": 37.44173099999898
+    },
+    {
+      "arm": "control",
+      "budget": 100,
+      "depth": 2,
+      "fallbackUsed": false,
+      "deadlineStop": false,
+      "elapsedMs": 99.48714800000016
+    },
+    {
+      "arm": "control",
+      "budget": 1,
+      "depth": 0,
+      "fallbackUsed": true,
+      "deadlineStop": true,
+      "elapsedMs": 20.789628999998968
+    },
+    {
+      "arm": "control",
+      "budget": 100,
+      "depth": 2,
+      "fallbackUsed": false,
+      "deadlineStop": false,
+      "elapsedMs": 99.42029399999956
+    },
+    {
+      "arm": "control",
+      "explicitCancelRestart": true
+    }
+  ]
+}

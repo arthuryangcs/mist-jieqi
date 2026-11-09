@@ -1,0 +1,9 @@
+{
+  "stage": "Initial release check, before performance or matches",
+  "passed": false,
+  "completed": {"sortOracleCases": 14350, "equivalenceSearches": 15, "privacyChecks": 4, "lifecycleCases": 1},
+  "error": "Error: Illegal native result at coverage-validation/engines.mjs validate",
+  "cause": "The historical TraceWire adapter treats protocol-2 telemetry frames as final search responses, then tries to validate their absent move.",
+  "correction": "Use current search-speed StableEngine adapter shared by formal matches, which handles telemetry separately. No search algorithm or engine rules changed.",
+  "classification": "Test harness incompatibility, not a match result or engine technical forfeit. Final release and sanitizer reports are recorded separately."
+}

@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "cases": 14350,
+  "maxLength": 1024,
+  "scratchCapacity": 1088,
+  "sanitize": true,
+  "compiler": {
+    "compiler": "clang++",
+    "compilerVersion": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix",
+    "flags": [
+      "-std=c++17",
+      "-ffp-contract=off",
+      "-O1",
+      "-g",
+      "-fsanitize=address,undefined",
+      "-fno-omit-frame-pointer",
+      "-DMIST_VERIFY_RESTORE",
+      "-isystem",
+      "<system-c++-include>"
+    ],
+    "warnings": ""
+  },
+  "headerSha256": "abf7318225053b755d2831d4e06ed69d394698edae1a7f3d00f8b585d3db8f94"
+}

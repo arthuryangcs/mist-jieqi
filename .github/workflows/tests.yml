@@ -183,3 +183,28 @@ jobs:
         run: |
           node native/experiments/selfplay-value/check.mjs --sanitize
           node native/experiments/selfplay-value/rules.mjs --sanitize
+
+  buffered-sort:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '24'
+      - name: Frozen source, paired ledger and portable replay
+        run: |
+          node --test native/experiments/buffered-sort/source.test.mjs native/experiments/buffered-sort/matches.test.mjs
+          node native/experiments/buffered-sort/matches.mjs replay
+      - name: Stable sort oracle, HCE equivalence and rules
+        run: |
+          node native/experiments/buffered-sort/sort-probe.mjs
+          node native/experiments/buffered-sort/check.mjs
+          node native/experiments/buffered-sort/rules.mjs
+      - name: Address and undefined-behavior checks
+        run: |
+          node native/experiments/buffered-sort/sort-probe.mjs --sanitize
+          node native/experiments/buffered-sort/check.mjs --sanitize
+          node native/experiments/buffered-sort/rules.mjs --sanitize

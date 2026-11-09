@@ -1,6 +1,6 @@
 // Read only the staged change set. Never print a suspected secret value.
 import {execFileSync} from 'node:child_process';
-const files=execFileSync('git',['diff','--cached','--name-only','--diff-filter=ACMR','-z'],{encoding:'utf8'}).split('\0').filter(Boolean),issues=[];
+const files=execFileSync('git',['diff','--cached','--name-only','--diff-filter=ACMR','-z'],{encoding:'utf8'}).split('\0').filter(Boolean),issues=[],auditedStaticGuards=[];
 const privateKeys=new Set(['pid','oldPid','staleLockPid','savedPid','terminalSession','savedLockStartedAt','accountId','planType','usedPercent','remainingPercent','rateLimits','rateLimitsByLimitId','credits','quota']);
 for(const file of files){
  if(/^(?:\.cache|external|\.agents|\.codex|\.aws)\/|(?:^|\/)\.env(?:\.|$)|\.(?:nnue|wasm|o|a|dylib|so|exe|pem|key)$|\/(?:quota|status|delivery|service-health)\.json$/.test(file)){issues.push({file,reason:'private/runtime/generated path'});continue;}
@@ -17,7 +17,15 @@ for(const file of files){
   continue;
  }
  if(b.includes(0)){issues.push({file,reason:'binary content'});continue;}const s=b.toString('utf8');
- if(/\/Users\//.test(s)||/gh[pousr]_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,}|-----BEGIN [A-Z ]*PRIVATE KEY-----/.test(s))issues.push({file,reason:'private path or credential pattern'});
+ // A frozen exporter checks this forbidden prefix; that static guard contains no personal path.
+ // Exempt only its exact single guard occurrence from path scanning, never credential scanning.
+ let pathText=s;
+ const guard="const text=JSON.stringify(raw,null,2)+'\\n';assert(!text.includes('\x2fUsers\x2f')&&!text.includes('BEGIN PRIVATE KEY'));";
+ if(file==='native/experiments/buffered-sort/export.mjs'&&s.split('\n').filter(line=>line===guard).length===1){
+  pathText=s.split('\n').map(line=>line===guard?line.replace(/\x2fUsers\x2f/,'<audited-forbidden-prefix>'):line).join('\n');
+  auditedStaticGuards.push({file,reason:'exact static forbidden-prefix assertion; original text still scanned for credentials'});
+ }
+ if(/\/Users\//.test(pathText)||/gh[pousr]_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,}|-----BEGIN [A-Z ]*PRIVATE KEY-----/.test(s))issues.push({file,reason:'private path or credential pattern'});
  if(file.endsWith('.json')){let data;try{data=JSON.parse(s);}catch{issues.push({file,reason:'invalid JSON'});continue;}const visit=x=>{if(Array.isArray(x))return x.forEach(visit);if(x&&typeof x==='object')for(const[k,v]of Object.entries(x)){if(privateKeys.has(k))issues.push({file,reason:'private metadata key',key:k});visit(v);}};visit(data);}
 }
 for(const experiment of ['tactical-lmr','cluster-tt','verified-null','all-features'])if(files.includes('benchmarks/'+experiment+'/matches.json')){
@@ -35,4 +43,4 @@ if(files.includes('benchmarks/selfplay-value/matches.json')){
  for(const [file,expected]of Object.entries(r.hashes)){if(file.startsWith('.cache/'))continue;if(sha(staged(file))!==expected)issues.push({file,reason:'staged source/evidence differs from frozen self-play screen'});}
  const training=read(p+'training.json');if(r.modelSha256!==training.modelSha256||r.modelSha256!==sha(staged(plan.training.model)))issues.push({file:plan.training.model,reason:'match model differs from staged trained model'});
 }
-console.log(JSON.stringify({reviewedFiles:files.length,passed:issues.length===0,issues},null,2));if(issues.length)process.exitCode=1;
+console.log(JSON.stringify({reviewedFiles:files.length,passed:issues.length===0,issues,auditedStaticGuards},null,2));if(issues.length)process.exitCode=1;

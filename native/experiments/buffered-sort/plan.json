@@ -1,0 +1,66 @@
+{
+  "experiment": "buffered-stable-sort-v1",
+  "version": 1,
+  "defaultPromotion": false,
+  "stableSourceSha256": "3fa98d62f3c1636b831680fcd5dcbf88f9339e966ed1b8e2f8a170b83afcbfb0",
+  "control": "Exact selfplay-value sourceOf({trial:false}), 64MiB TT",
+  "algorithm": {
+    "frozen": true,
+    "method": "Bottom-up stable merge sort, strict > comparison, left wins ties, reusable per-Search scratch, copy back only when needed",
+    "insertionBase": 16,
+    "complexity": "O(n log n) time / O(n) scratch",
+    "NaN": "Excluded: engine priorities finite. Infinity, signed zero, subnormal tested.",
+    "tuningRuns": 0
+  },
+  "fixedWork": {
+    "fixture": "benchmarks/native-benchmark.json",
+    "positions": 5,
+    "depthDark": 4,
+    "depthBright": 5,
+    "repeats": 4,
+    "order": "alternate arm by repeat + position",
+    "nodeLimit": 0,
+    "threads": 4,
+    "budgetMs": 300000,
+    "require": "Every iteration scores, candidate order, nodes identical; complete requested depth"
+  },
+  "hostTime": {
+    "seeds": [
+      2026110901,
+      2026110903,
+      2026110907
+    ],
+    "plies": [
+      0,
+      20,
+      44
+    ],
+    "budgetMs": 2000,
+    "repeats": 2,
+    "hostReserveMs": 40,
+    "maxThreads": 4,
+    "samples": 8,
+    "brightSamples": 1,
+    "rule": "Fresh reachable observations only; serial non-overlapping compute; report legality, deadlines and fallback, no identical-tree claim"
+  },
+  "matches": {
+    "seeds": [
+      2026110911,
+      2026110929
+    ],
+    "internalGames": 4,
+    "candidatePikaGames": 4,
+    "controlPikaGames": 4,
+    "totalGames": 12,
+    "budgetMs": 2000,
+    "graceMs": 60,
+    "maxPlies": 400,
+    "samples": 8,
+    "brightSamples": 1,
+    "maxThreads": 4,
+    "hostReserveMs": 40,
+    "ttBudgetBytes": 67108864,
+    "stopRule": "Complete frozen pairs, no tuning or outcome-based replacement"
+  },
+  "publication": "Experimental only; no production or default change."
+}

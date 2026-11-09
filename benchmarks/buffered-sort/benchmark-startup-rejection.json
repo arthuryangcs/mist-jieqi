@@ -1,0 +1,52 @@
+{
+  "passed": false,
+  "planSha256": "11f4617ca2152d0e419682e68d7774ec522e27fe67b0974919c9cfd72c10f968",
+  "fixtureSha256": "daac59bec782d24bed790547213a10ee80162743b36e47ffee270aefd7aa10de",
+  "builds": {
+    "candidate": {
+      "trial": true,
+      "sanitize": false,
+      "stableSourceSha256": "3fa98d62f3c1636b831680fcd5dcbf88f9339e966ed1b8e2f8a170b83afcbfb0",
+      "sourceSha256": "b9f7fdeedd0e05087bb568b8276165fb52e653d37d71bc4d173724ebc1d296a9",
+      "binarySha256": "90f06892cde9a87e2f679c36a1c99745dcdc828752604bb4ddd44c3c0a1bc0f9",
+      "headerSha256": "abf7318225053b755d2831d4e06ed69d394698edae1a7f3d00f8b585d3db8f94",
+      "compiler": "clang++",
+      "compilerVersion": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix",
+      "flags": [
+        "-std=c++17",
+        "-ffp-contract=off",
+        "-O3",
+        "-DNDEBUG",
+        "-isystem",
+        "<system-c++-include>"
+      ],
+      "warnings": ""
+    },
+    "control": {
+      "trial": false,
+      "sanitize": false,
+      "stableSourceSha256": "3fa98d62f3c1636b831680fcd5dcbf88f9339e966ed1b8e2f8a170b83afcbfb0",
+      "sourceSha256": "46f7e906c49ace1860baae0c9d6c5bf8ac5b83f8cb25a4810b69405e7ff955bc",
+      "binarySha256": "494eb5b63bc5538f835a41057bbe85ef142d446b16438540d7bc4c2e7b118440",
+      "headerSha256": "abf7318225053b755d2831d4e06ed69d394698edae1a7f3d00f8b585d3db8f94",
+      "compiler": "clang++",
+      "compilerVersion": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix",
+      "flags": [
+        "-std=c++17",
+        "-ffp-contract=off",
+        "-O3",
+        "-DNDEBUG",
+        "-isystem",
+        "<system-c++-include>"
+      ],
+      "warnings": ""
+    }
+  },
+  "runtime": "v25.6.0",
+  "cpu": "Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz",
+  "protocol": "Serial warmed clients, four alternating repeats, complete prescribed depth. Exact candidate order and every iteration node/score equality. Host-clock measurements use fresh reachable lawful observations and are not fixed work.",
+  "fixed": [],
+  "timed": [],
+  "error": "Error: native\u9000\u51fa 2/null: native error: header out of range\n\n    at ChildProcess.<anonymous> (file://<repo>/native/bridge.mjs:49:109)\n    at ChildProcess.emit (node:events:508:20)\n    at ChildProcess._handle.onexit (node:internal/child_process:293:12)",
+  "correction": "Warmup rejected before any measured search: 600000ms safety timeout exceeds protocol maximum 300000ms. Change safety timeout only, no algorithm/depth/repeats change."
+}
