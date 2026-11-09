@@ -1,0 +1,216 @@
+{
+  "build": {
+    "trial": true,
+    "sanitize": true,
+    "stableSourceSha256": "3c3505b46d935362ec06bb7d03a0b57ab4eeb742385b2e11773f68005332a9fc",
+    "sourceSha256": "3df6f9cfcbfb4875977e71fb059cffef961cd0367b38ddd07884e2c62a459352",
+    "binarySha256": "afaaaef7e5d98a1b27e30f3221896f8e11f493f50dc5010bf1235bc789dfc951",
+    "headerSha256": "b7363b9f1930636819bf6a69723e8bb6cd645728eaabfced30bf29d3962d5378",
+    "modelSha256": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160",
+    "upstreamCommit": "331a6e612a038c4a04cf980f7b9482910fd50078",
+    "compiler": "clang++",
+    "compilerVersion": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix",
+    "flags": [
+      "-std=c++17",
+      "-ffp-contract=off",
+      "-O1",
+      "-g",
+      "-fsanitize=address,undefined",
+      "-fno-omit-frame-pointer",
+      "-DMIST_VERIFY_RESTORE",
+      "-isystem",
+      "<system-c++-include>"
+    ],
+    "warnings": ""
+  },
+  "testSourceSha256": "04635c5b7eaf43f92bf79b7504e1882bf7275c00999700c9fac61d318792235f",
+  "cases": [
+    {
+      "name": "r/offender/hidden=false",
+      "samples": 1,
+      "legalCandidates": 21,
+      "repetitionLoss": true,
+      "repetitionWin": false,
+      "score": -98999,
+      "passed": true
+    },
+    {
+      "name": "r/offender/hidden=true",
+      "samples": 4,
+      "legalCandidates": 22,
+      "repetitionLoss": true,
+      "repetitionWin": false,
+      "score": -3594.878728264789,
+      "passed": true
+    },
+    {
+      "name": "r/evader/hidden=false",
+      "samples": 1,
+      "legalCandidates": 2,
+      "repetitionLoss": false,
+      "repetitionWin": true,
+      "score": 98999,
+      "passed": true
+    },
+    {
+      "name": "r/evader/hidden=true",
+      "samples": 4,
+      "legalCandidates": 2,
+      "repetitionLoss": false,
+      "repetitionWin": true,
+      "score": 3594.878728264789,
+      "passed": true
+    },
+    {
+      "name": "b/offender/hidden=false",
+      "samples": 1,
+      "legalCandidates": 21,
+      "repetitionLoss": true,
+      "repetitionWin": false,
+      "score": -98999,
+      "passed": true
+    },
+    {
+      "name": "b/offender/hidden=true",
+      "samples": 4,
+      "legalCandidates": 22,
+      "repetitionLoss": true,
+      "repetitionWin": false,
+      "score": -3594.878728264789,
+      "passed": true
+    },
+    {
+      "name": "b/evader/hidden=false",
+      "samples": 1,
+      "legalCandidates": 2,
+      "repetitionLoss": false,
+      "repetitionWin": true,
+      "score": 98999,
+      "passed": true
+    },
+    {
+      "name": "b/evader/hidden=true",
+      "samples": 4,
+      "legalCandidates": 2,
+      "repetitionLoss": false,
+      "repetitionWin": true,
+      "score": 3594.878728264789,
+      "passed": true
+    },
+    {
+      "name": "insufficient-cycles/r",
+      "samples": 1,
+      "legalCandidates": 2,
+      "repetitionLoss": false,
+      "repetitionWin": false,
+      "score": -98998,
+      "passed": true
+    },
+    {
+      "name": "insufficient-cycles/b",
+      "samples": 1,
+      "legalCandidates": 2,
+      "repetitionLoss": false,
+      "repetitionWin": false,
+      "score": -98998,
+      "passed": true
+    },
+    {
+      "name": "forged-duplicates/r/1",
+      "samples": 1,
+      "legalCandidates": 46,
+      "repetitionLoss": false,
+      "repetitionWin": false,
+      "score": -132.55813953488374,
+      "passed": true
+    },
+    {
+      "name": "forged-duplicates/r/2",
+      "samples": 1,
+      "legalCandidates": 46,
+      "repetitionLoss": false,
+      "repetitionWin": false,
+      "score": -132.55813953488374,
+      "passed": true
+    },
+    {
+      "name": "forged-duplicates/r/8",
+      "samples": 1,
+      "legalCandidates": 46,
+      "repetitionLoss": false,
+      "repetitionWin": false,
+      "score": -132.55813953488374,
+      "passed": true
+    },
+    {
+      "name": "forged-duplicates/b/1",
+      "samples": 1,
+      "legalCandidates": 46,
+      "repetitionLoss": false,
+      "repetitionWin": false,
+      "score": -132.55813953488374,
+      "passed": true
+    },
+    {
+      "name": "forged-duplicates/b/2",
+      "samples": 1,
+      "legalCandidates": 46,
+      "repetitionLoss": false,
+      "repetitionWin": false,
+      "score": -132.55813953488374,
+      "passed": true
+    },
+    {
+      "name": "forged-duplicates/b/8",
+      "samples": 1,
+      "legalCandidates": 46,
+      "repetitionLoss": false,
+      "repetitionWin": false,
+      "score": -132.55813953488374,
+      "passed": true
+    },
+    {
+      "name": "hidden-cap-legal-continuation",
+      "samples": 4,
+      "legalCandidates": 5,
+      "passed": true
+    },
+    {
+      "name": "hidden-cap-mate-precedence",
+      "samples": 4,
+      "legalCandidates": 33,
+      "passed": true
+    },
+    {
+      "name": "hidden-cap-mixed-mate-and-draw/r",
+      "samples": 2,
+      "legalCandidates": 31,
+      "passed": true
+    },
+    {
+      "name": "hidden-cap-mixed-mate-and-draw/b",
+      "samples": 2,
+      "legalCandidates": 31,
+      "passed": true
+    },
+    {
+      "name": "ordinary-quiet-limit-draw",
+      "passed": true
+    },
+    {
+      "name": "ordinary-ply-limit-draw",
+      "passed": true
+    },
+    {
+      "name": "nonchecking-repeat-review-cap=false",
+      "passed": true
+    },
+    {
+      "name": "nonchecking-repeat-review-cap=true",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "invalidOutcomeRejected": true,
+  "runtimeStderr": ""
+}

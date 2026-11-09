@@ -1,0 +1,108 @@
+{
+  "experiment": "jqe-it014-independent-confirmation-2026-11-09",
+  "complete": true,
+  "expectedLayouts": 16,
+  "expectedGames": 32,
+  "completedLayouts": 16,
+  "finishedGames": 32,
+  "positive": 4,
+  "negative": 4,
+  "ties": 8,
+  "nonTieLayouts": 8,
+  "pValue": 0.63671875,
+  "alpha": 0.05,
+  "worstCasePoints": 16,
+  "worstCaseTotalScore": 0.5,
+  "requiredWorstCaseTotalScore": 0.6,
+  "technicalFailures": 0,
+  "cleanupFailures": 0,
+  "statisticalGate": false,
+  "replayPassed": true,
+  "auditPassed": true,
+  "eligibleForDefaultReview": false,
+  "defaultEnable": false,
+  "requiresFinalRulePrivacyRegressionReview": true,
+  "rows": [
+    {
+      "seed": 132408634,
+      "mean": 0.5,
+      "sign": "tie"
+    },
+    {
+      "seed": 961754207,
+      "mean": 0,
+      "sign": "negative"
+    },
+    {
+      "seed": 3282158083,
+      "mean": 1,
+      "sign": "positive"
+    },
+    {
+      "seed": 4083208199,
+      "mean": 1,
+      "sign": "positive"
+    },
+    {
+      "seed": 2370451994,
+      "mean": 0.5,
+      "sign": "tie"
+    },
+    {
+      "seed": 1821941724,
+      "mean": 0.5,
+      "sign": "tie"
+    },
+    {
+      "seed": 1029530258,
+      "mean": 0.5,
+      "sign": "tie"
+    },
+    {
+      "seed": 2671506097,
+      "mean": 0.5,
+      "sign": "tie"
+    },
+    {
+      "seed": 1325334974,
+      "mean": 0.5,
+      "sign": "tie"
+    },
+    {
+      "seed": 3630904121,
+      "mean": 0,
+      "sign": "negative"
+    },
+    {
+      "seed": 325493216,
+      "mean": 1,
+      "sign": "positive"
+    },
+    {
+      "seed": 2127433142,
+      "mean": 0.5,
+      "sign": "tie"
+    },
+    {
+      "seed": 1380815314,
+      "mean": 1,
+      "sign": "positive"
+    },
+    {
+      "seed": 1896024112,
+      "mean": 0,
+      "sign": "negative"
+    },
+    {
+      "seed": 1534696363,
+      "mean": 0,
+      "sign": "negative"
+    },
+    {
+      "seed": 480771804,
+      "mean": 0.5,
+      "sign": "tie"
+    }
+  ],
+  "inference": "Exact one-sided paired-layout win tendency conditional on non-ties; not a confidence interval for exact population mean or Elo. Prior144games are exploratory and excluded. No early stop, extension, parameter change or outcome-based replacement."
+}

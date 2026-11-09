@@ -1,0 +1,255 @@
+{
+  "passed": true,
+  "sourceSha256": "3df6f9cfcbfb4875977e71fb059cffef961cd0367b38ddd07884e2c62a459352",
+  "headerSha256": "076d7138a7ac5b1984e531e53d3bda45a7849ba0be45728dc2718c4048c7a08b",
+  "modelSha256": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160",
+  "builds": {
+    "four": {
+      "sourceSha256": "3df6f9cfcbfb4875977e71fb059cffef961cd0367b38ddd07884e2c62a459352",
+      "binarySha256": "eef425a8fa0f549deaf89c8f32c5d323adebbc5b243331913a41e7d6e2e84991",
+      "sanitize": false,
+      "compiler": "clang++",
+      "compilerVersion": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix",
+      "flags": [
+        "-std=c++17",
+        "-ffp-contract=off",
+        "-O3",
+        "-DNDEBUG",
+        "-isystem",
+        "<system-c++-include>"
+      ],
+      "warnings": ""
+    },
+    "one": {
+      "sourceSha256": "cbc0f6dcf839939de714720b656075834d94c5bd81a1bbe94b3368131752b7b7",
+      "binarySha256": "0b3e4767323ac83451fa31a87513557c600a34efe548bffd72210cc9c1e56cca",
+      "sanitize": false,
+      "compiler": "clang++",
+      "compilerVersion": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix",
+      "flags": [
+        "-std=c++17",
+        "-ffp-contract=off",
+        "-O3",
+        "-DNDEBUG",
+        "-isystem",
+        "<system-c++-include>"
+      ],
+      "warnings": ""
+    },
+    "sanitized": {
+      "sourceSha256": "3df6f9cfcbfb4875977e71fb059cffef961cd0367b38ddd07884e2c62a459352",
+      "binarySha256": "1b16f6c6dc6674e0c89101cd310017bf7e4c1e6e8c76206d814d91729d9fedae",
+      "sanitize": true,
+      "compiler": "clang++",
+      "compilerVersion": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix",
+      "flags": [
+        "-std=c++17",
+        "-ffp-contract=off",
+        "-O1",
+        "-g",
+        "-fsanitize=address,undefined",
+        "-fno-omit-frame-pointer",
+        "-DMIST_VERIFY_RESTORE",
+        "-isystem",
+        "<system-c++-include>"
+      ],
+      "warnings": ""
+    },
+    "stack-probe": {
+      "sourceSha256": "4402e164af5b3fdc6e2403dc8d275b99a328300c8207bb7ba42c4f07e4db35be",
+      "binarySha256": "e06583cf356bcc2193df311b83b3b5b27476aa3a657ed81f9299883613a6e5af",
+      "sanitize": true,
+      "compiler": "clang++",
+      "compilerVersion": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix",
+      "flags": [
+        "-std=c++17",
+        "-ffp-contract=off",
+        "-O1",
+        "-g",
+        "-fsanitize=address,undefined",
+        "-fno-omit-frame-pointer",
+        "-DMIST_VERIFY_RESTORE",
+        "-isystem",
+        "<system-c++-include>"
+      ],
+      "warnings": ""
+    }
+  },
+  "checks": [
+    {
+      "position": "初始全暗",
+      "duplicateKnownWorlds": false,
+      "samples": 4,
+      "threads": [
+        1,
+        4
+      ],
+      "depth": 2,
+      "nodes": 12342,
+      "iterations": [
+        {
+          "depth": 1,
+          "nodes": 1033,
+          "candidates": 44
+        },
+        {
+          "depth": 2,
+          "nodes": 12342,
+          "candidates": 44
+        }
+      ],
+      "nodesEqual": true,
+      "candidates": 44,
+      "maxDifference": 0
+    },
+    {
+      "position": "可达中局 2111 / 20步",
+      "duplicateKnownWorlds": false,
+      "samples": 4,
+      "threads": [
+        1,
+        4
+      ],
+      "depth": 2,
+      "nodes": 4618,
+      "iterations": [
+        {
+          "depth": 1,
+          "nodes": 275,
+          "candidates": 25
+        },
+        {
+          "depth": 2,
+          "nodes": 4618,
+          "candidates": 25
+        }
+      ],
+      "nodesEqual": true,
+      "candidates": 25,
+      "maxDifference": 0
+    },
+    {
+      "position": "可达中局 2111 / 44步",
+      "duplicateKnownWorlds": false,
+      "samples": 4,
+      "threads": [
+        1,
+        4
+      ],
+      "depth": 2,
+      "nodes": 7508,
+      "iterations": [
+        {
+          "depth": 1,
+          "nodes": 824,
+          "candidates": 23
+        },
+        {
+          "depth": 2,
+          "nodes": 7508,
+          "candidates": 23
+        }
+      ],
+      "nodesEqual": true,
+      "candidates": 23,
+      "maxDifference": 0
+    },
+    {
+      "position": "可达中局 2221 / 44步",
+      "duplicateKnownWorlds": false,
+      "samples": 4,
+      "threads": [
+        1,
+        4
+      ],
+      "depth": 2,
+      "nodes": 15938,
+      "iterations": [
+        {
+          "depth": 1,
+          "nodes": 2152,
+          "candidates": 31
+        },
+        {
+          "depth": 2,
+          "nodes": 15938,
+          "candidates": 31
+        }
+      ],
+      "nodesEqual": true,
+      "candidates": 31,
+      "maxDifference": 0
+    },
+    {
+      "position": "全明10子残局",
+      "duplicateKnownWorlds": true,
+      "samples": 4,
+      "threads": [
+        1,
+        4
+      ],
+      "depth": 2,
+      "nodes": 6216,
+      "iterations": [
+        {
+          "depth": 1,
+          "nodes": 336,
+          "candidates": 30
+        },
+        {
+          "depth": 2,
+          "nodes": 6216,
+          "candidates": 30
+        }
+      ],
+      "nodesEqual": true,
+      "candidates": 30,
+      "maxDifference": 0
+    }
+  ],
+  "timeouts": [
+    {
+      "budgetMs": 0,
+      "depth": 0,
+      "interruptedDepth": 1,
+      "nodes": 0,
+      "candidates": 0
+    },
+    {
+      "budgetMs": 5,
+      "depth": 0,
+      "interruptedDepth": 1,
+      "nodes": 0,
+      "candidates": 0
+    },
+    {
+      "budgetMs": 25,
+      "depth": 0,
+      "interruptedDepth": 1,
+      "nodes": 443,
+      "candidates": 0
+    },
+    {
+      "budgetMs": 100,
+      "depth": 1,
+      "interruptedDepth": 2,
+      "nodes": 3240,
+      "candidates": 44
+    }
+  ],
+  "recovery": {
+    "nodesEqual": true,
+    "candidates": 44,
+    "maxDifference": 0
+  },
+  "stackProbe": {
+    "passed": true,
+    "recursivePushPopLevels": 127,
+    "safetyCutoffs": 1,
+    "parallelInferenceWorkers": 8,
+    "parallelInferenceCalls": 16000,
+    "stateBytes": 12448,
+    "scope": "Real pushInto/pop recursive harness, actual terminal safety guard, ASan/UBSan, async worker. Not full deep tree search or ThreadSanitizer."
+  },
+  "finishedAt": "2026-11-09T13:37:16.135Z"
+}

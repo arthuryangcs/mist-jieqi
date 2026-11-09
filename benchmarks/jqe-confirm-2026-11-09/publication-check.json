@@ -1,0 +1,47 @@
+{
+  "purpose": "Final local publication checks; no default-engine change",
+  "regression": {
+    "command": "npm test -- --test-concurrency=1",
+    "exitCode": 0,
+    "tests": 240,
+    "passed": 240,
+    "failed": 0,
+    "skipped": 0,
+    "durationMs": 29427.941899
+  },
+  "optionalDeployment": {
+    "evidence": "benchmarks/jqe-confirm-2026-11-09/deployment-check.json",
+    "sha256": "e2333fc5b85e5660973c8d447150f64b6523efc1725cc055b8691a9a8a2070b7",
+    "tests": 4,
+    "passed": 4,
+    "port": "ephemeral only"
+  },
+  "completeMatchLedgers": [
+    {
+      "games": 144,
+      "matches": "benchmarks/jqe-retest-2026-11-09/matches.json",
+      "sha256": "bd3bd8e4147335f168cf33b59364e51b9a1c34322eb300ce3ae0d13f380cdc4e",
+      "replayPassed": true,
+      "auditPassed": true
+    },
+    {
+      "games": 32,
+      "matches": "benchmarks/jqe-confirm-2026-11-09/matches.json",
+      "sha256": "9469cc8c63b2d2ecc75c6f63c3849fa59306f7196f8f309a8d798e683d8d9ec9",
+      "replayPassed": true,
+      "auditPassed": true
+    }
+  ],
+  "default": "HCE",
+  "defaultChanged": false,
+  "runningServiceChanged": false,
+  "productionSourcesUnchanged": [
+    "engine.js",
+    "ai.js",
+    "native/search.cpp",
+    "native/server.mjs",
+    "native/bridge.mjs",
+    "package.json"
+  ],
+  "ci": "Pending publication; local tests do not substitute for remote CI"
+}

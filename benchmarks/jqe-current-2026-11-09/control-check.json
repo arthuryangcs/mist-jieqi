@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "stableSourceSha256": "3c3505b46d935362ec06bb7d03a0b57ab4eeb742385b2e11773f68005332a9fc",
+  "productionBinarySha256": "a0815ded6a20872b66ef03ca2b95bd2391e057c38d2c3407153b4c798029f561",
+  "controlBinarySha256": "2d811874987e9314d8719547dfa793707955b8a293823779a67e137e7d2a8beb",
+  "rows": [
+    {
+      "name": "初始全暗",
+      "nodesEqual": true,
+      "candidates": 44,
+      "maxDifference": 0,
+      "depth": 2,
+      "nodes": 30118
+    },
+    {
+      "name": "可达中局 2111 / 20步",
+      "nodesEqual": true,
+      "candidates": 25,
+      "maxDifference": 0,
+      "depth": 2,
+      "nodes": 8787
+    },
+    {
+      "name": "可达中局 2111 / 44步",
+      "nodesEqual": true,
+      "candidates": 23,
+      "maxDifference": 0,
+      "depth": 2,
+      "nodes": 25315
+    },
+    {
+      "name": "可达中局 2221 / 44步",
+      "nodesEqual": true,
+      "candidates": 31,
+      "maxDifference": 0,
+      "depth": 2,
+      "nodes": 49359
+    },
+    {
+      "name": "全明10子残局",
+      "nodesEqual": true,
+      "candidates": 30,
+      "maxDifference": 0,
+      "depth": 2,
+      "nodes": 1687
+    }
+  ]
+}

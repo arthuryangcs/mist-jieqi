@@ -244,3 +244,45 @@ jobs:
           node native/experiments/jqe/thread-check.mjs
       - name: Opt-in HTTP boundaries and cancellation
         run: node --test native/experiments/jqe/service-check.mjs
+  jqe-current-rules:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: devinokeefe/jieqi
+          ref: 331a6e612a038c4a04cf980f7b9482910fd50078
+          path: external/jqe
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '24'
+      - name: Frozen current-rule paired ledger and independent audit
+        run: |
+          node --test native/experiments/jqe-current/source.test.mjs native/experiments/jqe-retest/matches.test.mjs native/experiments/jqe-retest/audit.test.mjs
+          node native/experiments/jqe-retest/matches.mjs replay
+          node native/experiments/jqe-retest/audit.mjs benchmarks/jqe-retest-2026-11-09/matches.json /tmp/jqe-current-audit.json
+          node --test native/experiments/jqe-confirm/matches.test.mjs
+          node native/experiments/jqe-confirm/matches.mjs replay
+          node native/experiments/jqe-retest/audit.mjs benchmarks/jqe-confirm-2026-11-09/matches.json /tmp/jqe-confirm-audit.json
+      - name: Current evaluator, normalization, public information and root rulings
+        run: |
+          node native/build.mjs
+          node native/experiments/jqe-current/build.mjs --control
+          node native/experiments/jqe-current/check.mjs
+          node native/experiments/jqe-current/rules.mjs
+          node native/experiments/jqe-current/repetition.mjs
+          node native/experiments/jqe-current/control-check.mjs
+      - name: Memory safety and deterministic worker restoration
+        run: |
+          node native/experiments/jqe-current/check.mjs --sanitize
+          node native/experiments/jqe-current/rules.mjs --sanitize
+          JIEQI_NATIVE_SANITIZE=1 node native/experiments/jqe-current/repetition.mjs
+          node native/experiments/jqe-current/thread-check.mjs
+      - name: Isolated HTTP history boundaries and cancellation
+        run: node --test native/experiments/jqe-current/service-check.mjs
+      - name: Optional pinned JQE launcher and fresh-checkout startup
+        run: MIST_JQE_TEST_FRESH=1 node --test native/jqe-default-check.mjs

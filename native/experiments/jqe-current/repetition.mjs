@@ -1,0 +1,82 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {spawnSync} from 'node:child_process';
+import {initial,publicState,move,positionKey,legalMoves,TYPES,other,rootRules} from '../../../engine.js';
+import {seeded} from '../../../ai.js';
+import {build,modelFile,dir,hash} from './build.mjs';
+process.env.MIST_JQE_MODEL=modelFile;process.env.MIST_JQE_QUANT='1';delete process.env.MIST_JQE_FULL;
+import {fixture,Native,javascript,compare,encode} from '../../bridge.mjs';
+const output=dir+'/repetition'+(process.env.JIEQI_NATIVE_SANITIZE==='1'?'-sanitized':'')+'.json';
+function rootParity(a,b){for(const r of a.allCandidates){const q=b.allCandidates.find(x=>x.from===r.from&&x.to===r.to);assert(q);for(const k of ['repetitionCount','draw','repetitionLoss','repetitionWin'])assert.equal(q[k]??false,r[k]??false);if(r.draw||r.repetitionLoss||r.repetitionWin){for(const k of ['score','heuristicWinRate','sampleWins','sampleLosses'])assert.equal(q[k],r[k]);}}return {legalCandidates:b.allCandidates.length};}
+const built=build({sanitize:process.env.JIEQI_NATIVE_SANITIZE==='1'}),native=new Native({binary:built.binary}),record={build:built,testSourceSha256:hash("native/experiments/jqe-current/repetition.mjs"),cases:[],passed:false};
+const piece=(side,type,hidden=false,role=type)=>({side,type,hidden,role});
+function longCheck(offender,closing,hidden=false,plies=11){
+ const mirrored=offender==='b',index=i=>mirrored?89-i:i,side=s=>mirrored?other(s):s;
+ let s={...initial(seeded(17)),board:Array(90).fill(null),captured:[],turn:side(closing==='offender'?'b':'r')};
+ for(const [i,color,type]of [[85,'r','K'],[4,'b','K'],[49,'r','P'],[closing==='offender'?13:12,'r','R']])s.board[index(i)]=piece(side(color),type);
+ if(hidden)s.board[index(54)]=piece(side('r'),'N',true,'P');
+ for(const color of ['r','b']){const bag=[...TYPES];for(const p of s.board)if(p?.side===color&&p.type!=='K')bag.splice(bag.indexOf(p.type),1);s.captured.push(...bag.map(t=>piece(color,t)));}
+ s.positions=[positionKey(s)];
+ const pairs=closing==='offender'?[[4,3],[13,12],[3,4],[12,13]]:[[12,13],[4,3],[13,12],[3,4]];
+ const cycle=pairs.map(([from,to])=>({from:index(from),to:index(to)}));
+ for(let i=0;i<plies;i++){const m=cycle[i%4];assert(legalMoves(s).some(x=>x.from===m.from&&x.to===m.to));s=move(s,m);assert.equal(s.result,null,'must not adjudicate before three full cycles');}
+ return{s,m:cycle[3]};
+}
+async function check(name,s,m,{loss=false,win=false,count}={}){
+ const f=fixture(publicState(s,s.turn),{samples:4,seed:8101}),a=await javascript(f,{depth:2}),progress=[],b=await native.request(f,{mode:'STREAM',depth:2,onProgress:r=>progress.push(r)});
+ const same=rootParity(a,b),row=b.allCandidates.find(x=>x.from===m.from&&x.to===m.to);assert(row,name);assert.equal(!!row.repetitionLoss,loss,name);assert.equal(!!row.repetitionWin,win,name);assert(!row.draw,name);if(count!==undefined)assert.equal(row.repetitionCount,count,name);assert.equal(progress.length,b.depth);assert.deepEqual(progress.at(-1).allCandidates,b.allCandidates);
+ if(loss||win){assert.equal(row.heuristicWinRate,win?100:0);assert.equal(win?row.sampleWins:row.sampleLosses,1);assert.equal(move(s,m).result.winner,win?s.turn:other(s.turn));}
+ record.cases.push({name,samples:f.samples,...same,repetitionLoss:!!row.repetitionLoss,repetitionWin:!!row.repetitionWin,score:row.score,passed:true});
+}
+try{
+ for(const offender of ['r','b'])for(const closing of ['offender','evader'])for(const hidden of [false,true]){
+  const {s,m}=longCheck(offender,closing,hidden);await check(`${offender}/${closing}/hidden=${hidden}`,s,m,{loss:closing==='offender',win:closing==='evader',count:3});
+  if(hidden){const t=structuredClone(s),h=t.board.find(p=>p?.hidden);h.type='C';assert.deepEqual(rootRules(s,m),rootRules(t,m));assert.equal(encode(fixture(publicState(s,s.turn))),encode(fixture(publicState(t,t.turn))));}
+ }
+ for(const offender of ['r','b']){const {s,m}=longCheck(offender,'evader',false,7);await check(`insufficient-cycles/${offender}`,s,m,{count:2});assert.equal(move(s,m).result,null);}
+ for(const turn of ['r','b'])for(const count of [1,2,8]){
+  const s=initial(seeded(17));s.turn=turn;s.board=s.board.map(p=>p?{...p,type:p.role,hidden:false}:null);
+  const m=turn==='r'?{from:82,to:63}:{from:1,to:18};s.positions=Array(count).fill(positionKey(move(s,m,false)));
+  await check(`forged-duplicates/${turn}/${count}`,s,m,{count:0});assert.equal(move(s,m).result,null);
+ }
+ for(const mates of [false,true]){
+  const s={...initial(seeded(17)),board:Array(90).fill(null),captured:[],ply:399};
+  for(const [i,color,type]of [[85,'r','K'],[4,'b','K'],[49,'r','P'],...(mates?[[12,'r','R'],[14,'r','R']]:[])])s.board[i]=piece(color,type);
+  const m=mates?{from:22,to:13}:{from:54,to:45};s.board[m.from]=piece('r','P',true,'P');
+  for(const color of ['r','b']){const bag=[...TYPES];for(const p of s.board)if(p?.side===color&&p.type!=='K')bag.splice(bag.indexOf(p.type),1);s.captured.push(...bag.map(t=>piece(color,t)));}
+  const view=publicState(s,'r'),before=structuredClone(view),f=fixture(view,{samples:4,seed:8101}),a=await javascript(f,{depth:2}),b=await native.request(f,{depth:2}),same=rootParity(a,b);
+  const row=b.allCandidates.find(x=>x.from===m.from&&x.to===m.to);assert(row);assert.equal(!!row.draw,!mates);assert.equal(row.sampleWins,mates?f.samples:0);assert.equal(row.heuristicWinRate,mates?100:50);assert.equal(move(s,m).result.winner,mates?'r':null);assert.deepEqual(view,before);
+  const altered=structuredClone(s);altered.board[m.from].type='N';assert.equal(encode(f),encode(fixture(publicState(altered,'r'),{samples:4,seed:8101})));
+  record.cases.push({name:mates?'hidden-cap-mate-precedence':'hidden-cap-legal-continuation',samples:f.samples,...same,passed:true});
+ }
+ for(const turn of ['r','b']){
+  const s={...initial(seeded(17)),board:Array(90).fill(null),captured:[],ply:399};
+  for(const [i,color,type]of [[85,'r','K'],[4,'b','K'],[30,'r','C'],[21,'r','B'],[32,'r','R']])s.board[i]=piece(color,type);
+  const m={from:58,to:49};s.board[58]=piece('r','R',true,'P');
+  for(const color of ['r','b']){const bag=[...TYPES];for(const p of s.board)if(p?.side===color&&p.type!=='K')bag.splice(bag.indexOf(p.type),1);if(color==='r'){bag.splice(bag.indexOf('N'),1);s.captured.push({...piece('r','N',true),capturedBy:'b'});}s.captured.push(...bag.map(t=>piece(color,t)));}
+  if(turn==='b'){s.turn='b';s.board.reverse();for(const p of [...s.board,...s.captured])if(p){p.side=other(p.side);if(p.capturedBy)p.capturedBy=other(p.capturedBy);}m.from=89-m.from;m.to=89-m.to;}
+  const view=publicState(s,turn),before=structuredClone(view),f=fixture(view,{samples:2,seed:8101}),a=await javascript(f,{depth:2}),b=await native.request(f,{depth:2}),same=rootParity(a,b);
+  const row=b.allCandidates.find(x=>x.from===m.from&&x.to===m.to);assert(row);assert(!row.draw);assert.equal(row.sampleWins,1);assert.equal(row.sampleLosses,0);assert.equal(row.heuristicWinRate,75);assert.deepEqual(view,before);
+  const altered=structuredClone(s);altered.board[m.from].type='N';altered.captured.find(p=>p.hidden).type='R';assert.equal(encode(f),encode(fixture(publicState(altered,turn),{samples:2,seed:8101})));
+  assert.equal(move(s,m).result.winner,turn);assert.equal(move(altered,m).result.winner,null);
+  record.cases.push({name:`hidden-cap-mixed-mate-and-draw/${turn}`,samples:f.samples,...same,passed:true});
+ }
+ // Outcome 1 ordinary limit draw, and outcome 0 review-required repetition.
+ for(const limit of ['quiet','ply']){
+  const {s}=longCheck('r','evader',false,0);s.positions=[];s.quiet=limit==='quiet'?119:0;s.ply=limit==='ply'?399:20;
+  const m={from:12,to:21};assert(legalMoves(s).some(x=>x.from===m.from&&x.to===m.to));
+  const f=fixture(publicState(s,'r'),{samples:1,seed:8101}),r=await native.request(f,{depth:1});
+  const row=r.allCandidates.find(x=>x.from===m.from&&x.to===m.to);assert(row?.draw);assert.equal(row.score,0);assert.equal(row.heuristicWinRate,50);assert(!row.repetitionLoss&&!row.repetitionWin);
+  assert.equal(move(s,m).result.winner,null);record.cases.push({name:'ordinary-'+limit+'-limit-draw',passed:true});
+ }
+ for(const atCap of [false,true]){
+  const {s:base}=longCheck('r','evader',false,0);let s=base;s.board[12]=null;s.captured.push(piece('r','R'));s.quiet=atCap?108:0;s.positions=[positionKey(s)];
+  const cycle=[{from:85,to:84},{from:4,to:5},{from:84,to:85},{from:5,to:4}];
+  for(let i=0;i<11;i++)s=move(s,cycle[i%4]);const m=cycle[3],rule=rootRules(s,m);assert(rule.reviewRequired);assert(!rule.draw&&!rule.loss&&!rule.win);
+  const f=fixture(publicState(s,s.turn),{samples:1}),r=await native.request(f,{depth:1}),row=r.allCandidates.find(x=>x.from===m.from&&x.to===m.to);
+  assert(row&&!row.draw&&!row.repetitionLoss&&!row.repetitionWin);const n=move(s,m);assert.equal(n.adjudication.status,'review-required');assert.equal(n.result?.status,atCap?'unresolved':undefined);
+  record.cases.push({name:'nonchecking-repeat-review-cap='+atCap,passed:true});
+ }
+ const tokens=encode(fixture(publicState(initial(seeded(17)),'r'))).trim().split(' ');tokens[tokens.length-1]='5';const invalid=spawnSync(built.binary,[],{input:tokens.join(' ')+'\n',encoding:'utf8',timeout:3000});assert.equal(invalid.status,2);assert.equal(invalid.stderr.trim(),'native error: root metadata out of range');record.invalidOutcomeRejected=true;
+ record.passed=true;
+}finally{await native.close();record.runtimeStderr=native.stderr;assert.equal(native.stderr,'');delete record.build.binary;fs.writeFileSync(output,JSON.stringify(record,null,2)+'\n');console.log(JSON.stringify({passed:record.passed,cases:record.cases.length,sanitized:built.sanitize,output}));}

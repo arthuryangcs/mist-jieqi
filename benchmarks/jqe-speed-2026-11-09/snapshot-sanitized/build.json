@@ -1,0 +1,24 @@
+{
+  "name": "snapshot",
+  "sanitize": true,
+  "binary": "<repo>/benchmarks/jqe-speed-2026-11-09/snapshot-sanitized/candidate",
+  "sourceSha256": "53547841d43e08bd7fc2e49b026e2ccad17d6140da3c4daaf86fa390ad04226a",
+  "headerSha256": "f2f4bd8fd5a3d6a468d0f604421a268cadebbb4962af6866702a7b7806876dc2",
+  "binarySha256": "af46da2ad0398a4c8fec6adc7229f6a6f7d6a50bec62c1f6ebf8489829a20a4c",
+  "frozenBinarySha256": "952b810695d985d4c927c03f250007e4af9b99b553eff32251cbaf53a058744a",
+  "modelSha256": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160",
+  "compiler": "clang++",
+  "compilerVersion": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix",
+  "flags": [
+    "-std=c++17",
+    "-ffp-contract=off",
+    "-O1",
+    "-g",
+    "-fsanitize=address,undefined",
+    "-fno-omit-frame-pointer",
+    "-DMIST_VERIFY_RESTORE",
+    "-isystem",
+    "<system-c++-include>"
+  ],
+  "warnings": ""
+}

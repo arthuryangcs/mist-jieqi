@@ -1,0 +1,202 @@
+{
+  "layouts": 24,
+  "games": 144,
+  "technicalFailures": 0,
+  "internal": {
+    "mean": 0.71875,
+    "lower": 0.44152868896125547,
+    "bootstrap": {
+      "low": 0.625,
+      "high": 0.8125,
+      "replicates": 20000,
+      "seed": 2091162101,
+      "descriptiveOnly": true
+    }
+  },
+  "pikaDifference": {
+    "mean": -0.041666666666666664,
+    "lower": -0.5961092887441557,
+    "bootstrap": {
+      "low": -0.1875,
+      "high": 0.10416666666666667,
+      "replicates": 20000,
+      "seed": 2091162101,
+      "descriptiveOnly": true
+    }
+  },
+  "rows": [
+    {
+      "seed": 1838088969,
+      "internal": 0.5,
+      "candidatePika": 0.5,
+      "controlPika": 0,
+      "pikaDifference": 0.5
+    },
+    {
+      "seed": 784357525,
+      "internal": 1,
+      "candidatePika": 0.5,
+      "controlPika": 0.5,
+      "pikaDifference": 0
+    },
+    {
+      "seed": 746932630,
+      "internal": 0.5,
+      "candidatePika": 0.5,
+      "controlPika": 0,
+      "pikaDifference": 0.5
+    },
+    {
+      "seed": 995994778,
+      "internal": 1,
+      "candidatePika": 0,
+      "controlPika": 0,
+      "pikaDifference": 0
+    },
+    {
+      "seed": 3604860322,
+      "internal": 1,
+      "candidatePika": 0,
+      "controlPika": 0,
+      "pikaDifference": 0
+    },
+    {
+      "seed": 3767366947,
+      "internal": 0.5,
+      "candidatePika": 0.5,
+      "controlPika": 0.5,
+      "pikaDifference": 0
+    },
+    {
+      "seed": 645075878,
+      "internal": 1,
+      "candidatePika": 0,
+      "controlPika": 0.5,
+      "pikaDifference": -0.5
+    },
+    {
+      "seed": 1062707238,
+      "internal": 0.5,
+      "candidatePika": 0,
+      "controlPika": 0.5,
+      "pikaDifference": -0.5
+    },
+    {
+      "seed": 708351534,
+      "internal": 0.5,
+      "candidatePika": 0,
+      "controlPika": 0.5,
+      "pikaDifference": -0.5
+    },
+    {
+      "seed": 3618837682,
+      "internal": 0.75,
+      "candidatePika": 0,
+      "controlPika": 0.5,
+      "pikaDifference": -0.5
+    },
+    {
+      "seed": 2094676019,
+      "internal": 0.5,
+      "candidatePika": 0,
+      "controlPika": 0.5,
+      "pikaDifference": -0.5
+    },
+    {
+      "seed": 1249459764,
+      "internal": 1,
+      "candidatePika": 0,
+      "controlPika": 0,
+      "pikaDifference": 0
+    },
+    {
+      "seed": 821880116,
+      "internal": 0.5,
+      "candidatePika": 0,
+      "controlPika": 0.5,
+      "pikaDifference": -0.5
+    },
+    {
+      "seed": 3048217084,
+      "internal": 1,
+      "candidatePika": 0,
+      "controlPika": 0,
+      "pikaDifference": 0
+    },
+    {
+      "seed": 2338294982,
+      "internal": 1,
+      "candidatePika": 0,
+      "controlPika": 0,
+      "pikaDifference": 0
+    },
+    {
+      "seed": 3780394700,
+      "internal": 0.5,
+      "candidatePika": 0,
+      "controlPika": 0,
+      "pikaDifference": 0
+    },
+    {
+      "seed": 338942415,
+      "internal": 0.5,
+      "candidatePika": 0.5,
+      "controlPika": 0.5,
+      "pikaDifference": 0
+    },
+    {
+      "seed": 3216981071,
+      "internal": 1,
+      "candidatePika": 0.5,
+      "controlPika": 0.5,
+      "pikaDifference": 0
+    },
+    {
+      "seed": 635449302,
+      "internal": 0.5,
+      "candidatePika": 0,
+      "controlPika": 0,
+      "pikaDifference": 0
+    },
+    {
+      "seed": 3710846302,
+      "internal": 1,
+      "candidatePika": 0.5,
+      "controlPika": 0,
+      "pikaDifference": 0.5
+    },
+    {
+      "seed": 963345630,
+      "internal": 0.5,
+      "candidatePika": 1,
+      "controlPika": 0.5,
+      "pikaDifference": 0.5
+    },
+    {
+      "seed": 2851876704,
+      "internal": 0.5,
+      "candidatePika": 0,
+      "controlPika": 0.5,
+      "pikaDifference": -0.5
+    },
+    {
+      "seed": 1884337775,
+      "internal": 1,
+      "candidatePika": 0,
+      "controlPika": 0,
+      "pikaDifference": 0
+    },
+    {
+      "seed": 463591676,
+      "internal": 0.5,
+      "candidatePika": 0.5,
+      "controlPika": 0,
+      "pikaDifference": 0.5
+    }
+  ],
+  "sufficientSample": true,
+  "statisticalGate": false,
+  "defaultEnable": false,
+  "requiresIndependentReplayAndRulePrivacyReview": true,
+  "note": "Failure to pass is insufficient evidence, not proof of no advantage. At 24 layouts the fixed bounds require internal mean >77.7% and Pika difference >50.4 percentage points. Bootstrap intervals are descriptive only; no early enable, no tuning."
+}

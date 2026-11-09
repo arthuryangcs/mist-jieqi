@@ -1,0 +1,402 @@
+{
+  "variants": [
+    {
+      "name": "snapshot",
+      "depth": 4,
+      "sourceSha256": "53547841d43e08bd7fc2e49b026e2ccad17d6140da3c4daaf86fa390ad04226a",
+      "headerSha256": "f2f4bd8fd5a3d6a468d0f604421a268cadebbb4962af6866702a7b7806876dc2",
+      "binarySha256": "01a091501e05d0b1bfb40bb27dcfc84d636c97fcd4945fea7813d9824bd622cc",
+      "baselineBinarySha256": "952b810695d985d4c927c03f250007e4af9b99b553eff32251cbaf53a058744a",
+      "geometricMeanMedianRatio": 1.1838919865479949,
+      "positions": [
+        {
+          "position": "初始全暗",
+          "baselineMedianMs": 1183.6645830000007,
+          "candidateMedianMs": 1002.6171054999991,
+          "speedRatio": 1.1805748939518783,
+          "nodes": 925834,
+          "replicatesPerArm": 6,
+          "baselineMs": {
+            "min": 1173.689285999999,
+            "median": 1183.6645830000007,
+            "max": 1234.0005800000008
+          },
+          "candidateMs": {
+            "min": 993.1394309999996,
+            "median": 1002.6171054999991,
+            "max": 1032.5610709999983
+          },
+          "adjacentPairRatios": {
+            "min": 1.1542812289501883,
+            "median": 1.176785869326328,
+            "max": 1.2425250085554214
+          },
+          "allPairsFaster": true
+        },
+        {
+          "position": "可达中局 2111 / 20步",
+          "baselineMedianMs": 443.1723779999993,
+          "candidateMedianMs": 375.9087220000001,
+          "speedRatio": 1.1789361407794074,
+          "nodes": 374495,
+          "replicatesPerArm": 6,
+          "baselineMs": {
+            "min": 436.9512270000014,
+            "median": 443.1723779999993,
+            "max": 446.68353800000114
+          },
+          "candidateMs": {
+            "min": 370.2100729999984,
+            "median": 375.9087220000001,
+            "max": 386.1383969999988
+          },
+          "adjacentPairRatios": {
+            "min": 1.1341095767795466,
+            "median": 1.175300460413601,
+            "max": 1.1937263684340698
+          },
+          "allPairsFaster": true
+        },
+        {
+          "position": "可达中局 2111 / 44步",
+          "baselineMedianMs": 552.0460005000004,
+          "candidateMedianMs": 471.7583345000003,
+          "speedRatio": 1.1701881241485521,
+          "nodes": 459645,
+          "replicatesPerArm": 6,
+          "baselineMs": {
+            "min": 545.0974690000003,
+            "median": 552.0460005000004,
+            "max": 555.5854299999992
+          },
+          "candidateMs": {
+            "min": 467.3524529999995,
+            "median": 471.7583345000003,
+            "max": 479.04204500000196
+          },
+          "adjacentPairRatios": {
+            "min": 1.1520490899707918,
+            "median": 1.1717642476802892,
+            "max": 1.177706478493213
+          },
+          "allPairsFaster": true
+        },
+        {
+          "position": "可达中局 2221 / 44步",
+          "baselineMedianMs": 783.4754060000014,
+          "candidateMedianMs": 667.297674999998,
+          "speedRatio": 1.1741018069634421,
+          "nodes": 555701,
+          "replicatesPerArm": 6,
+          "baselineMs": {
+            "min": 769.4254359999977,
+            "median": 783.4754060000014,
+            "max": 826.9899189999996
+          },
+          "candidateMs": {
+            "min": 655.670051000001,
+            "median": 667.297674999998,
+            "max": 747.1167819999973
+          },
+          "adjacentPairRatios": {
+            "min": 1.106908503361664,
+            "median": 1.1760239336173486,
+            "max": 1.1915022392796806
+          },
+          "allPairsFaster": true
+        },
+        {
+          "position": "全明10子残局",
+          "baselineMedianMs": 139.59648549999838,
+          "candidateMedianMs": 114.77818350000234,
+          "speedRatio": 1.2162283915217698,
+          "nodes": 36721,
+          "replicatesPerArm": 6,
+          "baselineMs": {
+            "min": 134.96158599999762,
+            "median": 139.59648549999838,
+            "max": 141.58617300000333
+          },
+          "candidateMs": {
+            "min": 113.28293999999732,
+            "median": 114.77818350000234,
+            "max": 115.86873900000501
+          },
+          "adjacentPairRatios": {
+            "min": 1.1647799670970078,
+            "median": 1.2147363250368528,
+            "max": 1.2498455018911645
+          },
+          "allPairsFaster": true
+        }
+      ],
+      "benchmarkSha256": "de58e91293d07ae75accbfe0fa02ea8cf4044570ebf28d9813c82383abe8eda7"
+    },
+    {
+      "name": "fma",
+      "depth": 4,
+      "sourceSha256": "3df6f9cfcbfb4875977e71fb059cffef961cd0367b38ddd07884e2c62a459352",
+      "headerSha256": "076d7138a7ac5b1984e531e53d3bda45a7849ba0be45728dc2718c4048c7a08b",
+      "binarySha256": "b8d9d63fc9a6f06bc027820d7975fedcc0fc12693d3ddbc7fbf73e0ed3d49341",
+      "baselineBinarySha256": "952b810695d985d4c927c03f250007e4af9b99b553eff32251cbaf53a058744a",
+      "geometricMeanMedianRatio": 1.2577043019066445,
+      "positions": [
+        {
+          "position": "初始全暗",
+          "baselineMedianMs": 1205.2947205,
+          "candidateMedianMs": 957.2054810000002,
+          "speedRatio": 1.259180755255203,
+          "nodes": 925834,
+          "replicatesPerArm": 6,
+          "baselineMs": {
+            "min": 1197.9872379999997,
+            "median": 1205.2947205,
+            "max": 1234.7942440000006
+          },
+          "candidateMs": {
+            "min": 952.9912790000008,
+            "median": 957.2054810000002,
+            "max": 995.439445
+          },
+          "adjacentPairRatios": {
+            "min": 1.2390906969569853,
+            "median": 1.2518340983128535,
+            "max": 1.268703018263134
+          },
+          "allPairsFaster": true
+        },
+        {
+          "position": "可达中局 2111 / 20步",
+          "baselineMedianMs": 469.03385549999985,
+          "candidateMedianMs": 375.382493000001,
+          "speedRatio": 1.2494824991745117,
+          "nodes": 374495,
+          "replicatesPerArm": 6,
+          "baselineMs": {
+            "min": 457.285695999999,
+            "median": 469.03385549999985,
+            "max": 475.51908999999796
+          },
+          "candidateMs": {
+            "min": 370.4297939999997,
+            "median": 375.382493000001,
+            "max": 379.71266399999877
+          },
+          "adjacentPairRatios": {
+            "min": 1.2344733156102432,
+            "median": 1.2413322750411904,
+            "max": 1.2632963544008688
+          },
+          "allPairsFaster": true
+        },
+        {
+          "position": "可达中局 2111 / 44步",
+          "baselineMedianMs": 576.6529704999994,
+          "candidateMedianMs": 464.2830395000001,
+          "speedRatio": 1.2420289380396357,
+          "nodes": 459645,
+          "replicatesPerArm": 6,
+          "baselineMs": {
+            "min": 563.5403379999989,
+            "median": 576.6529704999994,
+            "max": 589.5930159999989
+          },
+          "candidateMs": {
+            "min": 451.216124999999,
+            "median": 464.2830395000001,
+            "max": 483.6256319999993
+          },
+          "adjacentPairRatios": {
+            "min": 1.1662902804953081,
+            "median": 1.257997731592019,
+            "max": 1.2772547767686593
+          },
+          "allPairsFaster": true
+        },
+        {
+          "position": "可达中局 2221 / 44步",
+          "baselineMedianMs": 785.6773680000006,
+          "candidateMedianMs": 623.7631374999983,
+          "speedRatio": 1.2595764654335682,
+          "nodes": 555701,
+          "replicatesPerArm": 6,
+          "baselineMs": {
+            "min": 773.4096930000014,
+            "median": 785.6773680000006,
+            "max": 799.8789840000027
+          },
+          "candidateMs": {
+            "min": 620.631942,
+            "median": 623.7631374999983,
+            "max": 647.0784909999929
+          },
+          "adjacentPairRatios": {
+            "min": 1.2141408885124103,
+            "median": 1.256259325626576,
+            "max": 1.278226578082379
+          },
+          "allPairsFaster": true
+        },
+        {
+          "position": "全明10子残局",
+          "baselineMedianMs": 140.64769600000363,
+          "candidateMedianMs": 110.00549949999913,
+          "speedRatio": 1.2785514964186382,
+          "nodes": 36721,
+          "replicatesPerArm": 6,
+          "baselineMs": {
+            "min": 138.40000699999655,
+            "median": 140.64769600000363,
+            "max": 142.96792199999618
+          },
+          "candidateMs": {
+            "min": 107.28585700000258,
+            "median": 110.00549949999913,
+            "max": 117.38191399999778
+          },
+          "adjacentPairRatios": {
+            "min": 1.1865337022874143,
+            "median": 1.2786103733602052,
+            "max": 1.3289077715863784
+          },
+          "allPairsFaster": true
+        }
+      ],
+      "benchmarkSha256": "25721f7551ef8970fd1772da5e99722f1a863a53da77b47e6a435fd2c0e8f104"
+    },
+    {
+      "name": "integer",
+      "depth": 4,
+      "sourceSha256": "3df6f9cfcbfb4875977e71fb059cffef961cd0367b38ddd07884e2c62a459352",
+      "headerSha256": "4d1bab9ebd74e15e748fab7e373db74db5e10c0ac8a641f9cdcc1560a9c8b456",
+      "binarySha256": "3b48daf1aea49080d8d2eef9619f1cccb6d1e71bac827a4608c0addc598436cd",
+      "baselineBinarySha256": "952b810695d985d4c927c03f250007e4af9b99b553eff32251cbaf53a058744a",
+      "geometricMeanMedianRatio": 1.0082499442156423,
+      "positions": [
+        {
+          "position": "初始全暗",
+          "baselineMedianMs": 1229.4267519999994,
+          "candidateMedianMs": 1206.4663230000006,
+          "speedRatio": 1.0190311395869762,
+          "nodes": 925834,
+          "replicatesPerArm": 6,
+          "baselineMs": {
+            "min": 1173.412245,
+            "median": 1229.4267519999994,
+            "max": 1284.2592669999976
+          },
+          "candidateMs": {
+            "min": 1160.5864630000005,
+            "median": 1206.4663230000006,
+            "max": 1282.8375350000006
+          },
+          "adjacentPairRatios": {
+            "min": 0.9969373678357767,
+            "median": 1.0092967771482784,
+            "max": 1.0308821105221184
+          },
+          "allPairsFaster": false
+        },
+        {
+          "position": "可达中局 2111 / 20步",
+          "baselineMedianMs": 446.09043499999825,
+          "candidateMedianMs": 443.1427865000005,
+          "speedRatio": 1.0066516901319293,
+          "nodes": 374495,
+          "replicatesPerArm": 6,
+          "baselineMs": {
+            "min": 439.77079700000104,
+            "median": 446.09043499999825,
+            "max": 450.8694370000012
+          },
+          "candidateMs": {
+            "min": 434.08912599999894,
+            "median": 443.1427865000005,
+            "max": 451.4546990000017
+          },
+          "adjacentPairRatios": {
+            "min": 0.9987036085762383,
+            "median": 1.0058824887671078,
+            "max": 1.013088719941817
+          },
+          "allPairsFaster": false
+        },
+        {
+          "position": "可达中局 2111 / 44步",
+          "baselineMedianMs": 548.8331325000017,
+          "candidateMedianMs": 545.2501170000014,
+          "speedRatio": 1.0065713245871717,
+          "nodes": 459645,
+          "replicatesPerArm": 6,
+          "baselineMs": {
+            "min": 536.9058980000009,
+            "median": 548.8331325000017,
+            "max": 550.2419910000026
+          },
+          "candidateMs": {
+            "min": 531.692325,
+            "median": 545.2501170000014,
+            "max": 549.2954740000023
+          },
+          "adjacentPairRatios": {
+            "min": 0.9983747544950656,
+            "median": 1.008459529380045,
+            "max": 1.0190545601750893
+          },
+          "allPairsFaster": false
+        },
+        {
+          "position": "可达中局 2221 / 44步",
+          "baselineMedianMs": 791.5161355000018,
+          "candidateMedianMs": 791.0942189999987,
+          "speedRatio": 1.000533332806472,
+          "nodes": 555701,
+          "replicatesPerArm": 6,
+          "baselineMs": {
+            "min": 758.2253469999996,
+            "median": 791.5161355000018,
+            "max": 825.4679649999962
+          },
+          "candidateMs": {
+            "min": 771.4613880000034,
+            "median": 791.0942189999987,
+            "max": 813.118985000001
+          },
+          "adjacentPairRatios": {
+            "min": 0.9609803573588229,
+            "median": 0.9984559738301144,
+            "max": 1.0151871746051966
+          },
+          "allPairsFaster": false
+        },
+        {
+          "position": "全明10子残局",
+          "baselineMedianMs": 137.63577800000348,
+          "candidateMedianMs": 136.46871649999957,
+          "speedRatio": 1.008551861041383,
+          "nodes": 36721,
+          "replicatesPerArm": 6,
+          "baselineMs": {
+            "min": 133.45610000000306,
+            "median": 137.63577800000348,
+            "max": 139.7861469999989
+          },
+          "candidateMs": {
+            "min": 135.23514099999738,
+            "median": 136.46871649999957,
+            "max": 141.0326120000027
+          },
+          "adjacentPairRatios": {
+            "min": 0.9462782976748705,
+            "median": 1.0088822078579103,
+            "max": 1.0300540375079337
+          },
+          "allPairsFaster": false
+        }
+      ],
+      "benchmarkSha256": "60709f72982511749efd717581ae04743c274452bf6207163849936dd551ae01"
+    }
+  ],
+  "method": "Serial fixed-depth4 same-tree ABBA/BAAB, six measurements per arm per position. Pair range is descriptive variability, not a confidence interval. One machine, one corpus; no Elo/strength conclusion.",
+  "profileSummarySha256": "06713a03d8f6c72e91bd3961d845c73ba26a28738756be67c7325a9d4f17928c"
+}

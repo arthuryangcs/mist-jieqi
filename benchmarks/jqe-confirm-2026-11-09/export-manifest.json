@@ -1,0 +1,57 @@
+{
+  "files": {
+    "matches.json": {
+      "sha256": "9469cc8c63b2d2ecc75c6f63c3849fa59306f7196f8f309a8d798e683d8d9ec9",
+      "bytes": 2024128,
+      "byteIdenticalToCache": true
+    },
+    "replay.json": {
+      "sha256": "fb44f77813851ed1aba2f6671e9450fcc54b3d1d215a23db02a0a9169f66a031",
+      "bytes": 427,
+      "byteIdenticalToCache": true
+    },
+    "audit.json": {
+      "sha256": "cda853a517f4195c79f00c942ec248b5599739aa40fc6edda2cce4a6f131cee5",
+      "bytes": 923649,
+      "byteIdenticalToCache": true
+    },
+    "analysis.json": {
+      "sha256": "5185b543311faa49aae7c014c186d4654e05654fed2f83f238a187377185b261",
+      "bytes": 2175,
+      "byteIdenticalToCache": true
+    }
+  },
+  "planSha256": "de8c0bc68d027a3efd28ac81e9d01ce064edb28e50483585989be96166ee2167",
+  "createdAt": "2026-11-09T13:44:17.973Z",
+  "completedAt": "2026-11-09T14:58:04.677Z",
+  "durationHours": 1.22964,
+  "layouts": 16,
+  "games": 32,
+  "plies": 2233,
+  "summary": {
+    "internal": {
+      "finished": 32,
+      "wins": 16,
+      "draws": 0,
+      "losses": 13,
+      "technicalFailures": 0,
+      "cleanupFailures": 0,
+      "unresolved": 3,
+      "scoreRate": null,
+      "normal": {
+        "wins": 16,
+        "draws": 0,
+        "losses": 13
+      }
+    }
+  },
+  "auditCategories": {
+    "long-check": 13,
+    "normal-decisive": 16,
+    "unresolved-repetition": 3
+  },
+  "technicalFailures": 0,
+  "cleanupFailures": 0,
+  "defaultEnable": false,
+  "exportSourceSha256": "70dd6ea43e49d4cea9413aef7d426ad6ff2cc93ab92dc1329216a3c72fd9ee43"
+}

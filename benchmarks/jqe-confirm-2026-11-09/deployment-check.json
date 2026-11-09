@@ -1,0 +1,43 @@
+{
+  "date": "2026-11-09",
+  "purpose": "Validate the optional baseline JQE launcher; not evidence of playing-strength superiority",
+  "default": "HCE",
+  "defaultChanged": false,
+  "confirmationGatePassed": false,
+  "command": "MIST_JQE_TEST_FRESH=1 node --test native/jqe-default-check.mjs",
+  "exitCode": 0,
+  "tests": 4,
+  "passed": 4,
+  "failed": 0,
+  "skipped": 0,
+  "durationMs": 8314.246371,
+  "checks": [
+    "Pinned source/model/header/transport identity and fail-closed corruption checks",
+    "Mocked fresh-cache build, local-platform binary identity, compile failure, partial cache and portable flags",
+    "Ordinary UI bytes, HTTP boundaries, JQE provenance and legal timed search under ambient setting overrides",
+    "Fresh disposable checkout: baseline compilation, verified local manifest, ephemeral HTTP startup and ordinary UI"
+  ],
+  "sourceHashes": {
+    "native/jqe-server.mjs": "1d6f8df8f709397e4017e45d3db281e3fd8ff9dfb09deb9697727b992ab2f8e4",
+    "native/jqe-default-check.mjs": "ee328edc77d2f10868839d984d77b1c82a20863b7d5b575cc18d5bf2a52e5c85",
+    "docs/jqe-default.md": "2aa18531a08fac264a60ef5386718f6a0ad9e5c815ac3c6759e33e190172b312",
+    "generatedCandidateSource": "3df6f9cfcbfb4875977e71fb059cffef961cd0367b38ddd07884e2c62a459352",
+    "neuralHeader": "b7363b9f1930636819bf6a69723e8bb6cd645728eaabfced30bf29d3962d5378",
+    "model": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160"
+  },
+  "priorAttempts": {
+    "readOnlySandboxAttempts": 2,
+    "result": "Three tests passed; fresh-copy directory creation was blocked by filesystem permissions. Full suite subsequently passed with authorized write access."
+  },
+  "cleanup": {
+    "testProcessExited": true,
+    "remainingMatchingTestOrCandidateProcesses": 0,
+    "remainingDisposableDirectories": 0,
+    "listenersUsed": "ephemeral ports only",
+    "existingPort8766Changed": false
+  },
+  "limitations": [
+    "Fresh compilation tested on the current platform; Linux execution was not tested.",
+    "Deployment success does not override the failed confirmation gate; npm start remains HCE."
+  ]
+}

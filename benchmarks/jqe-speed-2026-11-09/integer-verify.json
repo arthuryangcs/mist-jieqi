@@ -1,0 +1,188 @@
+{
+  "passed": true,
+  "baseline": {
+    "name": "baseline",
+    "sanitize": false,
+    "binary": "<repo>/benchmarks/jqe-speed-2026-11-09/baseline/candidate",
+    "sourceSha256": "3df6f9cfcbfb4875977e71fb059cffef961cd0367b38ddd07884e2c62a459352",
+    "headerSha256": "b7363b9f1930636819bf6a69723e8bb6cd645728eaabfced30bf29d3962d5378",
+    "binarySha256": "952b810695d985d4c927c03f250007e4af9b99b553eff32251cbaf53a058744a",
+    "frozenBinarySha256": "952b810695d985d4c927c03f250007e4af9b99b553eff32251cbaf53a058744a",
+    "modelSha256": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160",
+    "compiler": "clang++",
+    "compilerVersion": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix",
+    "flags": [
+      "-std=c++17",
+      "-ffp-contract=off",
+      "-O3",
+      "-DNDEBUG",
+      "-isystem",
+      "<system-c++-include>"
+    ],
+    "warnings": ""
+  },
+  "candidate": {
+    "name": "integer",
+    "sanitize": false,
+    "binary": "<repo>/benchmarks/jqe-speed-2026-11-09/integer/candidate",
+    "sourceSha256": "3df6f9cfcbfb4875977e71fb059cffef961cd0367b38ddd07884e2c62a459352",
+    "headerSha256": "4d1bab9ebd74e15e748fab7e373db74db5e10c0ac8a641f9cdcc1560a9c8b456",
+    "binarySha256": "3b48daf1aea49080d8d2eef9619f1cccb6d1e71bac827a4608c0addc598436cd",
+    "frozenBinarySha256": "952b810695d985d4c927c03f250007e4af9b99b553eff32251cbaf53a058744a",
+    "modelSha256": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160",
+    "compiler": "clang++",
+    "compilerVersion": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix",
+    "flags": [
+      "-std=c++17",
+      "-ffp-contract=off",
+      "-O3",
+      "-DNDEBUG",
+      "-isystem",
+      "<system-c++-include>"
+    ],
+    "warnings": ""
+  },
+  "rows": [
+    {
+      "position": "初始全暗",
+      "quant": true,
+      "sanitize": false,
+      "nodes": 29024,
+      "transitions": 44
+    },
+    {
+      "position": "可达中局 2111 / 20步",
+      "quant": true,
+      "sanitize": false,
+      "nodes": 8714,
+      "transitions": 25
+    },
+    {
+      "position": "可达中局 2111 / 44步",
+      "quant": true,
+      "sanitize": false,
+      "nodes": 17610,
+      "transitions": 23
+    },
+    {
+      "position": "可达中局 2221 / 44步",
+      "quant": true,
+      "sanitize": false,
+      "nodes": 30882,
+      "transitions": 31
+    },
+    {
+      "position": "全明10子残局",
+      "quant": true,
+      "sanitize": false,
+      "nodes": 1554,
+      "transitions": 30
+    },
+    {
+      "position": "初始全暗",
+      "quant": true,
+      "sanitize": true,
+      "nodes": 29024,
+      "transitions": 44
+    },
+    {
+      "position": "可达中局 2111 / 20步",
+      "quant": true,
+      "sanitize": true,
+      "nodes": 8714,
+      "transitions": 25
+    },
+    {
+      "position": "可达中局 2111 / 44步",
+      "quant": true,
+      "sanitize": true,
+      "nodes": 17610,
+      "transitions": 23
+    },
+    {
+      "position": "可达中局 2221 / 44步",
+      "quant": true,
+      "sanitize": true,
+      "nodes": 30882,
+      "transitions": 31
+    },
+    {
+      "position": "全明10子残局",
+      "quant": true,
+      "sanitize": true,
+      "nodes": 1554,
+      "transitions": 30
+    },
+    {
+      "position": "初始全暗",
+      "quant": false,
+      "sanitize": false,
+      "nodes": 29105,
+      "transitions": 44
+    },
+    {
+      "position": "可达中局 2111 / 20步",
+      "quant": false,
+      "sanitize": false,
+      "nodes": 8721,
+      "transitions": 25
+    },
+    {
+      "position": "可达中局 2111 / 44步",
+      "quant": false,
+      "sanitize": false,
+      "nodes": 17652,
+      "transitions": 23
+    },
+    {
+      "position": "可达中局 2221 / 44步",
+      "quant": false,
+      "sanitize": false,
+      "nodes": 31139,
+      "transitions": 31
+    },
+    {
+      "position": "全明10子残局",
+      "quant": false,
+      "sanitize": false,
+      "nodes": 1546,
+      "transitions": 30
+    },
+    {
+      "position": "初始全暗",
+      "quant": false,
+      "sanitize": true,
+      "nodes": 29105,
+      "transitions": 44
+    },
+    {
+      "position": "可达中局 2111 / 20步",
+      "quant": false,
+      "sanitize": true,
+      "nodes": 8721,
+      "transitions": 25
+    },
+    {
+      "position": "可达中局 2111 / 44步",
+      "quant": false,
+      "sanitize": true,
+      "nodes": 17652,
+      "transitions": 23
+    },
+    {
+      "position": "可达中局 2221 / 44步",
+      "quant": false,
+      "sanitize": true,
+      "nodes": 31139,
+      "transitions": 31
+    },
+    {
+      "position": "全明10子残局",
+      "quant": false,
+      "sanitize": true,
+      "nodes": 1546,
+      "transitions": 30
+    }
+  ],
+  "limits": "it014 only; supported alternate dimensions and king bucket models require additional fixtures. Not a replacement for upstream oracle/rule suites."
+}

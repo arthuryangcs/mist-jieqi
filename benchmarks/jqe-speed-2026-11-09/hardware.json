@@ -1,0 +1,7 @@
+{
+  "architecture": "x86_64",
+  "verification": "sysctl -n machdep.cpu.features machdep.cpu.leaf7_features returned FMA, AVX1.0, AVX2, XSAVE and OSXSAVE",
+  "fmaVariant": "correction function only: __attribute__((target(\"fma\")))",
+  "compilerPolicy": "-ffp-contract=off retained, no fast-math",
+  "portability": "FMA variant is an isolated experiment for this verified CPU, not a portable default binary"
+}

@@ -1,0 +1,217 @@
+{
+  "passed": true,
+  "variants": [
+    {
+      "name": "snapshot",
+      "records": {
+        "focused": {
+          "file": "benchmarks/jqe-speed-2026-11-09/snapshot-verify.json",
+          "sha256": "1a7b37d39e0cfb7241c54a09ce71c2de8053c5c80fe80c7d78fc6620fb850bf2",
+          "cases": 20
+        },
+        "rules": {
+          "file": "benchmarks/jqe-speed-2026-11-09/suites/snapshot/rules.json",
+          "sha256": "739b7a1250407b620749dd1756c1e5767acca668c4591883951ee121770f50d5",
+          "cases": 414,
+          "transitions": 11874
+        },
+        "sanitizedRules": {
+          "file": "benchmarks/jqe-speed-2026-11-09/suites/snapshot/rules-sanitized.json",
+          "sha256": "3ec665ed97eaa048a9fb0d6a96be37866fa1bef7669a7da0d66beaf0c6449a9e",
+          "cases": 414,
+          "transitions": 11874
+        },
+        "thread": {
+          "file": "benchmarks/jqe-speed-2026-11-09/suites/snapshot/thread-check.json",
+          "sha256": "d31519f288223d11165392588dfbb2f97fef99c2d9154df8a823ce4e2012f243",
+          "positions": 5,
+          "stackProbe": {
+            "passed": true,
+            "recursivePushPopLevels": 127,
+            "safetyCutoffs": 1,
+            "parallelInferenceWorkers": 8,
+            "parallelInferenceCalls": 16000,
+            "stateBytes": 12448,
+            "scope": "Real pushInto/pop recursive harness, actual terminal safety guard, ASan/UBSan, async worker. Not full deep tree search or ThreadSanitizer."
+          },
+          "timeouts": [
+            {
+              "budgetMs": 0,
+              "depth": 0,
+              "interruptedDepth": 1,
+              "nodes": 0,
+              "candidates": 0
+            },
+            {
+              "budgetMs": 5,
+              "depth": 0,
+              "interruptedDepth": 1,
+              "nodes": 0,
+              "candidates": 0
+            },
+            {
+              "budgetMs": 25,
+              "depth": 0,
+              "interruptedDepth": 1,
+              "nodes": 435,
+              "candidates": 0
+            },
+            {
+              "budgetMs": 100,
+              "depth": 1,
+              "interruptedDepth": 2,
+              "nodes": 3196,
+              "candidates": 44
+            }
+          ]
+        },
+        "benchmark": {
+          "file": "benchmarks/jqe-speed-2026-11-09/snapshot-bench.json",
+          "sha256": "de58e91293d07ae75accbfe0fa02ea8cf4044570ebf28d9813c82383abe8eda7"
+        }
+      }
+    },
+    {
+      "name": "fma",
+      "records": {
+        "focused": {
+          "file": "benchmarks/jqe-speed-2026-11-09/fma-verify.json",
+          "sha256": "0dfcdbf6762cb268a19960e8ef3aa904e986e901b034becedd271dda668b75ab",
+          "cases": 20
+        },
+        "rules": {
+          "file": "benchmarks/jqe-speed-2026-11-09/suites/fma/rules.json",
+          "sha256": "37cf9a11ccb7a4bcd00480c25e7b4f6a8b302d9b874cd764bae831647cd0dbcc",
+          "cases": 414,
+          "transitions": 11874
+        },
+        "sanitizedRules": {
+          "file": "benchmarks/jqe-speed-2026-11-09/suites/fma/rules-sanitized.json",
+          "sha256": "1f2f02716d20c1cfc99f1703d6598de45575c74a21ade6c82cc545ee43cc90d7",
+          "cases": 414,
+          "transitions": 11874
+        },
+        "thread": {
+          "file": "benchmarks/jqe-speed-2026-11-09/suites/fma/thread-check.json",
+          "sha256": "b9f5f02f812eced3a7d449948f6206043905b5f6344b41cab10765a6f9868b47",
+          "positions": 5,
+          "stackProbe": {
+            "passed": true,
+            "recursivePushPopLevels": 127,
+            "safetyCutoffs": 1,
+            "parallelInferenceWorkers": 8,
+            "parallelInferenceCalls": 16000,
+            "stateBytes": 12448,
+            "scope": "Real pushInto/pop recursive harness, actual terminal safety guard, ASan/UBSan, async worker. Not full deep tree search or ThreadSanitizer."
+          },
+          "timeouts": [
+            {
+              "budgetMs": 0,
+              "depth": 0,
+              "interruptedDepth": 1,
+              "nodes": 0,
+              "candidates": 0
+            },
+            {
+              "budgetMs": 5,
+              "depth": 0,
+              "interruptedDepth": 1,
+              "nodes": 0,
+              "candidates": 0
+            },
+            {
+              "budgetMs": 25,
+              "depth": 0,
+              "interruptedDepth": 1,
+              "nodes": 443,
+              "candidates": 0
+            },
+            {
+              "budgetMs": 100,
+              "depth": 1,
+              "interruptedDepth": 2,
+              "nodes": 3240,
+              "candidates": 44
+            }
+          ]
+        },
+        "benchmark": {
+          "file": "benchmarks/jqe-speed-2026-11-09/fma-bench.json",
+          "sha256": "25721f7551ef8970fd1772da5e99722f1a863a53da77b47e6a435fd2c0e8f104"
+        }
+      }
+    },
+    {
+      "name": "integer",
+      "records": {
+        "focused": {
+          "file": "benchmarks/jqe-speed-2026-11-09/integer-verify.json",
+          "sha256": "f13026d41f5032ae98291ed75322259f60847b8cbfbcd201da2736cb4591ac71",
+          "cases": 20
+        },
+        "rules": {
+          "file": "benchmarks/jqe-speed-2026-11-09/suites/integer/rules.json",
+          "sha256": "5b3dba19668c693b70a67d39023f550ea191a27a6674b2f681178dca59ff5485",
+          "cases": 414,
+          "transitions": 11874
+        },
+        "sanitizedRules": {
+          "file": "benchmarks/jqe-speed-2026-11-09/suites/integer/rules-sanitized.json",
+          "sha256": "348de16ecd000abc5c8534ee8c33808b239b59970c3a006fd2672272edf10abd",
+          "cases": 414,
+          "transitions": 11874
+        },
+        "thread": {
+          "file": "benchmarks/jqe-speed-2026-11-09/suites/integer/thread-check.json",
+          "sha256": "716709423e2a6bcc8595c770afa7e8d58a48d1d640bf645c6e9dfa3cc17babca",
+          "positions": 5,
+          "stackProbe": {
+            "passed": true,
+            "recursivePushPopLevels": 127,
+            "safetyCutoffs": 1,
+            "parallelInferenceWorkers": 8,
+            "parallelInferenceCalls": 16000,
+            "stateBytes": 12448,
+            "scope": "Real pushInto/pop recursive harness, actual terminal safety guard, ASan/UBSan, async worker. Not full deep tree search or ThreadSanitizer."
+          },
+          "timeouts": [
+            {
+              "budgetMs": 0,
+              "depth": 0,
+              "interruptedDepth": 1,
+              "nodes": 0,
+              "candidates": 0
+            },
+            {
+              "budgetMs": 5,
+              "depth": 0,
+              "interruptedDepth": 1,
+              "nodes": 0,
+              "candidates": 0
+            },
+            {
+              "budgetMs": 25,
+              "depth": 0,
+              "interruptedDepth": 1,
+              "nodes": 468,
+              "candidates": 0
+            },
+            {
+              "budgetMs": 100,
+              "depth": 1,
+              "interruptedDepth": 2,
+              "nodes": 3376,
+              "candidates": 44
+            }
+          ]
+        },
+        "benchmark": {
+          "file": "benchmarks/jqe-speed-2026-11-09/integer-bench.json",
+          "sha256": "60709f72982511749efd717581ae04743c274452bf6207163849936dd551ae01"
+        }
+      }
+    }
+  ],
+  "frozenBinarySha256": "952b810695d985d4c927c03f250007e4af9b99b553eff32251cbaf53a058744a",
+  "limits": "it014 and recorded corpus only; no alternate-dimension/bucket fixture expansion, no independent new upstream oracle run, no TSan, no strength or deployment claim. Integer speed within noise; snapshot and FMA remain independent."
+}

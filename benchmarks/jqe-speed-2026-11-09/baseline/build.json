@@ -1,0 +1,21 @@
+{
+  "name": "baseline",
+  "sanitize": false,
+  "binary": "<repo>/benchmarks/jqe-speed-2026-11-09/baseline/candidate",
+  "sourceSha256": "3df6f9cfcbfb4875977e71fb059cffef961cd0367b38ddd07884e2c62a459352",
+  "headerSha256": "b7363b9f1930636819bf6a69723e8bb6cd645728eaabfced30bf29d3962d5378",
+  "binarySha256": "952b810695d985d4c927c03f250007e4af9b99b553eff32251cbaf53a058744a",
+  "frozenBinarySha256": "952b810695d985d4c927c03f250007e4af9b99b553eff32251cbaf53a058744a",
+  "modelSha256": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160",
+  "compiler": "clang++",
+  "compilerVersion": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix",
+  "flags": [
+    "-std=c++17",
+    "-ffp-contract=off",
+    "-O3",
+    "-DNDEBUG",
+    "-isystem",
+    "<system-c++-include>"
+  ],
+  "warnings": ""
+}
