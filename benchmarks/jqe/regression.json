@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "stableSourceSha256": "3fa98d62f3c1636b831680fcd5dcbf88f9339e966ed1b8e2f8a170b83afcbfb0",
+  "commands": [
+    {
+      "command": "npm test -- --test-concurrency=1",
+      "passed": true,
+      "tests": 171,
+      "logSha256": "c3b0fdd431d24da23079e782092a58b7b77968674017681ce830f8839898c6d0"
+    },
+    {
+      "command": "JIEQI_NATIVE_CHECK_OUTPUT=.cache/jqe/native-regression.json node native/check.mjs",
+      "passed": true,
+      "ruleCases": 72,
+      "transitions": 2172,
+      "searchCases": 16,
+      "logSha256": "e641168db1f51c68814ef66b0a7756b03c7f5221377f03dab06affcd47471649"
+    },
+    {
+      "command": "node --test native/service-check.mjs",
+      "passed": true,
+      "tests": 8,
+      "logSha256": "9e371a7f00d27f9e15c71d6985757050c36b7acac5eaa6331b37dbf4e5f7fd72"
+    }
+  ],
+  "note": "Logs kept local; no credentials or local machine identifiers published."
+}

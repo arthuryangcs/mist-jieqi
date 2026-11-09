@@ -1,0 +1,61 @@
+{
+  "passed": true,
+  "matchesSha256": "277948086fa028138e99f2e6e0584a3c0acf9fb2f744d8c4f10ce822549ea8d8",
+  "postMatchAnalysis": true,
+  "rows": [
+    {
+      "index": 1,
+      "group": "candidatePika",
+      "winner": "r",
+      "candidateSide": "r",
+      "reason": "黑方重复局面判负",
+      "legalMoves": [
+        {
+          "from": 13,
+          "to": 4,
+          "count": 2,
+          "loss": true,
+          "draw": false
+        }
+      ],
+      "forcedRepetition": true
+    },
+    {
+      "index": 4,
+      "group": "candidatePika",
+      "winner": "b",
+      "candidateSide": "b",
+      "reason": "红方重复局面判负",
+      "legalMoves": [
+        {
+          "from": 76,
+          "to": 85,
+          "count": 2,
+          "loss": true,
+          "draw": false
+        }
+      ],
+      "forcedRepetition": true
+    },
+    {
+      "index": 8,
+      "group": "internal",
+      "winner": "r",
+      "candidateSide": "r",
+      "reason": "黑方重复局面判负",
+      "legalMoves": [
+        {
+          "from": 13,
+          "to": 4,
+          "count": 2,
+          "loss": true,
+          "draw": false
+        }
+      ],
+      "forcedRepetition": true
+    }
+  ],
+  "candidateWins": 3,
+  "candidateRepetitionWins": 3,
+  "note": "Valid outcomes under the frozen Mist referee; not equivalent to mate wins or superiority under a different repetition rule."
+}

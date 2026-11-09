@@ -1,0 +1,14 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {build} from './build.mjs';
+import {previewModule,writePreview,previewRoot,modelFile} from './web.mjs';
+const port=Number(process.env.PORT||8771);
+if(!Number.isInteger(port)||port<1024||port>65535||port===8766)throw Error('Use a separate local port (default 8771); 8766 is reserved for stable');
+if(!fs.existsSync(modelFile))throw Error('JQE model missing: '+modelFile);
+const built=build({trial:true}),mod=await previewModule();
+const service=mod.createLocalServer({executable:built.binary,buildInfo:mod.probeBuild(built),staticRoot:writePreview()});
+Object.assign(service.info,{experiment:'jqe-evaluator',experimental:true,defaultEnabled:false,evaluation:'jqe',quantized:mod.quantized});
+await service.listen(port);
+fs.writeFileSync(path.join(previewRoot,'../preview-runtime.json'),JSON.stringify({pid:process.pid,url:`http://127.0.0.1:${port}/`,binarySha256:built.binarySha256,sourceSha256:built.sourceSha256,modelFile,quantized:mod.quantized})+'\n');
+console.log(`JQE 评估网络实验：http://127.0.0.1:${port}/\n尚未默认启用；稳定服务不变。Ctrl+C 停止。`);
+for(const signal of ['SIGINT','SIGTERM'])process.once(signal,async()=>{await service.close();process.exit(0);});

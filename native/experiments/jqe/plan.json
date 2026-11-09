@@ -1,0 +1,28 @@
+{
+  "experiment": "jqe-it014-evaluator-v1",
+  "defaultPromotion": false,
+  "upstreamCommit": "331a6e612a038c4a04cf980f7b9482910fd50078",
+  "modelSha256": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160",
+  "mode": "portable-quantized",
+  "scoreScale": "600/430 (Mist aggregation K / published it014 training K), no tuning",
+  "control": "Frozen current Mist search/HCE, normalized 64MiB TT arena",
+  "matches": {
+    "seeds": [
+      2026110941,
+      2026110953
+    ],
+    "internalGames": 4,
+    "candidatePikaGames": 4,
+    "controlPikaGames": 4,
+    "totalGames": 12,
+    "budgetMs": 2000,
+    "graceMs": 60,
+    "maxPlies": 400,
+    "samples": 8,
+    "brightSamples": 1,
+    "maxThreads": 4,
+    "hostReserveMs": 40,
+    "ttBudgetBytes": 67108864,
+    "stopRule": "Complete frozen pairs; no outcome-based replacement or tuning"
+  }
+}

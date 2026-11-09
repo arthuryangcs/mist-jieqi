@@ -208,3 +208,31 @@ jobs:
           node native/experiments/buffered-sort/sort-probe.mjs --sanitize
           node native/experiments/buffered-sort/check.mjs --sanitize
           node native/experiments/buffered-sort/rules.mjs --sanitize
+  jqe-evaluator:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: devinokeefe/jieqi
+          ref: 331a6e612a038c4a04cf980f7b9482910fd50078
+          path: external/jqe
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '24'
+      - name: Pinned network, upstream inference, privacy and undo
+        run: |
+          node --test native/experiments/jqe/source.test.mjs
+          node native/experiments/jqe/check.mjs
+          node native/experiments/jqe/rules.mjs
+      - name: Memory safety and deterministic multiworld inference
+        run: |
+          node native/experiments/jqe/check.mjs --sanitize
+          node native/experiments/jqe/rules.mjs --sanitize
+          node native/experiments/jqe/thread-check.mjs
+      - name: Opt-in HTTP boundaries and cancellation
+        run: node --test native/experiments/jqe/service-check.mjs

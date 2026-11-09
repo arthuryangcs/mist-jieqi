@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "sourceSha256": "4c9e60c63f29f73236ef2261cd28aa18e3f7c03a694d02e44158a3d96d10f707",
+  "headerSha256": "b7363b9f1930636819bf6a69723e8bb6cd645728eaabfced30bf29d3962d5378",
+  "binarySha256": "3e7847c67aea5a1e26a46d6c619a63817eea84daf8153bb0ef654c54a4f5dfe2",
+  "modelSha256": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160",
+  "serviceSourceSha256": "5c2ceb13050c86f7812d820d7123cbe2cf507db5d0dca6fdca6f3797d86d8dcc",
+  "previewSourceSha256": "0beb32ee41d67eb53473eadec0cef47931ab465a074c9610a43f1d240538f291",
+  "testSourceSha256": "ab4bccdeffe76f3d6b470ec4f7a6cc046024590e12fa9fae954db04ff64929c8",
+  "tests": [
+    {
+      "name": "isolation-and-information-boundaries",
+      "passed": true
+    },
+    {
+      "name": "bounded-streaming-and-legal-move",
+      "passed": true
+    },
+    {
+      "name": "cancellation-and-child-cleanup",
+      "passed": true
+    }
+  ],
+  "streaming": {
+    "elapsedMs": 562.485596,
+    "depth": 3,
+    "engineVerified": true,
+    "fallbackUsed": false
+  }
+}

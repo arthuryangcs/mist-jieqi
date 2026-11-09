@@ -1,0 +1,97 @@
+{
+  "passed": true,
+  "sanitize": false,
+  "modelSha256": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160",
+  "build": {
+    "trial": true,
+    "sanitize": false,
+    "stableSourceSha256": "3fa98d62f3c1636b831680fcd5dcbf88f9339e966ed1b8e2f8a170b83afcbfb0",
+    "sourceSha256": "4c9e60c63f29f73236ef2261cd28aa18e3f7c03a694d02e44158a3d96d10f707",
+    "binarySha256": "3e7847c67aea5a1e26a46d6c619a63817eea84daf8153bb0ef654c54a4f5dfe2",
+    "headerSha256": "b7363b9f1930636819bf6a69723e8bb6cd645728eaabfced30bf29d3962d5378",
+    "modelSha256": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160",
+    "upstreamCommit": "331a6e612a038c4a04cf980f7b9482910fd50078",
+    "compiler": "clang++",
+    "compilerVersion": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix",
+    "flags": [
+      "-std=c++17",
+      "-ffp-contract=off",
+      "-O3",
+      "-DNDEBUG",
+      "-isystem",
+      "<system-c++-include>"
+    ],
+    "warnings": ""
+  },
+  "testSourceHashes": {
+    "check.mjs": "cb8e824d9ecc4805de14e4280e8f2097ebd64c8f3bfda3bd0ddb1f09fbeee10e",
+    "reference.mjs": "49f10a2a373e093867ec9c1addad79b22237f2f192061d50f73facac09f2cfa4",
+    "reference.cpp": "0bab862bbaa5d6a451ccfa07973b16801df60364e25c158237f570e109ec1359"
+  },
+  "reference": {
+    "binary": "<project>/.cache/jqe/reference",
+    "upstreamCommit": "331a6e612a038c4a04cf980f7b9482910fd50078",
+    "sourceHashes": {
+      "nnue.cpp": "b57999acaeb921fdc97f9efe571a676faf995dcad542eaef340bbe07c886f845",
+      "nnue.h": "ee01e6036a4829b01e229f4730d24043cc1106df68cf7f4e932831d501986761",
+      "position.h": "042c78925fe7aa33ddb28155683d5225ea4049eb081081d1f9f6fa3270a04d96",
+      "types.h": "bef3ef3e9c2db8949510d476cd835d302a87f434fdbc3ad8ebdbabed80d15132",
+      "tables.h": "4d7130f29cf79e2157c00635d8fa44bc8a8b752992e18b091416a97a0fa2251e",
+      "mem.h": "a5e3eaecc582c37d57fee5a23694c0bd66c1e4b0f9cc5a7a8a5aa3fcb924536d"
+    },
+    "compiler": "clang++",
+    "flags": [
+      "-std=c++17",
+      "-ffp-contract=off",
+      "-mavx2",
+      "-mfma",
+      "-O2",
+      "-I<project>/external/jqe/engine/src",
+      "-isystem",
+      "<SDK>/usr/include/c++/v1"
+    ],
+    "warnings": ""
+  },
+  "views": 72,
+  "transitions": 2448,
+  "reveals": 1416,
+  "privateCaptures": 28,
+  "unseenCaptures": 56,
+  "privacyChecks": 3,
+  "malformedChecks": 5,
+  "maxAccumulatorError": 0.000002175569534301758,
+  "maxUpstreamAccumulatorError": 0,
+  "maxScoreDifference": 0,
+  "searches": [
+    {
+      "name": "初始全暗",
+      "depth": 2,
+      "nodes": 29024,
+      "nodesEqual": true,
+      "candidates": 44,
+      "maxDifference": 0
+    },
+    {
+      "name": "可达中局 2111 / 20步",
+      "depth": 2,
+      "nodes": 8714,
+      "nodesEqual": true,
+      "candidates": 25,
+      "maxDifference": 0
+    },
+    {
+      "name": "可达中局 2111 / 44步",
+      "depth": 2,
+      "nodes": 17610,
+      "nodesEqual": true,
+      "candidates": 23,
+      "maxDifference": 0
+    }
+  ],
+  "tolerances": {
+    "floatAccumulator": 0.0001,
+    "score": 1,
+    "quantizedAccumulator": 0
+  },
+  "note": "Unchanged upstream nnue.cpp AVX2/FMA oracle; scalar port scores allowed one integer unit for floating-point reduction/rounding. Quantized accumulators must match exactly. Upstream rules/search are not linked."
+}

@@ -153,3 +153,7 @@ node scripts/benchmark.js
 ## 项目沿革与许可
 
 当前版本以独立的本地浏览器程序替换旧版 C++/Electron 实现；本轮新 C++ 搜索由独立源码实现，通过本机服务接入浏览器，不依赖 Electron。提交历史从当前浏览器版本的全新初始提交开始，之后正常记录维护变更；旧版提交已移除。沿用仓库既有 [GPLv3 许可证](LICENSE)，第三方来源与未分发组件见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)，替换记录见 [PROJECT_HISTORY.md](PROJECT_HISTORY.md)。
+
+## 可选 JQE 网络评估实验
+
+[接入与验证报告](docs/experiments/jqe.md)记录固定 MIT 网络 it014 的来源、逐局面原始推理对照、私有暗吃库存、量化/撤销/多线程检查与2秒换色对赛。仅替换隔离实验的评估，默认 HCE 与网页不变，试玩服务默认关闭；不能把上游战绩当成本项目成绩。 2秒/步新布局换色筛选：候选对稳定版1胜3负，对固定Pika2胜2负，同批稳定版对Pika1胜3负；技术失败0。候选胜局均来自本项目重复判负规则，未达到默认启用门槛。

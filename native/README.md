@@ -86,3 +86,7 @@ node native/window-benchmark.mjs parallel-budgets
 本机服务仅提供前端必需文件，不暴露仓库、构建目录、测试材料或任意文件读取；拒绝异源Origin及非loopback Host，不提供CORS接口。本轮没有浏览器WASM测量。
 
 本轮重复规则回归：`node native/repetition-check.mjs`，可用 `JIEQI_NATIVE_SANITIZE=1` 执行 ASan/UBSan 版。同一公开盘面与行棋方第三次出现时，造成重复的落子方判负；不推断长将或长捉责任。JS/C++ 根候选均对直接重复判负返回必负评分和 `repetitionLoss` 标记；内部路径循环仍为提前截断近似。历史冻结实验的构建与对赛报告保留原规则，未据此重跑棋力对赛。
+
+## 可选 JQE 网络评估实验
+
+[接入与验证报告](../docs/experiments/jqe.md)记录固定 MIT 网络 it014 的来源、逐局面原始推理对照、私有暗吃库存、量化/撤销/多线程检查与2秒换色对赛。仅替换隔离实验的评估，默认 HCE 与网页不变，试玩服务默认关闭；不能把上游战绩当成本项目成绩。

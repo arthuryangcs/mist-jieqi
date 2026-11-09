@@ -1,6 +1,6 @@
 # 第三方来源与仓库范围
 
-网页运行源码为本项目的独立 JavaScript、HTML、CSS 和 SVG 实现，没有复制外部棋类引擎源码，也没有打包第三方运行库、字体、图片或模型权重。规则和研究参考见 README 与优化报告中的原始链接。
+默认网页运行源码为本项目的独立 JavaScript、HTML、CSS 和 SVG 实现，没有打包第三方运行库、字体或图片。可选 JQE 评估实验包含下述明确授权的第三方网络与推理改编代码；默认引擎不加载它。规则和研究参考见 README 与优化报告中的原始链接。
 
 ## 自有实验 NNUE 检查点
 
@@ -33,4 +33,10 @@ The project includes its own comparison adapter and synthetic regression/match r
 
 `models/experimental/selfplay-value-v1.bin` is independently initialized and trained locally on this project's own newly generated synthetic HCE games. Its code and weights are distributed under this repository's GPLv3. No user games, third-party checkpoints, converted weights or teacher outputs were used. See [the report](docs/experiments/selfplay-value.md) for grouped data provenance and negative held-out results.
 
-Conceptual research references: [devinokeefe/jieqi](https://github.com/devinokeefe/jieqi) ([MIT license](https://github.com/devinokeefe/jieqi/blob/main/LICENSE), with separately identified exceptions in [THIRD_PARTY.md](https://github.com/devinokeefe/jieqi/blob/main/THIRD_PARTY.md)) and [lxsgx23/AB-JChess](https://github.com/lxsgx23/AB-JChess) ([GPLv3](https://github.com/lxsgx23/AB-JChess/blob/main/LICENSE)). No source or weights were imported from either. Their current branches must not be conflated with this repository's older fixed comparison versions, and code licensing does not provide access to unpublished training data.
+Conceptual research references: [devinokeefe/jieqi](https://github.com/devinokeefe/jieqi) ([MIT license](https://github.com/devinokeefe/jieqi/blob/main/LICENSE), with separately identified exceptions in [THIRD_PARTY.md](https://github.com/devinokeefe/jieqi/blob/main/THIRD_PARTY.md)) and [lxsgx23/AB-JChess](https://github.com/lxsgx23/AB-JChess) ([GPLv3](https://github.com/lxsgx23/AB-JChess/blob/main/LICENSE)). The selfplay-value experiment did not import source or weights from either project. Their current branches must not be conflated with this repository's older fixed comparison versions, and code licensing does not provide access to unpublished training data.
+
+## Optional JQE evaluator (2026-11-09)
+
+`models/jqe/it014.jqn` is the unchanged original JQE network from [devinokeefe/jieqi](https://github.com/devinokeefe/jieqi) at `331a6e612a038c4a04cf980f7b9482910fd50078`, SHA256 `f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160`. The pinned upstream README explicitly places **both code and networks** under MIT. Copyright (c) 2026 Devin O'Keefe; the full license is retained in `models/jqe/LICENSE` and `native/experiments/jqe/JQE_LICENSE`.
+
+`native/experiments/jqe/nnue.hpp` adapts the original input format and inference arithmetic into a portable evaluator. Mist retains its own search, move rules, referee, sampling, and private-capture observation semantics. No upstream search code or opponent network is imported. The upstream reference validation source is obtained separately at the fixed commit. Build products remain ignored. The ordinary webpage and default HCE are unchanged. [Integration report](docs/experiments/jqe.md).

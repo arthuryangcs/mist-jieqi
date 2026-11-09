@@ -1,0 +1,2499 @@
+{
+  "mode": "quantized-incremental",
+  "headerSha256": "b7363b9f1930636819bf6a69723e8bb6cd645728eaabfced30bf29d3962d5378",
+  "modelSha256": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160",
+  "testSourceSha256": "5b6d5fb16dc7e635af6bd35eefc0a799437d61ce8997280bce6cf422d7f8bc17",
+  "sourceSha256": "4c9e60c63f29f73236ef2261cd28aa18e3f7c03a694d02e44158a3d96d10f707",
+  "binarySha256": "3e7847c67aea5a1e26a46d6c619a63817eea84daf8153bb0ef654c54a4f5dfe2",
+  "sanitize": false,
+  "ruleCases": [
+    {
+      "name": "初始全暗",
+      "viewer": "r",
+      "legalMoves": 44,
+      "passed": true
+    },
+    {
+      "name": "初始全暗",
+      "viewer": "b",
+      "legalMoves": 44,
+      "passed": true
+    },
+    {
+      "name": "初始全暗",
+      "viewer": null,
+      "legalMoves": 44,
+      "passed": true
+    },
+    {
+      "name": "蹩马腿",
+      "viewer": "r",
+      "legalMoves": 8,
+      "passed": true
+    },
+    {
+      "name": "蹩马腿",
+      "viewer": "b",
+      "legalMoves": 8,
+      "passed": true
+    },
+    {
+      "name": "蹩马腿",
+      "viewer": null,
+      "legalMoves": 8,
+      "passed": true
+    },
+    {
+      "name": "塞象眼",
+      "viewer": "r",
+      "legalMoves": 8,
+      "passed": true
+    },
+    {
+      "name": "塞象眼",
+      "viewer": "b",
+      "legalMoves": 8,
+      "passed": true
+    },
+    {
+      "name": "塞象眼",
+      "viewer": null,
+      "legalMoves": 8,
+      "passed": true
+    },
+    {
+      "name": "炮隔一子",
+      "viewer": "r",
+      "legalMoves": 18,
+      "passed": true
+    },
+    {
+      "name": "炮隔一子",
+      "viewer": "b",
+      "legalMoves": 18,
+      "passed": true
+    },
+    {
+      "name": "炮隔一子",
+      "viewer": null,
+      "legalMoves": 18,
+      "passed": true
+    },
+    {
+      "name": "将帅照面",
+      "viewer": "r",
+      "legalMoves": 3,
+      "passed": true
+    },
+    {
+      "name": "将帅照面",
+      "viewer": "b",
+      "legalMoves": 3,
+      "passed": true
+    },
+    {
+      "name": "将帅照面",
+      "viewer": null,
+      "legalMoves": 3,
+      "passed": true
+    },
+    {
+      "name": "困毙",
+      "viewer": "r",
+      "legalMoves": 0,
+      "passed": true
+    },
+    {
+      "name": "困毙",
+      "viewer": "b",
+      "legalMoves": 0,
+      "passed": true
+    },
+    {
+      "name": "困毙",
+      "viewer": null,
+      "legalMoves": 0,
+      "passed": true
+    },
+    {
+      "name": "将死",
+      "viewer": "r",
+      "legalMoves": 0,
+      "passed": true
+    },
+    {
+      "name": "将死",
+      "viewer": "b",
+      "legalMoves": 0,
+      "passed": true
+    },
+    {
+      "name": "将死",
+      "viewer": null,
+      "legalMoves": 0,
+      "passed": true
+    },
+    {
+      "name": "炮首占位之前加屏成将军",
+      "viewer": "r",
+      "legalMoves": 20,
+      "passed": true
+    },
+    {
+      "name": "炮首占位之前加屏成将军",
+      "viewer": "b",
+      "legalMoves": 20,
+      "passed": true
+    },
+    {
+      "name": "炮首占位之前加屏成将军",
+      "viewer": null,
+      "legalMoves": 20,
+      "passed": true
+    },
+    {
+      "name": "炮首占位之前加屏成将军黑方旋转",
+      "viewer": "r",
+      "legalMoves": 20,
+      "passed": true
+    },
+    {
+      "name": "炮首占位之前加屏成将军黑方旋转",
+      "viewer": "b",
+      "legalMoves": 20,
+      "passed": true
+    },
+    {
+      "name": "炮首占位之前加屏成将军黑方旋转",
+      "viewer": null,
+      "legalMoves": 20,
+      "passed": true
+    },
+    {
+      "name": "双炮屏移除第一屏",
+      "viewer": "r",
+      "legalMoves": 3,
+      "passed": true
+    },
+    {
+      "name": "双炮屏移除第一屏",
+      "viewer": "b",
+      "legalMoves": 3,
+      "passed": true
+    },
+    {
+      "name": "双炮屏移除第一屏",
+      "viewer": null,
+      "legalMoves": 3,
+      "passed": true
+    },
+    {
+      "name": "双炮屏移除第一屏黑方旋转",
+      "viewer": "r",
+      "legalMoves": 3,
+      "passed": true
+    },
+    {
+      "name": "双炮屏移除第一屏黑方旋转",
+      "viewer": "b",
+      "legalMoves": 3,
+      "passed": true
+    },
+    {
+      "name": "双炮屏移除第一屏黑方旋转",
+      "viewer": null,
+      "legalMoves": 3,
+      "passed": true
+    },
+    {
+      "name": "双炮屏移除第二屏",
+      "viewer": "r",
+      "legalMoves": 2,
+      "passed": true
+    },
+    {
+      "name": "双炮屏移除第二屏",
+      "viewer": "b",
+      "legalMoves": 2,
+      "passed": true
+    },
+    {
+      "name": "双炮屏移除第二屏",
+      "viewer": null,
+      "legalMoves": 2,
+      "passed": true
+    },
+    {
+      "name": "双炮屏移除第二屏黑方旋转",
+      "viewer": "r",
+      "legalMoves": 2,
+      "passed": true
+    },
+    {
+      "name": "双炮屏移除第二屏黑方旋转",
+      "viewer": "b",
+      "legalMoves": 2,
+      "passed": true
+    },
+    {
+      "name": "双炮屏移除第二屏黑方旋转",
+      "viewer": null,
+      "legalMoves": 2,
+      "passed": true
+    },
+    {
+      "name": "车线移除己方屏",
+      "viewer": "r",
+      "legalMoves": 5,
+      "passed": true
+    },
+    {
+      "name": "车线移除己方屏",
+      "viewer": "b",
+      "legalMoves": 5,
+      "passed": true
+    },
+    {
+      "name": "车线移除己方屏",
+      "viewer": null,
+      "legalMoves": 5,
+      "passed": true
+    },
+    {
+      "name": "车线移除己方屏黑方旋转",
+      "viewer": "r",
+      "legalMoves": 5,
+      "passed": true
+    },
+    {
+      "name": "车线移除己方屏黑方旋转",
+      "viewer": "b",
+      "legalMoves": 5,
+      "passed": true
+    },
+    {
+      "name": "车线移除己方屏黑方旋转",
+      "viewer": null,
+      "legalMoves": 5,
+      "passed": true
+    },
+    {
+      "name": "揭开象的象眼",
+      "viewer": "r",
+      "legalMoves": 4,
+      "passed": true
+    },
+    {
+      "name": "揭开象的象眼",
+      "viewer": "b",
+      "legalMoves": 4,
+      "passed": true
+    },
+    {
+      "name": "揭开象的象眼",
+      "viewer": null,
+      "legalMoves": 4,
+      "passed": true
+    },
+    {
+      "name": "揭开象的象眼黑方旋转",
+      "viewer": "r",
+      "legalMoves": 4,
+      "passed": true
+    },
+    {
+      "name": "揭开象的象眼黑方旋转",
+      "viewer": "b",
+      "legalMoves": 4,
+      "passed": true
+    },
+    {
+      "name": "揭开象的象眼黑方旋转",
+      "viewer": null,
+      "legalMoves": 4,
+      "passed": true
+    },
+    {
+      "name": "暗象仍限本河不能攻击彼岸",
+      "viewer": "r",
+      "legalMoves": 21,
+      "passed": true
+    },
+    {
+      "name": "暗象仍限本河不能攻击彼岸",
+      "viewer": "b",
+      "legalMoves": 21,
+      "passed": true
+    },
+    {
+      "name": "暗象仍限本河不能攻击彼岸",
+      "viewer": null,
+      "legalMoves": 21,
+      "passed": true
+    },
+    {
+      "name": "暗象仍限本河不能攻击彼岸黑方旋转",
+      "viewer": "r",
+      "legalMoves": 21,
+      "passed": true
+    },
+    {
+      "name": "暗象仍限本河不能攻击彼岸黑方旋转",
+      "viewer": "b",
+      "legalMoves": 21,
+      "passed": true
+    },
+    {
+      "name": "暗象仍限本河不能攻击彼岸黑方旋转",
+      "viewer": null,
+      "legalMoves": 21,
+      "passed": true
+    },
+    {
+      "name": "马腿移出暴露将军",
+      "viewer": "r",
+      "legalMoves": 5,
+      "passed": true
+    },
+    {
+      "name": "马腿移出暴露将军",
+      "viewer": "b",
+      "legalMoves": 5,
+      "passed": true
+    },
+    {
+      "name": "马腿移出暴露将军",
+      "viewer": null,
+      "legalMoves": 5,
+      "passed": true
+    },
+    {
+      "name": "马腿移出暴露将军黑方旋转",
+      "viewer": "r",
+      "legalMoves": 5,
+      "passed": true
+    },
+    {
+      "name": "马腿移出暴露将军黑方旋转",
+      "viewer": "b",
+      "legalMoves": 5,
+      "passed": true
+    },
+    {
+      "name": "马腿移出暴露将军黑方旋转",
+      "viewer": null,
+      "legalMoves": 5,
+      "passed": true
+    },
+    {
+      "name": "暗马按角色判断马腿",
+      "viewer": "r",
+      "legalMoves": 5,
+      "passed": true
+    },
+    {
+      "name": "暗马按角色判断马腿",
+      "viewer": "b",
+      "legalMoves": 5,
+      "passed": true
+    },
+    {
+      "name": "暗马按角色判断马腿",
+      "viewer": null,
+      "legalMoves": 5,
+      "passed": true
+    },
+    {
+      "name": "暗马按角色判断马腿黑方旋转",
+      "viewer": "r",
+      "legalMoves": 5,
+      "passed": true
+    },
+    {
+      "name": "暗马按角色判断马腿黑方旋转",
+      "viewer": "b",
+      "legalMoves": 5,
+      "passed": true
+    },
+    {
+      "name": "暗马按角色判断马腿黑方旋转",
+      "viewer": null,
+      "legalMoves": 5,
+      "passed": true
+    },
+    {
+      "name": "将帅照面屏移动",
+      "viewer": "r",
+      "legalMoves": 11,
+      "passed": true
+    },
+    {
+      "name": "将帅照面屏移动",
+      "viewer": "b",
+      "legalMoves": 11,
+      "passed": true
+    },
+    {
+      "name": "将帅照面屏移动",
+      "viewer": null,
+      "legalMoves": 11,
+      "passed": true
+    },
+    {
+      "name": "将帅照面屏移动黑方旋转",
+      "viewer": "r",
+      "legalMoves": 11,
+      "passed": true
+    },
+    {
+      "name": "将帅照面屏移动黑方旋转",
+      "viewer": "b",
+      "legalMoves": 11,
+      "passed": true
+    },
+    {
+      "name": "将帅照面屏移动黑方旋转",
+      "viewer": null,
+      "legalMoves": 11,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72131/4",
+      "viewer": "r",
+      "legalMoves": 39,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72131/4",
+      "viewer": "b",
+      "legalMoves": 39,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72131/4",
+      "viewer": null,
+      "legalMoves": 39,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72131/8",
+      "viewer": "r",
+      "legalMoves": 49,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72131/8",
+      "viewer": "b",
+      "legalMoves": 49,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72131/8",
+      "viewer": null,
+      "legalMoves": 49,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72131/12",
+      "viewer": "r",
+      "legalMoves": 46,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72131/12",
+      "viewer": "b",
+      "legalMoves": 46,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72131/12",
+      "viewer": null,
+      "legalMoves": 46,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72131/16",
+      "viewer": "r",
+      "legalMoves": 45,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72131/16",
+      "viewer": "b",
+      "legalMoves": 45,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72131/16",
+      "viewer": null,
+      "legalMoves": 45,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72131/20",
+      "viewer": "r",
+      "legalMoves": 33,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72131/20",
+      "viewer": "b",
+      "legalMoves": 33,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72131/20",
+      "viewer": null,
+      "legalMoves": 33,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72131/24",
+      "viewer": "r",
+      "legalMoves": 35,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72131/24",
+      "viewer": "b",
+      "legalMoves": 35,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72131/24",
+      "viewer": null,
+      "legalMoves": 35,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72131/28",
+      "viewer": "r",
+      "legalMoves": 40,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72131/28",
+      "viewer": "b",
+      "legalMoves": 40,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72131/28",
+      "viewer": null,
+      "legalMoves": 40,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72131/32",
+      "viewer": "r",
+      "legalMoves": 29,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72131/32",
+      "viewer": "b",
+      "legalMoves": 29,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72131/32",
+      "viewer": null,
+      "legalMoves": 29,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72131/36",
+      "viewer": "r",
+      "legalMoves": 33,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72131/36",
+      "viewer": "b",
+      "legalMoves": 33,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72131/36",
+      "viewer": null,
+      "legalMoves": 33,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72131/40",
+      "viewer": "r",
+      "legalMoves": 34,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72131/40",
+      "viewer": "b",
+      "legalMoves": 34,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72131/40",
+      "viewer": null,
+      "legalMoves": 34,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72131/44",
+      "viewer": "r",
+      "legalMoves": 36,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72131/44",
+      "viewer": "b",
+      "legalMoves": 36,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72131/44",
+      "viewer": null,
+      "legalMoves": 36,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72131/48",
+      "viewer": "r",
+      "legalMoves": 36,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72131/48",
+      "viewer": "b",
+      "legalMoves": 36,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72131/48",
+      "viewer": null,
+      "legalMoves": 36,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72131/52",
+      "viewer": "r",
+      "legalMoves": 29,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72131/52",
+      "viewer": "b",
+      "legalMoves": 29,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72131/52",
+      "viewer": null,
+      "legalMoves": 29,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72131/56",
+      "viewer": "r",
+      "legalMoves": 3,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72131/56",
+      "viewer": "b",
+      "legalMoves": 3,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72131/56",
+      "viewer": null,
+      "legalMoves": 3,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72131/60",
+      "viewer": "r",
+      "legalMoves": 28,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72131/60",
+      "viewer": "b",
+      "legalMoves": 28,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72131/60",
+      "viewer": null,
+      "legalMoves": 28,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72131/64",
+      "viewer": "r",
+      "legalMoves": 29,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72131/64",
+      "viewer": "b",
+      "legalMoves": 29,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72131/64",
+      "viewer": null,
+      "legalMoves": 29,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72143/4",
+      "viewer": "r",
+      "legalMoves": 43,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72143/4",
+      "viewer": "b",
+      "legalMoves": 43,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72143/4",
+      "viewer": null,
+      "legalMoves": 43,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72143/8",
+      "viewer": "r",
+      "legalMoves": 33,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72143/8",
+      "viewer": "b",
+      "legalMoves": 33,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72143/8",
+      "viewer": null,
+      "legalMoves": 33,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72143/12",
+      "viewer": "r",
+      "legalMoves": 27,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72143/12",
+      "viewer": "b",
+      "legalMoves": 27,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72143/12",
+      "viewer": null,
+      "legalMoves": 27,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72143/16",
+      "viewer": "r",
+      "legalMoves": 32,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72143/16",
+      "viewer": "b",
+      "legalMoves": 32,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72143/16",
+      "viewer": null,
+      "legalMoves": 32,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72143/20",
+      "viewer": "r",
+      "legalMoves": 31,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72143/20",
+      "viewer": "b",
+      "legalMoves": 31,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72143/20",
+      "viewer": null,
+      "legalMoves": 31,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72143/24",
+      "viewer": "r",
+      "legalMoves": 33,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72143/24",
+      "viewer": "b",
+      "legalMoves": 33,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72143/24",
+      "viewer": null,
+      "legalMoves": 33,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72143/28",
+      "viewer": "r",
+      "legalMoves": 37,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72143/28",
+      "viewer": "b",
+      "legalMoves": 37,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72143/28",
+      "viewer": null,
+      "legalMoves": 37,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72143/32",
+      "viewer": "r",
+      "legalMoves": 37,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72143/32",
+      "viewer": "b",
+      "legalMoves": 37,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72143/32",
+      "viewer": null,
+      "legalMoves": 37,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72143/36",
+      "viewer": "r",
+      "legalMoves": 36,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72143/36",
+      "viewer": "b",
+      "legalMoves": 36,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72143/36",
+      "viewer": null,
+      "legalMoves": 36,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72143/40",
+      "viewer": "r",
+      "legalMoves": 30,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72143/40",
+      "viewer": "b",
+      "legalMoves": 30,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72143/40",
+      "viewer": null,
+      "legalMoves": 30,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72143/44",
+      "viewer": "r",
+      "legalMoves": 33,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72143/44",
+      "viewer": "b",
+      "legalMoves": 33,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72143/44",
+      "viewer": null,
+      "legalMoves": 33,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72143/48",
+      "viewer": "r",
+      "legalMoves": 36,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72143/48",
+      "viewer": "b",
+      "legalMoves": 36,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72143/48",
+      "viewer": null,
+      "legalMoves": 36,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72143/52",
+      "viewer": "r",
+      "legalMoves": 35,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72143/52",
+      "viewer": "b",
+      "legalMoves": 35,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72143/52",
+      "viewer": null,
+      "legalMoves": 35,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72143/56",
+      "viewer": "r",
+      "legalMoves": 39,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72143/56",
+      "viewer": "b",
+      "legalMoves": 39,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72143/56",
+      "viewer": null,
+      "legalMoves": 39,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72143/60",
+      "viewer": "r",
+      "legalMoves": 45,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72143/60",
+      "viewer": "b",
+      "legalMoves": 45,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72143/60",
+      "viewer": null,
+      "legalMoves": 45,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72143/64",
+      "viewer": "r",
+      "legalMoves": 39,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72143/64",
+      "viewer": "b",
+      "legalMoves": 39,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72143/64",
+      "viewer": null,
+      "legalMoves": 39,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72161/4",
+      "viewer": "r",
+      "legalMoves": 17,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72161/4",
+      "viewer": "b",
+      "legalMoves": 17,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72161/4",
+      "viewer": null,
+      "legalMoves": 17,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72161/8",
+      "viewer": "r",
+      "legalMoves": 17,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72161/8",
+      "viewer": "b",
+      "legalMoves": 17,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72161/8",
+      "viewer": null,
+      "legalMoves": 17,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72161/12",
+      "viewer": "r",
+      "legalMoves": 23,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72161/12",
+      "viewer": "b",
+      "legalMoves": 23,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72161/12",
+      "viewer": null,
+      "legalMoves": 23,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72161/16",
+      "viewer": "r",
+      "legalMoves": 36,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72161/16",
+      "viewer": "b",
+      "legalMoves": 36,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72161/16",
+      "viewer": null,
+      "legalMoves": 36,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72161/20",
+      "viewer": "r",
+      "legalMoves": 33,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72161/20",
+      "viewer": "b",
+      "legalMoves": 33,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72161/20",
+      "viewer": null,
+      "legalMoves": 33,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72161/24",
+      "viewer": "r",
+      "legalMoves": 35,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72161/24",
+      "viewer": "b",
+      "legalMoves": 35,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72161/24",
+      "viewer": null,
+      "legalMoves": 35,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72161/28",
+      "viewer": "r",
+      "legalMoves": 29,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72161/28",
+      "viewer": "b",
+      "legalMoves": 29,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72161/28",
+      "viewer": null,
+      "legalMoves": 29,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72161/32",
+      "viewer": "r",
+      "legalMoves": 30,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72161/32",
+      "viewer": "b",
+      "legalMoves": 30,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72161/32",
+      "viewer": null,
+      "legalMoves": 30,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72161/36",
+      "viewer": "r",
+      "legalMoves": 31,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72161/36",
+      "viewer": "b",
+      "legalMoves": 31,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72161/36",
+      "viewer": null,
+      "legalMoves": 31,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72161/40",
+      "viewer": "r",
+      "legalMoves": 42,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72161/40",
+      "viewer": "b",
+      "legalMoves": 42,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72161/40",
+      "viewer": null,
+      "legalMoves": 42,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72161/44",
+      "viewer": "r",
+      "legalMoves": 28,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72161/44",
+      "viewer": "b",
+      "legalMoves": 28,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72161/44",
+      "viewer": null,
+      "legalMoves": 28,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72161/48",
+      "viewer": "r",
+      "legalMoves": 26,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72161/48",
+      "viewer": "b",
+      "legalMoves": 26,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72161/48",
+      "viewer": null,
+      "legalMoves": 26,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72161/52",
+      "viewer": "r",
+      "legalMoves": 25,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72161/52",
+      "viewer": "b",
+      "legalMoves": 25,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72161/52",
+      "viewer": null,
+      "legalMoves": 25,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72161/56",
+      "viewer": "r",
+      "legalMoves": 27,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72161/56",
+      "viewer": "b",
+      "legalMoves": 27,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72161/56",
+      "viewer": null,
+      "legalMoves": 27,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72161/60",
+      "viewer": "r",
+      "legalMoves": 27,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72161/60",
+      "viewer": "b",
+      "legalMoves": 27,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72161/60",
+      "viewer": null,
+      "legalMoves": 27,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72161/64",
+      "viewer": "r",
+      "legalMoves": 30,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72161/64",
+      "viewer": "b",
+      "legalMoves": 30,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72161/64",
+      "viewer": null,
+      "legalMoves": 30,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72173/4",
+      "viewer": "r",
+      "legalMoves": 46,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72173/4",
+      "viewer": "b",
+      "legalMoves": 46,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72173/4",
+      "viewer": null,
+      "legalMoves": 46,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72173/8",
+      "viewer": "r",
+      "legalMoves": 44,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72173/8",
+      "viewer": "b",
+      "legalMoves": 44,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72173/8",
+      "viewer": null,
+      "legalMoves": 44,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72173/12",
+      "viewer": "r",
+      "legalMoves": 41,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72173/12",
+      "viewer": "b",
+      "legalMoves": 41,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72173/12",
+      "viewer": null,
+      "legalMoves": 41,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72173/16",
+      "viewer": "r",
+      "legalMoves": 26,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72173/16",
+      "viewer": "b",
+      "legalMoves": 26,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72173/16",
+      "viewer": null,
+      "legalMoves": 26,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72173/20",
+      "viewer": "r",
+      "legalMoves": 36,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72173/20",
+      "viewer": "b",
+      "legalMoves": 36,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72173/20",
+      "viewer": null,
+      "legalMoves": 36,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72173/24",
+      "viewer": "r",
+      "legalMoves": 28,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72173/24",
+      "viewer": "b",
+      "legalMoves": 28,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72173/24",
+      "viewer": null,
+      "legalMoves": 28,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72173/28",
+      "viewer": "r",
+      "legalMoves": 31,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72173/28",
+      "viewer": "b",
+      "legalMoves": 31,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72173/28",
+      "viewer": null,
+      "legalMoves": 31,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72173/32",
+      "viewer": "r",
+      "legalMoves": 30,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72173/32",
+      "viewer": "b",
+      "legalMoves": 30,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72173/32",
+      "viewer": null,
+      "legalMoves": 30,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72173/36",
+      "viewer": "r",
+      "legalMoves": 25,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72173/36",
+      "viewer": "b",
+      "legalMoves": 25,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72173/36",
+      "viewer": null,
+      "legalMoves": 25,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72173/40",
+      "viewer": "r",
+      "legalMoves": 23,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72173/40",
+      "viewer": "b",
+      "legalMoves": 23,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72173/40",
+      "viewer": null,
+      "legalMoves": 23,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72173/44",
+      "viewer": "r",
+      "legalMoves": 27,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72173/44",
+      "viewer": "b",
+      "legalMoves": 27,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72173/44",
+      "viewer": null,
+      "legalMoves": 27,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72173/48",
+      "viewer": "r",
+      "legalMoves": 25,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72173/48",
+      "viewer": "b",
+      "legalMoves": 25,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72173/48",
+      "viewer": null,
+      "legalMoves": 25,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72173/52",
+      "viewer": "r",
+      "legalMoves": 27,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72173/52",
+      "viewer": "b",
+      "legalMoves": 27,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72173/52",
+      "viewer": null,
+      "legalMoves": 27,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72173/56",
+      "viewer": "r",
+      "legalMoves": 27,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72173/56",
+      "viewer": "b",
+      "legalMoves": 27,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72173/56",
+      "viewer": null,
+      "legalMoves": 27,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72173/60",
+      "viewer": "r",
+      "legalMoves": 30,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72173/60",
+      "viewer": "b",
+      "legalMoves": 30,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72173/60",
+      "viewer": null,
+      "legalMoves": 30,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72173/64",
+      "viewer": "r",
+      "legalMoves": 22,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72173/64",
+      "viewer": "b",
+      "legalMoves": 22,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72173/64",
+      "viewer": null,
+      "legalMoves": 22,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72189/4",
+      "viewer": "r",
+      "legalMoves": 38,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72189/4",
+      "viewer": "b",
+      "legalMoves": 38,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72189/4",
+      "viewer": null,
+      "legalMoves": 38,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72189/8",
+      "viewer": "r",
+      "legalMoves": 39,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72189/8",
+      "viewer": "b",
+      "legalMoves": 39,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72189/8",
+      "viewer": null,
+      "legalMoves": 39,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72189/12",
+      "viewer": "r",
+      "legalMoves": 34,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72189/12",
+      "viewer": "b",
+      "legalMoves": 34,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72189/12",
+      "viewer": null,
+      "legalMoves": 34,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72189/16",
+      "viewer": "r",
+      "legalMoves": 36,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72189/16",
+      "viewer": "b",
+      "legalMoves": 36,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72189/16",
+      "viewer": null,
+      "legalMoves": 36,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72189/20",
+      "viewer": "r",
+      "legalMoves": 45,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72189/20",
+      "viewer": "b",
+      "legalMoves": 45,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72189/20",
+      "viewer": null,
+      "legalMoves": 45,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72189/24",
+      "viewer": "r",
+      "legalMoves": 43,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72189/24",
+      "viewer": "b",
+      "legalMoves": 43,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72189/24",
+      "viewer": null,
+      "legalMoves": 43,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72189/28",
+      "viewer": "r",
+      "legalMoves": 2,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72189/28",
+      "viewer": "b",
+      "legalMoves": 2,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72189/28",
+      "viewer": null,
+      "legalMoves": 2,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72189/32",
+      "viewer": "r",
+      "legalMoves": 36,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72189/32",
+      "viewer": "b",
+      "legalMoves": 36,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72189/32",
+      "viewer": null,
+      "legalMoves": 36,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72189/36",
+      "viewer": "r",
+      "legalMoves": 33,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72189/36",
+      "viewer": "b",
+      "legalMoves": 33,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72189/36",
+      "viewer": null,
+      "legalMoves": 33,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72189/40",
+      "viewer": "r",
+      "legalMoves": 27,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72189/40",
+      "viewer": "b",
+      "legalMoves": 27,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72189/40",
+      "viewer": null,
+      "legalMoves": 27,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72189/44",
+      "viewer": "r",
+      "legalMoves": 32,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72189/44",
+      "viewer": "b",
+      "legalMoves": 32,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72189/44",
+      "viewer": null,
+      "legalMoves": 32,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72189/48",
+      "viewer": "r",
+      "legalMoves": 38,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72189/48",
+      "viewer": "b",
+      "legalMoves": 38,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72189/48",
+      "viewer": null,
+      "legalMoves": 38,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72189/52",
+      "viewer": "r",
+      "legalMoves": 38,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72189/52",
+      "viewer": "b",
+      "legalMoves": 38,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72189/52",
+      "viewer": null,
+      "legalMoves": 38,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72189/56",
+      "viewer": "r",
+      "legalMoves": 39,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72189/56",
+      "viewer": "b",
+      "legalMoves": 39,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72189/56",
+      "viewer": null,
+      "legalMoves": 39,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72189/60",
+      "viewer": "r",
+      "legalMoves": 38,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72189/60",
+      "viewer": "b",
+      "legalMoves": 38,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72189/60",
+      "viewer": null,
+      "legalMoves": 38,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72189/64",
+      "viewer": "r",
+      "legalMoves": 38,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72189/64",
+      "viewer": "b",
+      "legalMoves": 38,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72189/64",
+      "viewer": null,
+      "legalMoves": 38,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72203/4",
+      "viewer": "r",
+      "legalMoves": 49,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72203/4",
+      "viewer": "b",
+      "legalMoves": 49,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72203/4",
+      "viewer": null,
+      "legalMoves": 49,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72203/8",
+      "viewer": "r",
+      "legalMoves": 40,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72203/8",
+      "viewer": "b",
+      "legalMoves": 40,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72203/8",
+      "viewer": null,
+      "legalMoves": 40,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72203/12",
+      "viewer": "r",
+      "legalMoves": 44,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72203/12",
+      "viewer": "b",
+      "legalMoves": 44,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72203/12",
+      "viewer": null,
+      "legalMoves": 44,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72203/16",
+      "viewer": "r",
+      "legalMoves": 37,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72203/16",
+      "viewer": "b",
+      "legalMoves": 37,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72203/16",
+      "viewer": null,
+      "legalMoves": 37,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72203/20",
+      "viewer": "r",
+      "legalMoves": 30,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72203/20",
+      "viewer": "b",
+      "legalMoves": 30,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72203/20",
+      "viewer": null,
+      "legalMoves": 30,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72203/24",
+      "viewer": "r",
+      "legalMoves": 31,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72203/24",
+      "viewer": "b",
+      "legalMoves": 31,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72203/24",
+      "viewer": null,
+      "legalMoves": 31,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72203/28",
+      "viewer": "r",
+      "legalMoves": 25,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72203/28",
+      "viewer": "b",
+      "legalMoves": 25,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72203/28",
+      "viewer": null,
+      "legalMoves": 25,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72203/32",
+      "viewer": "r",
+      "legalMoves": 26,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72203/32",
+      "viewer": "b",
+      "legalMoves": 26,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72203/32",
+      "viewer": null,
+      "legalMoves": 26,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72203/36",
+      "viewer": "r",
+      "legalMoves": 19,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72203/36",
+      "viewer": "b",
+      "legalMoves": 19,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72203/36",
+      "viewer": null,
+      "legalMoves": 19,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72203/40",
+      "viewer": "r",
+      "legalMoves": 22,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72203/40",
+      "viewer": "b",
+      "legalMoves": 22,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72203/40",
+      "viewer": null,
+      "legalMoves": 22,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72203/44",
+      "viewer": "r",
+      "legalMoves": 23,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72203/44",
+      "viewer": "b",
+      "legalMoves": 23,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72203/44",
+      "viewer": null,
+      "legalMoves": 23,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72203/48",
+      "viewer": "r",
+      "legalMoves": 17,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72203/48",
+      "viewer": "b",
+      "legalMoves": 17,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72203/48",
+      "viewer": null,
+      "legalMoves": 17,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72203/52",
+      "viewer": "r",
+      "legalMoves": 21,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72203/52",
+      "viewer": "b",
+      "legalMoves": 21,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72203/52",
+      "viewer": null,
+      "legalMoves": 21,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72203/56",
+      "viewer": "r",
+      "legalMoves": 28,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72203/56",
+      "viewer": "b",
+      "legalMoves": 28,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72203/56",
+      "viewer": null,
+      "legalMoves": 28,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72203/60",
+      "viewer": "r",
+      "legalMoves": 28,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72203/60",
+      "viewer": "b",
+      "legalMoves": 28,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72203/60",
+      "viewer": null,
+      "legalMoves": 28,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72203/64",
+      "viewer": "r",
+      "legalMoves": 32,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72203/64",
+      "viewer": "b",
+      "legalMoves": 32,
+      "passed": true
+    },
+    {
+      "name": "danger reachable 72203/64",
+      "viewer": null,
+      "legalMoves": 32,
+      "passed": true
+    },
+    {
+      "name": "私人暗俘第1步",
+      "viewer": "r",
+      "legalMoves": 44,
+      "passed": true
+    },
+    {
+      "name": "私人暗俘第1步",
+      "viewer": "b",
+      "legalMoves": 44,
+      "passed": true
+    },
+    {
+      "name": "私人暗俘第1步",
+      "viewer": null,
+      "legalMoves": 44,
+      "passed": true
+    },
+    {
+      "name": "私人暗俘第2步",
+      "viewer": "r",
+      "legalMoves": 36,
+      "passed": true
+    },
+    {
+      "name": "私人暗俘第2步",
+      "viewer": "b",
+      "legalMoves": 36,
+      "passed": true
+    },
+    {
+      "name": "私人暗俘第2步",
+      "viewer": null,
+      "legalMoves": 36,
+      "passed": true
+    },
+    {
+      "name": "可达7013/8",
+      "viewer": "r",
+      "legalMoves": 44,
+      "passed": true
+    },
+    {
+      "name": "可达7013/8",
+      "viewer": "b",
+      "legalMoves": 44,
+      "passed": true
+    },
+    {
+      "name": "可达7013/8",
+      "viewer": null,
+      "legalMoves": 44,
+      "passed": true
+    },
+    {
+      "name": "可达7013/16",
+      "viewer": "r",
+      "legalMoves": 36,
+      "passed": true
+    },
+    {
+      "name": "可达7013/16",
+      "viewer": "b",
+      "legalMoves": 36,
+      "passed": true
+    },
+    {
+      "name": "可达7013/16",
+      "viewer": null,
+      "legalMoves": 36,
+      "passed": true
+    },
+    {
+      "name": "可达7013/24",
+      "viewer": "r",
+      "legalMoves": 38,
+      "passed": true
+    },
+    {
+      "name": "可达7013/24",
+      "viewer": "b",
+      "legalMoves": 38,
+      "passed": true
+    },
+    {
+      "name": "可达7013/24",
+      "viewer": null,
+      "legalMoves": 38,
+      "passed": true
+    },
+    {
+      "name": "可达7013/32",
+      "viewer": "r",
+      "legalMoves": 38,
+      "passed": true
+    },
+    {
+      "name": "可达7013/32",
+      "viewer": "b",
+      "legalMoves": 38,
+      "passed": true
+    },
+    {
+      "name": "可达7013/32",
+      "viewer": null,
+      "legalMoves": 38,
+      "passed": true
+    },
+    {
+      "name": "可达7013/40",
+      "viewer": "r",
+      "legalMoves": 37,
+      "passed": true
+    },
+    {
+      "name": "可达7013/40",
+      "viewer": "b",
+      "legalMoves": 37,
+      "passed": true
+    },
+    {
+      "name": "可达7013/40",
+      "viewer": null,
+      "legalMoves": 37,
+      "passed": true
+    },
+    {
+      "name": "可达7027/8",
+      "viewer": "r",
+      "legalMoves": 31,
+      "passed": true
+    },
+    {
+      "name": "可达7027/8",
+      "viewer": "b",
+      "legalMoves": 31,
+      "passed": true
+    },
+    {
+      "name": "可达7027/8",
+      "viewer": null,
+      "legalMoves": 31,
+      "passed": true
+    },
+    {
+      "name": "可达7027/16",
+      "viewer": "r",
+      "legalMoves": 45,
+      "passed": true
+    },
+    {
+      "name": "可达7027/16",
+      "viewer": "b",
+      "legalMoves": 45,
+      "passed": true
+    },
+    {
+      "name": "可达7027/16",
+      "viewer": null,
+      "legalMoves": 45,
+      "passed": true
+    },
+    {
+      "name": "可达7027/24",
+      "viewer": "r",
+      "legalMoves": 37,
+      "passed": true
+    },
+    {
+      "name": "可达7027/24",
+      "viewer": "b",
+      "legalMoves": 37,
+      "passed": true
+    },
+    {
+      "name": "可达7027/24",
+      "viewer": null,
+      "legalMoves": 37,
+      "passed": true
+    },
+    {
+      "name": "可达7027/32",
+      "viewer": "r",
+      "legalMoves": 47,
+      "passed": true
+    },
+    {
+      "name": "可达7027/32",
+      "viewer": "b",
+      "legalMoves": 47,
+      "passed": true
+    },
+    {
+      "name": "可达7027/32",
+      "viewer": null,
+      "legalMoves": 47,
+      "passed": true
+    },
+    {
+      "name": "可达7027/40",
+      "viewer": "r",
+      "legalMoves": 55,
+      "passed": true
+    },
+    {
+      "name": "可达7027/40",
+      "viewer": "b",
+      "legalMoves": 55,
+      "passed": true
+    },
+    {
+      "name": "可达7027/40",
+      "viewer": null,
+      "legalMoves": 55,
+      "passed": true
+    },
+    {
+      "name": "可达7043/8",
+      "viewer": "r",
+      "legalMoves": 22,
+      "passed": true
+    },
+    {
+      "name": "可达7043/8",
+      "viewer": "b",
+      "legalMoves": 22,
+      "passed": true
+    },
+    {
+      "name": "可达7043/8",
+      "viewer": null,
+      "legalMoves": 22,
+      "passed": true
+    },
+    {
+      "name": "可达7043/16",
+      "viewer": "r",
+      "legalMoves": 26,
+      "passed": true
+    },
+    {
+      "name": "可达7043/16",
+      "viewer": "b",
+      "legalMoves": 26,
+      "passed": true
+    },
+    {
+      "name": "可达7043/16",
+      "viewer": null,
+      "legalMoves": 26,
+      "passed": true
+    },
+    {
+      "name": "可达7043/24",
+      "viewer": "r",
+      "legalMoves": 35,
+      "passed": true
+    },
+    {
+      "name": "可达7043/24",
+      "viewer": "b",
+      "legalMoves": 35,
+      "passed": true
+    },
+    {
+      "name": "可达7043/24",
+      "viewer": null,
+      "legalMoves": 35,
+      "passed": true
+    },
+    {
+      "name": "可达7043/32",
+      "viewer": "r",
+      "legalMoves": 34,
+      "passed": true
+    },
+    {
+      "name": "可达7043/32",
+      "viewer": "b",
+      "legalMoves": 34,
+      "passed": true
+    },
+    {
+      "name": "可达7043/32",
+      "viewer": null,
+      "legalMoves": 34,
+      "passed": true
+    },
+    {
+      "name": "可达7043/40",
+      "viewer": "r",
+      "legalMoves": 38,
+      "passed": true
+    },
+    {
+      "name": "可达7043/40",
+      "viewer": "b",
+      "legalMoves": 38,
+      "passed": true
+    },
+    {
+      "name": "可达7043/40",
+      "viewer": null,
+      "legalMoves": 38,
+      "passed": true
+    }
+  ],
+  "transitionCount": 11874,
+  "passed": true,
+  "elapsedMs": 4169.600856999999,
+  "runtimeStderr": ""
+}
