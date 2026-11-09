@@ -219,9 +219,9 @@ test('候选箭头不重复主推荐，不残留旧数量，翻转时数字保�
 test('对手私人搜索完成后不会向玩家展示候选箭头',async()=>{
  const {$,workers,click}=await setup();click(54);click(45);const w=workers[0];w.onmessage({data:{id:w.data.id,result:{move:{from:27,to:36},candidates:[{from:27,to:36,score:1,spread:0},{from:29,to:38,score:0,spread:0}],score:1,depth:1,samples:8,nodes:1,elapsedMs:1}}});assert.equal($('moveArrowLayer').dataset.phase,'last');assert.equal($('alternativeMove2').style.display,'none');
 });
-test('辅助盘第三次重复展示判负并停止分析，撤回后恢复可操作',async()=>{
- const {$,click}=await setup();$('editMode').onclick();const cycle=[{from:82,to:63},{from:1,to:18},{from:63,to:82},{from:18,to:1}];for(let i=0;i<10;i++){const m=cycle[i%4];click(m.from);click(m.to);if(i<2){$('revealType').value='N';$('confirmSync').onclick();}}
- assert.match($('status').textContent,/红方获胜.*黑方重复局面判负/);assert($('analyze').disabled);$('undo').onclick();assert(!/判负/.test($('status').textContent));assert(!$('analyze').disabled);
+test('辅助盘完整三循环展示待裁决，允许分析，撤回清提示',async()=>{
+ const {$,click}=await setup();$('editMode').onclick();const cycle=[{from:82,to:63},{from:1,to:18},{from:63,to:82},{from:18,to:1}];for(let i=0;i<13;i++){const m=cycle[i%4];click(m.from);click(m.to);if(i<2){$('revealType').value='N';$('confirmSync').onclick();}}
+ assert.match($('status').textContent,/重复待裁决/);assert(!/判负/.test($('status').textContent));assert(!$('analyze').disabled);$('undo').onclick();assert(!/重复待裁决/.test($('status').textContent));assert(!$('analyze').disabled);
 });
 async function knownAssist(){const ctx=await setup(),{$,click}=ctx;$('editMode').onclick();click(54);click(45);$('revealType').value='R';$('confirmSync').onclick();click(27);click(36);$('revealType').value='P';$('confirmSync').onclick();return ctx;}
 test('自动同步默认关闭，开启后只在完整搜索结束时同步明子一步',async()=>{
@@ -275,4 +275,10 @@ test('真实走子深度遥测与安全推荐分离，重开和停止丢弃过�
  w.onmessage({data:{id,telemetry:{...telemetry,mainDepth:4,selDepth:14,completedDepth:3,elapsedMs:40}}});assert.match($('report').children[1].textContent,/14 半回合.*完成迭代 2/);assert.equal($('moveArrowLayer').dataset.phase,'searching');
  $('stop').onclick();const report=$('report').children.map(x=>x.textContent).join('');w.onmessage({data:{id,telemetry:{...telemetry,selDepth:99}}});assert.equal($('report').children.map(x=>x.textContent).join(''),report);
  $('reset').onclick();w.onmessage({data:{id,telemetry:{...telemetry,selDepth:99}}});assert($('analysis').hidden);assert.equal($('report').children.length,0);
+});
+test('摆放、清空和参数修改清除待裁决，撤回摆放恢复旧证据',async()=>{
+ for(const action of ['paint','clear','turn','inventory']){const {$,click}=await setup();$('editMode').onclick();const cycle=[{from:82,to:63},{from:1,to:18},{from:63,to:82},{from:18,to:1}];for(let i=0;i<13;i++){const m=cycle[i%4];click(m.from);click(m.to);if(i<2){$('revealType').value='N';$('confirmSync').onclick();}}assert.match($('status').textContent,/重复待裁决/);
+  if(action==='paint'){$('inputMethod').value='paint';$('inputMethod').onchange();click(63);assert(!/重复待裁决/.test($('status').textContent));click(63);$('palette').children.find(b=>b['aria-label']==='红车').onclick();assert(!/重复待裁决/.test($('status').textContent));$('undo').onclick();$('undo').onclick();assert.match($('status').textContent,/重复待裁决/);}
+  else {if(action==='clear')$('clear').onclick();if(action==='turn'){$('turn').value='r';$('turn').onchange();}if(action==='inventory')$('inventoryRed').onchange();assert(!/重复待裁决/.test($('status').textContent));}
+ }
 });

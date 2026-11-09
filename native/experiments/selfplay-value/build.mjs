@@ -1,4 +1,4 @@
-// Independent current-HCE control and learned residual. Never modifies production.
+// Historical 9602155 HCE control and learned residual. Never modifies production.
 import fs from 'node:fs';
 import path from 'node:path';
 import {createHash} from 'node:crypto';
@@ -10,7 +10,7 @@ export const stableSource='3fa98d62f3c1636b831680fcd5dcbf88f9339e966ed1b8e2f8a17
 export const sha=x=>createHash('sha256').update(x).digest('hex'),hash=p=>sha(fs.readFileSync(p));
 export function patch(s,a,b){if(s.split(a).length!==2)throw Error('Ambiguous selfplay-value patch: '+a.slice(0,90));return s.replace(a,b);}
 export function sourceOf({trial=true}={}){
- let s=fs.readFileSync('native/search.cpp','utf8');if(sha(s)!==stableSource)throw Error('Current HCE changed; review before rebuilding');
+ let s=fs.readFileSync(new URL('../historical/search-9602155.cpp',import.meta.url),'utf8');if(sha(s)!==stableSource)throw Error('Archived HCE hash mismatch');
  // Same 64 MiB arena in both arms, including map buckets and entries.
  s='#include <new>\n'+s;
  s=patch(s,'struct State {',fs.readFileSync('native/experiments/cluster-tt/table.hpp','utf8')+'\nstruct State {');

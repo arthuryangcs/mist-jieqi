@@ -2,7 +2,7 @@
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
-import {initial,publicState,positionKey,legalMoves,move,other} from '../../../engine.js';
+import {initial,publicState,positionKey,legalMoves,move,other} from '../historical/referee.mjs';
 import {seeded} from '../../../ai.js';
 import {observationToken,assertObservation,fen} from './pika.mjs';
 const input=process.argv[2]??'benchmarks/search-speed/matches.json',r=JSON.parse(fs.readFileSync(input)),sha=x=>createHash('sha256').update(x).digest('hex');

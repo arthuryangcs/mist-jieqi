@@ -3,7 +3,7 @@ import path from 'node:path';
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
-import {initial, publicState, positionKey, move, legalMoves, inCheck, other} from '../../../engine.js';
+import {initial, publicState, positionKey, move, legalMoves, inCheck, other} from '../historical/referee.mjs';
 import {seeded} from '../../../ai.js';
 import {observationSeed} from '../../bridge.mjs';
 import {featureIndices, redBase, D} from '../nnue/features.mjs';

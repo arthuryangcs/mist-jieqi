@@ -16,6 +16,7 @@ function moduleURL(source,url){
  return 'data:text/javascript;base64,'+Buffer.from(source).toString('base64');
 }
 export function writePreview(){
+ throw Error('Historical JQE preview disabled: frozen core does not implement current competition repetition rules');
  fs.mkdirSync(previewRoot,{recursive:true});
  for(const name of ['index.html','style.css','board.svg','app.js','engine.js','ai.js','editor.js','worker.js','deadline-search.js','native-client.js','search-metrics.js'])fs.copyFileSync(path.join(root,name),path.join(previewRoot,name));
  let html=fs.readFileSync(path.join(previewRoot,'index.html'),'utf8');
@@ -25,6 +26,7 @@ export function writePreview(){
  return previewRoot;
 }
 export async function previewModule({quantized=process.env.MIST_JQE_QUANT!=='0'}={}){
+ throw Error('Historical JQE preview disabled: frozen core does not implement current competition repetition rules');
  // Capture at startup. Neither a request nor later process.env mutations can
  // redirect subsequent child processes to a different network or quantizer.
  const settings=Object.freeze({MIST_JQE_MODEL:modelFile,MIST_JQE_QUANT:quantized?'1':'0',MIST_JQE_FULL:'0'});

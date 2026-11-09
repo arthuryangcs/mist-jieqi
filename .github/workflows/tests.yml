@@ -89,7 +89,10 @@ jobs:
       - name: JavaScript rules, privacy and UI logic
         run: npm test -- --test-concurrency=1
       - name: Native rules and search parity
-        run: node native/check.mjs
+        run: |
+          node native/check.mjs
+          node native/repetition-check.mjs
+          JIEQI_NATIVE_SANITIZE=1 node native/repetition-check.mjs
       - name: HTTP streaming, legacy clients and cancellation
         run: node --test native/service-check.mjs
       - name: Build independent tactical LMR prototype

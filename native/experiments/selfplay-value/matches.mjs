@@ -1,3 +1,5 @@
+// Historical experiment: do not generate new games under the superseded rules.
+import {assertReplayOnly} from '../historical/provenance.mjs';
 // Finite, predeclared 2-second paired screen. Never runs training concurrently.
 import fs from 'node:fs';
 import path from 'node:path';
@@ -10,6 +12,7 @@ import {safeRoots} from '../coverage-validation/common.mjs';
 import {cache,dir,modelFile,hash,sha,sourceOf} from './build.mjs';
 import {lawfulView} from './data.mjs';
 const file=cache+'/matches.json',mode=process.argv[2]??'status';
+assertReplayOnly(mode);
 const plan=JSON.parse(fs.readFileSync('native/experiments/selfplay-value/plan.json')),config=plan.matches;
 const control=path.resolve(cache+'/control'),candidate=path.resolve(cache+'/candidate');
 process.env.MIST_NNUE_MODEL=modelFile;delete process.env.MIST_NNUE_FULL;

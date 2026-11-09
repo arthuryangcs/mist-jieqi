@@ -1,0 +1,533 @@
+{
+  "passed": true,
+  "checkedAt": "2026-11-09T06:57:11.204Z",
+  "ruleProfile": "2020 Xiangqi three complete move cycles plus cited 2026 Ningming Jieqi supplement; automatic unilateral perpetual check only",
+  "sources": {
+    "engine.js": "f64f8dad3d16dd5b08c392ccc141d7e035dc13986f55aa04b2f96781c2cc7629",
+    "ai.js": "363ebb21c6f7c248cb97fd0505b419d7d06154774af5582de434d14f4c162ea5",
+    "app.js": "6d43777533bc033baaaef0a4a15d483c770ad90a1b72f48a75849be166e4c1e1",
+    "native/server.mjs": "ad908a8c6c865937871d8eac09966ef32ce22dc28a094a4e15777087dfa85018",
+    "native/search.cpp": "3c3505b46d935362ec06bb7d03a0b57ab4eeb742385b2e11773f68005332a9fc",
+    "native/bridge.mjs": "0e2eb66fcbd4be136e39e881c72764909b77ecbc47952e4181d0a106de1b7879",
+    "native/repetition-check.mjs": "2fae8dcf452e40b1a817898243a8b93bbe605374e3f307419c151a066eec60da",
+    "tests/repetition.test.js": "778033fb54a558ba28fcc84afb39def2ff557a0c7603d18c67153bd75e81b18e",
+    "tests/ui.test.js": "7d0d92afe2e030fd8b1ba994eeee30fc135d85ffe9e626b54258f43985ea58ea",
+    ".github/workflows/tests.yml": "c62f44f8c10de49f15a9545a98554528a2248cb049a8df9fa8493ec9177543bf"
+  },
+  "javascript": {
+    "tests": 218,
+    "passed": 218,
+    "failed": 0,
+    "command": "npm test -- --test-concurrency=1"
+  },
+  "native": {
+    "passed": true,
+    "rules": 72,
+    "transitions": 2172,
+    "searches": 16,
+    "sourceSha256": "3c3505b46d935362ec06bb7d03a0b57ab4eeb742385b2e11773f68005332a9fc"
+  },
+  "service": {
+    "passed": true,
+    "tests": [
+      {
+        "name": "HTTP边界与公开信息验证",
+        "passed": true
+      },
+      {
+        "name": "STREAM与完整参考搜索逐着对齐",
+        "passed": true
+      },
+      {
+        "name": "实际HTTP流与核心证明",
+        "passed": true
+      },
+      {
+        "name": "取消/竞态/限流与子进程退出",
+        "passed": true
+      },
+      {
+        "name": "无人工层数上限/遥测/取消",
+        "passed": true
+      },
+      {
+        "name": "浏览器适配器无静默回退",
+        "passed": true
+      },
+      {
+        "name": "故障注入：服务硬时限",
+        "passed": true
+      },
+      {
+        "name": "故障注入：就绪前截止",
+        "passed": true
+      }
+    ]
+  },
+  "repetition": [
+    {
+      "passed": true,
+      "sanitize": false,
+      "sourceSha256": "3c3505b46d935362ec06bb7d03a0b57ab4eeb742385b2e11773f68005332a9fc",
+      "binarySha256": "a0815ded6a20872b66ef03ca2b95bd2391e057c38d2c3407153b4c798029f561",
+      "cases": [
+        {
+          "name": "r/offender/hidden=false",
+          "samples": 1,
+          "nodesEqual": true,
+          "candidates": 21,
+          "maxDifference": 0,
+          "repetitionLoss": true,
+          "repetitionWin": false,
+          "score": -98999,
+          "passed": true
+        },
+        {
+          "name": "r/offender/hidden=true",
+          "samples": 4,
+          "nodesEqual": true,
+          "candidates": 22,
+          "maxDifference": 1.8189894035458565e-12,
+          "repetitionLoss": true,
+          "repetitionWin": false,
+          "score": -3594.878728264789,
+          "passed": true
+        },
+        {
+          "name": "r/evader/hidden=false",
+          "samples": 1,
+          "nodesEqual": true,
+          "candidates": 2,
+          "maxDifference": 0,
+          "repetitionLoss": false,
+          "repetitionWin": true,
+          "score": 98999,
+          "passed": true
+        },
+        {
+          "name": "r/evader/hidden=true",
+          "samples": 4,
+          "nodesEqual": true,
+          "candidates": 2,
+          "maxDifference": 0,
+          "repetitionLoss": false,
+          "repetitionWin": true,
+          "score": 3594.878728264789,
+          "passed": true
+        },
+        {
+          "name": "b/offender/hidden=false",
+          "samples": 1,
+          "nodesEqual": true,
+          "candidates": 21,
+          "maxDifference": 0,
+          "repetitionLoss": true,
+          "repetitionWin": false,
+          "score": -98999,
+          "passed": true
+        },
+        {
+          "name": "b/offender/hidden=true",
+          "samples": 4,
+          "nodesEqual": true,
+          "candidates": 22,
+          "maxDifference": 1.8189894035458565e-12,
+          "repetitionLoss": true,
+          "repetitionWin": false,
+          "score": -3594.878728264789,
+          "passed": true
+        },
+        {
+          "name": "b/evader/hidden=false",
+          "samples": 1,
+          "nodesEqual": true,
+          "candidates": 2,
+          "maxDifference": 0,
+          "repetitionLoss": false,
+          "repetitionWin": true,
+          "score": 98999,
+          "passed": true
+        },
+        {
+          "name": "b/evader/hidden=true",
+          "samples": 4,
+          "nodesEqual": true,
+          "candidates": 2,
+          "maxDifference": 0,
+          "repetitionLoss": false,
+          "repetitionWin": true,
+          "score": 3594.878728264789,
+          "passed": true
+        },
+        {
+          "name": "insufficient-cycles/r",
+          "samples": 1,
+          "nodesEqual": true,
+          "candidates": 2,
+          "maxDifference": 0,
+          "repetitionLoss": false,
+          "repetitionWin": false,
+          "score": -98998,
+          "passed": true
+        },
+        {
+          "name": "insufficient-cycles/b",
+          "samples": 1,
+          "nodesEqual": true,
+          "candidates": 2,
+          "maxDifference": 0,
+          "repetitionLoss": false,
+          "repetitionWin": false,
+          "score": -98998,
+          "passed": true
+        },
+        {
+          "name": "forged-duplicates/r/1",
+          "samples": 1,
+          "nodesEqual": true,
+          "candidates": 46,
+          "maxDifference": 0,
+          "repetitionLoss": false,
+          "repetitionWin": false,
+          "score": -16,
+          "passed": true
+        },
+        {
+          "name": "forged-duplicates/r/2",
+          "samples": 1,
+          "nodesEqual": true,
+          "candidates": 46,
+          "maxDifference": 0,
+          "repetitionLoss": false,
+          "repetitionWin": false,
+          "score": -16,
+          "passed": true
+        },
+        {
+          "name": "forged-duplicates/r/8",
+          "samples": 1,
+          "nodesEqual": true,
+          "candidates": 46,
+          "maxDifference": 0,
+          "repetitionLoss": false,
+          "repetitionWin": false,
+          "score": -16,
+          "passed": true
+        },
+        {
+          "name": "forged-duplicates/b/1",
+          "samples": 1,
+          "nodesEqual": true,
+          "candidates": 46,
+          "maxDifference": 0,
+          "repetitionLoss": false,
+          "repetitionWin": false,
+          "score": -16,
+          "passed": true
+        },
+        {
+          "name": "forged-duplicates/b/2",
+          "samples": 1,
+          "nodesEqual": true,
+          "candidates": 46,
+          "maxDifference": 0,
+          "repetitionLoss": false,
+          "repetitionWin": false,
+          "score": -16,
+          "passed": true
+        },
+        {
+          "name": "forged-duplicates/b/8",
+          "samples": 1,
+          "nodesEqual": true,
+          "candidates": 46,
+          "maxDifference": 0,
+          "repetitionLoss": false,
+          "repetitionWin": false,
+          "score": -16,
+          "passed": true
+        },
+        {
+          "name": "hidden-cap-legal-continuation",
+          "samples": 4,
+          "nodesEqual": true,
+          "candidates": 5,
+          "maxDifference": 0,
+          "passed": true
+        },
+        {
+          "name": "hidden-cap-mate-precedence",
+          "samples": 4,
+          "nodesEqual": true,
+          "candidates": 33,
+          "maxDifference": 0,
+          "passed": true
+        },
+        {
+          "name": "hidden-cap-mixed-mate-and-draw/r",
+          "samples": 2,
+          "nodesEqual": true,
+          "candidates": 31,
+          "maxDifference": 1.1368683772161603e-13,
+          "passed": true
+        },
+        {
+          "name": "hidden-cap-mixed-mate-and-draw/b",
+          "samples": 2,
+          "nodesEqual": true,
+          "candidates": 31,
+          "maxDifference": 1.1368683772161603e-13,
+          "passed": true
+        }
+      ],
+      "invalidOutcomeRejected": true,
+      "diagnostics": ""
+    },
+    {
+      "passed": true,
+      "sanitize": true,
+      "sourceSha256": "3c3505b46d935362ec06bb7d03a0b57ab4eeb742385b2e11773f68005332a9fc",
+      "binarySha256": "5a766511e089157dc931024698701c130d51d7e5654eac25605ccb45b2b27ef3",
+      "cases": [
+        {
+          "name": "r/offender/hidden=false",
+          "samples": 1,
+          "nodesEqual": true,
+          "candidates": 21,
+          "maxDifference": 0,
+          "repetitionLoss": true,
+          "repetitionWin": false,
+          "score": -98999,
+          "passed": true
+        },
+        {
+          "name": "r/offender/hidden=true",
+          "samples": 4,
+          "nodesEqual": true,
+          "candidates": 22,
+          "maxDifference": 1.8189894035458565e-12,
+          "repetitionLoss": true,
+          "repetitionWin": false,
+          "score": -3594.878728264789,
+          "passed": true
+        },
+        {
+          "name": "r/evader/hidden=false",
+          "samples": 1,
+          "nodesEqual": true,
+          "candidates": 2,
+          "maxDifference": 0,
+          "repetitionLoss": false,
+          "repetitionWin": true,
+          "score": 98999,
+          "passed": true
+        },
+        {
+          "name": "r/evader/hidden=true",
+          "samples": 4,
+          "nodesEqual": true,
+          "candidates": 2,
+          "maxDifference": 0,
+          "repetitionLoss": false,
+          "repetitionWin": true,
+          "score": 3594.878728264789,
+          "passed": true
+        },
+        {
+          "name": "b/offender/hidden=false",
+          "samples": 1,
+          "nodesEqual": true,
+          "candidates": 21,
+          "maxDifference": 0,
+          "repetitionLoss": true,
+          "repetitionWin": false,
+          "score": -98999,
+          "passed": true
+        },
+        {
+          "name": "b/offender/hidden=true",
+          "samples": 4,
+          "nodesEqual": true,
+          "candidates": 22,
+          "maxDifference": 1.8189894035458565e-12,
+          "repetitionLoss": true,
+          "repetitionWin": false,
+          "score": -3594.878728264789,
+          "passed": true
+        },
+        {
+          "name": "b/evader/hidden=false",
+          "samples": 1,
+          "nodesEqual": true,
+          "candidates": 2,
+          "maxDifference": 0,
+          "repetitionLoss": false,
+          "repetitionWin": true,
+          "score": 98999,
+          "passed": true
+        },
+        {
+          "name": "b/evader/hidden=true",
+          "samples": 4,
+          "nodesEqual": true,
+          "candidates": 2,
+          "maxDifference": 0,
+          "repetitionLoss": false,
+          "repetitionWin": true,
+          "score": 3594.878728264789,
+          "passed": true
+        },
+        {
+          "name": "insufficient-cycles/r",
+          "samples": 1,
+          "nodesEqual": true,
+          "candidates": 2,
+          "maxDifference": 0,
+          "repetitionLoss": false,
+          "repetitionWin": false,
+          "score": -98998,
+          "passed": true
+        },
+        {
+          "name": "insufficient-cycles/b",
+          "samples": 1,
+          "nodesEqual": true,
+          "candidates": 2,
+          "maxDifference": 0,
+          "repetitionLoss": false,
+          "repetitionWin": false,
+          "score": -98998,
+          "passed": true
+        },
+        {
+          "name": "forged-duplicates/r/1",
+          "samples": 1,
+          "nodesEqual": true,
+          "candidates": 46,
+          "maxDifference": 0,
+          "repetitionLoss": false,
+          "repetitionWin": false,
+          "score": -16,
+          "passed": true
+        },
+        {
+          "name": "forged-duplicates/r/2",
+          "samples": 1,
+          "nodesEqual": true,
+          "candidates": 46,
+          "maxDifference": 0,
+          "repetitionLoss": false,
+          "repetitionWin": false,
+          "score": -16,
+          "passed": true
+        },
+        {
+          "name": "forged-duplicates/r/8",
+          "samples": 1,
+          "nodesEqual": true,
+          "candidates": 46,
+          "maxDifference": 0,
+          "repetitionLoss": false,
+          "repetitionWin": false,
+          "score": -16,
+          "passed": true
+        },
+        {
+          "name": "forged-duplicates/b/1",
+          "samples": 1,
+          "nodesEqual": true,
+          "candidates": 46,
+          "maxDifference": 0,
+          "repetitionLoss": false,
+          "repetitionWin": false,
+          "score": -16,
+          "passed": true
+        },
+        {
+          "name": "forged-duplicates/b/2",
+          "samples": 1,
+          "nodesEqual": true,
+          "candidates": 46,
+          "maxDifference": 0,
+          "repetitionLoss": false,
+          "repetitionWin": false,
+          "score": -16,
+          "passed": true
+        },
+        {
+          "name": "forged-duplicates/b/8",
+          "samples": 1,
+          "nodesEqual": true,
+          "candidates": 46,
+          "maxDifference": 0,
+          "repetitionLoss": false,
+          "repetitionWin": false,
+          "score": -16,
+          "passed": true
+        },
+        {
+          "name": "hidden-cap-legal-continuation",
+          "samples": 4,
+          "nodesEqual": true,
+          "candidates": 5,
+          "maxDifference": 0,
+          "passed": true
+        },
+        {
+          "name": "hidden-cap-mate-precedence",
+          "samples": 4,
+          "nodesEqual": true,
+          "candidates": 33,
+          "maxDifference": 0,
+          "passed": true
+        },
+        {
+          "name": "hidden-cap-mixed-mate-and-draw/r",
+          "samples": 2,
+          "nodesEqual": true,
+          "candidates": 31,
+          "maxDifference": 1.1368683772161603e-13,
+          "passed": true
+        },
+        {
+          "name": "hidden-cap-mixed-mate-and-draw/b",
+          "samples": 2,
+          "nodesEqual": true,
+          "candidates": 31,
+          "maxDifference": 1.1368683772161603e-13,
+          "passed": true
+        }
+      ],
+      "invalidOutcomeRejected": true,
+      "diagnostics": ""
+    }
+  ],
+  "historicalReplays": {
+    "oldJqe": 12,
+    "followupJqe": 24,
+    "bufferedSort": 12,
+    "c8": 12,
+    "selfplay": 48,
+    "originalLedgersChanged": false,
+    "oldRepetitionEndpoints": {
+      "benchmarks/jqe/matches.json": [
+        1,
+        4,
+        8
+      ],
+      "benchmarks/jqe-followup-2026-11-09/matches.json": [
+        10,
+        11,
+        18
+      ]
+    },
+    "newRuleAtThoseEndpoints": "nonterminal; do not invert old winners"
+  },
+  "limits": [
+    "Not complete long-chase/mating-threat/mutual-duty adjudication or two-round change enforcement.",
+    "Deep search cycle cutoff is heuristic, not exact competitive repetition evaluation.",
+    "No new games or browser end-to-end run.",
+    "Historical JQE preview and match launch disabled until migration.",
+    "Existing long-running default service has not been restarted."
+  ]
+}

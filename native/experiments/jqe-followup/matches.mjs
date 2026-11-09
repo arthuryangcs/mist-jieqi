@@ -1,9 +1,10 @@
+import {verifyHistoricalSource,assertReplayOnly} from '../historical/provenance.mjs';
 // Separate prospective follow-up, preserving the original round and binaries. No engine or server is started by replay.
 import fs from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import assert from 'node:assert/strict';
-import {initial,publicState,positionKey,legalMoves,move,other} from '../../../engine.js';
+import {initial,publicState,positionKey,legalMoves,move,other} from '../historical/referee.mjs';
 import {seeded} from '../../../ai.js';
 import {StableEngine} from '../search-speed/stable-client.mjs';
 import {FourThreadPika,pikaCommit,pikaHash,verifyPika,canonicalFen,observationToken,assertObservation,fen} from '../search-speed/pika.mjs';
@@ -43,6 +44,7 @@ export async function closeEngines(engines){
  return failures;
 }
 export async function main(mode=process.argv[2]??'status'){
+assertReplayOnly(mode);
 if(mode==='freeze'){
  fs.mkdirSync(cache,{recursive:true});fs.mkdirSync(dir,{recursive:true});
  assert.equal(hash('benchmarks/jqe/matches.json'),plan.previousLedgerSha256,'Previous round changed');
@@ -110,7 +112,7 @@ if(mode==='freeze'){
  const input=process.argv[3]??dir+'/matches.json',r=JSON.parse(fs.readFileSync(input));
  assert(r.completedAt);assert.deepEqual(r.tasks,tasksForPlan());assert.equal(r.games.length,r.tasks.length);assert.equal(new Set(r.games.map(g=>g.index)).size,r.tasks.length);assert.equal(r.planSha256,hash(planFile));assert.deepEqual(r.summary,results(r.games));
  let moves=0,privateChecks=0;for(const g of r.games){assert(g.result);for(const[k,v]of Object.entries(r.tasks[g.index]))assert.equal(g[k],v);assert.equal(sha(JSON.stringify(initial(seeded(g.seed)).board)),r.initials.find(x=>x.seed===g.seed).layoutSha256);replay(g);moves+=g.log.filter(x=>x.applied).length;privateChecks+=g.log.filter(x=>x.applied&&x.capturedPublic?.hidden&&g.kind==='pika').length;}
- for(const[p,h]of Object.entries(r.hashes))if(!p.startsWith('.cache/'))assert.equal(hash(p),h,p);
+ for(const[p,h]of Object.entries(r.hashes))if(!p.startsWith('.cache/'))verifyHistoricalSource(p,h);
  console.log(JSON.stringify({passed:true,complete:true,games:r.games.length,moves,privateChecks,matchesSha256:hash(input),planSha256:r.planSha256,summary:r.summary}));
 }else if(mode==='status'){const r=JSON.parse(fs.readFileSync(file));console.log(JSON.stringify({completed:r.games.filter(g=>g.result).length,total:r.tasks.length,summary:r.summary,active:r.games.filter(g=>!g.result).map(g=>({index:g.index,plies:g.plies}))}));}else throw Error('freeze|next|run|status|replay');
 

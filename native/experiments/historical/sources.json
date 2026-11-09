@@ -1,0 +1,65 @@
+{
+  "commit": "9602155a214aeebf3ca622db7401e964e5410f03",
+  "sources": {
+    "engine.js": {
+      "sha256": "9250d5440b8572c3473a84c0dec0284c99098387bb16a14a5dc259ac27ce510b",
+      "file": "sources/9250d5440b8572c3473a84c0dec0284c99098387bb16a14a5dc259ac27ce510b"
+    },
+    "ai.js": {
+      "sha256": "c4c1494eef9a20c2927b7649110113ddb974990d5289237d24c0fbb97e1fa26a",
+      "file": "sources/c4c1494eef9a20c2927b7649110113ddb974990d5289237d24c0fbb97e1fa26a"
+    },
+    "native/bridge.mjs": {
+      "sha256": "7cecb21e3ce1d1e87d9504d9907a4b36d33f31909df4033164f58c68f90e75ab",
+      "file": "sources/7cecb21e3ce1d1e87d9504d9907a4b36d33f31909df4033164f58c68f90e75ab"
+    },
+    "native/search.cpp": {
+      "sha256": "3fa98d62f3c1636b831680fcd5dcbf88f9339e966ed1b8e2f8a170b83afcbfb0",
+      "file": "sources/3fa98d62f3c1636b831680fcd5dcbf88f9339e966ed1b8e2f8a170b83afcbfb0"
+    },
+    "native/experiments/selfplay-value/build.mjs": {
+      "sha256": "d23085b3ff0e03c9862f86c79d74c3f8c346dd71ad9048a4f013af9ebb38c78b",
+      "file": "sources/d23085b3ff0e03c9862f86c79d74c3f8c346dd71ad9048a4f013af9ebb38c78b"
+    },
+    "native/experiments/jqe/matches.mjs": {
+      "sha256": "f415340a2376df52305c116691e08d0b73a23e73ac1bed61abda7223aa6ec3e7",
+      "file": "sources/f415340a2376df52305c116691e08d0b73a23e73ac1bed61abda7223aa6ec3e7"
+    },
+    "native/experiments/jqe/source.test.mjs": {
+      "sha256": "5c419b75440c9541916e008c4bcfb9b5c286bca45d62a21418e717abe0297862",
+      "file": "sources/5c419b75440c9541916e008c4bcfb9b5c286bca45d62a21418e717abe0297862"
+    },
+    "native/experiments/jqe-followup/matches.mjs": {
+      "sha256": "5698fb2f00cc4610c4c8f978787712229729f320dfaecf155c4c6758c05eef83",
+      "file": "sources/5698fb2f00cc4610c4c8f978787712229729f320dfaecf155c4c6758c05eef83"
+    },
+    "native/experiments/buffered-sort/matches.mjs": {
+      "sha256": "dd57034dd2503eb7293a8304fbef9e74ecff79515df42303a3fd9e91c99780ee",
+      "file": "sources/dd57034dd2503eb7293a8304fbef9e74ecff79515df42303a3fd9e91c99780ee"
+    },
+    "native/experiments/buffered-sort/source.test.mjs": {
+      "sha256": "9df83792f5e8e38fd4372447b024c6310baa6f80b476e00bc621558f3dec4e87",
+      "file": "sources/9df83792f5e8e38fd4372447b024c6310baa6f80b476e00bc621558f3dec4e87"
+    },
+    "native/experiments/selfplay-value/generate.mjs": {
+      "sha256": "b5ead08853ef94eb52d106423a6a044ca6340b627fbdab59fdf3f385c791a8a2",
+      "file": "sources/b5ead08853ef94eb52d106423a6a044ca6340b627fbdab59fdf3f385c791a8a2"
+    },
+    "native/experiments/selfplay-value/data.mjs": {
+      "sha256": "7822f9f2d1ab14baf3c954cfe2c0dc4d0c9b07f68bb8bceb03e5e42c04f92088",
+      "file": "sources/7822f9f2d1ab14baf3c954cfe2c0dc4d0c9b07f68bb8bceb03e5e42c04f92088"
+    },
+    "native/experiments/jqe/web.mjs": {
+      "sha256": "0beb32ee41d67eb53473eadec0cef47931ab465a074c9610a43f1d240538f291",
+      "file": "sources/0beb32ee41d67eb53473eadec0cef47931ab465a074c9610a43f1d240538f291"
+    },
+    "native/experiments/jqe/service-check.mjs": {
+      "sha256": "ab4bccdeffe76f3d6b470ec4f7a6cc046024590e12fa9fae954db04ff64929c8",
+      "file": "sources/ab4bccdeffe76f3d6b470ec4f7a6cc046024590e12fa9fae954db04ff64929c8"
+    },
+    "native/experiments/jqe/preview.mjs": {
+      "sha256": "cb3c92fdc3f4a0d6be2ccea5e769582eec7f902b3f42ba04dcf6d3f270901dfb",
+      "file": "sources/cb3c92fdc3f4a0d6be2ccea5e769582eec7f902b3f42ba04dcf6d3f270901dfb"
+    }
+  }
+}

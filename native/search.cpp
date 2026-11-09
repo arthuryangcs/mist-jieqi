@@ -220,7 +220,7 @@ double revealOrder(const State& view,const std::vector<Piece>& captured,Move m) 
     return 3*(after/pool.size()-before);
 }
 struct Row {
-    Move move;double score=0,spread=0,winRate=0;int wins=0,losses=0,repetitions=0;bool draw=false,repetitionLoss=false;
+    Move move;double score=0,spread=0,winRate=0;int wins=0,losses=0,repetitions=0;bool draw=false,repetitionLoss=false,repetitionWin=false;
 };
 Row summarize(Move m,const std::vector<double>& scores,bool uncertain) {
     Row row;row.move=m;double probability=0,mean=0;
@@ -246,7 +246,7 @@ bool read(Packet& p) {
     if((p.mode!="SEARCH"&&p.mode!="STREAM"&&p.mode!="VERIFY")||p.depth<0||!std::isfinite(p.budget)||p.budget<0||p.budget>300000||p.turn<0||p.turn>1||p.viewer< -1||p.viewer>1||captured<0||captured>32||worlds<1||worlds>30||metadata<0||metadata>8100)throw std::runtime_error("header out of range");
     for(auto& v:p.view)v=readPiece();for(int i=0;i<captured;i++)p.captured.push_back(readPiece());
     p.worlds.resize(worlds);for(auto& w:p.worlds)for(auto& v:w){v=readPiece();if(v.live()&&(v.type<0||(v.hidden&&v.role<0)))throw std::runtime_error("incomplete sample");}
-    for(int i=0;i<metadata;i++){int f,t,count,outcome;if(!(std::cin>>f>>t>>count>>outcome))throw std::runtime_error("truncated root metadata");if(f<0||f>=90||t<0||t>=90||count<0||outcome<0||outcome>2)throw std::runtime_error("root metadata out of range");p.repetitions[f*90+t]=count;p.outcomes[f*90+t]=outcome;}
+    for(int i=0;i<metadata;i++){int f,t,count,outcome;if(!(std::cin>>f>>t>>count>>outcome))throw std::runtime_error("truncated root metadata");if(f<0||f>=90||t<0||t>=90||count<0||outcome<0||outcome>4)throw std::runtime_error("root metadata out of range");p.repetitions[f*90+t]=count;p.outcomes[f*90+t]=outcome;}
     return true;
 }
 struct Timeout {};
@@ -265,7 +265,7 @@ struct Search {
     double search(State& s,int depth,double alpha,double beta,int ply,int qleft=3,int extensions=2) {
         tick(ply);
         if(ply>=MAX_SEARCH_PLY-1){safetyCutoffs++;auto& probe=probeBuffers.back();legalInto(s.board,s.turn,false,true,s.kings[s.turn],probe);if(probe.empty())return -mate+ply;return evaluate(s,s.turn)-(inCheck(s.board,s.turn,s.kings[s.turn])?180:0);}
-        Key path=s.key();if(std::find(s.path.begin(),s.path.end(),path)!=s.path.end()){s.cycles++;return 0;}
+        Key path=s.key();if(std::find(s.path.begin(),s.path.end(),path)!=s.path.end()){s.cycles++;auto& probe=probeBuffers.at(ply);legalInto(s.board,s.turn,false,true,s.kings[s.turn],probe);if(probe.empty())return -mate+ply;/* Cycle cutoff is a heuristic, not a competition-rule draw. */return evaluate(s,s.turn)-(inCheck(s.board,s.turn,s.kings[s.turn])?180:0);}
         s.path.push_back(path);
         try{double v=node(s,depth,alpha,beta,ply,qleft,extensions);s.path.pop_back();return v;}catch(...){s.path.pop_back();throw;}
     }
@@ -300,7 +300,7 @@ void writeMove(Move m){if(m.from<0)std::cout<<"null";else std::cout<<"{\"from\":
 void writeMoves(const std::vector<Move>& moves){std::cout<<'[';bool comma=false;for(auto m:moves){if(comma)std::cout<<',';comma=true;writeMove(m);}std::cout<<']';}
 void writeRows(const std::vector<Row>& rows) {
     std::cout<<'[';bool comma=false;for(const Row& r:rows){if(comma)std::cout<<',';comma=true;
-        std::cout<<"{\"from\":"<<r.move.from<<",\"to\":"<<r.move.to<<",\"score\":"<<r.score<<",\"spread\":"<<r.spread<<",\"heuristicWinRate\":"<<r.winRate<<",\"sampleWins\":"<<r.wins<<",\"sampleLosses\":"<<r.losses<<",\"repetitionCount\":"<<r.repetitions;if(r.draw)std::cout<<",\"draw\":true";if(r.repetitionLoss)std::cout<<",\"repetitionLoss\":true";std::cout<<'}';}
+        std::cout<<"{\"from\":"<<r.move.from<<",\"to\":"<<r.move.to<<",\"score\":"<<r.score<<",\"spread\":"<<r.spread<<",\"heuristicWinRate\":"<<r.winRate<<",\"sampleWins\":"<<r.wins<<",\"sampleLosses\":"<<r.losses<<",\"repetitionCount\":"<<r.repetitions;if(r.draw)std::cout<<",\"draw\":true";if(r.repetitionLoss)std::cout<<",\"repetitionLoss\":true";if(r.repetitionWin)std::cout<<",\"repetitionWin\":true";std::cout<<'}';}
     std::cout<<']';
 }
 void run(const Packet& p) {
@@ -344,7 +344,7 @@ void run(const Packet& p) {
         currentDepth=depth;telemetry();
         if(depth==std::numeric_limits<int>::max()-1){s.safetyCutoffs++;break;}
         std::vector<Row> rows;
-        try {for(Move m:root){Row row;if(p.outcomes[m.index()]){const bool loss=p.outcomes[m.index()]==2;row=summarize(m,{loss?-mate+1.0:0.0},uncertain);row.draw=!loss;row.repetitionLoss=loss;}else{std::vector<double> scores;if(parallel){scores=parallelScores(m,depth-1);}else for(State& w:s.worlds){if(s.elapsed()>s.limit)throw Timeout{};Undo old=push(w,m);double v;try{v=-s.search(w,depth-1,-inf,inf,1);}catch(...){pop(w,m,old);throw;}pop(w,m,old);scores.push_back(v);}row=summarize(m,scores,uncertain);}row.repetitions=p.repetitions[m.index()];rows.push_back(row);}}
+        try {for(Move m:root){Row row;if(p.outcomes[m.index()]==4){std::vector<double> scores;for(State& w:s.worlds){if(s.elapsed()>s.limit)throw Timeout{};Undo old=push(w,m);std::vector<Move> replies;try{legalInto(w.board,w.turn,false,true,w.kings[w.turn],replies);}catch(...){pop(w,m,old);throw;}pop(w,m,old);scores.push_back(replies.empty()?mate-1.0:0.0);}row=summarize(m,scores,uncertain);row.draw=std::all_of(scores.begin(),scores.end(),[](double v){return v==0;});}else if(p.outcomes[m.index()]){const int outcome=p.outcomes[m.index()];row=summarize(m,{outcome==2?-mate+1.0:outcome==3?mate-1.0:0.0},uncertain);row.draw=outcome==1;row.repetitionLoss=outcome==2;row.repetitionWin=outcome==3;}else{std::vector<double> scores;if(parallel){scores=parallelScores(m,depth-1);}else for(State& w:s.worlds){if(s.elapsed()>s.limit)throw Timeout{};Undo old=push(w,m);double v;try{v=-s.search(w,depth-1,-inf,inf,1);}catch(...){pop(w,m,old);throw;}pop(w,m,old);scores.push_back(v);}row=summarize(m,scores,uncertain);}row.repetitions=p.repetitions[m.index()];rows.push_back(row);}}
         catch(const Timeout&){interrupted=depth;break;}
         std::stable_sort(rows.begin(),rows.end(),[](const Row& a,const Row& b){return a.score>b.score;});
         iterations.push_back({depth,s.nodes,s.elapsed(),rows});completedIterations++;

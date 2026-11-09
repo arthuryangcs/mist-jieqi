@@ -1,3 +1,5 @@
+import {assertReplayOnly} from '../historical/provenance.mjs';
+// Historical experiment: do not generate new games under the superseded rules.
 import fs from 'node:fs';
 import path from 'node:path';
 import assert from 'node:assert/strict';
@@ -44,6 +46,7 @@ function releaseDeadLock() {
 }
 
 export function freeze() {
+  assertReplayOnly('freeze');
   const release = acquireLock();
   try {
     assert(!fs.existsSync(gameFile), 'Never overwrite the frozen self-play run');
@@ -95,6 +98,7 @@ function summary(run) {
 }
 
 export async function generate({all = false} = {}) {
+  assertReplayOnly('run');
   const release = acquireLock();
   let stopped = false;
   const stop = () => { stopped = true; };

@@ -6,7 +6,7 @@ import {createHash} from 'node:crypto';
 import {performance} from 'node:perf_hooks';
 import {build,binary,manifestPath,root} from './build.mjs';
 import {Native,fixture,observationSeed} from './bridge.mjs';
-import {legalMoves} from '../engine.js';
+import {legalMoves,readPositionKey} from '../engine.js';
 import {validatePosition} from '../editor.js';
 import {cleanSearchStats,mergeSearchStats} from '../search-metrics.js';
 
@@ -35,7 +35,7 @@ export function validateRequest(input){
  };
  const board=v.board.map(p=>clean(p)),captured=v.captured.map(p=>clean(p,true));
  for(const key of['ply','quiet'])if(!Number.isInteger(v[key])||v[key]<0||v[key]>400)invalid('无效步数');
- if(!Array.isArray(v.positions)||v.positions.length>401||v.positions.some(p=>typeof p!=='string'||p.length>12000))invalid('无效重复局面记录');
+ if(!Array.isArray(v.positions)||v.positions.length>401||v.positions.some(p=>typeof p!=='string'||p.length>12000||!readPositionKey(p)))invalid('无效重复局面记录');
  const known=side=>captured.filter(p=>p.side===side&&!p.hidden).map(p=>p.type).join('');
  const validation=validatePosition(board,v.turn,{r:known('r'),b:known('b')});
  if(validation.errors.length)invalid(validation.errors.join('；'));

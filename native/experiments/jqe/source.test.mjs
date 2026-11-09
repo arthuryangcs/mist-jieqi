@@ -2,7 +2,7 @@ import test from 'node:test';import assert from 'node:assert/strict';import fs f
 import {sourceOf,hash,stableSource,modelFile,modelSha256} from './build.mjs';
 import {sourceOf as control} from '../selfplay-value/build.mjs';
 test('JQE is isolated, pinned, and does not replace stable search',()=>{
- assert.equal(hash('native/search.cpp'),stableSource);assert.equal(hash(modelFile),modelSha256);
+ assert.equal(hash('native/experiments/historical/search-9602155.cpp'),stableSource);assert.equal(hash(modelFile),modelSha256);
  assert.equal(sourceOf({trial:false}),control({trial:false}));
  const candidate=sourceOf();assert.match(candidate,/mist_jqe::correction/);assert.match(candidate,/600\.0\/430\.0/);
  assert.match(candidate,/std::vector<Undo> undoBuffers/);assert.match(candidate,/Undo& old=undoBuffers.at\(ply\)/);

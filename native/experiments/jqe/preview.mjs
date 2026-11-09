@@ -5,7 +5,7 @@ import {previewModule,writePreview,previewRoot,modelFile} from './web.mjs';
 const port=Number(process.env.PORT||8771);
 if(!Number.isInteger(port)||port<1024||port>65535||port===8766)throw Error('Use a separate local port (default 8771); 8766 is reserved for stable');
 if(!fs.existsSync(modelFile))throw Error('JQE model missing: '+modelFile);
-const built=build({trial:true}),mod=await previewModule();
+const mod=await previewModule(),built=build({trial:true});
 const service=mod.createLocalServer({executable:built.binary,buildInfo:mod.probeBuild(built),staticRoot:writePreview()});
 Object.assign(service.info,{experiment:'jqe-evaluator',experimental:true,defaultEnabled:false,evaluation:'jqe',quantized:mod.quantized});
 await service.listen(port);

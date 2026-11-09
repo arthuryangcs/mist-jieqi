@@ -6,7 +6,7 @@ export function initial(rng=Math.random){let board=Array(90).fill(null);for(let 
 // A null viewer gets shared facts only. Each player additionally knows their own dark captures.
 export function publicState(s,viewer=s.viewer??null){
  if(![null,'r','b'].includes(viewer))throw Error('无效信息视角');
- return {...copy(s),viewer,
+ return {...copy(s),viewer,positions:publicPositions(s),
   board:s.board.map(p=>p?{side:p.side,role:p.role,hidden:p.hidden,...(!p.hidden?{type:p.type}:{})}:null),
   captured:s.captured.map(p=>{
    if(!p.hidden&&!p.wasHidden)return {...p};
@@ -29,7 +29,61 @@ export function inCheck(board,side,knownKing){const k=knownKing??board.findIndex
 export function legalMoves(s,side=s.turn,{capturesOnly=false,stopAfterOne=false}={}){let out=[],b=s.board,king=s._kings?.[side]??b.findIndex(p=>p?.side===side&&!p.hidden&&p.type==='K');for(let f=0;f<90;f++){let p=b[f];if(p?.side!==side)continue;for(let t of candidates(b,f,capturesOnly)){if(!pseudo(b,f,t))continue;let q=b[t];b[t]=p;b[f]=null;let safe=!inCheck(b,side,!p.hidden&&p.type==='K'?t:king);b[f]=p;b[t]=q;if(safe){out.push({from:f,to:t});if(stopAfterOne)return out;}}}return out;}
 function candidates(b,f,capturesOnly=false){let p=b[f],t=p.hidden?p.role:p.type,x=f%9,y=Math.floor(f/9),out=[];const add=(u,v)=>{if(u>=0&&u<9&&v>=0&&v<10&&(!capturesOnly||b[v*9+u]))out.push(v*9+u);};if(t==='R'||t==='C'){for(let [dx,dy] of checkRays){let screen=false;for(let u=x+dx,v=y+dy;u>=0&&u<9&&v>=0&&v<10;u+=dx,v+=dy){let q=b[v*9+u];if(t==='R'){if(!capturesOnly||q)add(u,v);if(q)break;}else if(!screen){if(q)screen=true;else if(!capturesOnly)add(u,v);}else if(q){add(u,v);break;}}}}else if(t==='N'){for(let [dx,dy] of [[1,2],[2,1],[-1,2],[-2,1],[1,-2],[2,-1],[-1,-2],[-2,-1]])add(x+dx,y+dy);}else if(t==='A'||t==='B'){let d=t==='A'?1:2;for(let dx of [-d,d])for(let dy of [-d,d])add(x+dx,y+dy);}else if(t==='P'){add(x,y+(p.side==='r'?-1:1));add(x+1,y);add(x-1,y);}else{for(let [dx,dy] of checkRays)add(x+dx,y+dy);let k=b.findIndex(q=>q?.side!==p.side&&q?.type==='K');if(k>=0&&!out.includes(k))out.push(k);}return out;}
 export function positionKey(s){return JSON.stringify([s.turn,s.board.map(p=>p?[p.side,p.hidden?p.role:p.type,p.hidden]:null)]);}
-export function move(s,m,finish=true){let n=copy(s),p=n.board[m.from],q=n.board[m.to];if(!p)throw Error('空起点');if(q)n.captured.push(q.hidden?{side:q.side,hidden:true,type:q.type,capturedBy:p.side}:{...q,capturedBy:p.side});n.quiet=q||p.hidden?0:n.quiet+1;p.hidden=false;n.board[m.to]=p;n.board[m.from]=null;n.turn=other(s.turn);n.ply++;if(finish){if(!legalMoves(n).length)n.result={winner:s.turn,text:inCheck(n.board,n.turn)?'将死':'困毙'};let key=positionKey(n);n.positions.push(key);if(!n.result&&n.positions.filter(k=>k===key).length>=3)n.result={winner:n.turn,text:(s.turn==='r'?'红':'黑')+'方重复局面判负'};if(!n.result&&(n.quiet>=120||n.ply>=400))n.result={winner:null,text:'和棋（步数上限）'};}return n;}
+// A rule decision needs the sequence of public positions, not an occurrence count.
+// These keys never contain the true identity of an unrevealed piece.
+export function readPositionKey(key){
+ try{const x=JSON.parse(key);if(!Array.isArray(x)||x.length!==2||!['r','b'].includes(x[0])||!Array.isArray(x[1])||x[1].length!==90)return null;
+ const board=x[1].map(p=>{if(p===null)return null;if(!Array.isArray(p)||p.length!==3||!['r','b'].includes(p[0])||typeof p[2]!=='boolean'||typeof p[1]!=='string'||!(p[2]?/^[RNBCAP]$/:/^[KRNBCAP]$/).test(p[1]))throw Error('invalid public history');return {side:p[0],role:p[1],hidden:p[2],...(!p[2]?{type:p[1]}:{})};});
+ const state={turn:x[0],board};return positionKey(state)===key?state:null;
+ }catch{return null;}
+}
+export function publicPositions(s){const ps=s.positions;if(!Array.isArray(ps)||ps.length>401||ps.some(k=>typeof k!=='string'||k.length>12000||!readPositionKey(k)))return [];return [...ps];}
+function currentHistory(s){const ps=publicPositions(s),key=positionKey(s);return ps.at(-1)===key?ps:[key];}
+function publicTransition(before,after){
+ if(after.turn!==other(before.turn))return null;
+ const changed=[];for(let i=0;i<90;i++)if(JSON.stringify(before.board[i])!==JSON.stringify(after.board[i]))changed.push(i);
+ if(changed.length!==2)return null;
+ const from=changed.find(i=>before.board[i]?.side===before.turn&&!after.board[i]),to=changed.find(i=>after.board[i]?.side===before.turn);
+ if(from===undefined||to===undefined||from===to)return null;
+ const p=before.board[from],q=after.board[to];if(q.hidden||(!p.hidden&&p.type!==q.type))return null;
+ if(!legalMoves(before).some(m=>m.from===from&&m.to===to))return null;
+ return {side:before.turn,capture:!!before.board[to],check:inCheck(after.board,after.turn)};
+}
+export function repetitionStatus(s){
+ const ps=publicPositions(s),end=ps.length-1;if(end<12||ps[end]!==positionKey(s))return null;
+ // Three complete cycles of resulting positions. The incoming non-capture
+ // move at an external entry point counts (2020 23.2), not an earlier capture.
+ for(let period=4;period*3<=end;period+=2){
+  const start=end-period*3+1;let repeated=true;
+  for(let i=start+period;i<=end;i++)if(ps[i]!==ps[i-period]){repeated=false;break;}
+  if(!repeated)continue;
+  const checks={r:0,b:0},moves={r:0,b:0};let valid=true;
+  for(let i=start;i<=end;i++){const step=publicTransition(readPositionKey(ps[i-1]),readPositionKey(ps[i]));if(!step||step.capture){valid=false;break;}moves[step.side]++;checks[step.side]+=Number(step.check);}
+  if(!valid)continue;
+  const long=['r','b'].filter(side=>moves[side]>0&&checks[side]===moves[side]);
+  const evidence={cycles:3,period,moves,checks};
+  if(long.length===1)return {status:'loss',reason:'perpetual-check',loser:long[0],...evidence};
+  // Chase, mating threats, mutual duties and the two-round change procedure
+ // need a referee. Absence of continuous check is NOT proof of a legal draw.
+  return {status:'review-required',reason:'repetition-needs-ruling',...evidence};
+ }
+ return null;
+}
+function applyRules(s,n){
+ if(!legalMoves(n,n.turn,{stopAfterOne:true}).length){n.result={winner:s.turn,text:inCheck(n.board,n.turn)?'将死':'困毙'};delete n.adjudication;return;}
+ const ruling=repetitionStatus(n);if(ruling)n.adjudication=ruling;else delete n.adjudication;
+ if(ruling?.status==='loss')n.result={winner:other(ruling.loser),text:(ruling.loser==='r'?'红':'黑')+'方长将判负'};
+ // The legacy move limit cannot turn an unresolved repetition into a draw.
+ else if(n.quiet>=120||n.ply>=400)n.result=ruling?.status==='review-required'?{winner:null,text:'重复局面待裁决',status:'unresolved',requiresAdjudication:true}:{winner:null,text:'和棋（步数上限）'};
+}
+export function move(s,m,finish=true){let n=copy(s),p=n.board[m.from],q=n.board[m.to];if(!p)throw Error('空起点');if(q)n.captured.push(q.hidden?{side:q.side,hidden:true,type:q.type,capturedBy:p.side}:{...q,capturedBy:p.side});n.quiet=q||p.hidden?0:n.quiet+1;p.hidden=false;n.board[m.to]=p;n.board[m.from]=null;n.turn=other(s.turn);n.ply++;if(finish){n.positions=[...currentHistory(s),positionKey(n)];applyRules(s,n);}return n;}
 export class Game{constructor(){this.reset();}reset(){this.state=initial();this.state.positions=[positionKey(this.state)];this.history=[];}play(m){if(this.state.result||!legalMoves(this.state).some(x=>x.from===m.from&&x.to===m.to))return false;this.history.push(copy(this.state));this.state=move(this.state,m);return true;}undo(single=false){if(!this.history.length)return false;do{this.state=this.history.pop();}while(!single&&this.state.turn!=='r'&&this.history.length);return true;}}
 
-export function rootRules(view,m){const n=move(view,m,false),key=positionKey(n),count=view.positions?.filter(k=>k===key).length||0,loss=count>=2,draw=!loss&&(n.quiet>=120||n.ply>=400),continues=(loss||draw)&&legalMoves(n,n.turn,{stopAfterOne:true}).length>0;return {count,loss:!!(continues&&loss),draw:!!(continues&&draw)};}
+export function rootRules(view,m){
+ const n=move(view,m,false),key=positionKey(n),history=currentHistory(view),count=history.filter(k=>k===key).length;
+ // Revealing a piece cannot repeat the current reversible public history.
+ if(view.board[m.from]?.hidden)return {count:0,loss:false,win:false,draw:false,reviewRequired:false,limit:n.ply>=400};
+ n.positions=[...history,key];n.result=null;applyRules(view,n);
+ const loss=n.adjudication?.status==='loss'&&n.adjudication.loser===view.turn,win=n.adjudication?.status==='loss'&&n.adjudication.loser!==view.turn;
+ return {count,loss:!!loss,win:!!win,draw:!!(n.result&&!n.result.winner&&!n.result.requiresAdjudication),reviewRequired:n.adjudication?.status==='review-required'};
+}

@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {audit,auditGame,observation,repetitionDetail} from './audit.mjs';
-import {initial,positionKey,move,legalMoves,publicState} from '../../../engine.js';
+import {initial,positionKey,move,legalMoves,publicState} from '../historical/referee.mjs';
 const data=JSON.parse(fs.readFileSync(new URL('../../../benchmarks/jqe/matches.json',import.meta.url)));
 const clone=x=>structuredClone(x);
 test('independent old 12-game replay preserves normal and repetition categories',()=>{

@@ -3,11 +3,11 @@ import fs from 'node:fs';
 import {createHash} from 'node:crypto';
 import {pathToFileURL} from 'node:url';
 import assert from 'node:assert/strict';
-import {initial, publicState, positionKey, legalMoves, move, inCheck, other, TYPES} from '../../../engine.js';
+import {initial, publicState, positionKey, legalMoves, move, inCheck, other, TYPES} from '../historical/referee.mjs';
 const hash = x => createHash('sha256').update(x).digest('hex');
 const seeded = seed => () => ((seed = (Math.imul(seed,1664525)+1013904223)>>>0)/4294967296);
 const equalMove = (a,b) => a?.from === b?.from && a?.to === b?.to;
-export const limitation = 'This is the project referee, not complete competition perpetual-check/perpetual-chase adjudication. Repetition wins are not evidence of superior playing strength. Forced means every legal move at the final ply loses immediately by this repetition rule; it says nothing about earlier avoidability.';
+export const limitation = 'This is the archived 9602155 referee (historical replay only), not complete competition perpetual-check/perpetual-chase adjudication. Repetition wins are not evidence of superior playing strength. Forced means every legal move at the final ply loses immediately by this repetition rule; it says nothing about earlier avoidability.';
 export function observation(s, viewer) {
  const p=publicState(s,viewer);
  const v={board:p.board,turn:p.turn,captured:p.captured,ply:p.ply,quiet:p.quiet,result:p.result,positions:p.positions,viewer:p.viewer};
