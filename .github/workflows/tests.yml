@@ -224,6 +224,11 @@ jobs:
       - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
           node-version: '24'
+      - name: Additional paired games and independent repetition audit
+        run: |
+          node --test native/experiments/jqe-followup/matches.test.mjs native/experiments/jqe-followup/audit.test.mjs
+          node native/experiments/jqe-followup/matches.mjs replay
+          node native/experiments/jqe-followup/audit.mjs benchmarks/jqe-followup-2026-11-09/matches.json
       - name: Pinned network, upstream inference, privacy and undo
         run: |
           node --test native/experiments/jqe/source.test.mjs

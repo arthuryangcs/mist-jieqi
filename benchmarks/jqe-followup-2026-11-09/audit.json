@@ -1,0 +1,771 @@
+{
+  "inputSha256": "c720bb1a5a4c0b3cb8cc8f67101276cff1aece82ba200d3af9d846b8729dd528",
+  "schemaVersion": 1,
+  "passed": true,
+  "complete": true,
+  "expectedGames": 24,
+  "auditedGames": 24,
+  "categories": {
+    "normal-decisive": 21,
+    "repetition": 3
+  },
+  "limitations": [
+    "This is the project referee, not complete competition perpetual-check/perpetual-chase adjudication. Repetition wins are not evidence of superior playing strength. Forced means every legal move at the final ply loses immediately by this repetition rule; it says nothing about earlier avoidability.",
+    "Replay checks recorded observations against deterministic referee truth, not unrecorded engine memory or actual IPC traffic. Technical failures remain separate, not normal wins."
+  ],
+  "games": [
+    {
+      "index": 0,
+      "group": "internal",
+      "seed": 2026110967,
+      "candidateSide": "r",
+      "layoutSha256": "5fccf8aececc2ee30f07333c32f2aa1f210af0e18a7b2bca3c6314fc24fe4488",
+      "plies": 39,
+      "privateCaptures": 4,
+      "category": "normal-decisive",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": false,
+        "reason": "将死"
+      },
+      "cleanupErrors": [],
+      "repetition": null,
+      "passed": true
+    },
+    {
+      "index": 1,
+      "group": "candidatePika",
+      "seed": 2026110967,
+      "candidateSide": "r",
+      "layoutSha256": "5fccf8aececc2ee30f07333c32f2aa1f210af0e18a7b2bca3c6314fc24fe4488",
+      "plies": 165,
+      "privateCaptures": 3,
+      "category": "normal-decisive",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": false,
+        "reason": "困毙"
+      },
+      "cleanupErrors": [],
+      "repetition": null,
+      "passed": true
+    },
+    {
+      "index": 2,
+      "group": "controlPika",
+      "seed": 2026110967,
+      "candidateSide": "r",
+      "layoutSha256": "5fccf8aececc2ee30f07333c32f2aa1f210af0e18a7b2bca3c6314fc24fe4488",
+      "plies": 59,
+      "privateCaptures": 5,
+      "category": "normal-decisive",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": false,
+        "reason": "将死"
+      },
+      "cleanupErrors": [],
+      "repetition": null,
+      "passed": true
+    },
+    {
+      "index": 3,
+      "group": "internal",
+      "seed": 2026110967,
+      "candidateSide": "b",
+      "layoutSha256": "5fccf8aececc2ee30f07333c32f2aa1f210af0e18a7b2bca3c6314fc24fe4488",
+      "plies": 105,
+      "privateCaptures": 6,
+      "category": "normal-decisive",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": false,
+        "reason": "将死"
+      },
+      "cleanupErrors": [],
+      "repetition": null,
+      "passed": true
+    },
+    {
+      "index": 4,
+      "group": "candidatePika",
+      "seed": 2026110967,
+      "candidateSide": "b",
+      "layoutSha256": "5fccf8aececc2ee30f07333c32f2aa1f210af0e18a7b2bca3c6314fc24fe4488",
+      "plies": 77,
+      "privateCaptures": 6,
+      "category": "normal-decisive",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": false,
+        "reason": "将死"
+      },
+      "cleanupErrors": [],
+      "repetition": null,
+      "passed": true
+    },
+    {
+      "index": 5,
+      "group": "controlPika",
+      "seed": 2026110967,
+      "candidateSide": "b",
+      "layoutSha256": "5fccf8aececc2ee30f07333c32f2aa1f210af0e18a7b2bca3c6314fc24fe4488",
+      "plies": 55,
+      "privateCaptures": 2,
+      "category": "normal-decisive",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": false,
+        "reason": "将死"
+      },
+      "cleanupErrors": [],
+      "repetition": null,
+      "passed": true
+    },
+    {
+      "index": 6,
+      "group": "controlPika",
+      "seed": 2026110979,
+      "candidateSide": "r",
+      "layoutSha256": "3109c784e615fd38c5c2bd6c1880966466c2c3ab3a73393ccca477ac877221ca",
+      "plies": 74,
+      "privateCaptures": 9,
+      "category": "normal-decisive",
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "technicalForfeit": false,
+        "reason": "将死"
+      },
+      "cleanupErrors": [],
+      "repetition": null,
+      "passed": true
+    },
+    {
+      "index": 7,
+      "group": "candidatePika",
+      "seed": 2026110979,
+      "candidateSide": "r",
+      "layoutSha256": "3109c784e615fd38c5c2bd6c1880966466c2c3ab3a73393ccca477ac877221ca",
+      "plies": 140,
+      "privateCaptures": 4,
+      "category": "normal-decisive",
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "technicalForfeit": false,
+        "reason": "将死"
+      },
+      "cleanupErrors": [],
+      "repetition": null,
+      "passed": true
+    },
+    {
+      "index": 8,
+      "group": "internal",
+      "seed": 2026110979,
+      "candidateSide": "r",
+      "layoutSha256": "3109c784e615fd38c5c2bd6c1880966466c2c3ab3a73393ccca477ac877221ca",
+      "plies": 87,
+      "privateCaptures": 7,
+      "category": "normal-decisive",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": false,
+        "reason": "将死"
+      },
+      "cleanupErrors": [],
+      "repetition": null,
+      "passed": true
+    },
+    {
+      "index": 9,
+      "group": "controlPika",
+      "seed": 2026110979,
+      "candidateSide": "b",
+      "layoutSha256": "3109c784e615fd38c5c2bd6c1880966466c2c3ab3a73393ccca477ac877221ca",
+      "plies": 61,
+      "privateCaptures": 7,
+      "category": "normal-decisive",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": false,
+        "reason": "将死"
+      },
+      "cleanupErrors": [],
+      "repetition": null,
+      "passed": true
+    },
+    {
+      "index": 10,
+      "group": "candidatePika",
+      "seed": 2026110979,
+      "candidateSide": "b",
+      "layoutSha256": "3109c784e615fd38c5c2bd6c1880966466c2c3ab3a73393ccca477ac877221ca",
+      "plies": 53,
+      "privateCaptures": 4,
+      "category": "repetition",
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "technicalForfeit": false,
+        "reason": "红方重复局面判负"
+      },
+      "cleanupErrors": [],
+      "repetition": {
+        "terminalPly": 53,
+        "loser": "r",
+        "winner": "b",
+        "occurrences": 3,
+        "occurrencePlies": [
+          45,
+          49,
+          53
+        ],
+        "cycleLengths": [
+          4,
+          4
+        ],
+        "lastCycleLength": 4,
+        "lastCycle": [
+          {
+            "ply": 50,
+            "side": "b",
+            "move": {
+              "from": 82,
+              "to": 73
+            },
+            "givesCheck": true,
+            "moverWasInCheck": false
+          },
+          {
+            "ply": 51,
+            "side": "r",
+            "move": {
+              "from": 75,
+              "to": 84
+            },
+            "givesCheck": false,
+            "moverWasInCheck": true
+          },
+          {
+            "ply": 52,
+            "side": "b",
+            "move": {
+              "from": 73,
+              "to": 82
+            },
+            "givesCheck": true,
+            "moverWasInCheck": false
+          },
+          {
+            "ply": 53,
+            "side": "r",
+            "move": {
+              "from": 84,
+              "to": 75
+            },
+            "givesCheck": false,
+            "moverWasInCheck": true
+          }
+        ],
+        "lastMoveBySide": {
+          "r": {
+            "ply": 53,
+            "side": "r",
+            "move": {
+              "from": 84,
+              "to": 75
+            },
+            "givesCheck": false,
+            "moverWasInCheck": true
+          },
+          "b": {
+            "ply": 52,
+            "side": "b",
+            "move": {
+              "from": 73,
+              "to": 82
+            },
+            "givesCheck": true,
+            "moverWasInCheck": false
+          }
+        },
+        "legalReplies": [
+          {
+            "from": 84,
+            "to": 75,
+            "givesCheck": false,
+            "repetitionLoss": true,
+            "result": {
+              "winner": "b",
+              "text": "红方重复局面判负"
+            }
+          }
+        ],
+        "repetitionLosingMoves": [
+          {
+            "from": 84,
+            "to": 75
+          }
+        ],
+        "forcedRepetition": true,
+        "limitation": "This is the project referee, not complete competition perpetual-check/perpetual-chase adjudication. Repetition wins are not evidence of superior playing strength. Forced means every legal move at the final ply loses immediately by this repetition rule; it says nothing about earlier avoidability."
+      },
+      "passed": true
+    },
+    {
+      "index": 11,
+      "group": "internal",
+      "seed": 2026110979,
+      "candidateSide": "b",
+      "layoutSha256": "3109c784e615fd38c5c2bd6c1880966466c2c3ab3a73393ccca477ac877221ca",
+      "plies": 64,
+      "privateCaptures": 6,
+      "category": "repetition",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": false,
+        "reason": "黑方重复局面判负"
+      },
+      "cleanupErrors": [],
+      "repetition": {
+        "terminalPly": 64,
+        "loser": "b",
+        "winner": "r",
+        "occurrences": 3,
+        "occurrencePlies": [
+          56,
+          60,
+          64
+        ],
+        "cycleLengths": [
+          4,
+          4
+        ],
+        "lastCycleLength": 4,
+        "lastCycle": [
+          {
+            "ply": 61,
+            "side": "r",
+            "move": {
+              "from": 6,
+              "to": 15
+            },
+            "givesCheck": true,
+            "moverWasInCheck": false
+          },
+          {
+            "ply": 62,
+            "side": "b",
+            "move": {
+              "from": 14,
+              "to": 5
+            },
+            "givesCheck": false,
+            "moverWasInCheck": true
+          },
+          {
+            "ply": 63,
+            "side": "r",
+            "move": {
+              "from": 15,
+              "to": 6
+            },
+            "givesCheck": true,
+            "moverWasInCheck": false
+          },
+          {
+            "ply": 64,
+            "side": "b",
+            "move": {
+              "from": 5,
+              "to": 14
+            },
+            "givesCheck": false,
+            "moverWasInCheck": true
+          }
+        ],
+        "lastMoveBySide": {
+          "r": {
+            "ply": 63,
+            "side": "r",
+            "move": {
+              "from": 15,
+              "to": 6
+            },
+            "givesCheck": true,
+            "moverWasInCheck": false
+          },
+          "b": {
+            "ply": 64,
+            "side": "b",
+            "move": {
+              "from": 5,
+              "to": 14
+            },
+            "givesCheck": false,
+            "moverWasInCheck": true
+          }
+        },
+        "legalReplies": [
+          {
+            "from": 5,
+            "to": 14,
+            "givesCheck": false,
+            "repetitionLoss": true,
+            "result": {
+              "winner": "r",
+              "text": "黑方重复局面判负"
+            }
+          }
+        ],
+        "repetitionLosingMoves": [
+          {
+            "from": 5,
+            "to": 14
+          }
+        ],
+        "forcedRepetition": true,
+        "limitation": "This is the project referee, not complete competition perpetual-check/perpetual-chase adjudication. Repetition wins are not evidence of superior playing strength. Forced means every legal move at the final ply loses immediately by this repetition rule; it says nothing about earlier avoidability."
+      },
+      "passed": true
+    },
+    {
+      "index": 12,
+      "group": "internal",
+      "seed": 2026110983,
+      "candidateSide": "r",
+      "layoutSha256": "31ca623a88e2c5e3f47ba64764f6fd353a414e2aac70ff211dfb14389265db86",
+      "plies": 81,
+      "privateCaptures": 6,
+      "category": "normal-decisive",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": false,
+        "reason": "将死"
+      },
+      "cleanupErrors": [],
+      "repetition": null,
+      "passed": true
+    },
+    {
+      "index": 13,
+      "group": "candidatePika",
+      "seed": 2026110983,
+      "candidateSide": "r",
+      "layoutSha256": "31ca623a88e2c5e3f47ba64764f6fd353a414e2aac70ff211dfb14389265db86",
+      "plies": 116,
+      "privateCaptures": 3,
+      "category": "normal-decisive",
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "technicalForfeit": false,
+        "reason": "将死"
+      },
+      "cleanupErrors": [],
+      "repetition": null,
+      "passed": true
+    },
+    {
+      "index": 14,
+      "group": "controlPika",
+      "seed": 2026110983,
+      "candidateSide": "r",
+      "layoutSha256": "31ca623a88e2c5e3f47ba64764f6fd353a414e2aac70ff211dfb14389265db86",
+      "plies": 102,
+      "privateCaptures": 6,
+      "category": "normal-decisive",
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "technicalForfeit": false,
+        "reason": "将死"
+      },
+      "cleanupErrors": [],
+      "repetition": null,
+      "passed": true
+    },
+    {
+      "index": 15,
+      "group": "internal",
+      "seed": 2026110983,
+      "candidateSide": "b",
+      "layoutSha256": "31ca623a88e2c5e3f47ba64764f6fd353a414e2aac70ff211dfb14389265db86",
+      "plies": 60,
+      "privateCaptures": 7,
+      "category": "normal-decisive",
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "technicalForfeit": false,
+        "reason": "将死"
+      },
+      "cleanupErrors": [],
+      "repetition": null,
+      "passed": true
+    },
+    {
+      "index": 16,
+      "group": "candidatePika",
+      "seed": 2026110983,
+      "candidateSide": "b",
+      "layoutSha256": "31ca623a88e2c5e3f47ba64764f6fd353a414e2aac70ff211dfb14389265db86",
+      "plies": 55,
+      "privateCaptures": 4,
+      "category": "normal-decisive",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": false,
+        "reason": "将死"
+      },
+      "cleanupErrors": [],
+      "repetition": null,
+      "passed": true
+    },
+    {
+      "index": 17,
+      "group": "controlPika",
+      "seed": 2026110983,
+      "candidateSide": "b",
+      "layoutSha256": "31ca623a88e2c5e3f47ba64764f6fd353a414e2aac70ff211dfb14389265db86",
+      "plies": 67,
+      "privateCaptures": 5,
+      "category": "normal-decisive",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": false,
+        "reason": "将死"
+      },
+      "cleanupErrors": [],
+      "repetition": null,
+      "passed": true
+    },
+    {
+      "index": 18,
+      "group": "controlPika",
+      "seed": 2026110997,
+      "candidateSide": "r",
+      "layoutSha256": "f0f886ae3e3c1fb52a363860a266167f79b183819fb256d81755e675bc40fa63",
+      "plies": 76,
+      "privateCaptures": 9,
+      "category": "repetition",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": false,
+        "reason": "黑方重复局面判负"
+      },
+      "cleanupErrors": [],
+      "repetition": {
+        "terminalPly": 76,
+        "loser": "b",
+        "winner": "r",
+        "occurrences": 3,
+        "occurrencePlies": [
+          68,
+          72,
+          76
+        ],
+        "cycleLengths": [
+          4,
+          4
+        ],
+        "lastCycleLength": 4,
+        "lastCycle": [
+          {
+            "ply": 73,
+            "side": "r",
+            "move": {
+              "from": 9,
+              "to": 0
+            },
+            "givesCheck": true,
+            "moverWasInCheck": false
+          },
+          {
+            "ply": 74,
+            "side": "b",
+            "move": {
+              "from": 4,
+              "to": 13
+            },
+            "givesCheck": false,
+            "moverWasInCheck": true
+          },
+          {
+            "ply": 75,
+            "side": "r",
+            "move": {
+              "from": 0,
+              "to": 9
+            },
+            "givesCheck": true,
+            "moverWasInCheck": false
+          },
+          {
+            "ply": 76,
+            "side": "b",
+            "move": {
+              "from": 13,
+              "to": 4
+            },
+            "givesCheck": false,
+            "moverWasInCheck": true
+          }
+        ],
+        "lastMoveBySide": {
+          "r": {
+            "ply": 75,
+            "side": "r",
+            "move": {
+              "from": 0,
+              "to": 9
+            },
+            "givesCheck": true,
+            "moverWasInCheck": false
+          },
+          "b": {
+            "ply": 76,
+            "side": "b",
+            "move": {
+              "from": 13,
+              "to": 4
+            },
+            "givesCheck": false,
+            "moverWasInCheck": true
+          }
+        },
+        "legalReplies": [
+          {
+            "from": 13,
+            "to": 4,
+            "givesCheck": false,
+            "repetitionLoss": true,
+            "result": {
+              "winner": "r",
+              "text": "黑方重复局面判负"
+            }
+          }
+        ],
+        "repetitionLosingMoves": [
+          {
+            "from": 13,
+            "to": 4
+          }
+        ],
+        "forcedRepetition": true,
+        "limitation": "This is the project referee, not complete competition perpetual-check/perpetual-chase adjudication. Repetition wins are not evidence of superior playing strength. Forced means every legal move at the final ply loses immediately by this repetition rule; it says nothing about earlier avoidability."
+      },
+      "passed": true
+    },
+    {
+      "index": 19,
+      "group": "candidatePika",
+      "seed": 2026110997,
+      "candidateSide": "r",
+      "layoutSha256": "f0f886ae3e3c1fb52a363860a266167f79b183819fb256d81755e675bc40fa63",
+      "plies": 87,
+      "privateCaptures": 5,
+      "category": "normal-decisive",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": false,
+        "reason": "将死"
+      },
+      "cleanupErrors": [],
+      "repetition": null,
+      "passed": true
+    },
+    {
+      "index": 20,
+      "group": "internal",
+      "seed": 2026110997,
+      "candidateSide": "r",
+      "layoutSha256": "f0f886ae3e3c1fb52a363860a266167f79b183819fb256d81755e675bc40fa63",
+      "plies": 77,
+      "privateCaptures": 10,
+      "category": "normal-decisive",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": false,
+        "reason": "将死"
+      },
+      "cleanupErrors": [],
+      "repetition": null,
+      "passed": true
+    },
+    {
+      "index": 21,
+      "group": "controlPika",
+      "seed": 2026110997,
+      "candidateSide": "b",
+      "layoutSha256": "f0f886ae3e3c1fb52a363860a266167f79b183819fb256d81755e675bc40fa63",
+      "plies": 111,
+      "privateCaptures": 9,
+      "category": "normal-decisive",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": false,
+        "reason": "将死"
+      },
+      "cleanupErrors": [],
+      "repetition": null,
+      "passed": true
+    },
+    {
+      "index": 22,
+      "group": "candidatePika",
+      "seed": 2026110997,
+      "candidateSide": "b",
+      "layoutSha256": "f0f886ae3e3c1fb52a363860a266167f79b183819fb256d81755e675bc40fa63",
+      "plies": 75,
+      "privateCaptures": 4,
+      "category": "normal-decisive",
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": false,
+        "reason": "将死"
+      },
+      "cleanupErrors": [],
+      "repetition": null,
+      "passed": true
+    },
+    {
+      "index": 23,
+      "group": "internal",
+      "seed": 2026110997,
+      "candidateSide": "b",
+      "layoutSha256": "f0f886ae3e3c1fb52a363860a266167f79b183819fb256d81755e675bc40fa63",
+      "plies": 132,
+      "privateCaptures": 12,
+      "category": "normal-decisive",
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "technicalForfeit": false,
+        "reason": "将死"
+      },
+      "cleanupErrors": [],
+      "repetition": null,
+      "passed": true
+    }
+  ]
+}

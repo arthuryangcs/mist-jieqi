@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "complete": true,
+  "games": 24,
+  "moves": 2018,
+  "privateChecks": 85,
+  "matchesSha256": "c720bb1a5a4c0b3cb8cc8f67101276cff1aece82ba200d3af9d846b8729dd528",
+  "planSha256": "5308ca71146b197bc3fdd3dc2f6473d3398435ef154fa5822b3ad3b8cae0401f",
+  "summary": {
+    "internal": {
+      "finished": 8,
+      "wins": 6,
+      "draws": 0,
+      "losses": 2,
+      "technicalFailures": 0,
+      "cleanupFailures": 0,
+      "unresolved": 0,
+      "scoreRate": 0.75,
+      "normal": {
+        "wins": 6,
+        "draws": 0,
+        "losses": 2
+      }
+    },
+    "candidatePika": {
+      "finished": 8,
+      "wins": 3,
+      "draws": 0,
+      "losses": 5,
+      "technicalFailures": 0,
+      "cleanupFailures": 0,
+      "unresolved": 0,
+      "scoreRate": 0.375,
+      "normal": {
+        "wins": 3,
+        "draws": 0,
+        "losses": 5
+      }
+    },
+    "controlPika": {
+      "finished": 8,
+      "wins": 2,
+      "draws": 0,
+      "losses": 6,
+      "technicalFailures": 0,
+      "cleanupFailures": 0,
+      "unresolved": 0,
+      "scoreRate": 0.25,
+      "normal": {
+        "wins": 2,
+        "draws": 0,
+        "losses": 6
+      }
+    }
+  }
+}

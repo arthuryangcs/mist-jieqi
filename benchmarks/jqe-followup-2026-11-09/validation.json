@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "checkedAt": "2026-11-09T06:25:15.016092+00:00",
+  "matchesSha256": "c720bb1a5a4c0b3cb8cc8f67101276cff1aece82ba200d3af9d846b8729dd528",
+  "auditSha256": "3a82db279eac7db46533a2297c34f94231387834c44fcd49a3203ed4dcd52ef4",
+  "replaySha256": "8e74421f0d4c5ceb90901037f2d370aaebf70697d91cf7353e4e9bfae933b4d5",
+  "previousLedgerSha256": "277948086fa028138e99f2e6e0584a3c0acf9fb2f744d8c4f10ce822549ea8d8",
+  "commands": [
+    {
+      "command": "npm test -- --test-concurrency=1",
+      "passed": true,
+      "tests": 195,
+      "logSha256": "c97df0613d4aafad0515e76016fa2f32760d2d5c10cef8795829b08cf61b4bc7"
+    },
+    {
+      "command": "node --test native/experiments/jqe-followup/matches.test.mjs native/experiments/jqe-followup/audit.test.mjs native/experiments/jqe/source.test.mjs",
+      "passed": true,
+      "tests": 25,
+      "logSha256": "53807b3790d2689b2c2f0188e93345fd09aa7a891585f9227a85dc600a4e289c"
+    },
+    {
+      "command": "node --test native/service-check.mjs",
+      "passed": true,
+      "tests": 8,
+      "logSha256": "d9e8aa3e5c78985b2e5b49d56016125b0aaab8520379925b36ab9eeba440ac03"
+    },
+    {
+      "command": "JIEQI_NATIVE_CHECK_OUTPUT=.cache/jqe-followup-2026-11-09/native-check.json node native/check.mjs",
+      "passed": true,
+      "ruleCases": 72,
+      "transitions": 2172,
+      "searchCases": 16,
+      "logSha256": "9daccbbcd587025d752bbc7dcdfc98ea838100fc98b19aa47b342d0390c7099d"
+    }
+  ],
+  "sourceHashes": {
+    "native/experiments/jqe-followup/matches.mjs": "5698fb2f00cc4610c4c8f978787712229729f320dfaecf155c4c6758c05eef83",
+    "native/experiments/jqe-followup/plan.json": "5308ca71146b197bc3fdd3dc2f6473d3398435ef154fa5822b3ad3b8cae0401f",
+    "native/experiments/jqe-followup/audit.test.mjs": "cb36cca4918c7a5dbc5fbf8ef7012c21a2dfad3e2420e32023ccbd6a3cc456d6",
+    "native/experiments/jqe-followup/matches.test.mjs": "ea622ff385fc05ab3d989f731aad4008c52324043b27435198bcbb6aeee3492c",
+    "native/experiments/jqe-followup/export.mjs": "9662969ad76bb1f1c3446467435b60d09c3f37aa7fc0d01e0f6d62eebc2ce6b6",
+    "native/experiments/jqe-followup/audit.mjs": "1011ef58e126dbef4214130abf50771bb66f62e311e7d176b9fdbf03de23bcdb"
+  },
+  "privacyScan": {
+    "passed": true,
+    "files": 15,
+    "scope": "New follow-up artifacts, scripts and changed documentation/workflow; personal paths, common credential patterns and private keys checked; synthetic records only."
+  },
+  "notes": [
+    "All timed games completed before regression suites began.",
+    "Original inference, sanitizer, rules, thread and integration checks reused only after exact frozen source, header, model and binary identity verification at freeze.",
+    "Local build products and raw regression logs remain ignored and are not published.",
+    "No default engine change or preview-server restart."
+  ]
+}

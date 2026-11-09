@@ -1,0 +1,33 @@
+{
+  "experiment": "jqe-it014-additional-pairs-2026-11-09",
+  "defaultPromotion": false,
+  "upstreamCommit": "331a6e612a038c4a04cf980f7b9482910fd50078",
+  "modelSha256": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160",
+  "mode": "portable-quantized",
+  "scoreScale": "600/430 (Mist aggregation K / published it014 training K), no tuning",
+  "control": "Frozen current Mist search/HCE, normalized 64MiB TT arena",
+  "matches": {
+    "seeds": [
+      2026110967,
+      2026110979,
+      2026110983,
+      2026110997
+    ],
+    "internalGames": 8,
+    "candidatePikaGames": 8,
+    "controlPikaGames": 8,
+    "totalGames": 24,
+    "budgetMs": 2000,
+    "graceMs": 60,
+    "maxPlies": 400,
+    "samples": 8,
+    "brightSamples": 1,
+    "maxThreads": 4,
+    "hostReserveMs": 40,
+    "ttBudgetBytes": 67108864,
+    "stopRule": "Complete frozen pairs; no outcome-based replacement or tuning"
+  },
+  "previousCommit": "2d34897",
+  "previousLedgerSha256": "277948086fa028138e99f2e6e0584a3c0acf9fb2f744d8c4f10ce822549ea8d8",
+  "purpose": "Prospective additional synthetic layouts, no tuning or replacement of the original 12 games."
+}

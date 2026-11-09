@@ -1,0 +1,390 @@
+{
+  "passed": true,
+  "checkedAt": "2026-11-09T05:16:59.036Z",
+  "existingLayoutHashes": 108,
+  "initials": [
+    {
+      "seed": 2026110967,
+      "layoutSha256": "5fccf8aececc2ee30f07333c32f2aa1f210af0e18a7b2bca3c6314fc24fe4488"
+    },
+    {
+      "seed": 2026110979,
+      "layoutSha256": "3109c784e615fd38c5c2bd6c1880966466c2c3ab3a73393ccca477ac877221ca"
+    },
+    {
+      "seed": 2026110983,
+      "layoutSha256": "31ca623a88e2c5e3f47ba64764f6fd353a414e2aac70ff211dfb14389265db86"
+    },
+    {
+      "seed": 2026110997,
+      "layoutSha256": "f0f886ae3e3c1fb52a363860a266167f79b183819fb256d81755e675bc40fa63"
+    }
+  ],
+  "evidence": [
+    {
+      "file": "benchmarks/ab-jchess/matches.json",
+      "sha256": "29228fafc00cf1ceee26b48e8a2aa2cdafce215d8a8e168885f130fbea8be214",
+      "entries": 16
+    },
+    {
+      "file": "benchmarks/all-features/matches.json",
+      "sha256": "82c64b15b4e9da6dd0e908477ed4a8dbac281fad31c94466889ee6f89f677215",
+      "entries": 24
+    },
+    {
+      "file": "benchmarks/buffered-sort/matches.json",
+      "sha256": "878a832d1b037ab5a36e8211674a3fa35ca8913cc9c6b495d459abd3e4912c12",
+      "entries": 14
+    },
+    {
+      "file": "benchmarks/clock-validation/matches.json",
+      "sha256": "ad40e58514dc9692b30ccabcd1b43a61000c5dbbaf7f97aadcb524bc094d05cf",
+      "entries": 12
+    },
+    {
+      "file": "benchmarks/cluster-tt/matches.json",
+      "sha256": "b433d279dd85dd4dc0d6c286530c9242cf80ad7beda35ed03dd005b6cbb87fda",
+      "entries": 12
+    },
+    {
+      "file": "benchmarks/cycle-parity/matches.json",
+      "sha256": "99396369bc7a4adc7e0d5c7730e561b0e20f261fb77a8a60d2e58dc17015bda0",
+      "entries": 12
+    },
+    {
+      "file": "benchmarks/insertion-sort/matches.json",
+      "sha256": "13554dff8ffd6868ceac3a1240d7a8aaeeed673ec4e300c7c87576ad526c62d0",
+      "entries": 12
+    },
+    {
+      "file": "benchmarks/jqe/matches.json",
+      "sha256": "277948086fa028138e99f2e6e0584a3c0acf9fb2f744d8c4f10ce822549ea8d8",
+      "entries": 14
+    },
+    {
+      "file": "benchmarks/king-geometry/matches.json",
+      "sha256": "ed68d9e9d13b0ec8d084bb8e8a617663721200862e66284b91ff3f970f27dba0",
+      "entries": 12
+    },
+    {
+      "file": "benchmarks/mate-proof/matches.json",
+      "sha256": "a03146713579914f7053cab14cb0f090841364891a0b05a0879a8b8cb18e661f",
+      "entries": 24
+    },
+    {
+      "file": "benchmarks/nnue/data-manifest.json",
+      "sha256": "591182f2c80901c775f420125fed796feb8aabf32326b079f8800be95c831ddb",
+      "entries": 8
+    },
+    {
+      "file": "benchmarks/nnue/matches.json",
+      "sha256": "638e903b38aa32f5ba6af8bbe18be4ff713a447107a25e665856070e713f060f",
+      "entries": 7
+    },
+    {
+      "file": "benchmarks/piece-mask/matches.json",
+      "sha256": "e242fed796cb8d64583aec049538555b68305809e6334abe5c7488ca7e2fa259",
+      "entries": 12
+    },
+    {
+      "file": "benchmarks/pika-native-match/matches.json",
+      "sha256": "14108c0606dc43d6424dba5bee8c4cb3cf702051911d26053c2aa92a15475b2b",
+      "entries": 20
+    },
+    {
+      "file": "benchmarks/qcheck-filter/matches.json",
+      "sha256": "740cd3b1e1cb0c442e536edbdf50387b362e0c1f8a995e040ce56764fd3f9516",
+      "entries": 5
+    },
+    {
+      "file": "benchmarks/quiet-checks/matches.json",
+      "sha256": "e5e7c70e14fb551d9304c6b154678776239f0cfb5a02a359161d52df963dc68b",
+      "entries": 8
+    },
+    {
+      "file": "benchmarks/search-speed/matches.json",
+      "sha256": "63560f74605ac35a1e1ad58a858f5af593778d5dbb30f81c24ee7d0e10c23ee5",
+      "entries": 10
+    },
+    {
+      "file": "benchmarks/selfplay-value/data-manifest.json",
+      "sha256": "42e6674ae2681d3ac2cc2d00de022e8c2aafa36f9937565b8fabdccf9701df7a",
+      "entries": 48
+    },
+    {
+      "file": "benchmarks/selfplay-value/games.json",
+      "sha256": "7fc0d2b6689ad19dab3320548bbf5b3033372db19ef150a0212deb2ae453e756",
+      "entries": 48
+    },
+    {
+      "file": "benchmarks/selfplay-value/matches.json",
+      "sha256": "1a4a49d0cb453441fee084008eda64baaca77e334e525ae860fd7b170919de59",
+      "entries": 14
+    },
+    {
+      "file": "benchmarks/standpat/matches.json",
+      "sha256": "e2cd218e37aa232d632f51360cce23d0c0fd60ce2d3fba727fa00b490be4fa90",
+      "entries": 24
+    },
+    {
+      "file": "benchmarks/tactical-lmr/matches.json",
+      "sha256": "c54755c04523c7742319e7a0c331c0c30cdb9cd62785c73f99d9c98d45e4da39",
+      "entries": 12
+    },
+    {
+      "file": "benchmarks/time-search/matches.json",
+      "sha256": "d4f05c28d2784fb66278be03c5a09098576dcd5dceed39d539ff07e808177262",
+      "entries": 12
+    },
+    {
+      "file": "benchmarks/verified-null/matches.json",
+      "sha256": "65328434ccd63ee4b476fa28b6013ca10502266f76fd13a3d9ad13d74d95b92a",
+      "entries": 12
+    },
+    {
+      "file": "benchmarks/nnue/corrected/matches.json",
+      "sha256": "7a4208a985cff8ab8bdaeabdcbcfea9db0d7815c9df851d8c3ae1df25ba236ce",
+      "entries": 12
+    },
+    {
+      "file": "benchmarks/search-speed/c6-2026-11-03/matches.json",
+      "sha256": "0b80d7425c248e5df111f23dc366d92aa76747aef259670e679ee6a7c073dc87",
+      "entries": 14
+    },
+    {
+      "file": "benchmarks/search-speed/c7-2026-11-03/matches.json",
+      "sha256": "b94562dc8f37c20f21726afa3c4b9b361b0cd847518317204c9b1880594880ca",
+      "entries": 14
+    },
+    {
+      "file": "benchmarks/search-speed/c8-2026-11-08/matches.json",
+      "sha256": "719bf756f6edc084a08065534e4d8386c340682dd94ce57ebcf6e544d5c26efd",
+      "entries": 14
+    },
+    {
+      "file": ".cache/buffered-sort/matches.json",
+      "sha256": "0c09d13a85b20010d29ebe5033463949fba06db154b3ab2690ad7cc14d26887a",
+      "entries": 14
+    },
+    {
+      "file": ".cache/deferred-order-20261105/matches.json",
+      "sha256": "e1abe1e2b1c25fc2491bbfa3e2b6798f8d2a35685aa732a64c6f9ac7a42856e4",
+      "entries": 10
+    },
+    {
+      "file": ".cache/frontier-concurrency-20261105/matches.json",
+      "sha256": "ff862a003b2e7ab363ea20375659c629e0b7968d8f74f720703fad2313f9c7dc",
+      "entries": 5
+    },
+    {
+      "file": ".cache/jqe/matches.json",
+      "sha256": "24c2fff308a859d2c99ddfbd02e77b44fa4a85db774116a743600615d0dd75db",
+      "entries": 14
+    },
+    {
+      "file": ".cache/lazy-history-20261105/matches.json",
+      "sha256": "780669ed702a1612393358a8ef14b5d4df7c8a28f067c305c5af2c8cdfc6601d",
+      "entries": 10
+    },
+    {
+      "file": ".cache/selfplay-value/matches.json",
+      "sha256": "cd57eb6a4d52905639cf62e90e5d3291898ed138226b23ab2edd5c17f76be5f9",
+      "entries": 14
+    },
+    {
+      "file": ".cache/speed-confirm/matches.json",
+      "sha256": "11bf9d823cac4cb238992cc977a9c3373722ad175587cb47cc691e6bfab80867",
+      "entries": 10
+    },
+    {
+      "file": ".cache/speed-screen/matches.json",
+      "sha256": "ec0b0a5f9269eb256fb29f1d24ffa39fdc8d4cae02700edb4e47aecc5c7ea1cc",
+      "entries": 12
+    },
+    {
+      "file": ".cache/bit-gather-lines/formal/matches.json",
+      "sha256": "f2cce6e554dcec5138fde7166e396c963e44de0cbe676985e88f3d6981a0688c",
+      "entries": 14
+    },
+    {
+      "file": ".cache/c6-delivery/report-data/matches.json",
+      "sha256": "0b80d7425c248e5df111f23dc366d92aa76747aef259670e679ee6a7c073dc87",
+      "entries": 14
+    },
+    {
+      "file": ".cache/c7-delivery/report-data/matches.json",
+      "sha256": "b94562dc8f37c20f21726afa3c4b9b361b0cd847518317204c9b1880594880ca",
+      "entries": 14
+    },
+    {
+      "file": ".cache/lazy-legality/formal/matches.json",
+      "sha256": "cca28c4ff3099fed107fe7677bc1c097ce2f4c1bae0e8d17570d61e8689885d0",
+      "entries": 14
+    },
+    {
+      "file": ".cache/tail-cow/formal/matches.json",
+      "sha256": "6c721036e35bd2e949e119732de8316f5967455c395b1345f52cdab7bf13a618",
+      "entries": 10
+    },
+    {
+      "file": ".cache/native/search-speed/daily-2026-11-03/matches.json",
+      "sha256": "2e9832ff8034f3ff96009b54b4a523041018cb3ce6e9b71f28f9edf52acd8fdf",
+      "entries": 10
+    },
+    {
+      "file": ".cache/publication-backup-20261029/benchmarks/ab-jchess/matches.json",
+      "sha256": "ca199261e7b78975c7f5f770547423a79d314032f832b08bcc68acc47377a6ee",
+      "entries": 16
+    },
+    {
+      "file": ".cache/publication-backup-20261029/benchmarks/mate-proof/matches.json",
+      "sha256": "7b9b36fe963010179259e370443932cff103d105559bca2142b5001f904dfbca",
+      "entries": 24
+    },
+    {
+      "file": ".cache/publication-backup-20261029/benchmarks/time-search/matches.json",
+      "sha256": "22cd19a3ec29acf65668cd4d8fe2b1b5aca7aa9db1b7736ce9c6d0a48ef641fe",
+      "entries": 12
+    },
+    {
+      "file": ".cache/repetition-cn2020-20261104/worktree/benchmarks/matches.json",
+      "sha256": "a54521909b6eabc3c6b872318cfcf4e832412fc54ab6254e115ec5d6e1fe9109",
+      "entries": 4
+    },
+    {
+      "file": ".cache/native/search-speed/c8/matches-2026-11-08/matches.json",
+      "sha256": "f6f12a2d96ce1750b70b00d68bdeae0633be531fbe66b658747b15c765c58514",
+      "entries": 14
+    },
+    {
+      "file": ".cache/native/search-speed/c8/public-smoke/matches.json",
+      "sha256": "719bf756f6edc084a08065534e4d8386c340682dd94ce57ebcf6e544d5c26efd",
+      "entries": 14
+    },
+    {
+      "file": ".cache/repetition-cn2020-20261104/worktree/benchmarks/ab-jchess/matches.json",
+      "sha256": "29228fafc00cf1ceee26b48e8a2aa2cdafce215d8a8e168885f130fbea8be214",
+      "entries": 16
+    },
+    {
+      "file": ".cache/repetition-cn2020-20261104/worktree/benchmarks/all-features/matches.json",
+      "sha256": "82c64b15b4e9da6dd0e908477ed4a8dbac281fad31c94466889ee6f89f677215",
+      "entries": 24
+    },
+    {
+      "file": ".cache/repetition-cn2020-20261104/worktree/benchmarks/clock-validation/matches.json",
+      "sha256": "ad40e58514dc9692b30ccabcd1b43a61000c5dbbaf7f97aadcb524bc094d05cf",
+      "entries": 12
+    },
+    {
+      "file": ".cache/repetition-cn2020-20261104/worktree/benchmarks/cluster-tt/matches.json",
+      "sha256": "b433d279dd85dd4dc0d6c286530c9242cf80ad7beda35ed03dd005b6cbb87fda",
+      "entries": 12
+    },
+    {
+      "file": ".cache/repetition-cn2020-20261104/worktree/benchmarks/cycle-parity/matches.json",
+      "sha256": "99396369bc7a4adc7e0d5c7730e561b0e20f261fb77a8a60d2e58dc17015bda0",
+      "entries": 12
+    },
+    {
+      "file": ".cache/repetition-cn2020-20261104/worktree/benchmarks/insertion-sort/matches.json",
+      "sha256": "13554dff8ffd6868ceac3a1240d7a8aaeeed673ec4e300c7c87576ad526c62d0",
+      "entries": 12
+    },
+    {
+      "file": ".cache/repetition-cn2020-20261104/worktree/benchmarks/king-geometry/matches.json",
+      "sha256": "ed68d9e9d13b0ec8d084bb8e8a617663721200862e66284b91ff3f970f27dba0",
+      "entries": 12
+    },
+    {
+      "file": ".cache/repetition-cn2020-20261104/worktree/benchmarks/mate-proof/matches.json",
+      "sha256": "a03146713579914f7053cab14cb0f090841364891a0b05a0879a8b8cb18e661f",
+      "entries": 24
+    },
+    {
+      "file": ".cache/repetition-cn2020-20261104/worktree/benchmarks/nnue/data-manifest.json",
+      "sha256": "591182f2c80901c775f420125fed796feb8aabf32326b079f8800be95c831ddb",
+      "entries": 8
+    },
+    {
+      "file": ".cache/repetition-cn2020-20261104/worktree/benchmarks/nnue/matches.json",
+      "sha256": "638e903b38aa32f5ba6af8bbe18be4ff713a447107a25e665856070e713f060f",
+      "entries": 7
+    },
+    {
+      "file": ".cache/repetition-cn2020-20261104/worktree/benchmarks/piece-mask/matches.json",
+      "sha256": "e242fed796cb8d64583aec049538555b68305809e6334abe5c7488ca7e2fa259",
+      "entries": 12
+    },
+    {
+      "file": ".cache/repetition-cn2020-20261104/worktree/benchmarks/pika-native-match/matches.json",
+      "sha256": "14108c0606dc43d6424dba5bee8c4cb3cf702051911d26053c2aa92a15475b2b",
+      "entries": 20
+    },
+    {
+      "file": ".cache/repetition-cn2020-20261104/worktree/benchmarks/qcheck-filter/matches.json",
+      "sha256": "740cd3b1e1cb0c442e536edbdf50387b362e0c1f8a995e040ce56764fd3f9516",
+      "entries": 5
+    },
+    {
+      "file": ".cache/repetition-cn2020-20261104/worktree/benchmarks/quiet-checks/matches.json",
+      "sha256": "e5e7c70e14fb551d9304c6b154678776239f0cfb5a02a359161d52df963dc68b",
+      "entries": 8
+    },
+    {
+      "file": ".cache/repetition-cn2020-20261104/worktree/benchmarks/search-speed/matches.json",
+      "sha256": "63560f74605ac35a1e1ad58a858f5af593778d5dbb30f81c24ee7d0e10c23ee5",
+      "entries": 10
+    },
+    {
+      "file": ".cache/repetition-cn2020-20261104/worktree/benchmarks/standpat/matches.json",
+      "sha256": "e2cd218e37aa232d632f51360cce23d0c0fd60ce2d3fba727fa00b490be4fa90",
+      "entries": 24
+    },
+    {
+      "file": ".cache/repetition-cn2020-20261104/worktree/benchmarks/tactical-lmr/matches.json",
+      "sha256": "c54755c04523c7742319e7a0c331c0c30cdb9cd62785c73f99d9c98d45e4da39",
+      "entries": 12
+    },
+    {
+      "file": ".cache/repetition-cn2020-20261104/worktree/benchmarks/time-search/matches.json",
+      "sha256": "d4f05c28d2784fb66278be03c5a09098576dcd5dceed39d539ff07e808177262",
+      "entries": 12
+    },
+    {
+      "file": ".cache/repetition-cn2020-20261104/worktree/benchmarks/verified-null/matches.json",
+      "sha256": "65328434ccd63ee4b476fa28b6013ca10502266f76fd13a3d9ad13d74d95b92a",
+      "entries": 12
+    },
+    {
+      "file": ".cache/repetition-cn2020-20261104/worktree/benchmarks/nnue/corrected/matches.json",
+      "sha256": "7a4208a985cff8ab8bdaeabdcbcfea9db0d7815c9df851d8c3ae1df25ba236ce",
+      "entries": 12
+    },
+    {
+      "file": ".cache/repetition-cn2020-20261104/worktree/benchmarks/search-speed/c6-2026-11-03/matches.json",
+      "sha256": "0b80d7425c248e5df111f23dc366d92aa76747aef259670e679ee6a7c073dc87",
+      "entries": 14
+    },
+    {
+      "file": ".cache/repetition-cn2020-20261104/worktree/benchmarks/search-speed/c7-2026-11-03/matches.json",
+      "sha256": "b94562dc8f37c20f21726afa3c4b9b361b0cd847518317204c9b1880594880ca",
+      "entries": 14
+    },
+    {
+      "file": ".cache/repetition-cn2020-20261104/worktree/benchmarks/search-speed/deferred-2026-11-05/matches.json",
+      "sha256": "95fc44e44003befb99a5608446854ece4d48abef7ce789f0b0144cddca310d72",
+      "entries": 10
+    },
+    {
+      "file": ".cache/repetition-cn2020-20261104/worktree/benchmarks/search-speed/frontier-concurrency-2026-11-05/matches.json",
+      "sha256": "5ee370e224d39e579251b0a97dad78e42b67acca0c6bb5e24cbe8c339f51a2a8",
+      "entries": 5
+    },
+    {
+      "file": ".cache/repetition-cn2020-20261104/worktree/benchmarks/search-speed/lazy-history-2026-11-05/matches.json",
+      "sha256": "c132644fad5bd5031e7fc43dd8d3e7065a1768c65e4b133bbc8589fae98e3ef4",
+      "entries": 10
+    }
+  ]
+}

@@ -1,0 +1,750 @@
+{
+  "matchesSha256": "c720bb1a5a4c0b3cb8cc8f67101276cff1aece82ba200d3af9d846b8729dd528",
+  "planSha256": "5308ca71146b197bc3fdd3dc2f6473d3398435ef154fa5822b3ad3b8cae0401f",
+  "summary": {
+    "internal": {
+      "finished": 8,
+      "wins": 6,
+      "draws": 0,
+      "losses": 2,
+      "technicalFailures": 0,
+      "cleanupFailures": 0,
+      "unresolved": 0,
+      "scoreRate": 0.75,
+      "normal": {
+        "wins": 6,
+        "draws": 0,
+        "losses": 2
+      }
+    },
+    "candidatePika": {
+      "finished": 8,
+      "wins": 3,
+      "draws": 0,
+      "losses": 5,
+      "technicalFailures": 0,
+      "cleanupFailures": 0,
+      "unresolved": 0,
+      "scoreRate": 0.375,
+      "normal": {
+        "wins": 3,
+        "draws": 0,
+        "losses": 5
+      }
+    },
+    "controlPika": {
+      "finished": 8,
+      "wins": 2,
+      "draws": 0,
+      "losses": 6,
+      "technicalFailures": 0,
+      "cleanupFailures": 0,
+      "unresolved": 0,
+      "scoreRate": 0.25,
+      "normal": {
+        "wins": 2,
+        "draws": 0,
+        "losses": 6
+      }
+    }
+  },
+  "timing": {
+    "candidate": {
+      "requests": 707,
+      "applied": 707,
+      "hostStops": 0,
+      "fallbacks": 0,
+      "aboveBudget": 0,
+      "aboveTechnicalLimit": 0,
+      "elapsedMs": {
+        "p50": 1931.6708170003258,
+        "p95": 1932.470031000208,
+        "max": 1935.1238009999506
+      },
+      "depthMedian": 4,
+      "observedThreads": [
+        4,
+        1
+      ],
+      "sampleCounts": [
+        8,
+        1
+      ]
+    },
+    "control": {
+      "requests": 622,
+      "applied": 622,
+      "hostStops": 0,
+      "fallbacks": 0,
+      "aboveBudget": 0,
+      "aboveTechnicalLimit": 0,
+      "elapsedMs": {
+        "p50": 1932.5455519999377,
+        "p95": 1933.4966149996035,
+        "max": 1935.9882060000673
+      },
+      "depthMedian": 5,
+      "observedThreads": [
+        4,
+        1
+      ],
+      "sampleCounts": [
+        8,
+        1
+      ]
+    },
+    "pika": {
+      "requests": 689,
+      "applied": 689,
+      "hostStops": 0,
+      "fallbacks": 0,
+      "aboveBudget": 0,
+      "aboveTechnicalLimit": 0,
+      "elapsedMs": {
+        "p50": 1959.4273220000323,
+        "p95": 1960.5087029999122,
+        "max": 1962.1308889999054
+      },
+      "depthMedian": null,
+      "observedThreads": [
+        4
+      ],
+      "sampleCounts": [
+        null
+      ]
+    }
+  },
+  "technicalEvents": [],
+  "byLayout": [
+    {
+      "seed": 2026110967,
+      "layoutSha256": "5fccf8aececc2ee30f07333c32f2aa1f210af0e18a7b2bca3c6314fc24fe4488",
+      "summary": {
+        "internal": {
+          "finished": 2,
+          "wins": 1,
+          "draws": 0,
+          "losses": 1,
+          "technicalFailures": 0,
+          "cleanupFailures": 0,
+          "unresolved": 0,
+          "scoreRate": 0.5,
+          "normal": {
+            "wins": 1,
+            "draws": 0,
+            "losses": 1
+          }
+        },
+        "candidatePika": {
+          "finished": 2,
+          "wins": 1,
+          "draws": 0,
+          "losses": 1,
+          "technicalFailures": 0,
+          "cleanupFailures": 0,
+          "unresolved": 0,
+          "scoreRate": 0.5,
+          "normal": {
+            "wins": 1,
+            "draws": 0,
+            "losses": 1
+          }
+        },
+        "controlPika": {
+          "finished": 2,
+          "wins": 1,
+          "draws": 0,
+          "losses": 1,
+          "technicalFailures": 0,
+          "cleanupFailures": 0,
+          "unresolved": 0,
+          "scoreRate": 0.5,
+          "normal": {
+            "wins": 1,
+            "draws": 0,
+            "losses": 1
+          }
+        }
+      }
+    },
+    {
+      "seed": 2026110979,
+      "layoutSha256": "3109c784e615fd38c5c2bd6c1880966466c2c3ab3a73393ccca477ac877221ca",
+      "summary": {
+        "internal": {
+          "finished": 2,
+          "wins": 1,
+          "draws": 0,
+          "losses": 1,
+          "technicalFailures": 0,
+          "cleanupFailures": 0,
+          "unresolved": 0,
+          "scoreRate": 0.5,
+          "normal": {
+            "wins": 1,
+            "draws": 0,
+            "losses": 1
+          }
+        },
+        "candidatePika": {
+          "finished": 2,
+          "wins": 1,
+          "draws": 0,
+          "losses": 1,
+          "technicalFailures": 0,
+          "cleanupFailures": 0,
+          "unresolved": 0,
+          "scoreRate": 0.5,
+          "normal": {
+            "wins": 1,
+            "draws": 0,
+            "losses": 1
+          }
+        },
+        "controlPika": {
+          "finished": 2,
+          "wins": 0,
+          "draws": 0,
+          "losses": 2,
+          "technicalFailures": 0,
+          "cleanupFailures": 0,
+          "unresolved": 0,
+          "scoreRate": 0,
+          "normal": {
+            "wins": 0,
+            "draws": 0,
+            "losses": 2
+          }
+        }
+      }
+    },
+    {
+      "seed": 2026110983,
+      "layoutSha256": "31ca623a88e2c5e3f47ba64764f6fd353a414e2aac70ff211dfb14389265db86",
+      "summary": {
+        "internal": {
+          "finished": 2,
+          "wins": 2,
+          "draws": 0,
+          "losses": 0,
+          "technicalFailures": 0,
+          "cleanupFailures": 0,
+          "unresolved": 0,
+          "scoreRate": 1,
+          "normal": {
+            "wins": 2,
+            "draws": 0,
+            "losses": 0
+          }
+        },
+        "candidatePika": {
+          "finished": 2,
+          "wins": 0,
+          "draws": 0,
+          "losses": 2,
+          "technicalFailures": 0,
+          "cleanupFailures": 0,
+          "unresolved": 0,
+          "scoreRate": 0,
+          "normal": {
+            "wins": 0,
+            "draws": 0,
+            "losses": 2
+          }
+        },
+        "controlPika": {
+          "finished": 2,
+          "wins": 0,
+          "draws": 0,
+          "losses": 2,
+          "technicalFailures": 0,
+          "cleanupFailures": 0,
+          "unresolved": 0,
+          "scoreRate": 0,
+          "normal": {
+            "wins": 0,
+            "draws": 0,
+            "losses": 2
+          }
+        }
+      }
+    },
+    {
+      "seed": 2026110997,
+      "layoutSha256": "f0f886ae3e3c1fb52a363860a266167f79b183819fb256d81755e675bc40fa63",
+      "summary": {
+        "internal": {
+          "finished": 2,
+          "wins": 2,
+          "draws": 0,
+          "losses": 0,
+          "technicalFailures": 0,
+          "cleanupFailures": 0,
+          "unresolved": 0,
+          "scoreRate": 1,
+          "normal": {
+            "wins": 2,
+            "draws": 0,
+            "losses": 0
+          }
+        },
+        "candidatePika": {
+          "finished": 2,
+          "wins": 1,
+          "draws": 0,
+          "losses": 1,
+          "technicalFailures": 0,
+          "cleanupFailures": 0,
+          "unresolved": 0,
+          "scoreRate": 0.5,
+          "normal": {
+            "wins": 1,
+            "draws": 0,
+            "losses": 1
+          }
+        },
+        "controlPika": {
+          "finished": 2,
+          "wins": 1,
+          "draws": 0,
+          "losses": 1,
+          "technicalFailures": 0,
+          "cleanupFailures": 0,
+          "unresolved": 0,
+          "scoreRate": 0.5,
+          "normal": {
+            "wins": 1,
+            "draws": 0,
+            "losses": 1
+          }
+        }
+      }
+    }
+  ],
+  "games": [
+    {
+      "index": 0,
+      "group": "internal",
+      "seed": 2026110967,
+      "side": "r",
+      "plies": 39,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": false,
+        "reason": "将死"
+      }
+    },
+    {
+      "index": 1,
+      "group": "candidatePika",
+      "seed": 2026110967,
+      "side": "r",
+      "plies": 165,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": false,
+        "reason": "困毙"
+      }
+    },
+    {
+      "index": 2,
+      "group": "controlPika",
+      "seed": 2026110967,
+      "side": "r",
+      "plies": 59,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": false,
+        "reason": "将死"
+      }
+    },
+    {
+      "index": 3,
+      "group": "internal",
+      "seed": 2026110967,
+      "side": "b",
+      "plies": 105,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": false,
+        "reason": "将死"
+      }
+    },
+    {
+      "index": 4,
+      "group": "candidatePika",
+      "seed": 2026110967,
+      "side": "b",
+      "plies": 77,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": false,
+        "reason": "将死"
+      }
+    },
+    {
+      "index": 5,
+      "group": "controlPika",
+      "seed": 2026110967,
+      "side": "b",
+      "plies": 55,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": false,
+        "reason": "将死"
+      }
+    },
+    {
+      "index": 6,
+      "group": "controlPika",
+      "seed": 2026110979,
+      "side": "r",
+      "plies": 74,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "technicalForfeit": false,
+        "reason": "将死"
+      }
+    },
+    {
+      "index": 7,
+      "group": "candidatePika",
+      "seed": 2026110979,
+      "side": "r",
+      "plies": 140,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "technicalForfeit": false,
+        "reason": "将死"
+      }
+    },
+    {
+      "index": 8,
+      "group": "internal",
+      "seed": 2026110979,
+      "side": "r",
+      "plies": 87,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": false,
+        "reason": "将死"
+      }
+    },
+    {
+      "index": 9,
+      "group": "controlPika",
+      "seed": 2026110979,
+      "side": "b",
+      "plies": 61,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": false,
+        "reason": "将死"
+      }
+    },
+    {
+      "index": 10,
+      "group": "candidatePika",
+      "seed": 2026110979,
+      "side": "b",
+      "plies": 53,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "technicalForfeit": false,
+        "reason": "红方重复局面判负"
+      }
+    },
+    {
+      "index": 11,
+      "group": "internal",
+      "seed": 2026110979,
+      "side": "b",
+      "plies": 64,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": false,
+        "reason": "黑方重复局面判负"
+      }
+    },
+    {
+      "index": 12,
+      "group": "internal",
+      "seed": 2026110983,
+      "side": "r",
+      "plies": 81,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": false,
+        "reason": "将死"
+      }
+    },
+    {
+      "index": 13,
+      "group": "candidatePika",
+      "seed": 2026110983,
+      "side": "r",
+      "plies": 116,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "technicalForfeit": false,
+        "reason": "将死"
+      }
+    },
+    {
+      "index": 14,
+      "group": "controlPika",
+      "seed": 2026110983,
+      "side": "r",
+      "plies": 102,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "technicalForfeit": false,
+        "reason": "将死"
+      }
+    },
+    {
+      "index": 15,
+      "group": "internal",
+      "seed": 2026110983,
+      "side": "b",
+      "plies": 60,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "technicalForfeit": false,
+        "reason": "将死"
+      }
+    },
+    {
+      "index": 16,
+      "group": "candidatePika",
+      "seed": 2026110983,
+      "side": "b",
+      "plies": 55,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": false,
+        "reason": "将死"
+      }
+    },
+    {
+      "index": 17,
+      "group": "controlPika",
+      "seed": 2026110983,
+      "side": "b",
+      "plies": 67,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": false,
+        "reason": "将死"
+      }
+    },
+    {
+      "index": 18,
+      "group": "controlPika",
+      "seed": 2026110997,
+      "side": "r",
+      "plies": 76,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": false,
+        "reason": "黑方重复局面判负"
+      }
+    },
+    {
+      "index": 19,
+      "group": "candidatePika",
+      "seed": 2026110997,
+      "side": "r",
+      "plies": 87,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": false,
+        "reason": "将死"
+      }
+    },
+    {
+      "index": 20,
+      "group": "internal",
+      "seed": 2026110997,
+      "side": "r",
+      "plies": 77,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": false,
+        "reason": "将死"
+      }
+    },
+    {
+      "index": 21,
+      "group": "controlPika",
+      "seed": 2026110997,
+      "side": "b",
+      "plies": 111,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": false,
+        "reason": "将死"
+      }
+    },
+    {
+      "index": 22,
+      "group": "candidatePika",
+      "seed": 2026110997,
+      "side": "b",
+      "plies": 75,
+      "result": {
+        "status": "decided",
+        "winner": "r",
+        "technicalForfeit": false,
+        "reason": "将死"
+      }
+    },
+    {
+      "index": 23,
+      "group": "internal",
+      "seed": 2026110997,
+      "side": "b",
+      "plies": 132,
+      "result": {
+        "status": "decided",
+        "winner": "b",
+        "technicalForfeit": false,
+        "reason": "将死"
+      }
+    }
+  ],
+  "previousRound": {
+    "matchesSha256": "277948086fa028138e99f2e6e0584a3c0acf9fb2f744d8c4f10ce822549ea8d8",
+    "independentLayouts": 2,
+    "games": 12,
+    "summary": {
+      "internal": {
+        "finished": 4,
+        "wins": 1,
+        "draws": 0,
+        "losses": 3,
+        "technicalFailures": 0,
+        "cleanupFailures": 0,
+        "unresolved": 0,
+        "scoreRate": 0.25,
+        "normal": {
+          "wins": 1,
+          "draws": 0,
+          "losses": 3
+        }
+      },
+      "candidatePika": {
+        "finished": 4,
+        "wins": 2,
+        "draws": 0,
+        "losses": 2,
+        "technicalFailures": 0,
+        "cleanupFailures": 0,
+        "unresolved": 0,
+        "scoreRate": 0.5,
+        "normal": {
+          "wins": 2,
+          "draws": 0,
+          "losses": 2
+        }
+      },
+      "controlPika": {
+        "finished": 4,
+        "wins": 1,
+        "draws": 0,
+        "losses": 3,
+        "technicalFailures": 0,
+        "cleanupFailures": 0,
+        "unresolved": 0,
+        "scoreRate": 0.25,
+        "normal": {
+          "wins": 1,
+          "draws": 0,
+          "losses": 3
+        }
+      }
+    }
+  },
+  "pooledDescriptiveOnly": {
+    "independentLayouts": 6,
+    "games": 36,
+    "summary": {
+      "internal": {
+        "finished": 12,
+        "wins": 7,
+        "draws": 0,
+        "losses": 5,
+        "technicalFailures": 0,
+        "cleanupFailures": 0,
+        "unresolved": 0,
+        "scoreRate": 0.5833333333333334,
+        "normal": {
+          "wins": 7,
+          "draws": 0,
+          "losses": 5
+        }
+      },
+      "candidatePika": {
+        "finished": 12,
+        "wins": 5,
+        "draws": 0,
+        "losses": 7,
+        "technicalFailures": 0,
+        "cleanupFailures": 0,
+        "unresolved": 0,
+        "scoreRate": 0.4166666666666667,
+        "normal": {
+          "wins": 5,
+          "draws": 0,
+          "losses": 7
+        }
+      },
+      "controlPika": {
+        "finished": 12,
+        "wins": 3,
+        "draws": 0,
+        "losses": 9,
+        "technicalFailures": 0,
+        "cleanupFailures": 0,
+        "unresolved": 0,
+        "scoreRate": 0.25,
+        "normal": {
+          "wins": 3,
+          "draws": 0,
+          "losses": 9
+        }
+      }
+    }
+  },
+  "limitations": [
+    "This prospective follow-up has four independent layouts per comparison and eight color-paired games. Paired colors are correlated, not eight independent samples.",
+    "The original two layouts and twelve games remain separate; pooled six-layout results are descriptive only, not statistical evidence of superiority.",
+    "Nominal 2000 ms per move, at most four search threads and 64 MiB TT. Total RSS, effective TT entries, implementation and reserve time differ.",
+    "Control is the frozen stable search/HCE with the existing bounded map arena, not the byte-identical unbounded production binary.",
+    "Third identical public board plus side-to-move loses for its mover, with mate/stalemate priority. This is not complete competition long-check/long-chase adjudication.",
+    "Mist internal cycle-draw approximation and Pika internal repetition rules still differ. No alternate-rule winner is inferred from these records.",
+    "All technical failures and unresolved games are retained. No tuning, result-dependent replacement, default promotion or trial-server restart."
+  ]
+}
