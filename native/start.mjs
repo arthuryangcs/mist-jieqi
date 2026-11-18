@@ -1,0 +1,8 @@
+import fs from 'node:fs';import {fileURLToPath} from 'node:url';
+import {createLocalServer,ensureBuild} from './server.mjs';import {binary as hceBinary} from './build.mjs';import {build,environment} from './experiments/default-all/build.mjs';
+export function settings(env=process.env){const configured=JSON.parse(fs.readFileSync(new URL('engine-defaults.json',import.meta.url)));const profile=env.MIST_ENGINE_PRESET??configured.profile;if(!['hce','all-compatible-v2'].includes(profile))throw Error('Unknown engine preset: '+profile);return profile==='hce'?{profile,samples:8,searchMode:'STREAM'}:{profile,samples:configured.samples,searchMode:'STREAM_PLAY'};}
+export function prepareDefault(env=process.env){const config=settings(env);if(config.profile==='hce')return{...config,executable:hceBinary,buildInfo:ensureBuild()};environment();const{binary,...buildInfo}=build();return{...config,executable:binary,buildInfo};}
+export function serviceOptions(prepared){return{executable:prepared.executable,buildInfo:prepared.buildInfo,samples:prepared.samples,searchMode:prepared.searchMode,engineProfile:prepared.profile};}
+if(process.argv[1]===fileURLToPath(import.meta.url)){
+ let service;try{const port=Number(process.env.PORT||8766);if(!Number.isInteger(port)||port<1024||port>65535)throw Error('PORT须为1024至65535');const prepared=prepareDefault();service=createLocalServer(serviceOptions(prepared));await service.listen(port);console.log(`揭棋本机版：http://127.0.0.1:${port}/\n默认方案 ${prepared.profile} · ${prepared.samples}暗子样本 · 最多4线程\n回退：MIST_ENGINE_PRESET=hce npm start`);for(const signal of['SIGINT','SIGTERM'])process.once(signal,async()=>{await service.close();process.exit(0);});}catch(e){console.error('启动失败：'+e.message);process.exitCode=1;}
+}

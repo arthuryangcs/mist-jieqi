@@ -1,0 +1,8 @@
+{
+  "privateLedgerSha256": "f9df951237a6e446fd7698d05ceea878721f6668dd30ea3ea90be82f8e9e62fe",
+  "publicLedgerSha256": "68a47bcf2c143885bde1ba6ec00129e3464007db27eaa893ec3a176f54e44507",
+  "unchangedGameAndParameterPayloadSha256": "92189a1299957857f16796ef1828af2fc46f10e2059a7282e8f240092b6ea675",
+  "normalizedProjectPathKeys": 3,
+  "scope": "Only absolute repository-contained hash keys normalized; game/model/parameter/result payload unchanged. Private original retained.",
+  "replayAndAuditRecomputed": true
+}

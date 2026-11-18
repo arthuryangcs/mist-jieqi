@@ -1,0 +1,584 @@
+{
+  "scope": "Maximal compatible rich-evaluation bundle selected by explicit user request, not every mutually exclusive implementation",
+  "baseSha256": "15ee51f57384cc17d3be1a07475d6eaa64f770433749e61c8ca8d3b1652b3573",
+  "baseOrigin": "Generated existing all-features source at f3a79a0; current-root/cycle fixes and buffered sort applied by source.mjs",
+  "features": [
+    {
+      "id": "incremental-nnue",
+      "selection": "enabled",
+      "source": "native/experiments/nnue/nnue.hpp",
+      "sourceSha256": "152ecbaaeb3857c413f22351bc2c0c9e7c45193fd0c81caa001899be8cbd2ef5",
+      "reason": "Use existing16-hidden residual model,incremental accumulators,full inventory key and null-turn coherence. Full-forward remains oracle,not simultaneous inference mode.",
+      "currentSourceSha256": "152ecbaaeb3857c413f22351bc2c0c9e7c45193fd0c81caa001899be8cbd2ef5"
+    },
+    {
+      "id": "full-activity-and-sliding-mobility",
+      "selection": "enabled",
+      "source": "ai.js",
+      "sourceSha256": "c4c1494eef9a20c2927b7649110113ddb974990d5289237d24c0fbb97e1fa26a",
+      "reason": "Port activity=true/slidingMobility=true richer piece-square evaluator;simplePSQT and its leaper-only ablation are alternatives covered by this head.",
+      "currentSourceSha256": "363ebb21c6f7c248cb97fd0505b419d7d06154774af5582de434d14f4c162ea5"
+    },
+    {
+      "id": "generic-mobility",
+      "selection": "enabled",
+      "source": "ai.js",
+      "sourceSha256": "c4c1494eef9a20c2927b7649110113ddb974990d5289237d24c0fbb97e1fa26a",
+      "reason": "Add nonking public-role/revealed mobility term;no opening-square reward.",
+      "currentSourceSha256": "363ebb21c6f7c248cb97fd0505b419d7d06154774af5582de434d14f4c162ea5"
+    },
+    {
+      "id": "information-value",
+      "selection": "enabled",
+      "source": "native/experiments/information-value/policy.hpp",
+      "sourceSha256": "1b04ba80733ed5e5503b4138804db59221c722c8661fb53ed88a9710d387b2c7",
+      "reason": "Original8cp per revealed nonking,capped8/side.",
+      "currentSourceSha256": "1b04ba80733ed5e5503b4138804db59221c722c8661fb53ed88a9710d387b2c7"
+    },
+    {
+      "id": "defense-threats-and-king",
+      "selection": "enabled",
+      "source": "native/defense-eval.inc",
+      "sourceSha256": "e1307b935fa5926c90e93bf126779fd6009981790248eca1d34e7950542ddbc5",
+      "reason": "Full pseudo-attack map,both pressure terms;fast hanging-only/king-only variants are alternative evaluators.",
+      "currentSourceSha256": "e1307b935fa5926c90e93bf126779fd6009981790248eca1d34e7950542ddbc5"
+    },
+    {
+      "id": "defense-cache-and-lazy-bounds",
+      "selection": "enabled",
+      "source": "native/defense-variants.mjs",
+      "sourceSha256": "240d67c88a421d88522f3575569de88ce308a200ccb9e8feaa10ba30191bfc47",
+      "reason": "Adapt cached pressure to full key including inventories;generalize original safe lazy king bound to full pressure magnitude.",
+      "currentSourceSha256": "240d67c88a421d88522f3575569de88ce308a200ccb9e8feaa10ba30191bfc47"
+    },
+    {
+      "id": "downside-risk",
+      "selection": "enabled",
+      "source": "native/experiments/downside-risk/policy.hpp",
+      "sourceSha256": "1cb6718ac510f2ecf5ba9dc166e653b662238e76bb604d5a80674b89dcf78430",
+      "reason": "Original worst-quarter tail loss penalty and common per-tier risk weight.",
+      "currentSourceSha256": "1cb6718ac510f2ecf5ba9dc166e653b662238e76bb604d5a80674b89dcf78430"
+    },
+    {
+      "id": "lmr",
+      "selection": "enabled",
+      "source": "native/experiments/time-search/build.mjs",
+      "sourceSha256": "d0357c765e92c4ede9bd2abbd1bc098f606e00cc2b5caa5ed3a57998d230c0cd",
+      "reason": "Late quiet reduced probes with full-depth re-search on alpha improvement.",
+      "currentSourceSha256": "d0357c765e92c4ede9bd2abbd1bc098f606e00cc2b5caa5ed3a57998d230c0cd"
+    },
+    {
+      "id": "protected-null",
+      "selection": "enabled",
+      "source": "native/experiments/verified-null/build.mjs",
+      "sourceSha256": "4e2391c76c7f4921e3d1721bd82c91176736ad16f0e46e3a062f558264348a90",
+      "reason": "Same guarded selective policy;virtual frames excluded,neural turn updated/restored,synthetic TT/history isolated.",
+      "currentSourceSha256": "4e2391c76c7f4921e3d1721bd82c91176736ad16f0e46e3a062f558264348a90"
+    },
+    {
+      "id": "quiet-checks-and-filter",
+      "selection": "enabled",
+      "source": "native/experiments/tactical-lmr/build.mjs",
+      "sourceSha256": "ca152fc39b498665e6e185a08bb76c8c0a925e24c5814099bfdb7708980e664c",
+      "reason": "One quiet check per line,bright-only filtered legal query;critical-root dark-reveal checks unioned without duplicate bright moves.",
+      "currentSourceSha256": "ca152fc39b498665e6e185a08bb76c8c0a925e24c5814099bfdb7708980e664c"
+    },
+    {
+      "id": "critical-tactical-focus",
+      "selection": "enabled",
+      "source": "native/focus-tactics.inc",
+      "sourceSha256": "866317be8e31e74d5bf3c3b0ede572b3bfc648e43c1b465f5f8d6d5d65613ff0",
+      "reason": "Public king geometry gates optional dark-reveal quiet checks at first q boundary;deduplicate against global bright checks.",
+      "currentSourceSha256": "866317be8e31e74d5bf3c3b0ede572b3bfc648e43c1b465f5f8d6d5d65613ff0"
+    },
+    {
+      "id": "focused-root-frontier",
+      "selection": "enabled",
+      "source": "native/frontier-policy.inc",
+      "sourceSha256": "82ebd2156650246603649344100ef2fafd01974926242a5ece68d51fb01b1f2f",
+      "reason": "Champion/leaders/exploration/unstable/tactical quotas,coverage floor andcollapse expansion. One-ply warmup chosen before testing for2s all-feature cost;full-root scoring is mutually exclusive runtime mode.",
+      "currentSourceSha256": "82ebd2156650246603649344100ef2fafd01974926242a5ece68d51fb01b1f2f"
+    },
+    {
+      "id": "finite-diagnostic-cap-refill",
+      "selection": "conditional",
+      "source": "native/frontier-policy.inc",
+      "sourceSha256": "82ebd2156650246603649344100ef2fafd01974926242a5ece68d51fb01b1f2f",
+      "reason": "Refill remaining roots at an explicit diagnostic depth cap;normal play has depth0/time limit,so no artificial ceiling.",
+      "currentSourceSha256": "82ebd2156650246603649344100ef2fafd01974926242a5ece68d51fb01b1f2f"
+    },
+    {
+      "id": "canonical-root-cache-isolation",
+      "selection": "enabled",
+      "source": "native/focus-policy.inc",
+      "sourceSha256": "2dc70404bcede263ada103b18456a968ea35c8ba0c572fc8885cbad66157d5d9",
+      "reason": "Root/depth history/killers reset and generation-cleared private TT;strict depth probe for comparable tiers.",
+      "currentSourceSha256": "2dc70404bcede263ada103b18456a968ea35c8ba0c572fc8885cbad66157d5d9"
+    },
+    {
+      "id": "aspiration2",
+      "selection": "enabled",
+      "source": "native/aspiration2-variants.mjs",
+      "sourceSha256": "69bfcdb880628f5461e3e15bd26bdb98b9f01863c118cdd93a4ac8082e045ed5",
+      "reason": "Per-root/per-world previous score,radius200,adaptive widening,threefailures->fullwindow;never average bounds. Older fixed-width versions are alternatives.",
+      "currentSourceSha256": "69bfcdb880628f5461e3e15bd26bdb98b9f01863c118cdd93a4ac8082e045ed5"
+    },
+    {
+      "id": "request-thread-pool",
+      "selection": "enabled",
+      "source": "native/aspiration2-variants.mjs",
+      "sourceSha256": "69bfcdb880628f5461e3e15bd26bdb98b9f01863c118cdd93a4ac8082e045ed5",
+      "reason": "Request-local4workers instead of repeated std::async launches;State/TT remain private per sampled world.",
+      "currentSourceSha256": "69bfcdb880628f5461e3e15bd26bdb98b9f01863c118cdd93a4ac8082e045ed5"
+    },
+    {
+      "id": "clustered-bounded-tt",
+      "selection": "enabled",
+      "source": "native/experiments/cluster-tt/table.hpp",
+      "sourceSha256": "d814598433069a56b9cc14927e0c40d8cf6a8e4ce65954aa924eeb470dbf74ea",
+      "reason": "Two-way full-key depth replacement,64MiB request cap,generation clear. NNUE inventory expands slots to128bytes;old64-byte layout/map/linear probe mutually exclusive.",
+      "currentSourceSha256": "d814598433069a56b9cc14927e0c40d8cf6a8e4ce65954aa924eeb470dbf74ea"
+    },
+    {
+      "id": "standpat-early-exit",
+      "selection": "enabled",
+      "source": "native/experiments/standpat/build.mjs",
+      "sourceSha256": "7a39606e9ac84b442e83396e5e313ccbb11d34d7067f57786652e03a6fabe74a",
+      "reason": "Probe a legal move before accepting standpat;stalemate remains loss.",
+      "currentSourceSha256": "7a39606e9ac84b442e83396e5e313ccbb11d34d7067f57786652e03a6fabe74a"
+    },
+    {
+      "id": "king-geometry",
+      "selection": "enabled",
+      "source": "native/experiments/king-geometry/build.mjs",
+      "sourceSha256": "01eb4d694cd251a59b0d39c937cf6f3cd7bccc983626b6f2e35715b0a819dfb0",
+      "reason": "Precomputed sensitivity masks,legal oracle remains.",
+      "currentSourceSha256": "01eb4d694cd251a59b0d39c937cf6f3cd7bccc983626b6f2e35715b0a819dfb0"
+    },
+    {
+      "id": "piece-square-mask",
+      "selection": "enabled",
+      "source": "native/experiments/piece-mask/build.mjs",
+      "sourceSha256": "9e2c05addead073b46c003a02b15eaf6da37b955577be685e66234cd436d168f",
+      "reason": "Incremental active-piece square masks with scan oracle.",
+      "currentSourceSha256": "9e2c05addead073b46c003a02b15eaf6da37b955577be685e66234cd436d168f"
+    },
+    {
+      "id": "cycle-parity",
+      "selection": "enabled",
+      "source": "native/experiments/cycle-parity/cycle.hpp",
+      "sourceSha256": "debe6244bb24463ebc3252cbf3078bf316ed9ff1e0b2a21d3deff48a400333fd",
+      "reason": "Same-turn scan only on real alternating history;null synthetic frames excluded.",
+      "currentSourceSha256": "debe6244bb24463ebc3252cbf3078bf316ed9ff1e0b2a21d3deff48a400333fd"
+    },
+    {
+      "id": "stable-insertion-sort",
+      "selection": "replaced",
+      "source": "native/experiments/insertion-sort/build.mjs",
+      "sourceSha256": "394a0c5097592aa1d1a4d4bfd5e4594c37a50e424353c43a5de0bdb9803bc8e4",
+      "reason": "New stable buffered merge/insertion hybrid replaces the earlier insertion-only node sorter; strict stable order retained.",
+      "currentSourceSha256": "394a0c5097592aa1d1a4d4bfd5e4594c37a50e424353c43a5de0bdb9803bc8e4"
+    },
+    {
+      "id": "direct-pseudo-movegen",
+      "selection": "enabled",
+      "source": "native/movegen-variants.mjs",
+      "sourceSha256": "787d4d8600cd3e24d3c0dab338615b2a94232ab0beb7a6e17c3de12a8401bbeb",
+      "reason": "Use existing direct generator,check exact order against scan oracle;safe-ray baseline shortcuts remain covered.",
+      "currentSourceSha256": "787d4d8600cd3e24d3c0dab338615b2a94232ab0beb7a6e17c3de12a8401bbeb"
+    },
+    {
+      "id": "precomputed-attack-rays",
+      "selection": "enabled",
+      "source": "native/window-variants.mjs",
+      "sourceSha256": "33838ff8ca85faf4316817c1e52dc24eb0a99555304861fea324cc28ca26689d",
+      "reason": "Precompute ray coordinates for inCheck;kingGeometry complements this.",
+      "currentSourceSha256": "33838ff8ca85faf4316817c1e52dc24eb0a99555304861fea324cc28ca26689d"
+    },
+    {
+      "id": "balanced-sample-count",
+      "selection": "enabled",
+      "source": "ai.js",
+      "sourceSha256": "c4c1494eef9a20c2927b7649110113ddb974990d5289237d24c0fbb97e1fa26a",
+      "reason": "15legal without-replacement worlds (1bright) instead of8;not exhaustive15! enumeration,not truth.",
+      "currentSourceSha256": "363ebb21c6f7c248cb97fd0505b419d7d06154774af5582de434d14f4c162ea5"
+    },
+    {
+      "id": "host-reserve40ms",
+      "selection": "enabled",
+      "source": "docs/experiments/clock-reserve.md",
+      "sourceSha256": "e0ad723e709f64599cc70d6ba743be3a697572452a1c3175ac21b7d597e6f9ba",
+      "reason": "Apply40ms shared host reserve to combo,stable and fixedPika within same2000ms budget;keep core safetyreserve.",
+      "currentSourceSha256": "e0ad723e709f64599cc70d6ba743be3a697572452a1c3175ac21b7d597e6f9ba"
+    },
+    {
+      "id": "baseline-enabled-features",
+      "selection": "enabled",
+      "source": "native/search.cpp",
+      "sourceSha256": "3fa98d62f3c1636b831680fcd5dcbf88f9339e966ed1b8e2f8a170b83afcbfb0",
+      "reason": "PVS,history/killers,check extensions,quiescence captures/evasions,scored buffers,fixed destinations,TT existing-key refresh,public-role reveal ordering,private dark capture accounting,no artificial main depth cap.",
+      "currentSourceSha256": "3c3505b46d935362ec06bb7d03a0b57ab4eeb742385b2e11773f68005332a9fc"
+    },
+    {
+      "id": "negative-ablation-switches",
+      "selection": "excluded",
+      "source": "ai.js",
+      "sourceSha256": "c4c1494eef9a20c2927b7649110113ddb974990d5289237d24c0fbb97e1fa26a",
+      "reason": "Never disable privacy,legal rules,killer safety,stock conditioning,cancellation or stack guards.",
+      "currentSourceSha256": "363ebb21c6f7c248cb97fd0505b419d7d06154774af5582de434d14f4c162ea5"
+    },
+    {
+      "id": "legacy-single-thread-and-depth8",
+      "selection": "excluded",
+      "source": "native/window-variants.mjs",
+      "sourceSha256": "33838ff8ca85faf4316817c1e52dc24eb0a99555304861fea324cc28ca26689d",
+      "reason": "Alternative resource settings contradict current max4threads/time-controlled no-cap request.",
+      "currentSourceSha256": "33838ff8ca85faf4316817c1e52dc24eb0a99555304861fea324cc28ca26689d"
+    },
+    {
+      "id": "buffered-stable-sort",
+      "selection": "enabled",
+      "source": "native/experiments/buffered-sort/sort.hpp",
+      "sourceSha256": "abf7318225053b755d2831d4e06ed69d394698edae1a7f3d00f8b585d3db8f94",
+      "reason": "Newer stable buffered sort replaces insertion-only and std::stable_sort; checked independently.",
+      "currentSourceSha256": "abf7318225053b755d2831d4e06ed69d394698edae1a7f3d00f8b585d3db8f94"
+    },
+    {
+      "id": "current-root-responsibility",
+      "selection": "enabled",
+      "source": "engine.js",
+      "sourceSha256": "f64f8dad3d16dd5b08c392ccc141d7e035dc13986f55aa04b2f96781c2cc7629",
+      "reason": "Current rootRules outcomes0..4; prove unilateral continuous three-cycle check loss only, other repeats unresolved. No last-mover-loss or unconditional repeat draw.",
+      "currentSourceSha256": "f64f8dad3d16dd5b08c392ccc141d7e035dc13986f55aa04b2f96781c2cc7629"
+    },
+    {
+      "id": "cycle-static-cutoff",
+      "selection": "enabled",
+      "source": "native/search.cpp",
+      "sourceSha256": "3c3505b46d935362ec06bb7d03a0b57ab4eeb742385b2e11773f68005332a9fc",
+      "reason": "Current static heuristic at internal repeated nodes with legal-terminal priority; never claim formal draw or last-mover mate.",
+      "currentSourceSha256": "3c3505b46d935362ec06bb7d03a0b57ab4eeb742385b2e11773f68005332a9fc"
+    },
+    {
+      "id": "jqe-it014-full-evaluator",
+      "selection": "alternative",
+      "source": "native/experiments/jqe-current/build.mjs",
+      "sourceSha256": "b5454a89c0600fb17261aad2a53796a230a5446ecb70f3edbe6369d0bebf0997",
+      "reason": "Mutually exclusive with selected rich HCE plus own residual NNUE; it014 is a complete value network, not a residual, so do not add its full score to HCE.",
+      "currentSourceSha256": "b5454a89c0600fb17261aad2a53796a230a5446ecb70f3edbe6369d0bebf0997"
+    },
+    {
+      "id": "jqe-active-snapshot",
+      "selection": "not-applicable",
+      "source": "native/experiments/jqe-speed/common.mjs",
+      "sourceSha256": "1727bacde1c999758875cee7ae1c80c369b3307b901d0e199683363951d0a54b",
+      "reason": "Copies live lanes of JQE-specific State; chosen16-hidden residual has different small State and immutable fixed dimensions. Not silently treated as enabled.",
+      "currentSourceSha256": "1727bacde1c999758875cee7ae1c80c369b3307b901d0e199683363951d0a54b"
+    },
+    {
+      "id": "jqe-FMA",
+      "selection": "platform-limited-off",
+      "source": "native/experiments/jqe-combined/common.mjs",
+      "sourceSha256": "40dce011ce643cda6870b4bf4613d334f16bd3bd3e5fbaca4fe3144c6c6cae34",
+      "reason": "JQE-specific correction and x86FMA platform requirement. CPU feature query previously denied; no retry or alternate query. Portable default has no unconditional FMA instruction.",
+      "currentSourceSha256": "40dce011ce643cda6870b4bf4613d334f16bd3bd3e5fbaca4fe3144c6c6cae34"
+    },
+    {
+      "id": "jqe-integer-variant",
+      "selection": "alternative",
+      "source": "native/experiments/jqe-speed/common.mjs",
+      "sourceSha256": "1727bacde1c999758875cee7ae1c80c369b3307b901d0e199683363951d0a54b",
+      "reason": "Another full-network arithmetic implementation, not stackable with chosen residual evaluator; previous no demonstrated speed benefit.",
+      "currentSourceSha256": "1727bacde1c999758875cee7ae1c80c369b3307b901d0e199683363951d0a54b"
+    },
+    {
+      "id": "selfplay-residual-network",
+      "selection": "alternative",
+      "source": "native/experiments/selfplay-value/build.mjs",
+      "sourceSha256": "83a332adab90b444b7fa629ba6984a214b56e497861fbac8ace481139ae2c896",
+      "reason": "Alternative learned residual weights to selected observation-nnue-v1; two learned corrections not blindly added.",
+      "currentSourceSha256": "83a332adab90b444b7fa629ba6984a214b56e497861fbac8ace481139ae2c896"
+    },
+    {
+      "id": "C6-C7-C8-packed-key-line-geometry",
+      "selection": "incompatible-port-pending",
+      "source": "native/experiments/search-speed/c8-source.mjs",
+      "sourceSha256": "51ecaced2e1238e3689c57f0b91b29cbb677e9324a32224f1cb76df0a52262ac",
+      "reason": "Different compact Key/TT, incremental HCE State, protocol3 and root scheduler. Source contains old repetition-as-win terminal logic; cannot enable unchanged in current-rule default or discard full NNUE typed inventory. Requires separate reviewed port, not a boolean switch.",
+      "currentSourceSha256": "51ecaced2e1238e3689c57f0b91b29cbb677e9324a32224f1cb76df0a52262ac"
+    },
+    {
+      "id": "root-mesh-bright-frontier-v5",
+      "selection": "alternative",
+      "source": "native/experiments/search-speed/c7-source.mjs",
+      "sourceSha256": "f850d449112a7ba31e03402682186ba13972ce2f85b8ca5f7bf47b914af4e3fa",
+      "reason": "Exclusive root dispatch implementation against selected same-tier focus/coverage RootSession; old repetition semantics unsafe unchanged. Selected request worker pool and coverage policy actually execute.",
+      "currentSourceSha256": "f850d449112a7ba31e03402682186ba13972ce2f85b8ca5f7bf47b914af4e3fa"
+    },
+    {
+      "id": "mate-proof-quiet-extension",
+      "selection": "subsumed",
+      "source": "native/experiments/mate-proof/build.mjs",
+      "sourceSha256": "c9fb788b7f0ce3db61a8e4d3f09a8e9e6d4561c0c214ff95664be566af044bb9",
+      "reason": "Selected all-feature qchecks and public critical-reveal-check union include compatible tactical scope, with duplicate bright checks removed.",
+      "currentSourceSha256": "c9fb788b7f0ce3db61a8e4d3f09a8e9e6d4561c0c214ff95664be566af044bb9"
+    },
+    {
+      "id": "time-clock-no-depth-cap",
+      "selection": "enabled",
+      "source": "native/server.mjs",
+      "sourceSha256": "ad908a8c6c865937871d8eac09966ef32ce22dc28a094a4e15777087dfa85018",
+      "reason": "Default time-controlled depth0, actual mainDepth/selDepth with safety bound127 and independent host cancellation; no artificial depth8 cap.",
+      "currentSourceSha256": "ad908a8c6c865937871d8eac09966ef32ce22dc28a094a4e15777087dfa85018"
+    },
+    {
+      "id": "rollback-HCE",
+      "selection": "available",
+      "source": "native/server.mjs",
+      "sourceSha256": "ad908a8c6c865937871d8eac09966ef32ce22dc28a094a4e15777087dfa85018",
+      "reason": "MIST_ENGINE_PRESET=hce npm start or npm run start:hce; never overwrite live service binary.",
+      "currentSourceSha256": "ad908a8c6c865937871d8eac09966ef32ce22dc28a094a4e15777087dfa85018"
+    }
+  ],
+  "model": {
+    "path": "models/experimental/observation-nnue-v1.bin",
+    "sha256": "0b3ccf77fb30ce16ccdeaceb198bf7a114cee7b8a084643adac0d14887090edb",
+    "bytes": 166364,
+    "provenance": "Own random-init network trained on48self-generated games/8layouts,5trainlayouts;actual referee outcomes,not engine scores. No training this round;unproven strength.",
+    "license": "Existing project GPLv3,already public own weights."
+  },
+  "notClaims": [
+    "No universal Pika superiority",
+    "Not complete competition long-chase adjudicator",
+    "No unsupported FMA hardware query or unconditional ISA dispatch"
+  ],
+  "moduleIndex": [
+    {
+      "directory": "native/experiments/ab-jchess",
+      "role": "historical validation, orchestration or third-party opponent; no independent runtime feature",
+      "featureIds": []
+    },
+    {
+      "directory": "native/experiments/all-features",
+      "role": "historical validation, orchestration or third-party opponent; no independent runtime feature",
+      "featureIds": []
+    },
+    {
+      "directory": "native/experiments/buffered-sort",
+      "role": "referenced feature or alternative",
+      "featureIds": [
+        "buffered-stable-sort"
+      ]
+    },
+    {
+      "directory": "native/experiments/cluster-tt",
+      "role": "referenced feature or alternative",
+      "featureIds": [
+        "clustered-bounded-tt"
+      ]
+    },
+    {
+      "directory": "native/experiments/coverage-validation",
+      "role": "historical validation, orchestration or third-party opponent; no independent runtime feature",
+      "featureIds": []
+    },
+    {
+      "directory": "native/experiments/cycle-parity",
+      "role": "referenced feature or alternative",
+      "featureIds": [
+        "cycle-parity"
+      ]
+    },
+    {
+      "directory": "native/experiments/downside-risk",
+      "role": "referenced feature or alternative",
+      "featureIds": [
+        "downside-risk"
+      ]
+    },
+    {
+      "directory": "native/experiments/historical",
+      "role": "frozen historical source; never restore old repetition rules",
+      "featureIds": []
+    },
+    {
+      "directory": "native/experiments/information-value",
+      "role": "referenced feature or alternative",
+      "featureIds": [
+        "information-value"
+      ]
+    },
+    {
+      "directory": "native/experiments/insertion-sort",
+      "role": "referenced feature or alternative",
+      "featureIds": [
+        "stable-insertion-sort"
+      ]
+    },
+    {
+      "directory": "native/experiments/jqe",
+      "role": "historical validation, orchestration or third-party opponent; no independent runtime feature",
+      "featureIds": []
+    },
+    {
+      "directory": "native/experiments/jqe-combined",
+      "role": "referenced feature or alternative",
+      "featureIds": [
+        "jqe-FMA"
+      ]
+    },
+    {
+      "directory": "native/experiments/jqe-confirm",
+      "role": "historical confirmation/validation, not additional simultaneous engine feature",
+      "featureIds": []
+    },
+    {
+      "directory": "native/experiments/jqe-current",
+      "role": "referenced feature or alternative",
+      "featureIds": [
+        "jqe-it014-full-evaluator"
+      ]
+    },
+    {
+      "directory": "native/experiments/jqe-followup",
+      "role": "historical confirmation/validation, not additional simultaneous engine feature",
+      "featureIds": []
+    },
+    {
+      "directory": "native/experiments/jqe-retest",
+      "role": "historical confirmation/validation, not additional simultaneous engine feature",
+      "featureIds": []
+    },
+    {
+      "directory": "native/experiments/jqe-speed",
+      "role": "referenced feature or alternative",
+      "featureIds": [
+        "jqe-active-snapshot",
+        "jqe-integer-variant"
+      ]
+    },
+    {
+      "directory": "native/experiments/king-geometry",
+      "role": "referenced feature or alternative",
+      "featureIds": [
+        "king-geometry"
+      ]
+    },
+    {
+      "directory": "native/experiments/mate-proof",
+      "role": "referenced feature or alternative",
+      "featureIds": [
+        "mate-proof-quiet-extension"
+      ]
+    },
+    {
+      "directory": "native/experiments/nnue",
+      "role": "referenced feature or alternative",
+      "featureIds": [
+        "incremental-nnue"
+      ]
+    },
+    {
+      "directory": "native/experiments/piece-mask",
+      "role": "referenced feature or alternative",
+      "featureIds": [
+        "piece-square-mask"
+      ]
+    },
+    {
+      "directory": "native/experiments/qcheck-filter",
+      "role": "subsumed by quiet-checks-and-filter; old4of12 competition remains paused",
+      "featureIds": []
+    },
+    {
+      "directory": "native/experiments/search-speed",
+      "role": "referenced feature or alternative",
+      "featureIds": [
+        "C6-C7-C8-packed-key-line-geometry",
+        "root-mesh-bright-frontier-v5"
+      ]
+    },
+    {
+      "directory": "native/experiments/selfplay-value",
+      "role": "referenced feature or alternative",
+      "featureIds": [
+        "selfplay-residual-network"
+      ]
+    },
+    {
+      "directory": "native/experiments/standpat",
+      "role": "referenced feature or alternative",
+      "featureIds": [
+        "standpat-early-exit"
+      ]
+    },
+    {
+      "directory": "native/experiments/tactical-lmr",
+      "role": "referenced feature or alternative",
+      "featureIds": [
+        "quiet-checks-and-filter"
+      ]
+    },
+    {
+      "directory": "native/experiments/time-search",
+      "role": "referenced feature or alternative",
+      "featureIds": [
+        "lmr"
+      ]
+    },
+    {
+      "directory": "native/experiments/verified-null",
+      "role": "referenced feature or alternative",
+      "featureIds": [
+        "protected-null"
+      ]
+    }
+  ],
+  "variantModules": [
+    {
+      "source": "native/aspiration2-variants.mjs",
+      "sha256": "69bfcdb880628f5461e3e15bd26bdb98b9f01863c118cdd93a4ac8082e045ed5",
+      "selection": "Existing feature implementations subsumed by selected compatible bundle; resource/ablation and alternate windows remain alternatives"
+    },
+    {
+      "source": "native/defense-variants.mjs",
+      "sha256": "240d67c88a421d88522f3575569de88ce308a200ccb9e8feaa10ba30191bfc47",
+      "selection": "Existing feature implementations subsumed by selected compatible bundle; resource/ablation and alternate windows remain alternatives"
+    },
+    {
+      "source": "native/focus-variants.mjs",
+      "sha256": "16d0de3a164a88cc36a9c0f78c55ffed0216ea7511858fee20967c45c8030f39",
+      "selection": "Existing feature implementations subsumed by selected compatible bundle; resource/ablation and alternate windows remain alternatives"
+    },
+    {
+      "source": "native/forcing-variants.mjs",
+      "sha256": "62d9b8d3ce1a3dcdb7960ce286f94ecb9009f7f2e96933ac6741e767eb6168b0",
+      "selection": "Existing feature implementations subsumed by selected compatible bundle; resource/ablation and alternate windows remain alternatives"
+    },
+    {
+      "source": "native/frontier-invariants.mjs",
+      "sha256": "81609bf5738858c264620266386bfd60c27da1f9cb465074f3c8d0816a42f3da",
+      "selection": "Existing feature implementations subsumed by selected compatible bundle; resource/ablation and alternate windows remain alternatives"
+    },
+    {
+      "source": "native/frontier-variants.mjs",
+      "sha256": "7907c1107d816e4baf536ba8fa9e93ec1db54d4de91a881e058b5174a6bad0c4",
+      "selection": "Existing feature implementations subsumed by selected compatible bundle; resource/ablation and alternate windows remain alternatives"
+    },
+    {
+      "source": "native/movegen-variants.mjs",
+      "sha256": "787d4d8600cd3e24d3c0dab338615b2a94232ab0beb7a6e17c3de12a8401bbeb",
+      "selection": "Existing feature implementations subsumed by selected compatible bundle; resource/ablation and alternate windows remain alternatives"
+    },
+    {
+      "source": "native/perf-variants.mjs",
+      "sha256": "63577a6744536dd2b34e5c14d7765497b398be7c28aa791f8a878b84ed7a5c9c",
+      "selection": "Existing feature implementations subsumed by selected compatible bundle; resource/ablation and alternate windows remain alternatives"
+    },
+    {
+      "source": "native/window-variants.mjs",
+      "sha256": "33838ff8ca85faf4316817c1e52dc24eb0a99555304861fea324cc28ca26689d",
+      "selection": "Existing feature implementations subsumed by selected compatible bundle; resource/ablation and alternate windows remain alternatives"
+    }
+  ]
+}

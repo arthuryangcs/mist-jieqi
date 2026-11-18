@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "profile": "all-compatible-v2",
+  "sourceSha256": "a6d1a5da2624202769b583d9631576c4d95a3af206567f96b0dd4fe8c87d0104",
+  "binarySha256": "80b3054276e4a53b59b40915bfdab627e2a19a628ab1e4614885c3f9d5dd68c3",
+  "checks": [
+    "actual-default HTTP page/backend/version",
+    "legal2000ms default15worlds actual NNUE/features",
+    "duplicate rejected; cancellation drains owned job",
+    "pre-cancel blocks stale request",
+    "hidden truth rejected",
+    "foreign origin rejected"
+  ],
+  "search": {
+    "depth": 4,
+    "selDepth": 12,
+    "samples": 15,
+    "features": {
+      "nnueEvaluations": 879514,
+      "nnueUpdates": 2920966,
+      "fullActivityEvaluations": 879514,
+      "pressureCacheHits": 235414,
+      "pressureCacheMisses": 631879,
+      "lazyBounds": 12221,
+      "ttProbes": 69062,
+      "ttHits": 12607,
+      "canonicalClears": 2169,
+      "poolTasks": 576,
+      "windowAttempts": 189,
+      "windowFailures": 9,
+      "windowFullFallbacks": 0,
+      "lmrSearches": 7611,
+      "lmrResearches": 386,
+      "nullSearches": 0,
+      "nullCutoffs": 0,
+      "nullVerifications": 0,
+      "quietQueries": 292923,
+      "quietAdded": 16612,
+      "quietSearched": 5501,
+      "criticalQuietAdded": 0
+    },
+    "elapsedMs": 1964.946601,
+    "deadlineStop": false,
+    "fallbackUsed": false
+  }
+}

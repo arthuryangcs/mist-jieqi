@@ -1,0 +1,94 @@
+{
+  "createdAt": "2026-11-18T05:23:59.453Z",
+  "synthetic": true,
+  "binariesUploaded": false,
+  "newWeightsUploaded": false,
+  "defaultEnabledByExplicitUserRequest": true,
+  "files": {
+    "README.md": {
+      "sha256": "c80ae9962bd09ad649d8bc94c5167de922fb07bfa2a73923d9e32c0ee38b54c0",
+      "bytes": 711
+    },
+    "audit.json": {
+      "sha256": "959c372fd9bd4d5960c07fe6725089ca2bb0b9ade95b42ffc8a6e156215b7d00",
+      "bytes": 349981
+    },
+    "benchmark.json": {
+      "sha256": "c934ee370cb9b9c07ce7c9d45063c3644728330dcb610643026fa9dc3fd4dc45",
+      "bytes": 24661
+    },
+    "build-default.json": {
+      "sha256": "1b758d57f2248544489ef826a0247043e460bd31511b532bff8949d6c34ba530",
+      "bytes": 1355
+    },
+    "build-hce.json": {
+      "sha256": "88212583a2e869d3f15364b0b6b7a2b2dc1c6a7d8dcafe03c62bbc26bdea6cf8",
+      "bytes": 475
+    },
+    "build-sanitized.json": {
+      "sha256": "eba926dbf62d16b700eb3815d49f5276bf794fcb59f692317e7b7d68cc1337b0",
+      "bytes": 1444
+    },
+    "client.json": {
+      "sha256": "851be05c9b91772693baf787c11cc94bacb886c7366a61f47852e92c868744ac",
+      "bytes": 148
+    },
+    "first-rule-regression.json": {
+      "sha256": "bdc21880e9c64b73e7fab6b0806f5f187789ef2c1ffca756a01e51d5d3ba7466",
+      "bytes": 1810
+    },
+    "freshness.json": {
+      "sha256": "e7b35de94fcea6e7e83cf44b5810936f2d749798d78f491f5362ea533dbd7f9c",
+      "bytes": 38440
+    },
+    "integration.json": {
+      "sha256": "55d5e37d37d3926f3e9950cf3a1ac40dc74aa6220768222730b38535f5d86296",
+      "bytes": 1331
+    },
+    "matches.json": {
+      "sha256": "68a47bcf2c143885bde1ba6ec00129e3464007db27eaa893ec3a176f54e44507",
+      "bytes": 904447
+    },
+    "redaction.json": {
+      "sha256": "182a9dc8c0f9cf3615a7f8f3a5552688603a2b4ef689ad1815e7fa52caeb4bb4",
+      "bytes": 515
+    },
+    "repetition-sanitized.json": {
+      "sha256": "d6bb72b08099972f13f2e262624050e5c1d4c3c70073ae2a656e020e73b35197",
+      "bytes": 5983
+    },
+    "repetition.json": {
+      "sha256": "937e81432c67e104c71164123fc3276f5d293376a47ded622173f2d229dc5c90",
+      "bytes": 5888
+    },
+    "replay.json": {
+      "sha256": "73f1baaa590a86ec4f8c3c459d44d4b8068b0577d60cb70c51c419b1afd2083c",
+      "bytes": 868
+    },
+    "rules-sanitized.json": {
+      "sha256": "183e0b7bbcb63933005a9715d599eae87745e131baf2c37762f05a3ab2e80fef",
+      "bytes": 6131
+    },
+    "rules.json": {
+      "sha256": "19c661e0b7ebf8aeee2d763dd6966efc0a82c70ad4a875d8b34f5e84d4648338",
+      "bytes": 6132
+    },
+    "summary.json": {
+      "sha256": "7da26afd8544392b0f4a3360607c71f72d816a90ee3a14d7358f80d4a72865e4",
+      "bytes": 891
+    },
+    "units.json": {
+      "sha256": "df9773acd66d1036eef805e9cd24089fe3c3a3ccf2384081ad4fbe668c31133e",
+      "bytes": 501
+    },
+    "validation.json": {
+      "sha256": "8d97b720980e1ea4ea5edb569a47bf3d8d6eb8bb9363e7edb11a5db2626ac7f4",
+      "bytes": 762
+    },
+    "tests.json": {
+      "sha256": "613ea096171654e6094c8d2d74079da449ce15aee2bc268868758099c9d71c77",
+      "bytes": 1238
+    }
+  },
+  "finalizedAt": "2026-11-18T05:27:19.463Z"
+}

@@ -1,0 +1,235 @@
+{
+  "build": {
+    "sourceSha256": "a6d1a5da2624202769b583d9631576c4d95a3af206567f96b0dd4fe8c87d0104",
+    "headerSha256": "152ecbaaeb3857c413f22351bc2c0c9e7c45193fd0c81caa001899be8cbd2ef5",
+    "binarySha256": "80b3054276e4a53b59b40915bfdab627e2a19a628ab1e4614885c3f9d5dd68c3",
+    "modelSha256": "0b3ccf77fb30ce16ccdeaceb198bf7a114cee7b8a084643adac0d14887090edb",
+    "sanitize": false,
+    "threads": 4,
+    "independentWorldSearch": true,
+    "unlimitedDepth": true,
+    "depthMetrics": true,
+    "safetyMaxPly": 127,
+    "profile": "all-compatible-v2",
+    "samples": 15,
+    "capabilities": {
+      "ready": true,
+      "protocol": 2,
+      "streaming": true,
+      "depthMetrics": true,
+      "unlimitedDepth": true,
+      "safetyMaxPly": 127,
+      "threads": 4,
+      "independentWorldSearch": true,
+      "allFeatures": true,
+      "defaultPreset": "all-compatible-v2",
+      "currentRootResponsibility": true,
+      "bufferedStableSort": true,
+      "nnue": true,
+      "nnueModelSha256": "0b3ccf77fb30ce16ccdeaceb198bf7a114cee7b8a084643adac0d14887090edb",
+      "ttSlotBytes": 128,
+      "focusedPlay": true
+    },
+    "compiler": "clang++",
+    "compilerVersion": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix",
+    "flags": [
+      "-std=c++17",
+      "-ffp-contract=off",
+      "-O3",
+      "-DNDEBUG",
+      "-isystem",
+      "<system-c++-include>"
+    ],
+    "warnings": ""
+  },
+  "testSourceSha256": "f9c7ea6c4142652c98b5f034f2e6c2650ecc64a91c22cc2857e20d45d7e63f16",
+  "cases": [
+    {
+      "name": "r/offender/hidden=false",
+      "samples": 1,
+      "legalCandidates": 21,
+      "repetitionLoss": true,
+      "repetitionWin": false,
+      "score": -98999,
+      "passed": true
+    },
+    {
+      "name": "r/offender/hidden=true",
+      "samples": 4,
+      "legalCandidates": 22,
+      "repetitionLoss": true,
+      "repetitionWin": false,
+      "score": -3594.878728264789,
+      "passed": true
+    },
+    {
+      "name": "r/evader/hidden=false",
+      "samples": 1,
+      "legalCandidates": 2,
+      "repetitionLoss": false,
+      "repetitionWin": true,
+      "score": 98999,
+      "passed": true
+    },
+    {
+      "name": "r/evader/hidden=true",
+      "samples": 4,
+      "legalCandidates": 2,
+      "repetitionLoss": false,
+      "repetitionWin": true,
+      "score": 3594.878728264789,
+      "passed": true
+    },
+    {
+      "name": "b/offender/hidden=false",
+      "samples": 1,
+      "legalCandidates": 21,
+      "repetitionLoss": true,
+      "repetitionWin": false,
+      "score": -98999,
+      "passed": true
+    },
+    {
+      "name": "b/offender/hidden=true",
+      "samples": 4,
+      "legalCandidates": 22,
+      "repetitionLoss": true,
+      "repetitionWin": false,
+      "score": -3594.878728264789,
+      "passed": true
+    },
+    {
+      "name": "b/evader/hidden=false",
+      "samples": 1,
+      "legalCandidates": 2,
+      "repetitionLoss": false,
+      "repetitionWin": true,
+      "score": 98999,
+      "passed": true
+    },
+    {
+      "name": "b/evader/hidden=true",
+      "samples": 4,
+      "legalCandidates": 2,
+      "repetitionLoss": false,
+      "repetitionWin": true,
+      "score": 3594.878728264789,
+      "passed": true
+    },
+    {
+      "name": "insufficient-cycles/r",
+      "samples": 1,
+      "legalCandidates": 2,
+      "repetitionLoss": false,
+      "repetitionWin": false,
+      "score": -98998,
+      "passed": true
+    },
+    {
+      "name": "insufficient-cycles/b",
+      "samples": 1,
+      "legalCandidates": 2,
+      "repetitionLoss": false,
+      "repetitionWin": false,
+      "score": -98998,
+      "passed": true
+    },
+    {
+      "name": "forged-duplicates/r/1",
+      "samples": 1,
+      "legalCandidates": 46,
+      "repetitionLoss": false,
+      "repetitionWin": false,
+      "score": -173.35594817035286,
+      "passed": true
+    },
+    {
+      "name": "forged-duplicates/r/2",
+      "samples": 1,
+      "legalCandidates": 46,
+      "repetitionLoss": false,
+      "repetitionWin": false,
+      "score": -173.35594817035286,
+      "passed": true
+    },
+    {
+      "name": "forged-duplicates/r/8",
+      "samples": 1,
+      "legalCandidates": 46,
+      "repetitionLoss": false,
+      "repetitionWin": false,
+      "score": -173.35594817035286,
+      "passed": true
+    },
+    {
+      "name": "forged-duplicates/b/1",
+      "samples": 1,
+      "legalCandidates": 46,
+      "repetitionLoss": false,
+      "repetitionWin": false,
+      "score": 44.254948258942434,
+      "passed": true
+    },
+    {
+      "name": "forged-duplicates/b/2",
+      "samples": 1,
+      "legalCandidates": 46,
+      "repetitionLoss": false,
+      "repetitionWin": false,
+      "score": 44.254948258942434,
+      "passed": true
+    },
+    {
+      "name": "forged-duplicates/b/8",
+      "samples": 1,
+      "legalCandidates": 46,
+      "repetitionLoss": false,
+      "repetitionWin": false,
+      "score": 44.254948258942434,
+      "passed": true
+    },
+    {
+      "name": "hidden-cap-legal-continuation",
+      "samples": 4,
+      "legalCandidates": 5,
+      "passed": true
+    },
+    {
+      "name": "hidden-cap-mate-precedence",
+      "samples": 4,
+      "legalCandidates": 33,
+      "passed": true
+    },
+    {
+      "name": "hidden-cap-mixed-mate-and-draw/r",
+      "samples": 2,
+      "legalCandidates": 31,
+      "passed": true
+    },
+    {
+      "name": "hidden-cap-mixed-mate-and-draw/b",
+      "samples": 2,
+      "legalCandidates": 31,
+      "passed": true
+    },
+    {
+      "name": "ordinary-quiet-limit-draw",
+      "passed": true
+    },
+    {
+      "name": "ordinary-ply-limit-draw",
+      "passed": true
+    },
+    {
+      "name": "nonchecking-repeat-review-cap=false",
+      "passed": true
+    },
+    {
+      "name": "nonchecking-repeat-review-cap=true",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "invalidOutcomeRejected": true,
+  "runtimeStderr": ""
+}

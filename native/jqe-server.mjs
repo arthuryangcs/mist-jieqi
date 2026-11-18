@@ -12,7 +12,7 @@ export const pinned=Object.freeze({
   'engine.js':'f64f8dad3d16dd5b08c392ccc141d7e035dc13986f55aa04b2f96781c2cc7629',
   'ai.js':'363ebb21c6f7c248cb97fd0505b419d7d06154774af5582de434d14f4c162ea5',
   'native/search.cpp':'3c3505b46d935362ec06bb7d03a0b57ab4eeb742385b2e11773f68005332a9fc',
-  'native/server.mjs':'ad908a8c6c865937871d8eac09966ef32ce22dc28a094a4e15777087dfa85018',
+  'native/server.mjs':'062f0fd5b823264e578f5b2fb4518a853dfa34a227d3399ee8211b91e4e51ff7',
   'native/bridge.mjs':'0e2eb66fcbd4be136e39e881c72764909b77ecbc47952e4181d0a106de1b7879',
   'native/experiments/jqe-current/web.mjs':'5dec2e3d81aa8cbd41ea3f5fbb70d7bd5e3914cd3c375ecc18fcf6fa3b3a7ace',
   'native/experiments/jqe-current/nnue.hpp':'b7363b9f1930636819bf6a69723e8bb6cd645728eaabfced30bf29d3962d5378',
@@ -66,7 +66,7 @@ export async function createJqeServer({maxSearches=2}={}){
   const transport=await previewModule({quantized:true});
   const service=transport.createLocalServer({executable:built.binary,buildInfo:transport.probeBuild(built),maxSearches,staticRoot:root});
   Object.assign(service.info,{
-    evaluation:'jqe',model:'it014',modelSha256:built.modelSha256,
+    engineProfile:'jqe-it014',evaluation:'jqe',model:'it014',modelSha256:built.modelSha256,
     upstreamCommit:built.upstreamCommit,quantized:true,incremental:true,
     scoreScale:'600/430',headerSha256:built.headerSha256,
   });

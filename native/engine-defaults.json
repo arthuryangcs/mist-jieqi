@@ -1,0 +1,9 @@
+{
+  "profile": "all-compatible-v2",
+  "samples": 15,
+  "maxThreads": 4,
+  "ttBudgetBytes": 67108864,
+  "mainDepth": 0,
+  "reason": "Explicit user request to enable all compatible new features by default for testing; no claim of proven strength",
+  "rollback": "MIST_ENGINE_PRESET=hce npm start"
+}

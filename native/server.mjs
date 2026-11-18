@@ -45,8 +45,11 @@ export function validateRequest(input){
 async function readJSON(req){let size=0,parts=[];for await(const part of req){size+=part.length;if(size>2*1024*1024)throw Object.assign(Error('请求过大'),{status:413});parts.push(part);}try{return JSON.parse(Buffer.concat(parts).toString());}catch{invalid('请求不是有效JSON');}}
 
 export function createLocalServer({executable=binary,buildInfo=JSON.parse(fs.readFileSync(manifestPath)),maxSearches=2}={}){
+ // Keep the historical factory signature for pinned preview adapters. New
+ // startup-only controls are additive and cannot be set by HTTP requests.
+ const {samples=8,searchMode='STREAM',engineProfile='hce'}=arguments[0]??{};
  const active=new Map(),cancelled=new Map();let completed=0,aborted=0;
- const info={engine:'cpp-native',sourceSha256:buildInfo.sourceSha256,binarySha256:buildInfo.binarySha256,maxThreads:buildInfo.threads||1,independentWorldSearch:buildInfo.independentWorldSearch===true,unlimitedDepth:buildInfo.unlimitedDepth===true,depthMetrics:buildInfo.depthMetrics===true,safetyMaxPly:buildInfo.safetyMaxPly,transport:'loopback-http',protocol:2};
+ const info={engine:'cpp-native',engineProfile,sourceSha256:buildInfo.sourceSha256,binarySha256:buildInfo.binarySha256,maxThreads:buildInfo.threads||1,independentWorldSearch:buildInfo.independentWorldSearch===true,unlimitedDepth:buildInfo.unlimitedDepth===true,depthMetrics:buildInfo.depthMetrics===true,safetyMaxPly:buildInfo.safetyMaxPly,transport:'loopback-http',protocol:2};
  function cancel(token){const job=active.get(token);if(job){aborted++;job.cancel();}else{cancelled.set(token,Date.now()+3000);if(cancelled.size>100)cancelled.delete(cancelled.keys().next().value);}}
  const server=http.createServer(async(req,res)=>{
   res.setHeader('Cache-Control','no-store');res.setHeader('X-Content-Type-Options','nosniff');
@@ -67,7 +70,7 @@ export function createLocalServer({executable=binary,buildInfo=JSON.parse(fs.rea
     if(cancelled.has(input.token)){json(409,{error:'搜索已取消'});return;}
     if(active.has(input.token)){json(409,{error:'搜索编号重复'});return;}
     if(active.size>=maxSearches){json(429,{error:'本机搜索忙，请停止另一页面的搜索后重试'});return;}
-    const f=fixture(input.view,{seed:observationSeed(input.view),samples:8}),native=new Native({binary:executable});
+    const f=fixture(input.view,{seed:observationSeed(input.view),samples}),native=new Native({binary:executable});
     let finished=false,timer,latest=null,latestStats=null;
     const prepareMs=performance.now()-started;
     const wire=r=>{const top=r.allCandidates?.[0]||{};return{...r,...top,move:r.move??(top.from!==undefined?{from:top.from,to:top.to}:null),allCandidates:undefined,iterations:undefined,candidates:(r.allCandidates||[]).filter(x=>!x.scoreBound||x.scoreBound==='exact').slice(0,5),fallbackUsed:!r.depth&&!r.terminal,searchStatus:!r.depth&&!r.terminal?'fallback':r.searchStatus,uncertain:input.view.board.some(p=>p?.hidden),scoreKind:input.view.board.some(p=>p?.hidden)?'expected-utility':'material',seed:f.seed,...info,threads:r.threads??1,engineVerified:true,serviceElapsedMs:performance.now()-started,preparationMs:prepareMs,initializationMs:native.initializationMs??null};};
@@ -85,7 +88,7 @@ export function createLocalServer({executable=binary,buildInfo=JSON.parse(fs.rea
     try{
      await native.ready;if(finished)return;if(native.capabilities.protocol!==2||!native.capabilities.streaming||!native.capabilities.unlimitedDepth)throw Error('C++程序需要重新构建以支持按时间搜索');
      const remaining=Math.max(0,input.timeMs-(performance.now()-started)-15);
-     const r=await native.request(f,{mode:'STREAM',depth:0,budget:remaining,onTelemetry:s=>{if(finished)return;const clean=cleanSearchStats(s);if(clean){latestStats=clean;if(input.depthMetrics)send({telemetry:{...clean,...info,engineVerified:true}});}},onProgress:r=>{if(finished)return;latest=wire(r);send({progress:true,result:latest});}});
+     const r=await native.request(f,{mode:searchMode,depth:0,budget:remaining,onTelemetry:s=>{if(finished)return;const clean=cleanSearchStats(s);if(clean){latestStats=clean;if(input.depthMetrics)send({telemetry:{...clean,...info,engineVerified:true}});}},onProgress:r=>{if(finished)return;latest=wire(r);send({progress:true,result:latest});}});
      if(finished)return;finished=true;completed++;send({result:wire(r)});res.end();cleanup();
     }catch(error){if(!finished){finished=true;send({error:'C++搜索未完成，请重试或明确选择JavaScript回退。'});res.end();cleanup();}}
     return;

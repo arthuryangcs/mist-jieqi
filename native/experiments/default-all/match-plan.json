@@ -1,0 +1,27 @@
+{
+  "experiment": "default-all-compatible-test-2026-11-18",
+  "createdAt": "2026-11-18T05:00:20.135Z",
+  "matches": {
+    "budgetMs": 2000,
+    "graceMs": 60,
+    "maxPlies": 400,
+    "hostReserveMs": 40,
+    "ttBudgetBytes": 67108864,
+    "samples": 15,
+    "controlSamples": 8,
+    "brightSamples": 1,
+    "seeds": [
+      4286652778,
+      1993848361
+    ]
+  },
+  "sampling": {
+    "method": "two OS cryptographic RNG layouts drawn once, after correctness/timing and before game outcomes, compared to all registered cached/public synthetic layouts",
+    "notEngineInput": true
+  },
+  "adoption": {
+    "defaultEnable": true,
+    "explicitUserRequest": true,
+    "strengthNotAssumed": true
+  }
+}

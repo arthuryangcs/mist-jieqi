@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "sanitize": false,
+      "output": "ok TT full inventory,collision,replacement,generation,arena;pressure key,bounds;null guards,NNUE timeout restore,verification,synthetic isolation,actual mate plies;stable ties"
+    },
+    {
+      "sanitize": true,
+      "output": "ok TT full inventory,collision,replacement,generation,arena;pressure key,bounds;null guards,NNUE timeout restore,verification,synthetic isolation,actual mate plies;stable ties"
+    }
+  ]
+}

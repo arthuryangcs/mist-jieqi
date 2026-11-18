@@ -244,6 +244,32 @@ jobs:
           node native/experiments/jqe/thread-check.mjs
       - name: Opt-in HTTP boundaries and cancellation
         run: node --test native/experiments/jqe/service-check.mjs
+  default-all-compatible:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '24'
+      - name: Default selection, rollback and portable fresh build
+        run: |
+          node --test native/experiments/default-all/default.test.mjs
+          node --input-type=module -e "import{build,buildControl}from'./native/experiments/default-all/build.mjs';buildControl();build();build({sanitize:true});"
+      - name: Inventory TT, null, probability, privacy and restoration
+        run: |
+          node native/experiments/default-all/unit-check.mjs
+          node native/experiments/default-all/check.mjs
+          node native/experiments/default-all/check.mjs --sanitize
+          node native/experiments/default-all/repetition.mjs
+          JIEQI_NATIVE_SANITIZE=1 node native/experiments/default-all/repetition.mjs
+      - name: Actual default HTTP, cancellation and frozen public games
+        run: |
+          node native/experiments/default-all/integration.mjs
+          node native/experiments/default-all/matches.mjs replay
+          node native/experiments/jqe-retest/audit.mjs benchmarks/default-all-2026-11-18/matches.json /tmp/default-all-audit.json
   jqe-current-rules:
     runs-on: ubuntu-latest
     timeout-minutes: 30

@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "cancel": true,
+  "overlapRejected": true,
+  "recovery": {
+    "depth": 2,
+    "samples": 15,
+    "deadlineStop": false
+  }
+}

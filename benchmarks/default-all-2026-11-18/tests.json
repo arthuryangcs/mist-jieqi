@@ -1,0 +1,54 @@
+{
+  "nodeTest": {
+    "tests": 250,
+    "passed": 250,
+    "failed": 0,
+    "skipped": 0,
+    "logSha256": "4b982f52f80ed5006d848b936b39771388fc4a6b1dab475a8ef30f50f93f640c"
+  },
+  "optionalOriginalJQETransport": {
+    "tests": 4,
+    "passed": 3,
+    "failed": 0,
+    "skipped": 1,
+    "logSha256": "b0cd531347ad6d2d08caade1bbb21a9c35040e9c90d7c52149d202c80be2553b"
+  },
+  "postPhases": [
+    {
+      "name": "replay",
+      "state": "completed",
+      "code": 0,
+      "signal": null
+    },
+    {
+      "name": "audit",
+      "state": "completed",
+      "code": 0,
+      "signal": null
+    },
+    {
+      "name": "npm-v3",
+      "state": "completed",
+      "code": 0,
+      "signal": null
+    },
+    {
+      "name": "legacyTransport",
+      "state": "completed",
+      "code": 0,
+      "signal": null
+    },
+    {
+      "name": "export",
+      "state": "completed",
+      "code": 0,
+      "signal": null
+    }
+  ],
+  "browserVisualAcceptance": false,
+  "TSan": false,
+  "newDefaultByExplicitUserRequest": true,
+  "legacyFreshCheckoutSkippedLocally": true,
+  "legacyFreshCheckoutEnabledInCI": true,
+  "auditDefaultPromotionField": "Generic independent audit does not recommend strength promotion; it is not the code-default selector."
+}

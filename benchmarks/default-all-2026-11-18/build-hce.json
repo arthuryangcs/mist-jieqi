@@ -1,0 +1,15 @@
+{
+  "sourceSha256": "bb6e262e5cfca31eb96f7b17cd25b25804952d1eba8b7f2d96b9c40653cf5ee7",
+  "binarySha256": "cccf682664e4fd3b1ab0129bb4f5230c03adb53cd1a746e82851355a89491d60",
+  "compiler": "clang++",
+  "compilerVersion": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix",
+  "flags": [
+    "-std=c++17",
+    "-ffp-contract=off",
+    "-O3",
+    "-DNDEBUG",
+    "-isystem",
+    "<system-c++-include>"
+  ],
+  "warnings": ""
+}

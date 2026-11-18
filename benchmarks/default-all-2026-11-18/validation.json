@@ -1,0 +1,43 @@
+{
+  "state": "completed",
+  "startedAt": "2026-11-18T04:55:03.665Z",
+  "steps": [
+    {
+      "name": "units-v2",
+      "state": "completed",
+      "code": 0,
+      "signal": null
+    },
+    {
+      "name": "rules-v2",
+      "state": "completed",
+      "code": 0,
+      "signal": null
+    },
+    {
+      "name": "sanitized",
+      "state": "completed",
+      "code": 0,
+      "signal": null
+    },
+    {
+      "name": "integration",
+      "state": "completed",
+      "code": 0,
+      "signal": null
+    },
+    {
+      "name": "boundaries",
+      "state": "completed",
+      "code": 0,
+      "signal": null
+    },
+    {
+      "name": "npm",
+      "state": "completed",
+      "code": 0,
+      "signal": null
+    }
+  ],
+  "finishedAt": "2026-11-18T04:57:22.619Z"
+}

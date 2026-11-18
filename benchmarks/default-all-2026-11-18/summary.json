@@ -1,0 +1,48 @@
+{
+  "budgetMs": 2000,
+  "games": 8,
+  "pairedLayouts": 2,
+  "summary": {
+    "internal": {
+      "finished": 4,
+      "wins": 0,
+      "draws": 0,
+      "losses": 3,
+      "technicalFailures": 0,
+      "cleanupFailures": 0,
+      "unresolved": 1,
+      "scoreRate": null,
+      "normal": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 3
+      },
+      "possibleScoreRate": [
+        0,
+        0.25
+      ]
+    },
+    "candidatePika": {
+      "finished": 4,
+      "wins": 0,
+      "draws": 0,
+      "losses": 4,
+      "technicalFailures": 0,
+      "cleanupFailures": 0,
+      "unresolved": 0,
+      "scoreRate": 0,
+      "normal": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 4
+      },
+      "possibleScoreRate": [
+        0,
+        0
+      ]
+    }
+  },
+  "defaultEnabledByExplicitUserRequest": true,
+  "strengthNotProven": true,
+  "previousRoundsMixed": false
+}

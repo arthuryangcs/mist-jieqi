@@ -1,0 +1,31 @@
+{
+  "request": "Enable all compatible new features by default and test; explicit user instruction supersedes promotion gate for this test",
+  "baseCommit": "f3a79a0db1f20b6f7e794a829c2bc795e53a9072",
+  "default": "all-compatible-v2",
+  "rollback": "hce",
+  "budgetMs": 2000,
+  "hostReserveMs": 40,
+  "graceMs": 60,
+  "maxThreads": 4,
+  "ttBudgetBytes": 67108864,
+  "candidateSamples": 15,
+  "controlSamples": 8,
+  "brightSamples": 1,
+  "mainDepth": 0,
+  "formal": {
+    "layouts": 2,
+    "games": 8,
+    "groups": [
+      "internal",
+      "candidatePika"
+    ],
+    "newSeeds": "OS random; exclude all registered historical/public synthetic layouts before freezing",
+    "pairedColors": true,
+    "maxPlies": 400
+  },
+  "noOutcomeBasedTuning": true,
+  "defaultByUserRequest": true,
+  "strengthNotAssumed": true,
+  "rules": "current proof-only unilateral continuous three-cycle check loss; other repetitions unresolved; terminal priority;120quiet and400cap",
+  "stop": "Fresh official quota >=40; own process handles only; pause own work if stable8766 active; preserve old qcheck lock"
+}

@@ -2,6 +2,8 @@
 
 当前已接入浏览器：在项目根目录执行 `npm start`，打开 http://127.0.0.1:8766/，默认选择 C++。需要保持本机 Node 服务运行；只监听 loopback，不是WebAssembly或第三方引擎。JavaScript 回退须在界面明确选择。接入测试与真实浏览器测量见 [CPP_ENGINE_REPORT.md](../CPP_ENGINE_REPORT.md)。
 
+2026-11-18按用户最新要求，`npm start` 改为 `native/start.mjs` 选择兼容全特性测试默认：丰富HCE+现有增量残差NNUE、15暗世界、风险排序、LMR/验证空步/静态将军、选根与覆盖、窄窗、线程池、有界TT及缓冲稳定排序。详见[现行默认报告](../docs/experiments/default-all.md)。`MIST_ENGINE_PRESET=hce npm start` 或 `npm run start:hce` 回退HCE，`npm run build:default` 只构建新默认；`native/build.mjs`/`build:native`保留为原HCE构建入口，供旧基线复现。运行中服务不自动切换。下文未启用/默认HCE等是历史记录，现行配置以 `engine-defaults.json` 为准。
+
 服务在启动时检查源码/二进制哈希并按需编译；不下载依赖。每次搜索使用独立C++子进程，逐层推送完整迭代，取消、断开、重开及硬时限均终止对应子进程；最多同时2个请求。采样、公开观察、根裁定历史及真实对局控制仍由JS维护，C++实现默认配置的规则、估值和搜索。
 
 服务测试：`npm run test:cpp-ui`；浏览器测试：`npm run test:browser:cpp`（使用已有Chrome/Playwright，配置同主README）。HTTP只接受公开观察，不接受实际暗布局。
@@ -26,7 +28,7 @@
 
 后续受控静态将军实验没有接入生产核心：两方案由 `forcing-variants.mjs` 从冻结原版生成，独立规则/战术及ASan/UBSan通过，但完整方案对原版8局为2胜3和3负，未达启用门槛。基准、复现步骤、失败记录和网页仍使用原版的说明见 [QUIET_CHECK_EXPERIMENT.md](../QUIET_CHECK_EXPERIMENT.md)；实验二进制只写 `.cache/quiet/`，不覆盖 `.cache/native/mist-core`。
 
-最新默认仅修复表满后已有键不能更新的问题，C++与JS同步调整，表仍限制9万项、按采样世界和请求隔离。窄窗和请求内线程池经独立对照未采用，quiet-check保持关闭。完整候选/逐世界审计、JS/C++满表7层同节点、新Pika8局、时限故障调查与7组服务回归见 [TT_CACHE_REPORT.md](../TT_CACHE_REPORT.md)。历史冻结脚本的源码哈希限制保留，不把新核心冒充旧版。
+历史HCE基线仅修复表满后已有键不能更新的问题，C++与JS同步调整，表仍限制9万项、按采样世界和请求隔离。窄窗和请求内线程池经独立对照未采用，quiet-check保持关闭。完整候选/逐世界审计、JS/C++满表7层同节点、新Pika8局、时限故障调查与7组服务回归见 [TT_CACHE_REPORT.md](../TT_CACHE_REPORT.md)。历史冻结脚本的源码哈希限制保留，不把新核心冒充旧版。
 
 最近的[攻防/将帅压力实验](../DEFENSE_EVAL_EXPERIMENT.md)没有接入默认核心。原型、独立JS几何核对、ASan/UBSan、完整候选/逐世界同分、有界惰性计算消融及新布局换色8局均保留；正常7局得分率50%，另1局基线超时，1秒预算两处掉层，未过启用门槛。用 `node native/defense-check.mjs --lazy` 核验隔离原型；复跑前先另存正式证据，详见报告。
 
