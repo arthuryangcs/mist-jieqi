@@ -1,0 +1,219 @@
+{
+  "passed": true,
+  "postHoc": true,
+  "selector": {
+    "group": "original",
+    "plies": [
+      0,
+      9,
+      19,
+      29,
+      39
+    ],
+    "reason": "check same-tree numerical behavior on both observer colors and lawful private-capture views after pilot losses; no result-based fixture filtering"
+  },
+  "uniqueViews": 14,
+  "rows": [
+    {
+      "game": 2,
+      "ply": 0,
+      "viewer": "r",
+      "viewSha256": "2ab10eb2e9785f78f26631eca4c1e268d2045c8c0b4f7325a5ad38ba14ca5497",
+      "depth": 2,
+      "nodes": 26216,
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "game": 2,
+      "ply": 9,
+      "viewer": "b",
+      "viewSha256": "996aefb12cbe7b40e652edccd166d4a15e09243cf20023222fe6b6f1fbb564c3",
+      "depth": 2,
+      "nodes": 14642,
+      "transitions": 39,
+      "passed": true
+    },
+    {
+      "game": 2,
+      "ply": 19,
+      "viewer": "b",
+      "viewSha256": "ad191c13a028cd8a0beacd5de4eff4c587c958fd61f0e7655a274be65bc09bc4",
+      "depth": 2,
+      "nodes": 14263,
+      "transitions": 30,
+      "passed": true
+    },
+    {
+      "game": 2,
+      "ply": 29,
+      "viewer": "b",
+      "viewSha256": "b3ddb5a15a356637dedabb27b1c2892d88706ef3f0ff6ab10c8d12890f662473",
+      "depth": 2,
+      "nodes": 19402,
+      "transitions": 29,
+      "passed": true
+    },
+    {
+      "game": 2,
+      "ply": 39,
+      "viewer": "b",
+      "viewSha256": "5e7d4994f592cb00f0c60a73e75e18ebcf13fd36275def94752c185388f55b54",
+      "depth": 2,
+      "nodes": 34842,
+      "transitions": 36,
+      "passed": true
+    },
+    {
+      "game": 5,
+      "ply": 0,
+      "viewer": "r",
+      "viewSha256": "2ab10eb2e9785f78f26631eca4c1e268d2045c8c0b4f7325a5ad38ba14ca5497",
+      "depth": 2,
+      "nodes": 26216,
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "game": 5,
+      "ply": 9,
+      "viewer": "b",
+      "viewSha256": "996aefb12cbe7b40e652edccd166d4a15e09243cf20023222fe6b6f1fbb564c3",
+      "depth": 2,
+      "nodes": 14642,
+      "transitions": 39,
+      "passed": true
+    },
+    {
+      "game": 5,
+      "ply": 19,
+      "viewer": "b",
+      "viewSha256": "7ddc2deccdebd7795173381f342430bb74916235828fb179b38285f20be860cd",
+      "depth": 2,
+      "nodes": 27960,
+      "transitions": 37,
+      "passed": true
+    },
+    {
+      "game": 5,
+      "ply": 29,
+      "viewer": "b",
+      "viewSha256": "e2134aca0e1dc4453a99d6cb7575afe3ec2a821a4bb18eb5e834f0a4dbbf9ed6",
+      "depth": 2,
+      "nodes": 12369,
+      "transitions": 33,
+      "passed": true
+    },
+    {
+      "game": 5,
+      "ply": 39,
+      "viewer": "b",
+      "viewSha256": "7bb5761a6147f103a2f45fe5c8fb252b1f2bb9267a8e36c5157819848ba48c39",
+      "depth": 2,
+      "nodes": 21640,
+      "transitions": 36,
+      "passed": true
+    },
+    {
+      "game": 6,
+      "ply": 0,
+      "viewer": "r",
+      "viewSha256": "2ab10eb2e9785f78f26631eca4c1e268d2045c8c0b4f7325a5ad38ba14ca5497",
+      "depth": 2,
+      "nodes": 26216,
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "game": 6,
+      "ply": 9,
+      "viewer": "b",
+      "viewSha256": "07f8b8dd79d366e7e471534e30e5b1f8fedbdaaa0526ab0221e355c2358cdbb8",
+      "depth": 2,
+      "nodes": 28858,
+      "transitions": 33,
+      "passed": true
+    },
+    {
+      "game": 6,
+      "ply": 19,
+      "viewer": "b",
+      "viewSha256": "f413510d3890d84d4259d03063574c4962139760de50c7d8bd516c0831b82e43",
+      "depth": 2,
+      "nodes": 17552,
+      "transitions": 47,
+      "passed": true
+    },
+    {
+      "game": 6,
+      "ply": 29,
+      "viewer": "b",
+      "viewSha256": "eabe17c29a730c2d4620233b65e2069b80b603d38cf8ac218f4edb5e008bbc2c",
+      "depth": 2,
+      "nodes": 14175,
+      "transitions": 34,
+      "passed": true
+    },
+    {
+      "game": 6,
+      "ply": 39,
+      "viewer": "b",
+      "viewSha256": "fbf01b3f3ab8bcc75d2bd93661c98b1810759faae74bc967c6b4c22021bc445d",
+      "depth": 2,
+      "nodes": 4011,
+      "transitions": 7,
+      "passed": true
+    },
+    {
+      "game": 9,
+      "ply": 0,
+      "viewer": "r",
+      "viewSha256": "2ab10eb2e9785f78f26631eca4c1e268d2045c8c0b4f7325a5ad38ba14ca5497",
+      "depth": 2,
+      "nodes": 26216,
+      "transitions": 44,
+      "passed": true
+    },
+    {
+      "game": 9,
+      "ply": 9,
+      "viewer": "b",
+      "viewSha256": "07f8b8dd79d366e7e471534e30e5b1f8fedbdaaa0526ab0221e355c2358cdbb8",
+      "depth": 2,
+      "nodes": 28858,
+      "transitions": 33,
+      "passed": true
+    },
+    {
+      "game": 9,
+      "ply": 19,
+      "viewer": "b",
+      "viewSha256": "f413510d3890d84d4259d03063574c4962139760de50c7d8bd516c0831b82e43",
+      "depth": 2,
+      "nodes": 17552,
+      "transitions": 47,
+      "passed": true
+    },
+    {
+      "game": 9,
+      "ply": 29,
+      "viewer": "b",
+      "viewSha256": "ee48361820bbf177b2c7104205f962a340e3d2224891c88802907fca07a4949d",
+      "depth": 2,
+      "nodes": 15658,
+      "transitions": 33,
+      "passed": true
+    },
+    {
+      "game": 9,
+      "ply": 39,
+      "viewer": "b",
+      "viewSha256": "c4883d434597df7dbfb4f0713d34e9a0f6d5775534742f5ce54ffaee9290cad2",
+      "depth": 2,
+      "nodes": 9929,
+      "transitions": 27,
+      "passed": true
+    }
+  ],
+  "finishedAt": "2026-11-18T02:39:23.042Z"
+}

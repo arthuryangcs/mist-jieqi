@@ -1,0 +1,35 @@
+{
+  "experiment": "jqe-combined-independent-pilot-2026-11-18",
+  "createdAt": "2026-11-18T01:58:08.303Z",
+  "matches": {
+    "layouts": 2,
+    "games": 12,
+    "groups": [
+      "internal",
+      "candidatePika",
+      "original"
+    ],
+    "budgetMs": 2000,
+    "graceMs": 60,
+    "samples": 8,
+    "brightSamples": 1,
+    "maxThreads": 4,
+    "ttBudgetBytes": 67108864,
+    "hostReserveMs": 40,
+    "maxPlies": 400,
+    "stopRule": "freeze before games; all12 regardless outcomes; retain technical/unresolved; no adoption gate based on Pika non-inferiority",
+    "seeds": [
+      3274431253,
+      3707974477
+    ]
+  },
+  "sampling": {
+    "method": "two OS cryptographic RNG layouts drawn once, after correctness/timing and before game outcomes, compared to all registered cached/public synthetic layouts",
+    "notEngineInput": true
+  },
+  "adoption": {
+    "defaultEnable": false,
+    "phase": "bounded exploratory pilot, not original JQE confirmation",
+    "pikaNonInferiorityGate": false
+  }
+}

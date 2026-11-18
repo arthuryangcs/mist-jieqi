@@ -268,6 +268,11 @@ jobs:
           node --test native/experiments/jqe-confirm/matches.test.mjs
           node native/experiments/jqe-confirm/matches.mjs replay
           node native/experiments/jqe-retest/audit.mjs benchmarks/jqe-confirm-2026-11-09/matches.json /tmp/jqe-confirm-audit.json
+      - name: Optional combined JQE source and public replay (no FMA execution)
+        run: |
+          node --test native/experiments/jqe-combined/matches.test.mjs
+          node native/experiments/jqe-combined/matches.mjs replay
+          node native/experiments/jqe-retest/audit.mjs benchmarks/jqe-combined-2026-11-18/matches.json /tmp/jqe-combined-audit.json
       - name: Current evaluator, normalization, public information and root rulings
         run: |
           node native/build.mjs

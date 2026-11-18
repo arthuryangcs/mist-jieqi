@@ -1,0 +1,8 @@
+{
+  "kind": "normalize repository-contained absolute build hash keys only; no gameplay or parameter changes",
+  "normalizedPaths": 3,
+  "privateLedgerSha256": "eb7f4d05f00299f13ff084d96b7cd872b606ce366acf96b8d0a091b4f508bb3e",
+  "publicLedgerSha256": "01e1a922b647f49f14b151bbcacb655df9caf3674340d9122017b8fe9fd57da5",
+  "unchangedPayloadSha256": "47e885413107f890ca15854229687d50d602e4539452d83cb918f96cdd276de4",
+  "replayAndIndependentAuditRecomputed": true
+}

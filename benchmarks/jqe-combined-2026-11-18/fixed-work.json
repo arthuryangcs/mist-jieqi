@@ -1,0 +1,622 @@
+{
+  "passed": true,
+  "baseline": {
+    "name": "baseline",
+    "sanitize": false,
+    "binary": "<repo>/.cache/jqe-speed/baseline/candidate",
+    "sourceSha256": "3df6f9cfcbfb4875977e71fb059cffef961cd0367b38ddd07884e2c62a459352",
+    "headerSha256": "b7363b9f1930636819bf6a69723e8bb6cd645728eaabfced30bf29d3962d5378",
+    "binarySha256": "952b810695d985d4c927c03f250007e4af9b99b553eff32251cbaf53a058744a",
+    "frozenBinarySha256": "952b810695d985d4c927c03f250007e4af9b99b553eff32251cbaf53a058744a",
+    "modelSha256": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160",
+    "compiler": "clang++",
+    "compilerVersion": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix",
+    "flags": [
+      "-std=c++17",
+      "-ffp-contract=off",
+      "-O3",
+      "-DNDEBUG",
+      "-isystem",
+      "<system-c++-include>"
+    ],
+    "warnings": ""
+  },
+  "candidate": {
+    "name": "combined",
+    "sanitize": false,
+    "binary": "<repo>/.cache/jqe-combined-20261118/combined/candidate",
+    "sourceSha256": "53547841d43e08bd7fc2e49b026e2ccad17d6140da3c4daaf86fa390ad04226a",
+    "headerSha256": "d9c0f8e894c574f2a4af37e7b9735c9f1e19eb8bbaf042383a25fb46edad1555",
+    "binarySha256": "2ea35ae680c063ffb5177ce8b32c5a2ef13f89ce34fd6250c9337d4190b0ffcb",
+    "frozenBinarySha256": "952b810695d985d4c927c03f250007e4af9b99b553eff32251cbaf53a058744a",
+    "modelSha256": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160",
+    "hardwareEvidence": "archived same-authorized-host FMA execution; fresh sysctl was denied and not retried; local x86-only candidate",
+    "compiler": "clang++",
+    "compilerVersion": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix",
+    "flags": [
+      "-std=c++17",
+      "-ffp-contract=off",
+      "-O3",
+      "-DNDEBUG",
+      "-isystem",
+      "<system-c++-include>"
+    ],
+    "warnings": ""
+  },
+  "depth": 4,
+  "rows": [
+    {
+      "position": "初始全暗",
+      "cycle": 0,
+      "arm": "A",
+      "depth": 4,
+      "nodes": 925834,
+      "wallMs": 1180.7145209999999,
+      "engineMs": 1174.28581
+    },
+    {
+      "position": "初始全暗",
+      "cycle": 0,
+      "arm": "B",
+      "depth": 4,
+      "nodes": 925834,
+      "wallMs": 756.8120349999999,
+      "engineMs": 749.628807
+    },
+    {
+      "position": "初始全暗",
+      "cycle": 0,
+      "arm": "B",
+      "depth": 4,
+      "nodes": 925834,
+      "wallMs": 752.5618420000001,
+      "engineMs": 745.680161
+    },
+    {
+      "position": "初始全暗",
+      "cycle": 0,
+      "arm": "A",
+      "depth": 4,
+      "nodes": 925834,
+      "wallMs": 1182.6991470000003,
+      "engineMs": 1175.703473
+    },
+    {
+      "position": "初始全暗",
+      "cycle": 1,
+      "arm": "B",
+      "depth": 4,
+      "nodes": 925834,
+      "wallMs": 759.4486700000007,
+      "engineMs": 752.227378
+    },
+    {
+      "position": "初始全暗",
+      "cycle": 1,
+      "arm": "A",
+      "depth": 4,
+      "nodes": 925834,
+      "wallMs": 1215.9675509999997,
+      "engineMs": 1209.425934
+    },
+    {
+      "position": "初始全暗",
+      "cycle": 1,
+      "arm": "A",
+      "depth": 4,
+      "nodes": 925834,
+      "wallMs": 1200.629011000001,
+      "engineMs": 1193.697727
+    },
+    {
+      "position": "初始全暗",
+      "cycle": 1,
+      "arm": "B",
+      "depth": 4,
+      "nodes": 925834,
+      "wallMs": 771.0849870000002,
+      "engineMs": 763.787525
+    },
+    {
+      "position": "初始全暗",
+      "cycle": 2,
+      "arm": "A",
+      "depth": 4,
+      "nodes": 925834,
+      "wallMs": 1224.633025000001,
+      "engineMs": 1217.812046
+    },
+    {
+      "position": "初始全暗",
+      "cycle": 2,
+      "arm": "B",
+      "depth": 4,
+      "nodes": 925834,
+      "wallMs": 776.5986960000009,
+      "engineMs": 769.286812
+    },
+    {
+      "position": "初始全暗",
+      "cycle": 2,
+      "arm": "B",
+      "depth": 4,
+      "nodes": 925834,
+      "wallMs": 780.0570210000005,
+      "engineMs": 773.309383
+    },
+    {
+      "position": "初始全暗",
+      "cycle": 2,
+      "arm": "A",
+      "depth": 4,
+      "nodes": 925834,
+      "wallMs": 1235.162803000001,
+      "engineMs": 1228.288345
+    },
+    {
+      "position": "可达中局 2111 / 20步",
+      "cycle": 0,
+      "arm": "A",
+      "depth": 4,
+      "nodes": 374495,
+      "wallMs": 458.59708300000057,
+      "engineMs": 452.257963
+    },
+    {
+      "position": "可达中局 2111 / 20步",
+      "cycle": 0,
+      "arm": "B",
+      "depth": 4,
+      "nodes": 374495,
+      "wallMs": 284.23270400000183,
+      "engineMs": 277.708783
+    },
+    {
+      "position": "可达中局 2111 / 20步",
+      "cycle": 0,
+      "arm": "B",
+      "depth": 4,
+      "nodes": 374495,
+      "wallMs": 289.0819110000011,
+      "engineMs": 282.57871
+    },
+    {
+      "position": "可达中局 2111 / 20步",
+      "cycle": 0,
+      "arm": "A",
+      "depth": 4,
+      "nodes": 374495,
+      "wallMs": 454.918655999998,
+      "engineMs": 448.181938
+    },
+    {
+      "position": "可达中局 2111 / 20步",
+      "cycle": 1,
+      "arm": "B",
+      "depth": 4,
+      "nodes": 374495,
+      "wallMs": 290.68935500000225,
+      "engineMs": 284.21731
+    },
+    {
+      "position": "可达中局 2111 / 20步",
+      "cycle": 1,
+      "arm": "A",
+      "depth": 4,
+      "nodes": 374495,
+      "wallMs": 454.2066070000001,
+      "engineMs": 447.540856
+    },
+    {
+      "position": "可达中局 2111 / 20步",
+      "cycle": 1,
+      "arm": "A",
+      "depth": 4,
+      "nodes": 374495,
+      "wallMs": 448.7131389999995,
+      "engineMs": 442.297277
+    },
+    {
+      "position": "可达中局 2111 / 20步",
+      "cycle": 1,
+      "arm": "B",
+      "depth": 4,
+      "nodes": 374495,
+      "wallMs": 286.69010699999853,
+      "engineMs": 280.317767
+    },
+    {
+      "position": "可达中局 2111 / 20步",
+      "cycle": 2,
+      "arm": "A",
+      "depth": 4,
+      "nodes": 374495,
+      "wallMs": 455.3465819999983,
+      "engineMs": 449.018409
+    },
+    {
+      "position": "可达中局 2111 / 20步",
+      "cycle": 2,
+      "arm": "B",
+      "depth": 4,
+      "nodes": 374495,
+      "wallMs": 294.0833440000024,
+      "engineMs": 287.627083
+    },
+    {
+      "position": "可达中局 2111 / 20步",
+      "cycle": 2,
+      "arm": "B",
+      "depth": 4,
+      "nodes": 374495,
+      "wallMs": 288.86541099999886,
+      "engineMs": 282.315753
+    },
+    {
+      "position": "可达中局 2111 / 20步",
+      "cycle": 2,
+      "arm": "A",
+      "depth": 4,
+      "nodes": 374495,
+      "wallMs": 451.50483600000007,
+      "engineMs": 444.97903
+    },
+    {
+      "position": "可达中局 2111 / 44步",
+      "cycle": 0,
+      "arm": "A",
+      "depth": 4,
+      "nodes": 459645,
+      "wallMs": 613.418991999999,
+      "engineMs": 606.476125
+    },
+    {
+      "position": "可达中局 2111 / 44步",
+      "cycle": 0,
+      "arm": "B",
+      "depth": 4,
+      "nodes": 459645,
+      "wallMs": 353.7357959999972,
+      "engineMs": 347.345605
+    },
+    {
+      "position": "可达中局 2111 / 44步",
+      "cycle": 0,
+      "arm": "B",
+      "depth": 4,
+      "nodes": 459645,
+      "wallMs": 351.01434599999993,
+      "engineMs": 344.349359
+    },
+    {
+      "position": "可达中局 2111 / 44步",
+      "cycle": 0,
+      "arm": "A",
+      "depth": 4,
+      "nodes": 459645,
+      "wallMs": 560.4934319999993,
+      "engineMs": 554.310669
+    },
+    {
+      "position": "可达中局 2111 / 44步",
+      "cycle": 1,
+      "arm": "B",
+      "depth": 4,
+      "nodes": 459645,
+      "wallMs": 357.7622190000002,
+      "engineMs": 350.694276
+    },
+    {
+      "position": "可达中局 2111 / 44步",
+      "cycle": 1,
+      "arm": "A",
+      "depth": 4,
+      "nodes": 459645,
+      "wallMs": 557.3179879999989,
+      "engineMs": 550.3429
+    },
+    {
+      "position": "可达中局 2111 / 44步",
+      "cycle": 1,
+      "arm": "A",
+      "depth": 4,
+      "nodes": 459645,
+      "wallMs": 562.3898750000008,
+      "engineMs": 555.750091
+    },
+    {
+      "position": "可达中局 2111 / 44步",
+      "cycle": 1,
+      "arm": "B",
+      "depth": 4,
+      "nodes": 459645,
+      "wallMs": 352.8117280000006,
+      "engineMs": 346.148942
+    },
+    {
+      "position": "可达中局 2111 / 44步",
+      "cycle": 2,
+      "arm": "A",
+      "depth": 4,
+      "nodes": 459645,
+      "wallMs": 578.21904,
+      "engineMs": 571.303625
+    },
+    {
+      "position": "可达中局 2111 / 44步",
+      "cycle": 2,
+      "arm": "B",
+      "depth": 4,
+      "nodes": 459645,
+      "wallMs": 355.08327400000417,
+      "engineMs": 348.862485
+    },
+    {
+      "position": "可达中局 2111 / 44步",
+      "cycle": 2,
+      "arm": "B",
+      "depth": 4,
+      "nodes": 459645,
+      "wallMs": 353.9863400000031,
+      "engineMs": 347.470808
+    },
+    {
+      "position": "可达中局 2111 / 44步",
+      "cycle": 2,
+      "arm": "A",
+      "depth": 4,
+      "nodes": 459645,
+      "wallMs": 560.7897190000003,
+      "engineMs": 554.159064
+    },
+    {
+      "position": "可达中局 2221 / 44步",
+      "cycle": 0,
+      "arm": "A",
+      "depth": 4,
+      "nodes": 555701,
+      "wallMs": 790.5336020000032,
+      "engineMs": 783.737314
+    },
+    {
+      "position": "可达中局 2221 / 44步",
+      "cycle": 0,
+      "arm": "B",
+      "depth": 4,
+      "nodes": 555701,
+      "wallMs": 499.15313700000115,
+      "engineMs": 492.218314
+    },
+    {
+      "position": "可达中局 2221 / 44步",
+      "cycle": 0,
+      "arm": "B",
+      "depth": 4,
+      "nodes": 555701,
+      "wallMs": 496.6543099999981,
+      "engineMs": 489.718615
+    },
+    {
+      "position": "可达中局 2221 / 44步",
+      "cycle": 0,
+      "arm": "A",
+      "depth": 4,
+      "nodes": 555701,
+      "wallMs": 792.3008470000059,
+      "engineMs": 785.277631
+    },
+    {
+      "position": "可达中局 2221 / 44步",
+      "cycle": 1,
+      "arm": "B",
+      "depth": 4,
+      "nodes": 555701,
+      "wallMs": 498.6629729999986,
+      "engineMs": 492.161465
+    },
+    {
+      "position": "可达中局 2221 / 44步",
+      "cycle": 1,
+      "arm": "A",
+      "depth": 4,
+      "nodes": 555701,
+      "wallMs": 787.1984970000049,
+      "engineMs": 780.542466
+    },
+    {
+      "position": "可达中局 2221 / 44步",
+      "cycle": 1,
+      "arm": "A",
+      "depth": 4,
+      "nodes": 555701,
+      "wallMs": 788.750294999998,
+      "engineMs": 782.013185
+    },
+    {
+      "position": "可达中局 2221 / 44步",
+      "cycle": 1,
+      "arm": "B",
+      "depth": 4,
+      "nodes": 555701,
+      "wallMs": 502.44422199999826,
+      "engineMs": 496.209829
+    },
+    {
+      "position": "可达中局 2221 / 44步",
+      "cycle": 2,
+      "arm": "A",
+      "depth": 4,
+      "nodes": 555701,
+      "wallMs": 776.1153610000038,
+      "engineMs": 769.505107
+    },
+    {
+      "position": "可达中局 2221 / 44步",
+      "cycle": 2,
+      "arm": "B",
+      "depth": 4,
+      "nodes": 555701,
+      "wallMs": 499.3475000000035,
+      "engineMs": 492.667853
+    },
+    {
+      "position": "可达中局 2221 / 44步",
+      "cycle": 2,
+      "arm": "B",
+      "depth": 4,
+      "nodes": 555701,
+      "wallMs": 497.8403939999989,
+      "engineMs": 491.409925
+    },
+    {
+      "position": "可达中局 2221 / 44步",
+      "cycle": 2,
+      "arm": "A",
+      "depth": 4,
+      "nodes": 555701,
+      "wallMs": 775.4175870000036,
+      "engineMs": 768.337631
+    },
+    {
+      "position": "全明10子残局",
+      "cycle": 0,
+      "arm": "A",
+      "depth": 4,
+      "nodes": 36721,
+      "wallMs": 142.27263099999982,
+      "engineMs": 139.403362
+    },
+    {
+      "position": "全明10子残局",
+      "cycle": 0,
+      "arm": "B",
+      "depth": 4,
+      "nodes": 36721,
+      "wallMs": 85.51993999999831,
+      "engineMs": 82.808503
+    },
+    {
+      "position": "全明10子残局",
+      "cycle": 0,
+      "arm": "B",
+      "depth": 4,
+      "nodes": 36721,
+      "wallMs": 84.86513700000069,
+      "engineMs": 82.073364
+    },
+    {
+      "position": "全明10子残局",
+      "cycle": 0,
+      "arm": "A",
+      "depth": 4,
+      "nodes": 36721,
+      "wallMs": 139.56767499999842,
+      "engineMs": 136.817586
+    },
+    {
+      "position": "全明10子残局",
+      "cycle": 1,
+      "arm": "B",
+      "depth": 4,
+      "nodes": 36721,
+      "wallMs": 94.69594499999948,
+      "engineMs": 91.742543
+    },
+    {
+      "position": "全明10子残局",
+      "cycle": 1,
+      "arm": "A",
+      "depth": 4,
+      "nodes": 36721,
+      "wallMs": 138.62454300000536,
+      "engineMs": 135.969456
+    },
+    {
+      "position": "全明10子残局",
+      "cycle": 1,
+      "arm": "A",
+      "depth": 4,
+      "nodes": 36721,
+      "wallMs": 138.45975599999656,
+      "engineMs": 135.806855
+    },
+    {
+      "position": "全明10子残局",
+      "cycle": 1,
+      "arm": "B",
+      "depth": 4,
+      "nodes": 36721,
+      "wallMs": 87.39029300000402,
+      "engineMs": 84.14248
+    },
+    {
+      "position": "全明10子残局",
+      "cycle": 2,
+      "arm": "A",
+      "depth": 4,
+      "nodes": 36721,
+      "wallMs": 139.3069170000017,
+      "engineMs": 136.541206
+    },
+    {
+      "position": "全明10子残局",
+      "cycle": 2,
+      "arm": "B",
+      "depth": 4,
+      "nodes": 36721,
+      "wallMs": 84.89422000000195,
+      "engineMs": 81.878314
+    },
+    {
+      "position": "全明10子残局",
+      "cycle": 2,
+      "arm": "B",
+      "depth": 4,
+      "nodes": 36721,
+      "wallMs": 84.33292900000379,
+      "engineMs": 81.515945
+    },
+    {
+      "position": "全明10子残局",
+      "cycle": 2,
+      "arm": "A",
+      "depth": 4,
+      "nodes": 36721,
+      "wallMs": 143.673483999999,
+      "engineMs": 140.732292
+    }
+  ],
+  "summary": [
+    {
+      "position": "初始全暗",
+      "baselineMedianMs": 1208.2982810000003,
+      "candidateMedianMs": 765.2668285000004,
+      "speedRatio": 1.5789241556025444
+    },
+    {
+      "position": "可达中局 2111 / 20步",
+      "baselineMedianMs": 454.56263149999904,
+      "candidateMedianMs": 288.973661,
+      "speedRatio": 1.5730244407984264
+    },
+    {
+      "position": "可达中局 2111 / 44步",
+      "baselineMedianMs": 561.5897970000005,
+      "candidateMedianMs": 353.86106800000016,
+      "speedRatio": 1.5870347087744625
+    },
+    {
+      "position": "可达中局 2221 / 44步",
+      "baselineMedianMs": 787.9743960000014,
+      "candidateMedianMs": 498.9080549999999,
+      "speedRatio": 1.5793980235496532
+    },
+    {
+      "position": "全明10子残局",
+      "baselineMedianMs": 139.43729600000006,
+      "candidateMedianMs": 85.20708000000013,
+      "speedRatio": 1.6364519943647857
+    }
+  ],
+  "caveat": "Serial same-tree wall-time ABBA/BAAB, not a strength test or CPU-time measurement."
+}

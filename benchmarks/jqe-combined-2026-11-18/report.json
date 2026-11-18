@@ -1,0 +1,73 @@
+{
+  "phase": "independent exploratory pilot, not original JQE confirmation",
+  "completedGames": 12,
+  "moves": 1128,
+  "technicalFailures": 0,
+  "cleanupFailures": 0,
+  "privateCapturesAudited": 77,
+  "auditCategories": {
+    "unresolved-repetition": 3,
+    "normal-decisive": 5,
+    "long-check": 4
+  },
+  "defaultEnable": false,
+  "summary": {
+    "internal": {
+      "finished": 4,
+      "wins": 1,
+      "draws": 0,
+      "losses": 2,
+      "technicalFailures": 0,
+      "cleanupFailures": 0,
+      "unresolved": 1,
+      "scoreRate": null,
+      "normal": {
+        "wins": 1,
+        "draws": 0,
+        "losses": 2
+      },
+      "possibleScoreRangeNotConfidenceInterval": [
+        0.25,
+        0.5
+      ]
+    },
+    "candidatePika": {
+      "finished": 4,
+      "wins": 0,
+      "draws": 0,
+      "losses": 3,
+      "technicalFailures": 0,
+      "cleanupFailures": 0,
+      "unresolved": 1,
+      "scoreRate": null,
+      "normal": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 3
+      },
+      "possibleScoreRangeNotConfidenceInterval": [
+        0.0,
+        0.25
+      ]
+    },
+    "original": {
+      "finished": 4,
+      "wins": 0,
+      "draws": 0,
+      "losses": 3,
+      "technicalFailures": 0,
+      "cleanupFailures": 0,
+      "unresolved": 1,
+      "scoreRate": null,
+      "normal": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 3
+      },
+      "possibleScoreRangeNotConfidenceInterval": [
+        0.0,
+        0.25
+      ]
+    }
+  }
+}

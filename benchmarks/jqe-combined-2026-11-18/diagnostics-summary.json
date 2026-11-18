@@ -1,0 +1,712 @@
+{
+  "passed": true,
+  "requests": 60,
+  "positions": [
+    {
+      "position": "\u521d\u59cb\u5168\u6697",
+      "engines": {
+        "combined": {
+          "wallMsMedian": 1934.4053530000092,
+          "nativeNpsMedian": 1206198.5852041782,
+          "npsRange": [
+            1172005.2453449436,
+            1208488.004959385
+          ],
+          "mainDepth": [
+            5,
+            5,
+            5
+          ],
+          "completedDepth": [
+            4,
+            4,
+            4
+          ],
+          "selDepth": [
+            12,
+            12,
+            12
+          ],
+          "threads": [
+            4,
+            4,
+            4
+          ],
+          "samples": [
+            8,
+            8,
+            8
+          ],
+          "deadlineStops": 0
+        },
+        "original": {
+          "wallMsMedian": 1933.170737,
+          "nativeNpsMedian": 765130.5555635463,
+          "npsRange": [
+            747250.4920163164,
+            768283.3523553126
+          ],
+          "mainDepth": [
+            5,
+            5,
+            5
+          ],
+          "completedDepth": [
+            4,
+            4,
+            4
+          ],
+          "selDepth": [
+            12,
+            12,
+            12
+          ],
+          "threads": [
+            4,
+            4,
+            4
+          ],
+          "samples": [
+            8,
+            8,
+            8
+          ],
+          "deadlineStops": 0
+        },
+        "hce": {
+          "wallMsMedian": 1933.8717470000001,
+          "nativeNpsMedian": 2959343.669946467,
+          "npsRange": [
+            2954194.7259158404,
+            2986317.995988593
+          ],
+          "mainDepth": [
+            5,
+            5,
+            5
+          ],
+          "completedDepth": [
+            4,
+            4,
+            4
+          ],
+          "selDepth": [
+            13,
+            13,
+            13
+          ],
+          "threads": [
+            4,
+            4,
+            4
+          ],
+          "samples": [
+            8,
+            8,
+            8
+          ],
+          "deadlineStops": 0
+        },
+        "pika": {
+          "wallMsMedian": 1960.5479090000008,
+          "nativeNpsMedian": 6852830.241140511,
+          "npsRange": [
+            6821275.006549892,
+            6940302.987168405
+          ],
+          "mainDepth": [
+            null,
+            null,
+            null
+          ],
+          "completedDepth": [
+            12,
+            12,
+            12
+          ],
+          "selDepth": [
+            6,
+            8,
+            6
+          ],
+          "threads": [
+            4,
+            4,
+            4
+          ],
+          "samples": [
+            null,
+            null,
+            null
+          ],
+          "deadlineStops": 0
+        }
+      }
+    },
+    {
+      "position": "\u53ef\u8fbe\u4e2d\u5c40 2111 / 20\u6b65",
+      "engines": {
+        "combined": {
+          "wallMsMedian": 1934.6190430000006,
+          "nativeNpsMedian": 1416366.5716006372,
+          "npsRange": [
+            1376535.2768568252,
+            1431491.6469061135
+          ],
+          "mainDepth": [
+            6,
+            6,
+            6
+          ],
+          "completedDepth": [
+            5,
+            5,
+            5
+          ],
+          "selDepth": [
+            13,
+            13,
+            13
+          ],
+          "threads": [
+            4,
+            4,
+            4
+          ],
+          "samples": [
+            8,
+            8,
+            8
+          ],
+          "deadlineStops": 0
+        },
+        "original": {
+          "wallMsMedian": 1934.0599250000014,
+          "nativeNpsMedian": 850100.6252030197,
+          "npsRange": [
+            844158.4352666833,
+            911231.6474054378
+          ],
+          "mainDepth": [
+            6,
+            6,
+            6
+          ],
+          "completedDepth": [
+            5,
+            5,
+            5
+          ],
+          "selDepth": [
+            13,
+            13,
+            13
+          ],
+          "threads": [
+            4,
+            4,
+            4
+          ],
+          "samples": [
+            8,
+            8,
+            8
+          ],
+          "deadlineStops": 0
+        },
+        "hce": {
+          "wallMsMedian": 1933.4715399999986,
+          "nativeNpsMedian": 3601671.2317357776,
+          "npsRange": [
+            3600223.1509443396,
+            3679737.5504852002
+          ],
+          "mainDepth": [
+            6,
+            6,
+            6
+          ],
+          "completedDepth": [
+            5,
+            5,
+            5
+          ],
+          "selDepth": [
+            13,
+            13,
+            13
+          ],
+          "threads": [
+            4,
+            4,
+            4
+          ],
+          "samples": [
+            8,
+            8,
+            8
+          ],
+          "deadlineStops": 0
+        },
+        "pika": {
+          "wallMsMedian": 1963.4388420000032,
+          "nativeNpsMedian": 5871738.865741661,
+          "npsRange": [
+            5785233.925814319,
+            6029778.856443319
+          ],
+          "mainDepth": [
+            null,
+            null,
+            null
+          ],
+          "completedDepth": [
+            20,
+            19,
+            20
+          ],
+          "selDepth": [
+            16,
+            20,
+            10
+          ],
+          "threads": [
+            4,
+            4,
+            4
+          ],
+          "samples": [
+            null,
+            null,
+            null
+          ],
+          "deadlineStops": 0
+        }
+      }
+    },
+    {
+      "position": "\u53ef\u8fbe\u4e2d\u5c40 2111 / 44\u6b65",
+      "engines": {
+        "combined": {
+          "wallMsMedian": 1934.7873169999948,
+          "nativeNpsMedian": 1397839.246475252,
+          "npsRange": [
+            1342576.5081134273,
+            1400450.0194673915
+          ],
+          "mainDepth": [
+            6,
+            6,
+            6
+          ],
+          "completedDepth": [
+            5,
+            5,
+            5
+          ],
+          "selDepth": [
+            13,
+            13,
+            13
+          ],
+          "threads": [
+            4,
+            4,
+            4
+          ],
+          "samples": [
+            8,
+            8,
+            8
+          ],
+          "deadlineStops": 0
+        },
+        "original": {
+          "wallMsMedian": 1933.815327999997,
+          "nativeNpsMedian": 832110.996691822,
+          "npsRange": [
+            807716.6963621813,
+            865185.144925427
+          ],
+          "mainDepth": [
+            5,
+            5,
+            5
+          ],
+          "completedDepth": [
+            4,
+            4,
+            4
+          ],
+          "selDepth": [
+            12,
+            12,
+            12
+          ],
+          "threads": [
+            4,
+            4,
+            4
+          ],
+          "samples": [
+            8,
+            8,
+            8
+          ],
+          "deadlineStops": 0
+        },
+        "hce": {
+          "wallMsMedian": 1933.9321019999988,
+          "nativeNpsMedian": 4090908.3682029545,
+          "npsRange": [
+            3855029.9311798597,
+            4237305.9486035695
+          ],
+          "mainDepth": [
+            6,
+            6,
+            6
+          ],
+          "completedDepth": [
+            5,
+            5,
+            5
+          ],
+          "selDepth": [
+            13,
+            13,
+            13
+          ],
+          "threads": [
+            4,
+            4,
+            4
+          ],
+          "samples": [
+            8,
+            8,
+            8
+          ],
+          "deadlineStops": 0
+        },
+        "pika": {
+          "wallMsMedian": 1964.2107499999984,
+          "nativeNpsMedian": 4556511.371881014,
+          "npsRange": [
+            4533015.105431028,
+            4828650.355883168
+          ],
+          "mainDepth": [
+            null,
+            null,
+            null
+          ],
+          "completedDepth": [
+            25,
+            26,
+            27
+          ],
+          "selDepth": [
+            25,
+            24,
+            24
+          ],
+          "threads": [
+            4,
+            4,
+            4
+          ],
+          "samples": [
+            null,
+            null,
+            null
+          ],
+          "deadlineStops": 0
+        }
+      }
+    },
+    {
+      "position": "\u53ef\u8fbe\u4e2d\u5c40 2221 / 44\u6b65",
+      "engines": {
+        "combined": {
+          "wallMsMedian": 1934.48100900001,
+          "nativeNpsMedian": 1133401.2641870396,
+          "npsRange": [
+            1122180.3926762491,
+            1172617.3528953926
+          ],
+          "mainDepth": [
+            5,
+            5,
+            5
+          ],
+          "completedDepth": [
+            4,
+            4,
+            4
+          ],
+          "selDepth": [
+            13,
+            13,
+            13
+          ],
+          "threads": [
+            4,
+            4,
+            4
+          ],
+          "samples": [
+            8,
+            8,
+            8
+          ],
+          "deadlineStops": 0
+        },
+        "original": {
+          "wallMsMedian": 1933.5304009999963,
+          "nativeNpsMedian": 717737.9442960343,
+          "npsRange": [
+            682091.1630445073,
+            724353.8967909653
+          ],
+          "mainDepth": [
+            5,
+            5,
+            5
+          ],
+          "completedDepth": [
+            4,
+            4,
+            4
+          ],
+          "selDepth": [
+            12,
+            12,
+            12
+          ],
+          "threads": [
+            4,
+            4,
+            4
+          ],
+          "samples": [
+            8,
+            8,
+            8
+          ],
+          "deadlineStops": 0
+        },
+        "hce": {
+          "wallMsMedian": 1933.265575000005,
+          "nativeNpsMedian": 3527167.302113553,
+          "npsRange": [
+            3453619.906615788,
+            3555982.2141869892
+          ],
+          "mainDepth": [
+            6,
+            6,
+            6
+          ],
+          "completedDepth": [
+            5,
+            5,
+            5
+          ],
+          "selDepth": [
+            13,
+            13,
+            13
+          ],
+          "threads": [
+            4,
+            4,
+            4
+          ],
+          "samples": [
+            8,
+            8,
+            8
+          ],
+          "deadlineStops": 0
+        },
+        "pika": {
+          "wallMsMedian": 1963.0177199999998,
+          "nativeNpsMedian": 5185491.833576544,
+          "npsRange": [
+            4868752.216064811,
+            5191238.416329732
+          ],
+          "mainDepth": [
+            null,
+            null,
+            null
+          ],
+          "completedDepth": [
+            18,
+            17,
+            18
+          ],
+          "selDepth": [
+            17,
+            22,
+            20
+          ],
+          "threads": [
+            4,
+            4,
+            4
+          ],
+          "samples": [
+            null,
+            null,
+            null
+          ],
+          "deadlineStops": 0
+        }
+      }
+    },
+    {
+      "position": "\u5168\u660e10\u5b50\u6b8b\u5c40",
+      "engines": {
+        "combined": {
+          "wallMsMedian": 1929.5167609999917,
+          "nativeNpsMedian": 464132.7912258565,
+          "npsRange": [
+            440170.80258922774,
+            471762.5428446404
+          ],
+          "mainDepth": [
+            7,
+            7,
+            7
+          ],
+          "completedDepth": [
+            6,
+            6,
+            6
+          ],
+          "selDepth": [
+            15,
+            15,
+            15
+          ],
+          "threads": [
+            1,
+            1,
+            1
+          ],
+          "samples": [
+            1,
+            1,
+            1
+          ],
+          "deadlineStops": 0
+        },
+        "original": {
+          "wallMsMedian": 1928.5923949999997,
+          "nativeNpsMedian": 283394.25241796626,
+          "npsRange": [
+            280648.4166910676,
+            283500.40313362976
+          ],
+          "mainDepth": [
+            6,
+            6,
+            6
+          ],
+          "completedDepth": [
+            5,
+            5,
+            5
+          ],
+          "selDepth": [
+            14,
+            14,
+            14
+          ],
+          "threads": [
+            1,
+            1,
+            1
+          ],
+          "samples": [
+            1,
+            1,
+            1
+          ],
+          "deadlineStops": 0
+        },
+        "hce": {
+          "wallMsMedian": 1928.224682,
+          "nativeNpsMedian": 1344817.7299273594,
+          "npsRange": [
+            1344746.6384143229,
+            1347390.6979062308
+          ],
+          "mainDepth": [
+            8,
+            8,
+            8
+          ],
+          "completedDepth": [
+            7,
+            7,
+            7
+          ],
+          "selDepth": [
+            16,
+            16,
+            16
+          ],
+          "threads": [
+            1,
+            1,
+            1
+          ],
+          "samples": [
+            1,
+            1,
+            1
+          ],
+          "deadlineStops": 0
+        },
+        "pika": {
+          "wallMsMedian": 1962.4836740000028,
+          "nativeNpsMedian": 7173008.4619292375,
+          "npsRange": [
+            7018067.658273233,
+            7287025.945037222
+          ],
+          "mainDepth": [
+            null,
+            null,
+            null
+          ],
+          "completedDepth": [
+            40,
+            41,
+            41
+          ],
+          "selDepth": [
+            46,
+            49,
+            42
+          ],
+          "threads": [
+            4,
+            4,
+            4
+          ],
+          "samples": [
+            null,
+            null,
+            null
+          ],
+          "deadlineStops": 0
+        }
+      }
+    }
+  ],
+  "nodeDefinitionWarning": "native node units/report windows differ; do not infer strength or universal speed from cross-engine NPS"
+}

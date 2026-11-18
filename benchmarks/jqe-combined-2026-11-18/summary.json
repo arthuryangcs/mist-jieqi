@@ -1,0 +1,103 @@
+{
+  "passed": true,
+  "requests": 60,
+  "geometricSpeedRatio": 1.5908000826274842,
+  "positions": [
+    {
+      "position": "\u521d\u59cb\u5168\u6697",
+      "baselineMedianMs": 1208.2982810000003,
+      "candidateMedianMs": 765.2668285000004,
+      "speedRatio": 1.5789241556025444,
+      "baselineRangeMs": [
+        1180.7145209999999,
+        1235.162803000001
+      ],
+      "candidateRangeMs": [
+        752.5618420000001,
+        780.0570210000005
+      ],
+      "pairedSpeedRatioRange": [
+        1.5570644367895086,
+        1.601118810307481
+      ],
+      "nodes": 925834
+    },
+    {
+      "position": "\u53ef\u8fbe\u4e2d\u5c40 2111 / 20\u6b65",
+      "baselineMedianMs": 454.56263149999904,
+      "candidateMedianMs": 288.973661,
+      "speedRatio": 1.5730244407984264,
+      "baselineRangeMs": [
+        448.7131389999995,
+        458.59708300000057
+      ],
+      "candidateRangeMs": [
+        284.23270400000183,
+        294.0833440000024
+      ],
+      "pairedSpeedRatioRange": [
+        1.5483589645253577,
+        1.6134564268860405
+      ],
+      "nodes": 374495
+    },
+    {
+      "position": "\u53ef\u8fbe\u4e2d\u5c40 2111 / 44\u6b65",
+      "baselineMedianMs": 561.5897970000005,
+      "candidateMedianMs": 353.86106800000016,
+      "speedRatio": 1.5870347087744625,
+      "baselineRangeMs": [
+        557.3179879999989,
+        613.418991999999
+      ],
+      "candidateRangeMs": [
+        351.01434599999993,
+        357.7622190000002
+      ],
+      "pairedSpeedRatioRange": [
+        1.557788828450884,
+        1.7341162498578566
+      ],
+      "nodes": 459645
+    },
+    {
+      "position": "\u53ef\u8fbe\u4e2d\u5c40 2221 / 44\u6b65",
+      "baselineMedianMs": 787.9743960000014,
+      "candidateMedianMs": 498.9080549999999,
+      "speedRatio": 1.5793980235496532,
+      "baselineRangeMs": [
+        775.4175870000036,
+        792.3008470000059
+      ],
+      "candidateRangeMs": [
+        496.6543099999981,
+        502.44422199999826
+      ],
+      "pairedSpeedRatioRange": [
+        1.5542590300341912,
+        1.5952762938874103
+      ],
+      "nodes": 555701
+    },
+    {
+      "position": "\u5168\u660e10\u5b50\u6b8b\u5c40",
+      "baselineMedianMs": 139.43729600000006,
+      "candidateMedianMs": 85.20708000000013,
+      "speedRatio": 1.6364519943647857,
+      "baselineRangeMs": [
+        138.45975599999656,
+        143.673483999999
+      ],
+      "candidateRangeMs": [
+        84.33292900000379,
+        94.69594499999948
+      ],
+      "pairedSpeedRatioRange": [
+        1.4638910145519548,
+        1.703646318272576
+      ],
+      "nodes": 36721
+    }
+  ],
+  "wallReductionPercent": 37.138549908274754
+}

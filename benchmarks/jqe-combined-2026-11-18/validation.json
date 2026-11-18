@@ -1,0 +1,67 @@
+{
+  "passed": true,
+  "projectTests": 243,
+  "candidate": {
+    "name": "combined",
+    "sanitize": false,
+    "binary": "<repo>/.cache/jqe-combined-20261118/combined/candidate",
+    "sourceSha256": "53547841d43e08bd7fc2e49b026e2ccad17d6140da3c4daaf86fa390ad04226a",
+    "headerSha256": "d9c0f8e894c574f2a4af37e7b9735c9f1e19eb8bbaf042383a25fb46edad1555",
+    "binarySha256": "2ea35ae680c063ffb5177ce8b32c5a2ef13f89ce34fd6250c9337d4190b0ffcb",
+    "frozenBinarySha256": "952b810695d985d4c927c03f250007e4af9b99b553eff32251cbaf53a058744a",
+    "modelSha256": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160",
+    "hardwareEvidence": "archived same-authorized-host FMA execution; fresh sysctl was denied and not retried; local x86-only candidate",
+    "compiler": "clang++",
+    "compilerVersion": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix",
+    "flags": [
+      "-std=c++17",
+      "-ffp-contract=off",
+      "-O3",
+      "-DNDEBUG",
+      "-isystem",
+      "<system-c++-include>"
+    ],
+    "warnings": ""
+  },
+  "sanitized": {
+    "name": "combined",
+    "sanitize": true,
+    "binary": "<repo>/.cache/jqe-combined-20261118/combined-sanitized/candidate",
+    "sourceSha256": "53547841d43e08bd7fc2e49b026e2ccad17d6140da3c4daaf86fa390ad04226a",
+    "headerSha256": "d9c0f8e894c574f2a4af37e7b9735c9f1e19eb8bbaf042383a25fb46edad1555",
+    "binarySha256": "b04fad89a12571454785caaaeb61762a5efbb8eab54b658bf86a1027c3bd6bc4",
+    "frozenBinarySha256": "952b810695d985d4c927c03f250007e4af9b99b553eff32251cbaf53a058744a",
+    "modelSha256": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160",
+    "hardwareEvidence": "archived same-authorized-host FMA execution; fresh sysctl was denied and not retried; local x86-only candidate",
+    "compiler": "clang++",
+    "compilerVersion": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix",
+    "flags": [
+      "-std=c++17",
+      "-ffp-contract=off",
+      "-O1",
+      "-g",
+      "-fsanitize=address,undefined",
+      "-fno-omit-frame-pointer",
+      "-DMIST_VERIFY_RESTORE",
+      "-isystem",
+      "<system-c++-include>"
+    ],
+    "warnings": ""
+  },
+  "originalCandidateUnchangedSha256": "952b810695d985d4c927c03f250007e4af9b99b553eff32251cbaf53a058744a",
+  "stages": [
+    "20 focused float/quantized normal/ASan+UBSan and612restore transitions",
+    "414views11874transitions each normal/sanitized",
+    "1/4worker exact parity; async127ply undo/safety;8workers16000readonly inference calls",
+    "fixed depth4 same tree all60timed requests exact",
+    "12new paired games followed by replay/independent audit",
+    "60 same-position2s native-counter diagnostics",
+    "full npm regression"
+  ],
+  "limits": [
+    "noTSan",
+    "no new upstreamoracle or alternate model/bucket coverage",
+    "CPU features sysctl denied and not retried; archived same-host and actual FMA execution only",
+    "no server restart or default activation"
+  ]
+}

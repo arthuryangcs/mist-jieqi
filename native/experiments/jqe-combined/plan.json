@@ -1,0 +1,59 @@
+{
+  "createdAt": "2026-11-18T01:52:08.448769+00:00",
+  "candidate": "jqe-it014-snapshot-fma-combined",
+  "scope": "single independent combination preset, not replacement of original JQE confirmation",
+  "defaultPromotion": false,
+  "unchanged": [
+    "it014 model and score scale",
+    "8 dark worlds/1 known world",
+    "HCE control",
+    "search coverage and node definition",
+    "current repetition responsibility and privacy"
+  ],
+  "correctness": [
+    "exact all-candidate scores and per-depth nodes vs original JQE, float/quantized, release/ASan+UBSan",
+    "rules and private capture 414 views",
+    "async127ply restoration and 1/4workers"
+  ],
+  "fixedWork": {
+    "depth": 4,
+    "positions": 5,
+    "arms": [
+      "originalJQE",
+      "combined"
+    ],
+    "cycles": 3,
+    "order": [
+      "ABBA",
+      "BAAB",
+      "ABBA"
+    ],
+    "requests": 60,
+    "warmup": "new process then unmeasured depth1 per measured request",
+    "acceptance": "all exact, no timed depth interruption; geometric speedRatio>=1.10 and no position median slower than original"
+  },
+  "matches": {
+    "layouts": 2,
+    "games": 12,
+    "groups": [
+      "internal",
+      "candidatePika",
+      "original"
+    ],
+    "budgetMs": 2000,
+    "graceMs": 60,
+    "samples": 8,
+    "brightSamples": 1,
+    "maxThreads": 4,
+    "ttBudgetBytes": 67108864,
+    "hostReserveMs": 40,
+    "maxPlies": 400,
+    "stopRule": "freeze before games; all12 regardless outcomes; retain technical/unresolved; no adoption gate based on Pika non-inferiority"
+  },
+  "limitations": [
+    "small pilot not confirmation of strength",
+    "x86 FMA host-specific",
+    "no new sysctl query after denial",
+    "background unrelated old build state unknown; no system process listing"
+  ]
+}

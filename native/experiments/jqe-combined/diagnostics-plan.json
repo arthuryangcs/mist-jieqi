@@ -1,0 +1,29 @@
+{
+  "createdAt": "2026-11-18T02:03:34.171414+00:00",
+  "purpose": "same observed positions, 2s/4 worker cap native counters, not equivalent node units or strength",
+  "positions": "benchmarks/native-benchmark.json",
+  "fixturesSha256": "daac59bec782d24bed790547213a10ee80162743b36e47ffee270aefd7aa10de",
+  "repeats": 3,
+  "budgetMs": 2000,
+  "requests": 60,
+  "engines": [
+    "combined",
+    "original",
+    "hce",
+    "pika"
+  ],
+  "binaryHashes": {
+    "combined": "2ea35ae680c063ffb5177ce8b32c5a2ef13f89ce34fd6250c9337d4190b0ffcb",
+    "original": "952b810695d985d4c927c03f250007e4af9b99b553eff32251cbaf53a058744a",
+    "hce": "2d811874987e9314d8719547dfa793707955b8a293823779a67e137e7d2a8beb"
+  },
+  "order": "cyclic offset by position and repeat, sequential, only after frozen matches completed",
+  "notes": [
+    "all five frozen benchmark views retained including short terminal runs",
+    "8 worlds when hidden;1when revealed; four worker maximum not equal actual usage",
+    "fixed Pika bcc83f88;64MiBTT and40ms host reserve",
+    "raw native node definitions and final-report windows differ",
+    "old unrelated process status unknown; no process listing"
+  ],
+  "minimumWallMsForSustainedSummary": 1000
+}
