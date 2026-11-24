@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "index": 0,
+      "move": {
+        "from": 6,
+        "to": 42
+      },
+      "depth": 3,
+      "profile": "rule-reply-experiment",
+      "deadlineStop": false,
+      "fallbackUsed": false
+    },
+    {
+      "index": 5,
+      "move": {
+        "from": 58,
+        "to": 57
+      },
+      "depth": 4,
+      "profile": "rule-reply-experiment",
+      "deadlineStop": false,
+      "fallbackUsed": false
+    },
+    {
+      "index": 7,
+      "move": {
+        "from": 74,
+        "to": 85
+      },
+      "depth": 8,
+      "profile": "rule-reply-experiment",
+      "deadlineStop": false,
+      "fallbackUsed": false
+    }
+  ],
+  "duplicateCancelAndPrivacy": true
+}

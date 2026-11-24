@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-24",
+  "baseCommit": "2884887b16ec050b8feaf9ca60937c298cd3f563",
+  "hypothesis": "Public two-ply root rule proof prevents checks whose opponent has an immediately winning adjudication reply; no hidden truth, no change to referee",
+  "defaultEnable": false,
+  "budgetMs": 2000,
+  "hostReserveMs": 40,
+  "graceMs": 60,
+  "samples": 15,
+  "brightSamples": 1,
+  "maxThreads": 4,
+  "ttBudgetBytes": 67108864,
+  "maxPlies": 400,
+  "newLayouts": 2,
+  "games": 8,
+  "groups": [
+    "internal",
+    "candidatePika"
+  ],
+  "control": "Frozen actual all-compatible-v2 default, not old HCE",
+  "diagnosticGames": [
+    0,
+    2,
+    5,
+    7
+  ],
+  "stop": "No outcome-based tuning; quota>=40 checked at stages; retain technical failures; preserve original8766 and oldqcheckpause"
+}

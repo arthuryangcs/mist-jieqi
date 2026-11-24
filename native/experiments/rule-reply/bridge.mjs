@@ -1,0 +1,8 @@
+import {performance} from 'node:perf_hooks';import assert from 'node:assert/strict';import {Native as Base,encode as baseEncode} from '../../bridge.mjs';import {ruleReplyLosses} from './policy.mjs';
+export {fixture,observationSeed} from '../../bridge.mjs';
+export function guarded(f){const proofs=ruleReplyLosses(f.view,f.repetitions);return{...f,ruleReplyProofs:proofs};}
+export function encode(f,options={}){const text=baseEncode(f,options);if(!f.ruleReplyProofs?.length)return text;const parts=text.trim().split(' '),offset=parts.length-f.repetitions.length*4;for(const p of f.ruleReplyProofs){const i=f.repetitions.findIndex(r=>r.from===p.from&&r.to===p.to);assert(i>=0);assert.equal(parts[offset+i*4+3],'0','Never overwrite an immediate adjudication');parts[offset+i*4+3]='5';}return parts.join(' ')+'\n';}
+export class Native extends Base{
+ constructor(options){super(options);this.reaped=new Promise(resolve=>this.process.once('close',resolve));}
+ async request(f,options={}){await this.ready;assert(this.capabilities.ruleReplyGuard,'Missing rule-reply protocol capability');assert.equal(this.pending.length,0);const start=performance.now(),g=guarded(f),budget=Math.max(0,(options.budget??60000)-(performance.now()-start)),data=encode(g,{...options,budget}),preparationMs=performance.now()-start;return new Promise((resolve,reject)=>{this.pending.push({resolve:r=>resolve({...r,ruleReplyProofs:g.ruleReplyProofs,rulePreparationMs:preparationMs}),reject,start,onProgress:r=>options.onProgress?.({...r,ruleReplyProofs:g.ruleReplyProofs,rulePreparationMs:preparationMs}),onTelemetry:options.onTelemetry,timer:setTimeout(()=>{this.process.kill();this.fail(Error('rule reply request timeout'));},budget+10000)});this.process.stdin.write(data);});}
+}

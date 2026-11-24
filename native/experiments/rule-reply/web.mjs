@@ -1,0 +1,4 @@
+// Reuse the exact audited HTTP boundary on an independent test port. No static
+// files, existing service, native source, or default setting is rewritten.
+import fs from 'node:fs';import {pathToFileURL}from'node:url';import path from'node:path';import assert from'node:assert/strict';import{hash,environment}from'./build.mjs';
+export async function transport(){const url=new URL('../../server.mjs',import.meta.url);assert.equal(hash(url),'062f0fd5b823264e578f5b2fb4518a853dfa34a227d3399ee8211b91e4e51ff7');let s=fs.readFileSync(url,'utf8');s=s.slice(0,s.indexOf('\nif(process.argv[1]===fileURLToPath(import.meta.url))'));s=s.replace(/from\s*(['"])(\.\.?\/[^'"]+)\1/g,(_m,q,p)=>'from '+JSON.stringify(p==='./bridge.mjs'?new URL('./bridge.mjs',import.meta.url).href:new URL(p,url).href));environment();return import('data:text/javascript;base64,'+Buffer.from(s).toString('base64'));}

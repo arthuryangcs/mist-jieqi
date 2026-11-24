@@ -244,6 +244,31 @@ jobs:
           node native/experiments/jqe/thread-check.mjs
       - name: Opt-in HTTP boundaries and cancellation
         run: node --test native/experiments/jqe/service-check.mjs
+  rule-reply-proof:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '24'
+      - name: Lawful public-history proofs and old-game forensic reproduction
+        run: |
+          node --test native/experiments/rule-reply/policy.test.mjs
+          node native/experiments/rule-reply/diagnose.mjs
+      - name: Independent candidate and unchanged-default control
+        run: |
+          node native/experiments/default-all/build.mjs
+          node native/experiments/rule-reply/build.mjs
+          node native/experiments/rule-reply/build.mjs --sanitize
+          node native/experiments/rule-reply/check.mjs
+      - name: Actual temporary HTTP and frozen paired-game audit
+        run: |
+          node native/experiments/rule-reply/integration.mjs
+          node native/experiments/rule-reply/matches.mjs replay
+          node native/experiments/rule-reply/audit.mjs benchmarks/rule-reply-2026-11-24/matches.json /tmp/rule-reply-audit.json
   default-all-compatible:
     runs-on: ubuntu-latest
     timeout-minutes: 20

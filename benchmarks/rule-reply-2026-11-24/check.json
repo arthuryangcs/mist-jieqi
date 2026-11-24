@@ -1,0 +1,262 @@
+{
+  "passed": true,
+  "versions": {
+    "control": "80b3054276e4a53b59b40915bfdab627e2a19a628ab1e4614885c3f9d5dd68c3",
+    "trial": "9db12d909957bff3957457b3f6c533df6c20cc25b1f58f6f1fee1bc04cff550e"
+  },
+  "finite": [
+    {
+      "index": 0,
+      "sanitize": false,
+      "depth": 1,
+      "proofs": 1,
+      "row": {
+        "ruleReplyLoss": true,
+        "score": -3594.878728264789
+      },
+      "preparationMs": 7.15056100000001
+    },
+    {
+      "index": 2,
+      "sanitize": false,
+      "depth": 1,
+      "proofs": 0,
+      "row": {
+        "ruleReplyLoss": false,
+        "score": 1058.4218935801218
+      },
+      "preparationMs": 8.807240999999976
+    },
+    {
+      "index": 5,
+      "sanitize": false,
+      "depth": 1,
+      "proofs": 1,
+      "row": {
+        "ruleReplyLoss": true,
+        "score": -3594.878728264789
+      },
+      "preparationMs": 9.283280999999988
+    },
+    {
+      "index": 7,
+      "sanitize": false,
+      "depth": 1,
+      "proofs": 1,
+      "row": {
+        "ruleReplyLoss": true,
+        "score": -98998
+      },
+      "preparationMs": 8.469055000000026
+    },
+    {
+      "index": 0,
+      "sanitize": true,
+      "depth": 1,
+      "proofs": 1,
+      "row": {
+        "ruleReplyLoss": true,
+        "score": -3594.878728264789
+      },
+      "preparationMs": 6.192982000000029
+    },
+    {
+      "index": 2,
+      "sanitize": true,
+      "depth": 1,
+      "proofs": 0,
+      "row": {
+        "ruleReplyLoss": false,
+        "score": 1058.4218935801218
+      },
+      "preparationMs": 7.523685999999998
+    },
+    {
+      "index": 5,
+      "sanitize": true,
+      "depth": 1,
+      "proofs": 1,
+      "row": {
+        "ruleReplyLoss": true,
+        "score": -3594.878728264789
+      },
+      "preparationMs": 8.157908000000134
+    },
+    {
+      "index": 7,
+      "sanitize": true,
+      "depth": 1,
+      "proofs": 1,
+      "row": {
+        "ruleReplyLoss": true,
+        "score": -98998
+      },
+      "preparationMs": 10.067744999999832
+    }
+  ],
+  "zeroProof": [
+    {
+      "name": "初始全暗",
+      "sanitize": false,
+      "nodesEqual": true,
+      "candidates": 44,
+      "maxDifference": 0
+    },
+    {
+      "name": "可达中局 2111 / 20步",
+      "sanitize": false,
+      "nodesEqual": true,
+      "candidates": 25,
+      "maxDifference": 0
+    },
+    {
+      "name": "可达中局 2111 / 44步",
+      "sanitize": false,
+      "nodesEqual": true,
+      "candidates": 23,
+      "maxDifference": 0
+    },
+    {
+      "name": "可达中局 2221 / 44步",
+      "sanitize": false,
+      "nodesEqual": true,
+      "candidates": 31,
+      "maxDifference": 0
+    },
+    {
+      "name": "全明10子残局",
+      "sanitize": false,
+      "nodesEqual": true,
+      "candidates": 30,
+      "maxDifference": 0
+    },
+    {
+      "name": "初始全暗",
+      "sanitize": true,
+      "nodesEqual": true,
+      "candidates": 44,
+      "maxDifference": 0
+    },
+    {
+      "name": "可达中局 2111 / 20步",
+      "sanitize": true,
+      "nodesEqual": true,
+      "candidates": 25,
+      "maxDifference": 0
+    },
+    {
+      "name": "可达中局 2111 / 44步",
+      "sanitize": true,
+      "nodesEqual": true,
+      "candidates": 23,
+      "maxDifference": 0
+    },
+    {
+      "name": "可达中局 2221 / 44步",
+      "sanitize": true,
+      "nodesEqual": true,
+      "candidates": 31,
+      "maxDifference": 0
+    },
+    {
+      "name": "全明10子残局",
+      "sanitize": true,
+      "nodesEqual": true,
+      "candidates": 30,
+      "maxDifference": 0
+    }
+  ],
+  "timed": [
+    {
+      "index": 0,
+      "name": "control",
+      "move": {
+        "from": 6,
+        "to": 15
+      },
+      "depth": 3,
+      "selDepth": 11,
+      "elapsedMs": 1940.4569669999983,
+      "rulePreparationMs": null,
+      "choosesProvedLoss": true,
+      "deadlineStop": false,
+      "fallbackUsed": false
+    },
+    {
+      "index": 0,
+      "name": "trial",
+      "move": {
+        "from": 6,
+        "to": 42
+      },
+      "depth": 3,
+      "selDepth": 11,
+      "elapsedMs": 1937.8420929999993,
+      "rulePreparationMs": 6.195161999999982,
+      "choosesProvedLoss": false,
+      "deadlineStop": false,
+      "fallbackUsed": false
+    },
+    {
+      "index": 5,
+      "name": "control",
+      "move": {
+        "from": 15,
+        "to": 6
+      },
+      "depth": 4,
+      "selDepth": 13,
+      "elapsedMs": 1937.5307350000003,
+      "rulePreparationMs": null,
+      "choosesProvedLoss": true,
+      "deadlineStop": false,
+      "fallbackUsed": false
+    },
+    {
+      "index": 5,
+      "name": "trial",
+      "move": {
+        "from": 58,
+        "to": 57
+      },
+      "depth": 4,
+      "selDepth": 13,
+      "elapsedMs": 1937.8825189999989,
+      "rulePreparationMs": 9.208991000003152,
+      "choosesProvedLoss": false,
+      "deadlineStop": false,
+      "fallbackUsed": false
+    },
+    {
+      "index": 7,
+      "name": "control",
+      "move": {
+        "from": 74,
+        "to": 57
+      },
+      "depth": 8,
+      "selDepth": 15,
+      "elapsedMs": 1930.8429350000006,
+      "rulePreparationMs": null,
+      "choosesProvedLoss": true,
+      "deadlineStop": false,
+      "fallbackUsed": false
+    },
+    {
+      "index": 7,
+      "name": "trial",
+      "move": {
+        "from": 74,
+        "to": 85
+      },
+      "depth": 8,
+      "selDepth": 15,
+      "elapsedMs": 1930.6464530000012,
+      "rulePreparationMs": 9.757359999999608,
+      "choosesProvedLoss": false,
+      "deadlineStop": false,
+      "fallbackUsed": false
+    }
+  ],
+  "cancelRecovery": true
+}
