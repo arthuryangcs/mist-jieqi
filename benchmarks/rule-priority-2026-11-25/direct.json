@@ -1,0 +1,610 @@
+{
+  "passed": true,
+  "directCppWithoutJsCorrection": true,
+  "budgetMs": 2000,
+  "elapsedMs": 1939.7541789999998,
+  "preparationWithinBudget": true,
+  "final": {
+    "move": {
+      "from": 31,
+      "to": 50
+    },
+    "fields": {
+      "samples": 15,
+      "depth": 5,
+      "comparisonDepth": 5,
+      "completedDepth": 5,
+      "fullRootDepth": 5,
+      "comparedCount": 16,
+      "rootCount": 16,
+      "mainDepth": 6,
+      "selDepth": 13,
+      "selectedHasSameDepthScore": true,
+      "selectedScoreDepth": 5,
+      "score": -3909.878728264789
+    },
+    "missing": [
+      "selectedProvenRuleLoss",
+      "fallbackUsed",
+      "deadlineStop"
+    ]
+  },
+  "progress": [
+    {
+      "move": {
+        "from": 31,
+        "to": 14
+      },
+      "fields": {
+        "samples": 15,
+        "depth": 1,
+        "comparisonDepth": 1,
+        "completedDepth": 1,
+        "fullRootDepth": 1,
+        "comparedCount": 16,
+        "rootCount": 16,
+        "mainDepth": 1,
+        "selDepth": 5,
+        "selectedHasSameDepthScore": true,
+        "selectedScoreDepth": 1,
+        "score": 162.22189358013682
+      },
+      "missing": [
+        "selectedProvenRuleLoss",
+        "fallbackUsed",
+        "deadlineStop"
+      ]
+    },
+    {
+      "move": {
+        "from": 31,
+        "to": 14
+      },
+      "fields": {
+        "samples": 15,
+        "depth": 2,
+        "comparisonDepth": 2,
+        "completedDepth": 1,
+        "fullRootDepth": 1,
+        "comparedCount": 4,
+        "rootCount": 16,
+        "mainDepth": 2,
+        "selDepth": 6,
+        "selectedHasSameDepthScore": true,
+        "selectedScoreDepth": 2,
+        "score": 162.22189358013682
+      },
+      "missing": [
+        "selectedProvenRuleLoss",
+        "fallbackUsed",
+        "deadlineStop"
+      ]
+    },
+    {
+      "move": {
+        "from": 31,
+        "to": 14
+      },
+      "fields": {
+        "samples": 15,
+        "depth": 2,
+        "comparisonDepth": 2,
+        "completedDepth": 1,
+        "fullRootDepth": 1,
+        "comparedCount": 8,
+        "rootCount": 16,
+        "mainDepth": 2,
+        "selDepth": 6,
+        "selectedHasSameDepthScore": true,
+        "selectedScoreDepth": 2,
+        "score": 162.22189358013682
+      },
+      "missing": [
+        "selectedProvenRuleLoss",
+        "fallbackUsed",
+        "deadlineStop"
+      ]
+    },
+    {
+      "move": {
+        "from": 31,
+        "to": 14
+      },
+      "fields": {
+        "samples": 15,
+        "depth": 2,
+        "comparisonDepth": 2,
+        "completedDepth": 1,
+        "fullRootDepth": 1,
+        "comparedCount": 12,
+        "rootCount": 16,
+        "mainDepth": 2,
+        "selDepth": 6,
+        "selectedHasSameDepthScore": true,
+        "selectedScoreDepth": 2,
+        "score": 162.22189358013682
+      },
+      "missing": [
+        "selectedProvenRuleLoss",
+        "fallbackUsed",
+        "deadlineStop"
+      ]
+    },
+    {
+      "move": {
+        "from": 31,
+        "to": 14
+      },
+      "fields": {
+        "samples": 15,
+        "depth": 2,
+        "comparisonDepth": 2,
+        "completedDepth": 1,
+        "fullRootDepth": 1,
+        "comparedCount": 12,
+        "rootCount": 16,
+        "mainDepth": 2,
+        "selDepth": 6,
+        "selectedHasSameDepthScore": true,
+        "selectedScoreDepth": 2,
+        "score": 162.22189358013682
+      },
+      "missing": [
+        "selectedProvenRuleLoss",
+        "fallbackUsed",
+        "deadlineStop"
+      ]
+    },
+    {
+      "move": {
+        "from": 31,
+        "to": 14
+      },
+      "fields": {
+        "samples": 15,
+        "depth": 2,
+        "comparisonDepth": 2,
+        "completedDepth": 2,
+        "fullRootDepth": 2,
+        "comparedCount": 16,
+        "rootCount": 16,
+        "mainDepth": 3,
+        "selDepth": 6,
+        "selectedHasSameDepthScore": true,
+        "selectedScoreDepth": 2,
+        "score": 162.22189358013682
+      },
+      "missing": [
+        "selectedProvenRuleLoss",
+        "fallbackUsed",
+        "deadlineStop"
+      ]
+    },
+    {
+      "move": {
+        "from": 31,
+        "to": 14
+      },
+      "fields": {
+        "samples": 15,
+        "depth": 2,
+        "comparisonDepth": 2,
+        "completedDepth": 2,
+        "fullRootDepth": 2,
+        "comparedCount": 16,
+        "rootCount": 16,
+        "mainDepth": 3,
+        "selDepth": 6,
+        "selectedHasSameDepthScore": true,
+        "selectedScoreDepth": 2,
+        "score": 162.22189358013682
+      },
+      "missing": [
+        "selectedProvenRuleLoss",
+        "fallbackUsed",
+        "deadlineStop"
+      ]
+    },
+    {
+      "move": {
+        "from": 31,
+        "to": 50
+      },
+      "fields": {
+        "samples": 15,
+        "depth": 3,
+        "comparisonDepth": 3,
+        "completedDepth": 2,
+        "fullRootDepth": 2,
+        "comparedCount": 4,
+        "rootCount": 16,
+        "mainDepth": 3,
+        "selDepth": 8,
+        "selectedHasSameDepthScore": true,
+        "selectedScoreDepth": 3,
+        "score": 88.84517644091488
+      },
+      "missing": [
+        "selectedProvenRuleLoss",
+        "fallbackUsed",
+        "deadlineStop"
+      ]
+    },
+    {
+      "move": {
+        "from": 31,
+        "to": 50
+      },
+      "fields": {
+        "samples": 15,
+        "depth": 3,
+        "comparisonDepth": 3,
+        "completedDepth": 2,
+        "fullRootDepth": 2,
+        "comparedCount": 8,
+        "rootCount": 16,
+        "mainDepth": 3,
+        "selDepth": 8,
+        "selectedHasSameDepthScore": true,
+        "selectedScoreDepth": 3,
+        "score": 88.84517644091488
+      },
+      "missing": [
+        "selectedProvenRuleLoss",
+        "fallbackUsed",
+        "deadlineStop"
+      ]
+    },
+    {
+      "move": {
+        "from": 31,
+        "to": 50
+      },
+      "fields": {
+        "samples": 15,
+        "depth": 3,
+        "comparisonDepth": 3,
+        "completedDepth": 2,
+        "fullRootDepth": 2,
+        "comparedCount": 12,
+        "rootCount": 16,
+        "mainDepth": 3,
+        "selDepth": 8,
+        "selectedHasSameDepthScore": true,
+        "selectedScoreDepth": 3,
+        "score": 88.84517644091488
+      },
+      "missing": [
+        "selectedProvenRuleLoss",
+        "fallbackUsed",
+        "deadlineStop"
+      ]
+    },
+    {
+      "move": {
+        "from": 31,
+        "to": 50
+      },
+      "fields": {
+        "samples": 15,
+        "depth": 3,
+        "comparisonDepth": 3,
+        "completedDepth": 3,
+        "fullRootDepth": 3,
+        "comparedCount": 16,
+        "rootCount": 16,
+        "mainDepth": 3,
+        "selDepth": 8,
+        "selectedHasSameDepthScore": true,
+        "selectedScoreDepth": 3,
+        "score": 88.84517644091488
+      },
+      "missing": [
+        "selectedProvenRuleLoss",
+        "fallbackUsed",
+        "deadlineStop"
+      ]
+    },
+    {
+      "move": {
+        "from": 31,
+        "to": 50
+      },
+      "fields": {
+        "samples": 15,
+        "depth": 3,
+        "comparisonDepth": 3,
+        "completedDepth": 3,
+        "fullRootDepth": 3,
+        "comparedCount": 16,
+        "rootCount": 16,
+        "mainDepth": 3,
+        "selDepth": 8,
+        "selectedHasSameDepthScore": true,
+        "selectedScoreDepth": 3,
+        "score": 88.84517644091488
+      },
+      "missing": [
+        "selectedProvenRuleLoss",
+        "fallbackUsed",
+        "deadlineStop"
+      ]
+    },
+    {
+      "move": {
+        "from": 31,
+        "to": 50
+      },
+      "fields": {
+        "samples": 15,
+        "depth": 4,
+        "comparisonDepth": 4,
+        "completedDepth": 3,
+        "fullRootDepth": 3,
+        "comparedCount": 4,
+        "rootCount": 16,
+        "mainDepth": 4,
+        "selDepth": 10,
+        "selectedHasSameDepthScore": true,
+        "selectedScoreDepth": 4,
+        "score": 98.42189358013664
+      },
+      "missing": [
+        "selectedProvenRuleLoss",
+        "fallbackUsed",
+        "deadlineStop"
+      ]
+    },
+    {
+      "move": {
+        "from": 31,
+        "to": 50
+      },
+      "fields": {
+        "samples": 15,
+        "depth": 4,
+        "comparisonDepth": 4,
+        "completedDepth": 3,
+        "fullRootDepth": 3,
+        "comparedCount": 8,
+        "rootCount": 16,
+        "mainDepth": 4,
+        "selDepth": 10,
+        "selectedHasSameDepthScore": true,
+        "selectedScoreDepth": 4,
+        "score": 98.42189358013664
+      },
+      "missing": [
+        "selectedProvenRuleLoss",
+        "fallbackUsed",
+        "deadlineStop"
+      ]
+    },
+    {
+      "move": {
+        "from": 31,
+        "to": 50
+      },
+      "fields": {
+        "samples": 15,
+        "depth": 4,
+        "comparisonDepth": 4,
+        "completedDepth": 3,
+        "fullRootDepth": 3,
+        "comparedCount": 12,
+        "rootCount": 16,
+        "mainDepth": 4,
+        "selDepth": 10,
+        "selectedHasSameDepthScore": true,
+        "selectedScoreDepth": 4,
+        "score": 98.42189358013664
+      },
+      "missing": [
+        "selectedProvenRuleLoss",
+        "fallbackUsed",
+        "deadlineStop"
+      ]
+    },
+    {
+      "move": {
+        "from": 31,
+        "to": 50
+      },
+      "fields": {
+        "samples": 15,
+        "depth": 4,
+        "comparisonDepth": 4,
+        "completedDepth": 3,
+        "fullRootDepth": 3,
+        "comparedCount": 12,
+        "rootCount": 16,
+        "mainDepth": 4,
+        "selDepth": 10,
+        "selectedHasSameDepthScore": true,
+        "selectedScoreDepth": 4,
+        "score": 98.42189358013664
+      },
+      "missing": [
+        "selectedProvenRuleLoss",
+        "fallbackUsed",
+        "deadlineStop"
+      ]
+    },
+    {
+      "move": {
+        "from": 31,
+        "to": 50
+      },
+      "fields": {
+        "samples": 15,
+        "depth": 4,
+        "comparisonDepth": 4,
+        "completedDepth": 4,
+        "fullRootDepth": 4,
+        "comparedCount": 16,
+        "rootCount": 16,
+        "mainDepth": 5,
+        "selDepth": 10,
+        "selectedHasSameDepthScore": true,
+        "selectedScoreDepth": 4,
+        "score": 98.42189358013664
+      },
+      "missing": [
+        "selectedProvenRuleLoss",
+        "fallbackUsed",
+        "deadlineStop"
+      ]
+    },
+    {
+      "move": {
+        "from": 31,
+        "to": 50
+      },
+      "fields": {
+        "samples": 15,
+        "depth": 4,
+        "comparisonDepth": 4,
+        "completedDepth": 4,
+        "fullRootDepth": 4,
+        "comparedCount": 16,
+        "rootCount": 16,
+        "mainDepth": 5,
+        "selDepth": 10,
+        "selectedHasSameDepthScore": true,
+        "selectedScoreDepth": 4,
+        "score": 98.42189358013664
+      },
+      "missing": [
+        "selectedProvenRuleLoss",
+        "fallbackUsed",
+        "deadlineStop"
+      ]
+    },
+    {
+      "move": {
+        "from": 31,
+        "to": 50
+      },
+      "fields": {
+        "samples": 15,
+        "depth": 5,
+        "comparisonDepth": 5,
+        "completedDepth": 4,
+        "fullRootDepth": 4,
+        "comparedCount": 4,
+        "rootCount": 16,
+        "mainDepth": 5,
+        "selDepth": 12,
+        "selectedHasSameDepthScore": true,
+        "selectedScoreDepth": 5,
+        "score": -3909.878728264789
+      },
+      "missing": [
+        "selectedProvenRuleLoss",
+        "fallbackUsed",
+        "deadlineStop"
+      ]
+    },
+    {
+      "move": {
+        "from": 31,
+        "to": 50
+      },
+      "fields": {
+        "samples": 15,
+        "depth": 5,
+        "comparisonDepth": 5,
+        "completedDepth": 4,
+        "fullRootDepth": 4,
+        "comparedCount": 8,
+        "rootCount": 16,
+        "mainDepth": 5,
+        "selDepth": 13,
+        "selectedHasSameDepthScore": true,
+        "selectedScoreDepth": 5,
+        "score": -3909.878728264789
+      },
+      "missing": [
+        "selectedProvenRuleLoss",
+        "fallbackUsed",
+        "deadlineStop"
+      ]
+    },
+    {
+      "move": {
+        "from": 31,
+        "to": 50
+      },
+      "fields": {
+        "samples": 15,
+        "depth": 5,
+        "comparisonDepth": 5,
+        "completedDepth": 4,
+        "fullRootDepth": 4,
+        "comparedCount": 12,
+        "rootCount": 16,
+        "mainDepth": 5,
+        "selDepth": 13,
+        "selectedHasSameDepthScore": true,
+        "selectedScoreDepth": 5,
+        "score": -3909.878728264789
+      },
+      "missing": [
+        "selectedProvenRuleLoss",
+        "fallbackUsed",
+        "deadlineStop"
+      ]
+    },
+    {
+      "move": {
+        "from": 31,
+        "to": 50
+      },
+      "fields": {
+        "samples": 15,
+        "depth": 5,
+        "comparisonDepth": 5,
+        "completedDepth": 5,
+        "fullRootDepth": 5,
+        "comparedCount": 16,
+        "rootCount": 16,
+        "mainDepth": 5,
+        "selDepth": 13,
+        "selectedHasSameDepthScore": true,
+        "selectedScoreDepth": 5,
+        "score": -3909.878728264789
+      },
+      "missing": [
+        "selectedProvenRuleLoss",
+        "fallbackUsed",
+        "deadlineStop"
+      ]
+    },
+    {
+      "move": {
+        "from": 31,
+        "to": 50
+      },
+      "fields": {
+        "samples": 15,
+        "depth": 5,
+        "comparisonDepth": 5,
+        "completedDepth": 5,
+        "fullRootDepth": 5,
+        "comparedCount": 16,
+        "rootCount": 16,
+        "mainDepth": 5,
+        "selDepth": 13,
+        "selectedHasSameDepthScore": true,
+        "selectedScoreDepth": 5,
+        "score": -3909.878728264789
+      },
+      "missing": [
+        "selectedProvenRuleLoss",
+        "fallbackUsed",
+        "deadlineStop"
+      ]
+    }
+  ],
+  "unprovedDoesNotMeanSafe": true
+}

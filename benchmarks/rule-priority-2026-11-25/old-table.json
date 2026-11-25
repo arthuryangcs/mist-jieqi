@@ -1,0 +1,114 @@
+{
+  "passed": true,
+  "synthetic": true,
+  "oldSavedRecord": {
+    "move": {
+      "from": 31,
+      "to": 24
+    },
+    "fields": {
+      "samples": 15,
+      "depth": 6,
+      "completedDepth": 5,
+      "fullRootDepth": 5,
+      "comparedCount": 4,
+      "rootCount": 16,
+      "mainDepth": 6,
+      "selDepth": 14,
+      "score": -3594.878728264789,
+      "fallbackUsed": false,
+      "deadlineStop": false
+    },
+    "missing": [
+      "comparisonDepth",
+      "selectedHasSameDepthScore",
+      "selectedScoreDepth",
+      "selectedProvenRuleLoss"
+    ]
+  },
+  "actualOld2s": {
+    "move": {
+      "from": 31,
+      "to": 24
+    },
+    "fields": {
+      "samples": 15,
+      "depth": 6,
+      "comparisonDepth": 6,
+      "completedDepth": 5,
+      "fullRootDepth": 5,
+      "comparedCount": 4,
+      "rootCount": 16,
+      "mainDepth": 6,
+      "selDepth": 14,
+      "score": -3594.878728264789,
+      "fallbackUsed": false,
+      "deadlineStop": false
+    },
+    "missing": [
+      "selectedHasSameDepthScore",
+      "selectedScoreDepth",
+      "selectedProvenRuleLoss"
+    ]
+  },
+  "actualOldChoosesProvedLoss": true,
+  "scoredRoots": [
+    {
+      "from": 31,
+      "to": 24,
+      "score": -3594.878728264789,
+      "baseScore": -3594.878728264789,
+      "riskPenalty": 0,
+      "repetitionLoss": true,
+      "ruleReplyLoss": true
+    },
+    {
+      "from": 31,
+      "to": 12,
+      "score": -3594.878728264789,
+      "baseScore": -3594.878728264789,
+      "riskPenalty": 0,
+      "repetitionLoss": true,
+      "ruleReplyLoss": true
+    },
+    {
+      "from": 67,
+      "to": 58,
+      "score": -3909.878728264789,
+      "baseScore": -3594.878728264789,
+      "riskPenalty": 314.99999999999994
+    },
+    {
+      "from": 62,
+      "to": 53,
+      "score": -3909.878728264789,
+      "baseScore": -3594.878728264789,
+      "riskPenalty": 314.99999999999994
+    }
+  ],
+  "sameTablePriorityReplay": {
+    "move": {
+      "from": 67,
+      "to": 58
+    },
+    "fields": {
+      "samples": 15,
+      "depth": 6,
+      "comparisonDepth": 6,
+      "completedDepth": 5,
+      "fullRootDepth": 5,
+      "comparedCount": 4,
+      "rootCount": 16,
+      "mainDepth": 6,
+      "selDepth": 14,
+      "selectedHasSameDepthScore": true,
+      "selectedScoreDepth": 6,
+      "selectedProvenRuleLoss": false,
+      "score": -3909.878728264789,
+      "fallbackUsed": false,
+      "deadlineStop": false
+    },
+    "missing": []
+  },
+  "interpretation": "Only the actual returned common-depth cohort is replayed. Unproved legal alternatives are not guaranteed safe; no new score, root coverage or depth is fabricated."
+}

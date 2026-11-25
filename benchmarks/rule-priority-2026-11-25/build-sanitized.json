@@ -1,0 +1,41 @@
+{
+  "sourceSha256": "9506fae06ef93c871815efdcaed2d0e9de13d17aa131cfab6d105048a6c9973d",
+  "headerSha256": "152ecbaaeb3857c413f22351bc2c0c9e7c45193fd0c81caa001899be8cbd2ef5",
+  "binarySha256": "e8c67b5639b33e066008c1d13111acffcc66206e60bd9151e1d2e98718c1fc67",
+  "modelSha256": "0b3ccf77fb30ce16ccdeaceb198bf7a114cee7b8a084643adac0d14887090edb",
+  "sanitize": true,
+  "capabilities": {
+    "ready": true,
+    "protocol": 2,
+    "streaming": true,
+    "depthMetrics": true,
+    "unlimitedDepth": true,
+    "safetyMaxPly": 127,
+    "threads": 4,
+    "independentWorldSearch": true,
+    "allFeatures": true,
+    "defaultPreset": "all-compatible-v2",
+    "currentRootResponsibility": true,
+    "ruleReplyGuard": true,
+    "provenLossPriority": true,
+    "bufferedStableSort": true,
+    "nnue": true,
+    "nnueModelSha256": "0b3ccf77fb30ce16ccdeaceb198bf7a114cee7b8a084643adac0d14887090edb",
+    "ttSlotBytes": 128,
+    "focusedPlay": true
+  },
+  "compiler": "clang++",
+  "compilerVersion": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: x86_64-apple-darwin24.6.0\nThread model: posix",
+  "flags": [
+    "-std=c++17",
+    "-ffp-contract=off",
+    "-O1",
+    "-g",
+    "-fsanitize=address,undefined",
+    "-fno-omit-frame-pointer",
+    "-DMIST_VERIFY_RESTORE",
+    "-isystem",
+    "<system-c++-include>"
+  ],
+  "warnings": ""
+}

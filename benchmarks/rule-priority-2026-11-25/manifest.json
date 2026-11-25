@@ -1,0 +1,67 @@
+{
+  "createdAt": "2026-11-25T02:19:45.187Z",
+  "synthetic": true,
+  "defaultChanged": false,
+  "files": {
+    "README.md": {
+      "sha256": "f569379797516a5a4254aa4dcf7108ae91134c8d223912d0fa55b0ee6e5421e3",
+      "bytes": 683
+    },
+    "audit.json": {
+      "sha256": "c117a4bc005b65cbb84b9cbefdd24b2b004e48ce5eb2b28b7f78f4f7c728763d",
+      "bytes": 632145
+    },
+    "build-sanitized.json": {
+      "sha256": "9c62546ddd7f47858835238b8248d1701176cd6825faa35fb8e9f74b4ce6025d",
+      "bytes": 1330
+    },
+    "build.json": {
+      "sha256": "913c735f7852a28632a271ebf52c182639763f64c0ba12e1dee5d7fda50893f9",
+      "bytes": 1241
+    },
+    "check.json": {
+      "sha256": "4450d5257dd1c1d3499c5806e3d41502d74dc3c85f0a7df5c58f5856345b473e",
+      "bytes": 11975
+    },
+    "counterexample.json": {
+      "sha256": "8cc4e7a824c9d63b861edef82ee01556cc32cfb7d06df7bd37ac292cbb98d950",
+      "bytes": 143309
+    },
+    "direct.json": {
+      "sha256": "f0dac835597e8bcba1bffaf125f98456ca6e3c358ec67d44483fcc3b13de4ded",
+      "bytes": 13430
+    },
+    "freshness.json": {
+      "sha256": "ec488c8640723322c865d60142435069fa6ebd96320f3ebfe33613aba526686b",
+      "bytes": 40562
+    },
+    "integration.json": {
+      "sha256": "3fb8624ee49bcafe64305dc83b399806d19124c638a3800dc000f006a16ce053",
+      "bytes": 4084
+    },
+    "matches.json": {
+      "sha256": "2466cb0f47e5d8e36417651f3af0265c70cfe1d561b1e49c1dcd1d45514a9120",
+      "bytes": 1604288
+    },
+    "old-table.json": {
+      "sha256": "88d42593789acd519f01384cdae808b6df8ecde9c0259dc0867457c928cafa82",
+      "bytes": 2610
+    },
+    "redaction.json": {
+      "sha256": "10a2b567171bcc0716cfbc2faccd5f2ec8675a4093486ba35dfaad33d161be94",
+      "bytes": 393
+    },
+    "replay.json": {
+      "sha256": "a6932b86b9db0f05411130eb9d7af74c5f1d2744a09008f33350371d64f0b4a7",
+      "bytes": 870
+    },
+    "summary.json": {
+      "sha256": "fe27765fc2c571269773d1fea2ad61eb594d37a3fa937cd8fe7c679871ea9eb7",
+      "bytes": 1786
+    },
+    "tests.json": {
+      "sha256": "701dcd020a57c3dbae416940eb0da493ee8e5f51ef7b253b4b1bc3192fb3f389",
+      "bytes": 193
+    }
+  }
+}

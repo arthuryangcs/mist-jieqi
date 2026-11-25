@@ -1,0 +1,16 @@
+import test from'node:test';import assert from'node:assert/strict';import{appSource,deadlineSource}from'./entry-source.mjs';import{counterexample}from'./case.mjs';
+class Element{constructor(){this.children=[];this.value='';this.disabled=false;this.hidden=false;this.checked=false;this.style={};this.offsetWidth=280;this.offsetHeight=280;this.textContent='';this.className='';this.dataset={};this.classList={toggle(){},add(){},remove(){}};}append(...e){this.children.push(...e);}replaceChildren(...e){this.children=e;}setAttribute(k,v){this[k]=v;}getBoundingClientRect(){return{left:0,top:0,width:600,height:666};}querySelectorAll(){return this.children;}}
+async function setup(){const elements=new Map(),workers=[];globalThis.document={getElementById:id=>{if(!elements.has(id))elements.set(id,new Element());return elements.get(id);},createElement:()=>new Element()};globalThis.Worker=class{constructor(){workers.push(this);}postMessage(d){this.data=d;}terminate(){this.terminated=true;}};
+ const deadline='data:text/javascript;base64,'+Buffer.from(deadlineSource()).toString('base64');let s=appSource().replace(/from\s*(['"])(\.\/[^'"]+)\1/g,(_m,q,p)=>'from '+JSON.stringify(p==='./deadline-search.js'?deadline:new URL('../../../'+p.slice(2),import.meta.url).href));s+='\nexport{report as testReport};\n';const m=await import('data:text/javascript;base64,'+Buffer.from(s).toString('base64')+'#'+Math.random());return{...m,$:id=>document.getElementById(id),workers};}
+test('experimental real report renders unscored/null as missing, not 0 points or50%',async()=>{
+ const f=await setup(),{view}=counterexample();f.testReport({move:{from:31,to:50},candidates:[],score:null,depth:6,completedDepth:5,rootCount:16,comparedCount:4,fullRootDepth:null,nodes:10,elapsedMs:2000,selectedHasSameDepthScore:false,selectedScoreDepth:null},view);
+ assert.match(f.$('report').children[0].textContent,/无同深度评分/);const text=f.$('report').children[1].textContent;assert(!text.includes('启发式胜率'));assert.match(text,/样本 未报告/);assert.match(text,/全根 未报告/);assert.match(text,/未证负不等于安全/);
+});
+test('actual zero score and zero metrics remain visible as zero',async()=>{
+ const f=await setup(),{view}=counterexample();f.testReport({move:{from:31,to:50},candidates:[],score:0,depth:1,completedDepth:0,rootCount:16,comparedCount:1,fullRootDepth:0,samples:0,nodes:10,elapsedMs:1,selectedHasSameDepthScore:true,selectedScoreDepth:1},view);
+ assert.match(f.$('report').children[0].textContent,/\+0 分/);assert.match(f.$('report').children[1].textContent,/样本 0.*完成 0.*全根 0/);
+});
+test('real analyze/cache callbacks keep the chosen move and missing-score status',async()=>{
+ const f=await setup();f.$('time').value='2000';f.$('analyze').onclick();const w=f.workers[0];assert(w);w.onmessage({data:{id:w.data.id,result:{move:{from:54,to:45},candidates:[],score:null,depth:2,nodes:10,elapsedMs:50,completedDepth:1,rootCount:44,comparedCount:4,selectedHasSameDepthScore:false,selectedScoreDepth:null}}});
+ assert.match(f.$('report').children[0].textContent,/无同深度评分/);f.$('analyze').onclick();assert.equal(f.workers.length,1);assert.match(f.$('message').textContent,/复用/);assert.match(f.$('report').children[0].textContent,/无同深度评分/);assert.match(f.$('report').children[2].textContent,/推荐.*→/);f.$('reset').onclick();assert(f.$('analysis').hidden);
+});

@@ -1,0 +1,164 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "name": "actual-HTTP-normal",
+      "move": {
+        "from": 31,
+        "to": 50
+      },
+      "fields": {
+        "samples": 15,
+        "depth": 5,
+        "comparisonDepth": 5,
+        "completedDepth": 5,
+        "fullRootDepth": 5,
+        "comparedCount": 16,
+        "rootCount": 16,
+        "mainDepth": 6,
+        "selDepth": 13,
+        "selectedHasSameDepthScore": true,
+        "selectedScoreDepth": 5,
+        "selectedProvenRuleLoss": false,
+        "score": -3909.878728264789,
+        "fallbackUsed": false
+      },
+      "missing": [
+        "deadlineStop"
+      ]
+    },
+    {
+      "name": "deadline-cached-actual-native-progress",
+      "move": {
+        "from": 31,
+        "to": 50
+      },
+      "fields": {
+        "samples": 15,
+        "depth": 5,
+        "comparisonDepth": 5,
+        "completedDepth": 5,
+        "fullRootDepth": 5,
+        "comparedCount": 16,
+        "rootCount": 16,
+        "mainDepth": 5,
+        "selDepth": 13,
+        "selectedHasSameDepthScore": true,
+        "selectedScoreDepth": 5,
+        "selectedProvenRuleLoss": false,
+        "score": -3909.878728264789,
+        "fallbackUsed": false,
+        "deadlineStop": true
+      },
+      "missing": []
+    },
+    {
+      "name": "NativeWorker-deadline-HTTP",
+      "move": {
+        "from": 31,
+        "to": 50
+      },
+      "fields": {
+        "samples": 15,
+        "depth": 5,
+        "comparisonDepth": 5,
+        "completedDepth": 5,
+        "fullRootDepth": 5,
+        "comparedCount": 16,
+        "rootCount": 16,
+        "mainDepth": 6,
+        "selDepth": 13,
+        "selectedHasSameDepthScore": true,
+        "selectedScoreDepth": 5,
+        "selectedProvenRuleLoss": false,
+        "score": -3909.878728264789,
+        "fallbackUsed": false,
+        "deadlineStop": true
+      },
+      "missing": [],
+      "progressFrames": 23
+    },
+    {
+      "name": "C++-service-no-first-frame-fault-injection",
+      "move": {
+        "from": 31,
+        "to": 50
+      },
+      "fields": {
+        "samples": 0,
+        "depth": 0,
+        "completedDepth": 0,
+        "fullRootDepth": 0,
+        "comparedCount": 0,
+        "rootCount": 16,
+        "selectedHasSameDepthScore": false,
+        "selectedScoreDepth": null,
+        "selectedProvenRuleLoss": false,
+        "score": null,
+        "fallbackUsed": true,
+        "deadlineStop": true
+      },
+      "missing": [
+        "comparisonDepth",
+        "mainDepth",
+        "selDepth"
+      ],
+      "engineVerified": false
+    },
+    {
+      "name": "C++-service-cached-progress-delayed-final",
+      "move": {
+        "from": 31,
+        "to": 50
+      },
+      "fields": {
+        "samples": 15,
+        "depth": 4,
+        "comparisonDepth": 4,
+        "completedDepth": 4,
+        "fullRootDepth": 4,
+        "comparedCount": 16,
+        "rootCount": 16,
+        "mainDepth": 5,
+        "selDepth": 11,
+        "selectedHasSameDepthScore": true,
+        "selectedScoreDepth": 4,
+        "selectedProvenRuleLoss": false,
+        "score": 98.42189358013664,
+        "fallbackUsed": false,
+        "deadlineStop": true
+      },
+      "missing": []
+    },
+    {
+      "name": "served-JS-worker-before-first-frame-delayed-dispatch",
+      "move": {
+        "from": 31,
+        "to": 50
+      },
+      "fields": {
+        "samples": 0,
+        "depth": 0,
+        "completedDepth": 0,
+        "fullRootDepth": 0,
+        "comparedCount": 0,
+        "rootCount": 16,
+        "selectedHasSameDepthScore": false,
+        "selectedScoreDepth": null,
+        "selectedProvenRuleLoss": false,
+        "score": null,
+        "fallbackUsed": true,
+        "deadlineStop": true
+      },
+      "missing": [
+        "comparisonDepth",
+        "mainDepth",
+        "selDepth"
+      ],
+      "engineVerified": false
+    }
+  ],
+  "scope": "Actual loopback HTTP + production NativeWorker + generated experimental deadline entry. No browser DOM/visual verification. Stalled frames/dispatch are explicit fault injection.",
+  "duplicateCancelPrivacy": true,
+  "ownedProcessesReaped": true
+}

@@ -1,0 +1,536 @@
+{
+  "passed": true,
+  "versions": {
+    "control": "80b3054276e4a53b59b40915bfdab627e2a19a628ab1e4614885c3f9d5dd68c3",
+    "trial": "592ed6608da6d65cfa8d43b849d9eba1166f8672c81a8205774c5b94b0cd51bf"
+  },
+  "finite": [
+    {
+      "index": 0,
+      "sanitize": false,
+      "depth": 1,
+      "proofs": 1,
+      "row": {
+        "ruleReplyLoss": true,
+        "score": -3594.878728264789
+      },
+      "preparationMs": 7.772396000000015
+    },
+    {
+      "index": 2,
+      "sanitize": false,
+      "depth": 1,
+      "proofs": 0,
+      "row": {
+        "ruleReplyLoss": false,
+        "score": 1058.4218935801218
+      },
+      "preparationMs": 9.098131000000024
+    },
+    {
+      "index": 5,
+      "sanitize": false,
+      "depth": 1,
+      "proofs": 1,
+      "row": {
+        "ruleReplyLoss": true,
+        "score": -3594.878728264789
+      },
+      "preparationMs": 8.227828999999929
+    },
+    {
+      "index": 7,
+      "sanitize": false,
+      "depth": 1,
+      "proofs": 1,
+      "row": {
+        "ruleReplyLoss": true,
+        "score": -98998
+      },
+      "preparationMs": 9.582105999999953
+    },
+    {
+      "index": 0,
+      "sanitize": true,
+      "depth": 1,
+      "proofs": 1,
+      "row": {
+        "ruleReplyLoss": true,
+        "score": -3594.878728264789
+      },
+      "preparationMs": 6.067699000000175
+    },
+    {
+      "index": 2,
+      "sanitize": true,
+      "depth": 1,
+      "proofs": 0,
+      "row": {
+        "ruleReplyLoss": false,
+        "score": 1058.4218935801218
+      },
+      "preparationMs": 7.532116999999744
+    },
+    {
+      "index": 5,
+      "sanitize": true,
+      "depth": 1,
+      "proofs": 1,
+      "row": {
+        "ruleReplyLoss": true,
+        "score": -3594.878728264789
+      },
+      "preparationMs": 11.295964999999796
+    },
+    {
+      "index": 7,
+      "sanitize": true,
+      "depth": 1,
+      "proofs": 1,
+      "row": {
+        "ruleReplyLoss": true,
+        "score": -98998
+      },
+      "preparationMs": 10.075278000000253
+    }
+  ],
+  "zeroProof": [
+    {
+      "name": "初始全暗",
+      "sanitize": false,
+      "nodesEqual": true,
+      "candidates": 44,
+      "maxDifference": 0
+    },
+    {
+      "name": "可达中局 2111 / 20步",
+      "sanitize": false,
+      "nodesEqual": true,
+      "candidates": 25,
+      "maxDifference": 0
+    },
+    {
+      "name": "可达中局 2111 / 44步",
+      "sanitize": false,
+      "nodesEqual": true,
+      "candidates": 23,
+      "maxDifference": 0
+    },
+    {
+      "name": "可达中局 2221 / 44步",
+      "sanitize": false,
+      "nodesEqual": true,
+      "candidates": 31,
+      "maxDifference": 0
+    },
+    {
+      "name": "全明10子残局",
+      "sanitize": false,
+      "nodesEqual": true,
+      "candidates": 30,
+      "maxDifference": 0
+    },
+    {
+      "name": "初始全暗",
+      "sanitize": true,
+      "nodesEqual": true,
+      "candidates": 44,
+      "maxDifference": 0
+    },
+    {
+      "name": "可达中局 2111 / 20步",
+      "sanitize": true,
+      "nodesEqual": true,
+      "candidates": 25,
+      "maxDifference": 0
+    },
+    {
+      "name": "可达中局 2111 / 44步",
+      "sanitize": true,
+      "nodesEqual": true,
+      "candidates": 23,
+      "maxDifference": 0
+    },
+    {
+      "name": "可达中局 2221 / 44步",
+      "sanitize": true,
+      "nodesEqual": true,
+      "candidates": 31,
+      "maxDifference": 0
+    },
+    {
+      "name": "全明10子残局",
+      "sanitize": true,
+      "nodesEqual": true,
+      "candidates": 30,
+      "maxDifference": 0
+    }
+  ],
+  "timed": [
+    {
+      "index": 0,
+      "name": "control",
+      "move": {
+        "from": 6,
+        "to": 15
+      },
+      "depth": 3,
+      "selDepth": 11,
+      "elapsedMs": 1938.7652689999995,
+      "rulePreparationMs": null,
+      "choosesProvedLoss": true,
+      "deadlineStop": false,
+      "fallbackUsed": false
+    },
+    {
+      "index": 0,
+      "name": "trial",
+      "move": {
+        "from": 6,
+        "to": 42
+      },
+      "depth": 3,
+      "selDepth": 11,
+      "elapsedMs": 1939.0646119999983,
+      "rulePreparationMs": 6.016217000003962,
+      "choosesProvedLoss": false,
+      "deadlineStop": false,
+      "fallbackUsed": false
+    },
+    {
+      "index": 5,
+      "name": "control",
+      "move": {
+        "from": 15,
+        "to": 6
+      },
+      "depth": 4,
+      "selDepth": 13,
+      "elapsedMs": 1937.8943069999987,
+      "rulePreparationMs": null,
+      "choosesProvedLoss": true,
+      "deadlineStop": false,
+      "fallbackUsed": false
+    },
+    {
+      "index": 5,
+      "name": "trial",
+      "move": {
+        "from": 58,
+        "to": 57
+      },
+      "depth": 4,
+      "selDepth": 13,
+      "elapsedMs": 1938.4565980000007,
+      "rulePreparationMs": 9.182130999997753,
+      "choosesProvedLoss": false,
+      "deadlineStop": false,
+      "fallbackUsed": false
+    },
+    {
+      "index": 7,
+      "name": "control",
+      "move": {
+        "from": 74,
+        "to": 57
+      },
+      "depth": 8,
+      "selDepth": 15,
+      "elapsedMs": 1930.699188999999,
+      "rulePreparationMs": null,
+      "choosesProvedLoss": true,
+      "deadlineStop": false,
+      "fallbackUsed": false
+    },
+    {
+      "index": 7,
+      "name": "trial",
+      "move": {
+        "from": 74,
+        "to": 85
+      },
+      "depth": 8,
+      "selDepth": 15,
+      "elapsedMs": 1931.020120000001,
+      "rulePreparationMs": 8.644444999998086,
+      "choosesProvedLoss": false,
+      "deadlineStop": false,
+      "fallbackUsed": false
+    }
+  ],
+  "cancelRecovery": true,
+  "counterexample": {
+    "original": {
+      "move": {
+        "from": 31,
+        "to": 24
+      },
+      "fields": {
+        "samples": 15,
+        "depth": 6,
+        "completedDepth": 5,
+        "fullRootDepth": 5,
+        "comparedCount": 4,
+        "rootCount": 16,
+        "mainDepth": 6,
+        "selDepth": 14,
+        "score": -3594.878728264789,
+        "fallbackUsed": false,
+        "deadlineStop": false
+      },
+      "missing": [
+        "comparisonDepth",
+        "selectedHasSameDepthScore",
+        "selectedScoreDepth",
+        "selectedProvenRuleLoss"
+      ]
+    },
+    "proofs": [
+      {
+        "from": 31,
+        "to": 24,
+        "reply": {
+          "from": 5,
+          "to": 14
+        },
+        "loser": "r",
+        "winner": "b",
+        "plies": 2,
+        "evidence": {
+          "status": "loss",
+          "reason": "perpetual-check",
+          "loser": "r",
+          "cycles": 3,
+          "period": 4,
+          "moves": {
+            "r": 6,
+            "b": 6
+          },
+          "checks": {
+            "r": 6,
+            "b": 0
+          }
+        }
+      },
+      {
+        "from": 31,
+        "to": 12,
+        "reply": {
+          "from": 5,
+          "to": 14
+        },
+        "loser": "r",
+        "winner": "b",
+        "plies": 2,
+        "evidence": {
+          "status": "loss",
+          "reason": "perpetual-check",
+          "loser": "r",
+          "cycles": 3,
+          "period": 12,
+          "moves": {
+            "r": 18,
+            "b": 18
+          },
+          "checks": {
+            "r": 18,
+            "b": 0
+          }
+        }
+      }
+    ],
+    "legalCount": 16,
+    "checks": [
+      {
+        "sanitize": false,
+        "directNative": true,
+        "move": {
+          "from": 31,
+          "to": 14
+        },
+        "fields": {
+          "samples": 15,
+          "depth": 1,
+          "comparisonDepth": 1,
+          "completedDepth": 1,
+          "fullRootDepth": 1,
+          "comparedCount": 16,
+          "rootCount": 16,
+          "mainDepth": 1,
+          "selDepth": 5,
+          "selectedHasSameDepthScore": true,
+          "selectedScoreDepth": 1,
+          "score": 162.22189358013682
+        },
+        "missing": [
+          "selectedProvenRuleLoss",
+          "fallbackUsed",
+          "deadlineStop"
+        ]
+      },
+      {
+        "sanitize": false,
+        "syntheticAllProvedProtocol": true,
+        "move": {
+          "from": 67,
+          "to": 58
+        },
+        "fields": {
+          "samples": 15,
+          "depth": 1,
+          "comparisonDepth": 1,
+          "completedDepth": 1,
+          "fullRootDepth": 1,
+          "comparedCount": 16,
+          "rootCount": 16,
+          "mainDepth": 1,
+          "selDepth": 0,
+          "selectedHasSameDepthScore": true,
+          "selectedScoreDepth": 1,
+          "score": -3594.878728264789
+        },
+        "missing": [
+          "selectedProvenRuleLoss",
+          "fallbackUsed",
+          "deadlineStop"
+        ]
+      },
+      {
+        "sanitize": true,
+        "directNative": true,
+        "move": {
+          "from": 31,
+          "to": 14
+        },
+        "fields": {
+          "samples": 15,
+          "depth": 1,
+          "comparisonDepth": 1,
+          "completedDepth": 1,
+          "fullRootDepth": 1,
+          "comparedCount": 16,
+          "rootCount": 16,
+          "mainDepth": 1,
+          "selDepth": 5,
+          "selectedHasSameDepthScore": true,
+          "selectedScoreDepth": 1,
+          "score": 162.22189358013682
+        },
+        "missing": [
+          "selectedProvenRuleLoss",
+          "fallbackUsed",
+          "deadlineStop"
+        ]
+      },
+      {
+        "sanitize": true,
+        "syntheticAllProvedProtocol": true,
+        "move": {
+          "from": 67,
+          "to": 58
+        },
+        "fields": {
+          "samples": 15,
+          "depth": 1,
+          "comparisonDepth": 1,
+          "completedDepth": 1,
+          "fullRootDepth": 1,
+          "comparedCount": 16,
+          "rootCount": 16,
+          "mainDepth": 1,
+          "selDepth": 0,
+          "selectedHasSameDepthScore": true,
+          "selectedScoreDepth": 1,
+          "score": -3594.878728264789
+        },
+        "missing": [
+          "selectedProvenRuleLoss",
+          "fallbackUsed",
+          "deadlineStop"
+        ]
+      },
+      {
+        "name": "old",
+        "budgetMs": 2000,
+        "selectedProvedLoss": true,
+        "move": {
+          "from": 31,
+          "to": 24
+        },
+        "fields": {
+          "samples": 15,
+          "depth": 6,
+          "comparisonDepth": 6,
+          "completedDepth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 4,
+          "rootCount": 16,
+          "mainDepth": 6,
+          "selDepth": 14,
+          "score": -3594.878728264789,
+          "fallbackUsed": false,
+          "deadlineStop": false
+        },
+        "missing": [
+          "selectedHasSameDepthScore",
+          "selectedScoreDepth",
+          "selectedProvenRuleLoss"
+        ]
+      },
+      {
+        "name": "trial",
+        "budgetMs": 2000,
+        "selectedProvedLoss": false,
+        "move": {
+          "from": 31,
+          "to": 50
+        },
+        "fields": {
+          "samples": 15,
+          "depth": 5,
+          "comparisonDepth": 5,
+          "completedDepth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 16,
+          "rootCount": 16,
+          "mainDepth": 6,
+          "selDepth": 13,
+          "selectedHasSameDepthScore": true,
+          "selectedScoreDepth": 5,
+          "selectedProvenRuleLoss": false,
+          "score": -3909.878728264789,
+          "fallbackUsed": false,
+          "deadlineStop": false
+        },
+        "missing": []
+      },
+      {
+        "name": "trial-mirror",
+        "budgetMs": 2000,
+        "selectedProvedLoss": false,
+        "move": {
+          "from": 58,
+          "to": 39
+        },
+        "fields": {
+          "samples": 15,
+          "depth": 6,
+          "comparisonDepth": 6,
+          "completedDepth": 5,
+          "fullRootDepth": 5,
+          "comparedCount": 5,
+          "rootCount": 16,
+          "mainDepth": 6,
+          "selDepth": 14,
+          "selectedHasSameDepthScore": true,
+          "selectedScoreDepth": 6,
+          "selectedProvenRuleLoss": false,
+          "score": -3909.878728264789,
+          "fallbackUsed": false,
+          "deadlineStop": false
+        },
+        "missing": []
+      }
+    ]
+  }
+}

@@ -244,6 +244,34 @@ jobs:
           node native/experiments/jqe/thread-check.mjs
       - name: Opt-in HTTP boundaries and cancellation
         run: node --test native/experiments/jqe/service-check.mjs
+  rule-priority-selection:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '24'
+      - name: Public priority, missing metrics and actual report/cache callbacks
+        run: |
+          node --test native/experiments/rule-priority/selection.test.mjs native/experiments/rule-priority/ui.test.mjs
+          node native/experiments/rule-priority/prepare.mjs
+      - name: Independent baseline, previous prototype and final candidate
+        run: |
+          node native/experiments/default-all/build.mjs
+          node native/experiments/rule-reply/build.mjs
+          node native/experiments/rule-priority/build.mjs
+          node native/experiments/rule-priority/build.mjs --sanitize
+          node native/experiments/rule-priority/check.mjs
+          node native/experiments/rule-priority/direct.mjs
+          node native/experiments/rule-priority/reproduce.mjs
+      - name: Actual HTTP transport, first-frame failures and frozen games
+        run: |
+          node native/experiments/rule-priority/integration.mjs
+          node native/experiments/rule-priority/matches.mjs replay
+          node native/experiments/rule-priority/audit.mjs benchmarks/rule-priority-2026-11-25/matches.json /tmp/rule-priority-audit.json
   rule-reply-proof:
     runs-on: ubuntu-latest
     timeout-minutes: 20

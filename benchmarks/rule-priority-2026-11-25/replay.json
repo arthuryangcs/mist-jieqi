@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "complete": true,
+  "games": 8,
+  "moves": 855,
+  "privateChecks": 14,
+  "matchesSha256": "2466cb0f47e5d8e36417651f3af0265c70cfe1d561b1e49c1dcd1d45514a9120",
+  "planSha256": "0b3942e13ba449d26e323fcbc4147b729d21eb31124d2b33693f35a544b5eb5d",
+  "summary": {
+    "internal": {
+      "finished": 4,
+      "wins": 2,
+      "draws": 0,
+      "losses": 2,
+      "technicalFailures": 0,
+      "cleanupFailures": 0,
+      "unresolved": 0,
+      "scoreRate": 0.5,
+      "normal": {
+        "wins": 2,
+        "draws": 0,
+        "losses": 2
+      }
+    },
+    "candidatePika": {
+      "finished": 4,
+      "wins": 0,
+      "draws": 0,
+      "losses": 1,
+      "technicalFailures": 0,
+      "cleanupFailures": 0,
+      "unresolved": 3,
+      "scoreRate": null,
+      "normal": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 1
+      }
+    }
+  }
+}

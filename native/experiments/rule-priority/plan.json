@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-25",
+  "baseCommit": "9291ea0ae50c8f45d12a231e0405c4ee50c4313e",
+  "hypothesis": "Public proven-loss status outranks numerical utility/risk; retain valid shallower cohort when a partial deeper cohort has only proved losses. The same public gate handles cached/pre-frame host fallbacks without inventing score or metrics.",
+  "defaultEnable": false,
+  "budgetMs": 2000,
+  "hostReserveMs": 40,
+  "graceMs": 60,
+  "samples": 15,
+  "brightSamples": 1,
+  "maxThreads": 4,
+  "ttBudgetBytes": 67108864,
+  "maxPlies": 400,
+  "newLayouts": 2,
+  "games": 8,
+  "groups": [
+    "internal",
+    "candidatePika"
+  ],
+  "control": "Frozen actual all-compatible-v2 default, not old HCE",
+  "diagnosticGames": [
+    {
+      "ledger": "rule-reply-2026-11-24",
+      "gameIndex": 4,
+      "ply": 185
+    }
+  ],
+  "stop": "No outcome tuning. Actual quota>=40 at stages. Same2s/4worker/64MiB caps, no strict isolation claim. No8766 requests, no system process listing, preserve oldqcheckpause."
+}

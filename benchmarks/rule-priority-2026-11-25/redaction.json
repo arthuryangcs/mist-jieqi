@@ -1,0 +1,8 @@
+{
+  "privateLedgerSha256": "5906aba89922c4f098674b544fba63e31184222124d68bb45600b5e5797a79c6",
+  "publicLedgerSha256": "2466cb0f47e5d8e36417651f3af0265c70cfe1d561b1e49c1dcd1d45514a9120",
+  "gameAndParameterPayloadSha256": "94c339185b858750281d9b1e5d959c3239bb8867cd4aad7756f73fb4e794afda",
+  "normalizedProjectHashKeys": 3,
+  "gamePayloadUnchanged": true,
+  "replayAndAuditRecomputed": true
+}
