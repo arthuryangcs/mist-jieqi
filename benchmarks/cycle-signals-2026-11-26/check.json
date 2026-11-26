@@ -1,0 +1,156 @@
+{
+  "passed": true,
+  "diagnosticOnly": true,
+  "binaryUnchanged": true,
+  "fixed": [
+    {
+      "enabled": false,
+      "positionPly": 42,
+      "nodesEqual": true,
+      "candidates": 31,
+      "maxDifference": 0
+    },
+    {
+      "enabled": false,
+      "positionPly": 44,
+      "nodesEqual": true,
+      "candidates": 34,
+      "maxDifference": 0
+    },
+    {
+      "enabled": false,
+      "positionPly": 116,
+      "nodesEqual": true,
+      "candidates": 1,
+      "maxDifference": 0
+    },
+    {
+      "enabled": false,
+      "name": "初始全暗",
+      "nodesEqual": true,
+      "candidates": 44,
+      "maxDifference": 0
+    },
+    {
+      "enabled": false,
+      "name": "可达中局 2111 / 20步",
+      "nodesEqual": true,
+      "candidates": 25,
+      "maxDifference": 0
+    },
+    {
+      "enabled": false,
+      "name": "可达中局 2111 / 44步",
+      "nodesEqual": true,
+      "candidates": 23,
+      "maxDifference": 0
+    },
+    {
+      "enabled": false,
+      "name": "可达中局 2221 / 44步",
+      "nodesEqual": true,
+      "candidates": 31,
+      "maxDifference": 0
+    },
+    {
+      "enabled": false,
+      "name": "全明10子残局",
+      "nodesEqual": true,
+      "candidates": 30,
+      "maxDifference": 0
+    },
+    {
+      "enabled": true,
+      "positionPly": 42,
+      "nodesEqual": true,
+      "candidates": 31,
+      "maxDifference": 0
+    },
+    {
+      "enabled": true,
+      "positionPly": 44,
+      "nodesEqual": true,
+      "candidates": 34,
+      "maxDifference": 0
+    },
+    {
+      "enabled": true,
+      "positionPly": 116,
+      "nodesEqual": true,
+      "candidates": 1,
+      "maxDifference": 0
+    },
+    {
+      "enabled": true,
+      "name": "初始全暗",
+      "nodesEqual": true,
+      "candidates": 44,
+      "maxDifference": 0
+    },
+    {
+      "enabled": true,
+      "name": "可达中局 2111 / 20步",
+      "nodesEqual": true,
+      "candidates": 25,
+      "maxDifference": 0
+    },
+    {
+      "enabled": true,
+      "name": "可达中局 2111 / 44步",
+      "nodesEqual": true,
+      "candidates": 23,
+      "maxDifference": 0
+    },
+    {
+      "enabled": true,
+      "name": "可达中局 2221 / 44步",
+      "nodesEqual": true,
+      "candidates": 31,
+      "maxDifference": 0
+    },
+    {
+      "enabled": true,
+      "name": "全明10子残局",
+      "nodesEqual": true,
+      "candidates": 30,
+      "maxDifference": 0
+    }
+  ],
+  "timed": [
+    {
+      "name": "stable",
+      "move": {
+        "from": 82,
+        "to": 46
+      },
+      "elapsedMs": 1945.5638529999997,
+      "samples": 15,
+      "depth": 4,
+      "fullRootDepth": 3,
+      "completedDepth": 3,
+      "rootCount": 34,
+      "comparedCount": 27,
+      "signalPreparationMs": null,
+      "signalAvailable": null,
+      "signalComplete": null
+    },
+    {
+      "name": "diagnostic",
+      "move": {
+        "from": 82,
+        "to": 46
+      },
+      "elapsedMs": 1944.2388919999994,
+      "samples": 15,
+      "depth": 4,
+      "fullRootDepth": 3,
+      "completedDepth": 3,
+      "rootCount": 34,
+      "comparedCount": 27,
+      "signalPreparationMs": 2.7689579999987473,
+      "signalAvailable": true,
+      "signalComplete": true
+    }
+  ],
+  "cancelRecovery": true
+}

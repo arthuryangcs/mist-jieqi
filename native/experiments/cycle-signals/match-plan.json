@@ -1,0 +1,26 @@
+{
+  "experiment": "cycle-signals-pilot-2026-11-26",
+  "createdAt": "2026-11-26T02:05:02.371Z",
+  "matches": {
+    "budgetMs": 2000,
+    "graceMs": 60,
+    "maxPlies": 400,
+    "hostReserveMs": 40,
+    "ttBudgetBytes": 67108864,
+    "samples": 15,
+    "controlSamples": 15,
+    "brightSamples": 1,
+    "seeds": [
+      3138869718,
+      3815031493
+    ]
+  },
+  "sampling": {
+    "method": "two OS cryptographic RNG layouts drawn once, after correctness/timing and before game outcomes, compared to all registered cached/public synthetic layouts",
+    "notEngineInput": true
+  },
+  "adoption": {
+    "defaultEnable": false,
+    "strengthNotAssumed": true
+  }
+}

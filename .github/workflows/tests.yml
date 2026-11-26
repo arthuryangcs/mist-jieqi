@@ -9,6 +9,29 @@ concurrency:
   group: tests-${{ github.ref }}
   cancel-in-progress: true
 jobs:
+  cycle-signals-diagnostic:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '24'
+      - name: Public branch facts, old unresolved games and report uncertainty
+        run: |
+          node --test native/experiments/cycle-signals/signals.test.mjs native/experiments/cycle-signals/ui.test.mjs
+          node native/experiments/cycle-signals/forensics.mjs
+      - name: Unchanged default search and actual isolated HTTP/Worker integration
+        run: |
+          node native/experiments/default-all/build.mjs
+          node native/experiments/cycle-signals/check.mjs
+          node native/experiments/cycle-signals/integration.mjs
+      - name: Frozen synthetic game and diagnostic replay
+        run: |
+          node native/experiments/cycle-signals/matches.mjs replay
+          node native/experiments/cycle-signals/audit.mjs benchmarks/cycle-signals-2026-11-26/matches.json /tmp/cycle-signals-audit.json
   search-speed-experiment:
     runs-on: ubuntu-latest
     timeout-minutes: 15

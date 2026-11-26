@@ -1,0 +1,8 @@
+{
+  "sourceSha256": "a6d1a5da2624202769b583d9631576c4d95a3af206567f96b0dd4fe8c87d0104",
+  "binarySha256": "80b3054276e4a53b59b40915bfdab627e2a19a628ab1e4614885c3f9d5dd68c3",
+  "modelSha256": "0b3ccf77fb30ce16ccdeaceb198bf7a114cee7b8a084643adac0d14887090edb",
+  "profile": "all-compatible-v2",
+  "cppUnchanged": true,
+  "newCompilation": false
+}

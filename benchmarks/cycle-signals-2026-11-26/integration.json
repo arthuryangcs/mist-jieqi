@@ -1,0 +1,254 @@
+{
+  "passed": true,
+  "diagnosticOnly": true,
+  "orderingChanged": false,
+  "adjudicationChanged": false,
+  "cases": [
+    {
+      "name": "real-HTTP-native",
+      "signals": {
+        "played": {
+          "from": 45,
+          "to": 46
+        },
+        "coverage": "last-reversible-public-transition-only",
+        "mate": {
+          "quantifier": "some-enumerated-identities",
+          "identities": [
+            "C"
+          ],
+          "enumeratedIdentities": [
+            "R",
+            "N",
+            "B",
+            "A",
+            "C",
+            "P"
+          ],
+          "inventoryFeasibleIdentities": [
+            "N",
+            "B",
+            "C",
+            "P"
+          ],
+          "feasibleQuantifier": "some-feasible-identities"
+        },
+        "noImmediateRecapture": {
+          "quantifier": "all-enumerated-identities",
+          "identities": [
+            "R",
+            "N",
+            "B",
+            "A",
+            "C",
+            "P"
+          ],
+          "enumeratedIdentities": [
+            "R",
+            "N",
+            "B",
+            "A",
+            "C",
+            "P"
+          ],
+          "inventoryFeasibleIdentities": [
+            "N",
+            "B",
+            "C",
+            "P"
+          ],
+          "feasibleQuantifier": "all-feasible-identities"
+        }
+      },
+      "samples": 15,
+      "depth": 4,
+      "signalPreparationMs": 9.819141999999829
+    },
+    {
+      "name": "production-NativeWorker-and-deadline",
+      "signals": {
+        "played": {
+          "from": 45,
+          "to": 46
+        },
+        "coverage": "last-reversible-public-transition-only",
+        "mate": {
+          "quantifier": "some-enumerated-identities",
+          "identities": [
+            "C"
+          ],
+          "enumeratedIdentities": [
+            "R",
+            "N",
+            "B",
+            "A",
+            "C",
+            "P"
+          ],
+          "inventoryFeasibleIdentities": [
+            "N",
+            "B",
+            "C",
+            "P"
+          ],
+          "feasibleQuantifier": "some-feasible-identities"
+        },
+        "noImmediateRecapture": {
+          "quantifier": "all-enumerated-identities",
+          "identities": [
+            "R",
+            "N",
+            "B",
+            "A",
+            "C",
+            "P"
+          ],
+          "enumeratedIdentities": [
+            "R",
+            "N",
+            "B",
+            "A",
+            "C",
+            "P"
+          ],
+          "inventoryFeasibleIdentities": [
+            "N",
+            "B",
+            "C",
+            "P"
+          ],
+          "feasibleQuantifier": "all-feasible-identities"
+        }
+      },
+      "samples": 15,
+      "depth": 4,
+      "deadlineStop": false
+    },
+    {
+      "name": "actual-served-JS-worker-module-in-Node-runtime",
+      "signals": {
+        "played": {
+          "from": 45,
+          "to": 46
+        },
+        "coverage": "last-reversible-public-transition-only",
+        "mate": {
+          "quantifier": "some-enumerated-identities",
+          "identities": [
+            "C"
+          ],
+          "enumeratedIdentities": [
+            "R",
+            "N",
+            "B",
+            "A",
+            "C",
+            "P"
+          ],
+          "inventoryFeasibleIdentities": [
+            "N",
+            "B",
+            "C",
+            "P"
+          ],
+          "feasibleQuantifier": "some-feasible-identities"
+        },
+        "noImmediateRecapture": {
+          "quantifier": "all-enumerated-identities",
+          "identities": [
+            "R",
+            "N",
+            "B",
+            "A",
+            "C",
+            "P"
+          ],
+          "enumeratedIdentities": [
+            "R",
+            "N",
+            "B",
+            "A",
+            "C",
+            "P"
+          ],
+          "inventoryFeasibleIdentities": [
+            "N",
+            "B",
+            "C",
+            "P"
+          ],
+          "feasibleQuantifier": "all-feasible-identities"
+        }
+      },
+      "samples": 8,
+      "depth": 3
+    },
+    {
+      "name": "disabled",
+      "evidence": {
+        "enabled": false,
+        "available": false,
+        "reason": "disabled",
+        "signalOnly": true,
+        "adjudicationChanged": false,
+        "diagnosticOnly": true,
+        "orderingChanged": false,
+        "signalPreparationMs": 0.01538299999992887
+      }
+    },
+    {
+      "name": "incomplete-not-safe",
+      "evidence": {
+        "enabled": true,
+        "existingRuling": {
+          "status": "review-required",
+          "reason": "repetition-needs-ruling",
+          "cycles": 3,
+          "period": 4,
+          "moves": {
+            "r": 6,
+            "b": 6
+          },
+          "checks": {
+            "r": 0,
+            "b": 0
+          }
+        },
+        "available": true,
+        "coverage": "last-reversible-public-transition-only",
+        "complete": false,
+        "signalOnly": true,
+        "adjudicationChanged": false,
+        "played": {
+          "from": 45,
+          "to": 46
+        },
+        "side": "b",
+        "wasInCheck": false,
+        "givesCheck": false,
+        "isEvasion": false,
+        "beforeMateAvailable": null,
+        "afterMateAvailable": null,
+        "newlyAvailableMate": null,
+        "localNoncheckingRiskCandidate": null,
+        "threats": [],
+        "elapsedMs": 0.19571699999869452,
+        "semantics": "Hypothetical next attacker move after no defender response; no-immediate-recapture is only a local fact, not proof of material profit, long-chase liability or an unavoidable kill.",
+        "missingEvidence": [
+          "Longer continuous-check mating sequences and actual defender responses",
+          "Stable target/piece identity over the full cycle",
+          "Immediate counter-mate after capture, complete exchanges, protected-piece, pawn/king and other2020exceptions",
+          "Both sides responsibility and relative duties",
+          "Actual adjudicator notice and two-round change record",
+          "Hidden-piece branch-specific rule interpretation"
+        ],
+        "diagnosticOnly": true,
+        "orderingChanged": false,
+        "signalPreparationMs": 1.718022999999448
+      }
+    }
+  ],
+  "safety": true,
+  "scope": "Actual isolated HTTP + production NativeWorker/deadline + served JS Worker logic run inNode; no real browser visual acceptance.",
+  "ownNativeReaped": true
+}

@@ -1,0 +1,20 @@
+{
+  "experiment": "public-cycle-local-signals-2026-11-26",
+  "baseCommit": "ed47bd031805725d79edd411d65a51826cd8f890",
+  "scope": "Public one-next-move mate and no-immediate-recapture evidence for last reversible transition at a repetition gate; diagnostic only",
+  "orderingChanged": false,
+  "adjudicationChanged": false,
+  "defaultEnable": false,
+  "budgetMs": 2000,
+  "hostReserveMs": 40,
+  "graceMs": 60,
+  "maxSignalMs": 100,
+  "maxPlies": 400,
+  "ttBudgetBytes": 67108864,
+  "samples": 15,
+  "brightSamples": 1,
+  "matches": "Two previously unused layouts, colors paired, four games vs frozen current all-compatible-v2 default and four vs fixed Pika bcc83f88. Do not change samples/parameters or stop by outcome.",
+  "interpretation": "Overhead/integration no-regression pilot, not evidence of a new strength strategy. Native executable bit-identical to control; diagnostics consume the same move budget. No ordering or referee change.",
+  "unknownResourceInterference": "No forbidden system process inventory or CPU feature queries; no8766 requests/restarts; actual CPU/RSS/background isolation not established. All-known own searches1 worker versusPika4 remains a utilization limitation.",
+  "oldResults": "Prior Pika games3,4,6 stay unresolved; no recorded adjudicator change notice; game6 has151 plies, no152. Six geometric identities are a superset, not probabilities or necessarily all inventory-feasible."
+}

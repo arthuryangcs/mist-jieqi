@@ -1,0 +1,90 @@
+{
+  "games": 8,
+  "layouts": 2,
+  "diagnosticOnly": true,
+  "orderingChanged": false,
+  "adjudicationChanged": false,
+  "conservativeCompetitionReview": {
+    "internal": {
+      "wins": 1,
+      "draws": 0,
+      "losses": 3,
+      "unresolved": 0,
+      "possibleScoreRate": [
+        0.25,
+        0.25
+      ],
+      "statisticalConfidenceInterval": false
+    },
+    "candidatePika": {
+      "wins": 0,
+      "draws": 0,
+      "losses": 4,
+      "unresolved": 0,
+      "possibleScoreRate": [
+        0,
+        0
+      ],
+      "statisticalConfidenceInterval": false
+    }
+  },
+  "competitionReview": {
+    "machineDrawsWithEarlierUnsupportedCycles": [],
+    "basis": "Conservative manual competition-rule review flag only, not proof of long-chase liability or a rejudgment. Frozen machine ledger unchanged."
+  },
+  "requestMetrics": {
+    "appliedMoves": 433,
+    "candidateRequests": 215,
+    "availableSignals": 0,
+    "incompleteSignals": 0,
+    "deadlineStops": 0,
+    "fallbacks": 0,
+    "maxElapsedMs": 1961.374134999991,
+    "signalPreparationMs": {
+      "median": 0.418785999994725,
+      "max": 2.0170660000294447
+    }
+  },
+  "summary": {
+    "internal": {
+      "finished": 4,
+      "wins": 1,
+      "draws": 0,
+      "losses": 3,
+      "technicalFailures": 0,
+      "cleanupFailures": 0,
+      "unresolved": 0,
+      "scoreRate": 0.25,
+      "normal": {
+        "wins": 1,
+        "draws": 0,
+        "losses": 3
+      },
+      "possibleScoreRate": [
+        0.25,
+        0.25
+      ]
+    },
+    "candidatePika": {
+      "finished": 4,
+      "wins": 0,
+      "draws": 0,
+      "losses": 4,
+      "technicalFailures": 0,
+      "cleanupFailures": 0,
+      "unresolved": 0,
+      "scoreRate": 0,
+      "normal": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 4
+      },
+      "possibleScoreRate": [
+        0,
+        0
+      ]
+    }
+  },
+  "defaultChanged": false,
+  "priorGamesMixed": false
+}
